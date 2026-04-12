@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b09295ee6b314db6",
+        "id": "d752fb8d5bd03136",
         "type": "tabs",
         "children": [
           {
-            "id": "58856f8e2fe27ff0",
+            "id": "6f761f86d808684a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_infra/README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "README"
             }
           }
         ]
@@ -187,8 +191,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "58856f8e2fe27ff0",
+  "active": "6f761f86d808684a",
   "lastOpenFiles": [
+    "_infra/README.md",
     "_infra/brain-sync.sh",
     "_infra",
     "_teste-claude-code-vps/primeiro-arquivo-claude.md",
