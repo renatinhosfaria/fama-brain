@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "89c78584d2902ee3",
+        "id": "b09295ee6b314db6",
         "type": "tabs",
         "children": [
           {
-            "id": "3438db546e83887d",
+            "id": "58856f8e2fe27ff0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,13 +157,23 @@
               "icon": "lucide-list",
               "title": "Sumário"
             }
+          },
+          {
+            "id": "7e831386a70e798a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,8 +187,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3438db546e83887d",
+  "active": "58856f8e2fe27ff0",
   "lastOpenFiles": [
+    "_infra/brain-sync.sh",
+    "_infra",
+    "_teste-claude-code-vps/primeiro-arquivo-claude.md",
+    "_teste-claude-code-vps",
     "teste-sync.md"
   ]
 }
