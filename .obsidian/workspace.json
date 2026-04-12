@@ -11,10 +11,14 @@
             "id": "3fa721d8a017e353",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "README"
             }
           }
         ]
@@ -187,8 +191,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3fa721d8a017e353",
+  "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "README.md",
     "teste-propagacao.md",
     "_infra/README.md",
     "_infra/brain-sync.sh",
