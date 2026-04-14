@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(find _shared _agents -name \"*.md\" -exec echo \"=== {} ===\" \\\\; -exec cat {} \\\\;)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(mkdir -p _shared/context/fama _shared/goals/2026-04 _shared/results/2026-04)",
+      "Bash(touch _shared/goals/2026-04/.gitkeep _shared/results/2026-04/.gitkeep)",
+      "Bash(cat)",
+      "Bash(set -e)"
+    ],
+    "additionalDirectories": [
+      "C:\\fama-brain",
+      "C:\\fama-brain\\_shared\\context",
+      "C:\\fama-brain\\_shared\\goals",
+      "c:\\fama-brain\\_shared\\context\\fama",
+      "C:\\fama-brain\\_shared\\context\\fama",
+      "c:\\fama-brain\\_shared\\context"
     ]
   }
 }
