@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find _shared _agents -name \"*.md\" -exec echo \"=== {} ===\" \\\\; -exec cat {} \\\\;)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
