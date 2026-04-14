@@ -225,17 +225,17 @@ Esta é a regra mais importante do sistema. Ela existe porque:
 
 ### 4.2. Áreas de escrita por ator
 
-| Ator | Pode escrever em | Não deve escrever em |
-|---|---|---|
-| **Humano (Renato)** | Qualquer lugar do vault | Nenhuma restrição técnica, mas evita mexer em `30-agents/*` fora de revisão |
-| **Agente OpenClaw Reno** | `30-agents/reno/` apenas | Qualquer outra pasta |
-| **Agente OpenClaw CEO** | `30-agents/ceo/` apenas | Qualquer outra pasta |
-| **Agente OpenClaw MKT** | `30-agents/mkt/` apenas | Qualquer outra pasta |
-| **Agente OpenClaw FamaAgent** | `30-agents/fama-agent/` apenas | Qualquer outra pasta |
-| **Agente OpenClaw EF.Arq** | `30-agents/ef-arq/` apenas | Qualquer outra pasta |
-| **Agente OpenClaw default** | `30-agents/default/` apenas | Qualquer outra pasta |
-| **Claude Code em projeto X** | `10-projects/X/` (onde X é o projeto atual) | Outros projetos, `30-agents/`, `_infra/` |
-| **Codex ou outro assistente** | `10-projects/<projeto>/` onde está trabalhando | Outras pastas |
+| Ator                          | Pode escrever em                               | Não deve escrever em                                                        |
+| ----------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------- |
+| **Humano (Renato)**           | Qualquer lugar do vault                        | Nenhuma restrição técnica, mas evita mexer em `30-agents/*` fora de revisão |
+| **Agente OpenClaw Reno**      | `30-agents/reno/` apenas                       | Qualquer outra pasta                                                        |
+| **Agente OpenClaw CEO**       | `30-agents/ceo/` apenas                        | Qualquer outra pasta                                                        |
+| **Agente OpenClaw MKT**       | `30-agents/mkt/` apenas                        | Qualquer outra pasta                                                        |
+| **Agente OpenClaw FamaAgent** | `30-agents/fama-agent/` apenas                 | Qualquer outra pasta                                                        |
+| **Agente OpenClaw EF.Arq**    | `30-agents/ef-arq/` apenas                     | Qualquer outra pasta                                                        |
+| **Agente OpenClaw default**   | `30-agents/default/` apenas                    | Qualquer outra pasta                                                        |
+| **Claude Code em projeto X**  | `10-projects/X/` (onde X é o projeto atual)    | Outros projetos, `30-agents/`, `_infra/`                                    |
+| **Codex ou outro assistente** | `10-projects/<projeto>/` onde está trabalhando | Outras pastas                                                               |
 
 ### 4.3. Áreas de leitura livre
 
