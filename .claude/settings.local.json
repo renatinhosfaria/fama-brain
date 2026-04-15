@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(touch C:/fama-brain/_agents/__TRACKED_VAR__/journal/.gitkeep)",
+      "Bash(ls C:/fama-brain/_agents/*/journal/.gitkeep)"
+    ]
+  }
+}
