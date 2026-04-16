@@ -54,6 +54,20 @@ CLAUDE_CONFIG_DIR=/root/.claude /root/.local/bin/claude /login
 
 Arranjo ativo **apenas** nesta VPS — paperclip nao tem replica em outras maquinas.
 
+## Incidente 2026-04-16 08:39 BRT — "Not logged in" nos agentes
+
+**Sintoma:** agentes do paperclip falhando com `Claude run failed: subtype=success: Not logged in · Please run /login (claude_auth_required)`.
+
+**Causa raiz:** execucao manual do `paperclip-claude-refresh.sh` como root durante esta mesma sessao. O `cp` simples preservou dono `root:root` no destino, e o `chown --reference=/opt/paperclip-claude-home/.claude.json` da linha seguinte falhou silenciosamente (ou o `.claude.json` referenciado estava temporariamente com dono errado). Resultado: `/opt/paperclip-claude-home/.credentials.json` ficou `root:root 600`, ilegivel para o processo paperclip que roda como `node` (UID 1000) dentro do container.
+
+**Correcao aplicada:**
+
+1. Chown manual imediato: `chown 1000:1000 /opt/paperclip-claude-home/.credentials.json`.
+2. Reescrita do trecho problematico de `paperclip-claude-refresh.sh` — `chown --reference` substituido por `chown ${NODE_UID}:${NODE_GID}` com UID/GID extraidos dinamicamente via `docker exec <CID> id -u node`.
+3. Adicionado sanity check pos-chown: o script agora testa `docker exec -u node test -r /opt/claude-home/.credentials.json` e aborta com `ERROR` no log se falhar.
+
+**Licao:** `chown --reference=<outro_arquivo>` e fragil — basta o arquivo de referencia estar com dono errado uma vez para propagar o bug em cascata. Preferir UID/GID explicitos, preferencialmente extraidos dinamicamente da fonte canonica (o proprio container).
+
 ## Ver tambem
 
 - [[../decisions]]
