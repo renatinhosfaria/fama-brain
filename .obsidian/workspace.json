@@ -189,6 +189,12 @@
   },
   "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_shared/financials/2026-04/cfo.md",
+    "_shared/financials/2026-04",
+    "_shared/financials",
+    "_agents/cmo/journal/2026-04-17-primeiro-diagnostico-meta-ads-e-funil.md",
+    "_agents/cfo/journal/2026-04-17-primeiro-wake-operacional-diagnostico-financeiro.md",
+    "_agents/ceo/journal/2026-04-17-config-producao-mcp-obsidian.md",
     "_agents/cto/journal/2026-04-17-heartbeat-timer-health-check-e-metas-abril.md",
     "_agents/ceo/journal/2026-04-17-primeiro-wake-com-vault-metas-abril.md",
     "_agents/cto/journal/2026-04-16-claude-code-autoupdate-no-container-paperclip.md",
@@ -211,19 +217,13 @@
     "_agents/cfo-exec/MEMORY.md",
     "_agents/cfo/MEMORY.md",
     "_agents/ceo-exec/MEMORY.md",
-    "_agents/ceo/MEMORY.md",
     "_projects/portalcef",
     "_projects/famachat",
     "_projects",
-    "_shared/README.md",
-    "_shared/context/README.md",
-    "_shared/goals/README.md",
     "_shared/results",
     "_shared/goals",
     "_shared/context",
     "_agents/famaagent",
-    "_agents/sparring",
-    "_agents/follow-up",
-    "_agents/reno"
+    "_agents/sparring"
   ]
 }
