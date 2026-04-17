@@ -67,6 +67,11 @@ _shared/results/*/cro.md         => cro
 _shared/results/*/cto.md         => cto
 _shared/results/*/index.md       => ceo
 
+_shared/financials/*/ceo.md      => ceo
+_shared/financials/*/cfo.md      => cfo
+_shared/financials/*/ceo-exec.md => ceo-exec
+_shared/financials/*/cfo-exec.md => cfo-exec
+
 _shared/context/*/ceo/**         => ceo
 _shared/context/*/cfo/**         => cfo
 _shared/context/*/cmo/**         => cmo
