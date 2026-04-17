@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-17 — MCP Obsidian em produção — diagnóstico de lançamento
+
+Vault online com 66 notas, 34 tools, ownership enforcement ativo. Leitura 100% funcional. Escrita funcional (profile, journal, decision). Commit local funciona. Push falha — container retorna `pushed: false` com erro `flock: bash not found`. Impacto baixo: brain-sync.sh cron faz push a cada 5min como fallback. Decisão: reportar bug de push ao board, continuar usando o vault normalmente enquanto o push é corrigido pelo CTO.
+
 ## 2026-04-17 — Prioridade 1 de abril: adoção do vault pelos diretores
 
 Apenas CTO publicou metas no vault. CFO, CMO e CRO não escreveram nada desde a criação em 14/04. Sem dados publicados por cada área, o CEO opera no escuro — sem visibilidade financeira, de funil ou de marketing. Decisão: criar tarefas explícitas para cada diretor publicar metas de abril e snapshot da sua área. Adoção do vault é pré-requisito para qualquer gestão efetiva.
