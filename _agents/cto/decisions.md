@@ -7,6 +7,14 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-17 — Pixel Lead inflado em site de construtora — diagnóstico e ação corretiva
+
+**Contexto:** FAMAAAAA-97. Campanha Garden Sul (Opção Empreendimentos) reportava 302 pixel leads com R$293 gastos (CPL R$0,94). Investigação revelou que leads reais (Meta Lead Form) são apenas 11. O pixel no site da construtora (`opcaoempreendimentos.com.br/garden-sul/`) dispara `Lead` em trigger errado (provavelmente pageview), inflando 27x os dados de conversão. Afeta principalmente o adset LLA (297 pixel leads) porque a audiência inclui form abandoners e lookalikes que visitam sites imobiliários organicamente. O adset ABERTO tem apenas 5 pixel leads.
+
+**Decisão:** (1) Registrar o padrão de risco: pixels em sites de construtoras que não controlamos podem corromper dados de conversão de qualquer campanha. (2) Recomendar que o CMO verifique no Meta Events Manager qual pixel está no domínio e como o evento Lead é configurado. (3) Se o pixel for nosso, corrigir trigger para form submit only. Se for da construtora, contatar para corrigir ou remover. (4) Como os ads usam Meta Lead Form (não landing page), pixel em site externo é redundante — considerar desassociar. (5) Auditar demais campanhas (VEREDA, VISTA, ARBI) pelo mesmo padrão.
+
+**Porquê:** Pixel inflado treina o algoritmo da Meta contra nós — otimiza para quem carrega a página, não para quem preenche formulário. CPL mascarado impede decisões de budget corretas. Risco se aplica a qualquer campanha com pixel em domínio de terceiro.
+
 ## 2026-04-17 — ADR: Validar WhatsApp antes de incluir broker na rotação de leads
 
 **Contexto:** Em 2026-04-09 o Reno AI (user_id 35) foi adicionado ao pool de rotação de leads sem ter instância WhatsApp configurada. Por 8 dias, leads foram atribuídos a um agente que não tinha canal de comunicação, resultando em 56 clientes sem contato, 0% conversão e 8 SLAs CRITICAL.
