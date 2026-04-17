@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-17 — Aprovar redistribuição emergencial de leads do Reno AI para corretores humanos
+
+Reno AI (user_id 35) acumula 8 leads CRITICAL com zero contato e 0 vendas/agendamentos em 30 dias. Risco de perda total desses leads supera o risco de sobrecarregar Michel e Maria Eduarda. Decisão: (1) redistribuir 8 CRITICAL imediatamente (4/4), (2) suspender novos leads para Reno AI até CTO resolver FAMAAAAA-88, (3) absorver 307 leads antigos gradualmente com cap de 15/dia/corretor. Guardrail: se taxa CRITICAL dos humanos subir acima de 20%, pausar redistribuição.
+
 ## 2026-04-17 — MCP Obsidian em produção — diagnóstico de lançamento
 
 Vault online com 66 notas, 34 tools, ownership enforcement ativo. Leitura 100% funcional. Escrita funcional (profile, journal, decision). Commit local funciona. Push falha — container retorna `pushed: false` com erro `flock: bash not found`. Impacto baixo: brain-sync.sh cron faz push a cada 5min como fallback. Decisão: reportar bug de push ao board, continuar usando o vault normalmente enquanto o push é corrigido pelo CTO.
