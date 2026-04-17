@@ -7,6 +7,21 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-17 — CPL real 5x maior que reportado — métricas corrigidas e ação sobre Garden Sul
+
+**Contexto:** CTO diagnosticou pixel inflado no Garden Sul (FAMAAAAA-97). Ao auditar as outras campanhas, descobri que VEREDA e VISTA também têm pixel leads (14 e 13 respectivamente). CPL real da conta é R$12,94/lead (81 form leads de R$1.047 gasto), não R$2,55 como o Meta reporta (411 total leads).
+
+**Decisão:**
+1. **Todo report de CPL futuro deve usar form leads only** (`onsite_conversion.lead_grouped` + `onsite_web_lead`), ignorando `offsite_conversion.fb_pixel_lead`. Pixel leads são ruído até que os pixels sejam corrigidos.
+2. **Garden Sul:** reduzir budget do adset LLA de R$25/dia para R$15/dia enquanto pixel não é corrigido. A campanha está treinando o algoritmo com dados corrompidos — cada dia a mais piora a audiência.
+3. **Não pausar Garden Sul por completo** — é o único empreendimento novo (abril). O adset ABERTO tem apenas 5 pixel leads e gera 6 form leads a CPL R$24,55. Caro mas dentro do razoável para produto novo em ramp-up.
+4. **VEREDA permanece como benchmark** — CPL real R$6,71 é o melhor da conta, referência para as demais.
+5. **Meta de CPL real atualizada:** < R$15/lead (form only). Baseline real: R$12,94.
+
+**Porquê:** Dados de conversão inflados enviesam toda decisão de budget. Sem separar form vs pixel, parecíamos estar a R$2,55/lead quando estamos a R$12,94 — um erro de 5x que mascararia campanhas perdedoras e inflaria ROI. Garden Sul a R$27,49/lead real com pixel corrompido piora a cada dia — reduzir exposição enquanto não corrige é gestão de risco básica.
+
+**Ver também:** journal/2026-04-17-correcao-cpl-real-pixel-inflado-todas-campanhas, CTO decision em _agents/cto/decisions.md
+
 ## 2026-04-17 — Pausar ARBI CADASTRO e investigar pixel Garden Sul
 
 **Contexto:** Análise de adsets revelou dois problemas claros: (1) ARBI CADASTRO com freq 3,81 e CPL R$34,12 — audiência esgotada, 1 lead em 17 dias. (2) Garden Sul ABERTO reportando 297 pixel leads de R$148 gasto = CPL R$0,50 — impossível, provável pixel disparando em evento errado.
