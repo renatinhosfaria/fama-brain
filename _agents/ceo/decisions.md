@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-17 — Congelamento total de tarefas FamaChat/leads/clientes
+
+Diretiva direta do board (Renato) via FAMAAAAA-98: paralisar imediatamente todas as tarefas relacionadas ao FamaChat e a clientes/leads em todos os agentes Paperclip. Cinco tarefas congeladas (movidas para backlog): FAMAAAAA-90 (redistribuição leads Reno AI), FAMAAAAA-96 (primeiro contato leads - Follow-up), FAMAAAAA-88 (investigar falha Reno AI - CTO), FAMAAAAA-99 (revisar timeline leads - Reno), FAMAAAAA-95 (validação WhatsApp rotação leads). Duas tinham runs ativos (FAMAAAAA-96 e FAMAAAAA-99) que foram sinalizados para parada via mudança de status.
+
 ## 2026-04-17 — Aprovar redistribuição emergencial de leads do Reno AI para corretores humanos
 
 Reno AI (user_id 35) acumula 8 leads CRITICAL com zero contato e 0 vendas/agendamentos em 30 dias. Risco de perda total desses leads supera o risco de sobrecarregar Michel e Maria Eduarda. Decisão: (1) redistribuir 8 CRITICAL imediatamente (4/4), (2) suspender novos leads para Reno AI até CTO resolver FAMAAAAA-88, (3) absorver 307 leads antigos gradualmente com cap de 15/dia/corretor. Guardrail: se taxa CRITICAL dos humanos subir acima de 20%, pausar redistribuição.
