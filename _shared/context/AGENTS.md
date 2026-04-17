@@ -2,7 +2,7 @@
 type: agents-map
 owner: renato
 created: 2026-04-14
-updated: 2026-04-16
+updated: 2026-04-17
 tags: [agents, paperclip, openclaw]
 ---
 # Mapa de Agentes da Fama
@@ -84,8 +84,14 @@ _shared/context/*/follow-up/**   => follow-up
 _shared/context/*/reno/**        => reno
 _shared/context/*/sparring/**    => sparring
 
+_shared/context/fama/**          => renato
+_shared/context/FAMA.md          => renato
+_shared/context/AGENTS.md        => renato
+_agents/README.md                => renato
+_projects/**                     => renato
+_infra/**                        => renato
 README.md                        => renato
-MEMORY.md                        => renato
+CLAUDE.md                        => renato
 ```
 
 Para adicionar um novo pattern: insira a linha no bloco acima e commit no vault — o MCP recarrega via `stat mtime` na próxima escrita.

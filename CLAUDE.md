@@ -21,7 +21,7 @@ Tres eixos ortogonais definem onde um arquivo vive:
 ## Convencoes de edicao
 
 - **Frontmatter YAML obrigatorio** em todo `.md`: `type`, `owner`, `created`, `updated`, `tags`. Atualizar `updated:` ao editar (data absoluta, sem "hoje"/"ontem").
-- **`type:` padronizado** - valores validos: `moc`, `context`, `agents-map`, `goal`, `goals-index`, `result`, `results-index`, `agent-readme`, `agent-profile`, `agent-decisions`, `journal`. Nao inventar novos tipos sem atualizar o README raiz.
+- **`type:` padronizado** - valores validos: `moc`, `context`, `agents-map`, `goal`, `goals-index`, `result`, `results-index`, `agent-readme`, `agent-profile`, `agent-decisions`, `journal`, `project-readme`, `shared-context`, `entity-profile`, `financial-snapshot`. Nao inventar novos tipos sem atualizar o README raiz e `src/vault/frontmatter.ts` em `mcp-obsidian`.
 - **Links internos sempre como `[[wikilink]]`** (formato Obsidian), nunca como caminhos relativos Markdown.
 - **Nomes de arquivo em kebab-case, sem acentos.** Journal segue `YYYY-MM-DD-titulo-curto.md`.
 - **Tags planas**, sem hierarquia.

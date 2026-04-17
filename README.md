@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-17
 tags: [moc, fama-brain]
 ---
 # fama-brain
@@ -91,6 +91,10 @@ Sincronizado via Git entre a máquina local (Windows) e as VPSs onde os agentes 
 | `agent-profile` | `_agents/<nome>/profile.md` |
 | `agent-decisions` | `_agents/<nome>/decisions.md` |
 | `journal` | `_agents/<nome>/journal/*.md` |
+| `project-readme` | `_projects/<produto>/README.md` |
+| `shared-context` | `_shared/context/<topic>/<agent>/*.md` (escrito via `upsert_shared_context` do mcp-obsidian) |
+| `entity-profile` | `_agents/<agent>/<entity_type>/*.md` — ex.: `reno/lead/`, `famaagent/broker/` |
+| `financial-snapshot` | `_shared/financials/<YYYY-MM>/<agent>.md` (escrito via `upsert_financial_snapshot`) |
 
 ## Ownership (quem escreve o quê)
 
