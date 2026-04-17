@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f608ced243b67ad1",
+        "id": "1ec273142bba73d2",
         "type": "tabs",
         "children": [
           {
-            "id": "26804f259510b02e",
+            "id": "087eaf40bf2c3e0d",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "icon": "lucide-file",
+              "title": "Nova aba"
             }
           }
         ]
@@ -187,8 +187,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "26804f259510b02e",
+  "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_agents/cto/journal/2026-04-17-heartbeat-timer-health-check-e-metas-abril.md",
+    "_agents/ceo/journal/2026-04-17-primeiro-wake-com-vault-metas-abril.md",
+    "_agents/cto/journal/2026-04-16-claude-code-autoupdate-no-container-paperclip.md",
+    "_agents/ceo/profile.md",
+    "_agents/ceo/README.md",
+    "_agents/ceo/decisions.md",
+    "_infra/mcp-obsidian.md",
     "CLAUDE.md",
     "_projects/portalcef/README.md",
     "_projects/famachat/README.md",
@@ -211,19 +218,12 @@
     "_shared/README.md",
     "_shared/context/README.md",
     "_shared/goals/README.md",
-    "_shared/results/README.md",
-    "_shared/results/RESULTADO-04-2026.md",
-    "_shared/goals/META-04-2026.md",
-    "_shared/context/FAMA.md",
     "_shared/results",
     "_shared/goals",
     "_shared/context",
     "_agents/famaagent",
     "_agents/sparring",
     "_agents/follow-up",
-    "_agents/reno",
-    "_infra/README.md",
-    "teste-propagacao.md",
-    "_teste-claude-code-vps/primeiro-arquivo-claude.md"
+    "_agents/reno"
   ]
 }
