@@ -2,7 +2,7 @@
 type: context
 owner: renato
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-17
 tags: [fama, stack, tecnologia]
 ---
 # Stack Tecnológico
@@ -149,7 +149,7 @@ Não documentado em detalhe:
 
 ### fama-brain — camada compartilhada de memória
 
-**Este vault Obsidian em Git.** Sincronizado via `_infra/brain-sync.sh` entre VPSs e máquina local (cron de 5 min, Git for Windows no Windows, Git Linux nas VPSs). Serve como:
+**Este vault Obsidian em Git.** Topologia: `C:\fama-brain` (Obsidian local Windows) → GitHub (`renatinhosfaria/fama-brain`) → uma única VPS runtime (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Na VPS, o container Docker Swarm `mcp-obsidian` expõe o vault como 34 tools MCP via HTTPS (`mcp-obsidian.famachat.com.br`); todos os agentes Paperclip/OpenClaw escrevem por ele. Cron `_infra/brain-sync.sh` roda só nessa VPS, coordenando commits do MCP com edições do Windows via `/tmp/brain-sync.lock`. Detalhes em [[../../_infra/mcp-obsidian]]. Serve como:
 
 - **Contexto institucional compartilhado** — FAMA, mercado, produtos, stack, pessoas, agents map.
 - **Metas e resultados mensais** — por diretor Paperclip, agregados pelo CEO.

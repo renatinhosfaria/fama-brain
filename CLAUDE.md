@@ -1,3 +1,10 @@
+---
+type: context
+owner: renato
+created: 2026-04-14
+updated: 2026-04-17
+tags: [meta, claude-code]
+---
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -6,7 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 `fama-brain` **nao e uma base de codigo** - e um vault Obsidian em Markdown que funciona como memoria de longo prazo compartilhada do ecossistema de agentes da Fama Negocios Imobiliarios (plataformas **Paperclip** e **OpenClaw**). Nao ha build, testes ou aplicacao para rodar. O trabalho aqui e quase sempre ler/editar `.md` seguindo convencoes estritas.
 
-O vault e sincronizado via Git entre a maquina local Windows (`C:\fama-brain`) e VPSs (`/root/fama-brain`) por `_infra/brain-sync.sh` em cron de 5 minutos. Mudancas de qualquer ponta viram commits automaticos - evite deixar arquivos em estado intermediario por muito tempo.
+**Topologia atual (desde 17/04/2026):** `C:\fama-brain` (Obsidian local Windows) -> GitHub `renatinhosfaria/fama-brain` -> uma unica VPS MCP-host (vmi1988871, `144.126.134.23`, `/root/fama-brain`). Na VPS, o container Docker Swarm `mcp-obsidian` monta o vault como volume e expoe as 34 tools via HTTPS em `mcp-obsidian.famachat.com.br`. **Todos os agentes (Paperclip, OpenClaw, Claude Code, etc.) escrevem exclusivamente via MCP** - nao ha mais acesso direto ao filesystem por agentes. Cron `_infra/brain-sync.sh` roda apenas na VPS MCP-host, puxando edicoes locais do Windows e empurrando commits criados pelo MCP. Mudancas de qualquer ponta viram commits automaticos - evite deixar arquivos em estado intermediario por muito tempo. Referencia canonica: `_infra/mcp-obsidian.md`.
 
 ## Arquitetura do vault
 
@@ -16,7 +23,7 @@ Tres eixos ortogonais definem onde um arquivo vive:
 - **`_agents/<nome>/`** - zona exclusiva de cada agente, com estrutura fixa: `README.md` (auto-doc), `profile.md` (identidade/estilo), `decisions.md` (append-only, mais recente no topo), `journal/YYYY-MM-DD-titulo-curto.md`. Paperclip = diretoria (ceo, cfo, cmo, cro, cto); OpenClaw = operacional (ceo-exec, cfo-exec, famaagent, follow-up, reno, sparring).
 - **`_projects/<produto>/`** - docs de produtos internos (ex: `famachat`, `portalcef`).
 
-**Ownership e regra dura, nao sugestao.** Cada arquivo tem um unico dono de escrita (ver tabela no `README.md` raiz e em `_shared/context/AGENTS.md`). Ao editar, confirme que a mudanca esta no territorio do autor que esta falando - violar ownership gera conflitos de merge entre VPSs e perda de memoria de agentes.
+**Ownership e enforcement, nao mais convencao.** Cada arquivo tem um unico dono de escrita (patterns em bloco fence de `_shared/context/AGENTS.md`; tabela human-readable no `README.md` raiz). O MCP `mcp-obsidian` resolve ownership em toda escrita via `as_agent` e retorna `OWNERSHIP_VIOLATION` quando o agente tenta escrever fora do seu territorio. Edicoes manuais pelo Windows (Obsidian) seguem a mesma regra por convencao - violar gera ruido no historico git, nao conflito automatizado. Para adicionar novos caminhos, adicione a linha de ownership em `AGENTS.md` e commit (MCP recarrega via `stat mtime`).
 
 ## Convencoes de edicao
 
@@ -36,6 +43,6 @@ Config obrigatoria do Git for Windows: `core.autocrlf=input`.
 
 ## Sincronizacao
 
-`_infra/brain-sync.sh` roda em cada VPS a cada 5 min via cron: `git pull --rebase --autostash` -> commit automatico se houver mudancas locais -> `git push`. Usa `flock` para nao sobrepor execucoes. Logs em `/var/log/brain-sync.log`. Procedimento completo de instalacao numa nova VPS esta em `_infra/README.md`.
+`_infra/brain-sync.sh` roda apenas na **VPS MCP-host** (vmi1988871) a cada 5 min via cron: `git pull --rebase --autostash` -> commit automatico se houver mudancas locais -> `git push`. Compartilha `/tmp/brain-sync.lock` (via volume Docker) com o container `mcp-obsidian` para coordenar commits do tool `commit_and_push`. Logs em `/var/log/brain-sync.log`. Outras VPSs com agentes nao precisam de clone local nem de `brain-sync` - consomem o vault via HTTPS no MCP. Detalhes operacionais: `_infra/README.md` e `_infra/mcp-obsidian.md`.
 
 Commits automaticos do script seguem padrao `vault backup (<hostname>): <timestamp>` - ao fazer commits manuais, use mensagens descritivas para se diferenciar deles no historico.

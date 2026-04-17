@@ -9,7 +9,7 @@ tags: [moc, fama-brain]
 
 Vault Obsidian que serve como **contexto e memória de longo prazo** do ecossistema de agentes da Fama Negócios Imobiliários (plataformas **Paperclip** e **OpenClaw**).
 
-Sincronizado via Git entre a máquina local (Windows) e as VPSs onde os agentes rodam, através do `brain-sync.sh` (cron de 5 min). Cada arquivo tem um único dono de escrita para evitar conflitos de merge.
+**Topologia:** `C:\fama-brain` (Obsidian local) → GitHub (`renatinhosfaria/fama-brain`) → VPS MCP-host (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Uma única VPS hospeda o vault runtime; todos os agentes (Paperclip, OpenClaw, Claude Code) escrevem via HTTPS no servidor **mcp-obsidian** (`mcp-obsidian.famachat.com.br`), nunca tocando o filesystem diretamente. Cada arquivo tem um único dono de escrita, agora enforced pelo MCP no momento da escrita (erro `OWNERSHIP_VIOLATION`). Detalhes em [[_infra/mcp-obsidian]].
 
 ## Mundos
 
@@ -108,4 +108,5 @@ Sincronizado via Git entre a máquina local (Windows) e as VPSs onde os agentes 
 
 ## Infraestrutura
 
-- [[_infra/README|brain-sync.sh e regras de sync]] — como o vault é sincronizado entre VPSs e máquina local.
+- [[_infra/mcp-obsidian|mcp-obsidian]] — gateway de escrita do vault (endpoint, contrato de tools, ownership enforcement, coordenação git).
+- [[_infra/README|_infra/README]] — topologia Local Windows / GitHub / VPS MCP-host, manutenção de cada lado, regras de CRLF, instalação do `brain-sync.sh` na VPS.
