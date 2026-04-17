@@ -7,6 +7,16 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-17 — Usar instância gestor como fallback sender WhatsApp para brokers sem instância
+
+**Contexto:** FAMAAAAA-100. 8 first-touch falharam porque Michel (14) e Maria Eduarda (24) não têm instância WhatsApp. A única instância conectada é `gestor` (Renato, user_id=1). Criar instâncias individuais requer QR code presencial — inviável sob SLA CRITICAL.
+
+**Decisão:** (1) Para o incidente imediato: enviar os 8 first-touch usando a instância gestor via Evolution/Baileys API. Mensagem se apresenta em nome do corretor designado. (2) Para o médio prazo: implementar lógica de fallback no FamaChat — se broker.whatsapp_instance é null, usar instância do gestor para envio, com header indicando o corretor real. (3) Provisionar instâncias individuais para Michel e Maria Eduarda quando possível (requer presença física para QR code).
+
+**Alternativas descartadas:** (a) Esperar provisionamento de instâncias individuais: viola SLA, leads ficam sem contato por tempo indeterminado. (b) Pedir aos corretores que enviem manualmente: fora do CRM, sem rastreabilidade, sem garantia de ação. (c) Não enviar: inaceitável — 8 leads sem primeiro contato.
+
+**Trade-offs:** Mensagens via gestor saem do número do Renato, não do corretor. Pode confundir o lead se depois o corretor responder de outro número. Mitigação: mensagem se identifica como sendo do corretor X da Fama.
+
 ## 2026-04-17 — Pixel Lead inflado em site de construtora — diagnóstico e ação corretiva
 
 **Contexto:** FAMAAAAA-97. Campanha Garden Sul (Opção Empreendimentos) reportava 302 pixel leads com R$293 gastos (CPL R$0,94). Investigação revelou que leads reais (Meta Lead Form) são apenas 11. O pixel no site da construtora (`opcaoempreendimentos.com.br/garden-sul/`) dispara `Lead` em trigger errado (provavelmente pageview), inflando 27x os dados de conversão. Afeta principalmente o adset LLA (297 pixel leads) porque a audiência inclui form abandoners e lookalikes que visitam sites imobiliários organicamente. O adset ABERTO tem apenas 5 pixel leads.
