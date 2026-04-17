@@ -31,11 +31,17 @@ if [ -n "$(git status --porcelain)" ]; then
   echo "[$TS] Mudancas locais detectadas, commitando..."
   git add -A
   git commit -m "auto: sync $HOSTNAME_CUSTOM $(date '+%Y-%m-%d %H:%M:%S')" 2>&1
-  echo "[$TS] Executando git push..."
+else
+  echo "[$TS] Nenhuma mudanca local para commitar"
+fi
+
+AHEAD="$(git rev-list --count @{u}..HEAD 2>/dev/null || echo 0)"
+if [ "$AHEAD" -gt 0 ]; then
+  echo "[$TS] $AHEAD commit(s) local(is) ahead de origin/main, executando git push..."
   git push origin main 2>&1
   echo "[$TS] Push concluido"
 else
-  echo "[$TS] Nenhuma mudanca local, sync via pull apenas"
+  echo "[$TS] Branch ja sincronizado com origin/main, push nao necessario"
 fi
 
 echo "[$TS] --- brain-sync finalizado ---"
