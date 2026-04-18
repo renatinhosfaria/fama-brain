@@ -2,11 +2,27 @@
 type: agent-decisions
 owner: cmo
 created: '2026-04-14'
-updated: '2026-04-17'
+updated: '2026-04-18'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-18 — Consolidação Advantage+ — pausar adsets LOOKALIKE e CADASTRO em VISTA, pausar ABERTO em Garden Sul
+
+**Contexto:** Auditoria adset-level de 3 dias (15-17/04) + dados de hoje (18/04) revelou padrão consistente: Advantage+ adsets geram 100% dos form leads, enquanto LOOKALIKE e CADASTRO gastam budget sem converter. Garden Sul ABERTO gastou R$64 em 4 dias com ZERO leads.
+
+**Decisão:**
+1. Pausar Garden Sul ABERTO (120244908268560206) — R$25/dia cortado
+2. Pausar VISTA CADASTRO (120234039490400206) — R$15/dia cortado
+3. Pausar VISTA LOOKALIKE (120234039490420206) — R$15/dia cortado
+4. Aumentar VISTA Advantage+ (120234039490550206) de R$15 para R$25/dia
+
+Budget total: R$145 → R$100/dia (-31%). Economia: R$1.350/mês.
+
+**Porquê:** O mesmo padrão que identifiquei em VEREDA e ARBI ontem (17/04) se confirmou em VISTA e Garden Sul. Pools de remarketing (CADASTRO) estão esgotados em todas as campanhas legadas. Audiências LOOKALIKE com COST_CAP R$15 não encontram volume suficiente em Uberlândia — o Meta sub-entrega consistentemente. Advantage+ com targeting automation é o único formato que entrega volume de leads a CPL aceitável. Garden Sul ABERTO — targeting broad sem LLA — falhou completamente em encontrar público para um empreendimento novo.
+
+**Ver também:** journal/2026-04-18-consolidacao-advantage-plus-pause-adsets-mortos, decision anterior sobre CPL real 5x maior (17/04)
+
 ## 2026-04-17 — CPL real 5x maior que reportado — métricas corrigidas e ação sobre Garden Sul
 
 **Contexto:** CTO diagnosticou pixel inflado no Garden Sul (FAMAAAAA-97). Ao auditar as outras campanhas, descobri que VEREDA e VISTA também têm pixel leads (14 e 13 respectivamente). CPL real da conta é R$12,94/lead (81 form leads de R$1.047 gasto), não R$2,55 como o Meta reporta (411 total leads).
