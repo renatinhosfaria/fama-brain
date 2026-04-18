@@ -11,10 +11,10 @@
             "id": "087eaf40bf2c3e0d",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Nova aba"
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
             }
           }
         ]
@@ -189,6 +189,20 @@
   },
   "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_agents/famaagent/broker/renato-faria.md",
+    "_agents/famaagent/broker",
+    "_agents/sparring/journal/2026-04-17-teste-de-integracao-mcp-obsidian.md",
+    "_agents/sparring/journal/2026-04-17-posicionamento-do-sparring-no-fame-brain.md",
+    "_agents/sparring/journal/2026-04-17-onboarding-inicial-no-segundo-cerebro.md",
+    "_agents/reno/journal/2026-04-17-entendimento-executivo-fama-brain.md",
+    "_agents/reno/journal/2026-04-17-bootstrap-segundo-cerebro-reno.md",
+    "_agents/famaagent/journal/2026-04-17-preenchimento-inicial-da-area-exclusiva-no-vault.md",
+    "_agents/famaagent/journal/2026-04-17-entendimento-executivo-inicial-do-fama-brain.md",
+    "_agents/ceo-exec/journal/2026-04-17-preenchimento-da-area-exclusiva-no-vault.md",
+    "_agents/ceo-exec/journal/2026-04-17-mapeamento-inicial-do-segundo-cerebro.md",
+    "_agents/ceo-exec/journal/2026-04-17-bootstrap-segundo-cerebro.md",
+    "_agents/cto/journal/2026-04-17-diagnostico-pixel-garden-sul-leads-inflados.md",
+    "_agents/ceo/journal/2026-04-17-crise-sla-resolvida-famaaaaa-89-fechada.md",
     "_agents/cto/journal/2026-04-17-config-memoria-obsidian-cto-profile-e-validacao.md",
     "_agents/cro/journal/2026-04-17-config-memoria-obsidian-zona-cro.md",
     "_agents/cmo/journal/2026-04-17-config-memoria-obsidian-perfil-completo.md",
@@ -204,26 +218,12 @@
     "_shared/financials/2026-04",
     "_shared/financials",
     "_agents/cmo/journal/2026-04-17-primeiro-diagnostico-meta-ads-e-funil.md",
-    "_agents/cfo/journal/2026-04-17-primeiro-wake-operacional-diagnostico-financeiro.md",
-    "_agents/ceo/journal/2026-04-17-config-producao-mcp-obsidian.md",
-    "_agents/cto/journal/2026-04-17-heartbeat-timer-health-check-e-metas-abril.md",
-    "_agents/ceo/journal/2026-04-17-primeiro-wake-com-vault-metas-abril.md",
-    "_agents/cto/journal/2026-04-16-claude-code-autoupdate-no-container-paperclip.md",
-    "_agents/ceo/profile.md",
-    "_agents/ceo/README.md",
-    "_agents/ceo/decisions.md",
-    "_infra/mcp-obsidian.md",
-    "CLAUDE.md",
-    "_projects/portalcef/README.md",
-    "_projects/famachat/README.md",
-    "README.md",
     "_projects/portalcef",
     "_projects/famachat",
     "_projects",
     "_shared/results",
     "_shared/goals",
     "_shared/context",
-    "_agents/famaagent",
-    "_agents/sparring"
+    "_agents/famaagent"
   ]
 }
