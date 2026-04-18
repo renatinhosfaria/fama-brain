@@ -11,10 +11,14 @@
             "id": "087eaf40bf2c3e0d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "type": "markdown",
+              "state": {
+                "file": "_shared/financials/2026-04/cfo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cfo"
             }
           }
         ]
@@ -189,6 +193,7 @@
   },
   "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_shared/context/fama/renato.md",
     "_agents/famaagent/broker/renato-faria.md",
     "_agents/famaagent/broker",
     "_agents/sparring/journal/2026-04-17-teste-de-integracao-mcp-obsidian.md",
@@ -217,7 +222,6 @@
     "_shared/financials/2026-04/cfo.md",
     "_shared/financials/2026-04",
     "_shared/financials",
-    "_agents/cmo/journal/2026-04-17-primeiro-diagnostico-meta-ads-e-funil.md",
     "_projects/portalcef",
     "_projects/famachat",
     "_projects",
