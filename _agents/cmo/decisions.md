@@ -2,11 +2,25 @@
 type: agent-decisions
 owner: cmo
 created: '2026-04-14'
-updated: '2026-04-18'
+updated: '2026-04-19'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-19 — Garden Sul totalmente pausada — 3 dias sem leads, pixel corrompido
+
+**Contexto:** Após pausar ABERTO (0 leads em 4d) no dia 18/04, mantive LLA ativo a R$15/dia com janela de monitoramento de 3 dias. Resultados: 17/04 = 1 lead, 18/04 = 0 leads, 19/04 parcial = 0 leads. Total ~R$75 gastos em 3 dias com 1 lead = CPL R$75.
+
+**Decisão:** Pausar Garden Sul LLA (120244908268570206). Campanha inteira agora sem adsets ativos. Reversível — reativar após pixel corrigido.
+
+**Porquê:** (1) CTO confirmou que LLA é o adset com pixel corrompido — 297 pixel leads fantasma via view-through da construtora opcaoempreendimentos.com.br. Algoritmo está treinando em dados ruins. (2) 3 dias de monitoramento pós-redução confirmam que o adset não gera leads reais. (3) R$15/dia = R$450/mês queimados sem retorno. (4) Ads usam Meta Lead Form, não landing page — pixel da construtora é redundante e prejudicial. (5) Reativação só faz sentido após verificar Events Manager e corrigir ou remover pixel do domínio.
+
+**Pré-requisito para reativação:** Renato verificar Events Manager para pixel em opcaoempreendimentos.com.br + contatar construtora (Gessica 34 9891-4574 / Eduardo 34 99893-8303).
+
+**Budget atualizado:** R$100/dia → R$85/dia. Garden Sul: R$0.
+
+**Ver também:** journal/2026-04-18-consolidacao-advantage-plus-pause-adsets-mortos, decision 17/04 sobre CPL real, FAMAAAAA-97 (CTO pixel diagnosis)
+
 ## 2026-04-18 — Consolidação Advantage+ — pausar adsets LOOKALIKE e CADASTRO em VISTA, pausar ABERTO em Garden Sul
 
 **Contexto:** Auditoria adset-level de 3 dias (15-17/04) + dados de hoje (18/04) revelou padrão consistente: Advantage+ adsets geram 100% dos form leads, enquanto LOOKALIKE e CADASTRO gastam budget sem converter. Garden Sul ABERTO gastou R$64 em 4 dias com ZERO leads.
