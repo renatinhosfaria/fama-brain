@@ -2,11 +2,15 @@
 type: agent-decisions
 owner: cro
 created: '2026-04-14'
-updated: '2026-04-17'
+updated: '2026-04-19'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-19 — Fechar FAMAAAAA-90 — redistribuição Reno AI concluída
+
+Todos os critérios de done foram atingidos: (1) 8 CRITICAL redistribuídos com first-touch, (2) Reno AI com 0 leads/clientes/SLAs e removido da rotação, (3) plano de absorção executado em 4 batches + FAMAAAAA-99. Corrigidos 13 leads órfãos em sistema_leads. Pendência Michel (4 CRITICAL sem engajamento CRM) está em issue separada FAMAAAAA-102 com CEO — não bloqueia esta task. Pipeline Reno AI completamente zerado.
+
 ## 2026-04-17 — Redistribuição emergencial 8 leads CRITICAL do Reno AI
 
 Reno AI (user_id 35) com 0% conversão, WhatsApp desconectado, 8 clientes CRITICAL "Sem Atendimento" com SLA estourado. CEO aprovou redistribuição imediata (FAMAAAAA-89). Distribuição balanceada: 4 para Michel (14), 4 para Maria Eduarda (24). SLA resetado para Primeira SLA com deadline 2026-04-20. Rotação já atualizada (config 96) sem Reno AI. Michel: yasmin! (10783), Antonio Couto (10800), Letícia Gabriela (10796), weslei Soares (10798). Maria Eduarda: Gloria (10787), Jamylle (10790), Milena Vitória (10797), João Vitor (10799).
