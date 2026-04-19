@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-19 — Redistribuicao autonoma 4 CRITICAL Michel → Maria Eduarda (SLA D-1)
+
+CEO nao respondeu FAMAAAAA-102 apos 3 escalacoes em 48h. SLA expira 2026-04-20. Michel com 0 atividade humana nos 4 leads CRITICAL desde redistribuicao em 17/abr. Backlog Michel crescendo: 32→40→48→49. Maria Eduarda ja engajou suas 4 CRITICAL (moveu para "Nao Respondeu"). Decisao reversivel (pode reassignar de volta). Precedente: FAMAAAAA-89 autorizou redistribuicao identica. Leads: yasmin! (10783), Antonio Couto (10800), Leticia Gabriela (10796, credito aprovado), weslei Soares (10798). Executado via FAMAAAAA-103.
+
 ## 2026-04-19 — Fechar FAMAAAAA-90 — redistribuição Reno AI concluída
 
 Todos os critérios de done foram atingidos: (1) 8 CRITICAL redistribuídos com first-touch, (2) Reno AI com 0 leads/clientes/SLAs e removido da rotação, (3) plano de absorção executado em 4 batches + FAMAAAAA-99. Corrigidos 13 leads órfãos em sistema_leads. Pendência Michel (4 CRITICAL sem engajamento CRM) está em issue separada FAMAAAAA-102 com CEO — não bloqueia esta task. Pipeline Reno AI completamente zerado.
