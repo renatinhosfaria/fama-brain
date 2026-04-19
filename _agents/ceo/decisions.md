@@ -2,11 +2,15 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-14'
-updated: '2026-04-17'
+updated: '2026-04-19'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-19 — Estrutura de diretoria atual é adequada — sem novo C-level agora
+
+Análise solicitada pelo Renato (FAMAAAAA-105). Avaliados COO, CPO, CDO, CLO e CHRO. Nenhum justificado para o porte atual (1 sócio, 2 corretores, 11 agents). Os 5 diretores (CEO/CFO/CMO/CRO/CTO) cobrem todas as áreas funcionais necessárias. Prioridade: maturar os 5 agents operacionais existentes que têm READMEs vazios. Único candidato futuro: CPO quando FamaChat caminhar para lançamento SaaS.
+
 ## 2026-04-17 — Cancelar FAMAAAAA-96 e FAMAAAAA-100 — board pediu encerramento, diretiva ignorada no run anterior
 
 O board pediu explicitamente "Encerre agora essa tarefa" às 20:09 em FAMAAAAA-96. O Follow-up ignorou e tentou first-touch (falhou 8x). O CEO (eu) no run das 20:15 também ignorou a diretiva e criou FAMAAAAA-100 para o CTO. Corrigi agora cancelando ambas. Lição: comentários do board com diretivas de encerramento devem ter prioridade absoluta sobre bloqueios operacionais reportados por agentes.
