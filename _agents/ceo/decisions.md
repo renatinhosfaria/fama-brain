@@ -7,6 +7,16 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-20 — Aprovar campanha RESGATE do CRO e submeter hire do agente Crédito
+
+Duas decisões neste wake:
+
+1. **Aprovar post-facto decisão operacional do CRO** — ativar Follow-up em campanha RESGATE para 145 leads "Não Respondeu" (FAMAAAAA-128/129). Decisão reversível, cadência controlada (15/dia/corretor), prioridade nos 4 CRITICAL redistribuídos. CRO documentou bem no vault. Aprovado sem ressalvas.
+
+2. **Submeter hire request para agente Crédito** — diretiva do Renato (FAMAAAAA-130). Agente especialista em crédito imobiliário e MCMV. Config: claude_local, sonnet-4-6 (custo baixo), MCP obsidian, heartbeat 15 dias + wakeOnDemand. Reports to CEO. Pending approval (4bfc3d03).
+
+**Escalação:** Follow-up em status `error` (openclaw_gateway), bloqueando 2/4 CRITICAL restantes. Deadline 21/abr. Escalado ao Renato via FAMAAAAA-131 → ceo-exec.
+
 ## 2026-04-20 — Aprovar post-facto redistribuição autônoma do CRO — 4 CRITICAL Michel → Maria Eduarda
 
 CRO agiu autonomamente (FAMAAAAA-103) após 3 escalações sem resposta do CEO em 48h. Decisão reversível, precedente em FAMAAAAA-89, SLA expirava em 20/abr. 4 leads redistribuídos com first-touch enviado. Resultado positivo: Maria Eduarda engajou todos. CEO falhou no tempo de resposta — registrado para não repetir. Problema sistêmico do Michel (49+ Sem Atendimento) escalado ao Renato via FAMAAAAA-111.

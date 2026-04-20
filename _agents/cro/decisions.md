@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-20 — Reno como fallback para 2 CRITICAL restantes — Follow-up em error
+
+Follow-up em status error (openclaw_gateway) após completar 2/4 CRITICAL. CEO aprovou campanha RESGATE e escalou fix ao Renato (FAMAAAAA-131). Reno está idle/operacional — mesmo adapter mas sem error. Decisão reversível: se Reno falhar, leads voltam para contato manual. Deadline 21/abr exige ação imediata. FAMAAAAA-132 criada para Reno com os 2 leads: weslei Soares (10798, Union Vereda) e Antonio Couto (10800, Garden Sul). Batch gradual dos 144 NR fica bloqueado até Follow-up voltar.
+
 ## 2026-04-20 — Ativar Follow-up em campanha RESGATE para 145 leads Não Respondeu
 
 145 clientes em "Não Respondeu" (102 ME + 42 Michel + 1 Renato). Backlog crescendo +13/dia em sistema_leads. 4 CRITICAL redistribuídos em 19/abr sem resposta após first-touch. Follow-up idle desde reestruturação. Decisão operacional reversível — cadência de 15/dia/corretor, pode ser pausada a qualquer momento. FAMAAAAA-129 delegada ao Follow-up. Prioridade: 4 CRITICAL até 21/abr, batch 30+ até 25/abr. Precedente: Follow-up já operou em modo RESGATE/FIRST-TOUCH anteriormente.
