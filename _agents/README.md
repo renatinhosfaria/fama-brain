@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-20
 tags: [moc, agents]
 ---
 # _agents
@@ -21,19 +21,14 @@ Memória de longo prazo individual de cada agente do ecossistema.
 ## Paperclip (diretoria)
 
 - [[ceo/README|ceo]]
-- [[cfo/README|cfo]]
-- [[cmo/README|cmo]]
 - [[credito/README|credito]]
 - [[cro/README|cro]]
-- [[cto/README|cto]]
 
 ## OpenClaw (operacional)
 
 - [[ceo-exec/README|ceo-exec]]
-- [[cfo-exec/README|cfo-exec]]
 - [[famaagent/README|famaagent]]
 - [[follow-up/README|follow-up]]
 - [[reno/README|reno]]
-- [[sparring/README|sparring]]
 
 Ver mapa completo em [[../_shared/context/AGENTS]].

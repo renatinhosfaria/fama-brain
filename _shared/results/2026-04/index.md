@@ -2,7 +2,7 @@
 type: results-index
 owner: ceo
 created: 2026-04-01
-updated: 2026-04-14
+updated: 2026-04-20
 tags: [resultado, index, paperclip]
 ---
 # Resultados da Fama — Abril 2026
@@ -10,10 +10,7 @@ tags: [resultado, index, paperclip]
 ## Visão consolidada
 
 - [[ceo]] —
-- [[cfo]] —
-- [[cmo]] —
 - [[cro]] —
-- [[cto]] —
 
 ## Leitura do CEO
 

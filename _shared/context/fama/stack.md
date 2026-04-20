@@ -124,9 +124,8 @@ Timeline de lançamento: não documentada.
 - **Modelos:** primário **openai-codex/gpt-5.4**, fallback **google-gemini-cli/gemini-3.1-pro-preview** (formalizado em `MEMORY.md`).
 - **Runtime:** VPSs Linux na Contabo. Sessão atual: `vmi3094636`. Agentes **compartilham infraestrutura**, separados logicamente por conta/canal.
 - **Memória:** arquivos locais (`MEMORY.md`, `memory/YYYY-MM-DD.md`) + CRM via MCP.
-- **Heartbeats:** Reno WhatsApp 30 min; CFO Telegram 2 h.
-- **Delegação entre agentes:** Sparring pode chamar Reno como subagent.
-- **Canais/papéis:** CEO, FamaAgent, Reno, Sparring, CFO, EF.Arq e outros.
+- **Heartbeats:** Reno WhatsApp 30 min.
+- **Canais/papéis:** CEO, FamaAgent, Reno, EF.Arq e outros.
 
 ### Confirmado — Claude no ecossistema
 
@@ -135,7 +134,7 @@ Timeline de lançamento: não documentada.
 
 ### Parcialmente documentado — Paperclip
 
-Ecossistema de agentes de nível **diretoria** (CEO, CFO, CMO, CRO, CTO) — estratégia, governança, orquestração. Complementar ao OpenClaw.
+Ecossistema de agentes de nível **diretoria** (CEO, CRO) — estratégia, governança, orquestração. Complementar ao OpenClaw.
 
 Documentado nesta sessão do fama-brain:
 - Divisão clara Paperclip (estratégia) vs OpenClaw (execução).
@@ -163,7 +162,6 @@ Sem **orquestrador central formalizado único**. Arquitetura distribuída com:
 
 - Bindings por canal/conta.
 - Agentes com função específica.
-- Delegação pontual entre agentes (Sparring → Reno confirmado).
 - **Renato como arquiteto humano da malha**, ainda central em decisões de roteamento.
 
 ### Fluxo típico documentado

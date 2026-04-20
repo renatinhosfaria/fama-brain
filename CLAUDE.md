@@ -20,7 +20,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Tres eixos ortogonais definem onde um arquivo vive:
 
 - **`_shared/`** - contexto lido por todos os agentes: `context/FAMA.md` + `context/fama/*` (empresa), `context/AGENTS.md` (mapa do ecossistema Paperclip + OpenClaw), `goals/YYYY-MM/` e `results/YYYY-MM/` (um arquivo por diretor + `index.md` agregado pelo CEO).
-- **`_agents/<nome>/`** - zona exclusiva de cada agente, com estrutura fixa: `README.md` (auto-doc), `profile.md` (identidade/estilo), `decisions.md` (append-only, mais recente no topo), `journal/YYYY-MM-DD-titulo-curto.md`. Paperclip = diretoria (ceo, cfo, cmo, cro, cto); OpenClaw = operacional (ceo-exec, cfo-exec, famaagent, follow-up, reno, sparring).
+- **`_agents/<nome>/`** - zona exclusiva de cada agente, com estrutura fixa: `README.md` (auto-doc), `profile.md` (identidade/estilo), `decisions.md` (append-only, mais recente no topo), `journal/YYYY-MM-DD-titulo-curto.md`. Paperclip = diretoria (ceo, cro); OpenClaw = operacional (ceo-exec, famaagent, follow-up, reno).
 - **`_projects/<produto>/`** - docs de produtos internos (ex: `famachat`, `portalcef`).
 
 **Ownership e enforcement, nao mais convencao.** Cada arquivo tem um unico dono de escrita (patterns em bloco fence de `_shared/context/AGENTS.md`; tabela human-readable no `README.md` raiz). O MCP `mcp-obsidian` resolve ownership em toda escrita via `as_agent` e retorna `OWNERSHIP_VIOLATION` quando o agente tenta escrever fora do seu territorio. Edicoes manuais pelo Windows (Obsidian) seguem a mesma regra por convencao - violar gera ruido no historico git, nao conflito automatizado. Para adicionar novos caminhos, adicione a linha de ownership em `AGENTS.md` e commit (MCP recarrega via `stat mtime`).

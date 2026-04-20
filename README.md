@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: 2026-04-14
-updated: 2026-04-17
+updated: 2026-04-20
 tags: [moc, fama-brain]
 ---
 # fama-brain
@@ -40,19 +40,18 @@ Vault Obsidian que serve como **contexto e memória de longo prazo** do ecossist
     │   ├── goals/
     │   │   └── 2026-04/
     │   │       ├── index.md             # agregação (CEO)
-    │   │       ├── ceo.md  cfo.md  cmo.md  cro.md  cto.md
+    │   │       ├── ceo.md  cro.md
     │   │
     │   └── results/
     │       └── 2026-04/
     │           ├── index.md             # agregação (CEO)
-    │           ├── ceo.md  cfo.md  cmo.md  cro.md  cto.md
+    │           ├── ceo.md  cro.md
     │
     ├── _agents/                         # zona exclusiva de cada agente
     │   ├── README.md                    # índice Paperclip vs OpenClaw
     │   │
-    │   ├── ceo/  cfo/  cmo/  cro/  cto/                        # Paperclip (diretoria)
-    │   ├── ceo-exec/  cfo-exec/  famaagent/
-    │   ├── follow-up/  reno/  sparring/                        # OpenClaw (operacional)
+    │   ├── ceo/  cro/                                    # Paperclip (diretoria)
+    │   ├── ceo-exec/  famaagent/  follow-up/  reno/           # OpenClaw (operacional)
     │   │
     │   └── <cada-agente>/
     │       ├── README.md                # auto-doc (agente escreve na 1ª interação)

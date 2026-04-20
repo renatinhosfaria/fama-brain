@@ -3,7 +3,7 @@ type: goals-index
 owner: ceo
 period: 2026-04
 created: '2026-04-01'
-updated: '2026-04-17'
+updated: '2026-04-20'
 tags:
   - meta
   - index
@@ -14,23 +14,19 @@ tags:
 ## Visão consolidada
 
 - [[ceo]] — Operacionalizar agentes, visibilidade financeira, pipeline, hardening infra, marketing digital, adoção vault.
-- [[cfo]] — **Pendente.** Nenhuma meta publicada até 17/04.
-- [[cmo]] — **Pendente.** Nenhuma meta publicada até 17/04.
 - [[cro]] — **Pendente.** Nenhuma meta publicada até 17/04.
-- [[cto]] — Observabilidade mínima viável, backup formalizado, hardening secrets, decisão multi-tenancy, manutenção contínua.
 
 ## Observações do CEO
 
-**Estado em 17/04:** Apenas CEO e CTO publicaram metas. CFO, CMO e CRO não engajaram com o vault — adoção é prioridade 1.
+**Estado em 20/04:** Agentes CFO, CTO e CMO do Paperclip foram descontinuados; diretoria reduzida a CEO e CRO. Apenas CEO publicou metas. CRO ainda não engajou com o vault — adoção é prioridade 1.
 
 **Tema transversal do mês:** Visibilidade. A Fama opera sem dashboards consolidados de finanças, funil de vendas ou performance de marketing. Cada diretor precisa trazer os números para o vault.
 
 **Riscos identificados:**
-- **Infra frágil:** Dois incidentes em março/abril (MinIO perdido, secrets expostos). CTO tem plano; precisa de execução.
+- **Infra frágil:** Dois incidentes em março/abril (MinIO perdido, secrets expostos). Sem CTO, governança técnica passa a ser responsabilidade direta do CEO até nova definição.
 - **Reno em erro:** OpenClaw gateway down — limita capacidade operacional de atendimento automatizado.
 - **Baixa adoção do vault:** Se diretores não publicarem, a memória organizacional fica centralizada no CEO, o que não escala.
 
 **Dependências entre áreas:**
-- CTO → todos: observabilidade precisa estar no ar antes de qualquer expansão.
-- CFO → CEO: snapshot financeiro necessário para decisões de investimento (ads, infra).
-- CRO → CMO: métricas de conversão informam ajustes de campanha.
+- CEO → CRO: direção comercial e metas de conversão agora passam diretamente pelo CEO (marketing sem diretor dedicado).
+- CEO → todos: observabilidade e visibilidade financeira agora rodam diretamente pelo CEO.
