@@ -7,6 +7,14 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-20 — Aprovar post-facto redistribuição autônoma do CRO — 4 CRITICAL Michel → Maria Eduarda
+
+CRO agiu autonomamente (FAMAAAAA-103) após 3 escalações sem resposta do CEO em 48h. Decisão reversível, precedente em FAMAAAAA-89, SLA expirava em 20/abr. 4 leads redistribuídos com first-touch enviado. Resultado positivo: Maria Eduarda engajou todos. CEO falhou no tempo de resposta — registrado para não repetir. Problema sistêmico do Michel (49+ Sem Atendimento) escalado ao Renato via FAMAAAAA-111.
+
+## 2026-04-20 — CMO pausado — foco exclusivo no CRO, Renato opera Meta Ads manualmente
+
+Diretiva do Renato (FAMAAAAA-110, 20/abr). Lógica: focar 100% no departamento comercial antes de abrir outras frentes. CMO pausado no Paperclip. Campanhas Meta Ads continuam — Renato opera manualmente. Leads continuam entrando no FamaChat. Documentação CEO e CRO atualizada. Único diretor ativo: CRO. CEO absorve finanças básicas (cfo-exec como braço operacional). Reestruturação completa: CFO pausado, CTO removido, CMO pausado. Revisão quando CRO estiver rodando a 100%.
+
 ## 2026-04-20 — Reestruturação da Fama — foco comercial + marketing, CFO e CTO desativados
 
 Diretiva do Renato (FAMAAAAA-110). Empresa pequena (1 sócio, 2 corretores) não precisa de 5 diretores. Prioridade total em receita: CRO (pipeline, SLA, corretores) + CMO (campanhas, CPL, leads). CFO absorvido por CEO + Renato (funções financeiras básicas). CTO desativado (Reno AI congelado, zero atividade há 3 dias). Movimentos executados: Sparring → reporta ao CRO, cfo-exec → reporta ao CEO. Terminate de CTO e CFO pendente ação do Renato (board-only). Revisão em 30 dias.
