@@ -2,11 +2,15 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-14'
-updated: '2026-04-19'
+updated: '2026-04-20'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-20 — Reestruturação da Fama — foco comercial + marketing, CFO e CTO desativados
+
+Diretiva do Renato (FAMAAAAA-110). Empresa pequena (1 sócio, 2 corretores) não precisa de 5 diretores. Prioridade total em receita: CRO (pipeline, SLA, corretores) + CMO (campanhas, CPL, leads). CFO absorvido por CEO + Renato (funções financeiras básicas). CTO desativado (Reno AI congelado, zero atividade há 3 dias). Movimentos executados: Sparring → reporta ao CRO, cfo-exec → reporta ao CEO. Terminate de CTO e CFO pendente ação do Renato (board-only). Revisão em 30 dias.
+
 ## 2026-04-19 — Estrutura de diretoria atual é adequada — sem novo C-level agora
 
 Análise solicitada pelo Renato (FAMAAAAA-105). Avaliados COO, CPO, CDO, CLO e CHRO. Nenhum justificado para o porte atual (1 sócio, 2 corretores, 11 agents). Os 5 diretores (CEO/CFO/CMO/CRO/CTO) cobrem todas as áreas funcionais necessárias. Prioridade: maturar os 5 agents operacionais existentes que têm READMEs vazios. Único candidato futuro: CPO quando FamaChat caminhar para lançamento SaaS.
