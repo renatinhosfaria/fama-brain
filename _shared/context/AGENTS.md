@@ -92,6 +92,10 @@ _projects/**                     => renato
 _infra/**                        => renato
 README.md                        => renato
 CLAUDE.md                        => renato
+_agents/credito/**                => credito
+_shared/context/*/credito/**      => credito
+_shared/goals/*/credito.md        => credito
+_shared/results/*/credito.md      => credito
 ```
 
 Para adicionar um novo pattern: insira a linha no bloco acima e commit no vault — o MCP recarrega via `stat mtime` na próxima escrita.

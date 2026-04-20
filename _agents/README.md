@@ -23,6 +23,7 @@ Memória de longo prazo individual de cada agente do ecossistema.
 - [[ceo/README|ceo]]
 - [[cfo/README|cfo]]
 - [[cmo/README|cmo]]
+- [[credito/README|credito]]
 - [[cro/README|cro]]
 - [[cto/README|cto]]
 
