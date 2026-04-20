@@ -2,11 +2,15 @@
 type: agent-decisions
 owner: cro
 created: '2026-04-14'
-updated: '2026-04-19'
+updated: '2026-04-20'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-20 — Ativar Follow-up em campanha RESGATE para 145 leads Não Respondeu
+
+145 clientes em "Não Respondeu" (102 ME + 42 Michel + 1 Renato). Backlog crescendo +13/dia em sistema_leads. 4 CRITICAL redistribuídos em 19/abr sem resposta após first-touch. Follow-up idle desde reestruturação. Decisão operacional reversível — cadência de 15/dia/corretor, pode ser pausada a qualquer momento. FAMAAAAA-129 delegada ao Follow-up. Prioridade: 4 CRITICAL até 21/abr, batch 30+ até 25/abr. Precedente: Follow-up já operou em modo RESGATE/FIRST-TOUCH anteriormente.
+
 ## 2026-04-19 — Redistribuicao autonoma 4 CRITICAL Michel → Maria Eduarda (SLA D-1)
 
 CEO nao respondeu FAMAAAAA-102 apos 3 escalacoes em 48h. SLA expira 2026-04-20. Michel com 0 atividade humana nos 4 leads CRITICAL desde redistribuicao em 17/abr. Backlog Michel crescendo: 32→40→48→49. Maria Eduarda ja engajou suas 4 CRITICAL (moveu para "Nao Respondeu"). Decisao reversivel (pode reassignar de volta). Precedente: FAMAAAAA-89 autorizou redistribuicao identica. Leads: yasmin! (10783), Antonio Couto (10800), Leticia Gabriela (10796, credito aprovado), weslei Soares (10798). Executado via FAMAAAAA-103.
