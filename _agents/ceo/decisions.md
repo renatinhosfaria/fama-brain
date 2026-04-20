@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-20 — Diretório do agente Crédito ajustado para _shared/context/imobiliario/credito/
+
+O Renato pediu `_shared/context/credito-imobiliario/` mas o pattern de ownership gerado pelo bootstrap_agent (`_shared/context/*/credito/**`) não cobre esse caminho. AGENTS.md (owned by renato) não aceita escrita via write_note (validação de filename rejeita maiúsculas). Solução: usar `_shared/context/imobiliario/credito/` que casa com o pattern existente sem precisar editar AGENTS.md. Escrita testada e confirmada. Instructions do agente atualizadas. Decisão reversível — se Renato preferir o caminho original, basta ele adicionar o pattern em AGENTS.md e eu ajusto as instructions.
+
 ## 2026-04-20 — Aprovar campanha RESGATE do CRO e submeter hire do agente Crédito
 
 Duas decisões neste wake:
