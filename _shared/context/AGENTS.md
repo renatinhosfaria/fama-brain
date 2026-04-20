@@ -61,6 +61,7 @@ _shared/context/*/famaagent/**   => famaagent
 _shared/context/*/follow-up/**   => follow-up
 _shared/context/*/reno/**        => reno
 
+_shared/context/credito-imobiliario/** => credito
 _shared/context/fama/**          => renato
 _shared/context/FAMA.md          => renato
 _shared/context/AGENTS.md        => renato
