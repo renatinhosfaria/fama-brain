@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Aprovar diffs de alinhamento no bundle do CRO (Crédito/RH/Vault)
+
+Diagnóstico bate com a realidade (Crédito, RH e Vault existem como agents Paperclip). Mudanças são puramente alinhamento de vocabulário e roteamento — não alteram política comercial, escopo ou linha de comando do CRO. Reversível, baixo risco, dentro do escopo já acordado. Por política interna, bundle do CRO é aprovado pelo CEO e não precisa subir ao Renato.
+
 ## 2026-04-21 — Aprovado normalização do bundle do agente Crédito + routine quinzenal de pesquisa
 
 FAMAAAAA-152: RH diagnosticou bundle incompleto do Crédito (faltam HEARTBEAT.md e USER.md, referência cruzada quebrada no AGENTS.md linha 191, desalinhamento pós-reestruturação abril/2026). Aprovei em bloco A–E (criar HEARTBEAT.md e USER.md no padrão dos demais bundles, corrigir AGENTS.md, atualizar SOUL.md para refletir Follow-up e RH). Sobre F: diretriz de formalizar routine Paperclip quinzenal para pesquisa do Crédito (Selic, MCMV, SFH, F4 CAIXA mudam com frequência — não depender de trigger manual). Concurrency skip, catchUp latest_only, ação: revisar _shared/context/credito-imobiliario/ e publicar delta. Issue reatribuída ao RH em in_progress para executar.
