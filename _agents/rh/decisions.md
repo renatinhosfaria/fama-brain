@@ -6,6 +6,14 @@ updated: '2026-04-21'
 tags:
   - decisao
 ---
+## 2026-04-21 — Routine de pesquisa de crédito é quinzenal, criada pelo próprio agent Crédito
+
+**Decisão:** A curadoria da base `_shared/context/credito-imobiliario/` roda via routine Paperclip quinzenal (cron `7 9 1,15 * *` America/Sao_Paulo), criada e assignada ao próprio agent Crédito, com `skip_if_active` + `skip_missed`.
+
+**Why:** (1) Autorização Paperclip só permite que o agent crie routines assignadas a si mesmo — RH não consegue criar a routine sob Crédito. Qualquer ajuste futuro de cadência/policies precisa ser executado pelo próprio Crédito. (2) CEO aprovou cadência quinzenal + policies em [FAMAAAAA-152](/FAMAAAAA/issues/FAMAAAAA-152); sem mudança relevante o Crédito encerra no journal e só alerta o CEO quando o delta impacta a operação comercial.
+
+**How to apply:** Se o CEO pedir mudança na pesquisa de crédito (cadência, escopo, alertas), abrir subtask para o Crédito executar o PATCH na routine/trigger — nunca tentar do RH. Routine ID: `2d5dfd78-9d92-4183-a734-cfd518c5a792` · Trigger ID: `e026944a-87df-459c-a482-819196378afb`.
+
 ## 2026-04-21 — FAMAAAAA-154: correção de schemas MCP Obsidian e catálogo no próprio bundle
 
 CEO aprovou itens A/B/C da auditoria do meu bundle (comentário 89236e44 em 2026-04-21). A: corrigi `as_agent`→`agent` e os campos de `append_decision`/`create_journal_entry` em AGENTS.md, HEARTBEAT.md e TOOLS.md; `get_agent_delta` foi documentado como uma chamada por agent (singular). B: adicionei `POST /api/companies/{companyId}/approvals` ao catálogo em TOOLS.md. C: reescrevi a linha "cinco arquivos" em AGENTS.md para reconhecer bundles reduzidos aprovados pelo CEO. Sem mudança de política. D/E sem ação (SOUL/USER limpos; E fica observado até Vault destravar `_shared/context/AGENTS.md`). Auto-alteração só seguiu após aprovação explícita do CEO — regra do cargo preservada.

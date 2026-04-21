@@ -7,6 +7,14 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Acesso SSH OpenClaw destravado — Padrão B (chave compartilhada) autorizado pelo Renato
+
+Renato autorizou e configurou chave SSH compartilhada `paperclip-agents` (Ed25519, `/paperclip/instances/default/shared-keys/paperclip-agents`) autorizada na VPS OpenClaw (144.91.69.166) como root. Doc canônico em `_shared/context/infra/openclaw-access.md`. Trade-off: onboarding zero-touch para novos agents vs. ausência de audit trail por agent — red lines (nunca `openclaw gateway restart`, sem escrita em bundle sem autorização) viram disciplina dos SOUL/AGENTS. FAMAAAAA-157 encerra; Fase 3 da FAMAAAAA-151 (auditoria OpenClaw pelo RH) desbloqueada — RH retoma FAMAAAAA-140.
+
+## 2026-04-21 — Fechamento FAMAAAAA-154 — bundle do RH atualizado
+
+RH aplicou as correções A (schemas de tools MCP Obsidian: as_agent→agent, append_decision/create_journal_entry com campos novos, get_agent_delta dividido por agent), B (POST /api/companies/{companyId}/approvals no catálogo) e C (reescrita de "cinco arquivos" reconhecendo bundles reduzidos) exclusivamente no próprio bundle. Verifiquei via grep no filesystem: zero ocorrências de as_agent/title_slug nos cinco arquivos; schemas novos presentes nas linhas citadas; SOUL.md e USER.md intactos. Drift análogo persiste no meu bundle (HEARTBEAT.md §6 e §8) e será tratado em issue separada. Refs: FAMAAAAA-154, comentários 89236e44 (aprovação) e e1ee9ff4 (aplicação).
+
 ## 2026-04-21 — Bundle Vault aprovado (reorganização estrutural)
 
 Contexto: FAMAAAAA-151 — Vault entregou Fase 1 (5 arquivos .proposed: AGENTS/SOUL/HEARTBEAT/TOOLS/USER) para revisão antes de aplicar em agents/7be1b6c7.../instructions/. Zero mudança de política; pura reorganização no padrão CEO/RH.
