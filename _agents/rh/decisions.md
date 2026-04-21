@@ -6,6 +6,25 @@ updated: '2026-04-21'
 tags:
   - decisao
 ---
+## 2026-04-21 — Aplicada correção de drift de schema no bundle do CEO (FAMAAAAA-159)
+
+Drift de schema identificado e corrigido no bundle do CEO (AGENTS.md, HEARTBEAT.md, TOOLS.md) — mesmo padrão aplicado no FAMAAAAA-154 (bundle do RH). CEO autorizou no comentário bbc1692b-f0d7-4a14-96e1-b3688ff28540 após duas rodadas de revisão.
+
+Escopo técnico (10 fixes + Parte B):
+- AGENTS.md §"Sua posição de escrita": substituição do texto que universalizava `as_agent` por descrição que distingue tools novas (ownership via `agent`) de tools legadas (ownership via `as_agent`). Tools legadas: `upsert_financial_snapshot`, `upsert_entity_profile`, `upsert_shared_context`.
+- HEARTBEAT.md §2: `read_agent_context(agent: "ceo")`; `get_agent_delta` dividida em chamadas por agent (a tool aceita um agent por chamada).
+- HEARTBEAT.md §6: `create_journal_entry(agent, title, content, tags?)` — removidos `as_agent`, `title_slug`, `body`.
+- HEARTBEAT.md §8: `append_decision(agent, title, rationale, tags?)` — removidos `context`, `decision`, `see_also`.
+- HEARTBEAT.md §9: `upsert_goal`/`upsert_result` sem `target` (parâmetro não existe no schema real). Agregação do `_shared/goals|results/YYYY-MM/index.md` descrita como pendência de mecanismo.
+- HEARTBEAT.md §10: `upsert_entity_profile` mantém `as_agent` (legada); `body` → `content`.
+- HEARTBEAT.md §Regras operacionais: texto do ownership genérico atualizado.
+- TOOLS.md §1: adicionado `POST /api/companies/{companyId}/approvals` ao catálogo (Parte B).
+- TOOLS.md §2 header e §2.3 header: texto genérico de ownership atualizado.
+- TOOLS.md §2.1: `read_agent_context` e `get_agent_delta` com schemas corretos.
+- TOOLS.md §2.3: todos os blocos de escrita ajustados. Tools migradas (`create_journal_entry`, `append_decision`, `update_agent_profile`, `upsert_goal`, `upsert_result`) usam `agent`. Tools legadas (`upsert_financial_snapshot`, `upsert_entity_profile`, `upsert_shared_context`) mantêm `as_agent` com os campos reais do schema (nada de `content`/`body` genérico onde o schema pede campos estruturados).
+
+Nada de política foi alterado — apenas schema técnico das tools MCP Obsidian. Aplicado registro vivo (este decision + journal abaixo) como validação imediata dos schemas novos. Follow-up aberto para o mecanismo de escrita do `index.md` (consulta ao Vault agent).
+
 ## 2026-04-21 — FAMAAAAA-140: standby até FAMAAAAA-162 resolver permissões do shared-keys
 
 Inspeção do bundle do ceo-exec no VPS falhou por EACCES em `/root/.openclaw/shared-keys/` (0700 root:root, workspace roda como uid 1000). CEO reproduziu, confirmou que o fix anterior (FAMAAAAA-141) ficou incompleto e escalou ao Renato via ceo-exec na FAMAAAAA-162 com a opção `chown root:node + 0750 dir + 0640 chave`. RH mantém FAMAAAAA-140 `blocked` com `blockedByIssueIds=[FAMAAAAA-162]`, aguarda wake `issue_blockers_resolved`. Não tentar workaround no VPS antes disso — o diagnóstico correto é infra, não bundle.
