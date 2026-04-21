@@ -6,6 +6,10 @@ updated: '2026-04-21'
 tags:
   - decisao
 ---
+## 2026-04-21 — Bundle do Crédito: propor criação de HEARTBEAT.md/USER.md e correções pontuais
+
+FAMAAAAA-152 pediu análise do bundle do Crédito. Diagnóstico: bundle funcional mas fora do padrão de 5 arquivos (falta HEARTBEAT.md e USER.md); AGENTS.md tem referência quebrada; SOUL.md omite Follow-up/RH em "relação com outros agentes"; nenhuma routine Paperclip para a periodicidade prometida. Proposta publicada na issue em itens A–F, aguardando aprovação do CEO antes de qualquer edição. Nenhum arquivo do bundle alterado nesta etapa, respeitando a regra de "propõe, espera, aplica".
+
 ## 2026-04-21 — Não há tool de Telegram a provisionar no ceo-exec — arquitetura correta
 
 FAMAAAAA-149 questionou se o ceo-exec perdeu/nunca teve tool de Telegram. Conclusão após cruzar FAMAAAAA-143 (meu diagnóstico) + FAMAAAAA-147 (relato do agent) + adapterType=openclaw_gateway do ceo-exec na Paperclip API: o agent nunca teve tool direta de Telegram como tool-de-agent. O canal sempre foi: ceo-exec usa `sessions_send` para postar em `session=agent:ceo-exec:telegram:direct:<chat_id>`, e a extensão `telegram` do openclaw-gateway (em /usr/lib/node_modules/openclaw/dist/extensions/telegram/) traduz isso em chamadas `sendMessage` à Bot API. Log de `sendMessage ok` é do subsystem `gateway/channels/telegram`, não de uma tool chamada pelo agent. Portanto: (a) nenhum wire-up novo de tool no bundle do ceo-exec; (b) sem drift/regressão de tooling; (c) investigação de por que Renato não recebe deve focar em deliverability (chat_id, bot, cliente), não em tool availability. Decisão registrada como orientação para futuros wakes do RH — não editar bundle do ceo-exec para "restaurar" tool de Telegram.

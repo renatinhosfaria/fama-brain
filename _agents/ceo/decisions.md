@@ -7,6 +7,18 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Aprovado normalização do bundle do agente Crédito + routine quinzenal de pesquisa
+
+FAMAAAAA-152: RH diagnosticou bundle incompleto do Crédito (faltam HEARTBEAT.md e USER.md, referência cruzada quebrada no AGENTS.md linha 191, desalinhamento pós-reestruturação abril/2026). Aprovei em bloco A–E (criar HEARTBEAT.md e USER.md no padrão dos demais bundles, corrigir AGENTS.md, atualizar SOUL.md para refletir Follow-up e RH). Sobre F: diretriz de formalizar routine Paperclip quinzenal para pesquisa do Crédito (Selic, MCMV, SFH, F4 CAIXA mudam com frequência — não depender de trigger manual). Concurrency skip, catchUp latest_only, ação: revisar _shared/context/credito-imobiliario/ e publicar delta. Issue reatribuída ao RH em in_progress para executar.
+
+## 2026-04-21 — Renato aprovou atualização do bundle do CEO — pacote completo reatribuído ao RH
+
+Wake `issue_children_completed` em FAMAAAAA-150. ceo-exec (FAMAAAAA-155) entregou resposta integral do Renato via Telegram: "Aprovado. Pode tocar o pacote inteiro dos 9 blocos e reatribuir a FAMAAAAA-150 ao RH para aplicar os diffs, registrar decision + journal e fechar." Reasoning do Renato: ajuste de documentação reflete estrutura já autorizada; risco de aprovar baixo, risco de não aprovar médio (mapa desatualizado). Ação: reatribuí FAMAAAAA-150 ao RH (todo, blockers limpos) com escopo completo dos 9 blocos. Loop de governança fechado — RH propôs, CEO validou, ceo-exec intermediou, Renato aprovou, RH aplica.
+
+## 2026-04-21 — Aprovei reorganização dos bundles Vault e Crédito; escalei SSH OpenClaw ao Renato
+
+FAMAAAAA-151: RH auditou os 9 bundles. Vault só tem AGENTS.md (faltam SOUL/HEARTBEAT/TOOLS/USER); Crédito faltam HEARTBEAT/USER; OpenClaw não inspecionável (SSH negado). Aprovei Fases 1 (Vault) e 2 (Crédito) como pura reorganização estrutural — decisão operacional reversível, sem mudança de policy. Exigi diff no thread antes de aplicar. Fase 3 (OpenClaw) depende de destravar SSH no VPS 144.91.69.166 — criei FAMAAAAA-156 para ceo-exec levar ao Renato, opção 1 (chave pública) preferida por reutilização. RH segue Fase 1+2 em paralelo, não bloqueada pelo SSH.
+
 ## 2026-04-21 — Aprovar proposta do RH de atualização do bundle do CEO — escalado ao Renato
 
 RH (FAMAAAAA-150) auditou meu bundle e detectou drift real: as três contratações pós-reestruturação (Crédito 2026-04-20, Vault e RH 2026-04-21) não aparecem em AGENTS.md/HEARTBEAT.md/SOUL.md/TOOLS.md, embora já estejam no `_shared/context/AGENTS.md` (owner: Renato) e nas minhas decisions. Validei as 3 contratações contra o vault — checam. Aprovei o pacote inteiro de 9 blocos (todos aditivos, reversíveis, sem mudança de escopo/autoridade — apenas documentam o que já foi autorizado). Como é meu próprio bundle, escalei ao Renato via ceo-exec (FAMAAAAA-155) conforme o guardrail do próprio RH e a linha vermelha do meu AGENTS.md. FAMAAAAA-150 marcada como blocked por FAMAAAAA-155 — wake automático quando o Renato aprovar. Próximo passo: reatribuir ao RH para aplicar os 9 diffs.
