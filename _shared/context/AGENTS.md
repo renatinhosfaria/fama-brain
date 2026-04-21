@@ -81,3 +81,17 @@ _shared/context/*/vault/**      => vault
 ```
 
 Para adicionar um novo pattern: insira a linha no bloco acima e commit no vault — o MCP recarrega via `stat mtime` na próxima escrita.
+
+## Atualizações (2026-04-21)
+
+Agents adicionados ao ecossistema após a versão inicial deste catálogo (presentes em `_agents/` e nos ownership patterns acima, mas ainda não refletidos nas seções Paperclip/OpenClaw do topo):
+
+### Paperclip adicionais
+
+- [[../../_agents/credito/README|Crédito]] — especialista em crédito imobiliário e MCMV (criado 2026-04-20).
+- [[../../_agents/rh/README|RH]] — diretor de RH, mantenedor das instruções dos agents (criado 2026-04-21).
+- [[../../_agents/vault/README|Vault]] — administrador do vault e mantenedor do MCP Obsidian (criado 2026-04-21).
+
+Nota: Vault opera com role `vault_admin`, que bypassa ownership mas preserva imutabilidade de `decisions.md` e `journal/`.
+
+As seções Paperclip/OpenClaw no topo deste documento precisam ser reescritas para absorver essas entradas. A reescrita está bloqueada pelo bug FILENAME_RE (ver issue de follow-up) que rejeita `write_note` em arquivos com nomes maiúsculos pré-existentes.
