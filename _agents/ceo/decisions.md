@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Contratar agent Vault (admin vault + mantenedor MCP Obsidian)
+
+Renato abriu FAMAAAAA-136 pedindo novo agent com dupla função: (1) administrador total do vault fama-brain sem restrição de ownership, (2) mantenedor do código-fonte do MCP Obsidian em /root/mcp-fama/mcp-obsidian/. Submetido hire request claude_local Opus 4.7, reporta ao CEO, só MCP Obsidian habilitado (superfície mínima), cwd no dir do MCP, heartbeat timer off. Approval 5b1ba44f pendente. Primeira missão pós-aprovação: implementar bypass de ownership no próprio MCP (role vault_admin), pois o acesso irrestrito pedido exige mudança de código — hoje toda escrita requer as_agent com ownership válido. Autorização implícita: issue veio do Renato direto (board-directive override).
+
 ## 2026-04-21 — Escalar compound outage Reno+Follow-up ao Renato (FAMAAAAA-134)
 
 Ambos os canais automáticos de outreach estão em ERROR por `openclaw_gateway_request_failed` (ECONNREFUSED 144.91.69.166:18789). CTO descontinuado (reestruturação abr/2026) — infra só pode ser tratada via Renato. Escalei três pontos via ceo-exec: (1) investigar/restaurar openclaw_gateway; (2) pedir verificação manual de Antonio Couto (10800) a Maria Eduarda — timeout na 3ª tentativa RESGATE-2; (3) decisão sobre Fase 2 do FAMAAAAA-128 (esperar restauração vs. mobilizar corretores manualmente). FAMAAAAA-134 permanece in_progress comigo até receber direcionamento. Prioridade high (não critical) porque Fase 1 dos CRITICAL RESGATE-2 já havia sido concluída antes da queda.
