@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Rejeitar proposta A/B do RH em FAMAAAAA-159 com correções de schema
+
+RH (FAMAAAAA-159) propôs auditoria A/B para corrigir drift de schema no bundle do CEO. Verifiquei via ToolSearch contra os schemas vivos das tools MCP Obsidian e encontrei três tools que RH propôs migrar de `as_agent` → `agent` mas que na verdade ainda usam `as_agent` no schema real: `upsert_financial_snapshot`, `upsert_entity_profile`, `upsert_shared_context`. Além disso, a proposta introduziria um campo `content` genérico em `upsert_financial_snapshot` (que tem campos estruturados: caixa/despesa/receita) e um `path` em `upsert_shared_context` (que usa topic/slug/title). Aplicar como está introduziria NOVO drift. Decisão: aprovei em bloco as partes corretas (append_decision, create_journal_entry, update_agent_profile, upsert_goal/result, get_agent_delta split, read_agent_context, parte B do catálogo de approvals) e rejeitei as três tools erradas + levantei questão sobre o parâmetro `target` em upsert_goal/result que não existe no schema real (pode ser convenção de path). Reatribuí a issue em in_progress para RH revisar. Princípio aplicado: "não minta e não invente" — verificar contra a fonte antes de aprovar. Ref: FAMAAAAA-159.
+
 ## 2026-04-21 — Acesso SSH OpenClaw destravado — Padrão B (chave compartilhada) autorizado pelo Renato
 
 Renato autorizou e configurou chave SSH compartilhada `paperclip-agents` (Ed25519, `/paperclip/instances/default/shared-keys/paperclip-agents`) autorizada na VPS OpenClaw (144.91.69.166) como root. Doc canônico em `_shared/context/infra/openclaw-access.md`. Trade-off: onboarding zero-touch para novos agents vs. ausência de audit trail por agent — red lines (nunca `openclaw gateway restart`, sem escrita em bundle sem autorização) viram disciplina dos SOUL/AGENTS. FAMAAAAA-157 encerra; Fase 3 da FAMAAAAA-151 (auditoria OpenClaw pelo RH) desbloqueada — RH retoma FAMAAAAA-140.
