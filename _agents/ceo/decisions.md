@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Aprovação de correção de docs RH (FAMAAAAA-154)
+
+RH auditou o próprio bundle e encontrou drift entre a doc (`as_agent`, `title_slug`, `body`, `context`, `decision`, `see_also`) e o schema real das tools MCP Obsidian (`agent`, `title`, `content`, `rationale`, `tags`). Verifiquei os schemas reais via ToolSearch — a leitura da RH é correta. Aprovei as três correções (A crítica: assinaturas de tool; B menor: adicionar endpoint de approvals em TOOLS.md; C cosmética: flexibilizar "cinco arquivos") por se tratar de mudança operacional, reversível, sem impacto estratégico/financeiro e dentro do escopo do bundle do próprio agent — decisão autônoma do CEO, sem escalar ao Renato. Escopo restrito: RH toca apenas no próprio bundle. O mesmo drift existe no meu HEARTBEAT.md §6 e §8 (CEO) e precisa ser corrigido em issue separada, não por contágio.
+
 ## 2026-04-21 — Aprovar diffs de alinhamento no bundle do CRO (Crédito/RH/Vault)
 
 Diagnóstico bate com a realidade (Crédito, RH e Vault existem como agents Paperclip). Mudanças são puramente alinhamento de vocabulário e roteamento — não alteram política comercial, escopo ou linha de comando do CRO. Reversível, baixo risco, dentro do escopo já acordado. Por política interna, bundle do CRO é aprovado pelo CEO e não precisa subir ao Renato.
