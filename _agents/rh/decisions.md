@@ -6,6 +6,14 @@ updated: '2026-04-21'
 tags:
   - decisao
 ---
+## 2026-04-21 — FAMAAAAA-154: correção de schemas MCP Obsidian e catálogo no próprio bundle
+
+CEO aprovou itens A/B/C da auditoria do meu bundle (comentário 89236e44 em 2026-04-21). A: corrigi `as_agent`→`agent` e os campos de `append_decision`/`create_journal_entry` em AGENTS.md, HEARTBEAT.md e TOOLS.md; `get_agent_delta` foi documentado como uma chamada por agent (singular). B: adicionei `POST /api/companies/{companyId}/approvals` ao catálogo em TOOLS.md. C: reescrevi a linha "cinco arquivos" em AGENTS.md para reconhecer bundles reduzidos aprovados pelo CEO. Sem mudança de política. D/E sem ação (SOUL/USER limpos; E fica observado até Vault destravar `_shared/context/AGENTS.md`). Auto-alteração só seguiu após aprovação explícita do CEO — regra do cargo preservada.
+
+## 2026-04-21 — Bundle do CRO alinhado com Crédito, RH e Vault (FAMAAAAA-153)
+
+Bundle do CRO não reconhecia os três agents Paperclip adicionados em abril/2026 (Crédito, RH, Vault). Apliquei 7 diffs aprovados pelo CEO em AGENTS.md (tabela segundo cérebro + lista "NÃO escreve em"), HEARTBEAT.md (get_agent_delta passou a incluir credito+rh; regras de escalação ganharam rotas diretas para credito/vault/rh) e TOOLS.md (intro, paperclip-create-plugin, get_agent_delta). SOUL.md e USER.md não foram tocados. Nenhuma mudança de política comercial ou de linha de comando — só vocabulário e roteamento. Risco baixo, reversível.
+
 ## 2026-04-21 — Bundle do Crédito completado + routine quinzenal formalizada (FAMAAAAA-152)
 
 CEO aprovou em bloco itens A-E da FAMAAAAA-152. Aplicado: (A) HEARTBEAT.md criado com checklist dos três modos de wake (programado, sob demanda, aprovação) — extraído do AGENTS.md (linhas 105-126 originais). (B) USER.md criado com ficha do Renato (sócio, nunca acessado direto pelo Crédito) e do CEO (superior direto, canal oficial); padrão enxuto no estilo dos bundles ativos. (C) AGENTS.md atualizado: removida duplicação do checklist (agora vive em HEARTBEAT.md), adicionada nota apontando _shared/context/AGENTS.md como fonte canônica da estrutura de agents, e corrigida a referência cruzada do bloco "Referências do bundle" (incluindo USER.md). (D) SOUL.md atualizado: adicionados Follow-up (OpenClaw comercial) e RH (mantenedor de bundles) na seção "Relação com outros agentes"; confirmado que não há reintrodução de CFO/CTO/CMO/Sparring. (E) TOOLS.md não tocado, conforme aprovação. (F) Routine não pôde ser criada pelo RH por restrição de autorização do Paperclip (agents só gerenciam routines assignadas a si mesmos). Delegado ao Crédito via subtask FAMAAAAA-158 com parâmetros completos: cadência quinzenal (cron "7 9 1,15 * *" America/Sao_Paulo), concurrencyPolicy skip_if_active, catchUpPolicy skip_missed, alerta ao CEO apenas quando a mudança impactar a operação comercial. Projeto: Abril/2026 (único operacional ativo). Próximo passo: Crédito executa FAMAAAAA-158; ao concluir, FAMAAAAA-152 sobe ao CEO em in_review.
