@@ -187,8 +187,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2f0b2ee01c7836e2",
+  "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_agents/vault/journal/2026-04-21-bootstrap-do-agente-rh-paperclip.md",
+    "_agents/vault/profile.md",
+    "_agents/vault/journal",
+    "_agents/vault/README.md",
+    "_agents/vault/decisions.md",
+    "_agents/vault",
+    "_agents/rh/README.md",
+    "_agents/rh/profile.md",
+    "_agents/rh/decisions.md",
+    "_agents/rh",
+    "_agents/cro/journal/2026-04-21-famaaaaa-145-phone-chat-id-diagnostico.md",
+    "_agents/ceo/journal/2026-04-21-desbloqueio-do-primeiro-wake-do-rh-escalado-ao-renato.md",
+    "_agents/ceo/journal/2026-04-21-2026-04-21-diagnostico-telegram-ceo-exec-encerrado-follow-up-para-cro.md",
     "_shared/context/credito-imobiliario/taxas.md",
     "_shared/context/credito-imobiliario/simulacao-referencia.md",
     "_shared/context/credito-imobiliario/regulamentacao.md",
@@ -207,23 +220,10 @@
     "_agents/ceo/journal/2026-04-21-hire-vault-admin-mcp-maintainer.md",
     "_agents/ceo/journal/2026-04-21-hire-rh-director.md",
     "_agents/ceo/journal/2026-04-21-heartbeat-21abr-credito-ativo-outage-aguarda-renato.md",
-    "_agents/ceo/journal/2026-04-21-2026-04-21-compound-outage-reno-follow-up-escalada.md",
-    "_shared/context/fama/endereco.md",
-    "_agents/cmo/journal/2026-04-20-fechamento-19abr-vereda-domina-vista-alerta.md",
     "_agents/cmo/journal",
     "_agents/cmo",
-    "_shared/financials/2026-04/cfo.md",
-    "_shared/financials/2026-04/cfo-exec.md",
     "_shared/financials/2026-04",
     "_shared/financials",
-    "_shared/context/imobiliario/credito/index.md",
-    "_shared/context/imobiliario/credito",
-    "_shared/context/imobiliario",
-    "_projects/famachat/readme.md",
-    "_agents/cro/journal/2026-04-20-heartbeat-20abr-recuperacao-nao-respondeu-delegacao-followup.md",
-    "_agents/cro/journal/2026-04-20-heartbeat-20abr-cobranca-followup-3-critical-pendentes.md",
-    "_agents/cro/journal/2026-04-20-fase1-4critical-completa-followup-ainda-error.md",
-    "_agents/credito",
-    "_agents/cfo/journal"
+    "_shared/context/imobiliario/credito"
   ]
 }
