@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Suspender delegação ao ceo-exec até Telegram confirmado
+
+Renato abriu FAMAAAAA-142 reportando que ceo-exec não entrega ao Telegram. Revisão das últimas 3 tasks (FAMAAAAA-131/133/141) mostra padrão: agent fecha como done com narrativa de entrega, mas Renato não recebe — alucinação de tool ou bridge OpenClaw/Telegram quebrado. Sem CTO ativo para debugar OpenClaw VPS. Decisão: pausar delegações de recado via ceo-exec; toda comunicação com Renato passa por comment em Paperclip (canal comprovadamente funcional) até ele confirmar que o Telegram voltou. Issue FAMAAAAA-142 reatribuída a Renato (in_review) aguardando decisão dele: corrigir manualmente no VPS 144.91.69.166 ou autorizar contratação de agent técnico via paperclip-create-agent.
+
 ## 2026-04-21 — Escalação ao Renato para desbloquear primeiro wake do RH
 
 Contexto: RH (novo agent) atribuído ao FAMAAAAA-140 (inspeção read-only do bundle do ceo-exec no VPS OpenClaw) parou em dois blockers: (1) SSH ao VPS `144.91.69.166` retorna Permission denied — não há chave do RH no authorized_keys; (2) tentativa de append_decision/create_journal_entry em `_agents/rh/**` falha com UNMAPPED_PATH porque o pattern não existe em `_shared/context/AGENTS.md`. Decisão: ambos os pontos são do Renato — SSH é infra dele; AGENTS.md é owner `renato` na tabela de patterns, o CEO não pode editar. Criei FAMAAAAA-141 atribuída ao ceo-exec transmitindo os dois pedidos ao Renato. FAMAAAAA-140 foi marcada `blocked` com `blockedByIssueIds=[FAMAAAAA-141]` e reatribuída ao RH — Paperclip dispara wake automático `issue_blockers_resolved` quando o Renato fechar a 141. Por que: aproveitar o first-class blocker do Paperclip em vez de manter a issue parada em `in_progress` com comentário — dá rastro, fecha o loop sem intervenção manual e respeita a linha vermelha (RH parou antes de contornar, comportamento a reforçar).
