@@ -74,6 +74,10 @@ _agents/credito/**                => credito
 _shared/context/*/credito/**      => credito
 _shared/goals/*/credito.md        => credito
 _shared/results/*/credito.md      => credito
+_agents/rh/**                => rh
+_shared/context/*/rh/**      => rh
+_agents/vault/**                => vault
+_shared/context/*/vault/**      => vault
 ```
 
 Para adicionar um novo pattern: insira a linha no bloco acima e commit no vault — o MCP recarrega via `stat mtime` na próxima escrita.
