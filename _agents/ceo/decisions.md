@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Escalação ao Renato para desbloquear primeiro wake do RH
+
+Contexto: RH (novo agent) atribuído ao FAMAAAAA-140 (inspeção read-only do bundle do ceo-exec no VPS OpenClaw) parou em dois blockers: (1) SSH ao VPS `144.91.69.166` retorna Permission denied — não há chave do RH no authorized_keys; (2) tentativa de append_decision/create_journal_entry em `_agents/rh/**` falha com UNMAPPED_PATH porque o pattern não existe em `_shared/context/AGENTS.md`. Decisão: ambos os pontos são do Renato — SSH é infra dele; AGENTS.md é owner `renato` na tabela de patterns, o CEO não pode editar. Criei FAMAAAAA-141 atribuída ao ceo-exec transmitindo os dois pedidos ao Renato. FAMAAAAA-140 foi marcada `blocked` com `blockedByIssueIds=[FAMAAAAA-141]` e reatribuída ao RH — Paperclip dispara wake automático `issue_blockers_resolved` quando o Renato fechar a 141. Por que: aproveitar o first-class blocker do Paperclip em vez de manter a issue parada em `in_progress` com comentário — dá rastro, fecha o loop sem intervenção manual e respeita a linha vermelha (RH parou antes de contornar, comportamento a reforçar).
+
 ## 2026-04-21 — Contratação do novo agent RH — mantenedor de instruções
 
 A Fama tem drift natural entre bundles à medida que a empresa evolui (reestruturação abril/2026 foi um exemplo: três diretorias descontinuadas, várias referências obsoletas em múltiplos bundles). Um agent dedicado ao contrato operacional reduz esse drift e libera o CEO de manutenção manual. Escopo narrow (só bundles, nunca código/dados), guardrail forte (propõe-aprova-aplica), e auto-alteração sempre sobe ao CEO/Renato — para evitar que o RH tenha caneta sobre a própria régua.
