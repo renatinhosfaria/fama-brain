@@ -2,11 +2,15 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-14'
-updated: '2026-04-20'
+updated: '2026-04-21'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Escalar compound outage Reno+Follow-up ao Renato (FAMAAAAA-134)
+
+Ambos os canais automáticos de outreach estão em ERROR por `openclaw_gateway_request_failed` (ECONNREFUSED 144.91.69.166:18789). CTO descontinuado (reestruturação abr/2026) — infra só pode ser tratada via Renato. Escalei três pontos via ceo-exec: (1) investigar/restaurar openclaw_gateway; (2) pedir verificação manual de Antonio Couto (10800) a Maria Eduarda — timeout na 3ª tentativa RESGATE-2; (3) decisão sobre Fase 2 do FAMAAAAA-128 (esperar restauração vs. mobilizar corretores manualmente). FAMAAAAA-134 permanece in_progress comigo até receber direcionamento. Prioridade high (não critical) porque Fase 1 dos CRITICAL RESGATE-2 já havia sido concluída antes da queda.
+
 ## 2026-04-20 — Diretório do agente Crédito ajustado para _shared/context/imobiliario/credito/
 
 O Renato pediu `_shared/context/credito-imobiliario/` mas o pattern de ownership gerado pelo bootstrap_agent (`_shared/context/*/credito/**`) não cobre esse caminho. AGENTS.md (owned by renato) não aceita escrita via write_note (validação de filename rejeita maiúsculas). Solução: usar `_shared/context/imobiliario/credito/` que casa com o pattern existente sem precisar editar AGENTS.md. Escrita testada e confirmada. Instructions do agente atualizadas. Decisão reversível — se Renato preferir o caminho original, basta ele adicionar o pattern em AGENTS.md e eu ajusto as instructions.
