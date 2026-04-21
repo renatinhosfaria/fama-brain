@@ -7,6 +7,16 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Fase 1+2 bundle Vault/Crédito aprovada — fluxo de mudança de bundle passa pelo RH
+
+Context: FAMAAAAA-161 (subtask de FAMAAAAA-151 "Docs Vault"). RH (6fdf88a0) aplicou os 5 arquivos .proposed no bundle do Vault (7be1b6c7), com o ajuste obrigatório em AGENTS.md:56 ("combine com o Renato via CEO/ceo-exec") e backup preservado. Ao ir criar HEARTBEAT.md/USER.md do Crédito (c00ed9c6), encontrou os 5 arquivos já existentes — criados entre 21:22 e 21:24Z de 21/Abr/2026, depois do audit do RH e antes da subtask ser aberta. RH pediu decisão: (A) ratificar, (B) revisar ponto a ponto, (C) reescrever.
+
+Decision: Option A — ratificar o bundle do Crédito como está. Conferi HEARTBEAT.md e USER.md: HEARTBEAT traz os dois modos de wake (programado quinzenal + sob demanda), cobre os seis blocos de pesquisa (MCMV/taxas/FGTS/regulamentação/mercado/regionais), tem bloco de aprovação e linhas vermelhas; USER.md posiciona Renato (via ceo-exec), CEO como superior direto, e os consumidores OpenClaw (CRO/FamaAgent/Reno/Follow-up). Está no mesmo padrão do Vault recém-aprovado. Zero valor em reescrever. Issue fechada done. FAMAAAAA-160 (Fase 3 — auditoria OpenClaw) destravada para o RH executar em seguida.
+
+Rationale estrutural: o agent "Vault" é dono do conteúdo do vault (ownership de _agents/vault/ e operações de manutenção), mas o RH é quem cuida de bundles de instruções de agent — conforme AGENTS.md do CEO. Nos comentários de FAMAAAAA-151 eu referi-me ao RH como "Vault" por erro de nome; o rastro (journal + decision) ficou corretamente em _agents/rh/. Não vou duplicar em _agents/vault/ — escrita de bundle = escopo RH, manutenção de vault = escopo Vault. A confusão de nomes não muda o domínio.
+
+See also: journal/2026-04-21-fase-1-2-bundle-vault-credito-aprovada; FAMAAAAA-161; FAMAAAAA-151; FAMAAAAA-160.
+
 ## 2026-04-21 — Escalar permissões de shared-keys ao Renato via ceo-exec
 
 RH diagnosticou que o diretório /paperclip/instances/default/shared-keys/ está 0700 root:root e agents rodam como node (uid 1000) — chave SSH compartilhada inacessível. Fix da FAMAAAAA-141 ficou tecnicamente incompleto. Optei por escalar via ceo-exec (FAMAAAAA-162) pedindo chown root:node + 0750 dir + 0640 key (opção 2 do RH, menor blast radius, mantém root como owner sem escrita ao grupo). FAMAAAAA-140 segue blocked com blockedByIssueIds=[FAMAAAAA-162], reatribuída ao RH para wake automático.

@@ -6,6 +6,18 @@ updated: '2026-04-21'
 tags:
   - decisao
 ---
+## 2026-04-21 — FAMAAAAA-140: standby até FAMAAAAA-162 resolver permissões do shared-keys
+
+Inspeção do bundle do ceo-exec no VPS falhou por EACCES em `/root/.openclaw/shared-keys/` (0700 root:root, workspace roda como uid 1000). CEO reproduziu, confirmou que o fix anterior (FAMAAAAA-141) ficou incompleto e escalou ao Renato via ceo-exec na FAMAAAAA-162 com a opção `chown root:node + 0750 dir + 0640 chave`. RH mantém FAMAAAAA-140 `blocked` com `blockedByIssueIds=[FAMAAAAA-162]`, aguarda wake `issue_blockers_resolved`. Não tentar workaround no VPS antes disso — o diagnóstico correto é infra, não bundle.
+
+## 2026-04-21 — Routine quinzenal de pesquisa de crédito ativa (FAMAAAAA-158)
+
+Subtask FAMAAAAA-158 fechada em `done`. Crédito criou a routine `2d5dfd78-9d92-4183-a734-cfd518c5a792` ("Pesquisa quinzenal — Crédito Imobiliário") com trigger schedule `e026944a...` (cron `7 9 1,15 * *` America/Sao_Paulo, próximo disparo 2026-05-01 09:07 BRT). Policies: `skip_if_active` + `skip_missed`. Duplicata `d9608ae2...` criada por retry foi arquivada por Crédito via PATCH (o DELETE do endpoint de routines não existe). Issue-mãe FAMAAAAA-152 (Docs Credito) já estava `done`. Fluxo confirmou a regra do Paperclip: só o próprio agent cria/gerencia suas routines — qualquer solicitação de routine para outro agent deve ser delegada via subtask assinalada a ele.
+
+## 2026-04-21 — Fase 1 bundle Vault — 5 arquivos aplicados com ajuste L56
+
+Reorganização estrutural do bundle do Vault (agent 7be1b6c7). AGENTS.md antes absorvia inline SOUL/HEARTBEAT/TOOLS/USER — agora vira entrypoint enxuto apontando para os 4 arquivos companheiros. Zero mudança de política: só reorganização do que já estava em AGENTS.md mais preenchimento do USER.md do zero (Renato + CEO). Ajuste obrigatório na L56 do AGENTS.md aplicado conforme exigido pelo CEO em comment-8e13fe55: "combinar com Renato antes do restart em produção" → "combine com o Renato via CEO/ceo-exec", alinhando com a regra de canal único que já aparecia nas linhas vermelhas. Backup AGENTS.md.bak-2026-04-21 preservado. Origem: FAMAAAAA-161 (subtask de FAMAAAAA-151). Aprovações: comment-8e13fe55 + comment-3369bb35 na issue-mãe.
+
 ## 2026-04-21 — Routine de pesquisa de crédito é quinzenal, criada pelo próprio agent Crédito
 
 **Decisão:** A curadoria da base `_shared/context/credito-imobiliario/` roda via routine Paperclip quinzenal (cron `7 9 1,15 * *` America/Sao_Paulo), criada e assignada ao próprio agent Crédito, com `skip_if_active` + `skip_missed`.
