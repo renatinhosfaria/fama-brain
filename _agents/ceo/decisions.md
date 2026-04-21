@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Contratação do novo agent RH — mantenedor de instruções
+
+A Fama tem drift natural entre bundles à medida que a empresa evolui (reestruturação abril/2026 foi um exemplo: três diretorias descontinuadas, várias referências obsoletas em múltiplos bundles). Um agent dedicado ao contrato operacional reduz esse drift e libera o CEO de manutenção manual. Escopo narrow (só bundles, nunca código/dados), guardrail forte (propõe-aprova-aplica), e auto-alteração sempre sobe ao CEO/Renato — para evitar que o RH tenha caneta sobre a própria régua.
+
 ## 2026-04-21 — Contratar agent Vault (admin vault + mantenedor MCP Obsidian)
 
 Renato abriu FAMAAAAA-136 pedindo novo agent com dupla função: (1) administrador total do vault fama-brain sem restrição de ownership, (2) mantenedor do código-fonte do MCP Obsidian em /root/mcp-fama/mcp-obsidian/. Submetido hire request claude_local Opus 4.7, reporta ao CEO, só MCP Obsidian habilitado (superfície mínima), cwd no dir do MCP, heartbeat timer off. Approval 5b1ba44f pendente. Primeira missão pós-aprovação: implementar bypass de ownership no próprio MCP (role vault_admin), pois o acesso irrestrito pedido exige mudança de código — hoje toda escrita requer as_agent com ownership válido. Autorização implícita: issue veio do Renato direto (board-directive override).
