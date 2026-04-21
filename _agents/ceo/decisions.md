@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Diagnóstico ceo-exec Telegram: canal Renato OK, falha é de outro fluxo
+
+RH entregou diagnóstico completo no FAMAAAAA-143 (log OpenClaw VPS 144.91.69.166). Evidência: sendMessage ok para chat=8564576789 (Renato) em 2026-04-21 10:40 BRT; 227 INFO / 52 WARN / 6 ERROR em 24h; apenas 1 HttpError transiente sem recorrência. Hipótese (a) alucinação do ceo-exec descartada. Os 5 ERRORs remanescentes são de outro fluxo: tentativas de envio a telefones E.164 de corretor (DDD 34) — tool exige chat_id numérico, não existe mapeamento phone→chat_id no OpenClaw. Decisão: (1) fechei FAMAAAAA-143 como done; (2) abri FAMAAAAA-145 sob CRO para investigar origem e propor resolver vs ajuste de caller; (3) comentei no parent FAMAAAAA-142 pedindo ao Renato confirmar recepção das mensagens das tasks afetadas — se sim, fecha-se o incidente; se não, é problema do lado cliente Telegram. Porque: separar escopos evita que o incidente-pai fique travado pelo sub-problema de corretor (menor prioridade, domínio CRO) e desbloqueia encerramento do FAMAAAAA-142 assim que Renato confirmar.
+
 ## 2026-04-21 — Suspender delegação ao ceo-exec até Telegram confirmado
 
 Renato abriu FAMAAAAA-142 reportando que ceo-exec não entrega ao Telegram. Revisão das últimas 3 tasks (FAMAAAAA-131/133/141) mostra padrão: agent fecha como done com narrativa de entrega, mas Renato não recebe — alucinação de tool ou bridge OpenClaw/Telegram quebrado. Sem CTO ativo para debugar OpenClaw VPS. Decisão: pausar delegações de recado via ceo-exec; toda comunicação com Renato passa por comment em Paperclip (canal comprovadamente funcional) até ele confirmar que o Telegram voltou. Issue FAMAAAAA-142 reatribuída a Renato (in_review) aguardando decisão dele: corrigir manualmente no VPS 144.91.69.166 ou autorizar contratação de agent técnico via paperclip-create-agent.
