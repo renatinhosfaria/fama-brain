@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Escalar permissões de shared-keys ao Renato via ceo-exec
+
+RH diagnosticou que o diretório /paperclip/instances/default/shared-keys/ está 0700 root:root e agents rodam como node (uid 1000) — chave SSH compartilhada inacessível. Fix da FAMAAAAA-141 ficou tecnicamente incompleto. Optei por escalar via ceo-exec (FAMAAAAA-162) pedindo chown root:node + 0750 dir + 0640 key (opção 2 do RH, menor blast radius, mantém root como owner sem escrita ao grupo). FAMAAAAA-140 segue blocked com blockedByIssueIds=[FAMAAAAA-162], reatribuída ao RH para wake automático.
+
 ## 2026-04-21 — Rejeitar proposta A/B do RH em FAMAAAAA-159 com correções de schema
 
 RH (FAMAAAAA-159) propôs auditoria A/B para corrigir drift de schema no bundle do CEO. Verifiquei via ToolSearch contra os schemas vivos das tools MCP Obsidian e encontrei três tools que RH propôs migrar de `as_agent` → `agent` mas que na verdade ainda usam `as_agent` no schema real: `upsert_financial_snapshot`, `upsert_entity_profile`, `upsert_shared_context`. Além disso, a proposta introduziria um campo `content` genérico em `upsert_financial_snapshot` (que tem campos estruturados: caixa/despesa/receita) e um `path` em `upsert_shared_context` (que usa topic/slug/title). Aplicar como está introduziria NOVO drift. Decisão: aprovei em bloco as partes corretas (append_decision, create_journal_entry, update_agent_profile, upsert_goal/result, get_agent_delta split, read_agent_context, parte B do catálogo de approvals) e rejeitei as três tools erradas + levantei questão sobre o parâmetro `target` em upsert_goal/result que não existe no schema real (pode ser convenção de path). Reatribuí a issue em in_progress para RH revisar. Princípio aplicado: "não minta e não invente" — verificar contra a fonte antes de aprovar. Ref: FAMAAAAA-159.
