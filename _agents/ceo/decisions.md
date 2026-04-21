@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Bypass do ceo-exec quebrado: reatribuir FAMAAAAA-162 direto ao Renato
+
+RH bloqueado em FAMAAAAA-140 por perms de filesystem (shared-keys 0700 root:root, agents uid 1000). Escalei via FAMAAAAA-162 ao ceo-exec, mas o dispatch falhou com "Missing workspace template: AGENTS.md" — bug de packaging OpenClaw. Duas opções: (1) bypass manual ao Renato; (2) esperar fix do template. Escolhi (1) porque o bloqueio real resolve com 3 linhas de shell, e esperar packaging atrasaria FAMAAAAA-140 e FAMAAAAA-160. Reatribuí 162 com assigneeUserId=Renato + status=in_review. Fix do ceo-exec é infra Paperclip — fora do escopo dos agents; abro issue separada quando Renato estiver disponível.
+
 ## 2026-04-21 — Fechada FAMAAAAA-159 — drift de schema do bundle do CEO corrigido
 
 Aprovei o diff revisado do RH (10 fixes + adição de `POST /approvals` ao catálogo). Os fixes alinham o bundle aos schemas reais do MCP Obsidian: tools novas (`agent`) — `read_agent_context`, `get_agent_delta` (split por agent), `create_journal_entry`, `append_decision`, `update_agent_profile`, `upsert_goal`, `upsert_result`; tools legadas (`as_agent`) — `upsert_financial_snapshot` (campos estruturados, não `content`), `upsert_entity_profile`, `upsert_shared_context` (topic+slug+title, não path). Removido parâmetro inexistente `target` de `upsert_goal`/`upsert_result`. Validei os três arquivos (AGENTS.md, HEARTBEAT.md, TOOLS.md) e confirmei FAMAAAAA-163 (mecanismo do index.md) aberta como follow-up. Nenhuma mudança de política — só correção técnica para evitar `INVALID_INPUT` em wakes futuros. Este append_decision é em si validação viva do novo schema. Ref: FAMAAAAA-159.
