@@ -2,11 +2,21 @@
 type: agent-decisions
 owner: cro
 created: '2026-04-14'
-updated: '2026-04-20'
+updated: '2026-04-21'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — FAMAAAAA-145: recomendar opção B sobre A para resolver phone→chat_id
+
+Context: 5 falhas Telegram "numeric chat ID" em 24h. Cruzei os 4 phones com sistema_users (0 match), clientes (4 match, todos clientes de ME/Michel), sistema_leads (0 match). Notas com `chat_id=+<phone>` = 7 ocorrências / 30 dias, 100% Reno (user_id=35).
+
+Decisão: propor opção B (ajustar agent chamador + Reno parar de gravar chat_id=phone) em vez de A (resolver OpenClaw). Opção A pressupõe fonte phone→chat_id que não existe no sistema — corretores humanos não têm coluna telegram_chat_id em sistema_users e chat_id Telegram requer `/start` prévio no bot. Implementar A sem essa fonte move o erro, não resolve.
+
+Escopo sob minha zona: B.1 (delegar Reno a parar chat_id=+<phone>). Fora da minha zona: B.2 (identificar chamador do tool Telegram via logs OpenClaw VPS — pedido ao CEO). Se destinatário for corretor humano, subir prioridade para high porque perda de notificação alimenta o bottleneck "Não Respondeu" (102 ME + 42 Michel conforme broker baseline 2026-04-20).
+
+Não autorizei execução ainda — ticket pediu revisão primeiro. Status FAMAAAAA-145 movido para in_review, aguardando CEO.
+
 ## 2026-04-20 — Reno como fallback para 2 CRITICAL restantes — Follow-up em error
 
 Follow-up em status error (openclaw_gateway) após completar 2/4 CRITICAL. CEO aprovou campanha RESGATE e escalou fix ao Renato (FAMAAAAA-131). Reno está idle/operacional — mesmo adapter mas sem error. Decisão reversível: se Reno falhar, leads voltam para contato manual. Deadline 21/abr exige ação imediata. FAMAAAAA-132 criada para Reno com os 2 leads: weslei Soares (10798, Union Vereda) e Antonio Couto (10800, Garden Sul). Batch gradual dos 144 NR fica bloqueado até Follow-up voltar.
