@@ -7,6 +7,14 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-21 — Bundle Vault aprovado (reorganização estrutural)
+
+Contexto: FAMAAAAA-151 — Vault entregou Fase 1 (5 arquivos .proposed: AGENTS/SOUL/HEARTBEAT/TOOLS/USER) para revisão antes de aplicar em agents/7be1b6c7.../instructions/. Zero mudança de política; pura reorganização no padrão CEO/RH.
+
+Decisão: APROVADO após 1 ajuste menor — AGENTS.md:56 (missão 1 "Deploy") precisa trocar "combinar com Renato antes do restart em produção" por "via CEO/ceo-exec" para consistência com a linha vermelha (AGENTS.md:96) e com TOOLS.md/USER.md. Aprovado também: (a) CEO como aprovador no dia a dia e Renato como aprovador final para infra crítica; (b) uso de vault_admin para atualizar _shared/context/AGENTS.md quando cabível, com journal + append_decision obrigatórios; (c) canal único ceo-exec para todo contato com Renato; (d) Fase 2 (Crédito — HEARTBEAT e USER) pode encadear após a Fase 1.
+
+Rationale: Bundle segue padrão da casa (proposta → review → aplicação), elimina ponteiro quebrado em AGENTS.md→HEARTBEAT.md e distribui peso do AGENTS.md denso entre 5 arquivos menores. Fase 3 (OpenClaw) segue bloqueada pelo SSH no VPS 144.91.69.166; escalarei ao Renato via ceo-exec em paralelo, sem prender o Vault.
+
 ## 2026-04-21 — Aprovação de correção de docs RH (FAMAAAAA-154)
 
 RH auditou o próprio bundle e encontrou drift entre a doc (`as_agent`, `title_slug`, `body`, `context`, `decision`, `see_also`) e o schema real das tools MCP Obsidian (`agent`, `title`, `content`, `rationale`, `tags`). Verifiquei os schemas reais via ToolSearch — a leitura da RH é correta. Aprovei as três correções (A crítica: assinaturas de tool; B menor: adicionar endpoint de approvals em TOOLS.md; C cosmética: flexibilizar "cinco arquivos") por se tratar de mudança operacional, reversível, sem impacto estratégico/financeiro e dentro do escopo do bundle do próprio agent — decisão autônoma do CEO, sem escalar ao Renato. Escopo restrito: RH toca apenas no próprio bundle. O mesmo drift existe no meu HEARTBEAT.md §6 e §8 (CEO) e precisa ser corrigido em issue separada, não por contágio.

@@ -6,6 +6,10 @@ updated: '2026-04-21'
 tags:
   - decisao
 ---
+## 2026-04-21 — Aplicação dos 9 blocos no bundle do CEO (FAMAAAAA-150)
+
+Auditoria do bundle do CEO identificou drift: reestruturação abril/2026 bem refletida, mas as contratações pós-reestruturação (Crédito 2026-04-20, Vault e RH 2026-04-21) não apareciam em nenhum dos 5 arquivos. Renato aprovou o pacote completo via FAMAAAAA-155 (escalação via ceo-exec). Aplicados 9 edits aditivos em AGENTS.md (3), HEARTBEAT.md (4), SOUL.md (1), TOOLS.md (2). USER.md sem alteração. Impacto: CEO passa a puxar deltas dos 4 reports (cro, credito, vault, rh), delegar corretamente para agents de função e agregar goals/results incluindo Crédito no index.md. Todos os diffs são reversíveis. Ver journal 2026-04-21 e issues FAMAAAAA-150, FAMAAAAA-155.
+
 ## 2026-04-21 — FAMAAAAA-154 — proposta de correção do próprio bundle do RH
 
 Auditei meu bundle (AGENTS/SOUL/HEARTBEAT/TOOLS/USER) contra estado atual da Fama e schemas reais das tools MCP Obsidian. Bundle estruturalmente coerente com a reestruturação abril/2026, mas há drifts técnicos nas chamadas MCP: `as_agent` → `agent` em read_agent_context/writes; campos fantasma `context/decision/see_also` em append_decision; `title_slug/body` → `title/content` em create_journal_entry/update_agent_profile; `agents:[...]` plural em get_agent_delta quando a tool aceita um agent só. Proposta publicada na issue em 4 blocos (A crítico MCP, B endpoints approvals em TOOLS.md, C editorial "cinco arquivos" em AGENTS.md, D nada em SOUL/USER, E só observação sobre _shared/context/AGENTS.md). Reatribuí a issue ao CEO para aprovação — auto-alteração do meu bundle exige aprovação. Nenhum arquivo alterado ainda.
