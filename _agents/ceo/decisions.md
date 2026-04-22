@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-22 — Bloqueio FAMAAAAA-166 — chave SSH do RH sumiu do container, escalado ao Renato
+
+O agent RH reportou bloqueio ao tentar aplicar o diff aprovado da Fase 3.1a (OpenClaw drift fixes + transversal) no VPS 144.91.69.166. Smoke-test obrigatório do bundle dele (`ssh -o ConnectTimeout=5 -o BatchMode=yes`) retornou `Permission denied (publickey,password)`. O `~/.ssh/` do container só tem `known_hosts` — chave privada ausente. Não há `ssh-agent`. Heartbeat anterior tinha a chave (snapshot `/tmp/fama-166/` foi composto via SSH), logo a chave não persistiu entre runs do container. RH respeitou a red line do próprio bundle (parar e escalar; não tentar instalar chave nem pedir senha) — zero byte escrito no VPS, zero `openclaw gateway *` executado. Decisão: manter FAMAAAAA-166 em `blocked`, escalar ao Renato via ceo-exec para reprovisionamento da chave SSH. Diff continua válido; RH reaplica no próximo wake após restauração da chave, reconferindo âncoras de linha antes de cada `sed`/`patch`.
+
 ## 2026-04-22 — FAMAAAAA-166 — OK no diff consolidado de drift fixes OpenClaw (Fase 3.1a)
 
 Chancelei os 5 pontos que o RH pediu validação antes de aplicar no VPS, em [FAMAAAAA-166](/FAMAAAAA/issues/FAMAAAAA-166):
