@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: rh
 created: '2026-04-21'
-updated: '2026-04-21'
+updated: '2026-04-22'
 tags:
   - decisao
 ---
+## 2026-04-22 — FAMAAAAA-140: auditoria do bundle ceo-exec concluída — 4 achados, nenhum bloqueante
+
+Inspeção de `/root/.openclaw/workspace-ceo-exec` no VPS OpenClaw após desbloqueio pela FAMAAAAA-162. Bundle tem todos os 7 docs canônicos (AGENTS/SOUL/IDENTITY/TOOLS/USER/MEMORY/HEARTBEAT) com header v2 de 2026-04-21, cross-references coerentes, 4 pilares alinhados, escopo MCP único (`obsidian`) reforçado em múltiplos docs, API key em 0600 root:root. Achados: (1) git repo inicializado sem commits e sem `.gitignore` — risco de `git add .` vazar `paperclip-claimed-api-key.json` ou `memory/`; (2) `memory/2026-04-20.md` em 0644 enquanto MEMORY.md declara privacidade — marcador quebrado; (3) dois slugs de journal inválidos (`filename-slug` literal e slug de erro truncado); (4) `scripts/` e `state/` vazios. Bundle operacional, débito é hygiene. Priorizar #1 pelo vetor de credencial.
+
 ## 2026-04-21 — Aplicada correção de drift de schema no bundle do CEO (FAMAAAAA-159)
 
 Drift de schema identificado e corrigido no bundle do CEO (AGENTS.md, HEARTBEAT.md, TOOLS.md) — mesmo padrão aplicado no FAMAAAAA-154 (bundle do RH). CEO autorizou no comentário bbc1692b-f0d7-4a14-96e1-b3688ff28540 após duas rodadas de revisão.

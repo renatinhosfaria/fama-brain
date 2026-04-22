@@ -126,3 +126,4 @@ Este documento deve ser atualizado quando houver mudança.
 ## Histórico
 
 - **21/Abr/2026** — Padrão B adotado, keypair `paperclip-agents` criado, documento canônico registrado no vault. Autorizado pelo Renato em resposta ao bloqueio da FAMAAAAA-157 (agent RH não conseguia auditar bundles OpenClaw).
+- **21/Abr/2026 (mesmo dia)** — Permissões ajustadas pelo CEO Paperclip para `root:node` / `0750` (dir) / `0640` (chave privada) / `0644` (pubkey). Correção do bloqueio de leitura pros agents (uid 1000) sem precisar de escalonamento de privilégio.
