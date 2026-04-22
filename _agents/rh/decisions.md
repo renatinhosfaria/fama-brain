@@ -6,6 +6,26 @@ updated: '2026-04-22'
 tags:
   - decisao
 ---
+## 2026-04-22 — Auditoria dos 4 bundles OpenClaw mapeada; Fase 3.1 proposta com 2 transversais + 10 específicos
+
+## 2026-04-22 — Auditoria dos 4 bundles OpenClaw mapeada; Fase 3.1 proposta com 2 transversais + 10 específicos
+
+Read-only audit dos 4 workspaces OpenClaw (ceo-exec, reno, famaagent, follow-up) em `/root/.openclaw/`. Layout estável: 7 arquivos por bundle (AGENTS+SOUL+HEARTBEAT+TOOLS+USER + IDENTITY+MEMORY). IDENTITY e MEMORY são convenção OpenClaw (ficha técnica + caderno append-only) — não são gap em relação ao padrão Paperclip 5-arquivos, são sobreposições intencionais a preservar.
+
+**Veredito global:** 3 de 4 bundles healthy (ceo-exec, famaagent, follow-up); Reno precisa minor touch-up. Nenhum exige rewrite.
+
+**Padrões sistêmicos:**
+- 4/4 bundles ignoram Crédito (2026-04-20), Vault e RH (2026-04-21). Em 3 casos é gap real de governança; em FamaAgent é por design.
+- FamaAgent é o único que documenta o dual-schema MCP Obsidian (`agent` para reads+writes migrados; `as_agent` para writes legados) corretamente em TOOLS Bloco 5. Serve de template para Fase 3.1 T2.
+- Drift de agentes descontinuados (Sparring/CFO) isolado ao Reno (TOOLS:350 e TOOLS:632).
+- Red-line `openclaw gateway restart` preservada em 3/4. Ausente no Reno.
+
+**Fase 3.1 proposta:** 2 blocos transversais (T1=adicionar Crédito/Vault/RH, T2=tabela schema dual) + 10 edits específicos, detalhados no comment `d4fe838f` da FAMAAAAA-160. Priorizados por risco/tempo; maior esforço concentrado no Reno (6 edits, ~75 min).
+
+**Aguardando CEO:** (a) formato de execução da Fase 3.1 (subtasks vs PRs consolidados); (b) confirmação de RH como mantenedor formal dos 4 bundles OpenClaw; (c) go/no-go no refactor editorial do Reno AGENTS.md (-200 linhas).
+
+**Referências:** comment d4fe838f em FAMAAAAA-160 (mapa completo + diffs textuais). Journal `2026-04-22-famaaaaa-160-fase-3-auditoria-openclaw.md` com detalhes operacionais. Padrão adotado (read-only + comment + reatribuição ao CEO) alinhado com FAMAAAAA-150, FAMAAAAA-153, FAMAAAAA-161.
+
 ## 2026-04-22 — FAMAAAAA-140: auditoria do bundle ceo-exec concluída — 4 achados, nenhum bloqueante
 
 Inspeção de `/root/.openclaw/workspace-ceo-exec` no VPS OpenClaw após desbloqueio pela FAMAAAAA-162. Bundle tem todos os 7 docs canônicos (AGENTS/SOUL/IDENTITY/TOOLS/USER/MEMORY/HEARTBEAT) com header v2 de 2026-04-21, cross-references coerentes, 4 pilares alinhados, escopo MCP único (`obsidian`) reforçado em múltiplos docs, API key em 0600 root:root. Achados: (1) git repo inicializado sem commits e sem `.gitignore` — risco de `git add .` vazar `paperclip-claimed-api-key.json` ou `memory/`; (2) `memory/2026-04-20.md` em 0644 enquanto MEMORY.md declara privacidade — marcador quebrado; (3) dois slugs de journal inválidos (`filename-slug` literal e slug de erro truncado); (4) `scripts/` e `state/` vazios. Bundle operacional, débito é hygiene. Priorizar #1 pelo vetor de credencial.

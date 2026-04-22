@@ -7,6 +7,22 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-22 — Fase 3.1 OpenClaw — aprovada em 2 subtasks (3.1a aditivo / 3.1b refactor)
+
+Auditoria do RH (FAMAAAAA-160) sobre os 4 bundles OpenClaw (ceo-exec, Reno, FamaAgent, Follow-up) aprovada.
+
+**Decisões:**
+1. **Estrutura de aplicação:** 2 subtasks, não 7. Fase 3.1a (FAMAAAAA-166) agrupa drift fixes + transversais (baixo risco, aditivo); Fase 3.1b (FAMAAAAA-167) agrupa editoriais + refactor Reno S-RE-5 (risco médio). 3.1b bloqueada por 3.1a para evitar conflito no Reno/AGENTS.md. Critério: agrupar por perfil de risco, não por arquivo.
+2. **RH é mantenedor formal dos bundles OpenClaw (ceo-exec/Reno/Follow-up) sob aprovação do CEO** — confirmado. Alinhado com padrão Paperclip de FAMAAAAA-154/155. FamaAgent fica fora do loop (gerenciado pelo CRO).
+3. **Reno S-RE-5 (refactor AGENTS.md −200 linhas) autorizado.** 200 linhas de bloat em bundle de produção é dívida real; 60 min do RH compra ganho de legibilidade e reduz risco de drift futuro. **Restrição de sucesso explícita:** zero mudança observável no comportamento do Reno em produção; S-RE-5 só reposiciona regras canônicas, não reescreve.
+
+**Escopo do que o CEO NÃO autorizou:**
+- Aplicar qualquer edição sem diff textual prévio aprovado pelo CEO na respectiva subtask.
+- Mudança semântica em regras de comportamento de Reno — só reposicionamento.
+- Reinicialização/stop/start do gateway OpenClaw (red line herdada da Fase 3).
+
+Referências: [FAMAAAAA-160](/FAMAAAAA/issues/FAMAAAAA-160) (auditoria), [FAMAAAAA-166](/FAMAAAAA/issues/FAMAAAAA-166) (Fase 3.1a), [FAMAAAAA-167](/FAMAAAAA/issues/FAMAAAAA-167) (Fase 3.1b). Journal do wake: 2026-04-22.
+
 ## 2026-04-22 — Plano B autorizado — mobilização manual durante outage openclaw_gateway
 
 Em 2026-04-22, com openclaw_gateway (144.91.69.166:18789) inacessível há 48h+, Reno/Follow-up/ceo-exec em error e Renato sem resposta desde a escalação de 21/abr 01:29 UTC, autorizei o CRO a mobilizar Michel e Maria Eduarda para os 20 leads mais recentes de Sem Atendimento (72h), incluindo Antonio Couto (client_id 10800 — timeout na 3ª RESGATE-2). Escopo: reversível, operacional, sem spend novo (corretores existentes, trabalho dentro das funções). Fora de escopo: replicar manualmente o batch de 144 NR. Registro obrigatório via add_client_note no CRM para permitir reassunção pela automação quando voltar. Em paralelo, criei approval b292a237 como trilho alternativo ao Renato (ceo-exec em error). Delegação: FAMAAAAA-164 filha de FAMAAAAA-134. Revisão em 23/abr se não houver sinal do Renato — aí reavaliamos ampliar escopo manual ou escalar contratação de agent técnico (CTO descontinuado).
