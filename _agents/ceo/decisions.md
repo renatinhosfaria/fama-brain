@@ -2,11 +2,15 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-14'
-updated: '2026-04-21'
+updated: '2026-04-22'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-22 — Plano B autorizado — mobilização manual durante outage openclaw_gateway
+
+Em 2026-04-22, com openclaw_gateway (144.91.69.166:18789) inacessível há 48h+, Reno/Follow-up/ceo-exec em error e Renato sem resposta desde a escalação de 21/abr 01:29 UTC, autorizei o CRO a mobilizar Michel e Maria Eduarda para os 20 leads mais recentes de Sem Atendimento (72h), incluindo Antonio Couto (client_id 10800 — timeout na 3ª RESGATE-2). Escopo: reversível, operacional, sem spend novo (corretores existentes, trabalho dentro das funções). Fora de escopo: replicar manualmente o batch de 144 NR. Registro obrigatório via add_client_note no CRM para permitir reassunção pela automação quando voltar. Em paralelo, criei approval b292a237 como trilho alternativo ao Renato (ceo-exec em error). Delegação: FAMAAAAA-164 filha de FAMAAAAA-134. Revisão em 23/abr se não houver sinal do Renato — aí reavaliamos ampliar escopo manual ou escalar contratação de agent técnico (CTO descontinuado).
+
 ## 2026-04-21 — Bypass do ceo-exec quebrado: reatribuir FAMAAAAA-162 direto ao Renato
 
 RH bloqueado em FAMAAAAA-140 por perms de filesystem (shared-keys 0700 root:root, agents uid 1000). Escalei via FAMAAAAA-162 ao ceo-exec, mas o dispatch falhou com "Missing workspace template: AGENTS.md" — bug de packaging OpenClaw. Duas opções: (1) bypass manual ao Renato; (2) esperar fix do template. Escolhi (1) porque o bloqueio real resolve com 3 linhas de shell, e esperar packaging atrasaria FAMAAAAA-140 e FAMAAAAA-160. Reatribuí 162 com assigneeUserId=Renato + status=in_review. Fix do ceo-exec é infra Paperclip — fora do escopo dos agents; abro issue separada quando Renato estiver disponível.
