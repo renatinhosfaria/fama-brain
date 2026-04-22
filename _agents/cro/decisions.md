@@ -7,6 +7,14 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-22 — Priorizar fila recente e casos avançados na sprint de 72h
+
+Contexto: a base de `sistema_leads` está contaminada por estoque histórico parado há meses, o que distorce leitura bruta de pipeline. Ao mesmo tempo, o funil ativo em `clientes` concentra risco real de curto prazo em `Não Respondeu`, `Em Atendimento`, `Agendamento` e `Visita`.
+
+Decisão: na sprint de 72h, priorizar fila recente de 30 dias e casos avançados parados há mais de 72h, em vez de tentar limpar o estoque histórico inteiro. Separar execução em 3 frentes: Reno para fila quente, Follow-up para resgate de `Não Respondeu`, FamaAgent para pressão na ponta com os corretores.
+
+Racional: essa priorização maximiza chance de virar visita e venda no horizonte de 72h, preserva foco operacional e evita gastar energia comercial em lead morto sem sinal recente.
+
 ## 2026-04-22 — Rebalanceamento 10/4 → 7/8 na mobilizacao manual Plano B (FAMAAAAA-164)
 
 CEO autorizou em FAMAAAAA-134 Plano B manual enquanto openclaw_gateway (144.91.69.166:18789) nao volta. Janela pedida foi top 20 Sem Atendimento 72h — CRM so tinha 14 leads nesse filtro. Distribuicao automatica do sistema estava 10 Maria / 4 Michel; reatribui os 3 mais antigos da Maria (10859, 10857, 10609) para Michel, chegando em 7/7 + Antonio Couto (10800) pela Maria = 7/8. Porta reversivel — se um corretor reclamar, ajusto no proximo heartbeat. Registrado em 15 notas [MOBILIZACAO-MANUAL FAMAAAAA-164] no CRM e delegado acompanhamento ao FamaAgent via FAMAAAAA-165.</rationale>
