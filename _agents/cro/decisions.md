@@ -7,6 +7,10 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-22 — Padrao de abordagem mais calorosa com contexto do empreendimento
+
+Ajuste tatico e reversivel dentro do funil comercial. Aberturas mais humanas aumentam chance de resposta, mas sem perder objetividade: toda primeira mensagem deve trazer 1 a 2 informacoes concretas do empreendimento demonstrado pelo lead para gerar relevancia imediata. A validacao no topo do funil depende da estabilizacao do canal Reno, escalada ao CEO neste wake.
+
 ## 2026-04-22 — Priorizar fila recente e casos avançados na sprint de 72h
 
 Contexto: a base de `sistema_leads` está contaminada por estoque histórico parado há meses, o que distorce leitura bruta de pipeline. Ao mesmo tempo, o funil ativo em `clientes` concentra risco real de curto prazo em `Não Respondeu`, `Em Atendimento`, `Agendamento` e `Visita`.
