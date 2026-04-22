@@ -2,11 +2,16 @@
 type: agent-decisions
 owner: cro
 created: '2026-04-14'
-updated: '2026-04-21'
+updated: '2026-04-22'
 tags:
   - decisao
   - paperclip
 ---
+## 2026-04-22 — Rebalanceamento 10/4 → 7/8 na mobilizacao manual Plano B (FAMAAAAA-164)
+
+CEO autorizou em FAMAAAAA-134 Plano B manual enquanto openclaw_gateway (144.91.69.166:18789) nao volta. Janela pedida foi top 20 Sem Atendimento 72h — CRM so tinha 14 leads nesse filtro. Distribuicao automatica do sistema estava 10 Maria / 4 Michel; reatribui os 3 mais antigos da Maria (10859, 10857, 10609) para Michel, chegando em 7/7 + Antonio Couto (10800) pela Maria = 7/8. Porta reversivel — se um corretor reclamar, ajusto no proximo heartbeat. Registrado em 15 notas [MOBILIZACAO-MANUAL FAMAAAAA-164] no CRM e delegado acompanhamento ao FamaAgent via FAMAAAAA-165.</rationale>
+<parameter name="tags">["FAMAAAAA-164", "mobilizacao-manual", "compound-outage", "plano-b"]
+
 ## 2026-04-21 — FAMAAAAA-145: recomendar opção B sobre A para resolver phone→chat_id
 
 Context: 5 falhas Telegram "numeric chat ID" em 24h. Cruzei os 4 phones com sistema_users (0 match), clientes (4 match, todos clientes de ME/Michel), sistema_leads (0 match). Notas com `chat_id=+<phone>` = 7 ocorrências / 30 dias, 100% Reno (user_id=35).
