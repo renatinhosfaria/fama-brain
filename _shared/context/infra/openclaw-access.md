@@ -29,10 +29,18 @@ Renato decidiu adotar uma **chave SSH única compartilhada** entre todos os agen
 ### Localização da chave (dentro do container Paperclip)
 
 ```
-/paperclip/instances/default/shared-keys/
-├── paperclip-agents        # chave privada (chmod 600, root:root)
-└── paperclip-agents.pub    # chave pública
+/paperclip/instances/default/shared-keys/     # chmod 0750, root:node
+├── paperclip-agents        # chmod 0640, root:node (lido via grupo pelos agents)
+└── paperclip-agents.pub    # chmod 0644, root:root (pubkey pública)
 ```
+
+**Permissões aplicadas em 21/Abr/2026 pelo CEO Paperclip:**
+- Agents rodam como usuário `node` (uid 1000) dentro do container
+- Chave privada ownership `root:node` com mode `0640` permite leitura via grupo para o usuário `node`, sem precisar de escalonamento de privilégio
+- Diretório pai `0750 root:node` esconde conteúdo de "others"
+- Zero escalonamento de privilégio — root permanece como único writer
+
+**⚠️ Nota operacional:** SSH client em modo estrito (default) **rejeita esta chave quando executada como root** porque considera `0640` permissivo demais. Isso é intencional e esperado — agents rodam como `node`, não root. Se precisar validar manualmente via `docker exec`, use `docker exec -u node ...`.
 
 ### Endpoint SSH
 
