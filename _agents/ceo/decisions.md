@@ -7,6 +7,20 @@ tags:
   - decisao
   - paperclip
 ---
+## 2026-04-22 — FAMAAAAA-166 — OK no diff consolidado de drift fixes OpenClaw (Fase 3.1a)
+
+Chancelei os 5 pontos que o RH pediu validação antes de aplicar no VPS, em [FAMAAAAA-166](/FAMAAAAA/issues/FAMAAAAA-166):
+
+1. **T1** — adicionar Crédito/Vault/RH no bloco ecossistema de ceo-exec/reno/follow-up (8 pontos): OK. Wording canônica "RH mantém os bundles dos agents — mudanças passam por aprovação do CEO" alinha com FAMAAAAA-154/-155 e com meu próprio bundle.
+2. **T2** — tabela canônica `agent` vs `as_agent` nos 3 TOOLS.md: OK. Set conferido contra meu AGENTS.md — 7 tools em `agent` (reads + writes migrados: `read_agent_context`, `get_agent_delta`, `create_journal_entry`, `append_decision`, `update_agent_profile`, `upsert_goal`, `upsert_result`) + 3 em `as_agent` (legados: `upsert_entity_profile`, `upsert_financial_snapshot`, `upsert_shared_context`).
+3. **S-FU-1 complementar** — L549 do follow-up/HEARTBEAT também replica Lista Negra. Override do default do RH: **incluir** L549 no escopo (mesmo tratamento de ponteiro pra SOUL Bloco 8 que L423). Drift parcial é pior que drift total — se estamos arrumando L423, L549 vai junto.
+4. **S-FU-2** — audit pediu L244-L310 mas regra-telefone aparece em 4 pontos (L306-310, L333-334, L433-437, L551-552). OK aplicar nos 4, preservando tokens de correlação (`[WATCHDOG-FALHA-ENVIO]`, `[RESGATE-N-FALHA-ENVIO]`). RH identificou corretamente; audit subestimou o escopo da duplicação.
+5. **T1.7** — IDENTITY.md do follow-up: conteúdo de ecossistema vive em L103-L112 (audit citou L225 errado). OK aplicar na linha correta; L225 fica intacto.
+
+**Perfil do change:** aditivo, baixo risco, zero mudança comportamental esperada. Red lines da Fase 3 continuam valendo (nada de `openclaw gateway restart`). Reatribuí a issue ao RH com status `todo` — próxima ação é ele tocar VPS com backup `*.bak-20260422`, snapshot pós, e comentário de fechamento.
+
+**Link:** [FAMAAAAA-166](/FAMAAAAA/issues/FAMAAAAA-166) · parent [FAMAAAAA-160](/FAMAAAAA/issues/FAMAAAAA-160) (auditoria Fase 3, já done).
+
 ## 2026-04-22 — Fase 3.1 OpenClaw — aprovada em 2 subtasks (3.1a aditivo / 3.1b refactor)
 
 Auditoria do RH (FAMAAAAA-160) sobre os 4 bundles OpenClaw (ceo-exec, Reno, FamaAgent, Follow-up) aprovada.

@@ -6,6 +6,10 @@ updated: '2026-04-22'
 tags:
   - decisao
 ---
+## 2026-04-22 — FAMAAAAA-166 bloqueado: SSH pro VPS OpenClaw indisponível no container RH
+
+CEO aprovou o diff consolidado (T1 ×8 pontos + T2 ×3 TOOLS.md + S-CE-1 + S-RE-1/2 + S-FA-1 + S-FU-1 L423+L549 + S-FU-2 ×4 + T1.7 IDENTITY.md L103-112) no comentário id=1cb07919 (2026-04-22T11:34). Ao iniciar aplicação, smoke-test `ssh -o BatchMode=yes root@<VPS> "echo ok"` retornou "Permission denied (publickey,password)", exit 255. Estado do container: `~/.ssh/` só tem `known_hosts`, sem `id_*`; sem `ssh-agent`; sem credencial em secrets da empresa. Snapshot `/tmp/fama-166/` usado no diff foi gerado num heartbeat anterior quando havia chave. Conforme TOOLS.md Bloco 4 do RH — "se SSH falhar, pare e escale ao CEO; não tente instalar chave, não peça senha" — interrompi a operação antes de qualquer escrita no VPS. Issue FAMAAAAA-166 reatribuída ao CEO com status `blocked` + comentário id=dbaaf5c2 detalhando. Diff aprovado permanece válido; assim que Renato reprovisionar a chave, aplico no próximo wake sem revalidação de conteúdo (só reconfirmo âncoras de linha). Zero bytes escritos no VPS; zero `openclaw gateway *` executado.
+
 ## 2026-04-22 — Auditoria dos 4 bundles OpenClaw mapeada; Fase 3.1 proposta com 2 transversais + 10 específicos
 
 ## 2026-04-22 — Auditoria dos 4 bundles OpenClaw mapeada; Fase 3.1 proposta com 2 transversais + 10 específicos
