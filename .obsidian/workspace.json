@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "70f640468cb51598",
+        "id": "3be14044b4045f0d",
         "type": "tabs",
         "children": [
           {
-            "id": "2f0b2ee01c7836e2",
+            "id": "61c40ea062d1e276",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -189,6 +189,18 @@
   },
   "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "README.md",
+    "_projects/famachat/README.md",
+    "_shared/context/modelo-negocio",
+    "_shared/context/FAMA.md",
+    "_shared/context/AGENTS.md",
+    "_agents/README.md",
+    "_agents/reno/journal/2026-04-22-ataque-72h-lote-1-sistema-leads.md",
+    "_agents/follow-up/journal/2026-04-22-famaaaaa-193-bloqueio-no-ataque-72h.md",
+    "_agents/follow-up/journal/2026-04-22-ataque-72h-lote-1-famaaaaa-193.md",
+    "_agents/cro/journal/2026-04-22-sprint-72h-recuperacao-comercial.md",
+    "_agents/cro/journal/2026-04-22-famaaaaa-196-reaberta-por-comentario-sobre-bundle-do-reno.md",
+    "_agents/cro/journal/2026-04-22-famaaaaa-196-abordagens.md",
     "_shared/context/infra/openclaw-access.md",
     "_shared/context/infra",
     "_agents/rh/journal/2026-04-21-famaaaaa-158-duplicata-de-routine-detectada.md",
@@ -205,17 +217,6 @@
     "_agents/rh/journal/2026-04-21-2026-04-21-famaaaaa-154-bundle-do-rh-corrigido.md",
     "_agents/rh/journal/2026-04-21-2026-04-21-famaaaaa-151-fase-1-diff-vault.md",
     "_agents/rh/journal/2026-04-21-2026-04-21-famaaaaa-140-bloqueada-por-permissoes-no-vps-openclaw.md",
-    "_agents/rh/journal/2026-04-21-2026-04-21-auditoria-bundles-famaaaaa-151.md",
-    "_agents/reno/journal/2026-04-22-healthcheck-mcp-obsidian-2026-04-22-08-59.md",
-    "_agents/ceo/journal/2026-04-22-famaagent-blocked-escopo-do-outage-consolidado.md",
-    "_agents/ceo/journal/2026-04-22-famaaaaa-160-fase-3-openclaw-fechada-fase-3-1-aberta-em-2-subtasks.md",
-    "_agents/ceo/journal/2026-04-21-wake-fechamento-de-famaaaaa-159-drift-de-schema-do-bundle.md",
-    "_agents/ceo/journal/2026-04-21-wake-famaaaaa-140-perms-shared-keys.md",
-    "_agents/ceo/journal/2026-04-21-wake-2026-04-21-famaaaaa-159-revisao-proposta-rh.md",
-    "_agents/ceo/journal/2026-04-21-review-bundle-vault-fase1.md",
-    "_agents/ceo/journal/2026-04-21-renato-aprovou-bundle-update-do-ceo-handover-ao-rh.md",
-    "_agents/ceo/journal/2026-04-21-fase-1-2-bundle-vault-credito-aprovada.md",
-    "_agents/ceo/journal/2026-04-21-famaaaaa-154-fechada-bundle-do-rh-corrigido.md",
     "_agents/rh/journal",
     "_agents/vault/journal",
     "_agents/vault",
@@ -223,7 +224,6 @@
     "_shared/context/credito-imobiliario",
     "_agents/credito/journal",
     "_agents/cmo/journal",
-    "_agents/cmo",
-    "_shared/financials/2026-04"
+    "_agents/cmo"
   ]
 }
