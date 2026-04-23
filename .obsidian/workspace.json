@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3be14044b4045f0d",
+        "id": "787f6886c0abf969",
         "type": "tabs",
         "children": [
           {
-            "id": "61c40ea062d1e276",
+            "id": "3eb342303acce8b4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -187,8 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da656e45e2b2d374",
+  "active": "3eb342303acce8b4",
   "lastOpenFiles": [
+    "_shared/context/modelo-negocio/metodologia-negocio.md",
+    "metodologia-negocio.md",
     "README.md",
     "_projects/famachat/README.md",
     "_shared/context/modelo-negocio",
@@ -215,8 +217,6 @@
     "_agents/rh/journal/2026-04-21-bundle-credito-completado-e-routine-quinzenal.md",
     "_agents/rh/journal/2026-04-21-aplicados-9-blocos-no-bundle-do-ceo.md",
     "_agents/rh/journal/2026-04-21-2026-04-21-famaaaaa-154-bundle-do-rh-corrigido.md",
-    "_agents/rh/journal/2026-04-21-2026-04-21-famaaaaa-151-fase-1-diff-vault.md",
-    "_agents/rh/journal/2026-04-21-2026-04-21-famaaaaa-140-bloqueada-por-permissoes-no-vps-openclaw.md",
     "_agents/rh/journal",
     "_agents/vault/journal",
     "_agents/vault",
