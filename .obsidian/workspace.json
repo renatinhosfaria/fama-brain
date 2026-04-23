@@ -11,10 +11,14 @@
             "id": "3eb342303acce8b4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_shared/context/fama/pessoas.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "pessoas"
             }
           }
         ]
@@ -189,14 +193,16 @@
   },
   "active": "3eb342303acce8b4",
   "lastOpenFiles": [
-    "_shared/context/modelo-negocio/metodologia-negocio.md",
-    "metodologia-negocio.md",
+    "_shared/context/fama/historia.md",
+    "_shared/context/fama/endereco.md",
+    "_agents/README.md",
     "README.md",
-    "_projects/famachat/README.md",
-    "_shared/context/modelo-negocio",
     "_shared/context/FAMA.md",
     "_shared/context/AGENTS.md",
-    "_agents/README.md",
+    "_shared/context/modelo-negocio/metodologia-negocio.md",
+    "metodologia-negocio.md",
+    "_projects/famachat/README.md",
+    "_shared/context/modelo-negocio",
     "_agents/reno/journal/2026-04-22-ataque-72h-lote-1-sistema-leads.md",
     "_agents/follow-up/journal/2026-04-22-famaaaaa-193-bloqueio-no-ataque-72h.md",
     "_agents/follow-up/journal/2026-04-22-ataque-72h-lote-1-famaaaaa-193.md",
@@ -215,8 +221,6 @@
     "_agents/rh/journal/2026-04-21-cro-bundle-aplicacao.md",
     "_agents/rh/journal/2026-04-21-correcao-de-drift-de-schema-no-bundle-do-ceo.md",
     "_agents/rh/journal/2026-04-21-bundle-credito-completado-e-routine-quinzenal.md",
-    "_agents/rh/journal/2026-04-21-aplicados-9-blocos-no-bundle-do-ceo.md",
-    "_agents/rh/journal/2026-04-21-2026-04-21-famaaaaa-154-bundle-do-rh-corrigido.md",
     "_agents/rh/journal",
     "_agents/vault/journal",
     "_agents/vault",
