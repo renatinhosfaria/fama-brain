@@ -103,7 +103,7 @@ Commits do MCP têm prefixo `[mcp-obsidian]`. Commits automáticos do cron segue
 
 ## Como um agente se conecta
 
-1. **Obter o API_KEY** — guardado como secret `mcp_obsidian_api_key` no Docker Swarm da VPS MCP-host. Cópias operacionais em 1Password / env local do agente.
+1. **Obter o API_KEY** — guardado no arquivo `/root/mcp-fama/mcp-obsidian/.env` da VPS MCP-host, montado no container como `/app/.env`. Cópias operacionais em 1Password / env local do agente.
 2. **Configurar o cliente MCP** apontando para `https://mcp-obsidian.famachat.com.br/mcp` com o Bearer token.
 3. **Identificar-se** em cada tool de escrita via argumento `as_agent` — valor deve casar com um dos agentes registrados em [`AGENTS.md`](../_shared/context/AGENTS.md) (`ceo`, `cfo`, `cmo`, `cro`, `cto`, `ceo-exec`, `cfo-exec`, `famaagent`, `follow-up`, `reno`, `sparring`).
 
