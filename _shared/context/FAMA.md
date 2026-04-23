@@ -21,7 +21,3 @@ Atende especialmente **o comprador de primeiro imóvel dependente de financiamen
 - [[fama/produtos]]
 - [[fama/stack]]
 - [[fama/pessoas]]
-
-## Mapa de agentes
-
-- [[AGENTS]] — ecossistema Paperclip + OpenClaw
