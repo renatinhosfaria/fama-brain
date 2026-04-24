@@ -8,3 +8,10 @@ tags: [moc, agents]
 # _agents
 
 Memória de longo prazo individual de cada agente do ecossistema.
+
+## Paperclip (diretoria)
+
+
+## OpenClaw (operacional)
+
+- [[reno-test/README|reno-test]]
