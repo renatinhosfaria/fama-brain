@@ -12,4 +12,5 @@ _agents/README.md                  => renato
 _agents/reno-test/**                => reno-test
 _shared/context/*/reno-test/**      => reno-test
 _agents/reno/**                     => reno
+_shared/context/*/reno/**      => reno
 ```
