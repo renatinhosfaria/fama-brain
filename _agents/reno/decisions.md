@@ -6,6 +6,10 @@ updated: '2026-04-24'
 tags:
   - decisao
 ---
+## 2026-04-24 — Conteúdo do Reno deve ficar exclusivamente em _agents/reno
+
+Renato definiu que tudo que for do Reno no vault deve ser salvo apenas no caminho `_agents/reno/`. A partir desta decisão, notas, journals, decisões, registros operacionais, perfis e contexto proprietário do Reno não devem ser criados fora do diretório do agente. Quando houver informação mista, a versão operacional do Reno deve permanecer dentro de `_agents/reno/`; áreas compartilhadas só devem receber contexto realmente compartilhado e não proprietário do Reno.
+
 ## 2026-04-24 — Disparo controlado do backlog Sem Atendimento com registro CRM e Vault
 
 Renato autorizou processar clientes vinculados ao Reno em status Sem Atendimento com cadência mínima de 3 minutos, um cliente por execução. A rotina foi configurada para validar elegibilidade no CRM antes do envio, mandar mensagem inicial curta via WhatsApp, registrar nota no CRM, alterar status para Não Respondeu após sucesso e registrar cada interação no vault Obsidian. Casos com contato real anterior, autolead/origem interna, ausência de WhatsApp válido ou correspondência com usuário interno devem ser suprimidos.

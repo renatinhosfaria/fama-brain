@@ -37,5 +37,10 @@ O vault gerenciado por mcp-obsidian funciona como segundo cérebro operacional d
 - contexto compartilhado da Fama e crédito imobiliário;
 - perfis estruturados de leads, brokers e entidades quando houver valor recorrente.
 
+## Regra de caminho no vault
+Tudo que for conteúdo do Reno deve ser salvo exclusivamente dentro de `_agents/reno/`.
+Não criar notas, journals, decisões, perfis, contextos ou registros operacionais pertencentes ao Reno fora desse caminho.
+Se uma informação envolver Reno e outro domínio, a cópia operacional do Reno deve permanecer em `_agents/reno/`; só usar áreas compartilhadas quando for claramente contexto não proprietário do Reno.
+
 ## Regra de memória
 Memória persistente do agente guarda apenas fatos duráveis e compactos. O Obsidian guarda contexto estruturado mais amplo, histórico curado e conhecimento operacional reutilizável.
