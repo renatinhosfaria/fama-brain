@@ -53,7 +53,7 @@ A VPS MCP-host roda dois processos complementares:
 2. `git pull --rebase --autostash origin main`.
 3. Se houver mudanças locais não commitadas, commita com mensagem `vault backup (<hostname>): <timestamp>`.
 4. `git push origin main`.
-5. Usa `flock` em `/tmp/brain-sync.lock` — compartilhado com o container do MCP via volume Docker, para não sobrepor com escritas do `commit_and_push` tool.
+5. Usa `flock` em `/tmp/brain-sync.lock` — única instância roda por vez, evitando que duas execuções do cron sobreponham um pull/commit/push em andamento.
 
 **Logs:** `/var/log/brain-sync.log`.
 
@@ -67,7 +67,7 @@ Este procedimento **só é rodado em uma VPS** — a que hospeda o container MCP
 - `gh` (GitHub CLI) autenticado (`gh auth status`)
 - `cron` ativo (`systemctl is-active cron`)
 - Conexão com `github.com`
-- Docker Swarm com o container `mcp-obsidian` deployado (para compartilhar o lockfile)
+- Docker Swarm com o container `mcp-obsidian` deployado
 
 #### 2. Clonar o vault
 
@@ -91,24 +91,17 @@ Este procedimento **só é rodado em uma VPS** — a que hospeda o container MCP
     sudo touch /var/log/brain-sync.log
     sudo chmod 644 /var/log/brain-sync.log
 
-#### 6. Criar o lockfile compartilhado
-
-    touch /tmp/brain-sync.lock
-    chmod 666 /tmp/brain-sync.lock
-
-(O `docker-compose.yml` do MCP monta `/tmp/brain-sync.lock` do host no container — garantir que exista antes de subir o stack.)
-
-#### 7. Testar o script manualmente
+#### 6. Testar o script manualmente
 
     /usr/local/bin/brain-sync
 
 Deve mostrar `Already up to date` e terminar sem erros.
 
-#### 8. Adicionar ao crontab do root
+#### 7. Adicionar ao crontab do root
 
     (crontab -l 2>/dev/null; echo "*/5 * * * * /usr/local/bin/brain-sync >> /var/log/brain-sync.log 2>&1") | crontab -
 
-#### 9. Validar execução automática
+#### 8. Validar execução automática
 
 Aguardar o próximo múltiplo de 5 minutos e verificar:
 

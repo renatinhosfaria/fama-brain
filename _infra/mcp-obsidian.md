@@ -24,7 +24,6 @@ Referência canônica da integração entre o vault `fama-brain` e o **servidor 
     │  - porta 3201 (interna)                       │
     │  - Traefik: mcp-obsidian.famachat.com.br      │
     │  - monta /root/fama-brain em /vault           │
-    │  - compartilha /tmp/brain-sync.lock com cron  │
     └────────────┬──────────────────────────────────┘
                  │ HTTPS + Bearer token
                  ▼
@@ -53,7 +52,7 @@ Teste rápido:
 
 ## Contrato de ferramentas
 
-34 tools + 2 resources, cobrindo CRUD, workflows de agente (journal, decisions, profile, goals, results), pattern Lead (reno), pattern Broker (famaagent), shared-context cross-agent, financial snapshots (cfo/ceo-exec), executive views de broker (ceo-exec) e git commit/push.
+35 tools + 2 resources, cobrindo CRUD, workflows de agente (journal, decisions, profile, goals, results), pattern Lead (reno), pattern Broker (famaagent), shared-context cross-agent, financial snapshots, executive views de broker, admin (`bootstrap_agent`, `delete_path`) e leitura de status git.
 
 Lista completa, argumentos, tipos de retorno e códigos de erro: ver [`README.md` do repo mcp-obsidian](https://github.com/renatinhosfaria/mcp-fama) e a spec em `docs/superpowers/specs/2026-04-15-mcp-obsidian-design.md`.
 
