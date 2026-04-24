@@ -189,6 +189,8 @@
   },
   "active": "0650490a31865e3a",
   "lastOpenFiles": [
+    "_shared/context/reno/reno/second-brain-recording-templates.md",
+    "_shared/context/reno/reno/second-brain-recording-playbooks.md",
     "_shared/context/reno/reno/second-brain-writing-policy.md",
     "_shared/context/reno/reno/second-brain-taxonomy.md",
     "_agents/reno/journal/2026-04-24-second-brain-writing-policy.md",
@@ -215,8 +217,6 @@
     "_agents/reno-test/journal/2026-04-24-e2e-rollup-a-d158b5.md",
     "_agents/reno-test/journal/2026-04-24-e2e-rollup-a-c230ae.md",
     "_agents/reno-test/journal/2026-04-24-e2e-rollup-a-32ad2d.md",
-    "_agents/reno-test/lead/5500900000456.md",
-    "_agents/reno-test/decisions.md",
     "_agents/reno-test/lead",
     "_agents/reno-test/journal",
     "_agents/reno/journal",
