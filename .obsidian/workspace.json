@@ -189,6 +189,13 @@
   },
   "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_agents/reno/lead/marcos-caetano.md",
+    "_agents/reno/context/second-brain-governance.md",
+    "_agents/reno/context/operacao-crm-webhook.md",
+    "_agents/reno/context/playbook-atendimento.md",
+    "_agents/reno/context/fama-produtos.md",
+    "_agents/reno/context/credito-imobiliario.md",
+    "_agents/reno/context",
     "_agents/reno/lead/ivens-paiva.md",
     "_agents/reno/lead/ana-clara-marques.md",
     "_agents/reno/lead",
@@ -212,18 +219,11 @@
     "_shared/context/reno/reno/second-brain-governance-and-maintenance.md",
     "_shared/context/reno/reno/workflow-to-mcp-obsidian-tool-mapping.md",
     "_agents/reno/journal/2026-04-24-workflow-to-mcp-obsidian-tool-mapping.md",
-    "_shared/context/reno/reno/workflow-operacional-integrado.md",
-    "_agents/reno/journal/2026-04-24-workflow-operacional-integrado.md",
-    "_shared/context/reno/reno/second-brain-recording-templates.md",
-    "_shared/context/reno/reno/second-brain-recording-playbooks.md",
-    "_shared/context/reno/reno/second-brain-writing-policy.md",
-    "_shared/context/reno/reno/second-brain-taxonomy.md",
     "_shared/context/reno/reno",
     "_shared/context/reno",
     "_agents/reno-test/lead",
     "_agents/reno-test/journal",
     "_agents/reno/journal",
-    "_agents/reno",
-    "_agents/reno-test"
+    "_agents/reno"
   ]
 }
