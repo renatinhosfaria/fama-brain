@@ -189,6 +189,11 @@
   },
   "active": "fb9998d7a82295ba",
   "lastOpenFiles": [
+    "_agents/reno-test/lead/5500900000099.md",
+    "_agents/reno-test/lead",
+    "_agents/reno-test/journal/2026-04-24-integration-test.md",
+    "_agents/reno-test/journal/2026-04-24-immut.md",
+    "_agents/reno-test/journal",
     "_agents/reno/journal/2026-04-24-bootstrap-sanity.md",
     "_agents/reno/journal",
     "_agents/reno",
@@ -217,13 +222,8 @@
     "_shared/context/infra/openclaw-access.md",
     "_shared/context/infra",
     "_agents/rh/journal/2026-04-21-famaaaaa-158-duplicata-de-routine-detectada.md",
-    "_agents/rh/journal/2026-04-21-famaaaaa-154-auditoria-do-bundle-do-rh.md",
-    "_agents/rh/journal/2026-04-21-famaaaaa-153-diagnostico-bundle-cro.md",
-    "_agents/rh/journal/2026-04-21-famaaaaa-152-diagnostico-do-bundle-do-credito.md",
     "_agents/rh/journal",
     "_agents/vault/journal",
-    "_agents/vault",
-    "_agents/rh",
-    "_shared/context/credito-imobiliario"
+    "_agents/vault"
   ]
 }
