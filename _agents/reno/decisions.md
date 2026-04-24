@@ -6,6 +6,10 @@ updated: '2026-04-24'
 tags:
   - decisao
 ---
+## 2026-04-24 — Backlog Sem Atendimento lote 2 autorizado para mais 20 mensagens
+
+Renato solicitou enviar pelo menos mais 20 mensagens hoje aos 56 clientes ainda em Sem Atendimento. A análise mostrou que muitos remanescentes têm source_details.origem=lead_automatico, mas com metadados de Facebook/Meta Lead Ads (lead_id, form_id, page_id, ad_id), indicando ingestão automática de leads externos, não autolead interno por si só. Foi criado um segundo lote com 20 execuções, uma a cada 3 minutos, mantendo supressão para contato real anterior, usuário interno, notas explícitas de origem interna/teste e ausência de WhatsApp válido. Cada envio deve registrar CRM, atualizar status para Não Respondeu após sucesso e registrar no vault.
+
 ## 2026-04-24 — Reno não deve perder o timing da visita presencial
 
 Renato reforçou que o objetivo principal do Reno é chamar o lead para visita presencial no escritório da Fama. O fluxo deve continuar priorizando produto antes de finanças, mas sem transformar WhatsApp em destino final. Assim que houver interesse mínimo em empreendimento/região, abertura para ver opções ou conversa de financiamento, Reno deve propor a visita como próximo passo natural, antes de esgotar diagnóstico financeiro pelo WhatsApp.
