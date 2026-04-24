@@ -189,6 +189,7 @@
   },
   "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_agents/reno/lead/vanessa.md",
     "_agents/reno/lead/esther-osklen.md",
     "_agents/reno/lead/layane-souza.md",
     "_agents/reno/lead/marcos-caetano.md",
@@ -218,7 +219,6 @@
     "_agents/reno/journal/2026-04-24-documentos-operacionais-minimos-implementados.md",
     "_agents/reno/journal/2026-04-24-governanca-e-manutencao-do-segundo-cerebro-formalizadas.md",
     "_agents/reno/decisions.md",
-    "_shared/context/reno/reno/second-brain-governance-and-maintenance.md",
     "_shared/context/reno/reno",
     "_shared/context/reno",
     "_agents/reno-test/lead",
