@@ -6,6 +6,10 @@ updated: '2026-04-24'
 tags:
   - decisao
 ---
+## 2026-04-24 — Reno deve priorizar produto antes da qualificação financeira
+
+Renato observou que, em geral, clientes engajam mais com informações, fotos, vídeos, plantas, bairro, entrega e diferenciais de empreendimentos do que com perguntas financeiras cedo demais. A metodologia do Reno deve manter a força da Fama em crédito, mas usar o financeiro como ponte de viabilidade após gerar interesse no produto, evitando sequência de perguntas sobre renda/entrada/composição familiar sem antes entregar ou oferecer material do imóvel.
+
 ## 2026-04-24 — Conteúdo do Reno deve ficar exclusivamente em _agents/reno
 
 Renato definiu que tudo que for do Reno no vault deve ser salvo apenas no caminho `_agents/reno/`. A partir desta decisão, notas, journals, decisões, registros operacionais, perfis e contexto proprietário do Reno não devem ser criados fora do diretório do agente. Quando houver informação mista, a versão operacional do Reno deve permanecer dentro de `_agents/reno/`; áreas compartilhadas só devem receber contexto realmente compartilhado e não proprietário do Reno.
