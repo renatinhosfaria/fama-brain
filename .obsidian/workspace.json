@@ -187,8 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0650490a31865e3a",
+  "active": "da656e45e2b2d374",
   "lastOpenFiles": [
+    "_agents/reno/lead/ana-clara-marques.md",
+    "_agents/reno/lead",
     "_shared/context/reno/reno/tom-whatsapp.md",
     "_shared/context/reno/reno/politica-leads-internos-testes.md",
     "_shared/context/reno/reno/playbook-objecoes.md",
@@ -216,14 +218,12 @@
     "_shared/context/reno/reno/second-brain-writing-policy.md",
     "_shared/context/reno/reno/second-brain-taxonomy.md",
     "_agents/reno/journal/2026-04-24-second-brain-writing-policy.md",
-    "_shared/context/reno/reno/second-brain-final-architecture.md",
     "_shared/context/reno/reno",
     "_shared/context/reno",
     "_agents/reno-test/lead",
     "_agents/reno-test/journal",
     "_agents/reno/journal",
     "_agents/reno",
-    "_agents/reno-test",
-    "_shared/context/modelo-negocio"
+    "_agents/reno-test"
   ]
 }
