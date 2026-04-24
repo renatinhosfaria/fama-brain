@@ -189,6 +189,11 @@
   },
   "active": "0650490a31865e3a",
   "lastOpenFiles": [
+    "_shared/context/reno/reno/second-brain-operating-model.md",
+    "_shared/context/reno/reno",
+    "_shared/context/reno",
+    "_agents/reno/profile.md",
+    "_agents/reno/README.md",
     "_agents/reno-test/lead/5500900000099.md",
     "_agents/reno-test/journal/2026-04-24-integration-test-6e969917.md",
     "_agents/reno-test/journal/2026-04-24-immut-35df5a36.md",
@@ -212,9 +217,6 @@
     "_agents/reno/journal/2026-04-24-bootstrap-sanity.md",
     "_agents/reno-test/journal/2026-04-24-rollup.md",
     "_agents/reno-test/journal/2026-04-24-integration-test-c458ccc9.md",
-    "_agents/reno-test/journal/2026-04-24-integration-test-4f6d14a6.md",
-    "_agents/reno-test/journal/2026-04-24-integration-test-0e29c5a9.md",
-    "_agents/reno-test/journal/2026-04-24-immut-90078281.md",
     "_agents/reno-test/lead",
     "_agents/reno-test/journal",
     "_agents/reno/journal",
@@ -222,8 +224,6 @@
     "_agents/reno-test",
     "_shared/context/modelo-negocio",
     "_shared/context/infra",
-    "_agents/rh/journal",
-    "_agents/vault/journal",
-    "_agents/vault"
+    "_agents/rh/journal"
   ]
 }
