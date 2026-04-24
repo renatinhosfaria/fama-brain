@@ -6,6 +6,10 @@ updated: '2026-04-24'
 tags:
   - decisao
 ---
+## 2026-04-24 — Disparo controlado do backlog Sem Atendimento com registro CRM e Vault
+
+Renato autorizou processar clientes vinculados ao Reno em status Sem Atendimento com cadência mínima de 3 minutos, um cliente por execução. A rotina foi configurada para validar elegibilidade no CRM antes do envio, mandar mensagem inicial curta via WhatsApp, registrar nota no CRM, alterar status para Não Respondeu após sucesso e registrar cada interação no vault Obsidian. Casos com contato real anterior, autolead/origem interna, ausência de WhatsApp válido ou correspondência com usuário interno devem ser suprimidos.
+
 ## 2026-04-24 — Documentos operacionais mínimos do Reno foram formalizados no segundo cérebro
 
 Foram criados documentos de elegibilidade, contrato CRM/webhook, supressão, atendimento, WhatsApp, objeções, visita, handoff, crédito e contexto Fama. A partir deles, o Reno deve tratar esses documentos como a base curada de consulta para primeiro atendimento, mantendo CRM como fonte de verdade operacional e usando Obsidian apenas como contexto estruturado.

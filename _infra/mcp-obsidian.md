@@ -64,7 +64,8 @@ Categorias:
 | Workflows genéricos | 18 | journal, decisions, profile, goals, results, deltas cross-agent, financial, broker-exec, shared-context, entity-profile, search_by_tag/type, backlinks |
 | Lead (reno) | 3 | `upsert_lead_timeline`, `append_lead_interaction`, `read_lead_history` |
 | Broker (famaagent) | 3 | `upsert_broker_profile`, `append_broker_interaction`, `read_broker_history` |
-| Git | 2 | `commit_and_push`, `git_status` |
+| Git | 1 | `git_status` (read-only — escrita Git é responsabilidade do cron `brain-sync.sh`) |
+| Admin | 2 | `bootstrap_agent`, `delete_path` (acesso restrito a `as_agent: vault_admin`) |
 
 Resources: `obsidian://vault` (stats) e `obsidian://agents` (ownership map).
 
@@ -89,16 +90,19 @@ Além de ownership, o MCP aplica:
 
 Códigos de erro completos: seção Troubleshooting do README do mcp-obsidian.
 
-## Git: coordenação com `brain-sync.sh`
+## Git: o cron é o único caminho de escrita
 
-Dois processos escrevem no repo Git da VPS:
+O MCP **não commita nem faz push**. Ele apenas grava arquivos no filesystem montado em `/vault`. A propagação para o GitHub é responsabilidade exclusiva do cron `brain-sync.sh`, que roda a cada 5 minutos:
 
-1. O MCP, quando o agente chama `commit_and_push`.
-2. O cron `brain-sync.sh`, a cada 5 minutos, trazendo mudanças do GitHub (Windows) e commitando qualquer coisa que tenha sido deixada sem commit.
+1. `git pull --rebase --autostash origin main` — traz edições feitas no Windows (Obsidian).
+2. Se houver mudanças não-commitadas (escritas do MCP que ainda não viraram commit), commita com `auto: sync <hostname> <timestamp>`.
+3. `git push origin main`.
 
-Para evitar race condition, ambos usam o mesmo lockfile **`/tmp/brain-sync.lock`** via `flock`. Docker monta o lockfile do host no container (ver `docker-compose.yml`). Quem chegar primeiro segura o lock; o outro espera ou retorna `GIT_LOCK_BUSY` após timeout curto (retry 3-10s geralmente resolve).
+**Latência:** uma escrita do MCP fica visível no GitHub em até 5 min (próximo ciclo do cron). Para inspecionar o estado do repo entre ciclos, agentes usam a tool read-only `git_status`.
 
-Commits do MCP têm prefixo `[mcp-obsidian]`. Commits automáticos do cron seguem `vault backup (<hostname>): <timestamp>`. Edições manuais pelo Renato no Windows devem usar mensagens descritivas para se diferenciar dos dois.
+**Histórico:** todos os commits automáticos da VPS MCP-host saem com prefixo `auto: sync vmi1988871.contaboserver.net`; commits do clone Windows aparecem como `vault backup (notebook-renato): <timestamp>` (ou similar conforme hostname); edições manuais pelo Renato devem usar mensagens descritivas para se diferenciar.
+
+**Por que não há mais `commit_and_push`:** versões antigas do MCP expunham essa tool, com coordenação por `flock` compartilhado. Foi removida em abril/2026 (commit `e667171`) — fragmentava o histórico (cada agente commitava sob nome diferente) e competia pelo mesmo lock que o cron já segurava. Centralizar no cron simplificou: o MCP só escreve arquivo, o cron só publica.
 
 ## Como um agente se conecta
 
