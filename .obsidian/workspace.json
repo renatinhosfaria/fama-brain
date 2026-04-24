@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0489a0d9db424965",
+        "id": "cad1432eac37563a",
         "type": "tabs",
         "children": [
           {
-            "id": "10e04da9934ad2f2",
+            "id": "011f5839ffad2ed4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -187,8 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "10e04da9934ad2f2",
+  "active": "011f5839ffad2ed4",
   "lastOpenFiles": [
+    "_shared/context/AGENTS.md",
+    "_shared/context/fama/stack.md",
     "_agents/reno-test/README.md",
     "_agents/reno-test/profile.md",
     "_agents/reno-test/decisions.md",
@@ -199,7 +201,6 @@
     "_agents/README.md",
     "README.md",
     "_shared/context/FAMA.md",
-    "_shared/context/AGENTS.md",
     "_shared/context/modelo-negocio/metodologia-negocio.md",
     "metodologia-negocio.md",
     "_projects/famachat/README.md",
@@ -217,7 +218,6 @@
     "_agents/rh/journal/2026-04-21-famaaaaa-153-diagnostico-bundle-cro.md",
     "_agents/rh/journal/2026-04-21-famaaaaa-152-diagnostico-do-bundle-do-credito.md",
     "_agents/rh/journal/2026-04-21-famaaaaa-150-auditoria-bundle-ceo-proposta-publicada-aguardando-renato.md",
-    "_agents/rh/journal/2026-04-21-famaaaaa-149-reconciliacao-sendmessage-tool-telegram.md",
     "_agents/rh/journal",
     "_agents/vault/journal",
     "_agents/vault",

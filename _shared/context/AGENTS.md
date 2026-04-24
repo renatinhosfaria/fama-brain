@@ -7,6 +7,9 @@ tags: [agents]
 ---
 
 ```
+_shared/context/AGENTS.md           => renato
 _agents/reno-test/**                => reno-test
 _shared/context/*/reno-test/**      => reno-test
+_agents/reno/**                     => reno
+_shared/context/*/reno/**           => reno
 ```
