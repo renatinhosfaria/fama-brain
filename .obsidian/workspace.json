@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cad1432eac37563a",
+        "id": "691d2398dc0c5a1f",
         "type": "tabs",
         "children": [
           {
-            "id": "011f5839ffad2ed4",
+            "id": "fb9998d7a82295ba",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -187,8 +187,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "011f5839ffad2ed4",
+  "active": "fb9998d7a82295ba",
   "lastOpenFiles": [
+    "_agents/reno/journal/2026-04-24-bootstrap-sanity.md",
+    "_agents/reno/journal",
+    "_agents/reno",
     "_shared/context/AGENTS.md",
     "_shared/context/fama/stack.md",
     "_agents/reno-test/README.md",
@@ -217,13 +220,10 @@
     "_agents/rh/journal/2026-04-21-famaaaaa-154-auditoria-do-bundle-do-rh.md",
     "_agents/rh/journal/2026-04-21-famaaaaa-153-diagnostico-bundle-cro.md",
     "_agents/rh/journal/2026-04-21-famaaaaa-152-diagnostico-do-bundle-do-credito.md",
-    "_agents/rh/journal/2026-04-21-famaaaaa-150-auditoria-bundle-ceo-proposta-publicada-aguardando-renato.md",
     "_agents/rh/journal",
     "_agents/vault/journal",
     "_agents/vault",
     "_agents/rh",
-    "_shared/context/credito-imobiliario",
-    "_agents/credito/journal",
-    "_agents/cmo/journal"
+    "_shared/context/credito-imobiliario"
   ]
 }
