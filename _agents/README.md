@@ -15,3 +15,4 @@ Memória de longo prazo individual de cada agente do ecossistema.
 ## OpenClaw (operacional)
 
 - [[reno-test/README|reno-test]]
+- [[reno/README|reno]]
