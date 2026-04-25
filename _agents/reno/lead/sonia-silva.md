@@ -38,3 +38,10 @@ Canal: WhatsApp
 Origem: Facebook Ads
 Resumo: Backlog Sem Atendimento lote 2: cliente_id 10949. Mensagem inicial enviada: "Oi, Sonia. Aqui é o Reno, da Fama Negócios Imobiliários. Vi seu interesse no Union Vista, na região do Grand Ville. Essa região combina com o que você está buscando?" Empreendimento/bairro usado: Union Vista / Grand Ville. Status atualizado para Não Respondeu.
 Próximo passo: Aguardar resposta do lead; conduzir diagnóstico inicial e priorizar visita presencial quando fizer sentido.
+
+## 2026-04-25 17:55
+Canal: WhatsApp
+Origem: Facebook Ads
+Resumo: Reenvio inicial para cliente em Não Respondeu foi suprimido antes do WhatsApp por evidência de origem lead_automatico/autolead em source_details. Batch reno_reenvio_inicial_20260425T144748Z; cliente_id=10949.
+Próximo passo: Não enviar reenvio automático neste batch; status preservado no CRM.
+Tags: reno nao-respondeu reenvio-inicial reno_reenvio_inicial_20260425T144748Z suprimido
