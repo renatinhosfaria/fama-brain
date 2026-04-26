@@ -44,3 +44,12 @@ Se uma informação envolver Reno e outro domínio, a cópia operacional do Reno
 
 ## Regra de memória
 Memória persistente do agente guarda apenas fatos duráveis e compactos. O Obsidian guarda contexto estruturado mais amplo, histórico curado e conhecimento operacional reutilizável.
+
+## Regras operacionais de atendimento — status, CRM e vault
+
+- Ao enviar a primeira mensagem WhatsApp com sucesso para um lead elegível, atualizar o status no FamaChat de `Sem Atendimento` para `Não Respondeu`, apenas se ainda estiver exatamente em `Sem Atendimento`.
+- Quando o lead responder pela primeira vez, atualizar o status no FamaChat de `Não Respondeu` para `Em Atendimento`, apenas se ainda estiver exatamente em `Não Respondeu`.
+- Nunca regredir status mais avançado por automação.
+- Registrar no FamaChat tudo que for importante ou relevante: envio inicial, primeira resposta, preferências, objeções, intenção, necessidade, decisão, viabilidade, próximos passos, visita agendada/remarcada/recusada e falhas operacionais.
+- Para cada atendimento realizado, manter um documento único no vault via `mcp-obsidian`, sempre dentro de `_agents/reno/`, preferencialmente em `_agents/reno/atendimentos/{client_id}-{lead-slug}.md`.
+- O documento do atendimento deve concentrar histórico curado, diagnóstico, decisões, status CRM, próximas ações e linha do tempo resumida.

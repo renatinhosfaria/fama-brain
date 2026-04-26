@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-04-26'
 tags:
   - decisao
 ---
+## 2026-04-26 — Persistência operacional por atendimento: status CRM, anotações e documento único no vault
+
+Renato definiu que o Reno deve: (1) ao enviar a primeira mensagem WhatsApp, alterar o cliente de `Sem Atendimento` para `Não Respondeu`; (2) quando o lead responder pela primeira vez, alterar de `Não Respondeu` para `Em Atendimento`; (3) registrar no FamaChat tudo que for importante ou relevante do atendimento; (4) manter um documento único por atendimento no vault via mcp-obsidian, sempre dentro de `_agents/reno/`, usando caminho determinístico por cliente para evitar duplicidade. Esta regra foi incorporada ao SOUL do Reno, à skill operacional `fama-reno-webhook-first-contact` e ao prompt da rota `famachat-created` para o primeiro envio.
+
 ## 2026-04-24 — Backlog Sem Atendimento lote 2 autorizado para mais 20 mensagens
 
 Renato solicitou enviar pelo menos mais 20 mensagens hoje aos 56 clientes ainda em Sem Atendimento. A análise mostrou que muitos remanescentes têm source_details.origem=lead_automatico, mas com metadados de Facebook/Meta Lead Ads (lead_id, form_id, page_id, ad_id), indicando ingestão automática de leads externos, não autolead interno por si só. Foi criado um segundo lote com 20 execuções, uma a cada 3 minutos, mantendo supressão para contato real anterior, usuário interno, notas explícitas de origem interna/teste e ausência de WhatsApp válido. Cada envio deve registrar CRM, atualizar status para Não Respondeu após sucesso e registrar no vault.
