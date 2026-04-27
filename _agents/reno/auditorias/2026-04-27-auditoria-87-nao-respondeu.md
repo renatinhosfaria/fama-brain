@@ -192,3 +192,20 @@ Total: **26 clientes**.
 ### Observação sobre certeza
 
 A certeza aqui é operacional: não há envio bem-sucedido registrado no CRM/log disponível e há falha explícita registrada. Para clientes com `message_id`, a certeza é de envio pelo sistema; isso não é a mesma coisa que confirmação de leitura pelo cliente.
+
+
+---
+
+## Ação executada — 2026-04-27
+
+Por solicitação do Renato, os **26 clientes com falha confirmada de envio e sem registro posterior de envio bem-sucedido** tiveram o status alterado no FamaChat de `Não Respondeu` para `Sem Atendimento`.
+
+Ação executada com segurança:
+
+- filtro aplicado: `broker_id=35`, IDs auditados e status anterior exatamente `Não Respondeu`;
+- total alvo: 26;
+- total atualizado: 26;
+- anotações inseridas no CRM/FamaChat: 26;
+- nenhum WhatsApp foi disparado nesta ação.
+
+Validação pós-ação: os 26 clientes constam com status `Sem Atendimento`.
