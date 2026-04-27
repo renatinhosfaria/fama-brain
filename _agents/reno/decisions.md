@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-26'
+updated: '2026-04-27'
 tags:
   - decisao
 ---
+## 2026-04-27 — Plano de reversão de performance — carteira Reno 99 clientes
+
+Carteira atual do Reno validada no CRM: 99 clientes em 30 dias; 87 Não Respondeu, 11 Em Atendimento, 1 Agendamento. Para chegar às metas de 70% de resposta e 10% de agendamento, faltam aproximadamente 58 respostas e 9 agendamentos. A estratégia definida é trocar a lógica de atendimento passivo por uma operação ativa em três frentes: auditoria de entrega e elegibilidade, cadência de reengajamento dos Não Respondeu e conversão agressiva dos Em Atendimento para visita presencial, mantendo mensagens curtas, humanas, uma pergunta por vez e foco em visita na Fama.
+
 ## 2026-04-26 — Persistência operacional por atendimento: status CRM, anotações e documento único no vault
 
 Renato definiu que o Reno deve: (1) ao enviar a primeira mensagem WhatsApp, alterar o cliente de `Sem Atendimento` para `Não Respondeu`; (2) quando o lead responder pela primeira vez, alterar de `Não Respondeu` para `Em Atendimento`; (3) registrar no FamaChat tudo que for importante ou relevante do atendimento; (4) manter um documento único por atendimento no vault via mcp-obsidian, sempre dentro de `_agents/reno/`, usando caminho determinístico por cliente para evitar duplicidade. Esta regra foi incorporada ao SOUL do Reno, à skill operacional `fama-reno-webhook-first-contact` e ao prompt da rota `famachat-created` para o primeiro envio.
