@@ -308,3 +308,19 @@ Conclusão operacional:
 - Os 15 não ficaram em `Sem Atendimento` por erro de execução da fila.
 - Eles foram bloqueados por critérios de segurança: duplicidade/histórico anterior, origem interna/autolead ou ausência de WhatsApp confiável.
 - Próximo passo recomendado: revisão humana/limpeza de base. Não reenviar automaticamente sem tratar a causa de cada grupo.
+
+
+## Retificação da auditoria dos 15 — interpretação de `lead_automatico` — 2026-04-27
+
+Correção solicitada por Renato: `source_details.origem = lead_automatico` não deve ser tratado como origem interna/autolead da própria operação.
+
+Verificação no CRM mostrou que o campo aparece junto de dados normais de Facebook/Meta Ads, como `ad_id`, `form_id`, `leadgen_id`, `page_id`, `created_time` e `timestamp_criacao`. Portanto, a classificação anterior “origem interna/autolead” estava incorreta.
+
+Causa da classificação errada: a regra operacional usada na recuperação interpretou `lead_automatico` como sinal de supressão. Essa interpretação foi corrigida na skill `fama-reno-webhook-first-contact`: `lead_automatico` sozinho não deve suprimir envio; é preciso evidência adicional de lead interno/teste, duplicidade com atendimento anterior, contato prévio ou WhatsApp inválido.
+
+Reclassificação preliminar dos 15:
+- Permanecem suprimidos por duplicidade/histórico anterior claro: 10967, 10971, 10974, 10975, 10976, 10979, 10999.
+- Permanecem suprimidos por WhatsApp não utilizável/não confirmado: 10987, 10991, 10993.
+- Precisam de nova decisão/reprocessamento, pois foram bloqueados principalmente por `lead_automatico`: 10970, 10996, 10997, 10998, 11000.
+
+Observação: 10998 e 10996 têm duplicidades históricas relevantes; a decisão de reprocessar deve considerar o histórico, mas não pode se apoiar apenas no campo `lead_automatico`.
