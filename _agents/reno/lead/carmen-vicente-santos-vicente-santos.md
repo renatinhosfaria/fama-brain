@@ -29,3 +29,10 @@ Garden Sul, região do Jardim Sul.
 Revisão humana/operacional antes de qualquer novo contato automático.
 
 ## Histórico de interações
+
+## 2026-04-27 16:26
+Canal: WhatsApp
+Origem: Facebook Ads / lead automático
+Resumo: Rodada da fila reno_recuperacao_20260427_2min: envio automático suprimido. Motivo: cadastro identificado no CRM como lead automático/origem interna. Nenhum WhatsApp foi enviado; status preservado em Sem Atendimento. Contexto: Garden Sul, região do Jardim Sul.
+Próximo passo: Manter em Sem Atendimento para revisão humana antes de qualquer novo contato automático.
+Tags: reno backlog-sem-atendimento supressao reno_recuperacao_20260427_2min
