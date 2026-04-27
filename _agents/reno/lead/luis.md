@@ -32,3 +32,10 @@ Interesse registrado em Union Vista, região do Grand Ville, mas sem envio autom
 Validar/corrigir WhatsApp antes de qualquer automação de primeiro contato.
 
 ## Histórico de interações
+
+## 2026-04-27 16:17
+Canal: WhatsApp
+Origem: reno_recuperacao_20260427_2min
+Resumo: Recuperação de primeiro contato não enviada: cliente sem WhatsApp utilizável confirmado no CRM. Status preservado em Sem Atendimento.
+Próximo passo: Validar/corrigir WhatsApp antes de qualquer automação de contato.
+Tags: reno backlog-sem-atendimento suprimido sem-whatsapp reno_recuperacao_20260427_2min
