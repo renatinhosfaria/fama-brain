@@ -42,3 +42,5 @@ Receber o cliente na Fama, apresentar opções compatíveis com acesso ao Tibery
 - 26/04/2026: status do cliente corrigido de `Em Atendimento` para `Agendamento`.
 
 - 27/04/2026: confirmação da visita enviada via WhatsApp para Augusto Santana. Visita confirmada para hoje às 17h30 na Fama, endereço Rua Raulino Cotta Pacheco, 304. WhatsApp message_id: `3EB0472510B165F9AB5F3D`. CRM anotado com note id 15733; status preservado em `Agendamento`.
+
+- 27/04/2026: cliente respondeu que teve um imprevisto e precisou sair de viagem; pediu para remarcar quando retornar. Agendamento presencial de 27/04/2026 às 17h30 atualizado no FamaChat para `Cancelado` (appointment id 232). Nota CRM registrada (note id 15737). Status do cliente preservado em `Agendamento` para não regredir automação. Próximo passo: aguardar retorno do cliente e propor remarcação objetiva quando ele chamar.
