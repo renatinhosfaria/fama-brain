@@ -7,26 +7,42 @@ tags:
   - reno
   - atendimento
   - backlog-sem-atendimento
-  - suprimido
+  - primeiro-contato
+  - whatsapp
+  - reno-dup-recovery-20260427-3min
 ---
 # Atendimento Reno — Flaviahair Especialista em Mechas e Loiro
 
 Cliente CRM: 10967
-Status CRM: Sem Atendimento
-Origem: SLA Cascata / recuperação de falha de primeiro contato
+Status CRM atual: Não Respondeu
+Origem: SLA Cascata / fila manual autorizada por Renato Faria
 Empreendimento de interesse: Union Vereda, bairro Jaraguá, região Oeste
-Batch: reno_recuperacao_20260427_2min
+Marcador atual: [reno_dup_recovery_20260427_3min]
 
 ## Resumo
 
-Cliente entrou na fila autorizada de recuperação de primeiro contato do Reno após auditoria de falha confirmada de envio. Nesta rodada, o envio automático foi suprimido por segurança.
+Cliente processada na fila manual autorizada em 2026-04-27. O cadastro foi revalidado no CRM antes do envio: cliente existente, broker_id 35, status Sem Atendimento no momento da validação, WhatsApp utilizável e empreendimento único resolvido com segurança.
 
-## Decisão operacional — 2026-04-27
+## Decisão operacional anterior — 2026-04-27
 
-Nenhum WhatsApp foi enviado.
+Na rodada anterior `reno_recuperacao_20260427_2min`, nenhum WhatsApp foi enviado.
 
-Motivo: o cliente 10967 é reentrada por SLA Cascata do cadastro original 10886, com mesmo telefone. O cadastro original possui histórico de tentativas manuais anteriores de contato, tornando inseguro disparar nova mensagem automática como se fosse primeiro contato.
+Motivo registrado na época: reentrada por SLA Cascata do cadastro original, com histórico de tentativas manuais anteriores de contato, tornando inseguro disparar nova mensagem automática sem autorização humana.
+
+## Decisão operacional — 2026-04-27 — fila manual autorizada
+
+WhatsApp enviado com sucesso pelo Reno em mensagem única.
+
+Mensagem enviada:
+
+> Oi, Flaviahair. Aqui é o Reno, da Fama Negócios Imobiliários. Vi que você olhou o Union Vereda, no Jaraguá. Essa região combina com o que você está buscando?
+
+Após o envio, o status foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu` no CRM.
+
+## Diagnóstico inicial
+
+Ainda sem resposta da cliente nesta etapa. A primeira pergunta buscou validar se a região do Jaraguá combina com o que ela está procurando.
 
 ## Próximo passo
 
-Manter em Sem Atendimento para revisão humana antes de qualquer novo disparo automático.
+Aguardar resposta. Se a cliente responder, registrar a interação no CRM, mover condicionalmente para `Em Atendimento` se ainda estiver em `Não Respondeu` e conduzir diagnóstico leve antes de avançar para visita presencial.
