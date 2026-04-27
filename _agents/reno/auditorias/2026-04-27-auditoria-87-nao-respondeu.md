@@ -324,3 +324,20 @@ Reclassificação preliminar dos 15:
 - Precisam de nova decisão/reprocessamento, pois foram bloqueados principalmente por `lead_automatico`: 10970, 10996, 10997, 10998, 11000.
 
 Observação: 10998 e 10996 têm duplicidades históricas relevantes; a decisão de reprocessar deve considerar o histórico, mas não pode se apoiar apenas no campo `lead_automatico`.
+
+
+## Reavaliação dos 5 bloqueados por interpretação errada de `lead_automatico` — 2026-04-27
+
+Após correção da regra, foram revalidados os clientes 10970, 10996, 10997, 10998 e 11000.
+
+Achados:
+- 10970 — Maria Eduarda: não deve ser reprocessada. O cliente foi arquivado automaticamente porque já foi agendado por Michel Henrique Teixeira da Silva; há registro de agendamento ID 233. Enviar pelo Reno agora geraria conflito.
+- 10996 — Sibely Cortes: não deve ser reprocessada automaticamente neste momento. Embora `lead_automatico` não seja motivo válido de bloqueio, há histórico amplo de duplicidade/retorno recorrente e um cadastro posterior com broker 24 em `Não Respondeu`, com nota de nova estratégia de abordagem e histórico de não resposta.
+- 10997 — Santiago Derson: tecnicamente elegível no cadastro Reno em si (`broker_id=35`, `Sem Atendimento`, WhatsApp/JID válidos e sem nota de contato real), mas existe duplicata posterior por SLA Cascata com broker 24 em `Não Respondeu`. Recomendação: não enviar automaticamente sem decidir regra de propriedade entre Reno e broker 24.
+- 10998 — Carmen Vicente Santos Vicente Santos: não deve ser reprocessada automaticamente. Há histórico muito extenso de duplicidade e atendimentos arquivados, com notas antigas de várias tentativas/não resposta e observações de baixa viabilidade.
+- 11000 — Wueverton Lima: tecnicamente elegível no cadastro Reno em si (`broker_id=35`, `Sem Atendimento`, WhatsApp/JID válidos e sem nota de contato real), mas existe duplicata posterior por SLA Cascata com broker 24 em `Não Respondeu`. Recomendação: não enviar automaticamente sem decidir regra de propriedade entre Reno e broker 24.
+
+Conclusão corrigida:
+- 0 clientes devem ser enviados cegamente agora.
+- 3 permanecem bloqueados por motivo real independente de `lead_automatico`: 10970, 10996, 10998.
+- 2 são candidatos condicionais, mas dependem de decisão de propriedade operacional por duplicidade com broker 24: 10997 e 11000.
