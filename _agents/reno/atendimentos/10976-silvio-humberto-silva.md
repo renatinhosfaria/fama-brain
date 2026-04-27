@@ -31,3 +31,16 @@ Motivo: a revalidação encontrou histórico do mesmo cliente em outros cadastro
 
 ## Próximo passo
 Manter para revisão operacional/humana antes de qualquer novo envio automático.
+
+
+## Atualização — override operacional 2026-04-27
+
+Renato orientou que atendimento anterior por outros corretores não deve, sozinho, impedir o primeiro contato do Reno quando o Reno ainda não atendeu o cliente.
+
+Primeiro contato do Reno enviado via WhatsApp em duas partes:
+1. `Oi, Silvio. Tudo bem? Aqui é o Reno, da Fama.`
+2. `Vi que você demonstrou interesse no Union Vereda, no Jaraguá. Você está procurando imóvel nessa região?`
+
+Status CRM atualizado condicionalmente para `Não Respondeu`.
+Nota CRM registrada: `15779`.
+Marcador: `[reno_dup_recovery_override_20260427]`.
