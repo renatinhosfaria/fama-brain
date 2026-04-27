@@ -133,3 +133,62 @@ A carteira de 87 Não Respondeu não é homogênea:
 3. Priorizar os 31 com falha técnica em reteste controlado, com intervalo e revalidação.
 4. Rodar cadência de reengajamento para os 23 enviados sem resposta.
 5. Revisar manualmente o caso 10657.
+
+
+---
+
+## Retificação importante — 2026-04-27
+
+Após pedido do Renato por certeza sobre os 31 classificados inicialmente como "falha técnica a reauditar", foi feita uma segunda auditoria mais rígida.
+
+A primeira classificação de 31 estava superestimada porque o SQL interpretou o campo textual `error=` vazio em alguns registros de webhook como se fosse erro real. Isso contaminou parte do bucket.
+
+### Resultado corrigido
+
+Sobre os 87 clientes em `Não Respondeu`:
+
+| Resultado operacional corrigido | Qtd | Significado |
+|---|---:|---|
+| Envio confirmado por nota/ID de mensagem | 42 | O sistema registrou envio bem-sucedido do Reno. |
+| Não enviado — falha confirmada | 26 | Há nota explícita de falha/erro e não há nota posterior de envio bem-sucedido. |
+| Webhook aceito sem prova de envio | 12 | O FamaChat aceitou/encaminhou o evento, mas não há prova operacional de envio no CRM/log disponível. |
+| Webhook falhou sem envio confirmado | 1 | Webhook expirou/falhou, sem prova de envio. |
+| Sem WhatsApp/JID confiável | 3 | Não há destino confiável para envio automático. |
+| Sem evidência suficiente | 3 | Casos com histórico ambíguo/sem prova conclusiva. |
+
+### Clientes com certeza operacional de que NÃO houve envio bem-sucedido do Reno
+
+Critério: existe anotação explícita de falha de envio/bridge/JID e não existe anotação posterior de `resultado=enviado`, `WhatsApp enviado`, `message_id` ou equivalente.
+
+Total: **26 clientes**.
+
+- 10660 — Giovanna
+- 10662 — Elias Fernandes
+- 10968 — Maycon Olimpio
+- 10970 — Maria Eduarda
+- 10967 — Flaviahair Especialista em Mechas e Loiro
+- 10990 — César Augusto Silva
+- 10991 — Rodrigo Moreira
+- 10971 — Bruno Sávio
+- 10996 — Sibely Cortes
+- 10974 — Grazyelly Macêdo
+- 10975 — Andre Luiz duca
+- 10976 — Silvio Humberto Silva
+- 10979 — Júlia
+- 10982 — Mateus Costa
+- 10983 — Joanne Thais
+- 10986 — Andreia Carvalho
+- 10987 — Thais Ravazio
+- 10989 — Erlania Silva
+- 10988 — Sônia
+- 10992 — Rosii Gonçalves
+- 10993 — Luis
+- 10994 — ALINEFERKDU⚘
+- 10997 — Santiago Derson
+- 10998 — Carmen Vicente Santos Vicente Santos
+- 10999 — Guilherme Mendes
+- 11000 — Wueverton Lima
+
+### Observação sobre certeza
+
+A certeza aqui é operacional: não há envio bem-sucedido registrado no CRM/log disponível e há falha explícita registrada. Para clientes com `message_id`, a certeza é de envio pelo sistema; isso não é a mesma coisa que confirmação de leitura pelo cliente.
