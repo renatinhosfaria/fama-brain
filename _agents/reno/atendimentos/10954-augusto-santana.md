@@ -40,3 +40,5 @@ Receber o cliente na Fama, apresentar opções compatíveis com acesso ao Tibery
 ## Linha do tempo
 - 25/04/2026: visita presencial combinada pelo WhatsApp e endereço da Fama enviado ao cliente.
 - 26/04/2026: status do cliente corrigido de `Em Atendimento` para `Agendamento`.
+
+- 27/04/2026: confirmação da visita enviada via WhatsApp para Augusto Santana. Visita confirmada para hoje às 17h30 na Fama, endereço Rua Raulino Cotta Pacheco, 304. WhatsApp message_id: `3EB0472510B165F9AB5F3D`. CRM anotado com note id 15733; status preservado em `Agendamento`.
