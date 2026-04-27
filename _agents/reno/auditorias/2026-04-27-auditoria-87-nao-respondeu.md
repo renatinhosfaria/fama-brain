@@ -209,3 +209,102 @@ Ação executada com segurança:
 - nenhum WhatsApp foi disparado nesta ação.
 
 Validação pós-ação: os 26 clientes constam com status `Sem Atendimento`.
+
+
+## Auditoria dos 15 clientes mantidos em Sem Atendimento após recuperação — 2026-04-27
+
+Recorte: clientes do batch `reno_recuperacao_20260427_2min` que permaneceram em `Sem Atendimento` após a fila de recuperação dos 26.
+
+Resultado geral:
+- 15 clientes permaneceram em `Sem Atendimento`.
+- Nenhum desses 15 recebeu novo WhatsApp automático nesta recuperação.
+- A decisão de não envio foi deliberada por revalidação de segurança, não por parada da fila.
+- Não houve correspondência desses 15 com usuários internos ativos pelo telefone.
+
+Distribuição por motivo principal:
+- 6/15 — duplicidade, reentrada por SLA Cascata ou histórico anterior de contato/atendimento no mesmo telefone.
+- 5/15 — origem interna/autolead (`lead_automatico`) marcada no CRM.
+- 3/15 — WhatsApp não utilizável ou não confirmado no CRM.
+- 1/15 — origem interna/autolead somada a duplicidade/continuidade operacional em outros cadastros.
+
+Detalhamento por cliente:
+
+1. 10967 — Flaviahair Especialista em Mechas e Loiro
+   - Motivo principal: reentrada por SLA Cascata com duplicidade.
+   - Evidência: mesmo telefone em cadastros anteriores; cadastro original com tentativas manuais de 2º/3º contato.
+   - Decisão: não enviar primeiro contato automático para evitar duplicidade.
+
+2. 10970 — Maria Eduarda
+   - Motivo principal: origem `lead_automatico`.
+   - Evidência: CRM/source_details marcou origem como lead automático; também havia duplicidade posterior por SLA Cascata.
+   - Decisão: suprimir envio automático.
+
+3. 10971 — Bruno Sávio
+   - Motivo principal: duplicidade/ambiguidade operacional.
+   - Evidência: outro cadastro do mesmo telefone em `Em Atendimento`, com notas de tratativa comercial sobre valores.
+   - Decisão: não enviar novo primeiro contato automático.
+
+4. 10974 — Grazyelly Macêdo
+   - Motivo principal: duplicidade com atendimento em andamento.
+   - Evidência: mesmo telefone em outros cadastros; um deles em `Em Atendimento`, com notas de tentativa de marcar visita.
+   - Decisão: suprimir para evitar conflito com corretor/atendimento existente.
+
+5. 10975 — Andre Luiz duca
+   - Motivo principal: duplicidade com histórico de contato manual já iniciado.
+   - Evidência: cadastros anteriores arquivados com notas de atendimento/contato manual e reentrada por duplicação.
+   - Decisão: não enviar primeiro contato automático.
+
+6. 10976 — Silvio Humberto Silva
+   - Motivo principal: histórico anterior de 2º/3º contato.
+   - Evidência: mesmo telefone em cadastros anteriores, com notas de 2º e 3º contato por outro corretor.
+   - Decisão: preservar sem novo WhatsApp automático.
+
+7. 10979 — Júlia
+   - Motivo principal: histórico anterior no mesmo telefone com contexto comercial.
+   - Evidência: cadastros anteriores tinham notas como envio de vídeo decorado, 3ª tentativa de contato e informação comercial/viabilidade.
+   - Decisão: não repetir primeiro contato automático.
+
+8. 10987 — Thais Ravazio
+   - Motivo principal: sem WhatsApp utilizável no CRM.
+   - Evidência: `haswhatsapp=false` e sem JID utilizável; duplicatas anteriores indicavam número inexistente/caixa postal.
+   - Decisão: não enviar WhatsApp.
+
+9. 10991 — Rodrigo Moreira
+   - Motivo principal: WhatsApp não confirmado.
+   - Evidência: `haswhatsapp=false`, embora houvesse JID cadastrado; duplicata por SLA Cascata.
+   - Decisão: suprimir até validação do contato.
+
+10. 10993 — Luis
+   - Motivo principal: sem WhatsApp utilizável confirmado.
+   - Evidência: `haswhatsapp=false` e sem JID; duplicatas anteriores com notas de ausência de WhatsApp/número inexistente.
+   - Decisão: não enviar WhatsApp.
+
+11. 10996 — Sibely Cortes
+   - Motivo principal: origem interna/autolead.
+   - Evidência: origem `lead_automatico`; múltiplas duplicatas históricas, incluindo retorno várias vezes e não resposta.
+   - Decisão: suprimir envio automático.
+
+12. 10997 — Santiago Derson
+   - Motivo principal: origem interna/autolead.
+   - Evidência: origem `lead_automatico`; duplicata posterior por SLA Cascata.
+   - Decisão: suprimir envio automático.
+
+13. 10998 — Carmen Vicente Santos Vicente Santos
+   - Motivo principal: origem interna/autolead.
+   - Evidência: origem `lead_automatico`; grande volume de duplicatas históricas e notas antigas de baixa viabilidade/não resposta.
+   - Decisão: suprimir envio automático.
+
+14. 10999 — Guilherme Mendes
+   - Motivo principal: origem interna/autolead + duplicidade/continuidade operacional.
+   - Evidência: origem `lead_automatico`; duplicatas anteriores com resposta anterior, sumiço e encaminhamento posterior para outro corretor.
+   - Decisão: não enviar primeiro contato automático para evitar duplicidade.
+
+15. 11000 — Wueverton Lima
+   - Motivo principal: origem interna/autolead.
+   - Evidência: origem `lead_automatico`; duplicata posterior por SLA Cascata.
+   - Decisão: suprimir envio automático.
+
+Conclusão operacional:
+- Os 15 não ficaram em `Sem Atendimento` por erro de execução da fila.
+- Eles foram bloqueados por critérios de segurança: duplicidade/histórico anterior, origem interna/autolead ou ausência de WhatsApp confiável.
+- Próximo passo recomendado: revisão humana/limpeza de base. Não reenviar automaticamente sem tratar a causa de cada grupo.
