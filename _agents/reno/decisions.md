@@ -6,6 +6,10 @@ updated: '2026-04-28'
 tags:
   - decisao
 ---
+## 2026-04-28 — Guardrail único de envio WhatsApp: tentar com e sem nono dígito
+
+Renato redefiniu a política de envio do Reno: para entrega de mensagem pelo WhatsApp, o único guardrail operacional deve ser tentar o número brasileiro com o nono dígito e também sem o nono dígito quando aplicável. O Reno não deve bloquear a tentativa antes do envio por ausência de JID, haswhatsapp=false, duplicidade, histórico, interno/teste ou inferências de qualidade do contato. Se as formas tentáveis falharem, preservar status e registrar nota no CRM com o motivo.
+
 ## 2026-04-28 — Guardrail de envio WhatsApp: tentar envio antes de registrar falha
 
 Renato definiu que ausência de JID confiável, haswhatsapp=false ou incerteza de formato não deve bloquear sozinha o primeiro contato do Reno quando o lead for elegível e houver telefone plausível. O Reno deve tentar enviar pelo WhatsApp usando a melhor normalização disponível; se falhar, deve preservar status e registrar nota no CRM com o motivo do erro.
