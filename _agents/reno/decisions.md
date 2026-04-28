@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-27'
+updated: '2026-04-28'
 tags:
   - decisao
 ---
+## 2026-04-28 — Guardrail de envio WhatsApp: tentar envio antes de registrar falha
+
+Renato definiu que ausência de JID confiável, haswhatsapp=false ou incerteza de formato não deve bloquear sozinha o primeiro contato do Reno quando o lead for elegível e houver telefone plausível. O Reno deve tentar enviar pelo WhatsApp usando a melhor normalização disponível; se falhar, deve preservar status e registrar nota no CRM com o motivo do erro.
+
 ## 2026-04-27 — Plano de reversão de performance — carteira Reno 99 clientes
 
 Carteira atual do Reno validada no CRM: 99 clientes em 30 dias; 87 Não Respondeu, 11 Em Atendimento, 1 Agendamento. Para chegar às metas de 70% de resposta e 10% de agendamento, faltam aproximadamente 58 respostas e 9 agendamentos. A estratégia definida é trocar a lógica de atendimento passivo por uma operação ativa em três frentes: auditoria de entrega e elegibilidade, cadência de reengajamento dos Não Respondeu e conversão agressiva dos Em Atendimento para visita presencial, mantendo mensagens curtas, humanas, uma pergunta por vez e foco em visita na Fama.
