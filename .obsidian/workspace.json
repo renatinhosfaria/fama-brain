@@ -11,10 +11,14 @@
             "id": "eaaffb7bfaebf1ad",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "type": "markdown",
+              "state": {
+                "file": "_agents/reno/atendimentos/11012-ton.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11012-ton"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 540.5
   },
   "right": {
     "id": "fe5eb299acdb4afe",
@@ -177,8 +181,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23871005f548dc96",
+  "active": "eaaffb7bfaebf1ad",
   "lastOpenFiles": [
+    "_agents/reno/auditorias/2026-04-29-auditoria-whatsapp-para-vault.md",
+    "_agents/reno/atendimentos/11013-black-in-style.md",
+    "_agents/reno/atendimentos/augusto-santana.md",
+    "_agents/reno/atendimentos/10657-lead-garden-sul.md",
     "_agents/reno/clientes/11110-jessica.md",
     "_agents/reno/clientes/11085-gabi-ripolli.md",
     "_agents/reno/clientes/11083-matheus-henrique.md",
@@ -204,10 +212,6 @@
     "_agents/reno/clientes/11000-wueverton-lima.md",
     "_agents/reno/clientes/10998-carmen-vicente-santos-vicente-santos.md",
     "_agents/reno/clientes/10999-guilherme-mendes.md",
-    "_agents/reno/clientes/10997-santiago-derson.md",
-    "_agents/reno/clientes/10996-sibely-cortes.md",
-    "_agents/reno/clientes/10994-alineferkdu.md",
-    "_agents/reno/clientes/10992-rosii-goncalves.md",
     "_agents/reno/clientes",
     "_agents/reno/auditorias",
     "_agents/reno/atendimentos/clientes",
