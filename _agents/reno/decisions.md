@@ -6,6 +6,10 @@ updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Status Em Atendimento é a barreira suficiente para parar repescagem
+
+Renato esclareceu que, como o worker de repescagem já é restrito a clientes `broker_id=35` em `status = Não Respondeu`, não é necessário encerrar manualmente o ramo operacional da repescagem quando o cliente responde. A ação necessária é alterar o status para `Em Atendimento` e registrar a transição; a repescagem deixa de selecionar o cliente pelo filtro de status.
+
 ## 2026-04-29 — Worker de inbound WhatsApp removido por risco de conflito
 
 Renato solicitou desfazer a criação do worker `reno-whatsapp-inbound-monitor-production` porque avaliou que ele poderia gerar conflito e problemas futuros. O cronjob `4a98e0c3341e` foi removido, o script `reno_whatsapp_inbound_monitor.py` e o cursor de estado foram apagados. Permanece ativo apenas o worker de envio de repescagem existente.
