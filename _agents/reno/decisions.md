@@ -6,6 +6,10 @@ updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Skill de repescagem é somente envio ativo, não resposta inbound
+
+Renato definiu que `repescagem-follow-up` deve ser uma skill apenas para envio proativo de follow-up a clientes silenciosos. Ela não deve responder mensagens recebidas de clientes, não deve chamar `send_message` para inbound, não deve acionar `fama-reno-whatsapp-qualification` a partir da repescagem e não deve tratar resposta recebida como próximo step. Quando cliente responde, a ação correta é externa à skill: mudar status para `Em Atendimento` quando aplicável e seguir por outro fluxo de atendimento.
+
 ## 2026-04-29 — Status Em Atendimento é a barreira suficiente para parar repescagem
 
 Renato esclareceu que, como o worker de repescagem já é restrito a clientes `broker_id=35` em `status = Não Respondeu`, não é necessário encerrar manualmente o ramo operacional da repescagem quando o cliente responde. A ação necessária é alterar o status para `Em Atendimento` e registrar a transição; a repescagem deixa de selecionar o cliente pelo filtro de status.
