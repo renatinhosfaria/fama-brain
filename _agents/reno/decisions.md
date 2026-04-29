@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-28'
+updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Resposta à repescagem deve acionar handoff obrigatório para atendimento
+
+Renato definiu que resposta de cliente após repescagem é um evento obrigatório de handoff, não apenas um sinal comercial. O sistema deve atualizar status para Em Atendimento, parar a repescagem, registrar CRM/Obsidian e continuar pela skill fama-reno-whatsapp-qualification. O worker atual de repescagem envia mensagens, mas não garante sozinho monitoramento de respostas; a garantia exige webhook/worker de mensagem recebida com checklist atômico e auditoria.
+
 ## 2026-04-28 — Guardrail único de envio WhatsApp: tentar com e sem nono dígito
 
 Renato redefiniu a política de envio do Reno: para entrega de mensagem pelo WhatsApp, o único guardrail operacional deve ser tentar o número brasileiro com o nono dígito e também sem o nono dígito quando aplicável. O Reno não deve bloquear a tentativa antes do envio por ausência de JID, haswhatsapp=false, duplicidade, histórico, interno/teste ou inferências de qualidade do contato. Se as formas tentáveis falharem, preservar status e registrar nota no CRM com o motivo.
