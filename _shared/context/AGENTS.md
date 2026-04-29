@@ -15,4 +15,8 @@ _agents/reno/**                     => reno
 _shared/context/*/reno/**           => reno
 _agents/Reno/**                     => reno
 _shared/context/*/Reno/**           => reno
+_agents/ceo/**                => ceo
+_shared/context/*/ceo/**      => ceo
+_shared/goals/*/ceo.md        => ceo
+_shared/results/*/ceo.md      => ceo
 ```
