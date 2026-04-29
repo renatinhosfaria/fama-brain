@@ -40,3 +40,10 @@ Origem: Facebook Ads
 Resumo: Cliente respondeu à qualificação inicial dizendo que considera as duas opções: morar e investir.
 Próximo passo: Perguntar o critério mais importante na decisão: localização, valor, tamanho/planta ou facilidade no financiamento.
 Tags: qualificacao morar investir
+
+## 2026-04-29 12:02
+Canal: WhatsApp
+Origem: Facebook Ads
+Resumo: Cliente informou que gosta da região e que proximidade ao trabalho é importante na decisão.
+Próximo passo: Perguntar em qual região/bairro fica o trabalho do cliente para validar encaixe de localização.
+Tags: qualificacao localizacao trabalho
