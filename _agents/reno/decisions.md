@@ -6,6 +6,10 @@ updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Handoff de resposta pós-repescagem deve ser via worker de inbound WhatsApp
+
+Renato definiu que webhook do lado do FamaChat não garante o evento, porque o FamaChat não sabe quando o Reno recebeu uma mensagem diretamente no WhatsApp. A garantia operacional deve vir de um worker que monitore novas mensagens recebidas no WhatsApp/Hermes, detecte respostas de clientes broker_id=35 em repescagem e execute o checklist obrigatório: status Em Atendimento, parar repescagem com client_replied, registrar CRM/Obsidian e continuar pela skill fama-reno-whatsapp-qualification.
+
 ## 2026-04-29 — Resposta à repescagem deve acionar handoff obrigatório para atendimento
 
 Renato definiu que resposta de cliente após repescagem é um evento obrigatório de handoff, não apenas um sinal comercial. O sistema deve atualizar status para Em Atendimento, parar a repescagem, registrar CRM/Obsidian e continuar pela skill fama-reno-whatsapp-qualification. O worker atual de repescagem envia mensagens, mas não garante sozinho monitoramento de respostas; a garantia exige webhook/worker de mensagem recebida com checklist atômico e auditoria.
