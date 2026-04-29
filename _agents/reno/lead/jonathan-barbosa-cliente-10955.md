@@ -47,3 +47,10 @@ Origem: Facebook Ads
 Resumo: Cliente informou que gosta da região e que proximidade ao trabalho é importante na decisão.
 Próximo passo: Perguntar em qual região/bairro fica o trabalho do cliente para validar encaixe de localização.
 Tags: qualificacao localizacao trabalho
+
+## 2026-04-29 12:04
+Canal: WhatsApp
+Origem: Facebook Ads
+Resumo: Cliente informou que o trabalho fica na Chácara Tubalina. Proximidade ao trabalho é critério relevante; busca pode atender moradia e investimento.
+Próximo passo: Validar uma opção/região próxima e avançar para apresentação de empreendimento com mídia ou convite para atendimento presencial se houver interesse.
+Tags: qualificacao chacara-tubalina localizacao
