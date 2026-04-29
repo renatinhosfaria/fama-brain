@@ -56,3 +56,10 @@ Você prefere que eu comece te explicando pela localização do empreendimento o
 - Próximo next_run_at: 2026-04-30T08:00:00-03:00
 - Se não houver resposta real do cliente até o próximo horário elegível, seguir para step 2 da repescagem.
 - Se houver resposta real, retirar da repescagem e seguir atendimento consultivo.
+
+
+### 2026-04-29 08:18 -03:00 — Reenvio corretivo por nono dígito
+- Motivo: reenvio manual solicitado porque a repescagem step 1 anterior não apareceu como conversa efetiva, com suspeita de envio para variante com nono dígito.
+- Ação: mensagem de repescagem step 1 reenviada para o `whatsapp_jid` salvo no CRM: `553492153257@s.whatsapp.net`.
+- Resultado: WhatsApp aceitou o envio com `message_id=3EB0B45E37C3374E8BAE86`.
+- CRM: nota corretiva registrada (`reno_reenvio_corretivo_nono_digito_20260429T081754-0300`), status preservado como Não Respondeu.
