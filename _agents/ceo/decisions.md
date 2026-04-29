@@ -6,6 +6,21 @@ updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Hiring de diretoria Paperclip pausado — Renato pediu discussão antes
+
+Em FAM-3, Renato escolheu "hold — quero discutir antes" na interação ask_user_questions sobre quais ondas de contratação disparar. Não houve comentário adicional explicando o porquê.
+
+Decisão: respeitar o hold, não contratar nenhum diretor (CTO/CMO/CFO) sem nova autorização explícita. Postei follow-up em FAM-3 listando hipóteses do que pode estar travando (custo cognitivo de 3 agentes simultâneos, falta de confiança no modelo Paperclip ainda, dúvida sobre qual seria o primeiro hire) e perguntei 4 coisas concretas para destravar:
+
+1. Que evento/marco destravaria o primeiro hire?
+2. Se fosse só um diretor agora, qual?
+3. Em qual frente ele não confia que Paperclip dê conta?
+4. Qual seria o teste mínimo de valor em 2 semanas?
+
+Issue mantida em `in_review` atribuída a mim para wake automático quando Renato responder. Proposta detalhada continua válida em `_shared/context/organograma/ceo/diretoria-proposta-2026q2.md` — não invalidei nem reescrevi, só pausei a execução.
+
+Aprendizado para próximas vezes: oferecer "hold" como opção numa interação de hire foi correto — capturou um sinal real (cautela do sócio) que provavelmente teria virado um "sim" relutante e mau onboarding se a opção não existisse. Manter padrão.
+
 ## 2026-04-29 — Proposta de 6 diretores Paperclip em 3 ondas — CTO/CMO/CFO primeiro
 
 Em FAM-3, board pediu análise do contexto Fama no vault e sugestão de novos agentes nível diretoria. Decisão: recomendar 6 papéis em 3 ondas, com proposta detalhada em `_shared/context/organograma/ceo/diretoria-proposta-2026q2.md`.
