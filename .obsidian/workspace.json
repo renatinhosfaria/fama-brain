@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ebb49eeab8700a42",
+        "id": "02c6b59811e5a430",
         "type": "tabs",
         "children": [
           {
-            "id": "eaaffb7bfaebf1ad",
+            "id": "8f73272abda68cc7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_agents/reno/atendimentos/11012-ton.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "11012-ton"
+              "title": "Nova aba"
             }
           }
         ]
@@ -181,40 +177,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eaaffb7bfaebf1ad",
+  "active": "23871005f548dc96",
   "lastOpenFiles": [
+    "_shared/context/organograma/ceo/diretoria-proposta-2026q2.md",
+    "_shared/context/organograma/ceo",
+    "_shared/context/organograma",
+    "_shared/context/modelo-negocio/ceo/segundo-cerebro.md",
+    "_shared/context/modelo-negocio/ceo",
+    "_agents/reno/atendimentos/10944-helena-oliveira.md",
+    "_agents/reno/atendimentos/10943-ana-clara-marques.md",
+    "_agents/reno/atendimentos/10942-marcio-oliveira-juliao.md",
+    "_agents/reno/atendimentos/10941-kauan-eduardo.md",
+    "_agents/reno/atendimentos/10940-leticia-melo.md",
+    "_agents/reno/atendimentos/10939-ricardo.md",
+    "_agents/reno/atendimentos/10938-marcelo-escobar-de-oliveira.md",
+    "_agents/reno/atendimentos/10937-samuel-kim.md",
+    "_agents/reno/atendimentos/10936-lenira-cruz.md",
+    "_agents/reno/atendimentos/10935-wenderson-beleli.md",
+    "_agents/reno/atendimentos/10931-vitoria-oliveira.md",
+    "_agents/reno/atendimentos/10929-eva-neves.md",
+    "_agents/reno/atendimentos/10927-murilo-damasceno.md",
+    "_agents/reno/atendimentos/10925-wanderson-alessandro.md",
+    "_agents/reno/atendimentos/10924-edson-tolentino.md",
+    "_agents/reno/atendimentos/10923-silva-porto.md",
+    "_agents/reno/atendimentos/10659-davi-maia.md",
+    "_agents/ceo/README.md",
+    "_agents/ceo/profile.md",
+    "_agents/ceo/decisions.md",
+    "_agents/ceo",
     "_agents/reno/auditorias/2026-04-29-auditoria-whatsapp-para-vault.md",
     "_agents/reno/atendimentos/11013-black-in-style.md",
     "_agents/reno/atendimentos/augusto-santana.md",
     "_agents/reno/atendimentos/10657-lead-garden-sul.md",
-    "_agents/reno/clientes/11110-jessica.md",
-    "_agents/reno/clientes/11085-gabi-ripolli.md",
-    "_agents/reno/clientes/11083-matheus-henrique.md",
-    "_agents/reno/clientes/11019-andreia-marson.md",
-    "_agents/reno/clientes/11014-yasmin-mascarenhas.md",
-    "_agents/reno/clientes/11012-ton.md",
-    "_agents/reno/clientes/11011-siguinei-souza.md",
-    "_agents/reno/clientes/11009-diasalvez111q1-qqq.md",
-    "_agents/reno/clientes/11008-fabio-martins-polaro.md",
-    "_agents/reno/procedimentos/registro-vault-reno.md",
     "_agents/reno/procedimentos",
-    "_agents/reno/planos/2026-04-28-plano-reversao-resposta-agendamento.md",
     "_agents/reno/planos",
-    "_agents/reno/cliente/10945-hilton-oliveira-leite.md",
     "_agents/reno/cliente",
-    "_agents/reno/clientes/samara-10981.md",
-    "_agents/reno/clientes/11007-alessandra-nascimento.md",
-    "_agents/reno/clientes/11006-elinete-silva.md",
-    "_agents/reno/clientes/11005-thabata-cristina.md",
-    "_agents/reno/clientes/11004-amanda.md",
-    "_agents/reno/clientes/11002-marco-antonio-goncalves.md",
-    "_agents/reno/clientes/11001-biiahsiilva.md",
-    "_agents/reno/clientes/11000-wueverton-lima.md",
-    "_agents/reno/clientes/10998-carmen-vicente-santos-vicente-santos.md",
-    "_agents/reno/clientes/10999-guilherme-mendes.md",
     "_agents/reno/clientes",
     "_agents/reno/auditorias",
-    "_agents/reno/atendimentos/clientes",
-    "_agents/reno/atendimentos"
+    "_agents/reno/atendimentos/clientes"
   ]
 }
