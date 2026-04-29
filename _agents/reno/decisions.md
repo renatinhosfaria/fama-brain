@@ -2,10 +2,50 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Skill de repescagem é somente envio ativo, não resposta inbound
+
+Renato definiu que `repescagem-follow-up` deve ser uma skill apenas para envio proativo de follow-up a clientes silenciosos. Ela não deve responder mensagens recebidas de clientes, não deve chamar `send_message` para inbound, não deve acionar `fama-reno-whatsapp-qualification` a partir da repescagem e não deve tratar resposta recebida como próximo step. Quando cliente responde, a ação correta é externa à skill: mudar status para `Em Atendimento` quando aplicável e seguir por outro fluxo de atendimento.
+
+## 2026-04-29 — Status Em Atendimento é a barreira suficiente para parar repescagem
+
+Renato esclareceu que, como o worker de repescagem já é restrito a clientes `broker_id=35` em `status = Não Respondeu`, não é necessário encerrar manualmente o ramo operacional da repescagem quando o cliente responde. A ação necessária é alterar o status para `Em Atendimento` e registrar a transição; a repescagem deixa de selecionar o cliente pelo filtro de status.
+
+## 2026-04-29 — Worker de inbound WhatsApp removido por risco de conflito
+
+Renato solicitou desfazer a criação do worker `reno-whatsapp-inbound-monitor-production` porque avaliou que ele poderia gerar conflito e problemas futuros. O cronjob `4a98e0c3341e` foi removido, o script `reno_whatsapp_inbound_monitor.py` e o cursor de estado foram apagados. Permanece ativo apenas o worker de envio de repescagem existente.
+
+## 2026-04-29 — Worker de inbound WhatsApp criado para handoff pós-repescagem
+
+Foi criado o cronjob de produção `reno-whatsapp-inbound-monitor-production` para rodar a cada 3 minutos, sem limite de repetição, usando script de monitoramento de novas mensagens WhatsApp e a skill `fama-reno-whatsapp-qualification`. O worker deve detectar respostas pós-repescagem de clientes broker_id=35, mudar status para Em Atendimento, parar repescagem com client_replied, registrar CRM/Obsidian e continuar o atendimento, evitando resposta duplicada se o gateway já tiver respondido.
+
+## 2026-04-29 — Handoff de resposta pós-repescagem deve ser via worker de inbound WhatsApp
+
+Renato definiu que webhook do lado do FamaChat não garante o evento, porque o FamaChat não sabe quando o Reno recebeu uma mensagem diretamente no WhatsApp. A garantia operacional deve vir de um worker que monitore novas mensagens recebidas no WhatsApp/Hermes, detecte respostas de clientes broker_id=35 em repescagem e execute o checklist obrigatório: status Em Atendimento, parar repescagem com client_replied, registrar CRM/Obsidian e continuar pela skill fama-reno-whatsapp-qualification.
+
+## 2026-04-29 — Resposta à repescagem deve acionar handoff obrigatório para atendimento
+
+Renato definiu que resposta de cliente após repescagem é um evento obrigatório de handoff, não apenas um sinal comercial. O sistema deve atualizar status para Em Atendimento, parar a repescagem, registrar CRM/Obsidian e continuar pela skill fama-reno-whatsapp-qualification. O worker atual de repescagem envia mensagens, mas não garante sozinho monitoramento de respostas; a garantia exige webhook/worker de mensagem recebida com checklist atômico e auditoria.
+
+## 2026-04-28 — Guardrail único de envio WhatsApp: tentar com e sem nono dígito
+
+Renato redefiniu a política de envio do Reno: para entrega de mensagem pelo WhatsApp, o único guardrail operacional deve ser tentar o número brasileiro com o nono dígito e também sem o nono dígito quando aplicável. O Reno não deve bloquear a tentativa antes do envio por ausência de JID, haswhatsapp=false, duplicidade, histórico, interno/teste ou inferências de qualidade do contato. Se as formas tentáveis falharem, preservar status e registrar nota no CRM com o motivo.
+
+## 2026-04-28 — Guardrail de envio WhatsApp: tentar envio antes de registrar falha
+
+Renato definiu que ausência de JID confiável, haswhatsapp=false ou incerteza de formato não deve bloquear sozinha o primeiro contato do Reno quando o lead for elegível e houver telefone plausível. O Reno deve tentar enviar pelo WhatsApp usando a melhor normalização disponível; se falhar, deve preservar status e registrar nota no CRM com o motivo do erro.
+
+## 2026-04-27 — Plano de reversão de performance — carteira Reno 99 clientes
+
+Carteira atual do Reno validada no CRM: 99 clientes em 30 dias; 87 Não Respondeu, 11 Em Atendimento, 1 Agendamento. Para chegar às metas de 70% de resposta e 10% de agendamento, faltam aproximadamente 58 respostas e 9 agendamentos. A estratégia definida é trocar a lógica de atendimento passivo por uma operação ativa em três frentes: auditoria de entrega e elegibilidade, cadência de reengajamento dos Não Respondeu e conversão agressiva dos Em Atendimento para visita presencial, mantendo mensagens curtas, humanas, uma pergunta por vez e foco em visita na Fama.
+
+## 2026-04-26 — Persistência operacional por atendimento: status CRM, anotações e documento único no vault
+
+Renato definiu que o Reno deve: (1) ao enviar a primeira mensagem WhatsApp, alterar o cliente de `Sem Atendimento` para `Não Respondeu`; (2) quando o lead responder pela primeira vez, alterar de `Não Respondeu` para `Em Atendimento`; (3) registrar no FamaChat tudo que for importante ou relevante do atendimento; (4) manter um documento único por atendimento no vault via mcp-obsidian, sempre dentro de `_agents/reno/`, usando caminho determinístico por cliente para evitar duplicidade. Esta regra foi incorporada ao SOUL do Reno, à skill operacional `fama-reno-webhook-first-contact` e ao prompt da rota `famachat-created` para o primeiro envio.
+
 ## 2026-04-24 — Backlog Sem Atendimento lote 2 autorizado para mais 20 mensagens
 
 Renato solicitou enviar pelo menos mais 20 mensagens hoje aos 56 clientes ainda em Sem Atendimento. A análise mostrou que muitos remanescentes têm source_details.origem=lead_automatico, mas com metadados de Facebook/Meta Lead Ads (lead_id, form_id, page_id, ad_id), indicando ingestão automática de leads externos, não autolead interno por si só. Foi criado um segundo lote com 20 execuções, uma a cada 3 minutos, mantendo supressão para contato real anterior, usuário interno, notas explícitas de origem interna/teste e ausência de WhatsApp válido. Cada envio deve registrar CRM, atualizar status para Não Respondeu após sucesso e registrar no vault.
