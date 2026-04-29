@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "2221a9f163fa38a5",
+    "id": "9fd37ac05bc6d1f0",
     "type": "split",
     "children": [
       {
-        "id": "a60dba2f93f732a4",
+        "id": "ebb49eeab8700a42",
         "type": "tabs",
         "children": [
           {
-            "id": "0650490a31865e3a",
+            "id": "eaaffb7bfaebf1ad",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d00b9e5f2771c898",
+    "id": "db263a90167af84c",
     "type": "split",
     "children": [
       {
-        "id": "a87496714acc7f23",
+        "id": "5b183a12647ca47f",
         "type": "tabs",
         "children": [
           {
-            "id": "da656e45e2b2d374",
+            "id": "23871005f548dc96",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "4873c6e473dfac49",
+            "id": "89e6a4b9c4a4fbf9",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "340fdc0c1ab6c8b2",
+            "id": "67f5edd9398eaa44",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,15 +77,15 @@
     "width": 300
   },
   "right": {
-    "id": "0ea7f8ad0b991804",
+    "id": "fe5eb299acdb4afe",
     "type": "split",
     "children": [
       {
-        "id": "3432b07393da07cb",
+        "id": "ad95726097694366",
         "type": "tabs",
         "children": [
           {
-            "id": "28ce31e4f247e7fc",
+            "id": "4c5e37accba6a464",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -103,7 +103,7 @@
             }
           },
           {
-            "id": "311d24a9bbc3852a",
+            "id": "9f48aa5b8a3c3409",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -116,7 +116,7 @@
             }
           },
           {
-            "id": "759de0eeb820ca5a",
+            "id": "c79005c3f119cf6a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +131,7 @@
             }
           },
           {
-            "id": "e3d5e078da6ed34c",
+            "id": "2c7b14ed82eea00d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,7 +145,7 @@
             }
           },
           {
-            "id": "0864ab165787cc89",
+            "id": "b4fa44056a31a864",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -157,23 +157,13 @@
               "icon": "lucide-list",
               "title": "Sumário"
             }
-          },
-          {
-            "id": "7e831386a70e798a",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,43 +177,6 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da656e45e2b2d374",
-  "lastOpenFiles": [
-    "_agents/reno/lead/lenira-cruz.md",
-    "_agents/reno/lead/wenderson-beleli.md",
-    "_agents/reno/lead/thabata-cristina.md",
-    "_agents/reno/lead/siguinei-souza.md",
-    "_agents/reno/lead/samara.md",
-    "_agents/reno/lead/lucas-pereira-cunha.md",
-    "_agents/reno/lead/joao.md",
-    "_agents/reno/lead/jisa-dantas.md",
-    "_agents/reno/lead/eduarda.md",
-    "_agents/reno/lead/amanda.md",
-    "_agents/reno/lead/alessandra-nascimento.md",
-    "_agents/reno/lead/vanessa.md",
-    "_agents/reno/lead/esther-osklen.md",
-    "_agents/reno/lead/layane-souza.md",
-    "_agents/reno/lead/marcos-caetano.md",
-    "_agents/reno/context/second-brain-governance.md",
-    "_agents/reno/context/operacao-crm-webhook.md",
-    "_agents/reno/context/playbook-atendimento.md",
-    "_agents/reno/context/fama-produtos.md",
-    "_agents/reno/context/credito-imobiliario.md",
-    "_agents/reno/context",
-    "_agents/reno/lead/ivens-paiva.md",
-    "_agents/reno/lead/ana-clara-marques.md",
-    "_agents/reno/lead",
-    "_shared/context/reno/reno/tom-whatsapp.md",
-    "_shared/context/reno/reno/politica-leads-internos-testes.md",
-    "_shared/context/reno/reno/playbook-objecoes.md",
-    "_shared/context/reno/reno/playbook-comercial-reno.md",
-    "_shared/context/fama/reno",
-    "_shared/context/credito-imobiliario/reno",
-    "_shared/context/reno/reno",
-    "_shared/context/reno",
-    "_agents/reno-test/lead",
-    "_agents/reno-test/journal",
-    "_agents/reno/journal",
-    "_agents/reno"
-  ]
+  "active": "eaaffb7bfaebf1ad",
+  "lastOpenFiles": []
 }
