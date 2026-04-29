@@ -53,3 +53,10 @@ Você quer que eu te ajude a ver se esse caminho combina com o que você procura
 
 ## Condição de parada
 Repescagem permanece ativa após step 1. Parar se houver resposta real do cliente ou ao concluir step 5 com encerramento elegante.
+
+
+### 2026-04-29 08:18 -03:00 — Reenvio corretivo por nono dígito
+- Motivo: envio anterior da repescagem step 1 havia sido aceito pelo bridge na variante com nono dígito (`5534984452111@s.whatsapp.net`), mas não apareceu como conversa efetiva. O CRM indicava `whatsapp_jid` sem o nono dígito.
+- Ação: mensagem de repescagem step 1 reenviada manualmente para o JID salvo no CRM: `553484452111@s.whatsapp.net`.
+- Resultado: WhatsApp aceitou o envio com `message_id=3EB0681A37415192206FAB`.
+- CRM: nota corretiva registrada (`reno_reenvio_corretivo_nono_digito_20260429T081754-0300`), status preservado como Não Respondeu.
