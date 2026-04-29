@@ -6,6 +6,10 @@ updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Worker de inbound WhatsApp criado para handoff pós-repescagem
+
+Foi criado o cronjob de produção `reno-whatsapp-inbound-monitor-production` para rodar a cada 3 minutos, sem limite de repetição, usando script de monitoramento de novas mensagens WhatsApp e a skill `fama-reno-whatsapp-qualification`. O worker deve detectar respostas pós-repescagem de clientes broker_id=35, mudar status para Em Atendimento, parar repescagem com client_replied, registrar CRM/Obsidian e continuar o atendimento, evitando resposta duplicada se o gateway já tiver respondido.
+
 ## 2026-04-29 — Handoff de resposta pós-repescagem deve ser via worker de inbound WhatsApp
 
 Renato definiu que webhook do lado do FamaChat não garante o evento, porque o FamaChat não sabe quando o Reno recebeu uma mensagem diretamente no WhatsApp. A garantia operacional deve vir de um worker que monitore novas mensagens recebidas no WhatsApp/Hermes, detecte respostas de clientes broker_id=35 em repescagem e execute o checklist obrigatório: status Em Atendimento, parar repescagem com client_replied, registrar CRM/Obsidian e continuar pela skill fama-reno-whatsapp-qualification.
