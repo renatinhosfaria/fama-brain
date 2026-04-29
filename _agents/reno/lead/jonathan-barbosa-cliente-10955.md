@@ -33,3 +33,10 @@ Interesse originado de Facebook Ads; contexto de imóvel/região ainda precisa s
 Perguntar se está procurando para morar, investir ou conhecer opções, mantendo uma pergunta por vez.
 
 ## Histórico de interações
+
+## 2026-04-29 12:00
+Canal: WhatsApp
+Origem: Facebook Ads
+Resumo: Cliente respondeu à qualificação inicial dizendo que considera as duas opções: morar e investir.
+Próximo passo: Perguntar o critério mais importante na decisão: localização, valor, tamanho/planta ou facilidade no financiamento.
+Tags: qualificacao morar investir
