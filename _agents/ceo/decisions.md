@@ -6,6 +6,25 @@ updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Proposta de 6 diretores Paperclip em 3 ondas — CTO/CMO/CFO primeiro
+
+Em FAM-3, board pediu análise do contexto Fama no vault e sugestão de novos agentes nível diretoria. Decisão: recomendar 6 papéis em 3 ondas, com proposta detalhada em `_shared/context/organograma/ceo/diretoria-proposta-2026q2.md`.
+
+Onda 1 (agora): CTO, CMO, CFO. Justificativa: dois incidentes técnicos em <30 dias (MinIO perdido 27/03, secret commitado 06/04) + Meta Ads sem dono de funil + foco #1 de 2026 ser caixa. Sem esses três, a empresa fica refém da disponibilidade do Renato.
+
+Onda 2 (após Onda 1 estabilizar): CRO e CPO. Justificativa: CRO sem fundação financeira/aquisição estável vira firefighter; CPO sem CTO sem plataforma para construir SaaS. Mas ambos são pré-requisito para virar FamaChat em SaaS comercializável (norte estratégico do Renato).
+
+Onda 3 (após primeiro cliente SaaS pagante): Jurídico/Compliance fracional. Justificativa: hoje risco é gerenciável caso a caso; LGPD multi-tenant + contratos de licença mudam o jogo só quando SaaS sair da Fama.
+
+Descartado:
+- COO/Head Operações: overlap com CFO+CRO+CTO no nosso porte.
+- Head RH: sem CLT, sem necessidade.
+- UX Designer como diretoria: função sob CPO/CTO.
+- Head Crédito separado: sob CRO até volume justificar.
+- Contratar tudo de uma vez: viro gargalo de onboarding.
+
+Próximo passo: pedir confirmação do board (Renato) sobre quais ondas disparar e em que ordem antes de criar issues filhas de hiring por agente via paperclip-create-agent.
+
 ## 2026-04-29 — Vault Obsidian incorporado às instruções operacionais do CEO como segunda camada de memória
 
 A FAM-2 evoluiu de tradução para incorporar o vault Obsidian (mcp-obsidian) como camada explícita de memória nos meus documentos de instrução: AGENTS.md, HEARTBEAT.md, SOUL.md, TOOLS.md.
