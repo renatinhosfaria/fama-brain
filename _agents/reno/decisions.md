@@ -6,6 +6,10 @@ updated: '2026-04-29'
 tags:
   - decisao
 ---
+## 2026-04-29 — Worker de inbound WhatsApp removido por risco de conflito
+
+Renato solicitou desfazer a criação do worker `reno-whatsapp-inbound-monitor-production` porque avaliou que ele poderia gerar conflito e problemas futuros. O cronjob `4a98e0c3341e` foi removido, o script `reno_whatsapp_inbound_monitor.py` e o cursor de estado foram apagados. Permanece ativo apenas o worker de envio de repescagem existente.
+
 ## 2026-04-29 — Worker de inbound WhatsApp criado para handoff pós-repescagem
 
 Foi criado o cronjob de produção `reno-whatsapp-inbound-monitor-production` para rodar a cada 3 minutos, sem limite de repetição, usando script de monitoramento de novas mensagens WhatsApp e a skill `fama-reno-whatsapp-qualification`. O worker deve detectar respostas pós-repescagem de clientes broker_id=35, mudar status para Em Atendimento, parar repescagem com client_replied, registrar CRM/Obsidian e continuar o atendimento, evitando resposta duplicada se o gateway já tiver respondido.
