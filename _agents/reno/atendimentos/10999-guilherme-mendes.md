@@ -88,3 +88,10 @@ Responder comercialmente ao cliente no WhatsApp com um resumo curto do Union Ver
 - Documento oficial consolidado no caminho canônico `_agents/reno/atendimentos/10999-guilherme-mendes.md`.
 - Conteúdo anterior de supressão/override foi preservado em síntese curada, mas o estado operacional atual do CRM prevalece.
 - Não usar caminhos legados `_agents/reno/clientes/` ou `_agents/reno/cliente/` para novas atualizações deste atendimento.
+
+
+### 2026-04-30 — Resumo do Union Vereda enviado após aceite
+Após correção de contexto da resposta curta (`Sim`), Reno respondeu Guilherme pelo WhatsApp entregando o resumo prometido do Union Vereda: localização no Jaraguá/região oeste, opções de 2 quartos com suíte, varanda e 1 vaga, metragens em torno de 57m²/58m², valores a partir de aproximadamente R$ 288 mil conforme unidade, lazer do empreendimento e pontos a validar presencialmente (unidade, entrada, financiamento e conforto da condição). A mensagem fechou com convite objetivo para passar na Fama hoje no fim do dia. WhatsApp message_id: `3EB064750C2F8DD8EEAB4B`. CRM registrou nota `16264`.
+
+## Próximo passo
+Aguardar resposta de Guilherme ao convite para passar hoje no fim do dia na Fama. Se ele aceitar dia/horário, acionar `reno-visit-scheduling` antes de confirmar a visita ao cliente. Se trouxer objeção de valor, financiamento ou horário, tratar pela `fama-reno-whatsapp-qualification` mantendo foco em visita presencial quando fizer sentido.
