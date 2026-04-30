@@ -1,51 +1,82 @@
 ---
 type: entity-profile
-owner: reno
-created: '2026-04-29'
-updated: '2026-04-29'
-entity_type: cliente
+owner: renato
+entity_type: client
 entity_name: ALINEFERKDU⚘
 client_id: 10994
-status: Não Respondeu
 broker_id: 35
+status_crm: Não Respondeu
+source: SLA Cascata
+created: '2026-04-27'
+updated: '2026-04-30'
 tags:
   - reno
-  - repescagem
+  - atendimento
   - whatsapp
-  - union-vereda
-  - jaragua
+  - famachat
+  - repescagem
 ---
-# Cliente: ALINEFERKDU⚘
+# Atendimento — ALINEFERKDU⚘
 
-## Identificação
-- Cliente: ALINEFERKDU⚘
-- client_id: 10994
-- Broker: Reno (`broker_id=35`)
-- Status operacional no FamaChat: Não Respondeu
-- Origem operacional: SLA Cascata
+## Resumo atual
+Cliente sob responsabilidade do Reno (`broker_id=35`), em status **Não Respondeu**, sem resposta real registrada após primeiro contato e repescagens. Interesse contextual associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia.
 
-## Contexto comercial curado
-Cliente com contexto de interesse no **Union Vereda**, região do **Jaraguá**. Primeiro contato anterior do Reno apresentou o atendimento e perguntou se a região combinava com a busca. Não há resposta real registrada até esta repescagem.
+## Dados operacionais
+- Cliente ID: 10994
+- Broker ID: 35
+- Status CRM: Não Respondeu
+- Origem: SLA Cascata
+- Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo usado no envio de repescagem.
+- Empreendimento relacionado: Union Vereda (`id_empreendimento=161`)
+- Última interação relevante: 2026-04-30 — repescagem step 2 enviada pelo Reno via WhatsApp.
 
-Ângulo principal usado: **imóvel específico / região**.
+## Contexto comercial
+Cliente entrou por SLA Cascata e tem contexto de interesse no **Union Vereda**, empreendimento no Jaraguá, Uberlândia. O imóvel possui entrega prevista para **dezembro de 2028**, apartamentos disponíveis de 2 quartos e área/lazer de condomínio. Não há resposta da cliente com necessidade, renda, entrada, decisão familiar ou objetivo de compra confirmados.
 
-## Repescagem — histórico
+## Diagnóstico
+### Necessidade
+Ainda não confirmada. O histórico aponta interesse inicial no Union Vereda/Jaraguá.
 
-### 2026-04-29 11:37 -03:00 — Step 1 enviado
-Fluxo: `repescagem`
+### Momento
+Silenciosa após o primeiro contato e após a primeira repescagem. O momento real de compra ainda não foi validado.
 
-Intenção do step: criar novo motivo para resposta, sem repetir a abertura inicial.
+### Decisão
+Sem informação sobre decisores ou influência familiar.
 
-Mensagem enviada via WhatsApp:
+### Viabilidade
+Sem dados de renda, entrada, uso de financiamento ou forma de pagamento. A abordagem mais segura é abrir conversa por planejamento, prazo de entrega e objetivo de compra, sem prometer crédito.
 
-> Oi, Aline! Tudo bem? 🏡
+## Histórico curado de interações
+### 2026-04-27 — Primeiro contato Reno
+Recuperação de backlog autorizada por Renato. Primeiro contato enviado pelo Reno via WhatsApp em duas mensagens curtas: apresentação do Reno e pergunta sobre interesse na região do Union Vereda/Jaraguá. Status atualizado condicionalmente para **Não Respondeu**. Batch: `reno_recuperacao_20260427_2min`.
+
+### 2026-04-29 — Repescagem step 1 enviada
+Mensagem de repescagem enviada com ângulo de **região/comparação de opções**: retomou o Union Vereda/Jaraguá e perguntou se a cliente preferia começar pela região ou pela faixa de valor. Sem resposta registrada até a execução seguinte.
+
+### 2026-04-30 — Repescagem step 2 enviada
+Fluxo: repescagem.  
+Step enviado: 2.  
+Data/hora de envio: 2026-04-30T11:43:37-03:00.  
+Contexto/ângulo comercial usado: **prazo de entrega e planejamento de compra/financiamento**, mudando a abordagem anterior de região/faixa de valor para objetivo de compra e planejamento.
+
+Mensagem enviada:
+
+> Oi, Aline! 😊
 >
-> Sobre o Union Vereda, no Jaraguá, o ideal agora é entender se essa região realmente combina com o que você está buscando ou se vale comparar com opções parecidas antes de seguir olhando imóvel solto.
+> Pensei em um ponto importante sobre o Union Vereda: como a entrega é para 2028, a conversa muda um pouco — não é só gostar do apê, é ver se o prazo e o planejamento de entrada/financiamento fazem sentido para você.
 >
-> Posso te ajudar a organizar isso de forma **simples e sem pressão**. Você prefere começar olhando pela região ou primeiro pela faixa de valor que cabe melhor pra você?
+> Pra eu não te mandar opção fora do seu cenário, me diz uma coisa: você está pensando em comprar para morar ou como investimento?
 
-Registro operacional: envio marcado no FamaChat pela tool específica do Reno (`mark_reno_followup_sent`).
+Próximo `next_run_at` registrado no CRM: 2026-05-01T14:20:00-03:00.
 
-Próximo `next_run_at`: `2026-04-30T08:00:00-03:00`.
+## Objeções e travas
+- Silêncio após primeiro contato e primeira repescagem.
+- Falta de informação sobre objetivo da compra, viabilidade financeira e prazo desejado.
 
-Próximo passo: aguardar resposta da cliente. Se não houver resposta até o próximo horário elegível, seguir para o step 2 da régua de repescagem. Se houver resposta real, parar repescagem e conduzir por atendimento normal do Reno.
+## Próximo passo
+Aguardar resposta da cliente. Se responder, parar repescagem, registrar a resposta e mover para **Em Atendimento** somente se o status ainda estiver exatamente em **Não Respondeu**. Se permanecer silenciosa até o próximo horário, seguir régua de repescagem com novo ângulo substancialmente diferente.
+
+## Observações operacionais
+- Documento oficial mantido em `_agents/reno/atendimentos/10994-alineferkdu.md` conforme governança do Reno.
+- Há registro legado em `_agents/reno/clientes/10994-alineferkdu.md`; novos registros devem permanecer neste documento oficial de atendimentos.
+- Envio de 2026-04-30 realizado usando o JID salvo no CRM, conforme política operacional de WhatsApp para número brasileiro quando o JID está disponível.
