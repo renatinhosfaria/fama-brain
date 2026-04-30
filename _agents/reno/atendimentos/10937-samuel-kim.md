@@ -103,3 +103,8 @@ Leitura comercial: há janela boa para organizar crédito, simulação e seleç�
 Samuel informou que procura apartamento de 2 quartos ou mais.
 
 Leitura comercial: filtro mínimo de imóvel passa a ser 2 quartos; ainda falta entender a prioridade principal entre localização, valor, tamanho/planta e facilidade no financiamento para direcionar uma opção compatível com a janela de mudança até dezembro/possível extensão do aluguel.
+
+### 2026-04-30 — Prioridades de busca
+Samuel informou que os principais critérios são localização e valor.
+
+Leitura comercial: direcionar opções de apartamento com mínimo de 2 quartos, equilibrando região desejada e faixa de preço/condição. Próximo passo é entender quais bairros ou zonas fazem sentido antes de apresentar empreendimento.
