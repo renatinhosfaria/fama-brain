@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Samuel Kim
 client_id: 10937
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-24'
 updated: '2026-04-30'
@@ -15,36 +15,40 @@ tags:
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - em-atendimento
 ---
 # Atendimento — Samuel Kim
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, vindo de Facebook Ads, com interesse operacional relacionado a empreendimentos em Uberlândia. Já houve primeiro contato e repescagens; até o momento não há resposta real registrada no CRM. Em 2026-04-30 foi enviada a repescagem step 3 com foco em diagnóstico leve sobre prazo de mudança.
+Samuel respondeu pelo WhatsApp após a repescagem step 3. O CRM foi corrigido em 2026-04-30: status saiu de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`.
+
+Resposta relevante do cliente: está de aluguel até o fim do ano e não pode sair sem pagar multa. A conversa deve seguir consultiva pelo prazo de mudança, sem empurrar imóvel imediato.
 
 ## Dados operacionais
 - Cliente ID: 10937
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp: final 4566
-- Última interação relevante: 2026-04-30 — repescagem step 3 enviada via WhatsApp
+- Última interação relevante: 2026-04-30 — primeira resposta real do cliente após repescagem step 3
 
 ## Contexto comercial
-O CRM indica `id_empreendimento` 67 e 161, além de reentrada de lead com interesse no empreendimento 161. Os empreendimentos relacionados são Place+Arbi, no Shopping Park/Zona Sul, com entrega prevista para JUN/2027, e Union Vereda, no Jaraguá/Zona Oeste, com entrega prevista para Dez/2028, ambos em Uberlândia. Como há múltiplas opções no histórico, a abordagem comercial deve evitar afirmar preferência única do cliente e usar os dados para abrir diagnóstico.
+O CRM indica `id_empreendimento` 67 e 161, além de reentrada de lead com interesse no empreendimento 161. Os empreendimentos relacionados são Place+Arbi, no Shopping Park/Zona Sul, com entrega prevista para JUN/2027, e Union Vereda, no Jaraguá/Zona Oeste, com entrega prevista para Dez/2028, ambos em Uberlândia.
+
+A resposta do Samuel mostra trava de momento: contrato de aluguel até o fim do ano e risco de multa se sair antes. Isso favorece condução por planejamento de compra, crédito/simulação e escolha de opção com prazo compatível.
 
 ## Diagnóstico
 ### Necessidade
-O cliente aparenta estar em fase inicial de busca por apartamento, ainda sem conversa ativa para qualificar região, valor, forma de pagamento ou prioridade.
+Busca por imóvel em Uberlândia, mas com necessidade de alinhar compra ao prazo de saída do aluguel.
 
 ### Momento
-Silencioso após primeiro contato e repescagens anteriores; régua de repescagem ativa. O step 3 tentou abrir conversa pela diferença de prazo de entrega entre os empreendimentos.
+Cliente respondeu após repescagem. Está preso ao aluguel até o fim do ano; não quer sair agora se houver multa. Status operacional correto: `Em Atendimento`.
 
 ### Decisão
-Sem dados confirmados sobre decisores ou urgência.
+Sem dados confirmados sobre outros decisores. Próximo diagnóstico pode explorar se ele decide sozinho e quando pretende se mudar exatamente.
 
 ### Viabilidade
-Sem dados confirmados sobre financiamento, entrada ou renda. Evitar promessa de crédito; se o cliente responder, conduzir diagnóstico antes de apresentar opções.
+Há possível compra planejada, mas sem dados de renda, entrada, FGTS ou financiamento. Não prometer crédito. Usar financiamento como planejamento seguro: organizar crédito e opções agora para mudar sem multa perto do fim do contrato.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato do Reno
@@ -57,47 +61,30 @@ Cliente selecionado para reenvio inicial, mas envio suprimido por flag operacion
 Repescagem step 1 enviada via WhatsApp. Cliente permaneceu sem resposta real registrada.
 
 ### 2026-04-29 — Repescagem step 2 enviada
-Fluxo: repescagem  
-Step enviado: 2  
-Data/hora de envio: 2026-04-29T16:21:01-03:00  
-Ângulo comercial usado: imóvel específico / busca com múltiplas opções em Uberlândia; evitar caminho errado antes de comparar empreendimentos.  
-Mensagem enviada:
-
-> Oi, Samuel! Tudo bem? 🏡
->
-> Vi que sua busca passou por opções em Uberlândia, como o Union Vereda e o Place+Arbi. Antes de comparar empreendimento, o mais importante é entender se o caminho faz sentido para o seu momento — região, valor e forma de pagamento.
->
-> Assim eu consigo te orientar de um jeito **mais certeiro**, sem te mandar opções soltas que talvez nem encaixem.
->
-> Quer que eu faça uma primeira análise simples para ver qual caminho combina melhor com você?
-
-Próximo `next_run_at`: 2026-04-30T14:20:00-03:00.
+Mensagem contextual sobre busca em Uberlândia, Union Vereda e Place+Arbi, com convite para primeira análise simples. Próximo `next_run_at` ficou para 2026-04-30T14:20:00-03:00.
 
 ### 2026-04-30 — Repescagem step 3 enviada
-Fluxo: repescagem  
-Step enviado: 3  
-Data/hora de envio: 2026-04-30T15:26:30-03:00  
-Ângulo comercial usado: imóvel específico / diagnóstico leve por prazo de mudança, usando a diferença de entrega entre Place+Arbi (2027) e Union Vereda (2028).  
-Comparação com a mensagem anterior: mudou o ângulo de viabilidade/encaixe geral para prazo de mudança; mudou o tipo de pergunta para escolha objetiva entre mudança mais rápida ou entrega futura; mudou o benefício destacado para evitar indicação desalinhada ao timing do cliente.  
-Mensagem enviada:
+Mensagem enviada com diagnóstico leve sobre prazo de mudança, comparando Place+Arbi para 2027 e Union Vereda para 2028. Pergunta feita: se buscava algo para mudar mais rápido ou se poderia considerar entrega mais para frente. Próximo `next_run_at` originalmente ficou para 2026-05-01T19:10:00-03:00.
 
-> Samuel, deixa eu te perguntar de forma bem objetiva 🏡
->
-> Como no seu histórico aparecem opções com prazos diferentes em Uberlândia — Place+Arbi para 2027 e Union Vereda para 2028 — antes de falar de imóvel, vale entender o seu **prazo de mudança**.
->
-> Isso muda bastante o tipo de oportunidade que faz sentido pra você.
->
-> Você está buscando algo para mudar mais rápido ou pode considerar uma entrega mais para frente?
+### 2026-04-30 — Cliente respondeu e status foi corrigido
+Samuel respondeu: `Estou de aluguel até o fim do ano` e `Não posso sair sem paga multa`.
 
-Próximo `next_run_at`: 2026-05-01T19:10:00-03:00.
+Ação operacional realizada no CRM: status atualizado de `Não Respondeu` para `Em Atendimento`; branch de repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`; nota criada no FamaChat registrando a resposta e a transição.
 
 ## Objeções e travas
-- Silêncio após contatos anteriores; não há objeção comercial explícita.
-- Histórico com múltiplos empreendimentos, exigindo cuidado para não afirmar preferência única sem confirmação.
+- Trava de momento: aluguel até o fim do ano.
+- Trava financeira indireta: não quer pagar multa para sair antes.
+- Histórico com múltiplos empreendimentos, exigindo cuidado para alinhar prazo de entrega e momento de mudança.
 
 ## Próximo passo
-Aguardar resposta real do cliente. Se responder, sair do fluxo de repescagem, atualizar o status de `Não Respondeu` para `Em Atendimento` quando aplicável e seguir atendimento consultivo normal. Se permanecer em `Não Respondeu`, próxima repescagem elegível será step 4 a partir de 2026-05-01T19:10:00-03:00, com convite consultivo direto.
+Responder conduzindo pelo planejamento:
+- validar que faz sentido não pagar multa;
+- posicionar a Fama como apoio para organizar crédito, simulação e opções agora;
+- perguntar quando termina exatamente o aluguel: novembro, dezembro ou outro mês.
+
+Resposta já adequada ao contexto atual: `Entendi, Samuel. Faz sentido não querer sair agora e acabar pagando multa. Nesse caso, o melhor é a gente se planejar pelo prazo certo: dá pra começar a organizar crédito, simulação e opções agora, pensando numa mudança mais segura perto do fim do contrato. Quando termina exatamente seu aluguel: novembro, dezembro ou outro mês?`
 
 ## Observações operacionais
-- Envio do step 3 realizado para o JID salvo no CRM (`whatsapp_jid`), sem expor telefone completo neste documento.
-- CRM atualizado pela ferramenta específica `mark_reno_followup_sent`; status preservado como `Não Respondeu`.
+- A falha original não foi no texto da skill: a regra existe na `fama-reno-whatsapp-qualification`, mas a skill só executa quando o atendimento inbound é acionado no Hermes/fluxo do Reno.
+- Não havia evidência no CRM de que um handler automático de inbound WhatsApp tivesse executado a skill no momento da resposta do cliente.
+- A ausência de nota de inbound e a branch de repescagem ainda ativa (`next_run_at` futuro) confirmavam que a resposta real do Samuel não tinha sido persistida automaticamente antes desta correção.
