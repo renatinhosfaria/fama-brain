@@ -6,6 +6,20 @@ updated: '2026-04-30'
 tags:
   - decisao
 ---
+## 2026-04-30 — Adicionar lead/ ao schema canônico e expandir permissão estrutural do vault-steward
+
+**Contexto.** Primeira entrega do vault-steward (FAM-5) revelou dois pontos que precisavam de decisão CEO: (1) o status de `lead/` como subpasta no schema; (2) o escopo de permissão do steward para saneamento em territórios `_shared/` e `_infra/`.
+
+**Decisão 1 — `lead/` é canônico.** O MCP `upsert_lead_timeline` (Plan 2) escreve hardcoded em `_agents/<agente>/lead/<slug>.md`. O big-bang anterior moveu ~70 entity-profiles desse path para `atendimentos/` com tag `migrado-de-lead` — foi um erro estrutural. Schema agora reconhece `lead/` como subpasta válida para `entity-profile` com `entity_type: lead` (sem ID do CRM ainda). Lead vira `clientes/{id}-{slug}.md` quando convertido. Vault-steward autorizado a reverter os 70 arquivos.
+
+**Alternativa descartada.** Forçar o MCP a escrever em `clientes/` exigiria mudança de código no servidor MCP e backfill complexo (geração sintética de IDs ou dual-path). Custo alto, ganho zero — `lead/` é semanticamente correto (lead pré-conversão é diferente de cliente).
+
+**Decisão 2 — vault-steward com permissão estrutural cross-território.** O steward pode editar frontmatter, mover paths, dedup e atualizar wikilinks em qualquer parte do vault (incluindo `_shared/` e `_infra/`), desde que não toque conteúdo substantivo. Em FAM-10, 4 notas em território de renato/_shared/_infra ficaram bloqueadas por OWNERSHIP_VIOLATION/UNMAPPED_PATH; a regra original era conservadora demais. Saneamento estrutural é a essência do papel do steward — não faz sentido bloqueá-lo por território quando o problema é frontmatter ausente. Conteúdo substantivo continua sendo do dono.
+
+**Guardrail.** Quando em dúvida se uma correção é estrutural ou substantiva, steward escala ao CEO via comentário antes de editar. Decisões em `decisions.md` continuam imutáveis e fora do escopo do steward.
+
+**Aplicação.** Schema atualizado em `_shared/context/vault/ceo/schema.md` (changelog seção 7). FAM-8 desbloqueado para executar reversão. FAM-10 desbloqueado para finalizar 4 notas pendentes.
+
 ## 2026-04-30 — Desbloqueio do cleanup do vault — proposta de governança e escalação ao board
 
 ## Contexto
