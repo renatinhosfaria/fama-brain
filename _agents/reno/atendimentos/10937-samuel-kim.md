@@ -98,3 +98,8 @@ Leitura comercial: há janela boa para organizar crédito, simulação e seleç�
 - Necessidade: apartamento em Uberlândia, com planejamento para sair do aluguel no momento certo.
 - Momento: contrato até dezembro, podendo estender; lead não quer pagar multa.
 - Próximo passo comercial imediato: entender tamanho/perfil do apartamento e região/prioridade antes de apresentar opção. Pergunta recomendada: se pensa em 2 quartos ou algo maior.
+
+### 2026-04-30 — Preferência de planta
+Samuel informou que procura apartamento de 2 quartos ou mais.
+
+Leitura comercial: filtro mínimo de imóvel passa a ser 2 quartos; ainda falta entender a prioridade principal entre localização, valor, tamanho/planta e facilidade no financiamento para direcionar uma opção compatível com a janela de mudança até dezembro/possível extensão do aluguel.
