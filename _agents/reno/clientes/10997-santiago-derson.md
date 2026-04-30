@@ -1,54 +1,79 @@
 ---
 type: entity-profile
-owner: reno
-created: '2026-04-29'
-updated: '2026-04-29'
-entity_type: cliente
+owner: renato
+entity_type: client
 entity_name: Santiago Derson
 client_id: 10997
-status: Não Respondeu
 broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads
+created: '2026-04-27'
+updated: '2026-04-30'
 tags:
   - reno
-  - repescagem
+  - atendimento
   - whatsapp
-  - union-vista
+  - famachat
+  - repescagem
 ---
-# Santiago Derson
+# Atendimento — Santiago Derson
 
-## Perfil operacional
-- Cliente: Santiago Derson
-- Client ID: 10997
-- Broker: Reno (`broker_id=35`)
-- Status atual no CRM: Não Respondeu
+## Resumo atual
+Cliente de Facebook Ads sob responsabilidade do Reno (`broker_id=35`), status CRM atual `Não Respondeu`. Interesse identificado no empreendimento Union Vista, no Grand Ville. Primeiro contato e repescagens enviados; até esta atualização, não há resposta real do cliente registrada no CRM.
+
+## Dados operacionais
+- Cliente ID: 10997
+- Broker ID: 35
+- Status CRM: Não Respondeu
 - Origem: Facebook Ads
-- Empreendimento associado: Union Vista, Grand Ville, Uberlândia
+- Telefone/WhatsApp: WhatsApp identificado no CRM; número omitido neste documento curado
+- Última interação relevante: 2026-04-30 — repescagem step 2 enviada pelo Reno
 
-## Contexto comercial curado
-Cliente demonstrou interesse no Union Vista, no Grand Ville. O primeiro contato do Reno foi uma abertura curta perguntando se a região combinava com a busca do cliente. Até esta execução, não havia resposta real registrada do cliente.
+## Contexto comercial
+Interesse associado ao Union Vista, no Grand Ville. A abordagem anterior já tratou de região, prazo de entrega e faixa de investimento. Para a segunda repescagem, o ângulo foi alterado para viabilização da compra e comparação com alternativas, evitando repetir a pergunta sobre região/viabilidade do primeiro follow-up.
 
-Ângulo principal usado na repescagem: **imóvel específico / organização da busca**, com argumento de clarear se região, prazo de entrega e faixa de investimento fazem sentido antes de olhar opções soltas.
+## Diagnóstico
+### Necessidade
+Possível busca por imóvel específico ou empreendimento anunciado, ainda sem resposta do cliente para qualificação.
 
-## Histórico de repescagem
+### Momento
+Cliente silencioso após primeiro contato e repescagem step 1. Momento de compra ainda não identificado.
 
-### 2026-04-29 11:49 - Repescagem step 1 enviada
-Fluxo: repescagem
-Step enviado: 1
-Intenção do step: criar um novo motivo para resposta sem repetir o primeiro contato.
-Canal: WhatsApp
+### Decisão
+Sem informações sobre decisores ou influência familiar.
 
+### Viabilidade
+Sem dados de renda, entrada ou crédito. Como o empreendimento pode exigir filtro financeiro, a repescagem step 2 buscou abrir conversa sobre compra financiada versus à vista sem prometer aprovação.
+
+## Histórico curado de interações
+### 2026-04-27 — Primeiro contato enviado
+Primeiro contato enviado pelo Reno via WhatsApp com abertura curta sobre o Union Vista no Grand Ville, perguntando se a região combinava com o que o cliente estava buscando. Status CRM permaneceu `Não Respondeu`.
+
+### 2026-04-29 — Repescagem step 1 enviada
+Mensagem abordou Union Vista/Grand Ville, região, prazo de entrega e faixa de investimento, perguntando se o cliente preferia começar pela região do Grand Ville ou pela viabilidade da compra. Sem resposta registrada depois do envio.
+
+### 2026-04-30 — Repescagem step 2 enviada
+Fluxo: repescagem.
+Step enviado: 2.
+Ângulo/contexto usado: evitar caminho errado pela viabilização da compra; entrada, parcela e prazo como filtros para decidir se Union Vista/Grand Ville vale seguir ou se faz sentido comparar alternativas.
 Mensagem enviada:
 
-```text
-Oi, Santiago! Tudo bem? 🏡
+> Santiago, passando por aqui rapidinho 🏡
+>
+> No caso do Union Vista/Grand Ville, um ponto que costuma mudar tudo é a **forma de viabilizar a compra**: entrada, parcela e prazo acabam filtrando se esse caminho vale seguir ou se é melhor comparar outra alternativa.
+>
+> Pra eu te orientar sem te mandar opção aleatória: você imagina comprar financiado ou à vista?
 
-Sobre o Union Vista no Grand Ville, às vezes o melhor primeiro passo não é sair olhando opção solta, e sim entender se a região, o prazo de entrega e a faixa de investimento fazem sentido para o que você busca.
+Próximo follow-up previsto: 2026-05-01T14:20:00-03:00, caso o cliente permaneça em `Não Respondeu` e sem resposta real.
 
-Posso te ajudar a organizar isso de um jeito *simples e sem pressão*.
+## Objeções e travas
+- Silêncio após contato inicial e repescagem step 1.
+- Duplicidade operacional histórica já auditada, mas Renato autorizou o Reno a assumir o primeiro contato neste cadastro.
 
-Você prefere que eu te ajude primeiro pela região do Grand Ville ou pela viabilidade da compra?
-```
+## Próximo passo
+Aguardar resposta. Se o cliente responder, a repescagem deve parar e o status deve ser movido condicionalmente de `Não Respondeu` para `Em Atendimento`, seguindo o fluxo normal de qualificação do Reno. Se continuar sem resposta, a próxima execução elegível poderá enviar a repescagem step 3 no horário previsto.
 
-Registro CRM: envio registrado via tool específica `mark_reno_followup_sent`.
-Próximo `next_run_at`: 2026-04-30T08:00:00-03:00.
-Próximo passo: se não houver resposta real do cliente, aguardar elegibilidade da fila para step 2. Se houver resposta real, parar repescagem e seguir atendimento normal fora deste fluxo.
+## Observações operacionais
+- Documento oficial mantido em `_agents/reno/atendimentos/10997-santiago-derson.md`.
+- Existe referência legada anterior sem prefixo de `client_id`; novas atualizações devem permanecer neste caminho oficial.
+- Estado da repescagem step 2 registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), sem alteração manual de `meta_data` e sem mudança de status do cliente.
