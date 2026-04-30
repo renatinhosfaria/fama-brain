@@ -2,10 +2,73 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-29'
-updated: '2026-04-29'
+updated: '2026-04-30'
 tags:
   - decisao
 ---
+## 2026-04-30 — Mudança de posição — aceitar hire de vault-steward (bibliotecário) como staff sob CEO
+
+Renato pushed back na minha recomendação anterior (não criar agente, fazer projeto de 4 passos) com analogia de biblioteca/bibliotecário. Argumentos dele que me convenceram:
+
+1. Lint pega só erro sintático (frontmatter ausente). Não pega "livro na prateleira errada" — drift semântico, decisões registradas como journal, duplicidade entre agentes. Drift semântico exige julgamento, não regra.
+2. Volume escala com hires. Self-service organizacional não escala com 6+ agentes empurrando notas em paralelo.
+3. Sem dono explícito de cross-território, ninguém mantém integridade dos links e da taxonomia.
+
+Mudo de posição: aceitar hire do bibliotecário (`vault-steward`), mas com 3 ajustes:
+
+1. **Não é diretoria — é staff sob CEO.** Sem P&L, sem subordinados, mandato técnico-operacional.
+2. **Direito cross-território precisa estar formalizado** no `_shared/context/AGENTS.md` antes do hire. Pattern `**/*` com prioridade menor que donos. Donos editam primeiro; bibliotecário só intervém em estrutura (move, dedup, frontmatter, paths).
+3. **Schema canônico é precondição** — eu (CEO) escrevo antes do hire para o bibliotecário herdar regras claras.
+
+Escopo proposto (rascunho):
+- Mandato: aplicar/evoluir schema, cleanup big-bang inicial, patrol contínuo (dedup, paths, frontmatter, backlinks).
+- Não faz: interpretar conteúdo (pinga o dono), decidir estratégia (escala para CEO).
+- Métricas 90d: 100% notas com frontmatter válido, 0 duplicatas hard, 0 paths em pasta typo, backlinks íntegros.
+
+Plano: (1) eu escrevo schema canônico, (2) atualizo AGENTS.md ownership map, (3) crio issue filha de FAM-3 para hire, (4) bibliotecário toca cleanup big-bang, (5) lint MCP vira followup.
+
+Pergunta aberta para Renato em interação: escopo (a) só vault Obsidian, recomendado, ou (b) knowledge steward amplo (vault + CRM tags + MinIO + naming Paperclip).
+
+Aprendizado: minha primeira posição privilegiou causa raiz e ignorou que (a) lint é técnico-incompleto, (b) drift semântico requer julgamento humano-equivalente, (c) volume futuro muda o cálculo. Renato tinha visão de sistema mais madura. Mudar de posição quando o argumento é melhor é correto.
+
+## 2026-04-30 — Vault desorganizado — recomendar projeto de 4 passos, não agente dedicado
+
+Renato comentou em FAM-3 que "vault está extremamente desorganizado e sem padrão" e perguntou se vale criar um agente dedicado só a organizar.
+
+Audit confirmou desorganização real: 326 notas (289 do Reno), arquivos sem frontmatter (`endereco.md`, `metodologia-negocio.md`, `10971-bruno-savio.md`), path typo (`cliente/` vs `clientes/`), duplicação massiva entre `atendimentos/` e `clientes/`, nesting estranho (`atendimentos/clientes/`), `_agents/README.md` listando Reno como Paperclip quando é OpenClaw.
+
+Decisão: **não criar agente dedicado a organização.** Recomendar plano de 4 passos com CEO como dono:
+
+1. Schema canônico em `_shared/context/vault/ceo/schema.md` — types, frontmatter, naming.
+2. Cleanup big-bang das 326 notas — uma passada, não trabalho contínuo.
+3. Lint no MCP rejeitando writes sem frontmatter — multiplicador real para evitar regressão.
+4. Donos por território — cada agente mantém o próprio (Reno→Reno, CEO→CEO, Renato→fama).
+
+Por que descartar o agente dedicado:
+- Ataca sintoma (sujeira), não causa (Reno escreve fast sem schema, sem lint MCP).
+- Conflita ownership — território do Reno é do Reno por AGENTS.md.
+- Não escala — sempre atrás do firehose.
+- Custo cognitivo de diretor para entregável "limpou uma vez".
+
+Janela para reconsiderar: se após (1-4) vault desorganizar de novo — sinal de que problema é volume, não disciplina — aí sim experimentar Vault Steward como subordinado do CEO (não diretoria).
+
+Próximo passo: aguardar Renato escolher entre (a) projeto de 4 passos comigo tocando, (b) criar agente mesmo assim, (c) outro caminho. Hire de diretoria continua pausado.
+
+## 2026-04-29 — Hiring de diretoria Paperclip pausado — Renato pediu discussão antes
+
+Em FAM-3, Renato escolheu "hold — quero discutir antes" na interação ask_user_questions sobre quais ondas de contratação disparar. Não houve comentário adicional explicando o porquê.
+
+Decisão: respeitar o hold, não contratar nenhum diretor (CTO/CMO/CFO) sem nova autorização explícita. Postei follow-up em FAM-3 listando hipóteses do que pode estar travando (custo cognitivo de 3 agentes simultâneos, falta de confiança no modelo Paperclip ainda, dúvida sobre qual seria o primeiro hire) e perguntei 4 coisas concretas para destravar:
+
+1. Que evento/marco destravaria o primeiro hire?
+2. Se fosse só um diretor agora, qual?
+3. Em qual frente ele não confia que Paperclip dê conta?
+4. Qual seria o teste mínimo de valor em 2 semanas?
+
+Issue mantida em `in_review` atribuída a mim para wake automático quando Renato responder. Proposta detalhada continua válida em `_shared/context/organograma/ceo/diretoria-proposta-2026q2.md` — não invalidei nem reescrevi, só pausei a execução.
+
+Aprendizado para próximas vezes: oferecer "hold" como opção numa interação de hire foi correto — capturou um sinal real (cautela do sócio) que provavelmente teria virado um "sim" relutante e mau onboarding se a opção não existisse. Manter padrão.
+
 ## 2026-04-29 — Proposta de 6 diretores Paperclip em 3 ondas — CTO/CMO/CFO primeiro
 
 Em FAM-3, board pediu análise do contexto Fama no vault e sugestão de novos agentes nível diretoria. Decisão: recomendar 6 papéis em 3 ondas, com proposta detalhada em `_shared/context/organograma/ceo/diretoria-proposta-2026q2.md`.

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-04-29'
-updated: '2026-04-29'
+updated: '2026-04-30'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Helena Oliveira
 
 ## Resumo atual
-Cliente do Reno em status **Não Respondeu**. Primeiro contato do Reno foi enviado sobre o empreendimento Union Vista, na região do Grand Ville, e houve repescagem step 1 registrada em 2026-04-28. Em 2026-04-29, o worker tentou enviar a repescagem step 2, mas o WhatsApp falhou por indisponibilidade do gateway local. O CRM foi registrado pela tool específica do Reno e o status foi preservado.
+Cliente do Reno em status **Não Respondeu**. Primeiro contato do Reno foi enviado sobre o empreendimento **Union Vista**, na região do **Grand Ville**, e a régua de repescagem segue ativa. Em 2026-04-30, foi enviada com sucesso a **repescagem step 3** via WhatsApp, com abordagem focada em diagnóstico leve de viabilidade/forma de compra. Próximo follow-up previsto para **2026-05-01T19:10:00-03:00**, se a cliente continuar sem resposta.
 
 ## Dados operacionais
 - Cliente ID: 10944
@@ -27,23 +27,23 @@ Cliente do Reno em status **Não Respondeu**. Primeiro contato do Reno foi envia
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - Telefone/WhatsApp: número brasileiro com DDD 34; JID salvo no CRM
-- Última interação relevante: 2026-04-29 — falha terminal de envio da repescagem step 2
+- Última interação relevante: 2026-04-30 — repescagem step 3 enviada com sucesso via WhatsApp
 
 ## Contexto comercial
-Lead associado ao empreendimento **Union Vista**, no bairro Grand Ville, em Uberlândia. O contexto anterior do CRM indica interesse inicial nesse empreendimento/região. Não há resposta real da cliente registrada até esta atualização.
+Lead associado ao empreendimento **Union Vista**, no bairro **Grand Ville**, em Uberlândia. O contexto anterior do CRM indica interesse inicial nesse empreendimento/região. Não há resposta real da cliente registrada até esta atualização.
 
 ## Diagnóstico
 ### Necessidade
 Interesse inicial em apartamento/empreendimento específico, ainda sem confirmação da necessidade principal.
 
 ### Momento
-Cliente silenciosa após primeiro contato e repescagem step 1.
+Cliente silenciosa após primeiro contato e repescagens anteriores. A abordagem atual busca gerar uma microresposta objetiva para abrir diagnóstico.
 
 ### Decisão
 Sem dados suficientes sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados confirmados sobre entrada, renda, financiamento ou capacidade de compra. A abordagem de repescagem step 2 foi planejada para abrir conversa sobre encaixe real de valor, entrada e parcela sem prometer aprovação de crédito.
+Sem dados confirmados sobre entrada, renda, financiamento ou capacidade de compra. A repescagem step 3 buscou entender se a compra seria por financiamento ou outro formato, sem prometer crédito/aprovação.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno enviado
@@ -52,26 +52,40 @@ Mensagem inicial enviada via WhatsApp contextualizando o interesse no Union Vist
 ### 2026-04-28 — Repescagem step 1 registrada
 CRM registra envio de follow-up de repescagem step 1. Cliente permaneceu sem resposta.
 
-### 2026-04-29 — Falha no envio da repescagem step 2
-Mensagem planejada:
+### 2026-04-29 — Falha operacional antes da retomada da repescagem
+Houve tentativa anterior de repescagem com falha operacional por indisponibilidade do gateway local, registrada no CRM pela tool específica do Reno. O status foi preservado e não houve avanço indevido naquele momento.
 
-> Oi, Helena! Tudo bem? 🔑
->
-> Como você tinha olhado o Union Vista, no Grand Ville, o ideal agora é entender se ele encaixa de verdade no seu momento — principalmente valor, entrada e parcela — antes de ficar vendo opções soltas.
->
-> Posso fazer uma primeira leitura **simples e realista** pra te dizer se esse caminho faz sentido?
+### 2026-04-29 — Repescagem step 2 enviada
+Reno enviou repescagem step 2 com argumento de organização da busca e filtro real para evitar perda de tempo com opções que não encaixem no momento de compra. Cliente permaneceu sem resposta registrada.
 
-Tentativas realizadas: JID salvo no CRM, número com nono dígito e variação sem nono dígito. Todas falharam porque o gateway WhatsApp local estava indisponível em `localhost:3000`. A falha foi registrada no CRM via `mark_reno_followup_failed`, com `stopped_reason=whatsapp_gateway_unavailable`. Não houve avanço de step nem alteração de status.
+### 2026-04-30 — Repescagem step 3 enviada
+Fluxo: `repescagem`  
+Step enviado: `3`  
+Ângulo/contexto usado: imóvel específico + viabilidade/forma de compra, usando o interesse no Union Vista/Grand Ville como contexto comercial.  
+Data/hora de envio: `2026-04-30T09:13:01-03:00`  
+Próximo `next_run_at`: `2026-05-01T19:10:00-03:00`
+
+Mensagem enviada:
+
+> Oi, Helena! Tudo bem? 🏡
+>
+> Sobre o Union Vista, no Grand Ville, antes de separar qualquer opção, faz diferença entender se a compra seria por financiamento ou por outro formato.
+>
+> Isso muda entrada, parcela e o melhor caminho pra você não perder tempo com algo que talvez não encaixe.
+>
+> Você pretende comprar financiado ou está avaliando à vista/entrada maior?
+
+Envio registrado no CRM pela tool específica `mark_reno_followup_sent`, preservando status **Não Respondeu** e atualizando o estado operacional da régua para `step=3`.
 
 ## Objeções e travas
-- Trava operacional: WhatsApp não enviado por indisponibilidade do gateway.
 - Trava comercial: ausência de resposta real da cliente até o momento.
+- Lacuna de diagnóstico: ainda não há confirmação sobre financiamento, entrada, prazo, decisão ou objetivo da compra.
 
 ## Próximo passo
-A régua de repescagem ficou parada por falha operacional registrada no CRM. Retomar somente após o canal WhatsApp estar disponível e mediante nova elegibilidade operacional do worker/ferramenta específica do Reno.
+Aguardar resposta da cliente. Se não houver resposta até o próximo horário elegível, a régua poderá seguir para a repescagem step 4 conforme seleção operacional do worker e trava global de fila.
 
 ## Observações operacionais
-- Documento criado no caminho oficial determinístico `_agents/reno/atendimentos/10944-helena-oliveira.md`.
-- Não foi feito restart de gateway.
-- Não houve envio bem-sucedido nesta execução.
+- Documento mantido no caminho oficial determinístico `_agents/reno/atendimentos/10944-helena-oliveira.md`.
 - CRM/FamaChat permanece como fonte de verdade operacional.
+- Não houve alteração de status nesta execução.
+- Não houve restart de gateway.
