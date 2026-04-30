@@ -1,3 +1,15 @@
+---
+type: context
+owner: renato
+created: '2026-04-23'
+updated: '2026-04-23'
+tags:
+  - metodologia-de-vendas
+  - atendimento-consultivo
+  - credito-imobiliario
+  - processo-comercial
+title: Metodologia de Negócio da Fama Negócios Imobiliários
+---
 # Metodologia de Negócio da Fama Negócios Imobiliários
 
 ## 1. Resumo executivo
