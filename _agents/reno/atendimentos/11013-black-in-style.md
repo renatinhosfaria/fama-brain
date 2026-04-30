@@ -1,25 +1,25 @@
 ---
-broker_id: 35
-client_id: 11013
-created: '2026-04-27'
-entity_name: Black in style
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Black in style
+client_id: 11013
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-04-27'
+updated: '2026-04-30'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - resgate
-type: entity-profile
-updated: '2026-04-30'
 ---
 # Atendimento — Black in style
 
 ## Resumo atual
-Cliente do Reno com interesse vinculado ao Union Vista, no Grand Ville. O histórico curado anterior era fraco e indicava apenas primeiro contato enviado; o CRM atualmente está em `Em Atendimento`, então o Resgate foi tratado com bucket `sem_gancho_claro`, usando o empreendimento/região como gancho leve de retomada.
+Cliente do Reno com interesse vinculado ao Union Vista, no Grand Ville. O histórico curado segue fraco e não há diagnóstico comercial detalhado registrado, mas o CRM está em `Em Atendimento` e o fluxo de Resgate está ativo. Em 2026-04-30 foi enviado o Resgate step 2 com bucket `sem_gancho_claro`, mudando o ângulo da retomada: em vez de repetir a pergunta sobre a região, a mensagem buscou reduzir a decisão para seguir no Grand Ville ou ajustar o perfil.
 
 ## Dados operacionais
 - Cliente ID: 11013
@@ -28,7 +28,7 @@ Cliente do Reno com interesse vinculado ao Union Vista, no Grand Ville. O histó
 - Origem: Facebook Ads
 - Telefone/WhatsApp: final 6454
 - Empreendimento vinculado: Union Vista, Grand Ville, Uberlândia
-- Última interação relevante: 2026-04-30 13:23 - Resgate step 1 enviado por WhatsApp
+- Última interação relevante: 2026-04-30 15:14 - Resgate step 2 enviado por WhatsApp
 
 ## Contexto comercial
 Interesse inicial vinculado ao empreendimento Union Vista, no bairro Grand Ville. O primeiro contato anterior mencionava a região e perguntava se combinava com a busca do cliente. Não há diagnóstico comercial detalhado registrado nas notas do CRM nem no vault.
@@ -38,7 +38,7 @@ Interesse inicial vinculado ao empreendimento Union Vista, no bairro Grand Ville
 Ainda não identificada com segurança.
 
 ### Momento
-Cliente em status `Em Atendimento`, mas com histórico incompleto. Resgate usado para validar se a possibilidade ainda faz sentido.
+Cliente em status `Em Atendimento`, mas com histórico incompleto. Resgate usado para validar se a possibilidade ainda faz sentido e se o perfil/região deve ser ajustado.
 
 ### Decisão
 Sem informação confiável sobre decisores.
@@ -56,13 +56,21 @@ Mensagem enviada: "Oi, tudo bem? Passando pra retomar sobre o Union Vista, no Gr
 Contexto usado: CRM/FamaChat, nota de primeiro contato e documento curado existente. Como não havia gancho comercial forte, a retomada foi neutra e contextual pela região/empreendimento.
 Próximo `next_run_at`: 2026-04-30T14:53:41-03:00.
 
+### 2026-04-30 — Resgate step 2 enviado
+Bucket: `sem_gancho_claro`.
+Mensagem enviada: "Oi, tudo bem? Só pra eu te direcionar melhor sobre o Union Vista: você quer seguir olhando essa região do Grand Ville ou prefere que eu busque algo em outro perfil?"
+Contexto usado: CRM/FamaChat confirmou cliente 11013, `broker_id=35`, status `Em Atendimento`, sem visitas/agendamentos, estado de Resgate elegível e interesse vinculado ao Union Vista. Vault oficial existente confirmou lacuna de diagnóstico e uso seguro de contexto fraco. Não houve evidência operacional suficiente de inbound pendente nas fontes consultadas.
+Diferença em relação ao step 1: a abordagem saiu de uma retomada genérica sobre região para uma escolha simples entre manter Grand Ville ou ajustar o perfil, buscando uma resposta de menor fricção.
+Próximo `next_run_at`: 2026-04-30T17:14:19-03:00.
+
 ## Objeções e travas
 - Histórico insuficiente para identificar objeção real.
 - Possível lacuna operacional: status atual `Em Atendimento` não possui nota de primeira resposta no histórico disponível; seguir CRM como fonte operacional e usar contexto fraco com cautela.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper o ciclo de Resgate com `stopped_reason=client_replied` e continuar pelo fluxo normal de qualificação consultiva do Reno. Se permanecer em silêncio, próximo step elegível a partir de 2026-04-30T14:53:41-03:00, sem pular steps.
+Aguardar resposta do cliente. Se responder, interromper o ciclo de Resgate com `stopped_reason=client_replied`, limpar `next_run_at` e continuar pelo fluxo normal de qualificação consultiva do Reno. Se permanecer em silêncio, próximo step elegível a partir de 2026-04-30T17:14:19-03:00, sem pular steps.
 
 ## Observações operacionais
 - Documento consolidado no caminho oficial `_agents/reno/atendimentos/11013-black-in-style.md` conforme governança do vault.
-- Resgate enviado com sucesso para WhatsApp terminado em 6454, sem expor telefone completo.
+- Resgate step 1 enviado com sucesso para WhatsApp terminado em 6454, sem expor telefone completo.
+- Resgate step 2 enviado com sucesso para WhatsApp terminado em 6454, sem expor telefone completo.
