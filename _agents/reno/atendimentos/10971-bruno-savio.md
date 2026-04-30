@@ -1,4 +1,15 @@
-
+---
+type: journal
+owner: reno
+created: '2026-04-27'
+updated: '2026-04-27'
+client_id: 10971
+tags:
+  - reno
+  - primeiro-contato
+  - atendimento
+  - lead
+---
 
 ## 2026-04-27T21:31:20.080600Z — Primeiro contato
 
