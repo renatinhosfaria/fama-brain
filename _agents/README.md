@@ -13,6 +13,7 @@ Memória de longo prazo individual de cada agente do ecossistema.
 
 - [[ceo/README|ceo]]
 - [[reno/README|reno]]
+- [[vault-steward/README|vault-steward]]
 
 ## OpenClaw (operacional)
 
