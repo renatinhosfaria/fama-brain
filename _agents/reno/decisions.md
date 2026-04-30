@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-29'
+updated: '2026-04-30'
 tags:
   - decisao
 ---
+## 2026-04-30 — Repescagem deve mudar ângulo/CTA entre tentativas
+
+Renato observou que mensagens de repescagem consecutivas estavam muito parecidas. Decisão operacional: quando o cliente não respondeu uma repescagem, a próxima precisa oferecer um motivo novo para resposta, mudando substancialmente abordagem, ângulo comercial, pergunta/CTA, benefício e vocabulário. Não basta trocar sinônimos mantendo o mesmo raciocínio.
+
 ## 2026-04-29 — Skill de repescagem é somente envio ativo, não resposta inbound
 
 Renato definiu que `repescagem-follow-up` deve ser uma skill apenas para envio proativo de follow-up a clientes silenciosos. Ela não deve responder mensagens recebidas de clientes, não deve chamar `send_message` para inbound, não deve acionar `fama-reno-whatsapp-qualification` a partir da repescagem e não deve tratar resposta recebida como próximo step. Quando cliente responde, a ação correta é externa à skill: mudar status para `Em Atendimento` quando aplicável e seguir por outro fluxo de atendimento.
