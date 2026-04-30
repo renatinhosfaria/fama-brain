@@ -80,3 +80,19 @@ Aguardar resposta. Se Alexsander responder, interromper o ciclo de Resgate (`sto
 - Documento oficial criado em `_agents/reno/atendimentos/10948-alexsander-pereira.md` a partir do CRM e do documento legado `_agents/reno/clientes/10948-alexsander-pereira.md`.
 - Não continuar escrevendo no caminho legado `_agents/reno/clientes/`.
 - CRM permanece como fonte de verdade operacional; este documento é síntese curada para retomada.
+
+
+### 2026-04-30 — Resgate step 2 enviado
+- Fluxo: resgate
+- Step: 2
+- Bucket: `sem_gancho_claro`
+- Mensagem enviada:
+
+```text
+Alexsander, pra eu não ficar te mandando opção fora do seu momento: você prefere entender primeiro se o Place+Arbi cabe no valor/financiamento ou quer que eu te mostre outro perfil na região?
+```
+
+- Contexto usado: CRM/FamaChat, último Resgate step 1 sem resposta registrada, empreendimento Place+Arbi no Shopping Park, documento curado oficial e histórico fraco sem diagnóstico confirmado.
+- Diferenciação versus step 1: saiu da validação de região/ajuste genérico e trouxe escolha simples entre viabilidade de valor/financiamento e ajuste de perfil na região.
+- Próximo `next_run_at`: 2026-04-30T18:12:02-03:00
+- Próximo passo comercial: se responder, interromper Resgate (`stopped_reason=client_replied`, `next_run_at=null`, `enabled=false`) e continuar qualificação normal; se permanecer em silêncio, avaliar step 3 com novo ângulo, sem repetir a pergunta atual.
