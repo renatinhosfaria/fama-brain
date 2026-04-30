@@ -1,6 +1,12 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: João pedro
+client_id: 10714
+broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads
 created: '2026-04-28'
 updated: '2026-04-30'
 tags:
@@ -9,42 +15,35 @@ tags:
   - whatsapp
   - famachat
   - repescagem
-  - falha-operacional
-entity_type: client
-entity_name: João pedro
-client_id: 10714
-broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
 ---
 # Atendimento — João pedro
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) originado de Facebook Ads, em status CRM `Não Respondeu`. Primeiro contato foi recuperado e enviado em 2026-04-28 após autorização operacional, mas o cliente ainda não apresentou resposta real. Em 2026-04-28 houve repescagem step 1 enviada. Em 2026-04-29 a tentativa de repescagem step 2 falhou por indisponibilidade do serviço local de WhatsApp; a falha foi registrada no CRM pela tool específica do Reno e o status foi preservado.
+Cliente do Reno (`broker_id=35`) originado de Facebook Ads, em status CRM `Não Respondeu`. Primeiro contato foi recuperado e enviado em 2026-04-28 após autorização operacional; até o momento não há resposta real registrada. Repescagens step 1, step 2 e step 3 foram enviadas com sucesso. Em 2026-04-30 foi enviada a repescagem step 3 com ângulo de diagnóstico leve sobre forma de pagamento/financiamento.
 
 ## Dados operacionais
 - Cliente ID: 10714
 - Broker ID: 35
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
-- Telefone/WhatsApp: cadastrado no CRM; JID salvo foi usado como primeira tentativa operacional
-- Última interação relevante: 2026-04-29 — falha terminal da repescagem step 2 por WhatsApp indisponível
+- Telefone/WhatsApp: cadastrado no CRM; JID salvo usado como destino preferencial
+- Última interação relevante: 2026-04-30 — repescagem step 3 enviada via WhatsApp
 
 ## Contexto comercial
-Contexto comercial específico ainda fraco. O primeiro contato perguntou em qual região João procura imóvel. Não há resposta real registrada. A abordagem de repescagem deve permanecer genérica de valor, focando em organizar busca, entender região/valor/forma de pagamento e evitar caminho errado antes de apresentar opções.
+Contexto comercial específico ainda fraco. O primeiro contato perguntou em qual região João procura imóvel, mas não houve resposta. Como não há imóvel, região, orçamento ou prazo informados, a abordagem de repescagem deve seguir consultiva e de baixa fricção, usando perguntas simples para descobrir o ponto de partida sem despejar opções.
 
 ## Diagnóstico
 ### Necessidade
 Não informada pelo cliente. Indício apenas de interesse inicial via Facebook Ads.
 
 ### Momento
-Cliente silencioso desde o primeiro contato recuperado e após a repescagem step 1.
+Cliente silencioso desde o primeiro contato recuperado e após repescagens anteriores.
 
 ### Decisão
 Sem informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou faixa de valor. Não há base para promessa ou inferência de crédito.
+Sem dados de renda, entrada, financiamento ou faixa de valor. O step 3 buscou abrir diagnóstico pela forma de pagamento, sem promessa de crédito.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Envio automático suprimido
@@ -56,21 +55,31 @@ Renato confirmou que o contato não havia sido enviado e autorizou nova tentativ
 ### 2026-04-28 — Repescagem step 1 enviada
 Reno enviou follow-up de repescagem step 1 via WhatsApp. Mensagem registrada no CRM: "Oi, João. Ainda faz sentido eu te ajudar com a busca do imóvel?". Cliente permaneceu sem resposta real.
 
-### 2026-04-29 — Falha terminal da repescagem step 2
-Worker `reno-repescagem-message-queue-production` selecionou João para repescagem. Ângulo usado: busca confusa / sem direção, com argumento de organizar região, valor e forma de pagamento antes de olhar opções soltas.
+### 2026-04-29 — Tentativa anterior e envio da repescagem step 2
+Houve uma falha operacional anterior por indisponibilidade do gateway de WhatsApp, registrada no CRM, mas posteriormente o step 2 foi enviado com sucesso. A abordagem usada foi busca confusa/sem direção, com pergunta para diferenciar compra para morar ou investimento. Próximo follow-up ficou previsto para 2026-04-30T19:10:00-03:00.
 
-Mensagem preparada para envio:
-"Oi, João! Tudo bem? 🏡
+### 2026-04-30 — Repescagem step 3 enviada
+Worker `reno-repescagem-message-queue-production` selecionou João como candidato elegível de repescagem: `broker_id=35`, status `Não Respondeu`, branch `repescagem.enabled=true`, `stopped_reason=null`, `step=2` e `next_run_at` vencido.
 
-Na busca por imóvel, uma coisa que ajuda bastante é não começar olhando opções soltas sem antes entender se região, valor e forma de pagamento fazem sentido pro seu momento.
+Ângulo usado: diagnóstico leve / financiamento e forma de pagamento. A mensagem mudou o raciocínio em relação ao step 2: saiu de morar vs investimento e organização geral da busca para uma pergunta objetiva sobre forma de pagamento.
 
-Posso te ajudar a fazer essa primeira leitura de um jeito **simples e realista**. Você pretende comprar financiado ou está pensando em outra forma?"
+Mensagem enviada:
+"João, vou te fazer uma pergunta bem direta pra entender o caminho certo 🔑
 
-Tentativas realizadas: JID salvo no CRM, variação E.164 com nono dígito e variação E.164 sem nono dígito. Todas falharam porque o serviço local de WhatsApp estava indisponível/conexão recusada na porta 3000. A falha foi registrada via `mcp_mcp_postgres_mark_reno_followup_failed`, com `stopped_reason=whatsapp_gateway_unavailable`. Status CRM preservado.
+Quando a compra é por financiamento, entrada e parcela mudam bastante as opções. Quando é de outra forma, o filtro já fica diferente.
+
+Hoje você pensa em comprar **financiado** ou prefere avaliar outra forma de pagamento?"
+
+Envio realizado com sucesso pelo JID salvo no CRM. Estado de repescagem atualizado via `mcp_mcp_postgres_mark_reno_followup_sent`: step 3, `last_sent_at=2026-04-30T19:19:53-03:00`, `next_run_at=2026-05-01T09:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
 
 ## Objeções e travas
-- Silêncio após primeiro contato e step 1.
-- Falha operacional no WhatsApp em 2026-04-29 impediu envio do step 2.
+- Silêncio após primeiro contato e repescagens anteriores.
+- Falha operacional anterior de gateway foi superada posteriormente; o último envio foi bem-sucedido.
+- Ausência de contexto comercial específico exige perguntas de diagnóstico simples e progressivas.
 
 ## Próximo passo
-Verificar disponibilidade do serviço/gateway de WhatsApp fora deste worker. A repescagem foi parada pela ferramenta específica do Reno após falha terminal; não reenviar por este worker enquanto o estado operacional estiver desabilitado ou sem nova autorização/reagendamento.
+Aguardar resposta do cliente. Se ele responder, a repescagem deve parar e o atendimento deve seguir por fluxo de qualificação, com mudança de status para `Em Atendimento` somente se o CRM ainda estiver exatamente em `Não Respondeu`. Se não responder até o próximo vencimento, a próxima repescagem elegível será step 4 em 2026-05-01T09:10:00-03:00.
+
+## Observações operacionais
+- Não houve alteração de status durante o envio de repescagem; status permanece `Não Respondeu`.
+- Documento consolidado no caminho oficial `_agents/reno/atendimentos/10714-joao-pedro.md`.
