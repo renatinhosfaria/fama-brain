@@ -6,6 +6,21 @@ updated: '2026-04-30'
 tags:
   - decisao
 ---
+## 2026-04-30 — Hire request VaultSteward submetido — sonnet-4-6, sem timer, com flag de skills expandidas
+
+Submeti hire do `vault-steward` (id `33a2f534`) na FAM-4. Renato aprovou patch do `_shared/context/AGENTS.md` (versão v2 sem `reno-test`) às 12:55. Approval `b37542b6` aguardando board.
+
+Decisões de config:
+
+1. **Adapter `claude_local` + `claude-sonnet-4-6`, effort medium.** Trabalho do steward é rule-based (aplicar schema, mover paths, fix frontmatter, dedup) — não precisa de Opus. Sonnet 4.6 é mais barato e adequado.
+2. **Heartbeat off, wake-on-demand only.** O steward acorda em wake event (issue atribuída, mention) ou em rotina mensal de relatório (cron job separado). Timer interno queima budget sem necessidade — patrol contínuo não significa polling contínuo.
+3. **`AGENTS.md` via generic fallback** do baseline-role-guide. Nenhum template adjacente cabia (coder/qa/security/ux são todos especialistas técnicos, não staff operacional). 94 linhas, 8 seções, 10 lentes específicas do papel.
+4. **Icon `database`** representa knowledge curation/indexação.
+
+Flag levantada no comment do hire: o servidor auto-expandiu `desiredSkills` de `["paperclip"]` para todas as 5 instaladas na company, incluindo `paperclip-create-agent` e `paperclip-create-plugin` que violam least-privilege para um bibliotecário. Plano: aprovar e fazer sync enxuto após.
+
+Aprendizado para próximos hires: a company tem alguma config de "sync all skills" que sobrescreve `desiredSkills` enviado. Vale investigar e desativar antes do próximo hire de função restrita (ex.: futuro CMO, CFO).
+
 ## 2026-04-30 — Mudança de posição — aceitar hire de vault-steward (bibliotecário) como staff sob CEO
 
 Renato pushed back na minha recomendação anterior (não criar agente, fazer projeto de 4 passos) com analogia de biblioteca/bibliotecário. Argumentos dele que me convenceram:
