@@ -81,3 +81,11 @@ Se Christine responder, interromper o ciclo de Resgate (`stopped_reason=client_r
 - Documento oficial criado em `_agents/reno/atendimentos/10926-christine-moreira.md` para consolidar histórico que antes estava em caminho legado `_agents/reno/clientes/christine-moreira.md` sem `client_id`.
 - CRM permanece como fonte operacional de verdade.
 - Há duplicidades históricas de CRM com mesmo telefone sob outros brokers, mas o atendimento Reno ativo é o cliente ID 10926.
+
+### 2026-04-30 — Resgate step 3
+Bucket: `viabilidade_financiamento`.
+Mensagem enviada: `Christine, pra não te tomar tempo nesse mês corrido: na parte do financiamento, sua maior dúvida hoje é entrada, parcela ou aprovação?\n\nCom isso eu já te direciono melhor.`
+Contexto usado: CRM/FamaChat confirmou cliente Reno em `Em Atendimento`, sem agendamento/visita ativo; notas indicam interesse no Union Vereda/Jaraguá, mês corrido e trava em entrada/financiamento. Vault oficial já apontava a mesma trava. A nova abordagem mudou o ângulo em relação ao step 2: saiu de “olhar conforto/encaixe” para escolha simples da dúvida principal (`entrada`, `parcela` ou `aprovação`), reduzindo fricção.
+Próximo follow-up previsto: 2026-05-01 16:04 -03:00, se permanecer sem resposta.
+CRM note: 16237.
+
