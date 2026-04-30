@@ -1,9 +1,11 @@
 ---
 type: moc
 owner: renato
-created: 2026-04-14
-updated: 2026-04-20
-tags: [moc, agents]
+created: '2026-04-14'
+updated: '2026-04-30'
+tags:
+  - moc
+  - agents
 ---
 # _agents
 
@@ -12,7 +14,6 @@ Memória de longo prazo individual de cada agente do ecossistema.
 ## Paperclip (diretoria)
 
 - [[ceo/README|ceo]]
-- [[reno/README|reno]]
 - [[vault-steward/README|vault-steward]]
 
 ## OpenClaw (operacional)
