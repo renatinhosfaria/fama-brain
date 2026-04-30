@@ -1,6 +1,12 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: Vitória Oliveira
+client_id: 10931
+broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads
 created: '2026-04-22'
 updated: '2026-04-30'
 tags:
@@ -9,21 +15,14 @@ tags:
   - whatsapp
   - famachat
   - repescagem
-  - falha-operacional
   - zona-sul
   - garden-sul
   - place-arbi
-entity_type: client
-entity_name: Vitória Oliveira
-client_id: 10931
-broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
 ---
 # Atendimento — Vitória Oliveira
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, origem Facebook Ads, com interesse registrado em apartamentos na Zona Sul de Uberlândia. Houve repescagem step 1 registrada em 2026-04-28. Na execução de 2026-04-29, a repescagem step 2 foi preparada, mas não foi enviada por falha técnica de conexão do runtime com o serviço local de WhatsApp. Estado operacional registrado no CRM pela tool específica do Reno como falha terminal do fluxo.
+Cliente do Reno (`broker_id=35`) em `Não Respondeu`, origem Facebook Ads, com interesse registrado em apartamentos na Zona Sul de Uberlândia. Repescagem step 3 enviada com sucesso em 2026-04-30 via WhatsApp usando o JID salvo no CRM. A abordagem mudou para diagnóstico de prazo/momento de mudança, conectando os empreendimentos Place+Arbi e Garden Sul aos prazos de lançamento. Próximo follow-up de repescagem previsto para 2026-05-01 às 19:10 se não houver resposta real antes.
 
 ## Dados operacionais
 - Cliente ID: 10931
@@ -31,24 +30,28 @@ Cliente do Reno (`broker_id=35`) em `Não Respondeu`, origem Facebook Ads, com i
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - Telefone/WhatsApp: disponível no CRM; não reproduzido integralmente neste documento
-- WhatsApp JID CRM: disponível; indicava variante brasileira sem nono dígito
-- Última interação relevante: 2026-04-29 — tentativa de repescagem step 2 falhou tecnicamente
+- WhatsApp JID CRM: disponível; envio realizado pelo JID salvo
+- Última interação relevante: 2026-04-30 — repescagem step 3 enviada com sucesso
 
 ## Contexto comercial
-Interesse vindo de Facebook Ads com empreendimentos vinculados no CRM: Garden Sul e Place+Arbi, ambos apartamentos na Zona Sul de Uberlândia. Reentrada automática indicou também interesse no empreendimento Place+Arbi. Não há resposta real da cliente registrada após o primeiro contato/follow-up.
+Interesse vindo de Facebook Ads com empreendimentos vinculados no CRM: Garden Sul e Place+Arbi, ambos apartamentos na Zona Sul de Uberlândia. Reentrada automática indicou também interesse no empreendimento Place+Arbi. Não há resposta real da cliente registrada após o primeiro contato/follow-ups até esta atualização.
+
+Contexto dos empreendimentos usado na repescagem:
+- Garden Sul: apartamento na Zona Sul/Jardim Sul, lançamento, entrega prevista para set/2028.
+- Place+Arbi: apartamento na Zona Sul/Shopping Park, lançamento, entrega prevista para jun/2027.
 
 ## Diagnóstico
 ### Necessidade
 Busca provável por apartamento na Zona Sul; contexto ainda pouco qualificado porque a cliente não respondeu.
 
 ### Momento
-Cliente em silêncio operacional desde a entrada/reentrada. A régua de repescagem estava ativa antes da falha terminal registrada nesta execução.
+Cliente em silêncio operacional desde a entrada/reentrada. Step 3 buscou destravar uma resposta sobre prazo/momento: mudar mais rápido versus considerar lançamento para 2027/2028.
 
 ### Decisão
 Sem dados sobre decisores, urgência ou motivação de compra.
 
 ### Viabilidade
-Sem dados de renda, entrada, modalidade de compra ou financiamento. Abordagem preparada para step 2 focava em evitar caminho errado e entender se a compra seria financiada ou à vista, sem promessa de crédito.
+Sem dados de renda, entrada, modalidade de compra ou financiamento. Nenhuma promessa de crédito foi feita. A abordagem atual evita simulação e foca em encaixe de prazo antes de aprofundar valores/financiamento.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Supressão operacional anterior
@@ -57,22 +60,43 @@ Documento legado `_agents/reno/atendimentos/vitoria-oliveira.md` registrava supr
 ### 2026-04-28 — Repescagem step 1 registrada no CRM
 CRM registrou envio de follow-up de repescagem step 1 pelo Reno. Mensagem anotada no CRM: "Oi, Vitória. Ainda faz sentido eu te ajudar com a busca do imóvel?". Cliente permaneceu em `Não Respondeu`.
 
-### 2026-04-29 — Repescagem step 2 preparada, mas falhou
-Fluxo: repescagem
-Step pretendido: 2
-Ângulo comercial usado: imóvel específico / compra de apartamento na Zona Sul, com argumento de evitar olhar apenas o imóvel bonito sem validar região, valor e forma de compra.
-Mensagem preparada:
+### 2026-04-29 — Falha técnica seguida de repescagem step 2 enviada
+Houve uma falha técnica anterior por conexão recusada no serviço local de WhatsApp. Depois, o CRM registrou envio da repescagem step 2.
+
+Mensagem step 2 registrada:
 > Oi, Vitória! Tudo bem? 🏡
 >
-> Vi que seu interesse passou por opções de apartamento na Zona Sul, e nessa etapa o mais importante é não olhar só o imóvel bonito — precisa entender se a região, valor e forma de compra encaixam no seu momento.
+> Na hora de buscar um imóvel, nem sempre a melhor opção é só a que parece mais bonita no anúncio. O ideal é entender se ela encaixa bem no seu momento, na região e na forma de pagamento.
 >
-> Posso te ajudar a fazer essa primeira análise de um jeito **simples e realista**. Você pensa em comprar financiado ou à vista?
+> Posso te ajudar a filtrar isso de um jeito mais prático.
+>
+> Você está buscando algo para morar ou para investir?
 
-Resultado: tentativa de envio por WhatsApp falhou nas variações com e sem nono dígito por indisponibilidade/conexão recusada do serviço local de WhatsApp no runtime. Falha registrada no CRM via `mcp_mcp_postgres_mark_reno_followup_failed`; status do cliente preservado.
+Resultado: cliente permaneceu em `Não Respondeu`. Próximo follow-up ficou previsto para 2026-04-30 às 19:10.
+
+### 2026-04-30 — Repescagem step 3 enviada
+Fluxo: repescagem
+Step enviado: 3
+Ângulo comercial usado: imóvel específico / diagnóstico leve de prazo, diferenciando lançamento e mudança rápida.
+Diferenciação em relação ao step anterior: saiu do eixo morar/investir e do filtro genérico de encaixe; passou a usar prazo de entrega dos empreendimentos como motivo novo para resposta; CTA virou pergunta de momento/prazo.
+
+Mensagem enviada:
+> Vitória, só para eu não te mandar opção fora do seu momento 📍
+>
+> Vi que apareceram opções de apartamento na Zona Sul, como Place+Arbi e Garden Sul, que são lançamentos com prazos diferentes. Isso muda bastante o caminho: se for para mudar logo, a busca é uma; se puder esperar, dá para comparar melhor valor, planta e condições.
+>
+> Hoje você procura algo para mudar mais rápido ou pode considerar lançamento para 2027/2028?
+
+Resultado: envio WhatsApp tecnicamente bem-sucedido pelo JID salvo no CRM. Estado de repescagem atualizado via `mcp_mcp_postgres_mark_reno_followup_sent` para `step=3`, `last_sent_at=2026-04-30T19:25:19-03:00`, `next_run_at=2026-05-01T19:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
 
 ## Objeções e travas
 - Sem objeção comercial real registrada; cliente não respondeu.
-- Trava operacional atual: envio WhatsApp indisponível no runtime (`whatsapp_send_failed_connection_refused`).
+- Histórico de falha técnica anterior no runtime de WhatsApp em 2026-04-29, mas envio de 2026-04-30 foi bem-sucedido.
 
 ## Próximo passo
-Fluxo de repescagem foi marcado como parado por falha técnica na tool específica do Reno. Antes de nova tentativa operacional, verificar disponibilidade do serviço de WhatsApp/gateway usado pelo runtime; não houve restart de gateway nesta execução.
+Aguardar resposta real da cliente. Se responder, parar repescagem, mover para atendimento normal do Reno conforme status aplicável e qualificar contexto/momento. Se não responder até `next_run_at`, avaliar repescagem step 4 com novo ângulo consultivo direto, sem repetir pergunta de prazo nem morar/investir.
+
+## Observações operacionais
+- Status CRM preservado como `Não Respondeu` durante o worker de repescagem.
+- Envio desta execução realizado pelo WhatsApp JID salvo no CRM; telefone completo não reproduzido no vault.
+- Documento mantido no caminho oficial determinístico `_agents/reno/atendimentos/10931-vitoria-oliveira.md`.
