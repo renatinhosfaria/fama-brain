@@ -6,6 +6,24 @@ updated: '2026-04-30'
 tags:
   - decisao
 ---
+## 2026-04-30 — Schema canônico do Reno: atendimentos/ é o caminho único; clientes/ depreciado; lead/ permanece descontinuado
+
+FAM-8 expôs três caminhos concorrentes em `_agents/reno/` para o mesmo conceito (cliente/lead/atendimento): `lead/` (já descontinuado), `clientes/` (~90 arquivos, alguns sem prefixo `{id}-`) e `atendimentos/` (formato `{client_id}-{lead-slug}.md` já em uso e referenciado pelo README e pelas decisões do Reno de 2026-04-26 e 2026-04-28).
+
+Decisão:
+1. **`_agents/reno/atendimentos/{client_id}-{lead-slug}.md`** é o único caminho canônico para qualquer documento de cliente, lead, primeiro contato, supressão, repescagem, agendamento ou follow-up do Reno. Confirma o que o README e as decisões 2026-04-26/2026-04-28 já estabelecem.
+2. **`_agents/reno/lead/`** permanece descontinuado e não pode ser recriado. FAM-8 fica resolvido neste ponto: o diretório está vazio.
+3. **`_agents/reno/clientes/`** deve ser consolidado em `atendimentos/` em uma issue separada de execução pelo VaultSteward:
+   - arquivos com prefixo `{id}-` que não existem em `atendimentos/` → mover preservando frontmatter/conteúdo;
+   - arquivos com prefixo `{id}-` duplicados em `atendimentos/` → mesclar (preservar interações, decisões e tags) num único documento sob `atendimentos/`, descartar a cópia em `clientes/`;
+   - arquivos sem prefixo `{id}-` (ex.: `christine-moreira.md`, `eduarda.md`, `flavio.md`, `luis.md`, `mateus-silva.md`, `cliente-11021-claudia-rosangela.md`, `553496511323.md`) → buscar `client_id` no CRM Postgres; se achado, renomear `{id}-{slug}.md` e mover para `atendimentos/`; se não achado, mover para `atendimentos/sem-id/` com nota e tag `sem-id` para revisão posterior;
+   - atualizar wikilinks/backlinks; nenhum conteúdo pode ser perdido; auditoria salva em `_agents/reno/auditorias/`.
+4. Após a consolidação, `clientes/` deve ser removido do schema canônico e do vault; o schema passa a permitir apenas `atendimentos/`, `auditorias/`, `decisions.md`, `profile.md`, `README.md`, `journal/`, `context/`, `procedimentos/`.
+
+Por quê: ter dois diretórios (`clientes/` e `atendimentos/`) para o mesmo conceito gera duplicidade observável (ex.: `11007-alessandra-nascimento` existe em ambos), confunde lookups determinísticos por `client_id` e contradiz as próprias decisões do Reno. Centralizar em `atendimentos/` preserva o caminho determinístico por `client_id` exigido pela decisão de 2026-04-26 e elimina a fonte do problema sem regredir nenhum trabalho operacional.
+
+Descartado: manter `clientes/` como entity_type=client e `atendimentos/` como journals — separação artificial que o próprio Reno não usa nas skills atuais; aumenta cognitive load para outros agentes e duplica memória.
+
 ## 2026-04-30 — Adicionar lead/ ao schema canônico e expandir permissão estrutural do vault-steward
 
 **Contexto.** Primeira entrega do vault-steward (FAM-5) revelou dois pontos que precisavam de decisão CEO: (1) o status de `lead/` como subpasta no schema; (2) o escopo de permissão do steward para saneamento em territórios `_shared/` e `_infra/`.
