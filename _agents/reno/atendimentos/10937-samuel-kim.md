@@ -88,3 +88,13 @@ Resposta já adequada ao contexto atual: `Entendi, Samuel. Faz sentido não quer
 - A falha original não foi no texto da skill: a regra existe na `fama-reno-whatsapp-qualification`, mas a skill só executa quando o atendimento inbound é acionado no Hermes/fluxo do Reno.
 - Não havia evidência no CRM de que um handler automático de inbound WhatsApp tivesse executado a skill no momento da resposta do cliente.
 - A ausência de nota de inbound e a branch de repescagem ainda ativa (`next_run_at` futuro) confirmavam que a resposta real do Samuel não tinha sido persistida automaticamente antes desta correção.
+
+### 2026-04-30 — Diagnóstico de momento e tipo de imóvel
+Samuel confirmou que o aluguel termina em dezembro e que pode estender, reforçando que a compra deve ser planejada sem pressão de saída imediata. Também informou que procura apartamento.
+
+Leitura comercial: há janela boa para organizar crédito, simulação e seleção de opções com prazo compatível com fim de contrato/possível extensão. Evitar pressão por mudança rápida; conduzir por perfil de apartamento, região, prioridade e visita presencial quando houver sinal de fit.
+
+## Atualização de diagnóstico — 2026-04-30
+- Necessidade: apartamento em Uberlândia, com planejamento para sair do aluguel no momento certo.
+- Momento: contrato até dezembro, podendo estender; lead não quer pagar multa.
+- Próximo passo comercial imediato: entender tamanho/perfil do apartamento e região/prioridade antes de apresentar opção. Pergunta recomendada: se pensa em 2 quartos ou algo maior.
