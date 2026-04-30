@@ -20,3 +20,4 @@ _shared/context/*/ceo/**      => ceo
 _shared/goals/*/ceo.md        => ceo
 _shared/results/*/ceo.md      => ceo
 ```
+
