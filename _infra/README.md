@@ -1,3 +1,15 @@
+---
+type: moc
+owner: renato
+created: '2026-04-17'
+updated: '2026-04-24'
+tags:
+  - infra
+  - moc
+  - brain-sync
+  - vault-runtime
+title: _infra — Infraestrutura do fama-brain
+---
 # _infra — Infraestrutura do fama-brain
 
 Scripts e documentação da infraestrutura que mantém o vault `fama-brain` em operação. Este diretório é do Renato (ownership pattern `_infra/** => renato`).
