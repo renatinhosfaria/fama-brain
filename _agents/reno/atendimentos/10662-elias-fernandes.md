@@ -1,6 +1,12 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: Elias Fernandes
+client_id: 10662
+broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads - Garden Sul
 created: '2026-04-27'
 updated: '2026-04-30'
 tags:
@@ -9,17 +15,11 @@ tags:
   - whatsapp
   - famachat
   - repescagem
-entity_type: client
-entity_name: Elias Fernandes
-client_id: 10662
-broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads - Garden Sul
 ---
 # Atendimento — Elias Fernandes
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, com interesse originado em Facebook Ads - Garden Sul / Garden Sul na região do Jardim Sul. Primeiro contato recuperado/enviado em 2026-04-27, repescagem step 1 enviada em 2026-04-28 e repescagem step 2 enviada com sucesso em 2026-04-29. Segue sem resposta real registrada até esta atualização.
+Cliente do Reno (`broker_id=35`) em `Não Respondeu`, com interesse originado em Facebook Ads - Garden Sul / Garden Sul na região do Jardim Sul. Primeiro contato recuperado/enviado em 2026-04-27, repescagem step 1 enviada em 2026-04-28, step 2 enviada em 2026-04-29 e step 3 enviada com sucesso em 2026-04-30. Segue sem resposta real registrada até esta atualização.
 
 ## Dados operacionais
 - Cliente ID: 10662
@@ -27,23 +27,23 @@ Cliente do Reno (`broker_id=35`) em `Não Respondeu`, com interesse originado em
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads - Garden Sul
 - Telefone/WhatsApp: WhatsApp cadastrado; envio operacional realizado pelo JID salvo no CRM.
-- Última interação relevante: 2026-04-29 18:01 - repescagem step 2 enviada via WhatsApp.
+- Última interação relevante: 2026-04-30 19:13 - repescagem step 3 enviada via WhatsApp.
 
 ## Contexto comercial
-Interesse seguro no Garden Sul, região do Jardim Sul. Não há resposta real do cliente registrada após o primeiro contato. A abordagem consultiva deve usar o imóvel/região como gancho, mas conduzir para análise de encaixe e viabilidade antes de despejar opções.
+Interesse seguro no Garden Sul, região do Jardim Sul, empreendimento em lançamento na Zona Sul de Uberlândia, com entrega prevista para set/2028 e opções de apartamentos de 2 quartos. Não há resposta real do cliente registrada após o primeiro contato. A abordagem consultiva deve usar o imóvel/região como gancho, mas alternar o ângulo para não repetir viabilidade: entender se o interesse é moradia futura ou investimento, prazo e perfil de uso.
 
 ## Diagnóstico
 ### Necessidade
-Cliente demonstrou interesse inicial em empreendimento/região específica, mas ainda não confirmou necessidade concreta.
+Cliente demonstrou interesse inicial em empreendimento/região específica, mas ainda não confirmou necessidade concreta. O step 3 buscou diferenciar se o objetivo é morar ou investir.
 
 ### Momento
-Silencioso após primeiro contato e após repescagens. Momento de compra ainda não validado.
+Silencioso após primeiro contato e após repescagens anteriores. Momento de compra ainda não validado.
 
 ### Decisão
 Sem informações sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou forma de pagamento. Não prometer crédito; abordagem recomendada é propor leitura inicial de viabilidade e encaixe.
+Sem dados de renda, entrada, financiamento ou forma de pagamento. Não prometer crédito; abordagem recomendada é seguir com diagnóstico leve caso o cliente responda.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato recuperado
@@ -78,9 +78,27 @@ Mensagem enviada:
 
 Resultado: envio confirmado via WhatsApp pelo JID salvo no CRM. Estado registrado no CRM pela tool específica `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-04-30T19:10:00-03:00. Status preservado como `Não Respondeu`.
 
+### 2026-04-30 — Repescagem step 3 enviada
+Fluxo: `repescagem`. Step enviado: 3. Ângulo comercial usado: imóvel específico / Garden Sul + diagnóstico leve de objetivo. Diferenciação em relação ao step 2: saiu de viabilidade/encaixe financeiro e entrou em uso pretendido, prazo de entrega e escolha morar vs investir.
+
+Mensagem enviada:
+
+> Oi, Elias! 🏡
+>
+> O Garden Sul é um lançamento na Zona Sul, com entrega mais pra frente. Nesses casos, o melhor caminho muda bastante conforme o objetivo: **morar no imóvel quando ficar pronto** ou comprar pensando em investimento/valorização.
+>
+> Pra eu te orientar do jeito certo: você estava olhando mais para morar ou para investir?
+
+Resultado: envio confirmado via WhatsApp pelo JID salvo no CRM. Estado registrado no CRM pela tool específica `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-05-01T09:10:00-03:00. Status preservado como `Não Respondeu`.
+
 ## Objeções e travas
 - Cliente silencioso; nenhuma objeção declarada.
-- Trava operacional anterior em 2026-04-29 por gateway indisponível foi superada nesta execução com envio confirmado.
+- Trava operacional anterior em 2026-04-29 por gateway indisponível foi superada com envio confirmado.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se não houver resposta até o próximo vencimento da régua, a próxima execução elegível da repescagem poderá enviar o step 3 em 2026-04-30 às 19:10 (America/Sao_Paulo), respeitando claim e trava global. Se o cliente responder, interromper a repescagem e conduzir por fluxo de atendimento normal, com mudança de status para `Em Atendimento` quando aplicável.
+Aguardar resposta do cliente. Se não houver resposta até o próximo vencimento da régua, a próxima execução elegível da repescagem poderá enviar o step 4 em 2026-05-01 às 09:10 (America/Sao_Paulo), com convite consultivo direto e sem repetir a pergunta morar/investir. Se o cliente responder, interromper a repescagem e conduzir por fluxo de atendimento normal, com mudança de status para `Em Atendimento` quando aplicável.
+
+## Observações operacionais
+- CRM/FamaChat permanece como fonte operacional de verdade.
+- Documento oficial mantido em `_agents/reno/atendimentos/10662-elias-fernandes.md`.
+- Não expor telefone completo em relatórios externos; WhatsApp existe e envio foi feito pelo JID salvo.
