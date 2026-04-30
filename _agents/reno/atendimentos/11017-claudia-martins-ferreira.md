@@ -1,25 +1,25 @@
 ---
-broker_id: 35
-client_id: 11017
-created: '2026-04-28'
-entity_name: Claudia Martins Ferreira
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Claudia Martins Ferreira
+client_id: 11017
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-04-28'
+updated: '2026-04-30'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - resgate
-type: entity-profile
-updated: '2026-04-30'
 ---
 # Atendimento — Claudia Martins Ferreira
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse registrado no empreendimento Union Vereda, no Jaraguá. Histórico operacional curado é fraco/incompleto para provar diagnóstico anterior; por isso o Resgate foi conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região confiáveis do CRM como gancho neutro.
+Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse registrado no empreendimento Union Vereda, no Jaraguá. Histórico operacional curado é fraco/incompleto para provar diagnóstico anterior; por isso o Resgate foi conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região confiáveis do CRM como gancho neutro. Em 2026-04-30 foi enviado o step 2 do Resgate, mudando o ângulo da retomada de confirmação genérica da região para escolha simples entre manter Jaraguá ou ajustar para uma região mais prática à rotina.
 
 ## Dados operacionais
 - Cliente ID: 11017
@@ -28,17 +28,17 @@ Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse registrado n
 - Origem: Facebook Ads
 - Telefone/WhatsApp: final 8029
 - Empreendimento vinculado no CRM: Union Vereda (ID 161), Jaraguá, Uberlândia/MG
-- Última interação relevante: 2026-04-30 13:28 - Resgate step 1 enviado via WhatsApp
+- Última interação relevante: 2026-04-30 15:23 - Resgate step 2 enviado via WhatsApp
 
 ## Contexto comercial
 Interesse associado ao Union Vereda, no bairro Jaraguá, zona Oeste de Uberlândia. Empreendimento com apartamentos de 2 quartos, suíte e varanda/sacada, faixa a partir de aproximadamente R$ 288.880 conforme CRM, além de lazer e serviços como piscina, academia, espaço gourmet, salão de festas, beach tennis, portaria 24h, elevadores e coworking.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não há necessidade declarada com segurança no histórico curado. Retomada busca confirmar se a região/possibilidade de imóvel ainda faz sentido.
+Ainda não há necessidade declarada com segurança no histórico curado. Retomada busca confirmar se a região/possibilidade de imóvel ainda faz sentido e, no step 2, reduzir a fricção para a cliente escolher entre manter Jaraguá ou ajustar região.
 
 ### Momento
-Cliente está em `Em Atendimento`, mas sem resposta recente registrada nas notas curadas. Próximo passo é tentar microresposta de retomada.
+Cliente está em `Em Atendimento`, sem resposta registrada após o step 1 de Resgate. Próximo passo é aguardar eventual resposta ao step 2.
 
 ### Decisão
 Sem informação confiável sobre decisores adicionais.
@@ -60,12 +60,20 @@ Contexto usado: CRM confirmou cliente 11017, `broker_id=35`, status `Em Atendime
 Estado após envio: step 1, `last_context_bucket=sem_gancho_claro`, `next_run_at=2026-04-30T14:58:50-03:00`, `stopped_reason=null`.
 Nota CRM criada pela ferramenta operacional: 16156.
 
+### 2026-04-30 — Resgate step 2 enviado
+Bucket: `sem_gancho_claro`.
+Mensagem enviada: "Claudia, pra eu te direcionar melhor: você ainda quer olhar algo no Jaraguá ou prefere que eu veja uma região mais prática pra sua rotina?"
+Contexto usado: CRM confirmou cliente 11017, `broker_id=35`, status `Em Atendimento`, WhatsApp/JID válido, sem agendamentos/visitas/vendas, empreendimento Union Vereda/Jaraguá vinculado e estado `meta_data.reno_followup.resgate` elegível para step 2. CRM não tinha nota de resposta da cliente após o step 1; a última evidência operacional era outbound do Reno. Vault indicava histórico comercial fraco, então o bucket oficial permaneceu `sem_gancho_claro`.
+Diferenciação em relação ao step 1: mudou o tipo de pergunta para escolha simples, trocou o ângulo de retomada genérica por ajuste de direcionamento e destacou o benefício de tornar a busca mais prática para a rotina da cliente.
+Estado após envio: step 2, `last_context_bucket=sem_gancho_claro`, `next_run_at=2026-04-30T17:23:18-03:00`, `stopped_reason=null`.
+Nota CRM criada pela ferramenta operacional: 16201.
+
 ## Objeções e travas
-- Lacuna operacional: documento anterior estava com status `Não Respondeu`, enquanto CRM atual está em `Em Atendimento`.
-- Histórico curado insuficiente para classificar condição, mídia, financiamento, visita, terceiro decisor ou avaliação; fallback oficial usado: `sem_gancho_claro`.
+- Lacuna operacional: histórico curado insuficiente para classificar condição, mídia, financiamento, visita, terceiro decisor ou avaliação; fallback oficial usado: `sem_gancho_claro`.
+- Ainda não há resposta da cliente registrada após os steps de Resgate.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, interromper o Resgate com `stopped_reason=client_replied` antes de responder comercialmente e seguir fluxo normal de qualificação WhatsApp. Se permanecer em silêncio, próximo step de Resgate elegível em 2026-04-30 14:58:50 -03:00, respeitando a régua sequencial.
+Aguardar resposta da cliente. Se responder, interromper o Resgate com `stopped_reason=client_replied` antes de responder comercialmente e seguir fluxo normal de qualificação WhatsApp. Se permanecer em silêncio, próximo step de Resgate elegível em 2026-04-30 17:23:18 -03:00, respeitando a régua sequencial.
 
 ## Observações operacionais
 - CRM/FamaChat permanece fonte operacional de verdade.
