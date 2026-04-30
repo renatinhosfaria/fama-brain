@@ -1,3 +1,15 @@
+---
+type: project-readme
+owner: renato
+created: '2026-04-17'
+updated: '2026-04-24'
+tags:
+  - mcp-obsidian
+  - vault-gateway
+  - ownership-enforcement
+  - brain-sync
+title: mcp-obsidian — Gateway de escrita do vault
+---
 # mcp-obsidian — Gateway de escrita do vault
 
 Referência canônica da integração entre o vault `fama-brain` e o **servidor MCP `mcp-obsidian`** que o gerencia em produção. Este documento é a fonte de verdade para **qualquer agente que precise escrever no vault**.
