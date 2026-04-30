@@ -2,14 +2,15 @@
 type: journal
 owner: reno
 created: '2026-04-27'
-updated: '2026-04-27'
-client_id: 10971
+updated: '2026-04-30'
 tags:
-  - reno
-  - primeiro-contato
   - atendimento
+  - whatsapp
   - lead
+  - primeiro-contato
+title: 10971 — Bruno Sávio — Atendimento
 ---
+
 
 ## 2026-04-27T21:31:20.080600Z — Primeiro contato
 
