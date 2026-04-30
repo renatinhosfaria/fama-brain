@@ -74,3 +74,16 @@ Aguardar resposta ao Resgate. Se Elias responder, interromper a régua de Resgat
 - CRM validado como fonte operacional: cliente existe, `broker_id=35`, status `Em Atendimento`, sem visitas/agendamentos ativos no momento da execução.
 - Documento criado/atualizado em caminho oficial. A primeira escrita com `as_agent=reno` retornou ownership do caminho para `vault-steward`; por governança, a escrita foi repetida com `as_agent=vault-steward` mantendo frontmatter `owner: reno`.
 - Histórico de WhatsApp ativo individual não está disponível como tabela no CRM; contexto foi reconstruído a partir de CRM, notas, sessão Hermes anterior e estado `meta_data.reno_followup.resgate`.
+
+### 2026-04-30 — Resgate step 3
+Reno enviou Resgate step 3 pelo WhatsApp. Bucket: `viabilidade_financiamento`.
+
+Mensagem enviada:
+“Elias, só pra eu te direcionar sem apertar seu orçamento: hoje sua dúvida principal é entrada, parcela ou aprovação do financiamento?”
+
+Contexto usado: CRM validou cliente `broker_id=35`, status `Em Atendimento`, sem agendamento/visita ativa; histórico curado indica busca para morar no Place+Arbi/Shopping Park, preferência por parcela mais leve, sem FGTS e sem entrada no momento. A mensagem mudou o ângulo em relação ao step 2: saiu de “faixa confortável” para identificação da dúvida principal entre entrada, parcela e aprovação.
+
+Próximo `next_run_at` registrado no CRM: 2026-05-01T16:19:59-03:00.
+
+## Próximo passo atualizado
+Aguardar resposta ao Resgate step 3. Se Elias responder, interromper a régua de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) antes de continuar atendimento normal; conduzir com foco na dúvida indicada e, havendo sinal positivo, convidar para visita presencial na Fama.
