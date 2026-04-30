@@ -4,7 +4,7 @@ client_id: 10660
 created: '2026-04-29'
 entity_name: Giovanna
 entity_type: cliente
-owner: reno
+owner: renato
 source: Facebook Ads - Union Vista
 status: Em Atendimento
 tags:
@@ -13,7 +13,7 @@ tags:
   - repescagem
   - client-replied
 type: entity-profile
-updated: '2026-04-29'
+updated: '2026-04-30'
 ---
 # Giovanna
 
