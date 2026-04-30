@@ -1,25 +1,25 @@
 ---
-broker_id: 35
-client_id: 10934
-created: '2026-04-27'
-entity_name: Mateus Silva
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Mateus Silva
+client_id: 10934
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-04-27'
+updated: '2026-04-30'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - resgate
-type: entity-profile
-updated: '2026-04-30'
 ---
 # Atendimento — Mateus Silva
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no Shopping Park. Histórico operacional anterior é fraco para provar diagnóstico do cliente, então o Resgate foi conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região como gancho neutro.
+Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no Shopping Park. Histórico operacional anterior é fraco para provar diagnóstico do cliente, então o Resgate está sendo conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região como gancho neutro e perguntas de baixa fricção para reabrir a conversa.
 
 ## Dados operacionais
 - Cliente ID: 10934
@@ -29,7 +29,7 @@ Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no S
 - Telefone/WhatsApp: disponível no CRM; não replicado integralmente aqui
 - Empreendimento vinculado: Place+Arbi
 - Bairro/região: Shopping Park, Zona Sul de Uberlândia
-- Última interação relevante: 2026-04-30 — Resgate step 1 enviado via WhatsApp
+- Última interação relevante: 2026-04-30 — Resgate step 2 enviado via WhatsApp
 
 ## Contexto comercial
 - Interesse original registrado no CRM: Place+Arbi.
@@ -41,7 +41,7 @@ Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no S
 Ainda não identificada de forma confiável.
 
 ### Momento
-Cliente em retomada de atendimento; sem visita/agendamento ativo no CRM no momento do envio.
+Cliente em retomada de atendimento; sem visita/agendamento ativo no CRM no momento do envio do step 2.
 
 ### Decisão
 Não há informação curada sobre decisores adicionais.
@@ -64,15 +64,23 @@ CRM registra follow-up de repescagem com a mensagem: "Oi, Mateus. Ainda faz sent
 - Próximo `next_run_at`: 2026-04-30T18:04:53.303Z
 - Intenção comercial: confirmar se a região/possibilidade ainda faz sentido e abrir caminho para ajuste de perfil ou retomada consultiva.
 
+### 2026-04-30 — Resgate step 2 enviado
+- Bucket: `sem_gancho_claro`
+- Step: 2
+- Mensagem enviada: "Mateus, pra eu não ficar te mandando opção fora do que você procura: no Place+Arbi, o que mais pesaria pra você hoje — região, planta ou valor?"
+- Contexto usado: CRM/FamaChat, ausência de agendamentos/visitas, empreendimento Place+Arbi no Shopping Park, histórico do step 1 e documento curado oficial.
+- Diferenciação do step anterior: saiu da pergunta ampla sobre região/ajuste de opções e passou para uma escolha simples de prioridade entre região, planta ou valor.
+- Próximo `next_run_at`: 2026-04-30T17:31:32-03:00
+- Intenção comercial: obter prioridade mínima do cliente para ajustar a conversa e evitar novo envio genérico; se houver resposta, interromper Resgate e seguir qualificação normal.
+
 ## Objeções e travas
 - Lacuna operacional: histórico curado não comprova resposta/diagnóstico anterior do cliente, apesar do CRM estar em `Em Atendimento` e branch de Resgate habilitada.
 - Sem objeções comerciais explícitas registradas até o momento.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com `stopped_reason=client_replied` e seguir atendimento normal pela qualificação WhatsApp do Reno, buscando diagnóstico leve e, com sinal positivo, convite para visita presencial na Fama.
+Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com `stopped_reason=client_replied`, limpar `next_run_at` e seguir atendimento normal pela qualificação WhatsApp do Reno. Na qualificação, buscar diagnóstico leve sobre prioridade do imóvel e, com sinal positivo, conduzir para visita presencial na Fama.
 
 ## Observações operacionais
-- CRM é a fonte operacional de verdade; status validado como `Em Atendimento`, `broker_id=35`, sem agendamento/visita ativo no momento do envio.
+- CRM é a fonte operacional de verdade; status validado como `Em Atendimento`, `broker_id=35`, sem agendamento/visita ativo no momento do step 2.
 - Documento atualizado no caminho oficial `_agents/reno/atendimentos/10934-mateus-silva.md`.
-- Atualização realizada por `vault-steward` por ownership do arquivo, mantendo ownership lógico/frontmatter do Reno.
 - Não há dump bruto de conversa neste documento; apenas síntese curada para retomada.
