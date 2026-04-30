@@ -1,6 +1,12 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: Ana Clara Marques
+client_id: 10943
+broker_id: 35
+status_crm: Não Respondeu
+source: FamaChat / SLA Cascata
 created: '2026-04-24'
 updated: '2026-04-30'
 tags:
@@ -10,17 +16,11 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
-entity_type: client
-entity_name: Ana Clara Marques
-client_id: 10943
-broker_id: 35
-status_crm: Não Respondeu
-source: FamaChat / SLA Cascata
 ---
 # Atendimento — Ana Clara Marques
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, originada por SLA Cascata, com interesse associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. Primeiro contato e reenvio inicial já foram feitos sem resposta real. Em 2026-04-29 foi enviada a repescagem step 2 com abordagem consultiva sobre encaixe do empreendimento no momento da cliente.
+Cliente do Reno em `Não Respondeu`, originada por SLA Cascata, com interesse associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. Primeiro contato, reenvio inicial e três steps de repescagem já foram enviados sem resposta real registrada. Em 2026-04-30 foi enviada a repescagem step 3 com diagnóstico leve, mudando a abordagem de encaixe/viabilidade para objetivo de compra: morar ou investir.
 
 ## Dados operacionais
 - Cliente ID: 10943
@@ -29,23 +29,23 @@ Cliente do Reno em `Não Respondeu`, originada por SLA Cascata, com interesse as
 - Origem: SLA Cascata
 - Telefone/WhatsApp: disponível no CRM; JID salvo usado no envio
 - Empreendimento vinculado: Union Vereda (ID 161), Jaraguá, Uberlândia
-- Última interação relevante: repescagem step 2 enviada em 2026-04-29 16:55 -03
+- Última interação relevante: repescagem step 3 enviada em 2026-04-30 17:07 -03
 
 ## Contexto comercial
-A cliente demonstrou interesse no Union Vereda, empreendimento da HLTS Construtora no Jaraguá. O contexto útil para retomada é verificar se o empreendimento faz sentido para o momento dela considerando localização, valor, entrada/financiamento e prazo de entrega, sem pressionar visita antes de uma resposta inicial.
+A cliente demonstrou interesse no Union Vereda, empreendimento da HLTS Construtora no Jaraguá, em Uberlândia. O empreendimento tem apartamentos de 2 quartos, lazer e entrega prevista para Dez/2028. O contexto útil para retomada é entender se a busca é para morar ou investir antes de aprofundar planta, prazo, região, forma de compra ou comparação com alternativas.
 
 ## Diagnóstico
 ### Necessidade
 Possível busca por apartamento no Union Vereda/Jaraguá, ainda sem confirmação verbal da cliente.
 
 ### Momento
-Cliente silenciosa após primeiro contato e reenvio inicial. Repescagem ativa para gerar a primeira microresposta.
+Cliente silenciosa após primeiro contato, reenvio inicial e repescagens anteriores. Repescagem ativa para gerar a primeira microresposta.
 
 ### Decisão
-Sem informações confirmadas sobre decisores, urgência ou critérios de escolha.
+Sem informações confirmadas sobre decisores, urgência ou critérios de escolha. Step 3 buscou descobrir o objetivo principal da compra: morar ou investir.
 
 ### Viabilidade
-Ainda não há dados de renda, entrada, modalidade de compra ou financiamento. A abordagem deve permanecer neutra e consultiva, sem prometer aprovação de crédito.
+Ainda não há dados de renda, entrada, modalidade de compra ou financiamento. Não prometer crédito; manter abordagem consultiva e diagnóstica.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato / backlog
@@ -78,9 +78,32 @@ Registro CRM: envio registrado via ferramenta específica `mark_reno_followup_se
 
 Próximo `next_run_at`: 2026-04-30T14:20:00-03:00.
 
+### 2026-04-30 — Repescagem step 3 enviada
+Fluxo: repescagem.
+
+Step enviado: 3.
+
+Ângulo/contexto usado: imóvel específico + diagnóstico leve. A nova abordagem mudou pelo menos três elementos em relação ao step 2: saiu de encaixe/viabilidade para objetivo de compra, mudou a pergunta para escolha objetiva entre morar ou investir, e destacou o benefício de direcionar indicação/planta/prazo conforme uso pretendido.
+
+Mensagem enviada:
+
+> Ana, pensando no Union Vereda: antes de te mandar opções soltas, tem um ponto que muda bastante a indicação. 🏡
+>
+> Esse tipo de empreendimento pode fazer sentido tanto para morar quanto para investir, mas o caminho muda conforme o objetivo — região, planta, prazo e forma de compra.
+>
+> Hoje você está olhando mais para **morar** ou para **investir**?
+
+Registro CRM: envio registrado via ferramenta específica `mark_reno_followup_sent`, preservando o status `Não Respondeu`.
+
+Próximo `next_run_at`: 2026-05-01T19:10:00-03:00.
+
 ## Objeções e travas
 - Sem resposta real da cliente até o momento.
 - Sem dados de viabilidade financeira ou critérios de busca confirmados.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se não houver resposta até o próximo horário da régua, executar repescagem step 3 com diagnóstico leve e uma pergunta única para abrir conversa consultiva.
+Aguardar resposta da cliente. Se não houver resposta até 2026-05-01T19:10:00-03:00, executar repescagem step 4 com convite consultivo mais direto, sem repetir o argumento de encaixe usado no step 2 nem a pergunta morar/investir usada no step 3.
+
+## Observações operacionais
+- Envio do step 3 feito para o JID salvo no CRM, sem expor telefone no vault além da indicação de que o JID está disponível no CRM.
+- Status CRM preservado como `Não Respondeu`; a repescagem não altera status até haver resposta real da cliente.
