@@ -6,6 +6,31 @@ updated: '2026-04-30'
 tags:
   - decisao
 ---
+## 2026-04-30 — Mudança de posição — aceitar hire de vault-steward (bibliotecário) como staff sob CEO
+
+Renato pushed back na minha recomendação anterior (não criar agente, fazer projeto de 4 passos) com analogia de biblioteca/bibliotecário. Argumentos dele que me convenceram:
+
+1. Lint pega só erro sintático (frontmatter ausente). Não pega "livro na prateleira errada" — drift semântico, decisões registradas como journal, duplicidade entre agentes. Drift semântico exige julgamento, não regra.
+2. Volume escala com hires. Self-service organizacional não escala com 6+ agentes empurrando notas em paralelo.
+3. Sem dono explícito de cross-território, ninguém mantém integridade dos links e da taxonomia.
+
+Mudo de posição: aceitar hire do bibliotecário (`vault-steward`), mas com 3 ajustes:
+
+1. **Não é diretoria — é staff sob CEO.** Sem P&L, sem subordinados, mandato técnico-operacional.
+2. **Direito cross-território precisa estar formalizado** no `_shared/context/AGENTS.md` antes do hire. Pattern `**/*` com prioridade menor que donos. Donos editam primeiro; bibliotecário só intervém em estrutura (move, dedup, frontmatter, paths).
+3. **Schema canônico é precondição** — eu (CEO) escrevo antes do hire para o bibliotecário herdar regras claras.
+
+Escopo proposto (rascunho):
+- Mandato: aplicar/evoluir schema, cleanup big-bang inicial, patrol contínuo (dedup, paths, frontmatter, backlinks).
+- Não faz: interpretar conteúdo (pinga o dono), decidir estratégia (escala para CEO).
+- Métricas 90d: 100% notas com frontmatter válido, 0 duplicatas hard, 0 paths em pasta typo, backlinks íntegros.
+
+Plano: (1) eu escrevo schema canônico, (2) atualizo AGENTS.md ownership map, (3) crio issue filha de FAM-3 para hire, (4) bibliotecário toca cleanup big-bang, (5) lint MCP vira followup.
+
+Pergunta aberta para Renato em interação: escopo (a) só vault Obsidian, recomendado, ou (b) knowledge steward amplo (vault + CRM tags + MinIO + naming Paperclip).
+
+Aprendizado: minha primeira posição privilegiou causa raiz e ignorou que (a) lint é técnico-incompleto, (b) drift semântico requer julgamento humano-equivalente, (c) volume futuro muda o cálculo. Renato tinha visão de sistema mais madura. Mudar de posição quando o argumento é melhor é correto.
+
 ## 2026-04-30 — Vault desorganizado — recomendar projeto de 4 passos, não agente dedicado
 
 Renato comentou em FAM-3 que "vault está extremamente desorganizado e sem padrão" e perguntou se vale criar um agente dedicado só a organizar.
