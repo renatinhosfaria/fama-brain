@@ -179,6 +179,7 @@
   },
   "active": "23871005f548dc96",
   "lastOpenFiles": [
+    "_agents/reno/atendimentos/10949-sonia-silva.md",
     "_agents/reno/atendimentos/10945-hilton-oliveira-leite.md",
     "_shared/context/vault/ceo/schema.md",
     "_shared/context/vault/ceo",
@@ -210,7 +211,6 @@
     "_agents/ceo/decisions.md",
     "_agents/ceo",
     "_agents/reno/auditorias/2026-04-29-auditoria-whatsapp-para-vault.md",
-    "_agents/reno/atendimentos/11013-black-in-style.md",
     "_agents/reno/procedimentos",
     "_agents/reno/planos",
     "_agents/reno/cliente",
