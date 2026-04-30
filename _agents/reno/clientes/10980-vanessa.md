@@ -1,47 +1,70 @@
 ---
-broker_id: 35
-client_id: 10980
-client_name: Vanessa
-created: '2026-04-29'
+type: entity-profile
+owner: renato
+entity_type: client
 entity_name: Vanessa
-entity_type: cliente
-flow: repescagem
-owner: reno
-status: Não Respondeu
+client_id: 10980
+broker_id: 35
+status_crm: Não Respondeu
+source: FamaChat / SLA Cascata
+created: '2026-04-30'
+updated: '2026-04-30'
 tags:
   - reno
+  - atendimento
+  - whatsapp
+  - famachat
   - repescagem
   - nao-respondeu
   - union-vereda
-type: entity-profile
-updated: '2026-04-29'
 ---
-# Vanessa — atendimento Reno
+# Atendimento — Vanessa
 
-## Identificação
-- Cliente: Vanessa
-- client_id: 10980
-- Broker: Reno (`broker_id=35`)
-- Status operacional no FamaChat: `Não Respondeu`
-- Fluxo curado: `repescagem`
+## Resumo atual
+Cliente Vanessa (`client_id=10980`) está sob responsabilidade do Reno (`broker_id=35`) e permanece em `Não Respondeu`. Houve primeiro contato/reenvio inicial e repescagem step 1 sem resposta real identificada. Em 2026-04-30 foi enviada repescagem step 2 com foco em evitar caminho errado e abrir leitura de encaixe do Union Vereda com valores/financiamento.
 
-## Contexto comercial curado
-- Origem operacional: SLA Cascata.
-- Interesse registrado: Union Vereda, no Jaraguá, Uberlândia.
-- Empreendimento relacionado: Union Vereda (`id_empreendimento=161`), apartamento no Jaraguá, com opções de 2 quartos e entrega prevista para dez/2028.
-- Histórico: primeiro contato/reenvio inicial já enviado pelo Reno, sem resposta real identificada até esta execução.
+## Dados operacionais
+- Cliente ID: 10980
+- Broker ID: 35
+- Status CRM: Não Respondeu
+- Origem: SLA Cascata
+- Telefone/WhatsApp: WhatsApp disponível no CRM; envio realizado pelo JID salvo, sem expor número completo neste documento.
+- Empreendimento relacionado: Union Vereda (`id_empreendimento=161`)
+- Última interação relevante: repescagem step 2 enviada em 2026-04-30T10:55:25-03:00.
 
-## Diagnóstico da repescagem
-- Ângulo comercial usado: imóvel específico + organização da busca.
-- Intenção do step 1: criar um novo motivo para resposta sem repetir o primeiro contato.
-- Argumento usado: antes de olhar mais opções/fotos, vale entender se o Union Vereda realmente combina com o momento da cliente e se o caminho deve começar por imóvel ou valores/financiamento.
+## Contexto comercial
+- Interesse registrado: Union Vereda, região do Jaraguá.
+- Origem operacional: SLA Cascata, sequência 3, cliente original id 10862.
+- O histórico indica silêncio após abertura inicial e reenvio; não há resposta real da cliente registrada até esta atualização.
+- O melhor ângulo comercial no momento é tratar o imóvel específico como ponto de partida e trazer a conversa para viabilidade/encaixe antes de aprofundar opções.
 
-## Última ação — Repescagem step 1
-- Data/hora de envio: 2026-04-29T10:31:27-03:00
-- Canal: WhatsApp
-- Step enviado: 1
-- Mensagem enviada:
+## Diagnóstico
+### Necessidade
+Ainda não declarada pela cliente. O interesse conhecido é no Union Vereda/Jaraguá.
 
+### Momento
+Lead silencioso após contato inicial e repescagem anterior. Momento comercial ainda incerto.
+
+### Decisão
+Sem informação sobre decisores, família ou preferência final.
+
+### Viabilidade
+Há oportunidade de abrir diagnóstico por valores, entrada e financiamento, sem prometer aprovação de crédito.
+
+## Histórico curado de interações
+### 2026-04-23 — Falha operacional no primeiro contato
+CRM registrou falha inicial no bridge ao tentar envio para variação numérica. Caso permaneceu elegível para novo contato pelo Reno.
+
+### 2026-04-24 — Mensagem inicial enviada
+Reno enviou abertura inicial contextualizando interesse no Union Vereda, região do Jaraguá, e perguntou se a região combinava com a busca. Status atualizado/preservado como `Não Respondeu`.
+
+### 2026-04-25 — Reenvio inicial
+Reno reenviou abertura inicial em duas mensagens: apresentação e contextualização do Union Vereda/Jaraguá. Status preservado como `Não Respondeu`.
+
+### 2026-04-29 — Repescagem step 1 enviada
+Mensagem focou em criar novo motivo para resposta: avaliar se o Union Vereda combina com o momento da cliente antes de olhar opções soltas.
+
+Mensagem enviada:
 ```text
 Oi, Vanessa! Tudo bem? 🏡
 
@@ -52,7 +75,33 @@ Posso te ajudar a fazer essa leitura de forma **simples e sem compromisso**, par
 Você prefere que eu te ajude primeiro pelo encaixe do imóvel ou pela parte de valores/financiamento?
 ```
 
+### 2026-04-30 — Repescagem step 2 enviada
+- Fluxo: repescagem
+- Step enviado: 2
+- Data/hora de envio: 2026-04-30T10:55:25-03:00
+- Ângulo/contexto comercial usado: imóvel específico + viabilidade/financiamento; evitar caminho errado antes de aprofundar no Union Vereda.
+- Intenção do step: mostrar valor prático de uma primeira análise para evitar perda de tempo com opção que não encaixe.
+
+Mensagem enviada:
+```text
+Oi, Vanessa! Tudo bem? 🔑
+
+Sobre o Union Vereda, no Jaraguá, o cuidado agora é não seguir só pela opção que chamou atenção, mas entender se ela encaixa no seu momento de compra.
+
+Quando a gente olha **valores, entrada e financiamento** antes, fica mais fácil evitar perda de tempo com um caminho que depois pode não fazer sentido.
+
+Quer que eu te ajude com uma primeira leitura desse encaixe?
+```
+
+## Objeções e travas
+- Sem objeção declarada. A principal trava operacional é ausência de resposta.
+
 ## Próximo passo
-- Próximo `next_run_at`: 2026-04-30T08:00:00-03:00
-- Se não houver resposta real até o próximo horário elegível, seguir para repescagem step 2.
-- Se houver resposta real da cliente, parar repescagem, manter atendimento fora desta skill e mover para `Em Atendimento` quando aplicável.
+- Próximo `next_run_at`: 2026-05-01T14:20:00-03:00.
+- Se não houver resposta real até o próximo horário elegível, seguir para repescagem step 3 com diagnóstico leve.
+- Se houver resposta real da cliente, parar repescagem, mover para atendimento normal do Reno e alterar status para `Em Atendimento` somente se ainda estiver exatamente em `Não Respondeu`.
+
+## Observações operacionais
+- Documento oficial criado no caminho determinístico `_agents/reno/atendimentos/10980-vanessa.md` conforme governança atual.
+- Há documentos legados/drift localizados em `_agents/reno/atendimentos/vanessa.md` e `_agents/reno/clientes/10980-vanessa.md`; o conteúdo útil foi consolidado neste documento oficial. Não foram removidos nesta execução.
+- Estado da repescagem foi registrado no CRM pela tool específica `mark_reno_followup_sent`, sem manipulação manual de `meta_data`.
