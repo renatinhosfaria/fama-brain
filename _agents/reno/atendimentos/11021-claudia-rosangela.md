@@ -75,3 +75,12 @@ Aguardar resposta da cliente. Se responder com preferência de período/dia, con
 
 ## Observações operacionais
 Documento oficial consolidado em `_agents/reno/atendimentos/11021-claudia-rosangela.md`. Existe documento legado em `_agents/reno/clientes/cliente-11021-claudia-rosangela.md`; conteúdo útil foi incorporado aqui, mas o legado não foi removido. Escrita realizada por `vault-steward` por ownership do arquivo, mantendo `owner: reno` no frontmatter.
+
+
+### 2026-04-30 — Resgate step 3
+Mensagem enviada via WhatsApp: “Claudia, pra não marcar nada no escuro: ficou alguma dúvida sobre o Union Vereda que te impede de vir conhecer — valor, financiamento ou horário?”
+
+Bucket: `visita_pendente`.
+Contexto usado: cliente gostou da planta/perfil do Union Vereda, já perguntou valor e indicou que a visita teria que ficar para a próxima semana. Step anterior perguntou preferência de período; este step mudou o ângulo para identificar a dúvida/trava que impede a visita, sem repetir convite direto.
+Próximo `next_run_at`: 2026-04-30T18:00:59-03:00.
+Próximo passo comercial: se a cliente responder dúvida de valor/financiamento, responder curto, reduzir fricção e reconduzir para visita presencial; se responder disponibilidade, acionar agendamento no FamaChat.
