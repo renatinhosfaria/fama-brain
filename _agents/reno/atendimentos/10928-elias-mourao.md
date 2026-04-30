@@ -1,25 +1,25 @@
 ---
-broker_id: 35
-client_id: 10928
-created: '2026-04-30'
-entity_name: Elias Mourão
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: SLA Cascata
+entity_type: atendimento
+entity_name: Elias Mourão
+client_id: 10928
+broker_id: 35
 status_crm: Em Atendimento
+source: SLA Cascata
+created: '2026-04-30'
+updated: '2026-04-30'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - resgate
-type: entity-profile
-updated: '2026-04-30'
 ---
 # Atendimento — Elias Mourão
 
 ## Resumo atual
-Cliente em atendimento pelo Reno, com interesse em moradia no Place+Arbi/Shopping Park. Já respondeu anteriormente e refinou busca para uma condição mais leve. Resgate step 2 enviado em 2026-04-30 com foco em viabilidade e parcela confortável.
+Cliente em atendimento pelo Reno, com interesse em moradia no Place+Arbi/Shopping Park. Já respondeu anteriormente e refinou busca para uma condição mais leve. Resgate step 3 enviado em 2026-04-30 com foco em viabilidade de financiamento e identificação da dúvida principal: entrada, parcela ou aprovação.
 
 ## Dados operacionais
 - Cliente ID: 10928
@@ -28,7 +28,7 @@ Cliente em atendimento pelo Reno, com interesse em moradia no Place+Arbi/Shoppin
 - Origem: SLA Cascata
 - Telefone/WhatsApp: final 2708; JID confirmado no CRM
 - Empreendimento vinculado: Place+Arbi — Shopping Park, Uberlândia
-- Última interação relevante: Resgate step 2 enviado pelo Reno em 2026-04-30 14:01 -03
+- Última interação relevante: Resgate step 3 enviado pelo Reno em 2026-04-30 16:19 -03
 
 ## Contexto comercial
 Elias demonstrou interesse para moradia e o empreendimento ativo no CRM é o Place+Arbi, no bairro Shopping Park. Histórico de CRM indica preferência atual por Shopping Park, busca de parcela mais leve, abertura para imóvel de 1 quarto e também casa se a condição ficar melhor.
@@ -63,18 +63,6 @@ Quer que eu veja contigo uma faixa mais confortável pra começar?”
 
 Próximo `next_run_at` registrado no CRM: 2026-04-30T16:01:31.422-03:00.
 
-## Objeções e travas
-- Viabilidade financeira sensível: sem entrada e sem FGTS no momento.
-- Parcela mensal precisa ser leve; evitar condução para imóvel/condição que aperte o orçamento.
-
-## Próximo passo
-Aguardar resposta ao Resgate. Se Elias responder, interromper a régua de Resgate (`stopped_reason=client_replied`) antes de continuar e retomar atendimento normal com foco em faixa confortável, possibilidade de financiamento e convite para visita presencial quando houver sinal positivo.
-
-## Observações operacionais
-- CRM validado como fonte operacional: cliente existe, `broker_id=35`, status `Em Atendimento`, sem visitas/agendamentos ativos no momento da execução.
-- Documento criado/atualizado em caminho oficial. A primeira escrita com `as_agent=reno` retornou ownership do caminho para `vault-steward`; por governança, a escrita foi repetida com `as_agent=vault-steward` mantendo frontmatter `owner: reno`.
-- Histórico de WhatsApp ativo individual não está disponível como tabela no CRM; contexto foi reconstruído a partir de CRM, notas, sessão Hermes anterior e estado `meta_data.reno_followup.resgate`.
-
 ### 2026-04-30 — Resgate step 3
 Reno enviou Resgate step 3 pelo WhatsApp. Bucket: `viabilidade_financiamento`.
 
@@ -85,5 +73,14 @@ Contexto usado: CRM validou cliente `broker_id=35`, status `Em Atendimento`, sem
 
 Próximo `next_run_at` registrado no CRM: 2026-05-01T16:19:59-03:00.
 
-## Próximo passo atualizado
+## Objeções e travas
+- Viabilidade financeira sensível: sem entrada e sem FGTS no momento.
+- Parcela mensal precisa ser leve; evitar condução para imóvel/condição que aperte o orçamento.
+
+## Próximo passo
 Aguardar resposta ao Resgate step 3. Se Elias responder, interromper a régua de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) antes de continuar atendimento normal; conduzir com foco na dúvida indicada e, havendo sinal positivo, convidar para visita presencial na Fama.
+
+## Observações operacionais
+- CRM validado como fonte operacional: cliente existe, `broker_id=35`, status `Em Atendimento`, sem visitas/agendamentos ativos no momento da execução.
+- Documento mantido em caminho oficial `_agents/reno/atendimentos/10928-elias-mourao.md`.
+- Histórico de WhatsApp ativo individual não está disponível como tabela no CRM; contexto foi reconstruído a partir de CRM, notas, sessão Hermes anterior e estado `meta_data.reno_followup.resgate`.
