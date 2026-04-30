@@ -1,53 +1,81 @@
 ---
-agent: reno
-broker_id: 35
-client_id: 10989
-created: '2026-04-29'
+type: entity-profile
+owner: renato
+entity_type: client
 entity_name: Erlania Silva
-entity_type: cliente
-fluxo: repescagem
-owner: reno
-status: Não Respondeu
+client_id: 10989
+broker_id: 35
+status_crm: Não Respondeu
+source: SLA Cascata
+created: '2026-04-27'
+updated: '2026-04-30'
 tags:
   - reno
-  - repescagem
+  - atendimento
   - whatsapp
-  - imovel-especifico
-type: entity-profile
-updated: '2026-04-29'
+  - famachat
+  - repescagem
 ---
-# Erlania Silva — Repescagem Reno
+# Atendimento — Erlania Silva
 
-## Identificação
-- Cliente: Erlania Silva
-- Client ID: 10989
-- Broker: Reno Agente de IA (`broker_id=35`)
-- Status operacional no momento do envio: Não Respondeu
-- Fluxo: repescagem
+## Resumo atual
+Cliente do Reno em `Não Respondeu`, originada de SLA Cascata, com interesse contextual no Union Vereda / região do Jaraguá. Primeiro contato e repescagens enviadas via WhatsApp; até esta atualização, sem resposta real da cliente.
 
-## Contexto comercial curado
-- Fonte operacional: FamaChat / CRM.
-- Primeiro contato registrado em 2026-04-27 informava interesse no **Union Vereda**, região do **Jaraguá**.
-- Situação antes desta repescagem: aguardando primeira resposta real da cliente.
-- Ângulo comercial usado: **imóvel específico** / validação de região e encaixe da busca.
+## Dados operacionais
+- Cliente ID: 10989
+- Broker ID: 35
+- Status CRM: Não Respondeu
+- Origem: SLA Cascata
+- Telefone/WhatsApp: WhatsApp disponível no CRM; envio realizado pelo JID salvo.
+- Última interação relevante: repescagem step 2 enviada em 2026-04-30 11:37 -03:00.
 
-## Repescagem enviada
-- Data/hora de envio: 2026-04-29T11:15:03-03:00
-- Step enviado: 1
-- Intenção do step: novo motivo para responder sem repetir a abertura inicial.
-- Canal: WhatsApp
-- Registro operacional: envio marcado no CRM pela tool específica `mark_reno_followup_sent`.
+## Contexto comercial
+Interesse identificado no Union Vereda, na região do Jaraguá. Ainda não há diagnóstico confirmado pela cliente sobre financiamento, prazo, objetivo de compra ou preferência de região. A abordagem deve evitar repetir somente o interesse no empreendimento e buscar uma microresposta objetiva para abrir diagnóstico.
 
-### Mensagem enviada
-```text
-Oi, Erlania! Tudo bem? 🏡
+## Diagnóstico
+### Necessidade
+Possível busca por imóvel relacionada ao Union Vereda/Jaraguá, ainda sem necessidade declarada pela cliente.
 
-Sobre o Union Vereda, na região do Jaraguá, às vezes o melhor primeiro passo não é sair vendo várias opções, e sim entender se esse caminho combina com o que você busca e com uma compra viável.
+### Momento
+Cliente está silenciosa após primeiro contato e repescagem inicial; momento de compra ainda não confirmado.
 
-Posso te ajudar a organizar isso de forma **simples e sem pressão**. O Jaraguá é mesmo uma região que você quer considerar?
-```
+### Decisão
+Sem informação sobre decisores ou influência familiar.
+
+### Viabilidade
+Sem dados confirmados. A repescagem step 2 abriu caminho para entender se a compra seria financiada ou à vista, sem prometer crédito.
+
+## Histórico curado de interações
+### 2026-04-27 — Primeiro contato de recuperação enviado
+Reno enviou duas mensagens curtas por WhatsApp: apresentação como Reno, da Fama Negócios Imobiliários, e gancho sobre interesse no Union Vereda/região do Jaraguá, perguntando se a região combinava com a busca. Situação após envio: aguardando resposta.
+
+### 2026-04-29 — Repescagem step 1 enviada
+Mensagem usou o ângulo de imóvel específico/organização da busca: Union Vereda, Jaraguá, encaixe com a busca e compra viável. Pergunta principal: se o Jaraguá era uma região que a cliente queria considerar.
+
+### 2026-04-30 — Repescagem step 2 enviada
+Fluxo: repescagem.  
+Step enviado: 2.  
+Contexto/ângulo comercial usado: evitar caminho errado e abrir diagnóstico de viabilidade sem repetir a pergunta sobre região; foco em financiamento, entrada e parcela possível como filtro real para o Union Vereda/Jaraguá.
+
+Mensagem enviada:
+> Erlania, bom dia! 🔑
+>
+> Te chamei por conta do Union Vereda, mas pra não te mandar opção solta, o ponto que mais muda a busca é saber o caminho da compra: financiamento, entrada e parcela possível.
+>
+> Assim dá pra filtrar só o que faz sentido de verdade, inclusive se o Jaraguá continuar sendo uma boa opção.
+>
+> Você pretende comprar financiado ou seria à vista?
+
+Envio registrado no CRM pela tool específica do Reno. Próxima repescagem prevista para 2026-05-01 14:20 -03:00 se a cliente continuar sem responder.
+
+## Objeções e travas
+- Silêncio após contatos anteriores; não há objeção explícita.
+- Falha operacional anterior de primeiro contato foi registrada em 2026-04-23 e posteriormente recuperada em 2026-04-27.
 
 ## Próximo passo
-- Próximo `next_run_at`: 2026-04-30T08:00:00-03:00
-- Se não houver resposta real da cliente até o próximo horário, seguir para o step 2 da régua de repescagem.
-- Se houver resposta real, interromper repescagem e conduzir por fluxo normal de atendimento do Reno.
+Aguardar resposta da cliente. Se responder, parar repescagem, tratar pelo fluxo normal de atendimento do Reno e atualizar status para `Em Atendimento` somente se o CRM ainda estiver exatamente em `Não Respondeu`. Se não responder, próxima elegibilidade de repescagem: step 3 em 2026-05-01 14:20 -03:00.
+
+## Observações operacionais
+- Documento consolidado no caminho oficial `_agents/reno/atendimentos/10989-erlania-silva.md`.
+- Há registro legado em `_agents/reno/clientes/10989-erlania-silva.md`; não escrever nesse caminho em novos eventos.
+- Não houve alteração de status durante a repescagem.
