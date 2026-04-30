@@ -2,10 +2,33 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-29'
-updated: '2026-04-29'
+updated: '2026-04-30'
 tags:
   - decisao
 ---
+## 2026-04-30 — Vault desorganizado — recomendar projeto de 4 passos, não agente dedicado
+
+Renato comentou em FAM-3 que "vault está extremamente desorganizado e sem padrão" e perguntou se vale criar um agente dedicado só a organizar.
+
+Audit confirmou desorganização real: 326 notas (289 do Reno), arquivos sem frontmatter (`endereco.md`, `metodologia-negocio.md`, `10971-bruno-savio.md`), path typo (`cliente/` vs `clientes/`), duplicação massiva entre `atendimentos/` e `clientes/`, nesting estranho (`atendimentos/clientes/`), `_agents/README.md` listando Reno como Paperclip quando é OpenClaw.
+
+Decisão: **não criar agente dedicado a organização.** Recomendar plano de 4 passos com CEO como dono:
+
+1. Schema canônico em `_shared/context/vault/ceo/schema.md` — types, frontmatter, naming.
+2. Cleanup big-bang das 326 notas — uma passada, não trabalho contínuo.
+3. Lint no MCP rejeitando writes sem frontmatter — multiplicador real para evitar regressão.
+4. Donos por território — cada agente mantém o próprio (Reno→Reno, CEO→CEO, Renato→fama).
+
+Por que descartar o agente dedicado:
+- Ataca sintoma (sujeira), não causa (Reno escreve fast sem schema, sem lint MCP).
+- Conflita ownership — território do Reno é do Reno por AGENTS.md.
+- Não escala — sempre atrás do firehose.
+- Custo cognitivo de diretor para entregável "limpou uma vez".
+
+Janela para reconsiderar: se após (1-4) vault desorganizar de novo — sinal de que problema é volume, não disciplina — aí sim experimentar Vault Steward como subordinado do CEO (não diretoria).
+
+Próximo passo: aguardar Renato escolher entre (a) projeto de 4 passos comigo tocando, (b) criar agente mesmo assim, (c) outro caminho. Hire de diretoria continua pausado.
+
 ## 2026-04-29 — Hiring de diretoria Paperclip pausado — Renato pediu discussão antes
 
 Em FAM-3, Renato escolheu "hold — quero discutir antes" na interação ask_user_questions sobre quais ondas de contratação disparar. Não houve comentário adicional explicando o porquê.
