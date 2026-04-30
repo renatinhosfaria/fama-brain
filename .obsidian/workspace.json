@@ -179,6 +179,10 @@
   },
   "active": "23871005f548dc96",
   "lastOpenFiles": [
+    "_agents/reno/atendimentos/10945-hilton-oliveira-leite.md",
+    "_shared/context/vault/ceo/schema.md",
+    "_shared/context/vault/ceo",
+    "_shared/context/vault",
     "_shared/context/organograma/ceo/diretoria-proposta-2026q2.md",
     "_shared/context/organograma/ceo",
     "_shared/context/organograma",
@@ -207,13 +211,9 @@
     "_agents/ceo",
     "_agents/reno/auditorias/2026-04-29-auditoria-whatsapp-para-vault.md",
     "_agents/reno/atendimentos/11013-black-in-style.md",
-    "_agents/reno/atendimentos/augusto-santana.md",
-    "_agents/reno/atendimentos/10657-lead-garden-sul.md",
     "_agents/reno/procedimentos",
     "_agents/reno/planos",
     "_agents/reno/cliente",
-    "_agents/reno/clientes",
-    "_agents/reno/auditorias",
-    "_agents/reno/atendimentos/clientes"
+    "_agents/reno/clientes"
   ]
 }
