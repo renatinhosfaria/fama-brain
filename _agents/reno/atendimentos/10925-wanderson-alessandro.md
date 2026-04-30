@@ -1,6 +1,12 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: Wanderson Alessandro
+client_id: 10925
+broker_id: 35
+status_crm: Não Respondeu
+source: FamaChat / SLA Cascata
 created: '2026-04-25'
 updated: '2026-04-30'
 tags:
@@ -10,17 +16,11 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
-entity_type: client
-entity_name: Wanderson Alessandro
-client_id: 10925
-broker_id: 35
-status_crm: Não Respondeu
-source: FamaChat / SLA Cascata
 ---
 # Atendimento — Wanderson Alessandro
 
 ## Resumo atual
-Cliente do Reno em status **Não Respondeu**. Veio de SLA Cascata e recebeu contato inicial/reenvio sobre o **Union Vista**, na região do **Grand Ville**. Em 2026-04-29 foi enviada a repescagem step 2 com abordagem consultiva para avaliar se o empreendimento faz sentido para o momento do cliente, sem pressionar visita.
+Cliente do Reno em status **Não Respondeu**. Veio de SLA Cascata e recebeu contato inicial/reenvio sobre o **Union Vista**, na região do **Grand Ville**. Em 2026-04-30 foi enviada a **repescagem step 3**, mudando o ângulo para diagnóstico leve de objetivo de compra: moradia, mudança planejada ou investimento.
 
 ## Dados operacionais
 - Cliente ID: 10925
@@ -28,23 +28,26 @@ Cliente do Reno em status **Não Respondeu**. Veio de SLA Cascata e recebeu cont
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata
 - Telefone/WhatsApp: registrado no FamaChat; JID salvo usado para envio
-- Última interação relevante: 2026-04-29 15:49 -03 — repescagem step 2 enviada via WhatsApp
+- Empreendimento associado no CRM: Union Vista
+- Última interação relevante: 2026-04-30 14:56 -03 — repescagem step 3 enviada via WhatsApp
 
 ## Contexto comercial
-Interesse identificado: **Union Vista**, região do **Grand Ville**. Não há resposta real do cliente registrada até o momento; portanto, o foco comercial é criar motivo novo para resposta, conectando o imóvel específico com uma análise simples de encaixe de valor, região e forma de compra.
+Interesse identificado: **Union Vista**, região do **Grand Ville**, em Uberlândia. O empreendimento é um lançamento com entrega prevista para **jul/2027**, apartamentos de 2 quartos e área de lazer estruturada. Não há resposta real do cliente registrada até o momento.
+
+A abordagem anterior já explorou encaixe de valor, região e forma de compra. Para não repetir o mesmo argumento, o step 3 abriu outro caminho: entender se o cliente olha o imóvel para **morar, planejar mudança futura ou investir**.
 
 ## Diagnóstico
 ### Necessidade
 Possível busca por imóvel específico, com ponto de partida no Union Vista.
 
 ### Momento
-Cliente ainda silencioso após contato inicial e repescagem anterior; momento comercial incerto.
+Cliente ainda silencioso após contato inicial/reenvio e repescagens steps 1 e 2. Momento comercial incerto.
 
 ### Decisão
 Sem informação sobre decisores ou urgência.
 
 ### Viabilidade
-Sem dados de renda, entrada ou financiamento. Não afirmar aprovação; abordar como leitura inicial de encaixe e viabilidade.
+Sem dados de renda, entrada ou financiamento. Não afirmar aprovação; conduzir por diagnóstico inicial e leitura de objetivo antes de discutir opções.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Reenvio inicial do Reno
@@ -71,9 +74,29 @@ Mensagem enviada:
 
 Próximo `next_run_at`: 2026-04-30T14:20:00-03:00.
 
+### 2026-04-30 — Repescagem step 3
+Fluxo: repescagem  
+Step enviado: 3  
+Data/hora de envio: 2026-04-30T14:56:24-03:00  
+Contexto/ângulo comercial: imóvel específico + diagnóstico leve; a mensagem diferenciou a abordagem anterior ao sair de encaixe/viabilidade e perguntar pelo objetivo do cliente com o Union Vista.
+
+Mensagem enviada:
+
+> Wanderson, pensando no Union Vista 📍
+>
+> Como ele é um lançamento no Grand Ville, perto do Parque do Sabiá, o caminho muda bastante dependendo do objetivo: comprar para morar, planejar mudança mais pra frente ou olhar como investimento.
+>
+> Pra eu não te mandar coisa solta, me responde só isso: **você está olhando mais para morar ou para investir?**
+
+Próximo `next_run_at`: 2026-05-01T19:10:00-03:00.
+
 ## Objeções e travas
 - Cliente ainda não respondeu; não há objeção explícita.
-- Trava operacional: histórico anterior existia em documento sem `client_id` no nome; este arquivo oficial consolida o atendimento pelo caminho determinístico.
+- Trava operacional histórica: havia documento legado em `_agents/reno/clientes/`; este arquivo oficial consolida o atendimento pelo caminho determinístico em `_agents/reno/atendimentos/`.
 
 ## Próximo passo
-Aguardar resposta real do cliente. Se continuar silencioso e o `next_run_at` vencer, a próxima execução elegível da repescagem deve preparar o step 3 com diagnóstico leve, preferencialmente ainda usando o contexto do Union Vista/Grand Ville.
+Aguardar resposta real do cliente. Se responder, a repescagem deve parar e o fluxo de atendimento normal do Reno deve assumir, com mudança de status para **Em Atendimento** se o CRM ainda estiver exatamente em **Não Respondeu**. Se continuar silencioso e o `next_run_at` vencer, a próxima execução elegível da repescagem deve preparar o step 4 com convite consultivo direto, sem repetir o argumento de objetivo morar/investir.
+
+## Observações operacionais
+- WhatsApp enviado usando o JID salvo no CRM.
+- CRM atualizado via `mark_reno_followup_sent` para step 3, `last_sent_at=2026-04-30T14:56:24-03:00` e `next_run_at=2026-05-01T19:10:00-03:00`.
