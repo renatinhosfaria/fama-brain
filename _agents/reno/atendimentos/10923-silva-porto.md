@@ -19,6 +19,7 @@ tags:
   - regiao-central
   - viabilidade
   - aluguel
+  - sem-entrada
 ---
 # Atendimento — Silva Porto
 
@@ -27,7 +28,7 @@ Cliente CRM 10923, broker Reno (35), em status **Em Atendimento** após resposta
 
 Em 2026-05-01, o cliente respondeu primeiro **"Morar"** à pergunta de repescagem step 3 sobre finalidade da compra. A repescagem foi interrompida no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-Na sequência, o cliente acrescentou a preferência **"Preferência região central"**, respondeu **"Tanto faz"** indicando flexibilidade dentro desse recorte, perguntou **"Valor da parcela"** e informou que atualmente paga **R$ 900/mês de aluguel**. A dúvida atual é de viabilidade/condição de pagamento; a resposta comercial deve tratar aluguel x parcela com cuidado, sem prometer aprovação, e conduzir para entendimento de valor, entrada e financiamento com segurança.
+Na sequência, o cliente acrescentou a preferência **"Preferência região central"**, respondeu **"Tanto faz"** indicando flexibilidade dentro desse recorte, perguntou **"Valor da parcela"**, informou que atualmente paga **R$ 900/mês de aluguel** e depois respondeu **"Não tenho guardado"**. A dúvida atual é de viabilidade/condição de pagamento com sinal de ausência de reserva/entrada disponível. A resposta comercial deve tratar aluguel x parcela/entrada com cuidado, explicar que entrada parcelada pode ajudar quando houver encaixe, não prometer aprovação e conduzir para avaliação de financiamento com segurança.
 
 ## Dados operacionais
 - Cliente ID: 10923
@@ -35,16 +36,16 @@ Na sequência, o cliente acrescentou a preferência **"Preferência região cent
 - Status CRM: Em Atendimento
 - Origem: SLA Cascata / Facebook Ads
 - Telefone/WhatsApp: salvo no CRM
-- Última interação relevante: 2026-05-01 — inbound WhatsApp: "Eu pago aqui de aluguel 900, por mês de aluguel"
+- Última interação relevante: 2026-05-01 — inbound WhatsApp: "Não tenho guardado"
 
 ## Contexto comercial
 Interesse identificado no histórico: Union Vista, empreendimento de apartamentos no Grand Ville, Uberlândia, com prazo de entrega informado anteriormente como Jul/2027. Há registros automáticos de reentrada por Facebook Ads com empreendimentos de interesse vinculados.
 
-A resposta "Morar" indica busca para uso próprio. A preferência por **região central** deve ser tratada como critério comercial relevante: rotina, localização e acesso provavelmente pesam na decisão. A resposta "Tanto faz" sugere flexibilidade sobre algum aspecto perguntado na conversa. A pergunta "Valor da parcela" e a informação de que paga **R$ 900/mês de aluguel** sinalizam preocupação de viabilidade e oportunidade de explicar que parcela depende de unidade, entrada, financiamento e análise, usando a visita presencial na Fama como próximo passo de segurança se houver engajamento.
+A resposta "Morar" indica busca para uso próprio. A preferência por **região central** deve ser tratada como critério comercial relevante: rotina, localização e acesso provavelmente pesam na decisão. A resposta "Tanto faz" sugere flexibilidade sobre algum aspecto perguntado na conversa. A pergunta "Valor da parcela", a informação de aluguel atual de **R$ 900/mês** e a resposta **"Não tenho guardado"** sinalizam preocupação de viabilidade: o cliente quer entender se consegue sair do aluguel, mas provavelmente não tem entrada/reserva relevante disponível no momento.
 
 ## Diagnóstico
 ### Necessidade
-Cliente sinalizou intenção de compra para moradia, preferência por região central e interesse em entender parcela. O aluguel atual de R$ 900/mês pode ser usado como referência de capacidade/conforto mensal, sem tratar como aprovação ou limite definitivo. Próxima condução deve organizar uma prévia de viabilidade sem transformar a conversa em simulação definitiva pelo WhatsApp.
+Cliente sinalizou intenção de compra para moradia, preferência por região central e interesse em entender parcela. O aluguel atual de R$ 900/mês pode ser usado como referência de conforto mensal, sem tratar como aprovação ou limite definitivo. A ausência de valor guardado deve orientar a conversa para opções com entrada parcelada, subsídio/MCMV quando aplicável e análise presencial/segura.
 
 ### Momento
 Saiu da condição de silêncio após repescagem step 3. Atendimento deve seguir em conversa normal, não mais em fluxo automático de repescagem.
@@ -53,7 +54,7 @@ Saiu da condição de silêncio após repescagem step 3. Atendimento deve seguir
 Ainda não há dados sobre decisores, família, urgência ou critérios finais.
 
 ### Viabilidade
-Cliente perguntou sobre valor da parcela e informou aluguel atual de R$ 900/mês, indicando que financiamento/condição de pagamento é relevante. Ainda não há informações suficientes sobre renda, entrada, FGTS, orçamento ou unidade exata. Não prometer aprovação; usar linguagem de estimativa e conduzir para avaliação segura.
+Cliente perguntou sobre valor da parcela, informou aluguel atual de R$ 900/mês e disse não ter valor guardado. Ainda faltam dados sobre renda, FGTS, composição familiar, faixa de valor e unidade exata. Não prometer aprovação; usar linguagem de estimativa e conduzir para avaliação segura.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Reenvio inicial do Reno
@@ -124,6 +125,16 @@ Ação operacional realizada no CRM:
 - resgate inexistente;
 - nota CRM registrada com referência de aluguel atual de R$ 900/mês e próximo passo comercial.
 
+### 2026-05-01 — Sem valor guardado / entrada disponível
+Cliente respondeu pelo WhatsApp: "Não tenho guardado".
+
+Ação operacional realizada no CRM:
+- cliente confirmado como Reno (`broker_id=35`);
+- status preservado em Em Atendimento;
+- repescagem conferida como já interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate inexistente;
+- nota CRM registrada com o conteúdo útil da resposta e próximo passo comercial.
+
 ## Objeções e travas
 - Trava anterior: silêncio / ausência de primeira microresposta.
 - Trava resolvida em 2026-05-01 com resposta inbound.
@@ -131,9 +142,10 @@ Ação operacional realizada no CRM:
 - Resposta "Tanto faz" indica flexibilidade, mas também risco de conversa vaga; a condução deve ser objetiva.
 - Dúvida atual: valor da parcela. Tratar como sinal de viabilidade, sem prometer aprovação e sem fazer simulação definitiva sem dados.
 - Referência financeira: aluguel atual de R$ 900/mês. Usar como gancho consultivo para comparar aluguel x possibilidade de compra, sem afirmar que parcela ficará nesse valor.
+- Trava de viabilidade: cliente informou não ter valor guardado. Tratar com sensibilidade; explorar entrada parcelada/condições e dados mínimos de financiamento sem pressionar.
 
 ## Próximo passo
-Responder comercialmente no WhatsApp sem reativar repescagem: validar que R$ 900 de aluguel é uma boa referência para começar a análise, explicar de forma curta que parcela depende da unidade, entrada e financiamento, e conduzir para levantar dado mínimo necessário ou visita presencial na Fama para simulação real. Evitar prometer aprovação ou valor fechado.
+Responder comercialmente no WhatsApp sem reativar repescagem: validar que não ter valor guardado é comum e não encerra a análise, explicar que precisa olhar entrada/financiamento com segurança e, se fizer sentido, conduzir para atendimento presencial na Fama para simular sem prometer aprovação. Evitar afirmar parcela, aprovação ou encaixe antes de análise.
 
 ## Observações operacionais
 - CRM/FamaChat confirmou cliente 10923 com `broker_id=35`.
