@@ -1,8 +1,8 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
 created: '2026-04-24'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -10,7 +10,7 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
-entity_type: client
+entity_type: atendimento
 entity_name: samara
 client_id: 10981
 broker_id: 35
@@ -22,7 +22,7 @@ source: SLA Cascata
 ## Resumo atual
 Cliente `10981`, sob responsabilidade do Reno (`broker_id=35`), permanece em status CRM `Não Respondeu`. A cliente demonstrou interesse no empreendimento **Union Vista**, região do **Grand Ville**, e ainda não há resposta real registrada após abertura/reenvio inicial e repescagens.
 
-Em 2026-04-30 foi enviada a repescagem step 2, com abordagem voltada a evitar caminho errado e fazer uma primeira leitura de viabilidade do perfil de imóvel antes de comparar planta/valor.
+Em 2026-05-01 foi enviada a repescagem step 3, mudando o ângulo para **diagnóstico leve de momento/prazo**: o Union Vista é lançamento com entrega futura, então a pergunta buscou entender se a cliente pode esperar a entrega ou precisa de algo para se mudar mais logo.
 
 ## Dados operacionais
 - Cliente ID: 10981
@@ -30,11 +30,12 @@ Em 2026-04-30 foi enviada a repescagem step 2, com abordagem voltada a evitar ca
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp identificado no CRM; número completo omitido neste documento curado.
-- Última interação relevante: Repescagem step 2 enviada em 2026-04-30T11:02:02-03:00.
+- Última interação relevante: Repescagem step 3 enviada em 2026-05-01T19:26:02-03:00.
 
 ## Contexto comercial
-- Interesse identificado no FamaChat: **Union Vista**, na região do **Grand Ville**.
-- Contexto curado anterior: imóvel específico; apartamento em lançamento, entrega futura, com necessidade de entender se região, prazo e formato encaixam no momento da cliente.
+- Interesse identificado no FamaChat: **Union Vista**, na região do **Grand Ville**, em Uberlândia.
+- Empreendimento: apartamento em lançamento no Grand Ville, com entrega prevista para **Jul/2027**.
+- Contexto do cliente original da SLA Cascata (`10852`): busca começou agora e a cliente indicou que compraria sozinha.
 - Não há sinal registrado de resposta real da cliente após os contatos anteriores.
 
 ## Diagnóstico
@@ -42,13 +43,13 @@ Em 2026-04-30 foi enviada a repescagem step 2, com abordagem voltada a evitar ca
 A necessidade ainda não foi confirmada diretamente pela cliente. O contexto sugere interesse em avaliar imóvel específico na região do Grand Ville.
 
 ### Momento
-Cliente silenciosa após contato inicial e reenvio. Repescagem em andamento para gerar primeira microresposta.
+Cliente silenciosa após contato inicial, reenvio e três repescagens. O step 3 buscou abrir conversa pelo prazo: se pode esperar lançamento/entrega futura ou se precisa de opção para morar mais logo.
 
 ### Decisão
-Sem informação confirmada sobre decisores, finalidade da compra ou preferências familiares.
+Contexto do cliente original indica compra sozinha, mas ainda sem confirmação direta no atendimento Reno.
 
 ### Viabilidade
-Sem dados confirmados de renda, entrada ou financiamento. A abordagem comercial do step 2 focou em verificar se o perfil do imóvel cabe no momento da cliente, sem prometer crédito ou aprovação.
+Sem dados confirmados de renda, entrada ou financiamento. Step 2 já explorou viabilidade/entrada/parcela; step 3 evitou repetir esse argumento e focou em momento de compra e prazo de mudança.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno / backlog
@@ -87,16 +88,33 @@ Isso evita perder tempo com uma opção bonita, mas que talvez não seja o camin
 Quer que eu faça uma primeira leitura **simples e sem compromisso** pra ver se esse perfil de imóvel cabe para você?
 ```
 
-Próximo `next_run_at`: 2026-05-01T14:20:00-03:00.
+### 2026-05-01 — Repescagem step 3
+Fluxo: `repescagem`.
+Ângulo comercial usado: **imóvel específico + momento/prazo**.
+Intenção do step: diagnóstico leve, usando o fato de o Union Vista ser lançamento com entrega futura para gerar uma resposta objetiva sem repetir o argumento de viabilidade do step 2.
+Canal: WhatsApp.
+Data/hora de envio: 2026-05-01T19:26:02-03:00.
+
+Mensagem enviada:
+```text
+Samara, tudo bem? 🏡
+
+Vi que o Union Vista é um lançamento no Grand Ville, com entrega mais pra frente. Quando a pessoa está começando a procurar, esse ponto muda bastante o caminho: às vezes faz sentido aproveitar um lançamento; às vezes é melhor comparar com algo mais próximo de morar.
+
+Pra eu não te mandar opção fora do seu momento: você pensa em comprar podendo esperar a entrega ou precisa de algo para se mudar mais logo?
+```
+
+Próximo `next_run_at`: 2026-05-02T19:10:00-03:00.
 
 ## Objeções e travas
 - Silêncio após contatos anteriores; sem objeção verbalizada.
-- Falta de contexto sobre finalidade da compra, viabilidade financeira e momento real.
+- Falta de contexto confirmado sobre finalidade da compra, prazo real de mudança e viabilidade financeira.
 
 ## Próximo passo
-Se não houver resposta real até o próximo horário elegível, seguir a régua de repescagem para o step 3. Se houver resposta real, parar a repescagem, mover o status para `Em Atendimento` quando ainda estiver exatamente em `Não Respondeu` e conduzir por atendimento normal do Reno.
+Se não houver resposta real até o próximo horário elegível, seguir a régua de repescagem para o step 4 em 2026-05-02T19:10:00-03:00. Se houver resposta real, parar a repescagem, mover o status para `Em Atendimento` quando ainda estiver exatamente em `Não Respondeu` e conduzir por atendimento normal do Reno.
 
 ## Observações operacionais
-- Estado da repescagem registrado no CRM via tool específica do Reno após envio bem-sucedido.
-- Documento oficial determinístico criado/atualizado em `_agents/reno/atendimentos/10981-samara.md` para consolidar conteúdo que existia em caminhos legados/não determinísticos (`_agents/reno/atendimentos/samara.md` e `_agents/reno/clientes/samara-10981.md`).
-- Não houve alteração de status durante a repescagem.
+- Envio do step 3 feito para o `whatsapp_jid` salvo no CRM.
+- Estado da repescagem registrado no CRM via `mcp_mcp_postgres_mark_reno_followup_sent` após envio bem-sucedido.
+- Documento oficial determinístico atualizado em `_agents/reno/atendimentos/10981-samara.md`.
+- Não houve alteração de status durante a repescagem; cliente permanece `Não Respondeu`.
