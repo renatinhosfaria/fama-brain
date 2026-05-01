@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11008
-created: '2026-04-29'
-entity_name: Fabio Martins Polaro
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Fabio Martins Polaro
+client_id: 11008
+broker_id: 35
 status_crm: Não Respondeu
+source: Facebook Ads
+created: '2026-04-29'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -14,13 +16,11 @@ tags:
   - famachat
   - repescagem
   - garden-sul
-type: entity-profile
-updated: '2026-04-30'
 ---
 # Atendimento — Fabio Martins Polaro
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, origem Facebook Ads, com interesse associado ao empreendimento Garden Sul, no Jardim Sul/Zona Sul de Uberlândia. Primeiro contato e repescagem step 1 não geraram resposta real registrada no CRM. Em 2026-04-30 foi enviado o step 2 da repescagem com ângulo de viabilidade/faixa de preço e financiamento.
+Cliente do Reno em `Não Respondeu`, origem Facebook Ads, com interesse associado ao empreendimento Garden Sul, no Jardim Sul/Zona Sul de Uberlândia. Primeiro contato e repescagens steps 1 e 2 não geraram resposta real registrada no CRM. Em 2026-05-01 foi enviado o step 3 da repescagem com diagnóstico leve sobre prazo de entrega e momento de mudança/compra.
 
 ## Dados operacionais
 - Cliente ID: 11008
@@ -28,7 +28,7 @@ Cliente do Reno em `Não Respondeu`, origem Facebook Ads, com interesse associad
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp confirmado no CRM; JID salvo usado no envio.
-- Última interação relevante: 2026-04-30T12:42:48-03:00 — repescagem step 2 enviada via WhatsApp.
+- Última interação relevante: 2026-05-01T20:55:43-03:00 — repescagem step 3 enviada via WhatsApp.
 
 ## Contexto comercial
 - Interesse identificado no FamaChat: Garden Sul, Jardim Sul, Uberlândia.
@@ -41,13 +41,13 @@ Cliente do Reno em `Não Respondeu`, origem Facebook Ads, com interesse associad
 Ainda não declarada pelo cliente. O interesse inicial sugere avaliação de imóvel específico, mas sem confirmação se é para morar, investir ou comparar alternativas.
 
 ### Momento
-Cliente permanece silencioso após primeiro contato e repescagem step 1. Momento de compra ainda indefinido.
+Cliente permanece silencioso após primeiro contato e três repescagens. O step 3 buscou abrir diagnóstico sobre prazo: planejar compra para entrega futura versus necessidade de imóvel em prazo mais curto.
 
 ### Decisão
 Sem informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou forma de pagamento. Como o Garden Sul possui plantas e valores diferentes, o step 2 abordou a importância de olhar faixa de valor, entrada, parcela e prazo antes de escolher apenas pela planta.
+Sem dados de renda, entrada ou forma de pagamento. Como o Garden Sul possui plantas e valores diferentes, o step 2 abordou faixa de valor, entrada, parcela e prazo; o step 3 mudou o ângulo para prazo de entrega e momento de mudança.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -68,7 +68,7 @@ Você está olhando esse imóvel mais para morar ou como investimento?
 ```
 
 ### 2026-04-30 — Repescagem step 2 enviada
-Ângulo comercial: financiamento / viabilidade. A nova abordagem foi deliberadamente diferente do step 1: saiu de perfil do lançamento e objetivo de compra para faixa de preço, entrada, parcela e prazo, com convite para uma primeira leitura de viabilidade.
+Ângulo comercial: financiamento / viabilidade. A abordagem saiu de perfil do lançamento e objetivo de compra para faixa de preço, entrada, parcela e prazo, com convite para uma primeira leitura de viabilidade.
 
 Mensagem enviada:
 ```text
@@ -81,13 +81,25 @@ Assim você evita perder tempo com uma opção que parece boa, mas pode não ser
 Quer que eu faça uma **primeira leitura de faixa de preço e financiamento** para você?
 ```
 
+### 2026-05-01 — Repescagem step 3 enviada
+Ângulo comercial: imóvel específico / prazo de entrega e momento de compra. A nova abordagem mudou o foco em relação ao step 2: saiu de financiamento/faixa de preço para diagnóstico de prazo, comparando lançamento com imóvel pronto e perguntando sobre necessidade de mudança.
+
+Mensagem enviada:
+```text
+Fabio, deixa eu te perguntar uma coisa rápida 📍
+
+O Garden Sul tem um ponto importante: é um lançamento com entrega prevista para set/2028. Isso pode ser ótimo para planejar a compra, mas muda bastante a conversa em comparação com imóvel pronto.
+
+Para eu não te mandar opção fora do seu momento, você procura algo para **planejar a mudança mais pra frente** ou precisa de um imóvel em prazo mais curto?
+```
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagem step 1.
+- Silêncio após primeiro contato e repescagens steps 1, 2 e 3.
 - Falta de diagnóstico mínimo sobre finalidade da compra, prazo e viabilidade financeira.
 
 ## Próximo passo
-- Próximo `next_run_at` operacional no CRM: 2026-05-01T14:20:00-03:00.
-- Se não houver resposta real até o próximo horário elegível, seguir para repescagem step 3 com diagnóstico leve e pergunta única, sem repetir o argumento de faixa de preço/financiamento imediatamente.
+- Próximo `next_run_at` operacional no CRM: 2026-05-02T19:10:00-03:00.
+- Se não houver resposta real até o próximo horário elegível, seguir para repescagem step 4 com convite consultivo direto, sem repetir imediatamente o argumento de prazo de entrega.
 - Se houver resposta real, parar repescagem e mover para atendimento normal do Reno, com status operacional apropriado no FamaChat.
 
 ## Observações operacionais
