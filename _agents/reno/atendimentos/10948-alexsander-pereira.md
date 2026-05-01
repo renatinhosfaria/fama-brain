@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -21,7 +21,7 @@ tags:
 # Atendimento — Alexsander Pereira
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, associado ao empreendimento Place+Arbi, no Shopping Park. O histórico operacional disponível é fraco para provar diagnóstico anterior detalhado, mas o CRM marcou o cliente como elegível para Resgate; por segurança comercial, o bucket usado permanece `sem_gancho_claro`. Em 2026-04-30 18:17 -03:00, o Reno enviou Resgate step 3 com ângulo de simplificação: separar apenas o que fizer sentido no Place+Arbi e explicar o caminho sem excesso de opções.
+Cliente do Reno em `Em Atendimento`, associado ao empreendimento Place+Arbi, no Shopping Park. O histórico operacional disponível é fraco para provar diagnóstico anterior detalhado, mas o CRM marcou o cliente como elegível para Resgate; por segurança comercial, o bucket usado permanece `sem_gancho_claro`. Em 2026-05-01 18:24 -03:00, o Reno enviou Resgate step 4 com ângulo de escolha simples de prioridade: localização, valor de entrada ou viabilidade de financiamento, mantendo baixa pressão e abrindo a possibilidade de o cliente sinalizar que não é mais seu momento.
 
 ## Dados operacionais
 - Cliente ID: 10948
@@ -30,7 +30,7 @@ Cliente do Reno em `Em Atendimento`, associado ao empreendimento Place+Arbi, no 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp válido no CRM; número mascarado para registro curado.
 - Empreendimento vinculado: Place+Arbi (id_empreendimento 67), Shopping Park, Uberlândia.
-- Última interação relevante: 2026-04-30 18:17 -03:00 — Resgate step 3 enviado pelo Reno.
+- Última interação relevante: 2026-05-01 18:24 -03:00 — Resgate step 4 enviado pelo Reno.
 
 ## Contexto comercial
 Lead com interesse associado ao Place+Arbi, empreendimento no Shopping Park. Dados do CRM indicam apartamentos de 48m² e 50m², 2 quartos, opção com suíte, 1 vaga, lazer completo e entrada parcelada pela construtora. Como não há diagnóstico comercial robusto no histórico curado, não presumir necessidade, faixa de valor ou decisão familiar.
@@ -40,13 +40,13 @@ Lead com interesse associado ao Place+Arbi, empreendimento no Shopping Park. Dad
 Ainda não definida com segurança. Retomadas buscam confirmar se a possibilidade ainda faz sentido e reduzir fricção para o cliente responder.
 
 ### Momento
-Cliente estava em silêncio após contatos anteriores do Reno. O CRM está em `Em Atendimento`, permitindo Resgate.
+Cliente está em silêncio após contatos anteriores do Reno. O CRM permanece em `Em Atendimento`, permitindo Resgate.
 
 ### Decisão
 Sem informação confiável sobre decisores adicionais.
 
 ### Viabilidade
-Sem informação confiável sobre financiamento, entrada, renda ou FGTS. Não prometer crédito.
+Sem informação confiável sobre financiamento, entrada, renda ou FGTS. O step 4 abriu escolha de prioridade envolvendo valor de entrada e financiamento sem prometer crédito.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -100,15 +100,32 @@ Quer que eu faça isso pra você?
 - Diferenciação versus step 2: saiu da escolha entre financiamento versus outro perfil e usou novo ângulo de economia de tempo/simplificação, pergunta de permissão e CTA de baixa fricção para o Reno separar apenas o que faz sentido.
 - Próximo `next_run_at`: 2026-05-01T18:17:45-03:00
 
+### 2026-05-01 — Resgate step 4 enviado
+- Fluxo: resgate
+- Step: 4
+- Bucket: `sem_gancho_claro`
+- Mensagem enviada:
+
+```text
+Alexsander, pra eu ser mais certeiro: o que vale mais pra você agora no Place+Arbi — localização no Shopping Park, valor de entrada ou entender se o financiamento fica viável?
+
+Se não for mais seu momento, me fala tranquilo.
+```
+
+- Contexto usado: CRM/FamaChat, ausência de agendamento/visita, último Resgate step 3 sem resposta registrada, empreendimento Place+Arbi no Shopping Park, documento curado oficial e histórico fraco sem diagnóstico confirmado.
+- Diferenciação versus step 3: saiu da permissão genérica para o Reno separar opções e usou escolha objetiva de prioridade comercial, com opções claras de resposta e possibilidade de desqualificação leve caso o momento tenha mudado.
+- Próximo `next_run_at`: 2026-05-03T18:24:12-03:00
+- Nota CRM criada pela persistência do envio: 16317.
+
 ## Objeções e travas
 - Lacuna operacional: histórico curado não comprova claramente primeira resposta/detalhes do cliente; usar fallback `sem_gancho_claro` e evitar suposições.
 - Cliente ainda não deu sinal recente que permita classificar necessidade, decisão ou viabilidade.
 
 ## Próximo passo
-Aguardar resposta. Se Alexsander responder, interromper o ciclo de Resgate (`stopped_reason=client_replied`, `next_run_at=null`, `enabled=false`) e continuar pelo atendimento normal com qualificação consultiva. Se permanecer em silêncio até 2026-05-01T18:17:45-03:00, avaliar step 4 com novo ângulo diferente dos steps anteriores, sem repetir a pergunta atual.
+Aguardar resposta. Se Alexsander responder, interromper o ciclo de Resgate (`stopped_reason=client_replied`, `next_run_at=null`, `enabled=false`) e continuar pelo atendimento normal com qualificação consultiva. Se permanecer em silêncio até 2026-05-03T18:24:12-03:00, avaliar step 5 com novo ângulo diferente dos steps anteriores, sem repetir a pergunta atual.
 
 ## Observações operacionais
 - Documento oficial criado em `_agents/reno/atendimentos/10948-alexsander-pereira.md` a partir do CRM e do documento legado `_agents/reno/clientes/10948-alexsander-pereira.md`.
 - Não continuar escrevendo no caminho legado `_agents/reno/clientes/`.
 - CRM permanece como fonte de verdade operacional; este documento é síntese curada para retomada.
-- Resgate step 3 registrado no CRM pela ferramenta `mcp_mcp_postgres_mark_reno_followup_sent`, nota CRM 16273.
+- Resgate step 4 registrado no CRM pela ferramenta `mcp_mcp_postgres_mark_reno_followup_sent`, nota CRM 16317.
