@@ -5,45 +5,47 @@ entity_type: atendimento
 entity_name: Márcio Oliveira Julião
 client_id: 10942
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: FamaChat
 created: '2026-04-29'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - inbound
+  - em-atendimento
 ---
 # Atendimento — Márcio Oliveira Julião
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, vindo de Facebook Ads, com interesse operacional associado ao empreendimento Union Vista, no Grand Ville. Recebeu o primeiro contato e repescagens steps 1, 2 e 3; ainda não há resposta real registrada no CRM.
+Cliente do Reno agora em `Em Atendimento`. Respondeu por áudio no WhatsApp após repescagem step 3 sobre o Union Vista/Grand Ville. A resposta trouxe dúvida de viabilidade: perguntou se o empreendimento entra em financiamento pelo Minha Casa Minha Vida/Caixa e sinalizou que, se não houver esse tipo de enquadramento/financiamento, talvez não siga com o negócio. Repescagem foi interrompida por resposta real do cliente.
 
 ## Dados operacionais
 - Cliente ID: 10942
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads / FamaChat
 - Telefone/WhatsApp: cadastrado no CRM; WhatsApp disponível
-- Última interação relevante: 2026-04-30 16:55 (-03:00) — repescagem step 3 enviada via WhatsApp
+- Última interação relevante: 2026-05-01 — inbound WhatsApp por áudio; status alterado para `Em Atendimento` e repescagem parada
 
 ## Contexto comercial
-O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia, lançamento com apartamentos de 2 quartos e entrega prevista para Jul/2027. O contato inicial citou o empreendimento e a região; não há resposta real do cliente até o momento.
+O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia. O cliente respondeu ao follow-up perguntando, de forma prática, sobre financiamento/enquadramento pelo Minha Casa Minha Vida/Caixa. A principal preocupação comercial neste momento é viabilidade financeira e enquadramento; a resposta comercial deve validar a dúvida, explicar com segurança sem prometer aprovação e conduzir para análise/visita presencial quando fizer sentido.
 
 ## Diagnóstico
 ### Necessidade
-Possível interesse em apartamento no Union Vista ou região do Grand Ville, mas a necessidade ainda não foi qualificada. O step 3 buscou identificar se a motivação é morar ou investir.
+Cliente busca entender se o imóvel de interesse pode encaixar em financiamento/MCMV/Caixa antes de avançar. A necessidade aparente é comprar com apoio de financiamento e condição viável.
 
 ### Momento
-Cliente silencioso após contato inicial e repescagens anteriores. O objetivo atual é gerar uma primeira microresposta sem pressionar visita.
+Saiu da condição de silêncio e entrou em atendimento ativo. O próximo contato deve responder objetivamente a dúvida de financiamento/enquadramento e usar isso como ponte consultiva.
 
 ### Decisão
-Sem informação confirmada sobre decisores, prazo de compra ou motivação.
+Sem informação confirmada sobre demais decisores. A decisão parece condicionada à viabilidade financeira do empreendimento.
 
 ### Viabilidade
-Sem dados confirmados de entrada, renda ou forma de pagamento. O step 2 abordou viabilidade; o step 3 mudou o ângulo para finalidade da compra, evitando repetir o mesmo argumento.
+Sinal explícito de dependência de financiamento/MCMV/Caixa. Não há renda, entrada, FGTS ou dados bancários confirmados. Não prometer aprovação; o caminho correto é verificar encaixe e simulação com segurança.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato operacional
@@ -77,8 +79,6 @@ Step enviado: 3
 
 Ângulo comercial usado: imóvel específico + diagnóstico leve sobre finalidade da compra (morar x investir)
 
-Comparação de abordagem: a mensagem anterior tratou de encaixe financeiro/forma de pagamento; esta tentativa mudou o ângulo para intenção de uso, mudou a pergunta para escolha simples entre morar ou investir e destacou o benefício de não receber sugestão no escuro.
-
 Mensagem enviada:
 > Márcio, tudo bem? 🏡
 >
@@ -88,15 +88,22 @@ Mensagem enviada:
 
 Data/hora de envio: 2026-04-30 16:55 (-03:00)
 
-Próximo `next_run_at`: 2026-05-01T19:10:00-03:00
+Próximo `next_run_at` planejado antes da resposta: 2026-05-01T19:10:00-03:00
+
+### 2026-05-01 — Resposta inbound por áudio e início de atendimento
+Cliente respondeu por áudio perguntando se o empreendimento de interesse é financiado pelo Minha Casa Minha Vida/Caixa e sinalizando que, se não for por esse caminho, talvez não siga com o negócio. Operacionalmente, o CRM foi alterado de `Não Respondeu` para `Em Atendimento`, a repescagem foi interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e a nota CRM foi registrada.
 
 ## Objeções e travas
-- Silêncio após contato inicial e repescagens anteriores; não há objeção declarada.
-- Contexto financeiro, finalidade da compra e forma de pagamento ainda desconhecidos.
+- Trava principal: viabilidade/enquadramento em financiamento Minha Casa Minha Vida/Caixa.
+- Cliente pode perder interesse caso o imóvel não se enquadre ou não tenha caminho financeiro compatível.
+- Ainda não há dados de renda, entrada, FGTS ou perfil familiar para afirmar encaixe.
 
 ## Próximo passo
-Aguardar resposta real do cliente. Se permanecer em silêncio até o próximo horário da régua, a próxima tentativa deve seguir step 4 com convite consultivo direto, sem repetir o argumento de viabilidade nem a pergunta morar/investir.
+Responder comercialmente ao cliente no WhatsApp, sem promessa de aprovação: validar a dúvida sobre Minha Casa Minha Vida/Caixa, explicar que o encaixe depende da análise e conduzir para uma primeira leitura segura de financiamento. Se houver sinal positivo, convidar para visita/atendimento presencial na Fama para simulação e direcionamento correto.
 
 ## Observações operacionais
-- Envio do step 3 realizado pelo worker `reno-repescagem-message-queue-production` com destino preferencial via `whatsapp_jid` salvo no CRM.
-- CRM atualizado pela tool específica `mark_reno_followup_sent`; status permaneceu `Não Respondeu`, step avançou para 3 e `next_run_at` foi definido para 2026-05-01T19:10:00-03:00.
+- Inbound processado em rotina silenciosa; nenhuma mensagem foi enviada ao cliente por esta execução.
+- Cliente elegível para Reno confirmado: `broker_id=35`.
+- Status atualizado condicionalmente para `Em Atendimento` porque estava exatamente em `Não Respondeu`.
+- Repescagem interrompida por resposta real: step 3 preservado, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-04-30T16:55:58-03:00`, `stopped_reason=client_replied`.
+- Nota CRM registrada em 2026-05-01 com resumo da resposta e alteração operacional.
