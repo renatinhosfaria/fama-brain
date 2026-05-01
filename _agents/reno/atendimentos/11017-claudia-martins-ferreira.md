@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-28'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Claudia Martins Ferreira
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse registrado no empreendimento Union Vereda, no Jaraguá. Histórico operacional curado é fraco/incompleto para provar diagnóstico anterior; por isso o Resgate vem sendo conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região/perfil confiáveis do CRM como gancho neutro. Em 2026-04-30 foi enviado o step 3 do Resgate, mudando o ângulo da retomada de região/rotina para validação do perfil do imóvel: 2 quartos com suíte e varanda.
+Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse registrado no empreendimento Union Vereda, no Jaraguá. Histórico operacional curado é fraco/incompleto para provar diagnóstico anterior; por isso o Resgate vem sendo conduzido com bucket seguro `sem_gancho_claro`, usando empreendimento/região/perfil confiáveis do CRM como gancho neutro. Em 2026-05-01 foi enviado o step 4 do Resgate, mudando o ângulo para evitar insistir no caminho errado e pedir uma escolha simples entre manter Jaraguá/Union Vereda ou buscar opção com melhor encaixe de valor/financiamento.
 
 ## Dados operacionais
 - Cliente ID: 11017
@@ -28,23 +28,23 @@ Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse registrado n
 - Origem: Facebook Ads
 - Telefone/WhatsApp: final 8029
 - Empreendimento vinculado no CRM: Union Vereda (ID 161), Jaraguá, Uberlândia/MG
-- Última interação relevante: 2026-04-30 17:37 - Resgate step 3 enviado via WhatsApp
+- Última interação relevante: 2026-05-01 17:48 - Resgate step 4 enviado via WhatsApp
 
 ## Contexto comercial
 Interesse associado ao Union Vereda, no bairro Jaraguá, zona Oeste de Uberlândia. Empreendimento com apartamentos de 2 quartos, suíte e varanda/sacada, faixa a partir de aproximadamente R$ 288.880 conforme CRM, além de lazer e serviços como piscina, academia, espaço gourmet, salão de festas, beach tennis, portaria 24h, elevadores e coworking.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não há necessidade declarada com segurança no histórico curado. Retomada busca confirmar se a possibilidade de imóvel ainda faz sentido e, no step 3, valida o perfil do Union Vereda antes de insistir em região ou agenda.
+Ainda não há necessidade declarada com segurança no histórico curado. A retomada busca confirmar se a possibilidade de imóvel ainda faz sentido e, no step 4, reduzir a decisão para prioridade atual: manter Jaraguá/Union Vereda ou buscar opção com melhor encaixe de valor/financiamento.
 
 ### Momento
-Cliente está em `Em Atendimento`, sem resposta registrada após os steps 1 e 2 de Resgate. Próximo passo é aguardar eventual resposta ao step 3.
+Cliente está em `Em Atendimento`, sem resposta registrada após os steps 1, 2 e 3 de Resgate. Próximo passo é aguardar eventual resposta ao step 4.
 
 ### Decisão
 Sem informação confiável sobre decisores adicionais.
 
 ### Viabilidade
-Sem informação confiável sobre entrada, financiamento, renda, FGTS ou faixa confortável. Não prometer crédito; caso responda, conduzir diagnóstico leve antes de simulação e buscar visita presencial quando houver sinal positivo.
+Sem informação confiável sobre entrada, financiamento, renda, FGTS ou faixa confortável. Step 4 mencionou valor/financiamento apenas como caminho de ajuste de perfil, sem prometer crédito. Caso responda, conduzir diagnóstico leve e buscar visita presencial quando houver sinal positivo.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Falha técnica anterior
@@ -76,15 +76,25 @@ Diferenciação em relação ao step 2: mudou o ângulo comercial de região/rot
 Estado após envio: step 3, `last_context_bucket=sem_gancho_claro`, `next_run_at=2026-05-01T17:37:19-03:00`, `stopped_reason=null`.
 Nota CRM criada pela ferramenta operacional: 16262.
 
+### 2026-05-01 — Resgate step 4 enviado
+Bucket: `sem_gancho_claro`.
+Mensagem enviada: "Claudia, só pra eu não insistir no caminho errado: sua prioridade hoje é ver algo no Jaraguá mesmo ou encontrar uma opção mais fácil de encaixar em valor/financiamento?"
+Contexto usado: CRM confirmou cliente 11017, `broker_id=35`, status `Em Atendimento`, telefone/WhatsApp disponível, sem agendamentos/visitas/vendas, empreendimento Union Vereda/Jaraguá vinculado e estado `meta_data.reno_followup.resgate` elegível para step 4. CRM não tinha nota de resposta da cliente após o step 3; a última evidência operacional era outbound do Reno. Sessões anteriores indicavam possível ambiguidade histórica entre Claudias, então prevaleceu o CRM e o documento oficial do client_id 11017.
+Diferenciação em relação ao step 3: mudou o ângulo de validação de fit do produto para evitar insistência no caminho errado, mudou a pergunta para prioridade atual entre localização e encaixe financeiro, destacou o benefício de ajustar a busca com menos atrito e usou CTA de escolha simples.
+Estado após envio: step 4, `last_context_bucket=sem_gancho_claro`, `next_run_at=2026-05-03T17:48:59-03:00`, `stopped_reason=null`.
+Nota CRM criada pela ferramenta operacional: 16310.
+Message ID WhatsApp: `3EB02AA99BA22FBB21B8A2`.
+
 ## Objeções e travas
 - Lacuna operacional: histórico curado insuficiente para classificar condição, mídia, financiamento, visita, terceiro decisor ou avaliação; fallback oficial usado: `sem_gancho_claro`.
+- Há registro de sessões antigas com ambiguidade entre duas clientes chamadas Claudia no Union Vereda; para este atendimento, CRM/FamaChat e o client_id 11017 prevalecem como fonte operacional.
 - Ainda não há resposta da cliente registrada após os steps de Resgate.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, interromper o Resgate com `stopped_reason=client_replied` antes de responder comercialmente e seguir fluxo normal de qualificação WhatsApp. Se permanecer em silêncio, próximo step de Resgate elegível em 2026-05-01 17:37:19 -03:00, respeitando a régua sequencial.
+Aguardar resposta da cliente. Se responder, interromper o Resgate com `stopped_reason=client_replied` antes de responder comercialmente e seguir fluxo normal de qualificação WhatsApp. Se permanecer em silêncio, próximo step de Resgate elegível em 2026-05-03 17:48:59 -03:00, respeitando a régua sequencial.
 
 ## Observações operacionais
 - CRM/FamaChat permanece fonte operacional de verdade.
 - Vault atualizado no caminho oficial `_agents/reno/atendimentos/11017-claudia-martins-ferreira.md`.
 - Não houve agendamento ativo no momento do envio.
-- WhatsApp enviado para variação com nono dígito derivada do telefone CRM, com sucesso; número completo não registrado aqui por privacidade.
+- WhatsApp enviado com sucesso para a variação com nono dígito derivada do telefone CRM; número completo não registrado aqui por privacidade.
