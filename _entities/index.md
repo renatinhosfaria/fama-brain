@@ -2,7 +2,7 @@
 type: moc
 owner: vault-steward
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - entities
   - moc
@@ -12,7 +12,6 @@ status: active
 source: human-curated
 author_agent: VaultSteward
 ---
-
 # `_entities/` — Perfis canônicos
 
 **Uma e somente uma** nota por entidade real. Aliases ficam no campo `aliases` do frontmatter, não em arquivos separados.
@@ -45,3 +44,21 @@ Quando encontrar duplicatas (`bruno-savio.md` + `10971-bruno-savio.md`):
 4. Apagar a redundante.
 
 VaultSteward executa dedup quando a decisão sobre qual conteúdo manter é estrutural. Quando há ambiguidade de conteúdo, escala ao dono.
+
+## Perfis canônicos ativos
+
+### Pessoas
+
+- [[bruno-savio]] — lead, primeiro contato 2026-04-27, interesse em [[union-vista]] / [[grand-ville]]. (piloto FAM-16)
+
+### Organizações
+
+_(ainda nenhum)_
+
+### Propriedades
+
+_(ainda nenhum — `[[union-vista]]` e `[[grand-ville]]` aparecem como wikilinks pendentes em [[bruno-savio]] mas ainda não têm perfil canônico)_
+
+### Projetos
+
+_(ainda nenhum)_
