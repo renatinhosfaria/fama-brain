@@ -16,13 +16,16 @@ tags:
   - famachat
   - em-atendimento
   - repescagem-interrompida
+  - regiao-central
 ---
 # Atendimento — Silva Porto
 
 ## Resumo atual
-Cliente CRM 10923, broker Reno (35), agora em status **Em Atendimento** após primeira resposta inbound no WhatsApp.
+Cliente CRM 10923, broker Reno (35), em status **Em Atendimento** após resposta inbound no WhatsApp.
 
-Em 2026-05-01, o cliente respondeu **"Morar"** à pergunta de repescagem step 3 sobre finalidade da compra. A repescagem foi interrompida no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
+Em 2026-05-01, o cliente respondeu primeiro **"Morar"** à pergunta de repescagem step 3 sobre finalidade da compra. A repescagem foi interrompida no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
+
+Ainda em 2026-05-01, o cliente acrescentou a preferência: **"Preferência região central"**. O status foi preservado em Em Atendimento; não há resgate ativo.
 
 ## Dados operacionais
 - Cliente ID: 10923
@@ -30,16 +33,16 @@ Em 2026-05-01, o cliente respondeu **"Morar"** à pergunta de repescagem step 3 
 - Status CRM: Em Atendimento
 - Origem: SLA Cascata / Facebook Ads
 - Telefone/WhatsApp: salvo no CRM
-- Última interação relevante: 2026-05-01 — inbound WhatsApp: "Morar"
+- Última interação relevante: 2026-05-01 — inbound WhatsApp: "Preferência região central"
 
 ## Contexto comercial
 Interesse identificado no histórico: Union Vista, empreendimento de apartamentos no Grand Ville, Uberlândia, com prazo de entrega informado anteriormente como Jul/2027. Há registros automáticos de reentrada por Facebook Ads com empreendimentos de interesse vinculados.
 
-A resposta "Morar" indica que a busca deve ser conduzida com foco em uso próprio, rotina, região, perfil do imóvel e segurança de decisão, antes de aprofundar em viabilidade financeira.
+A resposta "Morar" indica busca para uso próprio. A nova preferência por **região central** deve ser tratada como critério comercial relevante: rotina, localização e acesso provavelmente pesam na decisão. A condução deve validar se o cliente quer manter central mesmo que o imóvel do interesse anterior esteja em outra região, sem forçar o empreendimento original.
 
 ## Diagnóstico
 ### Necessidade
-Cliente sinalizou intenção de compra para moradia. Próxima condução deve entender o que pesa mais para morar: localização, planta/tamanho, valor ou facilidade no financiamento.
+Cliente sinalizou intenção de compra para moradia e preferência por região central. Próxima condução deve entender o que pesa mais dentro desse recorte: localização exata, planta/tamanho, valor ou facilidade no financiamento.
 
 ### Momento
 Saiu da condição de silêncio após repescagem step 3. Atendimento deve seguir em conversa normal, não mais em fluxo automático de repescagem.
@@ -80,13 +83,23 @@ Ação operacional realizada no CRM:
 - repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`;
 - nota CRM registrada com o conteúdo útil da resposta e próximo passo comercial.
 
+### 2026-05-01 — Preferência por região central
+Cliente respondeu pelo WhatsApp: "Preferência região central".
+
+Ação operacional realizada no CRM:
+- status preservado em Em Atendimento;
+- repescagem conferida como já interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate inexistente;
+- nota CRM registrada com a preferência de região central e próximo passo comercial.
+
 ## Objeções e travas
 - Trava anterior: silêncio / ausência de primeira microresposta.
 - Trava resolvida em 2026-05-01 com resposta inbound.
+- Preferência comercial nova: região central. Pode exigir reposicionamento se o empreendimento de interesse anterior não atender bem esse critério.
 - Sem objeção declarada pelo cliente até o momento.
 
 ## Próximo passo
-Responder comercialmente no WhatsApp sem reativar repescagem: validar que ele procura para morar e seguir qualificação leve com uma pergunta sobre prioridade do imóvel, por exemplo região, valor, tamanho/planta ou facilidade de financiamento. Depois, conectar o Union Vista ou alternativa compatível ao perfil e conduzir para visita presencial quando houver sinal positivo.
+Responder comercialmente no WhatsApp sem reativar repescagem: validar que, para morar, região central faz sentido pela rotina; em seguida fazer uma pergunta leve sobre prioridade do imóvel dentro da região central, como planta/tamanho, valor ou facilidade de financiamento. Se houver opção central compatível, apresentar com mídia e conduzir para visita presencial quando houver sinal positivo.
 
 ## Observações operacionais
 - CRM/FamaChat confirmou cliente 10923 com `broker_id=35`.
