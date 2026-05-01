@@ -16,12 +16,11 @@ tags:
   - famachat
   - repescagem
   - inbound
-  - em-atendimento
 ---
 # Atendimento — Márcio Oliveira Julião
 
 ## Resumo atual
-Cliente do Reno agora em `Em Atendimento`. Respondeu por áudio no WhatsApp após repescagem step 3 sobre o Union Vista/Grand Ville. A resposta trouxe dúvida de viabilidade: perguntou se o empreendimento entra em financiamento pelo Minha Casa Minha Vida/Caixa e sinalizou que, se não houver esse tipo de enquadramento/financiamento, talvez não siga com o negócio. Repescagem foi interrompida por resposta real do cliente.
+Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operacional associado ao empreendimento Union Vista, no Grand Ville. Após primeiro contato e repescagens steps 1, 2 e 3, respondeu pelo WhatsApp em 2026-05-01 com a mensagem `4.800`. A repescagem já está interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`).
 
 ## Dados operacionais
 - Cliente ID: 10942
@@ -29,23 +28,23 @@ Cliente do Reno agora em `Em Atendimento`. Respondeu por áudio no WhatsApp apó
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / FamaChat
 - Telefone/WhatsApp: cadastrado no CRM; WhatsApp disponível
-- Última interação relevante: 2026-05-01 — inbound WhatsApp por áudio; status alterado para `Em Atendimento` e repescagem parada
+- Última interação relevante: 2026-05-01 — inbound WhatsApp do cliente: `4.800`
 
 ## Contexto comercial
-O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia. O cliente respondeu ao follow-up perguntando, de forma prática, sobre financiamento/enquadramento pelo Minha Casa Minha Vida/Caixa. A principal preocupação comercial neste momento é viabilidade financeira e enquadramento; a resposta comercial deve validar a dúvida, explicar com segurança sem prometer aprovação e conduzir para análise/visita presencial quando fizer sentido.
+O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia, lançamento com apartamentos de 2 quartos e entrega prevista para Jul/2027. A última repescagem perguntou se o cliente olhava o imóvel para morar ou investir. A resposta `4.800` parece trazer um dado numérico útil para continuidade comercial, mas precisa ser interpretada no contexto da conversa antes de qualquer resposta ao cliente.
 
 ## Diagnóstico
 ### Necessidade
-Cliente busca entender se o imóvel de interesse pode encaixar em financiamento/MCMV/Caixa antes de avançar. A necessidade aparente é comprar com apoio de financiamento e condição viável.
+Possível interesse em apartamento no Union Vista ou região do Grand Ville. A necessidade ainda não foi plenamente qualificada.
 
 ### Momento
-Saiu da condição de silêncio e entrou em atendimento ativo. O próximo contato deve responder objetivamente a dúvida de financiamento/enquadramento e usar isso como ponte consultiva.
+Cliente saiu do silêncio após repescagem e agora está em atendimento ativo. A próxima resposta do Reno deve retomar o contexto com naturalidade e evitar parecer robótica.
 
 ### Decisão
-Sem informação confirmada sobre demais decisores. A decisão parece condicionada à viabilidade financeira do empreendimento.
+Sem informação confirmada sobre decisores, prazo de compra ou motivação.
 
 ### Viabilidade
-Sinal explícito de dependência de financiamento/MCMV/Caixa. Não há renda, entrada, FGTS ou dados bancários confirmados. Não prometer aprovação; o caminho correto é verificar encaixe e simulação com segurança.
+Cliente respondeu `4.800`, possível sinal financeiro, mas sem confirmação se se refere a entrada, parcela, renda, orçamento ou outro dado. Não prometer crédito; validar com uma pergunta curta e contextual antes de aprofundar.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato operacional
@@ -79,6 +78,8 @@ Step enviado: 3
 
 Ângulo comercial usado: imóvel específico + diagnóstico leve sobre finalidade da compra (morar x investir)
 
+Comparação de abordagem: a mensagem anterior tratou de encaixe financeiro/forma de pagamento; esta tentativa mudou o ângulo para intenção de uso, mudou a pergunta para escolha simples entre morar ou investir e destacou o benefício de não receber sugestão no escuro.
+
 Mensagem enviada:
 > Márcio, tudo bem? 🏡
 >
@@ -88,22 +89,20 @@ Mensagem enviada:
 
 Data/hora de envio: 2026-04-30 16:55 (-03:00)
 
-Próximo `next_run_at` planejado antes da resposta: 2026-05-01T19:10:00-03:00
+### 2026-05-01 — Resposta inbound do cliente
+Cliente respondeu pelo WhatsApp: `4.800`.
 
-### 2026-05-01 — Resposta inbound por áudio e início de atendimento
-Cliente respondeu por áudio perguntando se o empreendimento de interesse é financiado pelo Minha Casa Minha Vida/Caixa e sinalizando que, se não for por esse caminho, talvez não siga com o negócio. Operacionalmente, o CRM foi alterado de `Não Respondeu` para `Em Atendimento`, a repescagem foi interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e a nota CRM foi registrada.
+Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem já estava interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
 
 ## Objeções e travas
-- Trava principal: viabilidade/enquadramento em financiamento Minha Casa Minha Vida/Caixa.
-- Cliente pode perder interesse caso o imóvel não se enquadre ou não tenha caminho financeiro compatível.
-- Ainda não há dados de renda, entrada, FGTS ou perfil familiar para afirmar encaixe.
+- A resposta `4.800` é ambígua sem o contexto da conversa ativa; pode representar valor, entrada, parcela, renda ou outro dado.
+- Contexto de finalidade da compra ainda não confirmado.
 
 ## Próximo passo
-Responder comercialmente ao cliente no WhatsApp, sem promessa de aprovação: validar a dúvida sobre Minha Casa Minha Vida/Caixa, explicar que o encaixe depende da análise e conduzir para uma primeira leitura segura de financiamento. Se houver sinal positivo, convidar para visita/atendimento presencial na Fama para simulação e direcionamento correto.
+Na próxima resposta comercial, retomar o contexto do Union Vista e esclarecer de forma curta o que significa `4.800`, sem iniciar simulação completa pelo WhatsApp. Exemplo de direção: confirmar se esse valor é entrada/parcela/orçamento e conduzir para uma leitura segura de viabilidade, preservando o caminho para visita presencial quando houver sinal positivo.
 
 ## Observações operacionais
-- Inbound processado em rotina silenciosa; nenhuma mensagem foi enviada ao cliente por esta execução.
-- Cliente elegível para Reno confirmado: `broker_id=35`.
-- Status atualizado condicionalmente para `Em Atendimento` porque estava exatamente em `Não Respondeu`.
-- Repescagem interrompida por resposta real: step 3 preservado, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-04-30T16:55:58-03:00`, `stopped_reason=client_replied`.
-- Nota CRM registrada em 2026-05-01 com resumo da resposta e alteração operacional.
+- Envio do step 3 havia sido realizado pelo worker `reno-repescagem-message-queue-production` com destino preferencial via `whatsapp_jid` salvo no CRM.
+- CRM anteriormente atualizado pela tool específica `mark_reno_followup_sent`; step avançou para 3.
+- Em 2026-05-01, o cliente já aparecia em `Em Atendimento` e com repescagem parada: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
+- Nota CRM registrada nesta rotina silenciosa: ID 16288.
