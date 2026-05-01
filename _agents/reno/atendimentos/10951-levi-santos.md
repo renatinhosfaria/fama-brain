@@ -111,3 +111,23 @@ Aguardar resposta do cliente. Se ele aceitar o comparativo, continuar atendiment
 - Envio de Resgate step 3 registrado no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16275.
 - Não houve agendamento, visita ativa ou venda vinculada no momento do envio do step 3.
 - Não houve alteração de status durante o Resgate; cliente permanece em `Em Atendimento`.
+
+
+### 2026-05-01 — Falha no Resgate step 4
+Bucket planejado: `midia_opcao_enviada`.
+
+Mensagem que seria enviada:
+```text
+Levi, em vez de te mandar várias opções, vou simplificar: no Union Vereda a dúvida principal parece ser entre valor mais leve e planta maior.
+
+Pra eu acertar na indicação, hoje você prioriza economizar na entrada/parcela ou ter mais espaço?
+```
+
+Contexto usado: CRM confirmou cliente 10951, `broker_id=35`, status `Em Atendimento`, sem agendamentos/visitas/vendas e branch de Resgate vencida para o próximo step. Histórico indicava silêncio após os steps 1, 2 e 3 sobre metragem, plantas 57/58m² e opção térrea maior do Union Vereda.
+
+Resultado: WhatsApp não enviado. Tentativas com JID salvo, número E.164 com nono dígito e variação sem nono dígito falharam com erro operacional do bridge: `cannot schedule new futures after shutdown`.
+
+Persistência: falha registrada no CRM pela ferramenta específica `mark_reno_followup_failed`; nota CRM ID 16323. Estado de Resgate preservou `step=3`, marcou `enabled=false` e `stopped_reason=whatsapp_send_failed`. Status CRM preservado em `Em Atendimento`.
+
+## Próximo passo
+Corrigir/verificar o bridge WhatsApp antes de nova tentativa operacional. Não reenviar manualmente sem revalidar CRM, estado do Resgate e histórico da conversa.
