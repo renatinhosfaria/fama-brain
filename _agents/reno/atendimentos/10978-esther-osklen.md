@@ -1,8 +1,14 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: Esther Osklen
+client_id: 10978
+broker_id: 35
+status_crm: Não Respondeu
+source: SLA Cascata / FamaChat
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -11,17 +17,11 @@ tags:
   - repescagem
   - nao-respondeu
   - union-vereda
-entity_type: client
-entity_name: Esther Osklen
-client_id: 10978
-broker_id: 35
-status_crm: Não Respondeu
-source: SLA Cascata / FamaChat
 ---
 # Atendimento — Esther Osklen
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM `Não Respondeu`, sem resposta real registrada após primeiro contato e repescagens. Interesse operacional associado ao empreendimento **Union Vereda**, no bairro Jaraguá.
+Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM `Não Respondeu`, sem resposta real registrada após primeiro contato e repescagens. Interesse operacional associado ao empreendimento **Union Vereda**, no bairro Jaraguá. Repescagem step 3 enviada em 2026-05-01 com pergunta de diagnóstico leve para identificar se a intenção é morar ou investir.
 
 ## Dados operacionais
 - Cliente ID: 10978
@@ -29,26 +29,27 @@ Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM `Não Respo
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata / FamaChat
 - Telefone/WhatsApp: disponível no CRM; JID salvo foi usado como destino preferencial.
-- Última interação relevante: repescagem step 2 enviada em 2026-04-30T10:43:16-03:00.
+- Última interação relevante: repescagem step 3 enviada em 2026-05-01T19:07:21-03:00.
 
 ## Contexto comercial
 - Lead herdado por SLA Cascata.
 - Contexto disponível indica interesse no **Union Vereda**, bairro Jaraguá, Uberlândia/MG.
-- Primeiro contato e reenvio inicial já haviam sido enviados sem resposta real registrada.
-- A estratégia de repescagem está usando o ângulo de **imóvel específico**: ajudar a avaliar se o empreendimento realmente encaixa no momento da cliente antes de seguir olhando opções soltas.
+- Empreendimento: apartamento no Jaraguá, com lazer/serviços e entrega prevista para Dez/2028.
+- Primeiro contato, reenvio inicial e repescagens anteriores foram enviados sem resposta real registrada.
+- A estratégia de repescagem saiu do argumento repetido de encaixe/viabilidade do imóvel e passou para diagnóstico de uso: entender se a cliente olha o imóvel para morar ou para investimento.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não há necessidade declarada pela cliente. O contexto indica possível busca por imóvel ligado ao Union Vereda.
 
 ### Momento
-Cliente permanece silenciosa após primeiro contato e repescagem inicial; momento de compra ainda não confirmado.
+Cliente permanece silenciosa após primeiro contato e repescagens. Momento de compra ainda não confirmado.
 
 ### Decisão
 Sem informações sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem informações confirmadas sobre forma de pagamento, entrada, renda ou financiamento. Não há promessa de crédito; abordagem deve abrir conversa para avaliar encaixe e viabilidade de forma simples.
+Sem informações confirmadas sobre forma de pagamento, entrada, renda ou financiamento. Não há promessa de crédito; abordagem deve abrir conversa para entender objetivo, timing e viabilidade de forma simples.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno enviado
@@ -91,12 +92,29 @@ Quer que eu te ajude a fazer essa primeira análise **bem simples**?
 - Próximo `next_run_at`: 2026-05-01T14:20:00-03:00
 - Estado registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`).
 
+### 2026-05-01 — Repescagem step 3 enviada
+Ângulo: diagnóstico leve + objetivo de uso do imóvel. A mensagem mudou a abordagem em relação aos steps anteriores: saiu de encaixe/localização/forma de pagamento e abriu uma pergunta única sobre **morar ou investir**, usando o perfil do Union Vereda e a entrega futura como motivo novo para resposta.
+
+Mensagem enviada:
+
+```text
+Esther, deixa eu te perguntar uma coisa bem objetiva 📍
+
+O Union Vereda tem um perfil de apartamento no Jaraguá com lazer e entrega mais pra frente. Dependendo se a ideia for **morar** ou **investir**, muda bastante o que vale analisar primeiro.
+
+Você está olhando esse tipo de imóvel mais para morar ou para investimento?
+```
+
+- Data/hora do envio: 2026-05-01T19:07:21-03:00
+- Próximo `next_run_at`: 2026-05-02T19:10:00-03:00
+- Estado registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`).
+
 ## Objeções e travas
 - Trava principal atual: ausência de resposta real da cliente.
 - Sem objeções comerciais explícitas registradas.
 
 ## Próximo passo
-Se a cliente permanecer sem resposta e continuar elegível (`broker_id=35`, status `Não Respondeu`, repescagem ativa), enviar repescagem step 3 no próximo horário previsto: 2026-05-01T14:20:00-03:00. Se houver resposta real, sair da repescagem, mover para atendimento normal e atualizar status conforme regra do Reno.
+Se a cliente permanecer sem resposta e continuar elegível (`broker_id=35`, status `Não Respondeu`, repescagem ativa), enviar repescagem step 4 no próximo horário previsto: 2026-05-02T19:10:00-03:00. Se houver resposta real, sair da repescagem, mover para atendimento normal e atualizar status conforme regra do Reno.
 
 ## Observações operacionais
 - Documento oficial criado no caminho canônico `_agents/reno/atendimentos/10978-esther-osklen.md`.
