@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads - Garden Sul
 created: '2026-04-27'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Elias Fernandes
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, com interesse originado em Facebook Ads - Garden Sul / Garden Sul na região do Jardim Sul. Primeiro contato recuperado/enviado em 2026-04-27, repescagem step 1 enviada em 2026-04-28, step 2 enviada em 2026-04-29 e step 3 enviada com sucesso em 2026-04-30. Segue sem resposta real registrada até esta atualização.
+Cliente do Reno (`broker_id=35`) em `Não Respondeu`, com interesse originado em Facebook Ads - Garden Sul / Garden Sul na região do Jardim Sul. Primeiro contato recuperado/enviado em 2026-04-27; repescagens steps 1, 2, 3 e 4 enviadas com sucesso. Segue sem resposta real registrada até esta atualização.
 
 ## Dados operacionais
 - Cliente ID: 10662
@@ -27,14 +27,14 @@ Cliente do Reno (`broker_id=35`) em `Não Respondeu`, com interesse originado em
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads - Garden Sul
 - Telefone/WhatsApp: WhatsApp cadastrado; envio operacional realizado pelo JID salvo no CRM.
-- Última interação relevante: 2026-04-30 19:13 - repescagem step 3 enviada via WhatsApp.
+- Última interação relevante: 2026-05-01 09:13 - repescagem step 4 enviada via WhatsApp.
 
 ## Contexto comercial
-Interesse seguro no Garden Sul, região do Jardim Sul, empreendimento em lançamento na Zona Sul de Uberlândia, com entrega prevista para set/2028 e opções de apartamentos de 2 quartos. Não há resposta real do cliente registrada após o primeiro contato. A abordagem consultiva deve usar o imóvel/região como gancho, mas alternar o ângulo para não repetir viabilidade: entender se o interesse é moradia futura ou investimento, prazo e perfil de uso.
+Interesse seguro no Garden Sul, região do Jardim Sul, empreendimento em lançamento na Zona Sul de Uberlândia, com entrega prevista para set/2028 e opções de apartamentos de 2 quartos. Não há resposta real do cliente registrada após o primeiro contato. A abordagem consultiva deve usar o imóvel/região como gancho, alternando o ângulo para não repetir viabilidade: após diagnóstico de morar vs investir no step 3, o step 4 reforçou ajuda consultiva para transformar interesse em caminho claro, considerando prazo de entrega, perfil do imóvel e forma de compra.
 
 ## Diagnóstico
 ### Necessidade
-Cliente demonstrou interesse inicial em empreendimento/região específica, mas ainda não confirmou necessidade concreta. O step 3 buscou diferenciar se o objetivo é morar ou investir.
+Cliente demonstrou interesse inicial em empreendimento/região específica, mas ainda não confirmou necessidade concreta.
 
 ### Momento
 Silencioso após primeiro contato e após repescagens anteriores. Momento de compra ainda não validado.
@@ -91,12 +91,27 @@ Mensagem enviada:
 
 Resultado: envio confirmado via WhatsApp pelo JID salvo no CRM. Estado registrado no CRM pela tool específica `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-05-01T09:10:00-03:00. Status preservado como `Não Respondeu`.
 
+### 2026-05-01 — Repescagem step 4 enviada
+Fluxo: `repescagem`. Step enviado: 4. Ângulo comercial usado: convite consultivo direto a partir do interesse no Garden Sul, destacando transformar interesse em caminho claro. Diferenciação em relação ao step 3: saiu da pergunta morar/investir e entrou em análise consultiva objetiva sobre prazo de entrega, perfil do imóvel e forma de compra.
+
+Mensagem enviada:
+
+> Elias, bom dia! 🔑
+>
+> Pelo que vi aqui, o Garden Sul pode ser uma opção interessante, mas o mais importante agora é transformar esse interesse em um caminho claro: entender se faz sentido pelo prazo de entrega, perfil do imóvel e forma de compra.
+>
+> Se você quiser, eu consigo te ajudar com uma análise bem objetiva, **sem compromisso**, pra ver se vale seguir com o Garden Sul ou comparar com outra opção.
+>
+> Posso fazer essa leitura inicial pra você?
+
+Resultado: envio confirmado via WhatsApp pelo JID salvo no CRM. Estado registrado no CRM pela tool específica `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-05-02T14:20:00-03:00. Status preservado como `Não Respondeu`.
+
 ## Objeções e travas
 - Cliente silencioso; nenhuma objeção declarada.
-- Trava operacional anterior em 2026-04-29 por gateway indisponível foi superada com envio confirmado.
+- Trava operacional anterior em 2026-04-29 por gateway indisponível foi superada com envios confirmados posteriormente.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se não houver resposta até o próximo vencimento da régua, a próxima execução elegível da repescagem poderá enviar o step 4 em 2026-05-01 às 09:10 (America/Sao_Paulo), com convite consultivo direto e sem repetir a pergunta morar/investir. Se o cliente responder, interromper a repescagem e conduzir por fluxo de atendimento normal, com mudança de status para `Em Atendimento` quando aplicável.
+Aguardar resposta do cliente. Se não houver resposta até o próximo vencimento da régua, a próxima execução elegível da repescagem poderá enviar o step 5 em 2026-05-02 às 14:20 (America/Sao_Paulo), com encerramento elegante e porta aberta, sem repetir o convite de análise do step 4. Se o cliente responder, interromper a repescagem e conduzir por fluxo de atendimento normal, com mudança de status para `Em Atendimento` quando aplicável.
 
 ## Observações operacionais
 - CRM/FamaChat permanece como fonte operacional de verdade.
