@@ -20,7 +20,7 @@ tags:
 # Atendimento — Márcio Oliveira Julião
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operacional associado ao empreendimento Union Vista, no Grand Ville. Após primeiro contato e repescagens steps 1, 2 e 3, respondeu pelo WhatsApp em 2026-05-01. Primeiro trouxe `4.800` e, em seguida, esclareceu `Tenho a entrada`, indicando sinal relevante de viabilidade/entrada disponível. A repescagem está interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não há resgate ativo.
+Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operacional associado ao empreendimento Union Vista, no Grand Ville. Após primeiro contato e repescagens steps 1, 2 e 3, respondeu pelo WhatsApp em 2026-05-01. Trouxe contexto de viabilidade em sequência: `4.800`, `Tenho a entrada` e depois `5 mil`, indicando disponibilidade/pretensão de entrada em torno de R$ 5.000. A repescagem está interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não há resgate ativo.
 
 ## Dados operacionais
 - Cliente ID: 10942
@@ -28,23 +28,23 @@ Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operac
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / FamaChat
 - Telefone/WhatsApp: cadastrado no CRM; WhatsApp disponível
-- Última interação relevante: 2026-05-01 — inbound WhatsApp do cliente: `Tenho a entrada`
+- Última interação relevante: 2026-05-01 — inbound WhatsApp do cliente: `5 mil`
 
 ## Contexto comercial
-O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia. A última repescagem perguntou se o cliente olhava o imóvel para morar ou investir. O cliente respondeu primeiro `4.800` e depois `Tenho a entrada`, sinalizando que está trazendo contexto financeiro de viabilidade e possivelmente disponibilidade para entrada. Antes de resposta comercial, é importante reconstruir o contexto da sessão WhatsApp para entender se `4.800` se refere a renda, parcela, valor complementar ou outro dado.
+O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia. A última repescagem perguntou se o cliente olhava o imóvel para morar ou investir. O cliente respondeu primeiro `4.800`, depois `Tenho a entrada` e em seguida `5 mil`, sinalizando que está trazendo contexto financeiro de viabilidade e que provavelmente possui/pretende entrada próxima de R$ 5.000. Antes de resposta comercial, é importante reconstruir o contexto da sessão WhatsApp para não tratar o dado como simulação fechada nem prometer crédito.
 
 ## Diagnóstico
 ### Necessidade
 Possível interesse em apartamento no Union Vista ou região do Grand Ville. A necessidade ainda não foi plenamente qualificada.
 
 ### Momento
-Cliente saiu do silêncio após repescagem e agora está em atendimento ativo. A resposta sobre entrada indica abertura para avançar em viabilidade, mas ainda exige condução consultiva e curta.
+Cliente saiu do silêncio após repescagem e agora está em atendimento ativo. As respostas sobre entrada indicam abertura para avançar em viabilidade, mas ainda exigem condução consultiva e curta.
 
 ### Decisão
 Sem informação confirmada sobre decisores, prazo de compra ou motivação.
 
 ### Viabilidade
-Cliente afirmou que tem a entrada. O valor `4.800` apareceu imediatamente antes, mas ainda é ambíguo e não deve ser tratado como entrada confirmada sem checar o contexto. Próxima resposta deve validar de forma natural se esse valor é a entrada disponível, parcela, renda ou outro dado, sem prometer crédito/aprovação.
+Cliente sinalizou ter entrada e indicou `5 mil` como valor aproximado. O valor `4.800` apareceu imediatamente antes e pode estar relacionado a entrada, parcela, renda ou outro dado do contexto da sessão; não deve ser tratado como aprovação ou encaixe garantido. Próxima resposta deve validar de forma natural que ele tem cerca de R$ 5.000 de entrada e conduzir para entender financiamento/uso do imóvel sem prometer crédito.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato operacional
@@ -99,12 +99,17 @@ Cliente respondeu pelo WhatsApp: `Tenho a entrada`.
 
 Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem permanecia interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); resgate sem ciclo ativo; nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
 
+### 2026-05-01 — Resposta inbound do cliente: entrada aproximada
+Cliente respondeu pelo WhatsApp: `5 mil`.
+
+Interpretação operacional curada: no contexto das mensagens anteriores (`4.800` e `Tenho a entrada`), o cliente sinaliza entrada disponível/pretendida em torno de R$ 5.000 para avaliação de viabilidade. Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem permanecia interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); resgate sem ciclo ativo; nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
+
 ## Objeções e travas
-- O cliente sinalizou ter entrada, mas o valor/contexto exato ainda precisa ser validado antes de qualquer leitura de financiamento.
+- Entrada indicada em torno de R$ 5.000 pode exigir ajuste de expectativa, unidade, condição de entrada parcelada e simulação segura; não prometer encaixe.
 - Contexto de finalidade da compra ainda não confirmado.
 
 ## Próximo passo
-Na próxima resposta comercial, retomar o contexto com naturalidade e validar o dado de entrada sem transformar em simulação longa. Direção sugerida: reconhecer que ter entrada ajuda bastante, confirmar se os R$ 4.800 citados são o valor de entrada disponível ou outro parâmetro, e conduzir para entender se ele quer morar ou investir antes de avançar na viabilidade do Union Vista.
+Na próxima resposta comercial, retomar o contexto com naturalidade e validar o dado de entrada sem transformar em simulação longa. Direção sugerida: reconhecer que ter cerca de R$ 5.000 de entrada já ajuda a fazer uma primeira leitura, explicar que no Union Vista a entrada/financiamento precisa ser vista com cuidado, e fazer uma pergunta curta para avançar: se ele pretende comprar para morar ou investir, ou se quer que o Reno veja uma opção que encaixe melhor nessa entrada.
 
 ## Observações operacionais
 - Envio do step 3 havia sido realizado pelo worker `reno-repescagem-message-queue-production` com destino preferencial via `whatsapp_jid` salvo no CRM.
@@ -112,3 +117,4 @@ Na próxima resposta comercial, retomar o contexto com naturalidade e validar o 
 - Em 2026-05-01, o cliente já aparecia em `Em Atendimento` e com repescagem parada: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Nota CRM da resposta `4.800`: ID 16288.
 - Nota CRM da resposta `Tenho a entrada`: ID 16289.
+- Nota CRM da resposta `5 mil`: ID 16290.
