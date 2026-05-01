@@ -1,8 +1,14 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: Sonia Silva
+client_id: 10949
+broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -10,17 +16,11 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
-entity_type: client
-entity_name: Sonia Silva
-client_id: 10949
-broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
 ---
 # Atendimento — Sonia Silva
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville. Primeiro contato e repescagem step 1 foram enviados sem resposta real registrada. Em 2026-04-30 foi enviada repescagem step 2 com ângulo de imóvel específico + viabilidade/evitar caminho errado.
+Cliente do Reno (`broker_id=35`) em `Não Respondeu`, originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville. Primeiro contato e repescagens steps 1, 2 e 3 foram enviados sem resposta real registrada até esta atualização. Em 2026-05-01 foi enviada repescagem step 3 com diagnóstico leve sobre prazo/momento de mudança, usando o contexto de lançamento com entrega prevista para 2027.
 
 ## Dados operacionais
 - Cliente ID: 10949
@@ -28,23 +28,23 @@ Cliente do Reno (`broker_id=35`) em `Não Respondeu`, originada de Facebook Ads/
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp disponível no CRM; envio realizado pelo JID salvo
-- Última interação relevante: 2026-04-30T09:25:02-03:00 — repescagem step 2 enviada
+- Última interação relevante: 2026-05-01T17:25:08-03:00 — repescagem step 3 enviada
 
 ## Contexto comercial
-Interesse inicial vinculado ao Union Vista, na região do Grand Ville. Ainda não há resposta da cliente, então não há confirmação de finalidade de compra, momento, região alternativa, orçamento ou preferência de financiamento.
+Interesse inicial vinculado ao Union Vista, empreendimento da HLTS Construtora na região do Grand Ville/Zona Leste de Uberlândia. O empreendimento está em lançamento, com entrega prevista para Jul/2027, unidades de 2 quartos e valores a partir de aproximadamente R$292 mil. Ainda não há resposta da cliente, então não há confirmação de finalidade de compra, urgência, região alternativa, orçamento ou preferência de financiamento.
 
 ## Diagnóstico
 ### Necessidade
-Indefinida por ausência de resposta real. Contexto sugere busca por imóvel específico, mas ainda sem confirmação.
+Indefinida por ausência de resposta real. Contexto sugere busca por imóvel específico, mas ainda sem confirmação se o objetivo é morar, investir ou apenas avaliar oportunidade.
 
 ### Momento
-Cliente silenciosa após primeiro contato e repescagem step 1; fluxo segue em repescagem.
+Cliente silenciosa após primeiro contato e repescagens anteriores. Step 3 buscou abrir diagnóstico por timing: mudança imediata versus possibilidade de esperar um lançamento ficar pronto.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou financiamento. Repescagem step 2 abordou a importância de validar encaixe de entrada, parcela e financiamento sem prometer crédito.
+Sem dados de renda, entrada ou financiamento. Repescagem step 2 já abordou encaixe financeiro; step 3 mudou o ângulo para prazo de entrega e momento de uso do imóvel, evitando repetir o mesmo argumento.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -73,12 +73,33 @@ Quer que eu te ajude a fazer essa primeira leitura de forma **simples e realista
 
 Próximo `next_run_at`: 2026-05-01T14:20:00-03:00.
 
+### 2026-05-01 — Repescagem step 3 enviada
+Fluxo: repescagem  
+Step enviado: 3  
+Intenção do step: diagnóstico leve para obter uma primeira informação objetiva.  
+Comparação de abordagem: diferente do step 2, que falou de encaixe financeiro/entrada/parcela, esta mensagem usa prazo de entrega do lançamento, pergunta sobre urgência de mudança e destaca comparação de caminho quando o prazo não combina.  
+Ângulo comercial usado: imóvel específico + momento/prazo de entrega.  
+Data/hora de envio: 2026-05-01T17:25:08-03:00  
+Mensagem enviada:
+
+```text
+Sonia, tudo bem? 📍
+
+O Union Vista é um lançamento com entrega prevista para 2027, então ele pode fazer bastante sentido para quem consegue se planejar com calma.
+
+Mas se a sua necessidade for mais imediata, talvez seja melhor comparar outro caminho antes de avançar.
+
+Você pensa em se mudar logo ou pode esperar um lançamento ficar pronto?
+```
+
+Próximo `next_run_at`: 2026-05-02T19:10:00-03:00.
+
 ## Objeções e travas
 - Trava atual: ausência de resposta real após os contatos anteriores.
 - Não há objeção comercial declarada pela cliente.
 
 ## Próximo passo
-Se a cliente continuar em `Não Respondeu` e sem resposta real até 2026-05-01T14:20:00-03:00, avaliar repescagem step 3 pela fila oficial. Se houver resposta real, parar repescagem, mover para atendimento normal do Reno e conduzir diagnóstico consultivo.
+Se a cliente continuar em `Não Respondeu` e sem resposta real até 2026-05-02T19:10:00-03:00, avaliar repescagem step 4 pela fila oficial, com convite consultivo mais direto e sem repetir o ângulo de prazo/viabilidade. Se houver resposta real, parar repescagem, mover para atendimento normal do Reno e conduzir diagnóstico consultivo.
 
 ## Observações operacionais
 - Estado da repescagem atualizado no CRM pela tool específica `mark_reno_followup_sent`.
