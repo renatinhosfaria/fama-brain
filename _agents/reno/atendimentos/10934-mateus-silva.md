@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Mateus Silva
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no Shopping Park. Histórico operacional anterior é fraco para provar diagnóstico do cliente, então o Resgate está sendo conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região como gancho neutro e perguntas de baixa fricção para reabrir a conversa. Em 2026-04-30, foi enviado Resgate step 3 com pergunta de escolha simples entre menor valor e planta mais completa.
+Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no Shopping Park. Histórico operacional anterior é fraco para provar diagnóstico do cliente, então o Resgate está sendo conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região como gancho neutro e perguntas de baixa fricção para reabrir a conversa. Em 2026-05-01, foi enviado Resgate step 4 com nova abordagem: oferecer uma prévia simples comparando as duas opções do empreendimento para reduzir a fricção da resposta.
 
 ## Dados operacionais
 - Cliente ID: 10934
@@ -29,11 +29,11 @@ Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no S
 - Telefone/WhatsApp: disponível no CRM; não replicado integralmente aqui
 - Empreendimento vinculado: Place+Arbi
 - Bairro/região: Shopping Park, Zona Sul de Uberlândia
-- Última interação relevante: 2026-04-30 — Resgate step 3 enviado via WhatsApp
+- Última interação relevante: 2026-05-01 — Resgate step 4 enviado via WhatsApp
 
 ## Contexto comercial
 - Interesse original registrado no CRM: Place+Arbi.
-- Produto: apartamento no Shopping Park, com opções de 48m² e 50m², 2 quartos, sacada e 1 vaga; empreendimento com lazer completo e entrega prevista no CRM para JUN/2027.
+- Produto: apartamento no Shopping Park, com opções de 48m² e 50m², 2 quartos, sacada e 1 vaga; a opção de 50m² possui suíte. Empreendimento com lazer completo e entrega prevista no CRM para JUN/2027.
 - Ainda não há diagnóstico curado confiável sobre necessidade, momento, decisão ou viabilidade.
 
 ## Diagnóstico
@@ -41,7 +41,7 @@ Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no S
 Ainda não identificada de forma confiável.
 
 ### Momento
-Cliente em retomada de atendimento; sem visita/agendamento ativo no CRM no momento do envio do step 3.
+Cliente em retomada de atendimento; sem visita/agendamento ativo no CRM no momento do envio do step 4.
 
 ### Decisão
 Não há informação curada sobre decisores adicionais.
@@ -82,14 +82,24 @@ CRM registra follow-up de repescagem com a mensagem: "Oi, Mateus. Ainda faz sent
 - Próximo `next_run_at`: 2026-05-01T17:44:00-03:00
 - Intenção comercial: obter um critério mínimo para retomar a qualificação e, se houver sinal positivo, conduzir para visita presencial na Fama.
 
+### 2026-05-01 — Resgate step 4 enviado
+- Bucket: `sem_gancho_claro`
+- Step: 4
+- Mensagem enviada: "Mateus, pra facilitar: posso te mandar uma prévia bem simples do Place+Arbi com as duas opções e a diferença principal entre elas?"
+- Contexto usado: CRM/FamaChat, ausência de agendamentos/visitas, empreendimento Place+Arbi no Shopping Park, opções cadastradas de 48m² e 50m² com suíte, histórico dos steps 1 a 3 e documento curado oficial.
+- Diferenciação do step anterior: saiu da escolha entre menor valor e planta completa para uma oferta de prévia objetiva, reduzindo esforço do cliente e criando motivo novo para resposta sem cobrar retorno.
+- Próximo `next_run_at`: 2026-05-03T17:53:20-03:00
+- Intenção comercial: obter permissão para enviar uma comparação simples das opções e reabrir a conversa; se houver resposta positiva, interromper Resgate e seguir qualificação normal com contexto do Place+Arbi.
+
 ## Objeções e travas
 - Lacuna operacional: histórico curado não comprova resposta/diagnóstico anterior do cliente, apesar do CRM estar em `Em Atendimento` e branch de Resgate habilitada.
 - Sem objeções comerciais explícitas registradas até o momento.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com `stopped_reason=client_replied`, limpar `next_run_at` e seguir atendimento normal pela qualificação WhatsApp do Reno. Na qualificação, usar a resposta para diagnosticar prioridade do imóvel e, com sinal positivo, conduzir para visita presencial na Fama.
+Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com `stopped_reason=client_replied`, limpar `next_run_at` e seguir atendimento normal pela qualificação WhatsApp do Reno. Se não responder até o próximo vencimento, avaliar step 5 com abordagem diferente, preferencialmente evitando repetir a oferta de prévia e buscando outro ângulo de baixa fricção.
 
 ## Observações operacionais
-- CRM é a fonte operacional de verdade; status validado como `Em Atendimento`, `broker_id=35`, sem agendamento/visita ativo no momento do step 3.
+- CRM é a fonte operacional de verdade; status validado como `Em Atendimento`, `broker_id=35`, sem agendamento/visita ativo no momento do step 4.
+- Envio do step 4 registrado no CRM pela ferramenta específica `mark_reno_followup_sent`, nota CRM ID 16311.
 - Documento atualizado no caminho oficial `_agents/reno/atendimentos/10934-mateus-silva.md`.
 - Não há dump bruto de conversa neste documento; apenas síntese curada para retomada.
