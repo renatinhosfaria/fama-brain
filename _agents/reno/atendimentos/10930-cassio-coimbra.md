@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -19,16 +19,16 @@ tags:
 # Atendimento — Cássio Coimbra
 
 ## Resumo atual
-Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`). Entrou em ciclo de Resgate por silêncio após atendimento anterior. Resgate step 3 enviado em 2026-04-30 com pergunta de baixa fricção para priorizar filtros de planta/perfil antes de chamar para visita presencial.
+Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`). Está em ciclo de Resgate por silêncio após atendimento anterior. Resgate step 4 enviado em 2026-05-01 com abordagem diferente do step 3: em vez de perguntar qual filtro pesa mais, o Reno simplificou o caminho e ofereceu separar uma opção mais certeira no perfil ou confirmar se a busca foi pausada.
 
 ## Dados operacionais
 - Cliente ID: 10930
 - Broker ID: 35
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
-- Telefone/WhatsApp: cadastrado no CRM; envio realizado sem expor número completo no vault.
+- Telefone/WhatsApp: cadastrado no CRM; envios realizados sem expor número completo no vault.
 - WhatsApp JID: cadastrado no CRM.
-- Última interação relevante: 2026-04-30 15:48 - Reno enviou Resgate step 3 via WhatsApp.
+- Última interação relevante: 2026-05-01 15:55 - Reno enviou Resgate step 4 via WhatsApp.
 
 ## Contexto comercial
 - Empreendimento vinculado no CRM: Union Vereda, bairro Jaraguá, zona Oeste de Uberlândia.
@@ -73,16 +73,27 @@ Mensagem enviada:
 
 Contexto usado: CRM/FamaChat, nota de interesse inicial, histórico de Resgate steps 1 e 2, e documento curado do atendimento. A abordagem mudou em relação ao step 2: saiu de validação genérica de encaixe do Union Vereda para escolha simples de prioridade do cliente, com benefício de filtro mais assertivo e CTA indireto para visita presencial.
 
-Próximo `next_run_at` do Resgate: 2026-05-01T15:48:11-03:00.
+### 2026-05-01 — Resgate step 4
+Reno enviou follow-up de resgate step 4 via WhatsApp. Bucket: `sem_gancho_claro`.
+
+Mensagem enviada:
+> Cássio, vou simplificar pra não ficar te mandando coisa solta: pelo que você comentou, eu focaria em uma opção com suíte, varanda e boa incidência de sol no Union Vereda.
+>
+> Quer que eu separe uma opção mais certeira nesse perfil ou você pausou a busca por enquanto?
+
+Contexto usado: CRM/FamaChat, notas de Resgate anteriores, preferências registradas e documento curado do atendimento. A abordagem mudou em relação ao step 3: saiu de pergunta de prioridade entre filtros para proposta de reduzir fricção com uma opção mais certeira e uma alternativa simples de pausa da busca, mantendo tom consultivo e sem cobrança.
+
+Próximo `next_run_at` do Resgate: 2026-05-02T15:55:05-03:00.
 
 ## Objeções e travas
 - Trava atual: silêncio após mensagens outbound do Reno.
 - Lacuna: histórico conversacional detalhado do WhatsApp não está disponível no CRM consultado; classificação segura mantida como `sem_gancho_claro`, usando gancho confiável de empreendimento e preferências registradas.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper ciclo de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e seguir atendimento normal com qualificação consultiva. Se houver sinal positivo, conduzir para visita presencial na Fama.
+Aguardar resposta do cliente. Se responder, interromper ciclo de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e seguir atendimento normal com qualificação consultiva. Se houver sinal positivo, conduzir para visita presencial na Fama. Se continuar sem resposta, próximo step elegível em 2026-05-02T15:55:05-03:00, respeitando cadência sequencial.
 
 ## Observações operacionais
 - CRM/FamaChat segue como fonte de verdade operacional.
-- Não havia agendamentos, visitas ou vendas ativos no momento do envio do Resgate step 3.
+- Não havia agendamentos, visitas ou vendas ativos no momento do envio do Resgate step 4.
+- Envio step 4 registrado no CRM pela ferramenta específica de Resgate, com nota operacional criada automaticamente.
 - Não usar caminhos legados `_agents/reno/clientes/` ou `_agents/reno/cliente/` para este atendimento.
