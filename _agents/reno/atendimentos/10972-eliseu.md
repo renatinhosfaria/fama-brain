@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -23,7 +23,7 @@ tags:
 ## Resumo atual
 Cliente em atendimento pelo Reno, interessado no Union Vista. Já respondeu e conversou sobre preço, torres, entrega e possibilidade de plano investidor. Ficou silencioso após condução sobre valorização/revenda e convite para simular cenários presencialmente na Fama.
 
-Em 2026-04-30 foram enviados Resgates steps 1, 2 e 3 com bucket `condicao_valor`. O step 3 mudou o ângulo para uma oferta de filtro objetivo do Union Vista, priorizando cenários com entrada menos pesada e potencial de revenda, em vez de repetir a pergunta anterior sobre qual ponto pesa mais.
+Em 2026-04-30 foram enviados Resgates steps 1, 2 e 3 com bucket `condicao_valor`. Em 2026-05-01 foi enviado o Resgate step 4, mantendo o bucket `condicao_valor`, mas mudando o ângulo: em vez de perguntar se ele queria um filtro direto, a mensagem reposicionou a análise como comparação entre fluxo e chance de valorização do Union Vista e ofereceu um resumo simples do cenário.
 
 ## Dados operacionais
 - Cliente ID: 10972
@@ -31,7 +31,7 @@ Em 2026-04-30 foram enviados Resgates steps 1, 2 e 3 com bucket `condicao_valor`
 - Status CRM: Em Atendimento
 - Origem: SLA Cascata
 - Telefone/WhatsApp: cadastrado no CRM; envios via WhatsApp confirmados sem expor número completo aqui
-- Última interação relevante: 2026-04-30 17:12 BRT — Resgate step 3 enviado
+- Última interação relevante: 2026-05-01 17:30 BRT — Resgate step 4 enviado
 
 ## Contexto comercial
 - Empreendimento de interesse: Union Vista, região do Grand Ville, Uberlândia.
@@ -45,13 +45,13 @@ Em 2026-04-30 foram enviados Resgates steps 1, 2 e 3 com bucket `condicao_valor`
 Avaliar se o Union Vista faz sentido como possibilidade de investimento/valorização, não apenas como moradia imediata.
 
 ### Momento
-Cliente entrou em conversa ativa, mas parou após orientação sobre plano investidor e convite para análise mais segura. Permaneceu sem resposta após os primeiros steps de Resgate.
+Cliente entrou em conversa ativa, mas parou após orientação sobre plano investidor e convite para análise mais segura. Permaneceu sem resposta após os steps 1, 2 e 3 de Resgate.
 
 ### Decisão
 Ainda sem decisor adicional identificado. Próxima conversa deve entender se ele decide sozinho e se a estratégia é revenda/valorização ou renda futura.
 
 ### Viabilidade
-Trava principal ligada a condição/fluxo: entrada, parcela baixa e validação de plano investidor por unidade/tabela atual. Step 3 buscou reduzir fricção oferecendo filtrar apenas cenários do Union Vista que não pesem tanto na entrada e façam sentido para revenda. Não prometer condição; usar atendimento presencial/consulta de tabela para simular cenários com segurança.
+Trava principal ligada a condição/fluxo: entrada, parcela baixa e validação de plano investidor por unidade/tabela atual. Step 4 buscou reduzir fricção oferecendo um resumo simples que compare fluxo de investimento com potencial de valorização, sem prometer condição ou aprovação. Se houver resposta, conduzir para análise objetiva e visita presencial na Fama.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Primeiro contato e resposta do cliente
@@ -77,7 +77,15 @@ Mensagem enviada: “Eliseu, posso fazer um filtro mais direto do Union Vista pr
 
 Quer que eu siga por esse caminho?”
 Contexto usado: CRM/FamaChat confirmou `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo e histórico sobre plano investidor; sessão/Hermes e notas anteriores indicaram silêncio após outbound do Reno; vault confirmou a trava de condição/valor. A abordagem mudou em relação ao step 2: saiu da pergunta comparativa sobre preocupação principal e passou para permissão de filtro objetivo de cenários.
-Próximo Resgate previsto: 2026-05-01 17:12 BRT, se permanecer sem resposta e ainda elegível.
+Próximo Resgate previsto: 2026-05-01 17:12 BRT, se permanecesse sem resposta e ainda elegível.
+
+### 2026-05-01 — Resgate step 4 enviado
+Bucket: `condicao_valor`.
+Mensagem enviada: “Eliseu, pensando como investimento, eu não olharia só a menor entrada. O ideal é comparar o fluxo com a chance de valorização do Union Vista.
+
+Se eu te mandar um resumo simples desse cenário, ajuda?”
+Contexto usado: CRM/FamaChat confirmou `broker_id=35`, status `Em Atendimento`, sem visita/agendamento/visita ativa, branch de Resgate vencida e silêncio após o último outbound; vault confirmou contexto de plano investidor, entrada reduzida, parcela baixa, valorização e revenda; sessão/Hermes histórica confirmou que o step 3 já ofereceu filtro direto. A nova abordagem mudou o ângulo comercial para comparação simples de investimento, mudou o CTA para oferta de resumo e reduziu a fricção da resposta.
+Próximo Resgate previsto: 2026-05-03 17:30 BRT, se permanecer sem resposta e ainda elegível.
 
 ## Objeções e travas
 - Condição/valor: interesse em plano investidor, entrada reduzida e parcela baixa.
@@ -85,11 +93,11 @@ Próximo Resgate previsto: 2026-05-01 17:12 BRT, se permanecer sem resposta e ai
 - Estratégia de investimento: entender se a prioridade real é entrada baixa, parcela durante obra ou potencial de revenda/valorização.
 
 ## Próximo passo
-Se responder, interromper a régua de Resgate e voltar ao atendimento normal. Conduzir para análise objetiva do plano investidor; se ele autorizar o filtro, separar cenários do Union Vista com menor peso de entrada e bom potencial de revenda, e então propor visita presencial na Fama para validar tabela/unidade e simular o fluxo com segurança.
+Se responder, interromper a régua de Resgate e voltar ao atendimento normal. Se aceitar o resumo, enviar uma síntese curta comparando fluxo de entrada/parcela com potencial de valorização do Union Vista, sem prometer condição, e conduzir para visita presencial na Fama para validar tabela/unidade e simular o cenário com segurança.
 
 ## Observações operacionais
 - CRM/FamaChat confirmado como fonte operacional: cliente existe, `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo no momento do envio.
 - Documento mantido no caminho oficial de atendimento do Reno em `_agents/reno/atendimentos/10972-eliseu.md`.
-- Não houve alteração de status durante o Resgate step 3; cliente permanece em `Em Atendimento`.
+- Não houve alteração de status durante o Resgate step 4; cliente permanece em `Em Atendimento`.
 - WhatsApp enviado para JID cadastrado no CRM; telefone completo não exposto no vault.
-- Escrita pode exigir `vault-steward` por ownership do diretório; frontmatter mantém owner `reno`.
+- Nota CRM do step 4 criada automaticamente pela ferramenta de persistência do Resgate: ID 16304.
