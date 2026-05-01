@@ -20,7 +20,7 @@ tags:
 # Atendimento — Márcio Oliveira Julião
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operacional associado ao empreendimento Union Vista, no Grand Ville. Após primeiro contato e repescagens steps 1, 2 e 3, respondeu pelo WhatsApp em 2026-05-01 com a mensagem `4.800`. A repescagem já está interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`).
+Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operacional associado ao empreendimento Union Vista, no Grand Ville. Após primeiro contato e repescagens steps 1, 2 e 3, respondeu pelo WhatsApp em 2026-05-01. Primeiro trouxe `4.800` e, em seguida, esclareceu `Tenho a entrada`, indicando sinal relevante de viabilidade/entrada disponível. A repescagem está interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não há resgate ativo.
 
 ## Dados operacionais
 - Cliente ID: 10942
@@ -28,23 +28,23 @@ Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operac
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / FamaChat
 - Telefone/WhatsApp: cadastrado no CRM; WhatsApp disponível
-- Última interação relevante: 2026-05-01 — inbound WhatsApp do cliente: `4.800`
+- Última interação relevante: 2026-05-01 — inbound WhatsApp do cliente: `Tenho a entrada`
 
 ## Contexto comercial
-O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia, lançamento com apartamentos de 2 quartos e entrega prevista para Jul/2027. A última repescagem perguntou se o cliente olhava o imóvel para morar ou investir. A resposta `4.800` parece trazer um dado numérico útil para continuidade comercial, mas precisa ser interpretada no contexto da conversa antes de qualquer resposta ao cliente.
+O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia. A última repescagem perguntou se o cliente olhava o imóvel para morar ou investir. O cliente respondeu primeiro `4.800` e depois `Tenho a entrada`, sinalizando que está trazendo contexto financeiro de viabilidade e possivelmente disponibilidade para entrada. Antes de resposta comercial, é importante reconstruir o contexto da sessão WhatsApp para entender se `4.800` se refere a renda, parcela, valor complementar ou outro dado.
 
 ## Diagnóstico
 ### Necessidade
 Possível interesse em apartamento no Union Vista ou região do Grand Ville. A necessidade ainda não foi plenamente qualificada.
 
 ### Momento
-Cliente saiu do silêncio após repescagem e agora está em atendimento ativo. A próxima resposta do Reno deve retomar o contexto com naturalidade e evitar parecer robótica.
+Cliente saiu do silêncio após repescagem e agora está em atendimento ativo. A resposta sobre entrada indica abertura para avançar em viabilidade, mas ainda exige condução consultiva e curta.
 
 ### Decisão
 Sem informação confirmada sobre decisores, prazo de compra ou motivação.
 
 ### Viabilidade
-Cliente respondeu `4.800`, possível sinal financeiro, mas sem confirmação se se refere a entrada, parcela, renda, orçamento ou outro dado. Não prometer crédito; validar com uma pergunta curta e contextual antes de aprofundar.
+Cliente afirmou que tem a entrada. O valor `4.800` apareceu imediatamente antes, mas ainda é ambíguo e não deve ser tratado como entrada confirmada sem checar o contexto. Próxima resposta deve validar de forma natural se esse valor é a entrada disponível, parcela, renda ou outro dado, sem prometer crédito/aprovação.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato operacional
@@ -89,20 +89,26 @@ Mensagem enviada:
 
 Data/hora de envio: 2026-04-30 16:55 (-03:00)
 
-### 2026-05-01 — Resposta inbound do cliente
+### 2026-05-01 — Resposta inbound do cliente: valor numérico
 Cliente respondeu pelo WhatsApp: `4.800`.
 
 Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem já estava interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
 
+### 2026-05-01 — Resposta inbound do cliente: entrada disponível
+Cliente respondeu pelo WhatsApp: `Tenho a entrada`.
+
+Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem permanecia interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); resgate sem ciclo ativo; nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
+
 ## Objeções e travas
-- A resposta `4.800` é ambígua sem o contexto da conversa ativa; pode representar valor, entrada, parcela, renda ou outro dado.
+- O cliente sinalizou ter entrada, mas o valor/contexto exato ainda precisa ser validado antes de qualquer leitura de financiamento.
 - Contexto de finalidade da compra ainda não confirmado.
 
 ## Próximo passo
-Na próxima resposta comercial, retomar o contexto do Union Vista e esclarecer de forma curta o que significa `4.800`, sem iniciar simulação completa pelo WhatsApp. Exemplo de direção: confirmar se esse valor é entrada/parcela/orçamento e conduzir para uma leitura segura de viabilidade, preservando o caminho para visita presencial quando houver sinal positivo.
+Na próxima resposta comercial, retomar o contexto com naturalidade e validar o dado de entrada sem transformar em simulação longa. Direção sugerida: reconhecer que ter entrada ajuda bastante, confirmar se os R$ 4.800 citados são o valor de entrada disponível ou outro parâmetro, e conduzir para entender se ele quer morar ou investir antes de avançar na viabilidade do Union Vista.
 
 ## Observações operacionais
 - Envio do step 3 havia sido realizado pelo worker `reno-repescagem-message-queue-production` com destino preferencial via `whatsapp_jid` salvo no CRM.
 - CRM anteriormente atualizado pela tool específica `mark_reno_followup_sent`; step avançou para 3.
 - Em 2026-05-01, o cliente já aparecia em `Em Atendimento` e com repescagem parada: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Nota CRM registrada nesta rotina silenciosa: ID 16288.
+- Nota CRM da resposta `4.800`: ID 16288.
+- Nota CRM da resposta `Tenho a entrada`: ID 16289.
