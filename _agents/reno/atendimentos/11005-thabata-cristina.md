@@ -1,8 +1,8 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
 created: '2026-04-24'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -10,7 +10,7 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
-entity_type: client
+entity_type: atendimento
 entity_name: Thabata Cristina
 broker_id: 35
 client_id: 11005
@@ -20,7 +20,7 @@ status_crm: Não Respondeu
 # Atendimento — Thabata Cristina
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) permanece em `Não Respondeu` após abertura inicial, reenvio inicial e repescagens 1 e 2. Contexto principal: interesse no empreendimento **Union Vereda**, no Jaraguá, Uberlândia. A repescagem atual buscou criar um motivo novo para resposta, saindo do ângulo de encaixe/comparação usado no step 1 e indo para viabilidade prática de financiamento, entrada, parcela e prazo.
+Cliente do Reno (`broker_id=35`) permanece em `Não Respondeu` após abertura inicial, reenvio inicial e repescagens 1, 2 e 3. Contexto principal: interesse no empreendimento **Union Vereda**, no Jaraguá, Uberlândia. A repescagem mais recente mudou o ângulo para diagnóstico leve de finalidade/plano de vida, usando a entrega prevista para 2028 como motivo novo para a cliente responder se busca morar ou investir.
 
 ## Dados operacionais
 - Cliente ID: 11005
@@ -28,10 +28,10 @@ Cliente do Reno (`broker_id=35`) permanece em `Não Respondeu` após abertura in
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata
 - Telefone/WhatsApp: final 5262; JID salvo no CRM usado para envio
-- Última interação relevante: 2026-04-30 12:31 - repescagem step 2 enviada via WhatsApp
+- Última interação relevante: 2026-05-01 20:37 BRT — repescagem step 3 enviada via WhatsApp
 
 ## Contexto comercial
-Lead com interesse vinculado ao **Union Vereda** (`id_empreendimento=161`), bairro Jaraguá, Uberlândia. Empreendimento da HLTS Construtora, apartamentos de 2 quartos com suíte/varanda, entrega prevista para Dez/2028, faixa cadastrada a partir de cerca de R$ 288 mil. Não há resposta real da cliente nem diagnóstico declarado sobre renda, entrada, prazo de compra ou finalidade.
+Lead com interesse vinculado ao **Union Vereda** (`id_empreendimento=161`), bairro Jaraguá, Uberlândia. Empreendimento da HLTS Construtora, apartamentos de 2 quartos com suíte/varanda, entrega prevista para Dez/2028, faixa cadastrada a partir de cerca de R$ 288 mil. O cliente original da entrada por Facebook Ads informou que começou a procurar agora e que compraria sozinho(a). Não há resposta real da cliente nem diagnóstico declarado sobre renda, entrada, prazo de compra ou finalidade.
 
 ## Diagnóstico
 ### Necessidade
@@ -41,10 +41,10 @@ Ainda não confirmada. O interesse inicial sugere avaliação de apartamento esp
 Silenciosa desde os contatos iniciais. Régua de repescagem ativa para gerar primeira microresposta.
 
 ### Decisão
-Sem informação sobre decisores ou influência familiar.
+Sem informação sobre decisores além do dado do lead original indicando intenção de comprar sozinho(a).
 
 ### Viabilidade
-Sem dados objetivos de renda, entrada ou aprovação. Como o empreendimento tem entrega futura, a abordagem do step 2 focou em evitar perda de tempo olhando apenas planta/valor sem checar entrada, parcela e prazo.
+Sem dados objetivos de renda, entrada ou aprovação. Como o empreendimento tem entrega futura, os steps anteriores exploraram encaixe/viabilidade; o step 3 buscou uma resposta simples sobre finalidade para evitar condução fora do objetivo da cliente.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -71,14 +71,26 @@ Reno reenviou abertura inicial em duas mensagens: apresentação e pergunta sobr
 >
 > Quer que eu faça uma **primeira leitura do caminho de financiamento** para você ver se faz sentido continuar por ele?
 
+### 2026-05-01 — Repescagem step 3
+- Intenção: diagnóstico leve.
+- Ângulo usado: finalidade e prazo de vida/uso do imóvel, a partir da entrega prevista para 2028 do Union Vereda.
+- Diferenciação vs step 2: saiu do financiamento/entrada/parcela para objetivo de compra; mudou a pergunta para escolha única entre morar ou investir; usou o prazo de entrega como argumento contextual; destacou evitar condução fora do objetivo da cliente.
+- Mensagem enviada:
+
+> Thabata, boa noite! 📍
+>
+> Como o Union Vereda tem entrega prevista para 2028, ele costuma fazer mais sentido quando combina com o seu plano de vida — morar mais pra frente, sair do aluguel no momento certo ou até pensar como investimento.
+>
+> Pra eu não te mandar algo fora do seu objetivo: você está olhando mais para **morar** ou para **investir**?
+
 ## Objeções e travas
 - Trava atual: silêncio / ausência de primeira resposta real.
-- Possível trava comercial a explorar: viabilidade de financiamento para empreendimento de entrega futura.
+- Possíveis travas comerciais a explorar: objetivo real da compra, prazo de entrega do empreendimento e viabilidade de financiamento para compra sozinho(a).
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, interromper repescagem e tratar pelo fluxo normal de atendimento do Reno, com mudança para `Em Atendimento` quando aplicável. Se não responder, próxima execução elegível deve usar step 3 — diagnóstico leve, preferencialmente perguntando uma informação única que ainda não foi explorada.
+Aguardar resposta da cliente. Se responder, interromper repescagem e tratar pelo fluxo normal de atendimento do Reno, com mudança para `Em Atendimento` quando aplicável. Se não responder, próxima execução elegível deve usar step 4 — convite consultivo direto, reforçando a ajuda da Fama para organizar compra, financiamento e opções sem repetir os ângulos de comparação, financiamento inicial ou morar/investir.
 
 ## Observações operacionais
-- WhatsApp enviado em 2026-04-30 via JID salvo no CRM, com sucesso reportado pelo runtime.
-- CRM atualizado pela tool `mcp_mcp_postgres_mark_reno_followup_sent`: `step=2`, `last_sent_at=2026-04-30T12:31:08-03:00`, `next_run_at=2026-05-01T14:20:00-03:00`, `enabled=true`, `stopped_reason=null`.
-- Documento oficial criado no caminho determinístico `_agents/reno/atendimentos/11005-thabata-cristina.md` consolidando contexto de documentos legados/drift encontrados em `_agents/reno/atendimentos/thabata-cristina.md` e `_agents/reno/clientes/11005-thabata-cristina.md`.
+- WhatsApp enviado em 2026-05-01 via JID salvo no CRM, com sucesso reportado pelo runtime (`message_id` registrado pelo gateway).
+- CRM atualizado pela tool `mcp_mcp_postgres_mark_reno_followup_sent`: `step=3`, `last_sent_at=2026-05-01T20:37:40-03:00`, `next_run_at=2026-05-02T19:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
+- Documento oficial mantido no caminho determinístico `_agents/reno/atendimentos/11005-thabata-cristina.md`.
