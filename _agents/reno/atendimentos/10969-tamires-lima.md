@@ -1,25 +1,25 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
+entity_type: atendimento
+entity_name: Tamires Lima
+client_id: 10969
+broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads
 created: '2026-04-28'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-entity_type: client
-entity_name: Tamires Lima
-client_id: 10969
-broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
 ---
 # Atendimento — Tamires Lima
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Primeiro contato e repescagem 1 já enviados sem resposta real registrada. Em 2026-04-30 foi enviada a repescagem step 2 com abordagem consultiva sobre viabilidade/encaixe do Union Vereda no momento da cliente.
+Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Primeiro contato e repescagens steps 1, 2 e 3 enviados com sucesso técnico via WhatsApp, sem resposta real registrada até o momento. Em 2026-05-01 foi enviada a repescagem step 3 com ângulo de diagnóstico leve sobre prazo de mudança/entrega futura do Union Vereda.
 
 ## Dados operacionais
 - Cliente ID: 10969
@@ -28,23 +28,23 @@ Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Primeiro cont
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp disponível no CRM; envio realizado pelo JID salvo.
 - Empreendimento vinculado: Union Vereda (`id_empreendimento=161`)
-- Última interação relevante: 2026-04-30 10:13 -03 — repescagem step 2 enviada.
+- Última interação relevante: 2026-05-01 18:19 -03 — repescagem step 3 enviada.
 
 ## Contexto comercial
-Lead de Facebook Ads vinculada ao empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. O empreendimento é de entrega futura (`Dez/2028`) e possui opções de apartamentos de 2 quartos com suíte, varanda/sacada e lazer/serviços de condomínio. Não há resposta da cliente nem diagnóstico declarado sobre morar/investir, financiamento, entrada, prazo ou região além do interesse inicial no empreendimento.
+Lead de Facebook Ads vinculada ao empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. O empreendimento tem entrega prevista para **Dez/2028** e possui opções de apartamentos de 2 quartos com suíte, varanda/sacada e lazer/serviços de condomínio. Não há resposta da cliente nem diagnóstico declarado sobre morar/investir, financiamento, entrada, prazo ou região além do interesse inicial no empreendimento.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não diagnosticada. O interesse inicial aponta para imóvel específico no Jaraguá.
 
 ### Momento
-Silenciosa após primeiro contato e repescagem anterior; etapa atual é tentativa de gerar primeira microresposta.
+Cliente silenciosa após primeiro contato e três repescagens. A repescagem step 3 buscou abrir diagnóstico com pergunta única sobre prazo: mudança imediata versus possibilidade de esperar imóvel em construção.
 
 ### Decisão
 Sem informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou compra à vista. A abordagem do step 2 priorizou evitar caminho errado e iniciar leitura simples de encaixe, sem promessa de crédito.
+Sem dados de renda, entrada, financiamento ou compra à vista. Abordagens anteriores trabalharam encaixe e viabilidade sem promessa de crédito; o step 3 mudou o foco para prazo e adequação à entrega futura.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno
@@ -68,15 +68,31 @@ Mensagem enviada:
 Registro operacional: envio de WhatsApp confirmado e estado atualizado pela tool específica do Reno (`mark_reno_followup_sent`).
 Próximo `next_run_at`: 2026-05-01T14:20:00-03:00.
 
+### 2026-05-01 — Repescagem step 3
+Fluxo: repescagem.
+Step enviado: 3.
+Ângulo/contexto usado: diagnóstico leve sobre prazo/momento, mudando o foco da análise de viabilidade para a adequação do imóvel em construção com entrega prevista para 2028.
+Mensagem enviada:
+
+> Tamires, como o Union Vereda tem entrega prevista para 2028, tem um ponto que muda bastante a análise 🏡
+>
+> Ele pode fazer sentido para quem consegue planejar a compra com calma, mas talvez não seja o melhor caminho para quem precisa de mudança mais imediata.
+>
+> Para eu te orientar melhor: **você pensa em se mudar logo ou pode esperar um imóvel em construção?**
+
+Registro operacional: envio de WhatsApp confirmado e estado atualizado pela tool específica do Reno (`mark_reno_followup_sent`).
+Próximo `next_run_at`: 2026-05-02T19:10:00-03:00.
+
 ## Objeções e travas
 - Silêncio após os contatos anteriores; ainda não há objeção explícita.
-- Lacuna principal: falta de diagnóstico sobre objetivo da compra, forma de pagamento e prazo.
+- Lacuna principal: falta de diagnóstico sobre objetivo da compra, forma de pagamento, prazo e aderência ao imóvel em construção.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se não responder até o próximo horário elegível, seguir para repescagem step 3 com diagnóstico leve e uma pergunta única. Se responder, sair do fluxo de repescagem e tratar pelo atendimento normal do Reno, atualizando o status para Em Atendimento somente se o CRM ainda estiver exatamente em Não Respondeu.
+Aguardar resposta da cliente. Se não responder até o próximo horário elegível, seguir para repescagem step 4 com convite consultivo mais direto, sem repetir o argumento de prazo/entrega futura. Se responder, sair do fluxo de repescagem e tratar pelo atendimento normal do Reno, atualizando o status para Em Atendimento somente se o CRM ainda estiver exatamente em Não Respondeu.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10969-tamires-lima.md`.
 - Existe documento legado em `_agents/reno/clientes/10969-tamires-lima.md`; não foi usado como destino novo para evitar drift.
 - Cliente permaneceu em status Não Respondeu, conforme regra do worker de repescagem.
+- Claim operacional da repescagem foi limpo pela tool específica após marcação de envio.
 - Nenhum restart de gateway foi realizado.
