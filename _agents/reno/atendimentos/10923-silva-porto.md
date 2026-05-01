@@ -1,12 +1,8 @@
 ---
-broker_id: 35
-client_id: 10923
-created: '2026-04-30'
-entity_name: Silva Porto
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: FamaChat / SLA Cascata / Facebook Ads
-status_crm: Em Atendimento
+created: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
@@ -18,8 +14,13 @@ tags:
   - viabilidade
   - aluguel
   - entrada
-type: entity-profile
-updated: '2026-05-01'
+  - clt
+entity_type: atendimento
+entity_name: Silva Porto
+broker_id: 35
+client_id: 10923
+source: FamaChat / SLA Cascata / Facebook Ads
+status_crm: Em Atendimento
 ---
 # Atendimento — Silva Porto
 
@@ -28,7 +29,7 @@ Cliente CRM 10923, broker Reno (35), em status **Em Atendimento** após resposta
 
 Em 2026-05-01, o cliente respondeu primeiro **"Morar"** à pergunta de repescagem step 3 sobre finalidade da compra. A repescagem foi interrompida no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-Na sequência, o cliente acrescentou a preferência **"Preferência região central"**, respondeu **"Tanto faz"** indicando flexibilidade dentro desse recorte, perguntou **"Valor da parcela"**, informou que atualmente paga **R$ 900/mês de aluguel** e depois sinalizou **"Não tenho guardado"**. A dúvida atual é de viabilidade/condição de pagamento; a resposta comercial deve tratar aluguel x parcela e ausência de entrada com cuidado, sem prometer aprovação, e conduzir para avaliação segura de financiamento/entrada parcelada.
+Na sequência, o cliente acrescentou a preferência **"Preferência região central"**, respondeu **"Tanto faz"** indicando flexibilidade dentro desse recorte, perguntou **"Valor da parcela"**, informou que atualmente paga **R$ 900/mês de aluguel**, sinalizou **"Não tenho guardado"** e depois informou **"Clt"**. A dúvida atual é de viabilidade/condição de pagamento; a resposta comercial deve tratar aluguel x parcela, ausência de entrada e vínculo CLT com cuidado, sem prometer aprovação, e conduzir para avaliação segura de financiamento/entrada parcelada.
 
 ## Dados operacionais
 - Cliente ID: 10923
@@ -36,12 +37,12 @@ Na sequência, o cliente acrescentou a preferência **"Preferência região cent
 - Status CRM: Em Atendimento
 - Origem: SLA Cascata / Facebook Ads
 - Telefone/WhatsApp: salvo no CRM
-- Última interação relevante: 2026-05-01 — inbound WhatsApp: "Não tenho guardado"
+- Última interação relevante: 2026-05-01 — inbound WhatsApp: "Clt"
 
 ## Contexto comercial
 Interesse identificado no histórico: Union Vista, empreendimento de apartamentos no Grand Ville, Uberlândia, com prazo de entrega informado anteriormente como Jul/2027. Há registros automáticos de reentrada por Facebook Ads com empreendimentos de interesse vinculados.
 
-A resposta "Morar" indica busca para uso próprio. A preferência por **região central** deve ser tratada como critério comercial relevante: rotina, localização e acesso provavelmente pesam na decisão. A resposta "Tanto faz" sugere flexibilidade sobre algum aspecto perguntado na conversa. A pergunta "Valor da parcela", a informação de que paga **R$ 900/mês de aluguel** e a sinalização de que **não tem valor guardado** apontam preocupação de viabilidade e entrada. A condução deve explicar que parcela/entrada dependem de unidade, financiamento, subsídio/FGTS e análise, usando a visita presencial na Fama como próximo passo de segurança se houver engajamento.
+A resposta "Morar" indica busca para uso próprio. A preferência por **região central** deve ser tratada como critério comercial relevante: rotina, localização e acesso provavelmente pesam na decisão. A resposta "Tanto faz" sugere flexibilidade sobre algum aspecto perguntado na conversa. A pergunta "Valor da parcela", a informação de que paga **R$ 900/mês de aluguel**, a sinalização de que **não tem valor guardado** e a informação **CLT** apontam preocupação de viabilidade, entrada e financiamento. A condução deve explicar que parcela/entrada dependem de unidade, financiamento, subsídio/FGTS e análise, usando a visita presencial na Fama como próximo passo de segurança se houver engajamento.
 
 ## Diagnóstico
 ### Necessidade
@@ -54,7 +55,7 @@ Saiu da condição de silêncio após repescagem step 3. Atendimento deve seguir
 Ainda não há dados sobre decisores, família, urgência ou critérios finais.
 
 ### Viabilidade
-Cliente perguntou sobre valor da parcela, informou aluguel atual de R$ 900/mês e disse não ter valor guardado. Isso indica que financiamento, entrada e condições são relevantes. Ainda não há informações suficientes sobre renda, FGTS, orçamento ou unidade exata. Não prometer aprovação; usar linguagem de estimativa e conduzir para avaliação segura.
+Cliente perguntou sobre valor da parcela, informou aluguel atual de R$ 900/mês, disse não ter valor guardado e indicou vínculo CLT. Isso favorece uma conversa de viabilidade/financiamento, mas ainda não há informações suficientes sobre renda, FGTS, orçamento ou unidade exata. Não prometer aprovação; usar linguagem de estimativa e conduzir para avaliação segura.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Reenvio inicial do Reno
@@ -132,7 +133,16 @@ Contexto operacional verificado no CRM:
 - cliente permanece em Em Atendimento;
 - repescagem segue interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
 - resgate inexistente;
-- nota CRM já registrada por rotina inbound com a informação de ausência de valor guardado.
+- nota CRM registrada por rotina inbound com a informação de ausência de valor guardado.
+
+### 2026-05-01 — Vínculo CLT informado
+Cliente respondeu pelo WhatsApp: "Clt".
+
+Contexto operacional verificado no CRM:
+- cliente permanece em Em Atendimento;
+- repescagem segue interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate inexistente;
+- nota CRM registrada por rotina inbound com a informação de vínculo CLT como dado útil de viabilidade.
 
 ## Objeções e travas
 - Trava anterior: silêncio / ausência de primeira microresposta.
@@ -142,9 +152,10 @@ Contexto operacional verificado no CRM:
 - Dúvida atual: valor da parcela. Tratar como sinal de viabilidade, sem prometer aprovação e sem fazer simulação definitiva sem dados.
 - Referência financeira: aluguel atual de R$ 900/mês. Usar como gancho consultivo para comparar aluguel x possibilidade de compra, sem afirmar que parcela ficará nesse valor.
 - Trava de entrada: cliente informou não ter valor guardado. Explorar com cuidado possibilidade de entrada parcelada, subsídio/FGTS e cenário MCMV, sem prometer aprovação.
+- Dado de viabilidade: cliente informou vínculo CLT. Pode ajudar na conversa de financiamento, mas aprovação depende de análise.
 
 ## Próximo passo
-Responder comercialmente no WhatsApp sem reativar repescagem: validar que R$ 900 de aluguel é uma boa referência para começar a análise, acolher a falta de valor guardado sem descartar a possibilidade, explicar de forma curta que parcela e entrada dependem da unidade, financiamento e análise, e conduzir para avaliação presencial na Fama ou levantamento mínimo de dados. Evitar prometer aprovação, parcela fixa ou encaixe garantido.
+Responder comercialmente no WhatsApp sem reativar repescagem: validar que CLT ajuda a olhar o financiamento com mais clareza, acolher a falta de valor guardado sem descartar a possibilidade, explicar de forma curta que parcela e entrada dependem de unidade, renda, FGTS/subsídio e análise, e conduzir para avaliação presencial na Fama ou levantamento mínimo de dados. Evitar prometer aprovação, parcela fixa ou encaixe garantido.
 
 ## Observações operacionais
 - CRM/FamaChat confirmou cliente 10923 com `broker_id=35`.
