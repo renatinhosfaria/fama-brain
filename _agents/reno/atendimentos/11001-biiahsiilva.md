@@ -1,15 +1,15 @@
 ---
 type: entity-profile
-owner: renato
+owner: reno
 created: '2026-04-28'
-updated: '2026-04-30'
+updated: '2026-05-01'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-entity_type: client
+entity_type: atendimento
 entity_name: Biiahsiilva
 client_id: 11001
 broker_id: 35
@@ -19,7 +19,7 @@ source: Facebook Ads
 # Atendimento — Biiahsiilva
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, originada de Facebook Ads, com interesse vinculado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e repescagens foram enviados via WhatsApp; até esta atualização não há resposta real registrada no CRM.
+Cliente do Reno em `Não Respondeu`, originada de Facebook Ads, com interesse vinculado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e repescagens steps 1, 2 e 3 foram enviados via WhatsApp; até esta atualização não há resposta real registrada no CRM.
 
 ## Dados operacionais
 - Cliente ID: 11001
@@ -28,23 +28,23 @@ Cliente do Reno em `Não Respondeu`, originada de Facebook Ads, com interesse vi
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp confirmado no CRM (número não exposto neste documento)
 - Empreendimento vinculado: Union Vista — Grand Ville, Uberlândia/MG
-- Última interação relevante: repescagem step 2 enviada em 2026-04-30 12:07:38 -03:00
+- Última interação relevante: repescagem step 3 enviada em 2026-05-01 20:24:19 -03:00
 
 ## Contexto comercial
-Lead demonstrou interesse no Union Vista, empreendimento de apartamentos no Grand Ville/Zona Leste, com opções de plantas compactas e unidade maior. O contexto disponível não traz ainda objetivo de compra, faixa de orçamento, forma de pagamento, prazo ou perfil de uso.
+Lead demonstrou interesse no Union Vista, empreendimento de apartamentos no Grand Ville/Zona Leste, com opções de 2 quartos entre aproximadamente 56,9 m², 58,4 m² e 82,2 m². O empreendimento está em lançamento e tem entrega prevista para jul/2027. O contexto disponível ainda não traz objetivo de compra, faixa de orçamento, forma de pagamento, prazo pessoal de mudança ou perfil de uso.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não diagnosticada. Interesse inicial parece ligado a imóvel específico.
 
 ### Momento
-Sem resposta do cliente até o momento; jornada silenciosa após primeiro contato.
+Sem resposta da cliente até o momento; jornada silenciosa após primeiro contato e três repescagens.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou parcela desejada. A repescagem atual buscou abrir a conversa pelo filtro de orçamento/parcela para evitar indicação de caminho errado.
+Sem dados de renda, entrada, financiamento ou parcela desejada. O step 2 tentou abrir conversa por orçamento/parcela; o step 3 mudou o ângulo para prazo de entrega e finalidade da compra, buscando entender se é moradia planejada ou investimento.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno
@@ -75,18 +75,30 @@ Mensagem enviada:
 >
 > Pra eu não te indicar caminho errado: você já tem uma faixa de valor ou parcela que quer respeitar?
 
+### 2026-05-01 — Repescagem step 3
+Repescagem 3 enviada via WhatsApp com abordagem substancialmente diferente do step 2: saiu de orçamento/parcela e plantas para diagnóstico leve de prazo/finalidade, usando o fato de o Union Vista ser lançamento com entrega prevista para 2027. A pergunta buscou identificar se a compra seria para morar quando ficar pronto ou para investimento.
+
+Mensagem enviada:
+> Biiah, tudo bem? 🔑
+>
+> Te chamo rapidinho porque no Union Vista tem um ponto que muda bastante a indicação: ele é lançamento, com entrega prevista para 2027. Então pode fazer mais sentido para quem quer **planejar a compra com calma** do que para quem precisa mudar agora.
+>
+> Pra eu entender o caminho certo: você está olhando esse apê para morar quando ficar pronto ou seria mais pensando em investimento?
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagem 1.
+- Silêncio após primeiro contato e repescagens 1 e 2.
 - Ausência de dados de orçamento/parcela impede diagnóstico de viabilidade.
+- Ausência de resposta sobre finalidade e prazo impede definir se o Union Vista faz sentido como moradia planejada ou investimento.
 
 ## Próximo passo
 Aguardar resposta da cliente. Se responder, mover o atendimento para fluxo normal do Reno e atualizar status de `Não Respondeu` para `Em Atendimento` somente se ainda estiver exatamente nesse status.
 
-Próxima repescagem prevista pelo estado operacional: 2026-05-01T14:20:00-03:00, caso permaneça elegível e sem resposta.
+Próxima repescagem prevista pelo estado operacional: 2026-05-02T19:10:00-03:00, caso permaneça elegível e sem resposta.
 
 ## Observações operacionais
 - Fluxo: repescagem.
-- Step enviado nesta atualização: 2.
-- Ângulo comercial usado no step 2: imóvel específico + filtro de orçamento/parcela para evitar indicação errada.
+- Step enviado nesta atualização: 3.
+- Ângulo comercial usado no step 3: imóvel específico + prazo de entrega/finalidade da compra.
 - Estado de repescagem registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), sem alteração manual de status ou `meta_data`.
+- WhatsApp enviado usando o `whatsapp_jid` salvo no CRM.
 - Documento oficial mantido em `_agents/reno/atendimentos/11001-biiahsiilva.md` conforme governança canônica.
