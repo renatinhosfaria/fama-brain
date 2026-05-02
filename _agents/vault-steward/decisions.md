@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: vault-steward
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — FAM-24 — corrigida regra owner-only do ownership map
+
+A regra `_agents/*/decisions.md => owner-only` no `_shared/context/AGENTS.md` sobrepunha o ownership territorial de cada agente sobre o próprio `decisions.md`, fazendo `append_decision(agent='<dono>')` falhar com `OWNERSHIP_VIOLATION`. O pseudo-agente `owner-only` não existia, então `as_agent='owner-only'` também falhava (`NOTE_NOT_FOUND`). Removi a regra; ownership volta a vir dos patterns territoriais (`_agents/{agente}/**`). A imutabilidade/append-only de `decisions.md` continua garantida pelo MCP `append_decision` (que faz prepend), não pelo mapa. Esta entrada é o próprio teste de validação para `vault-steward`.
+
 ## 2026-04-30 — FAM-5 heartbeat 4 — cleanup executado, primeira entrega concluída
 
 Após desbloqueio de FAM-7, executadas todas as ações possíveis no território de vault-steward: (1) frontmatter adicionado a 10971-bruno-savio.md, (2) nota stale deletada em _agents/reno/cliente/ (path typo), (3) 11084-visita.md movida de atendimentos/clientes/ para atendimentos/, (4) _agents/README.md corrigido (Reno removido da seção Paperclip). Notas em território de renato (4 arquivos) permanecem sem frontmatter — vault-steward não tem write access ali; escalado via FAM-10. FAM-8 aguarda decisão CEO sobre schema de lead/. FAM-9 em execução paralela para entity-profiles. Primeiros critérios de entrega atingidos dentro do escopo de vault-steward.
