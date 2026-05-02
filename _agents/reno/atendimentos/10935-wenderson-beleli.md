@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -22,7 +22,7 @@ source: FamaChat / Facebook Ads
 ## Resumo atual
 Cliente CRM 10935, broker Reno (35), permanece em **Não Respondeu** após primeiro contato e repescagens. Interesse original veio de Facebook Ads relacionado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia.
 
-Em 2026-04-30 foi enviada a repescagem step 3 com diagnóstico leve, mudando o ângulo da tentativa anterior: em vez de insistir em viabilidade/forma de pagamento, a mensagem destacou compra na planta, prazo de entrega mais longo e diferença entre morar, investir ou se preparar para sair do aluguel.
+Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto. A abordagem mudou em relação ao step 3: em vez de insistir na escolha morar/investir ou no motivo de compra, destacou entrada, fluxo até a entrega e comparação com alternativas parecidas para dar um motivo novo de resposta.
 
 ## Dados operacionais
 - Cliente ID: 10935
@@ -30,7 +30,7 @@ Em 2026-04-30 foi enviada a repescagem step 3 com diagnóstico leve, mudando o �
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: final 6821; JID CRM usado para envio
-- Última interação relevante: 2026-04-30 15:07 -03 — repescagem step 3 enviada via WhatsApp
+- Última interação relevante: 2026-05-02 09:58 -03 — repescagem step 4 enviada via WhatsApp
 
 ## Contexto comercial
 - Empreendimento citado no primeiro contato: Union Vereda
@@ -44,13 +44,13 @@ Em 2026-04-30 foi enviada a repescagem step 3 com diagnóstico leve, mudando o �
 Provável interesse em apartamento no Union Vereda/Jaraguá a partir de anúncio. Necessidade ainda não confirmada por ausência de resposta.
 
 ### Momento
-Lead silencioso desde o primeiro contato. A repescagem atual buscou gerar microresposta com uma escolha simples sobre finalidade de compra.
+Lead silencioso desde o primeiro contato. O step 4 buscou gerar microresposta com convite consultivo direto e leitura objetiva antes de avançar.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Ponto ainda aberto. A tentativa anterior perguntou sobre financiamento/à vista; a tentativa atual não repetiu esse caminho e priorizou entender finalidade de uso antes de aprofundar viabilidade.
+Ponto ainda aberto. O step 4 retomou a viabilidade por outro ângulo: entrada, fluxo até a entrega e alternativas comparáveis, sem repetir a pergunta financiamento/à vista do step 2 nem a pergunta morar/investir do step 3.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato enviado
@@ -60,7 +60,7 @@ Reno enviou mensagem inicial mencionando o interesse no Union Vereda, na região
 Reenvio automático foi suprimido por origem `lead_automatico/autolead`. Nenhuma mensagem foi enviada nesse evento; status preservado como Não Respondeu.
 
 ### 2026-04-28 — Repescagem step 1 enviada
-Reno enviou follow-up de repescagem step 1. A mensagem anterior foi registrada no CRM. Cliente permaneceu sem resposta.
+Reno enviou follow-up de repescagem step 1. Mensagem registrada no CRM. Cliente permaneceu sem resposta.
 
 ### 2026-04-29 — Repescagem step 2 enviada
 Fluxo: repescagem
@@ -93,15 +93,33 @@ Mensagem enviada:
 
 Próximo `next_run_at`: 2026-05-01T19:10:00-03:00
 
+### 2026-05-02 — Repescagem step 4 enviada
+Fluxo: repescagem
+Step enviado: 4
+Data/hora de envio: 2026-05-02 09:58:37 -03
+Contexto/ângulo comercial: imóvel específico + convite consultivo direto; orientar sobre entrada, fluxo até a entrega e alternativas parecidas antes de decidir se vale avançar.
+Comparação com a abordagem anterior: mudou o ângulo de finalidade de compra para análise prática de caminho; mudou a pergunta de escolha morar/investir para convite de análise inicial; destacou entrada/fluxo/alternativas como benefício; usou abertura mais direta e CTA consultivo.
+Mensagem enviada:
+
+> Wenderson, bom dia! 🔑
+>
+> Vou ser bem direto para não ficar te chamando à toa.
+>
+> O Union Vereda pode ser uma boa opção, mas em compra na planta o cuidado é olhar **entrada, fluxo até a entrega e alternativas parecidas** antes de decidir se vale avançar.
+>
+> Posso fazer essa análise inicial por aqui para você?
+
+Próximo `next_run_at`: 2026-05-03T09:10:00-03:00
+
 ## Objeções e travas
-- Trava principal: ausência de resposta real após primeiro contato e repescagens.
+- Trava principal: ausência de resposta real após primeiro contato e quatro repescagens.
 - Finalidade da compra ainda desconhecida: morar, investir ou sair do aluguel.
 - Viabilidade de compra ainda desconhecida.
 
 ## Próximo passo
-Aguardar resposta. Caso não haja resposta até 2026-05-01T19:10:00-03:00 e a fila continue elegível, preparar repescagem step 4 com convite consultivo direto, sem repetir o mesmo argumento de viabilidade ou finalidade.
+Aguardar resposta. Caso não haja resposta até 2026-05-03T09:10:00-03:00 e a fila continue elegível, preparar repescagem step 5 com encerramento elegante, sem repetir o mesmo argumento de entrada/fluxo/alternativas.
 
 ## Observações operacionais
-- Envio de 2026-04-30 realizado pelo JID salvo no CRM, final 6821.
-- CRM/meta_data atualizado via `mcp_mcp_postgres_mark_reno_followup_sent` para `step=3`, `last_sent_at=2026-04-30T15:07:12-03:00`, `next_run_at=2026-05-01T19:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
+- Envio de 2026-05-02 realizado pelo JID salvo no CRM, final 6821.
+- CRM/meta_data atualizado via `mcp_mcp_postgres_mark_reno_followup_sent` para `step=4`, `last_sent_at=2026-05-02T09:58:37-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
 - Há documento legado em `_agents/reno/clientes/10935-wenderson-beleli.md`; o caminho oficial atualizado é este documento em `_agents/reno/atendimentos/`.
