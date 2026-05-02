@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Silvio Humberto Silva
 
 ## Resumo atual
-Cliente Reno (`client_id=10976`, `broker_id=35`) em `Não Respondeu`. Primeiro contato do Reno foi enviado após override operacional de duplicidade/histórico anterior. O cliente segue sem resposta real registrada e está em régua ativa de repescagem. Em 2026-05-01 foi enviada a repescagem step 3 com diagnóstico leve sobre objetivo de compra do Union Vereda: morar ou investir.
+Cliente Reno (`client_id=10976`, `broker_id=35`) em `Não Respondeu`. Primeiro contato do Reno foi enviado após override operacional de duplicidade/histórico anterior. O cliente segue sem resposta real registrada e está em régua ativa de repescagem. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto para organizar a compra do Union Vereda e, por ser fim de semana, CTA preferencial para conversa/visita na Fama na segunda-feira.
 
 ## Dados operacionais
 - Cliente ID: 10976
@@ -28,26 +28,26 @@ Cliente Reno (`client_id=10976`, `broker_id=35`) em `Não Respondeu`. Primeiro c
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo utilizado no envio.
 - Empreendimento de interesse: Union Vereda (`id_empreendimento=161`), Jaraguá, Uberlândia.
-- Última interação relevante: repescagem step 3 enviada em 2026-05-01 19:01 -03:00.
-- Próximo follow-up previsto: 2026-05-02 19:10 -03:00, se não houver resposta real antes.
+- Última interação relevante: repescagem step 4 enviada em 2026-05-02 20:31 -03:00.
+- Próximo follow-up previsto: 2026-05-03 09:10 -03:00, se não houver resposta real antes.
 
 ## Contexto comercial
-O contexto comercial conhecido indica interesse no **Union Vereda, no Jaraguá**. O empreendimento tem entrega programada para **dez/2028** e unidades disponíveis de 2 quartos, suíte e varanda, com valores conhecidos a partir de aproximadamente R$ 288 mil no CRM. Ainda não há resposta do cliente após o primeiro contato e as repescagens anteriores.
+O contexto comercial conhecido indica interesse no **Union Vereda, no Jaraguá**. O empreendimento tem entrega programada para **dez/2028** e unidades disponíveis de 2 quartos, suíte e varanda, com valores conhecidos a partir de aproximadamente R$ 288 mil no CRM. O cliente original (`client_id=10850`) veio de Facebook Ads e indicava que Silvio já havia olhado alguns imóveis e que compraria junto com alguém, mas ainda não houve resposta real no atendimento do Reno.
 
-A abordagem comercial atual mudou o eixo em relação aos steps anteriores: saiu de encaixe/viabilidade genérica do imóvel e passou para diagnóstico leve sobre finalidade da compra, porque morar, investir ou planejar até a entrega mudam o caminho de atendimento.
+A abordagem comercial evoluiu progressivamente: os steps anteriores trataram de encaixe do imóvel, primeira leitura de viabilidade e finalidade da compra (`morar` ou `investir`). O step 4 mudou o eixo para convite consultivo direto, usando o contexto de entrega futura para propor organizar entrada, financiamento e ritmo da obra antes de escolher unidade.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não confirmada pelo cliente. Sinal inicial: interesse em empreendimento específico/região Jaraguá.
+Ainda não confirmada pelo cliente. Sinal inicial: interesse em empreendimento específico/região Jaraguá, com possível compra conjunta conforme cadastro original.
 
 ### Momento
-Cliente silencioso após primeiro contato e três tentativas de repescagem. Como o Union Vereda tem entrega futura, o momento precisa ser entendido pelo objetivo: morar, investir ou planejar compra até a entrega.
+Cliente silencioso após primeiro contato e quatro tentativas de repescagem. Como o Union Vereda tem entrega futura, o atendimento deve buscar entender planejamento, viabilidade e disponibilidade para conversa consultiva.
 
 ### Decisão
-Não há dados sobre decisores ou influência familiar.
+Cadastro original indica compra junto com alguém, mas não há confirmação de decisores, influência familiar ou autonomia de decisão.
 
 ### Viabilidade
-Não há dados de renda, entrada, financiamento ou faixa de parcela. Não prometer crédito; usar análise inicial como convite consultivo quando houver resposta.
+Não há dados de renda, entrada, financiamento ou faixa de parcela. Não prometer crédito; usar análise inicial como orientação sobre caminho possível de compra quando houver resposta.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Supressão inicial por duplicidade/histórico anterior
@@ -105,16 +105,36 @@ Registro operacional confirmado no FamaChat pela tool específica do Reno (`mark
 
 Próximo `next_run_at`: `2026-05-02T19:10:00-03:00`.
 
+### 2026-05-02 — Repescagem step 4 enviada
+Fluxo: `repescagem`.
+
+Step enviado: 4.
+
+Ângulo/contexto usado: imóvel específico + convite consultivo direto. A mensagem mudou a abordagem anterior de finalidade (`morar` ou `investir`) para organização do caminho de compra durante obra/entrega futura, com CTA de segunda-feira por ser fim de semana.
+
+Mensagem enviada:
+> Silvio, boa noite! 🔑
+>
+> Como o Union Vereda é uma compra para entrega futura, vale olhar além do anúncio: entender entrada, financiamento e o ritmo da obra antes de escolher unidade.
+>
+> Na segunda, posso te receber aqui na Fama para uma conversa rápida e **montar um caminho de compra possível**, sem você precisar decidir nada agora.
+>
+> Quer que eu separe um horário pra você na segunda?
+
+Registro operacional confirmado no FamaChat pela tool específica do Reno (`mark_reno_followup_sent`), nota CRM `16426`.
+
+Próximo `next_run_at`: `2026-05-03T09:10:00-03:00`.
+
 ## Objeções e travas
-- Silêncio após contato inicial e repescagens steps 1, 2 e 3.
+- Silêncio após contato inicial e repescagens steps 1, 2, 3 e 4.
 - Histórico anterior de contato por outros corretores existe, mas não é bloqueio operacional por orientação do Renato.
 - Falha antiga de envio por JID inválido foi superada usando o JID salvo no CRM.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se houver resposta real, a repescagem deve parar e o status pode evoluir para `Em Atendimento` pelo fluxo correto. Se não houver resposta até o próximo vencimento e a fila autorizar, executar repescagem step 4 com convite consultivo mais direto, sem repetir a pergunta morar/investir.
+Aguardar resposta do cliente. Se houver resposta real, a repescagem deve parar e o status pode evoluir para `Em Atendimento` pelo fluxo correto. Se não houver resposta até o próximo vencimento e a fila autorizar, executar repescagem step 5 com encerramento elegante; após envio bem-sucedido do step 5, encerrar a branch com `stopped_reason=max_steps` e arquivar defensivamente o cliente se ainda estiver em `Não Respondeu`.
 
 ## Observações operacionais
-- Não alterar status durante repescagem; cliente permanece `Não Respondeu` até resposta real.
+- Não alterar status durante repescagem steps 1 a 4; cliente permanece `Não Respondeu` até resposta real.
 - Documento oficial consolidado no caminho determinístico `_agents/reno/atendimentos/10976-silvio-humberto-silva.md`.
 - Existe/ existiu drift legado em `_agents/reno/atendimentos/silvio-humberto-silva.md`; novas escritas devem permanecer apenas neste arquivo oficial por `client_id`.
-- Step 3 foi registrado no CRM/meta_data via `mcp_mcp_postgres_mark_reno_followup_sent`, preservando a branch operacional da repescagem.
+- Step 4 foi enviado pelo JID salvo no CRM e registrado no CRM/meta_data via `mcp_mcp_postgres_mark_reno_followup_sent`, com `claim_expires_at` limpo após a marcação.
