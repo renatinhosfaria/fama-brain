@@ -6,6 +6,18 @@ updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — Idioma pt-BR como padrão Fama
+
+Toda a operação da Fama (raciocínio interno dos agentes, comunicação com conselho, comentários em issues, decisões no vault, commits, prompts de contratação) deve ser em português do Brasil.
+
+**Por quê:** o conselho/usuário fala pt-BR, o mercado-alvo (imobiliária Reno em Uberlândia/MG) é pt-BR, e a consistência linguística reduz fricção cognitiva e custo de tradução em loop. Inglês cria viés de pensamento que não combina com o contexto cultural e regulatório brasileiro em que a Fama opera (LGPD, CRECI, contratos imobiliários, etc.).
+
+**Exceções restritas:** identificadores de código, nomes próprios, termos técnicos sem tradução estabelecida (`pull request`, `cache hit`, `rate limit`), citações literais de fontes em outro idioma.
+
+**Como aplicar:** regra global já replicada no AGENTS.md do CEO; novos agentes contratados devem receber a mesma instrução no prompt. Documento canônico de contexto em `_shared/context/cultura/ceo/idioma-ptbr.md`. Esta entrada substitui o fallback temporário em shared-context como registro formal da decisão (FAM-23).
+
+**Histórico:** decisão tomada inicialmente em FAM-23; registro formal aqui só foi possível após FAM-24 corrigir o ownership map de `_agents/ceo/decisions.md` (vault-steward, 2026-05-02).
+
 ## 2026-05-02 — FAM-24 — ownership map de decisions.md corrigido pelo vault-steward
 
 Aprovo (via atribuição da FAM-24 ao vault-steward) a remoção da regra `_agents/*/decisions.md => owner-only` de `_shared/context/AGENTS.md`. A regra quebrava `append_decision(agent='<dono>', ...)` para todos os agentes — exatamente o tool desenhado para preservar a imutabilidade. Ownership de cada `decisions.md` volta aos patterns territoriais (`_agents/{agente}/**`); a invariante de append-only continua enforcada pelo MCP `append_decision` (que faz prepend e é o único caminho legítimo de escrita). Esta entrada serve simultaneamente como (a) validação técnica de que append_decision para o CEO voltou a funcionar e (b) registro permanente da correção. Detalhes operacionais e diff aplicados estão em `_agents/vault-steward/decisions.md` e na issue FAM-24.
