@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-30'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -20,7 +20,7 @@ source: FamaChat
 # Atendimento — Leonardo De Castro Ferreira
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, origem Facebook Ads/lead automático, associado ao empreendimento Garden Sul no Jardim Sul, Uberlândia-MG. Não há resposta real registrada após o primeiro contato; repescagem segue ativa e o step 3 foi enviado em 2026-05-01 com ângulo de prazo/momento de mudança.
+Cliente do Reno em `Não Respondeu`, origem Facebook Ads/lead automático, associado ao empreendimento Garden Sul no Jardim Sul, Uberlândia-MG. Não há resposta real registrada após o primeiro contato. Repescagem segue ativa; o step 4 foi enviado em 2026-05-02 com convite consultivo direto e CTA preferencial para atendimento/visita na Fama na segunda-feira, conforme regra de fim de semana.
 
 ## Dados operacionais
 - Cliente ID: 10957
@@ -28,7 +28,7 @@ Cliente do Reno em `Não Respondeu`, origem Facebook Ads/lead automático, assoc
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: registrado no CRM; envio realizado pelo WhatsApp/JID salvo
-- Última interação relevante: repescagem step 3 enviada em 2026-05-01T17:57:03-03:00
+- Última interação relevante: repescagem step 4 enviada em 2026-05-02T19:38:17-03:00
 
 ## Contexto comercial
 Lead veio associado ao Garden Sul, empreendimento em lançamento no Jardim Sul/Zona Sul de Uberlândia-MG, com apartamentos de 2 quartos com suíte, lazer, valores a partir de aproximadamente R$ 294.900 e entrega prevista para set/2028. O contexto comercial disponível indica interesse em imóvel específico, mas sem resposta do cliente para confirmar se busca moradia, investimento, financiamento ou urgência de mudança.
@@ -38,13 +38,13 @@ Lead veio associado ao Garden Sul, empreendimento em lançamento no Jardim Sul/Z
 Ainda não confirmada. Contexto sugere interesse inicial em apartamento na Zona Sul/Garden Sul.
 
 ### Momento
-Cliente permanece silencioso após primeiro contato e repescagens anteriores. Step 3 buscou diagnosticar se o cliente precisa mudar logo ou se pode esperar um lançamento com entrega futura.
+Cliente permanece silencioso após primeiro contato e repescagens anteriores. Step 3 já testou prazo/momento de mudança; step 4 avançou para convite consultivo direto, orientando uma análise do caminho de compra e possibilidade de atendimento presencial na segunda-feira.
 
 ### Decisão
 Sem informação sobre decisores ou influências familiares.
 
 ### Viabilidade
-Sem dados de entrada, renda, financiamento ou forma de pagamento. Step 2 já abordou viabilidade; step 3 mudou o ângulo para prazo de entrega e momento de mudança, evitando repetir o mesmo argumento.
+Sem dados de entrada, renda, financiamento ou forma de pagamento. Step 2 já abordou viabilidade; step 4 evitou repetir esse argumento e reposicionou a conversa em torno de montar o caminho de compra, comparando lançamento com algo mais imediato quando fizer sentido.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -116,14 +116,43 @@ Registro operacional: WhatsApp enviado com sucesso pelo JID salvo no CRM e estad
 
 Próximo `next_run_at`: 2026-05-02T19:10:00-03:00.
 
+### 2026-05-02 — Repescagem step 4
+Fluxo: repescagem
+
+Step enviado: 4
+
+Intenção do step: convite consultivo direto para transformar o interesse em próximo passo comercial claro, sem repetir moradia/investimento, viabilidade ou prazo de mudança.
+
+Contexto/ângulo usado: imóvel específico Garden Sul + lançamento na Zona Sul + organização do caminho de compra, comparando lançamento com alternativa mais imediata quando fizer sentido.
+
+Diferenciação frente ao step anterior: mudou o ângulo de prazo/momento de mudança para orientação consultiva do caminho de compra; mudou a pergunta para convite de atendimento/visita na segunda-feira; destacou o benefício de comparar lançamento vs. algo mais imediato antes de decidir; variou abertura, vocabulário e CTA.
+
+Data/hora de envio: 2026-05-02T19:38:17-03:00
+
+Mensagem enviada:
+```text
+Leonardo, boa noite! 🔑
+
+O Garden Sul pode ser uma boa oportunidade na Zona Sul, mas como é lançamento, a melhor conversa agora é **montar o caminho da compra**: prazo de obra, perfil da planta e se vale comparar com algo mais imediato antes de decidir.
+
+Se fizer sentido pra você, na segunda posso te atender na Fama e organizar isso de forma bem prática.
+
+Quer que eu separe um horário na segunda para a gente olhar esse caminho com calma?
+```
+
+Registro operacional: WhatsApp enviado com sucesso pelo JID salvo no CRM; estado registrado no CRM pela tool específica `mark_reno_followup_sent`; claim da fila limpo após a marcação.
+
+Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
+
 ## Objeções e travas
-- Silêncio após o primeiro contato e após repescagens anteriores.
+- Silêncio após o primeiro contato e após quatro repescagens.
 - Falta de confirmação sobre objetivo da compra, urgência de mudança e viabilidade.
 
 ## Próximo passo
-Se não houver resposta real do cliente, seguir a régua para repescagem step 4 a partir de 2026-05-02T19:10:00-03:00. Se o cliente responder, parar repescagem e conduzir atendimento consultivo por outro fluxo, com transição operacional para `Em Atendimento` quando aplicável.
+Se não houver resposta real do cliente, seguir a régua para repescagem step 5 a partir de 2026-05-03T09:10:00-03:00. Se o cliente responder, parar repescagem e conduzir atendimento consultivo por outro fluxo, com transição operacional para `Em Atendimento` quando aplicável.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10957-leonardo-de-castro-ferreira.md` conforme governança atual.
 - Existe documento legado anterior em `_agents/reno/clientes/10957-leonardo-de-castro-ferreira.md`; conteúdo útil foi consolidado neste documento oficial. Não foi removido nesta execução.
 - Repescagem e Resgate tratados como fluxos independentes; esta execução selecionou exclusivamente branch `reno_followup.repescagem`.
+- Execução de 2026-05-02 enviou no máximo 1 WhatsApp bem-sucedido, preservou status `Não Respondeu` por ser step 4 e não acionou arquivamento.
