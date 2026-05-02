@@ -6,6 +6,10 @@ updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — CMO — Sequência Q1: H1 (pixel fix) → H2 (qualificação formulário) → H3 (lookalike + messaging)
+
+Diagnóstico FAM-27 (CMO, 2026-05-02): pixel misconfiguration num adset Garden Sul gera 37,5x mais "leads" que conversões reais (300 pixel fires / 8 form completions), contaminando sinal de otimização Meta. 93,3% dos 711 leads de Facebook Ads (90 dias) são arquivados ou nunca respondem. R$493 gastos em messaging com 0 leads rastreáveis no CRM. CPV atual: R$664 (14 visitas / R$9.298). Recomendação: (1) H1 escalada como issue técnica ao CEO para CTO — sem sinal limpo, não há como otimizar criativos; (2) H2 é primeira execução CMO após CEO ack (zero custo, sem dep técnica, impacto direto em qualidade de lead); (3) H3 aguarda dados de H2 e aprovação de budget. Lentes aplicadas: Atribuição realista (37% divergência Meta/CRM), Lead Quality > Volume (93% waste), CPV > CPL (métrica norte = custo por visita). Meta: CPV <R$400 e taxa lead→visita >4% em 60 dias.
+
 ## 2026-05-02 — FAM-24 — corrigida regra owner-only do ownership map
 
 A regra `_agents/*/decisions.md => owner-only` no `_shared/context/AGENTS.md` sobrepunha o ownership territorial de cada agente sobre o próprio `decisions.md`, fazendo `append_decision(agent='<dono>')` falhar com `OWNERSHIP_VIOLATION`. O pseudo-agente `owner-only` não existia, então `as_agent='owner-only'` também falhava (`NOTE_NOT_FOUND`). Removi a regra; ownership volta a vir dos patterns territoriais (`_agents/{agente}/**`). A imutabilidade/append-only de `decisions.md` continua garantida pelo MCP `append_decision` (que faz prepend), não pelo mapa. Esta entrada é o próprio teste de validação para `vault-steward`.
