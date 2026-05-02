@@ -14,6 +14,7 @@ Memória de longo prazo individual de cada agente do ecossistema.
 ## Paperclip (diretoria)
 
 - [[ceo/README|ceo]]
+- [[cmo/README|cmo]]
 - [[vault-steward/README|vault-steward]]
 
 ## OpenClaw (operacional)
