@@ -20,7 +20,7 @@ tags:
 # Atendimento — Thiago Santos Mendes
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno em 2026-05-02 com “Boa tarde. Sim.”, confirmando que a região do Union Vista, no Grand Ville, faz sentido. CRM foi movido de Não Respondeu para Em Atendimento e a repescagem foi interrompida por resposta do cliente. Próximo passo: diagnóstico leve, começando por finalidade da compra.
+Cliente respondeu ao primeiro contato do Reno em 2026-05-02 com “Boa tarde. Sim.”, confirmando que a região do Union Vista, no Grand Ville, faz sentido. CRM está em Em Atendimento e a repescagem foi interrompida por resposta do cliente. Próximo passo comercial: diagnóstico leve, começando por finalidade da compra.
 
 ## Dados operacionais
 - Cliente ID: 11141
@@ -29,7 +29,8 @@ Cliente respondeu ao primeiro contato do Reno em 2026-05-02 com “Boa tarde. Si
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: disponível no CRM
 - Empreendimento de interesse: Union Vista, Grand Ville, Uberlândia
-- Última interação relevante: cliente respondeu “Boa tarde. Sim.” ao gancho sobre procurar imóvel na região
+- Última interação comercial relevante: cliente respondeu “Boa tarde. Sim.” ao gancho sobre procurar imóvel na região
+- Última rotina operacional: inbound WhatsApp processado silenciosamente em 2026-05-02; sem envio ao cliente
 
 ## Contexto comercial
 O cliente entrou pelo Facebook Ads com interesse vinculado ao empreendimento Union Vista, localizado no bairro Grand Ville. A abertura foi contextualizada com o empreendimento e bairro. A resposta “Sim” indica que a região/perfil inicial faz sentido e permite avançar para qualificação leve antes de apresentar o empreendimento com mais força.
@@ -64,6 +65,13 @@ Interpretação comercial: confirmou abertura e indicou que a região do Grand V
 
 Persistência operacional: CRM movido de Não Respondeu para Em Atendimento; repescagem interrompida com `stopped_reason=client_replied` e `next_run_at=null`.
 
+### 2026-05-02 — Inbound operacional processado silenciosamente
+Rotina silenciosa acionada por inbound do WhatsApp. O conteúdo recebido neste acionamento aparentava ser texto operacional/sistêmico auto-carregado e não trouxe nova intenção comercial útil do cliente.
+
+Persistência operacional: cliente validado como broker_id=35; status preservado em Em Atendimento; atualização condicional Não Respondeu → Em Atendimento não foi necessária; repescagem já estava interrompida com `stopped_reason=client_replied`; Resgate não tinha ciclo ativo. Nenhuma mensagem foi enviada ao cliente.
+
+Referência operacional: inbound 3A91E7A64D85BFC85AA7 / sessão 20260502_222636_29bdf48d.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
@@ -74,3 +82,4 @@ Responder de forma curta e natural, conectando com o Union Vista/Grand Ville e p
 - Nome do cliente parece confiável e foi usado na saudação.
 - WhatsApp enviado para o JID priorizado no payload/CRM.
 - Repescagem foi desativada após resposta real do cliente para evitar novo follow-up automático.
+- A rotina silenciosa de inbound deste acionamento não enviou mensagem ao cliente e registrou apenas persistência operacional no CRM/vault.
