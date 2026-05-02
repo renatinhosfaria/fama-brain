@@ -57,4 +57,6 @@ _shared/results/*/vault-steward.md       => vault-steward
 
 # Catch-all — paths sem dono explícito
 **/*                                     => vault-steward
+_agents/cmo/**                => cmo
+_shared/context/*/cmo/**      => cmo
 ```
