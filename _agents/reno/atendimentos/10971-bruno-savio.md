@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: FamaChat
 created: '2026-04-27'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Bruno Sávio
 
 ## Resumo atual
-Cliente Bruno Sávio permanece em `Não Respondeu` após primeiro contato e repescagens do Reno. Interesse operacional associado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. Em 2026-04-30, foi enviada a repescagem step 2 com novo ângulo comercial: prazo de entrega/formato de pagamento e distinção entre morar ou investir.
+Cliente Bruno Sávio permanece em `Não Respondeu` após primeiro contato e repescagens do Reno. Interesse operacional associado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. Em 2026-05-02, foi enviada a repescagem step 3 com novo ângulo comercial: perfil de planta/unidade do Union Vista, diferenciando opções mais compactas de uma unidade maior, para gerar diagnóstico leve sem repetir viabilidade, prazo ou morar/investir.
 
 ## Dados operacionais
 - Cliente ID: 10971
@@ -28,25 +28,25 @@ Cliente Bruno Sávio permanece em `Não Respondeu` após primeiro contato e repe
 - Origem: SLA Cascata
 - Telefone/WhatsApp: JID salvo no CRM usado para envio; telefone não exposto neste resumo.
 - Empreendimento vinculado: Union Vista — Grand Ville — Uberlândia/MG
-- Última interação relevante: 2026-04-30 17:49 - repescagem step 2 enviada via WhatsApp.
+- Última interação relevante: 2026-05-02 11:32 - repescagem step 3 enviada via WhatsApp.
 
 ## Contexto comercial
-O cliente está vinculado ao Union Vista, empreendimento da HLTS Construtora no bairro Grand Ville, Zona Leste de Uberlândia, com entrega prevista para Jul/2027. Unidades cadastradas a partir de aproximadamente R$ 292 mil, com opções de 2 quartos, suíte, vaga coberta e lazer de condomínio.
+O cliente está vinculado ao Union Vista, empreendimento da HLTS Construtora no bairro Grand Ville, Zona Leste de Uberlândia, com entrega prevista para Jul/2027. O CRM indica opções cadastradas de 2 quartos, suíte, vaga coberta e lazer de condomínio, com plantas mais compactas e uma unidade maior.
 
-Há histórico de primeiro contato e repescagem sem resposta. A mensagem anterior já explorou valores/opções e viabilidade geral; a repescagem atual mudou o foco para prazo, formato de pagamento e objetivo de uso do imóvel.
+Há histórico de primeiro contato e repescagens sem resposta. A repescagem step 1 explorou valores/opções e viabilidade da compra. A repescagem step 2 explorou lançamento, prazo de entrega, formato de pagamento e objetivo de uso (morar ou investir). A repescagem step 3 mudou o foco para perfil de unidade/planta, evitando repetir o mesmo raciocínio comercial.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não há resposta real do cliente. A necessidade percebida vem do interesse no Union Vista, sem confirmação se busca moradia, investimento ou comparação de alternativas.
+Ainda não há resposta real do cliente. A necessidade percebida vem do interesse no Union Vista, sem confirmação se a prioridade é valor mais baixo, planta maior, moradia, investimento ou comparação com alternativas.
 
 ### Momento
-Cliente silencioso após primeiro contato e repescagem step 1. Como o empreendimento é lançamento com entrega futura, o momento de compra precisa ser validado antes de insistir em detalhes de unidade.
+Cliente silencioso após primeiro contato e repescagens. Como o empreendimento é lançamento com entrega futura, o momento de compra e o perfil de unidade precisam ser validados antes de insistir em detalhes de preço, planta ou visita.
 
 ### Decisão
 Não há informação confirmada sobre decisores ou participação familiar.
 
 ### Viabilidade
-Não há dados de renda, entrada ou financiamento. Evitar prometer crédito. Melhor abordagem: abrir conversa consultiva para entender objetivo e encaixe de prazo/pagamento.
+Não há dados de renda, entrada ou financiamento. Evitar prometer crédito. Melhor abordagem: abrir conversa consultiva por uma pergunta simples sobre preferência de planta/orçamento para iniciar diagnóstico.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato
@@ -76,15 +76,29 @@ Não há dados de renda, entrada ou financiamento. Evitar prometer crédito. Mel
 
 - Próximo follow-up previsto no CRM/meta_data: 2026-05-01T19:10:00-03:00.
 
+### 2026-05-02 — Repescagem step 3
+- Resultado: enviada via WhatsApp para o JID salvo no CRM.
+- Ângulo usado: diagnóstico leve sobre perfil de planta/unidade no Union Vista, mudando o foco depois dos argumentos anteriores sobre viabilidade, prazo e objetivo de uso.
+- Mensagem enviada:
+
+> Bruno, bom dia! 🏡
+>
+> No Union Vista existem opções com perfis diferentes — desde plantas mais compactas até uma unidade maior. Antes de te mandar informação solta, faz mais sentido entender **qual tipo de apartamento combina melhor com a sua busca**.
+>
+> Você prefere algo mais enxuto para manter o valor mais baixo ou uma planta maior, mesmo mudando o orçamento?
+
+- Próximo follow-up previsto no CRM/meta_data: 2026-05-03T09:10:00-03:00.
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagem step 1.
-- Possível trava: falta de clareza sobre objetivo de uso, prazo de entrega e formato de pagamento.
+- Silêncio após primeiro contato, repescagem step 1 e repescagem step 2.
+- Possível trava: falta de clareza sobre objetivo de uso, prazo de entrega, formato de pagamento e perfil de unidade/planta.
+- Histórico do cliente original em SLA Cascata menciona verificação de valores, mas sem resposta útil confirmada nesta entidade operacional.
 
 ## Próximo passo
-Aguardar resposta. Se responder, parar repescagem e seguir atendimento consultivo normal do Reno, movendo para `Em Atendimento` quando aplicável. Se permanecer silencioso até o próximo vencimento da régua, executar repescagem step 3 com abordagem substancialmente diferente.
+Aguardar resposta. Se responder, parar repescagem e seguir atendimento consultivo normal do Reno, movendo para `Em Atendimento` quando aplicável. Se permanecer silencioso até o próximo vencimento da régua, executar repescagem step 4 com convite consultivo direto e abordagem substancialmente diferente.
 
 ## Observações operacionais
-- Cliente elegível para repescagem: broker_id=35, status `Não Respondeu`, branch `meta_data.reno_followup.repescagem.enabled=true`, step anterior 1 e `next_run_at` vencido.
+- Cliente elegível para repescagem: broker_id=35, status `Não Respondeu`, branch `meta_data.reno_followup.repescagem.enabled=true`, step anterior 2 e `next_run_at` vencido.
 - WhatsApp enviado com sucesso usando o JID salvo no CRM.
 - CRM atualizado via `mcp_mcp_postgres_mark_reno_followup_sent`; status preservado em `Não Respondeu`.
-- Estado após envio: step=2, enabled=true, stopped_reason=null, next_run_at=2026-05-01T19:10:00-03:00.
+- Estado após envio: step=3, enabled=true, stopped_reason=null, claim_expires_at=null, last_sent_at=2026-05-02T11:32:52-03:00, next_run_at=2026-05-03T09:10:00-03:00.
