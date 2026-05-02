@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-25'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -20,7 +20,7 @@ source: FamaChat
 # Atendimento — Ricardo
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Lead originado por Facebook Ads com interesse operacional associado ao empreendimento Place+Arbi, região do Shopping Park/Zona Sul. Houve primeiro contato, repescagem step 1 e step 2 sem resposta real registrada. Em 2026-04-30 foi enviada a repescagem step 3 com diagnóstico leve sobre intenção de uso: morar ou investir, aproveitando o contexto de lançamento do empreendimento.
+Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Lead originado por Facebook Ads com interesse operacional associado ao empreendimento Place+Arbi, região do Shopping Park/Zona Sul. Houve primeiro contato e repescagens steps 1, 2, 3 e 4 sem resposta real registrada até o momento. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, mudando a abordagem anterior de intenção de uso/momento para organização do caminho de compra, prazo, entrada e financiamento.
 
 ## Dados operacionais
 - Cliente ID: 10939
@@ -30,17 +30,18 @@ Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Lead originad
 - Telefone/WhatsApp: cadastrado no CRM; JID salvo utilizado no envio
 - Empreendimento associado: Place+Arbi (`id_empreendimento=67`)
 - Região citada no atendimento: Shopping Park / Zona Sul
-- Última interação relevante: 2026-04-30 16:07 -03: repescagem step 3 enviada via WhatsApp
+- Última interação relevante: 2026-05-02 10:21 -03: repescagem step 4 enviada via WhatsApp
+- Próximo follow-up programado: 2026-05-03 09:10 -03, repescagem step 5 se não houver resposta real antes
 
 ## Contexto comercial
-O contexto disponível indica interesse inicial no Place+Arbi, na região do Shopping Park, em Uberlândia. O empreendimento é lançamento na Zona Sul, com entrega prevista para JUN/2027 e plantas de 2 quartos. Não há resposta real do cliente após o primeiro contato nem após repescagens anteriores. O melhor ângulo comercial para a próxima retomada, se ainda não houver resposta, deve evitar repetir encaixe/viabilidade e pode avançar para convite consultivo direto ou organização do caminho de compra.
+O contexto disponível indica interesse inicial no Place+Arbi, na região do Shopping Park, em Uberlândia. O empreendimento é lançamento na Zona Sul, com entrega prevista para JUN/2027 e plantas de 2 quartos. Não há resposta real do cliente após o primeiro contato nem após repescagens anteriores. A abordagem mais recente usou o lançamento/entrega futura como motivo para propor organização de prazo, entrada e financiamento antes da escolha de unidade, sem prometer crédito e sem pressionar visita.
 
 ## Diagnóstico
 ### Necessidade
 Possível busca por imóvel vinculado ao Place+Arbi/Shopping Park, ainda sem diagnóstico confirmado porque o cliente não respondeu.
 
 ### Momento
-Silencioso após contato inicial e repescagens 1, 2 e 3. Jornada ainda fria, mas com contexto de imóvel específico.
+Silencioso após contato inicial e repescagens 1, 2, 3 e 4. Jornada ainda fria, mas com contexto de imóvel específico.
 
 ### Decisão
 Sem informação sobre decisores, urgência ou preferências adicionais.
@@ -91,13 +92,30 @@ Mensagem enviada:
 
 Registro operacional: envio marcado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), sem alteração de status. Próximo follow-up previsto para **2026-05-01 19:10 -03:00**.
 
+### 2026-05-02 — Repescagem step 4 enviada
+Fluxo: repescagem  
+Step enviado: 4  
+Data/hora de envio: 2026-05-02 10:21 -03:00  
+Contexto/ângulo comercial usado: convite consultivo direto, com foco em organizar caminho de compra para lançamento com entrega futura; mudou a abordagem do step 3 ao sair de morar/investir para prazo, entrada e financiamento.
+
+Mensagem enviada:
+
+> Ricardo, vou te chamar de forma bem objetiva 🔑
+>
+> Como o Place+Arbi é um lançamento com entrega prevista para 2027, o melhor não é só ver planta ou valor agora. A compra costuma ficar mais clara quando a gente organiza **prazo, entrada e financiamento** antes de escolher a unidade.
+>
+> Quer que eu faça esse filtro inicial do caminho de compra pra você?
+
+Registro operacional: envio marcado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), sem alteração de status. Próximo follow-up previsto para **2026-05-03 09:10 -03:00**.
+
 ## Objeções e travas
 - Trava principal: silêncio / ausência de primeira resposta real.
 - Lacuna: não há dados de viabilidade, prazo, decisão familiar ou condição de pagamento.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se não houver resposta até o próximo vencimento, a repescagem step 4 deve usar abordagem substancialmente diferente, com convite consultivo direto, evitando repetir a pergunta morar/investir ou o argumento de encaixe usado nos steps 2 e 3.
+Aguardar resposta do cliente. Se não houver resposta real até o próximo vencimento, enviar a repescagem step 5 com encerramento elegante e porta aberta, sem repetir o convite consultivo do step 4 nem insistir em visita.
 
 ## Observações operacionais
 - WhatsApp enviado pelo JID salvo no CRM, sem expor telefone completo no vault.
-- Status CRM permanece **Não Respondeu** conforme regra da repescagem.
+- Status CRM permanece **Não Respondeu** conforme regra da repescagem para steps 1 a 4.
+- Meta_data confirmado após o envio: `repescagem.step=4`, `enabled=true`, `stopped_reason=null`, `next_run_at=2026-05-03T09:10:00-03:00`.
