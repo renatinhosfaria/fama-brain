@@ -34,6 +34,8 @@ interested_clients:
   - '[[guilherme-mendes]]'
   - '[[levi-santos]]'
   - '[[sibely-cortes]]'
+  - '[[claudia-rosangela]]'
+  - '[[jonathan-barbosa]]'
 neighborhood: '[[jaragua]]'
 city: Uberlândia/MG
 delivery_date: 2028-12
@@ -45,7 +47,7 @@ related:
 
 Union Vereda é empreendimento residencial em **lançamento** no bairro [[jaragua]] (Zona Oeste), Uberlândia/MG, da [[hlts-construtora]]. Apartamentos de 2 quartos com 1 suíte e varanda gourmet, lazer completo, **entrada parcelada pela construtora**, **documentação grátis para cliente MCMV**. Valores a partir de ~R$288 mil. CRM property ID: 161. Entrega prevista para dezembro/2028.
 
-**Empreendimento de maior cobertura no funil canônico do Reno: 11 leads.**
+**Empreendimento de maior cobertura no funil canônico do Reno: 13 leads.**
 
 ## Características
 
@@ -56,12 +58,12 @@ Union Vereda é empreendimento residencial em **lançamento** no bairro [[jaragu
 - **Construtora:** [[hlts-construtora]]
 - **Configurações:** 2 quartos, 1 suíte, varanda gourmet, **1 vaga**
 - **Plantas:** ~57–58m² (padrão), 82,2m² (térrea maior)
-- **Valor inicial:** ~R$288.000
+- **Valor inicial:** ~R$288.880
 - **Diferenciais:** entrada parcelada construtora, documentação grátis MCMV, lazer completo
 
 ## Clientes interessados (backlinks)
 
-11 perfis canônicos com interesse confirmado:
+13 perfis canônicos com interesse confirmado:
 
 - [[esther-osklen]] — Não Respondeu, repescagem step 3
 - [[samuel-kim]] — Em Atendimento, alternativa ao [[place-arbi]]
@@ -74,20 +76,21 @@ Union Vereda é empreendimento residencial em **lançamento** no bairro [[jaragu
 - [[guilherme-mendes]] — Em Atendimento, lead quente, planta agradou
 - [[levi-santos]] — Em Atendimento, comparando 57/58m² vs térrea 82m² (régua travada por whatsapp_send_failed)
 - [[sibely-cortes]] — Não Respondeu, repescagem step 3
+- [[claudia-rosangela]] — **Em Atendimento, "é bem isso que procuro", visita próxima semana**
+- [[jonathan-barbosa]] — Em Atendimento, perfil dual morar+investir, trabalha em [[chacara-tubalina]]
 
 ## Observações comerciais
 
-- **Alta cobertura (11 leads).** Tratamento comercial especial e treinamento de discurso recomendados.
-- **Conversão imediata em vista:** [[pedro]] (visita confirmada) e [[guilherme-mendes]] (sinal positivo explícito).
+- **Maior alavancagem do funil (13 leads).** Tratamento comercial especial e treinamento de discurso recomendados.
+- **3 conversões em vista:** [[pedro]] (visita confirmada), [[claudia-rosangela]] (visita próxima semana), [[guilherme-mendes]] (planta agradou).
 - Trade-off conhecido: **1 vaga** limita público (Andreia descartou; Guilherme aceita).
-- **MCMV destacado:** Reno menciona "documentação grátis MCMV" no primeiro contato — confirmar enquadramento atual.
-- Entrega mais distante (Dez/2028) — discurso comercial diferencia "morar futuramente" vs "investimento".
+- **MCMV destacado:** Reno menciona "documentação grátis MCMV" — confirmar enquadramento atual.
 - Mencionado como alternativa ao [[place-arbi]] quando cliente busca Zona Oeste.
 - Material visual: `s3.famachat.com.br/.../HLTS-Construtora/Union-Vereda/`. Book/PDF completo ainda faltando.
 
 ## Próximas ações sugeridas
 
-- **Imediato:** desbloquear envio WhatsApp do [[levi-santos]] (sinalizar Renato sobre erro shutdown gateway)
-- Acompanhar conversão pós-visita do [[pedro]] (01/05) e atualizar status
+- **Imediato:** desbloquear envio WhatsApp do [[levi-santos]] (sinalizar Renato)
+- Acompanhar conversões pós-visita do [[pedro]] (01/05) e [[claudia-rosangela]] (próxima semana)
 - Pingar Renato sobre book/PDF completo Union Vereda
-- Validar com HLTS se há configuração com 2 vagas (caminho para retomar Andreia Carvalho)
+- Validar com HLTS se há configuração com 2 vagas (caminho para retomar [[andreia-carvalho]])
