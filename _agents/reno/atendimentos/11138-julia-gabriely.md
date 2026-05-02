@@ -18,11 +18,13 @@ tags:
   - nome-a-confirmar
   - inbound
   - repescagem-interrompida
+  - place-arbi
+  - shopping-park
 ---
 # Atendimento — 𝒥𝓊́𝓁𝒾𝒶 𝒢𝒶𝒷𝓇𝒾ℯ𝓁𝓎
 
 ## Resumo atual
-Primeiro contato do Reno foi enviado com sucesso via WhatsApp. O CRM tinha nome em caracteres estilizados, então a abertura pediu confirmação de como a cliente prefere ser chamada antes de iniciar a qualificação. Em 2026-05-02 chegou inbound pelo WhatsApp; operacionalmente o cliente saiu de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida por resposta do cliente. O conteúdo recebido aparenta texto técnico/skill auto-carregada e não trouxe informação comercial útil; ainda é necessário confirmar o nome/preferência de chamada antes de qualificar.
+Primeiro contato do Reno foi enviado com sucesso via WhatsApp. O CRM tinha nome em caracteres estilizados, então a abertura pediu confirmação de como a cliente prefere ser chamada antes de iniciar a qualificação. Em 2026-05-02 a cliente respondeu pelo WhatsApp e o atendimento já está operacionalmente em `Em Atendimento`; a repescagem foi interrompida por resposta do cliente. Na última mensagem útil, a cliente disse que achava que o imóvel era para o bairro Shopping Park. O CRM confirma que o interesse vinculado é o Place+Arbi, no bairro Shopping Park.
 
 ## Dados operacionais
 - Cliente ID: 11138
@@ -31,10 +33,10 @@ Primeiro contato do Reno foi enviado com sucesso via WhatsApp. O CRM tinha nome 
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: contato WhatsApp disponível no CRM
 - Empreendimento de interesse: Place+Arbi, Shopping Park, Uberlândia
-- Última interação relevante: 2026-05-02 — inbound WhatsApp recebido; status atualizado e repescagem interrompida
+- Última interação relevante: 2026-05-02 — cliente comentou que achava que era para o bairro Shopping Park; CRM confirma Place+Arbi no Shopping Park
 
 ## Contexto comercial
-A cliente entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no bairro Shopping Park. Ainda não há diagnóstico de necessidade, momento, decisão ou viabilidade, pois o primeiro passo foi confirmar como a cliente prefere ser chamada. O inbound recebido nesta rotina não trouxe resposta comercial aproveitável nem nome claro.
+A cliente entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no bairro Shopping Park. Ainda não há diagnóstico de necessidade, momento, decisão ou viabilidade. O primeiro passo do Reno foi confirmar como a cliente prefere ser chamada por causa do nome estilizado no CRM. A cliente não informou nome ainda; trouxe uma dúvida/percepção de localização, indicando que Shopping Park é o contexto esperado.
 
 ## Diagnóstico
 ### Necessidade
@@ -53,19 +55,23 @@ Ainda não diagnosticada. Não houve abordagem sobre renda, financiamento, entra
 ### 2026-05-02 — Primeiro contato enviado
 Reno enviou abertura curta e contextual pelo WhatsApp: apresentou-se como Reno, da Fama, citou o interesse no Place+Arbi e perguntou como a cliente prefere ser chamada. O status foi alterado condicionalmente de Sem Atendimento para Não Respondeu e a repescagem foi inicializada para 2026-05-02 às 19:10, caso não houvesse resposta.
 
-### 2026-05-02 — Inbound WhatsApp persistido
-Rotina silenciosa identificou resposta inbound no WhatsApp para o cliente 11138, validou `broker_id=35`, alterou o status condicionalmente de `Não Respondeu` para `Em Atendimento` e interrompeu a régua de repescagem com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. O conteúdo do inbound aparenta texto técnico/skill auto-carregada, sem nova informação comercial útil para diagnóstico.
+### 2026-05-02 — Inbound WhatsApp persistido / status atualizado
+Rotina silenciosa identificou resposta inbound no WhatsApp para o cliente 11138, validou `broker_id=35`, alterou o status condicionalmente de `Não Respondeu` para `Em Atendimento` e interrompeu a régua de repescagem com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. A nota CRM 16389 registrou a alteração operacional.
+
+### 2026-05-02 — Dúvida/percepção sobre bairro Shopping Park
+Novo inbound WhatsApp persistido com a mensagem: “Eu achei que era para o bairro shopping Park”. O status já estava `Em Atendimento`, então foi preservado. O CRM foi usado como fonte de verdade e confirma que o empreendimento vinculado é o Place+Arbi, no bairro Shopping Park. Nota CRM 16391 registrada com a interação e com a orientação de atendimento: responder contextualizando que é no Shopping Park e retomar a qualificação sem envio pela rotina silenciosa.
 
 ## Objeções e travas
-- Nome do CRM em caracteres estilizados; aguardar confirmação antes de usar nome ou iniciar qualificação.
-- Inbound recebido não trouxe nome claro nem intenção comercial aproveitável.
+- Nome do CRM em caracteres estilizados; aguardar confirmação antes de usar nome ou atualizar `full_name`.
+- Cliente sinalizou expectativa/dúvida de localização no bairro Shopping Park; CRM confirma que o empreendimento de interesse fica no Shopping Park.
 
 ## Próximo passo
-Na próxima resposta comercial real, manter a abordagem de confirmação de nome/preferência de chamada. Quando houver nome claro, atualizar `clientes.full_name` no CRM, registrar nota da correção e retomar a qualificação com contexto do Place+Arbi.
+Na próxima resposta comercial real, esclarecer de forma curta que o Place+Arbi é no Shopping Park e retomar a confirmação de como a cliente prefere ser chamada antes de avançar na qualificação. Depois que houver nome claro, atualizar `clientes.full_name` no CRM, registrar nota da correção e seguir com qualificação leve sobre região/busca.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: evt_3306 / idempotency_key 3306_1777745684987.
 - WhatsApp inicial enviado com sucesso para o JID priorizado do payload/CRM.
-- Em 2026-05-02, nota CRM 16389 registrou o inbound, a mudança de status e a interrupção da repescagem.
+- Em 2026-05-02, nota CRM 16389 registrou o primeiro inbound, a mudança de status e a interrupção da repescagem.
+- Em 2026-05-02, nota CRM 16391 registrou o inbound sobre Shopping Park; nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 - Repescagem atual: step 0, enabled=false, next_run_at=null, stopped_reason=client_replied.
 - Resgate atual: inexistente/não ativo.
