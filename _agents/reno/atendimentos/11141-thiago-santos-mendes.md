@@ -83,6 +83,8 @@ Após apresentação breve do Union Vista, cliente respondeu “Bom”. Reno tra
 ### 2026-05-02 — Pré-agendamento: segunda no fim do dia
 Cliente respondeu “Fim do dia” ao convite de segunda-feira. Interpretação: aceite de janela de visita, mas ainda sem horário objetivo. Visita não deve ser criada no FamaChat até confirmação clara de horário. Próxima resposta deve sugerir 18h ou pedir confirmação objetiva.
 
+Persistência silenciosa do inbound 3AF1E66AA9DFEEC7DCAE: status preservado em Em Atendimento; atualização condicional Não Respondeu -> Em Atendimento não aplicável; repescagem já interrompida com `stopped_reason=client_replied` e `next_run_at=null`; resgate sem ciclo ativo.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 - Ponto sensível: financiamento/encaixe financeiro.
@@ -97,3 +99,4 @@ Confirmar horário objetivo com o cliente, sugerindo segunda-feira às 18h. Se a
 - Repescagem foi desativada após resposta real do cliente para evitar novo follow-up automático.
 - Convite para visita registrado como evento comercial relevante/KPI.
 - Ainda não houve criação de agendamento porque o horário está incompleto.
+- Rotina silenciosa processou o inbound “Fim do dia” sem envio ao cliente e manteve follow-ups automáticos seguros.
