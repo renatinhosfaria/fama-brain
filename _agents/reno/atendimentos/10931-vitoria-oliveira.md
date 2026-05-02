@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-04-22'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -22,7 +22,7 @@ tags:
 # Atendimento — Vitória Oliveira
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, origem Facebook Ads, com interesse registrado em apartamentos na Zona Sul de Uberlândia. Repescagem step 3 enviada com sucesso em 2026-04-30 via WhatsApp usando o JID salvo no CRM. A abordagem mudou para diagnóstico de prazo/momento de mudança, conectando os empreendimentos Place+Arbi e Garden Sul aos prazos de lançamento. Próximo follow-up de repescagem previsto para 2026-05-01 às 19:10 se não houver resposta real antes.
+Cliente do Reno (`broker_id=35`) em `Não Respondeu`, origem Facebook Ads, com interesse registrado em apartamentos na Zona Sul de Uberlândia. Repescagem step 4 enviada com sucesso em 2026-05-02 via WhatsApp usando o JID salvo no CRM. A abordagem mudou para convite consultivo direto: organizar caminho de compra entre lançamento, necessidade de resolver mais rápido e possível financiamento. Próximo follow-up de repescagem previsto para 2026-05-03 às 14:20 se não houver resposta real antes.
 
 ## Dados operacionais
 - Cliente ID: 10931
@@ -31,7 +31,7 @@ Cliente do Reno (`broker_id=35`) em `Não Respondeu`, origem Facebook Ads, com i
 - Origem: Facebook Ads
 - Telefone/WhatsApp: disponível no CRM; não reproduzido integralmente neste documento
 - WhatsApp JID CRM: disponível; envio realizado pelo JID salvo
-- Última interação relevante: 2026-04-30 — repescagem step 3 enviada com sucesso
+- Última interação relevante: 2026-05-02 — repescagem step 4 enviada com sucesso
 
 ## Contexto comercial
 Interesse vindo de Facebook Ads com empreendimentos vinculados no CRM: Garden Sul e Place+Arbi, ambos apartamentos na Zona Sul de Uberlândia. Reentrada automática indicou também interesse no empreendimento Place+Arbi. Não há resposta real da cliente registrada após o primeiro contato/follow-ups até esta atualização.
@@ -45,13 +45,13 @@ Contexto dos empreendimentos usado na repescagem:
 Busca provável por apartamento na Zona Sul; contexto ainda pouco qualificado porque a cliente não respondeu.
 
 ### Momento
-Cliente em silêncio operacional desde a entrada/reentrada. Step 3 buscou destravar uma resposta sobre prazo/momento: mudar mais rápido versus considerar lançamento para 2027/2028.
+Cliente em silêncio operacional desde a entrada/reentrada. Step 3 buscou destravar uma resposta sobre prazo/momento: mudar mais rápido versus considerar lançamento para 2027/2028. Step 4 avançou para convite consultivo direto, conectando caminho de compra, prazo e financiamento sem pressionar visita.
 
 ### Decisão
 Sem dados sobre decisores, urgência ou motivação de compra.
 
 ### Viabilidade
-Sem dados de renda, entrada, modalidade de compra ou financiamento. Nenhuma promessa de crédito foi feita. A abordagem atual evita simulação e foca em encaixe de prazo antes de aprofundar valores/financiamento.
+Sem dados de renda, entrada, modalidade de compra ou financiamento. Nenhuma promessa de crédito foi feita. A abordagem atual propôs leitura inicial do caso para organizar caminho de compra antes de aprofundar opções.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Supressão operacional anterior
@@ -89,12 +89,27 @@ Mensagem enviada:
 
 Resultado: envio WhatsApp tecnicamente bem-sucedido pelo JID salvo no CRM. Estado de repescagem atualizado via `mcp_mcp_postgres_mark_reno_followup_sent` para `step=3`, `last_sent_at=2026-04-30T19:25:19-03:00`, `next_run_at=2026-05-01T19:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
 
+### 2026-05-02 — Repescagem step 4 enviada
+Fluxo: repescagem
+Step enviado: 4
+Ângulo comercial usado: imóvel específico + convite consultivo direto, com leitura inicial do caminho de compra.
+Diferenciação em relação ao step anterior: saiu da pergunta de prazo/momento; trouxe a organização do caminho de compra como benefício central; incluiu lançamento, necessidade de resolver mais rápido e financiamento como alternativas de diagnóstico; CTA mudou para permissão de leitura inicial do caso.
+
+Mensagem enviada:
+> Vitória, vou ser bem direto para não ficar te mandando coisa solta 🏡
+>
+> Pelo que apareceu aqui, você olhou apartamentos na Zona Sul, mas o ponto agora é entender **qual caminho de compra faz mais sentido para você**: lançamento com prazo maior, algo para resolver mais rápido ou até ajustar pela parte de financiamento.
+>
+> Se fizer sentido, posso olhar isso contigo de forma objetiva e te dizer por onde vale começar. Quer que eu faça essa leitura inicial do seu caso?
+
+Resultado: envio WhatsApp tecnicamente bem-sucedido pelo JID salvo no CRM. Estado de repescagem atualizado via `mcp_mcp_postgres_mark_reno_followup_sent` para `step=4`, `last_sent_at=2026-05-02T09:49:44-03:00`, `next_run_at=2026-05-03T14:20:00-03:00`, `enabled=true`, `stopped_reason=null`.
+
 ## Objeções e travas
 - Sem objeção comercial real registrada; cliente não respondeu.
-- Histórico de falha técnica anterior no runtime de WhatsApp em 2026-04-29, mas envio de 2026-04-30 foi bem-sucedido.
+- Histórico de falha técnica anterior no runtime de WhatsApp em 2026-04-29, mas envios posteriores foram bem-sucedidos.
 
 ## Próximo passo
-Aguardar resposta real da cliente. Se responder, parar repescagem, mover para atendimento normal do Reno conforme status aplicável e qualificar contexto/momento. Se não responder até `next_run_at`, avaliar repescagem step 4 com novo ângulo consultivo direto, sem repetir pergunta de prazo nem morar/investir.
+Aguardar resposta real da cliente. Se responder, parar repescagem, mover para atendimento normal do Reno conforme status aplicável e qualificar contexto/momento. Se não responder até `next_run_at`, avaliar repescagem step 5 com encerramento elegante e porta aberta, sem repetir pergunta de prazo nem convite genérico de análise.
 
 ## Observações operacionais
 - Status CRM preservado como `Não Respondeu` durante o worker de repescagem.
