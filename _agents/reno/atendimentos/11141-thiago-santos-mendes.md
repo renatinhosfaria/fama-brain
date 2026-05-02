@@ -18,11 +18,12 @@ tags:
   - diagnostico
   - financiamento
   - convite-visita
+  - pre-agendamento
 ---
 # Atendimento — Thiago Santos Mendes
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno em 2026-05-02, confirmou que a região do Union Vista, no Grand Ville, faz sentido, informou que busca imóvel para morar e indicou financiamento como prioridade principal. Após apresentação breve do perfil do Union Vista, reagiu positivamente com “Bom”. Reno realizou convite claro para visita presencial na Fama, sugerindo segunda-feira no almoço ou fim do dia. CRM está em Em Atendimento e a repescagem foi interrompida por resposta do cliente.
+Cliente respondeu ao primeiro contato do Reno em 2026-05-02, confirmou que a região do Union Vista, no Grand Ville, faz sentido, informou que busca imóvel para morar e indicou financiamento como prioridade principal. Após apresentação breve do perfil do Union Vista, reagiu positivamente com “Bom”. Reno realizou convite claro para visita presencial na Fama e o cliente escolheu segunda-feira no fim do dia. Ainda falta horário exato, então a visita não foi registrada no FamaChat.
 
 ## Dados operacionais
 - Cliente ID: 11141
@@ -31,23 +32,23 @@ Cliente respondeu ao primeiro contato do Reno em 2026-05-02, confirmou que a reg
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: disponível no CRM
 - Empreendimento de interesse: Union Vista, Grand Ville, Uberlândia
-- Última interação relevante: cliente sinalizou positivo ao perfil do Union Vista; convite para visita presencial realizado
+- Última interação relevante: cliente escolheu segunda-feira no fim do dia para visita, mas sem horário exato confirmado
 
 ## Contexto comercial
-O cliente entrou pelo Facebook Ads com interesse vinculado ao empreendimento Union Vista, localizado no bairro Grand Ville. A abertura foi contextualizada com o empreendimento e bairro. A resposta “Sim” confirmou que a região/perfil inicial faz sentido. Thiago informou que procura imóvel para morar e que o ponto que mais pesa hoje é financiamento. Após receber uma apresentação curta do Union Vista com foco em entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável, respondeu “Bom”, indicando sinal positivo suficiente para convite presencial.
+O cliente entrou pelo Facebook Ads com interesse vinculado ao empreendimento Union Vista, localizado no bairro Grand Ville. A abertura foi contextualizada com o empreendimento e bairro. A resposta “Sim” confirmou que a região/perfil inicial faz sentido. Thiago informou que procura imóvel para morar e que o ponto que mais pesa hoje é financiamento. Após receber uma apresentação curta do Union Vista com foco em entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável, respondeu “Bom”, indicando sinal positivo suficiente para convite presencial. Ao convite, preferiu segunda-feira no fim do dia.
 
 ## Diagnóstico
 ### Necessidade
 Procura imóvel para morar.
 
 ### Momento
-Ainda não diagnosticado em profundidade. A resposta positiva permite tentar agendamento breve.
+Cliente demonstrou abertura para passar presencialmente na Fama na segunda-feira no fim do dia. Falta confirmar horário exato.
 
 ### Decisão
 Ainda não diagnosticada.
 
 ### Viabilidade
-Prioridade declarada: financiamento. Deve ser conduzido com segurança, explicando entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável, sem prometer aprovação. Simulação real deve ser conduzida presencialmente na Fama se houver aceite da visita.
+Prioridade declarada: financiamento. Deve ser conduzido com segurança, explicando entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável, sem prometer aprovação. Simulação real deve ser conduzida presencialmente na Fama se a visita for confirmada.
 
 ## Histórico curado de interações
 ### 2026-05-02 — Primeiro contato enviado
@@ -79,19 +80,20 @@ Interpretação comercial: deve-se apresentar o Union Vista como uma opção que
 ### 2026-05-02 — Sinal positivo e convite para visita
 Após apresentação breve do Union Vista, cliente respondeu “Bom”. Reno tratou como sinal positivo e realizou convite claro para visita presencial na Fama, com CTA para segunda-feira no horário do almoço ou no fim do dia.
 
-Persistência operacional silenciosa: inbound processado sem envio ao cliente; status preservado em Em Atendimento; repescagem já estava interrompida com `stopped_reason=client_replied` e `next_run_at=null`; resgate sem ciclo ativo. Nota CRM registrada: 16402. Ref. inbound: 3A85C99CB709809DB955 / sessão 20260502_222636_29bdf48d.
+### 2026-05-02 — Pré-agendamento: segunda no fim do dia
+Cliente respondeu “Fim do dia” ao convite de segunda-feira. Interpretação: aceite de janela de visita, mas ainda sem horário objetivo. Visita não deve ser criada no FamaChat até confirmação clara de horário. Próxima resposta deve sugerir 18h ou pedir confirmação objetiva.
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 - Ponto sensível: financiamento/encaixe financeiro.
+- Pendência operacional: horário exato da visita ainda não confirmado.
 
 ## Próximo passo
-Aguardar resposta do cliente sobre disponibilidade na segunda-feira. Se aceitar dia e horário claros, carregar `reno-visit-scheduling`, criar/validar agendamento no FamaChat e só então confirmar visita com endereço da Fama.
+Confirmar horário objetivo com o cliente, sugerindo segunda-feira às 18h. Se aceitar, carregar `reno-visit-scheduling`, criar/validar agendamento no FamaChat e só então confirmar visita com endereço da Fama.
 
 ## Observações operacionais
 - Nome do cliente parece confiável e foi usado na saudação.
 - WhatsApp enviado para o JID priorizado no payload/CRM.
 - Repescagem foi desativada após resposta real do cliente para evitar novo follow-up automático.
-- Resgate não tinha ciclo ativo no momento do inbound “Bom”.
-- Rotina silenciosa não enviou mensagem ao cliente.
 - Convite para visita registrado como evento comercial relevante/KPI.
+- Ainda não houve criação de agendamento porque o horário está incompleto.
