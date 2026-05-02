@@ -19,7 +19,7 @@ tags:
 # Atendimento — Claudia Rosângela
 
 ## Resumo atual
-Cliente do Reno em atendimento, com interesse positivo no Union Vereda, no Jaraguá. Gostou da planta/perfil do empreendimento e perguntou valor. A trava atual continua sendo agenda/visita: informou que não conseguiria visitar na semana do primeiro convite e que teria que ser na próxima semana. Em 2026-05-02 foi enviado Resgate step 5 com CTA de fim de semana direcionando para visita presencial na segunda-feira, ligando a visita à conferência de condição e valor com mais segurança.
+Cliente do Reno em atendimento, com interesse positivo no Union Vereda, no Jaraguá. Gostou da planta/perfil do empreendimento e perguntou valor. A trava atual continua sendo agenda/visita: informou que não conseguiria visitar na semana do primeiro convite e que teria que ser na próxima semana. Em 2026-05-02 recebeu Resgate step 5 com CTA para visita presencial na segunda-feira e respondeu “E mrv”, interpretado como dúvida se o Union Vereda é MRV. Resgate foi interrompido no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
 ## Dados operacionais
 - Cliente ID: 11021
@@ -28,11 +28,12 @@ Cliente do Reno em atendimento, com interesse positivo no Union Vereda, no Jarag
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: disponível no CRM; não expor telefone completo em relatórios
 - Empreendimento de interesse: Union Vereda — Jaraguá, Uberlândia
-- Última interação relevante: Resgate step 5 enviado em 2026-05-02 18:09 -03, bucket `visita_pendente`
-- Próximo `next_run_at` operacional: 2026-05-06T18:09:17-03:00, se permanecer sem resposta
+- Construtora do empreendimento: HLTS Construtora
+- Última interação relevante: cliente respondeu em 2026-05-02 após Resgate step 5: “E mrv”
+- Estado operacional do Resgate: interrompido por resposta do cliente; sem próximo `next_run_at`
 
 ## Contexto comercial
-Cliente demonstrou interesse no Union Vereda, empreendimento no Jaraguá. O produto apresentado foi apartamento de 2 quartos com suíte e varanda, com faixa inicial informada em torno de R$ 288.880, dependendo da unidade, e entrada parcelada pela construtora. Cliente respondeu de forma positiva sobre a planta: “é bem isso que procuro”.
+Cliente demonstrou interesse no Union Vereda, empreendimento no Jaraguá. O produto apresentado foi apartamento de 2 quartos com suíte e varanda, com faixa inicial informada em torno de R$ 288.880, dependendo da unidade, e entrada parcelada pela construtora. Cliente respondeu de forma positiva sobre a planta: “é bem isso que procuro”. Em 2026-05-02 trouxe dúvida/comparação com MRV; CRM confirma que o Union Vereda é da HLTS Construtora, não MRV.
 
 ## Diagnóstico
 ### Necessidade
@@ -86,15 +87,17 @@ Mensagem enviada via WhatsApp: “Claudia, pra não ficar só em valor pelo What
 
 Bucket: `visita_pendente`.
 Contexto usado: cliente gostou da planta do Union Vereda, perguntou valor e disse que a visita ficaria para a próxima semana. Como o envio ocorreu no sábado, o CTA priorizou segunda-feira conforme regra de fim de semana. A abordagem mudou o ângulo do step 4: em vez de oferecer “separar horário rápido”, posicionou a visita como forma de não ficar só em valor pelo WhatsApp e conferiu preferência simples de período.
-Próximo `next_run_at`: 2026-05-06T18:09:17-03:00.
+
+### 2026-05-02 — Cliente respondeu após Resgate step 5
+Cliente respondeu pelo WhatsApp: “E mrv”. Interpretação comercial: perguntou se o Union Vereda é MRV ou comparou com MRV. CRM do empreendimento confirma Union Vereda como HLTS Construtora. Resgate foi interrompido no CRM antes da resposta comercial (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`). Próximo passo: esclarecer de forma curta que não é MRV, é HLTS Construtora, e retomar convite para visita na segunda-feira com opções de manhã ou fim do dia.
 
 ## Objeções e travas
 - Agenda: cliente disse que não conseguiria visitar naquela semana e que teria que ser na próxima.
 - Viabilidade ainda aberta: cliente perguntou preço, mas não houve análise de financiamento/condição.
-- Silêncio após múltiplos convites de visita; abordagem atual reduz a decisão para segunda-feira, manhã ou fim do dia.
+- Dúvida/comparação de construtora: cliente perguntou “E mrv”; confirmar que Union Vereda é HLTS, não MRV, sem passar contato da construtora.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder com preferência de período/dia, conduzir para agendamento presencial na Fama e acionar o fluxo de criação de visita no FamaChat. Se responder com dúvida de valor/financiamento, responder curto, reduzir fricção e reposicionar a visita como o caminho mais seguro para simulação e escolha da unidade. Se permanecer sem resposta até 2026-05-06T18:09:17-03:00, avaliar step 6 do Resgate respeitando a cadência oficial.
+Responder à cliente de forma curta: Union Vereda não é MRV; é da HLTS Construtora. Se ela quiser comparar com MRV, Reno pode explicar as diferenças presencialmente. Retomar CTA de visita para segunda-feira, perguntando se manhã ou fim do dia fica melhor. Se ela escolher período/horário, acionar `reno-visit-scheduling` para criar/validar visita no FamaChat antes de confirmar.
 
 ## Observações operacionais
 Documento oficial consolidado em `_agents/reno/atendimentos/11021-claudia-rosangela.md`. Existe documento legado em `_agents/reno/clientes/cliente-11021-claudia-rosangela.md`; conteúdo útil foi incorporado aqui, mas o legado não foi removido. Escrita realizada por `vault-steward` em atualização anterior por ownership do arquivo, mantendo `owner: reno` no frontmatter.
