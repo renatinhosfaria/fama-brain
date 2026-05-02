@@ -28,6 +28,8 @@ interested_clients:
   - '[[augusto-santana]]'
   - '[[edson-tolentino]]'
   - '[[silva-porto]]'
+  - '[[eliseu]]'
+  - '[[marcio-oliveira-juliao]]'
 neighborhood: '[[grand-ville]]'
 city: Uberlândia/MG
 delivery_date: 2027-07
@@ -37,7 +39,7 @@ related:
 ---
 ## Resumo
 
-Union Vista é empreendimento residencial em **lançamento** da [[hlts-construtora]] no bairro [[grand-ville]], Uberlândia/MG, com entrega prevista para julho/2027. Apartamentos de 2 quartos com 1 suíte, valores a partir de R$292.400. CRM property ID: 22.
+Union Vista é empreendimento residencial em **lançamento** da [[hlts-construtora]] no bairro [[grand-ville]], Uberlândia/MG. Apartamentos de 2 quartos com 1 suíte, valores a partir de **R$292.400**, **4 torres**, entrega prevista para **julho/2027**. CRM property ID: 22.
 
 ## Características
 
@@ -46,30 +48,37 @@ Union Vista é empreendimento residencial em **lançamento** da [[hlts-construto
 - **Cidade:** Uberlândia/MG
 - **Entrega prevista:** Julho/2027
 - **Construtora:** [[hlts-construtora]]
-- **Configurações:** 2 quartos, 1 suíte, vaga coberta
+- **Configurações:** 2 quartos, 1 suíte, sacada, vaga coberta
 - **Plantas conhecidas:** 56,9m², 58,4m², 82,2m² (térreo)
 - **Valor inicial:** R$292.400
+- **Torres:** 4
 
 ## Clientes interessados (backlinks)
 
-6 perfis canônicos com interesse confirmado:
+8 perfis canônicos com interesse confirmado:
 
 - [[bruno-savio]] — Não Respondeu, primeiro contato 2026-04-27
-- [[jisa-dantas]] — Em Atendimento, bucket viabilidade_financiamento, resgate step 4 em 2026-05-01
+- [[jisa-dantas]] — Em Atendimento, viabilidade_financiamento, resgate step 4 em 2026-05-01
 - [[wueverton-lima]] — Não Respondeu, repescagem step 3 em 2026-05-01
 - [[augusto-santana]] — Agendamento (visita 27/04 cancelada, aguardando remarcação)
 - [[edson-tolentino]] — Não Respondeu, repescagem
-- [[silva-porto]] — Em Atendimento (mas prefere região central — divergência a explorar)
+- [[silva-porto]] — Em Atendimento, prefere região central — divergência
+- [[eliseu]] — Em Atendimento, **investidor** (valorização/revenda), resgate step 4
+- [[marcio-oliveira-juliao]] — Em Atendimento, dependência MCMV/Caixa, entrada R$5k
 
 ## Observações comerciais
 
-- Empreendimento mencionado consistentemente em atendimentos do Reno como ponto de entrada de leads.
-- Cobertura sólida (6 leads) mas com taxa de resposta baixa — predominância de "Não Respondeu".
-- Plantas e valor já enviados pra clientes em fase de qualificação.
-- Parcelamento de entrada possível conforme simulação (FGTS, renda, financiamento).
-- **Divergência observada:** [[silva-porto]] veio do lead Union Vista mas prefere região central → recalibrar oferta.
+- **Empreendimento mais diversificado em perfis de cliente:**
+  - Investidor (Eliseu) — tese valorização
+  - MCMV-dependente (Márcio) — bloqueio se não enquadrar
+  - Crédito Caixa R$230k (Augusto Santana)
+  - Sem entrada CLT (Silva Porto)
+  - Maioria silenciosa (Bruno, Wueverton, Edson)
+- **Validar com HLTS:** está enquadrado MCMV? Resposta destrava Márcio.
+- **Plano investidor:** validar se há condição 10% entrada/parcela baixa que justifique discurso ao Eliseu.
 
 ## Próximas ações sugeridas
 
 - Quando outros leads mencionarem Union Vista, adicionar aqui em `interested_clients`.
-- Ver perfil [[hlts-construtora]] para alavancagem cross-empreendimento.
+- Verificar enquadramento MCMV (gatilho Márcio).
+- Confirmar plano investidor (gatilho Eliseu).
