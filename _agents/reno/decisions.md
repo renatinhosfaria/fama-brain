@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — Repescagem — arquivamento automático após step 5
+
+Renato solicitou que, após o encerramento da última etapa da régua de Repescagem, o cliente seja alterado automaticamente para status Arquivado no FamaChat. A política foi incorporada à skill repescagem-follow-up e ao cronjob de produção reno-repescagem-message-queue-production. Regra operacional: somente após WhatsApp de step 5 enviado com sucesso e mark_reno_followup_sent persistir step=5/stopped_reason=max_steps; atualizar status para Arquivado apenas se o cliente ainda estiver exatamente em Não Respondeu, broker_id=35, com condição defensiva para não regredir status avançado. Registrar nota no CRM e atualizar documento em _agents/reno/atendimentos/.
+
 ## 2026-04-30 — Repescagem deve mudar ângulo/CTA entre tentativas
 
 Renato observou que mensagens de repescagem consecutivas estavam muito parecidas. Decisão operacional: quando o cliente não respondeu uma repescagem, a próxima precisa oferecer um motivo novo para resposta, mudando substancialmente abordagem, ângulo comercial, pergunta/CTA, benefício e vocabulário. Não basta trocar sinônimos mantendo o mesmo raciocínio.
