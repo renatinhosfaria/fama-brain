@@ -46,6 +46,11 @@ clients:
   - '[[elias-fernandes]]'
   - '[[amanda]]'
   - '[[carmen-vicente-santos]]'
+  - '[[levi-santos]]'
+  - '[[joao-pedro]]'
+  - '[[sibely-cortes]]'
+  - '[[santiago-derson]]'
+  - '[[larissa-martins]]'
 related:
   - '[[_agents/reno/profile|profile-agente]]'
   - '[[_hubs/index|Hubs]]'
@@ -70,8 +75,8 @@ Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfi
 
 - **Modalidade:** Agente de IA assistido por humanos (Renato)
 - **Canal primário:** WhatsApp (via FamaChat bridge)
-- **Volume sob responsabilidade:** 21 perfis canônicos de cliente (Lotes 1–4) + dezenas de outros leads sem perfil canônico
-- **Origem dos leads:** SLA Cascata, Facebook Ads (Garden Sul / Place+Arbi / lead automático), leads orgânicos
+- **Volume sob responsabilidade:** 26 perfis canônicos de cliente (Lotes 1–5) + dezenas de outros leads sem perfil canônico
+- **Origem dos leads:** SLA Cascata, Facebook Ads (Garden Sul / Place+Arbi / lead automático), Instagram (Bris), leads orgânicos
 
 ## Padrões de atendimento (observados)
 
@@ -82,7 +87,7 @@ Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfi
 - Encaminhamento a visita presencial Fama como conversão alvo
 - Buckets observados: viabilidade_financiamento, condicao_valor, midia_opcao_enviada, visita_pendente, financiamento_sumiu, decisao_com_terceiro
 
-## Clientes ativos com perfil canônico (21)
+## Clientes ativos com perfil canônico (26)
 
 **Visita confirmada:**
 - [[pedro]] (01/05 18h, [[union-vereda]])
@@ -95,19 +100,24 @@ Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfi
 - [[eliseu]] ([[union-vista]] — tese valorização/revenda)
 
 **Em Atendimento — diagnóstico em curso:**
-- [[samuel-kim]], [[jisa-dantas]], [[andreia-carvalho]], [[eduarda]], [[silva-porto]], [[marcio-oliveira-juliao]]
+- [[samuel-kim]], [[jisa-dantas]], [[andreia-carvalho]], [[eduarda]], [[silva-porto]], [[marcio-oliveira-juliao]], [[levi-santos]] (régua travada)
 
 **Agendamento (visita cancelada):**
 - [[augusto-santana]]
 
 **Não Respondeu (em repescagem ativa):**
-- [[bruno-savio]], [[esther-osklen]], [[wueverton-lima]], [[edson-tolentino]], [[murilo-damasceno]], [[davi-maia]], [[leticia-melo]], [[ana-clara-marques]], [[elias-fernandes]], [[carmen-vicente-santos]]
+- [[bruno-savio]], [[esther-osklen]], [[wueverton-lima]], [[edson-tolentino]], [[murilo-damasceno]], [[davi-maia]], [[leticia-melo]], [[ana-clara-marques]], [[elias-fernandes]], [[carmen-vicente-santos]], [[joao-pedro]], [[sibely-cortes]], [[santiago-derson]]
+
+**Arquivado:**
+- [[larissa-martins]] (telefone de teste)
 
 ## Travas operacionais conhecidas
 
-- Falhas históricas no bridge WhatsApp (jidDecode error, 401/408 gateway) — múltiplas auditorias do Renato
+- Falhas históricas no bridge WhatsApp (jidDecode error, 401/408 gateway, "cannot schedule new futures after shutdown") — múltiplas auditorias do Renato
+- **ATIVA AGORA:** envio para [[levi-santos]] travado em 2026-05-01 (whatsapp_send_failed)
 - Duplicidade entre cadastros e corretores → necessidade de override manual
-- Material de marketing faltando: planta baixa Place+Arbi e book completo Union Vereda (relatado em 2026-04-29 e 2026-04-27 respectivamente)
+- Material de marketing faltando: planta baixa Place+Arbi e book completo Union Vereda
+- Bug CRM: nomes duplicados na captura ([[carmen-vicente-santos]]: "Vicente Santos Vicente Santos")
 
 ## Próximas observações esperadas
 
@@ -115,5 +125,6 @@ Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfi
 - Acompanhar conversão da [[amanda]] (alvo: visita Place+Arbi com marido)
 - Identificar se [[andreia-carvalho]] retorna com lançamento HLTS de 2 vagas
 - Resolver enquadramento MCMV do [[marcio-oliveira-juliao]] junto a HLTS
-- Monitorar Union Vereda como concentrador (9 leads canônicos)
-- Investigar anomalia Garden Sul (3 leads, 0 engajados)
+- Desbloquear infra WhatsApp para [[levi-santos]]
+- Monitorar Union Vereda como concentrador (11 leads canônicos)
+- Investigar anomalia campanha Facebook Ads (Garden Sul + parte Union Vista) — padrão de "lead silente" recorrente
