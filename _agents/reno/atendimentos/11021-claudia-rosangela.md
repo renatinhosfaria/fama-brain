@@ -101,3 +101,7 @@ Responder à cliente de forma curta: Union Vereda não é MRV; é da HLTS Constr
 
 ## Observações operacionais
 Documento oficial consolidado em `_agents/reno/atendimentos/11021-claudia-rosangela.md`. Existe documento legado em `_agents/reno/clientes/cliente-11021-claudia-rosangela.md`; conteúdo útil foi incorporado aqui, mas o legado não foi removido. Escrita realizada por `vault-steward` em atualização anterior por ownership do arquivo, mantendo `owner: reno` no frontmatter.
+
+
+### 2026-05-02 — Dúvida sobre evolução de obra e localização
+Cliente perguntou pelo WhatsApp se o Union Vereda tem evolução de obra e qual a localização. CRM confirma Union Vereda no Jaraguá, zona Oeste de Uberlândia, com entrega prevista para dez/2028. Condução recomendada: responder localização por bairro/região, evitar endereço exato no primeiro pedido, explicar que evolução de obra pode depender da forma de financiamento/unidade e deve ser validada em simulação presencial, sem prometer condição.
