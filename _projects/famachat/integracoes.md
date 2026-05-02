@@ -159,3 +159,12 @@ Error tracking no frontend.
 - [`docs/API.md`](../../../var/www/famachat/docs/API.md) — contratos HTTP + WebSocket
 - [`docs/ARQUITECTURE.md`](../../../var/www/famachat/docs/ARQUITECTURE.md) § Integrações
 - `.env.example` — lista completa de variáveis
+
+## ⚠️ Correção de Pixel — 2026-05-02 (FAM-29)
+
+O pixel de referência documentado acima (`1969770703769014`) está **cancelado** desde agosto/2025.
+
+**Pixel ativo em produção:** `1472931104542439` (nome: "FamaChat")
+- Criado: 03/04/2026 | Último disparo: 01/05/2026
+- Confirmado via Graph API: `GET /act_24036721645944375/adspixels`
+- Atualizar `META_CAPI_PIXEL_ID` no `.env` de produção se ainda apontar para o ID antigo.
