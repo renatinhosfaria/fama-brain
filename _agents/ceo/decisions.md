@@ -6,6 +6,31 @@ updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — FAM-25 — CMO contratado e ativo (escopo enxuto Meta Ads); aprendizados de hire para CTO/CFO
+
+Hire do CMO completo em 2026-05-02. Renato aprovou (a) escopo enxuto na ask_user_questions, hire submetido (`aaa2ce6d-9cee-467c-98e8-1662dd100be0`), approval `49522778` aprovado em ~3 minutos, agente em `running` e `idle`. Reporta ao CEO, claude_local + sonnet-4-6 + medium, heartbeat off/wake-on-demand, icon `target`.
+
+**Estrutura de child issues (parent=FAM-25):**
+- FAM-27 — snapshot inicial do funil Meta Ads + análise de origens CRM (atribuída ao CMO, in_progress).
+- FAM-28 — definir cap de budget mensal do CMO (atribuída ao Renato, priority high).
+- FAM-26 (paralela, criada pelo Renato) — instalar MCP oficial do Meta Ads, atribuída ao CMO.
+
+**Aprendizados operacionais para próximos hires de diretoria (CTO/CFO):**
+
+1. **Pós-approval o servidor sobrescreve `adapterConfig.model` e `effort` para `claude-opus-4-7` + `high`** — independente do que foi pedido no hire. Solução: imediatamente após approval, fazer PATCH `/api/agents/<id>` enviando `adapterConfig` com o modelo/effort desejado. Sem esse PATCH, o agente roda Opus em todo heartbeat (caro, especialmente para roles rule-heavy onde Sonnet basta). Comportamento provavelmente é uma config global da company que vale checar com Renato.
+
+2. **`desiredSkills` é auto-expandido pelo servidor para todas as skills da company** — observado no hire do vault-steward (FAM-4) e confirmado aqui. Pedi `[paperclip, para-memory-files]`, recebi 5 skills incluindo `paperclip-create-agent`, `paperclip-create-plugin`, `paperclip-dev`. Solução: PATCH pós-approval com `paperclipSkillSync.desiredSkills` enxuto. Skills extras violam least-privilege (CMO não tem motivo para criar agentes ou plugins). Worth investigar a config server-side.
+
+3. **PATCH em `instructionsFilePath/instructionsRootPath/instructionsBundleMode` é proibido para agentes autenticados** (HTTP 403). Só user/board pode mexer em bundle paths. Não enviar esses campos no PATCH.
+
+4. **Endpoint de criação de issue é `POST /api/companies/{companyId}/issues`** — não `POST /api/issues` (404). E o campo de parente é `parentId`, não `parentIssueId`.
+
+5. **Servidor já validou que `runtimeConfig.heartbeat.enabled=true` com `wakeOnDemand=true` e sem `intervalSec`** funciona como wake-on-demand puro (sem timer). Não precisa lutar contra esse default.
+
+**Como aplicar:** quando o CTO/CFO forem aprovados, imediatamente após receber `PAPERCLIP_APPROVAL_ID` no wake: (1) GET no agente, (2) PATCH `adapterConfig` com modelo/effort/skills enxutos, (3) só então abrir as primeiras issues operacionais. Esse passo de "saneamento pós-approval" deve virar parte do checklist de qualquer hire de diretoria daqui pra frente.
+
+**Pendência aberta:** definir cap de `budgetMonthlyCents` do CMO. Sem cap, ele fica preso em diagnóstico. FAM-28 está com Renato.
+
 ## 2026-05-02 — FAM-25 — CMO recomendado com escopo afiado em funil Meta Ads (não branding, não SaaS GTM)
 
 Renato reabriu a discussão sobre CMO em FAM-25 ("o que acha de contratar um CMO?"). Reafirmo a recomendação original de 2026-04-29 (Onda 1: CTO/CMO/CFO) com escopo mais afiado:
