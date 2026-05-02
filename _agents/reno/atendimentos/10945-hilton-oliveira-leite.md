@@ -1,128 +1,87 @@
 ---
 type: entity-profile
 owner: reno
-created: '2026-04-29'
-updated: '2026-05-01'
+entity_type: atendimento
+entity_name: Hilton Oliveira Leite
+client_id: 10945
+broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads
+created: '2026-05-02'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
   - union-vereda
-entity_type: atendimento
-entity_name: Hilton Oliveira Leite
-client_id: 10945
-broker_id: 35
-status_crm: Não Respondeu
-source: FamaChat
 ---
 # Atendimento — Hilton Oliveira Leite
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em status CRM `Não Respondeu`, originado de Facebook Ads, com interesse associado ao empreendimento **Union Vereda/Jaraguá**. Primeiro contato e repescagens steps 1, 2 e 3 foram enviados sem resposta real registrada até o momento. Em 2026-05-01 foi enviada a repescagem step 3 com diagnóstico leve, mudando o ângulo para perfil de uso do imóvel: morar ou investir.
+Cliente do Reno (`broker_id=35`) segue em `Não Respondeu` após primeiro contato e quatro repescagens enviadas. Interesse originado por Facebook Ads no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. Em 2026-05-02 foi enviada a repescagem step 4 com abordagem consultiva direta, usando o ângulo de viabilidade do lançamento/obra e convite para análise que pode evoluir para conversa presencial na Fama na segunda-feira.
 
 ## Dados operacionais
 - Cliente ID: 10945
 - Broker ID: 35
 - Status CRM: Não Respondeu
-- Origem: Facebook Ads / FamaChat
-- Telefone/WhatsApp: telefone brasileiro com DDD 34; CRM possui `whatsapp_jid` salvo sem nono dígito.
-- Última interação relevante: 2026-05-01 17:14:24 -03:00 — repescagem step 3 enviada por WhatsApp e registrada via `mark_reno_followup_sent`.
+- Origem: Facebook Ads / lead automático
+- Telefone/WhatsApp: WhatsApp disponível no CRM, com JID salvo; não expor telefone no vault
+- Empreendimento vinculado no CRM: 161 — Union Vereda
+- Última interação relevante: 2026-05-02 19:14 BRT — Repescagem step 4 enviada via WhatsApp
 
 ## Contexto comercial
-Lead de Facebook Ads com interesse associado ao **Union Vereda**, no bairro Jaraguá, em Uberlândia. O empreendimento é apartamento em construção/planejado, com entrega prevista para dez/2028, lazer e serviços de condomínio, e unidades disponíveis de 2 quartos. Não há resposta real registrada do cliente. Não há informações confirmadas sobre renda, entrada, prazo, financiamento, objeções ou decisores.
+Lead demonstrou interesse no **Union Vereda**, apartamento no Jaraguá/Oeste de Uberlândia, empreendimento da HLTS Construtora com entrega prevista para dez/2028. O empreendimento possui unidades de 2 quartos com suíte/sacada, lazer e estrutura de condomínio; preços consultados no CRM ficam aproximadamente entre R$ 288 mil e R$ 326 mil. Não há resposta real do cliente nem informações confirmadas sobre finalidade, entrada, financiamento, prazo de compra ou composição familiar.
 
 ## Diagnóstico
 ### Necessidade
-Interesse inicial em imóvel/empreendimento específico, ainda sem diagnóstico confirmado.
+Ainda não identificada. Pelo contexto, a necessidade provável é avaliar se o Union Vereda combina com a busca do cliente.
 
 ### Momento
-Momento de compra desconhecido. Como o Union Vereda tem entrega futura, o próximo diagnóstico comercial útil é entender se o interesse é para morar futuramente ou investir.
+Cliente silencioso desde o primeiro contato. A régua de repescagem está ativa para tentar gerar a primeira microresposta.
 
 ### Decisão
-Sem informação sobre decisores, família ou influência de terceiros.
+Não há informação sobre decisores, influência familiar ou critério principal de escolha.
 
 ### Viabilidade
-Sem dados de financiamento, entrada, renda ou forma de pagamento. Não prometer crédito; abordagem deve gerar microresposta antes de falar de valores ou simulação.
+Sem dados de renda, entrada ou financiamento. A abordagem atual evita prometer crédito e tenta abrir conversa sobre viabilidade do caminho até a entrega do empreendimento.
 
 ## Histórico curado de interações
-### 2026-04-24 — Primeiro contato/backlog enviado
-Primeiro contato do Reno mencionou interesse no Union Vereda, na região do Jaraguá, e perguntou se a região combinava com a busca. Status passou/preservou para `Não Respondeu` conforme registro operacional.
+### 2026-04-24 — Primeiro contato operacional
+Reno enviou abertura contextual sobre o interesse no Union Vereda/Jaraguá e atualizou o cliente para `Não Respondeu`.
 
-### 2026-04-29 08:00:54 -03:00 — Repescagem step 1 enviada
-- Fluxo: repescagem
-- Step enviado: 1
-- Intenção: criar novo motivo para responder.
-- Contexto/ângulo: imóvel específico + busca confusa/sem direção; Union Vereda/Jaraguá.
-- Mensagem enviada:
+### 2026-04-29 — Repescagem step 1
+Mensagem contextual sobre entender se o Union Vereda encaixava no momento do cliente antes de olhar opções soltas. Houve reenvio corretivo para o `whatsapp_jid` salvo, pois a variante anterior com nono dígito foi aceita pelo bridge mas não apareceu como conversa efetiva.
 
-```text
-Oi, Hilton! Tudo bem? 🏡
+### 2026-04-30 — Repescagem step 2
+Abordagem de evitar perda de tempo com imóvel que não encaixa em região, parcela ou momento de compra. Convite para uma primeira leitura simples.
 
-Sobre o **Union Vereda**, no Jaraguá, às vezes vale entender primeiro se ele encaixa no seu momento antes de ficar olhando opções soltas.
+### 2026-05-01 — Repescagem step 3
+Diagnóstico leve perguntando se a ideia com o Union Vereda seria mais morar ou investir, considerando perfil de lançamento/entrega futura e estrutura de lazer.
 
-Posso te ajudar a organizar isso de um jeito simples, sem compromisso, para você não perder tempo com imóvel que talvez não faça sentido.
+### 2026-05-02 — Repescagem step 4 enviada
+Mensagem enviada via WhatsApp para o JID salvo no CRM:
 
-Você quer que eu te ajude a ver se esse caminho combina com o que você procura?
-```
+> Hilton, vou ser bem direto contigo. 🔑
+>
+> Como o *Union Vereda* tem entrega prevista para dez/2028, a decisão não é só gostar da planta ou do valor. O ponto é entender se o caminho até lá fica viável: entrada, parcelas durante a obra e financiamento depois.
+>
+> A Fama consegue te ajudar a organizar isso de forma objetiva, sem te empurrar imóvel.
+>
+> Posso fazer essa análise contigo e, se fizer sentido, já deixamos uma conversa presencial na Fama na segunda?
 
-- Registro operacional: envio registrado via tool específica do Reno (`mark_reno_followup_sent`).
-- Próximo `next_run_at` registrado à época: 2026-04-30T08:00:54-03:00.
-
-### 2026-04-29 08:18 -03:00 — Reenvio corretivo por nono dígito
-- Motivo: o envio anterior da repescagem step 1 havia sido aceito pelo bridge na variante com nono dígito, mas não apareceu como conversa efetiva; o CRM indicava `whatsapp_jid` sem o nono dígito.
-- Ação: mensagem de repescagem step 1 reenviada manualmente para o JID salvo no CRM.
-- Resultado: WhatsApp aceitou o envio.
-- CRM: nota corretiva registrada; status preservado como `Não Respondeu`.
-
-### 2026-04-30 09:19:16 -03:00 — Repescagem step 2 enviada
-- Fluxo: repescagem
-- Step enviado: 2
-- Intenção: evitar caminho errado com imóvel/opções que podem não encaixar em região, parcela ou momento de compra.
-- Contexto/ângulo comercial usado: Union Vereda/Jaraguá; imóvel específico + viabilidade/encaixe prático antes de avançar.
-- Mensagem enviada:
-
-```text
-Oi, Hilton! Tudo bem? 🔑
-
-Como você tinha olhado o **Union Vereda**, no Jaraguá, acho importante evitar aquele caminho de ver imóvel que parece bom, mas depois não encaixa em região, parcela ou momento de compra.
-
-Uma conversa rápida já ajuda a filtrar melhor e economizar tempo.
-
-Você quer que eu faça essa primeira leitura contigo, de forma simples?
-```
-
-- Registro operacional: envio registrado no CRM via `mcp_mcp_postgres_mark_reno_followup_sent`.
-- Próximo `next_run_at`: 2026-05-01T14:20:00-03:00.
-
-### 2026-05-01 17:14:24 -03:00 — Repescagem step 3 enviada
-- Fluxo: repescagem
-- Step enviado: 3
-- Intenção: diagnóstico leve com uma pergunta objetiva.
-- Contexto/ângulo comercial usado: Union Vereda/Jaraguá; imóvel específico com entrega futura e possibilidade de compra para morar ou investir.
-- Diferenciação em relação ao step 2: deixou de focar em encaixe/parcela/momento e passou a perguntar o uso principal do imóvel; trocou convite para análise por escolha objetiva; destacou planejamento/entrega futura e perfil do empreendimento.
-- Mensagem enviada:
-
-```text
-Hilton, pensando no **Union Vereda**, tem um ponto que muda bastante a análise: ele tem perfil de apartamento planejado, com entrega mais pra frente e uma estrutura boa de lazer/condomínio. 🏡
-
-Isso pode fazer sentido tanto para quem quer se organizar para morar quanto para quem está olhando como oportunidade.
-
-No seu caso, a ideia seria mais **morar** ou **investir**?
-```
-
-- Registro operacional: envio registrado no CRM via `mcp_mcp_postgres_mark_reno_followup_sent`.
-- Próximo `next_run_at`: 2026-05-02T19:10:00-03:00.
+Ângulo usado: imóvel específico + viabilidade do lançamento/obra + convite consultivo direto em fim de semana, com CTA preferencial para conversa presencial na segunda-feira.
 
 ## Objeções e travas
-- Sem objeção declarada.
-- Trava atual: silêncio após primeiro contato e repescagens steps 1, 2 e 3.
+- Silêncio prolongado após primeiro contato e três repescagens anteriores.
+- Sem objeção explícita; principal trava operacional é ausência de primeira resposta.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se o cliente responder, parar repescagem, mover o atendimento para fluxo normal do Reno e alterar status de `Não Respondeu` para `Em Atendimento` somente se ainda estiver exatamente nesse status. Se permanecer silencioso, próximo step previsto para 2026-05-02T19:10:00-03:00, com intenção de convite consultivo direto.
+Aguardar resposta do cliente. Se responder, interromper repescagem, mover para `Em Atendimento` somente se ainda estiver em `Não Respondeu`, registrar a resposta no CRM e seguir qualificação normal do Reno. Se permanecer em silêncio, próxima repescagem prevista: step 5 em 2026-05-03 09:10 BRT.
 
 ## Observações operacionais
-- Envio de 2026-05-01 feito para o `whatsapp_jid` salvo no CRM, sem expor telefone completo.
-- Status CRM preservado como `Não Respondeu`, conforme regra da repescagem.
+- CRM/FamaChat é a fonte operacional de verdade; status mantido como `Não Respondeu` após step 4.
+- `meta_data.reno_followup.repescagem.step` atualizado para `4` por `mcp_mcp_postgres_mark_reno_followup_sent`.
+- `next_run_at` registrado para `2026-05-03T09:10:00-03:00`.
+- Não houve arquivamento nesta execução porque o step enviado foi 4, não o step final.
