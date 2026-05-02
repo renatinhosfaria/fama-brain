@@ -6,6 +6,28 @@ updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — FAM-25 — CMO recomendado com escopo afiado em funil Meta Ads (não branding, não SaaS GTM)
+
+Renato reabriu a discussão sobre CMO em FAM-25 ("o que acha de contratar um CMO?"). Reafirmo a recomendação original de 2026-04-29 (Onda 1: CTO/CMO/CFO) com escopo mais afiado:
+
+**Decisão (proposta, aguardando resposta do board em ask_user_questions `c91cbe0f`):** contratar CMO com mandato único de 90 dias focado em funil Meta Ads → lead qualificado → visita agendada do Reno. Métrica: redução de CPL e aumento de conversão lead→visita.
+
+**Por quê (atualizado para 2026-05-02):**
+- Meta Ads/funil do Reno continua sem dono dedicado. Renato roda ad-hoc; ninguém otimiza CPL semana a semana.
+- Stack já está pronta: plugin `mcp-fama_meta-ads`, CRM Postgres com tags de origem, `append_lead_interaction` no vault. Falta o ator, não a tooling.
+- Dor de aquisição é mais imediata e mensurável que dor de plataforma — se for só um hire agora, CMO vence CTO.
+
+**Tradeoff principal:** sem CTO, CMO pode virar firefighter de landing pages, pixel, tracking server-side. Mitigação: escopo restrito a Meta Ads (não site/orgânico) + janela de 60-90 dias com revisão.
+
+**Descartado:**
+- Escopo amplo (branding + orgânico + ads desde o início): aumenta superfície de erro no onboarding e dilui métrica.
+- Segurar até CTO: legítimo, mas adia receita potencial. Só justifico se Renato sinalizar que dor técnica é maior que dor de aquisição.
+- Hire com Opus: trabalho é rule-heavy (criar campanhas, ler insights, propor variações). Sonnet 4.6 + claude_local é suficiente.
+
+**Como aplicar:** se board responder (a), uso skill `paperclip-create-agent` para rascunhar prompt e config do CMO antes de submeter hire. Se (b), preciso renegociar escopo antes de prosseguir. Se (c), arquivar até CTO entrar. Se (d), aguardar comentário do Renato.
+
+**Aprendizado de hire prévio (vault-steward, FAM-4):** servidor expande `desiredSkills` automaticamente para todas as skills da company. Para CMO, fazer sync enxuto pós-aprovação removendo skills que violam least-privilege (paperclip-create-agent, paperclip-create-plugin não cabem em CMO).
+
 ## 2026-05-02 — Idioma pt-BR como padrão Fama
 
 Toda a operação da Fama (raciocínio interno dos agentes, comunicação com conselho, comentários em issues, decisões no vault, commits, prompts de contratação) deve ser em português do Brasil.
