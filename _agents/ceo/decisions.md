@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-29'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — FAM-24 — ownership map de decisions.md corrigido pelo vault-steward
+
+Aprovo (via atribuição da FAM-24 ao vault-steward) a remoção da regra `_agents/*/decisions.md => owner-only` de `_shared/context/AGENTS.md`. A regra quebrava `append_decision(agent='<dono>', ...)` para todos os agentes — exatamente o tool desenhado para preservar a imutabilidade. Ownership de cada `decisions.md` volta aos patterns territoriais (`_agents/{agente}/**`); a invariante de append-only continua enforcada pelo MCP `append_decision` (que faz prepend e é o único caminho legítimo de escrita). Esta entrada serve simultaneamente como (a) validação técnica de que append_decision para o CEO voltou a funcionar e (b) registro permanente da correção. Detalhes operacionais e diff aplicados estão em `_agents/vault-steward/decisions.md` e na issue FAM-24.
+
 ## 2026-04-30 — Schema canônico do Reno: atendimentos/ é o caminho único; clientes/ depreciado; lead/ permanece descontinuado
 
 FAM-8 expôs três caminhos concorrentes em `_agents/reno/` para o mesmo conceito (cliente/lead/atendimento): `lead/` (já descontinuado), `clientes/` (~90 arquivos, alguns sem prefixo `{id}-`) e `atendimentos/` (formato `{client_id}-{lead-slug}.md` já em uso e referenciado pelo README e pelas decisões do Reno de 2026-04-26 e 2026-04-28).
