@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads / lead_automatico
 created: '2026-04-29'
-updated: '2026-04-30'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -20,7 +20,7 @@ tags:
 # Atendimento — Vitória Fernandes
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Respondeu**. Lead veio de Facebook Ads/lead automático com interesse associado ao **Place+Arbi**, na região do Shopping Park. Já recebeu primeiro contato e repescagens steps 1, 2 e 3, sem resposta real registrada até o envio do step 3.
+Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Respondeu**. Lead veio de Facebook Ads/lead automático com interesse associado ao **Place+Arbi**, na região do Shopping Park. Já recebeu primeiro contato e repescagens steps 1, 2, 3 e 4, sem resposta real registrada até o envio do step 4.
 
 ## Dados operacionais
 - Cliente ID: 10953
@@ -28,27 +28,27 @@ Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Resp
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: disponível no CRM; envios realizados pelo JID salvo do WhatsApp
-- Última interação relevante: repescagem step 3 enviada em 2026-04-30T17:15:02-03:00
+- Última interação relevante: repescagem step 4 enviada em 2026-05-02T11:08:56-03:00
 
 ## Contexto comercial
 - Interesse identificado no empreendimento **Place+Arbi**, no Shopping Park, em Uberlândia.
 - Empreendimento em lançamento, com entrega prevista para **jun/2027**.
 - Plantas cadastradas no CRM: 48m² com sacada e 50m² com sacada e suíte.
 - Primeira abordagem mencionou o empreendimento e a região.
-- Como não houve resposta, a repescagem avançou de encaixe/viabilidade para diagnóstico leve de objetivo de compra, sem pressionar visita neste momento.
+- Como não houve resposta, a repescagem avançou de encaixe/viabilidade para diagnóstico leve de objetivo de compra e, no step 4, para orientação consultiva sobre o caminho de compra durante a obra.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não declarada pela cliente. O contexto sugere interesse inicial em apartamento/empreendimento específico.
 
 ### Momento
-Cliente silenciosa após primeiro contato e após repescagens steps 1 e 2; etapa atual é gerar a primeira microresposta com uma pergunta simples de objetivo.
+Cliente silenciosa após primeiro contato e repescagens steps 1 a 3. Etapa atual é gerar a primeira microresposta com valor consultivo mais direto, sem pressionar visita.
 
 ### Decisão
 Sem informação curada sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou prazo. Abordagem deve evitar promessa de crédito e focar em entender o objetivo antes de aprofundar viabilidade.
+Sem dados de renda, entrada, financiamento ou prazo. Abordagem deve evitar promessa de crédito e focar em entender se a compra durante a obra faz sentido antes de aprofundar opções.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -117,14 +117,38 @@ Próximo `next_run_at`: 2026-05-01T19:10:00-03:00.
 
 Registro operacional feito via ferramenta específica `mark_reno_followup_sent`; estado `clientes.meta_data.reno_followup.repescagem` atualizado pela ferramenta, sem manipulação manual de `meta_data`.
 
+### 2026-05-02 — Repescagem step 4 enviada
+Fluxo: repescagem.
+
+Intenção do step: convite consultivo direto, reforçando o valor da Fama para transformar intenção em caminho de compra viável.
+
+Comparação com a tentativa anterior: a mensagem mudou o ângulo de “morar ou investir” para organização da compra durante a obra; mudou a pergunta de escolha para permissão de orientação consultiva; mudou o benefício destacado para entender entrada, parcelas até a entrega e financiamento antes de perder tempo com imóvel que não fecha na prática.
+
+Ângulo comercial usado: imóvel específico + financiamento/viabilidade do lançamento durante a obra.
+
+Mensagem enviada em 2026-05-02T11:08:56-03:00:
+```text
+Vitória, bom dia! 🔑
+
+Vou ser bem direto: em lançamento como o Place+Arbi, a decisão não é só escolher planta. O que costuma definir se vale avançar é entender **como a compra fica durante a obra** — entrada, parcelas até a entrega e financiamento lá na frente.
+
+A Fama consegue te orientar nesse caminho antes de você perder tempo olhando imóvel que não fecha na prática.
+
+Quer que eu te ajude a organizar esse caminho do Place+Arbi pra ver se vale seguir?
+```
+
+Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
+
+Registro operacional feito via ferramenta específica `mark_reno_followup_sent`; estado `clientes.meta_data.reno_followup.repescagem` atualizado pela ferramenta, sem manipulação manual de `meta_data`. Cliente permaneceu em `Não Respondeu`, conforme regra dos steps 1 a 4.
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens steps 1 e 2.
+- Silêncio após primeiro contato e repescagens steps 1 a 4.
 - Falta de dados de objetivo, prazo e viabilidade; evitar prometer aprovação ou avançar para visita antes de microresposta.
 
 ## Próximo passo
-Se não houver resposta até o próximo horário elegível, enviar repescagem step 4 com convite consultivo direto, reforçando valor da Fama para organizar compra, financiamento e opções sem pressão. Se a cliente responder, parar repescagem e tratar como atendimento real do Reno.
+Se não houver resposta até o próximo horário elegível, enviar repescagem step 5 como encerramento elegante da régua, deixando porta aberta para retomada futura. Se a cliente responder, parar repescagem e tratar como atendimento real do Reno.
 
 ## Observações operacionais
 - Documento oficial consolidado no caminho determinístico `_agents/reno/atendimentos/10953-vitoria-fernandes.md`.
 - Há registros legados/drift anteriores em `_agents/reno/atendimentos/vitoria-fernandes.md` e `_agents/reno/clientes/10953-vitoria-fernandes.md`; este documento passa a ser o destino oficial por `client_id` conforme governança.
-- Nenhum status CRM foi alterado pela repescagem; cliente permanece em Não Respondeu até resposta real.
+- Nenhum status CRM foi alterado pela repescagem step 4; cliente permanece em Não Respondeu até resposta real ou encerramento automático após step 5.
