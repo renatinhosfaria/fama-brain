@@ -41,13 +41,18 @@ clients:
   - '[[silva-porto]]'
   - '[[pedro]]'
   - '[[guilherme-mendes]]'
+  - '[[eliseu]]'
+  - '[[marcio-oliveira-juliao]]'
+  - '[[elias-fernandes]]'
+  - '[[amanda]]'
+  - '[[carmen-vicente-santos]]'
 related:
   - '[[_agents/reno/profile|profile-agente]]'
   - '[[_hubs/index|Hubs]]'
 ---
 ## Resumo
 
-Reno é o **agente de IA principal de vendas** da Fama Negócios Imobiliários. Atua como broker autônomo (broker_id 35, role Executivo, departamento Vendas) operando WhatsApp e CRM. Conduz primeiro contato, repescagem (steps 1–3), resgate (steps 1–2), apresentação de empreendimentos, agendamento de visitas e qualificação consultiva de viabilidade.
+Reno é o **agente de IA principal de vendas** da Fama Negócios Imobiliários. Atua como broker autônomo (broker_id 35, role Executivo, departamento Vendas) operando WhatsApp e CRM. Conduz primeiro contato, repescagem (steps 1–4), resgate (steps 1–4), apresentação de empreendimentos, agendamento de visitas e qualificação consultiva de viabilidade.
 
 Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfil operacional do agente (instructions, decisões, journal) vive em [[_agents/reno/profile|_agents/reno/profile]].
 
@@ -65,45 +70,50 @@ Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfi
 
 - **Modalidade:** Agente de IA assistido por humanos (Renato)
 - **Canal primário:** WhatsApp (via FamaChat bridge)
-- **Volume sob responsabilidade:** 16 perfis canônicos de cliente (Lotes 1–3) + dezenas de outros leads sem perfil canônico ainda
-- **Origem dos leads:** SLA Cascata, Facebook Ads, leads orgânicos
+- **Volume sob responsabilidade:** 21 perfis canônicos de cliente (Lotes 1–4) + dezenas de outros leads sem perfil canônico
+- **Origem dos leads:** SLA Cascata, Facebook Ads (Garden Sul / Place+Arbi / lead automático), leads orgânicos
 
 ## Padrões de atendimento (observados)
 
 - Diagnóstico consultivo antes de apresentar imóvel (renda, entrada, vínculo, região, finalidade)
-- Régua estruturada: primeiro contato → repescagem 3 steps (~24h cada) → resgate 2 steps por bucket
+- Régua estruturada: primeiro contato → repescagem 4 steps → resgate por bucket (até step 4)
 - Notes de áudio transcritas e contextualizadas no CRM
 - Tom acolhedor, sem prometer aprovação de financiamento
 - Encaminhamento a visita presencial Fama como conversão alvo
+- Buckets observados: viabilidade_financiamento, condicao_valor, midia_opcao_enviada, visita_pendente, financiamento_sumiu, decisao_com_terceiro
 
-## Especialidades observadas
-
-- Empreendimentos HLTS (Union Vista, Union Vereda) — alta cobertura
-- Place+Arbi (Shopping Park) — apresentação para Zona Sul
-- Garden Sul (Jardim Sul) — descoberto via [[davi-maia]]
-- Zurique (Roosevelt) — alternativa apresentada para [[andreia-carvalho]]
-
-## Clientes ativos com perfil canônico
-
-**Em Atendimento (engajados):**
-- [[samuel-kim]], [[jisa-dantas]], [[andreia-carvalho]], [[eduarda]], [[silva-porto]], [[guilherme-mendes]]
+## Clientes ativos com perfil canônico (21)
 
 **Visita confirmada:**
-- [[pedro]] (01/05 18h)
+- [[pedro]] (01/05 18h, [[union-vereda]])
+
+**Em Atendimento — lead muito quente:**
+- [[amanda]] ([[place-arbi]] — "Simplesmente perfeito", precisa marido)
+- [[guilherme-mendes]] ([[union-vereda]] — planta agradou)
+
+**Em Atendimento — investidor:**
+- [[eliseu]] ([[union-vista]] — tese valorização/revenda)
+
+**Em Atendimento — diagnóstico em curso:**
+- [[samuel-kim]], [[jisa-dantas]], [[andreia-carvalho]], [[eduarda]], [[silva-porto]], [[marcio-oliveira-juliao]]
 
 **Agendamento (visita cancelada):**
 - [[augusto-santana]]
 
-**Não Respondeu (em repescagem/encerrados):**
-- [[bruno-savio]], [[esther-osklen]], [[wueverton-lima]], [[edson-tolentino]], [[murilo-damasceno]], [[davi-maia]], [[leticia-melo]], [[ana-clara-marques]]
+**Não Respondeu (em repescagem ativa):**
+- [[bruno-savio]], [[esther-osklen]], [[wueverton-lima]], [[edson-tolentino]], [[murilo-damasceno]], [[davi-maia]], [[leticia-melo]], [[ana-clara-marques]], [[elias-fernandes]], [[carmen-vicente-santos]]
 
 ## Travas operacionais conhecidas
 
-- Falhas históricas no bridge WhatsApp (jidDecode error) — múltiplas auditorias do Renato
+- Falhas históricas no bridge WhatsApp (jidDecode error, 401/408 gateway) — múltiplas auditorias do Renato
 - Duplicidade entre cadastros e corretores → necessidade de override manual
+- Material de marketing faltando: planta baixa Place+Arbi e book completo Union Vereda (relatado em 2026-04-29 e 2026-04-27 respectivamente)
 
 ## Próximas observações esperadas
 
-- Acompanhar conversão pós-visita do [[pedro]] (01/05)
+- Acompanhar conversão pós-visita do [[pedro]] (01/05) — primeira do funil canônico
+- Acompanhar conversão da [[amanda]] (alvo: visita Place+Arbi com marido)
 - Identificar se [[andreia-carvalho]] retorna com lançamento HLTS de 2 vagas
-- Monitorar Union Vereda como concentrador (5 leads canônicos)
+- Resolver enquadramento MCMV do [[marcio-oliveira-juliao]] junto a HLTS
+- Monitorar Union Vereda como concentrador (9 leads canônicos)
+- Investigar anomalia Garden Sul (3 leads, 0 engajados)
