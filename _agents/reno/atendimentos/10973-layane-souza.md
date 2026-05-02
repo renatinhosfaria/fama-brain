@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -22,7 +22,7 @@ tags:
 # Atendimento — Layane Souza
 
 ## Resumo atual
-Layane Souza está no fluxo de repescagem do Reno, vinculada ao `broker_id=35`, com status CRM `Não Respondeu`. O interesse identificado é no empreendimento **Union Vereda**, no bairro **Jaraguá**, em Uberlândia. Já houve primeiro contato e repescagens steps 1 e 2 sem resposta real registrada; em 2026-05-01 foi enviada a repescagem step 3 com pergunta diagnóstica leve sobre objetivo da compra.
+Layane Souza está no fluxo de repescagem do Reno, vinculada ao `broker_id=35`, com status CRM `Não Respondeu`. O interesse identificado é no empreendimento **Union Vereda**, no bairro **Jaraguá**, em Uberlândia. Já houve primeiro contato e repescagens steps 1, 2 e 3 sem resposta real registrada; em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, usando o contexto de faixa até perto de R$300 mil, prazo/produto/condição de compra e CTA preferencial para análise presencial na Fama na segunda-feira.
 
 ## Dados operacionais
 - Cliente ID: 10973
@@ -31,28 +31,30 @@ Layane Souza está no fluxo de repescagem do Reno, vinculada ao `broker_id=35`, 
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo usado para envio
 - Empreendimento vinculado: Union Vereda (`id_empreendimento=161`)
-- Última interação relevante: repescagem step 3 enviada em 2026-05-01 18:28:04 -03:00
+- Última interação relevante: repescagem step 4 enviada em 2026-05-02 20:15:31 -03:00
+- Próximo `next_run_at` operacional: `2026-05-03T09:10:00-03:00`
 
 ## Contexto comercial
 - Empreendimento de interesse: **Union Vereda**.
 - Bairro/região: **Jaraguá**, Uberlândia/MG.
 - Produto: apartamento; CRM indica unidades disponíveis de 2 quartos, suíte, varanda/sacada e 1 vaga, com valores cadastrados a partir de aproximadamente R$ 288 mil.
 - Prazo de entrega do empreendimento no CRM: Dez/2028.
+- Contexto adicional do cliente original da SLA Cascata: lead original indicou que já olhou alguns imóveis, compraria sozinho(a), recebeu vídeo do decorado do Union e houve anotação de preferência por opção até cerca de R$300 mil.
 - Ainda não há resposta real da cliente para confirmar motivação, objetivo de compra, forma de pagamento, prazo de compra ou viabilidade.
-- Ângulo comercial atual: **imóvel específico + diagnóstico leve**, mudando o foco de encaixe/viabilidade para objetivo de compra: morar ou investir.
+- Ângulo comercial atual: **imóvel específico + convite consultivo direto**, mudando o foco de morar/investir para organização do caminho de compra e possível análise presencial na segunda-feira.
 
 ## Diagnóstico
 ### Necessidade
-Interesse inicial em imóvel específico, ainda sem necessidade residencial/investimento confirmada.
+Interesse inicial em imóvel específico, com sinal indireto de busca por opção até perto de R$300 mil; necessidade residencial/investimento ainda não confirmada pela própria cliente neste atendimento do Reno.
 
 ### Momento
-Cliente permanece silenciosa após contatos anteriores; momento de compra ainda não validado. Como o Union Vereda tem entrega prevista para 2028, o prazo pode ser ponto relevante de qualificação.
+Cliente permanece silenciosa após contatos anteriores. Como o Union Vereda tem entrega prevista para Dez/2028, o prazo continua relevante, mas o step 4 buscou avançar para análise consultiva/visita na Fama na segunda-feira, sem pressionar fechamento.
 
 ### Decisão
-Sem informação confirmada sobre decisores ou influência familiar.
+Sem informação confirmada sobre decisores ou influência familiar. Cliente original indicava compra sozinho(a), mas isso ainda não foi reconfirmado no atendimento Reno.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou compra à vista. A abordagem atual evita promessa de crédito e tenta abrir conversa por objetivo de compra antes de avançar em viabilidade.
+Há indício de preferência até perto de R$300 mil e unidades do Union Vereda cadastradas nessa faixa. Não há dados confirmados de renda, entrada, financiamento ou compra à vista. A abordagem evita promessa de crédito e propõe análise objetiva do caminho de compra.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato/backlog enviado
@@ -118,14 +120,39 @@ Como a entrega é para 2028, entender esse objetivo ajuda a filtrar melhor o cam
 Você está olhando mais para **morar** ou para **investir**?
 ```
 
+### 2026-05-02 — Repescagem step 4 enviada
+- Fluxo: `repescagem`
+- Step enviado: 4
+- Intenção do step: convite consultivo direto antes do encerramento da régua.
+- Context angle: imóvel específico / Union Vereda + preferência indireta por faixa até perto de R$300 mil + organização do caminho de compra.
+- Diferenciação frente ao step anterior: mudou o ângulo de finalidade morar/investir para análise consultiva do caminho de compra; mudou a pergunta para convite de visita/análise na segunda-feira; destacou orçamento aproximado, produto, prazo e condição de compra como critérios práticos.
+- Canal: WhatsApp
+- Destino: JID salvo no CRM
+- Registro CRM: realizado via tool específica `mark_reno_followup_sent`.
+- Próximo `next_run_at`: `2026-05-03T09:10:00-03:00`
+- Status CRM: preservado como `Não Respondeu` por ser step 4.
+
+Mensagem enviada:
+
+```text
+Layane, boa noite! 🔑
+
+Pelo histórico, apareceu a ideia de ficar perto dos R$300 mil, e o Union Vereda pode entrar nessa conversa. Mas antes de insistir em imóvel, o mais importante é ver se **produto, prazo de entrega e condição de compra** combinam com você.
+
+A Fama ajuda justamente a organizar esse caminho de compra, para não ficar só em anúncio solto.
+
+Você toparia passar na Fama na segunda para uma análise rápida e entender se vale seguir por esse caminho?
+```
+
 ## Objeções e travas
 - Trava atual: silêncio após contatos anteriores; não há objeção declarada.
 - Lacuna relevante: ausência de confirmação sobre objetivo de compra, região, momento e viabilidade financeira.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se não houver resposta até `2026-05-02T19:10:00-03:00`, seguir a régua para repescagem step 4, mantendo status `Não Respondeu`. Se a cliente responder, parar repescagem e seguir atendimento normal do Reno fora deste fluxo.
+Aguardar resposta da cliente. Se não houver resposta até `2026-05-03T09:10:00-03:00`, seguir a régua para repescagem step 5 com encerramento elegante. Se a cliente responder, parar repescagem e seguir atendimento normal do Reno fora deste fluxo.
 
 ## Observações operacionais
 - Documento oficial criado/consolidado em `_agents/reno/atendimentos/10973-layane-souza.md` conforme governança atual.
 - Existe documento legado em `_agents/reno/clientes/10973-layane-souza.md`; conteúdo útil foi consolidado neste caminho oficial. Não foi removido nesta execução.
 - CRM/FamaChat permanece como fonte operacional de verdade; vault registra apenas contexto curado e rastreabilidade do atendimento.
+- Execução de 2026-05-02: claim exclusivo de repescagem aplicado e limpo após `mark_reno_followup_sent`; status não alterado por se tratar de step 4.
