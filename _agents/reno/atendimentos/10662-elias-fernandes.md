@@ -5,45 +5,46 @@ entity_type: atendimento
 entity_name: Elias Fernandes
 client_id: 10662
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads - Garden Sul
 created: '2026-04-27'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Elias Fernandes
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, com interesse originado em Facebook Ads - Garden Sul / Garden Sul na região do Jardim Sul. Primeiro contato recuperado/enviado em 2026-04-27; repescagens steps 1, 2, 3 e 4 enviadas com sucesso. Segue sem resposta real registrada até esta atualização.
+Cliente do Reno (`broker_id=35`) com interesse originado em Facebook Ads - Garden Sul / Garden Sul na região do Jardim Sul. Primeiro contato recuperado/enviado em 2026-04-27. Repescagens steps 1, 2, 3, 4 e 5 enviadas com sucesso via WhatsApp, sem resposta real registrada. Em 2026-05-02, após envio do step 5, a régua foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra defensiva.
 
 ## Dados operacionais
 - Cliente ID: 10662
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads - Garden Sul
-- Telefone/WhatsApp: WhatsApp cadastrado; envio operacional realizado pelo JID salvo no CRM.
-- Última interação relevante: 2026-05-01 09:13 - repescagem step 4 enviada via WhatsApp.
+- Telefone/WhatsApp: WhatsApp cadastrado; envios operacionais realizados pelo JID salvo no CRM.
+- Última interação relevante: 2026-05-02 14:28 BRT — repescagem step 5 enviada; régua encerrada e cliente arquivado.
 
 ## Contexto comercial
-Interesse seguro no Garden Sul, região do Jardim Sul, empreendimento em lançamento na Zona Sul de Uberlândia, com entrega prevista para set/2028 e opções de apartamentos de 2 quartos. Não há resposta real do cliente registrada após o primeiro contato. A abordagem consultiva deve usar o imóvel/região como gancho, alternando o ângulo para não repetir viabilidade: após diagnóstico de morar vs investir no step 3, o step 4 reforçou ajuda consultiva para transformar interesse em caminho claro, considerando prazo de entrega, perfil do imóvel e forma de compra.
+Interesse seguro no Garden Sul, região do Jardim Sul, empreendimento em lançamento na Zona Sul de Uberlândia, com entrega prevista para set/2028 e opções de apartamentos de 2 quartos. Não houve resposta real do cliente após o primeiro contato nem após as cinco repescagens. As abordagens evoluíram de organização da busca/viabilidade para diagnóstico de objetivo, convite consultivo e encerramento elegante com porta aberta.
 
 ## Diagnóstico
 ### Necessidade
-Cliente demonstrou interesse inicial em empreendimento/região específica, mas ainda não confirmou necessidade concreta.
+Cliente demonstrou interesse inicial em empreendimento/região específica, mas não confirmou necessidade concreta.
 
 ### Momento
-Silencioso após primeiro contato e após repescagens anteriores. Momento de compra ainda não validado.
+Silencioso após primeiro contato e após toda a régua de repescagem. Momento de compra não validado.
 
 ### Decisão
 Sem informações sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou forma de pagamento. Não prometer crédito; abordagem recomendada é seguir com diagnóstico leve caso o cliente responda.
+Sem dados de renda, entrada, financiamento ou forma de pagamento. Não houve base para simulação ou promessa de crédito.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato recuperado
@@ -106,14 +107,30 @@ Mensagem enviada:
 
 Resultado: envio confirmado via WhatsApp pelo JID salvo no CRM. Estado registrado no CRM pela tool específica `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-05-02T14:20:00-03:00. Status preservado como `Não Respondeu`.
 
+### 2026-05-02 — Repescagem step 5 enviada e régua encerrada
+Fluxo: `repescagem`. Step enviado: 5. Ângulo comercial usado: encerramento elegante para lead silencioso com interesse no Garden Sul. Diferenciação em relação ao step 4: saiu do convite de análise consultiva e entrou em pausa respeitosa com porta aberta, reforçando que região, prazo e condição precisam combinar com o momento do cliente.
+
+Mensagem enviada:
+
+> Elias, vou te deixar tranquilo por aqui. 🏡
+>
+> Como o Garden Sul é um lançamento na Zona Sul e a entrega é mais pra frente, faz sentido olhar isso com calma — região, prazo e condição precisam combinar com o seu momento.
+>
+> Não vou ficar insistindo por aqui, mas a porta fica aberta caso você queira retomar depois e entender se esse caminho é **realmente viável** pra você.
+>
+> Posso deixar pausado por enquanto?
+
+Resultado: envio confirmado via WhatsApp pelo JID salvo no CRM. Branch de repescagem encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Cliente arquivado automaticamente no FamaChat por atualização defensiva porque ainda estava em `Não Respondeu`, `broker_id=35` e com estado final da régua confirmado.
+
 ## Objeções e travas
 - Cliente silencioso; nenhuma objeção declarada.
 - Trava operacional anterior em 2026-04-29 por gateway indisponível foi superada com envios confirmados posteriormente.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se não houver resposta até o próximo vencimento da régua, a próxima execução elegível da repescagem poderá enviar o step 5 em 2026-05-02 às 14:20 (America/Sao_Paulo), com encerramento elegante e porta aberta, sem repetir o convite de análise do step 4. Se o cliente responder, interromper a repescagem e conduzir por fluxo de atendimento normal, com mudança de status para `Em Atendimento` quando aplicável.
+Sem nova ação automática de repescagem. Se o cliente responder futuramente, interromper qualquer automação de silêncio, reabrir condução pelo fluxo normal de atendimento do Reno e atualizar o CRM conforme status vigente.
 
 ## Observações operacionais
 - CRM/FamaChat permanece como fonte operacional de verdade.
 - Documento oficial mantido em `_agents/reno/atendimentos/10662-elias-fernandes.md`.
 - Não expor telefone completo em relatórios externos; WhatsApp existe e envio foi feito pelo JID salvo.
+- Em 2026-05-02, `mark_reno_followup_sent` registrou o step 5 mas não encerrou automaticamente a branch (`enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`). A correção do estado foi feita com a tool específica `update_reno_followup_state` antes do arquivamento defensivo.
