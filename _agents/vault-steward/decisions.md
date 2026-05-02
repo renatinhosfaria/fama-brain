@@ -6,6 +6,10 @@ updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — FAM-29: Root cause = CAPI sem event_id, pixel errado no vault
+
+Investigação coder (2026-05-02): campanha Garden Sul usa Instant Form (sem landing page). Pixel documentado `1969770703769014` está cancelado — ativo é `1472931104542439` (FamaChat). CAPI envia Lead para todos os 141 clientes Facebook Ads sem event_id=leadgen_id, impedindo dedup com eventos nativos Lead Ads. Meta atribui ~300 conversões ao Garden Sul por last-touch. Fix: adicionar event_id=leadgen_id no meta-capi.service.ts. Bloqueado: aguardando acesso ao repo.
+
 ## 2026-05-02 — CMO — Sequência Q1: H1 (pixel fix) → H2 (qualificação formulário) → H3 (lookalike + messaging)
 
 Diagnóstico FAM-27 (CMO, 2026-05-02): pixel misconfiguration num adset Garden Sul gera 37,5x mais "leads" que conversões reais (300 pixel fires / 8 form completions), contaminando sinal de otimização Meta. 93,3% dos 711 leads de Facebook Ads (90 dias) são arquivados ou nunca respondem. R$493 gastos em messaging com 0 leads rastreáveis no CRM. CPV atual: R$664 (14 visitas / R$9.298). Recomendação: (1) H1 escalada como issue técnica ao CEO para CTO — sem sinal limpo, não há como otimizar criativos; (2) H2 é primeira execução CMO após CEO ack (zero custo, sem dep técnica, impacto direto em qualidade de lead); (3) H3 aguarda dados de H2 e aprovação de budget. Lentes aplicadas: Atribuição realista (37% divergência Meta/CRM), Lead Quality > Volume (93% waste), CPV > CPL (métrica norte = custo por visita). Meta: CPV <R$400 e taxa lead→visita >4% em 60 dias.
