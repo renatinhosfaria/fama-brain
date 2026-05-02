@@ -37,44 +37,46 @@ ID externo do CRM mora em `external_ids.crm_client_id` ou `external_ids.crm_prop
 
 ## Perfis canônicos ativos
 
-### Pessoas (clientes/leads) — 16
+### Pessoas (clientes/leads) — 21
 
-- [[bruno-savio]] — Não Respondeu, [[union-vista]] / [[grand-ville]]
-- [[augusto-santana]] — Agendamento (visita cancelada), [[union-vista]], crédito Caixa R$230k
-- [[samuel-kim]] — Em Atendimento, trava aluguel até dez/2026, [[place-arbi]] e [[union-vereda]]
-- [[jisa-dantas]] — Em Atendimento, viabilidade_financiamento, [[union-vista]]
-- [[esther-osklen]] — Não Respondeu, [[union-vereda]]
-- [[wueverton-lima]] — Não Respondeu, [[union-vista]]
-- [[edson-tolentino]] — Não Respondeu, [[union-vista]]
-- [[murilo-damasceno]] — Não Respondeu, [[union-vereda]]
-- [[davi-maia]] — Não Respondeu, [[garden-sul]]
-- [[leticia-melo]] — Não Respondeu, [[union-vereda]]
-- [[ana-clara-marques]] — Não Respondeu, [[union-vereda]]
-- [[andreia-carvalho]] — Em Atendimento, **multi-imóvel** (Union Vereda → Zurique → Martinsville), 2 vagas obrigatórias
+**Lote 1–2 (11):**
+- [[bruno-savio]], [[augusto-santana]], [[samuel-kim]], [[jisa-dantas]], [[esther-osklen]], [[wueverton-lima]], [[edson-tolentino]], [[murilo-damasceno]], [[davi-maia]], [[leticia-melo]], [[ana-clara-marques]]
+
+**Lote 3 (5):**
+- [[andreia-carvalho]] — Em Atendimento, multi-imóvel, 2 vagas obrigatórias
 - [[eduarda]] — Em Atendimento, primeiro imóvel, viabilidade apertada, [[union-vereda]]
-- [[silva-porto]] — Em Atendimento, CLT, [[union-vista]] / [[regiao-central]]
+- [[silva-porto]] — Em Atendimento, CLT, [[union-vista]] / região central
 - [[pedro]] — **Visita confirmada 01/05 18h**, [[union-vereda]]
 - [[guilherme-mendes]] — Em Atendimento, lead quente, [[union-vereda]]
 
+**Lote 4 (5):**
+- [[eliseu]] — Em Atendimento, **investidor** (valorização/revenda), [[union-vista]]
+- [[marcio-oliveira-juliao]] — Em Atendimento, **MCMV-dependente**, [[union-vista]]
+- [[elias-fernandes]] — Não Respondeu (telefone Bahia), [[garden-sul]]
+- [[amanda]] — Em Atendimento, **lead muito quente** ("simplesmente perfeito"), [[place-arbi]]
+- [[carmen-vicente-santos]] — Não Respondeu, [[garden-sul]]
+
 ### Pessoas (brokers) — 1
 
-- [[reno]] — broker_id 35, agente IA principal, broker de todos os 16 leads canônicos
+- [[reno]] — broker_id 35, agente IA principal, broker dos 21 leads canônicos
 
 ### Organizações — 1
 
-- [[hlts-construtora]] — construtora de [[union-vista]] e [[union-vereda]] (15 leads canônicos no funil)
+- [[hlts-construtora]] — construtora de [[union-vista]] e [[union-vereda]] (16 leads canônicos no funil)
 
-### Lugares (bairros) — 2
+### Lugares (bairros) — 4
 
-- [[grand-ville]] — Uberlândia/MG, casa do [[union-vista]], 6 leads
+- [[grand-ville]] — Uberlândia/MG, casa do [[union-vista]], 8 leads
 - [[jaragua]] — Uberlândia/MG, Zona Oeste, casa do [[union-vereda]], 9 leads (**bairro de maior cobertura**)
+- [[jardim-sul]] — Uberlândia/MG, Zona Sul, casa do [[garden-sul]], 3 leads (**0% engajamento — anomalia**)
+- [[shopping-park]] — Uberlândia/MG, Zona Sul, casa do [[place-arbi]], 2 leads (alta quentura)
 
 ### Propriedades (empreendimentos) — 4
 
-- [[union-vista]] — [[grand-ville]], Uberlândia, [[hlts-construtora]], lançamento, entrega Jul/2027. **6 leads.**
-- [[union-vereda]] — [[jaragua]], Uberlândia, [[hlts-construtora]], lançamento, entrega Dez/2028. **9 leads.** (alta cobertura)
-- [[place-arbi]] — Shopping Park, Uberlândia, lançamento, entrega Jun/2027. 1 lead.
-- [[garden-sul]] — Jardim Sul, Uberlândia, lançamento, entrega Set/2028, R$294.9k–367.9k. 1 lead.
+- [[union-vista]] — [[grand-ville]], Uberlândia, [[hlts-construtora]], lançamento, entrega Jul/2027. **8 leads** (era 6).
+- [[union-vereda]] — [[jaragua]], Uberlândia, [[hlts-construtora]], lançamento, entrega Dez/2028. **9 leads** (alta cobertura).
+- [[place-arbi]] — [[shopping-park]], Uberlândia, lançamento, entrega Jun/2027. **2 leads** (alta quentura).
+- [[garden-sul]] — [[jardim-sul]], Uberlândia, lançamento, entrega Set/2028, R$294.9k–367.9k. **3 leads** (0% engajamento).
 
 ### Projetos
 
@@ -82,22 +84,28 @@ _(ainda nenhum em `_entities/`; projetos vivem em `_projects/`)_
 
 ## Estatísticas
 
-- **Total de perfis canônicos:** 24 (16 pessoas-cliente + 1 broker + 1 org + 2 lugares + 4 propriedades).
-- **Leads canônicos do Reno:** 16 (eram 11 pré-Lote 3).
-- **Backlinks novos no grafo (Lote 3):** ~32 (5 perfis cliente × ~3 links + reno×16 + hlts×2 + jaragua×9 + grand-ville×6 + atualizações union-*).
-- **Cobertura de imóveis:** Union Vereda 9 leads, Union Vista 6 leads, Place+Arbi 1 lead, Garden Sul 1 lead.
-- **Cobertura de bairros:** Jaraguá 9, Grand Ville 6.
+- **Total de perfis canônicos:** 31 (21 pessoas-cliente + 1 broker + 1 org + 4 lugares + 4 propriedades).
+- **Leads canônicos do Reno:** 21 (eram 16 pré-Lote 4).
+- **Backlinks novos no grafo (Lote 4):** ~25 (5 perfis cliente × ~3 links cada + jardim-sul×3 + shopping-park×2 + atualizações imóveis/reno).
+- **Cobertura por imóvel:** Union Vereda 9, Union Vista 8, Garden Sul 3, Place+Arbi 2.
+- **Cobertura por bairro:** Jaraguá 9, Grand Ville 8, Jardim Sul 3, Shopping Park 2.
 
-## Insights emergentes (Lote 3)
+## Insights emergentes (consolidado Lotes 3–4)
 
-- **HLTS Construtora concentra 15 dos 16 leads canônicos** — parceria mais relevante do funil. Vale relacionamento comercial dedicado.
-- **Jaraguá é o bairro mais quente** — 9 leads, incluindo a única visita confirmada do funil ([[pedro]]) e o lead mais quente sem visita ([[guilherme-mendes]]).
-- **Andreia Carvalho** evidencia que **1 vaga limita Union Vereda** — clientes com 2 carros descartam. Sugestão: validar com HLTS lançamento futuro com 2 vagas.
-- **Silva Porto** entrou via Union Vista (Grand Ville) mas prefere região central — recalibrar discurso de campanha.
-- **Pedro (01/05)** é a primeira conversão em vista do funil canônico — pós-visita merece atualização imediata do perfil.
+- **HLTS Construtora concentra 16/21 leads canônicos** — parceria mais relevante. Vale relacionamento dedicado.
+- **Funil tem 3 conversões em vista próximas:**
+  1. [[pedro]] — visita confirmada 01/05 18h (Union Vereda)
+  2. [[amanda]] — alvo de visita iminente (Place+Arbi, "simplesmente perfeito", precisa marido)
+  3. [[guilherme-mendes]] — convidado para Fama (Union Vereda, planta agradou)
+- **Jaraguá é o bairro mais quente** — 9 leads, 1 visita confirmada e múltiplos engajados.
+- **Anomalia Garden Sul/Jardim Sul:** 3 leads, **0 em atendimento**. Vale revisar campanha Meta Ads.
+- **Bloqueio operacional pendente:** plantas baixas faltando no MinIO (Place+Arbi e Union Vereda completo). Resolução destrava Amanda + qualquer próximo lead Union Vereda.
+- **Validações com HLTS pendentes:** enquadramento MCMV (gatilho [[marcio-oliveira-juliao]]) e plano investidor 10% entrada (gatilho [[eliseu]]).
+- **Place+Arbi** tem cobertura pequena (2 leads) mas qualidade altíssima — replicar discurso/criativo se possível.
+- **Trava recorrente Union Vereda:** 1 vaga (Andreia descartou; Guilherme aceita).
 
-## Próximas entidades a criar (Lote 4)
+## Próximas entidades a criar (Lote 5)
 
-- 5+ clientes com atividade média (Eliseu, Márcio, Elias Fernandes, Amanda, Carmen, Sibely)
+- 4–5 clientes adicionais com atividade média (Levi Santos, Larissa Martins, João Pedro, Santiago, Sibely)
 - Bairros adicionais citados: [[martins]], [[jardim-patricia]], [[roosevelt]], [[zona-leste]], [[regiao-central]]
-- Empreendimentos citados mas sem perfil: [[zurique]] (Roosevelt), Martinsville
+- Empreendimentos concorrentes citados sem perfil: [[zurique]] (Roosevelt), Martinsville, Biti
