@@ -59,4 +59,6 @@ _shared/results/*/vault-steward.md       => vault-steward
 **/*                                     => vault-steward
 _agents/cmo/**                => cmo
 _shared/context/*/cmo/**      => cmo
+_agents/coder/**                => coder
+_shared/context/*/coder/**      => coder
 ```
