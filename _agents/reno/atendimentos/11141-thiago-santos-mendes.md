@@ -1,12 +1,8 @@
 ---
-broker_id: 35
-client_id: 11141
-created: '2026-05-02'
-entity_name: Thiago Santos Mendes
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
-status_crm: Em Atendimento
+created: '2026-05-02'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -14,8 +10,12 @@ tags:
   - famachat
   - em-atendimento
   - diagnostico
-type: entity-profile
-updated: '2026-05-02'
+entity_type: atendimento
+entity_name: Thiago Santos Mendes
+broker_id: 35
+client_id: 11141
+source: Facebook Ads
+status_crm: Em Atendimento
 ---
 # Atendimento — Thiago Santos Mendes
 
@@ -69,6 +69,10 @@ Cliente informou que procura imóvel “Para morar”.
 
 Interpretação comercial: finalidade de moradia própria. Próxima pergunta deve identificar o principal critério de decisão: localização, valor, tamanho/planta ou facilidade no financiamento.
 
+Persistência operacional silenciosa: status preservado em Em Atendimento; atualização condicional Não Respondeu -> Em Atendimento não se aplicou porque o cliente já estava em atendimento. Repescagem já estava interrompida com `stopped_reason=client_replied` e `next_run_at=null`; Resgate sem ciclo ativo. Nenhuma mensagem foi enviada ao cliente nesta rotina.
+
+Referência operacional: inbound WhatsApp 3AC13BA73C11A9B2362C / sessão 20260502_222636_29bdf48d.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
@@ -79,3 +83,4 @@ Responder de forma curta, validando que para morar faz sentido olhar com calma, 
 - Nome do cliente parece confiável e foi usado na saudação.
 - WhatsApp enviado para o JID priorizado no payload/CRM.
 - Repescagem foi desativada após resposta real do cliente para evitar novo follow-up automático.
+- Rotina operacional silenciosa de inbound executou apenas persistência; não houve envio ao cliente.
