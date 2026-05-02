@@ -79,6 +79,8 @@ Interpretação comercial: deve-se apresentar o Union Vista como uma opção que
 ### 2026-05-02 — Sinal positivo e convite para visita
 Após apresentação breve do Union Vista, cliente respondeu “Bom”. Reno tratou como sinal positivo e realizou convite claro para visita presencial na Fama, com CTA para segunda-feira no horário do almoço ou no fim do dia.
 
+Persistência operacional silenciosa: inbound processado sem envio ao cliente; status preservado em Em Atendimento; repescagem já estava interrompida com `stopped_reason=client_replied` e `next_run_at=null`; resgate sem ciclo ativo. Nota CRM registrada: 16402. Ref. inbound: 3A85C99CB709809DB955 / sessão 20260502_222636_29bdf48d.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 - Ponto sensível: financiamento/encaixe financeiro.
@@ -90,4 +92,6 @@ Aguardar resposta do cliente sobre disponibilidade na segunda-feira. Se aceitar 
 - Nome do cliente parece confiável e foi usado na saudação.
 - WhatsApp enviado para o JID priorizado no payload/CRM.
 - Repescagem foi desativada após resposta real do cliente para evitar novo follow-up automático.
+- Resgate não tinha ciclo ativo no momento do inbound “Bom”.
+- Rotina silenciosa não enviou mensagem ao cliente.
 - Convite para visita registrado como evento comercial relevante/KPI.
