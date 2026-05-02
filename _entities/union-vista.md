@@ -31,6 +31,7 @@ interested_clients:
   - '[[eliseu]]'
   - '[[marcio-oliveira-juliao]]'
   - '[[santiago-derson]]'
+  - '[[andre-luiz-duca]]'
 neighborhood: '[[grand-ville]]'
 city: Uberlândia/MG
 delivery_date: 2027-07
@@ -56,26 +57,27 @@ Union Vista é empreendimento residencial em **lançamento** da [[hlts-construto
 
 ## Clientes interessados (backlinks)
 
-9 perfis canônicos com interesse confirmado:
+10 perfis canônicos com interesse confirmado:
 
-- [[bruno-savio]] — Não Respondeu, primeiro contato 2026-04-27
+- [[bruno-savio]] — Não Respondeu
 - [[jisa-dantas]] — Em Atendimento, viabilidade_financiamento
-- [[wueverton-lima]] — Não Respondeu, repescagem step 3
-- [[augusto-santana]] — Agendamento (visita 27/04 cancelada, aguardando remarcação)
-- [[edson-tolentino]] — Não Respondeu, repescagem
-- [[silva-porto]] — Em Atendimento, prefere região central — divergência
-- [[eliseu]] — Em Atendimento, **investidor** (valorização/revenda), resgate step 4
-- [[marcio-oliveira-juliao]] — Em Atendimento, dependência MCMV/Caixa, entrada R$5k
-- [[santiago-derson]] — Não Respondeu, repescagem step 3
+- [[wueverton-lima]] — Não Respondeu, repescagem step 3 (3 cadastros CRM duplicados)
+- [[augusto-santana]] — Visita (cancelada, aguardando remarcação) — 4 cadastros CRM duplicados
+- [[edson-tolentino]] — Não Respondeu
+- [[silva-porto]] — Em Atendimento, prefere [[regiao-central]] — divergência
+- [[eliseu]] — Em Atendimento, **investidor**
+- [[marcio-oliveira-juliao]] — Em Atendimento, dependência MCMV/Caixa
+- [[santiago-derson]] — Não Respondeu
+- [[andre-luiz-duca]] — Não Respondeu
 
 ## Observações comerciais
 
 - **Empreendimento mais diversificado em perfis de cliente:**
   - Investidor (Eliseu) — tese valorização
   - MCMV-dependente (Márcio) — bloqueio se não enquadrar
-  - Crédito Caixa R$230k (Augusto Santana)
+  - Crédito Caixa R$230k (Augusto) — perto de fechar mas viajando
   - Sem entrada CLT (Silva Porto)
-  - Maioria silenciosa Facebook Ads (Bruno, Wueverton, Edson, Santiago) — **padrão de baixa resposta** semelhante ao Garden Sul; vale revisar criativo
+  - **Maioria silenciosa** (Bruno, Wueverton, Edson, Santiago, Andre — 5 de 10!) → padrão "lead silente Facebook Ads" preocupante
 - **Validar com HLTS:** está enquadrado MCMV? Resposta destrava Márcio.
 - **Plano investidor:** validar se há condição 10% entrada/parcela baixa que justifique discurso ao Eliseu.
 
@@ -84,4 +86,4 @@ Union Vista é empreendimento residencial em **lançamento** da [[hlts-construto
 - Quando outros leads mencionarem Union Vista, adicionar aqui em `interested_clients`.
 - Verificar enquadramento MCMV (gatilho Márcio).
 - Confirmar plano investidor (gatilho Eliseu).
-- Revisar criativo Facebook Ads — alta proporção "Não Respondeu" sugere mismatch.
+- **Revisar criativo Facebook Ads — 50% dos leads são silentes**, sugere mismatch.
