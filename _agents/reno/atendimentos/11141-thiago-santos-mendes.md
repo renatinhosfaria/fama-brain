@@ -1,26 +1,26 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Thiago Santos Mendes
-client_id: 11141
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11141
 created: '2026-05-02'
-updated: '2026-05-02'
+entity_name: Thiago Santos Mendes
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
-  - primeiro-contato
   - em-atendimento
+  - diagnostico
+type: entity-profile
+updated: '2026-05-02'
 ---
 # Atendimento — Thiago Santos Mendes
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno em 2026-05-02 com “Boa tarde. Sim.”, confirmando que a região do Union Vista, no Grand Ville, faz sentido. CRM está em Em Atendimento e a repescagem foi interrompida por resposta do cliente. Próximo passo comercial: diagnóstico leve, começando por finalidade da compra.
+Cliente respondeu ao primeiro contato do Reno em 2026-05-02, confirmou que a região do Union Vista, no Grand Ville, faz sentido e informou que busca imóvel para morar. CRM está em Em Atendimento e a repescagem foi interrompida por resposta do cliente. Próximo passo: entender a prioridade principal do imóvel antes de apresentar o Union Vista com mais força.
 
 ## Dados operacionais
 - Cliente ID: 11141
@@ -29,15 +29,14 @@ Cliente respondeu ao primeiro contato do Reno em 2026-05-02 com “Boa tarde. Si
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: disponível no CRM
 - Empreendimento de interesse: Union Vista, Grand Ville, Uberlândia
-- Última interação comercial relevante: cliente respondeu “Boa tarde. Sim.” ao gancho sobre procurar imóvel na região
-- Última rotina operacional: inbound WhatsApp processado silenciosamente em 2026-05-02; sem envio ao cliente
+- Última interação relevante: cliente informou que procura imóvel para morar
 
 ## Contexto comercial
-O cliente entrou pelo Facebook Ads com interesse vinculado ao empreendimento Union Vista, localizado no bairro Grand Ville. A abertura foi contextualizada com o empreendimento e bairro. A resposta “Sim” indica que a região/perfil inicial faz sentido e permite avançar para qualificação leve antes de apresentar o empreendimento com mais força.
+O cliente entrou pelo Facebook Ads com interesse vinculado ao empreendimento Union Vista, localizado no bairro Grand Ville. A abertura foi contextualizada com o empreendimento e bairro. A resposta “Sim” confirmou que a região/perfil inicial faz sentido. Em seguida, Thiago informou que procura imóvel para morar, indicando finalidade de moradia própria.
 
 ## Diagnóstico
 ### Necessidade
-Ainda em aberto. Próxima pergunta deve identificar se busca para morar, investir ou conhecer opções.
+Procura imóvel para morar.
 
 ### Momento
 Ainda não diagnosticado.
@@ -61,25 +60,22 @@ Referência operacional: evt_3309 / 3309_1777752882015.
 ### 2026-05-02 — Primeira resposta inbound
 Cliente respondeu: “Boa tarde. Sim.”
 
-Interpretação comercial: confirmou abertura e indicou que a região do Grand Ville/Union Vista faz sentido. Atendimento deve seguir com pergunta curta de qualificação leve sobre finalidade da compra.
+Interpretação comercial: confirmou abertura e indicou que a região do Grand Ville/Union Vista faz sentido. Atendimento seguiu com pergunta curta de qualificação leve sobre finalidade da compra.
 
 Persistência operacional: CRM movido de Não Respondeu para Em Atendimento; repescagem interrompida com `stopped_reason=client_replied` e `next_run_at=null`.
 
-### 2026-05-02 — Inbound operacional processado silenciosamente
-Rotina silenciosa acionada por inbound do WhatsApp. O conteúdo recebido neste acionamento aparentava ser texto operacional/sistêmico auto-carregado e não trouxe nova intenção comercial útil do cliente.
+### 2026-05-02 — Finalidade da compra
+Cliente informou que procura imóvel “Para morar”.
 
-Persistência operacional: cliente validado como broker_id=35; status preservado em Em Atendimento; atualização condicional Não Respondeu → Em Atendimento não foi necessária; repescagem já estava interrompida com `stopped_reason=client_replied`; Resgate não tinha ciclo ativo. Nenhuma mensagem foi enviada ao cliente.
-
-Referência operacional: inbound 3A91E7A64D85BFC85AA7 / sessão 20260502_222636_29bdf48d.
+Interpretação comercial: finalidade de moradia própria. Próxima pergunta deve identificar o principal critério de decisão: localização, valor, tamanho/planta ou facilidade no financiamento.
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Responder de forma curta e natural, conectando com o Union Vista/Grand Ville e perguntando se o cliente procura para morar ou investir.
+Responder de forma curta, validando que para morar faz sentido olhar com calma, e perguntar qual critério pesa mais para o imóvel ideal.
 
 ## Observações operacionais
 - Nome do cliente parece confiável e foi usado na saudação.
 - WhatsApp enviado para o JID priorizado no payload/CRM.
 - Repescagem foi desativada após resposta real do cliente para evitar novo follow-up automático.
-- A rotina silenciosa de inbound deste acionamento não enviou mensagem ao cliente e registrou apenas persistência operacional no CRM/vault.
