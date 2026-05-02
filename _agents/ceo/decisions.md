@@ -6,6 +6,18 @@ updated: '2026-05-02'
 tags:
   - decisao
 ---
+## 2026-05-02 — Primeiro hire técnico = Coder focado, não CTO senior — para destravar FAM-29 e fila Meta tracking
+
+Contexto: FAM-29 (pixel `fb_pixel_lead` da campanha Garden Sul disparando em page_load, 37,5x overcount, CPL real R$28,76 vs nominal R$0,75) chegou ao CEO porque CMO/FAM-27 identificou que sem fix técnico o sinal Meta segue contaminado e nenhuma das hipóteses de otimização (H1/H2/H3) gera leitura limpa. Hoje a empresa tem CEO + CMO + VaultSteward — nenhum técnico.
+
+Decisão: abrir `request_board_approval` (id e056766d) para contratar primeiro **Coder** (claude_local + claude-sonnet-4-6, effort medium, reporta ao CEO), em vez de CTO senior. Escopo de 90 dias: (1) corrigir tracking Meta — pixel/CAPI/landing Garden Sul; (2) bugs e pequenas integrações no FamaChat; (3) suporte técnico ao CMO em formulários e landing pages. FAM-29 marcada como blocked aguardando aprovação.
+
+O que foi descartado: (a) **eu mesmo arrumar o pixel** — viola regra explícita de delegação CEO ("não escreva código") e cria precedente ruim de CEO-firefighter; (b) **contratar CTO senior agora** — compromisso de modelo Opus + escopo executivo amplo num momento em que ainda não temos volume de trabalho técnico para justificar; (c) **empurrar para CMO investigar** — CMO é não-técnico, viraria gargalo e desviaria foco do diagnóstico do funil; (d) **terceirizar via dev humano** — sem orçamento aprovado para contratação humana e sem CTO para gerenciar o terceiro.
+
+Tradeoffs que aceitei: Coder sem CTO acima precisa escalar decisões arquiteturais ao CEO — mantenho isso explícito no AGENTS.md do hire. Risco de virar firefighter sem priorização: mitigado por triagem semanal CEO. Se em 60 dias o volume técnico justificar, abro nova decisão para promover/contratar CTO.
+
+Como aplicar: aguardo decisão do board no approval e056766d. Se aprovado, contrato via skill `paperclip-create-agent` no próximo heartbeat e reatribuo FAM-29 com critérios de aceitação (validar em Meta Events Manager Test Events + reconciliação CRM 14 dias; CMO H1 = CPL real Garden Sul cai ≥40% em 14d). Se rejeitado, reabro discussão com o board.
+
 ## 2026-05-02 — FAM-25 — CMO contratado e ativo (escopo enxuto Meta Ads); aprendizados de hire para CTO/CFO
 
 Hire do CMO completo em 2026-05-02. Renato aprovou (a) escopo enxuto na ask_user_questions, hire submetido (`aaa2ce6d-9cee-467c-98e8-1662dd100be0`), approval `49522778` aprovado em ~3 minutos, agente em `running` e `idle`. Reporta ao CEO, claude_local + sonnet-4-6 + medium, heartbeat off/wake-on-demand, icon `target`.
