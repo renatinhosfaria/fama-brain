@@ -25,59 +25,53 @@ author_agent: VaultSteward
 
 ## Naming
 
-Filename = slug do nome canônico em kebab-case. Ex.: `bruno-savio.md`, `union-vista.md`, `construtora-xyz.md`.
+Filename = slug do nome canônico em kebab-case.
 
-ID externo do CRM **não é parte do filename canônico** — mora em `external_ids.crm_client_id` ou `external_ids.crm_property_id`.
+ID externo do CRM mora em `external_ids.crm_client_id` ou `external_ids.crm_property_id`.
 
 ## Indexação
 
 - Vetoriza: sim. Grafo: sim.
 - Notas com `status: archived` (cliente perdido sem atividade > 12 meses) não vetorizam mas mantêm grafo.
 
-## Dedup
-
-Quando encontrar duplicatas:
-
-1. Consolidar conteúdo único de ambas (non-destructive merge).
-2. Adicionar aliases.
-3. Atualizar wikilinks que apontavam para a redundante.
-4. Apagar a redundante.
-
-VaultSteward executa dedup quando a decisão sobre qual conteúdo manter é estrutural. Quando há ambiguidade de conteúdo, escala ao dono.
-
 ## Perfis canônicos ativos
 
-### Pessoas (clientes/leads)
+### Pessoas (clientes/leads) — 11
 
-- [[bruno-savio]] — lead Não Respondeu, interesse em [[union-vista]] e [[grand-ville]] (piloto FAM-16, 2026-05-01)
-- [[augusto-santana]] — Agendamento (visita cancelada, aguardando remarcação), interesse em [[union-vista]], crédito Caixa R$230k
-- [[samuel-kim]] — Em Atendimento, trava aluguel até dez/2026, interesse em [[place-arbi]] e [[union-vereda]]
-- [[jisa-dantas]] — Em Atendimento, bucket viabilidade_financiamento, interesse em [[union-vista]]
-- [[esther-osklen]] — Não Respondeu, interesse em [[union-vereda]]
-- [[wueverton-lima]] — Não Respondeu, interesse em [[union-vista]]
+- [[bruno-savio]] — Não Respondeu, [[union-vista]] / [[grand-ville]]
+- [[augusto-santana]] — Agendamento (visita cancelada), [[union-vista]], crédito Caixa R$230k
+- [[samuel-kim]] — Em Atendimento, trava aluguel até dez/2026, [[place-arbi]] e [[union-vereda]]
+- [[jisa-dantas]] — Em Atendimento, viabilidade_financiamento, [[union-vista]]
+- [[esther-osklen]] — Não Respondeu, [[union-vereda]]
+- [[wueverton-lima]] — Não Respondeu, [[union-vista]]
+- [[edson-tolentino]] — Não Respondeu, [[union-vista]]
+- [[murilo-damasceno]] — Não Respondeu, [[union-vereda]]
+- [[davi-maia]] — Não Respondeu, [[garden-sul]]
+- [[leticia-melo]] — Não Respondeu, [[union-vereda]]
+- [[ana-clara-marques]] — Não Respondeu, [[union-vereda]]
 
 ### Pessoas (brokers)
 
-- [[reno]] — broker_id 35, broker principal dos leads listados (perfil canônico ainda a criar)
+- [[reno]] — broker_id 35, broker principal de todos os leads listados (perfil canônico ainda a criar)
 
 ### Organizações
 
-_(ainda nenhum)_
+- HLTS Construtora — construtora de [[union-vista]] e [[union-vereda]] (perfil canônico ainda a criar)
 
-### Propriedades (empreendimentos)
+### Propriedades (empreendimentos) — 4
 
-- [[union-vista]] — Grand Ville, Uberlândia, lançamento, entrega Jul/2027. Interesse: 4 clientes.
-- [[union-vereda]] — Jaraguá, Uberlândia, lançamento, entrega Dez/2028. Interesse: 2 clientes.
-- [[place-arbi]] — Shopping Park, Uberlândia, entrega Jun/2027. Interesse: 1 cliente. (perfil canônico ainda a criar)
+- [[union-vista]] — Grand Ville, Uberlândia, lançamento, entrega Jul/2027. **4 leads interessados.**
+- [[union-vereda]] — Jaraguá, Uberlândia, HLTS, lançamento, entrega Dez/2028. **5 leads interessados.** (alta cobertura)
+- [[place-arbi]] — Shopping Park, Uberlândia, lançamento, entrega Jun/2027. 1 lead.
+- [[garden-sul]] — Jardim Sul, Uberlândia, lançamento, entrega Set/2028, R$294.9k–367.9k. 1 lead.
 
 ### Projetos
 
-_(ainda nenhum)_
+_(ainda nenhum em `_entities/`; projetos vivem em `_projects/`)_
 
 ## Estatísticas
 
-- **Total de perfis canônicos:** 8 (6 pessoas + 2 propriedades)
-- **Backlinks gerados pra atendimentos do Reno:** ~6 (cada perfil de pessoa aponta pro atendimento dele)
-- **Cobertura de cobertura de imóveis:** Union Vista 4 leads / Union Vereda 2 leads / Place+Arbi 1 lead
-
-Próximo lote: criar mais 5–10 perfis pros próximos clientes recorrentes do Reno e perfis pendentes (`reno`, `place-arbi`, bairros `grand-ville`/`jaragua`).
+- **Total de perfis canônicos:** 15 (11 pessoas + 4 propriedades).
+- **Backlinks novos no grafo:** ~22 (cada perfil de pessoa → atendimento original; propriedades → 4+5+1+1 perfis de cliente).
+- **Cobertura de imóveis:** Union Vereda 5 leads, Union Vista 4 leads, Place+Arbi 1 lead, Garden Sul 1 lead.
+- **Próximas entidades a criar:** broker [[reno]], HLTS Construtora, bairros [[grand-ville]] e [[jaragua]], +5 clientes do próximo lote.
