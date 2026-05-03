@@ -5,45 +5,46 @@ entity_type: atendimento
 entity_name: Erlania Silva
 client_id: 10989
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Erlania Silva
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, originada de SLA Cascata, com interesse contextual no Union Vereda / região do Jaraguá. Primeiro contato e repescagens 1, 2, 3 e 4 foram enviadas via WhatsApp pelo JID salvo; até esta atualização, sem resposta real da cliente.
+Cliente do Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O interesse contextual era no Union Vereda / região do Jaraguá. O step 5 foi enviado via WhatsApp pelo JID salvo, com encerramento elegante, pausa respeitosa e porta aberta para retomada futura.
 
 ## Dados operacionais
 - Cliente ID: 10989
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp disponível no CRM; envios realizados pelo JID salvo.
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02 21:21 -03:00.
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03 14:04 -03:00; régua encerrada e cliente arquivada automaticamente.
 
 ## Contexto comercial
-Interesse identificado no Union Vereda, na região do Jaraguá. O empreendimento tem entrega prevista para dez/2028 e unidades disponíveis de 2 quartos com suíte/varanda, na faixa aproximada de R$ 288 mil a R$ 295 mil para as unidades publicadas. O cliente original informa que começou a procurar agora e compraria sozinho(a). Ainda não há diagnóstico confirmado pela cliente sobre financiamento, prazo, objetivo de compra ou preferência real de região.
+Interesse identificado no Union Vereda, na região do Jaraguá. O empreendimento tem entrega prevista para dez/2028 e unidades disponíveis de 2 quartos com suíte/varanda, na faixa aproximada de R$ 288 mil a R$ 295 mil para as unidades publicadas. O cliente original informa que começou a procurar agora e compraria sozinho(a). Não houve diagnóstico confirmado pela cliente sobre financiamento, prazo, objetivo de compra ou preferência real de região.
 
 ## Diagnóstico
 ### Necessidade
-Possível busca por imóvel relacionada ao Union Vereda/Jaraguá, ainda sem necessidade declarada pela cliente.
+Possível busca por imóvel relacionada ao Union Vereda/Jaraguá, sem necessidade declarada pela cliente.
 
 ### Momento
-Cliente permanece silenciosa após primeiro contato e repescagens. Como o empreendimento tem entrega futura e a cliente não respondeu aos ângulos de região, financiamento e prazo, o step 4 mudou para convite consultivo direto, com proposta de orientação/possível conversa presencial na segunda-feira.
+Cliente permaneceu silenciosa após primeiro contato e as cinco repescagens. Como o step 4 já havia usado convite consultivo direto e possível orientação/visita na segunda-feira, o step 5 parou de insistir em agenda e mudou para encerramento com pausa/porta aberta.
 
 ### Decisão
-Sem informação confirmada sobre decisores. Dado do cliente original indica compra sozinho(a), mas ainda não confirmado pela cliente nesta conversa com o Reno.
+Sem informação confirmada sobre decisores. Dado do cliente original indica compra sozinho(a), mas isso não foi confirmado pela cliente nesta conversa com o Reno.
 
 ### Viabilidade
-Sem dados confirmados. A repescagem step 2 abriu caminho para financiamento/à vista; a step 3 trabalhou prazo/momento de uso; a step 4 propôs organizar imóvel, região, prazo e forma de compra de modo objetivo, sem prometer crédito.
+Sem dados confirmados. As repescagens anteriores exploraram, sem resposta, região, financiamento/forma de compra, prazo do lançamento e convite consultivo. Nenhuma promessa de crédito foi feita.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato de recuperação enviado
@@ -96,17 +97,34 @@ Mensagem enviada:
 >
 > Posso separar um horário na segunda pra te orientar e ver se o Union Vereda ainda faz sentido pra você?
 
-Envio registrado no CRM pela tool específica do Reno. Próxima repescagem prevista para 2026-05-03 09:10 -03:00 se a cliente continuar sem responder.
+Envio registrado no CRM pela tool específica do Reno. Próxima repescagem prevista para 2026-05-03 09:10 -03:00 se a cliente continuasse sem responder.
+
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem.  
+Step enviado: 5.  
+Contexto/ângulo comercial usado: encerramento elegante após silêncio prolongado. Como o step 4 já havia usado convite consultivo/possível visita, o step 5 não repetiu agenda; reconheceu que a cliente poderia estar apenas pesquisando e deixou porta aberta para comparar o Union Vereda com outras possibilidades por prazo, região e condição.
+
+Mensagem enviada:
+> Erlania, vou te deixar tranquila por aqui. 🏡
+>
+> Como o Union Vereda tem entrega mais pra frente, pode ser que você esteja só comparando com calma prazo, região e condição de compra. E tudo bem — nessa fase, o importante é não seguir por um caminho que depois não encaixa no seu momento.
+>
+> Vou pausar meus contatos por agora, mas deixo a porta aberta pra te ajudar a comparar o Union Vereda com outras possibilidades quando fizer sentido.
+>
+> Posso deixar assim por enquanto?
+
+Envio registrado no CRM pela tool específica do Reno. A tool de marcação registrou `step=5`, mas inicialmente manteve `enabled=true`, `next_run_at=2026-05-04T09:10:00-03:00` e `stopped_reason=null`; o estado foi corrigido pela tool específica `update_reno_followup_state` para `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`. Em seguida, o status foi atualizado defensivamente de `Não Respondeu` para `Arquivado`.
 
 ## Objeções e travas
-- Silêncio após contatos anteriores; não há objeção explícita.
+- Silêncio após primeiro contato e cinco repescagens; não há objeção explícita.
 - Falha operacional anterior de primeiro contato foi registrada em 2026-04-23 e posteriormente recuperada em 2026-04-27.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, parar repescagem, tratar pelo fluxo normal de atendimento do Reno e atualizar status para `Em Atendimento` somente se o CRM ainda estiver exatamente em `Não Respondeu`. Se não responder, próxima elegibilidade de repescagem: step 5 em 2026-05-03 09:10 -03:00; por ser step final, após envio bem-sucedido o ramo deve encerrar com `stopped_reason=max_steps` e o cliente deve ser arquivado automaticamente se ainda estiver exatamente em `Não Respondeu`.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reativar pelo fluxo normal de atendimento do Reno, validar status no CRM antes de qualquer avanço e atualizar o atendimento conforme a resposta real.
 
 ## Observações operacionais
 - Documento consolidado no caminho oficial `_agents/reno/atendimentos/10989-erlania-silva.md`.
 - Há registro legado em `_agents/reno/clientes/10989-erlania-silva.md`; não escrever nesse caminho em novos eventos.
-- Não houve alteração de status durante a repescagem step 4; status permaneceu `Não Respondeu` conforme regra dos steps 1 a 4.
-- Estado operacional após envio do step 4: `enabled=true`, `step=4`, `last_sent_at=2026-05-02T21:21:03-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
+- Estado final da repescagem após correção: `enabled=false`, `step=5`, `last_sent_at=2026-05-03T14:04:02-03:00`, `next_run_at=null`, `stopped_reason=max_steps`.
+- A correção final compactou a branch da repescagem, removendo campos auxiliares como `entry_shift`, `entry_reference_at` e `last_message`; a mensagem final está preservada na nota CRM automática e neste documento oficial.
+- Cliente arquivada automaticamente por regra defensiva após confirmação de `broker_id=35`, status anterior `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
