@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-27'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -10,42 +10,43 @@ tags:
   - famachat
   - repescagem
   - facebook-ads
+  - arquivado
 entity_type: atendimento
 entity_name: Carmen Vicente Santos Vicente Santos
 broker_id: 35
 client_id: 10998
 source: Facebook Ads
-status_crm: Não Respondeu
+status_crm: Arquivado
 ---
 # Atendimento — Carmen Vicente Santos Vicente Santos
 
 ## Resumo atual
-Cliente Reno (`client_id=10998`) em `Não Respondeu`, com interesse associado ao Garden Sul / Jardim Sul. Primeiro contato do Reno foi enviado após override operacional de duplicidade e a cliente ainda não respondeu. Repescagem ativa, com step 4 enviado em 2026-05-02 usando convite consultivo direto para análise/possível visita na Fama na segunda-feira.
+Cliente Reno (`client_id=10998`) arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta. O interesse estava associado ao Garden Sul / Jardim Sul. A repescagem step 5 foi enviada com encerramento elegante, sem insistir em agenda, e a branch `reno_followup.repescagem` foi encerrada com `step=5` e `stopped_reason=max_steps` antes do arquivamento defensivo no FamaChat.
 
 ## Dados operacionais
 - Cliente ID: 10998
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp existente no CRM; envios realizados pelo JID salvo no FamaChat.
 - Empreendimento/contexto citado: Garden Sul, Jardim Sul, Zona Sul de Uberlândia.
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02 21:46 -03:00.
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03 14:44 -03:00; régua encerrada e cliente arquivada em seguida.
 
 ## Contexto comercial
-Lead veio de Facebook Ads com interesse vinculado ao Garden Sul, no Jardim Sul. O empreendimento é lançamento na Zona Sul, com entrega prevista para set/2028, apartamentos de 2 quartos e valores a partir de aproximadamente R$ 294.900 no cadastro do CRM. O histórico indica duplicidade e tentativas anteriores, mas houve decisão operacional de permitir atendimento pelo Reno quando o Reno ainda não tinha conduzido o caso. Até agora não há resposta real da cliente.
+Lead veio de Facebook Ads com interesse vinculado ao Garden Sul, no Jardim Sul. O empreendimento é lançamento na Zona Sul, com entrega prevista para set/2028, apartamentos de 2 quartos e valores a partir de aproximadamente R$ 294.900 no cadastro do CRM. O histórico indica duplicidade e tentativas anteriores, mas houve decisão operacional de permitir atendimento pelo Reno quando o Reno ainda não tinha conduzido o caso. A cliente não respondeu ao primeiro contato nem às cinco repescagens.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não confirmada. Sinal inicial aponta busca por imóvel no contexto Garden Sul / Jardim Sul.
+Não confirmada. O sinal inicial apontava busca por imóvel no contexto Garden Sul / Jardim Sul.
 
 ### Momento
-Indefinido por ausência de resposta. O step 3 explorou o prazo de entrega do lançamento para entender se a busca é para morar futuramente ou investir. O step 4 avançou para um convite consultivo, usando a segunda-feira como próximo passo preferencial por ser fim de semana.
+Indefinido por ausência de resposta. A régua explorou progressivamente leitura do empreendimento, financiamento/forma de compra, finalidade morar vs investimento, convite consultivo para análise na Fama e, no step final, pausa respeitosa com porta aberta.
 
 ### Decisão
 Não há informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Ainda não há dados de renda, entrada ou crédito. O step 2 já perguntou sobre financiamento/à vista; o step 4 não repetiu esse caminho e focou em organizar o plano de compra e comparar alternativas quando necessário. Não há promessa de crédito.
+Não há dados de renda, entrada ou crédito. A régua abordou financiamento/à vista no step 2 sem prometer aprovação, e depois evitou repetir o mesmo argumento. Sem resposta, não houve diagnóstico de viabilidade real.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno após override operacional
@@ -101,7 +102,7 @@ Fluxo: `repescagem`.
 
 Step enviado: `4`.
 
-Ângulo usado: convite consultivo direto. A mensagem mudou em relação ao step 3: saiu da pergunta morar/investir e passou a propor uma análise objetiva na Fama na segunda-feira, comparando Garden Sul com alternativas de entrega mais rápida ou outro perfil se necessário. Esse ângulo usa o contexto de fim de semana e evita repetir financiamento/à vista, encaixe genérico ou finalidade de compra.
+Ângulo usado: convite consultivo direto. A mensagem mudou em relação ao step 3: saiu da pergunta morar/investir e passou a propor uma análise objetiva na Fama na segunda-feira, comparando Garden Sul com alternativas de entrega mais rápida ou outro perfil se necessário. Esse ângulo usou o contexto de fim de semana e evitou repetir financiamento/à vista, encaixe genérico ou finalidade de compra.
 
 Mensagem enviada:
 
@@ -115,15 +116,35 @@ Mensagem enviada:
 
 Envio registrado no CRM pela tool específica do Reno. Próximo follow-up previsto: `2026-05-03T09:10:00-03:00`.
 
+### 2026-05-03 — Repescagem step 5 enviada e arquivamento automático
+Fluxo: `repescagem`.
+
+Step enviado: `5`.
+
+Ângulo usado: encerramento elegante / pausa respeitosa. A mensagem mudou em relação ao step 4: parou de insistir em visita ou horário na segunda-feira, reconheceu que a cliente poderia estar apenas pesquisando o Garden Sul e manteve porta aberta para comparação futura por prazo, condição e aderência ao momento.
+
+Mensagem enviada:
+
+> Carmen, vou pausar por aqui, tá bem? 🏡
+>
+> Como você olhou o Garden Sul, pode ser que esteja só pesquisando e comparando com calma. Por ser um lançamento na Zona Sul, o mais importante é não ficar presa a uma opção antes de entender prazo, condição e se existe algo que faça mais sentido pro seu momento.
+>
+> Se quiser retomar depois, eu consigo te ajudar a comparar isso de forma **bem objetiva**, sem te levar por um caminho errado.
+>
+> Posso deixar você à vontade e você me chama quando quiser olhar com calma?
+
+Envio WhatsApp confirmado pelo JID salvo no CRM. A marcação automática registrou `step=5`, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`. O estado foi corrigido pela tool específica do Reno para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Em seguida, o status foi alterado defensivamente de `Não Respondeu` para `Arquivado` no FamaChat, com nota CRM de arquivamento registrada.
+
 ## Objeções e travas
-- Silêncio após primeiro contato e após repescagens steps 1, 2 e 3.
-- Histórico operacional anterior apontava duplicidade e baixa resposta; atualmente não bloqueia o fluxo do Reno, mas exige mensagens mais úteis e diferentes entre steps.
+- Silêncio após primeiro contato e após as cinco repescagens.
+- Histórico operacional anterior apontava duplicidade e baixa resposta; não bloqueou o fluxo do Reno após override operacional, mas reforçou a necessidade de diferenciar as mensagens.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se não houver resposta até `2026-05-03T09:10:00-03:00`, a próxima execução elegível poderá enviar repescagem step 5 com encerramento elegante da régua, sem pressionar e deixando porta aberta. Após step 5 bem-sucedido, aplicar a regra operacional de encerramento por `max_steps` e arquivamento defensivo se o CRM ainda estiver exatamente em `Não Respondeu`.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reabrir o atendimento pelo fluxo normal do Reno, atualizar o status conforme regra operacional e retomar com diagnóstico consultivo antes de propor visita.
 
 ## Observações operacionais
 - CRM/FamaChat continua como fonte de verdade operacional.
 - Documento consolidado no caminho oficial `_agents/reno/atendimentos/10998-carmen-vicente-santos-vicente-santos.md`.
-- Status não foi alterado pela repescagem step 4; permanece `Não Respondeu` até resposta real da cliente.
-- Step 4 foi enviado para o JID salvo no CRM; não houve necessidade de testar variação com/sem nono dígito após sucesso no destino preferencial.
+- Step 5 foi enviado para o JID salvo no CRM; não houve necessidade de testar variação com/sem nono dígito após sucesso no destino preferencial.
+- Pitfall confirmado: `mcp_mcp_postgres_mark_reno_followup_sent` registrou o step final sem encerrar a branch. A correção foi feita via `mcp_mcp_postgres_update_reno_followup_state` antes do arquivamento defensivo.
+- A correção da branch final compactou o estado da repescagem; a mensagem final foi preservada em nota CRM automática e neste documento curado.
