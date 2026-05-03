@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Ana Clara Marques
 client_id: 10943
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat / SLA Cascata
 created: '2026-04-24'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -16,37 +16,38 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
+  - arquivado
 ---
 # Atendimento — Ana Clara Marques
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, originada por SLA Cascata, com interesse associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. Primeiro contato, reenvio inicial e quatro steps de repescagem já foram enviados sem resposta real registrada. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, mudando a abordagem do diagnóstico morar/investir para organização prática do caminho de compra com a pessoa envolvida na decisão.
+Cliente do Reno originada por SLA Cascata, com interesse associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. Primeiro contato, reenvio inicial e cinco steps de repescagem foram enviados sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausando a insistência e deixando porta aberta para retomada futura. Após correção do estado final da repescagem para `stopped_reason=max_steps`, o CRM foi arquivado automaticamente com condição defensiva.
 
 ## Dados operacionais
 - Cliente ID: 10943
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Cliente original SLA: 10882
 - Telefone/WhatsApp: disponível no CRM; JID salvo usado no envio
 - Empreendimento vinculado: Union Vereda (ID 161), Jaraguá, Uberlândia
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02 10:49 -03
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03 10:32 -03; régua encerrada e cliente arquivada automaticamente
 
 ## Contexto comercial
-A cliente demonstrou interesse no Union Vereda, empreendimento da HLTS Construtora no Jaraguá, em Uberlândia. O empreendimento tem apartamentos de 2 quartos, lazer e entrega prevista para Dez/2028. Pelo cliente original do SLA, há sinais de que ela começou a procurar agora e pretende comprar junto com alguém. Esse contexto recomenda uma abordagem consultiva para organizar critérios, comparar se o Union Vereda faz sentido e evitar envio de opções soltas antes de entender o caminho de compra.
+A cliente demonstrou interesse no Union Vereda, empreendimento da HLTS Construtora no Jaraguá, em Uberlândia. O empreendimento tem apartamentos de 2 quartos, lazer e entrega prevista para Dez/2028. Pelo cliente original do SLA, há sinais de que ela começou a procurar agora e pretende comprar junto com alguém. Como não houve resposta após primeiro contato, reenvio inicial e cinco repescagens, o atendimento automático foi pausado para evitar insistência e preservar uma porta aberta para eventual retomada.
 
 ## Diagnóstico
 ### Necessidade
-Possível busca por apartamento no Union Vereda/Jaraguá, ainda sem confirmação verbal da cliente.
+Possível busca por apartamento no Union Vereda/Jaraguá, sem confirmação verbal da cliente.
 
 ### Momento
-Cliente silenciosa após primeiro contato, reenvio inicial e quatro repescagens. O lead parece estar em fase inicial de busca, sem critérios confirmados.
+Cliente permaneceu silenciosa após primeiro contato, reenvio inicial e todos os 5 steps da régua de repescagem. O lead aparenta estar frio ou fora do momento de conversa.
 
 ### Decisão
-Há sinal no cliente original de que a compra pode ser feita junto com alguém, mas ainda não há confirmação direta da cliente sobre decisores, urgência ou critérios de escolha.
+Há sinal no cliente original de que a compra poderia ser feita junto com alguém, mas não houve confirmação direta da cliente sobre decisores, urgência ou critérios.
 
 ### Viabilidade
-Ainda não há dados de renda, entrada, modalidade de compra ou financiamento. Não prometer crédito; manter abordagem consultiva e diagnóstica.
+Não há dados de renda, entrada, modalidade de compra ou financiamento. Não houve base para avançar em análise de crédito ou simulação.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato / backlog
@@ -117,15 +118,35 @@ Registro CRM: envio registrado via ferramenta específica `mark_reno_followup_se
 
 Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem.
+
+Step enviado: 5.
+
+Ângulo/contexto usado: lead frio + encerramento elegante. A abordagem mudou em relação ao step 4: saiu do convite consultivo direto para pausa respeitosa, evitou repetir análise/encaixe/viabilidade e manteve porta aberta para a cliente retomar quando fizer sentido.
+
+Mensagem enviada:
+
+> Ana, vou pausar meus contatos por aqui para não ficar insistindo. 🏡
+>
+> Como você tinha visto o Union Vereda e está começando a olhar com alguém, pode ser que ainda não seja o momento de decidir nada. Quando fizer sentido, eu consigo te ajudar a comparar prazo, valor e forma de compra sem te jogar um monte de opção solta.
+>
+> Posso deixar pausado por agora e você me chama por aqui quando quiser retomar?
+
+Registro CRM: envio registrado via ferramenta específica `mark_reno_followup_sent`. A ferramenta registrou inicialmente `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado final foi corrigido em seguida pela ferramenta específica de estado do Reno para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
+
+Arquivamento: após a correção do estado final, o status foi alterado defensivamente de `Não Respondeu` para `Arquivado`, pois o cliente ainda estava no escopo `broker_id=35` e sem resposta real.
+
 ## Objeções e travas
-- Sem resposta real da cliente até o momento.
+- Sem resposta real da cliente após primeiro contato, reenvio inicial e 5 repescagens.
 - Sem dados de viabilidade financeira ou critérios de busca confirmados.
-- Sinal de compra conjunta ainda não confirmado diretamente pela cliente.
+- Sinal de compra conjunta não confirmado diretamente pela cliente.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se não houver resposta até 2026-05-03T09:10:00-03:00, executar repescagem step 5 com encerramento elegante, sem repetir o argumento de encaixe do step 2, a pergunta morar/investir do step 3 ou o convite consultivo direto do step 4.
+Sem nova ação automática de repescagem. Caso a cliente responda futuramente, reabrir atendimento pelo fluxo normal do Reno, validar o contexto atual, atualizar status conforme regra operacional e retomar de forma consultiva sem tratar como nova repescagem.
 
 ## Observações operacionais
-- Envio do step 4 feito para o JID salvo no CRM, sem expor telefone no vault além da indicação de que o JID está disponível no CRM.
-- Status CRM preservado como `Não Respondeu`; a repescagem não altera status até haver resposta real da cliente.
-- Claim operacional da repescagem foi limpo após `mark_reno_followup_sent`.
+- Envio do step 5 feito para o JID salvo no CRM, sem expor telefone no vault além da indicação de que o JID está disponível no CRM.
+- Régua de repescagem encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
+- Status CRM arquivado automaticamente em 2026-05-03 após verificação defensiva por cliente, broker, status anterior e estado final da repescagem.
+- A correção do estado final compactou a branch de repescagem, removendo campos auxiliares como `last_message`, `entry_shift` e `entry_reference_at`; a mensagem enviada foi preservada nas notas do CRM e neste documento oficial.
