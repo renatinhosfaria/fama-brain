@@ -5,34 +5,36 @@ entity_type: atendimento
 entity_name: Layane Souza
 client_id: 10973
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
   - union-vereda
   - jaragua
 ---
 # Atendimento — Layane Souza
 
 ## Resumo atual
-Layane Souza está no fluxo de repescagem do Reno, vinculada ao `broker_id=35`, com status CRM `Não Respondeu`. O interesse identificado é no empreendimento **Union Vereda**, no bairro **Jaraguá**, em Uberlândia. Já houve primeiro contato e repescagens steps 1, 2 e 3 sem resposta real registrada; em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, usando o contexto de faixa até perto de R$300 mil, prazo/produto/condição de compra e CTA preferencial para análise presencial na Fama na segunda-feira.
+Layane Souza teve a régua de **repescagem do Reno concluída no step 5** sem resposta real registrada no CRM/FamaChat. O atendimento estava vinculado ao `broker_id=35` e ao status `Não Respondeu`; após o envio bem-sucedido do step final em 2026-05-03, a branch `reno_followup.repescagem` foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Como o cliente ainda permanecia exatamente em `Não Respondeu`, o status foi atualizado defensivamente para `Arquivado`.
 
 ## Dados operacionais
 - Cliente ID: 10973
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
-- Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo usado para envio
+- Cliente original da SLA Cascata: 10863
+- Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo usado para os envios
 - Empreendimento vinculado: Union Vereda (`id_empreendimento=161`)
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02 20:15:31 -03:00
-- Próximo `next_run_at` operacional: `2026-05-03T09:10:00-03:00`
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03 12:34:19 -03:00
+- Estado final da repescagem: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`
+- Nota CRM de arquivamento: `16527`
 
 ## Contexto comercial
 - Empreendimento de interesse: **Union Vereda**.
@@ -40,21 +42,21 @@ Layane Souza está no fluxo de repescagem do Reno, vinculada ao `broker_id=35`, 
 - Produto: apartamento; CRM indica unidades disponíveis de 2 quartos, suíte, varanda/sacada e 1 vaga, com valores cadastrados a partir de aproximadamente R$ 288 mil.
 - Prazo de entrega do empreendimento no CRM: Dez/2028.
 - Contexto adicional do cliente original da SLA Cascata: lead original indicou que já olhou alguns imóveis, compraria sozinho(a), recebeu vídeo do decorado do Union e houve anotação de preferência por opção até cerca de R$300 mil.
-- Ainda não há resposta real da cliente para confirmar motivação, objetivo de compra, forma de pagamento, prazo de compra ou viabilidade.
-- Ângulo comercial atual: **imóvel específico + convite consultivo direto**, mudando o foco de morar/investir para organização do caminho de compra e possível análise presencial na segunda-feira.
+- Não houve resposta real da cliente para confirmar motivação, objetivo de compra, forma de pagamento, prazo de compra ou viabilidade.
+- Ângulo final usado no step 5: **encerramento elegante com porta aberta**, reconhecendo possível fase de pesquisa e oferecendo comparação futura entre lançamento e alternativas por prazo, condição e perfil.
 
 ## Diagnóstico
 ### Necessidade
-Interesse inicial em imóvel específico, com sinal indireto de busca por opção até perto de R$300 mil; necessidade residencial/investimento ainda não confirmada pela própria cliente neste atendimento do Reno.
+Interesse inicial em imóvel específico, com sinal indireto de busca por opção até perto de R$300 mil; necessidade residencial/investimento não foi confirmada pela própria cliente neste atendimento do Reno.
 
 ### Momento
-Cliente permanece silenciosa após contatos anteriores. Como o Union Vereda tem entrega prevista para Dez/2028, o prazo continua relevante, mas o step 4 buscou avançar para análise consultiva/visita na Fama na segunda-feira, sem pressionar fechamento.
+Cliente permaneceu silenciosa após primeiro contato, reenvio e cinco repescagens. O comportamento sugere lead frio ou momento de pesquisa sem prontidão para avançar agora.
 
 ### Decisão
-Sem informação confirmada sobre decisores ou influência familiar. Cliente original indicava compra sozinho(a), mas isso ainda não foi reconfirmado no atendimento Reno.
+Sem informação confirmada sobre decisores ou influência familiar. Cliente original indicava compra sozinho(a), mas isso não foi reconfirmado no atendimento Reno.
 
 ### Viabilidade
-Há indício de preferência até perto de R$300 mil e unidades do Union Vereda cadastradas nessa faixa. Não há dados confirmados de renda, entrada, financiamento ou compra à vista. A abordagem evita promessa de crédito e propõe análise objetiva do caminho de compra.
+Há indício de preferência até perto de R$300 mil e unidades do Union Vereda cadastradas nessa faixa. Não há dados confirmados de renda, entrada, financiamento ou compra à vista. Nenhuma promessa de crédito foi feita.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato/backlog enviado
@@ -85,8 +87,6 @@ Você quer que eu te diga por onde faria mais sentido começar essa análise?
 - Registro CRM: realizado via tool específica `mark_reno_followup_sent`.
 - Próximo `next_run_at`: `2026-05-01T14:20:00-03:00`
 
-Mensagem enviada:
-
 ```text
 Oi, Layane! Tudo bem? 🔑
 
@@ -107,8 +107,6 @@ Quer que eu faça uma primeira leitura contigo para ver se esse caminho é viáv
 - Destino: JID salvo no CRM
 - Registro CRM: realizado via tool específica `mark_reno_followup_sent`.
 - Próximo `next_run_at`: `2026-05-02T19:10:00-03:00`
-
-Mensagem enviada:
 
 ```text
 Layane, tudo bem? 🏡
@@ -132,8 +130,6 @@ Você está olhando mais para **morar** ou para **investir**?
 - Próximo `next_run_at`: `2026-05-03T09:10:00-03:00`
 - Status CRM: preservado como `Não Respondeu` por ser step 4.
 
-Mensagem enviada:
-
 ```text
 Layane, boa noite! 🔑
 
@@ -144,15 +140,41 @@ A Fama ajuda justamente a organizar esse caminho de compra, para não ficar só 
 Você toparia passar na Fama na segunda para uma análise rápida e entender se vale seguir por esse caminho?
 ```
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+- Fluxo: `repescagem`
+- Step enviado: 5
+- Intenção do step: encerramento elegante sem queimar relacionamento.
+- Context angle: imóvel específico / Union Vereda + faixa perto de R$300 mil + pausa respeitosa com porta aberta para comparação futura.
+- Diferenciação frente ao step anterior: deixou de convidar para visita/análise presencial na segunda-feira; mudou para permissão de pausa; reconheceu possível fase de pesquisa; trocou o benefício central para comparação futura entre lançamento e alternativas por prazo, condição e perfil.
+- Canal: WhatsApp
+- Destino: JID salvo no CRM
+- Registro CRM: envio registrado via `mark_reno_followup_sent`; estado final corrigido via tool específica de follow-up porque a marcação inicial manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`.
+- Estado final persistido: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`.
+- Arquivamento: realizado defensivamente no CRM porque o cliente ainda estava em `Não Respondeu`, com `broker_id=35` e estado final da repescagem confirmado.
+
+Mensagem enviada:
+
+```text
+Layane, vou fazer assim: vou pausar por aqui para não ficar insistindo. 🏡
+
+Como você tinha olhado o Union Vereda e apareceu a faixa perto dos R$300 mil, pode ser que agora seja mais momento de pesquisa do que de decisão.
+
+Quando fizer sentido, eu consigo te ajudar a **comparar o lançamento com outras opções** por prazo, condição e perfil, sem te empurrar nada.
+
+Posso deixar esse atendimento pausado e você me chama por aqui quando quiser retomar?
+```
+
 ## Objeções e travas
-- Trava atual: silêncio após contatos anteriores; não há objeção declarada.
+- Trava principal: silêncio durante toda a régua de atendimento e repescagem.
+- Não há objeção declarada pela cliente.
 - Lacuna relevante: ausência de confirmação sobre objetivo de compra, região, momento e viabilidade financeira.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se não houver resposta até `2026-05-03T09:10:00-03:00`, seguir a régua para repescagem step 5 com encerramento elegante. Se a cliente responder, parar repescagem e seguir atendimento normal do Reno fora deste fluxo.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reativar o atendimento fora deste fluxo, atualizar o status conforme regra operacional vigente e conduzir por qualificação consultiva normal do Reno.
 
 ## Observações operacionais
-- Documento oficial criado/consolidado em `_agents/reno/atendimentos/10973-layane-souza.md` conforme governança atual.
-- Existe documento legado em `_agents/reno/clientes/10973-layane-souza.md`; conteúdo útil foi consolidado neste caminho oficial. Não foi removido nesta execução.
+- Documento oficial mantido em `_agents/reno/atendimentos/10973-layane-souza.md` conforme governança atual.
+- Existe documento legado em `_agents/reno/clientes/10973-layane-souza.md`; conteúdo útil já havia sido consolidado neste caminho oficial. Não foi removido nesta execução.
 - CRM/FamaChat permanece como fonte operacional de verdade; vault registra apenas contexto curado e rastreabilidade do atendimento.
-- Execução de 2026-05-02: claim exclusivo de repescagem aplicado e limpo após `mark_reno_followup_sent`; status não alterado por se tratar de step 4.
+- Execução de 2026-05-03: claim exclusivo de repescagem aplicado; envio realizado pelo JID salvo; `mark_reno_followup_sent` limpou o claim, mas não encerrou corretamente o step final. A branch foi corrigida com `update_reno_followup_state` antes do arquivamento.
+- Pitfall observado: a correção final compactou a branch de repescagem para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem enviada ficou preservada na nota CRM automática e neste documento oficial.
