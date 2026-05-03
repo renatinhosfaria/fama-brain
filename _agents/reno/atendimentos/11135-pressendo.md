@@ -2,13 +2,13 @@
 type: entity-profile
 owner: reno
 entity_type: atendimento
-entity_name: Pressendo
+entity_name: João Pressendo
 client_id: 11135
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -16,24 +16,26 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
+  - inbound
+  - nome-corrigido
 ---
-# Atendimento — Pressendo
+# Atendimento — João Pressendo
 
 ## Resumo atual
-Cliente do Reno em status operacional `Não Respondeu`. O primeiro contato foi enviado em 2026-05-02 sobre o Union Vereda, no Jaraguá. Em 2026-05-02 às 22:56 BRT, foi enviada a repescagem step 1. Como o nome cadastrado (`Pressendo`) parece inseguro para saudação personalizada, a abordagem priorizou confirmar como o cliente prefere ser chamado antes de avançar na qualificação.
+Cliente do Reno em `Em Atendimento`. Em 2026-05-03, respondeu ao pedido de confirmação de nome informando que se chama João e que Pressendo é o sobrenome. CRM atualizado para `João Pressendo`, status alterado de `Não Respondeu` para `Em Atendimento` e repescagem interrompida com `stopped_reason=client_replied`. Próximo passo: retomar a qualificação leve pelo interesse no Union Vereda, no Jaraguá.
 
 ## Dados operacionais
 - Cliente ID: 11135
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads / lead automático
-- Telefone/WhatsApp: WhatsApp confirmado no CRM
+- Telefone/WhatsApp: (34) 99956-2304 / 553499562304@s.whatsapp.net
 - Empreendimento de interesse: Union Vereda, Jaraguá, zona Oeste de Uberlândia
-- Última interação relevante: repescagem step 1 enviada pelo Reno via WhatsApp em 2026-05-02 22:56 BRT
-- Próximo `next_run_at` de repescagem: 2026-05-03 09:10 BRT, se permanecer sem resposta
+- Última interação relevante: cliente respondeu ao WhatsApp em 2026-05-03 informando nome correto
+- Repescagem: interrompida; `step=1`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 
 ## Contexto comercial
-O cliente veio de anúncio do Facebook Ads com interesse no empreendimento Union Vereda, no bairro Jaraguá. O empreendimento tem apartamentos de 2 quartos, suíte e varanda/sacada, com lazer de condomínio e entrega prevista para Dez/2028. A abertura inicial foi contextualizada pelo empreendimento e pela região, sem aprofundar qualificação financeira antes da primeira resposta.
+O cliente veio de anúncio do Facebook Ads com interesse no empreendimento Union Vereda, no bairro Jaraguá. O empreendimento tem apartamentos de 2 quartos, suíte e varanda/sacada, com lazer de condomínio e entrega prevista para Dez/2028. A abertura inicial foi contextualizada pelo empreendimento e pela região. Como o nome cadastrado (`Pressendo`) parecia inseguro para saudação, o Reno pediu confirmação de como o cliente prefere ser chamado antes de avançar.
 
 ## Diagnóstico
 ### Necessidade
@@ -46,7 +48,7 @@ Ainda não informado pelo cliente. Como o Union Vereda tem entrega prevista para
 Ainda não informada pelo cliente.
 
 ### Viabilidade
-Ainda não informada pelo cliente. Não houve abordagem de renda, entrada, FGTS ou financiamento. Não prometer crédito; quando responder, conduzir diagnóstico leve e consultivo.
+Ainda não informada pelo cliente. Não houve abordagem de renda, entrada, FGTS ou financiamento. Não prometer crédito; conduzir diagnóstico leve e consultivo.
 
 ## Histórico curado de interações
 ### 2026-05-02 — Primeiro contato enviado
@@ -62,17 +64,19 @@ Mensagem enviada:
 >
 > Como posso te chamar?
 
-Estado após envio no CRM: `repescagem.step=1`, `enabled=true`, `last_sent_at=2026-05-02T22:56:56-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `stopped_reason=null`. Status do cliente preservado como `Não Respondeu`.
+### 2026-05-03 — Cliente respondeu e nome foi corrigido
+Cliente respondeu pelo WhatsApp: “Boa noite, me chamo João, pressendo é o sobrenome”. CRM atualizado de `Pressendo` para `João Pressendo`. Status alterado de `Não Respondeu` para `Em Atendimento`. Repescagem interrompida por resposta do cliente: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`. Nota CRM criada: 16450.
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
-- Nome cadastrado parece inseguro para uso comercial; primeira resposta esperada deve confirmar como o cliente prefere ser chamado.
+- Trava anterior de nome inseguro resolvida: nome correto é João Pressendo.
 
 ## Próximo passo
-Se o cliente responder informando o nome, interromper repescagem por status, atualizar o `full_name` no CRM quando aplicável, registrar nota objetiva e seguir pelo fluxo normal de qualificação do Reno. Se permanecer em silêncio até o próximo vencimento, executar repescagem step 2 conforme a régua.
+Responder ao cliente de forma curta, agradecer a confirmação do nome e retomar a qualificação pelo contexto do Union Vereda: validar se o Jaraguá/região faz sentido para a busca dele.
 
 ## Observações operacionais
 - Evento de origem: cliente.created / famachat-created.
 - Referência operacional do primeiro contato: evt_3303 / 3303_1777734328940.
 - Nota CRM de repescagem criada automaticamente pela marcação do envio: 16449.
-- Documento mantido no caminho oficial do Reno para evitar duplicidade por cliente.
+- Nota CRM da resposta/nome corrigido: 16450.
+- Documento mantido no caminho oficial existente por `client_id` para evitar duplicidade por mudança de nome/slug.
