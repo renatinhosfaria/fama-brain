@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Ivens Paiva
 client_id: 10950
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -16,39 +16,40 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
+  - arquivado
 ---
 # Atendimento — Ivens Paiva
 
 ## Resumo atual
-Cliente sob atendimento do Reno (`broker_id=35`), em status CRM `Não Respondeu`. Já recebeu primeiro contato/reenvio inicial e está na régua de repescagem. Em 2026-05-02, foi enviada a repescagem step 4 com convite consultivo direto, mudando o ângulo para evitar envio de fotos soltas e propor uma conversa/visita rápida na Fama na segunda-feira para avaliar o Union Vista e alternativas. Até esta atualização, não há resposta real registrada do cliente.
+Cliente sob atendimento do Reno (`broker_id=35`) foi arquivado no CRM em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O step 5 foi enviado via WhatsApp com encerramento elegante e porta aberta para retomada. Após o envio, o estado da repescagem precisou ser corrigido pela tool específica para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`; em seguida, o arquivamento defensivo foi aplicado com sucesso porque o cliente ainda estava em `Não Respondeu`.
 
 ## Dados operacionais
 - Cliente ID: 10950
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp identificado no CRM; não registrar telefone completo neste documento curado.
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02T19:25:55-03:00.
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03T11:08:23-03:00 e cliente arquivado automaticamente em seguida.
 
 ## Contexto comercial
 - Interesse identificado no FamaChat: **Union Vista**, empreendimento no **Grand Ville**, Uberlândia.
 - Imóvel/empreendimento associado: Union Vista, apartamento em lançamento, região Grand Ville/Zona Leste.
 - Dados úteis do empreendimento: entrega prevista para **jul/2027**, status de lançamento, apartamentos de 2 quartos com lazer/estrutura de condomínio.
 - Contexto adicional do cliente original (`cliente_original_id=10883`): lead de Facebook Ads, já havia retornado outras vezes e, conforme notas humanas, não respondeu a contatos anteriores. Informações automáticas indicam que começou a procurar agora e pretende comprar sozinho(a).
-- Contexto útil: cliente ainda não abriu conversa; abordagem deve criar motivo novo para resposta, sem repetir cadastro/interesse inicial nem argumentos já ignorados.
+- Contexto útil: cliente não respondeu ao primeiro contato, reenvio inicial nem aos 5 steps de repescagem; não há objeção explícita registrada.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não declarada pelo cliente. O contexto sugere interesse inicial em apartamento específico no Union Vista.
 
 ### Momento
-Indefinido. O step 3 já testou se o prazo de entrega do lançamento em jul/2027 combinava com o momento do cliente; não houve resposta.
+Indefinido. O step 3 testou se o prazo de entrega do lançamento em jul/2027 combinava com o momento do cliente; não houve resposta.
 
 ### Decisão
-Informação automática do cliente original indica intenção de comprar sozinho(a), mas isso ainda não foi confirmado em conversa com o Reno.
+Informação automática do cliente original indica intenção de comprar sozinho(a), mas isso não foi confirmado em conversa com o Reno.
 
 ### Viabilidade
-Sem dados confirmados de entrada, renda, modalidade de compra ou financiamento. O step 2 já testou forma de compra; o step 4 evitou repetir esse ângulo e propôs análise consultiva do caminho de compra.
+Sem dados confirmados de entrada, renda, modalidade de compra ou financiamento. O step 2 testou forma de compra; o step 4 propôs análise consultiva; o step 5 encerrou a régua sem repetir viabilidade.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato/backlog enviado
@@ -115,17 +116,35 @@ Como hoje é fim de semana, posso deixar uma conversa/visita rápida na Fama par
 
 Registro operacional: envio registrado no CRM via `mcp_mcp_postgres_mark_reno_followup_sent`; estado verificado como `repescagem.step=4`, `last_sent_at=2026-05-02T19:25:55-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `enabled=true`, `stopped_reason=null`. Status CRM preservado como `Não Respondeu`.
 
+### 2026-05-03 — Repescagem step 5 enviada e cliente arquivado
+Intenção: encerramento elegante da régua, respeitando o silêncio e deixando porta aberta para retomada futura.
+
+Comparação com tentativa anterior: o step 4 foi convite consultivo direto com proposta de conversa/visita na segunda-feira; o step 5 mudou para pausa respeitosa, sem novo convite de visita, sem repetir financiamento/prazo como pergunta e sem insistir em envio de opções.
+
+Mensagem enviada:
+```text
+Ivens, bom dia! 🏡
+
+Como não consegui falar contigo, vou pausar meu contato por aqui para não ficar insistindo.
+
+Sobre o Union Vista, no Grand Ville, o ideal é retomar só se ainda fizer sentido olhar com calma prazo de entrega, região e condição de compra — sem ficar te mandando opção solta.
+
+Se quiser continuar depois, pode me responder com **retomar** por aqui?
+```
+
+Registro operacional: WhatsApp enviado com sucesso para o `whatsapp_jid` salvo no CRM. A tool `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido em seguida via `mcp_mcp_postgres_update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T11:08:23-03:00` e `stopped_reason=max_steps`. Após verificação, o cliente foi arquivado automaticamente no FamaChat com condição defensiva por `id`, `broker_id=35`, status `Não Respondeu` e estado final da repescagem. Nota CRM de arquivamento registrada pelo Reno.
+
 ## Objeções e travas
-- Trava atual: silêncio após primeiro contato, reenvio inicial e repescagens steps 1 a 4.
+- Trava principal: silêncio após primeiro contato, reenvio inicial e cinco repescagens.
 - Não há objeção explícita do cliente registrada.
 
 ## Próximo passo
-- Aguardar resposta do cliente.
-- Se responder: parar repescagem, mover atendimento para fluxo consultivo adequado e atualizar status CRM conforme regra operacional.
-- Se não responder até o próximo vencimento: seguir para repescagem step 5 em 2026-05-03T09:10:00-03:00 com encerramento elegante da régua. Após step 5 enviado e estado encerrado com `stopped_reason=max_steps`, arquivar automaticamente se o cliente ainda estiver em `Não Respondeu` e `broker_id=35`.
+- Nenhuma nova ação automática de repescagem.
+- Se o cliente responder futuramente, reativar o atendimento no fluxo consultivo adequado do Reno, validar status atual no CRM antes de qualquer avanço e atualizar este documento.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10950-ivens-paiva.md` conforme governança atual.
 - Existe documento legado em `_agents/reno/clientes/10950-ivens-paiva.md`; conteúdo útil foi consolidado aqui. Não deletar legado sem autorização explícita.
-- O envio de 2026-05-02 usou o `whatsapp_jid` salvo no CRM como destino preferencial.
-- Claim operacional da repescagem foi limpo pela marcação de envio (`claim_expires_at=null`).
+- Os envios de repescagem usaram o `whatsapp_jid` salvo no CRM como destino preferencial.
+- Pitfall operacional confirmado no step final: `mcp_mcp_postgres_mark_reno_followup_sent` não encerrou automaticamente a branch de repescagem no step 5; a correção foi feita pela tool específica de estado antes do arquivamento defensivo.
+- A correção final compactou a branch `repescagem` para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`), comportamento já observado em produção e aceitável no step final.
