@@ -30,6 +30,8 @@ Cliente está em `Em Atendimento` pelo Reno e segue quente no WhatsApp. Interess
 
 O cliente insistiu várias vezes em uma informação que o CRM não possui com segurança: preço exato da unidade por andar/posição/vista. A condução anterior ficou repetindo que precisava confirmar a unidade/tabela. Em 2026-05-03, Reno corrigiu a abordagem: reconheceu que não deve continuar passando estimativa repetida, posicionou a validação presencial como melhor próximo passo e convidou Sebastião para passar na Fama na segunda-feira no horário do almoço ou fim do dia.
 
+Após esse convite, o cliente respondeu apenas `Ok`. Isso confirma abertura para continuar, mas ainda não define horário. Próximo passo comercial: confirmar objetivamente se segunda-feira no almoço ou no fim do dia é melhor antes de criar qualquer agendamento no FamaChat.
+
 Referência segura do CRM para Garden Sul: planta tipo 52,01m² a partir de R$ 294.900 e planta 56,32m² por R$ 330.900. Valores exatos dependem da unidade, planta, posição/vista, andar e tabela vigente.
 
 ## Dados operacionais
@@ -38,9 +40,11 @@ Referência segura do CRM para Garden Sul: planta tipo 52,01m² a partir de R$ 2
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp CRM: (34) 8420-7737 / 553484207737@s.whatsapp.net
-- Última interação relevante: 2026-05-03 — Reno enviou convite claro para visita presencial na Fama, com CTA para segunda-feira no almoço ou fim do dia.
+- Última interação relevante: 2026-05-03 — cliente respondeu `Ok` ao convite para visita presencial na segunda-feira, sem escolher horário.
 - WhatsApp outbound de correção/convite: message_id `3EB07B1E804A6672780D0C`.
 - Nota CRM do convite/correção: 16519.
+- Nota CRM da resposta `Ok`: 16523.
+- Message ID inbound da resposta `Ok`: `ACC7E4DFFA556A36E8F0477A2FC53DB3`.
 - Follow-up Reno: repescagem interrompida por resposta real do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`); sem resgate ativo.
 
 ## Contexto comercial
@@ -55,7 +59,7 @@ Para preço do 2º andar e, mais especificamente, 2º andar com vista para pisci
 Cliente quer entender se o Garden Sul, especialmente 2º andar com vista para piscina, encaixa no financiamento pretendido e no saldo a pagar com a incorporadora/construtora.
 
 ### Momento
-Cliente muito engajado, perguntando detalhes de preço e pagamento em sequência. Sinal claro de oportunidade para visita presencial e validação de unidade/tabela.
+Cliente muito engajado, perguntando detalhes de preço e pagamento em sequência. Sinal claro de oportunidade para visita presencial e validação de unidade/tabela. A resposta `Ok` ao convite indica abertura, mas ainda exige definição de horário.
 
 ### Decisão
 Ainda não diagnosticada. Não há informação sobre decisores familiares ou necessidade de aprovação de terceiros.
@@ -98,14 +102,24 @@ Após orientação do Renato, Reno parou de repetir a mesma ressalva e convidou 
 
 WhatsApp message_id: `3EB07B1E804A6672780D0C`. Nota CRM registrada: 16519.
 
+### 2026-05-03 — Cliente respondeu `Ok` ao convite de visita
+Cliente respondeu apenas `Ok` após o convite para passar na Fama na segunda-feira. Status já estava em `Em Atendimento`; não houve regressão nem nova transição. Repescagem permaneceu interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`; resgate inexistente.
+
+Interpretação comercial: não tratar como agendamento, porque falta dia/horário confirmado. Próximo passo é confirmar entre segunda-feira no horário do almoço ou no fim do dia antes de acionar `reno-visit-scheduling`.
+
+Nota CRM da rotina silenciosa: 16523. Message ID inbound: `ACC7E4DFFA556A36E8F0477A2FC53DB3`.
+
 ## Objeções e travas
 - Informação faltante: preço exato por 2º andar/vista piscina não está disponível no CRM atual.
 - Risco de atendimento: repetir ressalvas e estimativas esfria o lead. Quando o cliente insiste em condição específica e está engajado, o próximo passo deve ser visita presencial para validar tabela/unidade.
 - Ambiguidade de nomenclatura: cliente usa “Garden”, “Jardins” e Jardim Sul. Precisa esclarecer sem parecer correção fria.
 - Viabilidade ainda incompleta: cliente informou financiamento pretendido, mas não informou renda, FGTS, entrada disponível, prazo desejado ou limite mensal.
+- Agendamento ainda não confirmado: resposta `Ok` não define horário; não criar visita sem confirmação objetiva.
 
 ## Próximo passo
-Aguardar resposta do cliente ao convite de visita. Se ele aceitar dia/horário, acionar `reno-visit-scheduling` para criar/validar o agendamento no FamaChat antes de confirmar ao cliente.
+Confirmar objetivamente com o cliente qual horário de segunda-feira funciona melhor: almoço ou fim do dia.
+
+Se o cliente confirmar dia e horário, acionar `reno-visit-scheduling` para criar/validar o agendamento no FamaChat antes de confirmar a visita como marcada.
 
 Se o cliente pedir mais informação antes de visitar, responder curto com o que for seguro e manter a ponte para presencial: unidade do 2º andar com vista piscina e condição exata precisam ser validadas na Fama para evitar chute.
 
