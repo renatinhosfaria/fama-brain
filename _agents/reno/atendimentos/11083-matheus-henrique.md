@@ -19,7 +19,7 @@ tags:
 # Atendimento — Matheus Henrique
 
 ## Resumo atual
-Cliente Reno (`broker_id=35`) em `Não Respondeu`, aguardando primeira resposta. Interesse registrado no empreendimento Garden Sul, no Jardim Sul/Zona Sul de Uberlândia. Repescagem ativa: step 3 enviado em 2026-05-02, com próximo follow-up previsto para 2026-05-02 às 19:10 (-03), se continuar sem resposta.
+Cliente Reno (`broker_id=35`) em `Não Respondeu`, aguardando primeira resposta. Interesse registrado no empreendimento Garden Sul, no Jardim Sul/Zona Sul de Uberlândia. Repescagem ativa: step 4 enviado em 2026-05-02 às 22:39 (-03), com próximo follow-up previsto para 2026-05-03 às 09:10 (-03), se continuar sem resposta.
 
 ## Dados operacionais
 - Cliente ID: 11083
@@ -28,7 +28,7 @@ Cliente Reno (`broker_id=35`) em `Não Respondeu`, aguardando primeira resposta.
 - Origem: SLA Cascata
 - Telefone/WhatsApp: final 6923, JID salvo no CRM
 - Empreendimento vinculado: Garden Sul (`id_empreendimento=25`)
-- Última interação relevante: repescagem step 3 enviada via WhatsApp em 2026-05-02T09:02:13-03:00
+- Última interação relevante: repescagem step 4 enviada via WhatsApp em 2026-05-02T22:39:04-03:00
 
 ## Contexto comercial
 - Interesse associado ao Garden Sul, apartamento em lançamento na Zona Sul/Jardim Sul.
@@ -80,15 +80,30 @@ Mensagem enviada:
 
 Estado CRM/meta_data após registro: `repescagem.step=3`, `enabled=true`, `last_sent_at=2026-05-02T09:02:13-03:00`, `next_run_at=2026-05-02T19:10:00-03:00`, `stopped_reason=null`.
 
+### 2026-05-02 — Repescagem step 4 enviada
+Ângulo comercial: convite consultivo direto com foco em organizar o caminho de compra, comparar Garden Sul com alternativas da Zona Sul e evitar continuar enviando anúncio solto. Como a execução ocorreu em fim de semana, o CTA preferiu análise/possível visita na segunda-feira, conforme regra Renato/Reno.
+
+Diferenciação em relação ao step 3: saiu da pergunta sobre financiamento/à vista e passou para permissão de análise consultiva; mudou o benefício central para clareza antes de escolher unidade; e introduziu a ponte para segunda-feira/visita na Fama sem pressionar fechamento.
+
+Mensagem enviada:
+> Matheus, vou ser bem direto pra não ficar te mandando anúncio solto 🏡
+>
+> O Garden Sul pode ser uma boa opção, mas ele precisa ser comparado com o seu plano de compra e com alternativas da Zona Sul. Às vezes a melhor ajuda é organizar **o caminho certo antes de escolher unidade**, não só passar foto e valor.
+>
+> Se fizer sentido pra você, na segunda eu posso te mostrar essa análise e ver se vale uma visita rápida na Fama. Posso organizar isso pra você?
+
+Estado CRM/meta_data após registro: `repescagem.step=4`, `enabled=true`, `last_sent_at=2026-05-02T22:39:04-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
+
 ## Objeções e travas
-- Trava principal observada: silêncio após primeiro contato e três repescagens.
+- Trava principal observada: silêncio após primeiro contato e quatro repescagens.
 - Pontos ainda não validados: prazo de compra, forma de pagamento, orçamento/entrada, finalidade da compra e decisores.
 
 ## Próximo passo
-Se o cliente responder, mover condicionalmente o status de `Não Respondeu` para `Em Atendimento` e seguir atendimento normal do Reno, com diagnóstico leve antes de conduzir para visita presencial. Se permanecer sem resposta até o próximo vencimento da régua, executar repescagem step 4 com convite consultivo mais direto e ângulo diferente dos anteriores.
+Se o cliente responder, mover condicionalmente o status de `Não Respondeu` para `Em Atendimento` e seguir atendimento normal do Reno, com diagnóstico leve antes de conduzir para visita presencial. Se permanecer sem resposta até 2026-05-03 às 09:10 (-03), executar repescagem step 5 com encerramento elegante da régua; após envio bem-sucedido do step 5, encerrar o ramo com `stopped_reason=max_steps` e arquivar defensivamente o cliente se ainda estiver exatamente em `Não Respondeu`.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11083-matheus-henrique.md`.
 - Existe documento legado em `_agents/reno/clientes/11083-matheus-henrique.md`; não foi atualizado nesta execução para evitar continuar drift de governança.
 - Envio realizado pelo JID salvo no CRM, conforme política do worker.
 - Mensagem enviada em produção pelo worker `reno-repescagem-message-queue-production`; registro operacional feito via `mcp_mcp_postgres_mark_reno_followup_sent`.
+- Status não foi alterado nesta execução porque steps 1 a 4 mantêm o cliente em `Não Respondeu` até resposta real.
