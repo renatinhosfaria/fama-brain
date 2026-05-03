@@ -5,48 +5,49 @@ entity_type: atendimento
 entity_name: Wueverton Lima
 client_id: 11000
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
+  - max-steps
   - union-vista
   - grand-ville
 ---
 # Atendimento — Wueverton Lima
 
 ## Resumo atual
-Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`. Interesse associado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e quatro repescagens foram enviados via WhatsApp; até esta atualização não há resposta real registrada no CRM.
+Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`). Interesse associado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e cinco repescagens foram enviados via WhatsApp sem resposta real registrada no CRM. A régua de repescagem foi concluída no step 5 em 2026-05-03 e o cliente foi arquivado automaticamente no FamaChat por regra operacional.
 
 ## Dados operacionais
 - Cliente ID: 11000
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp/JID salvo no CRM; número completo omitido neste resumo curado.
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02 21:56:31 -03:00.
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03 14:51:22 -03:00; branch final da repescagem corrigida para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps` e cliente arquivado.
 
 ## Contexto comercial
-O contexto comercial conhecido é interesse no Union Vista, empreendimento em lançamento no bairro Grand Ville, Uberlândia, com entrega prevista para julho de 2027. A primeira abordagem e a repescagem step 1 exploraram região, perfil do imóvel e comparação com outra região. O step 2 mudou o foco para viabilidade prática da compra: entrada, parcela e financiamento. O step 3 mudou novamente o ângulo para objetivo de uso do imóvel — morar futuramente ou investir — aproveitando o contexto de lançamento e prazo de entrega. O step 4 posicionou a Fama como apoio consultivo para organizar o caminho de compra, comparar lançamento com alternativas e levar a conversa para uma análise presencial na segunda-feira.
+O contexto comercial conhecido é interesse no Union Vista, empreendimento em lançamento no bairro Grand Ville, Uberlândia, com entrega prevista para julho de 2027. A primeira abordagem e a repescagem step 1 exploraram região, perfil do imóvel e comparação com outra região. O step 2 mudou o foco para viabilidade prática da compra: entrada, parcela e financiamento. O step 3 mudou novamente o ângulo para objetivo de uso do imóvel — morar futuramente ou investir — aproveitando o contexto de lançamento e prazo de entrega. O step 4 posicionou a Fama como apoio consultivo para organizar o caminho de compra, comparar lançamento com alternativas e levar a conversa para uma análise presencial na segunda-feira. O step 5 parou de insistir em agenda e encerrou com pausa respeitosa, reconhecendo pesquisa/comparação e deixando porta aberta para retomada futura.
 
 ## Diagnóstico
 ### Necessidade
-Cliente demonstrou interesse inicial em imóvel/empreendimento específico, mas ainda não informou necessidade principal.
+Cliente demonstrou interesse inicial em imóvel/empreendimento específico, mas não informou necessidade principal.
 
 ### Momento
-Ainda indefinido; cliente permanece silencioso após primeiro contato e quatro repescagens.
+Indefinido; cliente permaneceu silencioso após primeiro contato e cinco repescagens.
 
 ### Decisão
 Sem informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou forma de pagamento. O step 2 buscou identificar compra financiada ou à vista; os steps seguintes evitaram promessa de crédito e tentaram abrir diagnóstico por objetivo de compra e análise consultiva.
+Sem dados de renda, entrada ou forma de pagamento. O step 2 buscou identificar compra financiada ou à vista; os steps seguintes evitaram promessa de crédito e tentaram abrir diagnóstico por objetivo de compra, análise consultiva e comparação futura.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno
@@ -123,17 +124,41 @@ Na segunda, posso separar um horário rápido pra você vir à Fama e a gente fa
 
 - Data/hora de envio: 2026-05-02 21:56:31 -03:00
 - Próximo `next_run_at`: 2026-05-03T09:10:00-03:00
-- Estado CRM verificado: `step=4`, `enabled=true`, `stopped_reason=null`, `claim_expires_at=null`, status preservado como `Não Respondeu`.
+- Estado CRM verificado: `step=4`, `enabled=true`, `stopped_reason=null`, status preservado como `Não Respondeu`.
+
+### 2026-05-03 — Repescagem step 5 e arquivamento
+- Fluxo: repescagem
+- Intenção: encerramento elegante da régua sem insistir em agenda.
+- Ângulo usado: pausa respeitosa, reconhecimento de pesquisa/comparação e porta aberta para retomada futura do Union Vista com comparação por prazo, condição e alternativas.
+- Diferenciação aplicada em relação ao step 4: mudou de convite para análise/visita na segunda-feira para permissão de pausa; retirou a pressão de agenda; trocou o benefício imediato por comparação futura objetiva.
+- Mensagem enviada:
+
+```text
+Wueverton, vou pausar por aqui. 🏡
+
+Como você olhou o Union Vista no Grand Ville, pode ser que esteja só pesquisando e comparando com calma. Nessa fase, o cuidado principal é não ficar preso só ao lançamento antes de entender prazo, condição e se existe alguma alternativa que encaixe melhor.
+
+Se fizer sentido retomar depois, eu consigo te ajudar a comparar isso de forma **bem objetiva**.
+
+Posso deixar você à vontade e você me chama quando quiser olhar com calma?
+```
+
+- Data/hora de envio: 2026-05-03 14:51:22 -03:00
+- Resultado operacional: envio tecnicamente bem-sucedido via WhatsApp/JID salvo no CRM.
+- Estado após marcação: a tool `mark_reno_followup_sent` registrou `step=5`, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`.
+- Correção aplicada: branch corrigida com tool específica para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T14:51:22-03:00` e `stopped_reason=max_steps`.
+- Arquivamento: status alterado de `Não Respondeu` para `Arquivado` com condição defensiva por `id`, `broker_id=35`, status atual e estado final da repescagem.
 
 ## Objeções e travas
-- Silêncio após contato inicial e quatro tentativas de repescagem.
-- Forma de compra/viabilidade ainda não informada.
-- Objetivo de uso do imóvel ainda não informado.
+- Silêncio após contato inicial e cinco tentativas de repescagem.
+- Forma de compra/viabilidade não informada.
+- Objetivo de uso do imóvel não informado.
 
 ## Próximo passo
-Se o cliente responder, parar repescagem, mover condicionalmente de `Não Respondeu` para `Em Atendimento` e seguir diagnóstico consultivo normal do Reno. Se permanecer sem resposta e continuar elegível, próxima execução deve avaliar repescagem step 5 em `2026-05-03T09:10:00-03:00`, com encerramento elegante da régua e arquivamento automático apenas se o estado final `step=5`/`stopped_reason=max_steps` for confirmado no CRM.
+Sem nova ação automática de repescagem. Se o cliente responder futuramente, reativar atendimento por fluxo normal do Reno, registrar resposta no CRM, mover o status conforme regra operacional aplicável e retomar diagnóstico consultivo sem tratar como novo step de repescagem.
 
 ## Observações operacionais
 - A decisão operacional anterior autorizou o Reno a assumir este contato apesar de duplicidade posterior por SLA Cascata atribuída a outro corretor.
 - Existe documento legado em `_agents/reno/clientes/11000-wueverton-lima.md`; o caminho oficial consolidado para continuidade é este arquivo em `_agents/reno/atendimentos/11000-wueverton-lima.md`.
-- O envio do step 4 foi registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), preservando o status `Não Respondeu` e atualizando o ramo de `meta_data.reno_followup.repescagem`.
+- O envio do step 5 foi registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`). Como a tool não encerrou automaticamente o ramo final, o estado foi corrigido com `update_reno_followup_state` antes do arquivamento defensivo.
+- A correção da branch final compactou o estado da repescagem; a mensagem final e o contexto operacional foram preservados nas notas do CRM e neste documento oficial do Vault.
