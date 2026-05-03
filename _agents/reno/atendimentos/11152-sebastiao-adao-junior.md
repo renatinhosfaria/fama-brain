@@ -105,3 +105,14 @@ Consulta confirmou:
 - Jardim Sul (id 140): mesma região/rua, em construção, entrega Set/2027, 2 quartos com suíte, 52m² a partir de R$ 303.900, 56,16m² por R$ 331.900 e térreo 69,20m² por R$ 354.900.
 
 Conduta: explicar que são empreendimentos/projetos/etapas diferentes, mesmo próximos. Existe diferença de preço, mas pequena nas plantas tipo; o valor final depende de planta, metragem, andar/posição, unidade e tabela atual. Próximo passo: oferecer comparar as unidades mais baratas dos dois para decidir melhor.
+
+
+### 2026-05-03 — Cliente quer Garden Sul no 2º andar
+Cliente reafirmou interesse específico: Garden Sul, 2º andar, e perguntou preço.
+
+Consulta em `imoveis_apartamentos` mostrou que a tabela interna do Garden Sul lista plantas/valores ativos, mas não possui coluna de andar, unidade ou posição. Dados seguros:
+- Planta tipo 52,01m²: R$ 294.900;
+- Planta tipo 56,32m²: R$ 330.900;
+- Térreos maiores: R$ 339.900 a R$ 367.900.
+
+Conduta: responder com transparência que a referência de planta tipo começa em R$ 294.900, mas o 2º andar exato precisa validar por unidade/tabela vigente. Oferecer validar a unidade mais barata do 2º andar e conduzir para simulação/visita na Fama.
