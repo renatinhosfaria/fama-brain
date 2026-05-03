@@ -5,52 +5,52 @@ entity_type: atendimento
 entity_name: Esther Osklen
 client_id: 10978
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata / FamaChat
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
   - union-vereda
 ---
 # Atendimento — Esther Osklen
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM `Não Respondeu`, sem resposta real registrada após primeiro contato e repescagens. Interesse operacional associado ao empreendimento **Union Vereda**, no bairro Jaraguá. Repescagem step 4 enviada em 2026-05-02 com convite consultivo direto para organizar caminho de compra/financiamento e, por ser fim de semana, com CTA preferencial para conversa presencial na segunda-feira na Fama.
+Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de **5 repescagens** concluída sem resposta real registrada. Interesse operacional associado ao empreendimento **Union Vereda**, no bairro Jaraguá. Em 2026-05-03, a repescagem step 5 foi enviada como encerramento elegante/porta aberta; após confirmação do envio, a branch foi encerrada com `stopped_reason=max_steps` e o status CRM foi alterado defensivamente de `Não Respondeu` para `Arquivado`.
 
 ## Dados operacionais
 - Cliente ID: 10978
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata / FamaChat
 - Telefone/WhatsApp: disponível no CRM; JID salvo foi usado como destino preferencial.
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02T20:38:57-03:00.
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03T13:09:36-03:00 e cliente arquivada automaticamente em seguida.
 
 ## Contexto comercial
 - Lead herdado por SLA Cascata; cliente original no CRM: 10847, usado apenas como contexto consultivo.
 - Contexto do cliente original indica que a cliente começou a procurar imóvel agora e informou que compraria sozinha.
 - Interesse disponível: **Union Vereda**, bairro Jaraguá, Uberlândia/MG.
 - Empreendimento: apartamento no Jaraguá, com lazer/serviços, unidades de 2 quartos e entrega prevista para Dez/2028.
-- Primeiro contato, reenvio inicial e repescagens anteriores foram enviados sem resposta real registrada.
-- A estratégia de repescagem evoluiu de encaixe/viabilidade do imóvel para diagnóstico de finalidade e agora para convite consultivo direto, destacando organização do caminho de compra antes de escolher unidade.
+- Primeiro contato, reenvio inicial e as cinco repescagens foram enviados sem resposta real registrada.
+- A estratégia da régua evoluiu de encaixe/viabilidade do imóvel, para diagnóstico de finalidade, convite consultivo direto e, por fim, encerramento respeitoso com porta aberta.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não há necessidade declarada pela cliente. O contexto sugere busca inicial por imóvel ligada ao Union Vereda.
+Não houve necessidade declarada pela cliente. O contexto sugere busca inicial por imóvel ligada ao Union Vereda.
 
 ### Momento
-Cliente permanece silenciosa após primeiro contato e quatro repescagens. Contexto anterior indica início de busca, portanto a abordagem deve ajudar a ordenar o caminho sem pressionar decisão imediata.
+Cliente permaneceu silenciosa após primeiro contato, reenvio inicial e cinco repescagens. Contexto anterior indica início de busca; o encerramento preservou a possibilidade de retomada futura sem insistência.
 
 ### Decisão
-Contexto do cliente original indica compra sozinha, mas ainda sem confirmação em conversa com o Reno.
+Contexto do cliente original indica compra sozinha, mas não houve confirmação em conversa com o Reno.
 
 ### Viabilidade
-Sem informações confirmadas sobre entrada, renda ou financiamento. A abordagem deve abrir conversa para entender financiamento e caminho de compra de forma consultiva, sem prometer crédito.
+Sem informações confirmadas sobre entrada, renda ou financiamento. A régua evitou promessa de crédito e tentou abrir conversa para organizar prazo, condição, financiamento e comparação de alternativas.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno enviado
@@ -128,18 +128,39 @@ Quer reservar uma conversa rápida na segunda aqui na Fama pra olhar isso comigo
 - Data/hora do envio: 2026-05-02T20:38:57-03:00
 - Próximo `next_run_at`: 2026-05-03T09:10:00-03:00
 - Estado registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`).
-- Status CRM preservado como `Não Respondeu` porque ainda é step 4.
+- Status CRM preservado como `Não Respondeu` porque ainda era step 4.
+
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Ângulo: encerramento elegante / pausa com porta aberta. A abordagem mudou em relação ao step 4: parou de insistir em análise/visita e preservou o contexto de lançamento/entrega futura como motivo para eventual retomada por comparação de prazo, condição e opções parecidas.
+
+Mensagem enviada:
+
+```text
+Esther, vou pausar por aqui pra não ficar insistindo 📍
+
+Como o Union Vereda é um lançamento com entrega mais pra frente, talvez faça mais sentido você retomar quando quiser comparar prazo, condição e opções parecidas com calma.
+
+Deixo essa **porta aberta** pra você me chamar quando fizer sentido?
+```
+
+- Data/hora do envio: 2026-05-03T13:09:36-03:00
+- Destino: JID WhatsApp salvo no CRM.
+- Resultado técnico: envio WhatsApp bem-sucedido.
+- Estado final da repescagem: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`.
+- Status CRM: atualizado defensivamente para `Arquivado` após confirmação do estado final.
+- Nota CRM de arquivamento registrada pelo Reno.
 
 ## Objeções e travas
-- Trava principal atual: ausência de resposta real da cliente.
+- Trava principal: ausência de resposta real da cliente após todo o ciclo de repescagem.
 - Sem objeções comerciais explícitas registradas.
 
 ## Próximo passo
-Se a cliente permanecer sem resposta e continuar elegível (`broker_id=35`, status `Não Respondeu`, repescagem ativa), enviar repescagem step 5 no próximo horário previsto: 2026-05-03T09:10:00-03:00. Se houver resposta real, sair da repescagem, mover para atendimento normal e atualizar status conforme regra do Reno.
+Sem nova ação automática de repescagem. Caso a cliente responda ou seja reativada futuramente, retomar a partir do contexto Union Vereda/Jaraguá, validar momento atual, finalidade de uso e viabilidade antes de propor nova visita ou análise presencial.
 
 ## Observações operacionais
-- Documento oficial criado no caminho canônico `_agents/reno/atendimentos/10978-esther-osklen.md`.
+- Documento oficial mantido no caminho canônico `_agents/reno/atendimentos/10978-esther-osklen.md`.
 - Havia documento legado em `_agents/reno/clientes/10978-esther-osklen.md`; conteúdo útil foi consolidado aqui. Não continuar escrevendo no caminho legado.
-- Envio do step 4 realizado pelo JID WhatsApp salvo no CRM.
-- Após o envio do step 4, `claim_expires_at` foi limpo pela tool `mark_reno_followup_sent` e a branch de repescagem ficou com `step=4`, `next_run_at=2026-05-03T09:10:00-03:00`, `stopped_reason=null`.
-- Não houve alteração de status durante a repescagem; cliente permanece `Não Respondeu` até resposta real ou encerramento futuro da régua no step 5.
+- Envio do step 5 realizado pelo JID WhatsApp salvo no CRM.
+- Pitfall observado novamente: `mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; a branch foi corrigida via `update_reno_followup_state` antes do arquivamento defensivo.
+- A correção da branch final compactou o ramo de repescagem e removeu campos auxiliares como `last_message`; a mensagem final ficou preservada nas notas CRM e neste documento oficial do Vault.
+- Arquivamento executado somente após verificação de `broker_id=35`, status `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
