@@ -2,55 +2,55 @@
 type: entity-profile
 owner: reno
 created: '2026-04-24'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
 entity_type: atendimento
 entity_name: Wenderson Beleli
 client_id: 10935
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat / Facebook Ads
 ---
 # Atendimento — Wenderson Beleli
 
 ## Resumo atual
-Cliente CRM 10935, broker Reno (35), permanece em **Não Respondeu** após primeiro contato e repescagens. Interesse original veio de Facebook Ads relacionado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia.
+Cliente CRM 10935, broker Reno (35), foi **arquivado automaticamente em 2026-05-03** após conclusão da régua de 5 repescagens sem resposta real.
 
-Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto. A abordagem mudou em relação ao step 3: em vez de insistir na escolha morar/investir ou no motivo de compra, destacou entrada, fluxo até a entrega e comparação com alternativas parecidas para dar um motivo novo de resposta.
+O interesse original veio de Facebook Ads relacionado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. A repescagem evoluiu de abordagem genérica para imóvel específico, viabilidade, finalidade, convite consultivo e, no step final, encerramento elegante com porta aberta.
 
 ## Dados operacionais
 - Cliente ID: 10935
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: final 6821; JID CRM usado para envio
-- Última interação relevante: 2026-05-02 09:58 -03 — repescagem step 4 enviada via WhatsApp
+- Última interação relevante: 2026-05-03 09:52 -03 — repescagem step 5 enviada, régua encerrada por `max_steps` e cliente arquivado automaticamente
 
 ## Contexto comercial
 - Empreendimento citado no primeiro contato: Union Vereda
 - Região: Jaraguá, Uberlândia/MG
 - Produto: apartamentos disponíveis no Union Vereda; CRM indica opções de 2 quartos, suíte, varanda/sacada e lazer de condomínio.
 - Prazo de entrega do empreendimento no CRM: Dez/2028.
-- Ainda não há resposta real do cliente nem diagnóstico confirmado de intenção, prazo, composição familiar, forma de pagamento ou faixa de entrada.
+- Não houve resposta real do cliente nem diagnóstico confirmado de intenção, prazo, composição familiar, forma de pagamento ou faixa de entrada.
 
 ## Diagnóstico
 ### Necessidade
-Provável interesse em apartamento no Union Vereda/Jaraguá a partir de anúncio. Necessidade ainda não confirmada por ausência de resposta.
+Provável interesse em apartamento no Union Vereda/Jaraguá a partir de anúncio. Necessidade não confirmada por ausência de resposta.
 
 ### Momento
-Lead silencioso desde o primeiro contato. O step 4 buscou gerar microresposta com convite consultivo direto e leitura objetiva antes de avançar.
+Lead permaneceu silencioso desde o primeiro contato e durante os 5 steps de repescagem. A régua foi encerrada para não insistir fora do momento do cliente.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Ponto ainda aberto. O step 4 retomou a viabilidade por outro ângulo: entrada, fluxo até a entrega e alternativas comparáveis, sem repetir a pergunta financiamento/à vista do step 2 nem a pergunta morar/investir do step 3.
+Viabilidade de compra não confirmada. As tentativas abordaram região, financiamento/à vista, finalidade da compra, entrada/fluxo até entrega e comparação com alternativas. Nenhuma dessas abordagens gerou resposta.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato enviado
@@ -111,15 +111,36 @@ Mensagem enviada:
 
 Próximo `next_run_at`: 2026-05-03T09:10:00-03:00
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem
+Step enviado: 5
+Data/hora de envio: 2026-05-03 09:51:48 -03
+Contexto/ângulo comercial: encerramento elegante com porta aberta; não repetir convite de análise do step 4 nem insistir em entrada/fluxo como CTA principal. A mensagem respeitou o silêncio, reforçou que o cliente pode retomar quando fizer sentido e manteve o Union Vereda como contexto.
+Comparação com a abordagem anterior: mudou o ângulo de convite consultivo para pausa respeitosa; mudou a pergunta para permissão/fechamento leve; destacou retomada futura e decisão segura; alterou abertura e vocabulário para não parecer nova cobrança.
+Mensagem enviada:
+
+> Wenderson, bom dia! 🏡
+>
+> Vou encerrar meus contatos por enquanto para respeitar seu momento.
+>
+> Como seu interesse foi no Union Vereda, deixo só este ponto: quando você quiser retomar, vale olhar **prazo de entrega, perfil do apartamento e condição de compra** juntos, para decidir com segurança se faz sentido seguir.
+>
+> Se preferir que eu pause por agora e você me chame quando for a hora, combinado?
+
+Resultado operacional: envio confirmado via WhatsApp no JID salvo no CRM. A branch de repescagem foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. O cliente foi arquivado automaticamente no CRM por permanecer em `Não Respondeu` após o step final.
+
 ## Objeções e travas
-- Trava principal: ausência de resposta real após primeiro contato e quatro repescagens.
-- Finalidade da compra ainda desconhecida: morar, investir ou sair do aluguel.
-- Viabilidade de compra ainda desconhecida.
+- Trava principal: ausência de resposta real após primeiro contato e cinco repescagens.
+- Finalidade da compra permaneceu desconhecida: morar, investir ou sair do aluguel.
+- Viabilidade de compra permaneceu desconhecida.
 
 ## Próximo passo
-Aguardar resposta. Caso não haja resposta até 2026-05-03T09:10:00-03:00 e a fila continue elegível, preparar repescagem step 5 com encerramento elegante, sem repetir o mesmo argumento de entrada/fluxo/alternativas.
+Sem nova ação automática de repescagem. Se o cliente responder ou for reativado por atendimento humano, retomar por fluxo de qualificação/atendimento normal do Reno, atualizar status conforme regra operacional e reabrir diagnóstico a partir do interesse no Union Vereda/Jaraguá.
 
 ## Observações operacionais
-- Envio de 2026-05-02 realizado pelo JID salvo no CRM, final 6821.
-- CRM/meta_data atualizado via `mcp_mcp_postgres_mark_reno_followup_sent` para `step=4`, `last_sent_at=2026-05-02T09:58:37-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
+- Envio de 2026-05-03 realizado pelo JID salvo no CRM, final 6821.
+- `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=5`, mas manteve temporariamente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`, pitfall conhecido do step final.
+- Estado corrigido com `mcp_mcp_postgres_update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T09:51:48-03:00` e `stopped_reason=max_steps` antes do arquivamento.
+- Arquivamento realizado via update defensivo por `id`, `broker_id=35`, status anterior `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
+- Nota CRM de encerramento/arquivamento registrada pelo Reno em 2026-05-03 09:52 -03.
 - Há documento legado em `_agents/reno/clientes/10935-wenderson-beleli.md`; o caminho oficial atualizado é este documento em `_agents/reno/atendimentos/`.
