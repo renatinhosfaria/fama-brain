@@ -95,3 +95,13 @@ Responder ao cliente de forma curta, esclarecendo que o Garden Sul fica no Jardi
 - Não enviar contato/telefone de construtora ao cliente.
 - Não mencionar endereço exato de empreendimento espontaneamente; usar bairro/região.
 - Esta atualização é curada e não contém dump bruto de conversa.
+
+
+### 2026-05-03 — Diferença Garden Sul x Jardim Sul na mesma quadra
+Cliente respondeu que os empreendimentos são lado a lado e perguntou por que nomes diferentes na mesma quadra e se há diferença de preço.
+
+Consulta confirmou:
+- Garden Sul (id 25): Jardim Sul/Zona Sul, lançamento, entrega set/2028, 2 quartos com suíte, plantas tipo 52,01m² a partir de R$ 294.900 e 56,32m² por R$ 330.900; térreos maiores até R$ 367.900.
+- Jardim Sul (id 140): mesma região/rua, em construção, entrega Set/2027, 2 quartos com suíte, 52m² a partir de R$ 303.900, 56,16m² por R$ 331.900 e térreo 69,20m² por R$ 354.900.
+
+Conduta: explicar que são empreendimentos/projetos/etapas diferentes, mesmo próximos. Existe diferença de preço, mas pequena nas plantas tipo; o valor final depende de planta, metragem, andar/posição, unidade e tabela atual. Próximo passo: oferecer comparar as unidades mais baratas dos dois para decidir melhor.
