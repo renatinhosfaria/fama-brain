@@ -73,3 +73,9 @@ Responder de forma curta: apresentar a Fama como imobiliária focada em ajudar o
 Cliente perguntou diretamente se o atendimento é feito por IA. Conduta: responder com transparência, manter tom humano e seguro, explicar que Reno é assistente digital da Fama para primeiro atendimento e que pode encaminhar para corretor da equipe quando necessário.
 
 Próximo passo comercial: retomar a conversa sobre o Garden Sul e entender se o cliente busca imóvel para morar, investir ou conhecer opções.
+
+
+### 2026-05-03 — Pergunta sobre condições de pagamento do Garden Sul
+Cliente perguntou quais são as condições de pagamento do Garden. Contexto confirmado no CRM: Garden Sul, Jardim Sul, com unidades a partir de R$ 294.900, financiamento bancário, entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável.
+
+Conduta comercial: responder de forma curta, sem prometer aprovação; explicar que a condição exata depende da unidade e análise, e fazer convite claro para visita presencial na Fama. Como é domingo, CTA preferencial: segunda-feira no horário do almoço ou fim do dia.
