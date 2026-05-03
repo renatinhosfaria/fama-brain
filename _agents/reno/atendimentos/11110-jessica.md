@@ -19,7 +19,7 @@ tags:
 # Atendimento — Jessica
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`, com interesse associado ao empreendimento Garden Sul. Já recebeu primeiro contato e três repescagens; ainda não há resposta real registrada no CRM.
+Cliente sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`, com interesse associado ao empreendimento Garden Sul. Já recebeu primeiro contato e quatro repescagens; ainda não há resposta real registrada no CRM. A última repescagem mudou para convite consultivo direto, com CTA preferencial para análise/possível visita presencial na segunda-feira por ser fim de semana.
 
 ## Dados operacionais
 - Cliente ID: 11110
@@ -27,7 +27,7 @@ Cliente sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`, com 
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata
 - Telefone/WhatsApp: número brasileiro com WhatsApp confirmado no CRM; JID salvo utilizado no envio
-- Última interação relevante: 2026-05-02 09:12 -03 — repescagem step 3 enviada com sucesso
+- Última interação relevante: 2026-05-02 22:50 -03 — repescagem step 4 enviada com sucesso
 
 ## Contexto comercial
 - Empreendimento de interesse: Garden Sul
@@ -43,13 +43,13 @@ Cliente sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`, com 
 Ainda não há resposta da cliente. O interesse inicial parece vinculado ao Garden Sul, mas não há confirmação se a busca é para moradia, investimento ou comparação de opções.
 
 ### Momento
-Silêncio após primeiro contato e três repescagens. O fluxo atual segue como repescagem para tentar gerar a primeira microresposta, sem pressionar visita antes de entender o contexto.
+Silêncio após primeiro contato e quatro repescagens. O fluxo atual segue como repescagem para tentar gerar a primeira microresposta, sem pressionar visita antes de entender o contexto. Como a retomada ocorreu em fim de semana, o CTA da repescagem step 4 levou eventual análise/visita para segunda-feira.
 
 ### Decisão
 Sem informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de entrada, renda ou forma de pagamento. A repescagem step 2 explorou plano de compra/financiamento. A repescagem step 3 mudou o ângulo para uso do imóvel — morar ou investir — evitando repetir o racional de encaixe/financiamento.
+Sem dados de entrada, renda ou forma de pagamento. A repescagem step 2 explorou plano de compra/financiamento. A repescagem step 3 mudou o ângulo para uso do imóvel — morar ou investir. A repescagem step 4 evitou repetir esses pontos e focou em organizar o caminho de compra, comparando Garden Sul com alternativas por prazo, condição ou entrega.
 
 ## Histórico curado de interações
 ### 2026-04-29 — Primeiro contato manual
@@ -86,13 +86,28 @@ Mensagem enviada:
 
 Resultado: WhatsApp enviado com sucesso para o JID salvo no CRM. CRM atualizado via `mark_reno_followup_sent` para `step=3`, `last_sent_at=2026-05-02T09:12:27-03:00`, `next_run_at=2026-05-02T19:10:00-03:00`, `enabled=true`, `stopped_reason=null`.
 
+### 2026-05-02 — Repescagem step 4
+Ângulo usado: convite consultivo direto. A mensagem mudou pelo menos três elementos em relação ao step 3: saiu da pergunta morar/investir, destacou o benefício de organizar o caminho e comparar alternativas por prazo/condição/entrega, e levou o próximo passo para uma análise/possível visita na segunda-feira por ser fim de semana.
+
+Mensagem enviada:
+> Jessica, te chamando de forma mais direta 📍
+>
+> Como o Garden Sul é um lançamento na Zona Sul, talvez o melhor agora não seja te mandar mais informação solta. O que costuma ajudar é fazer uma leitura rápida: ver se ele é mesmo o caminho certo ou se vale comparar com outra opção de prazo, condição ou entrega.
+>
+> Se fizer sentido, na segunda posso organizar isso com você e até deixar uma análise presencial aqui na Fama como próximo passo.
+>
+> Quer que eu te ajude a organizar esse caminho?
+
+Resultado: WhatsApp enviado com sucesso para o JID salvo no CRM. CRM atualizado via `mark_reno_followup_sent` para `step=4`, `last_sent_at=2026-05-02T22:50:11-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `enabled=true`, `stopped_reason=null`. Status permaneceu `Não Respondeu`, conforme regra dos steps 1 a 4.
+
 ## Objeções e travas
 - Trava principal atual: ausência de resposta.
 - Lacuna comercial: ainda não há dados de finalidade da compra, financiamento, prazo de compra, decisores ou preferência de planta.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, mover condicionalmente de `Não Respondeu` para `Em Atendimento` e seguir atendimento normal do Reno fora do fluxo de repescagem. Se continuar silenciosa e `next_run_at` vencer, próxima repescagem elegível será step 4 com convite consultivo mais direto, evitando repetir os ângulos de encaixe, financiamento e morar/investir.
+Aguardar resposta da cliente. Se responder, mover condicionalmente de `Não Respondeu` para `Em Atendimento` e seguir atendimento normal do Reno fora do fluxo de repescagem. Se continuar silenciosa e `next_run_at` vencer, próxima repescagem elegível será step 5, com encerramento elegante da régua; após envio bem-sucedido do step 5, arquivar automaticamente no FamaChat somente se o estado final persistir `step=5`/`stopped_reason=max_steps` e o status ainda estiver exatamente `Não Respondeu`.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11110-jessica.md`.
 - Existe caminho legado `_agents/reno/clientes/11110-jessica.md` localizado em busca anterior; não foi atualizado nesta execução para evitar continuar drift. Conteúdo útil deve ser consolidado no documento oficial em momento de migração/auditoria.
+- Claim de repescagem limpo após `mark_reno_followup_sent`; `claim_expires_at=null` verificado no estado persistido.
