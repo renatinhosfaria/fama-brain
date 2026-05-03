@@ -130,3 +130,11 @@ Se o cliente pedir mais informação antes de visitar, responder curto com o que
 - Não enviar contato/telefone de construtora ao cliente.
 - Não mencionar endereço exato de empreendimento espontaneamente; usar bairro/região.
 - Não prometer aprovação de financiamento, parcela exata ou condição fechada.
+
+
+### 2026-05-03 — Sugestão objetiva de horário para visita
+Após o cliente responder “Ok” ao convite para passar na Fama, Renato orientou sugerir um horário específico na segunda-feira. Reno enviou WhatsApp sugerindo segunda-feira, 04/05/2026, às 18h30, perguntando se fica bom para o cliente passar na Fama. A mensagem manteve o contexto de validar unidade do 2º andar com vista para piscina e condição de pagamento sem chute.
+
+- WhatsApp message_id: `3EB09D19CE4642553161F6`
+- Nota CRM: `16538`
+- Próximo passo: aguardar confirmação explícita do cliente antes de criar agendamento no FamaChat.
