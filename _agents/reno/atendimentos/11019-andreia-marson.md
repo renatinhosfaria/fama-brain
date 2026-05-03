@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-28'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ status_crm: Não Respondeu
 # Atendimento — Andreia Marson
 
 ## Resumo atual
-Cliente do Reno no CRM (`broker_id=35`), status atual `Não Respondeu`, origem Facebook Ads. Interesse vinculado ao empreendimento Union Vista, no bairro Grand Ville, em Uberlândia. Ainda não há resposta real da cliente após o primeiro contato e três repescagens tecnicamente enviadas.
+Cliente do Reno no CRM (`broker_id=35`), status atual `Não Respondeu`, origem Facebook Ads. Interesse vinculado ao empreendimento Union Vista, no bairro Grand Ville, em Uberlândia. Ainda não há resposta real da cliente após o primeiro contato e quatro repescagens tecnicamente enviadas. A repescagem step 4 foi enviada em 2026-05-03 com convite consultivo direto para análise/possível visita na segunda-feira, sem alterar o status CRM.
 
 ## Dados operacionais
 - Cliente ID: 11019
@@ -28,7 +28,7 @@ Cliente do Reno no CRM (`broker_id=35`), status atual `Não Respondeu`, origem F
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp confirmado no CRM; JID salvo utilizado para envio, sem expor número completo.
 - Empreendimento vinculado: Union Vista — Grand Ville — Uberlândia/MG
-- Última interação relevante: repescagem step 3 enviada em 2026-05-02 08:55:55 -03:00
+- Última interação relevante: repescagem step 4 enviada em 2026-05-03 19:32:04 -03:00
 
 ## Contexto comercial
 A cliente veio de anúncio relacionado ao Union Vista, empreendimento de apartamentos no Grand Ville, Zona Leste de Uberlândia, com entrega prevista para Jul/2027. Há unidades de 2 quartos, 1 suíte, varanda e 1 vaga, com valores cadastrados a partir de aproximadamente R$ 292 mil. Não há, até o momento, informação declarada sobre necessidade, forma de pagamento, prazo de compra ou se a busca é para morar/investir.
@@ -38,13 +38,13 @@ A cliente veio de anúncio relacionado ao Union Vista, empreendimento de apartam
 Interesse inicial em imóvel específico, mas sem resposta suficiente para confirmar necessidade residencial, investimento ou perfil familiar.
 
 ### Momento
-Cliente silenciosa desde o primeiro contato. O timing de compra ainda não foi identificado. O step 3 buscou abrir uma microresposta por diagnóstico leve: diferenciar se o interesse no Union Vista seria para morar ou para investimento.
+Cliente silenciosa desde o primeiro contato. O timing de compra ainda não foi identificado. O step 4 buscou mudar de diagnóstico leve para convite consultivo direto, tentando levar a cliente para uma análise objetiva e possível visita na segunda-feira.
 
 ### Decisão
 Sem dados sobre decisores ou influenciadores.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou capacidade de compra. Não há promessa de crédito; abordagem deve seguir consultiva, buscando entender primeiro objetivo de compra e depois viabilidade.
+Sem dados de renda, entrada, financiamento ou capacidade de compra. A mensagem do step 4 abordou entrada, parcelas durante a obra, financiamento e alternativas próximas como pontos de análise, sem prometer aprovação de crédito.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato enviado
@@ -77,15 +77,29 @@ Mensagem enviada:
 
 Ângulo usado: diagnóstico leve sobre finalidade da compra, diferente dos steps anteriores que focaram em região/viabilidade e prazo/forma de pagamento. Pergunta única de baixa fricção para identificar se a busca é para morar ou investir. Registro feito no CRM pela ferramenta `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-05-03 19:10 -03:00.
 
+### 2026-05-03 — Repescagem step 4 enviada
+Mensagem enviada:
+
+> Andreia, vou ser bem direto contigo 📍
+>
+> O Union Vista é um lançamento que pode ser interessante, mas só vale avançar se o caminho da compra fizer sentido: entrada, parcelas durante a obra, financiamento e alternativas próximas.
+>
+> Em vez de eu te mandar mais informação solta por aqui, acho mais útil fazer uma análise objetiva e, se encaixar, te receber na Fama para olhar isso com calma.
+>
+> Na segunda, posso separar um horário rápido pra gente ver se o Union Vista realmente merece entrar no seu radar?
+
+Ângulo usado: convite consultivo direto, mudando do diagnóstico morar/investir para organização prática do caminho de compra e possível visita na segunda-feira por ser fim de semana. Registro feito no CRM pela ferramenta `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-05-04 09:10 -03:00.
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens steps 1 e 2.
+- Silêncio após primeiro contato e repescagens steps 1 a 4.
 - Falta de contexto declarado sobre prazo, viabilidade e intenção de compra.
 
 ## Próximo passo
-Aguardar resposta. Se permanecer em silêncio e continuar elegível em `Não Respondeu`, o próximo envio será a repescagem step 4 em 2026-05-03 19:10 -03:00, com convite consultivo mais direto e sem repetir o argumento de prazo/forma de pagamento nem a pergunta morar/investir.
+Aguardar resposta. Se a cliente responder, interromper repescagem e seguir atendimento normal do Reno, com atualização de status de `Não Respondeu` para `Em Atendimento` quando aplicável. Se permanecer em silêncio e continuar elegível, o próximo envio será a repescagem step 5 em 2026-05-04 09:10 -03:00, com encerramento elegante/pausa respeitosa e sem repetir convite de agenda.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11019-andreia-marson.md`.
 - Existe registro legado em `_agents/reno/clientes/11019-andreia-marson.md`; não foi usado como destino novo para evitar drift de governança.
-- Status CRM não foi alterado pela repescagem, conforme regra operacional: permanece `Não Respondeu` até resposta real da cliente.
-- Envio do step 3 realizado via JID salvo no CRM; telefone completo não exposto no vault.
+- Status CRM não foi alterado pela repescagem step 4, conforme regra operacional: permanece `Não Respondeu` até resposta real da cliente.
+- Envio do step 4 realizado via JID salvo no CRM; telefone completo não exposto no vault.
+- Claim da repescagem foi limpo pela ferramenta `mark_reno_followup_sent` após o envio bem-sucedido.
