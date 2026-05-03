@@ -5,50 +5,51 @@ entity_type: atendimento
 entity_name: Sibely Cortes
 client_id: 10996
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Sibely Cortes
 
 ## Resumo atual
-Cliente Reno (`client_id=10996`) em acompanhamento digital pelo fluxo de repescagem. Está em `Não Respondeu` após primeiro contato e quatro follow-ups do Reno. Interesse contextual identificado no CRM: Union Vereda, no Jaraguá.
+Cliente Reno (`client_id=10996`) teve a régua de repescagem concluída sem resposta real. Interesse contextual no CRM: Union Vereda, no Jaraguá.
 
-A repescagem step 4 foi enviada em 2026-05-02 21:32 (-03:00), com convite consultivo direto para organizar condição de obra, entrada e alternativas reais, levando a análise para segunda-feira por se tratar de fim de semana.
+Em 2026-05-03 14:33 (-03:00), o Reno enviou a repescagem step 5 com encerramento elegante, mudando o ângulo de convite/análise para pausa respeitosa e porta aberta. Após o envio, a branch foi corrigida para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`, e o status CRM foi arquivado defensivamente.
 
 ## Dados operacionais
 - Cliente ID: 10996
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - Telefone/WhatsApp: disponível no CRM; JID salvo usado para envio
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02 21:32 (-03:00)
-- Estado da repescagem: `step=4`, `enabled=true`, `stopped_reason=null`, `next_run_at=2026-05-03T09:10:00-03:00`
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03 14:33 (-03:00) e cliente arquivado em seguida
+- Estado final da repescagem: `step=5`, `enabled=false`, `stopped_reason=max_steps`, `next_run_at=null`
 
 ## Contexto comercial
-Lead demonstrou interesse no Union Vereda, no Jaraguá. Ainda não houve resposta real do cliente ao Reno. O empreendimento tem entrega prevista para dez/2028 e apartamentos disponíveis de 2 quartos, com suíte e varanda/sacada, a partir de aproximadamente R$ 288 mil no CRM.
+Lead demonstrou interesse no Union Vereda, no Jaraguá. Não houve resposta real ao Reno durante a régua de repescagem. O empreendimento tem entrega prevista para dez/2028 e apartamentos disponíveis de 2 quartos, com suíte e varanda/sacada, a partir de aproximadamente R$ 288 mil no CRM.
 
-As repescagens anteriores já abordaram encaixe geral do imóvel, objetivo de uso (morar/investir) e prazo de entrega. A repescagem step 4 mudou o ângulo para orientação consultiva do caminho de compra: organizar condição de obra, entrada e alternativas reais antes de decidir se vale seguir.
+As abordagens anteriores já tinham explorado: encaixe geral do imóvel, objetivo de uso (morar/investir), prazo de entrega e convite consultivo para organizar condição de obra, entrada e alternativas reais. No step 5, por já existir convite/análise no step 4, a abordagem mudou para pausa respeitosa com possibilidade de retomada futura.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não identificada por resposta direta. Contexto sugere interesse em imóvel/empreendimento específico.
+Não identificada por resposta direta. Contexto sugere interesse inicial em imóvel/empreendimento específico.
 
 ### Momento
-Sem resposta do cliente até o momento; régua de repescagem ativa. Como o step 4 foi enviado no fim de semana, o CTA foi deslocado para análise na segunda-feira, evitando pressão imediata.
+Cliente permaneceu silenciosa após primeiro contato e cinco repescagens. A melhor ação automática agora é pausar a régua para não insistir além do adequado.
 
 ### Decisão
 Não há informação sobre decisores ou influenciadores.
 
 ### Viabilidade
-Não há dados de renda, entrada ou financiamento. A abordagem citou entrada e alternativas reais como pontos de organização, sem prometer crédito ou aprovação.
+Não há dados de renda, entrada ou financiamento. O atendimento preservou abordagem consultiva sem promessa de crédito ou aprovação.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Recuperação e primeiro contato do Reno
@@ -112,12 +113,30 @@ Mensagem enviada:
 
 Registro operacional no CRM/FamaChat: nota `16436`; envio WhatsApp confirmado pelo JID salvo; estado de repescagem atualizado pela tool específica do Reno. Próximo `next_run_at`: `2026-05-03T09:10:00-03:00`.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem. Step enviado: 5.
+
+Ângulo/contexto usado: encerramento elegante. A abordagem foi diferenciada do step 4: saiu de convite consultivo/análise na segunda-feira para pausa respeitosa, reconhecimento de pesquisa/comparação e porta aberta para retomada futura. Não houve nova insistência em agenda.
+
+Mensagem enviada:
+`Sibely, vou pausar por aqui, tá bem? 🏡`
+
+`Como você olhou o Union Vereda no Jaraguá, pode ser que esteja só pesquisando e comparando com calma. Em lançamento com entrega em dez/2028, faz sentido olhar prazo, condição e alternativas sem pressa, para não prender sua decisão antes da hora.`
+
+`Se quiser retomar depois, eu consigo te ajudar a comparar isso de forma **bem objetiva**, inclusive com opções que façam mais sentido para o seu prazo.`
+
+`Posso deixar você à vontade e você me chama quando quiser olhar com calma?`
+
+Registro operacional no CRM/FamaChat: nota `16555`; envio WhatsApp confirmado pelo JID salvo. A tool de marcação registrou `step=5`, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido pela tool específica para `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`. Em seguida, o status foi atualizado defensivamente para `Arquivado` e nota CRM de arquivamento registrada (`16556`).
+
 ## Objeções e travas
-- Trava principal: silêncio após primeiro contato e após quatro repescagens.
-- Lacuna comercial: ainda não há confirmação se o interesse é para moradia, investimento, financiamento, prazo de entrega ou outro cenário.
+- Trava principal: silêncio após primeiro contato e após cinco repescagens.
+- Lacuna comercial: não houve confirmação sobre moradia, investimento, financiamento, prazo de entrega ou outro cenário.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se continuar sem resposta, próxima repescagem prevista para `2026-05-03T09:10:00-03:00`, mantendo status `Não Respondeu`. Se houver resposta real, parar repescagem e conduzir atendimento por fluxo normal do Reno.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, retomar pelo atendimento normal do Reno, mover para `Em Atendimento` somente se a regra operacional aplicável permitir no momento e reconstruir diagnóstico antes de qualquer novo convite comercial.
 
 ## Observações operacionais
 Houve histórico anterior de supressão/revisão por duplicidade e origem `lead_automatico`, posteriormente corrigido: `lead_automatico` não deve ser usado sozinho para suprimir contato. Documento consolidado no caminho oficial `_agents/reno/atendimentos/10996-sibely-cortes.md`.
+
+No step 5, ocorreu o pitfall recorrente da tool `mark_reno_followup_sent`: ela registrou envio e nota automática com próximo follow-up indevido para step final. O estado foi corrigido via `update_reno_followup_state` antes do arquivamento defensivo. A correção compactou a branch final, por isso a mensagem final foi preservada neste documento e nas notas CRM.
