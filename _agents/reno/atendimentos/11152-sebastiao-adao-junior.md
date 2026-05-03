@@ -20,15 +20,17 @@ tags:
   - jardim-sul
   - preco
   - segundo-andar
+  - viabilidade
+  - financiamento
 ---
 # Atendimento — Sebastiao Adao Junior
 
 ## Resumo atual
-Cliente está em `Em Atendimento` pelo Reno. Interesse ativo: Garden Sul (id 25), no bairro Jardim Sul/Zona Sul. O cliente está engajado e fazendo perguntas sequenciais sobre a Fama, IA/Reno, condições de pagamento, preço por andar, diferença entre Garden Sul/Jardim Sul e agora sobre unidade de 2º andar com vista para piscina.
+Cliente está em `Em Atendimento` pelo Reno. Interesse ativo: Garden Sul (id 25), no bairro Jardim Sul/Zona Sul. O cliente está engajado em sequência pelo WhatsApp e já perguntou sobre Fama/Reno, IA, condições de pagamento, preço por andar, diferença entre Garden Sul/Jardim Sul, unidade no 2º andar com vista para piscina e agora sobre quanto pagaria se financiar R$ 294.900 e deixar o restante com a incorporação/construtora.
 
-Evento mais recente curado: cliente especificou `2º andar, com vista para piscina` e perguntou qual o valor. O CRM já havia sido consultado e não possui campo seguro de unidade/andar/posição/vista para cravar preço fechado do 2º andar; há apenas plantas/valores gerais ativos.
+Evento mais recente curado: cliente informou que pretende financiar R$ 294.900 e pagar o restante com a incorporação/construtora, perguntando quanto pagaria. A resposta comercial deve tratar isso como prévia de viabilidade/entrada parcelada, sem prometer aprovação, parcela exata ou condição fechada. É necessário calcular com ferramenta se for estimar diferença/parcelamento, validar unidade/tabela vigente e conduzir para atendimento presencial/simulação na Fama.
 
-Conduta comercial recomendada: ser transparente e não chutar preço por vista/andar. Referência segura atual: planta tipo 52,01m² a partir de R$ 294.900 e planta 56,32m² por R$ 330.900; valor exato depende da unidade disponível, posição/vista e tabela vigente. Como o cliente já demonstrou interesse, validar a tabela/unidade do 2º andar e conduzir para atendimento presencial/simulação na Fama.
+Referência segura atual do CRM para Garden Sul: planta tipo 52,01m² a partir de R$ 294.900 e planta 56,32m² por R$ 330.900; valores exatos dependem da unidade, planta, posição/vista, andar e tabela vigente.
 
 ## Dados operacionais
 - Cliente ID: 11152
@@ -36,29 +38,29 @@ Conduta comercial recomendada: ser transparente e não chutar preço por vista/a
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp CRM: (34) 8420-7737 / 553484207737@s.whatsapp.net
-- Última interação relevante: 2026-05-03 — cliente especificou Garden Sul, 2º andar, com vista para piscina, e perguntou qual o valor.
+- Última interação relevante: 2026-05-03 — cliente perguntou quanto pagaria ao financiar R$ 294.900 e pagar o restante com a incorporação/construtora.
 - Follow-up Reno: repescagem interrompida por resposta real do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`); sem resgate ativo.
-- Notas CRM relevantes: 16489, 16490, 16492, 16495, 16497, 16498, 16499, 16502, 16503, 16505, 16507, 16508, 16509 e 16510.
+- Notas CRM relevantes: 16489, 16490, 16492, 16495, 16497, 16498, 16499, 16502, 16503, 16505, 16507, 16508, 16509, 16510 e 16512.
 
 ## Contexto comercial
 Lead originado por Facebook Ads com interesse no Garden Sul. O Garden Sul (id 25) é lançamento da Opção Empreendimentos, no bairro Jardim Sul/Zona Sul, com apartamentos de 2 quartos com suíte, plantas tipo de 52,01m² a 56,32m² e valores seguros no CRM a partir de R$ 294.900.
 
-O cliente está comparando nomes parecidos: Garden Sul, “Jardins” e Jardim Sul. A consulta operacional confirmou que Garden Sul (id 25) e Jardim Sul (id 140) são empreendimentos distintos, próximos/lado a lado na região do Jardim Sul/Zona Sul e ambos vinculados à Opção Empreendimentos. Evitar corrigir de forma fria; explicar como diferença de projeto/etapa/tabela.
+O cliente está comparando nomes parecidos: Garden Sul, “Jardins” e Jardim Sul. Consulta operacional confirmou que Garden Sul (id 25) e Jardim Sul (id 140) são empreendimentos distintos, próximos/lado a lado na região do Jardim Sul/Zona Sul e ambos vinculados à Opção Empreendimentos. Evitar corrigir de forma fria; explicar como diferença de projeto/etapa/tabela.
 
 Para preço do 2º andar e, mais especificamente, 2º andar com vista para piscina, a base consultada não tem campo unitário de andar/posição/vista. Tratar qualquer valor como referência por planta/unidade, não como preço fechado do 2º andar sem validação da tabela atual.
 
 ## Diagnóstico
 ### Necessidade
-Cliente busca entender o Garden Sul com foco em unidade de 2º andar, vista para piscina e preço, além de comparar nomes/projetos próximos no Jardim Sul.
+Cliente busca entender o Garden Sul com foco em unidade de 2º andar, vista para piscina, preço, diferença entre projetos próximos e forma de pagamento/financiamento com saldo restante pela incorporação/construtora.
 
 ### Momento
-Cliente muito engajado no WhatsApp, respondendo em sequência no mesmo atendimento. Há oportunidade clara de avançar para validação de unidade/tabela e convite presencial.
+Cliente muito engajado no WhatsApp, respondendo em sequência no mesmo atendimento. Há oportunidade clara de avançar para validação de unidade/tabela, estimativa de entrada/parcelamento e convite presencial.
 
 ### Decisão
 Ainda não diagnosticada. Não há informação sobre decisores familiares ou necessidade de aprovação de terceiros.
 
 ### Viabilidade
-Cliente perguntou condições de pagamento, preço e diferença de valores, mas ainda não informou renda, entrada, FGTS ou faixa mensal. Tratar condições como prévia e conduzir para visita/simulação segura na Fama, sem prometer aprovação.
+Cliente informou intenção de financiar R$ 294.900 e pagar o restante com a incorporação/construtora. Ainda não informou renda, FGTS, entrada disponível, prazo desejado ou limite mensal. Não prometer aprovação nem parcela fechada; usar cálculo apenas como prévia, com ressalva de que depende da unidade, análise e tabela vigente.
 
 ## Histórico curado de interações
 ### 2026-05-03 — Primeiro contato enviado
@@ -74,12 +76,12 @@ Cliente respondeu pelo WhatsApp informando que preencheu o formulário e quer sa
 ### 2026-05-03 — Cliente questionou se Reno é IA
 Cliente perguntou diretamente se o atendimento é feito por IA. Conduta: responder com transparência, manter tom humano e seguro, explicar que Reno é assistente digital da Fama para primeiro atendimento e que pode encaminhar para corretor da equipe quando necessário.
 
-### 2026-05-03 — Pergunta sobre condições de pagamento do Garden Sul
+### 2026-05-03 — Condições de pagamento do Garden Sul
 Cliente perguntou quais são as condições de pagamento do Garden. Contexto confirmado no CRM: Garden Sul, Jardim Sul, com unidades a partir de R$ 294.900, financiamento bancário, entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável.
 
 Conduta comercial: responder de forma curta, sem prometer aprovação; explicar que a condição exata depende da unidade e análise, e fazer convite claro para visita presencial na Fama. Como é domingo, CTA preferencial: segunda-feira no horário do almoço ou fim do dia.
 
-### 2026-05-03 — Pergunta sobre preço no 2º andar do Garden Sul
+### 2026-05-03 — Preço no 2º andar do Garden Sul
 Cliente perguntou o preço do 2º andar do Garden Sul. Consulta interna não localizou tabela unitária por andar; dados seguros disponíveis: plantas tipo de 52,01m² a partir de R$ 294.900 e planta de 56,32m² a R$ 330.900. Térreos possuem metragem maior e valores superiores.
 
 Conduta: responder que o 2º andar entra nas plantas tipo, com preço a partir de R$ 294.900, mas que o valor exato depende da planta/posição/unidade e precisa ser validado na tabela atual. Manter CTA para visita na Fama para conferir unidade e condição com segurança.
@@ -120,14 +122,22 @@ Notas registradas no CRM: nota 16509 com orientação comercial sobre ausência 
 
 Conduta: não afirmar preço fechado do 2º andar com vista para piscina sem validar tabela/unidade específica. Usar a referência segura por planta e oferecer validação da unidade/tabela, preferencialmente com ponte para visita/simulação na Fama.
 
+### 2026-05-03 — Inbound: financiamento de R$ 294.900 e restante com incorporação
+Cliente informou que pretende financiar R$ 294.900 e pagar o restante com a incorporação/construtora, perguntando quanto pagaria. CRM validado com `broker_id=35`; status já estava em `Em Atendimento`, sem mudança de status. Repescagem já estava interrompida por resposta real (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia resgate ativo.
+
+Nota silenciosa registrada no CRM (nota 16512; message_id inbound AC5CE028D8E92FBFC3847F3560BA802A). O inbound chegou por LID/phone_candidates sem correspondência direta ao `whatsapp_jid` salvo no CRM; vínculo preservado pelo contexto curado do atendimento Garden Sul e histórico recente. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
+
+Conduta: calcular a diferença apenas se houver valor de unidade escolhido/validado; se usar a referência de R$ 294.900 como preço do imóvel e financiamento igual ao preço, o restante pode ser zero para essa referência, mas não afirmar isso como condição final sem confirmar unidade, tabela, avaliação, subsídio/entrada e análise. Se a unidade for mais cara, explicar a diferença como entrada/saldo aproximado com possibilidade de parcelamento pela construtora/incorporação, sem prometer parcela exata. Aproveitar o engajamento para propor simulação presencial na Fama.
+
 ## Objeções e travas
 - Ambiguidade de nomenclatura: cliente usa “Garden”, “Jardins” e Jardim Sul. Precisa esclarecer sem parecer correção fria e sem inventar comparação.
-- Cliente ainda não trouxe dados de viabilidade. Não prometer aprovação nem condição fechada.
+- Cliente ainda não trouxe dados completos de viabilidade. Não prometer aprovação nem condição fechada.
 - Cliente pergunta preço/diferença de preço: usar dados de CRM como prévia, mas preservar que valor final depende de unidade, planta, andar/posição, vista e tabela vigente.
 - Tabela interna atual não traz campo seguro de andar/unidade/posição/vista; precisa validar unidade específica do 2º andar com vista para piscina antes de confirmar preço fechado.
+- Novo ponto de viabilidade: cliente pretende financiar R$ 294.900 e pagar eventual saldo com incorporação/construtora; cálculo de diferença depende do valor real da unidade.
 
 ## Próximo passo
-Validar comercialmente a opção disponível no 2º andar do Garden Sul com vista para piscina antes de cravar preço. Se a validação de tabela/unidade não estiver disponível de imediato, responder com a faixa segura por planta e explicar que o valor exato depende da unidade/posição/vista/tabela vigente. Como o cliente já demonstrou interesse e aceitou a validação, reabrir convite para atendimento presencial na Fama assim que houver confirmação básica de unidade/preço.
+Validar comercialmente a unidade/tabela do Garden Sul que o cliente quer analisar, especialmente se for 2º andar com vista para piscina. Para responder a pergunta de quanto pagaria, calcular a diferença com ferramenta a partir do valor real da unidade: `diferença aproximada = valor da unidade - 294.900`, explicando que a forma de parcelamento depende da tabela/condição e análise. Como o cliente está engajado em viabilidade, fazer ponte para atendimento presencial/simulação na Fama.
 
 ## Observações operacionais
 - Nome do CRM parece humano e confiável; pode usar `Sebastião` na conversa.
@@ -136,11 +146,3 @@ Validar comercialmente a opção disponível no 2º andar do Garden Sul com vist
 - Não enviar contato/telefone de construtora ao cliente.
 - Não mencionar endereço exato de empreendimento espontaneamente; usar bairro/região.
 - Esta atualização é curada e não contém dump bruto de conversa.
-
-
-### 2026-05-03 — Cliente quer financiar R$ 294.900 e pagar restante com incorporadora
-Cliente informou intenção de financiar R$ 294.900 e pagar o restante com a incorporadora, perguntando quanto pagaria.
-
-Cálculo de referência: se a unidade for exatamente R$ 294.900, restante = R$ 0. Se usar a planta de R$ 330.900, restante aproximado = R$ 36.000. Parcelando R$ 36.000 em 28 meses até set/2028, referência simples ≈ R$ 1.285,71/mês, sem correções, sinal, taxas/cartório/ITBI ou variação da tabela.
-
-Conduta: explicar como conta simples, reforçar que o valor exato depende da unidade 2º andar/vista piscina e da tabela/condição vigente, e conduzir para validação segura com a equipe/Fama.
