@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Marcos Caetano
 client_id: 10952
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -16,36 +16,38 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
+  - arquivado
+  - max-steps
 ---
 # Atendimento — Marcos Caetano
 
 ## Resumo atual
-Cliente do Reno em `broker_id=35`, status operacional `Não Respondeu`, sem resposta real registrada após contatos iniciais e repescagens. O atendimento segue em repescagem ativa. Repescagem step 4 enviada em 2026-05-02 com convite consultivo direto para organizar caminho de compra e abrir possibilidade de análise/visita na Fama na segunda-feira.
+Cliente do Reno em `broker_id=35`. A régua de repescagem foi concluída sem resposta real do cliente. Em 2026-05-03, o Reno enviou o step 5 com encerramento elegante/porta aberta, corrigiu o estado final da branch para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps` e arquivou o cliente automaticamente no FamaChat por regra operacional defensiva. Status CRM atual: `Arquivado`.
 
 ## Dados operacionais
 - Cliente ID: 10952
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Cliente original da cascata: 10884, usado apenas como contexto consultivo; a entidade operacional deste atendimento é o cliente 10952.
 - Telefone/WhatsApp: disponível no CRM/FamaChat; envios realizados pelo JID salvo no CRM.
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02T19:33:32-03:00.
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03T11:15:49-03:00; cliente arquivado automaticamente em seguida.
 
 ## Contexto comercial
-O contexto operacional indica interesse relacionado a empreendimentos da linha Union em Uberlândia, especialmente Union Vista no Grand Ville e Union Vereda no Jaraguá. O Union Vista tem entrega prevista para Jul/2027; o Union Vereda tem entrega prevista para Dez/2028. No cliente original há sinal de lead automático do Facebook Ads, reentrada posterior com empreendimento 161 e informações de formulário: já olhou alguns imóveis e vai comprar junto com alguém. Como não houve resposta real do cliente neste atendimento Reno, o contexto comercial ainda é limitado e deve ser usado com cautela.
+O contexto operacional indica interesse relacionado a empreendimentos da linha Union em Uberlândia, especialmente Union Vista no Grand Ville e Union Vereda no Jaraguá. O Union Vista tem entrega prevista para Jul/2027; o Union Vereda tem entrega prevista para Dez/2028. No cliente original há sinal de lead automático do Facebook Ads, reentrada posterior com empreendimento 161 e informações de formulário: já olhou alguns imóveis e vai comprar junto com alguém. Como não houve resposta real do cliente neste atendimento Reno, o contexto comercial permanece limitado e deve ser usado com cautela em eventual reativação futura.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não confirmada. Sinal inicial aponta busca por apartamento/empreendimento específico da linha Union.
+Não confirmada. Sinal inicial aponta busca por apartamento/empreendimento específico da linha Union.
 
 ### Momento
-Cliente silencioso após primeiro contato, reenvio inicial e repescagens steps 1 a 4. Momento de compra ainda não diagnosticado.
+Cliente permaneceu silencioso após primeiro contato, reenvio inicial e repescagens steps 1 a 5. Momento de compra não diagnosticado.
 
 ### Decisão
-Sem confirmação direta. O formulário do cliente original sugere compra junto com alguém, mas ainda não houve resposta do cliente no atendimento Reno para validar decisores.
+Sem confirmação direta. O formulário do cliente original sugere compra junto com alguém, mas não houve resposta do cliente no atendimento Reno para validar decisores.
 
 ### Viabilidade
-Sem dados confirmados de renda, entrada, financiamento ou forma de pagamento. Não prometer aprovação de crédito; conduzir para análise consultiva de caminho de compra quando houver resposta.
+Sem dados confirmados de renda, entrada, financiamento ou forma de pagamento. Não prometer aprovação de crédito; em eventual reativação, retomar por diagnóstico consultivo leve antes de apresentar opções.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato inicial/backlog enviado
@@ -121,18 +123,38 @@ Você conseguiria passar aqui na Fama na segunda para fazermos essa análise ini
 
 Registro operacional: envio confirmado via WhatsApp para o JID salvo no CRM (`message_id` registrado pelo runtime Hermes) e marcado no CRM pela tool específica `mark_reno_followup_sent`. Estado persistido após marcação: `step=4`, `enabled=true`, `last_sent_at=2026-05-02T19:33:32-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`. Status preservado como `Não Respondeu`.
 
+### 2026-05-03 — Repescagem step 5 enviada e cliente arquivado
+Fluxo: repescagem.  
+Step enviado: 5.  
+Intenção do step: encerramento elegante da régua, respeitando o silêncio do cliente e deixando porta aberta para retomada futura.  
+Ângulo comercial usado: pausa respeitosa após silêncio, sem repetir convite de visita/análise do step 4.
+
+Diferenciação em relação ao step 4: mudou o ângulo de convite consultivo/visita para pausa com porta aberta; mudou a pergunta de convite presencial para permissão de pausa; mudou o benefício de análise imediata para retomada futura com comparação de região, prazo e condição de pagamento; e reduziu a pressão comercial no encerramento.
+
+Mensagem enviada:
+```text
+Marcos, vou deixar tranquilo por aqui. 🏡
+
+Como você ainda não conseguiu me responder sobre as opções da linha Union, pode ser que agora não seja o melhor momento para seguir com a análise.
+
+Quando fizer sentido retomar, eu consigo te ajudar a comparar **região, prazo e condição de pagamento** para ver o que realmente encaixa na compra.
+
+Posso pausar meu contato por enquanto e você me chama por aqui quando quiser retomar?
+```
+
+Registro operacional: envio confirmado via WhatsApp para o JID salvo no CRM. O envio foi marcado no CRM com `mark_reno_followup_sent`. Como a tool registrou `step=5`, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`, o worker corrigiu a branch com a tool específica `update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T11:15:49-03:00` e `stopped_reason=max_steps`. Após verificação do estado final, o status foi atualizado defensivamente de `Não Respondeu` para `Arquivado`. Nota objetiva de arquivamento registrada no CRM.
+
 ## Objeções e travas
-- Trava principal atual: silêncio do cliente; ainda não há objeção declarada.
+- Trava principal observada: silêncio do cliente; não houve objeção declarada.
 - Possível risco comercial: interesse em empreendimento específico sem clareza validada de objetivo da compra, região prioritária, prazo, decisores e forma de pagamento.
 - Há anotação humana no cliente original indicando possível inconsistência de contato/nome, mas o CRM operacional do cliente 10952 possui JID salvo e os envios do Reno foram feitos por esse JID.
 
 ## Próximo passo
-- Aguardar resposta do cliente.
-- Se continuar sem resposta, próximo follow-up previsto para `2026-05-03T09:10:00-03:00`, correspondente ao step 5 da repescagem.
-- Se o cliente responder, sair do fluxo de repescagem, mover para atendimento consultivo e atualizar status conforme regra operacional aplicável.
+Sem nova ação automática do Reno. Caso o cliente responda futuramente ou seja reativado por humano, sair do histórico de repescagem encerrada e retomar por atendimento consultivo normal, validando contexto, necessidade, decisão e viabilidade antes de propor visita.
 
 ## Observações operacionais
 - Documento oficial mantido no caminho canônico `_agents/reno/atendimentos/10952-marcos-caetano.md`.
 - Existe documento legado anterior em `_agents/reno/clientes/10952-marcos-caetano.md`; conteúdo curado útil foi consolidado neste documento oficial. Não escrever novos eventos no caminho legado.
-- Cliente permanece em status `Não Respondeu`; steps 1 a 4 de repescagem não alteram status até resposta real.
-- Step 4 enviado no sábado à noite; CTA respeitou a regra Renato/Reno de priorizar conversa/visita na segunda-feira quando a retomada evolui para convite em fim de semana.
+- A régua de 5 repescagens foi concluída sem resposta real do cliente.
+- O arquivamento automático foi feito somente após verificação defensiva de `broker_id=35`, status `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
+- Pitfall observado novamente: `mark_reno_followup_sent` não encerrou automaticamente a branch no step 5; foi necessária correção com `update_reno_followup_state`. A correção compactou a branch final para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem enviada está preservada na nota CRM automática e neste documento oficial do vault.
