@@ -14,23 +14,23 @@ tags:
   - atendimento
   - whatsapp
   - famachat
-  - primeiro-contato
-  - primeira-resposta
   - garden-sul
   - jardim-sul
   - preco
   - segundo-andar
+  - vista-piscina
   - viabilidade
   - financiamento
+  - convite-visita
 ---
 # Atendimento — Sebastiao Adao Junior
 
 ## Resumo atual
-Cliente está em `Em Atendimento` pelo Reno. Interesse ativo: Garden Sul (id 25), no bairro Jardim Sul/Zona Sul. O cliente está engajado em sequência pelo WhatsApp e já perguntou sobre Fama/Reno, IA, condições de pagamento, preço por andar, diferença entre Garden Sul/Jardim Sul, unidade no 2º andar com vista para piscina e agora sobre quanto pagaria se financiar R$ 294.900 e deixar o restante com a incorporação/construtora.
+Cliente está em `Em Atendimento` pelo Reno e segue quente no WhatsApp. Interesse ativo: Garden Sul (id 25), no bairro Jardim Sul/Zona Sul, com foco em unidade no 2º andar, vista para piscina, valor da unidade e forma de pagar o saldo com a incorporadora/construtora.
 
-Evento mais recente curado: cliente informou que pretende financiar R$ 294.900 e pagar o restante com a incorporação/construtora, perguntando quanto pagaria. A resposta comercial deve tratar isso como prévia de viabilidade/entrada parcelada, sem prometer aprovação, parcela exata ou condição fechada. É necessário calcular com ferramenta se for estimar diferença/parcelamento, validar unidade/tabela vigente e conduzir para atendimento presencial/simulação na Fama.
+O cliente insistiu várias vezes em uma informação que o CRM não possui com segurança: preço exato da unidade por andar/posição/vista. A condução anterior ficou repetindo que precisava confirmar a unidade/tabela. Em 2026-05-03, Reno corrigiu a abordagem: reconheceu que não deve continuar passando estimativa repetida, posicionou a validação presencial como melhor próximo passo e convidou Sebastião para passar na Fama na segunda-feira no horário do almoço ou fim do dia.
 
-Referência segura atual do CRM para Garden Sul: planta tipo 52,01m² a partir de R$ 294.900 e planta 56,32m² por R$ 330.900; valores exatos dependem da unidade, planta, posição/vista, andar e tabela vigente.
+Referência segura do CRM para Garden Sul: planta tipo 52,01m² a partir de R$ 294.900 e planta 56,32m² por R$ 330.900. Valores exatos dependem da unidade, planta, posição/vista, andar e tabela vigente.
 
 ## Dados operacionais
 - Cliente ID: 11152
@@ -38,111 +38,81 @@ Referência segura atual do CRM para Garden Sul: planta tipo 52,01m² a partir d
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp CRM: (34) 8420-7737 / 553484207737@s.whatsapp.net
-- Última interação relevante: 2026-05-03 — cliente perguntou quanto pagaria ao financiar R$ 294.900 e pagar o restante com a incorporação/construtora.
+- Última interação relevante: 2026-05-03 — Reno enviou convite claro para visita presencial na Fama, com CTA para segunda-feira no almoço ou fim do dia.
+- WhatsApp outbound de correção/convite: message_id `3EB07B1E804A6672780D0C`.
+- Nota CRM do convite/correção: 16519.
 - Follow-up Reno: repescagem interrompida por resposta real do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`); sem resgate ativo.
-- Notas CRM relevantes: 16489, 16490, 16492, 16495, 16497, 16498, 16499, 16502, 16503, 16505, 16507, 16508, 16509, 16510 e 16512.
 
 ## Contexto comercial
 Lead originado por Facebook Ads com interesse no Garden Sul. O Garden Sul (id 25) é lançamento da Opção Empreendimentos, no bairro Jardim Sul/Zona Sul, com apartamentos de 2 quartos com suíte, plantas tipo de 52,01m² a 56,32m² e valores seguros no CRM a partir de R$ 294.900.
 
-O cliente está comparando nomes parecidos: Garden Sul, “Jardins” e Jardim Sul. Consulta operacional confirmou que Garden Sul (id 25) e Jardim Sul (id 140) são empreendimentos distintos, próximos/lado a lado na região do Jardim Sul/Zona Sul e ambos vinculados à Opção Empreendimentos. Evitar corrigir de forma fria; explicar como diferença de projeto/etapa/tabela.
+O cliente comparou nomes parecidos: Garden Sul, “Jardins” e Jardim Sul. Consulta operacional confirmou que Garden Sul (id 25) e Jardim Sul (id 140) são empreendimentos distintos, próximos/lado a lado na região do Jardim Sul/Zona Sul e ambos vinculados à Opção Empreendimentos. A diferença de valor e prazo depende da planta, unidade, projeto/etapa e tabela vigente.
 
-Para preço do 2º andar e, mais especificamente, 2º andar com vista para piscina, a base consultada não tem campo unitário de andar/posição/vista. Tratar qualquer valor como referência por planta/unidade, não como preço fechado do 2º andar sem validação da tabela atual.
+Para preço do 2º andar e, mais especificamente, 2º andar com vista para piscina, a base consultada não tem campo unitário de andar/posição/vista. Não cravar preço fechado sem validação comercial da tabela atual.
 
 ## Diagnóstico
 ### Necessidade
-Cliente busca entender o Garden Sul com foco em unidade de 2º andar, vista para piscina, preço, diferença entre projetos próximos e forma de pagamento/financiamento com saldo restante pela incorporação/construtora.
+Cliente quer entender se o Garden Sul, especialmente 2º andar com vista para piscina, encaixa no financiamento pretendido e no saldo a pagar com a incorporadora/construtora.
 
 ### Momento
-Cliente muito engajado no WhatsApp, respondendo em sequência no mesmo atendimento. Há oportunidade clara de avançar para validação de unidade/tabela, estimativa de entrada/parcelamento e convite presencial.
+Cliente muito engajado, perguntando detalhes de preço e pagamento em sequência. Sinal claro de oportunidade para visita presencial e validação de unidade/tabela.
 
 ### Decisão
 Ainda não diagnosticada. Não há informação sobre decisores familiares ou necessidade de aprovação de terceiros.
 
 ### Viabilidade
-Cliente informou intenção de financiar R$ 294.900 e pagar o restante com a incorporação/construtora. Ainda não informou renda, FGTS, entrada disponível, prazo desejado ou limite mensal. Não prometer aprovação nem parcela fechada; usar cálculo apenas como prévia, com ressalva de que depende da unidade, análise e tabela vigente.
+Cliente informou intenção de financiar R$ 294.900 e pagar eventual restante com a incorporadora/construtora. Ainda não informou renda, FGTS, entrada disponível, prazo desejado ou limite mensal. Não prometer aprovação nem parcela fechada; qualquer cálculo é apenas referência e depende da unidade real, análise e tabela vigente.
 
 ## Histórico curado de interações
 ### 2026-05-03 — Primeiro contato enviado
-Reno enviou abertura curta por WhatsApp: apresentação como Fama Negócios Imobiliários, contexto de interesse no Garden Sul/Jardim Sul e pergunta se o cliente está procurando imóvel nessa região.
-
-Status do CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu`. A branch `meta_data.reno_followup.repescagem` foi inicializada com `step=0`, turno de entrada `manha` e próxima repescagem em 2026-05-03 às 19:10.
-
-Referência operacional: evt_3320 / 3320_1777817308525.
+Reno enviou abertura curta por WhatsApp contextualizando interesse no Garden Sul/Jardim Sul e perguntando se o cliente procurava imóvel naquela região. CRM foi atualizado de `Sem Atendimento` para `Não Respondeu` e branch de repescagem foi inicializada.
 
 ### 2026-05-03 — Primeira resposta do cliente
-Cliente respondeu pelo WhatsApp informando que preencheu o formulário e quer saber mais sobre a empresa. A resposta encerrou a condição de silêncio: status do CRM atualizado de `Não Respondeu` para `Em Atendimento` e repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.
+Cliente respondeu querendo saber mais sobre a empresa. Status atualizado para `Em Atendimento`; repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.
 
 ### 2026-05-03 — Cliente questionou se Reno é IA
-Cliente perguntou diretamente se o atendimento é feito por IA. Conduta: responder com transparência, manter tom humano e seguro, explicar que Reno é assistente digital da Fama para primeiro atendimento e que pode encaminhar para corretor da equipe quando necessário.
+Cliente perguntou se o atendimento era IA. Conduta correta: responder com transparência, explicar que Reno é assistente digital da Fama para primeiro atendimento e que pode encaminhar para corretor humano quando necessário.
 
 ### 2026-05-03 — Condições de pagamento do Garden Sul
-Cliente perguntou quais são as condições de pagamento do Garden. Contexto confirmado no CRM: Garden Sul, Jardim Sul, com unidades a partir de R$ 294.900, financiamento bancário, entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável.
+Cliente perguntou sobre condições de pagamento do Garden. Contexto seguro: Garden Sul no Jardim Sul, unidades a partir de R$ 294.900, financiamento bancário, entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável. Não prometer aprovação ou condição exata.
 
-Conduta comercial: responder de forma curta, sem prometer aprovação; explicar que a condição exata depende da unidade e análise, e fazer convite claro para visita presencial na Fama. Como é domingo, CTA preferencial: segunda-feira no horário do almoço ou fim do dia.
+### 2026-05-03 — Comparação Garden Sul x Jardim Sul
+Cliente perguntou a diferença entre Garden/Jardins/Jardim Sul e confirmou que os empreendimentos são lado a lado. Consulta confirmou Garden Sul (id 25) e Jardim Sul (id 140) como projetos/etapas distintos próximos na mesma região. Explicar de forma simples, sem corrigir friamente o cliente.
 
-### 2026-05-03 — Preço no 2º andar do Garden Sul
-Cliente perguntou o preço do 2º andar do Garden Sul. Consulta interna não localizou tabela unitária por andar; dados seguros disponíveis: plantas tipo de 52,01m² a partir de R$ 294.900 e planta de 56,32m² a R$ 330.900. Térreos possuem metragem maior e valores superiores.
+### 2026-05-03 — Cliente especificou 2º andar com vista para piscina
+Cliente reafirmou interesse no Garden Sul, 2º andar, com vista para piscina, e perguntou o valor. Consulta interna mostrou que o CRM não traz preço por andar/posição/vista. Referências seguras: 52,01m² a partir de R$ 294.900 e 56,32m² por R$ 330.900. Necessário validar unidade/tabela atual para preço exato.
 
-Conduta: responder que o 2º andar entra nas plantas tipo, com preço a partir de R$ 294.900, mas que o valor exato depende da planta/posição/unidade e precisa ser validado na tabela atual. Manter CTA para visita na Fama para conferir unidade e condição com segurança.
+### 2026-05-03 — Cliente informou financiamento de R$ 294.900
+Cliente disse que pretende financiar R$ 294.900 e pagar o restante com a incorporação/construtora, perguntando quanto pagaria. Cálculo de referência anterior: se usar a planta de R$ 330.900 e financiamento de R$ 294.900, diferença aproximada de R$ 36.000; se parcelada em 28 meses, referência aproximada de R$ 1.285/mês, sem correções e ajustes. Esse valor não deve ser tratado como condição fechada.
 
-### 2026-05-03 — Comparação Garden Sul x “Jardins/Gardens”
-Cliente perguntou a diferença entre Garden e “jardins”. Consulta interna mostrou ambiguidade: poderia se referir ao Gardens Residence ou ao empreendimento Jardim Sul. Para resposta imediata, tratar como comparação com cuidado e confirmar o contexto quando necessário.
+### 2026-05-03 — Correção de condução e convite para visita
+Após orientação do Renato, Reno parou de repetir a mesma ressalva e convidou o cliente para visita presencial como próximo passo lógico. Mensagem enviada:
 
-Dados seguros: Garden Sul é lançamento no Jardim Sul/Zona Sul, 2 quartos com suíte, opções a partir de R$ 294.900 e entrega prevista set/2028. A busca por “Jardim Sul” também retorna um empreendimento com esse nome e outros empreendimentos no bairro Jardim Sul.
+> Sebastião, pra não ficar te passando estimativa repetida: esse valor exato eu só consigo cravar validando a unidade do 2º andar com vista pra piscina na tabela atual.
+>
+> Mas pelo que você já trouxe, você está bem encaminhado: financiamento de R$ 294.900 e o restante com a incorporadora.
+>
+> O melhor agora é você passar aqui na Fama pra eu conferir a unidade certinha, ver essa diferença com calma e já olhar a condição de pagamento sem chute.
+>
+> Segunda no horário do almoço ou no fim do dia fica melhor pra você?
 
-### 2026-05-03 — Esclarecimento sobre Jardim Sul / Garden Sul
-Cliente perguntou: “O jardins sul é ai também certo”. CRM validado: cliente pertence ao Reno (`broker_id=35`) e já estava em `Em Atendimento`, sem necessidade de mudança de status. Repescagem já estava interrompida por resposta real e não havia resgate ativo. Nota operacional registrada no CRM (nota 16499; message_id inbound ACCDA1DC8DE12FEEDEF6F52C8595C67C).
-
-Conduta comercial recomendada: confirmar de forma simples que sim, a Fama atende; explicar que o Garden Sul fica no bairro Jardim Sul; se ele estiver falando do empreendimento Jardim Sul específico, pedir confirmação leve para não misturar os nomes.
-
-### 2026-05-03 — Diferença Garden Sul x Jardim Sul na mesma quadra
-Cliente respondeu que os empreendimentos são lado a lado e perguntou por que há nomes diferentes na mesma quadra e se existe diferença de preço. CRM validado: `broker_id=35`, status já em `Em Atendimento`; repescagem já interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e sem resgate ativo. Nota operacional da rotina silenciosa registrada no CRM (nota 16503; message_id inbound ACC9D1ED34B1196E8164644C436511C2).
-
-Consulta operacional confirmou:
-- Garden Sul (id 25): Jardim Sul/Zona Sul, lançamento, entrega set/2028, 2 quartos com suíte, plantas tipo 52,01m² a partir de R$ 294.900 e 56,32m² por R$ 330.900; térreos maiores até R$ 367.900.
-- Jardim Sul (id 140): Jardim Sul/Zona Sul, em construção, entrega Set/2027, 2 quartos com suíte, 52m² a partir de R$ 303.900, 56,16m² por R$ 331.900 e térreo 69,20m² por R$ 354.900.
-
-Conduta: explicar que os nomes diferentes indicam empreendimentos/projetos/etapas distintos, mesmo sendo próximos. Existe diferença de preço e prazo, mas a comparação correta depende da planta/unidade. Oferecer comparar as opções mais baratas dos dois.
-
-### 2026-05-03 — Inbound: quer Garden Sul no 2º andar e preço
-Cliente reafirmou no WhatsApp: quer Garden Sul, 2º andar, e perguntou o preço. CRM validado com `broker_id=35`; status já estava em `Em Atendimento`, sem mudança de status. Repescagem já estava interrompida por resposta real (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia resgate ativo.
-
-Nota silenciosa registrada no CRM (nota 16508; message_id inbound ACE8A219D9A6C9BFD057A6FBB7510E6D). Observação operacional: o inbound chegou por LID/phone_candidates sem correspondência direta ao `whatsapp_jid` salvo no CRM; vínculo preservado pelo contexto curado do atendimento Garden Sul e histórico recente. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
-
-### 2026-05-03 — Aceite para validar 2º andar Garden Sul
-Cliente respondeu `Sim` ao convite para validar a opção mais barata disponível no 2º andar do Garden Sul.
-
-Pendência comercial: confirmar tabela/unidade disponível no 2º andar, pois o CRM lista plantas e valores, mas não traz campo de andar/unidade/posição. Referência segura já informada: 52,01m² a partir de R$ 294.900 e 56,32m² em torno de R$ 330.900.
-
-### 2026-05-03 — Inbound: 2º andar com vista para piscina e valor
-Cliente especificou Garden Sul, 2º andar, com vista para piscina, e perguntou qual o valor. CRM validado com `broker_id=35`; status já estava em `Em Atendimento`, sem mudança de status. Repescagem já estava interrompida por resposta real (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia resgate ativo.
-
-Notas registradas no CRM: nota 16509 com orientação comercial sobre ausência de campo seguro de andar/posição/vista; nota silenciosa 16510 com o processamento deste inbound (message_id AC5410242C5B22B91F46B42C25B59D9D). Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
-
-Conduta: não afirmar preço fechado do 2º andar com vista para piscina sem validar tabela/unidade específica. Usar a referência segura por planta e oferecer validação da unidade/tabela, preferencialmente com ponte para visita/simulação na Fama.
-
-### 2026-05-03 — Inbound: financiamento de R$ 294.900 e restante com incorporação
-Cliente informou que pretende financiar R$ 294.900 e pagar o restante com a incorporação/construtora, perguntando quanto pagaria. CRM validado com `broker_id=35`; status já estava em `Em Atendimento`, sem mudança de status. Repescagem já estava interrompida por resposta real (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia resgate ativo.
-
-Nota silenciosa registrada no CRM (nota 16512; message_id inbound AC5CE028D8E92FBFC3847F3560BA802A). O inbound chegou por LID/phone_candidates sem correspondência direta ao `whatsapp_jid` salvo no CRM; vínculo preservado pelo contexto curado do atendimento Garden Sul e histórico recente. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
-
-Conduta: calcular a diferença apenas se houver valor de unidade escolhido/validado; se usar a referência de R$ 294.900 como preço do imóvel e financiamento igual ao preço, o restante pode ser zero para essa referência, mas não afirmar isso como condição final sem confirmar unidade, tabela, avaliação, subsídio/entrada e análise. Se a unidade for mais cara, explicar a diferença como entrada/saldo aproximado com possibilidade de parcelamento pela construtora/incorporação, sem prometer parcela exata. Aproveitar o engajamento para propor simulação presencial na Fama.
+WhatsApp message_id: `3EB07B1E804A6672780D0C`. Nota CRM registrada: 16519.
 
 ## Objeções e travas
-- Ambiguidade de nomenclatura: cliente usa “Garden”, “Jardins” e Jardim Sul. Precisa esclarecer sem parecer correção fria e sem inventar comparação.
-- Cliente ainda não trouxe dados completos de viabilidade. Não prometer aprovação nem condição fechada.
-- Cliente pergunta preço/diferença de preço: usar dados de CRM como prévia, mas preservar que valor final depende de unidade, planta, andar/posição, vista e tabela vigente.
-- Tabela interna atual não traz campo seguro de andar/unidade/posição/vista; precisa validar unidade específica do 2º andar com vista para piscina antes de confirmar preço fechado.
-- Novo ponto de viabilidade: cliente pretende financiar R$ 294.900 e pagar eventual saldo com incorporação/construtora; cálculo de diferença depende do valor real da unidade.
+- Informação faltante: preço exato por 2º andar/vista piscina não está disponível no CRM atual.
+- Risco de atendimento: repetir ressalvas e estimativas esfria o lead. Quando o cliente insiste em condição específica e está engajado, o próximo passo deve ser visita presencial para validar tabela/unidade.
+- Ambiguidade de nomenclatura: cliente usa “Garden”, “Jardins” e Jardim Sul. Precisa esclarecer sem parecer correção fria.
+- Viabilidade ainda incompleta: cliente informou financiamento pretendido, mas não informou renda, FGTS, entrada disponível, prazo desejado ou limite mensal.
 
 ## Próximo passo
-Validar comercialmente a unidade/tabela do Garden Sul que o cliente quer analisar, especialmente se for 2º andar com vista para piscina. Para responder a pergunta de quanto pagaria, calcular a diferença com ferramenta a partir do valor real da unidade: `diferença aproximada = valor da unidade - 294.900`, explicando que a forma de parcelamento depende da tabela/condição e análise. Como o cliente está engajado em viabilidade, fazer ponte para atendimento presencial/simulação na Fama.
+Aguardar resposta do cliente ao convite de visita. Se ele aceitar dia/horário, acionar `reno-visit-scheduling` para criar/validar o agendamento no FamaChat antes de confirmar ao cliente.
+
+Se o cliente pedir mais informação antes de visitar, responder curto com o que for seguro e manter a ponte para presencial: unidade do 2º andar com vista piscina e condição exata precisam ser validadas na Fama para evitar chute.
 
 ## Observações operacionais
 - Nome do CRM parece humano e confiável; pode usar `Sebastião` na conversa.
 - Payload inicial informava `hasWhatsapp=false`, mas há JID CRM e conversa real; a política operacional do Reno não bloqueia atendimento por esse campo.
-- Os inbounds recentes chegaram por LID/phone_candidates que não correspondem diretamente ao JID CRM; evitar depender só desse identificador se o contexto do WhatsApp vier por LID. Neste atendimento, o vínculo foi preservado pelo contexto curado do Garden Sul e histórico recente.
+- Alguns inbounds chegaram por LID/phone_candidates que não correspondem diretamente ao JID CRM; neste atendimento, o vínculo foi preservado pelo contexto curado do Garden Sul e histórico recente.
 - Não enviar contato/telefone de construtora ao cliente.
 - Não mencionar endereço exato de empreendimento espontaneamente; usar bairro/região.
-- Esta atualização é curada e não contém dump bruto de conversa.
+- Não prometer aprovação de financiamento, parcela exata ou condição fechada.
