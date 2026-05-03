@@ -79,3 +79,9 @@ Próximo passo comercial: retomar a conversa sobre o Garden Sul e entender se o 
 Cliente perguntou quais são as condições de pagamento do Garden. Contexto confirmado no CRM: Garden Sul, Jardim Sul, com unidades a partir de R$ 294.900, financiamento bancário, entrada parcelada pela construtora e documentação grátis para cliente MCMV quando aplicável.
 
 Conduta comercial: responder de forma curta, sem prometer aprovação; explicar que a condição exata depende da unidade e análise, e fazer convite claro para visita presencial na Fama. Como é domingo, CTA preferencial: segunda-feira no horário do almoço ou fim do dia.
+
+
+### 2026-05-03 — Pergunta sobre preço no 2º andar do Garden Sul
+Cliente perguntou o preço do 2º andar do Garden Sul. Consulta interna não localizou tabela unitária por andar; dados seguros disponíveis: plantas tipo de 52,01m² a partir de R$ 294.900 e planta de 56,32m² a R$ 330.900. Térreos possuem metragem maior e valores superiores.
+
+Conduta: responder que o 2º andar entra nas plantas tipo, com preço a partir de R$ 294.900, mas que o valor exato depende da planta/posição/unidade e precisa ser validado na tabela atual. Manter CTA para visita na Fama para conferir unidade e condição com segurança.
