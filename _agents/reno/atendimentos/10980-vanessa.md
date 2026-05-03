@@ -2,55 +2,57 @@
 type: entity-profile
 owner: reno
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
+  - max-steps
   - union-vereda
 entity_type: atendimento
 entity_name: Vanessa
 client_id: 10980
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat / SLA Cascata
 ---
 # Atendimento — Vanessa
 
 ## Resumo atual
-Cliente Vanessa (`client_id=10980`) está sob responsabilidade do Reno (`broker_id=35`) e permanece em `Não Respondeu`. Houve primeiro contato/reenvio inicial e repescagens steps 1 a 4 sem resposta real identificada. Em 2026-05-02 foi enviada repescagem step 4 com convite consultivo direto: organizar o caminho de compra, comparar Union Vereda com opções de entrega mais rápida e propor análise/possível visita na Fama na segunda-feira, respeitando a regra de fim de semana.
+Cliente Vanessa (`client_id=10980`) estava sob responsabilidade do Reno (`broker_id=35`) no fluxo de repescagem por ausência de resposta ao primeiro contato. A régua de 5 repescagens foi concluída sem resposta real identificada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante e porta aberta; em seguida a branch de repescagem foi encerrada com `step=5`/`stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra operacional defensiva.
 
 ## Dados operacionais
 - Cliente ID: 10980
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp disponível no CRM; envios realizados pelo JID salvo, sem expor número completo neste documento.
 - Empreendimento relacionado: Union Vereda (`id_empreendimento=161`)
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02T20:45:46-03:00.
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03T13:14:36-03:00; cliente arquivado automaticamente após encerramento por `max_steps`.
 
 ## Contexto comercial
 - Interesse registrado: Union Vereda, região do Jaraguá.
 - Origem operacional: SLA Cascata, sequência 3, cliente original id 10862.
 - Contexto do cliente original: origem Facebook Ads; busca iniciada recentemente; compra sozinho(a); nota humana indicou “quer algo com entrega rápida”; também houve menção humana posterior ao Novo Holanda.
 - Dados do empreendimento: Union Vereda, Jaraguá/Uberlândia, apartamentos de 2 quartos, entrega prevista para dez/2028.
-- Steps anteriores já abordaram: encaixe do imóvel/região, valores/entrada/financiamento e prazo de entrega. O step 4 mudou o ângulo para orientação consultiva do caminho de compra, usando a Fama como apoio para comparar lançamento vs. entrega mais rápida e avançar para análise/visita na segunda se fizer sentido.
+- Steps anteriores abordaram: encaixe do imóvel/região, valores/entrada/financiamento, prazo de entrega e convite consultivo para organizar o caminho de compra/possível visita na segunda-feira.
+- Step 5 mudou o ângulo para pausa respeitosa: não insistir em agenda, reconhecer que a comparação entre lançamento e opções de entrega mais rápida pode ser retomada quando fizer sentido.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não declarada pela cliente. O interesse conhecido é no Union Vereda/Jaraguá, mas o histórico sugere possível necessidade de entrega mais rápida.
+Não declarada diretamente pela cliente. O interesse conhecido é no Union Vereda/Jaraguá; o histórico do cliente original sugeriu possível necessidade de entrega mais rápida.
 
 ### Momento
-Lead silencioso após contato inicial, reenvio e quatro repescagens. Momento comercial ainda incerto; step 4 tentou gerar resposta por convite consultivo direto e próximo passo de baixa fricção para segunda-feira.
+Lead permaneceu silencioso após contato inicial, reenvio e cinco repescagens. Como não houve microresposta real, o fluxo automático foi encerrado para evitar insistência excessiva.
 
 ### Decisão
 Sem informação confirmada sobre decisores, família ou preferência final. Cliente original indicava compra sozinho(a).
 
 ### Viabilidade
-Ainda sem dados de entrada, renda ou financiamento. Step 2 já abordou valores/financiamento; step 3 focou em prazo; step 4 evitou repetir a mesma pergunta e propôs organizar o caminho de compra antes de avançar.
+Sem dados confirmados de entrada, renda ou financiamento. A régua já tentou abrir conversa por encaixe do imóvel, valores/financiamento, prazo de entrega e apoio consultivo da Fama. Não há base para avançar sem resposta da cliente.
 
 ## Histórico curado de interações
 ### 2026-04-23 — Falha operacional no primeiro contato
@@ -128,18 +130,39 @@ A Fama pode te ajudar nessa leitura de forma **objetiva**, sem te jogar várias 
 Na segunda, posso fazer essa análise com você e, se fizer sentido, já deixamos uma visita na Fama encaminhada. Quer que eu organize isso pra você?
 ```
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+- Fluxo: repescagem
+- Step enviado: 5
+- Data/hora de envio: 2026-05-03T13:14:36-03:00
+- Ângulo/contexto comercial usado: encerramento elegante; pausa respeitosa com porta aberta para comparar Union Vereda com opções de entrega mais rápida ou condição diferente, sem repetir convite de agenda/visita.
+- Intenção do step: parar a insistência automática sem queimar relacionamento e deixar retomada simples se a cliente quiser voltar ao assunto.
+
+Mensagem enviada:
+```text
+Vanessa, vou pausar por aqui para não ficar insistindo 📍
+
+Pelo que ficou no histórico, o ponto não é só ver o Union Vereda em si. Como ele é um lançamento com entrega para **dez/2028**, talvez valha comparar com calma com opções de entrega mais rápida ou condição diferente, se isso voltar a fazer sentido para você.
+
+Fico à disposição para te ajudar nisso de forma **bem objetiva** quando quiser retomar.
+
+Posso deixar esse atendimento pausado por enquanto?
+```
+
+Após o envio, o estado de repescagem foi corrigido para final (`step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`) e o status do cliente foi alterado defensivamente de `Não Respondeu` para `Arquivado` no CRM.
+
 ## Objeções e travas
-- Sem objeção declarada. A principal trava operacional é ausência de resposta.
-- Possível trava comercial a investigar: prazo de entrega, pois o cliente original tinha nota de preferência por entrega rápida e o Union Vereda tem entrega prevista para dez/2028.
-- Possível desafio adicional: cliente iniciou a busca recentemente e pretende comprar sozinha, então pode precisar de orientação para transformar interesse inicial em caminho viável.
+- Sem objeção declarada. A principal trava operacional foi ausência de resposta.
+- Possível trava comercial não confirmada: prazo de entrega, pois o cliente original tinha nota de preferência por entrega rápida e o Union Vereda tem entrega prevista para dez/2028.
+- Possível desafio adicional: cliente iniciou a busca recentemente e pretendia comprar sozinha, podendo precisar de orientação para transformar interesse inicial em caminho viável.
 
 ## Próximo passo
-- Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
-- Se não houver resposta real até o próximo horário elegível, seguir para repescagem step 5 com encerramento elegante da régua, sem repetir convite consultivo ou argumentos já usados.
-- Se houver resposta real da cliente, parar repescagem, mover para atendimento normal do Reno e alterar status para `Em Atendimento` somente se ainda estiver exatamente em `Não Respondeu`.
+- Sem nova ação automática de repescagem.
+- Caso a cliente responda futuramente, tratar como reativação/resposta real: não continuar pela repescagem; avaliar atendimento normal do Reno e atualizar o status operacional conforme o novo contexto no FamaChat.
 
 ## Observações operacionais
 - Documento oficial no caminho determinístico `_agents/reno/atendimentos/10980-vanessa.md` conforme governança atual.
-- Há documentos legados/drift localizados em `_agents/reno/atendimentos/vanessa.md` e `_agents/reno/clientes/10980-vanessa.md`; o conteúdo útil foi consolidado neste documento oficial. Não foram removidos nesta execução.
-- Estado da repescagem step 4 registrado no CRM pela tool específica `mark_reno_followup_sent`; branch verificada: `step=4`, `enabled=true`, `last_sent_at=2026-05-02T20:45:46-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
-- Status CRM preservado como `Não Respondeu`, conforme regra dos steps 1 a 4.
+- Há documentos legados/drift localizados em `_agents/reno/atendimentos/vanessa.md` e `_agents/reno/clientes/10980-vanessa.md`; o conteúdo útil já foi consolidado neste documento oficial. Não foram removidos nesta execução.
+- Envio do step 5 realizado pelo JID salvo no CRM, sem expor número completo.
+- A tool `mark_reno_followup_sent` registrou o step 5, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`. Conforme pitfall conhecido, o estado foi corrigido com `update_reno_followup_state` antes do arquivamento defensivo.
+- A correção da branch final compactou o estado de repescagem para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem do step final está preservada na nota CRM automática e neste documento.
+- Nota CRM de arquivamento registrada após a atualização de status, informando conclusão da régua de 5 repescagens sem resposta e arquivamento automático.
