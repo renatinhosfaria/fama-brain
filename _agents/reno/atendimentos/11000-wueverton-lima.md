@@ -1,8 +1,14 @@
 ---
 type: entity-profile
 owner: reno
+entity_type: atendimento
+entity_name: Wueverton Lima
+client_id: 11000
+broker_id: 35
+status_crm: Não Respondeu
+source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -12,17 +18,11 @@ tags:
   - nao-respondeu
   - union-vista
   - grand-ville
-entity_type: atendimento
-entity_name: Wueverton Lima
-client_id: 11000
-broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
 ---
 # Atendimento — Wueverton Lima
 
 ## Resumo atual
-Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`. Interesse associado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e três repescagens foram enviados via WhatsApp; até esta atualização não há resposta real registrada no CRM.
+Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`. Interesse associado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e quatro repescagens foram enviados via WhatsApp; até esta atualização não há resposta real registrada no CRM.
 
 ## Dados operacionais
 - Cliente ID: 11000
@@ -30,23 +30,23 @@ Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`), em `Não Res
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp/JID salvo no CRM; número completo omitido neste resumo curado.
-- Última interação relevante: repescagem step 3 enviada em 2026-05-01 20:20:12 -03:00.
+- Última interação relevante: repescagem step 4 enviada em 2026-05-02 21:56:31 -03:00.
 
 ## Contexto comercial
-O contexto comercial conhecido é interesse no Union Vista, empreendimento em lançamento no bairro Grand Ville, Uberlândia, com entrega prevista para julho de 2027. A primeira abordagem e a repescagem step 1 exploraram região, perfil do imóvel e comparação com outra região. O step 2 mudou o foco para viabilidade prática da compra: entrada, parcela e financiamento. O step 3 mudou novamente o ângulo para objetivo de uso do imóvel — morar futuramente ou investir — aproveitando o contexto de lançamento e prazo de entrega.
+O contexto comercial conhecido é interesse no Union Vista, empreendimento em lançamento no bairro Grand Ville, Uberlândia, com entrega prevista para julho de 2027. A primeira abordagem e a repescagem step 1 exploraram região, perfil do imóvel e comparação com outra região. O step 2 mudou o foco para viabilidade prática da compra: entrada, parcela e financiamento. O step 3 mudou novamente o ângulo para objetivo de uso do imóvel — morar futuramente ou investir — aproveitando o contexto de lançamento e prazo de entrega. O step 4 posicionou a Fama como apoio consultivo para organizar o caminho de compra, comparar lançamento com alternativas e levar a conversa para uma análise presencial na segunda-feira.
 
 ## Diagnóstico
 ### Necessidade
 Cliente demonstrou interesse inicial em imóvel/empreendimento específico, mas ainda não informou necessidade principal.
 
 ### Momento
-Ainda indefinido; cliente permanece silencioso após primeiro contato e repescagens anteriores.
+Ainda indefinido; cliente permanece silencioso após primeiro contato e quatro repescagens.
 
 ### Decisão
 Sem informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou forma de pagamento. O step 2 buscou identificar compra financiada ou à vista; o step 3 buscou identificar se o objetivo é morar ou investir, sem prometer aprovação de crédito.
+Sem dados de renda, entrada ou forma de pagamento. O step 2 buscou identificar compra financiada ou à vista; os steps seguintes evitaram promessa de crédito e tentaram abrir diagnóstico por objetivo de compra e análise consultiva.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno
@@ -104,15 +104,36 @@ Pra eu não te passar sugestão no escuro: você está olhando mais para morar o
 - Data/hora de envio: 2026-05-01 20:20:12 -03:00
 - Próximo `next_run_at`: 2026-05-02T19:10:00-03:00
 
+### 2026-05-02 — Repescagem step 4
+- Fluxo: repescagem
+- Intenção: convite consultivo direto antes do encerramento da régua.
+- Ângulo usado: orientação objetiva da Fama para organizar caminho de compra, comparar o lançamento com alternativas mais prontas/aderentes e conduzir para análise presencial na segunda-feira.
+- Diferenciação aplicada em relação ao step 3: mudou de pergunta de finalidade (`morar` vs `investir`) para convite consultivo; mudou o benefício de evitar sugestão no escuro para análise objetiva de imóvel, condição e próximo passo; mudou o CTA para visita/conversa na Fama na segunda-feira por ser fim de semana.
+- Mensagem enviada:
+
+```text
+Wueverton, boa noite! 🏡
+
+Vou ser bem direto: como você veio pelo Union Vista, o próximo passo mais útil não é te mandar mais fotos ou informações soltas. É fazer uma leitura rápida do caminho de compra: se esse lançamento combina com seu objetivo ou se vale comparar com alternativas mais prontas/mais aderentes.
+
+A Fama consegue te orientar de forma **objetiva**, olhando imóvel, condição e próximo passo sem pressão.
+
+Na segunda, posso separar um horário rápido pra você vir à Fama e a gente fazer essa análise inicial?
+```
+
+- Data/hora de envio: 2026-05-02 21:56:31 -03:00
+- Próximo `next_run_at`: 2026-05-03T09:10:00-03:00
+- Estado CRM verificado: `step=4`, `enabled=true`, `stopped_reason=null`, `claim_expires_at=null`, status preservado como `Não Respondeu`.
+
 ## Objeções e travas
-- Silêncio após contato inicial e três tentativas de repescagem.
+- Silêncio após contato inicial e quatro tentativas de repescagem.
 - Forma de compra/viabilidade ainda não informada.
 - Objetivo de uso do imóvel ainda não informado.
 
 ## Próximo passo
-Se o cliente responder, parar repescagem, mover condicionalmente de `Não Respondeu` para `Em Atendimento` e seguir diagnóstico consultivo normal do Reno. Se permanecer sem resposta e continuar elegível, próxima execução deve avaliar repescagem step 4 no horário previsto, usando convite consultivo direto e abordagem substancialmente diferente.
+Se o cliente responder, parar repescagem, mover condicionalmente de `Não Respondeu` para `Em Atendimento` e seguir diagnóstico consultivo normal do Reno. Se permanecer sem resposta e continuar elegível, próxima execução deve avaliar repescagem step 5 em `2026-05-03T09:10:00-03:00`, com encerramento elegante da régua e arquivamento automático apenas se o estado final `step=5`/`stopped_reason=max_steps` for confirmado no CRM.
 
 ## Observações operacionais
 - A decisão operacional anterior autorizou o Reno a assumir este contato apesar de duplicidade posterior por SLA Cascata atribuída a outro corretor.
 - Existe documento legado em `_agents/reno/clientes/11000-wueverton-lima.md`; o caminho oficial consolidado para continuidade é este arquivo em `_agents/reno/atendimentos/11000-wueverton-lima.md`.
-- O envio do step 3 foi registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), preservando o status `Não Respondeu` e atualizando o ramo de `meta_data.reno_followup.repescagem`.
+- O envio do step 4 foi registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), preservando o status `Não Respondeu` e atualizando o ramo de `meta_data.reno_followup.repescagem`.
