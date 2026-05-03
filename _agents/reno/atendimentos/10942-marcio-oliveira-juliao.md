@@ -6,9 +6,9 @@ entity_name: Márcio Oliveira Julião
 client_id: 10942
 broker_id: 35
 status_crm: Em Atendimento
-source: FamaChat
+source: Facebook Ads
 created: '2026-04-29'
-updated: '2026-05-01'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -16,11 +16,13 @@ tags:
   - famachat
   - repescagem
   - inbound
+  - union-vista
+  - midia
 ---
 # Atendimento — Márcio Oliveira Julião
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operacional associado ao empreendimento Union Vista, no Grand Ville. Após primeiro contato e repescagens steps 1, 2 e 3, respondeu pelo WhatsApp em 2026-05-01. Trouxe contexto de viabilidade em sequência: `4.800`, `Tenho a entrada` e depois `5 mil`, indicando disponibilidade/pretensão de entrada em torno de R$ 5.000. Em seguida enviou um áudio inbound cuja transcrição automática ficou incompreensível/não confiável (`To unpoktóre piotre z nami`), sem novo dado comercial seguro para extrair. A repescagem está interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não há resgate ativo.
+Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse no Union Vista, no Grand Ville/Zona Leste de Uberlândia. Após primeiro contato e repescagens, respondeu e a repescagem foi interrompida (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`). Cliente trouxe sinais de viabilidade (`Tenho a entrada`, cerca de R$ 5.000) e em 2026-05-03 retomou pedindo confirmação sobre Minha Casa Minha Vida, prazo de entrega e planta dos apartamentos do mesmo empreendimento.
 
 ## Dados operacionais
 - Cliente ID: 10942
@@ -28,100 +30,57 @@ Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse operac
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / FamaChat
 - Telefone/WhatsApp: cadastrado no CRM; WhatsApp disponível
-- Última interação relevante: 2026-05-01 — inbound WhatsApp por áudio; transcrição automática não confiável
+- Empreendimento ativo: Union Vista (id_empreendimento 22), Grand Ville, Zona Leste
+- Última interação relevante: 2026-05-03 — cliente confirmou que a dúvida é sobre o mesmo apartamento/Union Vista e pediu MCMV, entrega e planta
 
 ## Contexto comercial
-O histórico operacional indica interesse no Union Vista, empreendimento no Grand Ville, Uberlândia. A última repescagem perguntou se o cliente olhava o imóvel para morar ou investir. O cliente respondeu primeiro `4.800`, depois `Tenho a entrada` e em seguida `5 mil`, sinalizando que está trazendo contexto financeiro de viabilidade e que provavelmente possui/pretende entrada próxima de R$ 5.000. O áudio mais recente não trouxe conteúdo textual confiável pela transcrição automática, então a próxima resposta comercial deve considerar o contexto anterior de entrada/viabilidade e, se necessário, pedir confirmação curta do ponto do áudio sem inventar intenção.
+Union Vista é um lançamento no Grand Ville, com entrega prevista no CRM para Jul/2027. Apartamentos ativos no CRM: 56,9m² e 58,4m², ambos com 2 quartos, 1 suíte, 2 banheiros, varanda/sacada gourmet e 1 vaga coberta; também há garden de 82,2m². Valores cadastrados a partir de aproximadamente R$ 292.400, variando por unidade. Cliente quer entender se há possibilidade de financiamento pelo Minha Casa Minha Vida e precisa receber planta/prazo.
 
 ## Diagnóstico
 ### Necessidade
-Possível interesse em apartamento no Union Vista ou região do Grand Ville. A necessidade ainda não foi plenamente qualificada.
+Interesse em apartamento do Union Vista, buscando clareza sobre planta, prazo e possibilidade de enquadramento no MCMV.
 
 ### Momento
-Cliente saiu do silêncio após repescagem e agora está em atendimento ativo. As respostas sobre entrada indicam abertura para avançar em viabilidade, mas ainda exigem condução consultiva e curta.
+Cliente ficou sem responder por rotina corrida no serviço e retomou espontaneamente no domingo, com dúvidas objetivas. O atendimento continua ativo.
 
 ### Decisão
-Sem informação confirmada sobre decisores, prazo de compra ou motivação.
+Ainda sem informação confirmada sobre outros decisores.
 
 ### Viabilidade
-Cliente sinalizou ter entrada e indicou `5 mil` como valor aproximado. O valor `4.800` apareceu imediatamente antes e pode estar relacionado a entrada, parcela, renda ou outro dado do contexto da sessão; não deve ser tratado como aprovação ou encaixe garantido. Próxima resposta deve validar de forma natural que ele tem cerca de R$ 5.000 de entrada e conduzir para entender financiamento/uso do imóvel sem prometer crédito. O áudio inbound mais recente não deve ser usado como dado de viabilidade porque a transcrição automática ficou sem sentido claro.
+Cliente sinalizou anteriormente entrada em torno de R$ 5.000. MCMV deve ser tratado como possibilidade a validar conforme unidade, valor, renda/enquadramento e análise; não prometer aprovação. Usar a visita presencial como próximo passo para simulação segura se a planta/perfil agradar.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato operacional
 Reno enviou mensagem inicial sobre o Union Vista, na região do Grand Ville, preservando status `Não Respondeu`.
 
 ### 2026-04-28 — Repescagem step 1
-Reno enviou primeira repescagem. A mensagem foi mais direta e não gerou resposta registrada.
+Reno enviou primeira repescagem. Sem resposta registrada na ocasião.
 
 ### 2026-04-29 — Repescagem step 2 enviada
-Fluxo: repescagem
-
-Step enviado: 2
-
-Ângulo comercial usado: imóvel específico + viabilidade / evitar caminho errado
-
-Mensagem enviada:
-> Oi, Márcio! Tudo bem? 🏡
->
-> Sobre o Union Vista, no Grand Ville, antes de ficar olhando opção solta, o ideal é entender se ele encaixa no seu momento — valor, entrada/financiamento e região precisam conversar entre si para a busca não virar perda de tempo.
->
-> Posso fazer uma primeira leitura **bem simples e realista** pra você: você pensa em comprar financiado ou à vista?
-
-Data/hora de envio: 2026-04-29 16:50 (-03:00)
-
-Próximo `next_run_at`: 2026-04-30T14:20:00-03:00
+Reno abordou encaixe financeiro e perguntou se o cliente pensava em comprar financiado ou à vista.
 
 ### 2026-04-30 — Repescagem step 3 enviada
-Fluxo: repescagem
+Reno mudou o ângulo para finalidade da compra: morar ou investir no Union Vista. Depois disso o cliente respondeu.
 
-Step enviado: 3
+### 2026-05-01 — Respostas inbound sobre viabilidade
+Cliente respondeu `4.800`, depois `Tenho a entrada` e `5 mil`. Interpretação curada: entrada disponível/pretendida próxima de R$ 5.000, sem tratar como aprovação ou encaixe garantido. Persistência operacional validou `broker_id=35`, preservou `Em Atendimento` e manteve repescagem interrompida.
 
-Ângulo comercial usado: imóvel específico + diagnóstico leve sobre finalidade da compra (morar x investir)
+### 2026-05-01 — Áudio inbound com transcrição não confiável
+Cliente enviou áudio; transcrição automática ficou sem sentido comercial seguro. Não usar como dado de diagnóstico sem confirmação.
 
-Comparação de abordagem: a mensagem anterior tratou de encaixe financeiro/forma de pagamento; esta tentativa mudou o ângulo para intenção de uso, mudou a pergunta para escolha simples entre morar ou investir e destacou o benefício de não receber sugestão no escuro.
-
-Mensagem enviada:
-> Márcio, tudo bem? 🏡
->
-> Só pra eu não te mandar sugestão no escuro: o Union Vista é um lançamento no Grand Ville, e o caminho muda bastante dependendo se você está olhando para **morar** ou para **investir**.
->
-> Você chegou a olhar esse imóvel pensando em morar ou como investimento?
-
-Data/hora de envio: 2026-04-30 16:55 (-03:00)
-
-### 2026-05-01 — Resposta inbound do cliente: valor numérico
-Cliente respondeu pelo WhatsApp: `4.800`.
-
-Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem já estava interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
-
-### 2026-05-01 — Resposta inbound do cliente: entrada disponível
-Cliente respondeu pelo WhatsApp: `Tenho a entrada`.
-
-Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem permanecia interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); resgate sem ciclo ativo; nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
-
-### 2026-05-01 — Resposta inbound do cliente: entrada aproximada
-Cliente respondeu pelo WhatsApp: `5 mil`.
-
-Interpretação operacional curada: no contexto das mensagens anteriores (`4.800` e `Tenho a entrada`), o cliente sinaliza entrada disponível/pretendida em torno de R$ 5.000 para avaliação de viabilidade. Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem permanecia interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); resgate sem ciclo ativo; nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
-
-### 2026-05-01 — Resposta inbound do cliente: áudio com transcrição não confiável
-Cliente enviou áudio pelo WhatsApp. Transcrição automática disponível: `To unpoktóre piotre z nami`. O conteúdo não ficou claro/confiável para extração comercial.
-
-Persistência operacional realizada: cliente validado no CRM com `broker_id=35`; status já estava `Em Atendimento`, portanto foi preservado; repescagem permanecia interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`); resgate sem ciclo ativo; nota objetiva registrada no FamaChat. Nenhum envio ao cliente foi realizado nesta rotina silenciosa.
+### 2026-05-03 — Retomada com dúvida sobre MCMV, entrega e planta
+Cliente pediu desculpas pela falta de retorno, disse que a semana foi corrida e perguntou se o apartamento aceita financiamento pelo Minha Casa Minha Vida, qual o prazo até entrega e a planta dos apartamentos. Reno perguntou se era o mesmo apartamento; cliente confirmou `Sim, isso mesmo`. CRM/MinIO confirmaram o contexto Union Vista e foi localizada prancha de plantas no MinIO: 56,9m² (finais 1, 4, 5 e 8), 58,4m² (finais 2, 3, 6 e 7), ambos com 2 quartos, 1 suíte, varanda gourmet; também aparecem versões garden. Próxima resposta ao cliente deve enviar a planta, informar entrega prevista Jul/2027 e tratar MCMV como possibilidade dependente de enquadramento/análise.
 
 ## Objeções e travas
-- Entrada indicada em torno de R$ 5.000 pode exigir ajuste de expectativa, unidade, condição de entrada parcelada e simulação segura; não prometer encaixe.
-- Contexto de finalidade da compra ainda não confirmado.
-- Áudio mais recente teve transcrição automática sem sentido claro; não inferir intenção sem confirmação ou escuta/transcrição melhor.
+- Entrada indicada em torno de R$ 5.000 pode exigir ajuste de expectativa, unidade, condição de entrada parcelada e simulação segura.
+- Cliente quer MCMV; não prometer aprovação, apenas possibilidade a validar.
+- Cliente retomou após rotina corrida; manter tom leve, sem cobrança.
 
 ## Próximo passo
-Na próxima resposta comercial, retomar o contexto com naturalidade e validar o dado de entrada sem transformar em simulação longa. Direção sugerida: reconhecer que ter cerca de R$ 5.000 de entrada já ajuda a fazer uma primeira leitura, explicar que no Union Vista a entrada/financiamento precisa ser vista com cuidado, e fazer uma pergunta curta para avançar. Como o áudio mais recente ficou incompreensível na transcrição, se a sessão comercial não tiver áudio escutável/confiável, pedir uma confirmação simples do ponto que ele quis dizer.
+Enviar ao cliente a planta localizada e responder: Union Vista tem possibilidade de financiamento pelo Minha Casa Minha Vida conforme unidade/enquadramento; entrega prevista Jul/2027; plantas principais de 56,9m² e 58,4m² com 2 quartos, 1 suíte, varanda gourmet e 1 vaga. Se o perfil agradar, convidar para passar na Fama na segunda-feira para ver as opções e simular com segurança.
 
 ## Observações operacionais
-- Envio do step 3 havia sido realizado pelo worker `reno-repescagem-message-queue-production` com destino preferencial via `whatsapp_jid` salvo no CRM.
-- CRM anteriormente atualizado pela tool específica `mark_reno_followup_sent`; step avançou para 3.
-- Em 2026-05-01, o cliente já aparecia em `Em Atendimento` e com repescagem parada: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Nota CRM da resposta `4.800`: ID 16288.
-- Nota CRM da resposta `Tenho a entrada`: ID 16289.
-- Nota CRM da resposta `5 mil`: ID 16290.
-- Nota CRM do áudio inbound com transcrição não confiável: ID 16291.
+- CRM/FamaChat segue como fonte operacional de verdade.
+- Nota CRM 16485 registrou a retomada de 2026-05-03 e o conteúdo a ser respondido.
+- Resgate não possui ciclo ativo; repescagem já está parada por `client_replied`.
+- Prancha de plantas localizada em MinIO/URL pública: https://s3.famachat.com.br/famaserver-files/public/empreendimentos/HLTS-Construtora/Union-Vista/fotos/HLTS_-UNION-VISTA_PLANTAS-A4_FEV-2025-1774650777724-602159699.jpg
