@@ -5,45 +5,46 @@ entity_type: atendimento
 entity_name: Marcelo Escobar de Oliveira
 client_id: 10938
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat
 created: '2026-04-29'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Marcelo Escobar de Oliveira
 
 ## Resumo atual
-Cliente do Reno em status **Não Respondeu**. Primeiro contato e repescagens steps 1, 2, 3 e 4 foram enviados por WhatsApp, sem resposta real registrada até o momento. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, usando o contexto do Place+Arbi e mudando o ângulo para organizar entrada, parcela e prazo até a entrega prevista em 2027.
+Cliente do Reno relacionado ao **Place+Arbi** permaneceu sem resposta real após o primeiro contato e as 5 repescagens. Em 2026-05-03 foi enviada a repescagem **step 5** com encerramento elegante, porta aberta e pedido de permissão para pausar o atendimento. Após o envio bem-sucedido, a régua foi encerrada por `max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra defensiva.
 
 ## Dados operacionais
 - Cliente ID: 10938
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
-- Telefone/WhatsApp: salvo no CRM; envio realizado pelo JID cadastrado
-- Última interação relevante: 2026-05-02 10:15:50-03 — repescagem step 4 enviada por WhatsApp
+- Telefone/WhatsApp: salvo no CRM; envios realizados pelo JID cadastrado
+- Última interação relevante: 2026-05-03 10:09:18-03 — repescagem step 5 enviada por WhatsApp e régua encerrada
 
 ## Contexto comercial
-Lead relacionado ao **Place+Arbi**, na região do **Shopping Park**, em Uberlândia. Empreendimento em lançamento, com entrega prevista para **junho/2027**. Apartamentos disponíveis no contexto consultado: plantas de 48m² e 50m², 2 quartos, com valores aproximados entre R$ 221 mil e R$ 240 mil. Não há resposta real do cliente após o primeiro contato. Contexto disponível indica interesse originado por anúncio/imóvel específico, sem dados adicionais sobre financiamento, renda, entrada ou prazo.
+Lead relacionado ao **Place+Arbi**, na região do **Shopping Park**, em Uberlândia. Empreendimento em lançamento, com entrega prevista para **junho/2027**. Apartamentos disponíveis no contexto consultado: plantas de 48m² e 50m², 2 quartos, com valores aproximados entre R$ 221 mil e R$ 240 mil. Não houve resposta real do cliente após o primeiro contato nem após as repescagens.
 
 ## Diagnóstico
 ### Necessidade
-Possível interesse em imóvel específico/anúncio, ainda sem confirmação ativa do cliente.
+Possível interesse inicial em imóvel específico/anúncio, sem confirmação ativa do cliente.
 
 ### Momento
-Cliente silencioso após primeiro contato e quatro repescagens. Como o empreendimento é lançamento com entrega em 2027, a abordagem mais útil é evitar conversa genérica e tentar abrir microresposta por uma análise objetiva de plano de compra.
+Cliente silencioso durante toda a régua. A abordagem final respeitou o momento do cliente e deixou porta aberta para eventual retomada.
 
 ### Decisão
 Sem informação confirmada sobre decisores ou critérios de escolha.
 
 ### Viabilidade
-Não há dados confirmados de financiamento, entrada, renda ou forma de compra. A repescagem step 4 abordou entrada, parcela e prazo apenas como pontos de organização, sem promessa de crédito ou aprovação.
+Não há dados confirmados de financiamento, entrada, renda ou forma de compra. As mensagens anteriores citaram viabilidade apenas como organização de compra, sem promessa de crédito ou aprovação.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato inicial
@@ -96,14 +97,31 @@ Mensagem enviada:
 
 Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
 
+### 2026-05-03 — Repescagem step 5 enviada e atendimento arquivado
+Fluxo: repescagem  
+Step enviado: 5  
+Ângulo/contexto usado: encerramento elegante / lead frio. A abordagem mudou do convite consultivo direto para pausa respeitosa, reforçando que a compra precisa fazer sentido no tempo e na viabilidade do cliente, sem insistir em visita ou repetir análise financeira.  
+Mensagem enviada:
+
+> Marcelo, vou pausar por aqui pra não ficar te chamando sem necessidade 🏡
+>
+> O Place+Arbi segue como uma opção de lançamento no Shopping Park, mas compra de imóvel precisa fazer sentido no seu tempo e na sua viabilidade — não adianta forçar conversa se agora não é o momento.
+>
+> Se quiser retomar depois, posso te ajudar a comparar esse caminho com outras opções de forma **bem objetiva**.
+>
+> Posso deixar seu atendimento pausado por enquanto?
+
+Estado final da régua: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`. Cliente arquivado automaticamente no FamaChat após confirmação defensiva de `broker_id=35`, status anterior `Não Respondeu` e encerramento por `max_steps`.
+
 ## Objeções e travas
 - Trava principal: silêncio / ausência de primeira resposta real.
 - Informação comercial insuficiente para diagnóstico financeiro, decisão ou urgência.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se não responder até o próximo horário elegível, seguir régua de repescagem com step 5, usando encerramento elegante e porta aberta. Após envio bem-sucedido do step 5, a régua deverá encerrar por `max_steps` e, se o cliente ainda estiver exatamente em `Não Respondeu`, o status deverá ser arquivado automaticamente conforme regra defensiva do Reno.
+Sem nova ação automática de repescagem. Caso o cliente responda futuramente, retomar atendimento normal do Reno por fluxo de qualificação/inbound, sem reabrir a régua de repescagem automaticamente.
 
 ## Observações operacionais
-- WhatsApp enviado em 2026-05-02 pelo JID salvo no CRM.
-- Status CRM preservado como `Não Respondeu`, conforme política da repescagem para steps 1 a 4.
-- Branch `meta_data.reno_followup.repescagem` atualizada via ferramenta específica do Reno para `step=4`, `last_sent_at=2026-05-02T10:15:50-03:00` e `next_run_at=2026-05-03T09:10:00-03:00`.
+- WhatsApp do step 5 enviado em 2026-05-03 pelo JID salvo no CRM.
+- `mcp_mcp_postgres_mark_reno_followup_sent` registrou o envio do step 5, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido pela ferramenta específica `mcp_mcp_postgres_update_reno_followup_state` antes do arquivamento defensivo.
+- Status CRM alterado de `Não Respondeu` para `Arquivado` somente após verificação de `step=5` e `stopped_reason=max_steps`.
+- Nota CRM de arquivamento registrada pelo Reno em 2026-05-03.
