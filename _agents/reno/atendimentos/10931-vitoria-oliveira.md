@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Vitória Oliveira
 client_id: 10931
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-22'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -18,40 +18,42 @@ tags:
   - zona-sul
   - garden-sul
   - place-arbi
+  - arquivado
+  - max-steps
 ---
 # Atendimento — Vitória Oliveira
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, origem Facebook Ads, com interesse registrado em apartamentos na Zona Sul de Uberlândia. Repescagem step 4 enviada com sucesso em 2026-05-02 via WhatsApp usando o JID salvo no CRM. A abordagem mudou para convite consultivo direto: organizar caminho de compra entre lançamento, necessidade de resolver mais rápido e possível financiamento. Próximo follow-up de repescagem previsto para 2026-05-03 às 14:20 se não houver resposta real antes.
+Cliente do Reno (`broker_id=35`) arquivada no CRM em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. A repescagem step 5 foi enviada com sucesso via WhatsApp pelo JID salvo no CRM e mudou a abordagem para encerramento elegante: pausa respeitosa, porta aberta e comparação futura por prazo/condição, sem repetir convite de análise ou agenda.
 
 ## Dados operacionais
 - Cliente ID: 10931
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - Telefone/WhatsApp: disponível no CRM; não reproduzido integralmente neste documento
-- WhatsApp JID CRM: disponível; envio realizado pelo JID salvo
-- Última interação relevante: 2026-05-02 — repescagem step 4 enviada com sucesso
+- WhatsApp JID CRM: disponível; envios realizados pelo JID salvo
+- Última interação relevante: 2026-05-03 — repescagem step 5 enviada, ramo encerrado com `stopped_reason=max_steps` e cliente arquivada automaticamente
 
 ## Contexto comercial
-Interesse vindo de Facebook Ads com empreendimentos vinculados no CRM: Garden Sul e Place+Arbi, ambos apartamentos na Zona Sul de Uberlândia. Reentrada automática indicou também interesse no empreendimento Place+Arbi. Não há resposta real da cliente registrada após o primeiro contato/follow-ups até esta atualização.
+Interesse vindo de Facebook Ads com empreendimentos vinculados no CRM: Garden Sul e Place+Arbi, ambos apartamentos na Zona Sul de Uberlândia. Reentrada automática indicou também interesse no empreendimento Place+Arbi. Não houve resposta real da cliente registrada após o primeiro contato/follow-ups até o encerramento da régua.
 
-Contexto dos empreendimentos usado na repescagem:
+Contexto dos empreendimentos usado nas repescagens:
 - Garden Sul: apartamento na Zona Sul/Jardim Sul, lançamento, entrega prevista para set/2028.
 - Place+Arbi: apartamento na Zona Sul/Shopping Park, lançamento, entrega prevista para jun/2027.
 
 ## Diagnóstico
 ### Necessidade
-Busca provável por apartamento na Zona Sul; contexto ainda pouco qualificado porque a cliente não respondeu.
+Busca provável por apartamento na Zona Sul; contexto permaneceu pouco qualificado porque a cliente não respondeu.
 
 ### Momento
-Cliente em silêncio operacional desde a entrada/reentrada. Step 3 buscou destravar uma resposta sobre prazo/momento: mudar mais rápido versus considerar lançamento para 2027/2028. Step 4 avançou para convite consultivo direto, conectando caminho de compra, prazo e financiamento sem pressionar visita.
+Cliente em silêncio operacional desde a entrada/reentrada. Step 3 tentou destravar resposta sobre prazo/momento; step 4 propôs leitura inicial do caminho de compra; step 5 encerrou sem insistir em agenda, reconhecendo que a cliente poderia estar apenas pesquisando/comparando.
 
 ### Decisão
 Sem dados sobre decisores, urgência ou motivação de compra.
 
 ### Viabilidade
-Sem dados de renda, entrada, modalidade de compra ou financiamento. Nenhuma promessa de crédito foi feita. A abordagem atual propôs leitura inicial do caso para organizar caminho de compra antes de aprofundar opções.
+Sem dados de renda, entrada, modalidade de compra ou financiamento. Nenhuma promessa de crédito foi feita. As abordagens consultivas falaram de comparar prazo, condição e encaixe antes de aprofundar opções.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Supressão operacional anterior
@@ -104,14 +106,33 @@ Mensagem enviada:
 
 Resultado: envio WhatsApp tecnicamente bem-sucedido pelo JID salvo no CRM. Estado de repescagem atualizado via `mcp_mcp_postgres_mark_reno_followup_sent` para `step=4`, `last_sent_at=2026-05-02T09:49:44-03:00`, `next_run_at=2026-05-03T14:20:00-03:00`, `enabled=true`, `stopped_reason=null`.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem
+Step enviado: 5
+Ângulo comercial usado: lead frio / encerramento elegante com porta aberta, preservando o contexto de apartamentos na Zona Sul.
+Diferenciação em relação ao step 4: saiu do convite consultivo direto e da leitura inicial do caso; parou de insistir em agenda/análise; mudou para pausa respeitosa e comparação futura por prazo, condição e momento; CTA virou permissão para deixar a cliente à vontade.
+
+Mensagem enviada:
+> Vitória, vou pausar por aqui, tudo bem? 🏡
+>
+> Como você olhou opções na Zona Sul, como Garden Sul e Place+Arbi, pode ser que esteja só pesquisando e comparando com calma. Nessa fase, o mais importante é não ficar presa a um lançamento antes de comparar prazo, condição e se existe algo que encaixe melhor no seu momento.
+>
+> Se fizer sentido retomar depois, eu consigo te ajudar a comparar isso de forma **bem objetiva**.
+>
+> Posso deixar você à vontade e você me chama quando quiser olhar com calma?
+
+Resultado: envio WhatsApp tecnicamente bem-sucedido pelo JID salvo no CRM. `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=5`, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido em seguida pela tool específica para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T17:08:20-03:00` e `stopped_reason=max_steps`. Após verificação, o CRM arquivou a cliente automaticamente com condição defensiva por `id`, `broker_id=35`, status anterior `Não Respondeu` e estado final da repescagem. Nota de arquivamento registrada no CRM.
+
 ## Objeções e travas
 - Sem objeção comercial real registrada; cliente não respondeu.
 - Histórico de falha técnica anterior no runtime de WhatsApp em 2026-04-29, mas envios posteriores foram bem-sucedidos.
+- Ramo final da repescagem ficou compactado após correção do step 5; a mensagem final foi preservada nas notas do CRM e neste documento.
 
 ## Próximo passo
-Aguardar resposta real da cliente. Se responder, parar repescagem, mover para atendimento normal do Reno conforme status aplicável e qualificar contexto/momento. Se não responder até `next_run_at`, avaliar repescagem step 5 com encerramento elegante e porta aberta, sem repetir pergunta de prazo nem convite genérico de análise.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reabrir o atendimento fora da repescagem, validar contexto atual no CRM e conduzir qualificação normal do Reno antes de qualquer novo avanço comercial.
 
 ## Observações operacionais
-- Status CRM preservado como `Não Respondeu` durante o worker de repescagem.
-- Envio desta execução realizado pelo WhatsApp JID salvo no CRM; telefone completo não reproduzido no vault.
+- Status CRM final: `Arquivado`.
+- Ramo `meta_data.reno_followup.repescagem`: `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T17:08:20-03:00`, `stopped_reason=max_steps`.
+- A nota automática do envio step 5 registrou um próximo follow-up previsto como efeito colateral da ferramenta; o estado operacional correto foi corrigido e verificado antes do arquivamento.
 - Documento mantido no caminho oficial determinístico `_agents/reno/atendimentos/10931-vitoria-oliveira.md`.
