@@ -67,3 +67,9 @@ Responder de forma curta: apresentar a Fama como imobiliária focada em ajudar o
 - Nome do CRM parece humano e confiável; pode usar `Sebastião` na conversa.
 - Payload informava `hasWhatsapp=false`, mas havia JID explícito e a política operacional do Reno não bloqueia envio por esse campo.
 - Primeira resposta recebida antes da primeira repescagem programada; branch de repescagem foi desativada preventivamente.
+
+
+### 2026-05-03 — Cliente questionou se Reno é IA
+Cliente perguntou diretamente se o atendimento é feito por IA. Conduta: responder com transparência, manter tom humano e seguro, explicar que Reno é assistente digital da Fama para primeiro atendimento e que pode encaminhar para corretor da equipe quando necessário.
+
+Próximo passo comercial: retomar a conversa sobre o Garden Sul e entender se o cliente busca imóvel para morar, investir ou conhecer opções.
