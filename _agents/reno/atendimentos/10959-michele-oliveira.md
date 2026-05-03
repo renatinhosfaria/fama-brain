@@ -5,48 +5,49 @@ entity_type: atendimento
 entity_name: Michele Oliveira
 client_id: 10959
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-28'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Michele Oliveira
 
 ## Resumo atual
-Cliente do Reno (broker_id=35), status atual no CRM: Não Respondeu. Origem: Facebook Ads. Interesse vinculado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia.
+Cliente do Reno (broker_id=35), status atual no CRM: Arquivado. Origem: Facebook Ads. Interesse vinculado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia.
 
-A cliente recebeu primeiro contato e repescagens steps 1, 2, 3 e 4. Até esta atualização, não há resposta real registrada; portanto, o status permanece Não Respondeu. O step 4 foi enviado em 2026-05-02 à noite com convite consultivo mais direto, aproveitando o fim de semana para propor avaliação na Fama na segunda-feira, sem pressionar fechamento.
+A cliente recebeu o primeiro contato e a régua completa de repescagem steps 1 a 5. Até o envio final, não houve resposta real registrada. Em 2026-05-03, o step 5 foi enviado com encerramento elegante, a branch `reno_followup.repescagem` foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra defensiva do worker.
 
 ## Dados operacionais
 - Cliente ID: 10959
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo utilizado para envio.
 - Empreendimento vinculado: Union Vereda (id_empreendimento 161)
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02 19:50:13 -03:00
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03 11:50:12 -03:00; cliente arquivado automaticamente após encerramento da régua.
 
 ## Contexto comercial
-Interesse em apartamento no Union Vereda, bairro Jaraguá, zona Oeste de Uberlândia. O empreendimento tem opções de apartamento de 2 quartos, varanda/sacada, lazer, valores registrados a partir de aproximadamente R$ 288 mil e previsão de entrega em dez/2028. Não há, até o momento, informação curada sobre forma de pagamento, financiamento, entrada, prazo de compra ou motivação principal.
+Interesse em apartamento no Union Vereda, bairro Jaraguá, zona Oeste de Uberlândia. O empreendimento tem opções de apartamento de 2 quartos, varanda/sacada, lazer, valores registrados a partir de aproximadamente R$ 288 mil e previsão de entrega em dez/2028. Não há informação curada sobre forma de pagamento, financiamento, entrada, prazo de compra ou motivação principal.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não identificada pela cliente. O contexto inicial indica interesse em empreendimento específico.
 
 ### Momento
-Cliente silenciosa após primeiro contato e quatro repescagens; momento de compra ainda não confirmado. O step 4 trouxe um convite consultivo mais direto para avaliar o caminho da compra, considerando que o Union Vereda é lançamento com entrega em 2028.
+Cliente silenciosa após primeiro contato e cinco repescagens. Momento de compra não confirmado. A régua foi concluída sem resposta e o caso foi arquivado automaticamente.
 
 ### Decisão
 Sem informação sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou forma de pagamento. O step 2 tentou abrir conversa sobre financiamento/outra forma de pagamento; o step 3 mudou o ângulo para objetivo de uso (morar ou investir); o step 4 focou em montar um caminho viável e comparar prazo/obra com outras alternativas, sem prometer crédito.
+Sem dados de renda, entrada ou forma de pagamento. O step 2 tentou abrir conversa sobre financiamento/outra forma de pagamento; o step 3 mudou o ângulo para objetivo de uso (morar ou investir); o step 4 focou em montar um caminho viável e comparar prazo/obra com alternativas; o step 5 pausou os contatos e deixou porta aberta para retomada futura, sem prometer crédito.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno
@@ -113,18 +114,38 @@ Data/hora do envio: 2026-05-02T19:50:13-03:00.
 
 Próximo next_run_at: 2026-05-03T09:10:00-03:00.
 
+### 2026-05-03 — Repescagem step 5 e arquivamento
+Fluxo: repescagem.
+
+Step enviado: 5.
+
+Ângulo/contexto comercial usado: encerramento elegante + porta aberta. A mensagem mudou o raciocínio em relação ao step 4: saiu do convite para análise/visita na segunda-feira e passou para pausa respeitosa da régua, preservando o contexto do Union Vereda e deixando retomada futura possível.
+
+Mensagem enviada:
+> Michele, bom dia! 🏡
+>
+> Vou respeitar seu momento e pausar meus contatos por aqui.
+>
+> Como você tinha olhado o Union Vereda, se mais pra frente quiser entender se esse lançamento combina com seu prazo — ou comparar com opções de entrega mais próxima — eu consigo te orientar de forma **objetiva**, sem compromisso.
+>
+> Se fizer sentido retomar depois, pode me chamar por aqui, combinado?
+
+Data/hora do envio: 2026-05-03T11:50:12-03:00.
+
+Estado após envio: régua encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
+
+Arquivamento: cliente atualizado no CRM de Não Respondeu para Arquivado por regra defensiva do worker, após confirmação do estado final da repescagem.
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens anteriores.
+- Silêncio após primeiro contato e cinco repescagens.
 - Falta de informação sobre objetivo da compra, viabilidade e forma de pagamento.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, sair da repescagem, mover de Não Respondeu para Em Atendimento se o CRM ainda estiver exatamente nesse status e conduzir diagnóstico leve com uma pergunta por vez.
-
-Se não responder até o próximo horário elegível, seguir para repescagem step 5 em 2026-05-03T09:10:00-03:00. O step 5 deve ser encerramento elegante da régua e, se enviado com sucesso e o ramo terminar em `stopped_reason=max_steps`, arquivar automaticamente o cliente no CRM conforme regra defensiva.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, o atendimento deve sair da lógica de repescagem, reabrir a conversa pelo fluxo de qualificação do Reno e atualizar o status conforme regra operacional vigente.
 
 ## Observações operacionais
-- Envio do step 4 realizado usando o JID salvo no CRM, coerente com a política de preferir JID confiável quando disponível.
-- Estado da repescagem registrado no CRM pela tool específica `mark_reno_followup_sent`; não houve avanço manual de step fora da tool.
-- A mensagem do step 4 foi substancialmente diferente da anterior: mudou o ângulo comercial para caminho de compra/visita consultiva, mudou a pergunta para agendamento leve na Fama na segunda-feira e mudou o benefício para clarear se vale seguir com o lançamento ou comparar alternativas.
-- O status do cliente não foi alterado no step 4; permanece Não Respondeu.
+- Envio do step 5 realizado usando o JID salvo no CRM, coerente com a política de preferir JID confiável quando disponível.
+- `mark_reno_followup_sent` registrou o envio do step 5, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido com a tool específica `update_reno_followup_state` antes do arquivamento defensivo.
+- A correção final compactou a branch da repescagem, preservando os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem final está preservada na nota CRM automática e neste documento oficial do vault.
+- Nota CRM de arquivamento registrada pelo Reno após a mudança de status.
 - Existe documento legado em `_agents/reno/clientes/10959-michele-oliveira.md`; este documento oficial em `_agents/reno/atendimentos/` deve ser mantido como fonte curada principal para o Reno.
