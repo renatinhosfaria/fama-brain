@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,9 @@ tags:
 # Atendimento — Sibely Cortes
 
 ## Resumo atual
-Cliente Reno (`client_id=10996`) em acompanhamento digital pelo fluxo de repescagem. Está em `Não Respondeu` após primeiro contato e três follow-ups do Reno. Interesse contextual identificado no CRM: Union Vereda, no Jaraguá.
+Cliente Reno (`client_id=10996`) em acompanhamento digital pelo fluxo de repescagem. Está em `Não Respondeu` após primeiro contato e quatro follow-ups do Reno. Interesse contextual identificado no CRM: Union Vereda, no Jaraguá.
+
+A repescagem step 4 foi enviada em 2026-05-02 21:32 (-03:00), com convite consultivo direto para organizar condição de obra, entrada e alternativas reais, levando a análise para segunda-feira por se tratar de fim de semana.
 
 ## Dados operacionais
 - Cliente ID: 10996
@@ -27,23 +29,26 @@ Cliente Reno (`client_id=10996`) em acompanhamento digital pelo fluxo de repesca
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - Telefone/WhatsApp: disponível no CRM; JID salvo usado para envio
-- Última interação relevante: repescagem step 3 enviada em 2026-05-01 20:01 (-03:00)
+- Última interação relevante: repescagem step 4 enviada em 2026-05-02 21:32 (-03:00)
+- Estado da repescagem: `step=4`, `enabled=true`, `stopped_reason=null`, `next_run_at=2026-05-03T09:10:00-03:00`
 
 ## Contexto comercial
-Lead demonstrou interesse no Union Vereda, no Jaraguá. Ainda não houve resposta real do cliente ao Reno. O empreendimento tem entrega prevista para dez/2028 e apartamentos disponíveis de 2 quartos, com suíte e varanda/sacada, a partir de aproximadamente R$ 288 mil no CRM. As repescagens anteriores já abordaram encaixe do imóvel e objetivo de uso (morar/investir); a repescagem step 3 mudou o ângulo para prazo de entrega e momento de compra.
+Lead demonstrou interesse no Union Vereda, no Jaraguá. Ainda não houve resposta real do cliente ao Reno. O empreendimento tem entrega prevista para dez/2028 e apartamentos disponíveis de 2 quartos, com suíte e varanda/sacada, a partir de aproximadamente R$ 288 mil no CRM.
+
+As repescagens anteriores já abordaram encaixe geral do imóvel, objetivo de uso (morar/investir) e prazo de entrega. A repescagem step 4 mudou o ângulo para orientação consultiva do caminho de compra: organizar condição de obra, entrada e alternativas reais antes de decidir se vale seguir.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não identificada por resposta direta. Contexto sugere interesse em imóvel/empreendimento específico.
 
 ### Momento
-Sem resposta do cliente até o momento; régua de repescagem ativa. A pergunta atual busca validar se o prazo de entrega do Union Vereda conversa com o momento dela ou se ela precisa de algo mais imediato.
+Sem resposta do cliente até o momento; régua de repescagem ativa. Como o step 4 foi enviado no fim de semana, o CTA foi deslocado para análise na segunda-feira, evitando pressão imediata.
 
 ### Decisão
 Não há informação sobre decisores ou influenciadores.
 
 ### Viabilidade
-Não há dados de renda, entrada ou financiamento. Evitar prometer crédito ou aprovação.
+Não há dados de renda, entrada ou financiamento. A abordagem citou entrada e alternativas reais como pontos de organização, sem prometer crédito ou aprovação.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Recuperação e primeiro contato do Reno
@@ -91,12 +96,28 @@ Mensagem enviada:
 
 Registro operacional no CRM/FamaChat: nota `16336`; estado de repescagem atualizado pela tool específica do Reno. Próximo `next_run_at`: `2026-05-02T19:10:00-03:00`.
 
+### 2026-05-02 — Repescagem step 4 enviada
+Fluxo: repescagem. Step enviado: 4.
+
+Ângulo/contexto usado: convite consultivo direto. A abordagem foi diferenciada da anterior: saiu da pergunta sobre prazo de entrega para organização do caminho de compra em lançamento, com foco em condição de obra, entrada e alternativas reais. Por ser fim de semana, o CTA preferiu encaminhar a análise para segunda-feira.
+
+Mensagem enviada:
+`Sibely, boa noite! 🔑`
+
+`Quando o interesse é em um lançamento como o Union Vereda, o mais importante é não olhar só o apartamento: vale organizar **condição de obra, entrada e alternativas reais** antes de decidir se vale seguir.`
+
+`Como hoje já é fim de semana, na segunda eu posso te ajudar com essa análise e, se fizer sentido, já vemos o melhor próximo passo na Fama.`
+
+`Posso deixar essa análise encaminhada pra segunda?`
+
+Registro operacional no CRM/FamaChat: nota `16436`; envio WhatsApp confirmado pelo JID salvo; estado de repescagem atualizado pela tool específica do Reno. Próximo `next_run_at`: `2026-05-03T09:10:00-03:00`.
+
 ## Objeções e travas
-- Trava principal: silêncio após primeiro contato e após repescagens anteriores.
+- Trava principal: silêncio após primeiro contato e após quatro repescagens.
 - Lacuna comercial: ainda não há confirmação se o interesse é para moradia, investimento, financiamento, prazo de entrega ou outro cenário.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se continuar sem resposta, próxima repescagem prevista para `2026-05-02T19:10:00-03:00`, mantendo status `Não Respondeu`. Se houver resposta real, parar repescagem e conduzir atendimento por fluxo normal do Reno.
+Aguardar resposta da cliente. Se continuar sem resposta, próxima repescagem prevista para `2026-05-03T09:10:00-03:00`, mantendo status `Não Respondeu`. Se houver resposta real, parar repescagem e conduzir atendimento por fluxo normal do Reno.
 
 ## Observações operacionais
 Houve histórico anterior de supressão/revisão por duplicidade e origem `lead_automatico`, posteriormente corrigido: `lead_automatico` não deve ser usado sozinho para suprimir contato. Documento consolidado no caminho oficial `_agents/reno/atendimentos/10996-sibely-cortes.md`.
