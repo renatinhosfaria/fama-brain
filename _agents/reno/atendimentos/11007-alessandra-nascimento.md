@@ -5,48 +5,49 @@ entity_type: atendimento
 entity_name: Alessandra Nascimento
 client_id: 11007
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
+  - repescagem-concluida
   - union-vista
   - grand-ville
 ---
 # Atendimento — Alessandra Nascimento
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em `Não Respondeu`, com régua de repescagem ativa. Já houve primeiro contato/reenvio inicial e quatro repescagens sem resposta real registrada até a atualização deste documento. A repescagem mais recente avançou para convite consultivo direto, com CTA preferencial para análise/atendimento presencial na Fama na segunda-feira por se tratar de fim de semana.
+Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de repescagem concluída sem resposta real registrada. O step 5 foi enviado via WhatsApp em 2026-05-03, com encerramento elegante e porta aberta para retomada futura. Após correção do estado final da branch `repescagem` para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, o status no FamaChat foi atualizado defensivamente para `Arquivado`.
 
 ## Dados operacionais
 - Cliente ID: 11007
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp disponível; JID salvo no CRM usado nos envios
-- Última interação relevante: 2026-05-02 22:21 — repescagem step 4 enviada via WhatsApp
+- Última interação relevante: 2026-05-03 15:21 — repescagem step 5 enviada via WhatsApp; cliente arquivada após conclusão da régua
 
 ## Contexto comercial
-Contexto disponível no FamaChat indica interesse no empreendimento **Union Vista**, na região do **Grand Ville**, em Uberlândia. Empreendimento em lançamento, apartamentos de 2 quartos, com entrega prevista para Jul/2027. O cliente original informa que Alessandra já olhou alguns imóveis e pretende comprar sozinha. Não há resposta real da cliente nem diagnóstico direto sobre finalidade de compra, forma de pagamento, prazo ou faixa de entrada.
+Contexto disponível no FamaChat indica interesse no empreendimento **Union Vista**, na região do **Grand Ville**, em Uberlândia. Empreendimento em lançamento, apartamentos de 2 quartos, com entrega prevista para Jul/2027. O cliente original informa que Alessandra já olhou alguns imóveis e pretende comprar sozinha. Não houve resposta real da cliente nem diagnóstico direto sobre finalidade de compra, forma de pagamento, prazo ou faixa de entrada.
 
 ## Diagnóstico
 ### Necessidade
-Interesse inicial relacionado ao Union Vista/Grand Ville; necessidade ainda não confirmada pela cliente. O dado de origem sugere que ela já está em algum nível de busca, mas sem conversa ativa com o Reno.
+Interesse inicial relacionado ao Union Vista/Grand Ville; necessidade não confirmada pela cliente. O dado de origem sugere que ela já estava em algum nível de busca, mas não houve conversa ativa com o Reno.
 
 ### Momento
-Silêncio após contato inicial, reenvio inicial e quatro repescagens. Momento de compra ainda indefinido.
+Silêncio após contato inicial, reenvio inicial e cinco repescagens. Régua automática encerrada por `max_steps`.
 
 ### Decisão
-Registro do cliente original indica que Alessandra pretende comprar sozinha; ainda não há confirmação em conversa nem critérios decisórios.
+Registro do cliente original indica que Alessandra pretendia comprar sozinha; não houve confirmação em conversa nem critérios decisórios diretos.
 
 ### Viabilidade
-Ainda não há dados de entrada, renda, financiamento ou forma de pagamento. O step 2 abordou viabilidade prática; o step 3 buscou abrir diagnóstico por objetivo de compra; o step 4 mudou para organização consultiva do caminho de compra, comparando Union Vista com alternativas se necessário.
+Não há dados confirmados de entrada, renda, financiamento ou forma de pagamento. Os steps anteriores abordaram encaixe do Union Vista, viabilidade prática, finalidade morar/investir e convite consultivo; o step final mudou para pausa respeitosa e porta aberta, sem insistir em visita ou agenda.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato/backlog enviado
@@ -120,15 +121,36 @@ Mensagem enviada:
 >
 > Na segunda eu posso te receber na Fama para fazer essa análise com calma e ver se o Union Vista vale seguir ou se é melhor comparar outras opções. **Faz sentido pra você fazer essa análise comigo na segunda?**
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+- Intenção: encerramento elegante.
+- Ângulo comercial: pausa respeitosa com porta aberta para comparação futura entre Union Vista e alternativas por prazo, condição e momento.
+- Diferenciação vs step 4: parou de insistir em agenda/visita na segunda-feira, mudou o CTA para permissão de pausa e preservou a possibilidade de retomada futura.
+- Enviado via WhatsApp pelo JID salvo no CRM.
+- `mark_reno_followup_sent` registrou o envio, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido com a tool específica para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`.
+- Status atualizado defensivamente de `Não Respondeu` para `Arquivado` após confirmação do estado final.
+- Nota CRM automática do envio: `16578`.
+- Nota CRM de arquivamento: `16579`.
+
+Mensagem enviada:
+
+> Alessandra, vou pausar por aqui, tá bem? 🏡
+>
+> Como você olhou o Union Vista no Grand Ville, pode ser que agora esteja só pesquisando e comparando com calma. Nessa fase, o cuidado é não ficar presa a uma opção antes de entender prazo de entrega, condição de pagamento e se existe alguma alternativa que encaixe melhor no seu momento.
+>
+> Se fizer sentido retomar depois, eu consigo te ajudar a comparar isso de forma **bem objetiva**.
+>
+> Posso deixar você à vontade e você me chama quando quiser olhar com calma?
+
 ## Objeções e travas
-- Trava principal atual: silêncio / ausência de primeira resposta real.
+- Trava principal: silêncio / ausência de primeira resposta real.
 - Sem objeções explícitas registradas.
 
 ## Próximo passo
-Se não houver resposta real até `2026-05-03T09:10:00-03:00`, a próxima execução elegível pode avançar para repescagem step 5, com encerramento elegante da régua e porta aberta para retomada futura. Se houver resposta real, parar repescagem e seguir o atendimento por fluxo de qualificação, migrando o status para `Em Atendimento` quando aplicável.
+Sem nova ação automática de repescagem. Caso a cliente responda futuramente, reabrir o atendimento pelo fluxo de qualificação do Reno, atualizar status conforme regra operacional e retomar o diagnóstico consultivo a partir do contexto do Union Vista/Grand Ville.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11007-alessandra-nascimento.md` seguindo governança atual.
-- Existe documento legado em `_agents/reno/clientes/11007-alessandra-nascimento.md`; conteúdo útil foi consolidado aqui. Não foi removido nesta execução.
+- Existe documento legado em `_agents/reno/clientes/11007-alessandra-nascimento.md`; conteúdo útil foi consolidado aqui anteriormente. Não foi removido nesta execução.
 - CRM/FamaChat permanece como fonte operacional de verdade; Vault concentra contexto curado.
-- Claim de repescagem foi limpo após `mark_reno_followup_sent`; status CRM permaneceu `Não Respondeu`, como esperado para step 4.
+- Step 5 confirmou o pitfall recorrente: `mark_reno_followup_sent` registrou `step=5`, mas não encerrou automaticamente a branch. A branch foi corrigida via `update_reno_followup_state` antes do arquivamento defensivo.
+- A correção final compactou a branch `repescagem`; a mensagem final foi preservada nas notas CRM e neste documento oficial do Vault.
