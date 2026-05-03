@@ -18,13 +18,17 @@ tags:
   - primeira-resposta
   - garden-sul
   - jardim-sul
+  - preco
+  - segundo-andar
 ---
 # Atendimento — Sebastiao Adao Junior
 
 ## Resumo atual
-Cliente está em `Em Atendimento` pelo Reno. Interesse ativo: Garden Sul (id 25), no bairro Jardim Sul/Zona Sul. O cliente está engajado e fazendo perguntas sequenciais sobre a Fama, IA/Reno, condições de pagamento, preço por andar e diferença entre Garden Sul/Jardim Sul. Última dúvida: confirmou que Garden Sul e Jardim Sul são lado a lado e perguntou por que têm nomes diferentes na mesma quadra e se existe diferença de preço.
+Cliente está em `Em Atendimento` pelo Reno. Interesse ativo: Garden Sul (id 25), no bairro Jardim Sul/Zona Sul. O cliente está engajado e fazendo perguntas sequenciais sobre a Fama, IA/Reno, condições de pagamento, preço por andar e diferença entre Garden Sul/Jardim Sul.
 
-Conduta comercial recomendada: explicar de forma simples que são empreendimentos/projetos/etapas distintos, mesmo próximos e da mesma construtora. Existe diferença de preço, mas nas plantas tipo ela é pequena; o valor final depende de planta, metragem, andar/posição, unidade e tabela vigente. Próximo passo útil: oferecer comparar as unidades mais baratas dos dois e conduzir para visita/simulação presencial na Fama se houver sinal positivo.
+Evento mais recente curado: cliente reafirmou que quer Garden Sul, 2º andar, e perguntou o preço; depois respondeu `Sim` ao convite para validar a opção mais barata disponível no 2º andar. A tabela interna consultada traz plantas e valores do Garden Sul, mas não traz campo seguro de unidade/andar/posição para cravar preço fechado do 2º andar.
+
+Conduta comercial recomendada: validar a tabela/unidade disponível do 2º andar antes de prometer valor fechado. Referência segura atual: planta tipo 52,01m² a partir de R$ 294.900 e planta 56,32m² por R$ 330.900; valor exato depende da unidade disponível e tabela vigente. Se houver sinal positivo, conduzir para visita/simulação presencial na Fama.
 
 ## Dados operacionais
 - Cliente ID: 11152
@@ -32,21 +36,23 @@ Conduta comercial recomendada: explicar de forma simples que são empreendimento
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp CRM: (34) 8420-7737 / 553484207737@s.whatsapp.net
-- Última interação relevante: 2026-05-03 — cliente perguntou por que Garden Sul e Jardim Sul têm nomes diferentes na mesma quadra e se existe diferença de preço.
+- Última interação relevante: 2026-05-03 — cliente respondeu `Sim` para validar a opção mais barata disponível no 2º andar do Garden Sul.
 - Follow-up Reno: repescagem interrompida por resposta real do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`); sem resgate ativo.
-- Notas CRM relevantes: 16489, 16490, 16492, 16495, 16497, 16498, 16499, 16502 e 16503.
+- Notas CRM relevantes: 16489, 16490, 16492, 16495, 16497, 16498, 16499, 16502, 16503, 16505, 16507 e 16508.
 
 ## Contexto comercial
 Lead originado por Facebook Ads com interesse no Garden Sul. O Garden Sul (id 25) é lançamento da Opção Empreendimentos, no bairro Jardim Sul/Zona Sul, com apartamentos de 2 quartos com suíte, plantas tipo de 52,01m² a 56,32m² e valores seguros no CRM a partir de R$ 294.900.
 
 O cliente está comparando nomes parecidos: Garden Sul, “Jardins” e Jardim Sul. A consulta operacional confirmou que Garden Sul (id 25) e Jardim Sul (id 140) são empreendimentos distintos, próximos/lado a lado na região do Jardim Sul/Zona Sul e ambos vinculados à Opção Empreendimentos. Evitar corrigir de forma fria; explicar como diferença de projeto/etapa/tabela.
 
+Para preço do 2º andar, a base consultada não tem campo unitário de andar/posição. Tratar qualquer valor como referência por planta/unidade, não como preço fechado do 2º andar sem validação da tabela atual.
+
 ## Diagnóstico
 ### Necessidade
-Cliente busca entender o empreendimento e diferenças entre opções/nomes parecidos antes de avançar.
+Cliente busca entender o Garden Sul com foco em unidade de 2º andar e preço, além de comparar nomes/projetos próximos no Jardim Sul.
 
 ### Momento
-Cliente engajado no WhatsApp, fazendo perguntas sequenciais no mesmo atendimento. Sinal de interesse ativo e oportunidade de conduzir para comparação presencial.
+Cliente muito engajado no WhatsApp, respondendo em sequência no mesmo atendimento. Há oportunidade clara de avançar para validação de unidade/tabela e convite presencial.
 
 ### Decisão
 Ainda não diagnosticada. Não há informação sobre decisores familiares ou necessidade de aprovação de terceiros.
@@ -97,23 +103,29 @@ Consulta operacional confirmou:
 
 Conduta: explicar que os nomes diferentes indicam empreendimentos/projetos/etapas distintos, mesmo sendo próximos. Existe diferença de preço e prazo, mas a comparação correta depende da planta/unidade. Oferecer comparar as opções mais baratas dos dois.
 
+### 2026-05-03 — Inbound: quer Garden Sul no 2º andar e preço
+Cliente reafirmou no WhatsApp: quer Garden Sul, 2º andar, e perguntou o preço. CRM validado com `broker_id=35`; status já estava em `Em Atendimento`, sem mudança de status. Repescagem já estava interrompida por resposta real (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia resgate ativo.
+
+Nota silenciosa registrada no CRM (nota 16508; message_id inbound ACE8A219D9A6C9BFD057A6FBB7510E6D). Observação operacional: o inbound chegou por LID/phone_candidates sem correspondência direta ao `whatsapp_jid` salvo no CRM; vínculo preservado pelo contexto curado do atendimento Garden Sul e histórico recente. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
+
+### 2026-05-03 — Aceite para validar 2º andar Garden Sul
+Cliente respondeu `Sim` ao convite para validar a opção mais barata disponível no 2º andar do Garden Sul.
+
+Pendência comercial: confirmar tabela/unidade disponível no 2º andar, pois o CRM lista plantas e valores, mas não traz campo de andar/unidade/posição. Referência segura já informada: 52,01m² a partir de R$ 294.900 e 56,32m² em torno de R$ 330.900.
+
 ## Objeções e travas
 - Ambiguidade de nomenclatura: cliente usa “Garden”, “Jardins” e Jardim Sul. Precisa esclarecer sem parecer correção fria e sem inventar comparação.
 - Cliente ainda não trouxe dados de viabilidade. Não prometer aprovação nem condição fechada.
 - Cliente pergunta preço/diferença de preço: usar dados de CRM como prévia, mas preservar que valor final depende de unidade, planta, andar/posição e tabela vigente.
+- Tabela interna atual não traz campo seguro de andar/unidade/posição; precisa validar unidade específica do 2º andar antes de confirmar preço fechado.
 
 ## Próximo passo
-Responder ao cliente explicando de forma simples que Garden Sul e Jardim Sul são empreendimentos/projetos/etapas diferentes, mesmo próximos e da mesma construtora. Informar que há diferença de preço e prazo: Garden Sul começa em R$ 294.900 e entrega set/2028; Jardim Sul começa em R$ 303.900 e entrega Set/2027, conforme CRM. Depois oferecer comparar as duas opções de menor valor ou convidar para ver/simular presencialmente na Fama se o cliente demonstrar sinal positivo.
+Validar comercialmente a opção mais barata disponível no 2º andar do Garden Sul antes de cravar preço. Se a validação de tabela/unidade não estiver disponível de imediato, responder com a faixa segura por planta e explicar que o valor exato depende da unidade/tabela vigente. Como o cliente já demonstrou interesse e aceitou a validação, reabrir convite para atendimento presencial na Fama assim que houver confirmação básica de unidade/preço.
 
 ## Observações operacionais
 - Nome do CRM parece humano e confiável; pode usar `Sebastião` na conversa.
 - Payload inicial informava `hasWhatsapp=false`, mas há JID CRM e conversa real; a política operacional do Reno não bloqueia atendimento por esse campo.
+- O inbound de message_id ACE8A219D9A6C9BFD057A6FBB7510E6D chegou por LID/phone_candidates que não correspondiam diretamente ao JID CRM; evitar depender só desse identificador se o contexto do WhatsApp vier por LID.
 - Não enviar contato/telefone de construtora ao cliente.
 - Não mencionar endereço exato de empreendimento espontaneamente; usar bairro/região.
 - Esta atualização é curada e não contém dump bruto de conversa.
-
-
-### 2026-05-03 — Aceite para validar 2º andar Garden Sul
-Cliente respondeu "Sim" ao convite para validar a opção mais barata disponível no 2º andar do Garden Sul.
-
-Pendência comercial: confirmar tabela/unidade disponível no 2º andar, pois o CRM lista plantas e valores, mas não traz campo de andar/unidade/posição. Referência segura já informada: 52,01m² a partir de R$ 294.900 e 56,32m² em torno de R$ 330.900.
