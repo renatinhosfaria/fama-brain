@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Sebastiao Adao Junior
 client_id: 11152
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-03'
 updated: '2026-05-03'
@@ -15,26 +15,27 @@ tags:
   - whatsapp
   - famachat
   - primeiro-contato
+  - primeira-resposta
 ---
 # Atendimento — Sebastiao Adao Junior
 
 ## Resumo atual
-Primeiro contato do Reno enviado via WhatsApp em 2026-05-03. Cliente demonstrou interesse no empreendimento Garden Sul, no bairro Jardim Sul. Atendimento está aguardando primeira resposta.
+Cliente respondeu pelo WhatsApp em 2026-05-03 após o primeiro contato do Reno, informando que preencheu o formulário e gostaria de saber mais sobre a empresa. Status operacional atualizado para `Em Atendimento` e repescagem interrompida por resposta real do cliente. Contexto ativo: interesse no Garden Sul, no Jardim Sul.
 
 ## Dados operacionais
 - Cliente ID: 11152
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads
-- Telefone/WhatsApp: WhatsApp cadastrado no CRM; envio realizado pelo JID disponível.
-- Última interação relevante: primeiro contato enviado pelo Reno em 2026-05-03.
+- Telefone/WhatsApp: (34) 8420-7737 / 553484207737@s.whatsapp.net
+- Última interação relevante: primeira resposta inbound do cliente em 2026-05-03.
 
 ## Contexto comercial
-Lead originado por Facebook Ads com interesse no Garden Sul, no Jardim Sul, em Uberlândia. O primeiro contato foi contextualizado pelo empreendimento e bairro, sem aprofundar qualificação antes da resposta do cliente.
+Lead originado por Facebook Ads com interesse no Garden Sul, no Jardim Sul, em Uberlândia. O cliente abriu pedindo mais informações sobre a empresa, não trouxe objeção comercial ainda. A resposta deve explicar a atuação da Fama de forma breve e retomar a qualificação com uma pergunta simples sobre a busca pelo imóvel.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. Abertura enviada para confirmar se a região faz sentido para a busca do cliente.
+Ainda não diagnosticada. Primeiro próximo passo é entender se o cliente busca imóvel para morar, investir ou conhecer opções.
 
 ### Momento
 Ainda não diagnosticado.
@@ -53,13 +54,16 @@ Status do CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Re
 
 Referência operacional: evt_3320 / 3320_1777817308525.
 
+### 2026-05-03 — Primeira resposta do cliente
+Cliente respondeu pelo WhatsApp informando que preencheu o formulário e quer saber mais sobre a empresa. A resposta encerra a condição de silêncio: status do CRM atualizado de `Não Respondeu` para `Em Atendimento` e repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.
+
 ## Objeções e travas
 - Nenhuma objeção identificada ainda.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, registrar a primeira resposta, mover para `Em Atendimento` se ainda estiver em `Não Respondeu` e iniciar diagnóstico consultivo natural.
+Responder de forma curta: apresentar a Fama como imobiliária focada em ajudar o cliente a escolher o imóvel e entender financiamento/viabilidade com segurança; depois retomar a qualificação leve perguntando se ele busca imóvel para morar, investir ou conhecer opções.
 
 ## Observações operacionais
-- Nome do CRM parece humano e confiável; a saudação usou o primeiro nome.
+- Nome do CRM parece humano e confiável; pode usar `Sebastião` na conversa.
 - Payload informava `hasWhatsapp=false`, mas havia JID explícito e a política operacional do Reno não bloqueia envio por esse campo.
-- Envio realizado com sucesso usando o JID disponível no payload/CRM.
+- Primeira resposta recebida antes da primeira repescagem programada; branch de repescagem foi desativada preventivamente.
