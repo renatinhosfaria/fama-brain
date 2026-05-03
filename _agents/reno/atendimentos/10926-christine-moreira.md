@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-05-01'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Christine Moreira
 
 ## Resumo atual
-Cliente em atendimento com Reno (`broker_id=35`), interessada no Union Vereda/Jaraguá. Já respondeu ao WhatsApp, demonstrou interesse, informou mês corrido, aceitou prévia por WhatsApp e trouxe dúvida sobre entrada e financiamento. Sem visita/agendamento ativo no CRM até esta atualização. Resgate step 4 enviado em 2026-05-01 com foco em viabilidade/financiamento, oferecendo uma prévia simples para reduzir fricção antes de decidir visita.
+Cliente em atendimento com Reno (`broker_id=35`), interessada no Union Vereda/Jaraguá. Já respondeu ao WhatsApp, demonstrou interesse, informou mês corrido, aceitou prévia por WhatsApp e trouxe dúvida sobre entrada e financiamento. Sem visita/agendamento ativo no CRM até esta atualização. Resgate step 5 enviado em 2026-05-03 com reclassificação para `visita_pendente`, usando a dúvida de entrada/financiamento como motivo para convite presencial de baixa fricção na segunda-feira.
 
 ## Dados operacionais
 - Cliente ID: 10926
@@ -28,7 +28,7 @@ Cliente em atendimento com Reno (`broker_id=35`), interessada no Union Vereda/Ja
 - Origem: SLA Cascata
 - Telefone/WhatsApp: final 1167 / JID CRM disponível
 - Empreendimento vinculado: Union Vereda (ID 161), Jaraguá, Uberlândia
-- Última interação relevante: Resgate step 4 enviado em 2026-05-01 16:28 -03:00, bucket `viabilidade_financiamento`
+- Última interação relevante: Resgate step 5 enviado em 2026-05-03 16:56 -03:00, bucket `visita_pendente`
 
 ## Contexto comercial
 - Interesse vinculado ao empreendimento Union Vereda, no Jaraguá/região da Av. Aspirante Mega.
@@ -48,7 +48,7 @@ Cliente demonstrou interesse, mas indicou mês corrido para falar sobre o assunt
 Sem decisor adicional registrado até agora.
 
 ### Viabilidade
-Trava principal aparente: entrada e financiamento. Não há simulação validada nem análise de crédito. Condução deve ser consultiva, sem promessa de aprovação. Próxima resposta deve transformar a dúvida em resumo simples ou convite presencial para validar condição com segurança.
+Trava principal aparente: entrada e financiamento. Não há simulação validada nem análise de crédito. Condução deve ser consultiva, sem promessa de aprovação. Próxima resposta deve transformar a dúvida em conversa objetiva e, havendo abertura, visita presencial na Fama para olhar condição com segurança.
 
 ## Histórico curado de interações
 ### 2026-04-25 — Reenvio inicial do Reno
@@ -81,8 +81,15 @@ CRM note: 16237.
 Bucket: `viabilidade_financiamento`.
 Mensagem enviada: `Christine, pensando no Union Vereda, talvez o caminho mais prático seja eu separar uma prévia simples do que precisa encaixar de entrada e financiamento antes de você decidir visita.\n\nQuer que eu faça esse resumo pra você?`
 Contexto usado: CRM/FamaChat confirmou `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo e resgate vencido; notas/vault apontam interesse no Union Vereda e trava em entrada/financiamento; histórico Hermes não mostrou inbound posterior ao último outbound. A abordagem mudou em relação ao step 3: saiu de escolher a dúvida principal para oferecer um resumo prático de encaixe antes de decidir visita, com CTA de menor fricção.
-Próximo follow-up previsto: 2026-05-03 16:28 -03:00, se permanecer sem resposta.
+Próximo follow-up previsto: 2026-05-03 16:28 -03:00, se permanecesse sem resposta.
 CRM note: 16297.
+
+### 2026-05-03 — Resgate step 5
+Bucket: `visita_pendente`.
+Mensagem enviada: `Christine, para essa dúvida de entrada e financiamento não ficar no chute, o melhor é olhar com calma aqui na Fama.\n\nSegunda você consegue passar rapidinho para a gente ver se o Union Vereda encaixa para você?`
+Contexto usado: CRM/FamaChat confirmou `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo, sem resposta registrada depois do step 4 e cadência oficial cumprida para step 5. Vault e notas apontam interesse no Union Vereda e trava em entrada/financiamento. A abordagem mudou em relação ao step 4: saiu de oferecer resumo por WhatsApp para convite presencial objetivo na segunda-feira, conforme regra de fim de semana, usando a dúvida financeira como motivo para olhar o caso com segurança.
+Próximo follow-up previsto: 2026-05-07 16:56 -03:00, se permanecer sem resposta.
+CRM note: 16596.
 
 ## Objeções e travas
 - Mês corrido para falar sobre o assunto.
@@ -90,10 +97,11 @@ CRM note: 16297.
 - Visita ainda não confirmada.
 
 ## Próximo passo
-Se Christine responder, interromper o ciclo de Resgate (`stopped_reason=client_replied`) e retomar atendimento normal com `fama-reno-whatsapp-qualification`. Se pedir o resumo, entregar uma prévia simples de viabilidade/entrada/financiamento do Union Vereda sem prometer aprovação e, havendo sinal positivo, convidar para visita presencial na Fama para olhar condição com segurança.
+Se Christine responder, interromper o ciclo de Resgate (`stopped_reason=client_replied`) e retomar atendimento normal com `fama-reno-whatsapp-qualification`. Se aceitar a visita, registrar agendamento no FamaChat e conduzir para atendimento presencial na Fama. Se pedir mais detalhes por WhatsApp, responder de forma consultiva sobre viabilidade/entrada/financiamento sem prometer aprovação e manter a visita como consequência natural.
 
 ## Observações operacionais
 - Documento oficial criado em `_agents/reno/atendimentos/10926-christine-moreira.md` para consolidar histórico que antes estava em caminho legado `_agents/reno/clientes/christine-moreira.md` sem `client_id`.
 - CRM permanece como fonte operacional de verdade.
 - Há duplicidades históricas de CRM com mesmo telefone sob outros brokers, mas o atendimento Reno ativo é o cliente ID 10926.
-- Nesta execução, o MCP integrado de Postgres estava indisponível; a consulta/registro operacional foi feito por fallback JSON-RPC direto ao MCP, sem expor credenciais. O envio WhatsApp foi bem-sucedido pelo JID CRM.
+- Em 2026-05-01, o envio/registro do step 4 usou fallback JSON-RPC direto ao MCP porque a ferramenta integrada de Postgres estava indisponível naquele momento; credenciais não foram expostas.
+- Em 2026-05-03, o envio do step 5 foi bem-sucedido pelo JID CRM e a persistência no CRM foi feita pela ferramenta específica `mark_reno_followup_sent`.
