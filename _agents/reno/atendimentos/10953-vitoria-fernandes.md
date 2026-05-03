@@ -5,50 +5,51 @@ entity_type: atendimento
 entity_name: Vitória Fernandes
 client_id: 10953
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads / lead_automatico
 created: '2026-04-29'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
+  - max-steps
 ---
 # Atendimento — Vitória Fernandes
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Respondeu**. Lead veio de Facebook Ads/lead automático com interesse associado ao **Place+Arbi**, na região do Shopping Park. Já recebeu primeiro contato e repescagens steps 1, 2, 3 e 4, sem resposta real registrada até o envio do step 4.
+Cliente sob responsabilidade do Reno (`broker_id=35`) foi **arquivada automaticamente** após conclusão da régua de **5 repescagens** sem resposta real registrada. Lead veio de Facebook Ads/lead automático com interesse associado ao **Place+Arbi**, na região do Shopping Park. O step 5 foi enviado com sucesso em 2026-05-03T11:28:32-03:00, a branch `reno_followup.repescagem` foi encerrada com `stopped_reason=max_steps` e o status CRM passou de `Não Respondeu` para **Arquivado** por atualização defensiva.
 
 ## Dados operacionais
 - Cliente ID: 10953
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: disponível no CRM; envios realizados pelo JID salvo do WhatsApp
-- Última interação relevante: repescagem step 4 enviada em 2026-05-02T11:08:56-03:00
+- Última interação relevante: repescagem step 5 enviada em 2026-05-03T11:28:32-03:00 e arquivamento automático registrado no CRM
 
 ## Contexto comercial
 - Interesse identificado no empreendimento **Place+Arbi**, no Shopping Park, em Uberlândia.
 - Empreendimento em lançamento, com entrega prevista para **jun/2027**.
 - Plantas cadastradas no CRM: 48m² com sacada e 50m² com sacada e suíte.
 - Primeira abordagem mencionou o empreendimento e a região.
-- Como não houve resposta, a repescagem avançou de encaixe/viabilidade para diagnóstico leve de objetivo de compra e, no step 4, para orientação consultiva sobre o caminho de compra durante a obra.
+- A repescagem progrediu por diferentes ângulos: encaixe inicial do imóvel, organização de região/planta/viabilidade, objetivo de compra, orientação sobre compra durante a obra e, no step final, encerramento elegante com porta aberta.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não declarada pela cliente. O contexto sugere interesse inicial em apartamento/empreendimento específico.
+Não declarada pela cliente. O contexto sugere interesse inicial em apartamento/empreendimento específico, mas não houve microresposta para confirmar necessidade real.
 
 ### Momento
-Cliente silenciosa após primeiro contato e repescagens steps 1 a 3. Etapa atual é gerar a primeira microresposta com valor consultivo mais direto, sem pressionar visita.
+Cliente permaneceu silenciosa após primeiro contato e 5 tentativas de repescagem. O fluxo automático foi encerrado para não insistir além da régua prevista.
 
 ### Decisão
 Sem informação curada sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou prazo. Abordagem deve evitar promessa de crédito e focar em entender se a compra durante a obra faz sentido antes de aprofundar opções.
+Sem dados de renda, entrada, financiamento ou prazo. As mensagens evitaram promessa de crédito e focaram em orientar o caminho de compra/viabilidade do lançamento.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -73,8 +74,6 @@ Posso te ajudar a fazer essa primeira leitura de forma **simples e sem pressão*
 Você quer que eu veja se esse imóvel faz sentido para você ou se vale comparar com opções parecidas?
 ```
 
-Registro operacional feito via ferramenta específica `mark_reno_followup_sent`.
-
 ### 2026-04-30 — Repescagem step 2 enviada
 Fluxo: repescagem.
 
@@ -93,8 +92,6 @@ Sobre o Place+Arbi, no Shopping Park, o ponto agora é evitar olhar opção solt
 Quer que eu te ajude a fazer essa primeira análise de forma **simples e sem compromisso**?
 ```
 
-Registro operacional feito via ferramenta específica `mark_reno_followup_sent`; estado `clientes.meta_data.reno_followup.repescagem` atualizado pela ferramenta, sem manipulação manual de `meta_data`.
-
 ### 2026-04-30 — Repescagem step 3 enviada
 Fluxo: repescagem.
 
@@ -112,10 +109,6 @@ Como o Place+Arbi é um lançamento no Shopping Park, com entrega prevista pra 2
 
 Pra eu não te mandar opção no chute, me diz só uma coisa: sua ideia seria **morar** ou **investir**?
 ```
-
-Próximo `next_run_at`: 2026-05-01T19:10:00-03:00.
-
-Registro operacional feito via ferramenta específica `mark_reno_followup_sent`; estado `clientes.meta_data.reno_followup.repescagem` atualizado pela ferramenta, sem manipulação manual de `meta_data`.
 
 ### 2026-05-02 — Repescagem step 4 enviada
 Fluxo: repescagem.
@@ -139,16 +132,39 @@ Quer que eu te ajude a organizar esse caminho do Place+Arbi pra ver se vale segu
 
 Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
 
-Registro operacional feito via ferramenta específica `mark_reno_followup_sent`; estado `clientes.meta_data.reno_followup.repescagem` atualizado pela ferramenta, sem manipulação manual de `meta_data`. Cliente permaneceu em `Não Respondeu`, conforme regra dos steps 1 a 4.
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem.
+
+Intenção do step: encerramento elegante, respeitando o silêncio da cliente e deixando porta aberta para retomada futura.
+
+Comparação com a tentativa anterior: a mensagem mudou de convite consultivo direto sobre compra durante a obra para pausa respeitosa; mudou a pergunta para permissão de pausar o atendimento; mudou o benefício destacado para possibilidade futura de comparar o lançamento com outras opções sem pressão.
+
+Ângulo comercial usado: lead frio + imóvel específico, com encerramento elegante após silêncio prolongado.
+
+Mensagem enviada em 2026-05-03T11:28:32-03:00:
+```text
+Vitória, vou encerrar por aqui pra não ficar te chamando toda hora. 🏡
+
+Como seu interesse foi no Place+Arbi, pode ser que você ainda esteja só pesquisando ou esperando o momento certo.
+
+Quando fizer sentido, a Fama consegue te ajudar a comparar esse lançamento com outras opções e ver o caminho de compra com calma, sem pressão.
+
+Posso deixar esse atendimento pausado por enquanto e você me chama quando quiser retomar?
+```
+
+Registro operacional: envio confirmado pelo WhatsApp no JID salvo do CRM; `mark_reno_followup_sent` registrou o step 5 e a nota automática. Como a ferramenta manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`, a branch foi corrigida pela ferramenta específica `update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T11:28:32-03:00` e `stopped_reason=max_steps`.
+
+Após a correção do estado, o CRM foi atualizado de forma defensiva para `status='Arquivado'` porque a cliente ainda estava exatamente em `Não Respondeu`, `broker_id=35` e a repescagem estava encerrada por `max_steps`. Nota objetiva de arquivamento registrada no CRM.
 
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens steps 1 a 4.
-- Falta de dados de objetivo, prazo e viabilidade; evitar prometer aprovação ou avançar para visita antes de microresposta.
+- Silêncio após primeiro contato e 5 repescagens.
+- Falta de dados de objetivo, prazo e viabilidade; não houve resposta real para continuidade consultiva.
 
 ## Próximo passo
-Se não houver resposta até o próximo horário elegível, enviar repescagem step 5 como encerramento elegante da régua, deixando porta aberta para retomada futura. Se a cliente responder, parar repescagem e tratar como atendimento real do Reno.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, tratar como retomada de atendimento real do Reno, validar o status no CRM e seguir por fluxo de qualificação/atendimento, sem reiniciar a régua automaticamente.
 
 ## Observações operacionais
 - Documento oficial consolidado no caminho determinístico `_agents/reno/atendimentos/10953-vitoria-fernandes.md`.
-- Há registros legados/drift anteriores em `_agents/reno/atendimentos/vitoria-fernandes.md` e `_agents/reno/clientes/10953-vitoria-fernandes.md`; este documento passa a ser o destino oficial por `client_id` conforme governança.
-- Nenhum status CRM foi alterado pela repescagem step 4; cliente permanece em Não Respondeu até resposta real ou encerramento automático após step 5.
+- Há registros legados/drift anteriores em `_agents/reno/atendimentos/vitoria-fernandes.md` e `_agents/reno/clientes/10953-vitoria-fernandes.md`; este documento permanece como destino oficial por `client_id` conforme governança.
+- O step final expôs novamente a incompatibilidade conhecida da ferramenta `mark_reno_followup_sent`, que pode registrar step 5 sem encerrar `enabled/next_run_at/stopped_reason`; o estado foi corrigido pela ferramenta específica antes do arquivamento defensivo.
+- A correção final compactou a branch `reno_followup.repescagem` para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem enviada está preservada na nota automática do CRM e neste documento oficial.
