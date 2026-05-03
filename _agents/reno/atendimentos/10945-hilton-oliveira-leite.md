@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Hilton Oliveira Leite
 client_id: 10945
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -16,36 +16,37 @@ tags:
   - famachat
   - repescagem
   - union-vereda
+  - arquivado
 ---
 # Atendimento — Hilton Oliveira Leite
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) segue em `Não Respondeu` após primeiro contato e quatro repescagens enviadas. Interesse originado por Facebook Ads no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. Em 2026-05-02 foi enviada a repescagem step 4 com abordagem consultiva direta, usando o ângulo de viabilidade do lançamento/obra e convite para análise que pode evoluir para conversa presencial na Fama na segunda-feira.
+Cliente do Reno (`broker_id=35`) foi arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O interesse era no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. A última mensagem enviada foi um encerramento elegante, com pausa/porta aberta para retomada futura.
 
 ## Dados operacionais
 - Cliente ID: 10945
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp disponível no CRM, com JID salvo; não expor telefone no vault
 - Empreendimento vinculado no CRM: 161 — Union Vereda
-- Última interação relevante: 2026-05-02 19:14 BRT — Repescagem step 4 enviada via WhatsApp
+- Última interação relevante: 2026-05-03 10:46 BRT — Repescagem step 5 enviada via WhatsApp; régua encerrada e cliente arquivado
 
 ## Contexto comercial
-Lead demonstrou interesse no **Union Vereda**, apartamento no Jaraguá/Oeste de Uberlândia, empreendimento da HLTS Construtora com entrega prevista para dez/2028. O empreendimento possui unidades de 2 quartos com suíte/sacada, lazer e estrutura de condomínio; preços consultados no CRM ficam aproximadamente entre R$ 288 mil e R$ 326 mil. Não há resposta real do cliente nem informações confirmadas sobre finalidade, entrada, financiamento, prazo de compra ou composição familiar.
+Lead demonstrou interesse no **Union Vereda**, apartamento no Jaraguá/Oeste de Uberlândia, empreendimento da HLTS Construtora com entrega prevista para dez/2028. O empreendimento possui unidades de 2 quartos com suíte/sacada, lazer e estrutura de condomínio; preços consultados no CRM ficam aproximadamente entre R$ 288 mil e R$ 326 mil. Não houve resposta real do cliente nem informações confirmadas sobre finalidade, entrada, financiamento, prazo de compra ou composição familiar.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não identificada. Pelo contexto, a necessidade provável é avaliar se o Union Vereda combina com a busca do cliente.
+Não identificada por ausência de resposta. Pelo contexto, a necessidade provável era avaliar se o Union Vereda combinava com a busca do cliente.
 
 ### Momento
-Cliente silencioso desde o primeiro contato. A régua de repescagem está ativa para tentar gerar a primeira microresposta.
+Cliente permaneceu silencioso desde o primeiro contato e durante todos os steps de repescagem. Fluxo encerrado por `max_steps`.
 
 ### Decisão
 Não há informação sobre decisores, influência familiar ou critério principal de escolha.
 
 ### Viabilidade
-Sem dados de renda, entrada ou financiamento. A abordagem atual evita prometer crédito e tenta abrir conversa sobre viabilidade do caminho até a entrega do empreendimento.
+Sem dados de renda, entrada ou financiamento. As abordagens evitaram prometer crédito e tentaram abrir conversa sobre viabilidade do caminho de compra no lançamento.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato operacional
@@ -73,15 +74,28 @@ Mensagem enviada via WhatsApp para o JID salvo no CRM:
 
 Ângulo usado: imóvel específico + viabilidade do lançamento/obra + convite consultivo direto em fim de semana, com CTA preferencial para conversa presencial na segunda-feira.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Mensagem de encerramento elegante enviada via WhatsApp para o JID salvo no CRM:
+
+> Hilton, vou pausar meu contato por aqui. 🏡
+>
+> Como você olhou o *Union Vereda* e não consegui falar contigo, pode ser que ainda esteja só pesquisando ou que esse não seja o momento agora.
+>
+> Se quiser retomar depois, eu consigo te ajudar a comparar **prazo de obra, valor e financiamento** antes de você escolher qualquer unidade.
+>
+> Posso deixar em aberto por enquanto?
+
+Ângulo usado: lead frio + pausa respeitosa com porta aberta, sem repetir o convite consultivo/visita do step 4. Após o envio, a branch de repescagem foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`; o status CRM foi alterado defensivamente para `Arquivado`.
+
 ## Objeções e travas
-- Silêncio prolongado após primeiro contato e três repescagens anteriores.
-- Sem objeção explícita; principal trava operacional é ausência de primeira resposta.
+- Silêncio prolongado após primeiro contato e cinco repescagens.
+- Sem objeção explícita; principal trava operacional foi ausência de primeira resposta.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper repescagem, mover para `Em Atendimento` somente se ainda estiver em `Não Respondeu`, registrar a resposta no CRM e seguir qualificação normal do Reno. Se permanecer em silêncio, próxima repescagem prevista: step 5 em 2026-05-03 09:10 BRT.
+Sem nova ação automática de repescagem. Se o cliente responder futuramente, reabrir atendimento fora deste fluxo, registrar a resposta no CRM e seguir qualificação normal do Reno conforme status e contexto atual.
 
 ## Observações operacionais
-- CRM/FamaChat é a fonte operacional de verdade; status mantido como `Não Respondeu` após step 4.
-- `meta_data.reno_followup.repescagem.step` atualizado para `4` por `mcp_mcp_postgres_mark_reno_followup_sent`.
-- `next_run_at` registrado para `2026-05-03T09:10:00-03:00`.
-- Não houve arquivamento nesta execução porque o step enviado foi 4, não o step final.
+- CRM/FamaChat é a fonte operacional de verdade.
+- `mcp_mcp_postgres_mark_reno_followup_sent` registrou o envio do step 5, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; a branch foi corrigida pela tool específica `mcp_mcp_postgres_update_reno_followup_state` antes do arquivamento.
+- Arquivamento realizado por UPDATE defensivo: somente porque o cliente ainda estava em `Não Respondeu`, `broker_id=35`, `step=5` e `stopped_reason=max_steps`.
+- Nota CRM de arquivamento registrada em 2026-05-03 após correção do estado final.
