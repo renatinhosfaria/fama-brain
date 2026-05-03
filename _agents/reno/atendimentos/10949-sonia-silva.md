@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Sonia Silva
 client_id: 10949
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -16,35 +16,36 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
+  - arquivado
 ---
 # Atendimento — Sonia Silva
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Não Respondeu`, originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville. Primeiro contato e repescagens steps 1, 2, 3 e 4 foram enviados sem resposta real registrada até esta atualização. Em 2026-05-02 foi enviada repescagem step 4 com convite consultivo mais direto, mudando o ângulo para organizar o caminho de compra e, se fizer sentido para a cliente, encaminhar conversa/visita na Fama na segunda-feira.
+Cliente do Reno (`broker_id=35`) originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville. Primeiro contato e cinco repescagens foram enviados por WhatsApp sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante da régua; a branch de repescagem foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat.
 
 ## Dados operacionais
 - Cliente ID: 10949
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp disponível no CRM; envios realizados pelo JID salvo
-- Última interação relevante: 2026-05-02T19:21:15-03:00 — repescagem step 4 enviada
+- Última interação relevante: 2026-05-03T10:57:30-03:00 — repescagem step 5 enviada e régua encerrada
 
 ## Contexto comercial
-Interesse inicial vinculado ao Union Vista, empreendimento da HLTS Construtora na região do Grand Ville/Zona Leste de Uberlândia. O empreendimento está em lançamento, com entrega prevista para Jul/2027, unidades de 2 quartos e valores a partir de aproximadamente R$292 mil. Ainda não há resposta da cliente, então não há confirmação de finalidade de compra, urgência, região alternativa, orçamento ou preferência de financiamento.
+Interesse inicial vinculado ao Union Vista, empreendimento da HLTS Construtora na região do Grand Ville/Zona Leste de Uberlândia. O empreendimento está em lançamento, com entrega prevista para Jul/2027, unidades de 2 quartos e valores a partir de aproximadamente R$292 mil. A cliente não respondeu aos contatos, então não há confirmação de finalidade de compra, urgência, região alternativa, orçamento ou preferência de financiamento.
 
 ## Diagnóstico
 ### Necessidade
-Indefinida por ausência de resposta real. Contexto sugere busca por imóvel específico, mas ainda sem confirmação se o objetivo é morar, investir ou apenas avaliar oportunidade.
+Indefinida por ausência de resposta real. Contexto sugere busca por imóvel específico, mas sem confirmação se o objetivo era morar, investir ou apenas avaliar oportunidade.
 
 ### Momento
-Cliente silenciosa após primeiro contato e quatro repescagens. Step 3 explorou prazo de entrega/momento de mudança; step 4 passou para convite consultivo direto e possibilidade de conversa/visita na Fama na segunda-feira, sem repetir financiamento, morar/investir ou prazo.
+Cliente permaneceu silenciosa após o primeiro contato e cinco repescagens. A régua avançou de organização inicial da busca para viabilidade, prazo do lançamento, convite consultivo direto e, por fim, encerramento respeitoso com porta aberta.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou financiamento. Repescagem step 2 já abordou encaixe financeiro; steps seguintes evitaram repetir o mesmo argumento e alternaram para prazo, organização do caminho de compra e orientação consultiva.
+Sem dados de renda, entrada ou financiamento. A repescagem step 2 já abordou encaixe financeiro; steps posteriores alternaram para prazo, organização do caminho de compra, orientação consultiva e encerramento, evitando repetir o mesmo argumento.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -115,15 +116,37 @@ Quer que eu encaminhe uma conversa rápida e, se você gostar do caminho, uma vi
 
 Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem  
+Step enviado: 5  
+Intenção do step: encerramento elegante, pausar a régua sem queimar relacionamento e deixar porta aberta para retomada futura.  
+Comparação de abordagem: diferente do step 4, que convidava para conversa/visita na segunda-feira e organizava o próximo passo, esta mensagem encerrou a insistência, respeitou o tempo da cliente e ofereceu retomada futura sem reabrir diagnóstico ou repetir viabilidade/prazo.  
+Ângulo comercial usado: imóvel específico + lead frio/porta aberta.  
+Data/hora de envio: 2026-05-03T10:57:30-03:00  
+Mensagem enviada:
+
+```text
+Sonia, vou pausar por aqui pra respeitar seu tempo. 🏡
+
+Como você tinha olhado o Union Vista, deixo só esse ponto: se a compra voltar a ser prioridade, vale retomar com uma conversa objetiva pra não **recomeçar do zero** entre anúncio, prazo de obra e condição de compra.
+
+Se fizer sentido mais pra frente, me chama por aqui que eu continuo do ponto certo.
+
+Posso deixar essa porta aberta e pausar por enquanto?
+```
+
+Estado final da repescagem: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`. Cliente arquivado automaticamente no FamaChat após atualização defensiva de status.
+
 ## Objeções e travas
-- Trava atual: ausência de resposta real após os contatos anteriores.
+- Trava principal: ausência de resposta real após o primeiro contato e cinco repescagens.
 - Não há objeção comercial declarada pela cliente.
 
 ## Próximo passo
-Se a cliente continuar em `Não Respondeu` e sem resposta real até 2026-05-03T09:10:00-03:00, avaliar repescagem step 5 pela fila oficial com encerramento elegante da régua. Se houver resposta real, parar repescagem, mover para atendimento normal do Reno e conduzir diagnóstico consultivo.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reativar atendimento normal do Reno, registrar a resposta no CRM, atualizar o status conforme política operacional e conduzir diagnóstico consultivo a partir do contexto do Union Vista.
 
 ## Observações operacionais
-- Estado da repescagem atualizado no CRM pela tool específica `mark_reno_followup_sent`.
-- Status CRM preservado como `Não Respondeu`, conforme política da repescagem para steps 1 a 4.
-- Após o step 4, `repescagem.step=4`, `enabled=true`, `stopped_reason=null`, `claim_expires_at=null` e `next_run_at=2026-05-03T09:10:00-03:00`.
+- WhatsApp do step 5 enviado com sucesso pelo JID salvo no CRM.
+- `mark_reno_followup_sent` registrou o envio e a nota CRM, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null` no step final. O estado foi corrigido pela tool específica `update_reno_followup_state` para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps` antes do arquivamento defensivo.
+- A correção do estado final compactou a branch de repescagem no CRM, preservando os campos essenciais `step`, `enabled`, `next_run_at`, `last_sent_at` e `stopped_reason`; a mensagem enviada fica preservada na nota CRM e neste documento oficial.
+- Nota CRM de arquivamento registrada pelo Reno informando conclusão da régua de 5 repescagens sem resposta e arquivamento automático.
 - Há documentos legados/drift relacionados a este cliente em `_agents/reno/atendimentos/sonia-silva.md` e `_agents/reno/clientes/10949-sonia-silva.md`; este arquivo é o caminho determinístico oficial por `client_id`.
