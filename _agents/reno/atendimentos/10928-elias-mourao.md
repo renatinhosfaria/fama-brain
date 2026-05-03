@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-05-01'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -19,16 +19,16 @@ tags:
 # Atendimento — Elias Mourão
 
 ## Resumo atual
-Cliente em atendimento pelo Reno, com interesse em moradia no Place+Arbi/Shopping Park. Já respondeu anteriormente e refinou busca para uma condição mais leve. Resgate step 4 enviado em 2026-05-01 com foco em reduzir a decisão para uma opção mais pé no chão, comparando apartamento de 1 quarto versus casa sem pressionar visita neste momento.
+Cliente em atendimento pelo Reno, com interesse em moradia no Place+Arbi/Shopping Park. Já respondeu anteriormente e refinou busca para uma condição mais leve. Resgate step 5 enviado em 2026-05-03 com mudança de ângulo para convite presencial de baixa fricção: olhar a condição com calma na Fama na segunda-feira, sem prometer aprovação e sem insistir em imóvel específico.
 
 ## Dados operacionais
 - Cliente ID: 10928
 - Broker ID: 35
 - Status CRM: Em Atendimento
 - Origem: SLA Cascata
-- Telefone/WhatsApp: final 2708; envio do step 4 realizado para variação brasileira com nono dígito
+- Telefone/WhatsApp: final 2708; envio do step 5 realizado para variação brasileira com nono dígito
 - Empreendimento vinculado: Place+Arbi — Shopping Park, Uberlândia
-- Última interação relevante: Resgate step 4 enviado pelo Reno em 2026-05-01 16:39 -03
+- Última interação relevante: Resgate step 5 enviado pelo Reno em 2026-05-03 17:16 -03
 
 ## Contexto comercial
 Elias demonstrou interesse para moradia e o empreendimento ativo no CRM é o Place+Arbi, no bairro Shopping Park. Histórico de CRM indica preferência atual por Shopping Park, busca de parcela mais leve, abertura para imóvel de 1 quarto e também casa se a condição ficar melhor.
@@ -38,7 +38,7 @@ Elias demonstrou interesse para moradia e o empreendimento ativo no CRM é o Pla
 Busca imóvel para morar, com atenção a uma opção que caiba no orçamento mensal.
 
 ### Momento
-Já houve interação real e refinamento do perfil; cliente ficou silencioso após conduções sucessivas sobre viabilidade/financiamento.
+Já houve interação real e refinamento do perfil; cliente ficou silencioso após conduções sucessivas sobre viabilidade/financiamento. O step 5 usou o domingo como oportunidade para propor visita presencial na segunda-feira, reduzindo a necessidade de decidir tudo por WhatsApp.
 
 ### Decisão
 Compra sozinho, conforme nota do CRM. Não há decisor terceiro registrado até o momento.
@@ -85,16 +85,28 @@ Contexto usado: CRM validou cliente `broker_id=35`, status `Em Atendimento`, sem
 
 Próximo `next_run_at` registrado no CRM: 2026-05-03T16:39:26-03:00.
 
+### 2026-05-03 — Resgate step 5
+Reno enviou Resgate step 5 pelo WhatsApp. Bucket: `visita_pendente`.
+
+Mensagem enviada:
+“Elias, pra não ficar só trocando opção por WhatsApp, acho que o mais útil é olhar a condição com calma e ver o que cabe no seu mês.
+
+Como hoje é domingo, quer que eu veja um horário pra você passar aqui na Fama amanhã?”
+
+Contexto usado: CRM validou cliente `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo; cadência oficial do step 5 estava vencida 48h após o step 4. Histórico curado indica interesse real em moradia, Shopping Park/Place+Arbi e preocupação com parcela leve/viabilidade. A mensagem mudou o ângulo do step 4: saiu de escolha entre apartamento de 1 quarto e casa para convite presencial na segunda-feira, com benefício de analisar a condição com calma e reduzir decisão por WhatsApp.
+
+Próximo `next_run_at` registrado no CRM: 2026-05-07T17:16:18-03:00.
+
 ## Objeções e travas
 - Viabilidade financeira sensível: sem entrada e sem FGTS no momento.
 - Parcela mensal precisa ser leve; evitar condução para imóvel/condição que aperte o orçamento.
 - Silêncio após perguntas sobre viabilidade indica necessidade de CTA simples e de baixa fricção.
 
 ## Próximo passo
-Aguardar resposta ao Resgate step 4. Se Elias responder, interromper a régua de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) antes de continuar atendimento normal; conduzir com foco na preferência indicada entre apartamento de 1 quarto e casa, e convidar para visita presencial quando houver sinal positivo.
+Aguardar resposta ao Resgate step 5. Se Elias responder, interromper a régua de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) antes de continuar atendimento normal; se aceitar a visita, registrar agendamento presencial na Fama e conduzir a conversa com foco em análise de condição/viabilidade sem promessa de aprovação.
 
 ## Observações operacionais
 - CRM validado como fonte operacional: cliente existe, `broker_id=35`, status `Em Atendimento`, sem visitas/agendamentos ativos no momento da execução.
 - Documento mantido em caminho oficial `_agents/reno/atendimentos/10928-elias-mourao.md`.
-- Registro do envio persistido no CRM via `mark_reno_followup_sent`; nota CRM criada automaticamente para o step 4.
-- Histórico de WhatsApp ativo individual não está disponível como tabela no CRM; contexto foi reconstruído a partir de CRM, notas, sessão Hermes anterior, vault e estado `meta_data.reno_followup.resgate`.
+- Registro do envio persistido no CRM via `mark_reno_followup_sent`; nota CRM criada automaticamente para o step 5.
+- Histórico de WhatsApp ativo individual não está disponível como tabela no CRM; contexto foi reconstruído a partir de CRM, notas, sessão Hermes anterior, vault, log de inbound sem ocorrência para Elias e estado `meta_data.reno_followup.resgate`.
