@@ -136,3 +136,11 @@ Validar comercialmente a opção disponível no 2º andar do Garden Sul com vist
 - Não enviar contato/telefone de construtora ao cliente.
 - Não mencionar endereço exato de empreendimento espontaneamente; usar bairro/região.
 - Esta atualização é curada e não contém dump bruto de conversa.
+
+
+### 2026-05-03 — Cliente quer financiar R$ 294.900 e pagar restante com incorporadora
+Cliente informou intenção de financiar R$ 294.900 e pagar o restante com a incorporadora, perguntando quanto pagaria.
+
+Cálculo de referência: se a unidade for exatamente R$ 294.900, restante = R$ 0. Se usar a planta de R$ 330.900, restante aproximado = R$ 36.000. Parcelando R$ 36.000 em 28 meses até set/2028, referência simples ≈ R$ 1.285,71/mês, sem correções, sinal, taxas/cartório/ITBI ou variação da tabela.
+
+Conduta: explicar como conta simples, reforçar que o valor exato depende da unidade 2º andar/vista piscina e da tabela/condição vigente, e conduzir para validação segura com a equipe/Fama.
