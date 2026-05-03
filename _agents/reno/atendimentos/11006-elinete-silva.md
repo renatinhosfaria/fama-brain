@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -22,7 +22,7 @@ tags:
 # Atendimento — Elinete Silva
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, originada de Facebook Ads com interesse vinculado ao empreendimento **Union Vereda**, no Jaraguá. Primeiro contato, repescagem step 1 e step 2 não geraram resposta real registrada. Em 2026-05-01 foi enviado o **step 3 da repescagem** com diagnóstico leve, mudando o ângulo para uso do imóvel e prazo do empreendimento: morar vs investir.
+Cliente do Reno em `Não Respondeu`, originada de Facebook Ads com interesse vinculado ao empreendimento **Union Vereda**, no Jaraguá. Primeiro contato e repescagens steps 1, 2 e 3 não geraram resposta real registrada. Em 2026-05-02 foi enviado o **step 4 da repescagem** com convite consultivo direto, mudando o ângulo para comparar Union Vereda com alternativas e organizar uma análise na segunda-feira, sem pressionar decisão imediata.
 
 ## Dados operacionais
 - Cliente ID: 11006
@@ -31,7 +31,7 @@ Cliente do Reno em `Não Respondeu`, originada de Facebook Ads com interesse vin
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp/JID salvo no CRM; não expor número completo em relatórios.
 - Empreendimento vinculado: Union Vereda — Jaraguá, Uberlândia
-- Última interação relevante: 2026-05-01 20:43:41 -03:00 — repescagem step 3 enviada via WhatsApp.
+- Última interação relevante: 2026-05-02 22:14:05 -03:00 — repescagem step 4 enviada via WhatsApp.
 
 ## Contexto comercial
 Lead veio de anúncio relacionado ao **Union Vereda**, empreendimento da HLTS Construtora no bairro Jaraguá, Uberlândia. O empreendimento possui apartamentos de 2 quartos, suíte, varanda, lazer estruturado, unidades disponíveis na faixa aproximada de R$ 288 mil a R$ 327 mil e entrega prevista para Dez/2028. Não há informação declarada da cliente sobre busca, prazo, renda, entrada ou forma de pagamento.
@@ -41,13 +41,13 @@ Lead veio de anúncio relacionado ao **Union Vereda**, empreendimento da HLTS Co
 Possível interesse em apartamento no Union Vereda, mas sem resposta ainda para confirmar se a busca é para morar, investir ou apenas conhecer opções.
 
 ### Momento
-Cliente segue silenciosa após primeiro contato e três tentativas de repescagem. Momento de compra ainda não identificado.
+Cliente segue silenciosa após primeiro contato e quatro tentativas de repescagem. Momento de compra ainda não identificado.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou aprovação. O step 2 já abordou financiamento/entrada/parcela; o step 3 evitou repetir o mesmo argumento e buscou abrir diagnóstico por finalidade de compra, sem prometer crédito.
+Sem dados de renda, entrada ou aprovação. O step 2 abordou financiamento/entrada/parcela; o step 3 abordou finalidade morar/investir; o step 4 evitou repetir esses pontos e levou a conversa para análise consultiva do caminho de compra e comparação com alternativas de entrega/perfil diferente, sem prometer crédito.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato enviado
@@ -106,14 +106,34 @@ Isso pode fazer bastante sentido para quem está se planejando, mas muda complet
 No seu caso, você estava olhando mais para morar ou para investir?
 ```
 
+### 2026-05-02 — Repescagem step 4 enviada
+- Intenção: convite consultivo direto.
+- Ângulo: imóvel específico + organização do caminho de compra.
+- Diferença em relação ao step 3: deixou de perguntar finalidade morar/investir e abriu um caminho novo de comparação entre Union Vereda e opções prontas/mais rápidas, com CTA para análise na segunda-feira por ser fim de semana.
+- Canal: WhatsApp usando JID salvo no CRM.
+- Registro operacional: enviado com sucesso e registrado via `mark_reno_followup_sent`; claim da fila limpo no `meta_data`.
+- Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
+
+Mensagem enviada:
+```text
+Elinete, vou te chamar por outro caminho agora. 🔑
+
+No Union Vereda, o ponto não é só ver valor ou fotos. Como é lançamento no Jaraguá, vale comparar se **prazo de entrega, região e condição de compra** fazem sentido pra você ou se uma opção pronta/mais rápida encaixa melhor.
+
+Na segunda posso fazer essa análise com você e, se valer a pena, já te recebo na Fama para olhar o caminho certo.
+
+Quer que eu organize essa análise pra segunda?
+```
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens steps 1, 2 e 3; ainda não há objeção explícita.
+- Silêncio após primeiro contato e repescagens steps 1, 2, 3 e 4; ainda não há objeção explícita.
 - Lacuna de diagnóstico: finalidade de compra, prazo, decisores, forma de pagamento e viabilidade financeira não identificados.
 
 ## Próximo passo
-Se não houver resposta real, manter status `Não Respondeu` e aguardar elegibilidade do step 4 em 2026-05-02 19:10 -03:00. Próximo ângulo recomendado: convite consultivo direto, reforçando organização da compra e viabilidade sem repetir a pergunta de morar/investir.
+Se não houver resposta real, manter status `Não Respondeu` e aguardar elegibilidade do step 5 em 2026-05-03 09:10 -03:00. Próximo ângulo recomendado: encerramento elegante da régua, respeitando o momento da cliente e deixando porta aberta para retomada futura sem cobrança.
 
 ## Observações operacionais
 - Documento oficial criado em `_agents/reno/atendimentos/11006-elinete-silva.md` consolidando conteúdo útil do documento legado `_agents/reno/clientes/11006-elinete-silva.md`.
 - Caminho legado não foi removido; deve ser tratado como drift histórico se houver auditoria/migração futura.
 - CRM/FamaChat permanece fonte operacional de verdade; vault é síntese curada.
+- Step 4 enviado em produção pelo worker `reno-repescagem-message-queue-production` com no máximo 1 WhatsApp bem-sucedido nesta execução.
