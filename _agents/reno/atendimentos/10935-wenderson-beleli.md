@@ -21,9 +21,11 @@ source: FamaChat / Facebook Ads
 # Atendimento — Wenderson Beleli
 
 ## Resumo atual
-Cliente CRM 10935, broker Reno (35), foi **arquivado automaticamente em 2026-05-03** após conclusão da régua de 5 repescagens sem resposta real.
+Cliente CRM 10935, broker Reno (35), foi **arquivado automaticamente em 2026-05-03** após conclusão da régua de 5 repescagens.
 
-Após o arquivamento, a rotina silenciosa de inbound WhatsApp foi acionada em 2026-05-03, mas o texto recebido pelo hook correspondia a conteúdo operacional/sistêmico da skill, não a uma fala comercial confiável do cliente. Por isso, o status foi preservado como Arquivado, a repescagem permaneceu encerrada e nenhuma mensagem foi enviada ao cliente.
+Após o arquivamento, houve acionamento de inbound WhatsApp. O cliente enviou uma resposta curta — “Sim, isso mesmo.” — interpretada como confirmação da pausa/encerramento dos contatos após o step final da repescagem. Como o status já estava `Arquivado`, não houve mudança para `Em Atendimento`; a repescagem já estava encerrada e não havia resgate ativo. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
+
+Observação de histórico: houve também um acionamento anterior de rotina inbound silenciosa classificado como ruído operacional/sistêmico, sem fala comercial confiável. O evento mais recente registrado como resposta útil do cliente é a confirmação curta de pausa acima.
 
 O interesse original veio de Facebook Ads relacionado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. A repescagem evoluiu de abordagem genérica para imóvel específico, viabilidade, finalidade, convite consultivo e, no step final, encerramento elegante com porta aberta.
 
@@ -33,27 +35,28 @@ O interesse original veio de Facebook Ads relacionado ao empreendimento Union Ve
 - Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: final 6821; JID CRM usado para envio
-- Última interação relevante: 2026-05-03 10:53 -03 — rotina inbound silenciosa recebeu conteúdo operacional/sistêmico; status preservado como Arquivado; repescagem já estava encerrada e não havia resgate ativo
+- Última interação relevante: 2026-05-03 — inbound WhatsApp real com “Sim, isso mesmo.”; interpretado como confirmação da pausa após repescagem final; status preservado como Arquivado; repescagem já encerrada; sem resgate ativo; nota CRM registrada pelo Reno
 
 ## Contexto comercial
 - Empreendimento citado no primeiro contato: Union Vereda
 - Região: Jaraguá, Uberlândia/MG
 - Produto: apartamentos disponíveis no Union Vereda; CRM indica opções de 2 quartos, suíte, varanda/sacada e lazer de condomínio.
 - Prazo de entrega do empreendimento no CRM: Dez/2028.
-- Não houve resposta real do cliente nem diagnóstico confirmado de intenção, prazo, composição familiar, forma de pagamento ou faixa de entrada.
+- Não houve diagnóstico comercial confirmado de intenção, prazo, composição familiar, forma de pagamento ou faixa de entrada.
+- A única resposta real registrada após a régua foi curta e confirmou a pausa/encerramento dos contatos, sem abrir nova qualificação.
 
 ## Diagnóstico
 ### Necessidade
-Provável interesse em apartamento no Union Vereda/Jaraguá a partir de anúncio. Necessidade não confirmada por ausência de resposta real.
+Provável interesse em apartamento no Union Vereda/Jaraguá a partir de anúncio. Necessidade não confirmada em conversa comercial.
 
 ### Momento
-Lead permaneceu silencioso desde o primeiro contato e durante os 5 steps de repescagem. A régua foi encerrada para não insistir fora do momento do cliente. O acionamento posterior de inbound não trouxe conteúdo comercial confiável para reabrir o diagnóstico.
+Lead permaneceu silencioso durante o primeiro contato e os 5 steps de repescagem. Após o encerramento, respondeu “Sim, isso mesmo.” ao contexto de pausa/cliente chamar quando for a hora, indicando que o momento atual é de não seguir com novo contato ativo do Reno.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Viabilidade de compra não confirmada. As tentativas abordaram região, financiamento/à vista, finalidade da compra, entrada/fluxo até entrega e comparação com alternativas. Nenhuma dessas abordagens gerou resposta comercial confiável.
+Viabilidade de compra não confirmada. As tentativas abordaram região, financiamento/à vista, finalidade da compra, entrada/fluxo até entrega e comparação com alternativas. Nenhuma dessas abordagens gerou dados de viabilidade; a resposta final apenas confirmou a pausa.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato enviado
@@ -133,24 +136,32 @@ Mensagem enviada:
 Resultado operacional: envio confirmado via WhatsApp no JID salvo no CRM. A branch de repescagem foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. O cliente foi arquivado automaticamente no CRM por permanecer em `Não Respondeu` após o step final.
 
 ### 2026-05-03 — Rotina inbound silenciosa acionada sem fala comercial confiável
-A rotina silenciosa de inbound WhatsApp identificou este cliente pelo JID/telefone vinculado ao CRM e validou `broker_id=35`. O conteúdo recebido pelo hook correspondia a texto operacional/sistêmico da skill, não a uma mensagem comercial confiável do cliente.
+A rotina silenciosa de inbound WhatsApp identificou este cliente pelo JID/telefone vinculado ao CRM e validou `broker_id=35`. O conteúdo recebido pelo hook foi classificado como texto operacional/sistêmico da skill, não como mensagem comercial confiável do cliente.
 
 Resultado operacional: status preservado como Arquivado; repescagem já estava encerrada (`step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`); resgate inexistente; nenhuma mensagem enviada ao cliente. Nota objetiva registrada no CRM pelo Reno.
 
+### 2026-05-03 — Inbound real confirmou pausa após repescagem final
+Mensagem inbound recebida no WhatsApp: “Sim, isso mesmo.”
+
+Interpretação operacional: resposta curta ao encerramento elegante do step 5, confirmando a pausa dos contatos e a orientação de que o cliente chamará quando quiser retomar. Cliente identificado pelo telefone/JID vinculado ao CRM e validado como `broker_id=35`.
+
+Resultado operacional: status preservado como Arquivado, pois o cliente já não estava exatamente em `Não Respondeu`; repescagem já estava encerrada (`step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`); resgate inexistente; nota CRM registrada; nenhuma mensagem enviada ao cliente nesta rotina silenciosa.
+
 ## Objeções e travas
-- Trava principal: ausência de resposta real após primeiro contato e cinco repescagens.
+- Trava principal: ausência de engajamento comercial durante o primeiro contato e os cinco steps de repescagem.
+- A resposta posterior “Sim, isso mesmo.” confirmou a pausa, mas não trouxe diagnóstico comercial novo.
 - Finalidade da compra permaneceu desconhecida: morar, investir ou sair do aluguel.
 - Viabilidade de compra permaneceu desconhecida.
-- Houve acionamento técnico posterior de inbound sem conteúdo comercial confiável para retomada.
 
 ## Próximo passo
-Sem nova ação automática de repescagem. Se o cliente enviar uma resposta real ou for reativado por atendimento humano, retomar por fluxo de qualificação/atendimento normal do Reno, atualizar status conforme regra operacional aplicável e reabrir diagnóstico a partir do interesse no Union Vereda/Jaraguá.
+Sem nova ação automática de repescagem ou resgate. Manter cliente arquivado e respeitar a pausa confirmada. Se o cliente chamar espontaneamente querendo retomar, reabrir por fluxo de qualificação/atendimento normal do Reno, validar status no CRM antes de responder e reconstruir o contexto a partir do interesse no Union Vereda/Jaraguá.
 
 ## Observações operacionais
 - Envio de 2026-05-03 realizado pelo JID salvo no CRM, final 6821.
 - `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=5`, mas manteve temporariamente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`, pitfall conhecido do step final.
 - Estado corrigido com `mcp_mcp_postgres_update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T09:51:48-03:00` e `stopped_reason=max_steps` antes do arquivamento.
 - Arquivamento realizado via update defensivo por `id`, `broker_id=35`, status anterior `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
-- Nota CRM de encerramento/arquivamento registrada pelo Reno em 2026-05-03 09:52 -03.
-- Nota CRM de rotina inbound silenciosa registrada em 2026-05-03; conteúdo do hook classificado como operacional/sistêmico e não usado como fala comercial do cliente.
+- Nota CRM de encerramento/arquivamento registrada pelo Reno em 2026-05-03.
+- Nota CRM de rotina inbound silenciosa registrada em 2026-05-03 para evento anterior classificado como ruído operacional/sistêmico.
+- Nota CRM de inbound real registrada em 2026-05-03 com a mensagem “Sim, isso mesmo.”; status preservado como Arquivado e nenhum fluxo ativo interrompido.
 - Há documento legado em `_agents/reno/clientes/10935-wenderson-beleli.md`; o caminho oficial atualizado é este documento em `_agents/reno/atendimentos/`.
