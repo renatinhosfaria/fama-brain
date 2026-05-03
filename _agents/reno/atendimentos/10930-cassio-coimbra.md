@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Cássio Coimbra
 
 ## Resumo atual
-Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`). Está em ciclo de Resgate por silêncio após atendimento anterior. Resgate step 4 foi enviado em 2026-05-01 com abordagem diferente do step 3, oferecendo separar uma opção mais certeira no perfil ou confirmar pausa da busca. Em 2026-05-02, o worker corrigiu a próxima elegibilidade do step 5 para respeitar a cadência oficial de 48h após o step 4; nenhum WhatsApp foi enviado nesta execução.
+Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`). Está em ciclo de Resgate por silêncio após atendimento anterior. Resgate step 5 foi enviado em 2026-05-03 16:15 com reclassificação segura para bucket `visita_pendente`, usando o interesse no Union Vereda e as preferências registradas como gancho para reduzir a próxima decisão do cliente. Como a execução ocorreu no domingo, o CTA mirou visita presencial na segunda-feira, conforme regra Renato/Reno de fim de semana.
 
 ## Dados operacionais
 - Cliente ID: 10930
@@ -28,20 +28,22 @@ Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`
 - Origem: Facebook Ads
 - Telefone/WhatsApp: cadastrado no CRM; envios realizados sem expor número completo no vault.
 - WhatsApp JID: cadastrado no CRM.
-- Última interação cliente-facing relevante: 2026-05-01 15:55 - Reno enviou Resgate step 4 via WhatsApp.
-- Última atualização operacional: 2026-05-02 16:08 - ajuste de cadência do Resgate no CRM; step 5 reagendado para 2026-05-03 15:55:05-03:00.
+- Empreendimento vinculado: Union Vereda (`id_empreendimento=161`), Jaraguá, zona Oeste de Uberlândia.
+- Última interação cliente-facing relevante: 2026-05-03 16:15 - Reno enviou Resgate step 5 via WhatsApp.
+- Última atualização operacional: 2026-05-03 16:15 - CRM/meta_data atualizado por `mark_reno_followup_sent`; nota CRM ID 16589.
 
 ## Contexto comercial
 - Empreendimento vinculado no CRM: Union Vereda, bairro Jaraguá, zona Oeste de Uberlândia.
 - Interesse inicial registrado: apartamento com suíte, lavanderia separada da cozinha e preferência por sol da manhã/sombra à tarde.
 - Produto de referência no CRM: Union Vereda tem opções de 2 quartos com suíte, sacada/varanda gourmet e 1 vaga, com lazer e serviços do condomínio.
+- Não há agendamentos, visitas ou vendas registrados para este cliente no momento do step 5.
 
 ## Diagnóstico
 ### Necessidade
 Busca apartamento que encaixe preferências de planta e rotina, especialmente suíte, lavanderia separada e possível preferência por sol da manhã.
 
 ### Momento
-Cliente está em atendimento, mas parou de responder. Resgate ativo para retomar conversa com baixa fricção e evitar envio de opções fora do perfil.
+Cliente está em atendimento, mas parou de responder. Resgate ativo para retomar conversa com baixa fricção e conduzir para próximo passo concreto.
 
 ### Decisão
 Sem informação curada suficiente sobre decisor adicional.
@@ -91,16 +93,26 @@ Worker `reno-resgate-message-queue-production` encontrou o cliente como vencido 
 
 Ação executada: nenhum WhatsApp enviado; estado `meta_data.reno_followup.resgate` corrigido para `step=4`, `enabled=true`, `stopped_reason=null`, `last_context_bucket=sem_gancho_claro`, `last_sent_at=2026-05-01T15:55:05-03:00` e `next_run_at=2026-05-03T15:55:05-03:00`. Nota CRM criada: 16392.
 
+### 2026-05-03 — Resgate step 5
+Reno enviou follow-up de resgate step 5 via WhatsApp. Bucket: `visita_pendente`.
+
+Mensagem enviada:
+> Cássio, pensando no perfil que você comentou para o Union Vereda, acho que o mais útil agora é ver isso pessoalmente e comparar sem ficar trocando mensagem solta.
+>
+> Segunda no horário do almoço ou no fim do dia fica melhor pra você passar aqui na Fama?
+
+Contexto usado: CRM/FamaChat, notas anteriores, estado `meta_data.reno_followup.resgate`, ausência de agendamentos/visitas, empreendimento Union Vereda e documento curado oficial. A abordagem mudou em relação ao step 4: saiu de oferta de separar uma opção mais certeira/pausar busca para convite objetivo de visita presencial; mudou o tipo de pergunta para escolha de agenda; destacou o benefício de comparar pessoalmente e reduziu a decisão para segunda-feira no almoço ou fim do dia. Envio confirmado pelo gateway WhatsApp; CRM registrou nota ID 16589.
+
 ## Objeções e travas
 - Trava atual: silêncio após mensagens outbound do Reno.
-- Lacuna: histórico conversacional detalhado do WhatsApp não está disponível no CRM consultado; classificação segura mantida como `sem_gancho_claro`, usando gancho confiável de empreendimento e preferências registradas.
+- Lacuna: histórico conversacional detalhado do WhatsApp não está disponível no CRM consultado; o uso de `visita_pendente` no step 5 se apoia no interesse inicial, nas preferências registradas, na ausência de visita/agendamento e na decisão comercial de testar CTA presencial de baixa fricção em domingo para segunda-feira.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper ciclo de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e seguir atendimento normal com qualificação consultiva. Se houver sinal positivo, conduzir para visita presencial na Fama. Se continuar sem resposta, próximo step elegível em 2026-05-03T15:55:05-03:00, respeitando cadência sequencial oficial.
+Aguardar resposta do cliente. Se responder, interromper ciclo de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e seguir atendimento normal com qualificação consultiva. Se confirmar interesse em visita, usar `reno-visit-scheduling` para criar/validar agendamento no FamaChat antes de confirmar como visita real. Se continuar sem resposta, próximo step de Resgate elegível em 2026-05-07T16:15:00-03:00, respeitando cadência sequencial oficial de 96h para o step 6.
 
 ## Observações operacionais
 - CRM/FamaChat segue como fonte de verdade operacional.
-- Não havia agendamentos, visitas ou vendas ativos no momento da validação de 2026-05-02.
-- Em 2026-05-02, nenhum WhatsApp foi enviado porque o step 5 ainda não estava elegível pela cadência oficial de 48h após step 4, apesar do `next_run_at` anterior estar vencido.
-- Correção registrada no CRM por nota manual ID 16392 e no estado enxuto do Resgate via ferramenta específica.
+- Não havia agendamentos, visitas ou vendas ativos no momento da validação de 2026-05-03.
+- Status do cliente preservado como `Em Atendimento`; não há regressão nem avanço de status durante steps 1 a 5 do Resgate.
+- Estado enxuto do Resgate após step 5: `step=5`, `enabled=true`, `stopped_reason=null`, `last_context_bucket=visita_pendente`, `last_sent_at=2026-05-03T16:15:00-03:00`, `next_run_at=2026-05-07T16:15:00-03:00`.
 - Não usar caminhos legados `_agents/reno/clientes/` ou `_agents/reno/cliente/` para este atendimento.
