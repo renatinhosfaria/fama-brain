@@ -93,3 +93,7 @@ Cliente perguntou a diferença entre Garden e “jardins”. Consulta interna mo
 Dados seguros: Garden Sul é lançamento no Jardim Sul/Zona Sul, 2 quartos com suíte, opções a partir de R$ 294.900 e entrega prevista set/2028. Gardens Residence é pronto no Santa Mônica/Zona Leste, apartamentos maiores (84–92m²), 2 ou 3 quartos, 2 vagas e valores a partir de R$ 595.000.
 
 Próximo passo: entender se Sebastião prioriza ticket menor/lançamento ou imóvel pronto/maior.
+
+
+### 2026-05-03 — Esclarecimento sobre Jardim Sul / Garden Sul
+Cliente perguntou: "O jardins sul é aí também certo". Consulta confirmou que o interesse principal, Garden Sul, fica no bairro Jardim Sul/Zona Sul e é atendido pela Fama. Também há empreendimentos chamados Jardim Sul na base, então a resposta deve esclarecer a nomenclatura e pedir confirmação leve se ele se refere ao Garden Sul ou ao empreendimento Jardim Sul.
