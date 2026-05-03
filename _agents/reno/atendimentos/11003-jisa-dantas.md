@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Jisa Dantas
-client_id: 11003
 broker_id: 35
-status_crm: Em Atendimento
-source: SLA Cascata
+client_id: 11003
 created: '2026-04-24'
-updated: '2026-05-01'
+entity_name: Jisa Dantas
+entity_type: atendimento
+owner: reno
+source: SLA Cascata
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -17,11 +15,14 @@ tags:
   - resgate
   - union-vista
   - viabilidade-financiamento
+  - visita-pendente
+type: entity-profile
+updated: '2026-05-03'
 ---
 # Atendimento — Jisa Dantas
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, interessada no Union Vista (Grand Ville). Já perguntou sobre valor, planta e parcelamento da entrada; a retomada atual segue no bucket `viabilidade_financiamento`, sem promessa de aprovação. Resgate step 4 enviado em 2026-05-01 17:19, com abordagem diferente do step 3: em vez de oferecer uma prévia genérica para decidir se vale vir à Fama, reduziu a próxima decisão para escolher o que pesa mais hoje entre tamanho da planta e valor da entrada.
+Cliente do Reno em `Em Atendimento`, interessada no Union Vista (Grand Ville). Já perguntou sobre valor, planta e parcelamento da entrada. O Resgate vinha no bucket `viabilidade_financiamento`, mas no step 5 foi reclassificado para `visita_pendente` porque a conversa já recebeu várias retomadas sobre financiamento/entrada sem resposta e o próximo passo comercial mais útil passou a ser visita presencial na Fama para olhar planta, entrada e simulação com mais segurança. Como o envio ocorreu em domingo, o CTA priorizou segunda-feira.
 
 ## Dados operacionais
 - Cliente ID: 11003
@@ -30,7 +31,8 @@ Cliente do Reno em `Em Atendimento`, interessada no Union Vista (Grand Ville). J
 - Origem: SLA Cascata
 - Telefone/WhatsApp: final 3733; JID confirmado no CRM
 - Empreendimento vinculado: Union Vista — Grand Ville — ID 22
-- Última interação relevante: 2026-05-01 17:19 - Resgate step 4 enviado via WhatsApp
+- Última interação relevante: 2026-05-03 17:41 - Resgate step 5 enviado via WhatsApp
+- Estado Resgate após último envio: `step=5`, `last_context_bucket=visita_pendente`, `next_run_at=2026-05-07T17:41:54-03:00`, `stopped_reason=null`
 
 ## Contexto comercial
 A cliente demonstrou interesse no Union Vista, região do Grand Ville. O empreendimento possui apartamentos de 2 quartos com 1 suíte, opções a partir de R$292.400, plantas de 56,9m², 58,4m² e térreo de 82,2m², entrega prevista para Jul/2027. Foi enviada planta pública anteriormente. A dúvida anterior envolveu valor, planta e parcelamento da entrada.
@@ -40,13 +42,13 @@ A cliente demonstrou interesse no Union Vista, região do Grand Ville. O empreen
 Ainda não há necessidade declarada com clareza além do interesse no empreendimento/planta.
 
 ### Momento
-Cliente entrou em atendimento e silenciou depois de receber informações sobre valor, planta, entrega e possibilidade de parcelamento da entrada.
+Cliente entrou em atendimento e silenciou depois de receber informações sobre valor, planta, entrega e possibilidade de parcelamento da entrada. Segue sem visita/agendamento ativo no CRM.
 
 ### Decisão
 Não há decisor adicional identificado.
 
 ### Viabilidade
-Bucket principal: `viabilidade_financiamento`. A cliente perguntou sobre parcelamento da entrada; foi explicado que depende de simulação, uso de FGTS, renda e financiamento. Não há dados suficientes para simulação real. O step 4 buscou identificar a trava principal entre planta e entrada antes de retomar convite presencial.
+Bucket histórico principal: `viabilidade_financiamento`. A cliente perguntou sobre parcelamento da entrada; foi explicado que depende de simulação, uso de FGTS, renda e financiamento. Não há dados suficientes para simulação real. Após steps 1 a 4 focados em viabilidade/entrada/planta, o step 5 mudou para `visita_pendente` com convite presencial de baixa fricção para segunda-feira.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato e atendimento inicial
@@ -78,13 +80,21 @@ Contexto usado: CRM/FamaChat, notas do atendimento, empreendimento Union Vista, 
 Diferença em relação ao step anterior: mudou o ângulo de permissão para uma escolha simples; trocou o CTA de "quer uma prévia?" por diagnóstico de trava; destacou critérios concretos do Union Vista — planta de 56/58m² e entrada parcelada — para gerar resposta de baixa fricção.
 Próximo `next_run_at`: 2026-05-03T17:19:53-03:00.
 
+### 2026-05-03 — Resgate step 5
+Bucket: `visita_pendente`.
+Mensagem enviada: "Jisa, como a dúvida era planta e entrada, acho mais seguro você ver isso aqui na Fama com mais clareza, sem ficar no chute pelo WhatsApp.\n\nSegunda no horário do almoço ou no fim do dia fica melhor pra você passar aqui?"
+Contexto usado: CRM/FamaChat, notas do atendimento, sessão Hermes/WhatsApp individual, empreendimento Union Vista, meta_data de Resgate e documento oficial do atendimento.
+Diferença em relação ao step anterior: mudou o ângulo de escolha entre planta/entrada para convite presencial; destacou clareza e segurança para não depender de chute pelo WhatsApp; trocou a pergunta diagnóstica por CTA de agenda para segunda-feira, conforme regra de fim de semana; reclassificou com segurança para `visita_pendente` sem aumentar pressão artificial.
+Próximo `next_run_at`: 2026-05-07T17:41:54-03:00.
+
 ## Objeções e travas
 - Trava provável: viabilidade de financiamento/entrada/parcelamento, ainda não qualificada.
 - Possível dúvida secundária: tamanho/planta do Union Vista.
 - Lacuna: não há confirmação de FGTS, renda, entrada disponível ou prioridade entre valor/planta/localização.
+- Sem visita ou agendamento ativo no CRM no momento do step 5.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, interromper a régua de Resgate (`client_replied`) e continuar atendimento normal via qualificação consultiva. Se indicar que o peso é entrada/valor, conduzir com prévia simples e convite para visita presencial na Fama para simulação segura. Se indicar que o peso é planta/tamanho, retomar com a planta mais adequada e ponte para validação presencial.
+Aguardar resposta da cliente. Se responder, interromper a régua de Resgate (`client_replied`) e continuar atendimento normal via qualificação consultiva. Se aceitar a visita, registrar agendamento no FamaChat e manter condução para visita presencial na Fama. Se não responder até 2026-05-07T17:41:54-03:00 e os guardrails permanecerem verdadeiros, o próximo envio possível será step 6, sem mensagem de encerramento explícito ao cliente.
 
 ## Observações operacionais
 Documento oficial criado em `_agents/reno/atendimentos/11003-jisa-dantas.md` em 2026-04-30. Existe documento legado/drift em `_agents/reno/clientes/jisa-dantas.md` com frontmatter mínimo e sem conteúdo útil; não continuar escrevendo no legado. CRM permaneceu como fonte de verdade. Resgate e Repescagem tratados como fluxos independentes. Não houve restart de gateway nesta execução.
