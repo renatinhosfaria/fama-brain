@@ -5,46 +5,47 @@ entity_type: atendimento
 entity_name: Tamires Lima
 client_id: 10969
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-28'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Tamires Lima
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Primeiro contato e repescagens steps 1, 2, 3 e 4 enviados com sucesso técnico via WhatsApp, sem resposta real registrada até o momento. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, mudando o foco do prazo/entrega para organização do caminho de compra e possibilidade de conversa/visita presencial na Fama na segunda-feira.
+Cliente do Reno (`broker_id=35`) agora em status CRM **Arquivado**. Primeiro contato e repescagens steps 1 a 5 foram enviados com sucesso técnico via WhatsApp, sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausando a insistência e deixando porta aberta para retomada futura. Após o envio final, a branch de repescagem foi corrigida para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`; como o status ainda estava exatamente em **Não Respondeu**, o cliente foi arquivado automaticamente no FamaChat por condição defensiva.
 
 ## Dados operacionais
 - Cliente ID: 10969
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
-- Telefone/WhatsApp: WhatsApp disponível no CRM; envio realizado pelo JID salvo.
+- Telefone/WhatsApp: WhatsApp disponível no CRM; envios realizados pelo JID salvo.
 - Empreendimento vinculado: Union Vereda (`id_empreendimento=161`)
-- Última interação relevante: 2026-05-02 20:04 -03 — repescagem step 4 enviada.
+- Última interação relevante: 2026-05-03 12:15:49 -03 — repescagem step 5 enviada; régua encerrada e cliente arquivado.
 
 ## Contexto comercial
-Lead de Facebook Ads vinculada ao empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. O empreendimento tem entrega prevista para **Dez/2028** e possui opções de apartamentos de 2 quartos com suíte, varanda/sacada e lazer/serviços de condomínio. Não há resposta da cliente nem diagnóstico declarado sobre morar/investir, financiamento, entrada, prazo ou região além do interesse inicial no empreendimento.
+Lead de Facebook Ads vinculada ao empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. O empreendimento tem entrega prevista para **Dez/2028** e opções de apartamentos de 2 quartos com suíte, varanda/sacada e lazer/serviços de condomínio. Não houve resposta da cliente nem diagnóstico declarado sobre morar/investir, financiamento, entrada, prazo ou região além do interesse inicial no empreendimento.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. O interesse inicial aponta para imóvel específico no Jaraguá.
+Não diagnosticada. O interesse inicial apontava para imóvel específico no Jaraguá.
 
 ### Momento
-Cliente silenciosa após primeiro contato e quatro repescagens. A repescagem step 3 buscou abrir diagnóstico com pergunta única sobre prazo de mudança/entrega futura; a step 4 evoluiu para convite consultivo direto, com possibilidade de conversa/visita na Fama na segunda-feira, sem repetir a pergunta de prazo.
+Cliente permaneceu silenciosa após primeiro contato e cinco repescagens. A régua evoluiu de diagnóstico leve e viabilidade para convite consultivo direto e, no step final, encerramento respeitoso com porta aberta.
 
 ### Decisão
-Sem informação sobre decisores ou influência familiar.
+Sem informação sobre decisores, influência familiar ou etapa decisória.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou compra à vista. Abordagens anteriores trabalharam encaixe, forma de compra e prazo sem promessa de crédito; o step 4 reforçou a necessidade de organizar um caminho de compra possível e comparar alternativas quando fizer sentido.
+Sem dados de renda, entrada, financiamento ou compra à vista. As abordagens anteriores trabalharam encaixe, forma de compra, prazo e comparação de alternativas sem promessa de crédito. O step 5 evitou repetir convite de visita e focou em pausar o contato, mantendo possibilidade de retomada futura.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno
@@ -98,17 +99,33 @@ Mensagem enviada:
 Registro operacional: envio de WhatsApp confirmado pelo JID salvo no CRM e estado atualizado pela tool específica do Reno (`mark_reno_followup_sent`).
 Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
 
+### 2026-05-03 — Repescagem step 5 e arquivamento
+Fluxo: repescagem.
+Step enviado: 5.
+Ângulo/contexto usado: encerramento elegante da régua, mudando do convite consultivo/visita do step 4 para pausa respeitosa com porta aberta. O contexto do Union Vereda foi preservado sem repetir a pressão de agenda.
+Mensagem enviada:
+
+> Tamires, vou pausar meus contatos por aqui para não ficar insistindo. 🏡
+>
+> Como seu interesse foi no Union Vereda, talvez você esteja só pesquisando ou vendo se um lançamento para 2028 faz sentido. Se em algum momento quiser retomar, posso te ajudar a comparar esse caminho com opções mais alinhadas ao seu prazo e condição, **sem compromisso**.
+>
+> Prefere que eu pause por agora ou ainda quer que eu te ajude a olhar isso?
+
+Registro operacional: envio confirmado via WhatsApp pelo JID salvo no CRM. A tool `mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; conforme pitfall operacional conhecido, a branch foi corrigida pela tool específica `update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T12:15:49-03:00` e `stopped_reason=max_steps`.
+
+Após verificação do estado final, o status do cliente foi alterado defensivamente de **Não Respondeu** para **Arquivado**. Nota CRM de arquivamento registrada pelo Reno informando conclusão da régua de 5 repescagens sem resposta real.
+
 ## Objeções e travas
-- Silêncio após os contatos anteriores; ainda não há objeção explícita.
-- Lacuna principal: falta de diagnóstico sobre objetivo da compra, forma de pagamento, prazo e aderência ao imóvel em construção.
+- Silêncio após primeiro contato e cinco repescagens; não há objeção explícita.
+- Lacunas comerciais permanecem: objetivo da compra, forma de pagamento, prazo, região e aderência ao imóvel em construção não foram diagnosticados.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, sair do fluxo de repescagem e tratar pelo atendimento normal do Reno, atualizando o status para Em Atendimento somente se o CRM ainda estiver exatamente em Não Respondeu. Se não responder até 2026-05-03T09:10:00-03:00, seguir para repescagem step 5 com encerramento elegante da régua e porta aberta para retomada futura.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, sair da lógica de repescagem/arquivamento e tratar a retomada pelo fluxo normal do Reno, validando o status atual no CRM antes de qualquer mudança operacional.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10969-tamires-lima.md`.
 - Existe documento legado em `_agents/reno/clientes/10969-tamires-lima.md`; não foi usado como destino novo para evitar drift.
-- Cliente permaneceu em status Não Respondeu, conforme regra do worker de repescagem para steps 1 a 4.
-- Claim operacional da repescagem foi limpo pela tool específica após marcação de envio.
-- Não houve arquivamento nesta execução porque o step enviado foi 4, não o step final.
+- A nota automática da tool `mark_reno_followup_sent` no step 5 registrou um “próximo follow-up previsto” como efeito colateral técnico; a verdade operacional final é a branch corrigida com `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
+- A correção final compactou a branch de repescagem no `meta_data`, preservando os campos essenciais para encerramento: `step`, `enabled`, `next_run_at`, `last_sent_at` e `stopped_reason`.
+- Arquivamento executado somente após validação defensiva por `id`, `broker_id=35`, status anterior `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
 - Nenhum restart de gateway foi realizado.
