@@ -1,8 +1,14 @@
 ---
 type: entity-profile
 owner: reno
+entity_type: atendimento
+entity_name: Ricardo
+client_id: 10939
+broker_id: 35
+status_crm: Arquivado
+source: FamaChat
 created: '2026-04-25'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -10,48 +16,44 @@ tags:
   - famachat
   - repescagem
   - nao-respondeu
-entity_type: atendimento
-entity_name: Ricardo
-client_id: 10939
-broker_id: 35
-status_crm: Não Respondeu
-source: FamaChat
+  - arquivado
+  - max-steps
 ---
 # Atendimento — Ricardo
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em status CRM **Não Respondeu**. Lead originado por Facebook Ads com interesse operacional associado ao empreendimento Place+Arbi, região do Shopping Park/Zona Sul. Houve primeiro contato e repescagens steps 1, 2, 3 e 4 sem resposta real registrada até o momento. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, mudando a abordagem anterior de intenção de uso/momento para organização do caminho de compra, prazo, entrada e financiamento.
+Cliente do Reno (`broker_id=35`) arquivado no CRM após conclusão da régua de **5 repescagens** sem resposta real registrada. Lead originado por Facebook Ads com interesse operacional associado ao empreendimento Place+Arbi, região do Shopping Park/Zona Sul. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, mudando o ângulo do convite consultivo do step 4 para pausa respeitosa e porta aberta.
 
 ## Dados operacionais
 - Cliente ID: 10939
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / FamaChat
-- Telefone/WhatsApp: cadastrado no CRM; JID salvo utilizado no envio
+- Telefone/WhatsApp: cadastrado no CRM; JID salvo utilizado no envio, sem expor telefone completo
 - Empreendimento associado: Place+Arbi (`id_empreendimento=67`)
 - Região citada no atendimento: Shopping Park / Zona Sul
-- Última interação relevante: 2026-05-02 10:21 -03: repescagem step 4 enviada via WhatsApp
-- Próximo follow-up programado: 2026-05-03 09:10 -03, repescagem step 5 se não houver resposta real antes
+- Última interação relevante: 2026-05-03 10:15 -03: repescagem step 5 enviada via WhatsApp
+- Estado da repescagem: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`
 
 ## Contexto comercial
-O contexto disponível indica interesse inicial no Place+Arbi, na região do Shopping Park, em Uberlândia. O empreendimento é lançamento na Zona Sul, com entrega prevista para JUN/2027 e plantas de 2 quartos. Não há resposta real do cliente após o primeiro contato nem após repescagens anteriores. A abordagem mais recente usou o lançamento/entrega futura como motivo para propor organização de prazo, entrada e financiamento antes da escolha de unidade, sem prometer crédito e sem pressionar visita.
+O contexto disponível indica interesse inicial no Place+Arbi, na região do Shopping Park, em Uberlândia. O empreendimento é lançamento na Zona Sul, com entrega prevista para JUN/2027 e plantas de 2 quartos. Não houve resposta real do cliente após o primeiro contato nem após as cinco repescagens. A abordagem final respeitou o silêncio, deixou porta aberta para retomada futura e evitou repetir convite de análise/visita ou prometer crédito.
 
 ## Diagnóstico
 ### Necessidade
-Possível busca por imóvel vinculado ao Place+Arbi/Shopping Park, ainda sem diagnóstico confirmado porque o cliente não respondeu.
+Possível busca por imóvel vinculado ao Place+Arbi/Shopping Park, sem diagnóstico confirmado porque o cliente não respondeu.
 
 ### Momento
-Silencioso após contato inicial e repescagens 1, 2, 3 e 4. Jornada ainda fria, mas com contexto de imóvel específico.
+Lead frio/silencioso após primeiro contato e cinco repescagens. Atendimento automático encerrado e cliente arquivado no CRM.
 
 ### Decisão
 Sem informação sobre decisores, urgência ou preferências adicionais.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou compra à vista. Não afirmar viabilidade; usar abordagem consultiva sem promessa de crédito.
+Sem dados de renda, entrada, financiamento ou compra à vista. Não há base para afirmar viabilidade; eventual retomada deve reabrir diagnóstico antes de apresentar opções.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato contextual enviado
-Reno enviou mensagem inicial mencionando interesse no Place+Arbi, região do Shopping Park, perguntando se a região combinava com a busca. Status preservado como Não Respondeu.
+Reno enviou mensagem inicial mencionando interesse no Place+Arbi, região do Shopping Park, perguntando se a região combinava com a busca. Status evoluiu operacionalmente para Não Respondeu.
 
 ### 2026-04-28 — Repescagem step 1 enviada
 Foi registrada repescagem step 1. A mensagem foi genérica e o cliente permaneceu sem resposta real registrada. Próximo follow-up posteriormente corrigido pela cadência operacional.
@@ -78,7 +80,7 @@ Registro operacional: envio marcado no CRM pela tool específica do Reno (`mark_
 Fluxo: repescagem  
 Step enviado: 3  
 Data/hora de envio: 2026-04-30 16:07 -03:00  
-Contexto/ângulo comercial usado: diagnóstico leve com base em imóvel específico/lançamento, mudando a abordagem anterior de encaixe/viabilidade para intenção de uso e momento de entrega.
+Contexto/ângulo comercial usado: diagnóstico leve com base em imóvel específico/lançamento, mudando a abordagem anterior de encaixe/viabilidade para intenção de uso e momento de entrega.
 
 Mensagem enviada:
 
@@ -108,14 +110,34 @@ Mensagem enviada:
 
 Registro operacional: envio marcado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), sem alteração de status. Próximo follow-up previsto para **2026-05-03 09:10 -03:00**.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem  
+Step enviado: 5  
+Data/hora de envio: 2026-05-03 10:15 -03:00  
+Contexto/ângulo comercial usado: encerramento elegante / lead frio, mudando do convite consultivo direto do step 4 para pausa respeitosa e porta aberta. A mensagem evitou repetir análise de prazo, entrada e financiamento, e trouxe comparação futura entre lançamento 2027 e opções mais imediatas.
+
+Mensagem enviada:
+
+> Ricardo, vou deixar essa última mensagem por aqui 📲
+>
+> Pelo que você viu do Place+Arbi, pode ser que agora não seja o melhor momento para falar de imóvel. Prefiro respeitar isso e não ficar insistindo.
+>
+> Se a busca voltar a fazer sentido, consigo te ajudar a comparar se o lançamento para 2027 combina com seu prazo ou se vale olhar algo mais imediato, com **caminho de compra mais claro**.
+>
+> Quer que eu pause por aqui e você me chama quando quiser retomar?
+
+Registro operacional: envio via WhatsApp marcado no CRM pela tool específica do Reno. Após a marcação, foi detectado o pitfall conhecido do step final: `mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`. A branch foi corrigida pela tool específica `update_reno_followup_state` para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Em seguida, o status do cliente foi alterado defensivamente para **Arquivado** no CRM.
+
 ## Objeções e travas
 - Trava principal: silêncio / ausência de primeira resposta real.
 - Lacuna: não há dados de viabilidade, prazo, decisão familiar ou condição de pagamento.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se não houver resposta real até o próximo vencimento, enviar a repescagem step 5 com encerramento elegante e porta aberta, sem repetir o convite consultivo do step 4 nem insistir em visita.
+Sem nova ação automática de repescagem. Se o cliente responder futuramente, reabrir atendimento pelo fluxo normal do Reno, validar contexto atual no CRM e diagnosticar antes de apresentar imóveis ou retomar convite presencial.
 
 ## Observações operacionais
 - WhatsApp enviado pelo JID salvo no CRM, sem expor telefone completo no vault.
-- Status CRM permanece **Não Respondeu** conforme regra da repescagem para steps 1 a 4.
-- Meta_data confirmado após o envio: `repescagem.step=4`, `enabled=true`, `stopped_reason=null`, `next_run_at=2026-05-03T09:10:00-03:00`.
+- A régua de repescagem foi encerrada com `stopped_reason=max_steps`.
+- Cliente arquivado automaticamente após update defensivo por `id`, `broker_id=35`, status anterior `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
+- Nota CRM adicional registrada informando conclusão da régua de 5 repescagens sem resposta e arquivamento automático.
+- Observado novamente o pitfall de produção em `mark_reno_followup_sent` no step 5; a correção foi feita com `update_reno_followup_state` antes do arquivamento.
