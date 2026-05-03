@@ -5,45 +5,46 @@ entity_type: atendimento
 entity_name: Grazyelly Macêdo
 client_id: 10974
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Grazyelly Macêdo
 
 ## Resumo atual
-Cliente Reno (`client_id=10974`) em `Não Respondeu`, com interesse contextual no Place+Arbi / Shopping Park. Primeiro contato do Reno foi enviado após override operacional de duplicidade; repescagem ativa em andamento. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, mudando o ângulo para organização do caminho de compra por a busca estar no começo e poder envolver outra pessoa na decisão. Próximo step previsto: repescagem step 5 em 2026-05-03 09:10 -03, se a cliente continuar sem resposta e permanecer elegível.
+Cliente Reno (`client_id=10974`) foi arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta. O contexto comercial era interesse no Place+Arbi / Shopping Park, com cadastro original sugerindo busca inicial e possível compra junto com outra pessoa. A repescagem step 5 foi enviada por WhatsApp com encerramento elegante e porta aberta; em seguida o ramo `reno_followup.repescagem` foi encerrado com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, permitindo o arquivamento defensivo no CRM.
 
 ## Dados operacionais
 - Cliente ID: 10974
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Telefone/WhatsApp: WhatsApp disponível; JID salvo no CRM utilizado para envio
-- Última interação relevante: 2026-05-02 20:20 -03: repescagem step 4 enviada via WhatsApp
+- Última interação relevante: 2026-05-03 12:45 -03: repescagem step 5 enviada via WhatsApp e cliente arquivada automaticamente
 
 ## Contexto comercial
-Contexto disponível indica interesse no empreendimento Place+Arbi, na região do Shopping Park, em Uberlândia. O empreendimento é lançamento, com entrega prevista para JUN/2027, e possui opções de apartamentos a partir de 48m²/50m². O cadastro original indicava que a cliente começou a procurar imóvel agora e que compraria junto com alguém; esse dado foi usado apenas como contexto consultivo, sem tratar como diagnóstico confirmado. Não há resposta real da cliente após o primeiro contato e após as repescagens steps 1 a 4. Como há pouco diagnóstico confirmado, a abordagem deve permanecer consultiva e focada em entender objetivo, prazo, decisão compartilhada e viabilidade antes de sugerir imóveis ou pressionar visita.
+Contexto disponível indica interesse no empreendimento Place+Arbi, na região do Shopping Park, em Uberlândia. O empreendimento é lançamento, com entrega prevista para JUN/2027, e possui opções de apartamentos a partir de 48m²/50m². O cadastro original indicava que a cliente começou a procurar imóvel agora e que compraria junto com alguém; esse dado foi usado apenas como contexto consultivo, sem tratar como diagnóstico confirmado. Não houve resposta real da cliente após o primeiro contato e após as repescagens steps 1 a 5. Como não houve diagnóstico confirmado, a régua foi encerrada com pausa respeitosa e porta aberta para retomada futura.
 
 ## Diagnóstico
 ### Necessidade
-Possível busca por imóvel na região do Shopping Park, vinculada ao Place+Arbi. Necessidade ainda não confirmada pela cliente.
+Possível busca por imóvel na região do Shopping Park, vinculada ao Place+Arbi. Necessidade não confirmada pela cliente.
 
 ### Momento
-Cliente silenciosa após primeiro contato e repescagens steps 1, 2, 3 e 4. O contexto do cadastro original sugere busca no começo, então a retomada deve focar em organizar o caminho de compra e reduzir incerteza, não em insistir no mesmo imóvel.
+Cliente permaneceu silenciosa após primeiro contato e cinco repescagens. O contexto do cadastro original sugere busca no começo, mas sem resposta não há base para avançar diagnóstico ou insistir em visita.
 
 ### Decisão
-Cadastro original sinaliza que a compra poderia envolver outra pessoa, mas isso ainda não foi confirmado diretamente pela cliente. Se responder, validar quem participa da decisão e qual o papel dessa pessoa.
+Cadastro original sinalizava que a compra poderia envolver outra pessoa, mas isso não foi confirmado diretamente pela cliente.
 
 ### Viabilidade
-Sem dados confirmados de renda, entrada, financiamento ou forma de pagamento. Não prometer crédito; se responder, conduzir para diagnóstico simples sobre objetivo, prazo do lançamento, orçamento inicial e viabilidade.
+Sem dados confirmados de renda, entrada, financiamento ou forma de pagamento. Não houve condições comerciais suficientes para simulação, análise de crédito ou indicação assertiva de opções.
 
 ## Histórico curado de interações
 ### 2026-04-23 — Falha operacional inicial
@@ -122,15 +123,37 @@ Mensagem enviada:
 
 Envio registrado no CRM pela tool específica do Reno (`mcp_mcp_postgres_mark_reno_followup_sent`). Próximo `next_run_at`: 2026-05-03T09:10:00-03:00. Status CRM preservado em `Não Respondeu`, conforme regra dos steps 1 a 4.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: `repescagem`.
+
+Step enviado: 5.
+
+Ângulo comercial usado: lead muito frio + encerramento elegante com pausa respeitosa e porta aberta.
+
+Comparação com a tentativa anterior: a mensagem deixou de convidar para análise/visita na segunda-feira e passou a encerrar o contato para não insistir; o benefício mudou para possibilidade futura de comparar o lançamento com outras opções e entender o ponto de partida; o CTA mudou para permissão de pausa, sem pressionar resposta comercial ou agendamento.
+
+Mensagem enviada:
+
+> Grazyelly, passando só para fechar meu contato por aqui. 🏡
+>
+> Pelo que apareceu, seu interesse era no Place+Arbi, mas como ainda não conseguimos conversar, prefiro não ficar insistindo nem te mandar informação solta.
+>
+> Se a busca voltar a fazer sentido, posso te ajudar a comparar o lançamento com outras opções e entender o melhor ponto de partida.
+>
+> Posso deixar pausado por enquanto?
+
+Envio realizado com sucesso pelo JID salvo no CRM. A tool `mcp_mcp_postgres_mark_reno_followup_sent` registrou o step 5, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado final foi corrigido pela tool específica `mcp_mcp_postgres_update_reno_followup_state` para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Após a verificação, o CRM foi atualizado defensivamente de `Não Respondeu` para `Arquivado` e foi registrada nota de arquivamento automático no FamaChat.
+
 ## Objeções e travas
-- Silêncio após os contatos do Reno; ainda não há objeção declarada.
-- Histórico operacional de duplicidade/atendimento anterior por outros corretores já foi tratado por override, mas não deve ser usado como argumento para a cliente.
+- Silêncio após primeiro contato e cinco repescagens; não há objeção declarada.
+- Histórico operacional de duplicidade/atendimento anterior por outros corretores foi tratado por override, mas não deve ser usado como argumento para a cliente.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se continuar sem resposta e o cliente permanecer elegível (`broker_id=35`, `status=Não Respondeu`, repescagem ativa), a próxima execução poderá enviar repescagem step 5 em 2026-05-03 09:10 -03, com encerramento elegante da régua e porta aberta para retomada futura.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente ou for reativada por ação humana, retomar o atendimento normal do Reno por fluxo de qualificação, validando nome, objetivo, prazo, decisão compartilhada e viabilidade antes de propor visita ou imóveis.
 
 ## Observações operacionais
-- Não alterar status durante repescagem steps 1 a 4; cliente permanece `Não Respondeu` até resposta real.
-- Envio de 2026-05-02 realizado usando o JID salvo no CRM, coerente com a política de WhatsApp para celulares brasileiros quando há divergência entre número com 9 e JID real sem 9.
-- A execução respeitou a regra de fila: somente 1 WhatsApp bem-sucedido de repescagem enviado.
-- Claim operacional da repescagem foi limpo após `mark_reno_followup_sent` (`claim_expires_at=null`).
+- Regra de fila respeitada: somente 1 WhatsApp bem-sucedido de repescagem enviado nesta execução.
+- Envio de 2026-05-03 realizado usando o JID salvo no CRM, coerente com a política de WhatsApp para celulares brasileiros quando há divergência entre número com 9 e JID real sem 9.
+- O envio do step 5 acionou o pitfall conhecido da tool `mark_reno_followup_sent`: o ramo não foi encerrado automaticamente. Correção realizada via `update_reno_followup_state` antes do arquivamento.
+- A correção final compactou a branch de `reno_followup.repescagem` para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem enviada ficou preservada na nota automática do CRM e neste documento curado.
+- Nota CRM de arquivamento automático registrada após a atualização defensiva de status.
