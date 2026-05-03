@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-01'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ tags:
 # Atendimento — Mateus Silva
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no Shopping Park. Histórico operacional anterior é fraco para provar diagnóstico do cliente, então o Resgate está sendo conduzido com bucket seguro `sem_gancho_claro`, usando o empreendimento/região como gancho neutro e perguntas de baixa fricção para reabrir a conversa. Em 2026-05-01, foi enviado Resgate step 4 com nova abordagem: oferecer uma prévia simples comparando as duas opções do empreendimento para reduzir a fricção da resposta.
+Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no Shopping Park. O histórico da sessão individual do WhatsApp confirmou uma resposta real em 2026-04-28: o cliente disse "Sim" e "Gostaria de saber mais" após a abertura do Reno; depois disso, ficou silencioso após respostas/outbounds do Reno. Em 2026-05-03, foi enviado Resgate step 5, reclassificado com segurança para `visita_pendente`, usando CTA de visita para segunda-feira por ser domingo.
 
 ## Dados operacionais
 - Cliente ID: 10934
@@ -29,19 +29,20 @@ Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no S
 - Telefone/WhatsApp: disponível no CRM; não replicado integralmente aqui
 - Empreendimento vinculado: Place+Arbi
 - Bairro/região: Shopping Park, Zona Sul de Uberlândia
-- Última interação relevante: 2026-05-01 — Resgate step 4 enviado via WhatsApp
+- Última interação relevante: 2026-05-03 — Resgate step 5 enviado via WhatsApp
 
 ## Contexto comercial
 - Interesse original registrado no CRM: Place+Arbi.
 - Produto: apartamento no Shopping Park, com opções de 48m² e 50m², 2 quartos, sacada e 1 vaga; a opção de 50m² possui suíte. Empreendimento com lazer completo e entrega prevista no CRM para JUN/2027.
-- Ainda não há diagnóstico curado confiável sobre necessidade, momento, decisão ou viabilidade.
+- Contexto recuperado da sessão individual: o cliente respondeu positivamente à abertura e pediu para saber mais, mas não avançou na pergunta seguinte sobre morar/investir nem respondeu aos Resgates posteriores.
+- Como o cliente já demonstrou interesse mínimo e ainda não há visita/agendamento ativo, o Resgate step 5 passou a usar `visita_pendente` como bucket, com convite presencial de baixa fricção.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não identificada de forma confiável.
+Ainda não identificada de forma completa. O único sinal confiável é interesse inicial em saber mais sobre o Place+Arbi.
 
 ### Momento
-Cliente em retomada de atendimento; sem visita/agendamento ativo no CRM no momento do envio do step 4.
+Cliente em retomada de atendimento; sem visita/agendamento ativo no CRM no momento do step 5.
 
 ### Decisão
 Não há informação curada sobre decisores adicionais.
@@ -53,8 +54,11 @@ Não há informação curada sobre financiamento, renda, entrada, FGTS ou condi�
 ### 2026-04-27 — Primeiro contato manual
 Reno enviou abertura contextual citando Place+Arbi, no Shopping Park, e perguntou se a região combinava com a busca do cliente. Status do CRM foi preservado como `Não Respondeu` naquele momento.
 
+### 2026-04-28 — Resposta inicial do cliente e retomada normal
+Sessão individual do WhatsApp registrou resposta real do cliente: "Sim" / "Gostaria de saber mais". Reno respondeu explicando que a Fama ajuda a entender opções e viabilidade de compra, e perguntou se o cliente procurava imóvel para morar ou investir. Não houve nova resposta registrada depois dessa pergunta.
+
 ### 2026-04-28 — Repescagem step 1 registrada no CRM
-CRM registra follow-up de repescagem com a mensagem: "Oi, Mateus. Ainda faz sentido eu te ajudar com a busca do imóvel?". Registro mantido como contexto operacional; Resgate e Repescagem são fluxos independentes, mas a branch de repescagem ainda aparecia ativa no meta_data no momento da validação.
+CRM registra follow-up de repescagem com a mensagem: "Oi, Mateus. Ainda faz sentido eu te ajudar com a busca do imóvel?". Registro mantido como contexto operacional; Resgate e Repescagem são fluxos independentes. A branch antiga de repescagem ainda aparece no `meta_data`, mas deve ser ignorada para decisão do Resgate enquanto o status estiver `Em Atendimento`.
 
 ### 2026-04-30 — Resgate step 1 enviado
 - Bucket: `sem_gancho_claro`
@@ -91,15 +95,25 @@ CRM registra follow-up de repescagem com a mensagem: "Oi, Mateus. Ainda faz sent
 - Próximo `next_run_at`: 2026-05-03T17:53:20-03:00
 - Intenção comercial: obter permissão para enviar uma comparação simples das opções e reabrir a conversa; se houver resposta positiva, interromper Resgate e seguir qualificação normal com contexto do Place+Arbi.
 
+### 2026-05-03 — Resgate step 5 enviado
+- Bucket: `visita_pendente`
+- Step: 5
+- Mensagem enviada: "Mateus, como você tinha pedido pra saber mais do Place+Arbi, talvez o jeito mais simples seja eu te mostrar as duas plantas lado a lado aqui na Fama e já ver qual faz mais sentido pra você.\n\nSegunda no almoço ou no fim do dia fica melhor pra você passar aqui?"
+- Contexto usado: CRM/FamaChat, ausência de agendamentos/visitas, empreendimento Place+Arbi no Shopping Park, opções cadastradas de 48m² e 50m² com suíte, sessão individual do WhatsApp com resposta real do cliente em 2026-04-28 e histórico dos steps 1 a 4.
+- Diferenciação do step anterior: saiu da oferta de prévia por WhatsApp para o convite presencial como forma mais simples de comparar as duas plantas lado a lado e reduzir a decisão do cliente; por ser domingo, o CTA mirou segunda-feira.
+- Próximo `next_run_at`: 2026-05-07T18:58:01-03:00
+- Intenção comercial: transformar o interesse inicial em visita presencial na Fama; se houver resposta, interromper Resgate e seguir atendimento normal pela qualificação WhatsApp.
+
 ## Objeções e travas
-- Lacuna operacional: histórico curado não comprova resposta/diagnóstico anterior do cliente, apesar do CRM estar em `Em Atendimento` e branch de Resgate habilitada.
 - Sem objeções comerciais explícitas registradas até o momento.
+- Trava atual: silêncio após múltiplas retomadas de baixa fricção.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com `stopped_reason=client_replied`, limpar `next_run_at` e seguir atendimento normal pela qualificação WhatsApp do Reno. Se não responder até o próximo vencimento, avaliar step 5 com abordagem diferente, preferencialmente evitando repetir a oferta de prévia e buscando outro ângulo de baixa fricção.
+Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com `stopped_reason=client_replied`, limpar `next_run_at`, preservar status `Em Atendimento` e seguir atendimento normal pela qualificação WhatsApp do Reno. Se não responder até o próximo vencimento, avaliar step 6 com cadência oficial de 96h após o step 5 e sem mensagem de encerramento explícito para o cliente.
 
 ## Observações operacionais
-- CRM é a fonte operacional de verdade; status validado como `Em Atendimento`, `broker_id=35`, sem agendamento/visita ativo no momento do step 4.
-- Envio do step 4 registrado no CRM pela ferramenta específica `mark_reno_followup_sent`, nota CRM ID 16311.
+- CRM é a fonte operacional de verdade; em 2026-05-03 o cliente foi validado com `broker_id=35`, status `Em Atendimento`, sem agendamento/visita ativo.
+- Envio do step 5 registrado no CRM pela ferramenta específica `mark_reno_followup_sent`, nota CRM ID 16617.
+- WhatsApp enviado com sucesso para o número com nono dígito; não foi necessário tentar a variação sem nono dígito.
 - Documento atualizado no caminho oficial `_agents/reno/atendimentos/10934-mateus-silva.md`.
 - Não há dump bruto de conversa neste documento; apenas síntese curada para retomada.
