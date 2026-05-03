@@ -85,3 +85,11 @@ Conduta comercial: responder de forma curta, sem prometer aprovação; explicar 
 Cliente perguntou o preço do 2º andar do Garden Sul. Consulta interna não localizou tabela unitária por andar; dados seguros disponíveis: plantas tipo de 52,01m² a partir de R$ 294.900 e planta de 56,32m² a R$ 330.900. Térreos possuem metragem maior e valores superiores.
 
 Conduta: responder que o 2º andar entra nas plantas tipo, com preço a partir de R$ 294.900, mas que o valor exato depende da planta/posição/unidade e precisa ser validado na tabela atual. Manter CTA para visita na Fama para conferir unidade e condição com segurança.
+
+
+### 2026-05-03 — Comparação Garden Sul x “Jardins/Gardens”
+Cliente perguntou a diferença entre Garden e “jardins”. Consulta interna mostrou ambiguidade: pode se referir ao Gardens Residence ou ao empreendimento Jardim Sul. Para resposta imediata, tratar como comparação Garden Sul x Gardens Residence, deixando claro o contexto.
+
+Dados seguros: Garden Sul é lançamento no Jardim Sul/Zona Sul, 2 quartos com suíte, opções a partir de R$ 294.900 e entrega prevista set/2028. Gardens Residence é pronto no Santa Mônica/Zona Leste, apartamentos maiores (84–92m²), 2 ou 3 quartos, 2 vagas e valores a partir de R$ 595.000.
+
+Próximo passo: entender se Sebastião prioriza ticket menor/lançamento ou imóvel pronto/maior.
