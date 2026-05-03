@@ -5,48 +5,48 @@ entity_type: atendimento
 entity_name: Lenira Cruz
 client_id: 10936
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat
 created: '2026-04-29'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
 ---
 # Atendimento — Lenira Cruz
 
 ## Resumo atual
-Cliente Reno em status **Não Respondeu**. Veio de Facebook Ads com interesse no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. Primeiro contato e repescagens steps 1, 2 e 3 não geraram resposta real; em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, mudando o foco para entrada, fluxo até a entrega e parcela provável.
+Cliente Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de **5 repescagens** sem resposta real registrada. Veio de Facebook Ads com interesse no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. O step 5 foi enviado com encerramento elegante e porta aberta; a branch `reno_followup.repescagem` ficou encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
 
 ## Dados operacionais
 - Cliente ID: 10936
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
-- Telefone/WhatsApp: WhatsApp cadastrado no CRM; envio realizado pelo JID salvo no CRM.
-- Última interação relevante: 2026-05-02 10:08 -03 — repescagem step 4 enviada.
+- Telefone/WhatsApp: WhatsApp cadastrado no CRM; envios realizados pelo JID salvo no CRM.
+- Última interação relevante: 2026-05-03 09:58 -03 — repescagem step 5 enviada; cliente arquivada por `max_steps`.
 
 ## Contexto comercial
 - Interesse operacional associado ao empreendimento Union Vereda (ID 161), no Jaraguá, Uberlândia.
 - Empreendimento: apartamento da HLTS Construtora, entrega prevista para Dez/2028, opções disponíveis de 2 quartos com suíte e varanda/sacada.
-- Ainda não há resposta real da cliente nem contexto suficiente sobre objetivo de compra, forma de pagamento, prazo, renda/entrada ou região alternativa.
+- Não houve resposta real da cliente nem contexto suficiente sobre objetivo de compra, forma de pagamento, prazo, renda/entrada ou região alternativa.
 
 ## Diagnóstico
 ### Necessidade
-A cliente demonstrou interesse inicial em imóvel/empreendimento específico, mas ainda não abriu conversa para qualificação.
+A cliente demonstrou interesse inicial em imóvel/empreendimento específico, mas não abriu conversa para qualificação.
 
 ### Momento
-Lead silencioso após primeiro contato e quatro repescagens. Fluxo atual é repescagem, não atendimento consultivo ativo.
+Lead silencioso após primeiro contato e cinco repescagens. Régua ativa encerrada; não há nova ação automática prevista.
 
 ### Decisão
 Sem dados confirmados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de financiamento, entrada ou renda. A repescagem step 4 tentou gerar microresposta por viabilidade prática — entrada, fluxo até Dez/2028 e parcela provável — sem prometer crédito.
+Sem dados de financiamento, entrada ou renda. As tentativas anteriores exploraram objetivo de compra e viabilidade prática sem promessa de crédito; o encerramento evitou insistência excessiva.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -103,14 +103,32 @@ Mensagem enviada:
 
 Estado registrado no CRM pela tool específica do Reno: step 4, `last_sent_at` 2026-05-02T10:08:26-03:00, próximo `next_run_at` 2026-05-03T09:10:00-03:00.
 
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem.
+
+Ângulo comercial usado: **lead frio / encerramento elegante com porta aberta**.
+
+Comparação com a tentativa anterior: a mensagem deixou de insistir em entrada, fluxo até entrega e parcela provável. O novo foco foi pausar a insistência, respeitar o momento da cliente e deixar aberto o retorno para comparar o Union Vereda com alternativas quando fizer sentido.
+
+Mensagem enviada:
+> Lenira, vou pausar por aqui para não ficar te chamando sem necessidade. 🏡
+>
+> Como você tinha olhado o Union Vereda, deixo só um ponto: quando quiser retomar, o ideal é comparar o empreendimento com outras opções que façam sentido para o seu momento, sem decidir no impulso.
+>
+> Se agora não for hora, tudo bem. Quer que eu deixe parado por enquanto?
+
+Resultado operacional: WhatsApp enviado com sucesso pelo JID salvo no CRM. A tool de marcação registrou o step 5, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido pela tool específica do Reno para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Em seguida, o cliente foi arquivado defensivamente no FamaChat enquanto ainda estava em **Não Respondeu**.
+
 ## Objeções e travas
 - Trava principal: silêncio / ausência de primeira resposta.
 - Lacuna comercial: não há dados de objetivo, forma de compra ou viabilidade.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, a repescagem deve parar e o atendimento deve seguir por fluxo de qualificação, com transição de status para **Em Atendimento** quando aplicável. Se continuar sem resposta e a régua permanecer elegível, o próximo envio será a repescagem step 5 em 2026-05-03 09:10 -03, com encerramento elegante e porta aberta.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reativar o atendimento por fluxo de qualificação do Reno, registrar a resposta no CRM e avaliar mudança de status conforme estágio real.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10936-lenira-cruz.md`.
 - CRM/FamaChat permanece fonte operacional de verdade para status, broker, eventos e meta_data.
-- Envio step 4 realizado pelo JID salvo no CRM; status preservado como **Não Respondeu** conforme regra da repescagem.
+- Envio step 5 realizado pelo JID salvo no CRM; `message_id` WhatsApp: 3EB083CCF79A06914BB74D.
+- Nota CRM automática de envio: 16465. Nota CRM objetiva de arquivamento: 16466.
+- Pitfall operacional confirmado: `mark_reno_followup_sent` registrou “Próximo follow-up previsto” no step final; a branch foi corrigida com `update_reno_followup_state` antes do arquivamento defensivo.
