@@ -111,3 +111,9 @@ Responder ao cliente explicando de forma simples que Garden Sul e Jardim Sul sã
 - Não enviar contato/telefone de construtora ao cliente.
 - Não mencionar endereço exato de empreendimento espontaneamente; usar bairro/região.
 - Esta atualização é curada e não contém dump bruto de conversa.
+
+
+### 2026-05-03 — Aceite para validar 2º andar Garden Sul
+Cliente respondeu "Sim" ao convite para validar a opção mais barata disponível no 2º andar do Garden Sul.
+
+Pendência comercial: confirmar tabela/unidade disponível no 2º andar, pois o CRM lista plantas e valores, mas não traz campo de andar/unidade/posição. Referência segura já informada: 52,01m² a partir de R$ 294.900 e 56,32m² em torno de R$ 330.900.
