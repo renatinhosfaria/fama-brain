@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
@@ -20,7 +20,7 @@ tags:
 # Atendimento — Nayara Ferreira
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Respondeu**, sem resposta real registrada após primeiro contato e repescagens anteriores. Em 2026-05-02 foi enviada a repescagem **step 3**, com ângulo de diagnóstico leve sobre prazo/momento: confirmar se o Union Vista faz sentido por ser lançamento com programação até 2027 ou se a cliente precisa de algo mais imediato.
+Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Respondeu**, sem resposta real registrada após primeiro contato e repescagens anteriores. Em 2026-05-03 foi enviada a repescagem **step 4**, com convite consultivo direto para organizar caminho de compra do Union Vista, comparando lançamento com alternativas e encaminhando uma análise/possível visita na Fama para segunda-feira.
 
 ## Dados operacionais
 - Cliente ID: 10966
@@ -30,25 +30,25 @@ Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Resp
 - Cliente original da cascata: 10885
 - Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo usado no envio
 - Empreendimento relacionado: Union Vista (`id_empreendimento=22`), Grand Ville, Uberlândia
-- Última interação relevante: 2026-05-02T11:16:45.998-03:00 — repescagem step 3 enviada via WhatsApp
+- Última interação relevante: 2026-05-03T11:57:47.979-03:00 — repescagem step 4 enviada via WhatsApp
 
 ## Contexto comercial
 Cliente veio por SLA Cascata após interesse original via Facebook Ads no empreendimento **Union Vista**, no bairro **Grand Ville**, em Uberlândia. O empreendimento é um lançamento com entrega prevista para **jul/2027**, apartamentos de 2 quartos, lazer de condomínio e opções registradas no CRM a partir de cerca de R$ 292 mil. No cliente original, havia sinal de que ela **começou a procurar agora** e compraria **sozinha**, mas ainda não há resposta direta da cliente nem dados confirmados sobre objetivo de compra, renda, entrada, prazo, intenção de morar/investir ou decisão familiar.
 
-O primeiro contato e reenvio inicial mencionaram o Union Vista e perguntaram se a região combinava com a busca. A repescagem step 1 explorou se o imóvel fazia sentido para o momento e perguntou se a busca era para morar ou investimento. A step 2 mudou o ângulo para **viabilidade prática**, destacando entrada, parcela e prazo de entrega. A step 3 mudou novamente a abordagem para **diagnóstico de prazo**, usando o fato de ser lançamento para perguntar se ela consegue se programar até 2027 ou precisa resolver mais rápido.
+O primeiro contato e reenvio inicial mencionaram o Union Vista e perguntaram se a região combinava com a busca. A repescagem step 1 explorou se o imóvel fazia sentido para o momento e perguntou se a busca era para morar ou investimento. A step 2 mudou o ângulo para **viabilidade prática**, destacando entrada, parcela e prazo de entrega. A step 3 mudou novamente a abordagem para **diagnóstico de prazo**, usando o fato de ser lançamento para perguntar se ela consegue se programar até 2027 ou precisa resolver mais rápido. A step 4 avançou para **convite consultivo direto**, evitando mandar mais anúncio e propondo organizar o caminho de compra, comparar com alternativas de entrega mais rápida e olhar financiamento com pé no chão.
 
 ## Diagnóstico
 ### Necessidade
-Interesse inicial vinculado a imóvel específico, mas necessidade real ainda não confirmada. A dúvida atual é se o Union Vista é oportunidade compatível com o timing da cliente.
+Interesse inicial vinculado a imóvel específico, mas necessidade real ainda não confirmada. A dúvida atual é se o Union Vista é oportunidade compatível com o timing da cliente ou se outro caminho de compra faria mais sentido.
 
 ### Momento
-Cliente permanece silenciosa; o histórico original sugere início de busca, mas ainda não há confirmação se ela quer se programar com calma ou precisa mudar em prazo curto.
+Cliente permanece silenciosa; o histórico original sugere início de busca, mas ainda não há confirmação se ela quer se programar com calma para o lançamento ou precisa mudar em prazo curto. Como a step 4 foi enviada em domingo, o convite foi direcionado para análise/possível visita na segunda-feira.
 
 ### Decisão
 Sem dados confirmados sobre quem decide. Registro original sugere compra sozinha, ainda sem validação em conversa direta.
 
 ### Viabilidade
-Ainda não há dados de renda, entrada, financiamento ou capacidade de compra. O ângulo correto é investigar viabilidade sem prometer aprovação de crédito e sem insistir em visita antes da primeira resposta.
+Ainda não há dados de renda, entrada, financiamento ou capacidade de compra. A abordagem correta é investigar viabilidade sem prometer aprovação de crédito e sem insistir em unidade antes de confirmar contexto.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato inicial enviado
@@ -95,19 +95,33 @@ Como o Union Vista é um lançamento no Grand Ville, ele costuma fazer mais sent
 Você está considerando um apê para se organizar até 2027 ou procura algo para resolver mais rápido?
 ```
 
+### 2026-05-03 — Repescagem step 4 enviada
+Mensagem enviada com abordagem substancialmente diferente da step 3: convite consultivo direto, sem repetir a pergunta de prazo. O ângulo foi parar de enviar anúncio solto e propor organização do caminho de compra, comparando o Union Vista com alternativas e olhando financiamento de forma objetiva. Por ser domingo, o CTA levou a análise/possível visita para segunda-feira.
+
+Mensagem enviada:
+```text
+Nayara, vou ser bem direto por aqui 🔑
+
+Se o Union Vista chamou sua atenção, o próximo passo mais útil não é eu te mandar mais anúncio. É organizar **qual caminho de compra faz sentido**: manter o lançamento como opção, comparar com algo de entrega mais rápida e olhar o financiamento com pé no chão.
+
+Amanhã, na segunda, posso te receber na Fama para fazer essa análise inicial e ver se vale seguir com o Union Vista ou com outro caminho.
+
+Você toparia essa análise comigo na segunda?
+```
+
 ## Objeções e travas
-- Silêncio após primeiro contato, reenvio inicial e repescagens steps 1 e 2.
+- Silêncio após primeiro contato, reenvio inicial e repescagens steps 1 a 4.
 - Falta de contexto confirmado sobre objetivo, timing e viabilidade financeira.
 - Possível necessidade de clarear se Union Vista é oportunidade real ou apenas interesse inicial de anúncio.
 
 ## Próximo passo
-Se não houver resposta, próxima repescagem elegível deve seguir para **step 4 — convite consultivo direto**, prevista para `2026-05-03T09:10:00-03:00`, evitando repetir a pergunta de prazo da step 3. A próxima abordagem deve ser mais direta sobre a Fama organizar compra/financiamento/opções sem pressão e sem promessa de crédito.
+Se não houver resposta, próxima repescagem elegível deve seguir para **step 5 — encerramento elegante**, prevista para `2026-05-04T14:20:00-03:00`. A próxima abordagem deve pausar a régua com porta aberta, sem repetir convite de visita/análise da step 4.
 
 Se a cliente responder, parar repescagem, manter a conversa em fluxo de atendimento consultivo e alterar status de **Não Respondeu** para **Em Atendimento** somente se ainda estiver exatamente nesse status.
 
 ## Observações operacionais
 - Documento mantido no caminho determinístico oficial `_agents/reno/atendimentos/10966-nayara-ferreira.md`.
 - CRM/FamaChat permanece como fonte de verdade operacional.
-- Repescagem step 3 enviada em 2026-05-02T11:16:45.998-03:00 para o JID salvo no CRM.
-- Estado verificado no CRM após `mark_reno_followup_sent`: `step=3`, `enabled=true`, `last_sent_at=2026-05-02T11:16:45.998-03:00`, `next_run_at=2026-05-03T09:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
+- Repescagem step 4 enviada em 2026-05-03T11:57:47.979-03:00 para o JID salvo no CRM.
+- Estado verificado no CRM após `mark_reno_followup_sent`: `step=4`, `enabled=true`, `last_sent_at=2026-05-03T11:57:47.979-03:00`, `next_run_at=2026-05-04T14:20:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
 - Status do cliente não foi alterado durante a repescagem, conforme política do fluxo para steps 1 a 4.
