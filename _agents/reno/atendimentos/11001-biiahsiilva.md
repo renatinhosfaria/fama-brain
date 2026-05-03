@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-28'
-updated: '2026-05-01'
+updated: '2026-05-02'
 tags:
   - reno
   - atendimento
@@ -19,7 +19,7 @@ source: Facebook Ads
 # Atendimento — Biiahsiilva
 
 ## Resumo atual
-Cliente do Reno em `Não Respondeu`, originada de Facebook Ads, com interesse vinculado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e repescagens steps 1, 2 e 3 foram enviados via WhatsApp; até esta atualização não há resposta real registrada no CRM.
+Cliente do Reno em `Não Respondeu`, originada de Facebook Ads, com interesse vinculado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e repescagens steps 1, 2, 3 e 4 foram enviados via WhatsApp; até esta atualização não há resposta real registrada no CRM. A repescagem 4 mudou o ângulo para convite consultivo direto, comparando o Union Vista com possíveis opções de entrega mais rápida e levando a conversa para uma análise/visita na segunda-feira por se tratar de fim de semana.
 
 ## Dados operacionais
 - Cliente ID: 11001
@@ -28,23 +28,23 @@ Cliente do Reno em `Não Respondeu`, originada de Facebook Ads, com interesse vi
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp confirmado no CRM (número não exposto neste documento)
 - Empreendimento vinculado: Union Vista — Grand Ville, Uberlândia/MG
-- Última interação relevante: repescagem step 3 enviada em 2026-05-01 20:24:19 -03:00
+- Última interação relevante: repescagem step 4 enviada em 2026-05-02 22:03:15 -03:00
 
 ## Contexto comercial
-Lead demonstrou interesse no Union Vista, empreendimento de apartamentos no Grand Ville/Zona Leste, com opções de 2 quartos entre aproximadamente 56,9 m², 58,4 m² e 82,2 m². O empreendimento está em lançamento e tem entrega prevista para jul/2027. O contexto disponível ainda não traz objetivo de compra, faixa de orçamento, forma de pagamento, prazo pessoal de mudança ou perfil de uso.
+Lead demonstrou interesse no Union Vista, empreendimento de apartamentos no Grand Ville/Zona Leste, com opções de 2 quartos entre aproximadamente 56,9 m², 58,4 m² e 82,2 m². O empreendimento está em lançamento, tem entrega prevista para jul/2027 e valores aproximados entre R$ 292 mil e R$ 322 mil nas unidades consultadas. O contexto disponível ainda não traz objetivo de compra, faixa de orçamento, forma de pagamento, prazo pessoal de mudança ou perfil de uso.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não diagnosticada. Interesse inicial parece ligado a imóvel específico.
 
 ### Momento
-Sem resposta da cliente até o momento; jornada silenciosa após primeiro contato e três repescagens.
+Sem resposta da cliente até o momento; jornada silenciosa após primeiro contato e quatro repescagens.
 
 ### Decisão
 Sem dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou parcela desejada. O step 2 tentou abrir conversa por orçamento/parcela; o step 3 mudou o ângulo para prazo de entrega e finalidade da compra, buscando entender se é moradia planejada ou investimento.
+Sem dados de renda, entrada, financiamento ou parcela desejada. O step 2 tentou abrir conversa por orçamento/parcela; o step 3 mudou o ângulo para prazo de entrega e finalidade da compra; o step 4 avançou para uma leitura consultiva de caminho de compra, comparando lançamento com possível alternativa de entrega mais rápida.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato Reno
@@ -85,20 +85,34 @@ Mensagem enviada:
 >
 > Pra eu entender o caminho certo: você está olhando esse apê para morar quando ficar pronto ou seria mais pensando em investimento?
 
+### 2026-05-02 — Repescagem step 4
+Repescagem 4 enviada via WhatsApp com convite consultivo direto. A abordagem mudou em relação ao step 3: saiu da pergunta de finalidade morar/investir e foi para organização do caminho de compra, comparando Union Vista como lançamento com alternativas de entrega mais rápida. Como a execução ocorreu em sábado à noite, o CTA levou a análise/possível visita para segunda-feira.
+
+Mensagem enviada:
+> Boa noite! 🏡
+>
+> Como o Union Vista é lançamento no Grand Ville, o ponto agora não é só planta ou valor: é organizar se esse caminho combina com seu prazo, forma de pagamento e se vale comparar com alguma opção de entrega mais rápida.
+>
+> Na Fama a gente consegue fazer essa leitura de um jeito **bem objetivo**, antes de você seguir por um caminho que talvez não combine com a sua compra.
+>
+> Quer que eu reserve um horário na segunda pra gente olhar isso com calma e ver se o Union Vista faz sentido pra você?
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens 1 e 2.
+- Silêncio após primeiro contato e repescagens 1, 2, 3 e 4.
 - Ausência de dados de orçamento/parcela impede diagnóstico de viabilidade.
-- Ausência de resposta sobre finalidade e prazo impede definir se o Union Vista faz sentido como moradia planejada ou investimento.
+- Ausência de resposta sobre finalidade, prazo e abertura para análise impede definir se o Union Vista faz sentido como moradia planejada, investimento ou se vale comparar com alternativas de entrega mais rápida.
 
 ## Próximo passo
 Aguardar resposta da cliente. Se responder, mover o atendimento para fluxo normal do Reno e atualizar status de `Não Respondeu` para `Em Atendimento` somente se ainda estiver exatamente nesse status.
 
-Próxima repescagem prevista pelo estado operacional: 2026-05-02T19:10:00-03:00, caso permaneça elegível e sem resposta.
+Próxima repescagem prevista pelo estado operacional: 2026-05-03T09:10:00-03:00, caso permaneça elegível e sem resposta.
 
 ## Observações operacionais
 - Fluxo: repescagem.
-- Step enviado nesta atualização: 3.
-- Ângulo comercial usado no step 3: imóvel específico + prazo de entrega/finalidade da compra.
+- Step enviado nesta atualização: 4.
+- Ângulo comercial usado no step 4: imóvel específico + convite consultivo direto + comparação entre lançamento e possível entrega mais rápida.
+- Diferenciação da mensagem anterior: mudou de finalidade morar/investir e prazo 2027 para organização do caminho de compra, comparação de alternativas e CTA de análise/visita na segunda-feira.
 - Estado de repescagem registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`), sem alteração manual de status ou `meta_data`.
+- `claim_expires_at` foi limpo após marcação de envio bem-sucedido.
 - WhatsApp enviado usando o `whatsapp_jid` salvo no CRM.
 - Documento oficial mantido em `_agents/reno/atendimentos/11001-biiahsiilva.md` conforme governança canônica.
