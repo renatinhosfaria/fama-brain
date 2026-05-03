@@ -5,45 +5,46 @@ entity_type: atendimento
 entity_name: Kauan Eduardo
 client_id: 10941
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat
 created: '2026-04-29'
-updated: '2026-05-02'
+updated: '2026-05-03'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Kauan Eduardo
 
 ## Resumo atual
-Cliente do Reno em status **Não Respondeu**. Recebeu primeiro contato sobre interesse no Union Vereda, região do Jaraguá, e não houve resposta real registrada no CRM. Em 2026-05-02 foi enviada a repescagem step 4 com convite consultivo direto, mudando o ângulo para organizar o caminho de compra em lançamento: entrada, parcelas durante a obra e comparação com opções na mesma faixa.
+Cliente do Reno arquivado automaticamente após conclusão da régua de **5 repescagens** sem resposta real registrada no CRM. O interesse operacional vinha do Facebook Ads/lead automático para o **Union Vereda**, no Jaraguá. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausa respeitosa e porta aberta para retomada futura.
 
 ## Dados operacionais
 - Cliente ID: 10941
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp confirmado no CRM; número completo omitido nesta nota curada
-- Última interação relevante: 2026-05-02 10:40 -03 — repescagem step 4 enviada por WhatsApp
+- Última interação relevante: 2026-05-03 10:27 -03 — repescagem step 5 enviada por WhatsApp e régua encerrada por `max_steps`
 
 ## Contexto comercial
-O histórico operacional indica interesse no **Union Vereda**, na região do **Jaraguá**, em Uberlândia. O empreendimento tem apartamentos disponíveis de 2 quartos, lazer/serviços de condomínio e prazo de entrega informado como **dez/2028**. Ainda não há resposta do cliente com detalhes de compra, financiamento, prazo, finalidade ou perfil familiar.
+O histórico operacional indica interesse no **Union Vereda**, na região do **Jaraguá**, em Uberlândia. O empreendimento tem apartamentos disponíveis de 2 quartos, lazer/serviços de condomínio e prazo de entrega informado como **dez/2028**. Não houve resposta do cliente com detalhes de compra, financiamento, prazo, finalidade ou perfil familiar.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não declarada pelo cliente. Pela origem e pelo empreendimento citado, há sinal de busca por imóvel residencial ou avaliação de opção específica.
+Não declarada pelo cliente. Pela origem e pelo empreendimento citado, havia sinal de busca por imóvel residencial ou avaliação de uma opção específica.
 
 ### Momento
-Silencioso após primeiro contato e quatro repescagens. Momento comercial frio, mas ainda dentro da régua ativa; resta uma última tentativa antes de encerramento automático por max_steps se não houver resposta.
+Cliente permaneceu silencioso após o primeiro contato e cinco repescagens. Momento comercial classificado como frio; régua automática concluída e atendimento pausado/arquivado.
 
 ### Decisão
-Sem informações sobre decisores ou critérios de escolha. O step 3 tentou abrir diagnóstico por finalidade de compra; o step 4 assumiu abordagem mais direta de organização do caminho de compra.
+Sem informações sobre decisores ou critérios de escolha. As repescagens tentaram abrir diagnóstico por região, viabilidade, finalidade, prazo e caminho de compra, sem resposta.
 
 ### Viabilidade
-Sem dados de renda, entrada ou financiamento. O step 2 já abordou viabilidade/encaixe; o step 4 retomou o tema de forma diferente, focando em lançamento e jornada durante a obra, sem prometer aprovação de crédito.
+Sem dados de renda, entrada ou financiamento. Os steps anteriores abordaram viabilidade/encaixe e caminho de compra durante obra sem prometer aprovação de crédito.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato contextual
@@ -67,7 +68,7 @@ Mensagem enviada:
 >
 > Você prefere que eu comece olhando a viabilidade pelo financiamento ou pela região/empreendimento?
 
-Próximo `next_run_at`: 2026-04-30T14:20:00-03:00.
+Próximo `next_run_at` registrado na época: 2026-04-30T14:20:00-03:00.
 
 ### 2026-04-30 — Repescagem step 3 enviada
 Fluxo: repescagem  
@@ -84,7 +85,7 @@ Mensagem enviada:
 >
 > Pra eu não te mandar sugestão no escuro: você estava olhando esse imóvel mais para **morar** ou para **investir**?
 
-Próximo `next_run_at`: 2026-05-01T19:10:00-03:00.
+Próximo `next_run_at` registrado na época: 2026-05-01T19:10:00-03:00.
 
 ### 2026-05-02 — Repescagem step 4 enviada
 Fluxo: repescagem  
@@ -103,17 +104,37 @@ Mensagem enviada:
 >
 > Posso fazer esse filtro e te dizer se o Union merece seguir no radar?
 
-Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
+Próximo `next_run_at` registrado na época: 2026-05-03T09:10:00-03:00.
+
+### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
+Fluxo: repescagem  
+Step enviado: 5  
+Intenção do step: encerramento elegante  
+Ângulo/contexto: imóvel específico + lead frio + pausa respeitosa com porta aberta  
+Diferenciação vs step 4: saiu do convite consultivo/filtro ativo para pausa do atendimento; mudou a pergunta para permissão de encerrar mensagens; trocou o benefício de análise imediata por possibilidade futura de retomar com comparação de prazo, entrada e financiamento.  
+Data/hora de envio: 2026-05-03 10:27 -03  
+Mensagem enviada:
+
+> Kauan, vou pausar por aqui para não ficar insistindo. 🏡
+>
+> Como você chegou pelo Union Vereda, pode ser que esteja só olhando opções ou que esse não seja o melhor momento — e tudo bem.
+>
+> Quando quiser retomar, o caminho mais seguro é comparar **prazo de entrega, entrada e financiamento** antes de decidir por um lançamento.
+>
+> Pode ser assim: eu paro as mensagens por enquanto e você me chama por aqui se quiser retomar?
+
+Resultado operacional: WhatsApp enviado com sucesso pelo JID salvo no CRM; `repescagem.step=5`; branch encerrada com `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`; cliente arquivado por condição defensiva no FamaChat.
 
 ## Objeções e travas
-- Trava principal: silêncio total após abordagem inicial e repescagens.
+- Trava principal: silêncio total após abordagem inicial e cinco repescagens.
 - Objeções comerciais: não identificadas.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se permanecer sem resposta até 2026-05-03T09:10:00-03:00, a régua pode seguir para repescagem step 5, com encerramento elegante e porta aberta. Se o cliente responder, parar a repescagem e tratar por fluxo normal de atendimento do Reno.
+Sem nova ação automática de repescagem. Se o cliente responder futuramente, retomar por fluxo normal de atendimento do Reno, validar contexto no CRM e seguir qualificação consultiva antes de propor visita.
 
 ## Observações operacionais
 - CRM permanece como fonte de verdade operacional.
-- Status preservado em **Não Respondeu** após o envio de repescagem step 4.
-- Envio realizado pelo JID de WhatsApp salvo no CRM.
-- `mark_reno_followup_sent` confirmou `repescagem.step=4`, `enabled=true`, `stopped_reason=null`, `claim_expires_at=null` e `next_run_at=2026-05-03T09:10:00-03:00`.
+- Envio realizado pelo JID de WhatsApp salvo no CRM; número completo omitido no vault.
+- `mark_reno_followup_sent` registrou o step 5, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; a branch foi corrigida com `mcp_mcp_postgres_update_reno_followup_state` antes do arquivamento.
+- Após correção, o status foi atualizado para **Arquivado** com condição defensiva por `id=10941`, `broker_id=35`, status anterior `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
+- A correção final da branch compactou o estado operacional para os campos essenciais do encerramento; a mensagem final foi preservada na nota automática do CRM e neste documento curado.
