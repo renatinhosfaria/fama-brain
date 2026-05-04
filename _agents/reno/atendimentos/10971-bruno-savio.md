@@ -5,48 +5,49 @@ entity_type: atendimento
 entity_name: Bruno Sávio
 client_id: 10971
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: FamaChat
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-04'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 ---
 # Atendimento — Bruno Sávio
 
 ## Resumo atual
-Cliente Bruno Sávio permanece em `Não Respondeu` após primeiro contato e quatro repescagens do Reno. Interesse operacional associado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. Em 2026-05-03, foi enviada a repescagem step 4 com convite consultivo direto e CTA de visita/análise presencial na Fama na segunda-feira, mudando o ângulo depois de mensagens anteriores sobre valores/viabilidade, prazo/formato de pagamento, finalidade de uso e perfil de planta.
+Cliente Bruno Sávio foi arquivado automaticamente em 2026-05-04 após conclusão da régua de 5 repescagens do Reno sem resposta real no cliente operacional `10971`. O interesse estava associado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. O step 5 foi enviado com encerramento elegante, sem repetir convite de agenda após o step 4 já ter proposto análise/visita na segunda-feira.
 
 ## Dados operacionais
 - Cliente ID: 10971
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Telefone/WhatsApp: JID salvo no CRM usado para envio; telefone não exposto neste resumo.
 - Empreendimento vinculado: Union Vista — Grand Ville — Uberlândia/MG
-- Última interação relevante: 2026-05-03 12:26 - repescagem step 4 enviada via WhatsApp.
+- Última interação relevante: 2026-05-04 14:39 - repescagem step 5 enviada via WhatsApp; régua encerrada e cliente arquivado defensivamente.
 
 ## Contexto comercial
 O cliente está vinculado ao Union Vista, empreendimento da HLTS Construtora no bairro Grand Ville, Zona Leste de Uberlândia, com entrega prevista para Jul/2027. O CRM indica opções cadastradas de 2 quartos, suíte, vaga coberta e lazer de condomínio, com plantas compactas e uma unidade maior.
 
-Há histórico de primeiro contato e repescagens sem resposta. A repescagem step 1 explorou valores/opções e viabilidade da compra. A repescagem step 2 explorou lançamento, prazo de entrega, formato de pagamento e objetivo de uso (morar ou investir). A repescagem step 3 mudou o foco para perfil de unidade/planta. A repescagem step 4 avançou para convite consultivo direto: entender se o Union Vista é o melhor caminho ou se vale comparar com alternativa de entrega/condição diferente, com proposta de análise presencial na segunda-feira.
+Há histórico de primeiro contato e cinco repescagens sem resposta. A repescagem step 1 explorou valores/opções e viabilidade da compra. A repescagem step 2 explorou lançamento, prazo de entrega, formato de pagamento e objetivo de uso (morar ou investir). A repescagem step 3 mudou o foco para perfil de unidade/planta. A repescagem step 4 avançou para convite consultivo direto e possibilidade de análise/visita na Fama na segunda-feira. O step 5 encerrou a régua com pausa respeitosa e porta aberta para retomada futura por prazo, valor e forma de compra.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não há resposta real do cliente. A necessidade percebida vem do interesse no Union Vista, sem confirmação se a prioridade é valor mais baixo, planta maior, moradia, investimento, prazo de entrega ou comparação com alternativas.
+Não houve resposta real do cliente. A necessidade percebida veio do interesse no Union Vista, sem confirmação se a prioridade era valor mais baixo, planta maior, moradia, investimento, prazo de entrega ou comparação com alternativas.
 
 ### Momento
-Cliente silencioso após primeiro contato e quatro repescagens. Como o empreendimento é lançamento com entrega futura, o momento de compra e a aderência do caminho de compra precisam ser validados antes de insistir em mais detalhes de preço, planta ou material.
+Cliente permaneceu silencioso após primeiro contato e cinco repescagens. Como o empreendimento é lançamento com entrega futura, o momento de compra e a aderência do caminho de compra não foram validados.
 
 ### Decisão
 Não há informação confirmada sobre decisores ou participação familiar.
 
 ### Viabilidade
-Não há dados de renda, entrada ou financiamento. Evitar prometer crédito. Melhor abordagem restante, caso siga silencioso, é encerramento elegante no step 5, deixando porta aberta para retomada quando fizer sentido.
+Não há dados de renda, entrada ou financiamento. Nenhuma promessa de crédito foi feita. O caso fica sem nova ação automática até eventual resposta/reativação humana.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato
@@ -104,16 +105,31 @@ Não há dados de renda, entrada ou financiamento. Evitar prometer crédito. Mel
 
 - Próximo follow-up previsto no CRM/meta_data: 2026-05-04T14:20:00-03:00.
 
+### 2026-05-04 — Repescagem step 5 e arquivamento
+- Resultado: enviada via WhatsApp para o JID salvo no CRM, usando fallback excepcional do bridge local porque `send_message` não estava exposto no runtime do cron.
+- Ângulo usado: encerramento elegante com pausa respeitosa e porta aberta, sem repetir a agenda do step 4; preservou o contexto do Union Vista como lançamento e a comparação futura por prazo, valor e forma de compra.
+- Mensagem enviada:
+
+> Bruno, vou pausar por aqui pra não ficar insistindo sem saber se esse é o seu momento.
+>
+> Como o Union Vista é um lançamento no Grand Ville, quando fizer sentido retomar o ideal é comparar com calma **prazo, valor e forma de compra**, em vez de decidir só pelo anúncio. 🏡
+>
+> Posso deixar essa análise em aberto e você me chama quando quiser comparar as opções?
+
+- Estado operacional: `repescagem.step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`.
+- Status CRM atualizado defensivamente de `Não Respondeu` para `Arquivado` porque o cliente ainda estava no status esperado e pertencia ao `broker_id=35`.
+
 ## Objeções e travas
-- Silêncio após primeiro contato e quatro repescagens.
+- Silêncio após primeiro contato e cinco repescagens.
 - Possível trava: falta de clareza sobre objetivo de uso, prazo de entrega, formato de pagamento e perfil de unidade/planta.
 - Histórico do cliente original em SLA Cascata menciona verificação de valores, mas sem resposta útil confirmada nesta entidade operacional.
 
 ## Próximo passo
-Aguardar resposta. Se responder, parar repescagem e seguir atendimento consultivo normal do Reno, movendo para `Em Atendimento` quando aplicável. Se permanecer silencioso até 2026-05-04 14:20, executar repescagem step 5 com encerramento elegante, pausa respeitosa e porta aberta para retomada; após step 5 bem-sucedido, aplicar regra de arquivamento defensivo se o status ainda estiver `Não Respondeu` e o ramo encerrar com `stopped_reason=max_steps`.
+Sem nova ação automática de repescagem. Se o cliente responder futuramente, parar qualquer régua automática e retomar por atendimento consultivo normal do Reno, reavaliando status e contexto antes de avançar.
 
 ## Observações operacionais
-- Cliente elegível para repescagem: broker_id=35, status `Não Respondeu`, branch `meta_data.reno_followup.repescagem.enabled=true`, step anterior 3 e `next_run_at` vencido.
-- WhatsApp enviado com sucesso usando o JID salvo no CRM.
-- CRM atualizado via `mcp_mcp_postgres_mark_reno_followup_sent`; status preservado em `Não Respondeu`.
-- Estado após envio: step=4, enabled=true, stopped_reason=null, claim_expires_at=null, last_sent_at=2026-05-03T12:26:55-03:00, next_run_at=2026-05-04T14:20:00-03:00.
+- Cliente selecionado por fila exclusiva de repescagem: broker_id=35, status `Não Respondeu`, branch `meta_data.reno_followup.repescagem.enabled=true`, `stopped_reason=null`, step anterior 4 e `next_run_at` vencido.
+- WhatsApp enviado com sucesso usando o JID salvo no CRM via fallback excepcional do bridge local saudável (`/health` conectado), pois `send_message` não estava disponível nesta sessão de cron.
+- CRM atualizado via `mcp_mcp_postgres_mark_reno_followup_sent`. A tool registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado final foi corrigido pela tool específica `mcp_mcp_postgres_update_reno_followup_state` antes do arquivamento, conforme pitfall operacional conhecido.
+- A correção compactou a branch final da repescagem, preservando o essencial: `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-04T14:39:26-03:00` e `stopped_reason=max_steps`. A mensagem final foi preservada em nota CRM e neste documento.
+- Nota CRM objetiva de arquivamento registrada após o update defensivo de status.
