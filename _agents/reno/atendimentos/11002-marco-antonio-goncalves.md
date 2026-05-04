@@ -1,8 +1,12 @@
 ---
-type: entity-profile
-owner: reno
+broker_id: 35
+client_id: 11002
 created: '2026-04-30'
-updated: '2026-05-04'
+entity_name: Marco Antonio Goncalves
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -12,12 +16,10 @@ tags:
   - place-arbi
   - em-atendimento
   - viabilidade
-entity_type: atendimento
-entity_name: Marco Antonio Goncalves
-broker_id: 35
-client_id: 11002
-source: Facebook Ads
-status_crm: Em Atendimento
+  - localizacao
+  - valorizacao
+type: entity-profile
+updated: '2026-05-04'
 ---
 # Atendimento — Marco Antonio Goncalves
 
@@ -26,7 +28,7 @@ Cliente está em `Em Atendimento` com interesse relacionado ao **Place+Arbi**, n
 
 Em 2026-05-01, respondeu após a repescagem step 3; o CRM foi corrigido de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; informou “+ Ou - uns 95 mil”; e na última interação respondeu “Apartamento”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
+Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; informou “+ Ou - uns 95 mil”; comentou que a região é valorizada por ficar abaixo do shopping, do anel viário e do novo Parque Una; e na última interação respondeu “Apartamento”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11002
@@ -42,7 +44,9 @@ Lead originado de anúncio relacionado ao empreendimento **Place+Arbi**, da HLTS
 
 Antes das respostas inbound, o cliente estava em silêncio após primeiro contato e repescagens. A última mensagem de repescagem perguntava se a ideia seria mais **morar** ou **investir** no contexto do Place+Arbi.
 
-As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”), insegurança com a viabilidade por idade, referência financeira aproximada de R$ 95 mil e preferência/necessidade vinculada a apartamento. A informação dos R$ 95 mil deve ser tratada como dado de contexto/viabilidade a confirmar na continuidade da conversa, sem assumir sozinho se é entrada disponível, recurso total ou diferença máxima que o cliente aceita.
+As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”), insegurança com a viabilidade por idade, referência financeira aproximada de R$ 95 mil, percepção positiva sobre valorização/localização da região e preferência/necessidade vinculada a apartamento. A informação dos R$ 95 mil deve ser tratada como dado de contexto/viabilidade a confirmar na continuidade da conversa, sem assumir sozinho se é entrada disponível, recurso total ou diferença máxima que o cliente aceita.
+
+A fala sobre shopping, anel viário e Parque Una sugere que o cliente conhece a região e enxerga valor nela. Esse ponto pode ser usado para validar a percepção dele sem prometer valorização ou citar dados não comprovados.
 
 ## Diagnóstico
 ### Necessidade
@@ -59,7 +63,8 @@ Travas e dados atuais:
 - cliente acredita que, pela idade, a compra/financiamento pode ficar inviável;
 - informou valor aproximado de R$ 95 mil no contexto da conversa;
 - ainda não está claro se os R$ 95 mil representam entrada disponível, recurso total, limite de diferença ou outra referência;
-- não há dados confirmados de renda, composição familiar, uso de FGTS, aprovação, idade exata ou formato de compra.
+- não há dados confirmados de renda, composição familiar, uso de FGTS, aprovação, idade exata ou formato de compra;
+- cliente percebe a região como valorizada pela proximidade com shopping, anel viário e Parque Una.
 
 Próxima condução deve validar a preocupação e organizar a informação de viabilidade sem prometer crédito.
 
@@ -168,6 +173,18 @@ Persistência operacional no CRM:
 - resgate ausente;
 - nota CRM registrada com interpretação comercial de referência financeira aproximada para viabilidade.
 
+### 2026-05-04 — Inbound: percepção de valorização/localização
+Cliente respondeu pelo WhatsApp: “Não sei mas aqui é bem valorizado pois está abaixo do shopping anel viário e aquele novo parque una.”
+
+Persistência operacional no CRM:
+- cliente validado como `broker_id=35`;
+- status já estava em `Em Atendimento` e foi preservado;
+- repescagem já estava interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate ausente;
+- nota CRM registrada com interpretação comercial de percepção positiva sobre valorização/localização da região.
+
+Interpretação comercial: o cliente parece enxergar valor na região e pode estar ponderando viabilidade, valorização e momento de troca. A resposta comercial deve validar esse ponto e seguir sem prometer valorização ou crédito.
+
 ### 2026-05-04 — Inbound: preferência/necessidade por apartamento
 Cliente respondeu pelo WhatsApp: “Apartamento”.
 
@@ -182,14 +199,16 @@ Persistência operacional no CRM:
 - Trava principal atual: cliente acredita que a idade pode inviabilizar compra/financiamento.
 - Momento de compra parece futuro, não imediato.
 - Cliente informou aproximadamente R$ 95 mil; confirmar na conversa se é entrada/recurso disponível ou outra referência.
+- Cliente percebe a região como valorizada pela localização; usar como ponto de conexão, sem fazer promessa de valorização.
 - Cliente indicou “Apartamento” como preferência/necessidade de imóvel.
 - Não há dados suficientes para concluir inviabilidade; evitar promessa de crédito e conduzir para avaliação segura.
 
 ## Próximo passo
-Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: acolher a preocupação, confirmar se os R$ 95 mil são entrada/recurso disponível e explicar que isso já ajuda bastante a olhar com mais segurança se existe caminho para apartamento, sem prometer aprovação. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
+Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: validar a leitura dele sobre a região, conectar com a ideia de apartamento/troca futura e organizar a viabilidade com cuidado. Confirmar de forma natural se os R$ 95 mil são entrada/recurso disponível para entender se existe caminho, sem prometer aprovação. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11002-marco-antonio-goncalves.md` conforme governança canônica.
 - Conteúdo consolidado originalmente a partir do documento legado `_agents/reno/clientes/11002-marco-antonio-goncalves.md`; o legado não foi deletado nesta execução.
 - O CRM/FamaChat permanece a fonte de verdade operacional para status, meta_data e notas.
 - A duplicidade de registros com o mesmo telefone em outros brokers (`SLA Cascata`) não foi alterada; a atuação desta rotina foi limitada ao cliente Reno `client_id=11002`, `broker_id=35`.
+- Em 2026-05-04, rotinas silenciosas de inbound apenas persistiram CRM/vault e não enviaram mensagem ao cliente.
