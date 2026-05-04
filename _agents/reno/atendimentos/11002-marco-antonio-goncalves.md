@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11002
-created: '2026-04-30'
-entity_name: Marco Antonio Goncalves
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Marco Antonio Goncalves
+client_id: 11002
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-04-30'
+updated: '2026-05-04'
 tags:
   - reno
   - atendimento
@@ -18,8 +20,9 @@ tags:
   - viabilidade
   - localizacao
   - valorizacao
-type: entity-profile
-updated: '2026-05-04'
+  - apartamento
+  - dois-quartos
+  - terreo
 ---
 # Atendimento — Marco Antonio Goncalves
 
@@ -28,7 +31,7 @@ Cliente está em `Em Atendimento` com interesse relacionado ao **Place+Arbi**, n
 
 Em 2026-05-01, respondeu após a repescagem step 3; o CRM foi corrigido de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; informou “+ Ou - uns 95 mil”; comentou que a região é valorizada por ficar abaixo do shopping, do anel viário e do novo Parque Una; e na última interação respondeu “Apartamento”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
+Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; informou “+ Ou - uns 95 mil”; comentou que a região é valorizada por ficar abaixo do shopping, do anel viário e do novo Parque Una; depois respondeu “Apartamento”; e na última interação especificou “De 2 quartos no térreo”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11002
@@ -37,20 +40,22 @@ Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa
 - Origem: Facebook Ads
 - Telefone/WhatsApp: JID WhatsApp salvo no CRM; telefone mascarado final ****-9186
 - Empreendimento de interesse no CRM: Place+Arbi (`id_empreendimento=67`)
-- Última interação relevante: 2026-05-04 — inbound WhatsApp: “Apartamento”.
+- Última interação relevante: 2026-05-04 — inbound WhatsApp: “De 2 quartos no térreo”.
 
 ## Contexto comercial
 Lead originado de anúncio relacionado ao empreendimento **Place+Arbi**, da HLTS Construtora, no bairro Shopping Park/Zona Sul, Uberlândia. O empreendimento está em lançamento, com entrega prevista para JUN/2027 e plantas de aproximadamente 48m² a 50m².
 
 Antes das respostas inbound, o cliente estava em silêncio após primeiro contato e repescagens. A última mensagem de repescagem perguntava se a ideia seria mais **morar** ou **investir** no contexto do Place+Arbi.
 
-As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”), insegurança com a viabilidade por idade, referência financeira aproximada de R$ 95 mil, percepção positiva sobre valorização/localização da região e preferência/necessidade vinculada a apartamento. A informação dos R$ 95 mil deve ser tratada como dado de contexto/viabilidade a confirmar na continuidade da conversa, sem assumir sozinho se é entrada disponível, recurso total ou diferença máxima que o cliente aceita.
+As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”), insegurança com a viabilidade por idade, referência financeira aproximada de R$ 95 mil, percepção positiva sobre valorização/localização da região, preferência por apartamento e filtro mais específico por **2 quartos no térreo**. A informação dos R$ 95 mil deve ser tratada como dado de contexto/viabilidade a confirmar na continuidade da conversa, sem assumir sozinho se é entrada disponível, recurso total ou diferença máxima que o cliente aceita.
 
 A fala sobre shopping, anel viário e Parque Una sugere que o cliente conhece a região e enxerga valor nela. Esse ponto pode ser usado para validar a percepção dele sem prometer valorização ou citar dados não comprovados.
 
+O novo filtro “2 quartos no térreo” deve orientar a continuidade comercial: antes de perguntar novamente ao cliente, buscar no CRM/ativos disponíveis se há unidade/opção compatível com 2 quartos e térreo no empreendimento ou em alternativa próxima.
+
 ## Diagnóstico
 ### Necessidade
-Indício de interesse em trocar de imóvel no futuro, com foco em apartamento, possivelmente avaliando se o Place+Arbi ou opção semelhante faz sentido para planejamento.
+Indício de interesse em trocar de imóvel no futuro, com foco em apartamento de 2 quartos no térreo, possivelmente avaliando se o Place+Arbi ou opção semelhante faz sentido para planejamento.
 
 ### Momento
 Momento ainda não urgente. Cliente sinalizou “mais para frente”, então a condução deve ser consultiva, sem pressão, ajudando a entender caminhos possíveis.
@@ -195,16 +200,28 @@ Persistência operacional no CRM:
 - resgate ausente;
 - nota CRM registrada indicando interesse/necessidade por apartamento e a necessidade de retomar o contexto recente de viabilidade antes da resposta comercial.
 
+### 2026-05-04 — Inbound: filtro de 2 quartos no térreo
+Cliente respondeu pelo WhatsApp: “De 2 quartos no térreo”.
+
+Persistência operacional no CRM:
+- cliente validado como `broker_id=35`;
+- status já estava em `Em Atendimento` e foi preservado;
+- repescagem já estava interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate ausente;
+- nota CRM registrada com interpretação comercial de preferência por apartamento de 2 quartos no térreo.
+
+Interpretação comercial: a continuidade deve usar “2 quartos no térreo” como filtro de tipologia/andar. Antes de perguntar novamente, o atendimento comercial deve buscar internamente opção/unidade compatível no Place+Arbi ou alternativa segura próxima.
+
 ## Objeções e travas
 - Trava principal atual: cliente acredita que a idade pode inviabilizar compra/financiamento.
 - Momento de compra parece futuro, não imediato.
 - Cliente informou aproximadamente R$ 95 mil; confirmar na conversa se é entrada/recurso disponível ou outra referência.
 - Cliente percebe a região como valorizada pela localização; usar como ponto de conexão, sem fazer promessa de valorização.
-- Cliente indicou “Apartamento” como preferência/necessidade de imóvel.
+- Cliente indicou preferência por apartamento de 2 quartos no térreo.
 - Não há dados suficientes para concluir inviabilidade; evitar promessa de crédito e conduzir para avaliação segura.
 
 ## Próximo passo
-Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: validar a leitura dele sobre a região, conectar com a ideia de apartamento/troca futura e organizar a viabilidade com cuidado. Confirmar de forma natural se os R$ 95 mil são entrada/recurso disponível para entender se existe caminho, sem prometer aprovação. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
+Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: validar a leitura dele sobre a região, considerar o filtro de apartamento de 2 quartos no térreo e organizar a viabilidade com cuidado. Buscar primeiro no CRM/ativos disponíveis se existe opção compatível antes de pedir nova informação ao cliente. Se não houver unidade/opção térrea segura, confirmar com naturalidade se o térreo é indispensável ou se pode avaliar andar baixo/elevador, sem prometer disponibilidade. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11002-marco-antonio-goncalves.md` conforme governança canônica.
