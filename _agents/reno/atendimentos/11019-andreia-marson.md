@@ -2,49 +2,50 @@
 type: entity-profile
 owner: reno
 created: '2026-04-28'
-updated: '2026-05-03'
+updated: '2026-05-04'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - arquivado
 entity_type: atendimento
 entity_name: Andreia Marson
 broker_id: 35
 client_id: 11019
 source: Facebook Ads
-status_crm: Não Respondeu
+status_crm: Arquivado
 ---
 # Atendimento — Andreia Marson
 
 ## Resumo atual
-Cliente do Reno no CRM (`broker_id=35`), status atual `Não Respondeu`, origem Facebook Ads. Interesse vinculado ao empreendimento Union Vista, no bairro Grand Ville, em Uberlândia. Ainda não há resposta real da cliente após o primeiro contato e quatro repescagens tecnicamente enviadas. A repescagem step 4 foi enviada em 2026-05-03 com convite consultivo direto para análise/possível visita na segunda-feira, sem alterar o status CRM.
+Cliente do Reno no CRM (`broker_id=35`), origem Facebook Ads, interesse vinculado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. Não houve resposta real da cliente após o primeiro contato e as cinco repescagens tecnicamente enviadas. A repescagem step 5 foi enviada em 2026-05-04 09:39 -03:00 com encerramento elegante/pausa respeitosa. A branch de repescagem foi encerrada com `step=5` e `stopped_reason=max_steps`, e o cliente foi arquivado automaticamente no FamaChat por regra operacional defensiva.
 
 ## Dados operacionais
 - Cliente ID: 11019
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp confirmado no CRM; JID salvo utilizado para envio, sem expor número completo.
 - Empreendimento vinculado: Union Vista — Grand Ville — Uberlândia/MG
-- Última interação relevante: repescagem step 4 enviada em 2026-05-03 19:32:04 -03:00
+- Última interação relevante: repescagem step 5 enviada em 2026-05-04 09:39 -03:00 e cliente arquivado em seguida.
 
 ## Contexto comercial
-A cliente veio de anúncio relacionado ao Union Vista, empreendimento de apartamentos no Grand Ville, Zona Leste de Uberlândia, com entrega prevista para Jul/2027. Há unidades de 2 quartos, 1 suíte, varanda e 1 vaga, com valores cadastrados a partir de aproximadamente R$ 292 mil. Não há, até o momento, informação declarada sobre necessidade, forma de pagamento, prazo de compra ou se a busca é para morar/investir.
+A cliente veio de anúncio relacionado ao Union Vista, empreendimento de apartamentos no Grand Ville, Zona Leste de Uberlândia, com entrega prevista para Jul/2027. Há unidades de 2 quartos, 1 suíte, varanda e 1 vaga, com valores cadastrados a partir de aproximadamente R$ 292 mil. Não há informação declarada sobre necessidade, forma de pagamento, prazo de compra ou se a busca é para morar/investir.
 
 ## Diagnóstico
 ### Necessidade
 Interesse inicial em imóvel específico, mas sem resposta suficiente para confirmar necessidade residencial, investimento ou perfil familiar.
 
 ### Momento
-Cliente silenciosa desde o primeiro contato. O timing de compra ainda não foi identificado. O step 4 buscou mudar de diagnóstico leve para convite consultivo direto, tentando levar a cliente para uma análise objetiva e possível visita na segunda-feira.
+Cliente permaneceu silenciosa durante toda a régua de primeiro contato + repescagens. O step 4 já havia usado convite consultivo direto para análise/possível visita na segunda-feira; por isso o step 5 mudou para pausa respeitosa e porta aberta, sem insistir em agenda.
 
 ### Decisão
 Sem dados sobre decisores ou influenciadores.
 
 ### Viabilidade
-Sem dados de renda, entrada, financiamento ou capacidade de compra. A mensagem do step 4 abordou entrada, parcelas durante a obra, financiamento e alternativas próximas como pontos de análise, sem prometer aprovação de crédito.
+Sem dados de renda, entrada, financiamento ou capacidade de compra. As repescagens abordaram viabilidade, prazo do lançamento, finalidade da compra e organização do caminho de compra, sem prometer aprovação de crédito.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Primeiro contato enviado
@@ -90,16 +91,30 @@ Mensagem enviada:
 
 Ângulo usado: convite consultivo direto, mudando do diagnóstico morar/investir para organização prática do caminho de compra e possível visita na segunda-feira por ser fim de semana. Registro feito no CRM pela ferramenta `mark_reno_followup_sent`. Próximo `next_run_at`: 2026-05-04 09:10 -03:00.
 
+### 2026-05-04 — Repescagem step 5 enviada e régua encerrada
+Mensagem enviada:
+
+> Andreia, vou pausar por aqui para não ficar te chamando toda hora 🔑
+>
+> Como o Union Vista é um lançamento, faz sentido comparar com calma prazo de entrega, valor e condição antes de tomar qualquer decisão. Se agora não for o momento, tudo bem.
+>
+> Quer que eu deixe esse assunto pausado por enquanto e você me chama quando quiser retomar?
+
+Ângulo usado: encerramento elegante, pausa respeitosa e porta aberta para retomada futura. A mensagem foi substancialmente diferente do step 4: saiu de convite para análise/visita na segunda-feira e passou para permissão de pausa, reconhecendo pesquisa e comparação por prazo/valor/condição. Envio realizado pelo JID salvo no CRM via fallback excepcional do bridge local, pois `send_message` não estava exposto no runtime do cron.
+
+Após o envio, `mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`. O estado foi corrigido pela ferramenta específica `update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-04T09:39:28-03:00` e `stopped_reason=max_steps`. Em seguida, o status foi atualizado defensivamente de `Não Respondeu` para `Arquivado`, porque o cliente ainda estava em `broker_id=35` e sem resposta real registrada.
+
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens steps 1 a 4.
+- Silêncio após primeiro contato e repescagens steps 1 a 5.
 - Falta de contexto declarado sobre prazo, viabilidade e intenção de compra.
 
 ## Próximo passo
-Aguardar resposta. Se a cliente responder, interromper repescagem e seguir atendimento normal do Reno, com atualização de status de `Não Respondeu` para `Em Atendimento` quando aplicável. Se permanecer em silêncio e continuar elegível, o próximo envio será a repescagem step 5 em 2026-05-04 09:10 -03:00, com encerramento elegante/pausa respeitosa e sem repetir convite de agenda.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, interromper qualquer retomada automática da régua encerrada, registrar o inbound no CRM e seguir atendimento normal do Reno por fluxo de qualificação, avaliando eventual reativação manual conforme contexto.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11019-andreia-marson.md`.
 - Existe registro legado em `_agents/reno/clientes/11019-andreia-marson.md`; não foi usado como destino novo para evitar drift de governança.
-- Status CRM não foi alterado pela repescagem step 4, conforme regra operacional: permanece `Não Respondeu` até resposta real da cliente.
-- Envio do step 4 realizado via JID salvo no CRM; telefone completo não exposto no vault.
-- Claim da repescagem foi limpo pela ferramenta `mark_reno_followup_sent` após o envio bem-sucedido.
+- Status CRM alterado para `Arquivado` somente após verificação defensiva de `step=5` e `stopped_reason=max_steps`.
+- Envio do step 5 realizado via JID salvo no CRM; telefone completo não exposto no vault.
+- A branch final da repescagem foi compactada pela ferramenta específica de estado, preservando a mensagem final no CRM e neste documento curado.
+- Observado novamente o pitfall operacional de `mark_reno_followup_sent` no step final: a ferramenta registrou próximo follow-up indevido antes da correção de estado.
