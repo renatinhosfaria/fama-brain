@@ -16,11 +16,12 @@ tags:
   - famachat
   - resgate
   - inbound
+  - preferencia-regiao-leste
 ---
 # Atendimento — Claudia Martins Ferreira
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse no Union Vereda, no Jaraguá. Em 2026-05-04 chegou inbound WhatsApp pedindo informações do Union Vereda. O status já estava em `Em Atendimento` e foi preservado. A régua de Resgate foi interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e a branch de Repescagem também foi desativada por segurança operacional.
+Cliente do Reno (`broker_id=35`) em `Em Atendimento`. Após pedir informações do Union Vereda em 2026-05-04, enviou novo inbound especificando busca por empreendimentos na região leste, até R$ 400 mil, com entrega a partir do meio de 2027. Status já estava em `Em Atendimento` e foi preservado. Resgate e Repescagem já estavam interrompidos por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e foram mantidos inativos.
 
 ## Dados operacionais
 - Cliente ID: 11017
@@ -30,28 +31,31 @@ Cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse no Union Ver
 - Telefone/WhatsApp: final 8029
 - WhatsApp/JID CRM: final 8029
 - Empreendimento vinculado no CRM: Union Vereda (ID 161), Jaraguá, Uberlândia/MG
-- Última interação relevante: 2026-05-04 — inbound WhatsApp pedindo informações do Union Vereda
+- Última interação relevante: 2026-05-04 — inbound WhatsApp com critério de busca: região leste, até R$ 400 mil, entrega a partir do meio de 2027
 - Estado Resgate atual: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`, `last_context_bucket=visita_pendente`
 - Estado Repescagem atual: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
-- Nota CRM da persistência inbound: 16656
+- Nota CRM da persistência inbound anterior: 16656
+- Nota CRM da persistência inbound atual: 16697
 
 ## Contexto comercial
-Interesse associado ao Union Vereda, no bairro Jaraguá, zona Oeste de Uberlândia. Empreendimento com apartamentos de 2 quartos, suíte, varanda/sacada e 1 vaga, com unidades disponíveis a partir de aproximadamente R$ 288.880 conforme CRM, além de lazer e serviços como piscina, academia, espaço gourmet, salão de festas, beach tennis, portaria 24h, elevadores e coworking.
+Interesse original associado ao Union Vereda, no bairro Jaraguá, zona Oeste de Uberlândia. Empreendimento com apartamentos de 2 quartos, suíte, varanda/sacada e 1 vaga, com unidades disponíveis a partir de aproximadamente R$ 288.880 conforme CRM, além de lazer e serviços como piscina, academia, espaço gourmet, salão de festas, beach tennis, portaria 24h, elevadores e coworking.
 
-A sessão individual WhatsApp associada ao número/JID da cliente já indicava que ela pediu planta, demonstrou fit positivo com o perfil do imóvel, perguntou preço e informou que só conseguiria visitar na semana seguinte. O Resgate step 5 retomou esse gancho com CTA para segunda-feira no fim do dia. O inbound de 2026-05-04 mostra reengajamento claro e pedido direto de informações do Union Vereda.
+A sessão individual WhatsApp associada ao número/JID da cliente já indicava que ela pediu planta, demonstrou fit positivo com o perfil do imóvel, perguntou preço e informou que só conseguiria visitar na semana seguinte. O Resgate step 5 retomou esse gancho com CTA para segunda-feira no fim do dia. Em 2026-05-04 houve reengajamento claro: primeiro pedido de informações do Union Vereda e, em seguida, filtro mais específico para empreendimentos na região leste, até R$ 400 mil, com entrega a partir do meio de 2027.
+
+A condução comercial deve respeitar o novo critério declarado: região leste e entrega a partir de meados de 2027. O Union Vereda segue como interesse original, mas pode não ser o melhor encaixe se a cliente estiver corrigindo região/prazo. Antes de apresentar opções, usar CRM para selecionar empreendimentos compatíveis e não insistir automaticamente no Union Vereda se o filtro novo for prioridade.
 
 ## Diagnóstico
 ### Necessidade
-Cliente quer receber informações sobre o Union Vereda. Há interesse anterior em planta/perfil de 2 quartos com suíte e varanda.
+Cliente quer opções de empreendimentos na região leste, dentro de teto aproximado de R$ 400 mil, com entrega a partir do meio de 2027. Há interesse anterior em planta/perfil de 2 quartos com suíte e varanda.
 
 ### Momento
-Cliente reengajou após Resgate step 5. O momento agora é de resposta comercial ativa, com oportunidade de entregar informações curtas e conduzir para visita presencial se houver novo sinal positivo.
+Cliente reengajou após Resgate step 5 e refinou o critério de busca. Momento é de resposta comercial ativa: entregar uma seleção curta e segura, sem catálogo extenso, e conduzir para visita presencial se houver sinal positivo.
 
 ### Decisão
 Sem informação confiável sobre decisores adicionais.
 
 ### Viabilidade
-Cliente já perguntou valor em interação anterior. Foi usado valor inicial seguro do CRM, com ressalva de depender da unidade, e entrada parcelada pela construtora. Ainda não houve diagnóstico financeiro completo; eventual simulação segura deve ser conduzida presencialmente, sem promessa de aprovação.
+A cliente estabeleceu teto de valor de até R$ 400 mil. Ainda não há diagnóstico financeiro completo; eventual simulação segura deve ser conduzida presencialmente, sem promessa de aprovação. Se citar valores, usar dados atuais do CRM e ressalvar dependência de unidade/condição.
 
 ## Histórico curado de interações
 ### 2026-04-27 — Falha técnica anterior
@@ -75,20 +79,24 @@ Mensagem enviada: "Claudia, como você tinha falado que só conseguiria ver isso
 Estado após envio na época: `step=5`, `last_context_bucket=visita_pendente`, `next_run_at=2026-05-07T18:30:42-03:00`, `stopped_reason=null`. Nota CRM: 16616. Message ID WhatsApp: `3EB047B5BF6967BB68677C`.
 
 ### 2026-05-04 — Inbound pedindo informações do Union Vereda
-Cliente respondeu pelo WhatsApp: "Me mande as informações do union vereda". CRM confirmou cliente 11017, `broker_id=35`, status já em `Em Atendimento`. Não houve alteração de status. Resgate foi interrompido com `stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`; Repescagem também foi desativada por segurança operacional. Nota CRM criada: 16656. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
+Cliente respondeu pelo WhatsApp pedindo informações do Union Vereda. CRM confirmou cliente 11017, `broker_id=35`, status já em `Em Atendimento`. Não houve alteração de status. Resgate foi interrompido com `stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`; Repescagem também foi desativada por segurança operacional. Nota CRM criada: 16656. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
+
+### 2026-05-04 — Inbound com critério de busca na região leste
+Cliente respondeu pelo WhatsApp informando interesse em empreendimentos na região leste, até R$ 400 mil, com entrega a partir do meio de 2027. CRM confirmou cliente 11017, `broker_id=35`, status já em `Em Atendimento`; status preservado. Resgate e Repescagem já estavam inativos por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e foram mantidos assim. Nota CRM criada: 16697. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
 
 ## Objeções e travas
 - Trava principal anterior: visita presencial ainda não confirmada após convite.
 - Limitação declarada anteriormente: cliente disse que só conseguiria na semana seguinte.
-- Viabilidade ainda aberta: cliente perguntou valor, mas não há diagnóstico financeiro completo.
+- Novo filtro relevante: região leste, até R$ 400 mil, entrega a partir do meio de 2027.
+- Viabilidade ainda aberta: teto de valor declarado, mas sem diagnóstico financeiro completo.
 - Lacuna operacional: notas CRM de 11017 não registram todo o conteúdo inbound antigo; a sessão individual WhatsApp complementa o contexto. Há homônima Claudia em outro client_id; não misturar históricos sem validar telefone/JID/client_id.
 
 ## Próximo passo
-Na resposta comercial normal pelo WhatsApp, reconstruir o contexto da sessão e atender o pedido: enviar informações curtas e úteis do Union Vereda, sem despejar catálogo, e conduzir para próximo passo presencial se houver sinal positivo. Não reativar Resgate/Repescagem antes de novo outbound normal do Reno e novo silêncio.
+Na resposta comercial normal pelo WhatsApp, reconstruir o contexto da sessão e atender o novo filtro: buscar no CRM empreendimentos da região leste até R$ 400 mil com entrega a partir de meados de 2027, apresentar 1 ou 2 opções seguras no máximo, explicar por que encaixam e perguntar se o perfil agrada. Se houver sinal positivo, conduzir para visita presencial na Fama. Não reativar Resgate/Repescagem antes de novo outbound normal do Reno e novo silêncio.
 
 ## Observações operacionais
 - CRM/FamaChat permanece fonte operacional de verdade para status, broker, visitas e agendamentos.
 - Persistência inbound executada em 2026-05-04 sem envio ao cliente.
 - Status preservado em `Em Atendimento`; nenhuma regressão ou avanço artificial realizado.
 - Resgate e Repescagem estão com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.
-- Identificação tratada com cautela por haver LID/phone candidate sem match exato; prevaleceu o CRM validado para client_id 11017, broker_id 35, JID/telefone final 8029, histórico e empreendimento Union Vereda.
+- Identificação tratada com cautela por haver LID/phone candidate sem match exato; prevaleceu o CRM validado para client_id 11017, broker_id 35, JID/telefone final 8029, histórico de mesma sessão e atendimento já documentado.
