@@ -23,6 +23,8 @@ tags:
   - apartamento
   - dois-quartos
   - terreo
+  - vaga-garagem
+  - cobertura
 ---
 # Atendimento — Marco Antonio Goncalves
 
@@ -31,7 +33,7 @@ Cliente está em `Em Atendimento` com interesse relacionado ao **Place+Arbi**, n
 
 Em 2026-05-01, respondeu após a repescagem step 3; o CRM foi corrigido de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; informou “+ Ou - uns 95 mil”; comentou que a região é valorizada por ficar abaixo do shopping, do anel viário e do novo Parque Una; depois respondeu “Apartamento”; e na última interação especificou “De 2 quartos no térreo”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
+Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; informou “+ Ou - uns 95 mil”; comentou que a região é valorizada por ficar abaixo do shopping, do anel viário e do novo Parque Una; depois respondeu “Apartamento”; especificou “De 2 quartos no térreo”; e, na interação mais recente, respondeu “Uma vaga e foi feito cobertura”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11002
@@ -40,7 +42,7 @@ Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa
 - Origem: Facebook Ads
 - Telefone/WhatsApp: JID WhatsApp salvo no CRM; telefone mascarado final ****-9186
 - Empreendimento de interesse no CRM: Place+Arbi (`id_empreendimento=67`)
-- Última interação relevante: 2026-05-04 — inbound WhatsApp: “De 2 quartos no térreo”.
+- Última interação relevante: 2026-05-04 — inbound WhatsApp: “Uma vaga e foi feito cobertura”.
 
 ## Contexto comercial
 Lead originado de anúncio relacionado ao empreendimento **Place+Arbi**, da HLTS Construtora, no bairro Shopping Park/Zona Sul, Uberlândia. O empreendimento está em lançamento, com entrega prevista para JUN/2027 e plantas de aproximadamente 48m² a 50m².
@@ -51,11 +53,13 @@ As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para fren
 
 A fala sobre shopping, anel viário e Parque Una sugere que o cliente conhece a região e enxerga valor nela. Esse ponto pode ser usado para validar a percepção dele sem prometer valorização ou citar dados não comprovados.
 
-O novo filtro “2 quartos no térreo” deve orientar a continuidade comercial: antes de perguntar novamente ao cliente, buscar no CRM/ativos disponíveis se há unidade/opção compatível com 2 quartos e térreo no empreendimento ou em alternativa próxima.
+O filtro “2 quartos no térreo” deve orientar a continuidade comercial: antes de perguntar novamente ao cliente, buscar no CRM/ativos disponíveis se há unidade/opção compatível com 2 quartos e térreo no empreendimento ou em alternativa próxima.
+
+A resposta mais recente (“Uma vaga e foi feito cobertura”) menciona **uma vaga** e **cobertura**, mas o sentido exato depende do contexto imediato da conversa. Pode ser uma confirmação/observação sobre característica de imóvel, unidade, garagem ou alternativa discutida; não deve ser interpretada isoladamente sem reconstruir a sessão WhatsApp antes da resposta comercial.
 
 ## Diagnóstico
 ### Necessidade
-Indício de interesse em trocar de imóvel no futuro, com foco em apartamento de 2 quartos no térreo, possivelmente avaliando se o Place+Arbi ou opção semelhante faz sentido para planejamento.
+Indício de interesse em trocar de imóvel no futuro, com foco em apartamento de 2 quartos no térreo e possível atenção a vaga de garagem/cobertura conforme a conversa recente. Ainda é necessário reconstruir o contexto da última resposta antes de assumir se “cobertura” é requisito, característica de unidade ou correção do cliente.
 
 ### Momento
 Momento ainda não urgente. Cliente sinalizou “mais para frente”, então a condução deve ser consultiva, sem pressão, ajudando a entender caminhos possíveis.
@@ -212,16 +216,29 @@ Persistência operacional no CRM:
 
 Interpretação comercial: a continuidade deve usar “2 quartos no térreo” como filtro de tipologia/andar. Antes de perguntar novamente, o atendimento comercial deve buscar internamente opção/unidade compatível no Place+Arbi ou alternativa segura próxima.
 
+### 2026-05-04 — Inbound: uma vaga/cobertura
+Cliente respondeu pelo WhatsApp: “Uma vaga e foi feito cobertura”.
+
+Persistência operacional no CRM:
+- cliente validado como `broker_id=35`;
+- status já estava em `Em Atendimento` e foi preservado;
+- repescagem já estava interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate ausente;
+- nota CRM registrada com interpretação cautelosa sobre menção a uma vaga e cobertura.
+
+Interpretação comercial: a frase é ambígua isoladamente. Antes de responder, reconstruir a sessão WhatsApp para entender se o cliente está confirmando uma unidade com uma vaga, perguntando/afirmando sobre cobertura, ou corrigindo uma característica do imóvel.
+
 ## Objeções e travas
 - Trava principal atual: cliente acredita que a idade pode inviabilizar compra/financiamento.
 - Momento de compra parece futuro, não imediato.
 - Cliente informou aproximadamente R$ 95 mil; confirmar na conversa se é entrada/recurso disponível ou outra referência.
 - Cliente percebe a região como valorizada pela localização; usar como ponto de conexão, sem fazer promessa de valorização.
 - Cliente indicou preferência por apartamento de 2 quartos no térreo.
+- Cliente mencionou “uma vaga” e “cobertura”; interpretar somente após reconstruir o contexto imediato da conversa.
 - Não há dados suficientes para concluir inviabilidade; evitar promessa de crédito e conduzir para avaliação segura.
 
 ## Próximo passo
-Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: validar a leitura dele sobre a região, considerar o filtro de apartamento de 2 quartos no térreo e organizar a viabilidade com cuidado. Buscar primeiro no CRM/ativos disponíveis se existe opção compatível antes de pedir nova informação ao cliente. Se não houver unidade/opção térrea segura, confirmar com naturalidade se o térreo é indispensável ou se pode avaliar andar baixo/elevador, sem prometer disponibilidade. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
+Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: validar a leitura dele sobre a região, considerar o filtro de apartamento de 2 quartos no térreo e a menção a uma vaga/cobertura, e organizar a viabilidade com cuidado. Buscar primeiro no CRM/ativos disponíveis se existe opção compatível no Place+Arbi ou alternativa segura antes de pedir nova informação ao cliente. Se a mensagem “Uma vaga e foi feito cobertura” estiver ligada a uma característica de unidade, confirmar de forma natural sem inventar disponibilidade. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11002-marco-antonio-goncalves.md` conforme governança canônica.
