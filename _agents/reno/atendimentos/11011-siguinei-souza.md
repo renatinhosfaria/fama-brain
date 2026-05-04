@@ -5,51 +5,53 @@ entity_type: atendimento
 entity_name: Siguinei Souza
 client_id: 11011
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-04'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
-  - nao-respondeu
+  - arquivado
+  - max-steps
   - place-arbi
   - shopping-park
 ---
 # Atendimento — Siguinei Souza
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) permanece em `Não Respondeu`. Já recebeu contato inicial sobre o Place+Arbi, reenvio inicial e quatro repescagens. A repescagem step 4 foi enviada em 2026-05-03 com convite consultivo direto: organizar a análise do lançamento, forma de compra e alternativas próximas, com CTA preferencial para conversa presencial na Fama na segunda-feira.
+Cliente do Reno (`broker_id=35`) foi arquivado automaticamente em 2026-05-04 após conclusão da régua de 5 repescagens sem resposta real. A repescagem step 5 foi enviada via WhatsApp com encerramento elegante e porta aberta, sem repetir convite de agenda/visita. A branch `reno_followup.repescagem` foi corrigida para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps` antes do arquivamento defensivo.
 
 ## Dados operacionais
 - Cliente ID: 11011
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
-- Telefone/WhatsApp: WhatsApp CRM disponível; contato via JID salvo
+- Cliente original de contexto: 10922 (Facebook Ads, mesmo telefone/empreendimento; usado apenas como contexto consultivo)
+- Telefone/WhatsApp: WhatsApp CRM disponível; envio pelo JID salvo, sem expor telefone completo
 - Empreendimento/contexto: Place+Arbi, Shopping Park, Uberlândia
-- Última interação relevante: 2026-05-03 — Repescagem step 4 enviada por WhatsApp
+- Última interação relevante: 2026-05-04 14:57 BRT — Repescagem step 5 enviada e régua encerrada
 
 ## Contexto comercial
-O interesse operacional identificado é no empreendimento Place+Arbi, na região do Shopping Park. O empreendimento está cadastrado como lançamento, com entrega prevista para JUN/2027, apartamentos de 48m² a 50m² e valores a partir da faixa de R$ 221 mil. Não há resposta real do cliente nem informações adicionais confirmadas sobre finalidade de compra, orçamento, financiamento, prazo desejado ou região alternativa.
+O interesse operacional identificado é no empreendimento Place+Arbi, na região do Shopping Park. O empreendimento está cadastrado como lançamento, com entrega prevista para JUN/2027, apartamentos de 48m² a 50m² e valores a partir da faixa de R$ 221 mil. Não houve resposta real do cliente nem confirmação de finalidade de compra, orçamento, financiamento, prazo desejado ou região alternativa.
 
 O cliente veio por SLA Cascata a partir do cliente original 10922, do Facebook Ads, com o mesmo contexto de empreendimento. O cliente original foi usado apenas como contexto consultivo; a entidade operacional do Reno é o cliente 11011.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não confirmada. O contexto aponta interesse em imóvel específico, mas sem clareza se busca moradia, investimento ou comparação de opções.
+Não confirmada. O contexto aponta interesse em imóvel específico, mas sem clareza se a busca era moradia, investimento ou comparação de oportunidade.
 
 ### Momento
-Indefinido. Como o imóvel citado é lançamento com entrega futura, o prazo de entrega foi usado no step 2. No step 3, a abordagem buscou um critério simples de decisão: manter foco na região do Shopping Park ou priorizar melhor condição de compra. No step 4, o foco mudou para uma análise consultiva mais direta, sem despejar imóveis.
+Indefinido. Como o imóvel citado é lançamento com entrega futura, a régua testou diferentes ângulos: finalidade da compra, prazo/entrada/parcela, prioridade entre região e condição, convite consultivo para organizar análise e, no step final, pausa respeitosa com porta aberta.
 
 ### Decisão
 Não há dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Sem dados de renda, entrada ou forma de pagamento. A abordagem evita prometer crédito e tenta abrir conversa sobre organização da compra, alternativas e possível atendimento presencial.
+Sem dados de renda, entrada ou forma de pagamento. A abordagem evitou promessa de crédito e priorizou organização de compra, comparação de alternativas e viabilidade consultiva.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno enviado
@@ -76,7 +78,7 @@ Você está buscando mais para morar ou para investir?
 Registro CRM: envio registrado via `mark_reno_followup_sent`.
 
 ### 2026-04-30 — Repescagem step 2 enviada
-Ângulo: evitar caminho errado usando prazo de entrega e viabilidade inicial. A mensagem mudou o foco em relação ao step 1: saiu de morar/investir e encaixe geral do imóvel para o impacto prático de ser lançamento com entrega em 2027 e a necessidade de checar prazo, entrada e parcela.
+Ângulo: evitar caminho errado usando prazo de entrega e viabilidade inicial. A mensagem saiu de morar/investir e encaixe geral do imóvel para o impacto prático de ser lançamento com entrega em 2027 e a necessidade de checar prazo, entrada e parcela.
 
 Mensagem enviada:
 
@@ -91,7 +93,7 @@ Posso fazer uma leitura rápida para ver se **prazo, entrada e parcela** ficam d
 Registro CRM: envio registrado via `mark_reno_followup_sent`.
 
 ### 2026-05-02 — Repescagem step 3 enviada
-Ângulo: diagnóstico leve por critério de decisão. A mensagem mudou o foco em relação ao step 2: deixou de insistir em prazo/entrada/parcela e abriu uma escolha simples entre prioridade de localização no Shopping Park e melhor condição de compra, permitindo comparar alternativas sem despejar imóveis.
+Ângulo: diagnóstico leve por critério de decisão. A mensagem deixou de insistir em prazo/entrada/parcela e abriu escolha simples entre prioridade de localização no Shopping Park e melhor condição de compra.
 
 Mensagem enviada:
 
@@ -108,7 +110,7 @@ Para eu te orientar melhor: hoje pesa mais para você **ficar nessa região** ou
 Registro CRM: envio registrado via `mark_reno_followup_sent`.
 
 ### 2026-05-03 — Repescagem step 4 enviada
-Ângulo: convite consultivo direto. A mensagem mudou o foco em relação ao step 3: saiu da pergunta de critério principal entre região e condição de compra para uma proposta de organizar uma análise prática do lançamento, forma de compra e alternativas próximas. Por ser domingo, o CTA levou a possível conversa presencial para segunda-feira.
+Ângulo: convite consultivo direto. A mensagem saiu da pergunta de critério principal entre região e condição de compra para uma proposta de organizar uma análise prática do lançamento, forma de compra e alternativas próximas. Por ser domingo, o CTA levou a possível conversa presencial para segunda-feira.
 
 Mensagem enviada:
 
@@ -124,18 +126,35 @@ Quer que eu organize essa análise e veja um horário na segunda para você conv
 
 Registro CRM: envio registrado via `mark_reno_followup_sent` em 2026-05-03T15:45:33.658-03:00.
 
-Próximo `next_run_at`: 2026-05-04T14:20:00-03:00.
+### 2026-05-04 — Repescagem step 5 enviada e cliente arquivado
+Ângulo: encerramento elegante / pausa respeitosa. Como o step 4 já havia usado convite consultivo com possível conversa presencial na segunda-feira, o step 5 não repetiu agenda nem visita. A abordagem mudou para reconhecer pesquisa/comparação sobre o lançamento e deixar porta aberta para retomada futura.
+
+Mensagem enviada:
+
+```text
+Siguinei, vou pausar por aqui, combinado? 🏡
+
+Como você olhou o Place+Arbi no Shopping Park, pode ser que esteja só pesquisando e comparando com calma. Nessa fase, vale evitar ficar preso a um lançamento antes de entender **prazo, condição e perfil do imóvel** em relação a outras opções.
+
+Se fizer sentido retomar depois, consigo te ajudar a comparar isso de forma **bem objetiva**.
+
+Posso deixar você à vontade e você me chama quando quiser olhar com calma?
+```
+
+Registro operacional: envio técnico bem-sucedido pelo bridge local do WhatsApp na porta 3000 usando o JID salvo no CRM, porque `send_message` não estava exposto no runtime do cron. `mark_reno_followup_sent` registrou o envio, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido pela tool específica `update_reno_followup_state` para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps` antes do arquivamento defensivo.
+
+Arquivamento: cliente atualizado de `Não Respondeu` para `Arquivado` com condição defensiva por `id`, `broker_id=35`, status atual e branch final `max_steps`. Nota CRM de arquivamento registrada em 2026-05-04.
 
 ## Objeções e travas
-- Silêncio após contato inicial, reenvio e repescagens steps 1, 2, 3 e 4.
-- Falta de informação sobre finalidade, prazo, região prioritária e viabilidade financeira impede recomendação consultiva mais precisa.
-- Step 4 já usou convite consultivo com possível conversa presencial na segunda-feira; se ainda não houver resposta, o step 5 deve parar de insistir em agenda e mudar para encerramento elegante com porta aberta.
+- Silêncio após contato inicial, reenvio e repescagens steps 1 a 5.
+- Falta de informação sobre finalidade, prazo, região prioritária e viabilidade financeira impediu recomendação consultiva mais precisa.
+- Régua automática encerrada por `max_steps`; não há nova ação automática prevista enquanto não houver resposta ou reativação humana.
 
 ## Próximo passo
-Aguardar resposta do cliente até o próximo vencimento da fila. Se permanecer em silêncio, seguir para repescagem step 5 em 2026-05-04T14:20:00-03:00, com encerramento elegante e porta aberta, sem repetir convite de agenda/visita. Se houver resposta real, parar repescagem, mover para atendimento normal do Reno e atualizar o status operacional quando aplicável.
+Sem nova ação automática de repescagem. Se o cliente responder depois do arquivamento, reavaliar atendimento no CRM, registrar inbound e seguir por fluxo normal do Reno/qualificação, sem retomar a régua de repescagem automaticamente.
 
 ## Observações operacionais
-- Cliente continua elegível apenas enquanto permanecer `broker_id=35`, `status='Não Respondeu'`, `repescagem.enabled=true`, `stopped_reason=null` e `next_run_at` vencido.
-- WhatsApp enviado pelo JID salvo no CRM.
-- Não houve alteração de status durante a repescagem step 4; status permaneceu `Não Respondeu`.
-- Estado persistido após o envio: `step=4`, `enabled=true`, `stopped_reason=null`, `claim_expires_at=null`, `next_run_at=2026-05-04T14:20:00-03:00`.
+- Cliente estava elegível no momento do envio: `broker_id=35`, `status='Não Respondeu'`, branch `repescagem.enabled=true`, `stopped_reason=null`, `step=4` e `next_run_at=2026-05-04T14:20:00-03:00` vencido.
+- Reserva exclusiva criada na branch de repescagem antes do envio; `claim_expires_at` foi limpo após `mark_reno_followup_sent`.
+- A correção final compactou a branch `reno_followup.repescagem`, removendo campos auxiliares como `last_message` e `entry_shift`; a mensagem final e contexto foram preservados na nota CRM e neste documento oficial.
+- Não há evidência de resposta real do cliente no próprio registro operacional até o arquivamento.
