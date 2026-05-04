@@ -5,50 +5,51 @@ entity_type: atendimento
 entity_name: Nayara Ferreira
 client_id: 10966
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-04'
 tags:
   - reno
   - atendimento
   - repescagem
   - whatsapp
   - famachat
-  - nao-respondeu
+  - arquivado
+  - max-steps
 ---
 # Atendimento — Nayara Ferreira
 
 ## Resumo atual
-Cliente sob responsabilidade do Reno (`broker_id=35`), em status CRM **Não Respondeu**, sem resposta real registrada após primeiro contato e repescagens anteriores. Em 2026-05-03 foi enviada a repescagem **step 4**, com convite consultivo direto para organizar caminho de compra do Union Vista, comparando lançamento com alternativas e encaminhando uma análise/possível visita na Fama para segunda-feira.
+Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de repescagem concluída em **2026-05-04**. A repescagem **step 5** foi enviada com encerramento elegante, sem repetir convite de agenda/análise da step 4. Após o envio, o ramo `reno_followup.repescagem` foi encerrado com `step=5` e `stopped_reason=max_steps`; como o cliente ainda estava exatamente em **Não Respondeu**, o status foi atualizado defensivamente para **Arquivado**.
 
 ## Dados operacionais
 - Cliente ID: 10966
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata
 - Cliente original da cascata: 10885
 - Telefone/WhatsApp: WhatsApp disponível no CRM; JID salvo usado no envio
 - Empreendimento relacionado: Union Vista (`id_empreendimento=22`), Grand Ville, Uberlândia
-- Última interação relevante: 2026-05-03T11:57:47.979-03:00 — repescagem step 4 enviada via WhatsApp
+- Última interação relevante: 2026-05-04T14:27:26.316-03:00 — repescagem step 5 enviada via WhatsApp e régua encerrada
 
 ## Contexto comercial
-Cliente veio por SLA Cascata após interesse original via Facebook Ads no empreendimento **Union Vista**, no bairro **Grand Ville**, em Uberlândia. O empreendimento é um lançamento com entrega prevista para **jul/2027**, apartamentos de 2 quartos, lazer de condomínio e opções registradas no CRM a partir de cerca de R$ 292 mil. No cliente original, havia sinal de que ela **começou a procurar agora** e compraria **sozinha**, mas ainda não há resposta direta da cliente nem dados confirmados sobre objetivo de compra, renda, entrada, prazo, intenção de morar/investir ou decisão familiar.
+Cliente veio por SLA Cascata após interesse original via Facebook Ads no empreendimento **Union Vista**, no bairro **Grand Ville**, em Uberlândia. O empreendimento é um lançamento com entrega prevista para **jul/2027**, apartamentos de 2 quartos, lazer de condomínio e opções registradas no CRM a partir de cerca de R$ 292 mil. No cliente original, havia sinal de que ela **começou a procurar agora** e compraria **sozinha**, mas não houve resposta direta da cliente nem confirmação sobre objetivo de compra, renda, entrada, prazo, intenção de morar/investir ou decisão familiar.
 
-O primeiro contato e reenvio inicial mencionaram o Union Vista e perguntaram se a região combinava com a busca. A repescagem step 1 explorou se o imóvel fazia sentido para o momento e perguntou se a busca era para morar ou investimento. A step 2 mudou o ângulo para **viabilidade prática**, destacando entrada, parcela e prazo de entrega. A step 3 mudou novamente a abordagem para **diagnóstico de prazo**, usando o fato de ser lançamento para perguntar se ela consegue se programar até 2027 ou precisa resolver mais rápido. A step 4 avançou para **convite consultivo direto**, evitando mandar mais anúncio e propondo organizar o caminho de compra, comparar com alternativas de entrega mais rápida e olhar financiamento com pé no chão.
+O primeiro contato e reenvio inicial mencionaram o Union Vista e perguntaram se a região combinava com a busca. A repescagem step 1 explorou se o imóvel fazia sentido para o momento e perguntou se a busca era para morar ou investimento. A step 2 mudou o ângulo para **viabilidade prática**, destacando entrada, parcela e prazo de entrega. A step 3 mudou novamente para **diagnóstico de prazo**, perguntando se ela conseguiria se programar até 2027 ou se precisava resolver mais rápido. A step 4 avançou para **convite consultivo direto**, propondo organizar o caminho de compra, comparar com alternativas de entrega mais rápida e olhar financiamento com pé no chão. A step 5 encerrou sem insistir em agenda, reconhecendo que a decisão pode depender de comparação por prazo, condição e necessidade de entrega.
 
 ## Diagnóstico
 ### Necessidade
-Interesse inicial vinculado a imóvel específico, mas necessidade real ainda não confirmada. A dúvida atual é se o Union Vista é oportunidade compatível com o timing da cliente ou se outro caminho de compra faria mais sentido.
+Interesse inicial vinculado ao Union Vista, mas necessidade real permaneceu não confirmada. A hipótese comercial era avaliar se um lançamento no Grand Ville faria sentido ou se outro caminho de compra seria mais adequado.
 
 ### Momento
-Cliente permanece silenciosa; o histórico original sugere início de busca, mas ainda não há confirmação se ela quer se programar com calma para o lançamento ou precisa mudar em prazo curto. Como a step 4 foi enviada em domingo, o convite foi direcionado para análise/possível visita na segunda-feira.
+Cliente permaneceu silenciosa durante todo o ciclo do Reno. O histórico original sugeria início de busca; sem resposta, não foi possível confirmar urgência, prazo de mudança ou abertura para lançamento com entrega futura.
 
 ### Decisão
-Sem dados confirmados sobre quem decide. Registro original sugere compra sozinha, ainda sem validação em conversa direta.
+Sem dados confirmados sobre quem decide. Registro original sugeria compra sozinha, ainda sem validação em conversa direta.
 
 ### Viabilidade
-Ainda não há dados de renda, entrada, financiamento ou capacidade de compra. A abordagem correta é investigar viabilidade sem prometer aprovação de crédito e sem insistir em unidade antes de confirmar contexto.
+Não houve dados de renda, entrada, financiamento ou capacidade de compra. Nenhuma promessa de crédito foi feita; as mensagens mantiveram foco em leitura consultiva e comparação de caminhos.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato inicial enviado
@@ -109,19 +110,34 @@ Amanhã, na segunda, posso te receber na Fama para fazer essa análise inicial e
 Você toparia essa análise comigo na segunda?
 ```
 
+### 2026-05-04 — Repescagem step 5 enviada e régua encerrada
+Mensagem final enviada com encerramento elegante. A abordagem mudou em relação ao step 4: não repetiu convite de visita/análise, pausou a insistência e deixou porta aberta para retomada futura, preservando o contexto do Union Vista como lançamento que precisa ser comparado por prazo, condição e entrega.
+
+Mensagem enviada:
+```text
+Nayara, vou pausar meu contato por aqui pra respeitar seu momento 🏡
+
+O Union Vista pode fazer sentido para quem está comparando um lançamento com calma, mas essa decisão depende muito de prazo, condição de compra e se você prefere esperar a entrega ou buscar algo mais imediato.
+
+Se em algum momento quiser retomar, eu te ajudo a comparar isso de forma **clara e sem pressa**.
+
+Posso deixar em aberto e você me chama quando fizer sentido?
+```
+
+Após o envio, o estado da repescagem foi corrigido para finalização: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`. Em seguida, o status foi atualizado para **Arquivado** com condição defensiva no CRM, porque o cliente ainda estava exatamente em `Não Respondeu`.
+
 ## Objeções e travas
-- Silêncio após primeiro contato, reenvio inicial e repescagens steps 1 a 4.
+- Silêncio após primeiro contato, reenvio inicial e repescagens steps 1 a 5.
 - Falta de contexto confirmado sobre objetivo, timing e viabilidade financeira.
-- Possível necessidade de clarear se Union Vista é oportunidade real ou apenas interesse inicial de anúncio.
+- Possível interesse apenas inicial de anúncio, sem avanço para diagnóstico.
 
 ## Próximo passo
-Se não houver resposta, próxima repescagem elegível deve seguir para **step 5 — encerramento elegante**, prevista para `2026-05-04T14:20:00-03:00`. A próxima abordagem deve pausar a régua com porta aberta, sem repetir convite de visita/análise da step 4.
-
-Se a cliente responder, parar repescagem, manter a conversa em fluxo de atendimento consultivo e alterar status de **Não Respondeu** para **Em Atendimento** somente se ainda estiver exatamente nesse status.
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reabrir atendimento no fluxo consultivo normal do Reno, avaliar mudança de status conforme regra operacional vigente e retomar a conversa a partir do contexto do Union Vista/Grand Ville, comparando prazo de entrega, condição de compra e alternativas quando fizer sentido.
 
 ## Observações operacionais
 - Documento mantido no caminho determinístico oficial `_agents/reno/atendimentos/10966-nayara-ferreira.md`.
 - CRM/FamaChat permanece como fonte de verdade operacional.
-- Repescagem step 4 enviada em 2026-05-03T11:57:47.979-03:00 para o JID salvo no CRM.
-- Estado verificado no CRM após `mark_reno_followup_sent`: `step=4`, `enabled=true`, `last_sent_at=2026-05-03T11:57:47.979-03:00`, `next_run_at=2026-05-04T14:20:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
-- Status do cliente não foi alterado durante a repescagem, conforme política do fluxo para steps 1 a 4.
+- Envio do step 5 realizado pelo fallback excepcional do bridge local de WhatsApp, pois `send_message` não estava exposto no runtime do cron; bridge local estava saudável e conectado.
+- `mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`. O estado final foi corrigido com `update_reno_followup_state` antes do arquivamento defensivo.
+- A correção de estado compactou a branch final de `repescagem`; a mensagem final fica preservada na nota CRM automática e neste documento curado.
+- Nota CRM de arquivamento registrada em 2026-05-04 informando conclusão da régua de 5 repescagens sem resposta real e arquivamento automático.
