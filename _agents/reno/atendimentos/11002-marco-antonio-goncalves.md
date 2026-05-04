@@ -26,7 +26,7 @@ Cliente está em `Em Atendimento` com interesse relacionado ao **Place+Arbi**, n
 
 Em 2026-05-01, respondeu após a repescagem step 3; o CRM foi corrigido de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; e na última interação informou “+ Ou - uns 95 mil.” Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
+Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; informou “+ Ou - uns 95 mil”; e na última interação respondeu “Apartamento”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11002
@@ -35,18 +35,18 @@ Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa
 - Origem: Facebook Ads
 - Telefone/WhatsApp: JID WhatsApp salvo no CRM; telefone mascarado final ****-9186
 - Empreendimento de interesse no CRM: Place+Arbi (`id_empreendimento=67`)
-- Última interação relevante: 2026-05-04 — inbound WhatsApp com valor aproximado informado: “+ Ou - uns 95 mil.”
+- Última interação relevante: 2026-05-04 — inbound WhatsApp: “Apartamento”.
 
 ## Contexto comercial
 Lead originado de anúncio relacionado ao empreendimento **Place+Arbi**, da HLTS Construtora, no bairro Shopping Park/Zona Sul, Uberlândia. O empreendimento está em lançamento, com entrega prevista para JUN/2027 e plantas de aproximadamente 48m² a 50m².
 
 Antes das respostas inbound, o cliente estava em silêncio após primeiro contato e repescagens. A última mensagem de repescagem perguntava se a ideia seria mais **morar** ou **investir** no contexto do Place+Arbi.
 
-As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”), insegurança com a viabilidade por idade e, agora, referência financeira aproximada de R$ 95 mil. Essa informação deve ser tratada como dado de contexto/viabilidade a confirmar na continuidade da conversa, sem assumir sozinho se é entrada disponível, recurso total ou diferença máxima que o cliente aceita.
+As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”), insegurança com a viabilidade por idade, referência financeira aproximada de R$ 95 mil e preferência/necessidade vinculada a apartamento. A informação dos R$ 95 mil deve ser tratada como dado de contexto/viabilidade a confirmar na continuidade da conversa, sem assumir sozinho se é entrada disponível, recurso total ou diferença máxima que o cliente aceita.
 
 ## Diagnóstico
 ### Necessidade
-Indício de interesse em trocar de imóvel no futuro, possivelmente avaliando se o Place+Arbi ou opção semelhante faz sentido para planejamento.
+Indício de interesse em trocar de imóvel no futuro, com foco em apartamento, possivelmente avaliando se o Place+Arbi ou opção semelhante faz sentido para planejamento.
 
 ### Momento
 Momento ainda não urgente. Cliente sinalizou “mais para frente”, então a condução deve ser consultiva, sem pressão, ajudando a entender caminhos possíveis.
@@ -168,14 +168,25 @@ Persistência operacional no CRM:
 - resgate ausente;
 - nota CRM registrada com interpretação comercial de referência financeira aproximada para viabilidade.
 
+### 2026-05-04 — Inbound: preferência/necessidade por apartamento
+Cliente respondeu pelo WhatsApp: “Apartamento”.
+
+Persistência operacional no CRM:
+- cliente validado como `broker_id=35`;
+- status já estava em `Em Atendimento` e foi preservado;
+- repescagem já estava interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate ausente;
+- nota CRM registrada indicando interesse/necessidade por apartamento e a necessidade de retomar o contexto recente de viabilidade antes da resposta comercial.
+
 ## Objeções e travas
 - Trava principal atual: cliente acredita que a idade pode inviabilizar compra/financiamento.
 - Momento de compra parece futuro, não imediato.
 - Cliente informou aproximadamente R$ 95 mil; confirmar na conversa se é entrada/recurso disponível ou outra referência.
+- Cliente indicou “Apartamento” como preferência/necessidade de imóvel.
 - Não há dados suficientes para concluir inviabilidade; evitar promessa de crédito e conduzir para avaliação segura.
 
 ## Próximo passo
-Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: acolher a preocupação, confirmar se os R$ 95 mil são entrada/recurso disponível e explicar que isso já ajuda bastante a olhar com mais segurança se existe caminho, sem prometer aprovação. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
+Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: acolher a preocupação, confirmar se os R$ 95 mil são entrada/recurso disponível e explicar que isso já ajuda bastante a olhar com mais segurança se existe caminho para apartamento, sem prometer aprovação. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11002-marco-antonio-goncalves.md` conforme governança canônica.
