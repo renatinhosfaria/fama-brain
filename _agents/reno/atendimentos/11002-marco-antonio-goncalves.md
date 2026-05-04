@@ -26,7 +26,7 @@ Cliente está em `Em Atendimento` com interesse relacionado ao **Place+Arbi**, n
 
 Em 2026-05-01, respondeu após a repescagem step 3; o CRM foi corrigido de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade: “Mas acho que pela minha idade fica inviável.” Na sequência, enviou resposta curta: “Sim”. Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
+Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa em trocar de imóvel mais para frente; depois trouxe trava de viabilidade percebida por idade; em seguida respondeu “Sim”; e na última interação informou “+ Ou - uns 95 mil.” Status foi preservado em `Em Atendimento`; repescagem continua interrompida e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11002
@@ -35,14 +35,14 @@ Em 2026-05-04, houve sequência de respostas inbound. Primeiro indicou que pensa
 - Origem: Facebook Ads
 - Telefone/WhatsApp: JID WhatsApp salvo no CRM; telefone mascarado final ****-9186
 - Empreendimento de interesse no CRM: Place+Arbi (`id_empreendimento=67`)
-- Última interação relevante: 2026-05-04 — inbound WhatsApp com resposta curta “Sim”, dependente do contexto imediato da conversa
+- Última interação relevante: 2026-05-04 — inbound WhatsApp com valor aproximado informado: “+ Ou - uns 95 mil.”
 
 ## Contexto comercial
 Lead originado de anúncio relacionado ao empreendimento **Place+Arbi**, da HLTS Construtora, no bairro Shopping Park/Zona Sul, Uberlândia. O empreendimento está em lançamento, com entrega prevista para JUN/2027 e plantas de aproximadamente 48m² a 50m².
 
 Antes das respostas inbound, o cliente estava em silêncio após primeiro contato e repescagens. A última mensagem de repescagem perguntava se a ideia seria mais **morar** ou **investir** no contexto do Place+Arbi.
 
-As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”) e insegurança com a viabilidade por idade. A resposta curta “Sim” não deve ser interpretada isoladamente; a continuidade comercial precisa reconstruir o contexto imediato da sessão WhatsApp antes de responder ao cliente.
+As respostas de 2026-05-04 indicam momento mais futuro (“trocar mais para frente”), insegurança com a viabilidade por idade e, agora, referência financeira aproximada de R$ 95 mil. Essa informação deve ser tratada como dado de contexto/viabilidade a confirmar na continuidade da conversa, sem assumir sozinho se é entrada disponível, recurso total ou diferença máxima que o cliente aceita.
 
 ## Diagnóstico
 ### Necessidade
@@ -55,7 +55,13 @@ Momento ainda não urgente. Cliente sinalizou “mais para frente”, então a c
 Sem informação confirmada sobre decisores.
 
 ### Viabilidade
-Trava ativa: cliente acredita que, pela idade, a compra/financiamento pode ficar inviável. Não há dados confirmados de renda, entrada, composição familiar, uso de FGTS, aprovação, idade exata ou formato de compra. Próxima condução deve validar a preocupação e propor análise segura, sem prometer crédito.
+Travas e dados atuais:
+- cliente acredita que, pela idade, a compra/financiamento pode ficar inviável;
+- informou valor aproximado de R$ 95 mil no contexto da conversa;
+- ainda não está claro se os R$ 95 mil representam entrada disponível, recurso total, limite de diferença ou outra referência;
+- não há dados confirmados de renda, composição familiar, uso de FGTS, aprovação, idade exata ou formato de compra.
+
+Próxima condução deve validar a preocupação e organizar a informação de viabilidade sem prometer crédito.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -152,14 +158,24 @@ Persistência operacional no CRM:
 - resgate ausente;
 - nota CRM registrada indicando que a resposta curta depende do contexto imediato da conversa para continuidade comercial.
 
+### 2026-05-04 — Inbound: referência financeira aproximada
+Cliente respondeu pelo WhatsApp: “+ Ou - uns 95 mil.”
+
+Persistência operacional no CRM:
+- cliente validado como `broker_id=35`;
+- status já estava em `Em Atendimento` e foi preservado;
+- repescagem já estava interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`);
+- resgate ausente;
+- nota CRM registrada com interpretação comercial de referência financeira aproximada para viabilidade.
+
 ## Objeções e travas
 - Trava principal atual: cliente acredita que a idade pode inviabilizar compra/financiamento.
 - Momento de compra parece futuro, não imediato.
-- Resposta curta “Sim” exige leitura do histórico imediato antes de qualquer resposta cliente-facing.
+- Cliente informou aproximadamente R$ 95 mil; confirmar na conversa se é entrada/recurso disponível ou outra referência.
 - Não há dados suficientes para concluir inviabilidade; evitar promessa de crédito e conduzir para avaliação segura.
 
 ## Próximo passo
-Responder pelo fluxo normal de qualificação WhatsApp, sem pressão e sem promessa de aprovação. Antes de responder ao “Sim”, reconstruir o contexto imediato da sessão WhatsApp para entender a que pergunta/convite ele confirmou. Direção provável: validar a preocupação com idade, explicar de forma curta que esse ponto precisa ser olhado com calma antes de descartar, e oferecer uma análise segura do cenário/financiamento para entender se há caminho possível.
+Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto imediato da sessão antes da resposta. Direção provável: acolher a preocupação, confirmar se os R$ 95 mil são entrada/recurso disponível e explicar que isso já ajuda bastante a olhar com mais segurança se existe caminho, sem prometer aprovação. Se houver sinal positivo, conduzir para uma conversa/visita presencial na Fama para simular com segurança.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11002-marco-antonio-goncalves.md` conforme governança canônica.
