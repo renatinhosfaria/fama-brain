@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-05-02'
-updated: '2026-05-03'
+updated: '2026-05-04'
 tags:
   - reno
   - atendimento
@@ -20,33 +20,33 @@ tags:
 # Atendimento — Sol Silva Mendes
 
 ## Resumo atual
-Cliente entrou por Facebook Ads com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado em 2026-05-02 e não houve resposta até a primeira janela de repescagem. Em 2026-05-03 às 17:03 BRT, Reno enviou a repescagem step 1 com novo motivo para resposta: organizar a busca pelo lançamento antes de olhar opções soltas. Status CRM permanece `Não Respondeu`.
+Cliente entrou por Facebook Ads com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado em 2026-05-02 e não houve resposta. Em 2026-05-03, Reno enviou repescagem step 1 com foco em organizar a busca pelo lançamento. Em 2026-05-04 às 15:28 BRT, Reno enviou repescagem step 2 mudando o ângulo para evitar caminho errado: prazo de entrega, entrada, parcela e financiamento antes de avançar na escolha. Status CRM permanece `Não Respondeu`.
 
 ## Dados operacionais
 - Cliente ID: 11147
 - Broker ID: 35
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads / lead automático
-- Telefone/WhatsApp: contato disponível no CRM; envio feito pelo JID salvo
+- Telefone/WhatsApp: contato disponível no CRM; envios feitos pelo JID salvo
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: repescagem step 1 enviada pelo Reno em 2026-05-03 às 17:03 BRT
-- Próxima repescagem prevista: step 2 em 2026-05-04 às 14:20 BRT, se não houver resposta real
+- Última interação relevante: repescagem step 2 enviada pelo Reno em 2026-05-04 às 15:28 BRT
+- Próxima repescagem prevista: step 3 em 2026-05-05 às 19:10 BRT, se não houver resposta real
 
 ## Contexto comercial
-Lead demonstrou interesse no Union Vista, lançamento da HLTS Construtora no Grand Ville, Uberlândia, com entrega prevista para Jul/2027. A abertura inicial já havia perguntado se a cliente procurava imóvel nessa região. Para a repescagem step 1, a abordagem mudou o ângulo: em vez de repetir a pergunta sobre região, trouxe o valor de organizar a busca e entender se o lançamento combina com o objetivo da cliente antes de analisar opções soltas.
+Lead demonstrou interesse no Union Vista, lançamento da HLTS Construtora no Grand Ville, Uberlândia, com entrega prevista para Jul/2027. O empreendimento tem unidades de 2 quartos com suíte e vaga, a partir de aproximadamente R$292 mil no CRM. A abertura inicial já havia perguntado se a cliente procurava imóvel nessa região. A repescagem step 1 mudou para organização da busca e finalidade (`morar` vs `comparar oportunidade de compra`). A repescagem step 2 evitou repetir finalidade e trouxe viabilidade prática do lançamento: prazo da obra, entrada, parcela e financiamento precisam caber no momento da cliente antes de avançar.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. A primeira resposta buscada é entender se o interesse é mais para moradia ou comparação/oportunidade de compra.
+Ainda não diagnosticada. O interesse sinalizado é no Union Vista, mas a cliente ainda não respondeu se busca moradia, investimento ou comparação de oportunidade.
 
 ### Momento
-Ainda não diagnosticado. Como o imóvel é lançamento, prazo de entrega pode ser ponto relevante nas próximas etapas.
+Ainda não diagnosticado. Como o imóvel é lançamento com entrega em Jul/2027, prazo de entrega continua sendo ponto relevante para abertura de conversa.
 
 ### Decisão
 Ainda não diagnosticada.
 
 ### Viabilidade
-Ainda não diagnosticada. Não houve conversa sobre financiamento, entrada, renda ou forma de pagamento. Não prometer aprovação de crédito.
+Ainda não diagnosticada. Step 2 buscou abrir a conversa por viabilidade prática sem prometer crédito: entrada, parcela, financiamento e compatibilidade com o momento da cliente.
 
 ## Histórico curado de interações
 ### 2026-05-02 — Primeiro contato enviado
@@ -71,15 +71,30 @@ Mensagem enviada:
 
 Estado CRM após marcação: `repescagem.step=1`, `enabled=true`, `last_sent_at=2026-05-03T17:03:24.599-03:00`, `next_run_at=2026-05-04T14:20:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
 
+### 2026-05-04 — Repescagem step 2 enviada
+Mensagem enviada:
+
+> Sol, como o Union Vista é lançamento, não é só escolher a planta mais bonita: tem prazo de entrega, entrada, parcela e financiamento para ver se cabem no seu momento. 🔑
+>
+> Antes de você perder tempo com opção que depois pode não encaixar, dá para fazer uma leitura **bem prática** desse caminho de compra.
+>
+> Quer que eu veja contigo se esse formato do Union Vista faz sentido para você?
+
+Ângulo usado: evitar caminho errado / viabilidade prática do lançamento. Diferenciação em relação ao step 1: mudou de finalidade e organização da busca para análise de prazo, entrada, parcela e financiamento; trocou pergunta de morar/comparar por permissão para leitura prática do formato de compra; destacou economia de tempo e risco de opção que não encaixa.
+
+Estado CRM após marcação: `repescagem.step=2`, `enabled=true`, `last_sent_at=2026-05-04T15:28:04.663-03:00`, `next_run_at=2026-05-05T19:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
-- Trava atual: silêncio após primeiro contato e repescagem step 1.
+- Trava atual: silêncio após primeiro contato e duas repescagens.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, mover de `Não Respondeu` para `Em Atendimento` somente se o status ainda estiver exatamente nesse estado e seguir pelo fluxo normal de qualificação do Reno. Se não houver resposta até a próxima janela, enviar repescagem step 2 com ângulo diferente, preferencialmente evitando caminho errado/viabilidade prática sem repetir a pergunta de morar/comparar.
+Aguardar resposta da cliente. Se responder, mover de `Não Respondeu` para `Em Atendimento` somente se o status ainda estiver exatamente nesse estado e seguir pelo fluxo normal de qualificação do Reno. Se não houver resposta até a próxima janela, enviar repescagem step 3 com diagnóstico leve, evitando repetir a pergunta de finalidade do step 1 e a abordagem de viabilidade/entrada/parcela do step 2.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: `evt_3315`.
 - Idempotency key do primeiro contato: `3315_1777768135991`.
 - Repescagem step 1 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16601.
+- Repescagem step 2 enviada por fallback excepcional do bridge local na porta 3000, com bridge saudável (`status=connected`) e usando o `whatsapp_jid` salvo no CRM, porque `send_message` não está exposto nesta sessão do cron.
+- Repescagem step 2 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16694.
 - Documento mantido no caminho oficial `_agents/reno/atendimentos/11147-sol-silva-mendes.md`.
