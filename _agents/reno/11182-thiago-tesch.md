@@ -68,3 +68,11 @@ Cliente informou que fim de semana costuma ser mais tranquilo. Próxima conduç�
 
 ## Atualização — proposta de horário
 Cliente disse que no sábado o horário é indiferente. Próxima mensagem: sugerir sábado 09/05/2026 às 10h para análise/simulação presencial na Fama e aguardar confirmação antes de criar o agendamento no CRM.
+
+
+## Atualização — visita confirmada e registrada
+Cliente confirmou: “Pode ser sim” para sábado 09/05/2026 às 10h.
+Agendamento criado no FamaChat: appointment_id 244.
+Status do cliente no CRM verificado após criação: Agendamento.
+Objetivo da visita: análise/simulação de viabilidade, possível subsídio/MCMV, FGTS e entrada parcelada, sem promessa prévia de aprovação.
+Perfil consolidado: compra sozinho; renda aproximada R$ 2.350; R$ 3 mil guardados; cerca de R$ 2 mil de FGTS; parcela confortável R$ 850–R$ 950; sem restrições.
