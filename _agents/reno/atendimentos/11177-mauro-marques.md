@@ -5,58 +5,60 @@ entity_type: atendimento
 entity_name: Mauro Marques
 client_id: 11177
 broker_id: 35
-status_crm: Sem Atendimento
+status_crm: Não Respondeu
 source: Facebook Ads
-created: '2026-05-04'
-updated: '2026-05-04'
+created: '2026-05-05'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - primeiro-contato
-  - falha-envio
+  - reprocessamento
 ---
 # Atendimento — Mauro Marques
 
 ## Resumo atual
-Cliente novo do Reno, vindo de Facebook Ads, com interesse no Union Vista. O primeiro contato automático foi tentado pelo WhatsApp, mas não foi concluído por falha técnica de envio/endereço do WhatsApp. O status no CRM foi preservado em `Sem Atendimento`.
+Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.
 
 ## Dados operacionais
 - Cliente ID: 11177
 - Broker ID: 35
-- Status CRM: Sem Atendimento
-- Origem: Facebook Ads / lead automático
-- Empreendimento de interesse: Union Vista, Grand Ville, Uberlândia
-- Última interação relevante: tentativa de primeiro contato do Reno falhou tecnicamente em 2026-05-04
+- Status CRM: Não Respondeu
+- Origem: Facebook Ads
+- WhatsApp: cadastrado no CRM
+- Última interação relevante: primeiro contato enviado pelo Reno em duas mensagens.
 
 ## Contexto comercial
-O cliente demonstrou interesse no empreendimento Union Vista, no bairro Grand Ville. Nome do CRM parece humano e confiável para saudação em futura retentativa.
+Cliente demonstrou interesse no Union Vista, no bairro Grand Ville.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada; cliente não recebeu/respondeu ao primeiro contato.
+Ainda não diagnosticada; primeiro contato busca confirmar interesse na região.
 
 ### Momento
-Entrada recente pelo Facebook Ads em 2026-05-04.
+Ainda não identificado.
 
 ### Decisão
-Não levantada.
+Ainda não identificada.
 
 ### Viabilidade
-Não levantada. Não houve abordagem de renda, financiamento, FGTS ou visita.
+Ainda não identificada; não houve conversa sobre financiamento ou condição.
 
 ## Histórico curado de interações
-### 2026-05-04 — Primeiro contato não enviado
-Abertura planejada: cumprimento do Reno com contexto do interesse no Union Vista, no Grand Ville, seguida de pergunta simples sobre a região. O envio via WhatsApp falhou tecnicamente nas formas tentáveis do número com e sem o nono dígito. CRM recebeu nota operacional e o status foi preservado em `Sem Atendimento`.
+### 2026-05-04 — Falha técnica no primeiro envio
+Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status permaneceu `Sem Atendimento`.
+
+### 2026-05-05 — Primeiro contato reprocessado
+Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Union Vista/Grand Ville e pergunta se o cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
 ## Objeções e travas
-- Trava operacional: falha técnica de envio WhatsApp. Não há objeção comercial do cliente.
+- Nenhuma objeção comercial ainda; havia apenas falha operacional de envio, já corrigida neste reprocessamento.
 
 ## Próximo passo
-Corrigir/validar o caminho de envio do WhatsApp e retentar de forma segura, sem duplicar mensagem ao cliente, mantendo a abertura curta e contextual.
+Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar a interação no CRM e continuar qualificação consultiva.
 
 ## Observações operacionais
-- Evento de origem: `evt_3345`.
-- Idempotency key: `3345_1777934562450`.
-- Não avançar para `Não Respondeu` nem inicializar repescagem enquanto o WhatsApp não for enviado com sucesso.
+- Marcador CRM: `[reno_reprocess_20260505_5_leads]`.
+- Refs. WhatsApp: 3EB0FB052FE34F2760080B / 3EB0EBA26E3E7C43517CE4.
