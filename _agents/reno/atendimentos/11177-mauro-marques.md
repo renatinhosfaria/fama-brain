@@ -21,7 +21,7 @@ tags:
 # Atendimento — Mauro Marques
 
 ## Resumo atual
-Mauro respondeu pelo WhatsApp após o primeiro contato e a repescagem do Reno. A mensagem relevante foi: “Qual é a localização”. O CRM está em `Em Atendimento`; a repescagem foi interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. Não há resgate ativo.
+Mauro respondeu pelo WhatsApp após o primeiro contato e a repescagem do Reno. A primeira resposta relevante foi “Qual é a localização”; depois, após receber a localização/contexto do Union Vista, retornou com “Opa desculpe a demora,”. O CRM está em `Em Atendimento`; a repescagem permanece interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. Não há resgate ativo.
 
 Rotina atual foi apenas silenciosa de persistência: nenhuma mensagem foi enviada ao cliente por esta execução.
 
@@ -32,10 +32,12 @@ Rotina atual foi apenas silenciosa de persistência: nenhuma mensagem foi enviad
 - Origem: Facebook Ads
 - WhatsApp: JID cadastrado no CRM
 - Empreendimento de interesse: Union Vista
-- Última interação relevante: cliente perguntou pelo WhatsApp qual é a localização do empreendimento.
+- Última interação relevante: cliente voltou pelo WhatsApp com “Opa desculpe a demora,” após a conversa sobre localização do Union Vista.
 
 ## Contexto comercial
 Cliente demonstrou interesse no Union Vista, lançamento da HLTS Construtora no bairro Grand Ville, em Uberlândia. O empreendimento fica na Zona Leste, em região próxima ao Parque do Sabiá. Para resposta comercial ao cliente, priorizar localização por bairro/região (`Grand Ville`, `Zona Leste`, próximo ao Parque do Sabiá) e só detalhar endereço exato se a conversa pedir isso claramente.
+
+A mensagem mais recente indica retomada cordial após demora. Comercialmente, o melhor próximo passo é acolher sem pressão e retomar a qualificação leve, perguntando se a região Grand Ville/Zona Leste faz sentido para morar ou se ele está comparando oportunidade de compra.
 
 ## Diagnóstico
 ### Necessidade
@@ -63,17 +65,20 @@ Reno enviou follow-up perguntando se Mauro estava olhando mais para morar ou par
 ### 2026-05-05 — Primeira resposta inbound
 Cliente respondeu pelo WhatsApp perguntando: “Qual é a localização”. O atendimento foi preservado/confirmado em `Em Atendimento`. A repescagem foi interrompida por resposta do cliente e normalizada para `stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`.
 
+### 2026-05-05 — Retomada após localização
+Cliente voltou pelo WhatsApp com: “Opa desculpe a demora,”. Status já estava em `Em Atendimento` e foi preservado. Repescagem já estava parada por resposta do cliente; resgate inexistente. Nota operacional registrada no CRM pela rotina silenciosa, sem envio de mensagem ao cliente.
+
 ## Objeções e travas
 - Nenhuma objeção comercial ainda.
-- Interesse atual é entender localização do Union Vista.
+- Interesse atual é entender se o Union Vista/Grand Ville faz sentido para o perfil do cliente.
 - Houve falha operacional no primeiro envio original, corrigida no reprocessamento de 2026-05-05.
 
 ## Próximo passo
-Na resposta comercial normal fora desta rotina silenciosa, responder de forma curta a localização do Union Vista por bairro/região e retomar a condução com uma pergunta simples, por exemplo se Grand Ville/Zona Leste faz sentido para ele. Depois, seguir qualificação leve antes de aprofundar valor, prazo ou financiamento.
+Na resposta comercial normal fora desta rotina silenciosa, acolher a demora sem pressão e retomar a condução com uma pergunta simples, por exemplo: se a região Grand Ville/Zona Leste faz sentido para ele ou se está comparando oportunidade de compra. Depois, seguir qualificação leve antes de aprofundar valor, prazo ou financiamento.
 
 ## Observações operacionais
 - CRM é a fonte operacional de verdade: status atual verificado como `Em Atendimento` e broker_id=35.
 - Repescagem atual: `step=1`, `enabled=false`, `last_sent_at=2026-05-05T19:33:50-03:00`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate: inexistente no momento da verificação.
-- Nota CRM da primeira resposta já existia registrando a pergunta “Qual é a localização” e a transição operacional para `Em Atendimento`; esta execução evitou duplicar nota idêntica.
+- Nota CRM criada nesta rotina silenciosa registrou o inbound “Opa desculpe a demora,”, a preservação do status e a ausência de envio ao cliente.
 - Existe documento legado/drift em `_agents/reno/11177-mauro-marques.md`; conteúdo útil foi consolidado neste documento oficial em `_agents/reno/atendimentos/11177-mauro-marques.md`. Não deletar legado sem autorização explícita.
