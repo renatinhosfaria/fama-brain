@@ -71,3 +71,9 @@ Responder no WhatsApp de forma curta e humana, usando o nome confirmado, e inici
 
 ## Observações operacionais
 Documento mantido no caminho oficial do Reno. CRM/FamaChat permanece como fonte operacional de verdade.
+
+
+### 2026-05-05 — Diagnóstico inicial: finalidade
+Cliente respondeu que busca o imóvel para morar. Necessidade começa a ser enquadrada como moradia própria; ainda falta entender contexto da mudança, composição familiar, momento de compra e viabilidade.
+
+Próxima condução recomendada: perguntar de forma simples se a busca é para sair do aluguel/primeiro imóvel ou por outro motivo de moradia, mantendo uma pergunta por vez.
