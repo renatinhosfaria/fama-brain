@@ -134,3 +134,7 @@ Cliente informou disponibilidade para sexta 08/05/2026 após as 15h. Calendário
 
 ## Atualização — correção da data de remarcação
 Cliente corrigiu: não quer dia 08/05; quer sexta 15/05/2026, após as 15h. Calendário do Reno verificado no CRM em 15/05 entre 15h e 19h: sem conflitos. Próxima mensagem: sugerir 15h30 e aguardar confirmação explícita antes de atualizar o agendamento 244.
+
+
+## Atualização — pedido de remarcação recebido
+Cliente perguntou pelo WhatsApp: `Podemos remarcar para sexta que vem?`. CRM validado: cliente em `broker_id=35`, status `Agendamento`, com appointment_id 244 ainda registrado para sábado 2026-05-09 às 10h. Status preservado; não houve regressão nem alteração do agendamento nesta rotina silenciosa, pois a remarcação precisa de confirmação operacional de data/horário antes de atualizar o FamaChat. Repescagem já estava interrompida com `stopped_reason=client_replied`; não há Resgate ativo. Nota CRM recente já registrava o pedido de remarcação, então esta rotina não duplicou nota.
