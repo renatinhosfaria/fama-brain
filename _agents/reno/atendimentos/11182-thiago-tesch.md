@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11182
-created: '2026-05-05'
-entity_name: Thiago Tesch
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Thiago Tesch
+client_id: 11182
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-05'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
@@ -22,13 +24,11 @@ tags:
   - parcela
   - sem-restricao
   - objeção-disponibilidade
-type: entity-profile
-updated: '2026-05-05'
 ---
 # Atendimento — Thiago Tesch
 
 ## Resumo atual
-Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato via WhatsApp. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, confirmou que pretende comprar sozinho, indicou parcela confortável entre R$ 850 e R$ 950 e informou estar sem restrições no nome. Ao ser conduzido para visita/análise presencial, respondeu que estes dias está apertado, sinalizando objeção de disponibilidade no momento. CRM permanece em `Em Atendimento`; repescagem foi interrompida por resposta inbound e não há resgate ativo.
+Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato via WhatsApp. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, confirmou que pretende comprar sozinho, indicou parcela confortável entre R$ 850 e R$ 950 e informou estar sem restrições no nome. Ao ser conduzido para visita/análise presencial, respondeu que estes dias está apertado, sinalizando objeção de disponibilidade no momento. CRM permanece em `Em Atendimento`; repescagem está interrompida por resposta inbound e não há resgate ativo.
 
 ## Dados operacionais
 - Cliente ID: 11182
@@ -77,8 +77,8 @@ Cliente informou que a parcela confortável hoje seria aproximadamente entre R$ 
 ### 2026-05-05 — Situação de restrição informada
 Cliente informou estar sem restrições no nome. Perfil inicial consolidado para continuidade: compra sozinho, renda aproximada, pouca reserva de entrada, FGTS baixo e parcela confortável definida. Próximo passo recomendado: conduzir para simulação/análise de viabilidade e visita presencial na Fama, sem prometer aprovação.
 
-### 2026-05-05 — Objeção de disponibilidade para visita/análise presencial
-Ao ser conduzido para visita/análise presencial na Fama, cliente respondeu que estes dias está apertado. Interpretar como objeção de disponibilidade no momento, não como recusa definitiva. Próximo passo comercial: manter uma prévia útil pelo WhatsApp e perguntar qual dia/horário tende a ficar mais tranquilo para retomar/agendar.
+### 2026-05-05 — Objeção de disponibilidade persistida
+Ao ser conduzido para visita/análise presencial na Fama, cliente respondeu que estes dias está apertado. Interpretar como objeção de disponibilidade no momento, não como recusa definitiva. A rotina silenciosa preservou o status `Em Atendimento`, verificou repescagem já interrompida, confirmou ausência de resgate ativo e registrou nota operacional no CRM. Próximo passo comercial: validar sem pressão, manter uma prévia útil pelo WhatsApp e perguntar qual dia/horário tende a ficar mais tranquilo para retomar/agendar.
 
 ## Objeções e travas
 - Prioridade de viabilidade: entrada facilitada e parcela acessível.
@@ -95,7 +95,9 @@ Responder comercialmente no WhatsApp normal, sem envio por esta rotina silencios
 ## Observações operacionais
 - Marcador CRM anterior: `[reno_reprocess_20260505_5_leads]`.
 - Refs. WhatsApp do primeiro contato: 3EB0499B9FC6995153E1C3 / 3EB0F2A1F4769DEECF18EA.
+- Nota CRM da rotina silenciosa para este inbound: 16760.
 - Repescagem atual: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate: sem ciclo ativo no momento da rotina silenciosa.
 - Status já estava `Em Atendimento` durante esta rotina; nenhuma regressão ou alteração manual de status avançado foi feita.
+- Documento oficial deste atendimento: `_agents/reno/atendimentos/11182-thiago-tesch.md`. Existe documento legado fora de `atendimentos/`; não continuar escrevendo nele.
 - Rotina silenciosa de inbound executou apenas persistência operacional; nenhuma mensagem foi enviada ao cliente nesta etapa.
