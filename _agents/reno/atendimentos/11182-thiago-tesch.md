@@ -123,3 +123,7 @@ Aguardar confirmação explícita do cliente sobre o novo horário proposto para
 - Agendamento: `enabled=true`, `step=0`, `appointment_id=244`, `next_run_at=2026-05-09T09:10:00-03:00`.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
 - Documento oficial deste atendimento: `_agents/reno/atendimentos/11182-thiago-tesch.md`. Existe documento legado fora de `atendimentos/`; não continuar escrevendo nele.
+
+
+## Atualização — remarcação confirmada
+Cliente confirmou “Pode” para sexta 15/05/2026 às 15h30 e agradeceu. Atualizar o agendamento 244 no FamaChat, reagendar lembretes e manter status de Agendamento.
