@@ -59,3 +59,7 @@ Cliente enviou áudio perguntando se o Grand Ville/Union Vista é loteamento fec
 
 ## Atualização — comparação com loteamento fechado
 Cliente enviou áudio dizendo que mora próximo a uma região transcrita de forma incerta como “barclanal”/bairro local e que há um novo loteamento fechado saindo por ali. Está pesquisando esse loteamento, mas demonstrou abertura para considerar o Union Vista caso faça sentido. Condução: diferenciar Union Vista (apartamento em condomínio) de loteamento fechado; acolher a comparação e diagnosticar se a preferência dele é lote/casa ou apartamento com lazer/financiamento.
+
+
+## Atualização — preferência por loteamento fechado
+Cliente enviou áudio esclarecendo que o foco atual é loteamento fechado/terreno, preferencialmente para o lado do Planalto, porque deseja sair da região onde está. Agradeceu a atenção e indicou que continuará pesquisando um loteamento novo que está começando por ali. Diagnóstico: Union Vista/apartamento não é o encaixe principal neste momento. Condução recomendada: acolher, registrar preferência por loteamento fechado/Planalto e oferecer avisar caso surja algo nesse perfil, sem pressão.
