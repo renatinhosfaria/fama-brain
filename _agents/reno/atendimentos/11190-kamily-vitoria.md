@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Kamily
-client_id: 11190
 broker_id: 35
-status_crm: Agendamento
-source: Facebook Ads
+client_id: 11190
 created: '2026-05-05'
-updated: '2026-05-06'
+entity_name: Kamily
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Agendamento
 tags:
   - reno
   - atendimento
@@ -16,22 +14,25 @@ tags:
   - famachat
   - inbound
   - agendamento
-  - visita-agendada
+  - repescagem-interrompida
   - place-arbi
   - shopping-park
   - primeiro-imovel
   - financiamento
   - viabilidade
   - sinal-quente
+  - visita-agendada
+type: entity-profile
+updated: '2026-05-05'
 ---
 # Atendimento — Kamily
 
 ## Resumo atual
-Cliente Reno em `Agendamento`. Kamily busca o primeiro imóvel próprio para morar, vinculada ao interesse no Place+Arbi / Shopping Park. Ela informou que já fez simulação de financiamento, que a simulação ficou dentro do esperado e que pretende comprar nos próximos meses.
+Cliente Reno está em `Agendamento`. Visita presencial registrada no FamaChat para quinta-feira, 2026-05-07, às 09:00 (America/Sao_Paulo), appointment_id=245, tipo `Visita`, status `Agendado`, local Fama Negócios Imobiliários, endereço Av. Raulino Cotta Pacheco, 304.
 
-A conversa evoluiu para visita presencial na Fama: a cliente confirmou disponibilidade, informou preferência de horário às 9h e, no inbound mais recente, respondeu “Quinta”. O FamaChat já possui o agendamento registrado como visita presencial na Fama para quinta-feira às 9h, appointment_id 245.
+A cliente busca primeiro imóvel para morar, pretende comprar nos próximos meses, já fez simulação de financiamento e informou que a simulação ficou dentro do esperado. Interesse de origem: Place+Arbi / Shopping Park.
 
-A repescagem automática permanece interrompida por resposta inbound (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não há resgate ativo identificado. Esta rotina silenciosa não enviou mensagem ao cliente.
+Repescagem automática permanece interrompida por resposta inbound (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`). Follow-up de agendamento Reno inicializado com step 0 e next_run_at 2026-05-07T08:10:00-03:00.
 
 ## Dados operacionais
 - Cliente ID: 11190
@@ -40,26 +41,26 @@ A repescagem automática permanece interrompida por resposta inbound (`stopped_r
 - Origem: Facebook Ads
 - Telefone/WhatsApp: confirmado no CRM
 - Empreendimento de interesse: Place+Arbi — Shopping Park, Zona Sul de Uberlândia
-- Agendamento: appointment_id 245 — visita presencial na Fama em 2026-05-07 às 9h
-- Última interação relevante: 2026-05-05 — cliente respondeu “Quinta”, confirmando o dia para a visita/agenda
+- Agendamento: 2026-05-07 às 09:00, appointment_id=245
+- Endereço registrado: Av. Raulino Cotta Pacheco, 304
 
 ## Contexto comercial
-Lead de Facebook Ads vinculado ao empreendimento Place+Arbi, no Shopping Park. O primeiro contato do Reno foi neutro e contextual, perguntando como a cliente prefere ser chamada porque o nome no CRM estava com grafia estilizada. A cliente confirmou o nome Kamily, respondeu que busca imóvel para morar, explicou que quer ter o primeiro imóvel próprio e avançou espontaneamente para financiamento/simulação.
+Lead de Facebook Ads vinculado ao empreendimento Place+Arbi, no Shopping Park. Primeiro contato do Reno foi neutro e contextual, perguntando como a cliente prefere ser chamada porque o nome no CRM estava com grafia estilizada. A cliente confirmou o nome Kamily e avançou com respostas curtas, mas positivas.
 
-O atendimento deve continuar sem prometer aprovação ou condição exata, usando a simulação feita pela cliente como referência inicial para direcionamento consultivo. Como a visita já foi registrada no FamaChat, a continuidade comercial deve apenas confirmar objetivamente o combinado e preservar o compromisso, sem reabrir venda longa.
+O atendimento evoluiu de diagnóstico para agendamento presencial. A condução deve seguir sem prometer aprovação de crédito; a visita deve ser tratada como análise segura de opções, financiamento, entrada/parcela e caminho de compra do primeiro imóvel.
 
 ## Diagnóstico
 ### Necessidade
-Primeiro imóvel próprio para moradia. A motivação principal é conquistar moradia própria e entender um caminho viável de compra.
+Primeiro imóvel próprio para moradia.
 
 ### Momento
-Cliente informou que pretende comprar nos próximos meses. Sinal quente já convertido em visita presencial agendada.
+Cliente informou que pretende comprar nos próximos meses. Sinal quente.
 
 ### Decisão
-Ainda não identificado se decide sozinha ou com outra pessoa. Pode ser apurado naturalmente no atendimento presencial, sem atrasar o compromisso já marcado.
+Ainda não identificado se decide sozinha ou com outra pessoa. Pode ser investigado presencialmente ou em continuidade natural, sem atrasar a visita.
 
 ### Viabilidade
-Cliente informou que já fez simulação de financiamento e indicou que ficou dentro do esperado/viável. Falta validar presencialmente entrada, parcela, unidade e caminho de financiamento. Não prometer aprovação; conduzir como análise segura e ajuste fino na Fama.
+Cliente já fez simulação de financiamento e informou que ficou dentro do esperado/viável. Detalhes ainda precisam ser validados com segurança presencialmente.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Primeiro contato Reno enviado
@@ -72,33 +73,35 @@ Cliente respondeu “Oi tudo bem sim”. Atendimento iniciado operacionalmente n
 Cliente informou que prefere ser chamada de Kamily. CRM atualizado com `full_name=Kamily`. Repescagem automática encerrada com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.
 
 ### 2026-05-05 — Diagnóstico inicial: finalidade
-Cliente informou que busca o imóvel para morar. Necessidade enquadrada como moradia própria.
+Cliente informou que busca o imóvel para morar.
 
 ### 2026-05-05 — Diagnóstico: primeiro imóvel próprio
-Cliente informou que quer ter o primeiro imóvel próprio. Direção comercial: primeira compra para moradia, com orientação consultiva sobre financiamento/entrada e visita presencial.
+Cliente informou que quer ter o primeiro imóvel próprio.
 
 ### 2026-05-05 — Diagnóstico: simulação de financiamento
-Cliente confirmou que já fez simulação de financiamento e, depois, que a simulação/viabilidade ficou dentro do esperado. Não há promessa de aprovação; o atendimento deve validar detalhes com segurança.
+Cliente confirmou que já fez simulação de financiamento.
+
+### 2026-05-05 — Diagnóstico: viabilidade percebida
+Cliente confirmou que a simulação/viabilidade ficou dentro do esperado.
 
 ### 2026-05-05 — Diagnóstico: momento de compra
-Cliente respondeu “Próximos meses”. Conteúdo comercial: intenção de compra nos próximos meses, reforçando sinal quente para visita presencial consultiva.
+Cliente respondeu “Próximos meses”. Sinal quente para visita presencial consultiva.
 
 ### 2026-05-05 — Abertura para visita presencial
-CRM registra que a cliente aceitou a possibilidade de vir presencialmente à Fama ainda esta semana. Em seguida respondeu “Consigo”, indicando disponibilidade para avançar para agenda.
+Cliente respondeu “Consigo” ao convite para vir à Fama ainda esta semana.
 
 ### 2026-05-05 — Preferência de horário para visita
-Cliente informou preferência de horário: 9h. Próxima condução era confirmar o dia da semana para registrar o agendamento presencial no FamaChat.
+Cliente informou preferência de horário: 9h.
 
-### 2026-05-05 — Inbound: dia da visita
-Cliente respondeu “Quinta”. A rotina silenciosa identificou a cliente como elegível para Reno (`broker_id=35`) e encontrou status atual `Agendamento`, preservando o status sem regressão. O FamaChat já registra appointment_id 245 para visita presencial na Fama em quinta-feira às 9h. Nota CRM 16881 registrou o inbound e a ausência de envio por esta rotina.
+### 2026-05-05 — Dia confirmado e visita presencial registrada
+Cliente confirmou quinta-feira. Visita presencial criada no FamaChat para 2026-05-07 às 09:00, appointment_id=245. CRM atualizado para `Agendamento`. Endereço registrado: Av. Raulino Cotta Pacheco, 304. Lembretes internos criados e follow-up de agendamento Reno inicializado.
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
-- Viabilidade financeira foi aberta pela cliente e parece positiva, mas ainda falta validar detalhes com segurança presencialmente.
-- Endereço do agendamento não aparece preenchido no appointment; confirmar ao cliente somente com dado operacional seguro no canal comercial normal.
+- Viabilidade financeira parece positiva pela simulação informada, mas precisa de validação presencial.
 
 ## Próximo passo
-A sessão comercial normal do WhatsApp deve confirmar objetivamente o combinado da visita conforme Bloco 6, sem textão e sem nova venda. Esta rotina silenciosa não deve enviar mensagem ao cliente.
+Enviar confirmação curta pelo WhatsApp à cliente: visita quinta-feira, 07/05, às 9h, na Fama, endereço Av. Raulino Cotta Pacheco, 304. Depois, manter follow-up de agendamento conforme rotina Reno.
 
 ## Observações operacionais
-CRM/FamaChat permanece como fonte operacional de verdade. Nesta rotina silenciosa, a cliente foi identificada por WhatsApp/JID, está elegível para Reno (`broker_id=35`) e já estava em `Agendamento`, então não houve mudança de status. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; nenhum resgate ativo foi identificado. Nota CRM 16881 registrou o inbound “Quinta”, preservação de status, follow-ups parados e appointment_id 245. Não houve envio de mensagem ao cliente por esta rotina.
+CRM/FamaChat permanece como fonte operacional de verdade. Agendamento verificado após criação: status do cliente `Agendamento`, appointment_id=245 registrado, lembretes internos pending e branch `reno_followup.agendamento` ativa.
