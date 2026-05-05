@@ -82,3 +82,7 @@ Na resposta comercial normal ao cliente, reconhecer que ela já fez simulação 
 
 ## Observações operacionais
 CRM/FamaChat permanece como fonte operacional de verdade. Nesta rotina silenciosa, o cliente foi identificado por WhatsApp/JID, está elegível para Reno (`broker_id=35`) e já estava em `Em Atendimento`, então não houve mudança de status. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; nenhum resgate ativo foi identificado. Não houve envio de mensagem ao cliente.
+
+
+### Diagnóstico: viabilidade percebida
+Cliente informou que a simulação de financiamento ficou dentro do esperado/viável. Sinal positivo para compra do primeiro imóvel. Falta qualificar momento de compra e, se houver intenção de avançar nos próximos meses, conduzir para visita presencial na Fama.
