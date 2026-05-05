@@ -64,3 +64,7 @@ Cliente respondeu à proposta de visita/análise presencial dizendo: “Esses di
 
 ## Atualização — disponibilidade
 Cliente informou que fim de semana costuma ser mais tranquilo. Próxima condução recomendada: propor sábado e perguntar se prefere manhã ou tarde, sem pressionar.
+
+
+## Atualização — proposta de horário
+Cliente disse que no sábado o horário é indiferente. Próxima mensagem: sugerir sábado 09/05/2026 às 10h para análise/simulação presencial na Fama e aguardar confirmação antes de criar o agendamento no CRM.
