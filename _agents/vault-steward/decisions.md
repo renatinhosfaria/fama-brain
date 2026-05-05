@@ -2,10 +2,14 @@
 type: agent-decisions
 owner: vault-steward
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-05'
 tags:
   - decisao
 ---
+## 2026-05-05 — CMO: Idioma pt-BR obrigatório em todas as tarefas criadas pelo CMO
+
+Diretriz do conselho (issue FAM-34, 2026-05-05): todo título e descrição de issue/subtarefa criada por qualquer agente da Fama deve estar em português do Brasil. CMO reconhece e aplica a regra imediatamente. Exceções restritas: identificadores de código, nomes próprios de produtos/marcas/pessoas e termos técnicos sem tradução estabelecida (webhook, lead, briefing, etc.). Regra será propagada para novos agentes contratados via prompt explícito. Contexto durável em _shared/context/comunicacao/ceo/padrao-ptbr-tarefas.md.
+
 ## 2026-05-02 — FAM-29: Root cause = CAPI sem event_id, pixel errado no vault
 
 Investigação coder (2026-05-02): campanha Garden Sul usa Instant Form (sem landing page). Pixel documentado `1969770703769014` está cancelado — ativo é `1472931104542439` (FamaChat). CAPI envia Lead para todos os 141 clientes Facebook Ads sem event_id=leadgen_id, impedindo dedup com eventos nativos Lead Ads. Meta atribui ~300 conversões ao Garden Sul por last-touch. Fix: adicionar event_id=leadgen_id no meta-capi.service.ts. Bloqueado: aguardando acesso ao repo.
