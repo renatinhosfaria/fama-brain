@@ -130,3 +130,7 @@ Manter cliente em `Agendamento` e seguir a régua de confirmação da visita. Pr
 
 ## Atualização — disponibilidade para remarcação
 Cliente informou disponibilidade para sexta 08/05/2026 após as 15h. Calendário do Reno verificado no CRM entre 15h e 19h: sem conflitos. Próxima mensagem: sugerir sexta às 15h30 e aguardar confirmação explícita antes de atualizar o agendamento 244.
+
+
+## Atualização — correção da data de remarcação
+Cliente corrigiu: não quer dia 08/05; quer sexta 15/05/2026, após as 15h. Calendário do Reno verificado no CRM em 15/05 entre 15h e 19h: sem conflitos. Próxima mensagem: sugerir 15h30 e aguardar confirmação explícita antes de atualizar o agendamento 244.
