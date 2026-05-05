@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11182
-created: '2026-05-05'
-entity_name: Thiago Tesch
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Thiago Tesch
+client_id: 11182
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-05'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
@@ -20,13 +22,12 @@ tags:
   - fgts
   - compra-sozinho
   - parcela
-type: entity-profile
-updated: '2026-05-05'
+  - sem-restricao
 ---
 # Atendimento — Thiago Tesch
 
 ## Resumo atual
-Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato via WhatsApp. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS e confirmou que pretende comprar sozinho. Depois, indicou parcela mensal confortável entre R$ 850 e R$ 950. CRM permanece em `Em Atendimento`; repescagem foi interrompida por resposta inbound e não há resgate ativo.
+Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato via WhatsApp. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, confirmou que pretende comprar sozinho, indicou parcela confortável entre R$ 850 e R$ 950 e informou estar sem restrições no nome. CRM permanece em `Em Atendimento`; repescagem foi interrompida por resposta inbound e não há resgate ativo.
 
 ## Dados operacionais
 - Cliente ID: 11182
@@ -35,23 +36,23 @@ Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato
 - Origem: Facebook Ads
 - WhatsApp: cadastrado no CRM
 - Interesse CRM: Union Vista, no bairro Grand Ville
-- Última interação relevante: cliente confirmou compra sozinho e informou faixa de parcela confortável entre R$ 850 e R$ 950.
+- Última interação relevante: cliente informou estar sem restrições no nome após declarar faixa de parcela confortável.
 
 ## Contexto comercial
-Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a abertura do Reno, trouxe como prioridade viabilidade de pagamento: entrada facilitada, parcela mais acessível e pouca reserva imediata para entrada. O atendimento deve evitar promessa de aprovação e avançar uma pergunta por vez. Com os dados já informados, o próximo filtro comercial é verificar situação de crédito/restrição e, com segurança, buscar opção compatível no CRM/MCMV antes de apresentar empreendimento ou condição.
+Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a abertura do Reno, trouxe como prioridade viabilidade de pagamento: entrada facilitada, parcela mais acessível e pouca reserva imediata para entrada. O atendimento deve evitar promessa de aprovação e avançar uma pergunta por vez. Com os dados já informados, o próximo filtro comercial é consultar o CRM para opção compatível com perfil MCMV/financiamento e conduzir para simulação/análise de viabilidade e visita presencial na Fama, sem prometer aprovação.
 
 ## Diagnóstico
 ### Necessidade
 Busca imóvel que caiba no orçamento, com menor fricção de entrada e parcelas mais leves.
 
 ### Momento
-Iniciou atendimento ativo após responder ao primeiro contato. Já compartilhou dados financeiros iniciais e faixa de parcela confortável, então está aberto a diagnóstico de viabilidade, mas a condução deve continuar consultiva e sem prometer aprovação.
+Iniciou atendimento ativo após responder ao primeiro contato. Já compartilhou dados financeiros iniciais, faixa de parcela confortável e situação básica de crédito, então está aberto a diagnóstico de viabilidade e comparação de opções.
 
 ### Decisão
 Cliente confirmou que pretende comprar sozinho. Até o momento, não há indicação de composição de renda com outra pessoa. Isso torna a renda individual o principal balizador de viabilidade e exige cuidado antes de insistir em ticket mais alto.
 
 ### Viabilidade
-Base inicial declarada no CRM: renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS e parcela confortável entre R$ 850 e R$ 950. Tratar como referência inicial, não como simulação aprovada. Próxima condução deve confirmar situação de crédito/restrição e avaliar, com dados seguros do CRM, se o Union Vista ainda faz sentido ou se será melhor apresentar alternativa de menor valor/entrada mais viável. Não prometer aprovação, subsídio ou encaixe antes de análise.
+Base inicial declarada no CRM: renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, parcela confortável entre R$ 850 e R$ 950 e ausência de restrições no nome informada pelo cliente. Tratar como referência inicial, não como simulação aprovada. Próxima condução deve avaliar, com dados seguros do CRM, se o Union Vista ainda faz sentido ou se será melhor apresentar alternativa de menor valor/entrada mais viável. Não prometer aprovação, subsídio ou encaixe antes de análise.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Falha técnica no primeiro envio
@@ -72,6 +73,9 @@ Cliente informou acreditar ter cerca de R$ 2 mil de FGTS, renda mensal aproximad
 ### 2026-05-05 — Parcela confortável informada
 Cliente informou que a parcela confortável hoje seria aproximadamente entre R$ 850 e R$ 950 mensais. Próximo diagnóstico no CRM: confirmar situação de crédito/restrição para avaliar viabilidade de financiamento e selecionar opção compatível, sem promessa de aprovação.
 
+### 2026-05-05 — Situação de restrição informada
+Cliente informou estar sem restrições no nome. Perfil inicial consolidado para continuidade: compra sozinho, renda aproximada, pouca reserva de entrada, FGTS baixo e parcela confortável definida. Próximo passo recomendado: conduzir para simulação/análise de viabilidade e visita presencial na Fama, sem prometer aprovação.
+
 ## Objeções e travas
 - Prioridade de viabilidade: entrada facilitada e parcela acessível.
 - Trava financeira: pouca reserva imediata para entrada, cerca de R$ 3 mil declarados.
@@ -81,7 +85,7 @@ Cliente informou que a parcela confortável hoje seria aproximadamente entre R$ 
 - Como pretende comprar sozinho, pode ser necessário priorizar MCMV, ticket menor, condição de entrada mais leve ou visita presencial para simulação segura.
 
 ## Próximo passo
-Responder comercialmente no WhatsApp normal, sem envio por esta rotina silenciosa: reconhecer a faixa de parcela, confirmar situação de crédito/restrição de forma leve e depois consultar o CRM para opção compatível com renda, FGTS, reserva e parcela declaradas. Se houver opção com sinal positivo, conduzir para visita presencial na Fama para simulação e direcionamento seguro.
+Responder comercialmente no WhatsApp normal, sem envio por esta rotina silenciosa: consolidar a viabilidade inicial, consultar opções compatíveis no CRM e conduzir para simulação/análise presencial na Fama se houver sinal de encaixe. Evitar promessa de aprovação; usar os dados declarados apenas como referência inicial.
 
 ## Observações operacionais
 - Marcador CRM anterior: `[reno_reprocess_20260505_5_leads]`.
