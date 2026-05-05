@@ -5,38 +5,37 @@ entity_type: atendimento
 entity_name: Edmilson Sena
 client_id: 11180
 broker_id: 35
-status_crm: Sem Atendimento
+status_crm: Não Respondeu
 source: Facebook Ads
-created: '2026-05-04'
-updated: '2026-05-04'
+created: '2026-05-05'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - primeiro-contato
-  - falha-envio
+  - reprocessamento
 ---
 # Atendimento — Edmilson Sena
 
 ## Resumo atual
-Cliente novo do Reno, vindo de Facebook Ads, com interesse no Place+Arbi. O primeiro contato via WhatsApp foi tentado, mas não foi enviado por falha técnica de entrega. O status foi preservado como Sem Atendimento e a repescagem não foi inicializada porque não houve envio bem-sucedido.
+Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.
 
 ## Dados operacionais
 - Cliente ID: 11180
 - Broker ID: 35
-- Status CRM: Sem Atendimento
-- Origem: Facebook Ads / lead_automatico
-- Telefone/WhatsApp: contato cadastrado no CRM com WhatsApp informado
-- Empreendimento de interesse: Place+Arbi, Shopping Park
-- Última interação relevante: tentativa de primeiro contato do Reno não concluída em 2026-05-04
+- Status CRM: Não Respondeu
+- Origem: Facebook Ads
+- WhatsApp: cadastrado no CRM
+- Última interação relevante: primeiro contato enviado pelo Reno em duas mensagens.
 
 ## Contexto comercial
-Lead demonstrou interesse no empreendimento Place+Arbi, no bairro Shopping Park, em Uberlândia. Ainda não houve resposta ou diagnóstico comercial porque a primeira mensagem não foi entregue.
+Cliente demonstrou interesse no Place+Arbi, no bairro Shopping Park.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não identificada.
+Ainda não diagnosticada; primeiro contato busca confirmar interesse na região.
 
 ### Momento
 Ainda não identificado.
@@ -45,25 +44,21 @@ Ainda não identificado.
 Ainda não identificada.
 
 ### Viabilidade
-Ainda não identificada.
+Ainda não identificada; não houve conversa sobre financiamento ou condição.
 
 ## Histórico curado de interações
-### 2026-05-04 — Falha no primeiro contato via WhatsApp
-O Reno tentou iniciar o atendimento com abertura curta e contextual sobre o interesse no Place+Arbi, no Shopping Park. As tentativas de envio para o contato cadastrado e sua variação com nono dígito não foram concluídas por falha técnica de entrega do WhatsApp.
+### 2026-05-04 — Falha técnica no primeiro envio
+Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status permaneceu `Sem Atendimento`.
 
-Mensagem planejada:
-- Oi, Edmilson. Aqui é o Reno, da Fama Negócios Imobiliários. Vi que você demonstrou interesse no Place+Arbi, no Shopping Park.
-- Você está procurando imóvel nessa região?
-
-Resultado operacional: WhatsApp não enviado, status preservado como Sem Atendimento, repescagem não inicializada.
-
-Ref.: evt_3348 / 3348_1777942867990
+### 2026-05-05 — Primeiro contato reprocessado
+Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Place+Arbi/Shopping Park e pergunta se o cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
 ## Objeções e travas
-- Trava operacional: falha técnica de entrega do WhatsApp no primeiro contato.
+- Nenhuma objeção comercial ainda; havia apenas falha operacional de envio, já corrigida neste reprocessamento.
 
 ## Próximo passo
-Reauditar o caminho técnico de envio WhatsApp antes de nova tentativa automática. Não avançar status nem inicializar repescagem sem envio bem-sucedido.
+Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar a interação no CRM e continuar qualificação consultiva.
 
 ## Observações operacionais
-CRM validado como fonte de verdade: cliente existente, broker_id=35, status Sem Atendimento, empreendimento único associado. Nome do cliente parece confiável para saudação; não houve necessidade de confirmação prévia de nome.
+- Marcador CRM: `[reno_reprocess_20260505_5_leads]`.
+- Refs. WhatsApp: 3EB007C3AD239B798CFCA2 / 3EB09582ECE86FEBA0FC1F.
