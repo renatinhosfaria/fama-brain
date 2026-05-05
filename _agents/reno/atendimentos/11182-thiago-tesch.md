@@ -31,7 +31,7 @@ tags:
 # Atendimento — Thiago Tesch
 
 ## Resumo atual
-Cliente está em `Agendamento` no FamaChat após atendimento ativo pelo Reno. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, confirmou que pretende comprar sozinho, indicou parcela confortável entre R$ 850 e R$ 950 e informou estar sem restrições no nome. Após objeção de disponibilidade em dias úteis, indicou que fim de semana costuma ser mais tranquilo e que o horário de sábado era indiferente/flexível. CRM registra visita presencial/análise de viabilidade agendada para sábado, 2026-05-09, às 10h, appointment_id 244. Cliente respondeu `Ok` após a confirmação/orientação da visita, reforçando manter o agendamento ativo. Repescagem está interrompida por resposta inbound, não há resgate ativo, e a branch de follow-up de Agendamento está inicializada.
+Cliente está em `Agendamento` no FamaChat após atendimento ativo pelo Reno. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, confirmou que pretende comprar sozinho, indicou parcela confortável entre R$ 850 e R$ 950 e informou estar sem restrições no nome. Após objeção de disponibilidade em dias úteis, indicou que fim de semana costuma ser mais tranquilo e que o horário de sábado era indiferente/flexível. CRM registra visita presencial/análise de viabilidade agendada para sábado, 2026-05-09, às 10h, appointment_id 244. Cliente respondeu `Ok` após a confirmação/orientação da visita e depois enviou nova saudação `Oi`; agendamento permanece ativo. Repescagem está interrompida por resposta inbound, não há resgate ativo, e a branch de follow-up de Agendamento está inicializada.
 
 ## Dados operacionais
 - Cliente ID: 11182
@@ -41,7 +41,7 @@ Cliente está em `Agendamento` no FamaChat após atendimento ativo pelo Reno. O 
 - WhatsApp: cadastrado no CRM
 - Interesse CRM: Union Vista, no bairro Grand Ville
 - Agendamento ativo: appointment_id 244, visita/análise presencial na Fama em 2026-05-09 às 10h.
-- Última interação relevante: cliente respondeu `Ok` após confirmação da visita de sábado 09/05/2026 às 10h na Fama e orientação para levar documento/comprovante de renda; manter agendamento ativo.
+- Última interação relevante: cliente enviou saudação `Oi` no WhatsApp após visita/análise presencial já estar registrada; status preservado em `Agendamento`, sem envio por esta rotina silenciosa.
 
 ## Contexto comercial
 Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a abertura do Reno, trouxe como prioridade viabilidade de pagamento: entrada facilitada, parcela mais acessível e pouca reserva imediata para entrada. O atendimento deve evitar promessa de aprovação e avançar uma pergunta por vez. Com os dados já informados, a visita/análise presencial deve focar em viabilidade real, MCMV/subsídio, uso de FGTS, entrada parcelada pela construtora e seleção de opção compatível. Como o cliente compra sozinho e tem renda/entrada limitadas, o atendimento presencial deve tratar o Union Vista como interesse inicial e validar se ticket/condição realmente encaixam antes de insistir.
@@ -51,7 +51,7 @@ Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a aber
 Busca imóvel que caiba no orçamento, com menor fricção de entrada e parcelas mais leves.
 
 ### Momento
-Iniciou atendimento ativo após responder ao primeiro contato. Já compartilhou dados financeiros iniciais, faixa de parcela confortável e situação básica de crédito. A objeção de agenda durante a semana foi contornada com disponibilidade de fim de semana, culminando em agendamento de visita/análise presencial. A resposta `Ok` após confirmação/orientação indica ciência do compromisso.
+Iniciou atendimento ativo após responder ao primeiro contato. Já compartilhou dados financeiros iniciais, faixa de parcela confortável e situação básica de crédito. A objeção de agenda durante a semana foi contornada com disponibilidade de fim de semana, culminando em agendamento de visita/análise presencial. A resposta `Ok` após confirmação/orientação e a saudação posterior indicam conversa ainda aberta com o agendamento mantido.
 
 ### Decisão
 Cliente confirmou que pretende comprar sozinho. Até o momento, não há indicação de composição de renda com outra pessoa. Isso torna a renda individual o principal balizador de viabilidade e exige cuidado antes de insistir em ticket mais alto.
@@ -96,6 +96,9 @@ Durante a verificação final desta rotina, o CRM já constava com status `Agend
 ### 2026-05-05 — Confirmação/ciência da visita
 Cliente respondeu `Ok` após confirmação da visita de sábado 09/05/2026 às 10h na Fama e orientação para levar documento/comprovante de renda. Nota CRM 16769 registra a interação. Status CRM preservado em `Agendamento`; appointment_id 244 mantido ativo; repescagem continua interrompida e não há resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-05 — Nova saudação após agendamento
+Cliente enviou saudação `Oi` pelo WhatsApp após visita/análise presencial já estar combinada e registrada. A rotina silenciosa confirmou cliente em `broker_id=35`, preservou status `Agendamento`, manteve appointment_id 244 ativo, confirmou repescagem já interrompida e ausência de Resgate ativo, e registrou nota CRM 16884. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
 - Prioridade de viabilidade: entrada facilitada e parcela acessível.
 - Trava financeira: pouca reserva imediata para entrada, cerca de R$ 3 mil declarados.
@@ -117,16 +120,9 @@ Manter cliente em `Agendamento` e seguir a régua de confirmação da visita. Pr
 - Nota CRM da rotina silenciosa para inbound `Indiferente ai`: 16764.
 - Nota CRM de ajuste operacional da branch Agendamento: 16768.
 - Nota CRM para inbound `Ok` após confirmação/orientação da visita: 16769.
+- Nota CRM da rotina silenciosa para inbound `Oi` após agendamento: 16884.
 - Repescagem atual: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate: sem ciclo ativo no momento desta rotina silenciosa.
 - Agendamento: `enabled=true`, `step=0`, `appointment_id=244`, `next_run_at=2026-05-09T09:10:00-03:00`.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
 - Documento oficial deste atendimento: `_agents/reno/atendimentos/11182-thiago-tesch.md`. Existe documento legado fora de `atendimentos/`; não continuar escrevendo nele.
-
-
-## Atualização — nova saudação
-Cliente enviou “Oi” e “Boa noite”. Responder de forma aberta e cordial para continuar atendimento sem acrescentar nova pressão ao agendamento já confirmado.
-
-
-## Atualização — pedido de remarcação
-Cliente pediu para remarcar a visita de sábado 09/05/2026 às 10h e explicou que esse sábado fica ruim por compromisso mais tarde. Interpretação operacional: aceitar a remarcação sem pressão, ainda não alterar o FamaChat porque falta horário confirmado para sexta. Próxima mensagem: sugerir/validar sexta 08/05/2026 e perguntar melhor horário.
