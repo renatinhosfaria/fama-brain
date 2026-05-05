@@ -65,3 +65,12 @@ Conduzir a resposta comercial pelo atendimento normal do Reno, retomando o conte
 - Nenhum envio ao cliente foi feito por esta rotina silenciosa.
 - Status operacional verificado/corrigido para `Em Atendimento`.
 - Repescagem interrompida por resposta inbound do cliente.
+
+
+### 2026-05-05 — Cliente reforçou interesse
+Cliente respondeu pelo WhatsApp: “Sim” e “Gostaria de saber mais”. Lead #2999 confirmado em `Em Atendimento`; nota CRM #16864 registrada. Próxima resposta deve contextualizar brevemente a Fama e o Garden Sul, depois avançar com diagnóstico inicial em uma pergunta: se a busca é para morar ou investir.
+
+## Próxima mensagem sugerida
+Claro, Aline. A Fama é uma imobiliária aqui de Uberlândia; nosso atendimento é bem focado em entender o que faz sentido para você e também em orientar a parte de financiamento/viabilidade, sem te empurrar imóvel.
+
+Vi que seu contato veio pelo Garden Sul, no Jardim Sul. Você está olhando mais para morar ou para investir?
