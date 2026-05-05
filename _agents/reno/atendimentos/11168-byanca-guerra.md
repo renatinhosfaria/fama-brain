@@ -103,3 +103,11 @@ Na sessão comercial normal, reconstruir o contexto imediato antes de responder 
 
 ## Observações operacionais
 Nome no CRM parece humano e pode ser usado com capitalização natural (`Byanca`). Mídias e dados foram conduzidos a partir de material do Garden Sul; não passar contato da construtora nem endereço completo do empreendimento espontaneamente. O último inbound foi processado somente como persistência operacional: status preservado em `Em Atendimento`, Resgate parado e nota registrada no FamaChat, sem envio de WhatsApp ao cliente.
+
+
+### 2026-05-05 — Entrada informada e convite para visita/simulação
+Cliente informou entrada aproximada de R$ 10.000,00 para a planta de 56,32m² do Garden Sul. Valor da planta no CRM: R$ 330.900,00. Condução correta: não prometer aprovação nem condição fechada; explicar que é preciso avaliar sinal, parcelas até a entrega (set/2028) e financiamento do saldo.
+
+Próximo passo comercial: cliente com sinal positivo e dúvida de viabilidade/condição. Reno deve conduzir para visita presencial na Fama para simular a condição na tela e confirmar se o fluxo cabe no momento dela.
+
+Observação operacional: após resposta inbound, conversa segue em atendimento normal. Novo outbound normal rearmou ciclo de resgate em `visita_pendente`, step 0, próxima elegibilidade 2026-05-05T10:27:20-03:00 caso haja silêncio.
