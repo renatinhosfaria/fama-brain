@@ -92,3 +92,11 @@ Aguardar reação da cliente à resposta sobre a planta de 56,32m² e acabamento
 
 ## Observações operacionais
 Nome no CRM parece humano e pode ser usado com capitalização natural (`Byanca`). A repescagem foi encerrada por resposta inbound. O Resgate pós-mídia anterior foi parado por resposta inbound; há novo Resgate ativo apenas por outbound comercial posterior, para eventual silêncio após a resposta sobre acabamento. Mídias enviadas a partir de material do Garden Sul; não passar contato da construtora nem endereço completo do empreendimento espontaneamente.
+
+
+### 2026-05-05 — Valor/condição da planta 56,32m²
+Cliente respondeu `sim` ao convite para receber faixa de valor e condição da planta de 56,32m² do Garden Sul. Dados confirmados no CRM: planta/unidade 56,32m² com valor de venda R$ 330.900,00, empreendimento em lançamento, previsão de entrega set/2028 e condomínio do empreendimento informado em R$ 280,00. Resposta comercial deve evitar promessa de financiamento/condição fechada; condução correta é explicar que a condição depende de entrada, parcelas da obra e financiamento do saldo, perguntando qual entrada aproximada a cliente teria em mente para montar leitura realista.
+
+Próximo passo: aguardar resposta sobre entrada aproximada. Se indicar entrada/viabilidade ou sinal positivo, avançar para leitura de condição e convite de visita presencial na Fama.
+
+Observação operacional: resposta da cliente interrompeu o resgate anterior (`client_replied`). Após o novo outbound normal sobre valor/condição, ciclo de resgate foi rearmado em `condicao_valor`, step 0, próxima elegibilidade 2026-05-05T10:17:41-03:00 se houver silêncio.
