@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-05-03'
-updated: '2026-05-04'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
@@ -20,7 +20,7 @@ tags:
 # Atendimento — Evellyn Eduardo Pereira
 
 ## Resumo atual
-Primeiro contato do Reno foi enviado com sucesso pelo WhatsApp em 2026-05-03 para a cliente com interesse no Union Vista, no Grand Ville. Como não houve resposta, o Reno enviou a repescagem step 1 em 2026-05-03 às 19:39 BRT e a repescagem step 2 em 2026-05-04 às 09:45 BRT. Cliente permanece em `Não Respondeu`.
+Primeiro contato do Reno foi enviado com sucesso pelo WhatsApp em 2026-05-03 para a cliente com interesse no Union Vista, no Grand Ville. Como não houve resposta, o Reno enviou as repescagens step 1, step 2 e step 3. A cliente permanece em `Não Respondeu` e a próxima janela da régua está prevista para 2026-05-06 19:10 BRT.
 
 ## Dados operacionais
 - Cliente ID: 11150
@@ -28,7 +28,7 @@ Primeiro contato do Reno foi enviado com sucesso pelo WhatsApp em 2026-05-03 par
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - WhatsApp: contato validado no CRM
-- Última interação relevante: repescagem step 2 enviada pelo Reno via WhatsApp em 2026-05-04 09:45 BRT
+- Última interação relevante: repescagem step 3 enviada pelo Reno via WhatsApp em 2026-05-05 14:26 BRT
 
 ## Contexto comercial
 Lead vindo de Facebook Ads com interesse vinculado ao empreendimento Union Vista, no bairro Grand Ville, Uberlândia. O primeiro contato já perguntou se a cliente procura imóvel nessa região. A repescagem step 1 evitou repetir a pergunta de região e apresentou um novo motivo para resposta: entender se o lançamento combina com prazo, região e forma de compra.
@@ -37,7 +37,7 @@ Contexto do imóvel: Union Vista, lançamento no Grand Ville/Zona Leste, com apa
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. A repescagem tenta abrir a primeira resposta para entender se o interesse no Union Vista é para moradia, comparação de oportunidade ou outro objetivo.
+Ainda não diagnosticada. A repescagem tenta abrir a primeira resposta para entender se o interesse no Union Vista está mais ligado à localização, planta/tamanho ou condição de compra.
 
 ### Momento
 Ainda não identificado. O prazo do empreendimento pode ser relevante, mas não há confirmação do momento de compra da cliente.
@@ -46,7 +46,7 @@ Ainda não identificado. O prazo do empreendimento pode ser relevante, mas não 
 Ainda não identificado.
 
 ### Viabilidade
-Ainda não identificada. O step 2 abordou viabilidade de forma consultiva, sem prometer crédito: entrada, parcelas e prazo da obra como filtro para evitar perda de tempo antes de comparar unidades.
+Ainda não identificada. O step 2 abordou viabilidade de forma consultiva, sem prometer crédito: entrada, parcelas e prazo da obra como filtro para evitar perda de tempo antes de comparar unidades. O step 3 mudou o foco para critério principal de escolha, sem repetir o convite de leitura de viabilidade.
 
 ## Histórico curado de interações
 ### 2026-05-03 — Primeiro contato enviado
@@ -80,16 +80,30 @@ Mensagem enviada:
 
 Estado CRM após marcação: `repescagem.step=2`, `enabled=true`, `last_sent_at=2026-05-04T09:45:26-03:00`, `next_run_at=2026-05-05T14:20:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
 
+### 2026-05-05 — Repescagem step 3 enviada
+Mensagem enviada:
+
+> Boa tarde, Evellyn! 📍
+>
+> No caso do **Union Vista**, o anúncio mostra o empreendimento, mas a escolha certa costuma depender do critério principal: localização no Grand Ville, tamanho da planta ou condição de compra.
+>
+> Pra eu não te mandar informação solta, qual desses pontos pesa mais pra você hoje?
+
+Ângulo usado: diagnóstico leve / critério principal de escolha. Diferença em relação ao step 2: deixou de oferecer leitura de viabilidade e passou a pedir uma escolha simples entre localização, planta/tamanho e condição de compra, para evitar mandar informação solta e abrir a primeira microresposta. Envio feito pelo fallback excepcional do bridge local porque `send_message` não estava exposto no runtime do cron; o bridge estava saudável e conectado.
+
+Estado CRM após marcação: `repescagem.step=3`, `enabled=true`, `last_sent_at=2026-05-05T14:26:26-03:00`, `next_run_at=2026-05-06T19:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
-- Trava atual: silêncio após primeiro contato e repescagens steps 1 e 2.
+- Trava atual: silêncio após primeiro contato e repescagens steps 1, 2 e 3.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se ela responder, mover para `Em Atendimento` quando aplicável e seguir a qualificação normal do Reno. Se permanecer sem resposta até o próximo vencimento da régua, enviar repescagem step 3 em 2026-05-05 às 14:20 BRT, mudando novamente o ângulo para diagnóstico leve sem repetir a pergunta de finalidade nem o convite de primeira leitura de viabilidade.
+Aguardar resposta da cliente. Se ela responder, mover para `Em Atendimento` quando aplicável e seguir a qualificação normal do Reno. Se permanecer sem resposta até o próximo vencimento da régua, enviar repescagem step 4 em 2026-05-06 às 19:10 BRT, mudando novamente o ângulo para convite consultivo direto sem repetir a pergunta de finalidade, o convite de viabilidade ou a pergunta sobre critério principal.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: evt_3318.
 - Idempotency key do primeiro contato: 3318_1777792489570.
 - Documento mantido no caminho oficial do atendimento do Reno.
 - Repescagem enviada pelo worker `reno-repescagem-message-queue-production` em fila própria, sem uso de trava global com Resgate.
-- No envio do step 2, o fallback do bridge local `127.0.0.1:3000` foi usado somente após validação/reserva do candidato e saúde do bridge (`status=connected`).
+- Nos envios dos steps 2 e 3, o fallback do bridge local `127.0.0.1:3000` foi usado somente após validação/reserva do candidato e saúde do bridge (`status=connected`).
+- Após o step 3, o status CRM permaneceu corretamente em `Não Respondeu`; não há arquivamento antes do step 5.
