@@ -5,58 +5,60 @@ entity_type: atendimento
 entity_name: Thulio Medeiros
 client_id: 11174
 broker_id: 35
-status_crm: Sem Atendimento
+status_crm: Não Respondeu
 source: Facebook Ads
-created: '2026-05-04'
-updated: '2026-05-04'
+created: '2026-05-05'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - primeiro-contato
-  - falha-envio
+  - reprocessamento
 ---
 # Atendimento — Thulio Medeiros
 
 ## Resumo atual
-Cliente novo do Reno, vindo de Facebook Ads, com interesse no empreendimento Place+Arbi, no Shopping Park. O primeiro contato automático foi tentado em 2026-05-04, mas o WhatsApp não foi enviado por falha técnica nas formas disponíveis de destino.
+Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.
 
 ## Dados operacionais
 - Cliente ID: 11174
 - Broker ID: 35
-- Status CRM: Sem Atendimento
-- Origem: Facebook Ads / lead automático
-- Telefone/WhatsApp: contato presente no CRM; tentativa de WhatsApp falhou tecnicamente
-- Última interação relevante: tentativa de primeiro contato não concluída em 2026-05-04
+- Status CRM: Não Respondeu
+- Origem: Facebook Ads
+- WhatsApp: cadastrado no CRM
+- Última interação relevante: primeiro contato enviado pelo Reno em duas mensagens.
 
 ## Contexto comercial
-O lead demonstrou interesse no Place+Arbi, no bairro Shopping Park, em Uberlândia. Ainda não houve conversa com o cliente, então necessidade, momento, decisão e viabilidade permanecem desconhecidos.
+Cliente demonstrou interesse no Place+Arbi, no bairro Shopping Park.
 
 ## Diagnóstico
 ### Necessidade
-Não diagnosticada.
+Ainda não diagnosticada; primeiro contato busca confirmar interesse na região.
 
 ### Momento
-Não diagnosticado.
+Ainda não identificado.
 
 ### Decisão
-Não diagnosticada.
+Ainda não identificada.
 
 ### Viabilidade
-Não diagnosticada.
+Ainda não identificada; não houve conversa sobre financiamento ou condição.
 
 ## Histórico curado de interações
-### 2026-05-04 — Falha no primeiro contato via WhatsApp
-Reno validou o cliente no CRM como elegível (`broker_id=35`, status `Sem Atendimento`) e preparou abertura curta contextual sobre o Place+Arbi, no Shopping Park. A tentativa de envio falhou nas formas disponíveis, incluindo variação com e sem nono dígito. Nenhum WhatsApp foi enviado com sucesso.
+### 2026-05-04 — Falha técnica no primeiro envio
+Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status permaneceu `Sem Atendimento`.
+
+### 2026-05-05 — Primeiro contato reprocessado
+Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Place+Arbi/Shopping Park e pergunta se o cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
 ## Objeções e travas
-- Trava operacional: falha técnica de envio no WhatsApp antes do início da conversa.
+- Nenhuma objeção comercial ainda; havia apenas falha operacional de envio, já corrigida neste reprocessamento.
 
 ## Próximo passo
-Reauditar o caminho de envio WhatsApp ou retentar somente após confirmação de correção técnica. Não iniciar repescagem enquanto o primeiro WhatsApp não for enviado.
+Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar a interação no CRM e continuar qualificação consultiva.
 
 ## Observações operacionais
-- Status preservado como `Sem Atendimento`.
-- `meta_data.reno_followup.repescagem` não foi inicializada porque não houve envio bem-sucedido.
-- Nota CRM registrada pelo Reno com referência ao evento `evt_3342` / `3342_1777910637424`.
+- Marcador CRM: `[reno_reprocess_20260505_5_leads]`.
+- Refs. WhatsApp: 3EB084B3C38C5AE127ECD3 / 3EB0235E866BB50980B242.
