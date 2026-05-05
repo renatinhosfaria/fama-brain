@@ -78,3 +78,7 @@ Responder no WhatsApp de forma curta e humana, reconhecendo o objetivo de primei
 
 ## Observações operacionais
 CRM/FamaChat permanece como fonte operacional de verdade. A rotina silenciosa identificou cliente elegível (`broker_id=35`), status já estava em `Em Atendimento` e a repescagem já estava interrompida; não houve regressão de status nem envio ao cliente. Documento consolidado no caminho oficial do Reno.
+
+
+### Diagnóstico: financiamento
+Cliente informou que já fez simulação de financiamento. Ainda falta entender se o resultado ficou confortável, qual ponto pesa mais para a decisão (entrada/parcela) e se há abertura para visita presencial consultiva na Fama.
