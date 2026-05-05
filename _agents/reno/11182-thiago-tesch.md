@@ -56,3 +56,7 @@ Conduzir para simulação/análise mais precisa e propor visita presencial na Fa
 - Cliente confirmou que compraria sozinho.
 - Cliente informou parcela confortável entre R$ 850 e R$ 950.
 - Cliente confirmou estar sem restrições.
+
+
+## Atualização — objeção de disponibilidade
+Cliente respondeu à proposta de visita/análise presencial dizendo: “Esses dias estou apertado”. Tratar sem pressão. Manter condução consultiva, oferecer avançar primeiro por WhatsApp e perguntar qual dia/horário ficaria mais tranquilo para retomar/agendar.
