@@ -88,3 +88,7 @@ Na resposta comercial normal ao cliente, reconhecer de forma breve que é positi
 
 ## Observações operacionais
 CRM/FamaChat permanece como fonte operacional de verdade. Nesta rotina silenciosa, a cliente foi identificada por WhatsApp/JID, está elegível para Reno (`broker_id=35`) e já estava em `Em Atendimento`, então não houve mudança de status. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; nenhum resgate ativo foi identificado. Nota CRM 16837 registrou o inbound “Ficou por dentro sim”, preservação de status e ausência de follow-up ativo. Não houve envio de mensagem ao cliente.
+
+
+### Diagnóstico: momento de compra
+Cliente informou que pretende comprar nos próximos meses. Sinal quente: primeira compra para moradia, simulação já feita e considerada dentro do esperado. Próxima condução recomendada: propor visita presencial consultiva na Fama para organizar opções e financiamento.
