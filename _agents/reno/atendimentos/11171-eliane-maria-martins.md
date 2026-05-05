@@ -14,13 +14,13 @@ tags:
   - atendimento
   - whatsapp
   - famachat
-  - primeiro-contato
-  - reprocessamento
+  - repescagem
+  - union-vereda
 ---
 # Atendimento — Eliane Maria Martins
 
 ## Resumo atual
-Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.
+Repescagem step 1 enviada com sucesso via WhatsApp em 2026-05-05 19:26 BRT. Cliente permanece em `Não Respondeu`, sem alteração de status, aguardando primeira resposta. Próxima repescagem prevista para 2026-05-06 09:10 BRT se continuar silenciosa.
 
 ## Dados operacionais
 - Cliente ID: 11171
@@ -28,23 +28,24 @@ Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, a
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - WhatsApp: cadastrado no CRM
-- Última interação relevante: primeiro contato enviado pelo Reno em duas mensagens.
+- Empreendimento de interesse: Union Vereda — Jaraguá, Uberlândia
+- Última interação relevante: repescagem step 1 enviada pelo Reno em 2026-05-05 19:26 BRT.
 
 ## Contexto comercial
-Cliente demonstrou interesse no Union Vereda, no bairro Jaraguá.
+Cliente demonstrou interesse no Union Vereda, lançamento no bairro Jaraguá, em Uberlândia. O empreendimento tem apartamentos de 2 quartos com suíte e varanda/sacada, opções publicadas a partir de aproximadamente R$ 288 mil e entrega prevista para Dez/2028.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada; primeiro contato busca confirmar interesse na região.
+Ainda não diagnosticada. A repescagem buscou abrir a conversa por finalidade de compra, evitando repetir a pergunta inicial sobre região.
 
 ### Momento
-Ainda não identificado.
+Ainda não identificado. Como o imóvel é lançamento com entrega futura, o timing de compra precisa ser confirmado quando houver resposta.
 
 ### Decisão
 Ainda não identificada.
 
 ### Viabilidade
-Ainda não identificada; não houve conversa sobre financiamento ou condição.
+Ainda não identificada; não houve conversa sobre entrada, renda, financiamento ou parcela. Não há promessa de crédito.
 
 ## Histórico curado de interações
 ### 2026-05-04 — Falha técnica no primeiro envio
@@ -53,12 +54,30 @@ Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status
 ### 2026-05-05 — Primeiro contato reprocessado
 Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Union Vereda/Jaraguá e pergunta se a cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
+### 2026-05-05 — Repescagem step 1 enviada
+Mensagem enviada com ângulo de organização da busca/finalidade de compra, mudando a abordagem do primeiro contato que já havia perguntado sobre região.
+
+Mensagem enviada:
+> Oi, Eliane! Tudo bem? 🏡
+>
+> Sobre o Union Vereda, no Jaraguá, o anúncio pode chamar atenção, mas o melhor começo é entender se o lançamento combina com o seu plano antes de ficar olhando opção solta.
+>
+> Assim eu consigo te orientar de forma **mais direcionada**.
+>
+> Você olha esse imóvel mais para **morar** ou para **comparar uma oportunidade de compra**?
+
+Estado CRM após marcação: `repescagem.step=1`, `enabled=true`, `stopped_reason=null`, `last_sent_at=2026-05-05T19:26:35-03:00`, `next_run_at=2026-05-06T09:10:00-03:00`.
+
 ## Objeções e travas
-- Nenhuma objeção comercial ainda; havia apenas falha operacional de envio, já corrigida neste reprocessamento.
+- Nenhuma objeção comercial ainda; cliente ainda não respondeu.
 
 ## Próximo passo
-Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar a interação no CRM e continuar qualificação consultiva.
+Aguardar primeira resposta. Se responder, mover de `Não Respondeu` para `Em Atendimento`, registrar a interação no CRM e seguir qualificação consultiva. Se não responder até a próxima janela, enviar repescagem step 2 com novo ângulo, preferencialmente viabilidade prática do lançamento/evitar caminho errado.
 
 ## Observações operacionais
-- Marcador CRM: `[reno_reprocess_20260505_5_leads]`.
-- Refs. WhatsApp: 3EB025A384768D74A5B60E / 3EB0B8ED02E45B826A5168.
+- Marcador CRM do primeiro contato: `[reno_reprocess_20260505_5_leads]`.
+- Envio da repescagem step 1 feito usando o `whatsapp_jid` salvo no CRM.
+- Runtime do cron não expôs `send_message`; foi usado fallback excepcional pelo bridge local saudável (`/health` conectado) no endpoint `/send`.
+- Sucesso técnico do bridge: `success=true`, validação `onWhatsApp`, `messageId=3EB05B0FCE976039BFB660`.
+- Envio registrado por `mcp_mcp_postgres_mark_reno_followup_sent`; nota CRM automática criada com ID 16868.
+- Claim de repescagem limpo após a marcação (`claim_expires_at=null`).
