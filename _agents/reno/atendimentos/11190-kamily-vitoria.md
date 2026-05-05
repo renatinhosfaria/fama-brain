@@ -92,3 +92,6 @@ CRM/FamaChat permanece como fonte operacional de verdade. Nesta rotina silencios
 
 ### Diagnóstico: momento de compra
 Cliente informou que pretende comprar nos próximos meses. Sinal quente: primeira compra para moradia, simulação já feita e considerada dentro do esperado. Próxima condução recomendada: propor visita presencial consultiva na Fama para organizar opções e financiamento.
+
+### Diagnóstico: abertura para visita presencial
+Cliente respondeu que consegue vir à Fama esta semana. Lead com sinal quente para agendamento: primeira compra para moradia, simulação viável, intenção nos próximos meses e abertura para visita presencial. Próxima ação: perguntar dia e horário de preferência e, após confirmação, registrar agendamento no FamaChat.
