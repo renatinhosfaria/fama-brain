@@ -101,3 +101,7 @@ A sessão comercial normal do WhatsApp deve confirmar objetivamente o combinado 
 
 ## Observações operacionais
 CRM/FamaChat permanece como fonte operacional de verdade. Nesta rotina silenciosa, a cliente foi identificada por WhatsApp/JID, está elegível para Reno (`broker_id=35`) e já estava em `Agendamento`, então não houve mudança manual de status por esta rotina. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; nenhum resgate ativo foi identificado. O branch `reno_followup.agendamento` está ativo com appointment_id 245 e `next_run_at=2026-05-07T08:10:00-03:00`. Nota CRM 16881 registrou o inbound “Quinta”; nota CRM 16882 registrou o agendamento operacional. Não houve envio de mensagem ao cliente por esta rotina.
+
+
+### 2026-05-05 — Confirmação recebida
+Cliente respondeu “Ok, obrigada” após receber a confirmação da visita e o endereço. Appointment_id=245 atualizado para status `Confirmado`. Manter follow-up de agendamento ativo para reforço antes da visita.
