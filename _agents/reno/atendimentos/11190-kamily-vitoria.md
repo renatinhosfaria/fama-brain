@@ -106,3 +106,8 @@ CRM/FamaChat permanece como fonte operacional de verdade. Nesta rotina silencios
 
 ### 2026-05-05 — Preferência de horário para visita
 Cliente informou preferência de horário: 9h. Ainda falta confirmar o dia da semana para registrar o agendamento presencial no FamaChat. Próxima condução: perguntar qual dia às 9h fica melhor.
+
+### 2026-05-05 — Visita presencial agendada
+Cliente confirmou quinta-feira às 9h. Visita presencial registrada no FamaChat para 2026-05-07 às 09:00 (America/Sao_Paulo), appointment_id=245, tipo `Visita`, status `Agendado`, local Fama Negócios Imobiliários, endereço Av. Raulino Cotta Pacheco, 304. CRM atualizado para status `Agendamento`. Follow-up de agendamento Reno inicializado com step 0 e next_run_at 2026-05-07T08:10:00-03:00.
+
+Resumo comercial para recepção/atendimento presencial: Kamily busca primeiro imóvel para morar, pretende comprar nos próximos meses, já fez simulação de financiamento e considerou dentro do esperado. Interesse de origem: Place+Arbi / Shopping Park.
