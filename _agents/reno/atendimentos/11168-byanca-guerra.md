@@ -19,6 +19,7 @@ tags:
   - em-atendimento
   - midia
   - planta
+  - acabamento
   - garden-sul
 type: entity-profile
 updated: '2026-05-05'
@@ -26,7 +27,7 @@ updated: '2026-05-05'
 # Atendimento — Byanca Guerra
 
 ## Resumo atual
-Cliente está em `Em Atendimento` e avaliando o Garden Sul. Depois de receber fotos e plantas do empreendimento, respondeu em 2026-05-05 indicando preferência/interesse pela planta de 56,32m². O CRM confirmou `broker_id=35`; a repescagem já estava interrompida por resposta inbound anterior e o Resgate aberto após envio de mídia foi interrompido com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null` para evitar novo envio automático.
+Cliente está em `Em Atendimento` e avaliando o Garden Sul. Depois de receber fotos e plantas do empreendimento, respondeu em 2026-05-05 indicando preferência/interesse pela planta de 56,32m². O inbound interrompeu o Resgate que estava pendente após o envio de mídia; em seguida, a sessão comercial normal do Reno respondeu sobre a planta escolhida e acabamentos com dados seguros do CRM, e abriu novo ciclo de Resgate apenas para eventual silêncio após esse novo outbound.
 
 ## Dados operacionais
 - Cliente ID: 11168
@@ -35,12 +36,12 @@ Cliente está em `Em Atendimento` e avaliando o Garden Sul. Depois de receber fo
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: JID cadastrado no CRM
 - Empreendimento vinculado: Garden Sul (`id_empreendimento=25`)
-- Última interação relevante: cliente indicou preferência pela planta de 56,32m² em 2026-05-05 após receber fotos/plantas do Garden Sul
+- Última interação relevante: resposta comercial do Reno sobre a planta de 56,32m² e acabamentos do Garden Sul em 2026-05-05; aguardando reação da cliente
 
 ## Contexto comercial
 Interesse vinculado ao empreendimento Garden Sul, no bairro Jardim Sul/Zona Sul de Uberlândia. O empreendimento é lançamento da Opção Empreendimentos, com apartamentos de 2 quartos sendo 1 suíte, sacada gourmet e 1 vaga. Plantas identificadas no material público/oficial: tipo 52,01m², tipo 56,32m² e térreas de 69,29m², 73,45m² e 82,70m². Pontos fortes seguros: 2 torres, 3 elevadores por torre, piscina, espaço gourmet, playground, salão de festas, quadra poliesportiva e academia/espaço fitness. Entrega prevista no CRM: set/2028.
 
-A cliente primeiro pediu material visual e agora sinalizou preferência pela planta de 56,32m². A próxima resposta comercial deve confirmar essa escolha, explicar de forma curta o perfil da planta/unidade com dados seguros e conduzir para entender se o layout agrada. Havendo sinal positivo, fazer ponte para visita presencial na Fama.
+A cliente primeiro pediu material visual e depois sinalizou preferência pela planta de 56,32m². A resposta comercial registrada no CRM explicou que a opção tem 2 quartos sendo 1 suíte, 2 banheiros, sacada gourmet e 1 vaga; acabamento cadastrado inclui porcelanato 60x60, esquadrias pretas, gás canalizado, parede de concreto e medição individualizada de água. Detalhes específicos de revestimentos de cozinha/banheiros/área de serviço devem ser confirmados pelo memorial descritivo para não inventar informação.
 
 ## Diagnóstico
 ### Necessidade
@@ -78,21 +79,16 @@ Cliente pediu fotos e plantas do empreendimento. Contexto ativo e CRM indicavam 
 ### 2026-05-05 — Cliente indica planta de 56,32m²
 Cliente respondeu ao material enviado com `a de 56,32 m2`, indicando preferência/interesse pela planta de 56,32m² do Garden Sul. Status no CRM já estava `Em Atendimento`, sem necessidade de mudança. O ciclo de Resgate aberto após a mídia foi interrompido com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Nota objetiva registrada no FamaChat.
 
+### 2026-05-05 — Resposta comercial sobre planta e acabamentos
+Sessão comercial normal do Reno respondeu à cliente sobre a planta de 56,32m² e acabamentos com dados confirmados no CRM: 2 quartos sendo 1 suíte, 2 banheiros, sacada gourmet, 1 vaga, porcelanato 60x60, esquadrias pretas, gás canalizado, parede de concreto e medição individualizada de água. Também registrou ressalva para confirmar detalhes específicos de revestimentos pelo memorial descritivo, evitando inventar informação. Após esse outbound normal, novo ciclo de Resgate foi inicializado para eventual silêncio pós-resposta.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada até o momento.
 - Trava anterior de silêncio foi encerrada pela resposta inbound.
-- Resgate pós-mídia foi interrompido porque a cliente respondeu antes do próximo disparo.
+- Resgate pós-mídia anterior foi interrompido porque a cliente respondeu antes do próximo disparo.
 
 ## Próximo passo
-Na resposta comercial normal, retomar a planta de 56,32m² do Garden Sul, confirmar que é essa opção que ela quer avaliar e explicar de forma curta o perfil da planta com dados seguros. Se a cliente demonstrar que a planta agradou ou pedir valor/condição, fazer ponte para visita presencial na Fama como próximo passo lógico. Se ela trouxer dúvida objetiva, responder curto e conduzir para o próximo passo sem prometer financiamento.
+Aguardar reação da cliente à resposta sobre a planta de 56,32m² e acabamento. Se ela demonstrar que a planta agradou, pedir valor/condição ou avançar no interesse, fazer ponte para visita presencial na Fama como próximo passo lógico. Se ela trouxer dúvida objetiva, responder curto e conduzir para o próximo passo sem prometer financiamento.
 
 ## Observações operacionais
-Nome no CRM parece humano e pode ser usado com capitalização natural (`Byanca`). A repescagem foi encerrada para evitar novo envio automático. O Resgate pós-mídia também foi parado por resposta inbound. Mídias enviadas a partir de material do Garden Sul; não passar contato da construtora nem endereço completo do empreendimento espontaneamente.
-
-
-### 2026-05-05 — Interesse na planta 56,32m² e dúvida sobre acabamentos
-Cliente indicou interesse na planta de 56,32m² do Garden Sul e perguntou sobre acabamentos, piso e revestimentos. Resposta preparada com dados confirmados no CRM: planta 56,32m² com 2 quartos, 1 suíte, 2 banheiros, sacada gourmet e 1 vaga; acabamento informado inclui piso porcelanato 60x60, esquadrias pretas, gás canalizado, parede de concreto e medição individualizada de água. Detalhes específicos de revestimentos em áreas molhadas devem ser confirmados no memorial descritivo para evitar informação inventada.
-
-Próximo passo comercial: validar se a planta/acabamento agradou, oferecer valores/condição da unidade de 56,32m² e, havendo sinal positivo, conduzir para visita presencial na Fama.
-
-Observação operacional: resgate anterior foi interrompido por resposta da cliente; novo ciclo de resgate foi rearmado após este outbound normal com bucket `midia_opcao_enviada`, step 0 e próxima elegibilidade às 2026-05-05T10:14:59-03:00 caso haja silêncio.
+Nome no CRM parece humano e pode ser usado com capitalização natural (`Byanca`). A repescagem foi encerrada por resposta inbound. O Resgate pós-mídia anterior foi parado por resposta inbound; há novo Resgate ativo apenas por outbound comercial posterior, para eventual silêncio após a resposta sobre acabamento. Mídias enviadas a partir de material do Garden Sul; não passar contato da construtora nem endereço completo do empreendimento espontaneamente.
