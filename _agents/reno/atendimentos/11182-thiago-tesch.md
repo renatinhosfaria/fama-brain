@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Thiago Tesch
 client_id: 11182
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-05'
 updated: '2026-05-05'
@@ -16,35 +16,38 @@ tags:
   - famachat
   - primeiro-contato
   - reprocessamento
+  - inbound
+  - em-atendimento
 ---
 # Atendimento — Thiago Tesch
 
 ## Resumo atual
-Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.
+Cliente respondeu ao primeiro contato do Reno via WhatsApp em 2026-05-05, informando que procura imóvel com entrada facilitada e parcela mais acessível. CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida por resposta inbound.
 
 ## Dados operacionais
 - Cliente ID: 11182
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - WhatsApp: cadastrado no CRM
-- Última interação relevante: primeiro contato enviado pelo Reno em duas mensagens.
+- Interesse CRM: Union Vista, no bairro Grand Ville
+- Última interação relevante: resposta inbound sobre entrada facilitada e parcela mais acessível.
 
 ## Contexto comercial
-Cliente demonstrou interesse no Union Vista, no bairro Grand Ville.
+Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a abertura do Reno, trouxe como prioridade viabilidade de pagamento: entrada facilitada e parcela mais acessível.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada; primeiro contato busca confirmar interesse na região.
+Busca opção que caiba melhor no orçamento, com menor fricção de entrada e parcelas mais leves.
 
 ### Momento
-Ainda não identificado.
+Iniciou atendimento ativo após responder ao primeiro contato. Momento comercial ainda precisa ser qualificado.
 
 ### Decisão
-Ainda não identificada.
+Ainda não identificada; falta entender se compra sozinho ou com familiares/cônjuge e quem participa da decisão.
 
 ### Viabilidade
-Ainda não identificada; não houve conversa sobre financiamento ou condição.
+Sinal claro de preocupação com entrada e parcela. Tratar como início de diagnóstico financeiro leve, sem promessa de aprovação. Union Vista trabalha com entrada parcelada pela construtora; validar no atendimento se a condição faz sentido e, se necessário, apresentar alternativas mais acessíveis com dados seguros do CRM.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Falha técnica no primeiro envio
@@ -53,12 +56,17 @@ Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status
 ### 2026-05-05 — Primeiro contato reprocessado
 Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Union Vista/Grand Ville e pergunta se o cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
+### 2026-05-05 — Resposta inbound e início do atendimento
+Cliente respondeu pelo WhatsApp dizendo que procura entrada facilitada e parcela mais acessível. CRM atualizado de `Não Respondeu` para `Em Atendimento`. Repescagem interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Nota operacional registrada no FamaChat.
+
 ## Objeções e travas
-- Nenhuma objeção comercial ainda; havia apenas falha operacional de envio, já corrigida neste reprocessamento.
+- Prioridade de viabilidade: entrada facilitada e parcela acessível.
+- Possível trava financeira a explorar com cuidado, sem antecipar renda/FGTS/score em bateria de perguntas.
 
 ## Próximo passo
-Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar a interação no CRM e continuar qualificação consultiva.
+Responder comercialmente no WhatsApp normal, sem envio por esta rotina silenciosa: validar a preocupação com entrada/parcela, explicar de forma curta que o Union Vista trabalha com entrada parcelada pela construtora e continuar qualificação leve para entender faixa/parcela desejada ou se vale apresentar opção de menor valor. Se houver sinal positivo, conduzir para visita presencial na Fama para simulação e direcionamento seguro.
 
 ## Observações operacionais
-- Marcador CRM: `[reno_reprocess_20260505_5_leads]`.
-- Refs. WhatsApp: 3EB0499B9FC6995153E1C3 / 3EB0F2A1F4769DEECF18EA.
+- Marcador CRM anterior: `[reno_reprocess_20260505_5_leads]`.
+- Refs. WhatsApp do primeiro contato: 3EB0499B9FC6995153E1C3 / 3EB0F2A1F4769DEECF18EA.
+- Rotina silenciosa de inbound executou apenas persistência operacional; nenhuma mensagem foi enviada ao cliente nesta etapa.
