@@ -55,3 +55,7 @@ Cliente respondeu após a informação de localização: “Opa desculpe a demor
 
 ## Atualização — dúvida sobre tipo de empreendimento e valores
 Cliente enviou áudio perguntando se o Grand Ville/Union Vista é loteamento fechado ou aberto e pediu clareza sobre entrada/parcela. Informação validada no CRM: Union Vista é empreendimento de apartamentos, não lote, com portaria 24h, elevadores e lazer. Unidades cadastradas: 56,9m² a partir de R$292.400; 58,4m² por R$298.260; térreo 82,2m² por R$322.300. Entrada/parcela dependem de simulação considerando renda, FGTS, subsídio/financiamento e tabela da construtora. Próxima condução: perguntar se compraria sozinho ou somando renda com alguém.
+
+
+## Atualização — comparação com loteamento fechado
+Cliente enviou áudio dizendo que mora próximo a uma região transcrita de forma incerta como “barclanal”/bairro local e que há um novo loteamento fechado saindo por ali. Está pesquisando esse loteamento, mas demonstrou abertura para considerar o Union Vista caso faça sentido. Condução: diferenciar Union Vista (apartamento em condomínio) de loteamento fechado; acolher a comparação e diagnosticar se a preferência dele é lote/casa ou apartamento com lazer/financiamento.
