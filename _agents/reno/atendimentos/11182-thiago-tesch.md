@@ -127,3 +127,9 @@ Aguardar confirmação explícita do cliente sobre o novo horário proposto para
 
 ## Atualização — remarcação confirmada
 Cliente confirmou “Pode” para sexta 15/05/2026 às 15h30 e agradeceu. Atualizar o agendamento 244 no FamaChat, reagendar lembretes e manter status de Agendamento.
+
+
+## Atualização operacional — remarcação efetivada
+Agendamento 244 remarcado no FamaChat para sexta 15/05/2026 às 15h30 na Fama.
+Lembretes internos do agendamento foram reagendados e textos atualizados para 15h30.
+Meta_data Reno atualizada: reno_followup.agendamento appointment_id 244, enabled=true, step 0, next_run_at 2026-05-15T14:40:00-03:00, scheduled_at 2026-05-15T15:30:00-03:00.
