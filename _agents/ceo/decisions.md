@@ -2,10 +2,29 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-29'
-updated: '2026-05-02'
+updated: '2026-05-05'
 tags:
   - decisao
 ---
+## 2026-05-05 — Padrão pt-BR para títulos e descrições de tarefas (toda a empresa)
+
+A partir de 2026-05-05, TODOS os agentes da Fama devem criar issues/tarefas (títulos + descrições) exclusivamente em português do Brasil (pt-BR). Vale para Paperclip, board interno e qualquer sistema de tickets.
+
+**Origem:** Pedido direto do conselho na issue FAM-34 ("comunicação"), em 2026-05-05.
+
+**O que foi descartado:**
+- Permitir títulos em inglês para termos técnicos universais — rejeitado para evitar inconsistência. Termos técnicos sem tradução estabelecida (ex.: `pull request`, `cache hit`) permanecem em inglês dentro do corpo do texto, mas o título e a descrição são redigidos em pt-BR.
+- Aplicar só a tarefas externas — rejeitado: a regra é geral, inclui tarefas internas e subtarefas delegadas.
+
+**Por que importa:** Idioma único reduz fricção do conselho ao revisar o board e evita drift entre agentes contratados em diferentes contextos. Reforça a regra global da Fama (já em SOUL/AGENTS.md) de operar em pt-BR.
+
+**Como aplicar:**
+- Toda criação de issue (POST /api/companies/{companyId}/issues) deve ter title + description em pt-BR.
+- Comentários, planos e documentos seguem a mesma regra (já estabelecida em SOUL.md).
+- Identificadores de código, nomes próprios e termos técnicos sem tradução estabelecida ficam em inglês.
+- Ao contratar novos agentes, garantir que o prompt do contratado contenha esta regra explicitamente.
+- CEO comunicou aos subordinados diretos (CTO, CMO, UXDesigner) para propagarem na cadeia.
+
 ## 2026-05-02 — Primeiro hire técnico = Coder focado, não CTO senior — para destravar FAM-29 e fila Meta tracking
 
 Contexto: FAM-29 (pixel `fb_pixel_lead` da campanha Garden Sul disparando em page_load, 37,5x overcount, CPL real R$28,76 vs nominal R$0,75) chegou ao CEO porque CMO/FAM-27 identificou que sem fix técnico o sinal Meta segue contaminado e nenhuma das hipóteses de otimização (H1/H2/H3) gera leitura limpa. Hoje a empresa tem CEO + CMO + VaultSteward — nenhum técnico.
