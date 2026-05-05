@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11168
-created: '2026-05-04'
-entity_name: Byanca Guerra
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Byanca Guerra
+client_id: 11168
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-04'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
@@ -20,14 +22,14 @@ tags:
   - midia
   - planta
   - acabamento
+  - valor
+  - condicao
   - garden-sul
-type: entity-profile
-updated: '2026-05-05'
 ---
 # Atendimento — Byanca Guerra
 
 ## Resumo atual
-Cliente está em `Em Atendimento` e avaliando o Garden Sul. Depois de receber fotos e plantas do empreendimento, respondeu em 2026-05-05 indicando preferência/interesse pela planta de 56,32m². O inbound interrompeu o Resgate que estava pendente após o envio de mídia; em seguida, a sessão comercial normal do Reno respondeu sobre a planta escolhida e acabamentos com dados seguros do CRM, e abriu novo ciclo de Resgate apenas para eventual silêncio após esse novo outbound.
+Cliente está em `Em Atendimento` e avaliando o Garden Sul, com interesse concentrado na planta de 56,32m². Já recebeu fotos/plantas, perguntou sobre acabamento e recebeu uma leitura inicial de valor/condição com dados seguros do CRM. Em 2026-05-05, a rotina silenciosa registrou novo inbound curto (`sim`) após outbound sobre condição/valor; o status já estava correto e o Resgate ativo em `condicao_valor` foi interrompido para evitar novo disparo automático.
 
 ## Dados operacionais
 - Cliente ID: 11168
@@ -36,25 +38,27 @@ Cliente está em `Em Atendimento` e avaliando o Garden Sul. Depois de receber fo
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: JID cadastrado no CRM
 - Empreendimento vinculado: Garden Sul (`id_empreendimento=25`)
-- Última interação relevante: resposta comercial do Reno sobre a planta de 56,32m² e acabamentos do Garden Sul em 2026-05-05; aguardando reação da cliente
+- Última interação relevante: inbound curto `sim` registrado em 2026-05-05; Resgate `condicao_valor` interrompido com `client_replied`; aguardando condução comercial normal com reconstrução do contexto da conversa
 
 ## Contexto comercial
 Interesse vinculado ao empreendimento Garden Sul, no bairro Jardim Sul/Zona Sul de Uberlândia. O empreendimento é lançamento da Opção Empreendimentos, com apartamentos de 2 quartos sendo 1 suíte, sacada gourmet e 1 vaga. Plantas identificadas no material público/oficial: tipo 52,01m², tipo 56,32m² e térreas de 69,29m², 73,45m² e 82,70m². Pontos fortes seguros: 2 torres, 3 elevadores por torre, piscina, espaço gourmet, playground, salão de festas, quadra poliesportiva e academia/espaço fitness. Entrega prevista no CRM: set/2028.
 
-A cliente primeiro pediu material visual e depois sinalizou preferência pela planta de 56,32m². A resposta comercial registrada no CRM explicou que a opção tem 2 quartos sendo 1 suíte, 2 banheiros, sacada gourmet e 1 vaga; acabamento cadastrado inclui porcelanato 60x60, esquadrias pretas, gás canalizado, parede de concreto e medição individualizada de água. Detalhes específicos de revestimentos de cozinha/banheiros/área de serviço devem ser confirmados pelo memorial descritivo para não inventar informação.
+A cliente pediu material visual, sinalizou preferência pela planta de 56,32m² e perguntou sobre acabamento. A resposta comercial registrada no CRM explicou que a opção tem 2 quartos sendo 1 suíte, 2 banheiros, sacada gourmet e 1 vaga; acabamento cadastrado inclui porcelanato 60x60, esquadrias pretas, gás canalizado, parede de concreto e medição individualizada de água. Detalhes específicos de revestimentos de cozinha/banheiros/área de serviço devem ser confirmados pelo memorial descritivo para não inventar informação.
+
+Depois, a conversa avançou para valor/condição da planta de 56,32m². Dados confirmados no CRM na condução anterior: valor de referência R$ 330.900,00, status lançamento, previsão de entrega set/2028 e condomínio informado no empreendimento em R$ 280,00. A condição deve continuar sendo tratada como dependente de unidade, entrada, parcelas da obra e financiamento do saldo, sem promessa de aprovação.
 
 ## Diagnóstico
 ### Necessidade
-Ainda pouco diagnosticada. A resposta atual indica interesse em avaliar uma planta específica do Garden Sul, especialmente a opção de 56,32m².
+Ainda incompleta. Há interesse real em entender a planta de 56,32m² do Garden Sul e a condição de compra, especialmente valor, acabamento e encaixe da forma de pagamento.
 
 ### Momento
-Ainda não diagnosticado. Como o empreendimento é lançamento, prazo de obra e forma de pagamento podem ser relevantes quando a conversa avançar.
+Ainda não diagnosticado. Como o empreendimento é lançamento, prazo de obra, entrada parcelada e financiamento do saldo tendem a ser pontos relevantes.
 
 ### Decisão
-Ainda não diagnosticada.
+Ainda não diagnosticada. Não há registro seguro sobre outros decisores.
 
 ### Viabilidade
-Ainda não diagnosticada. Não houve informação sobre financiamento, entrada, renda, FGTS ou faixa confortável. Não prometer aprovação.
+Ainda não diagnosticada. Não há informação segura sobre entrada disponível, renda, FGTS ou faixa mensal confortável. Não prometer crédito; usar `ver se encaixa` e direcionar para validação mais segura na Fama quando houver sinal positivo.
 
 ## Histórico curado de interações
 ### 2026-05-04 — Primeiro contato enviado
@@ -82,21 +86,20 @@ Cliente respondeu ao material enviado com `a de 56,32 m2`, indicando preferênci
 ### 2026-05-05 — Resposta comercial sobre planta e acabamentos
 Sessão comercial normal do Reno respondeu à cliente sobre a planta de 56,32m² e acabamentos com dados confirmados no CRM: 2 quartos sendo 1 suíte, 2 banheiros, sacada gourmet, 1 vaga, porcelanato 60x60, esquadrias pretas, gás canalizado, parede de concreto e medição individualizada de água. Também registrou ressalva para confirmar detalhes específicos de revestimentos pelo memorial descritivo, evitando inventar informação. Após esse outbound normal, novo ciclo de Resgate foi inicializado para eventual silêncio pós-resposta.
 
+### 2026-05-05 — Valor/condição da planta 56,32m²
+Cliente respondeu `sim` ao convite para receber faixa de valor e condição da planta de 56,32m² do Garden Sul. Reno respondeu com dados confirmados no CRM: planta/unidade 56,32m² com valor de venda R$ 330.900,00, empreendimento em lançamento, previsão de entrega set/2028 e condomínio do empreendimento informado em R$ 280,00. A resposta evitou promessa de financiamento/condição fechada e explicou que a condição depende de entrada, parcelas da obra e financiamento do saldo. Depois desse outbound normal, o ciclo de Resgate foi rearmado com bucket `condicao_valor` para eventual silêncio.
+
+### 2026-05-05 — Inbound curto após valor/condição; Resgate interrompido
+Rotina silenciosa de inbound registrou nova resposta curta da cliente: `sim`. Status já estava `Em Atendimento`, sem alteração e sem regressão. Como havia Resgate ativo após o outbound de condição/valor (`last_context_bucket=condicao_valor`), o fluxo foi interrompido com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Repescagem já estava interrompida. Nota objetiva registrada no CRM. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada até o momento.
-- Trava anterior de silêncio foi encerrada pela resposta inbound.
-- Resgate pós-mídia anterior foi interrompido porque a cliente respondeu antes do próximo disparo.
+- Trava anterior de silêncio foi encerrada por respostas inbound.
+- Repescagem está encerrada por `client_replied`.
+- Resgate `condicao_valor` foi encerrado por `client_replied` após inbound curto; não deve disparar nova step até novo outbound normal e nova elegibilidade operacional.
 
 ## Próximo passo
-Aguardar reação da cliente à resposta sobre a planta de 56,32m² e acabamento. Se ela demonstrar que a planta agradou, pedir valor/condição ou avançar no interesse, fazer ponte para visita presencial na Fama como próximo passo lógico. Se ela trouxer dúvida objetiva, responder curto e conduzir para o próximo passo sem prometer financiamento.
+Na sessão comercial normal, reconstruir o contexto imediato antes de responder ao `sim`. Se a resposta indicar concordância/interesse na condição ou na leitura de viabilidade, avançar com uma pergunta simples sobre entrada aproximada ou conduzir para visita presencial na Fama se houver sinal quente suficiente. Evitar nova bateria financeira; não prometer aprovação.
 
 ## Observações operacionais
-Nome no CRM parece humano e pode ser usado com capitalização natural (`Byanca`). A repescagem foi encerrada por resposta inbound. O Resgate pós-mídia anterior foi parado por resposta inbound; há novo Resgate ativo apenas por outbound comercial posterior, para eventual silêncio após a resposta sobre acabamento. Mídias enviadas a partir de material do Garden Sul; não passar contato da construtora nem endereço completo do empreendimento espontaneamente.
-
-
-### 2026-05-05 — Valor/condição da planta 56,32m²
-Cliente respondeu `sim` ao convite para receber faixa de valor e condição da planta de 56,32m² do Garden Sul. Dados confirmados no CRM: planta/unidade 56,32m² com valor de venda R$ 330.900,00, empreendimento em lançamento, previsão de entrega set/2028 e condomínio do empreendimento informado em R$ 280,00. Resposta comercial deve evitar promessa de financiamento/condição fechada; condução correta é explicar que a condição depende de entrada, parcelas da obra e financiamento do saldo, perguntando qual entrada aproximada a cliente teria em mente para montar leitura realista.
-
-Próximo passo: aguardar resposta sobre entrada aproximada. Se indicar entrada/viabilidade ou sinal positivo, avançar para leitura de condição e convite de visita presencial na Fama.
-
-Observação operacional: resposta da cliente interrompeu o resgate anterior (`client_replied`). Após o novo outbound normal sobre valor/condição, ciclo de resgate foi rearmado em `condicao_valor`, step 0, próxima elegibilidade 2026-05-05T10:17:41-03:00 se houver silêncio.
+Nome no CRM parece humano e pode ser usado com capitalização natural (`Byanca`). Mídias e dados foram conduzidos a partir de material do Garden Sul; não passar contato da construtora nem endereço completo do empreendimento espontaneamente. O último inbound foi processado somente como persistência operacional: status preservado em `Em Atendimento`, Resgate parado e nota registrada no FamaChat, sem envio de WhatsApp ao cliente.
