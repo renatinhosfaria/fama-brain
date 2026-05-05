@@ -79,3 +79,11 @@ Aguardar primeira resposta real do cliente. Se responder, parar repescagem, atua
 - Evento de origem do primeiro contato: `evt_3332` / `3332_1777845765617`.
 - Envio da repescagem step 1 feito por fallback excepcional do bridge local do WhatsApp, pois `send_message` não estava exposto na sessão do cron; bridge local estava saudável e retornou sucesso técnico.
 - Documento mantido no caminho oficial `_agents/reno/atendimentos/11164-talles-alcantara.md` para evitar duplicidade por nome.
+
+
+## Correção operacional — 2026-05-05
+Renato verificou manualmente que este número não possui WhatsApp e que as mensagens registradas como enviadas não apareceram no WhatsApp real.
+
+Interpretação corrigida: as notas anteriores de primeiro contato e repescagem foram geradas a partir de **sucesso técnico do bridge/Baileys** (`sendMessage` retornou `messageId`), não de confirmação de entrega efetiva ao cliente. Portanto, não devem ser lidas como prova de que a mensagem chegou ao WhatsApp do cliente.
+
+A repescagem foi parada no CRM com `stopped_reason=whatsapp_not_available_verified_by_renato`, `enabled=false`, status preservado e nota corretiva registrada. Próximo passo: não enviar novas mensagens automáticas por WhatsApp para este cliente enquanto não houver contato WhatsApp válido confirmado.
