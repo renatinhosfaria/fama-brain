@@ -33,7 +33,7 @@ Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato
 - Origem: Facebook Ads
 - WhatsApp: cadastrado no CRM
 - Interesse CRM: Union Vista, no bairro Grand Ville
-- Última interação relevante: cliente trouxe dados iniciais de viabilidade — renda aproximada, reserva, FGTS e compra sozinho.
+- Última interação relevante: rotina silenciosa de inbound registrou a renda aproximada de R$ 2.350; atendimento comercial deve seguir diagnóstico de viabilidade.
 
 ## Contexto comercial
 Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a abertura do Reno, trouxe como prioridade viabilidade de pagamento: entrada facilitada, parcela mais acessível e pouca reserva imediata para entrada. O atendimento deve avançar com cuidado para opção compatível com MCMV/subsídio/entrada facilitada, sem prometer aprovação ou encaixe antes de análise.
@@ -64,8 +64,8 @@ Cliente respondeu pelo WhatsApp dizendo que procura entrada facilitada e parcela
 ### 2026-05-05 — Inbound reforça limitação de entrada
 Cliente informou que não tem valor de entrada disponível no momento e possui aproximadamente R$ 3 mil guardados. Status preservado em `Em Atendimento`; repescagem já estava interrompida e não havia ciclo de resgate ativo.
 
-### 2026-05-05 — Inbound informa FGTS e renda
-Cliente informou acreditar ter cerca de R$ 2 mil de FGTS. Na sequência do diagnóstico registrado no CRM, informou renda mensal aproximada de R$ 2.350 e confirmou que pretende comprar sozinho. A condução deve usar esses dados como referência inicial, não como garantia de aprovação.
+### 2026-05-05 — Inbound informa FGTS, renda e compra sozinho
+Cliente informou acreditar ter cerca de R$ 2 mil de FGTS. Na sequência do diagnóstico registrado no CRM, informou renda mensal aproximada de R$ 2.350 e confirmou que pretende comprar sozinho. A rotina silenciosa registrou nota operacional do inbound com status preservado em `Em Atendimento`, repescagem já parada e sem resgate ativo. A condução deve usar esses dados como referência inicial, não como garantia de aprovação.
 
 ## Objeções e travas
 - Prioridade de viabilidade: entrada facilitada e parcela acessível.
@@ -82,5 +82,5 @@ Responder comercialmente no WhatsApp normal, sem envio por esta rotina silencios
 - Refs. WhatsApp do primeiro contato: 3EB0499B9FC6995153E1C3 / 3EB0F2A1F4769DEECF18EA.
 - Status já estava `Em Atendimento` nesta rotina; atualização condicional não alterou status.
 - Repescagem permaneceu interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não havia resgate ativo.
-- Nota CRM equivalente sobre FGTS já existia, então a rotina evitou duplicação mecânica e consolidou o contexto curado no vault.
+- Nota CRM operacional registrada pela rotina silenciosa em 2026-05-05 para o inbound de renda aproximada, com status preservado e follow-ups seguros.
 - Rotina silenciosa de inbound executou apenas persistência operacional; nenhuma mensagem foi enviada ao cliente nesta etapa.
