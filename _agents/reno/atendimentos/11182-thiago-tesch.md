@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Thiago Tesch
-client_id: 11182
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11182
 created: '2026-05-05'
-updated: '2026-05-05'
+entity_name: Thiago Tesch
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -23,11 +21,14 @@ tags:
   - compra-sozinho
   - parcela
   - sem-restricao
+  - objeção-disponibilidade
+type: entity-profile
+updated: '2026-05-05'
 ---
 # Atendimento — Thiago Tesch
 
 ## Resumo atual
-Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato via WhatsApp. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, confirmou que pretende comprar sozinho, indicou parcela confortável entre R$ 850 e R$ 950 e informou estar sem restrições no nome. CRM permanece em `Em Atendimento`; repescagem foi interrompida por resposta inbound e não há resgate ativo.
+Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato via WhatsApp. O diagnóstico inicial está centrado em viabilidade: busca entrada facilitada e parcela mais acessível, informou renda mensal aproximada de R$ 2.350, cerca de R$ 3 mil guardados, cerca de R$ 2 mil de FGTS, confirmou que pretende comprar sozinho, indicou parcela confortável entre R$ 850 e R$ 950 e informou estar sem restrições no nome. Ao ser conduzido para visita/análise presencial, respondeu que estes dias está apertado, sinalizando objeção de disponibilidade no momento. CRM permanece em `Em Atendimento`; repescagem foi interrompida por resposta inbound e não há resgate ativo.
 
 ## Dados operacionais
 - Cliente ID: 11182
@@ -36,17 +37,17 @@ Cliente está em atendimento ativo pelo Reno após responder ao primeiro contato
 - Origem: Facebook Ads
 - WhatsApp: cadastrado no CRM
 - Interesse CRM: Union Vista, no bairro Grand Ville
-- Última interação relevante: cliente informou estar sem restrições no nome após declarar faixa de parcela confortável.
+- Última interação relevante: cliente indicou indisponibilidade momentânea para visita/análise presencial após consolidar dados iniciais de viabilidade.
 
 ## Contexto comercial
-Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a abertura do Reno, trouxe como prioridade viabilidade de pagamento: entrada facilitada, parcela mais acessível e pouca reserva imediata para entrada. O atendimento deve evitar promessa de aprovação e avançar uma pergunta por vez. Com os dados já informados, o próximo filtro comercial é consultar o CRM para opção compatível com perfil MCMV/financiamento e conduzir para simulação/análise de viabilidade e visita presencial na Fama, sem prometer aprovação.
+Cliente demonstrou interesse no Union Vista, no bairro Grand Ville. Após a abertura do Reno, trouxe como prioridade viabilidade de pagamento: entrada facilitada, parcela mais acessível e pouca reserva imediata para entrada. O atendimento deve evitar promessa de aprovação e avançar uma pergunta por vez. Com os dados já informados, há base para consultar opção compatível com perfil MCMV/financiamento e manter a conversa útil pelo WhatsApp enquanto a visita presencial é retomada com baixa pressão, respeitando a objeção de disponibilidade.
 
 ## Diagnóstico
 ### Necessidade
 Busca imóvel que caiba no orçamento, com menor fricção de entrada e parcelas mais leves.
 
 ### Momento
-Iniciou atendimento ativo após responder ao primeiro contato. Já compartilhou dados financeiros iniciais, faixa de parcela confortável e situação básica de crédito, então está aberto a diagnóstico de viabilidade e comparação de opções.
+Iniciou atendimento ativo após responder ao primeiro contato. Já compartilhou dados financeiros iniciais, faixa de parcela confortável e situação básica de crédito, então está aberto a diagnóstico de viabilidade e comparação de opções. No momento, demonstrou dificuldade de agenda/disponibilidade para visita presencial nos próximos dias.
 
 ### Decisão
 Cliente confirmou que pretende comprar sozinho. Até o momento, não há indicação de composição de renda com outra pessoa. Isso torna a renda individual o principal balizador de viabilidade e exige cuidado antes de insistir em ticket mais alto.
@@ -76,16 +77,20 @@ Cliente informou que a parcela confortável hoje seria aproximadamente entre R$ 
 ### 2026-05-05 — Situação de restrição informada
 Cliente informou estar sem restrições no nome. Perfil inicial consolidado para continuidade: compra sozinho, renda aproximada, pouca reserva de entrada, FGTS baixo e parcela confortável definida. Próximo passo recomendado: conduzir para simulação/análise de viabilidade e visita presencial na Fama, sem prometer aprovação.
 
+### 2026-05-05 — Objeção de disponibilidade para visita/análise presencial
+Ao ser conduzido para visita/análise presencial na Fama, cliente respondeu que estes dias está apertado. Interpretar como objeção de disponibilidade no momento, não como recusa definitiva. Próximo passo comercial: manter uma prévia útil pelo WhatsApp e perguntar qual dia/horário tende a ficar mais tranquilo para retomar/agendar.
+
 ## Objeções e travas
 - Prioridade de viabilidade: entrada facilitada e parcela acessível.
 - Trava financeira: pouca reserva imediata para entrada, cerca de R$ 3 mil declarados.
 - FGTS aproximado informado: cerca de R$ 2 mil.
 - Renda individual aproximada: R$ 2.350/mês.
 - Parcela confortável declarada: cerca de R$ 850 a R$ 950/mês.
+- Objeção momentânea de disponibilidade: cliente disse que estes dias está apertado após convite/ponte para visita/análise presencial.
 - Como pretende comprar sozinho, pode ser necessário priorizar MCMV, ticket menor, condição de entrada mais leve ou visita presencial para simulação segura.
 
 ## Próximo passo
-Responder comercialmente no WhatsApp normal, sem envio por esta rotina silenciosa: consolidar a viabilidade inicial, consultar opções compatíveis no CRM e conduzir para simulação/análise presencial na Fama se houver sinal de encaixe. Evitar promessa de aprovação; usar os dados declarados apenas como referência inicial.
+Responder comercialmente no WhatsApp normal, sem envio por esta rotina silenciosa: validar a dificuldade de disponibilidade, oferecer continuidade inicial pelo WhatsApp e pedir um dia/horário mais tranquilo para retomar a visita/análise presencial. Paralelamente, consultar opções compatíveis no CRM usando os dados declarados apenas como referência inicial, sem promessa de aprovação.
 
 ## Observações operacionais
 - Marcador CRM anterior: `[reno_reprocess_20260505_5_leads]`.
