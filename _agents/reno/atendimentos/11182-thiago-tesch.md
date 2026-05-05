@@ -126,3 +126,7 @@ Manter cliente em `Agendamento` e seguir a régua de confirmação da visita. Pr
 
 ## Atualização — nova saudação
 Cliente enviou “Oi” e “Boa noite”. Responder de forma aberta e cordial para continuar atendimento sem acrescentar nova pressão ao agendamento já confirmado.
+
+
+## Atualização — pedido de remarcação
+Cliente pediu para remarcar a visita de sábado 09/05/2026 às 10h e explicou que esse sábado fica ruim por compromisso mais tarde. Interpretação operacional: aceitar a remarcação sem pressão, ainda não alterar o FamaChat porque falta horário confirmado para sexta. Próxima mensagem: sugerir/validar sexta 08/05/2026 e perguntar melhor horário.
