@@ -121,3 +121,7 @@ Manter cliente em `Agendamento` e seguir a régua de confirmação da visita. Pr
 
 ## Atualização — confirmação recebida
 Cliente respondeu “Ok” após confirmação da visita de sábado 09/05/2026 às 10h na Fama e orientação para levar documento/comprovante de renda. Manter agendamento ativo.
+
+
+## Atualização — confirmação final
+Cliente respondeu novamente “Ok” após confirmação final da visita de sábado 09/05/2026 às 10h. Agendamento mantido ativo.
