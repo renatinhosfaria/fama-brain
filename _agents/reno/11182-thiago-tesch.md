@@ -60,3 +60,7 @@ Conduzir para simulação/análise mais precisa e propor visita presencial na Fa
 
 ## Atualização — objeção de disponibilidade
 Cliente respondeu à proposta de visita/análise presencial dizendo: “Esses dias estou apertado”. Tratar sem pressão. Manter condução consultiva, oferecer avançar primeiro por WhatsApp e perguntar qual dia/horário ficaria mais tranquilo para retomar/agendar.
+
+
+## Atualização — disponibilidade
+Cliente informou que fim de semana costuma ser mais tranquilo. Próxima condução recomendada: propor sábado e perguntar se prefere manhã ou tarde, sem pressionar.
