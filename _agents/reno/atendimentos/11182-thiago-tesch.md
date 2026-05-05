@@ -111,3 +111,12 @@ Não enviar mensagem por esta rotina silenciosa. No atendimento comercial normal
 - Status já estava `Em Atendimento`; nenhuma regressão ou alteração manual de status avançado foi feita.
 - Documento oficial deste atendimento: `_agents/reno/atendimentos/11182-thiago-tesch.md`. Existe documento legado fora de `atendimentos/`; não continuar escrevendo nele.
 - Rotina silenciosa de inbound executou apenas persistência operacional; nenhuma mensagem foi enviada ao cliente nesta etapa.
+
+
+## Atualização — visita confirmada e registrada
+Cliente confirmou: “Pode ser sim” para sábado 09/05/2026 às 10h.
+Agendamento criado no FamaChat: appointment_id 244.
+Status do cliente no CRM verificado após criação: Agendamento.
+Meta_data Reno inicializado para acompanhamento proativo de agendamento: step 0, enabled=true, next_run_at 2026-05-08T10:00:00-03:00.
+Objetivo da visita: análise/simulação de viabilidade, possível subsídio/MCMV, FGTS e entrada parcelada, sem promessa prévia de aprovação.
+Perfil consolidado: compra sozinho; renda aproximada R$ 2.350; R$ 3 mil guardados; cerca de R$ 2 mil de FGTS; parcela confortável R$ 850–R$ 950; sem restrições.
