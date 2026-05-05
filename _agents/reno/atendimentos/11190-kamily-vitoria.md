@@ -102,3 +102,7 @@ Responder comercialmente coletando dia e horário de preferência para visita pr
 
 ## Observações operacionais
 CRM/FamaChat permanece como fonte operacional de verdade. Nesta rotina silenciosa, a cliente foi identificada por WhatsApp/JID, está elegível para Reno (`broker_id=35`) e já estava em `Em Atendimento`, então não houve mudança de status. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; nenhum resgate ativo foi identificado. Nota CRM 16877 registrou o inbound “Consigo”, preservação de status, ausência de follow-up ativo e próximo passo comercial de coletar dia/horário. Não houve envio de mensagem ao cliente por esta rotina.
+
+
+### 2026-05-05 — Preferência de horário para visita
+Cliente informou preferência de horário: 9h. Ainda falta confirmar o dia da semana para registrar o agendamento presencial no FamaChat. Próxima condução: perguntar qual dia às 9h fica melhor.
