@@ -117,3 +117,7 @@ Manter cliente em `Agendamento` e seguir a régua de confirmação da visita. Pr
 - Agendamento: `enabled=true`, `step=0`, `appointment_id=244`, `next_run_at=2026-05-09T09:10:00-03:00`.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
 - Documento oficial deste atendimento: `_agents/reno/atendimentos/11182-thiago-tesch.md`. Existe documento legado fora de `atendimentos/`; não continuar escrevendo nele.
+
+
+## Atualização — confirmação recebida
+Cliente respondeu “Ok” após confirmação da visita de sábado 09/05/2026 às 10h na Fama e orientação para levar documento/comprovante de renda. Manter agendamento ativo.
