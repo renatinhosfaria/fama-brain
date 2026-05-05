@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Kamily Vitória (nome a confirmar)
 client_id: 11190
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-05'
 updated: '2026-05-05'
@@ -15,49 +15,55 @@ tags:
   - whatsapp
   - famachat
   - primeiro-contato
-  - repescagem
+  - inbound
+  - em-atendimento
+  - repescagem-interrompida
+  - nome-a-confirmar
+  - place-arbi
+  - shopping-park
 ---
 # Atendimento — Kamily Vitória (nome a confirmar)
 
 ## Resumo atual
-Primeiro contato do Reno enviado por WhatsApp em 2026-05-05. Como o nome no CRM está com grafia estilizada, a abertura foi neutra e pediu como a cliente prefere ser chamada antes de iniciar qualificação.
+Cliente Reno respondeu ao primeiro WhatsApp com "Oi tudo bem sim". O atendimento foi iniciado operacionalmente: status saiu de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida por resposta inbound. Nome cadastrado tem grafia estilizada e ainda precisa ser confirmado antes da qualificação comercial.
 
 ## Dados operacionais
 - Cliente ID: 11190
 - Broker ID: 35
-- Status CRM: Não Respondeu
-- Origem: Facebook Ads / lead automático
-- Telefone/WhatsApp: (34) 99131-4577 / 553491314577@s.whatsapp.net
-- Empreendimento de interesse: Place+Arbi — Shopping Park, Zona Sul, Uberlândia
-- Última interação relevante: primeiro WhatsApp enviado pelo Reno; repescagem inicializada para 2026-05-05T19:10:00-03:00.
+- Status CRM: Em Atendimento
+- Origem: Facebook Ads
+- Telefone/WhatsApp: confirmado no CRM
+- Empreendimento de interesse: Place+Arbi — Shopping Park, Zona Sul de Uberlândia
+- Última interação relevante: 2026-05-05 — resposta inbound pelo WhatsApp após abertura do Reno
 
 ## Contexto comercial
-Lead originado de Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park. Ainda não há diagnóstico comercial validado; aguardar resposta com nome/preferência de tratamento antes de avançar.
+Lead de Facebook Ads vinculado ao empreendimento Place+Arbi, no Shopping Park. Primeiro contato do Reno foi neutro e contextual, pedindo como a cliente prefere ser chamada porque o nome no CRM está com grafia estilizada. A resposta inbound ainda não confirmou o nome; apenas confirmou cumprimento/abertura.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não identificada.
+Ainda não diagnosticada.
 
 ### Momento
-Ainda não identificado.
+Primeira resposta recebida logo após o primeiro contato do Reno.
 
 ### Decisão
 Ainda não identificada.
 
 ### Viabilidade
-Ainda não identificada. Não houve conversa sobre financiamento, renda ou aprovação.
+Ainda não identificada. Não há dados de entrada, financiamento, renda ou faixa de valor.
 
 ## Histórico curado de interações
-### 2026-05-05 — Primeiro contato enviado
-Mensagem enviada pelo Reno via WhatsApp contextualizando o interesse no Place+Arbi e perguntando como a cliente prefere ser chamada. Status do CRM avançou de `Sem Atendimento` para `Não Respondeu` e a branch `reno_followup.repescagem` foi criada com step 0.
+### 2026-05-05 — Primeiro contato Reno enviado
+Reno enviou WhatsApp inicial sobre o Place+Arbi/Shopping Park em abertura neutra e perguntou como a cliente prefere ser chamada antes de iniciar a qualificação, devido à grafia estilizada do nome no CRM. Status havia sido movido de `Sem Atendimento` para `Não Respondeu` e repescagem inicializada.
+
+### 2026-05-05 — Primeira resposta inbound e início operacional do atendimento
+Cliente respondeu: "Oi tudo bem sim". CRM corrigido operacionalmente de `Não Respondeu` para `Em Atendimento`. Repescagem interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Nota objetiva registrada no FamaChat.
 
 ## Objeções e travas
-- Nome no CRM com grafia estilizada; tratar como nome a confirmar antes da qualificação.
+- Nome ainda não confirmado: evitar tratar a grafia estilizada do CRM como nome validado; próxima resposta deve perguntar de forma simples como a cliente prefere ser chamada.
 
 ## Próximo passo
-Aguardar resposta da cliente com nome/preferência de tratamento. Após resposta, atualizar o nome no CRM se necessário, registrar nota e iniciar diagnóstico consultivo em uma pergunta por vez.
+Na sessão WhatsApp normal, responder sem pressão confirmando o nome da cliente antes de avançar para região, perfil de compra ou apresentação do Place+Arbi.
 
 ## Observações operacionais
-- WhatsApp enviado com sucesso para o JID priorizado do payload/CRM.
-- Repescagem inicializada: enabled=true, step=0, entry_shift=tarde, next_run_at=2026-05-05T19:10:00-03:00.
-- Não houve envio de qualificação, pergunta de renda, financiamento, região ou visita antes da confirmação do nome.
+Documento criado no caminho oficial do Reno após inbound WhatsApp. CRM permanece como fonte operacional de verdade. Não houve envio cliente-facing nesta rotina silenciosa.
