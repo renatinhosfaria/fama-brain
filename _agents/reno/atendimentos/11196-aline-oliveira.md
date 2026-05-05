@@ -1,69 +1,67 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Aline Oliveira
-client_id: 11196
 broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads / FamaChat
+client_id: 11196
 created: '2026-05-05'
-updated: '2026-05-05'
+entity_name: Aline Oliveira
+entity_type: atendimento
+owner: reno
+source: Facebook Ads / FamaChat
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - facebook-ads
+type: entity-profile
+updated: '2026-05-05'
 ---
 # Atendimento — Aline Oliveira
 
 ## Resumo atual
-Cliente novo do Reno, originado de Facebook Ads, com interesse vinculado ao Garden Sul. Primeiro contato do Reno foi enviado com abertura curta e contextual ao empreendimento/bairro. CRM atualizado de `Sem Atendimento` para `Não Respondeu` após envio bem-sucedido, e repescagem inicializada para o próximo follow-up.
+Cliente novo do Reno, originado de Facebook Ads, com interesse vinculado ao Garden Sul. Inbound do WhatsApp informou que preencheu formulário e gostaria de saber mais sobre a Fama. Durante a rotina houve corrida operacional: o primeiro contato automático foi enviado e moveu o status para `Não Respondeu`, mas como já havia inbound real nesta execução, o atendimento foi corrigido para `Em Atendimento` e a repescagem foi interrompida.
 
 ## Dados operacionais
 - Cliente ID: 11196
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads / FamaChat
-- Telefone/WhatsApp: cadastrado no CRM; JID validado `553497667321@s.whatsapp.net`
+- Telefone/WhatsApp: cadastrado no CRM; JID validado no FamaChat
 - Empreendimento vinculado: Garden Sul (Jardim Sul, Zona Sul)
-- Última interação relevante: 2026-05-05 — primeiro WhatsApp do Reno enviado; nota CRM #16862.
+- Última interação relevante: 2026-05-05 — inbound registrado; status corrigido para Em Atendimento e repescagem parada em nota CRM #16863.
 
 ## Contexto comercial
-O CRM vincula a cliente ao Garden Sul, empreendimento no Jardim Sul/Zona Sul de Uberlândia. A abertura enviada contextualizou o interesse no Garden Sul e perguntou se a região faz sentido para a cliente, sem iniciar qualificação financeira precoce.
+O CRM vincula a cliente ao empreendimento Garden Sul, apartamento na região do Jardim Sul/Zona Sul de Uberlândia. O inbound trouxe intenção genérica de saber mais sobre a empresa após preenchimento de formulário, sem diagnóstico adicional de necessidade, momento, decisão ou viabilidade.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não identificada. Interesse inicial em imóvel vinculado ao Garden Sul.
+Ainda não identificada. Interesse inicial em informações sobre a Fama/empreendimento.
 
 ### Momento
-Lead recém-criado em 2026-05-05. Aguardando primeira resposta ao contato do Reno.
+Lead recém-criado em 2026-05-05. Atendimento operacionalmente em `Em Atendimento` por resposta inbound detectada.
 
 ### Decisão
-Ainda não há dados sobre decisores, influência familiar ou critérios de decisão.
+Não há dados sobre decisores ou influência familiar.
 
 ### Viabilidade
-Ainda não há dados de financiamento, entrada, renda, FGTS ou faixa de valor. Não prometer crédito; tratar financiamento como apoio de viabilidade somente após resposta da cliente.
+Não há dados de financiamento, entrada, renda, FGTS ou faixa de valor. Não prometer crédito; tratar financiamento apenas como diagnóstico futuro.
 
 ## Histórico curado de interações
-### 2026-05-05 — Inbound/formulário registrado antes do primeiro contato
-Mensagem inbound/formulário indicou que a cliente preencheu cadastro e queria saber mais sobre a Fama. Cliente localizado no CRM e validado como escopo Reno (`broker_id=35`). Status preservado naquela rotina, pois ainda estava em `Sem Atendimento`; nota CRM #16861.
+### 2026-05-05 — Inbound WhatsApp/formulário registrado
+Mensagem inbound indicou que a cliente preencheu formulário e gostaria de saber mais sobre a Fama. Cliente localizado no CRM e validado como escopo Reno (`broker_id=35`). Nota CRM registrada: #16861.
 
-### 2026-05-05 — Primeiro WhatsApp do Reno enviado
-Reno enviou abertura curta pelo WhatsApp: apresentação como Reno da Fama, referência ao Garden Sul no Jardim Sul e pergunta se a região faz sentido para a cliente. Envio validado pelo WhatsApp no JID cadastrado. Após o envio, o CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu`.
-
-### 2026-05-05 — Repescagem inicializada
-Branch `meta_data.reno_followup.repescagem` criada com `enabled=true`, `step=0`, `entry_shift=noite`, `entry_reference_at=2026-05-05T18:26:16-03:00` e `next_run_at=2026-05-06T09:10:00-03:00`.
+### 2026-05-05 — Primeiro contato automático e correção de status
+O primeiro contato automático foi registrado no CRM em seguida, sobre o Garden Sul/Jardim Sul, e moveu o status de `Sem Atendimento` para `Não Respondeu`, inicializando repescagem. Como a rotina silenciosa já processava inbound real do cliente, o status foi corrigido condicionalmente para `Em Atendimento` e a branch de `reno_followup.repescagem` foi interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. Nota CRM de correção: #16863.
 
 ## Objeções e travas
 - Nenhuma objeção comercial registrada até o momento.
+- Trava operacional resolvida: repescagem não deve avançar após este inbound.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, mover para `Em Atendimento` quando aplicável, interromper repescagem e conduzir diagnóstico leve: confirmar se Jardim Sul/Zona Sul faz sentido, entender morar/investir e avançar para apresentação/visita presencial quando houver sinal positivo.
+Conduzir a resposta comercial pelo atendimento normal do Reno, retomando o contexto do Garden Sul/Jardim Sul de forma curta e humana, sem prometer condições ou crédito antes de diagnóstico.
 
 ## Observações operacionais
-- Primeiro contato enviado com sucesso pelo JID explícito do payload/CRM.
-- Status avançado corretamente para `Não Respondeu` somente após WhatsApp bem-sucedido.
-- Repescagem verificada no CRM após a inicialização.
-- Não repetir o primeiro WhatsApp se houver falha posterior de documentação; o envio já ocorreu.
+- Documento criado/atualizado pela rotina silenciosa de WhatsApp inbound.
+- Nenhum envio ao cliente foi feito por esta rotina silenciosa.
+- Status operacional verificado/corrigido para `Em Atendimento`.
+- Repescagem interrompida por resposta inbound do cliente.
