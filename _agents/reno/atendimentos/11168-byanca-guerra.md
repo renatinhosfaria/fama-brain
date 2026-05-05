@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Byanca Guerra
-client_id: 11168
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11168
 created: '2026-05-04'
-updated: '2026-05-05'
+entity_name: Byanca Guerra
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -24,12 +22,17 @@ tags:
   - acabamento
   - valor
   - condicao
+  - viabilidade
   - garden-sul
+type: entity-profile
+updated: '2026-05-05'
 ---
 # Atendimento — Byanca Guerra
 
 ## Resumo atual
-Cliente está em `Em Atendimento` e avaliando o Garden Sul, com interesse concentrado na planta de 56,32m². Já recebeu fotos/plantas, perguntou sobre acabamento e recebeu uma leitura inicial de valor/condição com dados seguros do CRM. Em 2026-05-05, a rotina silenciosa registrou novo inbound curto (`sim`) após outbound sobre condição/valor; o status já estava correto e o Resgate ativo em `condicao_valor` foi interrompido para evitar novo disparo automático.
+Cliente está em `Em Atendimento` e avaliando o Garden Sul, com interesse concentrado na planta de 56,32m². Já recebeu fotos/plantas, perguntou sobre acabamento, recebeu leitura inicial de valor/condição e informou entrada aproximada de R$ 10.000,00 para avaliar viabilidade.
+
+Em 2026-05-05, a rotina silenciosa registrou inbound `10.000`. O status já estava correto em `Em Atendimento`; a repescagem já estava interrompida e o Resgate ativo em `visita_pendente` foi interrompido com `client_replied` para evitar novo disparo automático após a resposta inbound. Nenhuma mensagem foi enviada ao cliente por esta rotina.
 
 ## Dados operacionais
 - Cliente ID: 11168
@@ -38,27 +41,27 @@ Cliente está em `Em Atendimento` e avaliando o Garden Sul, com interesse concen
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: JID cadastrado no CRM
 - Empreendimento vinculado: Garden Sul (`id_empreendimento=25`)
-- Última interação relevante: inbound curto `sim` registrado em 2026-05-05; Resgate `condicao_valor` interrompido com `client_replied`; aguardando condução comercial normal com reconstrução do contexto da conversa
+- Última interação relevante: inbound `10.000`, interpretado como entrada aproximada de R$ 10.000,00; Resgate `visita_pendente` interrompido com `client_replied`
 
 ## Contexto comercial
 Interesse vinculado ao empreendimento Garden Sul, no bairro Jardim Sul/Zona Sul de Uberlândia. O empreendimento é lançamento da Opção Empreendimentos, com apartamentos de 2 quartos sendo 1 suíte, sacada gourmet e 1 vaga. Plantas identificadas no material público/oficial: tipo 52,01m², tipo 56,32m² e térreas de 69,29m², 73,45m² e 82,70m². Pontos fortes seguros: 2 torres, 3 elevadores por torre, piscina, espaço gourmet, playground, salão de festas, quadra poliesportiva e academia/espaço fitness. Entrega prevista no CRM: set/2028.
 
 A cliente pediu material visual, sinalizou preferência pela planta de 56,32m² e perguntou sobre acabamento. A resposta comercial registrada no CRM explicou que a opção tem 2 quartos sendo 1 suíte, 2 banheiros, sacada gourmet e 1 vaga; acabamento cadastrado inclui porcelanato 60x60, esquadrias pretas, gás canalizado, parede de concreto e medição individualizada de água. Detalhes específicos de revestimentos de cozinha/banheiros/área de serviço devem ser confirmados pelo memorial descritivo para não inventar informação.
 
-Depois, a conversa avançou para valor/condição da planta de 56,32m². Dados confirmados no CRM na condução anterior: valor de referência R$ 330.900,00, status lançamento, previsão de entrega set/2028 e condomínio informado no empreendimento em R$ 280,00. A condição deve continuar sendo tratada como dependente de unidade, entrada, parcelas da obra e financiamento do saldo, sem promessa de aprovação.
+Depois, a conversa avançou para valor/condição da planta de 56,32m². Dados confirmados no CRM na condução anterior: valor de referência R$ 330.900,00, status lançamento, previsão de entrega set/2028 e condomínio informado no empreendimento em R$ 280,00. A cliente informou entrada aproximada de R$ 10.000,00. A condição deve continuar sendo tratada como dependente de unidade, sinal, parcelas até a entrega e financiamento do saldo, sem promessa de aprovação.
 
 ## Diagnóstico
 ### Necessidade
-Ainda incompleta. Há interesse real em entender a planta de 56,32m² do Garden Sul e a condição de compra, especialmente valor, acabamento e encaixe da forma de pagamento.
+Há interesse real em entender a planta de 56,32m² do Garden Sul e a condição de compra, especialmente valor, acabamento e encaixe da forma de pagamento.
 
 ### Momento
-Ainda não diagnosticado. Como o empreendimento é lançamento, prazo de obra, entrada parcelada e financiamento do saldo tendem a ser pontos relevantes.
+Ainda incompleto. Como o empreendimento é lançamento, prazo de obra, entrada parcelada e financiamento do saldo tendem a ser pontos relevantes.
 
 ### Decisão
 Ainda não diagnosticada. Não há registro seguro sobre outros decisores.
 
 ### Viabilidade
-Ainda não diagnosticada. Não há informação segura sobre entrada disponível, renda, FGTS ou faixa mensal confortável. Não prometer crédito; usar `ver se encaixa` e direcionar para validação mais segura na Fama quando houver sinal positivo.
+Cliente informou entrada aproximada de R$ 10.000,00. Esse dado ajuda a iniciar uma leitura de viabilidade, mas não permite promessa de condição, aprovação ou parcela. Próximo passo comercial deve validar sinal, parcelas até a entrega, financiamento do saldo e conforto mensal, preferencialmente em atendimento presencial na Fama.
 
 ## Histórico curado de interações
 ### 2026-05-04 — Primeiro contato enviado
@@ -92,22 +95,17 @@ Cliente respondeu `sim` ao convite para receber faixa de valor e condição da p
 ### 2026-05-05 — Inbound curto após valor/condição; Resgate interrompido
 Rotina silenciosa de inbound registrou nova resposta curta da cliente: `sim`. Status já estava `Em Atendimento`, sem alteração e sem regressão. Como havia Resgate ativo após o outbound de condição/valor (`last_context_bucket=condicao_valor`), o fluxo foi interrompido com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Repescagem já estava interrompida. Nota objetiva registrada no CRM. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-05 — Entrada aproximada informada; Resgate interrompido
+Cliente respondeu pelo WhatsApp com `10.000`, interpretado no contexto como entrada aproximada de R$ 10.000,00 para a planta de 56,32m² do Garden Sul. Status já estava `Em Atendimento`, sem alteração. A repescagem já estava interrompida. O Resgate ativo em `visita_pendente` foi interrompido com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Nota objetiva registrada no CRM pela rotina silenciosa; nenhuma mensagem foi enviada ao cliente por esta rotina.
+
 ## Objeções e travas
-- Nenhuma objeção comercial registrada até o momento.
-- Trava anterior de silêncio foi encerrada por respostas inbound.
+- Nenhuma objeção comercial explícita registrada até o momento.
+- Cliente informou entrada aproximada de R$ 10.000,00; pode haver trava de viabilidade dependendo de sinal, parcelas da obra e financiamento do saldo.
 - Repescagem está encerrada por `client_replied`.
-- Resgate `condicao_valor` foi encerrado por `client_replied` após inbound curto; não deve disparar nova step até novo outbound normal e nova elegibilidade operacional.
+- Resgate `visita_pendente` foi encerrado por `client_replied` após inbound `10.000`; não deve disparar nova step até novo outbound normal e nova elegibilidade operacional.
 
 ## Próximo passo
-Na sessão comercial normal, reconstruir o contexto imediato antes de responder ao `sim`. Se a resposta indicar concordância/interesse na condição ou na leitura de viabilidade, avançar com uma pergunta simples sobre entrada aproximada ou conduzir para visita presencial na Fama se houver sinal quente suficiente. Evitar nova bateria financeira; não prometer aprovação.
+Na condução comercial normal, reconstruir o contexto imediato antes de responder/continuar. Usar a entrada aproximada de R$ 10.000,00 como dado inicial de viabilidade, sem prometer aprovação. Como já há interesse em planta, valor e condição, o caminho preferencial é conduzir para visita presencial na Fama para simular com segurança e validar se a forma de pagamento cabe no momento da cliente.
 
 ## Observações operacionais
 Nome no CRM parece humano e pode ser usado com capitalização natural (`Byanca`). Mídias e dados foram conduzidos a partir de material do Garden Sul; não passar contato da construtora nem endereço completo do empreendimento espontaneamente. O último inbound foi processado somente como persistência operacional: status preservado em `Em Atendimento`, Resgate parado e nota registrada no FamaChat, sem envio de WhatsApp ao cliente.
-
-
-### 2026-05-05 — Entrada informada e convite para visita/simulação
-Cliente informou entrada aproximada de R$ 10.000,00 para a planta de 56,32m² do Garden Sul. Valor da planta no CRM: R$ 330.900,00. Condução correta: não prometer aprovação nem condição fechada; explicar que é preciso avaliar sinal, parcelas até a entrega (set/2028) e financiamento do saldo.
-
-Próximo passo comercial: cliente com sinal positivo e dúvida de viabilidade/condição. Reno deve conduzir para visita presencial na Fama para simular a condição na tela e confirmar se o fluxo cabe no momento dela.
-
-Observação operacional: após resposta inbound, conversa segue em atendimento normal. Novo outbound normal rearmou ciclo de resgate em `visita_pendente`, step 0, próxima elegibilidade 2026-05-05T10:27:20-03:00 caso haja silêncio.
