@@ -8,76 +8,72 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-05'
-updated: '2026-05-05'
+updated: '2026-05-06'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
-  - primeiro-contato
-  - repescagem
-  - primeira-resposta
-  - em-atendimento
   - facebook-ads
+  - union-vista
+  - inbound
 ---
 # Atendimento — Mauro Marques
 
 ## Resumo atual
-Mauro respondeu pelo WhatsApp após o primeiro contato e a repescagem step 1 do Reno. O CRM está em `Em Atendimento` e a repescagem foi interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. O contexto comercial principal segue sendo o Union Vista, no Grand Ville. Próximo passo: condução comercial normal pelo WhatsApp, retomando a dúvida de localização/contexto do empreendimento e avançando qualificação consultiva sem novo disparo automático de repescagem.
+Mauro respondeu pelo WhatsApp após o primeiro contato e a repescagem do Reno. A mensagem relevante foi: “Qual é a localização”. O CRM está em `Em Atendimento`; a repescagem foi interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. Não há resgate ativo.
+
+Rotina atual foi apenas silenciosa de persistência: nenhuma mensagem foi enviada ao cliente por esta execução.
 
 ## Dados operacionais
 - Cliente ID: 11177
 - Broker ID: 35
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
-- WhatsApp: JID cadastrado no CRM validado anteriormente pelo bridge local
-- Última interação relevante: resposta inbound em 2026-05-05 após repescagem; rotina silenciosa preservou `Em Atendimento` e confirmou interrupção da repescagem.
+- WhatsApp: JID cadastrado no CRM
+- Empreendimento de interesse: Union Vista
+- Última interação relevante: cliente perguntou pelo WhatsApp qual é a localização do empreendimento.
 
 ## Contexto comercial
-Cliente demonstrou interesse no Union Vista, lançamento da HLTS Construtora no bairro Grand Ville, em Uberlândia. O primeiro contato perguntou se ele procurava imóvel nessa região. A repescagem step 1 mudou o ângulo para organização da busca e finalidade da compra. Após essa régua, o cliente respondeu pelo WhatsApp; notas do CRM indicam pergunta sobre localização do Union Vista, além de mensagens curtas recebidas na mesma janela operacional.
+Cliente demonstrou interesse no Union Vista, lançamento da HLTS Construtora no bairro Grand Ville, em Uberlândia. O empreendimento fica na Zona Leste, em região próxima ao Parque do Sabiá. Para resposta comercial ao cliente, priorizar localização por bairro/região (`Grand Ville`, `Zona Leste`, próximo ao Parque do Sabiá) e só detalhar endereço exato se a conversa pedir isso claramente.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada com segurança. A primeira resposta indica abertura para continuar a conversa e interesse em entender localização/contexto do empreendimento.
+Ainda não diagnosticada. O cliente ainda não explicou se busca para morar, investir ou apenas comparar oportunidade.
 
 ### Momento
-Ainda não identificado. Como o Union Vista é lançamento com entrega futura, prazo e planejamento de compra podem ser pontos relevantes na qualificação.
+Ainda não identificado. Como o Union Vista é lançamento com entrega futura, prazo e encaixe de compra podem ser relevantes na sequência.
 
 ### Decisão
 Ainda não identificada.
 
 ### Viabilidade
-Ainda não identificada; ainda não houve conversa sobre entrada, renda, financiamento ou forma de pagamento. Não há promessa de crédito.
+Ainda não identificada; ainda não houve conversa sobre entrada, renda, financiamento ou forma de pagamento. Não prometer crédito.
 
 ## Histórico curado de interações
 ### 2026-05-04 — Falha técnica no primeiro envio
-Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status permaneceu `Sem Atendimento`.
+Webhook `cliente.created` foi aceito, mas o envio WhatsApp original não concluiu. Status permaneceu `Sem Atendimento`.
 
 ### 2026-05-05 — Primeiro contato reprocessado
-Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Union Vista/Grand Ville e pergunta se o cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
+Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Union Vista/Grand Ville e pergunta se o cliente procurava imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
 ### 2026-05-05 — Repescagem step 1 enviada
-Mensagem enviada contextualizando o Union Vista, no Grand Ville, e perguntando se Mauro estava olhando mais para morar ou para comparar uma oportunidade de compra. Ângulo usado: imóvel específico + organização da busca em lançamento. Próximo envio automático ficou inicialmente previsto para 2026-05-06 09:10 BRT.
+Reno enviou follow-up perguntando se Mauro estava olhando mais para morar ou para comparar oportunidade de compra. Ângulo usado: imóvel específico + organização da busca em lançamento, sem repetir a pergunta regional do primeiro contato.
 
-### 2026-05-05 — Primeira resposta inbound e retomada para atendimento
-Cliente respondeu pelo WhatsApp após contato/repescagem. O CRM registrou pergunta sobre localização do Union Vista e também mensagens curtas recebidas na mesma janela operacional. O status foi levado/preservado em `Em Atendimento`, e a repescagem foi interrompida para evitar novo follow-up automático após resposta real do cliente.
-
-### 2026-05-05 — Rotina silenciosa confirmada
-Execução silenciosa de inbound validou cliente com `broker_id=35`, não enviou mensagem ao cliente, registrou nota CRM ID 16872 e confirmou a branch `reno_followup.repescagem` com `step=1`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-05T19:33:50-03:00` e `stopped_reason=client_replied`.
+### 2026-05-05 — Primeira resposta inbound
+Cliente respondeu pelo WhatsApp perguntando: “Qual é a localização”. O atendimento foi preservado/confirmado em `Em Atendimento`. A repescagem foi interrompida por resposta do cliente e normalizada para `stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`.
 
 ## Objeções e travas
-- Nenhuma objeção comercial registrada até o momento.
+- Nenhuma objeção comercial ainda.
+- Interesse atual é entender localização do Union Vista.
 - Houve falha operacional no primeiro envio original, corrigida no reprocessamento de 2026-05-05.
-- A resposta inbound encerra a condição de silêncio; não deve haver continuidade de repescagem enquanto o atendimento segue ativo.
 
 ## Próximo passo
-Responder comercialmente pela sessão normal do WhatsApp, sem uso desta rotina silenciosa, retomando o contexto do Union Vista/localização e conduzindo uma pergunta leve de qualificação. Se houver sinal positivo sobre região ou empreendimento, avançar para apresentação/visita conforme a skill de qualificação.
+Na resposta comercial normal fora desta rotina silenciosa, responder de forma curta a localização do Union Vista por bairro/região e retomar a condução com uma pergunta simples, por exemplo se Grand Ville/Zona Leste faz sentido para ele. Depois, seguir qualificação leve antes de aprofundar valor, prazo ou financiamento.
 
 ## Observações operacionais
-- Marcador CRM do reprocessamento: `[reno_reprocess_20260505_5_leads]`.
-- Refs. WhatsApp do primeiro contato: 3EB0FB052FE34F2760080B / 3EB0EBA26E3E7C43517CE4.
-- Nota CRM da repescagem step 1: ID 16869.
-- Nota CRM da primeira resposta/localização: ID 16870.
-- Nota CRM de inbound curto anterior: ID 16871.
-- Nota CRM desta execução silenciosa: ID 16872.
-- Estado operacional verificado após a rotina: `status=Em Atendimento`; `repescagem.enabled=false`; `repescagem.next_run_at=null`; `repescagem.stopped_reason=client_replied`.
+- CRM é a fonte operacional de verdade: status atual verificado como `Em Atendimento` e broker_id=35.
+- Repescagem atual: `step=1`, `enabled=false`, `last_sent_at=2026-05-05T19:33:50-03:00`, `next_run_at=null`, `stopped_reason=client_replied`.
+- Resgate: inexistente no momento da verificação.
+- Nota CRM da primeira resposta já existia registrando a pergunta “Qual é a localização” e a transição operacional para `Em Atendimento`; esta execução evitou duplicar nota idêntica.
+- Existe documento legado/drift em `_agents/reno/11177-mauro-marques.md`; conteúdo útil foi consolidado neste documento oficial em `_agents/reno/atendimentos/11177-mauro-marques.md`. Não deletar legado sem autorização explícita.
