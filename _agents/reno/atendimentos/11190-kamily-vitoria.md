@@ -77,3 +77,8 @@ Documento mantido no caminho oficial do Reno. CRM/FamaChat permanece como fonte 
 Cliente respondeu que busca o imóvel para morar. Necessidade começa a ser enquadrada como moradia própria; ainda falta entender contexto da mudança, composição familiar, momento de compra e viabilidade.
 
 Próxima condução recomendada: perguntar de forma simples se a busca é para sair do aluguel/primeiro imóvel ou por outro motivo de moradia, mantendo uma pergunta por vez.
+
+### 2026-05-05 — Diagnóstico: objetivo de moradia
+Cliente informou que quer ter o primeiro imóvel próprio. Enquadramento comercial: lead em busca de primeira compra para moradia, com potencial para orientação consultiva sobre financiamento/entrada e visita presencial quando houver contexto mínimo.
+
+Próxima condução recomendada: perguntar se já chegou a ver financiamento/entrada ou se ainda está começando do zero.
