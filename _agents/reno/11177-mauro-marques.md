@@ -47,3 +47,7 @@ Union Vista fica na Alameda dos Mandaris, 201, bairro Grand Ville, Uberlândia/M
 
 ## Próximo passo
 Responder de forma curta com a localização e conduzir diagnóstico leve perguntando se essa região faz sentido para ele.
+
+
+## Atualização — retomada do cliente
+Cliente respondeu após a informação de localização: “Opa desculpe a demora,”. Condução recomendada: acolher sem pressão e retomar diagnóstico leve sobre aderência da região do Grand Ville/Zona Leste, mantendo uma pergunta por vez.
