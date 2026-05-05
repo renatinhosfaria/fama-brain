@@ -5,61 +5,60 @@ entity_type: atendimento
 entity_name: Eliane Maria Martins
 client_id: 11171
 broker_id: 35
-status_crm: Sem Atendimento
+status_crm: Não Respondeu
 source: Facebook Ads
-created: '2026-05-04'
-updated: '2026-05-04'
+created: '2026-05-05'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - primeiro-contato
-  - falha-envio
+  - reprocessamento
 ---
 # Atendimento — Eliane Maria Martins
 
 ## Resumo atual
-Cliente nova do Reno no FamaChat, com interesse no empreendimento Union Vereda. O primeiro contato do Reno foi preparado, mas não foi enviado por falha técnica nas tentativas de WhatsApp. O status no CRM foi preservado como `Sem Atendimento` e a repescagem não foi inicializada porque não houve envio bem-sucedido.
+Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.
 
 ## Dados operacionais
 - Cliente ID: 11171
 - Broker ID: 35
-- Status CRM: Sem Atendimento
+- Status CRM: Não Respondeu
 - Origem: Facebook Ads
-- Telefone/WhatsApp: número cadastrado no CRM com WhatsApp informado
-- Última interação relevante: 2026-05-04 — tentativa de primeiro contato falhou tecnicamente
+- WhatsApp: cadastrado no CRM
+- Última interação relevante: primeiro contato enviado pelo Reno em duas mensagens.
 
 ## Contexto comercial
-- Interesse vinculado: Union Vereda, bairro Jaraguá, Uberlândia.
-- Origem do cadastro: Facebook Ads / lead automático.
-- Nome no CRM parece humano e confiável: Eliane Maria Martins.
+Cliente demonstrou interesse no Union Vereda, no bairro Jaraguá.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada; o WhatsApp inicial não foi entregue.
+Ainda não diagnosticada; primeiro contato busca confirmar interesse na região.
 
 ### Momento
-Ainda não diagnosticado.
+Ainda não identificado.
 
 ### Decisão
-Ainda não diagnosticada.
+Ainda não identificada.
 
 ### Viabilidade
-Ainda não diagnosticada.
+Ainda não identificada; não houve conversa sobre financiamento ou condição.
 
 ## Histórico curado de interações
-### 2026-05-04 — Falha no primeiro contato
-O Reno validou o cliente no CRM como existente, broker_id 35 e status `Sem Atendimento`. A abertura preparada foi curta, contextual e relacionada ao Union Vereda no Jaraguá, perguntando se a cliente procura imóvel na região. As tentativas de envio pelo WhatsApp com as variações disponíveis do número falharam tecnicamente. Nenhuma mensagem foi considerada enviada.
+### 2026-05-04 — Falha técnica no primeiro envio
+Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status permaneceu `Sem Atendimento`.
+
+### 2026-05-05 — Primeiro contato reprocessado
+Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Union Vereda/Jaraguá e pergunta se a cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
 ## Objeções e travas
-- Trava operacional: falha técnica de entrega pelo WhatsApp no primeiro contato.
+- Nenhuma objeção comercial ainda; havia apenas falha operacional de envio, já corrigida neste reprocessamento.
 
 ## Próximo passo
-Revisar o caminho técnico de envio do WhatsApp antes de nova tentativa. Não avançar status nem inicializar repescagem sem envio bem-sucedido.
+Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar a interação no CRM e continuar qualificação consultiva.
 
 ## Observações operacionais
-- CRM atualizado com nota objetiva pelo usuário Reno (user_id 35).
-- Status preservado: `Sem Atendimento`.
-- Repescagem não inicializada.
-- Referência operacional: evt_3339 / 3339_1777897366255.
+- Marcador CRM: `[reno_reprocess_20260505_5_leads]`.
+- Refs. WhatsApp: 3EB025A384768D74A5B60E / 3EB0B8ED02E45B826A5168.
