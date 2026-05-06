@@ -104,3 +104,6 @@ A sessão normal de WhatsApp deve propor um horário concreto à tarde para visi
 - Nota CRM sobre o inbound “Qal endereço” já existia no momento da verificação; não foi criada nota duplicada.
 - Durante a verificação, o CRM já continha nota posterior registrando preferência de período “Tarde”; o vault foi consolidado com esse evento para não ficar defasado.
 - Esta rotina não enviou WhatsApp ao cliente e não prometeu condição, aprovação ou agendamento.
+
+### 2026-05-05 — Cliente pediu segunda à tarde
+Cliente perguntou: “Na segunda feira a tarde tem hrario?”. Reno verificou a agenda de 2026-05-11 das 12h às 18h e não encontrou agendamentos registrados no período. Próximo passo: oferecer horários concretos à tarde e aguardar confirmação antes de criar o agendamento.
