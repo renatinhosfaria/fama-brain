@@ -122,3 +122,14 @@ Responder comercialmente com referência segura de valores do Union Vista/opçã
 - Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067; nenhuma mensagem ao cliente foi enviada por aquela rotina.
 - Nota operacional da rotina silenciosa para o inbound "Valores" registrada no CRM como anotação #17070; nenhuma mensagem ao cliente foi enviada por esta rotina.
 - CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento` e follow-ups automáticos sem ciclo ativo a interromper.
+
+
+### 2026-05-06 — Forma de compra
+Cliente respondeu: "Sim" à pergunta se pretende financiar.
+
+Interpretação: forma provável de compra = financiamento.
+
+Ações operacionais:
+- Campo `sobre_a_busca_por_um_imovel` complementado com "Pretende financiar.".
+- Nota registrada no CRM.
+- Próxima condução: entender se há entrada/FGTS disponível para direcionar simulação e viabilidade, sem prometer crédito.
