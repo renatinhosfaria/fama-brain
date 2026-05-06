@@ -123,3 +123,9 @@ Atualização do diagnóstico: cliente possui MEI com aproximadamente 18 meses d
 Cliente respondeu à pergunta sobre quanto entra por mês na conta: "Uns 40".
 
 Atualização do diagnóstico: informação de renda/movimentação ainda ambígua. Antes de qualquer estimativa ou orientação de financiamento, é necessário confirmar se ele quis dizer aproximadamente R$ 4 mil/mês, R$ 40 mil/mês ou outra referência.
+
+
+### 2026-05-06 — Cliente confirma movimentação mensal de R$ 40 mil
+Cliente esclareceu que quis dizer R$ 40 mil de movimentação/renda mensal aproximada no MEI.
+
+Atualização do diagnóstico: sinal forte de viabilidade potencial, embora ainda sem promessa de aprovação. Cliente já perguntou documentos, parcelas e esclareceu renda/MEI; atendimento deve ser tratado como quente. Próxima condução recomendada: explicar que não faz sentido descartar financiamento sem análise e conduzir para leitura documental/simulação, preferencialmente visita presencial na Fama. Ainda falta validar entrada disponível.
