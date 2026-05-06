@@ -127,3 +127,7 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 - Inbound "Financiado" persistido no CRM em nota operacional 17079; status preservado em Em Atendimento; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "Ixi mto" persistido no CRM em nota operacional 17081; status preservado em Em Atendimento; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound sobre casa quitada persistido no CRM em nota operacional 17085; status preservado em Em Atendimento; nenhum envio ao cliente foi feito por rotina silenciosa.
+
+
+### 2026-05-06 — Localização da casa em Araguari
+Cliente informou que a casa quitada em Araguari fica no bairro São Sebastião. Próximo passo: levantar características da casa, começando por quantidade de quartos, para avaliar venda ou permuta por apartamento em Araguari.
