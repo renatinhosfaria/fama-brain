@@ -17,12 +17,11 @@ tags:
   - primeiro-contato
   - em-atendimento
   - diagnostico
-  - valores
 ---
 # Atendimento — Lirio pereira
 
 ## Resumo atual
-Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região, informou que a busca é para moradia, disse que seria somente para o próprio cliente e indicou que está pesquisando com calma. Na sequência, sinalizou que quer entender primeiro valores do Union Vista. CRM está em `Em Atendimento`; repescagem automática está interrompida e não há Resgate ativo identificado.
+Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região, informou que a busca é para moradia, respondeu que seria somente para o próprio cliente, indicou que está pesquisando com calma e agora pediu/indicou prioridade por valores. CRM está em `Em Atendimento`; repescagem automática está interrompida e não há Resgate ativo identificado. A condução atual deve responder sobre valores com dados seguros e manter o tom consultivo, sem prometer condição ou aprovação.
 
 ## Dados operacionais
 - Cliente ID: 11234
@@ -31,14 +30,14 @@ Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com i
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: cliente indicou que quer entender primeiro valores do Union Vista; rotina silenciosa também registrou inbound "Pesquisando" como momento de pesquisa com calma
+- Última interação relevante: cliente respondeu "Valores", indicando prioridade por preço/condição
 
 ## Contexto comercial
-O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou finalidade de moradia, disse que a moradia seria somente para ele(a), sinalizou momento inicial de pesquisa e depois indicou prioridade em valores/financiamento.
+O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou finalidade de moradia, disse que a moradia seria somente para ele(a), sinalizou momento inicial de pesquisa e indicou que quer entender valores.
 
 ## Diagnóstico
 ### Necessidade
-Cliente confirmou interesse na região/empreendimento e declarou finalidade de moradia. A composição de uso indicada é somente o próprio cliente, sugerindo foco inicial em unidade adequada para uso individual, sem necessidade familiar declarada até o momento.
+Cliente confirmou interesse na região/empreendimento e declarou finalidade de moradia. A composição de uso indicada é somente o próprio cliente, o que sugere foco inicial em unidade adequada para uso individual, sem necessidade familiar declarada até o momento.
 
 ### Momento
 Momento de compra registrado no CRM como pesquisa inicial/com calma. A condução deve ser útil, comparativa e sem pressão excessiva de agendamento imediato.
@@ -47,11 +46,13 @@ Momento de compra registrado no CRM como pesquisa inicial/com calma. A conduçã
 Ainda não identificada.
 
 ### Viabilidade
-Cliente quer entender primeiro valores do Union Vista. Ainda não há dados de entrada, FGTS, renda ou forma de financiamento; não prometer crédito nem condição.
+Cliente sinalizou que quer entender valores. Ainda não há dados de financiamento, entrada, FGTS, renda ou faixa desejada. Próxima condução deve falar apenas com valores seguros/estimados por unidade quando houver fonte validada, reforçando que condição depende da unidade e análise, sem prometer aprovação.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
-Reno enviou abertura pelo WhatsApp em duas mensagens: apresentação/contexto do interesse no Union Vista, no Grand Ville, e pergunta de baixa fricção sobre procura de imóvel nessa região.
+Reno enviou abertura pelo WhatsApp em duas mensagens:
+1. apresentação e contexto: interesse no Union Vista, no Grand Ville;
+2. pergunta de baixa fricção: se o cliente procura imóvel nessa região.
 
 Após o envio, o CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu` e a branch `meta_data.reno_followup.repescagem` foi inicializada.
 
@@ -71,7 +72,7 @@ Cliente respondeu: "Moradia".
 Interpretação: finalidade de compra declarada = morar.
 
 Ações operacionais:
-- Campo `sobre_a_busca_por_um_imovel` atualizado com busca declarada de moradia.
+- Campo `sobre_a_busca_por_um_imovel` atualizado com "Busca declarada: moradia.".
 - Nota registrada no CRM.
 - Rotina silenciosa confirmou cliente elegível, status preservado em `Em Atendimento`, repescagem interrompida e ausência de resgate ativo.
 - Reno respondeu com pergunta curta para aprofundar necessidade: "Entendi. Pra eu te direcionar melhor: seria só pra você ou pra família?"
@@ -95,28 +96,29 @@ Ações operacionais:
 - Campo `vai_comprar` atualizado no CRM para "Pesquisando com calma".
 - Campo `sobre_a_busca_por_um_imovel` complementado com momento de pesquisa.
 - Nota comercial registrada no CRM como anotação #17066.
-- Rotina silenciosa registrou o inbound "Pesquisando" na anotação #17069, preservando status `Em Atendimento`, com repescagem já interrompida e sem Resgate ativo.
+- Condução recomendada: validar o momento sem pressionar visita e perguntar qual ponto o cliente quer entender primeiro: valores/financiamento ou planta/localização.
 
-### 2026-05-06 — Prioridade da pesquisa: valores
-Cliente indicou que quer entender primeiro valores do Union Vista.
+### 2026-05-06 — Prioridade por valores
+Cliente respondeu: "Valores".
 
-Interpretação: prioridade atual = valores/financiamento, ainda em etapa exploratória.
+Interpretação: prioridade atual da pesquisa = valores/condição do Union Vista ou da opção em andamento.
 
 Ações operacionais:
-- Nota comercial registrada no CRM como anotação #17068.
-- Condução recomendada: informar referência atual de valores do Union Vista apenas com fonte segura e variação por unidade, sem promessa de condição, e perguntar se pretende financiar.
+- Nota comercial anterior registrou que o cliente quer entender primeiro valores do Union Vista e recomendou condução com referência segura de valor, variação por unidade e pergunta sobre financiamento.
+- Rotina silenciosa do inbound registrou nota operacional #17070, preservou status `Em Atendimento`, confirmou repescagem interrompida e Resgate sem ciclo ativo identificado.
+- Nenhuma mensagem foi enviada ao cliente pela rotina silenciosa.
 
 ## Objeções e travas
-- Nenhuma objeção registrada até o momento.
-- Ponto de atenção: cliente está em pesquisa com calma; evitar pressão artificial de visita antes de entregar uma prévia útil sobre valores/financiamento.
+- Momento exploratório: cliente está pesquisando com calma; evitar pressão precoce.
+- Viabilidade ainda aberta: cliente pediu valores, mas não informou modalidade de compra, entrada ou faixa mensal.
 
 ## Próximo passo
-Responder comercialmente fora desta rotina silenciosa com uma prévia curta sobre valores do Union Vista, com ressalva de variação por unidade, e conduzir para entender se a compra seria financiada. Se houver sinal positivo após a prévia, fazer ponte para visita presencial na Fama como próximo passo natural.
+Responder comercialmente com referência segura de valores do Union Vista/opção em andamento, deixando claro que varia por unidade e condição. Em seguida, fazer uma pergunta simples para avançar viabilidade, por exemplo se pretende financiar, sem transformar a conversa em simulação pelo WhatsApp. Se houver sinal positivo depois da explicação, conduzir para visita presencial na Fama como próximo passo natural.
 
 ## Observações operacionais
-- Evento de origem do primeiro contato: `evt_3402`.
+- Evento de origem: `evt_3402`.
 - Idempotency key do primeiro contato: `3402_1778089782425`.
 - Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por aquela rotina.
 - Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067; nenhuma mensagem ao cliente foi enviada por aquela rotina.
-- Nota operacional da rotina silenciosa para o inbound "Pesquisando" registrada no CRM como anotação #17069; nenhuma mensagem ao cliente foi enviada por esta rotina.
-- CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento`, repescagem com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`, e Resgate sem ciclo ativo identificado.
+- Nota operacional da rotina silenciosa para o inbound "Valores" registrada no CRM como anotação #17070; nenhuma mensagem ao cliente foi enviada por esta rotina.
+- CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento` e follow-ups automáticos sem ciclo ativo a interromper.
