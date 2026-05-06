@@ -71,3 +71,7 @@ Conduzir qualificação leve na conversa: esclarecer se Shopping Park/Place+Arbi
 - Idempotência inicial: 3400_1778086546597.
 - Mensagens WhatsApp iniciais aceitas tecnicamente pelo bridge com validação do destinatário.
 - Inbound "Eu moro em Uberlândia" persistido no CRM em nota operacional; nenhum envio ao cliente foi feito nesta rotina silenciosa.
+
+
+### 2026-05-06 — Objeção de localização
+Cliente esclareceu que pensou que o imóvel/anúncio era em Araguari e afirmou que Uberlândia não interessa. Trava principal: localização. Próximo passo: confirmar se a busca é somente em Araguari e evitar insistência em opções de Uberlândia.
