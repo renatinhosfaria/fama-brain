@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Grazziele Rocha Mendes
-client_id: 11232
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11232
 created: '2026-05-06'
-updated: '2026-05-06'
+entity_name: Grazziele Rocha Mendes
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -17,11 +15,13 @@ tags:
   - primeiro-contato
   - em-atendimento
   - qualificacao
+type: entity-profile
+updated: '2026-05-06'
 ---
 # Atendimento — Grazziele Rocha Mendes
 
 ## Resumo atual
-Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas esclareceu que pensou que o anúncio/imóvel era em Araguari e que Uberlândia não interessa para a compra atual. Informou que mora/tem apartamento em Uberlândia, não se adaptou à cidade/região e quer ir para Araguari. A interação inbound mais recente foi "Tenho", tratada no contexto imediato como confirmação de que possui apartamento em Uberlândia. Próximo passo comercial: esclarecer se pretende vender o imóvel atual ou usá-lo como parte de pagamento/troca e levantar critérios mínimos para imóvel em Araguari, sem insistir em opções de Uberlândia.
+Cliente em atendimento pelo Reno (`broker_id=35`). Entrou via Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas a conversa evoluiu para uma trava de localização entre Uberlândia e Araguari. A cliente mora em Uberlândia, informou que não se adaptou à cidade/região e reforçou intenção de mudar para Araguari. Também confirmou que possui apartamento em Uberlândia, no Jardim Europa, e está aberta à venda ou uso em negociação/permuta, se houver viabilidade.
 
 ## Dados operacionais
 - Cliente ID: 11232
@@ -29,63 +29,61 @@ Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial 
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp validado no CRM
-- Última interação relevante: 2026-05-06 — cliente respondeu "Tenho", confirmando pelo contexto que possui apartamento em Uberlândia
+- Empreendimento de entrada: Place+Arbi / Shopping Park
+- Última interação relevante: 2026-05-06 — cliente informou que o apartamento atual em Uberlândia fica no Jardim Europa; ainda falta levantar características do imóvel, especialmente quantidade de quartos.
 
 ## Contexto comercial
-Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park, Uberlândia. A abertura contextualizada perguntou se a cliente está procurando imóvel nessa região. Após a primeira resposta, a conversa evoluiu para uma correção importante: a cliente acreditava que a oferta era em Araguari e informou que Uberlândia não interessa. Ela mora/possui apartamento em Uberlândia, não se adaptou e quer ir para Araguari. Demonstrou abertura para venda do apartamento atual ou eventual negociação/permuta, desde que haja interessado em assumir/pegar o imóvel.
+Lead respondeu ao primeiro contato do Reno e iniciou diagnóstico de moradia. O interesse inicial do anúncio era em empreendimento de Uberlândia, mas houve ruído de expectativa sobre a cidade/região. A cliente indicou que Uberlândia não é o foco atual e que a motivação principal é sair de Uberlândia e avaliar Araguari. O apartamento atual no Jardim Europa pode ser parte importante da estratégia comercial, seja venda, troca ou permuta, mas ainda faltam dados do imóvel e critérios mínimos para a nova busca em Araguari.
 
 ## Diagnóstico
 ### Necessidade
-Busca ligada a mudança de cidade, com foco em Araguari. A necessidade atual não é o empreendimento inicial em Uberlândia, mas entender caminho para sair de Uberlândia e comprar/negociar em Araguari.
+Encontrar solução imobiliária alinhada à mudança para Araguari, sem insistência em opções de Uberlândia que não façam sentido para a cliente.
 
 ### Momento
-Em conversa ativa no mesmo dia do primeiro contato. Ainda é necessário entender urgência e se a mudança para Araguari é imediata ou planejada.
+Cliente demonstra motivação atual por mudança de cidade, mas o timing exato de compra/venda ainda não foi confirmado.
 
 ### Decisão
-Ainda não identificada. Precisa entender se decide sozinha e se há mais alguém envolvido na venda/troca do apartamento atual e na compra em Araguari.
+Ainda não identificado quem decide além da cliente nem se há dependência familiar ou de venda do imóvel atual.
 
 ### Viabilidade
-Cliente possui apartamento em Uberlândia, que pode ser relevante para viabilidade via venda, troca ou parte de pagamento. Não há dados financeiros, avaliação do imóvel atual, saldo de financiamento, faixa de valor ou capacidade de compra validados. Não prometer crédito, venda ou permuta sem análise.
+Cliente possui apartamento em Uberlândia, no Jardim Europa, e cogita venda ou uso em negociação/permuta. Ainda faltam características do imóvel atual, faixa de valor, condição de financiamento/entrada e critérios mínimos para Araguari. Não há promessa de crédito ou encaixe.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
-Reno enviou duas mensagens curtas pelo WhatsApp: apresentação com contexto do Place+Arbi no Shopping Park e pergunta de baixa fricção sobre busca na região. Status CRM atualizado de Sem Atendimento para Não Respondeu. Repescagem inicializada com step 0 e próxima janela em 2026-05-06 às 19:10.
+Reno enviou abertura curta pelo WhatsApp com contexto do Place+Arbi no Shopping Park e pergunta sobre busca na região. Status CRM passou de Sem Atendimento para Não Respondeu e a repescagem foi inicializada.
 
 ### 2026-05-06 — Primeira resposta da cliente
-Cliente respondeu ao atendimento. CRM registrou evolução de Não Respondeu para Em Atendimento e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
+Cliente respondeu ao atendimento. CRM registrou evolução de Não Respondeu para Em Atendimento. A repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
 
-### 2026-05-06 — Continuação inbound: "Mora"
-Cliente enviou resposta curta no WhatsApp: "Mora". CRM validado no escopo Reno (`broker_id=35`), status preservado em Em Atendimento, sem Resgate ativo e com Repescagem já interrompida. Conteúdo tratado como sinal útil para continuar a qualificação sobre moradia/região/perfil.
+### 2026-05-06 — Continuação inbound: moradia em Uberlândia
+Cliente respondeu que busca imóvel para morar e informou que mora em Uberlândia. Status preservado em Em Atendimento; sem Resgate ativo.
 
-### 2026-05-06 — Continuação inbound: "Eu moro em Uberlândia"
-Cliente informou que mora em Uberlândia. CRM validado no escopo Reno (`broker_id=35`), status preservado em Em Atendimento, Repescagem já interrompida por resposta do cliente e sem Resgate ativo.
+### 2026-05-06 — Objeção/correção de localização
+Cliente trouxe a mensagem: "Não pensei q era Araguari". A rotina silenciosa validou o escopo Reno, preservou o status Em Atendimento, verificou que a repescagem já estava interrompida e que não havia Resgate ativo. Conteúdo tratado como correção/objeção de localização envolvendo Araguari/Uberlândia, exigindo condução cuidadosa sem insistir em opção fora do foco dela.
 
-### 2026-05-06 — Objeção de localização
-Cliente esclareceu que pensou que o imóvel/anúncio era em Araguari e afirmou que Uberlândia não interessa. Trava principal: localização. Próximo passo: confirmar se a busca é somente em Araguari e evitar insistência em opções de Uberlândia.
+### 2026-05-06 — Araguari como foco comercial
+Cliente esclareceu que não se adaptou a Uberlândia, que possui apartamento na cidade e que deseja se mudar para Araguari. Também indicou abertura para vender o apartamento atual ou usá-lo em negociação, se houver interesse/viabilidade.
 
-### 2026-05-06 — Motivo da objeção
-Cliente informou que tem apartamento em Uberlândia e não se adaptou à cidade/região. Isso reforça que a objeção não é apenas ao empreendimento, mas à localização. Próximo passo: entender se a busca é comprar em Araguari e se existe intenção de vender/trocar o apartamento atual.
-
-### 2026-05-06 — Apartamento atual confirmado
-Cliente confirmou que possui apartamento em Uberlândia. Contexto comercial: não se adaptou à cidade/região e pode estar buscando compra em Araguari com venda ou uso do apartamento atual em negociação. Próximo passo: entender se pretende vender o imóvel atual ou usar como parte de pagamento/troca.
-
-### 2026-05-06 — Foco em mudança para Araguari
-Cliente reforçou que mora em Uberlândia e quer ir para Araguari. Está aberta tanto à venda do apartamento atual quanto a usar o imóvel em uma negociação/permuta, desde que exista alguém interessado em assumir/pegar o apartamento. Diagnóstico: motivação principal é mudança de cidade; próximo passo é levantar dados do apartamento atual e critérios mínimos para compra em Araguari.
-
-### 2026-05-06 — Inbound curto: "Tenho"
-Mensagem inbound recebida pelo WhatsApp: "Tenho". Pelo histórico imediato, a resposta confirma que a cliente tem apartamento em Uberlândia. CRM validado no escopo Reno (`broker_id=35`); status já estava em Em Atendimento, sem regressão ou mudança. Repescagem já estava interrompida por resposta do cliente e não há Resgate ativo. Nota operacional registrada no CRM.
+### 2026-05-06 — Apartamento atual em Uberlândia
+Cliente confirmou que tem apartamento em Uberlândia e informou que fica no Jardim Europa. Ainda falta levantar dados objetivos do imóvel, especialmente quantidade de quartos, para avaliar estratégia de venda/permuta e continuidade da busca em Araguari.
 
 ## Objeções e travas
-- Localização: cliente não quer Uberlândia para a compra atual; corrigiu o contexto para Araguari.
-- Imóvel atual em Uberlândia: pode ser oportunidade de venda/troca, mas também é trava de viabilidade até entender valor, saldo, documentação e disposição real para negociar.
+- Localização: Uberlândia parece não atender o objetivo atual da cliente; Araguari passou a ser o foco declarado.
+- Imóvel atual: cliente possui apartamento em Uberlândia, no Jardim Europa; eventual compra pode depender de venda, troca, permuta ou estratégia para esse ativo.
+- Ruído de expectativa: o interesse inicial veio de anúncio/empreendimento de Uberlândia, mas a condução deve corrigir o foco sem discutir com a cliente.
 
 ## Próximo passo
-Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa: reconhecer o contexto e perguntar uma coisa por vez, priorizando se a cliente pensa em vender o apartamento atual ou usar como parte de pagamento/troca para buscar algo em Araguari. Depois, levantar dados básicos do imóvel atual e critérios mínimos para imóvel em Araguari.
+Levantar dados básicos do apartamento atual no Jardim Europa, especialmente quantidade de quartos, metragem aproximada, vaga e situação de financiamento/quitado, se a conversa permitir. Em paralelo, confirmar critérios mínimos para Araguari e se a cliente pretende vender o imóvel atual ou tentar usá-lo como parte da negociação. Evitar insistir em Place+Arbi/Shopping Park enquanto a trava de localização não estiver resolvida.
 
 ## Observações operacionais
-- Evento inicial: evt_3400.
-- Idempotência inicial: 3400_1778086546597.
-- Mensagens WhatsApp iniciais aceitas tecnicamente pelo bridge com validação do destinatário.
-- Repescagem: interrompida por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`).
-- Resgate: não havia ciclo ativo no momento da última verificação.
-- Inbound "Tenho" persistido no CRM em nota operacional 17032; nenhum envio ao cliente foi feito nesta rotina silenciosa.
+- CRM/FamaChat permanece como fonte operacional da verdade.
+- Status atual preservado em Em Atendimento; não houve regressão nem atualização manual para status avançado.
+- Repescagem permanece interrompida por resposta do cliente: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
+- Resgate verificado como inexistente/sem ciclo ativo nesta rotina.
+- Nota operacional da mensagem inbound "Não pensei q era Araguari" registrada no CRM em 2026-05-06.
+- Documento curado atualizado no caminho oficial `_agents/reno/atendimentos/11232-grazziele-rocha-mendes.md`.
+- Nenhuma mensagem ao cliente foi enviada por esta rotina silenciosa.
+
+
+### 2026-05-06 — Imóveis atuais e preferência por apartamento
+Cliente informou que o apartamento atual em Uberlândia fica no Jardim Europa. Também relatou possuir uma casa em Araguari, mas quer um apartamento em Araguari porque considera mais fácil de cuidar. Diagnóstico: motivação principal é sair de Uberlândia e simplificar manutenção/moradia. Possíveis ativos para estratégia: apartamento em Uberlândia e casa em Araguari. Próximo passo: esclarecer se a casa de Araguari poderia entrar em venda/troca por apartamento e levantar critérios do apartamento desejado.
