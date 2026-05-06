@@ -109,3 +109,7 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 - Inbound "Vende" persistido no CRM em nota operacional 17040; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "Pode ser dois não tenho preferência" persistido no CRM em nota operacional 17045; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "2" persistido no CRM em nota operacional 17049; nenhum envio ao cliente foi feito nesta rotina silenciosa.
+
+
+### 2026-05-06 — Situação financeira do apartamento em Uberlândia
+Cliente informou que o apartamento no Jardim Europa/Uberlândia ainda está financiado. Para venda/permuta será necessário levantar saldo devedor aproximado e valor esperado/avaliação do imóvel.
