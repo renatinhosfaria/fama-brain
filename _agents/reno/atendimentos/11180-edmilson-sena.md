@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Edmilson Sena
-client_id: 11180
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11180
 created: '2026-05-05'
-updated: '2026-05-06'
+entity_name: Edmilson Sena
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -20,13 +18,15 @@ tags:
   - qualificacao
   - financiamento
   - mei
+type: entity-profile
+updated: '2026-05-06'
 ---
 # Atendimento — Edmilson Sena
 
 ## Resumo atual
 Cliente respondeu pelo WhatsApp após a repescagem do Reno e segue em `Em Atendimento`. A repescagem está interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`; não há Resgate ativo registrado.
 
-Comercialmente, o atendimento saiu de fase exploratória para leitura de viabilidade do Place+Arbi. O cliente disse que estava apenas olhando, trouxe insegurança sobre financiamento em nome próprio, esclareceu que ainda não tentou financiar, perguntou sobre parcelas e documentos, informou renda por MEI, estimou o MEI ativo há cerca de um ano e meio e respondeu sobre movimentação/renda com `Uns 40`, informação ainda ambígua. Próximo passo: esclarecer o valor exato aproximado antes de qualquer leitura de financiamento, sem prometer aprovação.
+Comercialmente, o atendimento saiu de fase exploratória para leitura de viabilidade do Place+Arbi. O cliente disse que estava apenas olhando, trouxe insegurança sobre financiamento em nome próprio, esclareceu que ainda não tentou financiar, perguntou sobre parcelas e documentos, informou renda por MEI, estimou o MEI ativo há cerca de um ano e meio, esclareceu movimentação/renda mensal aproximada como R$40 mil e depois perguntou sobre a data de entrega do empreendimento. Próximo passo: responder/confirmar que a entrega cadastrada do Place+Arbi é JUN/2027 e validar se esse prazo de obra encaixa no momento do cliente; pelo sinal de viabilidade, conduzir para análise presencial/documental na Fama sem prometer aprovação.
 
 ## Dados operacionais
 - Cliente ID: 11180
@@ -35,20 +35,20 @@ Comercialmente, o atendimento saiu de fase exploratória para leitura de viabili
 - Origem: Facebook Ads
 - WhatsApp: cadastrado no CRM; atendimento Reno elegível por `broker_id=35`
 - Empreendimento de interesse no CRM: Place+Arbi, Shopping Park
-- Última interação relevante: cliente respondeu `Uns 40` ao falar de movimentação/renda mensal do MEI; valor precisa ser esclarecido
+- Última interação relevante: cliente perguntou sobre data de entrega do Place+Arbi; CRM indica entrega JUN/2027
 - Follow-up Reno: repescagem step 2 interrompida; resgate sem branch ativa registrada
 
 ## Contexto comercial
 Cliente demonstrou interesse no Place+Arbi, no bairro Shopping Park, em Uberlândia. O empreendimento está em lançamento, com entrega cadastrada para JUN/2027, plantas de 48m² e 50m², 2 quartos, sacada, lazer e valores cadastrados a partir de R$221.760, dependendo da unidade.
 
-O cliente começou dizendo que estava apenas conhecendo opções e trouxe uma preocupação de viabilidade: acredita que o próprio nome talvez não financie. Depois esclareceu que não houve tentativa formal anterior, perguntou sobre média/variação de parcelas, pediu documentos necessários, informou renda via MEI, disse que o MEI deve ter cerca de 1 ano e meio e indicou movimentação/renda como `Uns 40`, ainda sem unidade clara.
+O cliente começou dizendo que estava apenas conhecendo opções e trouxe uma preocupação de viabilidade: acredita que o próprio nome talvez não financie. Depois esclareceu que não houve tentativa formal anterior, perguntou sobre média/variação de parcelas, pediu documentos necessários, informou renda via MEI, disse que o MEI deve ter cerca de 1 ano e meio, confirmou movimentação/renda mensal aproximada de R$40 mil e perguntou sobre entrega do empreendimento.
 
 ## Diagnóstico
 ### Necessidade
-Ainda em formação. O cliente parece querer entender se uma compra no perfil do Place+Arbi é viável antes de se aprofundar em escolha de unidade.
+Ainda em formação, mas com avanço claro para viabilidade. O cliente parece querer entender se a compra no perfil do Place+Arbi é viável e se o prazo de entrega encaixa antes de aprofundar escolha de unidade.
 
 ### Momento
-Morno com avanço prático. Apesar de ter dito que estava só olhando, a sequência de perguntas sobre parcelas, documentos e renda mostra abertura para uma primeira leitura de viabilidade.
+Morno para quente. Apesar de ter dito que estava só olhando, a sequência de perguntas sobre parcelas, documentos, renda e entrega mostra interesse prático e abertura para orientação.
 
 ### Decisão
 Ainda não identificada. Não há informação sobre outras pessoas envolvidas na decisão.
@@ -56,7 +56,7 @@ Ainda não identificada. Não há informação sobre outras pessoas envolvidas n
 ### Viabilidade
 Trava principal percebida: financiamento em nome próprio. Como o cliente informou que não tentou financiar, a objeção deve ser tratada como hipótese a validar, não como negativa formal.
 
-Renda: cliente indicou trabalhar como MEI. Tempo de MEI informado: cerca de um ano e meio. Movimentação/renda mensal informada como `Uns 40`, mas o dado está ambíguo e precisa ser esclarecido antes de qualquer leitura: pode significar R$4 mil, R$40 mil ou outra referência. Condução deve explicar que, para MEI, análise costuma olhar extratos/movimentação e documentos complementares, sem prometer aprovação.
+Renda: cliente indicou trabalhar como MEI. Tempo de MEI informado: cerca de um ano e meio. Movimentação/renda mensal esclarecida como aproximadamente R$40 mil. Isso é sinal forte de viabilidade potencial, mas não garante aprovação; condução deve reforçar análise com documentos e extratos, validar entrada disponível e evitar simulação definitiva pelo WhatsApp.
 
 ## Histórico curado de interações
 ### 2026-05-04 — Falha técnica no primeiro envio
@@ -95,22 +95,30 @@ Cliente respondeu sobre tipo de renda com correção: `Meu` / `Mei`. Interpreta�
 Persistência operacional específica desta rotina: a mensagem inbound `Meu` foi registrada no CRM pela nota 16962; status preservado em `Em Atendimento`; repescagem já interrompida; sem Resgate ativo; nenhum envio ao cliente.
 
 ### 2026-05-06 — Cliente informa tempo de MEI
-Cliente respondeu que o MEI deve ter cerca de um ano e meio ativo. Atualização do diagnóstico: tempo razoável para uma primeira leitura, mas ainda falta entender movimentação/renda média.
+Cliente respondeu que o MEI deve ter cerca de um ano e meio ativo. Atualização do diagnóstico: tempo razoável para uma primeira leitura, mas ainda faltava entender movimentação/renda média.
 
-### 2026-05-06 — Cliente informa movimentação/renda de forma ambígua
-Cliente respondeu `Uns 40` sobre movimentação/renda mensal do MEI. O dado ainda não é seguro para cálculo ou leitura comercial: precisa confirmar se significa R$4 mil, R$40 mil ou outra referência.
+Persistência operacional: rotina silenciosa registrou a mensagem no CRM, preservou status `Em Atendimento`, confirmou repescagem já interrompida e não enviou mensagem ao cliente.
+
+### 2026-05-06 — Cliente informa movimentação/renda
+Cliente respondeu inicialmente `Uns 40` sobre movimentação/renda mensal do MEI; em seguida esclareceu como aproximadamente R$40 mil. Atualização do diagnóstico: sinal forte de viabilidade potencial, sem promessa de aprovação; faz sentido conduzir para análise documental/presencial na Fama ou validar entrada disponível antes de avançar.
+
+Persistência operacional: rotinas silenciosas registraram as mensagens `Uns 40` e `40 mil`, preservaram status `Em Atendimento`, confirmaram repescagem já interrompida e não enviaram mensagem ao cliente.
+
+### 2026-05-06 — Cliente pergunta data de entrega
+Cliente perguntou: `Tem data de entrega do empreendimento?`. Contexto: Place+Arbi. Dado operacional confirmado no CRM: entrega prevista/cadastrada para JUN/2027. Próxima condução: responder de forma objetiva e validar se prazo de obra encaixa no momento do cliente ou se ele busca algo pronto/mais rápido.
 
 ## Objeções e travas
-- Trava de viabilidade/financiamento: cliente acredita que o próprio nome talvez não financie.
+- Trava inicial de viabilidade/financiamento: cliente acreditava que o próprio nome talvez não financiasse.
 - A trava ainda não veio de negativa formal; cliente disse que não tentou financiamento.
 - Momento inicialmente exploratório: cliente disse estar só olhando por enquanto.
 - Pergunta sobre parcelas indica preocupação com conforto financeiro e previsibilidade mensal.
 - Renda por MEI exige leitura cuidadosa de movimentação/extratos e documentos complementares.
-- Informação `Uns 40` está ambígua e não deve ser usada para cálculo antes de esclarecimento.
+- Renda/movimentação mensal aproximada de R$40 mil é sinal positivo, mas não deve ser tratada como garantia de aprovação.
+- Prazo de entrega agora é ponto a validar: Place+Arbi está com entrega cadastrada para JUN/2027.
 - Histórico operacional: houve falha técnica no envio original do webhook, corrigida por reprocessamento autorizado antes da repescagem.
 
 ## Próximo passo
-Na resposta comercial normal pelo WhatsApp, esclarecer primeiro a informação `Uns 40`: perguntar se ele quis dizer aproximadamente R$4 mil por mês, R$40 mil ou outro valor. Depois, se confirmado um valor plausível, conduzir uma primeira leitura de viabilidade para MEI com base em movimentação/extratos, sem prometer aprovação e sem transformar a conversa em simulação definitiva pelo WhatsApp.
+Na resposta comercial normal pelo WhatsApp, responder a entrega do Place+Arbi de forma objetiva (`JUN/2027`) e perguntar se esse prazo de obra encaixa no momento dele. Como o cliente já trouxe renda MEI e movimentação aproximada de R$40 mil, conduzir para análise documental/presencial na Fama e/ou validar entrada disponível, sem prometer aprovação e sem transformar o WhatsApp em simulação definitiva.
 
 ## Observações operacionais
 - Documento oficial do atendimento mantido no caminho determinístico `_agents/reno/atendimentos/11180-edmilson-sena.md`.
@@ -126,5 +134,9 @@ Na resposta comercial normal pelo WhatsApp, esclarecer primeiro a informação `
 - Nota CRM 16960 registrou que o cliente informou trabalhar como MEI, com correção de `Meu` para `Mei`.
 - Nota CRM 16961 registrou tempo de MEI aproximado de um ano e meio.
 - Nota CRM 16962 registrou esta rotina silenciosa para a mensagem `Meu`: status preservado, repescagem já interrompida, sem Resgate ativo e sem envio ao cliente.
-- Nota CRM 16963 registrou a resposta ambígua `Uns 40` sobre movimentação/renda mensal do MEI.
+- Nota CRM 16963 registrou a resposta `Uns 40` inicialmente ambígua sobre movimentação/renda mensal do MEI.
+- Nota CRM 16964 registrou a rotina silenciosa da mensagem sobre tempo de MEI.
+- Nota CRM 16965 registrou o esclarecimento de movimentação/renda mensal aproximada como R$40 mil.
+- Nota CRM 16966 registrou a pergunta sobre data de entrega do empreendimento.
+- Notas CRM 16967 e 16969 registraram rotinas silenciosas relacionadas às mensagens `Uns 40` e `40 mil`, com status preservado, repescagem interrompida, sem Resgate ativo e sem envio ao cliente.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
