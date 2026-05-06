@@ -88,3 +88,14 @@ Aguardar resposta sobre composição de moradia. Depois, avançar para momento d
 - Idempotency key: `3402_1778089782425`.
 - Documento atualizado após resposta "Moradia" e envio da pergunta de aprofundamento.
 - Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por esta rotina.
+
+
+### 2026-05-06 — Composição de moradia
+Cliente respondeu: "Somente".
+
+Interpretação: moradia somente para o próprio cliente.
+
+Ações operacionais:
+- Campo `sobre_a_busca_por_um_imovel` atualizado com uso somente pelo próprio cliente.
+- Nota registrada no CRM.
+- Próxima condução: entender momento de compra em pergunta curta.
