@@ -96,3 +96,9 @@ Na resposta comercial normal pelo WhatsApp, validar a preocupação do cliente s
 Cliente perguntou: "As parcelas variam, ou tem uma média?".
 
 Atualização do diagnóstico: cliente avançou para viabilidade/condição de compra. Como ainda não há tentativa de financiamento anterior e ele acredita que talvez não financie, a condução deve evitar promessa ou média genérica; explicar que a parcela muda conforme entrada, renda, prazo de obra e financiamento, e pedir referência de entrada para leitura inicial.
+
+
+### 2026-05-06 — Cliente pergunta documentos para análise
+Cliente perguntou: "Qual documento necessário?!".
+
+Atualização do diagnóstico: apesar de ter começado dizendo que estava só olhando e achava que não financiava, o cliente avançou para interesse prático em análise de viabilidade. Condução recomendada: responder documentos básicos com simplicidade, sem burocratizar, e perguntar o tipo de renda (CLT, autônomo ou MEI) para orientar corretamente.
