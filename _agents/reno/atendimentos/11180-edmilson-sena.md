@@ -105,3 +105,9 @@ Na resposta comercial normal pelo WhatsApp, responder de forma simples quais doc
 - Nota CRM 16957 registrou a rotina silenciosa da mensagem de parcelas: status preservado em `Em Atendimento`, repescagem já interrompida, sem Resgate ativo e sem envio ao cliente.
 - Nota CRM 16958 registrou a rotina silenciosa da mensagem `Qual documento necessário?!`: status preservado em `Em Atendimento`, repescagem já interrompida, sem Resgate ativo e sem envio ao cliente.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
+
+
+### 2026-05-06 — Cliente informa renda como MEI
+Cliente respondeu sobre tipo de renda com correção: "Meu" / "Mei".
+
+Atualização do diagnóstico: renda formal via MEI. A condução deve explicar que a análise para MEI costuma considerar documentos básicos mais CCMEI/cartão CNPJ, extratos bancários recentes e IR quando houver. Próxima pergunta recomendada: tempo de MEI ativo ou existência de movimentação bancária para estimar viabilidade sem prometer aprovação.
