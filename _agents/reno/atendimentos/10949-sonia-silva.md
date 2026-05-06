@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 10949
-created: '2026-04-30'
-entity_name: Sonia Silva
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Sonia Silva
+client_id: 10949
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-04-30'
+updated: '2026-05-06'
 tags:
   - reno
   - atendimento
@@ -17,8 +19,6 @@ tags:
   - reativado
   - em-atendimento
   - financiamento
-type: entity-profile
-updated: '2026-05-06'
 ---
 # Atendimento — Sonia Silva
 
@@ -27,7 +27,7 @@ Cliente do Reno (`broker_id=35`) originada de Facebook Ads/lead automático, com
 
 Em 2026-05-06 houve resposta inbound real no WhatsApp (`Boa tarde`). Como o status estava `Arquivado`, o CRM foi reativado para `Em Atendimento` por resposta inbound. A repescagem anterior já estava encerrada (`enabled=false`, `next_run_at=null`) e não havia Resgate ativo para interromper.
 
-Na sequência, a cliente retomou o contexto do Union Vista com dúvidas sobre construtora/Caixa, valor e financiamento. O CRM registra que ela pretende financiar, informou entrada disponível de R$ 30 mil e depois confirmou que não pretende usar FGTS. O atendimento está ativo e deve conduzir viabilidade com cuidado: validar renda mensal/familiar aproximada e, havendo sinal positivo, levar para visita presencial/validação segura na Fama, sem prometer aprovação ou condição fechada pelo WhatsApp.
+Na sequência, a cliente retomou o contexto do Union Vista com dúvidas sobre construtora/Caixa, valor e financiamento. O CRM registra que ela pretende financiar, informou entrada disponível de R$ 30 mil e confirmou que será somente capital próprio, sem FGTS. O atendimento está ativo e deve conduzir viabilidade com cuidado: validar renda mensal/familiar aproximada para estimar caminho de financiamento e, havendo sinal positivo, conduzir para visita presencial na Fama, sem prometer aprovação ou condição fechada pelo WhatsApp.
 
 ## Dados operacionais
 - Cliente ID: 10949
@@ -36,25 +36,25 @@ Na sequência, a cliente retomou o contexto do Union Vista com dúvidas sobre co
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp disponível no CRM; envios realizados pelo JID salvo
 - Empreendimento vinculado: Union Vista (`id_empreendimento=22`)
-- Última interação relevante: 2026-05-06 — cliente informou intenção de financiar, entrada disponível e ausência de FGTS; status preservado em `Em Atendimento`
+- Última interação relevante: 2026-05-06 — cliente confirmou que a entrada será somente capital próprio; status preservado em `Em Atendimento`
 
 ## Contexto comercial
 Interesse inicial vinculado ao Union Vista, empreendimento da HLTS Construtora na região do Grand Ville/Zona Leste de Uberlândia. O empreendimento está em lançamento, com entrega prevista para Jul/2027, unidades de 2 quartos com suíte, sacada/varanda, 1 vaga coberta e valores cadastrados no CRM a partir de aproximadamente R$292 mil, variando por unidade.
 
-Antes da resposta inbound, a régua de repescagem trabalhou os ângulos de organização da busca, encaixe financeiro, prazo de entrega, convite consultivo e encerramento elegante. Após a reativação, a cliente avançou para dúvidas de viabilidade/preço: perguntou se o empreendimento era da Caixa ou da construtora, perguntou quanto sai o apartamento, indicou que vai financiar, informou entrada disponível e descartou uso de FGTS.
+Antes da resposta inbound, a régua de repescagem trabalhou os ângulos de organização da busca, encaixe financeiro, prazo de entrega, convite consultivo e encerramento elegante. Após a reativação, a cliente avançou para dúvidas de viabilidade/preço: perguntou se o empreendimento era da Caixa ou da construtora, perguntou quanto sai o apartamento, indicou que vai financiar, informou entrada disponível e confirmou que não usará FGTS, apenas capital próprio.
 
 ## Diagnóstico
 ### Necessidade
 Ainda pouco definida quanto a morar/investir, mas o interesse operacional é no Union Vista. A conversa evoluiu de curiosidade de valor para viabilidade de compra financiada.
 
 ### Momento
-A cliente ficou silenciosa durante a primeira abordagem e as cinco repescagens, mas voltou a responder depois do arquivamento. A sequência de perguntas sobre construtora/financiamento, valor, entrada e FGTS indica retomada ativa de consideração do imóvel.
+A cliente ficou silenciosa durante a primeira abordagem e as cinco repescagens, mas voltou a responder depois do arquivamento. A sequência de perguntas sobre construtora/financiamento, valor, entrada e composição de capital indica retomada ativa de consideração do imóvel.
 
 ### Decisão
 Sem dados sobre decisores, participação familiar ou influência de terceiros.
 
 ### Viabilidade
-Cliente informou intenção de financiar, entrada própria de R$ 30 mil e ausência de FGTS. Referência calculada sobre unidade a partir de R$ 292.400: entrada aproximada de 10,26% e saldo de referência de R$ 262.400 antes de taxas, tabela vigente, fluxo de obra e análise de crédito. Próxima informação útil: renda mensal/familiar aproximada para estimar viabilidade, sem promessa de aprovação.
+Cliente informou intenção de financiar e entrada disponível de R$ 30 mil. Em 2026-05-06 confirmou que não pretende usar FGTS; a entrada será somente capital próprio. Referência calculada sobre unidade a partir de R$ 292.400: entrada aproximada de 10,26% e saldo de referência de R$ 262.400 antes de taxas, tabela vigente, fluxo de obra e análise de crédito. Próxima informação útil: renda mensal/familiar aproximada para estimar viabilidade, sem prometer aprovação.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -90,23 +90,23 @@ Cliente respondeu: `Vou financiar`. Leitura comercial: sinal de retomada real e 
 ### 2026-05-06 — Entrada disponível
 Cliente informou entrada disponível de R$ 30 mil. Cálculo de referência sobre unidade a partir de R$ 292.400: entrada aproximada de 10,26% e saldo de referência de R$ 262.400 antes de taxas, tabela vigente, fluxo de obra e análise de crédito. Próxima condução: entender se haverá FGTS além da entrada para compor viabilidade.
 
-### 2026-05-06 — Cliente descarta uso de FGTS
-Cliente informou que não pretende usar FGTS; a entrada será somente capital próprio de R$ 30 mil. Próxima condução registrada no CRM: explicar que com capital próprio é necessário validar renda/aprovação e perguntar renda mensal/familiar aproximada para estimar viabilidade, sem prometer aprovação.
+### 2026-05-06 — Cliente confirma entrada somente com capital próprio
+Cliente respondeu `So meu capital`, interpretado operacionalmente como confirmação de que não pretende usar FGTS: a entrada será somente capital próprio. Status já estava em `Em Atendimento`, então foi preservado. Repescagem segue encerrada e nenhum Resgate ativo foi identificado para interromper. Próxima condução comercial: validar renda mensal/familiar aproximada para estimar viabilidade do financiamento do Union Vista, sem prometer aprovação.
 
 ## Objeções e travas
 - Trava anterior: ausência de resposta real durante primeiro contato e repescagem completa.
-- Trava atual: viabilidade ainda incompleta; há entrada declarada, mas não haverá FGTS e falta renda/análise.
+- Trava atual: viabilidade ainda incompleta; já há entrada declarada e indicação de que não haverá FGTS, mas falta renda/análise.
 - Possível dúvida comercial: diferença entre construtora e financiamento pela Caixa; explicar de forma simples e usar como ponte para entender entrada/parcela/financiamento.
-- Pergunta ativa de viabilidade: financiamento do Union Vista com entrada própria de R$ 30 mil; evitar tratar como aprovação ou condição final.
+- Pergunta ativa de viabilidade: financiamento do Union Vista com entrada declarada; evitar tratar como aprovação ou condição final.
 
 ## Próximo passo
-Seguir atendimento conversacional normal pelo Reno. Como a cliente já informou que vai financiar, tem R$ 30 mil de entrada e não usará FGTS, a próxima pergunta útil é renda mensal/familiar aproximada para estimar viabilidade de forma simples. Se houver sinal positivo ou necessidade de simulação mais segura, convidar para validação presencial na Fama como próximo passo lógico.
+Seguir atendimento conversacional normal pelo Reno. Como a cliente já informou que vai financiar, tem R$ 30 mil de entrada e usará somente capital próprio, a próxima pergunta deve ser uma só: renda mensal/familiar aproximada para estimar se o financiamento do Union Vista faz sentido antes de conduzir para validação presencial na Fama. Não prometer aprovação.
 
 ## Observações operacionais
 - CRM/FamaChat foi tratado como fonte de verdade: cliente validada no CRM com `broker_id=35` antes da persistência.
 - Status atual preservado em `Em Atendimento`; não houve regressão nem atualização indevida nesta persistência.
 - Reativação anterior de `Arquivado` para `Em Atendimento` foi registrada no CRM em 2026-05-06 por resposta inbound real.
 - Repescagem anterior permanece encerrada com `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`; não havia Resgate ativo.
-- A nota CRM sobre a resposta `Vou financiar` já existia no momento desta execução; não foi criada duplicidade.
+- Nota CRM registrada para o inbound `So meu capital`, com contexto de capital próprio/sem FGTS e próxima condução de viabilidade.
 - Busca por telefone retornou registros duplicados com outros brokers; o Reno atuou apenas no cliente em seu escopo (`client_id=10949`, `broker_id=35`).
 - Há documentos legados/drift relacionados a este cliente em `_agents/reno/atendimentos/sonia-silva.md` e `_agents/reno/clientes/10949-sonia-silva.md`; este arquivo é o caminho determinístico oficial por `client_id`.
