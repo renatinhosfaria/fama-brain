@@ -17,11 +17,14 @@ tags:
   - primeiro-contato
   - em-atendimento
   - diagnostico
+  - financiamento
 ---
 # Atendimento — Lirio pereira
 
 ## Resumo atual
-Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região, informou que a busca é para moradia, respondeu que seria somente para o próprio cliente, indicou que está pesquisando com calma e agora pediu/indicou prioridade por valores. CRM está em `Em Atendimento`; repescagem automática está interrompida e não há Resgate ativo identificado. A condução atual deve responder sobre valores com dados seguros e manter o tom consultivo, sem prometer condição ou aprovação.
+Cliente do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville/Zona Leste de Uberlândia. Atendimento está em `Em Atendimento`. O cliente já confirmou que procura imóvel para moradia, somente para o próprio uso, está pesquisando com calma, quer entender valores, pretende financiar, informou entrada/FGTS de R$ 7.000 e renda mensal aproximada de R$ 6.300.
+
+Repescagem automática está interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não há Resgate ativo identificado. A próxima condução comercial deve usar os dados informados para propor análise/simulação mais precisa e convidar para visita presencial na Fama, sem prometer aprovação ou condição de crédito.
 
 ## Dados operacionais
 - Cliente ID: 11234
@@ -30,29 +33,36 @@ Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com i
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: cliente respondeu "Valores", indicando prioridade por preço/condição
+- Última interação relevante: cliente respondeu "6.300", indicando renda mensal aproximada para análise de viabilidade
 
 ## Contexto comercial
-O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou finalidade de moradia, disse que a moradia seria somente para ele(a), sinalizou momento inicial de pesquisa e indicou que quer entender valores.
+O cadastro veio com interesse no Union Vista, empreendimento da HLTS Construtora no Grand Ville/Zona Leste. A primeira abordagem usou o contexto do empreendimento e perguntou se a região fazia sentido. O cliente respondeu positivamente e avançou para diagnóstico leve.
+
+Dados já declarados pelo cliente:
+- finalidade: moradia;
+- uso: somente para o próprio cliente;
+- momento: pesquisando com calma;
+- prioridade: valores/financiamento;
+- forma provável de compra: financiamento;
+- entrada/FGTS informado: R$ 7.000;
+- renda mensal informada: aproximadamente R$ 6.300.
 
 ## Diagnóstico
 ### Necessidade
-Cliente confirmou interesse na região/empreendimento e declarou finalidade de moradia. A composição de uso indicada é somente o próprio cliente, o que sugere foco inicial em unidade adequada para uso individual, sem necessidade familiar declarada até o momento.
+Cliente procura imóvel para moradia própria, com interesse inicial no Union Vista. Ainda não declarou composição familiar ou necessidade de metragem além do uso individual.
 
 ### Momento
-Momento de compra registrado no CRM como pesquisa inicial/com calma. A condução deve ser útil, comparativa e sem pressão excessiva de agendamento imediato.
+Está pesquisando com calma, portanto a condução deve ser consultiva, útil e sem pressão artificial. Mesmo assim, os dados de viabilidade já permitem avançar para simulação orientada e convite presencial.
 
 ### Decisão
-Ainda não identificada.
+Ainda não foi identificado se há outra pessoa influenciando a decisão. Até agora o cliente indicou que a compra/moradia seria somente para ele(a).
 
 ### Viabilidade
-Cliente sinalizou que quer entender valores. Ainda não há dados de financiamento, entrada, FGTS, renda ou faixa desejada. Próxima condução deve falar apenas com valores seguros/estimados por unidade quando houver fonte validada, reforçando que condição depende da unidade e análise, sem prometer aprovação.
+Cliente pretende financiar, informou entrada/FGTS de R$ 7.000 e renda mensal aproximada de R$ 6.300. Esses dados são suficientes para direcionar uma análise inicial e propor validação presencial, mas não permitem prometer aprovação, parcela final ou condição fechada. O próximo passo deve ser olhar com segurança o encaixe do Union Vista ou de opção equivalente na Fama.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
-Reno enviou abertura pelo WhatsApp em duas mensagens:
-1. apresentação e contexto: interesse no Union Vista, no Grand Ville;
-2. pergunta de baixa fricção: se o cliente procura imóvel nessa região.
+Reno enviou abertura pelo WhatsApp em duas mensagens: apresentação e contexto do interesse no Union Vista, no Grand Ville, finalizando com pergunta de baixa fricção sobre a região.
 
 Após o envio, o CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu` e a branch `meta_data.reno_followup.repescagem` foi inicializada.
 
@@ -72,10 +82,9 @@ Cliente respondeu: "Moradia".
 Interpretação: finalidade de compra declarada = morar.
 
 Ações operacionais:
-- Campo `sobre_a_busca_por_um_imovel` atualizado com "Busca declarada: moradia.".
+- Campo `sobre_a_busca_por_um_imovel` atualizado com busca declarada de moradia.
 - Nota registrada no CRM.
-- Rotina silenciosa confirmou cliente elegível, status preservado em `Em Atendimento`, repescagem interrompida e ausência de resgate ativo.
-- Reno respondeu com pergunta curta para aprofundar necessidade: "Entendi. Pra eu te direcionar melhor: seria só pra você ou pra família?"
+- Rotina silenciosa confirmou cliente elegível, status preservado em `Em Atendimento`, repescagem interrompida e ausência de Resgate ativo.
 
 ### 2026-05-06 — Composição de moradia
 Cliente respondeu: "Somente".
@@ -83,9 +92,9 @@ Cliente respondeu: "Somente".
 Interpretação: moradia somente para o próprio cliente.
 
 Ações operacionais:
-- Campo `sobre_a_busca_por_um_imovel` consta no CRM como busca por moradia e uso somente para o próprio cliente.
-- Nota comercial registrada no CRM sobre composição de uso.
-- Rotina silenciosa do inbound registrou nota operacional #17067, preservou status `Em Atendimento`, confirmou repescagem interrompida e Resgate sem ciclo ativo identificado.
+- Campo `sobre_a_busca_por_um_imovel` complementado com uso somente para o próprio cliente.
+- Nota comercial registrada no CRM.
+- Rotina silenciosa registrou inbound, preservou status `Em Atendimento`, confirmou repescagem interrompida e ausência de Resgate ativo.
 
 ### 2026-05-06 — Momento de compra
 Cliente informou que está "Pesquisando".
@@ -95,8 +104,7 @@ Interpretação: momento de compra ainda inicial, com pesquisa sem urgência dec
 Ações operacionais:
 - Campo `vai_comprar` atualizado no CRM para "Pesquisando com calma".
 - Campo `sobre_a_busca_por_um_imovel` complementado com momento de pesquisa.
-- Nota comercial registrada no CRM como anotação #17066.
-- Condução recomendada: validar o momento sem pressionar visita e perguntar qual ponto o cliente quer entender primeiro: valores/financiamento ou planta/localização.
+- Nota comercial registrada no CRM.
 
 ### 2026-05-06 — Prioridade por valores
 Cliente respondeu: "Valores".
@@ -104,25 +112,9 @@ Cliente respondeu: "Valores".
 Interpretação: prioridade atual da pesquisa = valores/condição do Union Vista ou da opção em andamento.
 
 Ações operacionais:
-- Nota comercial anterior registrou que o cliente quer entender primeiro valores do Union Vista e recomendou condução com referência segura de valor, variação por unidade e pergunta sobre financiamento.
-- Rotina silenciosa do inbound registrou nota operacional #17070, preservou status `Em Atendimento`, confirmou repescagem interrompida e Resgate sem ciclo ativo identificado.
+- Nota comercial registrou que o cliente quer entender primeiro valores do Union Vista.
+- Rotina silenciosa registrou inbound, preservou status `Em Atendimento`, confirmou repescagem interrompida e ausência de Resgate ativo.
 - Nenhuma mensagem foi enviada ao cliente pela rotina silenciosa.
-
-## Objeções e travas
-- Momento exploratório: cliente está pesquisando com calma; evitar pressão precoce.
-- Viabilidade ainda aberta: cliente pediu valores, mas não informou modalidade de compra, entrada ou faixa mensal.
-
-## Próximo passo
-Responder comercialmente com referência segura de valores do Union Vista/opção em andamento, deixando claro que varia por unidade e condição. Em seguida, fazer uma pergunta simples para avançar viabilidade, por exemplo se pretende financiar, sem transformar a conversa em simulação pelo WhatsApp. Se houver sinal positivo depois da explicação, conduzir para visita presencial na Fama como próximo passo natural.
-
-## Observações operacionais
-- Evento de origem: `evt_3402`.
-- Idempotency key do primeiro contato: `3402_1778089782425`.
-- Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por aquela rotina.
-- Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067; nenhuma mensagem ao cliente foi enviada por aquela rotina.
-- Nota operacional da rotina silenciosa para o inbound "Valores" registrada no CRM como anotação #17070; nenhuma mensagem ao cliente foi enviada por esta rotina.
-- CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento` e follow-ups automáticos sem ciclo ativo a interromper.
-
 
 ### 2026-05-06 — Forma de compra
 Cliente respondeu: "Sim" à pergunta se pretende financiar.
@@ -130,10 +122,9 @@ Cliente respondeu: "Sim" à pergunta se pretende financiar.
 Interpretação: forma provável de compra = financiamento.
 
 Ações operacionais:
-- Campo `sobre_a_busca_por_um_imovel` complementado com "Pretende financiar.".
+- Campo `sobre_a_busca_por_um_imovel` complementado com intenção de financiamento.
 - Nota registrada no CRM.
-- Próxima condução: entender se há entrada/FGTS disponível para direcionar simulação e viabilidade, sem prometer crédito.
-
+- Próxima condução definida à época: entender se havia entrada/FGTS disponível para orientar viabilidade sem prometer crédito.
 
 ### 2026-05-06 — Entrada/FGTS informado
 Cliente respondeu: "7 mil" à pergunta sobre valor de entrada ou FGTS.
@@ -142,10 +133,9 @@ Interpretação: recurso inicial informado para financiamento = R$ 7.000.
 
 Ações operacionais:
 - Campo `sobre_a_busca_por_um_imovel` complementado com entrada/FGTS de R$ 7.000.
-- Lead 3009 atualizado em `budget` com referência de entrada/FGTS e intenção de financiamento.
+- Lead vinculado atualizado com referência de entrada/FGTS e intenção de financiamento.
 - Nota registrada no CRM.
-- Próxima condução: perguntar renda mensal aproximada para avaliar viabilidade sem prometer crédito.
-
+- Próxima condução definida à época: perguntar renda mensal aproximada para avaliar viabilidade sem prometer crédito.
 
 ### 2026-05-06 — Renda mensal informada
 Cliente respondeu: "6.300" à pergunta sobre faixa de renda mensal.
@@ -155,6 +145,22 @@ Interpretação: renda mensal aproximada informada = R$ 6.300.
 Ações operacionais:
 - Campo `sobre_a_busca_por_um_imovel` complementado com renda mensal de R$ 6.300.
 - Branch `meta_data.reno_qualification` atualizada com finalidade, uso, momento, prioridade, intenção de financiamento, entrada/FGTS e renda mensal.
-- Lead 3009 atualizado em `budget` com entrada/FGTS, renda e intenção de financiamento.
-- Nota registrada no CRM.
-- Direcionamento comercial: há qualificação suficiente para propor análise/simulação mais precisa e convidar para visita presencial na Fama, sem prometer aprovação de crédito.
+- Lead vinculado atualizado com entrada/FGTS, renda e intenção de financiamento.
+- Nota comercial registrada no CRM.
+- Rotina silenciosa do inbound registrou a anotação operacional #17092, preservou status `Em Atendimento`, confirmou repescagem já interrompida e ausência de Resgate ativo. Nenhuma mensagem foi enviada ao cliente por essa rotina.
+
+## Objeções e travas
+- Momento exploratório: cliente está pesquisando com calma; evitar pressão ou urgência artificial.
+- Viabilidade precisa de validação: entrada/FGTS e renda já foram informados, mas crédito, parcela e aprovação dependem de análise/simulação segura.
+
+## Próximo passo
+Na resposta comercial normal, validar a informação de renda de forma natural e conduzir para análise/simulação mais precisa na Fama. Como o cliente já forneceu renda, entrada e intenção de financiamento, há janela para convidar para visita presencial como próximo passo lógico, explicando que presencialmente fica mais seguro olhar o melhor caminho de financiamento. Não prometer aprovação, parcela final ou encaixe garantido.
+
+## Observações operacionais
+- Evento de origem do primeiro contato: `evt_3402`.
+- Idempotency key do primeiro contato: `3402_1778089782425`.
+- Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064.
+- Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067.
+- Nota operacional da rotina silenciosa para o inbound "Valores" registrada no CRM como anotação #17070.
+- Nota operacional da rotina silenciosa para o inbound "6.300" registrada no CRM como anotação #17092.
+- CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento` e follow-ups automáticos sem ciclo ativo a interromper.
