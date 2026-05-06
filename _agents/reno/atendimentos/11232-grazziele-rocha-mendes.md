@@ -25,9 +25,9 @@ tags:
 ## Resumo atual
 Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas corrigiu o contexto: pensou que o anúncio/imóvel era em Araguari e informou que Uberlândia não interessa para a compra atual. Mora/tem apartamento em Uberlândia, no Jardim Europa, não se adaptou à cidade/região e quer ir para Araguari.
 
-Também possui uma casa em Araguari, mas deseja apartamento em Araguari por ser mais fácil de cuidar. Está aberta a venda ou possível negociação/permuta dos imóveis atuais. Para o apartamento desejado em Araguari, aceita 2 quartos e não tem preferência rígida. Sobre o apartamento atual no Jardim Europa/Uberlândia, informou que tem 2 quartos, está financiado e que ainda falta muito para quitar.
+Também possui uma casa em Araguari e informou agora que essa casa está quitada. Deseja apartamento em Araguari por ser mais fácil de cuidar. Está aberta a venda ou possível negociação/permuta dos imóveis atuais. Para o apartamento desejado em Araguari, aceita 2 quartos e não tem preferência rígida. Sobre o apartamento atual no Jardim Europa/Uberlândia, informou que tem 2 quartos, está financiado e falta muito para quitar; comprou inicialmente como investimento, depois foi morar em Uberlândia, mas não gostou/não se adaptou.
 
-Próximo passo comercial: não pressionar por saldo exato agora. Conduzir pela avaliação/valor esperado do apartamento financiado e entender se a casa em Araguari está quitada ou pode compor a estratégia de venda/permuta para compra de apartamento em Araguari, sem prometer match, repasse, permuta ou aprovação.
+Próximo passo comercial: levantar bairro, características e valor esperado da casa quitada em Araguari, além de manter em separado a análise do apartamento financiado em Uberlândia. A casa quitada parece ser o ativo mais simples para possível venda/permuta, mas não deve haver promessa de venda, permuta, comprador, aprovação ou encaixe sem análise comercial.
 
 ## Dados operacionais
 - Cliente ID: 11232
@@ -35,18 +35,18 @@ Próximo passo comercial: não pressionar por saldo exato agora. Conduzir pela a
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp validado no CRM
-- Última interação relevante: 2026-05-06 — inbound "Ixi mto", indicando que falta muito para quitar o apartamento financiado no Jardim Europa/Uberlândia
+- Última interação relevante: 2026-05-06 — inbound "A casa e quitada", informando que a casa em Araguari está quitada
 
 ## Contexto comercial
 Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park, Uberlândia. A abertura contextualizada perguntou se a cliente está procurando imóvel nessa região. Após a primeira resposta, a conversa evoluiu para uma correção importante: a cliente acreditava que a oferta era em Araguari e informou que Uberlândia não interessa.
 
-Ela mora/possui apartamento em Uberlândia, no Jardim Europa, não se adaptou e quer ir para Araguari. Demonstrou abertura para venda do apartamento atual ou eventual negociação/permuta, desde que haja interessado em assumir/pegar o imóvel. Também possui uma casa em Araguari, mas quer apartamento em Araguari por ser mais fácil de cuidar.
+Ela mora/possui apartamento em Uberlândia, no Jardim Europa, não se adaptou e quer ir para Araguari. Demonstrou abertura para venda do apartamento atual ou eventual negociação/permuta, desde que haja interessado em assumir/pegar o imóvel. Também possui uma casa em Araguari, que agora informou estar quitada, mas quer apartamento em Araguari por ser mais fácil de cuidar.
 
-O inbound curto "Vende" indica que a venda deve ser tratada como hipótese operacional/comercial relevante para viabilizar a estratégia. O inbound "Pode ser dois não tenho preferência" qualifica o apartamento desejado em Araguari como opção prática de 2 quartos, sem exigência rígida de planta/perfil. O inbound "2" qualifica o apartamento atual no Jardim Europa/Uberlândia como imóvel de 2 quartos. O inbound "Financiado" adicionou a principal trava de viabilidade: será preciso entender saldo devedor e valor esperado/avaliação para saber se venda, repasse ou permuta fazem sentido. O inbound "Ixi mto" reforça que o saldo devedor percebido é alto e que a conversa deve avançar com cuidado, sem pressionar por número exato logo de início.
+O inbound curto "Vende" indica que a venda deve ser tratada como hipótese operacional/comercial relevante para viabilizar a estratégia. O inbound "Pode ser dois não tenho preferência" qualifica o apartamento desejado em Araguari como opção prática de 2 quartos, sem exigência rígida de planta/perfil. O inbound "2" qualifica o apartamento atual no Jardim Europa/Uberlândia como imóvel de 2 quartos. O inbound "Financiado" adicionou a principal trava do apartamento de Uberlândia: será preciso entender saldo devedor e valor esperado/avaliação para saber se venda, repasse ou permuta fazem sentido. O inbound "A casa e quitada" melhora a leitura de viabilidade da casa em Araguari como ativo mais simples para uma negociação futura.
 
 ## Diagnóstico
 ### Necessidade
-Busca ligada à mudança de cidade, com foco em Araguari. A necessidade atual não é o empreendimento inicial em Uberlândia, mas entender caminho para sair de Uberlândia e comprar/negociar um apartamento em Araguari.
+Busca ligada à mudança de cidade, com foco em Araguari. A necessidade atual não é o empreendimento inicial em Uberlândia, mas entender caminho para sair de Uberlândia e comprar/negociar um apartamento em Araguari, preferencialmente de manutenção mais simples.
 
 ### Momento
 Em conversa ativa no mesmo dia do primeiro contato. Ainda é necessário entender urgência, se a mudança para Araguari é imediata ou planejada, e se já há disposição concreta de vender/trocar algum imóvel.
@@ -55,7 +55,7 @@ Em conversa ativa no mesmo dia do primeiro contato. Ainda é necessário entende
 Ainda não identificada. Precisa entender se decide sozinha e se há mais alguém envolvido na venda/troca do apartamento atual, da casa em Araguari ou na compra do apartamento desejado.
 
 ### Viabilidade
-Cliente possui apartamento em Uberlândia e casa em Araguari, que podem ser relevantes para viabilidade via venda, troca ou parte de pagamento. A resposta "Vende" reforça venda como caminho provável. O apartamento atual em Uberlândia fica no Jardim Europa, tem 2 quartos, ainda está financiado e, pela resposta "Ixi mto", a cliente percebe que falta muito para quitar. Falta identificar valor pretendido/avaliação, saldo devedor quando a conversa permitir, documentação, banco/condições se relevante e possibilidade real de repasse, venda ou permuta. Para o imóvel desejado em Araguari, aceita apartamento de 2 quartos e não tem preferência rígida. Não há avaliação dos imóveis atuais, faixa de valor, saldo de financiamento ou capacidade de compra validados. Não prometer crédito, venda, repasse ou permuta sem análise.
+Cliente possui apartamento em Uberlândia e casa em Araguari, que podem ser relevantes para viabilidade via venda, troca ou parte de pagamento. A casa em Araguari está quitada e pode ser o ativo mais simples para avaliação de venda/permuta. O apartamento atual em Uberlândia fica no Jardim Europa, tem 2 quartos, ainda está financiado e a cliente informou que falta muito para quitar; isso exige análise separada de saldo devedor, valor esperado/avaliação, documentação e possibilidade real de venda, repasse ou permuta. Para o imóvel desejado em Araguari, aceita apartamento de 2 quartos e não tem preferência rígida. Não há avaliação dos imóveis atuais, faixa de valor, saldo de financiamento ou capacidade de compra validados. Não prometer crédito, venda, repasse ou permuta sem análise.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
@@ -94,20 +94,25 @@ Mensagem inbound recebida pelo WhatsApp: "2". Pelo histórico imediato, a respos
 ### 2026-05-06 — Situação financeira do apartamento em Uberlândia
 Mensagem inbound recebida pelo WhatsApp: "Financiado". Cliente informou que o apartamento atual no Jardim Europa/Uberlândia ainda está financiado. CRM validado no escopo Reno (`broker_id=35`); status já estava em Em Atendimento, sem regressão ou mudança. Repescagem permanecia interrompida por resposta do cliente e não há Resgate ativo. Nota operacional registrada no CRM.
 
-### 2026-05-06 — Saldo devedor percebido como alto
-Mensagem inbound recebida pelo WhatsApp: "Ixi mto". Pelo histórico imediato, a cliente sinaliza que ainda falta muito para quitar o apartamento financiado no Jardim Europa/Uberlândia. CRM validado no escopo Reno (`broker_id=35`); status já estava em Em Atendimento, sem regressão ou mudança. Repescagem permanecia interrompida por resposta do cliente e não há Resgate ativo. Nota operacional registrada no CRM.
+### 2026-05-06 — Saldo devedor alto
+Cliente respondeu que falta "muito" para quitar o apartamento financiado no Jardim Europa/Uberlândia. Conduta comercial: não pressionar por saldo exato neste momento; seguir pela avaliação de mercado e entender outros ativos, especialmente a casa em Araguari.
+
+### 2026-05-06 — Casa quitada e origem do apartamento
+Cliente informou que a casa em Araguari está quitada. Complementou que o apartamento em Uberlândia não está quitado; comprou inicialmente como investimento, depois foi morar em Uberlândia, mas não gostou/não se adaptou. Diagnóstico: casa quitada em Araguari é o ativo mais simples para possível venda/permuta; apartamento financiado exige análise separada de saldo e valor de mercado. Próximo passo: levantar bairro, características e valor esperado da casa em Araguari.
+
+### 2026-05-06 — Rotina silenciosa inbound registrada
+Rotina operacional silenciosa validou cliente no escopo Reno (`broker_id=35`), preservou status Em Atendimento, confirmou Repescagem já interrompida e ausência de Resgate ativo. Nota CRM 17085 registrada com o inbound "A casa e quitada" e o próximo passo comercial. Nenhuma mensagem ao cliente foi enviada por esta rotina.
 
 ## Objeções e travas
 - Localização: cliente não quer Uberlândia para a compra atual; corrigiu o contexto para Araguari.
 - Imóvel atual em Uberlândia: pode ser oportunidade de venda/troca, mas também é trava de viabilidade até entender valor, saldo, documentação e disposição real para negociar.
-- Financiamento do apartamento atual: imóvel do Jardim Europa/Uberlândia ainda está financiado; venda/repasse/permuta dependem de saldo devedor, valor esperado, análise documental e avaliação.
-- Saldo devedor alto: pela resposta "Ixi mto", a cliente percebe que falta muito para quitar; evitar pressionar por saldo exato e usar avaliação/valor esperado como primeiro caminho de diagnóstico.
-- Casa em Araguari: pode ser ativo para venda/troca ou contexto da mudança, mas a cliente prefere apartamento pela praticidade de cuidado.
+- Financiamento do apartamento atual: imóvel do Jardim Europa/Uberlândia ainda está financiado e falta muito para quitar; venda/repasse/permuta dependem de saldo devedor, valor esperado, análise documental e avaliação.
+- Casa em Araguari: está quitada e pode ser ativo para venda/troca ou contexto da mudança, mas ainda falta bairro, características, documentação e valor esperado.
 - Venda como caminho: cliente sinalizou "Vende", mas ainda falta confirmar qual imóvel quer vender primeiro, dados do imóvel, valor esperado e se aceita permuta/parte de pagamento.
 - Perfil do imóvel desejado: aceita 2 quartos e não tem preferência rígida, o que abre espaço para buscar opção prática e de menor manutenção em Araguari.
 
 ## Próximo passo
-Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa. Prioridade: acolher que o saldo pode ser alto e não pedir número exato de imediato. Conduzir para avaliação do apartamento do Jardim Europa e entender se a casa em Araguari está quitada ou também pode entrar na estratégia. Depois, levantar faixa de valor/forma de composição e dados adicionais dos imóveis atuais antes de encaminhar análise comercial/equipe para verificar compradores, venda ou permuta sem prometer match.
+Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa. Prioridade: pedir uma informação por vez sobre a casa quitada em Araguari — bairro, características e valor que imagina — para avaliar se venda ou permuta podem compor a compra do apartamento em Araguari. Manter o apartamento financiado de Uberlândia como análise separada, sem pressionar por saldo exato agora e sem prometer comprador, venda, repasse, permuta ou aprovação.
 
 ## Observações operacionais
 - Evento inicial: evt_3400.
@@ -123,3 +128,4 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 - Inbound "2" persistido no CRM em nota operacional 17049; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "Financiado" persistido no CRM em nota operacional 17079; status preservado em Em Atendimento; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "Ixi mto" persistido no CRM em nota operacional 17081; status preservado em Em Atendimento; nenhum envio ao cliente foi feito nesta rotina silenciosa.
+- Inbound "A casa e quitada" persistido no CRM em nota operacional 17085; status preservado em Em Atendimento; nenhum envio ao cliente foi feito nesta rotina silenciosa.
