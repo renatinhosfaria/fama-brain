@@ -83,3 +83,6 @@ Continuar a qualificação pelo WhatsApp com pergunta curta sobre entrada/FGTS o
 - O inbound “Dois quartos já atende” já constava em nota CRM e em `meta_data.reno_qualification`; a rotina anterior preservou a idempotência e consolidou o documento curado sem duplicar nota no CRM.
 - Nesta rotina silenciosa, o inbound “Atende sim” foi registrado como novo evento operacional; status avançado foi preservado e nenhum WhatsApp foi enviado ao cliente.
 - Durante a verificação final, havia uma atualização concorrente/posterior no CRM com resposta “Sim” sobre financiamento; o vault foi consolidado para refletir a fonte operacional mais recente.
+
+### 2026-05-05 — Valor de entrada informado
+Cliente respondeu “5mil” como valor aproximado de entrada. Diagnóstico atualizado: moradia própria, 2 quartos, Jaraguá/zona Oeste atende, entrega planejada é aceitável, pretende financiar e possui entrada aproximada de R$ 5.000. Próximo passo recomendado: validar renda familiar aproximada ou conforto de parcela para orientar viabilidade sem prometer aprovação de crédito.
