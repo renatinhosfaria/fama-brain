@@ -64,3 +64,7 @@ Continuar a qualificação leve na conversa: entender se a busca é para morar, 
 - Idempotência do primeiro contato: 3400_1778086546597.
 - Esta rotina não enviou mensagem ao cliente; executou apenas persistência operacional de inbound.
 - Houve nota anterior no CRM com interpretação comercial mais ampla; para esta atualização curada, foi preservado o conteúdo literal disponível do inbound: `Sim`.
+
+
+### 2026-05-06 — Contexto de moradia
+Cliente informou que mora em Uberlândia. Próximo passo: esclarecer se busca moradia na região do Shopping Park/Place+Arbi ou se está aberta a outras regiões da cidade.
