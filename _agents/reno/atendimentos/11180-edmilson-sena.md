@@ -85,3 +85,9 @@ Na resposta comercial normal pelo WhatsApp, validar a preocupação do cliente s
 - Nota CRM 16947 registrou a resposta inbound composta e a interpretação comercial inicial.
 - Nota CRM 16948 registrou a rotina silenciosa específica para a mensagem `Oi`, a preservação do status `Em Atendimento` e a padronização da repescagem como `client_replied`.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
+
+
+### 2026-05-06 — Cliente pergunta localização do empreendimento
+Cliente perguntou: "Onde fica esse empreendimento?".
+
+Condução recomendada: responder objetivamente que é o Place+Arbi no Shopping Park/Uberlândia, sem despejar detalhes demais, e em seguida diagnosticar familiaridade/aceitação da região.
