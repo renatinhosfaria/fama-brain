@@ -111,3 +111,9 @@ Na resposta comercial normal pelo WhatsApp, responder de forma simples quais doc
 Cliente respondeu sobre tipo de renda com correção: "Meu" / "Mei".
 
 Atualização do diagnóstico: renda formal via MEI. A condução deve explicar que a análise para MEI costuma considerar documentos básicos mais CCMEI/cartão CNPJ, extratos bancários recentes e IR quando houver. Próxima pergunta recomendada: tempo de MEI ativo ou existência de movimentação bancária para estimar viabilidade sem prometer aprovação.
+
+
+### 2026-05-06 — Cliente informa tempo de MEI
+Cliente respondeu: "Deve ter um ano e meio mais ou menos".
+
+Atualização do diagnóstico: cliente possui MEI com aproximadamente 18 meses de atividade. Isso permite avançar para leitura inicial de viabilidade, mas ainda é necessário entender movimentação/renda média. Próxima condução: perguntar a média mensal aproximada que entra na conta, explicando que para MEI o banco costuma olhar extratos/movimentação, sem prometer aprovação.
