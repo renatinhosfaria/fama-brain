@@ -122,3 +122,6 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 
 ### 2026-05-06 — Saldo devedor alto
 Cliente respondeu que falta "muito" para quitar o apartamento financiado no Jardim Europa/Uberlândia. Conduta: não pressionar por saldo exato neste momento; seguir pela avaliação de mercado e entender outros ativos, especialmente a casa em Araguari.
+
+### 2026-05-06 — Casa quitada e origem do apartamento
+Cliente informou que a casa em Araguari está quitada. Complementou que o apartamento em Uberlândia não está quitado; comprou inicialmente como investimento, depois foi morar em Uberlândia, mas não gostou/não se adaptou. Diagnóstico: casa quitada em Araguari é o ativo mais simples para possível venda/permuta; apartamento financiado exige análise separada de saldo e valor de mercado. Próximo passo: levantar bairro e características da casa em Araguari.
