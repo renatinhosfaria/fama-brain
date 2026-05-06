@@ -1,24 +1,24 @@
 ---
-broker_id: 35
-client_id: 11200
-created: '2026-05-05'
-entity_name: André Camilo
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: FamaChat
+entity_type: atendimento
+entity_name: André Camilo
+client_id: 11200
+broker_id: 35
 status_crm: Em Atendimento
+source: FamaChat
+created: '2026-05-05'
+updated: '2026-05-05'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
-type: entity-profile
-updated: '2026-05-05'
 ---
 # Atendimento — André Camilo
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno e confirmou diagnóstico inicial consistente: procura imóvel para morar, perfil de 2 quartos atende, região do Jaraguá/zona Oeste atende a rotina e entrega planejada/futura é aceitável. Atendimento segue em `Em Atendimento`; repescagem está interrompida por resposta inbound e não há Resgate ativo. Interesse ativo: Union Vereda, no Jaraguá.
+Cliente respondeu ao primeiro contato do Reno e confirmou diagnóstico inicial consistente: procura imóvel para morar, perfil de 2 quartos atende, região do Jaraguá/zona Oeste atende a rotina e entrega planejada/futura é aceitável. Novo inbound curto recebido com o texto “Atende sim”; CRM já estava em `Em Atendimento`, sem mudança de status. Repescagem está interrompida por resposta inbound e não há Resgate ativo. Interesse ativo: Union Vereda, no Jaraguá.
 
 ## Dados operacionais
 - Cliente ID: 11200
@@ -26,7 +26,7 @@ Cliente respondeu ao primeiro contato do Reno e confirmou diagnóstico inicial c
 - Status CRM: Em Atendimento
 - Origem: SLA Cascata / FamaChat
 - Telefone/WhatsApp: (34) 99661-1807 / 553496611807@s.whatsapp.net
-- Última interação relevante: 2026-05-05 — cliente respondeu “Pode ser com entrega planejada”.
+- Última interação relevante: 2026-05-05 — novo inbound “Atende sim”; CRM preservado em Em Atendimento e follow-ups automáticos verificados como inativos.
 
 ## Contexto comercial
 - Empreendimento de interesse: Union Vereda.
@@ -34,6 +34,7 @@ Cliente respondeu ao primeiro contato do Reno e confirmou diagnóstico inicial c
 - Origem operacional: cliente chegou ao Reno via SLA Cascata após usuário anterior.
 - Primeiro contato do Reno contextualizou o Union Vereda e perguntou se a busca era para morar ou investir.
 - Respostas inbound úteis: cliente declarou objetivo de moradia própria, informou que 2 quartos atendem, confirmou que a região atende e aceitou entrega planejada.
+- Novo inbound curto “Atende sim” foi registrado sem inferência comercial adicional, por ausência de contexto conversacional nesta rotina silenciosa.
 
 ## Diagnóstico
 ### Necessidade
@@ -64,6 +65,9 @@ Cliente respondeu: “Atende sim”. Diagnóstico atualizado: região do Jaragu�
 ### 2026-05-05 — Prazo/entrega validado
 Cliente respondeu: “Pode ser com entrega planejada”. Diagnóstico atualizado: cliente aceita imóvel com entrega futura/planejada.
 
+### 2026-05-05 — Novo inbound curto verificado
+Rotina silenciosa recebeu novo inbound “Atende sim”. CRM já estava em `Em Atendimento`; repescagem já estava interrompida por resposta do cliente e não havia Resgate ativo. Foi registrada nota objetiva no CRM, sem mudança de status e sem resposta automática ao cliente.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada até o momento.
 
@@ -73,7 +77,8 @@ Continuar a qualificação pelo WhatsApp com pergunta curta sobre forma de pagam
 ## Observações operacionais
 - Houve registro anterior de indisponibilidade temporária do Obsidian após o primeiro contato; este documento oficial foi criado posteriormente no caminho determinístico.
 - Documento oficial mantido em `_agents/reno/atendimentos/11200-andre-camilo.md` para evitar duplicidade.
-- O inbound “Dois quartos já atende” já constava em nota CRM e em `meta_data.reno_qualification`; a rotina atual preservou a idempotência e consolidou o documento curado sem duplicar nota no CRM.
+- O inbound “Dois quartos já atende” já constava em nota CRM e em `meta_data.reno_qualification`; a rotina anterior preservou a idempotência e consolidou o documento curado sem duplicar nota no CRM.
+- Nesta rotina silenciosa, o inbound “Atende sim” foi registrado como novo evento operacional; status avançado foi preservado e nenhum WhatsApp foi enviado ao cliente.
 
-### 2026-05-05 — Financiamento confirmado
-Cliente respondeu “Sim” quando perguntado se pensa em fazer a compra por financiamento. Diagnóstico atualizado: moradia própria, 2 quartos, Jaraguá/zona Oeste atende, entrega planejada é aceitável e pretende financiar. Próximo passo recomendado: validar entrada/FGTS ou capacidade inicial de composição antes de conduzir para visita presencial com orientação de crédito.
+### 2026-05-05 — Entrada sinalizada
+Cliente respondeu “Entrada” quando perguntado se teria entrada ou FGTS para usar na compra. Diagnóstico atualizado: cliente pretende financiar e sinaliza entrada; valor de entrada e uso de FGTS ainda não foram informados. Próximo passo recomendado: perguntar faixa aproximada da entrada para orientar viabilidade sem prometer aprovação de crédito.
