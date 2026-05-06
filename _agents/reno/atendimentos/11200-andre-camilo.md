@@ -113,3 +113,7 @@ Manter cliente em `Agendamento` e preservar a visita de 11/05/2026 às 16h. O fo
 - Nota CRM silenciosa criada nesta execução: #16933, registrando o inbound “Na segunda feira a tarde tem hrario ?”.
 - Nota CRM complementar criada nesta execução: #16937, validando o follow-up de Agendamento para appointment_id 246.
 - Esta rotina não enviou WhatsApp ao cliente e não prometeu condição, aprovação ou agendamento.
+
+
+### 2026-05-05 — Inbound “16hrs” persistido pela rotina silenciosa
+Cliente respondeu “16hrs”. Interpretação operacional: confirmação do horário de 16h para a visita/atendimento presencial já registrado no FamaChat (appointment_id 246). Status CRM já estava em `Agendamento`; não houve mudança nem regressão de status. Repescagem já estava interrompida por resposta do cliente e não havia Resgate ativo identificado. Nota CRM silenciosa desta execução: #16936. Nenhuma mensagem foi enviada ao cliente por esta rotina.
