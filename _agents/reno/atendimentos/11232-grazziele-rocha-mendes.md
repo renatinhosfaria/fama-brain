@@ -16,11 +16,12 @@ tags:
   - famachat
   - primeiro-contato
   - em-atendimento
+  - qualificacao
 ---
 # Atendimento — Grazziele Rocha Mendes
 
 ## Resumo atual
-Primeiro contato do Reno enviado via WhatsApp em 2026-05-06 com contexto do Place+Arbi, no Shopping Park. A cliente respondeu `Sim`, indicando avanço inicial da conversa. O CRM está em `Em Atendimento` e a repescagem foi interrompida por resposta da cliente.
+Primeiro contato do Reno enviado via WhatsApp em 2026-05-06. Cliente respondeu e o atendimento está em Em Atendimento. A resposta inbound mais recente foi "Mora", registrada como sinal útil de moradia/continuidade da qualificação, sem necessidade de mudança de status porque o CRM já estava em Em Atendimento.
 
 ## Dados operacionais
 - Cliente ID: 11232
@@ -28,14 +29,14 @@ Primeiro contato do Reno enviado via WhatsApp em 2026-05-06 com contexto do Plac
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp validado no CRM
-- Última interação relevante: 2026-05-06 — resposta inbound ao primeiro contato
+- Última interação relevante: 2026-05-06 — cliente respondeu "Mora" no WhatsApp
 
 ## Contexto comercial
-Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no bairro Shopping Park, Uberlândia. A abertura contextualizada perguntou se a cliente está procurando imóvel nessa região; a resposta inbound registrada nesta rotina foi `Sim`.
+Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park, Uberlândia. A abertura contextualizada perguntou se a cliente está procurando imóvel nessa região. A cliente já respondeu positivamente ao contato e trouxe sinal curto relacionado a morar/moradia.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não identificada com segurança. A resposta `Sim` confirma avanço inicial/contexto de interesse, mas ainda não define se a busca é para morar, investir ou conhecer opções.
+Cliente indica busca relacionada a moradia. Ainda precisa confirmar com mais clareza se procura para morar no Shopping Park/região ou se está apenas conhecendo a opção.
 
 ### Momento
 Ainda não identificado.
@@ -51,20 +52,19 @@ Ainda não identificada. Não houve abordagem financeira até o momento.
 Reno enviou duas mensagens curtas pelo WhatsApp: apresentação com contexto do Place+Arbi no Shopping Park e pergunta de baixa fricção sobre busca na região. Status CRM atualizado de Sem Atendimento para Não Respondeu. Repescagem inicializada com step 0 e próxima janela em 2026-05-06 às 19:10.
 
 ### 2026-05-06 — Primeira resposta da cliente
-Cliente respondeu `Sim` no WhatsApp. O atendimento foi validado como escopo Reno (`broker_id=35`), o status operacional está em `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
+Cliente respondeu ao atendimento. CRM registrou evolução de Não Respondeu para Em Atendimento e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.
+
+### 2026-05-06 — Continuação inbound: "Mora"
+Cliente enviou nova resposta curta no WhatsApp: "Mora". CRM validado no escopo Reno (`broker_id=35`), status preservado em Em Atendimento, sem Resgate ativo e com Repescagem já interrompida. Conteúdo tratado como sinal útil para continuar a qualificação sobre moradia/região/perfil.
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Continuar a qualificação leve na conversa: entender se a busca é para morar, investir ou conhecer opções e confirmar o que pesa mais na decisão antes de apresentar o empreendimento com mais força e conduzir para visita quando houver sinal positivo.
+Conduzir qualificação leve na conversa: esclarecer região/preferência de moradia e o que pesa mais para a cliente no imóvel. Se houver fit com Place+Arbi/Shopping Park, avançar para apresentação consultiva e convite para visita presencial quando houver sinal positivo.
 
 ## Observações operacionais
-- Evento de primeiro contato: evt_3400.
-- Idempotência do primeiro contato: 3400_1778086546597.
-- Esta rotina não enviou mensagem ao cliente; executou apenas persistência operacional de inbound.
-- Houve nota anterior no CRM com interpretação comercial mais ampla; para esta atualização curada, foi preservado o conteúdo literal disponível do inbound: `Sim`.
-
-
-### 2026-05-06 — Contexto de moradia
-Cliente informou que mora em Uberlândia. Próximo passo: esclarecer se busca moradia na região do Shopping Park/Place+Arbi ou se está aberta a outras regiões da cidade.
+- Evento inicial: evt_3400.
+- Idempotência inicial: 3400_1778086546597.
+- Mensagens WhatsApp iniciais aceitas tecnicamente pelo bridge com validação do destinatário.
+- Inbound mais recente persistido no CRM em nota operacional; nenhum envio ao cliente foi feito nesta rotina silenciosa.
