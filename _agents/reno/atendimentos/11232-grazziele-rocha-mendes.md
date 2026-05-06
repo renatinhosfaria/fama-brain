@@ -109,3 +109,7 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 - Nota CRM 17036 registrou complemento sobre apartamento no Jardim Europa e casa em Araguari; vault consolidado para manter o atendimento curado atualizado.
 - Inbound "Vende" persistido no CRM em nota operacional 17040; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "Pode ser dois não tenho preferência" persistido no CRM em nota operacional 17045; nenhum envio ao cliente foi feito nesta rotina silenciosa.
+
+
+### 2026-05-06 — Característica do apartamento em Uberlândia
+Cliente informou que o apartamento no Jardim Europa/Uberlândia tem 2 quartos. Próximo ponto de viabilidade: confirmar se o imóvel está quitado ou financiado.
