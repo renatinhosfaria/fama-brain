@@ -105,3 +105,9 @@ Seguir atendimento conversacional normal pelo Reno. Responder a dúvida de preç
 Cliente respondeu: “Vou financiar”.
 
 Leitura comercial: sinal de retomada real e foco em viabilidade, não apenas preço à vista. Próxima condução: explicar que no financiamento o ponto central é entrada + renda/aprovação, e iniciar diagnóstico por uma pergunta simples sobre entrada disponível. Evitar promessa de crédito; usar diferencial consultivo da Fama em financiamento.
+
+
+### 2026-05-06 — Entrada disponível
+Cliente informou que tem R$ 30 mil de entrada.
+
+Referência calculada sobre unidade a partir de R$ 292.400: entrada equivale a aproximadamente 10,26% e saldo de referência de R$ 262.400 antes de taxas, tabela vigente, fluxo de obra e análise de crédito. Próxima condução: entender se haverá FGTS além da entrada para compor viabilidade.
