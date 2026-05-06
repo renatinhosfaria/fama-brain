@@ -145,3 +145,16 @@ Ações operacionais:
 - Lead 3009 atualizado em `budget` com referência de entrada/FGTS e intenção de financiamento.
 - Nota registrada no CRM.
 - Próxima condução: perguntar renda mensal aproximada para avaliar viabilidade sem prometer crédito.
+
+
+### 2026-05-06 — Renda mensal informada
+Cliente respondeu: "6.300" à pergunta sobre faixa de renda mensal.
+
+Interpretação: renda mensal aproximada informada = R$ 6.300.
+
+Ações operacionais:
+- Campo `sobre_a_busca_por_um_imovel` complementado com renda mensal de R$ 6.300.
+- Branch `meta_data.reno_qualification` atualizada com finalidade, uso, momento, prioridade, intenção de financiamento, entrada/FGTS e renda mensal.
+- Lead 3009 atualizado em `budget` com entrada/FGTS, renda e intenção de financiamento.
+- Nota registrada no CRM.
+- Direcionamento comercial: há qualificação suficiente para propor análise/simulação mais precisa e convidar para visita presencial na Fama, sem prometer aprovação de crédito.
