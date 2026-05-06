@@ -91,3 +91,15 @@ Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar
 - Repescagem step 1 enviada via fallback excepcional do bridge local porque `send_message` não estava exposto neste runtime do cron; bridge local estava saudável e conectado. Ref. WhatsApp step 1: 3EB045CE459FBF3DAA5E12.
 - Repescagem step 2 também enviada via fallback excepcional do bridge local, preferindo o JID salvo no CRM. Bridge local saudável (`status=connected`). Ref. WhatsApp step 2: 3EB0ABE78EF0AC1A0F1CEC.
 - CRM registrou a repescagem step 2 com nota automática `mcp_mcp_postgres_mark_reno_followup_sent` (nota ID 16946), `step=2`, `last_sent_at=2026-05-06T09:40:10-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `stopped_reason=null` e `claim_expires_at=null`.
+
+
+### 2026-05-06 — Primeira resposta do cliente e objeção de financiamento
+Cliente respondeu pelo WhatsApp após repescagem: "Oi", "Por enquanto to só dando uma olhada mesmo" e "Infelizmente acho que meu nome não finacia".
+
+Atualização operacional: lead deixou de ser silêncio/repescagem e passou para conversa ativa. Trava principal declarada: acredita que o próprio nome não financia. Próxima condução recomendada: validar a preocupação, não prometer crédito/aprovação, explicar que a Fama pode fazer uma primeira leitura de cenário e perguntar de forma simples se a dificuldade percebida vem de restrição no nome, renda/score ou tentativa anterior negada.
+
+Diagnóstico atualizado:
+- Necessidade: ainda exploratória; cliente está “só dando uma olhada”.
+- Momento: frio/morno, sem urgência declarada.
+- Viabilidade: principal trava percebida é financiamento em nome próprio.
+- Próximo passo: entender causa da trava de financiamento antes de falar de imóvel ou visita.
