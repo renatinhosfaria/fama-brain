@@ -18,11 +18,16 @@ tags:
   - em-atendimento
   - qualificacao
   - araguari
+  - viabilidade
 ---
 # Atendimento — Grazziele Rocha Mendes
 
 ## Resumo atual
-Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas corrigiu o contexto: pensou que o anúncio/imóvel era em Araguari e informou que Uberlândia não interessa para a compra atual. Mora/tem apartamento em Uberlândia, no Jardim Europa, não se adaptou à cidade/região e quer ir para Araguari. Também possui uma casa em Araguari, mas deseja apartamento em Araguari por ser mais fácil de cuidar. Está aberta a venda ou possível negociação/permuta dos imóveis atuais. Para o apartamento desejado em Araguari, aceita 2 quartos e não tem preferência rígida. Sobre o apartamento atual no Jardim Europa/Uberlândia, informou que ele tem 2 quartos. Próximo passo comercial: verificar se o imóvel atual está quitado ou financiado e entender faixa de valor/forma de composição antes de encaminhar análise comercial.
+Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas corrigiu o contexto: pensou que o anúncio/imóvel era em Araguari e informou que Uberlândia não interessa para a compra atual. Mora/tem apartamento em Uberlândia, no Jardim Europa, não se adaptou à cidade/região e quer ir para Araguari.
+
+Também possui uma casa em Araguari, mas deseja apartamento em Araguari por ser mais fácil de cuidar. Está aberta a venda ou possível negociação/permuta dos imóveis atuais. Para o apartamento desejado em Araguari, aceita 2 quartos e não tem preferência rígida. Sobre o apartamento atual no Jardim Europa/Uberlândia, informou que tem 2 quartos e que ainda está financiado.
+
+Próximo passo comercial: levantar saldo devedor aproximado do apartamento financiado, valor esperado/avaliação e dados mínimos dos imóveis atuais para avaliar venda/permuta e estratégia de compra de apartamento em Araguari sem prometer match ou aprovação.
 
 ## Dados operacionais
 - Cliente ID: 11232
@@ -30,14 +35,14 @@ Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial 
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp validado no CRM
-- Última interação relevante: 2026-05-06 — inbound curto "2" interpretado pelo histórico como confirmação de que o apartamento atual no Jardim Europa/Uberlândia tem 2 quartos
+- Última interação relevante: 2026-05-06 — inbound "Financiado", informando que o apartamento atual no Jardim Europa/Uberlândia ainda está financiado
 
 ## Contexto comercial
 Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park, Uberlândia. A abertura contextualizada perguntou se a cliente está procurando imóvel nessa região. Após a primeira resposta, a conversa evoluiu para uma correção importante: a cliente acreditava que a oferta era em Araguari e informou que Uberlândia não interessa.
 
 Ela mora/possui apartamento em Uberlândia, no Jardim Europa, não se adaptou e quer ir para Araguari. Demonstrou abertura para venda do apartamento atual ou eventual negociação/permuta, desde que haja interessado em assumir/pegar o imóvel. Também possui uma casa em Araguari, mas quer apartamento em Araguari por ser mais fácil de cuidar.
 
-O inbound curto "Vende" indica que a venda deve ser tratada como hipótese operacional/comercial relevante para viabilizar a estratégia. O inbound "Pode ser dois não tenho preferência" qualifica o apartamento desejado em Araguari como opção prática de 2 quartos, sem exigência rígida de planta/perfil. O inbound "2" qualifica o apartamento atual no Jardim Europa/Uberlândia como imóvel de 2 quartos.
+O inbound curto "Vende" indica que a venda deve ser tratada como hipótese operacional/comercial relevante para viabilizar a estratégia. O inbound "Pode ser dois não tenho preferência" qualifica o apartamento desejado em Araguari como opção prática de 2 quartos, sem exigência rígida de planta/perfil. O inbound "2" qualifica o apartamento atual no Jardim Europa/Uberlândia como imóvel de 2 quartos. O inbound "Financiado" adiciona a principal trava de viabilidade: será preciso entender saldo devedor e valor esperado/avaliação para saber se venda, repasse ou permuta fazem sentido.
 
 ## Diagnóstico
 ### Necessidade
@@ -50,7 +55,7 @@ Em conversa ativa no mesmo dia do primeiro contato. Ainda é necessário entende
 Ainda não identificada. Precisa entender se decide sozinha e se há mais alguém envolvido na venda/troca do apartamento atual, da casa em Araguari ou na compra do apartamento desejado.
 
 ### Viabilidade
-Cliente possui apartamento em Uberlândia e casa em Araguari, que podem ser relevantes para viabilidade via venda, troca ou parte de pagamento. A resposta "Vende" reforça venda como caminho provável. O apartamento atual em Uberlândia fica no Jardim Europa e tem 2 quartos. Falta identificar se está quitado ou financiado, valor pretendido, documentação, possibilidade de avaliação e qual imóvel entraria primeiro na estratégia. Para o imóvel desejado em Araguari, aceitaria apartamento de 2 quartos e não tem preferência rígida. Não há avaliação dos imóveis atuais, faixa de valor, saldo de financiamento ou capacidade de compra validados. Não prometer crédito, venda ou permuta sem análise.
+Cliente possui apartamento em Uberlândia e casa em Araguari, que podem ser relevantes para viabilidade via venda, troca ou parte de pagamento. A resposta "Vende" reforça venda como caminho provável. O apartamento atual em Uberlândia fica no Jardim Europa, tem 2 quartos e ainda está financiado. Falta identificar saldo devedor aproximado, valor pretendido/avaliação, documentação, banco/condições se relevante e possibilidade real de repasse, venda ou permuta. Para o imóvel desejado em Araguari, aceita apartamento de 2 quartos e não tem preferência rígida. Não há avaliação dos imóveis atuais, faixa de valor, saldo de financiamento ou capacidade de compra validados. Não prometer crédito, venda, repasse ou permuta sem análise.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
@@ -86,16 +91,19 @@ Mensagem inbound recebida pelo WhatsApp: "Pode ser dois não tenho preferência"
 ### 2026-05-06 — Característica do apartamento atual em Uberlândia
 Mensagem inbound recebida pelo WhatsApp: "2". Pelo histórico imediato, a resposta informa que o apartamento atual no Jardim Europa/Uberlândia tem 2 quartos. CRM validado no escopo Reno (`broker_id=35`); status já estava em Em Atendimento, sem regressão ou mudança. Repescagem permanecia interrompida por resposta do cliente e não há Resgate ativo. Nota operacional registrada no CRM.
 
+### 2026-05-06 — Situação financeira do apartamento em Uberlândia
+Mensagem inbound recebida pelo WhatsApp: "Financiado". Cliente informou que o apartamento atual no Jardim Europa/Uberlândia ainda está financiado. CRM validado no escopo Reno (`broker_id=35`); status já estava em Em Atendimento, sem regressão ou mudança. Repescagem permanecia interrompida por resposta do cliente e não há Resgate ativo. Nota operacional registrada no CRM.
+
 ## Objeções e travas
 - Localização: cliente não quer Uberlândia para a compra atual; corrigiu o contexto para Araguari.
 - Imóvel atual em Uberlândia: pode ser oportunidade de venda/troca, mas também é trava de viabilidade até entender valor, saldo, documentação e disposição real para negociar.
+- Financiamento do apartamento atual: imóvel do Jardim Europa/Uberlândia ainda está financiado; venda/repasse/permuta dependem de saldo devedor, valor esperado, análise documental e avaliação.
 - Casa em Araguari: pode ser ativo para venda/troca ou contexto da mudança, mas a cliente prefere apartamento pela praticidade de cuidado.
-- Venda como caminho: cliente sinalizou "Vende", mas ainda falta confirmar qual imóvel quer vender, dados do imóvel, valor esperado e se aceita permuta/parte de pagamento.
+- Venda como caminho: cliente sinalizou "Vende", mas ainda falta confirmar qual imóvel quer vender primeiro, dados do imóvel, valor esperado e se aceita permuta/parte de pagamento.
 - Perfil do imóvel desejado: aceita 2 quartos e não tem preferência rígida, o que abre espaço para buscar opção prática e de menor manutenção em Araguari.
-- Dados do apartamento atual: confirmado Jardim Europa/Uberlândia e 2 quartos; falta confirmar se está quitado ou financiado.
 
 ## Próximo passo
-Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa. Prioridade: perguntar uma coisa por vez se o apartamento do Jardim Europa está quitado ou financiado, para avaliar caminho de venda/permuta. Depois, entender faixa de valor/forma de composição e dados adicionais dos imóveis atuais antes de encaminhar análise comercial/equipe para verificar compradores, venda ou permuta sem prometer match.
+Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa. Prioridade: pedir uma informação por vez sobre o apartamento financiado no Jardim Europa — primeiro o saldo devedor aproximado e/ou valor que imagina pedir — para avaliar se venda, repasse ou permuta podem compor a compra do apartamento em Araguari. Depois, levantar faixa de valor/forma de composição e dados adicionais dos imóveis atuais antes de encaminhar análise comercial/equipe para verificar compradores, venda ou permuta sem prometer match.
 
 ## Observações operacionais
 - Evento inicial: evt_3400.
@@ -109,7 +117,4 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 - Inbound "Vende" persistido no CRM em nota operacional 17040; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "Pode ser dois não tenho preferência" persistido no CRM em nota operacional 17045; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "2" persistido no CRM em nota operacional 17049; nenhum envio ao cliente foi feito nesta rotina silenciosa.
-
-
-### 2026-05-06 — Situação financeira do apartamento em Uberlândia
-Cliente informou que o apartamento no Jardim Europa/Uberlândia ainda está financiado. Para venda/permuta será necessário levantar saldo devedor aproximado e valor esperado/avaliação do imóvel.
+- Inbound "Financiado" persistido no CRM em nota operacional 17079; status preservado em Em Atendimento; nenhum envio ao cliente foi feito nesta rotina silenciosa.
