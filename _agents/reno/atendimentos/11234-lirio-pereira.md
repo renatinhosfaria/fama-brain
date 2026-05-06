@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Lirio pereira
-client_id: 11234
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11234
 created: '2026-05-06'
-updated: '2026-05-06'
+entity_name: Lirio pereira
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -17,11 +15,13 @@ tags:
   - primeiro-contato
   - em-atendimento
   - diagnostico
+type: entity-profile
+updated: '2026-05-06'
 ---
 # Atendimento — Lirio pereira
 
 ## Resumo atual
-Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região, informou que a busca é para moradia e respondeu que seria somente para o próprio cliente. CRM está em `Em Atendimento`; repescagem automática está interrompida e não há Resgate ativo identificado. A condução atual está na fase de diagnóstico leve de necessidade.
+Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região, informou que a busca é para moradia, respondeu que seria somente para o próprio cliente e depois indicou que está pesquisando com calma. CRM está em `Em Atendimento`; repescagem automática está interrompida e não há Resgate ativo identificado. A condução atual deve respeitar o momento exploratório, sem pressionar visita cedo demais.
 
 ## Dados operacionais
 - Cliente ID: 11234
@@ -30,17 +30,17 @@ Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com i
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: cliente respondeu "Somente", indicando moradia somente para o próprio cliente
+- Última interação relevante: cliente informou que está pesquisando com calma
 
 ## Contexto comercial
-O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou finalidade de moradia e, depois, que a moradia seria somente para ele(a).
+O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou finalidade de moradia, disse que a moradia seria somente para ele(a) e sinalizou momento inicial de pesquisa.
 
 ## Diagnóstico
 ### Necessidade
 Cliente confirmou interesse na região/empreendimento e declarou finalidade de moradia. A composição de uso indicada é somente o próprio cliente, o que sugere foco inicial em unidade adequada para uso individual, sem necessidade familiar declarada até o momento.
 
 ### Momento
-Lead recém-criado em 2026-05-06. Momento de compra ainda não informado no CRM.
+Momento de compra registrado no CRM como pesquisa inicial/com calma. A condução deve ser útil, comparativa e sem pressão excessiva de agendamento imediato.
 
 ### Decisão
 Ainda não identificada.
@@ -87,11 +87,22 @@ Ações operacionais:
 - Nota comercial registrada no CRM sobre composição de uso.
 - Rotina silenciosa do inbound registrou nota operacional #17067, preservou status `Em Atendimento`, confirmou repescagem interrompida e Resgate sem ciclo ativo identificado.
 
+### 2026-05-06 — Momento de compra
+Cliente informou que está "Pesquisando".
+
+Interpretação: momento de compra ainda inicial, com pesquisa sem urgência declarada.
+
+Ações operacionais:
+- Campo `vai_comprar` atualizado no CRM para "Pesquisando com calma".
+- Campo `sobre_a_busca_por_um_imovel` complementado com momento de pesquisa.
+- Nota comercial registrada no CRM como anotação #17066.
+- Condução recomendada: validar o momento sem pressionar visita e perguntar qual ponto o cliente quer entender primeiro: valores/financiamento ou planta/localização.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Aguardar continuidade da conversa para entender momento de compra em pergunta curta. Depois, se houver aderência, apresentar o empreendimento com contexto e conduzir para visita presencial na Fama como próximo passo natural.
+Validar o momento exploratório e orientar a próxima resposta para descobrir a prioridade da pesquisa, por exemplo valores/financiamento ou planta/localização. Se houver sinal positivo depois da apresentação, conduzir para visita presencial na Fama como próximo passo natural.
 
 ## Observações operacionais
 - Evento de origem: `evt_3402`.
@@ -99,14 +110,3 @@ Aguardar continuidade da conversa para entender momento de compra em pergunta cu
 - Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por aquela rotina.
 - Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067; nenhuma mensagem ao cliente foi enviada por esta rotina.
 - CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento` e follow-ups automáticos sem ciclo ativo a interromper.
-
-
-### 2026-05-06 — Prioridade da pesquisa: valores
-Cliente respondeu: "Valores".
-
-Interpretação: quer entender primeiro preço/condição financeira do Union Vista.
-
-Ações operacionais:
-- Nota registrada no CRM.
-- Propriedade consultada no CRM para referência atual: Union Vista possui unidades cadastradas a partir de R$ 292.400,00, variando por planta/unidade.
-- Condução recomendada: responder com referência curta de valor e avançar para financiamento/FGTS sem prometer crédito.
