@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Lirio pereira
-client_id: 11234
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11234
 created: '2026-05-06'
-updated: '2026-05-06'
+entity_name: Lirio pereira
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -17,6 +15,8 @@ tags:
   - em-atendimento
   - diagnostico
   - financiamento
+type: entity-profile
+updated: '2026-05-06'
 ---
 # Atendimento — Lirio pereira
 
@@ -30,7 +30,7 @@ Cliente do Facebook Ads sob responsabilidade do Reno (broker_id 35), interessado
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: cliente informou recurso inicial de R$ 7 mil e, em sequência do atendimento, renda mensal aproximada de R$ 6.300
+- Última interação relevante: cliente informou renda mensal aproximada de R$ 6.300 após indicar entrada/FGTS de R$ 7 mil
 
 ## Contexto comercial
 O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procurava imóvel nessa região. A conversa avançou em diagnóstico leve: o cliente busca moradia, para uso próprio, está pesquisando com calma e quer entender valores/financiamento.
@@ -70,6 +70,12 @@ Cliente respondeu "7 mil" à pergunta sobre valor de entrada ou FGTS. Interpreta
 ### 2026-05-06 — Renda mensal informada
 Cliente informou renda mensal aproximada de R$ 6.300. Interpretação: há base inicial para condução de viabilidade e convite para atendimento presencial/simulação segura na Fama, sem prometer aprovação.
 
+Ações operacionais:
+- Campo `sobre_a_busca_por_um_imovel` já contempla renda mensal informada.
+- Branch `meta_data.reno_qualification` contém finalidade, uso, momento, prioridade, intenção de financiamento, entrada/FGTS e renda mensal.
+- Rotina silenciosa registrou anotação operacional #17092 no CRM.
+- Status foi preservado em `Em Atendimento` e nenhum envio ao cliente foi feito por esta rotina.
+
 ## Objeções e travas
 - Momento exploratório: cliente está pesquisando com calma; evitar pressão precoce.
 - Viabilidade precisa de validação: entrada/FGTS e renda foram informados, mas aprovação/condição dependem de análise.
@@ -85,6 +91,6 @@ Conduzir a conversa para análise/simulação mais segura e visita presencial na
 - Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064.
 - Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067.
 - Nota operacional da rotina silenciosa para o inbound "Valores" registrada no CRM como anotação #17070.
-- Nota operacional da rotina silenciosa para o inbound "7 mil" registrada no CRM como anotação #17093.
+- Nota operacional da rotina silenciosa para o inbound "6.300" registrada no CRM como anotação #17092.
+- Nota operacional da rotina silenciosa para o inbound "7 mil" registrada no CRM como anotação #17093; conteúdo já consolidado no histórico como entrada/FGTS informado. Apesar da ordem de registro das notas, o último avanço semântico do diagnóstico permanece a renda mensal informada de R$ 6.300.
 - Nenhuma mensagem ao cliente foi enviada pela rotina operacional silenciosa.
-- Nota operacional concorrente/fora da ordem semântica para o inbound "7 mil" registrada no CRM como anotação #17093; conteúdo já consolidado no histórico como entrada/FGTS informado. O último avanço semântico do diagnóstico permanece a renda mensal informada de R$ 6.300.- Nota operacional da rotina silenciosa para o inbound "6.300" registrada no CRM como anotação #17092; status preservado em `Em Atendimento`, follow-ups sem ciclo ativo a interromper, e nenhuma mensagem enviada ao cliente.
