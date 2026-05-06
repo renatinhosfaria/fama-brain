@@ -99,3 +99,15 @@ Ações operacionais:
 - Campo `sobre_a_busca_por_um_imovel` atualizado com uso somente pelo próprio cliente.
 - Nota registrada no CRM.
 - Próxima condução: entender momento de compra em pergunta curta.
+
+
+### 2026-05-06 — Momento de compra
+Cliente respondeu: "Pesquisando".
+
+Interpretação: momento de compra ainda inicial, com pesquisa sem urgência declarada.
+
+Ações operacionais:
+- Campo `vai_comprar` atualizado para "Pesquisando com calma".
+- Campo `sobre_a_busca_por_um_imovel` complementado com momento de pesquisa.
+- Nota registrada no CRM.
+- Condução recomendada: validar o momento sem pressionar visita e perguntar qual ponto o cliente quer entender primeiro: valores/financiamento ou planta/localização.
