@@ -67,3 +67,6 @@ Continuar a qualificação pelo WhatsApp com pergunta curta sobre prioridade do 
 
 ### 2026-05-05 — Perfil de quartos confirmado
 Cliente respondeu: “Dois quartos já atende”. Diagnóstico atualizado: objetivo é moradia própria e imóvel de 2 quartos atende a necessidade inicial. Próximo passo comercial recomendado: validar se a região do Jaraguá/zona Oeste atende a rotina dele antes de avançar para viabilidade e convite de visita presencial.
+
+### 2026-05-05 — Região validada
+Cliente respondeu: “Atende sim” sobre a região do Jaraguá/zona Oeste. Diagnóstico atualizado: moradia própria, 2 quartos atende e região atende. Próximo passo recomendado: validar prazo de mudança/entrega, pois o Union Vereda é empreendimento com entrega futura, antes de avançar para viabilidade financeira e convite de visita presencial.
