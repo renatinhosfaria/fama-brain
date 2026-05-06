@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11234
-created: '2026-05-06'
-entity_name: Lirio pereira
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Lirio pereira
+client_id: 11234
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-06'
+updated: '2026-05-06'
 tags:
   - reno
   - atendimento
@@ -15,8 +17,6 @@ tags:
   - primeiro-contato
   - em-atendimento
   - diagnostico
-type: entity-profile
-updated: '2026-05-06'
 ---
 # Atendimento — Lirio pereira
 
@@ -74,6 +74,7 @@ Interpretação: finalidade de compra declarada = morar.
 Ações operacionais:
 - Campo `sobre_a_busca_por_um_imovel` atualizado com "Busca declarada: moradia.".
 - Nota registrada no CRM.
+- Rotina silenciosa confirmou cliente elegível, status preservado em `Em Atendimento`, repescagem interrompida e ausência de resgate ativo.
 - Reno respondeu com pergunta curta para aprofundar necessidade: "Entendi. Pra eu te direcionar melhor: seria só pra você ou pra família?"
 
 ## Objeções e travas
@@ -86,3 +87,4 @@ Aguardar resposta sobre composição de moradia. Depois, avançar para momento d
 - Evento de origem: `evt_3402`.
 - Idempotency key: `3402_1778089782425`.
 - Documento atualizado após resposta "Moradia" e envio da pergunta de aprofundamento.
+- Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por esta rotina.
