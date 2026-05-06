@@ -5,18 +5,18 @@ entity_type: person
 entity_name: Pedro
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-06'
 tags:
   - cliente
-  - visita-confirmada
-  - quente
+  - visita-realizada
+  - primeira-conversao
 schema_version: 1
 status: active
 provenance: agent-generated
 author_agent: VaultSteward
 verified_by: null
 verified_at: null
-confidence: 0.85
+confidence: 0.9
 aliases:
   - P E D R O
 external_ids:
@@ -35,11 +35,13 @@ related:
 ---
 ## Resumo
 
-Pedro é o **único lead do Lote 3 com visita presencial confirmada** — agendamento 01/05/2026 às 18h na Fama. Interesse no Union Vereda (Jaraguá), avaliando financiamento, **entrada parcelada** e possibilidade de **composição de renda com o irmão**. Status: Visita. Visita reagendada de 29/04 para 01/05 por orientação do Renato. Cliente confirmou via WhatsApp ("fechou", "está confirmado", "vai se atrasar").
+Pedro foi a **primeira visita realizada do funil canônico**. Status CRM agora é **Visita** (visits=1, appts=1) — confirma que a visita de 01/05/2026 às 18h aconteceu. Originalmente interessado em [[union-vereda]] (Jaraguá), avaliando financiamento + entrada parcelada + composição com irmão.
+
+**Marco histórico do FAM-15:** primeira conversão completa (lead → atendimento → visita realizada) entre os 33 leads canônicos.
 
 ## Identificação
 
-- **Nome:** Pedro (cadastrado no CRM como "P E D R O" — aliases pendente normalização)
+- **Nome:** Pedro (CRM: "P E D R O" — alias preservado)
 - **CRM client id:** 11084
 - **Appointment id:** 235 (FamaChat)
 - **Broker responsável:** [[reno]] (broker_id: 35)
@@ -52,24 +54,27 @@ Pedro é o **único lead do Lote 3 com visita presencial confirmada** — agenda
 - Estratégia: avaliação presencial de financiamento + entrada parcelada
 - Composição: irmão como possível co-comprador
 
-## Visita confirmada
+## Visita realizada
 
 - **Data:** 01/05/2026 às 18h
+- **Status atual CRM:** Visita
 - **Local:** Av. Raulino Cotta Pacheco, 304 — escritório Fama
-- **Lembretes:** 2h, 30min, 10min antes (24h cancelado por estar vencido)
-- **Confirmação WhatsApp:** múltiplas mensagens do cliente
+- **Confirmações WhatsApp pré-visita:** múltiplas ("Sim", "fechou", "vai se atrasar", "está saindo agora")
 
 ## Linha do tempo de interações
 
-- 2026-04-29 — primeiro contato manual (rota famachat-created)
-- 2026-04-29 — cliente confirmou visita → Em Atendimento → Agendamento (28/04 18h)
-- 2026-04-30 — visita reagendada para 01/05 18h por orientação do Renato
-- 2026-04-30 — cliente confirmou novo horário ("Amanhã às 18")
-- 2026-05-01 — múltiplas confirmações ("Sim", "fechou", "vai se atrasar", "está saindo agora")
+- 2026-04-29 — primeiro contato manual; visita marcada para 28/04 18h
+- 2026-04-30 — visita reagendada para 01/05 18h (orientação Renato)
+- 2026-04-30 — cliente confirmou ("Amanhã às 18")
+- 2026-05-01 — múltiplas confirmações no dia
+- **2026-05-01 ~18h — visita realizada** (status CRM: Visita)
 
 ## Próximas ações sugeridas
 
-- Atendimento presencial 01/05 às 18h — preparar material Union Vereda + simulação composição com irmão
-- Avaliar viabilidade de entrada parcelada
-- Pós-visita: registrar resultado no CRM e atualizar perfil canônico
-- Status pós-visita: Negociação ou Pré-Venda dependendo da reunião
+- **PENDENTE:** capturar resultado da reunião do dia 01/05 — não há journal CRM detalhado pós-visita
+- Atualizar perfil com: cliente fechou? está em negociação? abandonou?
+- Depending: Negociação/Pré-Venda/Sem Atendimento como próximo status
+
+## Observações
+
+- O `clientes_id_anotacoes` não tem notas pós-visita até hoje (2026-05-06) — provável que o resultado da visita esteja em outra tabela (`clientes_visitas`) ou ainda não tenha sido formalmente registrado pelo Reno. Vale investigar.
