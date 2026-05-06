@@ -107,3 +107,6 @@ A sessão normal de WhatsApp deve responder à pergunta de disponibilidade com o
 - Não havia Resgate ativo na verificação desta rotina.
 - Nota CRM silenciosa criada nesta execução: #16933, registrando o inbound “Na segunda feira a tarde tem hrario ?” e a necessidade de responder com horários concretos antes de criar agendamento.
 - Esta rotina não enviou WhatsApp ao cliente e não prometeu condição, aprovação ou agendamento.
+
+### 2026-05-05 — Visita presencial agendada
+Cliente confirmou o horário “16hrs” para segunda-feira à tarde. Agendamento registrado no FamaChat: appointment_id 246, segunda-feira 2026-05-11 às 16:00, na Fama Negócios Imobiliários — Av. Raulino Cotta Pacheco, 304. Status do cliente ficou em `Agendamento`. Objetivo da visita: análise de viabilidade/financiamento e apresentação das condições do Union Vereda, sem promessa de aprovação de crédito. Follow-up de agendamento inicializado em `meta_data.reno_followup.agendamento` com step 0.
