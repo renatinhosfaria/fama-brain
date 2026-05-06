@@ -2,7 +2,7 @@
 type: moc
 owner: vault-steward
 created: '2026-04-30'
-updated: '2026-05-02'
+updated: '2026-05-06'
 tags:
   - entities
   - moc
@@ -14,7 +14,7 @@ author_agent: VaultSteward
 ---
 ## `_entities/` — Perfis canônicos
 
-**Uma e somente uma** nota por entidade real. Aliases ficam no campo `aliases` do frontmatter, não em arquivos separados. Quando o CRM tiver múltiplos cadastros para a mesma pessoa (caso recorrente), use `external_ids.crm_client_ids: [array]` + `external_ids.crm_client_id_canonical: <id>`.
+**Uma e somente uma** nota por entidade real. Aliases ficam no campo `aliases` do frontmatter, não em arquivos separados. Quando o CRM tiver múltiplos cadastros para a mesma pessoa, use `external_ids.crm_client_ids: [array]` + `external_ids.crm_client_id_canonical: <id>`.
 
 ## Subtypes
 
@@ -24,133 +24,108 @@ author_agent: VaultSteward
 - `place` — bairros, regiões, zonas urbanas.
 - `project` — projetos como entidades (raro — geralmente vai em `_projects/`).
 
-## Naming
-
-Filename = slug do nome canônico em kebab-case.
-
-ID externo do CRM mora em `external_ids.crm_client_id`/`crm_client_ids` (pessoas) ou `external_ids.crm_property_id` (imóveis).
-
-## Indexação
-
-- Vetoriza: sim. Grafo: sim.
-- Notas com `status: archived` (cliente perdido sem atividade > 12 meses ou lead-teste) não vetorizam mas mantêm grafo.
-
 ## Perfis canônicos ativos
 
-### Pessoas (clientes/leads) — 33
+### Pessoas (clientes/leads) — 38
 
-**Lote 1–2 (11):**
-- [[bruno-savio]], [[augusto-santana]] (4 cadastros CRM), [[samuel-kim]], [[jisa-dantas]] (3 cadastros), [[esther-osklen]], [[wueverton-lima]] (3 cadastros), [[edson-tolentino]], [[murilo-damasceno]], [[davi-maia]], [[leticia-melo]], [[ana-clara-marques]]
+**Lote 1–6 (33):** ver [versão anterior do index](_entities/index.md) — todos preservados.
 
-**Lote 3 (5):** [[andreia-carvalho]] (multi-imóvel), [[eduarda]] (primeiro imóvel), [[silva-porto]] (CLT), [[pedro]] (visita 01/05), [[guilherme-mendes]] (lead quente)
+**Lote 7 (5 + 2 atualizações) — 2026-05-06:**
+- [[thiago-tesch]] — **Agendamento, visita 15/05 15h30**, perfil MCMV-target, [[union-vista]]
+- [[kamily]] — **Agendamento, visita 07/05 9h** (amanhã!), [[place-arbi]]
+- [[mauro-marques]] — Em Atendimento, **fora de fit** (quer loteamento Planalto), [[union-vista]]
+- [[byanca-guerra]] — Em Atendimento, **Garden Sul engajou!**, planta 56,32m²/R$330k, entrada R$10k
+- [[aline-oliveira]] — Em Atendimento, **2º Garden Sul engajado**, diagnóstico em curso
 
-**Lote 4 (5):** [[eliseu]] (investidor), [[marcio-oliveira-juliao]] (MCMV), [[elias-fernandes]] (Bahia), [[amanda]] ("simplesmente perfeito"), [[carmen-vicente-santos]]
-
-**Lote 5 (5):** [[levi-santos]] (régua travada), [[larissa-martins]] (arquivado, [[bris]]), [[joao-pedro]] (lead-fantasma), [[sibely-cortes]], [[santiago-derson]]
-
-**Lote 6 (7):**
-- [[andre-luiz-duca]] — Não Respondeu, [[union-vista]]
-- [[grazyelly-macedo]] — Não Respondeu, [[place-arbi]]
-- [[alexsander-pereira]] — Em Atendimento (frio), [[place-arbi]]
-- [[claudia-rosangela]] — **Em Atendimento, "é bem isso", visita próxima semana** ([[union-vereda]])
-- [[jonathan-barbosa]] — Em Atendimento, dual morar+investir, trabalha [[chacara-tubalina]]
-- [[joao-vitor]] — Arquivado teste ([[bella-vita]], Google Ads)
-- [[priscila-nogueira]] — Arquivado teste ([[park-espanha]], Facebook Ads)
+**Atualizações:**
+- [[pedro]] — **VISITA REALIZADA** 01/05 (status CRM = Visita) — primeira conversão completa
+- [[claudia-rosangela]] — confusão de marca ("E mrv") a esclarecer + perguntou evolução de obra
 
 ### Pessoas (brokers) — 1
 
-- [[reno]] — broker_id 35, agente IA principal, broker dos 33 leads canônicos
+- [[reno]] — broker_id 35, agente IA principal, broker dos 38 leads canônicos
 
 ### Organizações — 1
 
-- [[hlts-construtora]] — construtora de [[union-vista]] e [[union-vereda]] (23 leads canônicos no funil)
+- [[hlts-construtora]] — construtora de [[union-vista]] e [[union-vereda]] (25 leads canônicos no funil)
 
-### Lugares (bairros/regiões) — 10
+### Lugares (bairros/regiões) — 11
 
 **Com empreendimento Fama:**
-- [[grand-ville]] — casa do [[union-vista]], 10 leads
-- [[jaragua]] — Zona Oeste, casa do [[union-vereda]], 13 leads (**bairro de maior cobertura**)
-- [[jardim-sul]] — Zona Sul, casa do [[garden-sul]], 3 leads (**0% engajamento**)
-- [[shopping-park]] — Zona Sul, casa do [[place-arbi]], 4 leads
+- [[grand-ville]] — [[union-vista]], 12 leads
+- [[jaragua]] — Zona Oeste, [[union-vereda]], 13 leads (**maior cobertura**)
+- [[jardim-sul]] — Zona Sul, [[garden-sul]], 5 leads (**anomalia 0% quebrada — 2 engajaram**)
+- [[shopping-park]] — Zona Sul, [[place-arbi]], 5 leads
 
 **Sem empreendimento Fama (gap de portfólio):**
-- [[martins]] — preferência [[andreia-carvalho]], concorrente Martinsville
-- [[jardim-patricia]] — preferência [[andreia-carvalho]], concorrentes MRV/Opção
+- [[martins]] — preferência [[andreia-carvalho]]
+- [[jardim-patricia]] — preferência [[andreia-carvalho]]
 - [[roosevelt]] — preferência [[andreia-carvalho]], concorrente [[zurique]]
-- [[chacara-tubalina]] — trabalho do [[jonathan-barbosa]]
-- [[zona-leste]] — preferência da [[eduarda]]
-- [[regiao-central]] — preferência do [[silva-porto]]
+- [[chacara-tubalina]] — trabalho [[jonathan-barbosa]]
+- [[zona-leste]] — preferência [[eduarda]]
+- [[regiao-central]] — preferência [[silva-porto]]
+- **NOVO gap:** Planalto/loteamento — perfil [[mauro-marques]]
 
-### Propriedades (empreendimentos) — 7
+### Propriedades (empreendimentos) — 8
 
 **Em campanha ativa:**
-- [[union-vista]] — [[grand-ville]], [[hlts-construtora]], lançamento, entrega Jul/2027. **10 leads** (5 silentes!)
-- [[union-vereda]] — [[jaragua]], [[hlts-construtora]], lançamento, entrega Dez/2028. **13 leads** (alta cobertura, 3 conversões em vista)
-- [[place-arbi]] — [[shopping-park]], lançamento, entrega Jun/2027. **4 leads** (bipolaridade)
-- [[garden-sul]] — [[jardim-sul]], lançamento, entrega Set/2028. **3 leads** (0% engajamento)
+- [[union-vista]] — [[grand-ville]], [[hlts-construtora]], **12 leads** (incluindo Thiago Tesch agendado 15/05 e Mauro fora de fit)
+- [[union-vereda]] — [[jaragua]], [[hlts-construtora]], **13 leads** (incluindo Pedro visita realizada)
+- [[place-arbi]] — [[shopping-park]], **5 leads** (Kamily visita 07/05 amanhã!)
+- [[garden-sul]] — [[jardim-sul]], **5 leads** (Byanca + Aline engajaram, anomalia quebrada)
 
 **Captados mas dados incompletos:**
 - [[bris]] — Instagram, 1 lead (arquivado)
-- [[bella-vita]] — Google Ads, 1 lead (arquivado), id 116
-- [[park-espanha]] — Facebook Ads, 1 lead (arquivado), id 62
+- [[bella-vita]] — Google Ads, 1 lead (arquivado)
+- [[park-espanha]] — Facebook Ads, 1 lead (arquivado)
 
-**Concorrente (referência):**
-- [[zurique]] — [[roosevelt]], 2 vagas/2027, mencionado pelo Reno como alternativa para [[andreia-carvalho]]
-
-### Projetos
-
-_(ainda nenhum em `_entities/`; projetos vivem em `_projects/`)_
+**Concorrente:**
+- [[zurique]] — [[roosevelt]], referência competitiva
 
 ## Estatísticas
 
-- **Total de perfis canônicos:** 53 (33 pessoas-cliente + 1 broker + 1 org + 10 lugares + 8 propriedades — incluído Zurique como concorrente).
-- **Leads canônicos do Reno:** 33 (eram 26 pré-Lote 6).
-- **Cobertura por imóvel:** Union Vereda 13, Union Vista 10, Place+Arbi 4, Garden Sul 3, Bris/Bella Vita/Park Espanha 1 cada.
-- **Cobertura por bairro com produto:** Jaraguá 13, Grand Ville 10, Shopping Park 4, Jardim Sul 3.
-- **Bairros gap-de-portfólio:** 6 (Martins, Jardim Patrícia, Roosevelt, Chácara Tubalina, Zona Leste, Região Central).
-- **Canais identificados:** SLA Cascata, Facebook Ads (4 campanhas distintas), Instagram (1 — Bris), Google Ads (1 — Bella Vita).
+- **Total de perfis canônicos:** 60 (38 pessoas-cliente + 1 broker + 1 org + 11 lugares + 8 propriedades + 1 concorrente).
+- **Leads canônicos do Reno:** 38 (eram 33 pré-Lote 7).
+- **Visitas confirmadas/realizadas no funil canônico:** 4 (Pedro realizada, Kamily 07/05, Thiago 15/05, Augusto remarcação)
+- **Cobertura por imóvel:** Union Vereda 13, Union Vista 12, Place+Arbi 5, Garden Sul 5.
 
-## Insights consolidados (Lotes 3–6)
+## Insights consolidados (Lotes 3–7)
 
 ### Funil comercial — conversões em vista
-1. **[[pedro]]** — visita confirmada 01/05 18h ([[union-vereda]])
-2. **[[claudia-rosangela]]** — visita próxima semana ([[union-vereda]], "é bem isso que procuro", R$288.880)
-3. **[[amanda]]** — alvo de visita iminente ([[place-arbi]], "Simplesmente perfeito", precisa marido)
-4. **[[guilherme-mendes]]** — convidado para Fama ([[union-vereda]])
-5. **[[augusto-santana]]** — Visita aguardando remarcação ([[union-vista]], Caixa R$230k)
+1. **[[pedro]]** — VISITA REALIZADA 01/05 (status CRM = Visita)
+2. **[[kamily]]** — visita confirmada **AMANHÃ 07/05 9h** ([[place-arbi]])
+3. **[[thiago-tesch]]** — visita confirmada 15/05 15h30 ([[union-vista]], perfil MCMV-target ideal)
+4. **[[augusto-santana]]** — Visita aguardando remarcação ([[union-vista]], crédito Caixa R$230k)
+5. **[[claudia-rosangela]]** — visita acordada para semana 05/05 ([[union-vereda]], "é bem isso")
+6. **[[byanca-guerra]]** — conduzindo para visita ([[garden-sul]] 56,32m²)
+7. **[[amanda]]** — alvo iminente ([[place-arbi]] "Simplesmente perfeito", precisa marido)
 
 ### Perfis emergentes
-- **Investidor:** [[eliseu]] (tese valorização Union Vista)
-- **MCMV-dependente:** [[marcio-oliveira-juliao]] (bloqueio se Union Vista não enquadrar)
-- **Multi-imóvel exigente:** [[andreia-carvalho]] (2 vagas, planta grande, 3 bairros aceitos)
-- **Dual morar+investir:** [[jonathan-barbosa]] (proximidade Chácara Tubalina)
+- **MCMV-target perfeito:** [[thiago-tesch]] (visita 15/05) — perfil financeiro coerente, sem objeções
+- **Investidor:** [[eliseu]] (tese valorização)
+- **MCMV-dependente:** [[marcio-oliveira-juliao]]
+- **Multi-imóvel exigente:** [[andreia-carvalho]]
+- **Dual morar+investir:** [[jonathan-barbosa]]
+- **Fora de fit declarado:** [[mauro-marques]] (quer loteamento)
 
-### Operacional — bloqueios ativos
-- WhatsApp shutdown bloqueando [[levi-santos]]
-- Plantas baixas faltando no MinIO: Place+Arbi, Union Vereda completo
-- **Dedup CRM falho** (descoberta Lote 6): Augusto 4 cadastros, Wueverton 3, Jisa 3, Carmen nome duplicado, 3 leads-teste com 3+ cópias de cada anotação. Bug grave do FamaChat.
-- Falhas WhatsApp jidDecode persistentes
+### Operacional — bloqueios CRÍTICOS antes de 07/05 e 15/05
+- **HOJE 06/05:** resolver planta baixa [[place-arbi]] no MinIO (visita Kamily amanhã 9h)
+- **Antes de 15/05:** validar enquadramento MCMV [[union-vista]] (visita Thiago Tesch)
+- **Em aberto:** WhatsApp shutdown (Levi), book Union Vereda completo, memorial Garden Sul
+- **Dedup CRM falho:** Augusto 4 cadastros, Wueverton 3, Jisa 3 — bug grave do FamaChat
 
 ### Validações HLTS pendentes
-- Enquadramento MCMV (gatilho Márcio + cobertura Union Vereda)
-- Plano investidor 10% entrada (gatilho Eliseu)
-- Configuração futura com 2 vagas (caminho Andreia)
+- Enquadramento MCMV (gatilho [[marcio-oliveira-juliao]] e [[thiago-tesch]])
+- Plano investidor 10% entrada (gatilho [[eliseu]])
+- Configuração futura com 2 vagas (caminho [[andreia-carvalho]])
 
-### Marketing/Aquisição — anomalias
-- **"Leads silentes" Facebook Ads:** Garden Sul 3/3, Union Vista 5/10, Place+Arbi 2/4. Padrão recorrente sugere mismatch criativo/produto. **Recomendação:** revisão de campanha antes de aumentar verba.
-- **Place+Arbi bipolar:** 50% engaja muito, 50% silente — segmentação ou criativo
-- **Canais alternativos com 1 lead cada:** Instagram (Bris), Google Ads (Bella Vita) — base muito pequena para conclusão, mas vale rastrear
-- **Gap de portfólio nos bairros nobres:** Martins, Jardim Patrícia, Roosevelt — concorrentes (Martinsville, MRV, Opção, Zurique) capturam demanda canônica
-- **Gap de portfólio nas regiões maiores:** Zona Leste (Eduarda), Região Central (Silva Porto)
+### Marketing/Aquisição — anomalias e descobertas
+- **Garden Sul anomalia QUEBRADA:** Lote 7 trouxe 2 leads engajados (Byanca + Aline) — antes era 0/3
+- **Union Vista mismatch persistente:** Mauro queria loteamento; 5/12 leads silentes — vale revisão criativa
+- **Canais alternativos:** Instagram (Bris) e Google Ads (Bella Vita) seguem com 1 lead cada — base pequena
+- **NOVO gap:** loteamento/Planalto — Mauro vai para concorrente
+- **Gap de portfólio nos bairros nobres:** Martins, Jardim Patrícia, Roosevelt — concorrentes capturam
 
 ## Cobertura do funil canônico
 
-A curadoria FAM-15 cobriu agora **33 dos ~70+ leads ativos** do Reno (clientes top por atividade nos últimos 30 dias). Os perfis canônicos restantes seriam de leads de baixa atividade — eles já têm registros no CRM, mas sem sinal suficiente para diferenciá-los além da régua de repescagem padrão.
-
-**Sugestão de continuidade:** transformar a curadoria em **rotina automática** (agente diário/semanal pegando top-N por atividade do dia) em vez de heartbeats manuais — proposta enviada ao CEO via comentários FAM-15.
-
-## Decisões de manutenção
-
-- Manter `status: archived` para Larissa, João Vitor, Priscila (telefones-teste) — vetorização desligada por padrão.
-- `external_ids.crm_client_ids` (array) é convenção para mapear cadastros duplicados a uma única entidade canônica.
-- Confidence < 0.7 indica perfil com dados incompletos — atualizar quando houver mais sinal.
+A curadoria FAM-15 cobriu agora **38 dos ~75+ leads ativos** do Reno. **5 conversões em vista no horizonte de uma semana**, incluindo a primeira visita já realizada ([[pedro]]). O grafo é navegável e as decisões comerciais críticas têm contexto.
