@@ -78,3 +78,6 @@ Cliente esclareceu que pensou que o imóvel/anúncio era em Araguari e afirmou q
 
 ### 2026-05-06 — Motivo da objeção
 Cliente informou que tem apartamento em Uberlândia e não se adaptou à cidade/região. Isso reforça que a objeção não é apenas ao empreendimento, mas à localização. Próximo passo: entender se a busca é comprar em Araguari e se existe intenção de vender/trocar o apartamento atual.
+
+### 2026-05-06 — Apartamento atual confirmado
+Cliente confirmou que possui apartamento em Uberlândia. Contexto comercial: não se adaptou à cidade/região e pode estar buscando compra em Araguari com venda ou uso do apartamento atual em negociação. Próximo passo: entender se pretende vender o imóvel atual ou usar como parte de pagamento/troca.
