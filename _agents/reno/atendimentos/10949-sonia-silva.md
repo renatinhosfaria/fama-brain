@@ -111,3 +111,9 @@ Leitura comercial: sinal de retomada real e foco em viabilidade, não apenas pre
 Cliente informou que tem R$ 30 mil de entrada.
 
 Referência calculada sobre unidade a partir de R$ 292.400: entrada equivale a aproximadamente 10,26% e saldo de referência de R$ 262.400 antes de taxas, tabela vigente, fluxo de obra e análise de crédito. Próxima condução: entender se haverá FGTS além da entrada para compor viabilidade.
+
+
+### 2026-05-06 — Sem FGTS
+Cliente informou que a entrada será somente capital próprio de R$ 30 mil, sem FGTS.
+
+Leitura comercial: viabilidade depende agora principalmente da renda comprovável/aprovação bancária e do fluxo exigido pela construtora. Próxima condução: perguntar renda mensal/familiar aproximada para avaliar caminho de financiamento sem prometer aprovação.
