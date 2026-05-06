@@ -5,7 +5,7 @@ entity_type: property
 entity_name: Place+Arbi
 subtype: property
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-06'
 tags:
   - imovel
   - empreendimento
@@ -27,6 +27,7 @@ interested_clients:
   - '[[amanda]]'
   - '[[grazyelly-macedo]]'
   - '[[alexsander-pereira]]'
+  - '[[kamily]]'
 neighborhood: '[[shopping-park]]'
 city: Uberlândia/MG
 delivery_date: 2027-06
@@ -36,7 +37,7 @@ related:
 ---
 ## Resumo
 
-Place+Arbi é empreendimento residencial em **lançamento** no bairro [[shopping-park]] (Zona Sul), Uberlândia/MG, com entrega prevista para junho/2027. CRM property ID: 67. **Cobertura agora dividida em dois perfis polares:** 2 leads quentes ([[samuel-kim]], [[amanda]]) e 2 silentes ([[grazyelly-macedo]], [[alexsander-pereira]]).
+Place+Arbi é empreendimento residencial em **lançamento** no bairro [[shopping-park]] (Zona Sul), Uberlândia/MG, com entrega prevista para junho/2027. CRM property ID: 67. **Cobertura agora 5 leads, com primeira visita iminente do funil canônico (Kamily, 07/05 9h).**
 
 ## Características
 
@@ -48,22 +49,24 @@ Place+Arbi é empreendimento residencial em **lançamento** no bairro [[shopping
 
 ## Clientes interessados (backlinks)
 
-4 perfis canônicos:
+5 perfis canônicos:
 
-- [[samuel-kim]] — Em Atendimento, considera Place+Arbi como prazo mais curto vs [[union-vereda]]
-- [[amanda]] — Em Atendimento, **lead muito quente**, planta 50m² aprovada explicitamente ("Simplesmente perfeito"); precisa decisão com marido
+- [[samuel-kim]] — Em Atendimento, considera Place+Arbi como prazo mais curto
+- [[amanda]] — Em Atendimento, **lead muito quente** ("Simplesmente perfeito"), precisa marido
 - [[grazyelly-macedo]] — Não Respondeu, repescagem step 3
-- [[alexsander-pereira]] — Em Atendimento mas sem engajamento real, resgate step 4 (sem_gancho_claro)
+- [[alexsander-pereira]] — Em Atendimento (frio, sem engajamento real), resgate step 4
+- [[kamily]] — **Agendamento (visita 07/05 9h confirmada)** — primeiro imóvel para morar, simulação OK
 
 ## Observações comerciais
 
-- **Bipolaridade de fit:** 2 leads quentes (Samuel/Amanda) + 2 leads silentes (Grazyelly/Alexsander). **Hipótese:** o conteúdo do anúncio Facebook atrai dois perfis muito diferentes — só 50% engaja.
+- **Conversão iminente:** Kamily visita 07/05 amanhã → primeiro fechamento potencial Place+Arbi
+- **Bipolaridade de fit:** 3 leads engajaram bem (Samuel/Amanda/Kamily) e 2 silentes (Grazyelly/Alexsander). Padrão de "metade engaja, metade não" mais sutil que pareceia.
+- **Bloqueio operacional CRÍTICO antes de 07/05:** planta baixa não localizada no MinIO desde 2026-04-29 → escalar para Renato HOJE. Resolução essencial antes da visita da Kamily.
 - Mencionado em atendimentos como alternativa ao [[union-vereda]] quando cliente busca prazo mais curto e Zona Sul.
-- **Bloqueio operacional pendente:** planta baixa não localizada no MinIO (Reno em 2026-04-29) → escalar para Renato. Resolução destrava conversão da Amanda.
 
 ## Próximas ações sugeridas
 
-- Resolver bloqueio de planta baixa Place+Arbi (escalar p/ Renato)
-- Conduzir Amanda + marido para visita presencial Fama (alvo: status Visita)
-- Investigar por que metade dos leads é silente — segmentação ou criativo
+- **URGENTE:** resolver bloqueio de planta baixa Place+Arbi até 07/05 manhã
+- Visita Kamily 07/05 9h: preparar material visual completo
+- Pós-visita Kamily: simulação financeira + condição comercial específica para 50m² ou similar
 - Identificar construtora responsável
