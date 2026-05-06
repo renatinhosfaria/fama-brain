@@ -133,3 +133,15 @@ Ações operacionais:
 - Campo `sobre_a_busca_por_um_imovel` complementado com "Pretende financiar.".
 - Nota registrada no CRM.
 - Próxima condução: entender se há entrada/FGTS disponível para direcionar simulação e viabilidade, sem prometer crédito.
+
+
+### 2026-05-06 — Entrada/FGTS informado
+Cliente respondeu: "7 mil" à pergunta sobre valor de entrada ou FGTS.
+
+Interpretação: recurso inicial informado para financiamento = R$ 7.000.
+
+Ações operacionais:
+- Campo `sobre_a_busca_por_um_imovel` complementado com entrada/FGTS de R$ 7.000.
+- Lead 3009 atualizado em `budget` com referência de entrada/FGTS e intenção de financiamento.
+- Nota registrada no CRM.
+- Próxima condução: perguntar renda mensal aproximada para avaliar viabilidade sem prometer crédito.
