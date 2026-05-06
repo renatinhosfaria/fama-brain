@@ -75,3 +75,6 @@ Conduzir qualificação leve na conversa: esclarecer se Shopping Park/Place+Arbi
 
 ### 2026-05-06 — Objeção de localização
 Cliente esclareceu que pensou que o imóvel/anúncio era em Araguari e afirmou que Uberlândia não interessa. Trava principal: localização. Próximo passo: confirmar se a busca é somente em Araguari e evitar insistência em opções de Uberlândia.
+
+### 2026-05-06 — Motivo da objeção
+Cliente informou que tem apartamento em Uberlândia e não se adaptou à cidade/região. Isso reforça que a objeção não é apenas ao empreendimento, mas à localização. Próximo passo: entender se a busca é comprar em Araguari e se existe intenção de vender/trocar o apartamento atual.
