@@ -1,6 +1,12 @@
 ---
 type: entity-profile
 owner: reno
+entity_type: atendimento
+entity_name: Grazziele Rocha Mendes
+client_id: 11232
+broker_id: 35
+status_crm: Em Atendimento
+source: Facebook Ads
 created: '2026-05-06'
 updated: '2026-05-06'
 tags:
@@ -12,17 +18,11 @@ tags:
   - em-atendimento
   - qualificacao
   - araguari
-entity_type: atendimento
-entity_name: Grazziele Rocha Mendes
-broker_id: 35
-client_id: 11232
-source: Facebook Ads
-status_crm: Em Atendimento
 ---
 # Atendimento — Grazziele Rocha Mendes
 
 ## Resumo atual
-Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas esclareceu que pensou que o anúncio/imóvel era em Araguari e que Uberlândia não interessa para a compra atual. Informou que mora/tem apartamento em Uberlândia, não se adaptou à cidade/região e quer ir para Araguari. Também informou que o apartamento em Uberlândia fica no Jardim Europa e que possui uma casa em Araguari, mas deseja apartamento em Araguari por ser mais fácil de cuidar. Na sequência, respondeu "Vende", reforçando que a venda de imóvel(is) deve entrar como caminho para viabilizar a mudança. Próximo passo comercial: entender qual imóvel pretende vender primeiro, levantar dados objetivos do(s) imóvel(is) e mapear os critérios mínimos do apartamento desejado em Araguari.
+Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas corrigiu o contexto: pensou que o anúncio/imóvel era em Araguari e informou que Uberlândia não interessa para a compra atual. Mora/tem apartamento em Uberlândia, no Jardim Europa, não se adaptou à cidade/região e quer ir para Araguari. Também possui uma casa em Araguari, mas deseja apartamento em Araguari por ser mais fácil de cuidar. Está aberta a venda ou possível negociação/permuta dos imóveis atuais e confirmou que, para o apartamento desejado em Araguari, pode ser de 2 quartos e não tem preferência rígida. Próximo passo comercial: entender faixa de valor e forma de composição com venda/permuta dos imóveis atuais antes de encaminhar análise comercial.
 
 ## Dados operacionais
 - Cliente ID: 11232
@@ -30,14 +30,14 @@ Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial 
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp validado no CRM
-- Última interação relevante: 2026-05-06 — cliente sinalizou venda como caminho para os imóveis envolvidos e segue com foco em apartamento em Araguari
+- Última interação relevante: 2026-05-06 — cliente confirmou que apartamento em Araguari pode ser de 2 quartos e sem preferência rígida
 
 ## Contexto comercial
-Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park, Uberlândia. A abertura contextualizada perguntou se a cliente está procurando imóvel nessa região. Após a primeira resposta, a conversa evoluiu para uma correção importante: a cliente acreditava que a oferta era em Araguari e informou que Uberlândia não interessa. Ela mora/possui apartamento em Uberlândia, no Jardim Europa, não se adaptou e quer ir para Araguari. Demonstrou abertura para venda do apartamento atual ou eventual negociação/permuta, desde que haja interessado em assumir/pegar o imóvel. Também possui uma casa em Araguari, mas quer apartamento em Araguari por ser mais fácil de cuidar. O inbound curto "Vende" indica que a venda deve ser tratada como hipótese operacional/comercial relevante para viabilizar a estratégia.
+Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park, Uberlândia. A abertura contextualizada perguntou se a cliente está procurando imóvel nessa região. Após a primeira resposta, a conversa evoluiu para uma correção importante: a cliente acreditava que a oferta era em Araguari e informou que Uberlândia não interessa. Ela mora/possui apartamento em Uberlândia, no Jardim Europa, não se adaptou e quer ir para Araguari. Demonstrou abertura para venda do apartamento atual ou eventual negociação/permuta, desde que haja interessado em assumir/pegar o imóvel. Também possui uma casa em Araguari, mas quer apartamento em Araguari por ser mais fácil de cuidar. O inbound curto "Vende" indica que a venda deve ser tratada como hipótese operacional/comercial relevante para viabilizar a estratégia. O inbound "Pode ser dois não tenho preferência" qualifica o apartamento desejado em Araguari como opção prática de 2 quartos, sem exigência rígida de planta/perfil.
 
 ## Diagnóstico
 ### Necessidade
-Busca ligada a mudança de cidade, com foco em Araguari. A necessidade atual não é o empreendimento inicial em Uberlândia, mas entender caminho para sair de Uberlândia e comprar/negociar um apartamento em Araguari.
+Busca ligada à mudança de cidade, com foco em Araguari. A necessidade atual não é o empreendimento inicial em Uberlândia, mas entender caminho para sair de Uberlândia e comprar/negociar um apartamento em Araguari.
 
 ### Momento
 Em conversa ativa no mesmo dia do primeiro contato. Ainda é necessário entender urgência, se a mudança para Araguari é imediata ou planejada, e se já há disposição concreta de vender/trocar algum imóvel.
@@ -46,7 +46,7 @@ Em conversa ativa no mesmo dia do primeiro contato. Ainda é necessário entende
 Ainda não identificada. Precisa entender se decide sozinha e se há mais alguém envolvido na venda/troca do apartamento atual, da casa em Araguari ou na compra do apartamento desejado.
 
 ### Viabilidade
-Cliente possui apartamento em Uberlândia e casa em Araguari, que podem ser relevantes para viabilidade via venda, troca ou parte de pagamento. A resposta "Vende" reforça venda como caminho provável, mas ainda falta identificar qual imóvel será vendido primeiro, características, valor pretendido, saldo/documentação e faixa de compra. Não há dados financeiros, avaliação dos imóveis, saldo de financiamento, faixa de valor ou capacidade de compra validados. Não prometer crédito, venda ou permuta sem análise.
+Cliente possui apartamento em Uberlândia e casa em Araguari, que podem ser relevantes para viabilidade via venda, troca ou parte de pagamento. A resposta "Vende" reforça venda como caminho provável. Falta identificar qual imóvel será vendido primeiro, características, valor pretendido, saldo/documentação e faixa de compra. Para o imóvel desejado em Araguari, aceitaria apartamento de 2 quartos e não tem preferência rígida. Não há avaliação dos imóveis atuais, faixa de valor, saldo de financiamento ou capacidade de compra validados. Não prometer crédito, venda ou permuta sem análise.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
@@ -85,14 +85,18 @@ CRM registrou que o apartamento atual em Uberlândia fica no Jardim Europa. Clie
 ### 2026-05-06 — Inbound curto: "Vende"
 Mensagem inbound recebida pelo WhatsApp: "Vende". Pelo histórico imediato, a resposta sinaliza venda como caminho para os imóveis envolvidos na estratégia de mudança para Araguari. CRM validado no escopo Reno (`broker_id=35`); status já estava em Em Atendimento, sem regressão ou mudança. Repescagem já estava interrompida por resposta do cliente e não há Resgate ativo. Nota operacional registrada no CRM.
 
+### 2026-05-06 — Critério de imóvel desejado em Araguari
+Mensagem inbound recebida pelo WhatsApp: "Pode ser dois não tenho preferência". Cliente confirmou que, para o apartamento desejado em Araguari, pode ser de 2 quartos e não tem preferência rígida. CRM validado no escopo Reno (`broker_id=35`); status já estava em Em Atendimento, sem regressão ou mudança. Repescagem permanecia interrompida por resposta do cliente e não há Resgate ativo. Nota operacional registrada no CRM.
+
 ## Objeções e travas
 - Localização: cliente não quer Uberlândia para a compra atual; corrigiu o contexto para Araguari.
 - Imóvel atual em Uberlândia: pode ser oportunidade de venda/troca, mas também é trava de viabilidade até entender valor, saldo, documentação e disposição real para negociar.
 - Casa em Araguari: pode ser ativo para venda/troca ou contexto da mudança, mas a cliente prefere apartamento pela praticidade de cuidado.
 - Venda como caminho: cliente sinalizou "Vende", mas ainda falta confirmar qual imóvel quer vender, dados do imóvel, valor esperado e se aceita permuta/parte de pagamento.
+- Perfil do imóvel desejado: aceita 2 quartos e não tem preferência rígida, o que abre espaço para buscar opção prática e de menor manutenção em Araguari.
 
 ## Próximo passo
-Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa: reconhecer a possibilidade de venda e perguntar uma coisa por vez. Prioridade: confirmar qual imóvel ela pretende vender primeiro — apartamento em Uberlândia/Jardim Europa ou casa em Araguari — e levantar dados básicos do imóvel. Depois, mapear critérios mínimos do apartamento desejado em Araguari.
+Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa. Prioridade: perguntar uma coisa por vez sobre faixa de valor/forma de composição e dados dos imóveis atuais. Caminho sugerido: entender se ela pretende vender primeiro o apartamento em Uberlândia/Jardim Europa ou a casa em Araguari, levantar dados básicos do imóvel e depois encaminhar análise comercial/equipe para verificar compradores, venda ou permuta sem prometer match.
 
 ## Observações operacionais
 - Evento inicial: evt_3400.
@@ -104,3 +108,4 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 - Inbound "Eu moro em Uberlândia quero ir pra Araguari" persistido no CRM em nota operacional 17035; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Nota CRM 17036 registrou complemento sobre apartamento no Jardim Europa e casa em Araguari; vault consolidado para manter o atendimento curado atualizado.
 - Inbound "Vende" persistido no CRM em nota operacional 17040; nenhum envio ao cliente foi feito nesta rotina silenciosa.
+- Inbound "Pode ser dois não tenho preferência" persistido no CRM em nota operacional 17045; nenhum envio ao cliente foi feito nesta rotina silenciosa.
