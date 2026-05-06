@@ -129,3 +129,9 @@ Atualização do diagnóstico: informação de renda/movimentação ainda ambíg
 Cliente esclareceu que quis dizer R$ 40 mil de movimentação/renda mensal aproximada no MEI.
 
 Atualização do diagnóstico: sinal forte de viabilidade potencial, embora ainda sem promessa de aprovação. Cliente já perguntou documentos, parcelas e esclareceu renda/MEI; atendimento deve ser tratado como quente. Próxima condução recomendada: explicar que não faz sentido descartar financiamento sem análise e conduzir para leitura documental/simulação, preferencialmente visita presencial na Fama. Ainda falta validar entrada disponível.
+
+
+### 2026-05-06 — Cliente pergunta prazo de entrega
+Cliente perguntou: "Tem data de entrega do empreendimento?".
+
+Resposta baseada no cadastro do empreendimento Place+Arbi: previsão de entrega em JUN/2027. Próxima condução: validar se o prazo de obra encaixa no momento do cliente ou se ele precisa de algo pronto/mais rápido.
