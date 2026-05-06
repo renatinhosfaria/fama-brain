@@ -5,47 +5,53 @@ entity_type: atendimento
 entity_name: Sonia Silva
 client_id: 10949
 broker_id: 35
-status_crm: Arquivado
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-06'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
-  - repescagem
-  - nao-respondeu
-  - arquivado
+  - qualificacao
+  - inbound
+  - reativado
+  - em-atendimento
 ---
 # Atendimento — Sonia Silva
 
 ## Resumo atual
-Cliente do Reno (`broker_id=35`) originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville. Primeiro contato e cinco repescagens foram enviados por WhatsApp sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante da régua; a branch de repescagem foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat.
+Cliente do Reno (`broker_id=35`) originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville/Zona Leste. O primeiro contato e a régua completa de repescagem foram enviados por WhatsApp sem resposta real até o step 5; em 2026-05-03 a repescagem foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente.
+
+Em 2026-05-06 houve resposta inbound real no WhatsApp (`Boa tarde`). Como o status estava `Arquivado`, o CRM foi reativado para `Em Atendimento` por resposta inbound. A repescagem anterior já estava encerrada (`enabled=false`, `next_run_at=null`) e não havia Resgate ativo para interromper. A continuidade comercial deve retomar o contexto do Union Vista e conduzir qualificação normal, sem tratar o cliente como frio/sem resposta.
 
 ## Dados operacionais
 - Cliente ID: 10949
 - Broker ID: 35
-- Status CRM: Arquivado
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: WhatsApp disponível no CRM; envios realizados pelo JID salvo
-- Última interação relevante: 2026-05-03T10:57:30-03:00 — repescagem step 5 enviada e régua encerrada
+- Empreendimento vinculado: Union Vista (`id_empreendimento=22`)
+- Última interação relevante: 2026-05-06 — inbound WhatsApp com saudação, reativando o atendimento após arquivamento
 
 ## Contexto comercial
-Interesse inicial vinculado ao Union Vista, empreendimento da HLTS Construtora na região do Grand Ville/Zona Leste de Uberlândia. O empreendimento está em lançamento, com entrega prevista para Jul/2027, unidades de 2 quartos e valores a partir de aproximadamente R$292 mil. A cliente não respondeu aos contatos, então não há confirmação de finalidade de compra, urgência, região alternativa, orçamento ou preferência de financiamento.
+Interesse inicial vinculado ao Union Vista, empreendimento da HLTS Construtora na região do Grand Ville/Zona Leste de Uberlândia. O empreendimento está em lançamento, com entrega prevista para Jul/2027, unidades de 2 quartos com suíte, sacada/varanda, 1 vaga coberta e valores a partir de aproximadamente R$292 mil, conforme CRM.
+
+Antes da resposta inbound, a régua de repescagem trabalhou os ângulos de organização da busca, encaixe financeiro, prazo de entrega, convite consultivo e encerramento elegante. Após a reativação, o atendimento deve seguir como conversa ativa: responder dúvidas curtas, entender necessidade/momento/decisão/viabilidade sem interrogatório e conduzir para visita presencial quando houver sinal positivo.
 
 ## Diagnóstico
 ### Necessidade
-Indefinida por ausência de resposta real. Contexto sugere busca por imóvel específico, mas sem confirmação se o objetivo era morar, investir ou apenas avaliar oportunidade.
+Ainda pouco definida. O interesse operacional é no Union Vista; não há confirmação se a busca é para morar, investir ou apenas conhecer opções.
 
 ### Momento
-Cliente permaneceu silenciosa após o primeiro contato e cinco repescagens. A régua avançou de organização inicial da busca para viabilidade, prazo do lançamento, convite consultivo direto e, por fim, encerramento respeitoso com porta aberta.
+A cliente ficou silenciosa durante a primeira abordagem e as cinco repescagens, mas voltou a responder depois do arquivamento. Isso indica retomada de atenção e deve ser tratado como reabertura de atendimento, não como novo silêncio.
 
 ### Decisão
-Sem dados sobre decisores ou influência familiar.
+Sem dados sobre decisores, participação familiar ou influência de terceiros.
 
 ### Viabilidade
-Sem dados de renda, entrada ou financiamento. A repescagem step 2 já abordou encaixe financeiro; steps posteriores alternaram para prazo, organização do caminho de compra, orientação consultiva e encerramento, evitando repetir o mesmo argumento.
+Sem dados de renda, entrada, FGTS ou financiamento. Há sinal de possível dúvida sobre forma de aquisição/construtora/financiamento registrado no CRM em 2026-05-06; tratar como oportunidade de explicar o básico sem prometer aprovação e conduzir para validação segura na Fama.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -54,109 +60,35 @@ Mensagem inicial enviada via WhatsApp mencionando interesse no Union Vista, regi
 ### 2026-04-29 — Repescagem step 1
 Mensagem enviada com foco em organizar a busca em torno do Union Vista/Grand Ville e entender se a cliente buscava morar ou investir. Sem resposta real registrada até a execução seguinte.
 
-### 2026-04-30 — Repescagem step 2 enviada
-Fluxo: repescagem  
-Step enviado: 2  
-Intenção do step: evitar caminho errado e mostrar valor prático de analisar encaixe do imóvel antes de avançar.  
-Ângulo comercial usado: imóvel específico + viabilidade/financiamento.  
-Data/hora de envio: 2026-04-30T09:25:02-03:00  
-Mensagem enviada:
+### 2026-04-30 — Repescagem step 2
+Mensagem enviada com ângulo de encaixe financeiro/viabilidade: evitar olhar apenas o imóvel e entender se entrada, parcela e financiamento fariam sentido para não perder tempo.
 
-```text
-Oi, Sonia! Tudo bem? 🔑
+### 2026-05-01 — Repescagem step 3
+Mensagem enviada com ângulo de momento/prazo de entrega: Union Vista como lançamento com entrega prevista para 2027 e pergunta sobre necessidade de mudança imediata ou possibilidade de esperar.
 
-Sobre o Union Vista, na região do Grand Ville, um cuidado importante é não olhar só o imóvel em si, mas entender se ele encaixa no seu momento de compra.
+### 2026-05-02 — Repescagem step 4
+Mensagem enviada com convite consultivo direto: organizar região, perfil da unidade e próximo passo seguro, com possibilidade de conversa e visita na Fama na segunda-feira.
 
-Às vezes uma opção parece boa, mas entrada, parcela e financiamento precisam fazer sentido para evitar perda de tempo.
+### 2026-05-03 — Repescagem step 5 e arquivamento
+Mensagem final enviada com encerramento elegante, respeito ao tempo da cliente e porta aberta para retomada futura. Estado final da repescagem confirmado no CRM: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`. Cliente foi arquivado automaticamente no FamaChat por ausência de resposta real até aquele momento.
 
-Quer que eu te ajude a fazer essa primeira leitura de forma **simples e realista**?
-```
+### 2026-05-06 — Resposta inbound e reativação do atendimento
+Cliente respondeu no WhatsApp com saudação curta: `Boa tarde`. Como o status operacional estava `Arquivado`, o CRM foi atualizado condicionalmente para `Em Atendimento` por resposta inbound. Nota CRM registrada informando a reativação e a ausência de follow-up ativo para interromper.
 
-Próximo `next_run_at`: 2026-05-01T14:20:00-03:00.
-
-### 2026-05-01 — Repescagem step 3 enviada
-Fluxo: repescagem  
-Step enviado: 3  
-Intenção do step: diagnóstico leve para obter uma primeira informação objetiva.  
-Comparação de abordagem: diferente do step 2, que falou de encaixe financeiro/entrada/parcela, esta mensagem usou prazo de entrega do lançamento, pergunta sobre urgência de mudança e comparação de caminho quando o prazo não combina.  
-Ângulo comercial usado: imóvel específico + momento/prazo de entrega.  
-Data/hora de envio: 2026-05-01T17:25:08-03:00  
-Mensagem enviada:
-
-```text
-Sonia, tudo bem? 📍
-
-O Union Vista é um lançamento com entrega prevista para 2027, então ele pode fazer bastante sentido para quem consegue se planejar com calma.
-
-Mas se a sua necessidade for mais imediata, talvez seja melhor comparar outro caminho antes de avançar.
-
-Você pensa em se mudar logo ou pode esperar um lançamento ficar pronto?
-```
-
-Próximo `next_run_at`: 2026-05-02T19:10:00-03:00.
-
-### 2026-05-02 — Repescagem step 4 enviada
-Fluxo: repescagem  
-Step enviado: 4  
-Intenção do step: convite consultivo direto antes do encerramento da régua.  
-Comparação de abordagem: diferente do step 3, que perguntou sobre prazo de mudança/espera por lançamento, esta mensagem não repetiu prazo nem viabilidade financeira; mudou para organização do caminho de compra, leitura consultiva pela Fama e convite com porta para conversa/visita na segunda-feira, adequado ao fim de semana.  
-Ângulo comercial usado: imóvel específico + orientação consultiva/organização do próximo passo.  
-Data/hora de envio: 2026-05-02T19:21:15-03:00  
-Mensagem enviada:
-
-```text
-Sonia, boa noite! 🏡
-
-Em vez de te mandar mais informação solta do Union Vista, o melhor caminho agora é organizar a compra com calma: olhar região, perfil da unidade e qual seria o próximo passo mais seguro.
-
-A Fama consegue fazer essa orientação contigo de um jeito bem objetivo, pra você não ficar decidindo só por anúncio.
-
-Quer que eu encaminhe uma conversa rápida e, se você gostar do caminho, uma visita na Fama na segunda-feira?
-```
-
-Próximo `next_run_at`: 2026-05-03T09:10:00-03:00.
-
-### 2026-05-03 — Repescagem step 5 enviada e régua encerrada
-Fluxo: repescagem  
-Step enviado: 5  
-Intenção do step: encerramento elegante, pausar a régua sem queimar relacionamento e deixar porta aberta para retomada futura.  
-Comparação de abordagem: diferente do step 4, que convidava para conversa/visita na segunda-feira e organizava o próximo passo, esta mensagem encerrou a insistência, respeitou o tempo da cliente e ofereceu retomada futura sem reabrir diagnóstico ou repetir viabilidade/prazo.  
-Ângulo comercial usado: imóvel específico + lead frio/porta aberta.  
-Data/hora de envio: 2026-05-03T10:57:30-03:00  
-Mensagem enviada:
-
-```text
-Sonia, vou pausar por aqui pra respeitar seu tempo. 🏡
-
-Como você tinha olhado o Union Vista, deixo só esse ponto: se a compra voltar a ser prioridade, vale retomar com uma conversa objetiva pra não **recomeçar do zero** entre anúncio, prazo de obra e condição de compra.
-
-Se fizer sentido mais pra frente, me chama por aqui que eu continuo do ponto certo.
-
-Posso deixar essa porta aberta e pausar por enquanto?
-```
-
-Estado final da repescagem: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`. Cliente arquivado automaticamente no FamaChat após atualização defensiva de status.
+### 2026-05-06 — Dúvida posterior registrada no CRM
+Após a reativação, o CRM registra dúvida da cliente sobre o empreendimento ser da Caixa ou da construtora. Contexto operacional: Union Vista é empreendimento da HLTS Construtora; Caixa pode entrar como alternativa de financiamento quando fizer sentido e dependerá de análise/aprovação. Não prometer aprovação, condição ou encaixe.
 
 ## Objeções e travas
-- Trava principal: ausência de resposta real após o primeiro contato e cinco repescagens.
-- Não há objeção comercial declarada pela cliente.
+- Trava anterior: ausência de resposta real durante primeiro contato e repescagem completa.
+- Trava atual: necessidade e viabilidade ainda indefinidas após reativação.
+- Possível dúvida comercial: diferença entre construtora e financiamento pela Caixa; explicar de forma simples e usar como ponte para entender entrada/parcela/financiamento.
 
 ## Próximo passo
-Sem nova ação automática de repescagem. Se a cliente responder futuramente, reativar atendimento normal do Reno, registrar a resposta no CRM, atualizar o status conforme política operacional e conduzir diagnóstico consultivo a partir do contexto do Union Vista.
+Seguir atendimento conversacional normal pelo Reno. Retomar o contexto do Union Vista, responder a dúvida de forma curta e segura, e conduzir uma pergunta por vez para entender se a cliente busca morar/investir, se a região faz sentido e se a preocupação principal é entrada, parcela ou financiamento. Se houver sinal positivo, convidar para visita presencial na Fama como próximo passo lógico.
 
 ## Observações operacionais
-- WhatsApp do step 5 enviado com sucesso pelo JID salvo no CRM.
-- `mark_reno_followup_sent` registrou o envio e a nota CRM, mas inicialmente manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null` no step final. O estado foi corrigido pela tool específica `update_reno_followup_state` para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps` antes do arquivamento defensivo.
-- A correção do estado final compactou a branch de repescagem no CRM, preservando os campos essenciais `step`, `enabled`, `next_run_at`, `last_sent_at` e `stopped_reason`; a mensagem enviada fica preservada na nota CRM e neste documento oficial.
-- Nota CRM de arquivamento registrada pelo Reno informando conclusão da régua de 5 repescagens sem resposta e arquivamento automático.
+- CRM/FamaChat foi tratado como fonte de verdade: cliente validada no CRM com `broker_id=35` antes da atualização.
+- Status alterado condicionalmente de `Arquivado` para `Em Atendimento` por resposta inbound real do cliente.
+- Repescagem anterior permanece encerrada com `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`; não havia Resgate ativo.
+- Busca por telefone retornou registros duplicados com outros brokers; o Reno atuou apenas no cliente em seu escopo (`client_id=10949`, `broker_id=35`).
 - Há documentos legados/drift relacionados a este cliente em `_agents/reno/atendimentos/sonia-silva.md` e `_agents/reno/clientes/10949-sonia-silva.md`; este arquivo é o caminho determinístico oficial por `client_id`.
-
-
-### 2026-05-06 — Cliente respondeu após arquivamento
-Cliente respondeu no WhatsApp com a dúvida: “É da Caixa ou da construtora?”
-
-Contexto usado para resposta: interesse anterior no Union Vista. CRM/propriedade confirma empreendimento da HLTS Construtora, com possibilidade de avaliar financiamento bancário conforme viabilidade, sem prometer aprovação ou condição específica.
-
-Resposta orientada: explicar de forma curta que o empreendimento é da construtora, não imóvel da Caixa; Caixa pode entrar como financiamento se fizer sentido; conduzir para entender se a dúvida é sobre entrada/parcela.
-
-Status CRM: preservado como `Arquivado`, pois a política automática só altera `Não Respondeu` para `Em Atendimento` quando o status atual está exatamente em `Não Respondeu`.
