@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11236
-created: '2026-05-06'
-entity_name: Marcos Pupin Vieira
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Marcos Pupin Vieira
+client_id: 11236
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-06'
+updated: '2026-05-06'
 tags:
   - reno
   - atendimento
@@ -14,13 +16,11 @@ tags:
   - famachat
   - primeiro-contato
   - primeira-resposta
-type: entity-profile
-updated: '2026-05-06'
 ---
 # Atendimento — Marcos Pupin Vieira
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno pelo WhatsApp. O CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a repescagem inicial foi interrompida por resposta inbound. A resposta recebida foi curta e parece indicar correção/erro de digitação, então a continuidade comercial deve retomar o contexto com leveza antes de avançar a qualificação.
+Cliente respondeu ao primeiro contato do Reno pelo WhatsApp e o atendimento já está em `Em Atendimento`. A repescagem inicial foi interrompida por resposta inbound. Depois da primeira resposta curta/ambígua, chegou nova resposta curta (“Ok”), sem novo diagnóstico comercial. A continuidade comercial deve retomar o contexto do Union Vereda/Jaraguá com leveza, sem pressionar e sem tratar o “Ok” como avanço de visita.
 
 ## Dados operacionais
 - Cliente ID: 11236
@@ -28,12 +28,14 @@ Cliente respondeu ao primeiro contato do Reno pelo WhatsApp. O CRM foi atualizad
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp: contato WhatsApp validado no envio
-- Última interação relevante: 2026-05-06 — primeira resposta inbound do cliente e status movido para Em Atendimento
+- Última interação relevante: 2026-05-06 — resposta inbound curta “Ok”; status preservado em Em Atendimento; follow-ups automáticos sem próxima execução ativa
 
 ## Contexto comercial
 Lead cadastrado a partir de Facebook Ads com interesse no empreendimento Union Vereda, bairro Jaraguá, Uberlândia. A abertura inicial usou contexto de empreendimento e bairro, sem iniciar qualificação financeira nem convite para visita antes da primeira resposta.
 
-Mensagem inbound registrada: “Desculpe mexeu erro”.
+Mensagens inbound registradas:
+- “Desculpe mexeu erro”
+- “Ok”
 
 ## Diagnóstico
 ### Necessidade
@@ -55,15 +57,19 @@ Reno enviou duas mensagens curtas pelo WhatsApp: apresentação da Fama com cont
 ### 2026-05-06 — Primeira resposta inbound e retomada operacional
 Cliente respondeu pelo WhatsApp com a mensagem: “Desculpe mexeu erro”. Como o cliente estava em `Não Respondeu` e pertence ao Reno (`broker_id=35`), o status foi alterado para `Em Atendimento` antes de qualquer continuidade comercial. A repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-06 — Resposta inbound curta adicional
+Nova mensagem inbound recebida: “Ok”. O cliente já estava em `Em Atendimento`, então o status foi preservado sem regressão. A repescagem já estava interrompida e não havia resgate ativo. Nota operacional registrada no CRM. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
 - Nenhuma objeção comercial clara registrada.
-- Resposta curta/ambígua; pode exigir retomada contextual cuidadosa na conversa normal.
+- Respostas curtas/ambíguas; a conversa normal deve retomar o contexto com uma pergunta simples, sem despejar informação nem pressionar visita cedo demais.
 
 ## Próximo passo
-Na sessão comercial do WhatsApp, responder com mensagem curta e humana retomando o contexto do Union Vereda/Jaraguá, sem pressionar e sem tratar a resposta ambígua como objeção definitiva.
+Na sessão comercial do WhatsApp, responder com mensagem curta e humana retomando o contexto do Union Vereda/Jaraguá e perguntando uma coisa por vez sobre a região ou a busca do cliente.
 
 ## Observações operacionais
 - Evento de origem: evt_3404 / 3404_1778091813218.
 - Envio WhatsApp inicial validado tecnicamente pelo adapter.
 - Documento mantido no caminho oficial de atendimento do Reno.
-- Persistência silenciosa do inbound concluída no CRM: status em `Em Atendimento` e repescagem parada.
+- Persistência silenciosa do primeiro inbound concluiu status em `Em Atendimento` e repescagem parada.
+- Persistência silenciosa do inbound “Ok” registrou nota CRM, preservou status avançado e confirmou ausência de follow-up ativo a interromper.
