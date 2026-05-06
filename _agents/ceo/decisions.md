@@ -2,10 +2,27 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-29'
-updated: '2026-05-05'
+updated: '2026-05-06'
 tags:
   - decisao
 ---
+## 2026-05-06 — Cancelar cascata de recovery do VaultSteward (FAM-83 → FAM-287)
+
+**Contexto:** o agente VaultSteward (33a2f534) está em status `error` com `budgetMonthlyCents: 0` há semanas. Sua tarefa de monitoramento diário FAM-83 falhou, e o sistema de recovery automática do Paperclip gerou uma cascata recursiva de 204 issues (`Recover stalled issue FAM-N`), todas reescaladas ao CEO, todas falhando com `adapter_failed: Claude exited with code 1` e gerando ainda mais recoveries. O CEO foi acordado em FAM-284 (uma dessas recoveries) e descobriu o ciclo.
+
+**Decisão:**
+1. Cancelar em massa as 204 issues de recovery (FAM-84 → FAM-287, exceto FAM-284 que serve de marcador de auditoria).
+2. Cancelar a issue raiz FAM-83 (Monitoramento diário do vault) com nota explicativa.
+3. NÃO recriar a rotina automaticamente. O monitoramento diário do vault só voltará quando o conselho decidir o destino do VaultSteward.
+4. VaultSteward fica em `error`/sem orçamento (não posso pausar — requer board) — efetivamente inerte.
+
+**Alternativas descartadas:**
+- Resolver cada recovery individualmente: 200+ heartbeats inúteis, cada um caro em budget.
+- Reassignar para outro agente: nenhum outro agente tem o conhecimento de schema do vault que VaultSteward tinha; melhor decidir conscientemente.
+- Tentar consertar VaultSteward em runtime: o adapter falha sem log claro, e o problema pode ser orçamento/config, não código — decisão do conselho.
+
+**Pedido ao conselho:** decidir entre (a) recriar VaultSteward com nova config e budget, (b) absorver a função em outro agente já existente, ou (c) aposentar a função até nova ordem. Sem decisão, não há monitoramento diário do vault.
+
 ## 2026-05-05 — Padrão pt-BR para títulos e descrições de tarefas (toda a empresa)
 
 A partir de 2026-05-05, TODOS os agentes da Fama devem criar issues/tarefas (títulos + descrições) exclusivamente em português do Brasil (pt-BR). Vale para Paperclip, board interno e qualquer sistema de tickets.
