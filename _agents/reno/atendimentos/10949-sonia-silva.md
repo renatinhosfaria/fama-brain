@@ -150,3 +150,13 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, r
 - A correção do estado final compactou a branch de repescagem no CRM, preservando os campos essenciais `step`, `enabled`, `next_run_at`, `last_sent_at` e `stopped_reason`; a mensagem enviada fica preservada na nota CRM e neste documento oficial.
 - Nota CRM de arquivamento registrada pelo Reno informando conclusão da régua de 5 repescagens sem resposta e arquivamento automático.
 - Há documentos legados/drift relacionados a este cliente em `_agents/reno/atendimentos/sonia-silva.md` e `_agents/reno/clientes/10949-sonia-silva.md`; este arquivo é o caminho determinístico oficial por `client_id`.
+
+
+### 2026-05-06 — Cliente respondeu após arquivamento
+Cliente respondeu no WhatsApp com a dúvida: “É da Caixa ou da construtora?”
+
+Contexto usado para resposta: interesse anterior no Union Vista. CRM/propriedade confirma empreendimento da HLTS Construtora, com possibilidade de avaliar financiamento bancário conforme viabilidade, sem prometer aprovação ou condição específica.
+
+Resposta orientada: explicar de forma curta que o empreendimento é da construtora, não imóvel da Caixa; Caixa pode entrar como financiamento se fizer sentido; conduzir para entender se a dúvida é sobre entrada/parcela.
+
+Status CRM: preservado como `Arquivado`, pois a política automática só altera `Não Respondeu` para `Em Atendimento` quando o status atual está exatamente em `Não Respondeu`.
