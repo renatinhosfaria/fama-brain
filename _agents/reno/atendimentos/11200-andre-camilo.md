@@ -1,12 +1,8 @@
 ---
-broker_id: 35
-client_id: 11200
-created: '2026-05-05'
-entity_name: André Camilo
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: FamaChat
-status_crm: Em Atendimento
+created: '2026-05-05'
+updated: '2026-05-06'
 tags:
   - reno
   - atendimento
@@ -16,8 +12,12 @@ tags:
   - union-vereda
   - viabilidade
   - visita-pendente
-type: entity-profile
-updated: '2026-05-06'
+entity_type: atendimento
+entity_name: André Camilo
+broker_id: 35
+client_id: 11200
+source: FamaChat
+status_crm: Em Atendimento
 ---
 # Atendimento — André Camilo
 
@@ -85,7 +85,7 @@ Cliente respondeu “4mil” como renda familiar aproximada. Diagnóstico consol
 Cliente perguntou o endereço da Fama pelo WhatsApp. CRM registrou a interação e validou que o endereço usado para visitas é Av. Raulino Cotta Pacheco, 304. Como já há contexto de financiamento, entrada e renda, o pedido de endereço deve ser tratado como oportunidade para converter em visita presencial com pergunta objetiva de disponibilidade.
 
 ### 2026-05-05 — Preferência de período para visita
-Cliente respondeu “Tarde” como preferência de período para visita/atendimento presencial na Fama. Próximo passo comercial: propor horário concreto à tarde e, se houver aceite de dia/horário, acionar o fluxo operacional de agendamento antes de confirmar ao cliente.
+Cliente respondeu “Tarde” como preferência de período para visita/atendimento presencial na Fama. A rotina silenciosa registrou nota operacional no CRM e confirmou que o status já estava em `Em Atendimento`, com repescagem interrompida e sem Resgate ativo. Próximo passo comercial: propor horário concreto à tarde e, se houver aceite de dia/horário, acionar o fluxo operacional de agendamento antes de confirmar ao cliente.
 
 ## Objeções e travas
 - Nenhuma objeção comercial explícita registrada até o momento.
@@ -101,9 +101,5 @@ A sessão normal de WhatsApp deve propor um horário concreto à tarde para visi
 - Não houve mudança de status nesta rotina porque o cliente já estava em `Em Atendimento`.
 - Repescagem já estava interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`).
 - Não havia Resgate ativo na verificação desta rotina.
-- Nota CRM sobre o inbound “Qal endereço” já existia no momento da verificação; não foi criada nota duplicada.
-- Durante a verificação, o CRM já continha nota posterior registrando preferência de período “Tarde”; o vault foi consolidado com esse evento para não ficar defasado.
+- Nota CRM silenciosa criada nesta execução: #16931, registrando o inbound “Tarde” e a preferência de período da tarde.
 - Esta rotina não enviou WhatsApp ao cliente e não prometeu condição, aprovação ou agendamento.
-
-### 2026-05-05 — Cliente pediu segunda à tarde
-Cliente perguntou: “Na segunda feira a tarde tem hrario?”. Reno verificou a agenda de 2026-05-11 das 12h às 18h e não encontrou agendamentos registrados no período. Próximo passo: oferecer horários concretos à tarde e aguardar confirmação antes de criar o agendamento.
