@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Lirio pereira
-client_id: 11234
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11234
 created: '2026-05-06'
-updated: '2026-05-06'
+entity_name: Lirio pereira
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -16,11 +14,14 @@ tags:
   - famachat
   - primeiro-contato
   - em-atendimento
+  - diagnostico
+type: entity-profile
+updated: '2026-05-06'
 ---
 # Atendimento — Lirio pereira
 
 ## Resumo atual
-Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. O cliente respondeu "Sim", confirmando que procura imóvel nessa região. CRM está em `Em Atendimento`; repescagem automática foi interrompida/normalizada com `stopped_reason=client_replied`.
+Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região e informou que a busca é para moradia. CRM está em `Em Atendimento`; repescagem automática foi interrompida. A condução atual está na fase de diagnóstico leve de necessidade.
 
 ## Dados operacionais
 - Cliente ID: 11234
@@ -29,14 +30,14 @@ Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com i
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: cliente respondeu "Sim" ao primeiro contato contextual
+- Última interação relevante: cliente respondeu que busca é para moradia
 
 ## Contexto comercial
-O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve.
+O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou que o objetivo é moradia.
 
 ## Diagnóstico
 ### Necessidade
-Cliente confirmou interesse na região/empreendimento. Ainda falta entender se busca é para morar ou investir.
+Cliente confirmou interesse na região/empreendimento e declarou finalidade de moradia. Próximo ponto a entender: se a moradia é para uma pessoa/casal/família, para orientar melhor tamanho e perfil da unidade.
 
 ### Momento
 Lead recém-criado em 2026-05-06. Momento de compra ainda não informado.
@@ -61,19 +62,27 @@ Cliente respondeu: "Sim".
 Interpretação: confirmação de interesse/procura na região do Union Vista/Grand Ville.
 
 Ações operacionais:
-- CRM foi colocado em `Em Atendimento` pela rotina de inbound anterior e o status foi preservado nesta execução silenciosa, sem regressão.
-- Repescagem automática normalizada em `meta_data.reno_followup.repescagem` com `enabled=false`, `next_run_at=null` e motivo `client_replied`.
-- Resgate não tinha ciclo ativo identificado.
-- Nota operacional registrada no CRM nesta execução silenciosa.
-- Próxima condução: qualificação leve perguntando se a busca é para morar ou investir.
+- CRM atualizado para `Em Atendimento` quando aplicável.
+- Repescagem automática interrompida em `meta_data.reno_followup.repescagem`.
+- Nota operacional registrada no CRM.
+
+### 2026-05-06 — Finalidade da busca
+Cliente respondeu: "Moradia".
+
+Interpretação: finalidade de compra declarada = morar.
+
+Ações operacionais:
+- Campo `sobre_a_busca_por_um_imovel` atualizado com "Busca declarada: moradia.".
+- Nota registrada no CRM.
+- Reno respondeu com pergunta curta para aprofundar necessidade: "Entendi. Pra eu te direcionar melhor: seria só pra você ou pra família?"
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Conduzir diagnóstico leve em turnos curtos. Primeira pergunta recomendada: entender se a busca no Union Vista é para morar ou investir.
+Aguardar resposta sobre composição de moradia. Depois, avançar para momento de compra e, se houver aderência, conduzir para visita presencial na Fama como próximo passo natural.
 
 ## Observações operacionais
 - Evento de origem: `evt_3402`.
 - Idempotency key: `3402_1778089782425`.
-- Documento atualizado após a primeira resposta do cliente e normalização da repescagem para `client_replied`.
+- Documento atualizado após resposta "Moradia" e envio da pergunta de aprofundamento.
