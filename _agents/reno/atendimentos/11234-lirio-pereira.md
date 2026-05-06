@@ -99,3 +99,14 @@ Aguardar continuidade da conversa para entender momento de compra em pergunta cu
 - Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por aquela rotina.
 - Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067; nenhuma mensagem ao cliente foi enviada por esta rotina.
 - CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento` e follow-ups automáticos sem ciclo ativo a interromper.
+
+
+### 2026-05-06 — Prioridade da pesquisa: valores
+Cliente respondeu: "Valores".
+
+Interpretação: quer entender primeiro preço/condição financeira do Union Vista.
+
+Ações operacionais:
+- Nota registrada no CRM.
+- Propriedade consultada no CRM para referência atual: Union Vista possui unidades cadastradas a partir de R$ 292.400,00, variando por planta/unidade.
+- Condução recomendada: responder com referência curta de valor e avançar para financiamento/FGTS sem prometer crédito.
