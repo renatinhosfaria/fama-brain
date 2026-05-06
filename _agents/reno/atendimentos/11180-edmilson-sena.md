@@ -90,3 +90,9 @@ Na resposta comercial normal pelo WhatsApp, validar a preocupação do cliente s
 - Nota CRM 16948 registrou a rotina silenciosa específica para a mensagem `Oi`, a preservação do status `Em Atendimento` e a padronização da repescagem como `client_replied`.
 - Nota CRM 16950 registrou o esclarecimento de que o cliente ainda não tentou financiar.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
+
+
+### 2026-05-06 — Cliente pergunta sobre média de parcelas
+Cliente perguntou: "As parcelas variam, ou tem uma média?".
+
+Atualização do diagnóstico: cliente avançou para viabilidade/condição de compra. Como ainda não há tentativa de financiamento anterior e ele acredita que talvez não financie, a condução deve evitar promessa ou média genérica; explicar que a parcela muda conforme entrada, renda, prazo de obra e financiamento, e pedir referência de entrada para leitura inicial.
