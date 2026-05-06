@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Edmilson Sena
-client_id: 11180
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11180
 created: '2026-05-05'
-updated: '2026-05-06'
+entity_name: Edmilson Sena
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -18,11 +16,13 @@ tags:
   - reprocessamento
   - repescagem
   - qualificacao
+type: entity-profile
+updated: '2026-05-06'
 ---
 # Atendimento — Edmilson Sena
 
 ## Resumo atual
-Cliente respondeu pelo WhatsApp após a repescagem do Reno e saiu da condição de silêncio. O CRM está em `Em Atendimento`. A repescagem foi interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. A resposta inicial foi curta (`Oi`) e, no mesmo contexto recente do WhatsApp, o cliente indicou que por enquanto está só olhando e trouxe uma trava percebida de financiamento em nome próprio.
+Cliente respondeu pelo WhatsApp após a repescagem do Reno e saiu da condição de silêncio. O CRM está em `Em Atendimento`. A repescagem foi interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. O cliente está em fase exploratória, demonstrou insegurança sobre financiamento em nome próprio e depois informou que ainda não tentou financiar formalmente.
 
 ## Dados operacionais
 - Cliente ID: 11180
@@ -31,13 +31,13 @@ Cliente respondeu pelo WhatsApp após a repescagem do Reno e saiu da condição 
 - Origem: Facebook Ads
 - WhatsApp: cadastrado no CRM; atendimento Reno elegível por `broker_id=35`
 - Empreendimento de interesse no CRM: Place+Arbi, Shopping Park
-- Última interação relevante: resposta inbound em 2026-05-06 após repescagem step 2
+- Última interação relevante: resposta inbound em 2026-05-06 após repescagem step 2, com objeção/percepção de financiamento
 - Follow-up Reno: repescagem step 2 interrompida; resgate ainda sem branch ativa registrada
 
 ## Contexto comercial
 Cliente demonstrou interesse no Place+Arbi, no bairro Shopping Park, em Uberlândia. O empreendimento está em lançamento, com entrega prevista para JUN/2027, plantas cadastradas de 48m² e 50m², 2 quartos, sacada, lazer e faixa inicial cadastrada a partir de aproximadamente R$221 mil, dependendo da unidade.
 
-O cliente ainda está em fase exploratória (`só dando uma olhada`) e trouxe uma preocupação de viabilidade: acredita que o próprio nome talvez não financie. Esse ponto deve ser tratado com cuidado, sem prometer crédito ou aprovação.
+O cliente ainda está em fase exploratória (`só dando uma olhada`) e trouxe uma preocupação de viabilidade: acredita que o próprio nome talvez não financie. Depois esclareceu que não houve tentativa formal anterior. Isso sugere insegurança/percepção de barreira, não necessariamente negativa bancária comprovada.
 
 ## Diagnóstico
 ### Necessidade
@@ -50,7 +50,7 @@ Frio/morno. A resposta mostra abertura de conversa, mas não urgência de compra
 Ainda não identificada. Não há informação sobre outras pessoas envolvidas na decisão.
 
 ### Viabilidade
-Trava principal percebida: financiamento em nome próprio. Próxima condução deve validar a preocupação e entender, de forma simples, se a dificuldade vem de restrição no nome, renda/score ou tentativa anterior negada, sempre sem prometer aprovação.
+Trava principal percebida: financiamento em nome próprio. Como o cliente informou que não tentou financiar, a próxima condução deve tratar a insegurança como hipótese a validar, sem prometer aprovação. O ideal é entender se a preocupação vem de restrição no nome, score/renda, entrada ou alguma experiência indireta.
 
 ## Histórico curado de interações
 ### 2026-05-04 — Falha técnica no primeiro envio
@@ -70,13 +70,17 @@ Cliente respondeu pelo WhatsApp após a repescagem. Conteúdo útil registrado n
 
 Atualização operacional: atendimento tratado como resposta real do cliente. Status CRM confirmado em `Em Atendimento`; repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. A rotina silenciosa registrou a persistência no CRM e não enviou mensagem ao cliente.
 
+### 2026-05-06 — Esclarecimento sobre tentativa de financiamento
+Cliente informou que não tentou financiamento formalmente. Interpretação comercial: a trava parece mais percepção/insegurança do que reprovação já ocorrida. Próxima condução deve reforçar que não há promessa de aprovação, mas que é possível fazer uma primeira leitura do cenário para entender onde pode estar a barreira.
+
 ## Objeções e travas
 - Trava de viabilidade/financiamento: cliente acredita que o próprio nome talvez não financie.
+- A trava ainda não veio de negativa formal; cliente disse que não tentou.
 - Momento ainda exploratório: cliente disse estar só olhando por enquanto.
 - Histórico operacional: houve falha técnica no envio original do webhook, corrigida por reprocessamento autorizado antes da repescagem.
 
 ## Próximo passo
-Na resposta comercial normal pelo WhatsApp, validar a preocupação do cliente sem prometer aprovação e fazer uma pergunta simples para entender a origem da trava: restrição no nome, score/renda ou tentativa anterior negada. Só depois avançar para opções, viabilidade e eventual convite presencial.
+Na resposta comercial normal pelo WhatsApp, validar a preocupação do cliente sem prometer aprovação e explicar de forma simples que a Fama pode fazer uma primeira leitura do cenário. Perguntar uma coisa por vez, começando por qual ponto gera essa percepção: restrição no nome, score/renda ou entrada. Só depois avançar para opção, viabilidade e eventual convite presencial.
 
 ## Observações operacionais
 - Documento oficial do atendimento mantido no caminho determinístico `_agents/reno/atendimentos/11180-edmilson-sena.md`.
@@ -84,10 +88,5 @@ Na resposta comercial normal pelo WhatsApp, validar a preocupação do cliente s
 - Primeiro contato reprocessado e repescagens foram registrados no CRM antes da resposta inbound.
 - Nota CRM 16947 registrou a resposta inbound composta e a interpretação comercial inicial.
 - Nota CRM 16948 registrou a rotina silenciosa específica para a mensagem `Oi`, a preservação do status `Em Atendimento` e a padronização da repescagem como `client_replied`.
+- Nota CRM 16950 registrou o esclarecimento de que o cliente ainda não tentou financiar.
 - Não houve envio de mensagem ao cliente por esta rotina silenciosa.
-
-
-### 2026-05-06 — Cliente pergunta localização do empreendimento
-Cliente perguntou: "Onde fica esse empreendimento?".
-
-Condução recomendada: responder objetivamente que é o Place+Arbi no Shopping Park/Uberlândia, sem despejar detalhes demais, e em seguida diagnosticar familiaridade/aceitação da região.
