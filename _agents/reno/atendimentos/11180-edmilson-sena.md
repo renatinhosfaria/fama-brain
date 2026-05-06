@@ -135,3 +135,7 @@ Atualização do diagnóstico: sinal forte de viabilidade potencial, embora aind
 Cliente perguntou: "Tem data de entrega do empreendimento?".
 
 Resposta baseada no cadastro do empreendimento Place+Arbi: previsão de entrega em JUN/2027. Próxima condução: validar se o prazo de obra encaixa no momento do cliente ou se ele precisa de algo pronto/mais rápido.
+
+
+### 2026-05-06 — Persistência silenciosa do inbound sobre tempo de MEI
+Rotina silenciosa do WhatsApp inbound validou cliente elegível do Reno, preservou o status em `Em Atendimento`, confirmou repescagem já interrompida com `stopped_reason=client_replied` e ausência de Resgate ativo, e registrou a nota CRM 16964. O conteúdo útil já estava consolidado no diagnóstico: MEI com cerca de 1 ano e meio de atividade; próxima leitura comercial depende de movimentação/renda média. Nenhuma mensagem foi enviada ao cliente por esta rotina.
