@@ -21,7 +21,7 @@ tags:
 # Atendimento — Lirio pereira
 
 ## Resumo atual
-Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região e informou que a busca é para moradia. CRM está em `Em Atendimento`; repescagem automática foi interrompida. A condução atual está na fase de diagnóstico leve de necessidade.
+Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. Cliente confirmou interesse na região, informou que a busca é para moradia e respondeu que seria somente para o próprio cliente. CRM está em `Em Atendimento`; repescagem automática está interrompida e não há Resgate ativo identificado. A condução atual está na fase de diagnóstico leve de necessidade.
 
 ## Dados operacionais
 - Cliente ID: 11234
@@ -30,17 +30,17 @@ Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com i
 - Origem: Facebook Ads / lead_automatico
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: cliente respondeu que busca é para moradia
+- Última interação relevante: cliente respondeu "Somente", indicando moradia somente para o próprio cliente
 
 ## Contexto comercial
-O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou que o objetivo é moradia.
+O cadastro veio com interesse no Union Vista, empreendimento no bairro Grand Ville. A primeira abordagem usou contexto do empreendimento e perguntou se o cliente procura imóvel nessa região. A resposta positiva abriu a fase de diagnóstico leve. Em seguida, o cliente informou finalidade de moradia e, depois, que a moradia seria somente para ele(a).
 
 ## Diagnóstico
 ### Necessidade
-Cliente confirmou interesse na região/empreendimento e declarou finalidade de moradia. Próximo ponto a entender: se a moradia é para uma pessoa/casal/família, para orientar melhor tamanho e perfil da unidade.
+Cliente confirmou interesse na região/empreendimento e declarou finalidade de moradia. A composição de uso indicada é somente o próprio cliente, o que sugere foco inicial em unidade adequada para uso individual, sem necessidade familiar declarada até o momento.
 
 ### Momento
-Lead recém-criado em 2026-05-06. Momento de compra ainda não informado.
+Lead recém-criado em 2026-05-06. Momento de compra ainda não informado no CRM.
 
 ### Decisão
 Ainda não identificada.
@@ -54,7 +54,7 @@ Reno enviou abertura pelo WhatsApp em duas mensagens:
 1. apresentação e contexto: interesse no Union Vista, no Grand Ville;
 2. pergunta de baixa fricção: se o cliente procura imóvel nessa região.
 
-Após o envio, o CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu` e a branch `meta_data.reno_followup.repescagem` foi inicializada com step 0, entrada no turno da tarde e primeira repescagem prevista para 2026-05-06 às 19:10.
+Após o envio, o CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu` e a branch `meta_data.reno_followup.repescagem` foi inicializada.
 
 ### 2026-05-06 — Primeira resposta recebida
 Cliente respondeu: "Sim".
@@ -77,37 +77,25 @@ Ações operacionais:
 - Rotina silenciosa confirmou cliente elegível, status preservado em `Em Atendimento`, repescagem interrompida e ausência de resgate ativo.
 - Reno respondeu com pergunta curta para aprofundar necessidade: "Entendi. Pra eu te direcionar melhor: seria só pra você ou pra família?"
 
-## Objeções e travas
-- Nenhuma objeção registrada até o momento.
-
-## Próximo passo
-Aguardar resposta sobre composição de moradia. Depois, avançar para momento de compra e, se houver aderência, conduzir para visita presencial na Fama como próximo passo natural.
-
-## Observações operacionais
-- Evento de origem: `evt_3402`.
-- Idempotency key: `3402_1778089782425`.
-- Documento atualizado após resposta "Moradia" e envio da pergunta de aprofundamento.
-- Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por esta rotina.
-
-
 ### 2026-05-06 — Composição de moradia
 Cliente respondeu: "Somente".
 
 Interpretação: moradia somente para o próprio cliente.
 
 Ações operacionais:
-- Campo `sobre_a_busca_por_um_imovel` atualizado com uso somente pelo próprio cliente.
-- Nota registrada no CRM.
-- Próxima condução: entender momento de compra em pergunta curta.
+- Campo `sobre_a_busca_por_um_imovel` consta no CRM como busca por moradia e uso somente para o próprio cliente.
+- Nota comercial registrada no CRM sobre composição de uso.
+- Rotina silenciosa do inbound registrou nota operacional #17067, preservou status `Em Atendimento`, confirmou repescagem interrompida e Resgate sem ciclo ativo identificado.
 
+## Objeções e travas
+- Nenhuma objeção registrada até o momento.
 
-### 2026-05-06 — Momento de compra
-Cliente respondeu: "Pesquisando".
+## Próximo passo
+Aguardar continuidade da conversa para entender momento de compra em pergunta curta. Depois, se houver aderência, apresentar o empreendimento com contexto e conduzir para visita presencial na Fama como próximo passo natural.
 
-Interpretação: momento de compra ainda inicial, com pesquisa sem urgência declarada.
-
-Ações operacionais:
-- Campo `vai_comprar` atualizado para "Pesquisando com calma".
-- Campo `sobre_a_busca_por_um_imovel` complementado com momento de pesquisa.
-- Nota registrada no CRM.
-- Condução recomendada: validar o momento sem pressionar visita e perguntar qual ponto o cliente quer entender primeiro: valores/financiamento ou planta/localização.
+## Observações operacionais
+- Evento de origem: `evt_3402`.
+- Idempotency key do primeiro contato: `3402_1778089782425`.
+- Nota operacional da rotina silenciosa para o inbound "Moradia" registrada no CRM como anotação #17064; nenhuma mensagem ao cliente foi enviada por aquela rotina.
+- Nota operacional da rotina silenciosa para o inbound "Somente" registrada no CRM como anotação #17067; nenhuma mensagem ao cliente foi enviada por esta rotina.
+- CRM consultado como fonte de verdade nesta atualização; status preservado em `Em Atendimento` e follow-ups automáticos sem ciclo ativo a interromper.
