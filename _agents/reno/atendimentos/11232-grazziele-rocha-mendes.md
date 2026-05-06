@@ -81,3 +81,6 @@ Cliente informou que tem apartamento em Uberlândia e não se adaptou à cidade/
 
 ### 2026-05-06 — Apartamento atual confirmado
 Cliente confirmou que possui apartamento em Uberlândia. Contexto comercial: não se adaptou à cidade/região e pode estar buscando compra em Araguari com venda ou uso do apartamento atual em negociação. Próximo passo: entender se pretende vender o imóvel atual ou usar como parte de pagamento/troca.
+
+### 2026-05-06 — Foco em mudança para Araguari
+Cliente reforçou que mora em Uberlândia e quer ir para Araguari. Está aberta tanto à venda do apartamento atual quanto a usar o imóvel em uma negociação/permuta, desde que exista alguém interessado em assumir/pegar o apartamento. Diagnóstico: motivação principal é mudança de cidade; próximo passo é levantar dados do apartamento atual e critérios mínimos para compra em Araguari.
