@@ -20,7 +20,7 @@ tags:
 # Atendimento — Lirio pereira
 
 ## Resumo atual
-Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. O cliente respondeu "Sim", confirmando que procura imóvel nessa região. CRM atualizado de `Não Respondeu` para `Em Atendimento` e repescagem automática interrompida.
+Cliente novo do Facebook Ads, sob responsabilidade do Reno (broker_id 35), com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06. O cliente respondeu "Sim", confirmando que procura imóvel nessa região. CRM está em `Em Atendimento`; repescagem automática foi interrompida/normalizada com `stopped_reason=client_replied`.
 
 ## Dados operacionais
 - Cliente ID: 11234
@@ -61,9 +61,10 @@ Cliente respondeu: "Sim".
 Interpretação: confirmação de interesse/procura na região do Union Vista/Grand Ville.
 
 Ações operacionais:
-- CRM atualizado condicionalmente de `Não Respondeu` para `Em Atendimento`.
-- Repescagem automática interrompida em `meta_data.reno_followup.repescagem` com motivo `client_responded_first_reply`.
-- Nota registrada no CRM.
+- CRM foi colocado em `Em Atendimento` pela rotina de inbound anterior e o status foi preservado nesta execução silenciosa, sem regressão.
+- Repescagem automática normalizada em `meta_data.reno_followup.repescagem` com `enabled=false`, `next_run_at=null` e motivo `client_replied`.
+- Resgate não tinha ciclo ativo identificado.
+- Nota operacional registrada no CRM nesta execução silenciosa.
 - Próxima condução: qualificação leve perguntando se a busca é para morar ou investir.
 
 ## Objeções e travas
@@ -75,4 +76,4 @@ Conduzir diagnóstico leve em turnos curtos. Primeira pergunta recomendada: ente
 ## Observações operacionais
 - Evento de origem: `evt_3402`.
 - Idempotency key: `3402_1778089782425`.
-- Documento atualizado após a primeira resposta do cliente.
+- Documento atualizado após a primeira resposta do cliente e normalização da repescagem para `client_replied`.
