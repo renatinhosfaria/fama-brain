@@ -87,3 +87,4 @@ Conduzir a conversa para análise/simulação mais segura e visita presencial na
 - Nota operacional da rotina silenciosa para o inbound "Valores" registrada no CRM como anotação #17070.
 - Nota operacional da rotina silenciosa para o inbound "7 mil" registrada no CRM como anotação #17093.
 - Nenhuma mensagem ao cliente foi enviada pela rotina operacional silenciosa.
+- Nota operacional concorrente/fora da ordem semântica para o inbound "7 mil" registrada no CRM como anotação #17093; conteúdo já consolidado no histórico como entrada/FGTS informado. O último avanço semântico do diagnóstico permanece a renda mensal informada de R$ 6.300.
