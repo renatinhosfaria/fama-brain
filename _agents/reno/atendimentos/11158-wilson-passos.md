@@ -1,31 +1,29 @@
 ---
 type: entity-profile
 owner: reno
+entity_type: atendimento
+entity_name: Wilson Passos
+client_id: 11158
+broker_id: 35
+status_crm: Em Atendimento
+source: Facebook Ads
 created: '2026-05-03'
-updated: '2026-05-05'
+updated: '2026-05-06'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - resgate
-entity_type: atendimento
-entity_name: Wilson Passos
-broker_id: 35
-client_id: 11158
-source: Facebook Ads
-status_crm: Em Atendimento
 ---
 # Atendimento — Wilson Passos
 
 ## Resumo atual
-Wilson respondeu pelo WhatsApp em 2026-05-05 à repescagem step 3 com “Como assim”. O CRM foi corrigido para `Em Atendimento`, a repescagem foi interrompida com `stopped_reason=client_replied`, e o Reno enviou uma correção contextual explicando a pergunta anterior sobre o Place+Arbi.
+Wilson é cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse no Place+Arbi, no Shopping Park. Ele respondeu à Repescagem com “Como assim” em 2026-05-05; a repescagem foi interrompida e o Reno corrigiu o atendimento explicando o contexto do Place+Arbi e oferecendo seguir pela planta ou pela condição de compra.
 
-Após novo silêncio depois desse outbound normal, o Resgate foi armado. O step 1 foi enviado em 2026-05-05 às 16:15 BRT com bucket `viabilidade_financiamento`, reduzindo a conversa para condição de compra/entrada/financiamento. O step 2 foi enviado às 17:51 BRT, mantendo o bucket, mas mudando o ângulo para uma escolha simples entre entrada, parcela ou aprovação.
+Depois desse outbound normal, Wilson ficou em silêncio e o Resgate foi armado. Foram enviados três steps de Resgate em 2026-05-05, todos com bucket `viabilidade_financiamento`, mudando progressivamente o ângulo: condição de compra, escolha entre entrada/parcela/aprovação e convite prático para conversar presencialmente na Fama sobre entrada, prazo e financiamento.
 
-Como Wilson permaneceu em silêncio após a cadência oficial de 120 minutos, o Resgate step 3 foi enviado em 2026-05-05 às 19:55 BRT. A abordagem mudou novamente: saiu da escolha entre travas e passou para um convite prático de conversa presencial na Fama para olhar entrada, prazo e financiamento do Place+Arbi com mais segurança, sem chutar parcela pelo WhatsApp.
-
-Próximo passo: aguardar resposta do Wilson. Se ele responder aceitando ou sinalizando horário, interromper a régua de Resgate e continuar pelo fluxo normal de qualificação/agendamento do Reno. Se permanecer em silêncio, o próximo Resgate está previsto para 2026-05-06T19:55:09-03:00, respeitando a cadência de 24h para o step 4.
+Em 2026-05-06, o step 4 estava vencido pela cadência de 24h, mas a revalidação encontrou cadastro recente com o mesmo telefone/JID em outro broker (`cliente 11238`, broker 24, origem `SLA Cascata`, `usuario_anterior=35`, `cliente_original_id=11158`). Para evitar duplicidade/ownership e possível contaminação do atendimento, nenhum WhatsApp foi enviado. O ciclo de Resgate foi pausado para revisão manual, preservando `step=3`, `last_sent_at=2026-05-05T19:55:09-03:00` e bucket `viabilidade_financiamento`; estado atual: `enabled=false`, `next_run_at=null`, `stopped_reason=manual_review_duplicate_active_broker`.
 
 ## Dados operacionais
 - Cliente ID: 11158
@@ -34,44 +32,44 @@ Próximo passo: aguardar resposta do Wilson. Se ele responder aceitando ou sinal
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: (34) 9127-1126 / `553491271126@s.whatsapp.net`
 - Empreendimento de interesse: Place+Arbi — Shopping Park, Uberlândia
-- Última interação relevante: 2026-05-05 19:55 BRT — Resgate step 3 enviado via WhatsApp; bucket `viabilidade_financiamento`; bridge message_id `3EB0A585F9DB9B1AC3CC50`
+- Última interação relevante: 2026-05-06 20:01 BRT — Resgate pausado sem envio por duplicidade/ownership com cadastro recente de outro broker (`cliente 11238`, broker 24, SLA Cascata)
 
 ## Contexto comercial
-O cliente veio de Facebook Ads com interesse vinculado ao Place+Arbi, empreendimento no Shopping Park, Zona Sul de Uberlândia. O empreendimento está cadastrado como lançamento, com entrega prevista para JUN/2027, plantas de 48m² a 50m² e faixa inicial próxima de R$ 220 mil conforme histórico do CRM.
+O cliente veio de Facebook Ads com interesse vinculado ao Place+Arbi, empreendimento no Shopping Park, Zona Sul de Uberlândia. O histórico do atendimento cita lançamento, entrega prevista para 2027, plantas de 48m² a 50m² e faixa inicial próxima de R$ 220 mil, sempre com cuidado para não prometer crédito, aprovação ou condição.
 
-O histórico anterior tentou abrir por região, finalidade de compra, viabilidade/condição e critério principal de escolha. A resposta “Como assim” indicou dúvida sobre o enquadramento da pergunta, não rejeição ao imóvel. A correção do Reno explicou os pontos de decisão e ofereceu dois caminhos: planta ou condição de compra. Como houve novo silêncio, o Resgate step 1 reduziu a fricção e sugeriu começar pela condição de compra. O step 2 mudou a abordagem para identificar qual trava financeira pesa mais. O step 3 avançou para uma solução prática: passar na Fama para olhar entrada, prazo e financiamento com segurança, sem obrigar Wilson a decidir imóvel pelo WhatsApp.
+A resposta “Como assim” indicou dúvida sobre a pergunta anterior, não rejeição ao imóvel. A correção do Reno explicou os pontos de decisão do Place+Arbi: localização no Shopping Park, planta 48/50m², valor/condição de compra e entrega em 2027. O Resgate posterior trabalhou a viabilidade como caminho consultivo para evitar chute de parcela pelo WhatsApp e tentar levar Wilson para uma conversa presencial na Fama.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. Wilson demonstrou dúvida sobre a conversa anterior, mas não informou se busca morar, investir ou comparar oportunidade.
+Ainda não diagnosticada. Wilson não informou se busca morar, investir ou comparar oportunidade.
 
 ### Momento
-Ainda não diagnosticado. O prazo de entrega em JUN/2027 pode ser fator de decisão, mas o cliente ainda não indicou se isso pesa.
+Ainda não diagnosticado. O prazo de entrega do Place+Arbi pode ser fator de decisão, mas o cliente ainda não indicou se isso pesa.
 
 ### Decisão
 Ainda não diagnosticada.
 
 ### Viabilidade
-Ainda não diagnosticada. O Resgate está tratando viabilidade como caminho consultivo: entender entrada, parcela, aprovação, prazo e financiamento antes de avançar com catálogo ou simulação. Não há promessa de crédito.
+Ainda não diagnosticada. O fluxo tratou viabilidade como pauta principal: entrada, parcela, aprovação, prazo e financiamento. Não há promessa de crédito nem simulação confirmada.
 
 ## Histórico curado de interações
 ### 2026-05-03 — Primeiro contato enviado
-Reno enviou abertura curta pelo WhatsApp: apresentação como Reno/Fama, contexto do interesse no Place+Arbi no Shopping Park e pergunta se o cliente procura imóvel nessa região. Após envio, status passou de `Sem Atendimento` para `Não Respondeu` e a repescagem foi inicializada.
+Reno enviou abertura curta pelo WhatsApp com contexto do interesse no Place+Arbi no Shopping Park e pergunta se o cliente procura imóvel nessa região. Após envio, status passou de `Sem Atendimento` para `Não Respondeu` e a Repescagem foi inicializada.
 
 ### 2026-05-03 — Repescagem step 1 enviada
-Ângulo: lançamento / prazo / forma de compra. Pergunta principal: se Wilson olhava mais para morar ou comparar oportunidade de compra.
+Ângulo: lançamento, prazo e forma de compra. Pergunta principal: se Wilson olhava mais para morar ou comparar oportunidade de compra.
 
 ### 2026-05-04 — Repescagem step 2 enviada
-Ângulo: viabilidade prática. A mensagem destacou que as unidades começam perto de R$ 220 mil e que o ponto é entrada, financiamento e parcela caberem no cenário do cliente.
+Ângulo: viabilidade prática. A mensagem destacou faixa inicial próxima de R$ 220 mil e que o ponto real seria entrada, financiamento e parcela caberem no cenário do cliente.
 
 ### 2026-05-05 — Repescagem step 3 enviada
-Ângulo: critério principal de escolha. A mensagem comparou localização no Shopping Park, planta de 48/50m² com sacada e prazo de entrega em 2027, perguntando qual ponto pesava mais para Wilson.
+Ângulo: critério principal de escolha. A mensagem comparou localização no Shopping Park, planta 48/50m² com sacada e prazo de entrega em 2027, perguntando qual ponto pesava mais.
 
 ### 2026-05-05 — Cliente respondeu e atendimento foi retomado
-Wilson respondeu: “Como assim”. Persistência operacional realizada: status atualizado para `Em Atendimento`, repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`, e nota CRM registrada.
+Wilson respondeu “Como assim”. Persistência operacional: status atualizado para `Em Atendimento`, Repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`, e nota CRM registrada.
 
-### 2026-05-05 — Correção manual enviada após resposta fora de contexto
-Reno enviou nova mensagem correta e contextual para explicar a pergunta anterior sem jogar a responsabilidade para o cliente.
+### 2026-05-05 — Correção contextual enviada
+Reno enviou nova mensagem explicando melhor a pergunta anterior e oferecendo continuar pela planta ou pela condição de compra.
 
 Mensagem enviada:
 > Wilson, deixa eu explicar melhor.
@@ -82,28 +80,18 @@ Mensagem enviada:
 
 WhatsApp message_id: `3EB06D04A875C38B4F323A`.
 
-Após esse novo outbound normal em `Em Atendimento`, foi armado novo ciclo de Resgate com `step=0`, `enabled=true`, `last_sent_at=2026-05-05T15:37:40-03:00`, `next_run_at=2026-05-05T16:07:40-03:00`, `stopped_reason=null` e bucket inicial `sem_gancho_claro`, para caso houvesse novo silêncio.
-
 ### 2026-05-05 — Resgate step 1 enviado
-Revalidação antes do envio: cliente existente no CRM, `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo, Resgate habilitado e vencido, e sessão WhatsApp individual sem inbound posterior à última mensagem do Reno.
-
-Bucket usado: `viabilidade_financiamento`.
+Bucket: `viabilidade_financiamento`.
 
 Mensagem enviada:
 > Wilson, vou simplificar: antes de te passar um monte de coisa do Place+Arbi, acho melhor começar pela condição de compra, pra ver se faz sentido no seu cenário.
 >
 > Quer que eu te explique essa parte de entrada/financiamento primeiro?
 
-Envio realizado via bridge local direto para o `whatsapp_jid` salvo no CRM porque o runtime do cron não expõe `send_message`. Retorno técnico: `success=true`, message_id `3EB0B49702A055A081A404`, `validationMethod=onWhatsApp`.
-
-Persistência operacional realizada com `mark_reno_followup_sent(flow=resgate)`: `step=1`, `last_context_bucket=viabilidade_financiamento`, `last_sent_at=2026-05-05T16:15:29-03:00`, `next_run_at=2026-05-05T17:45:29-03:00`, `stopped_reason=null`.
+Persistência: `step=1`, `last_sent_at=2026-05-05T16:15:29-03:00`, `next_run_at=2026-05-05T17:45:29-03:00`, `stopped_reason=null`.
 
 ### 2026-05-05 — Resgate step 2 enviado
-Revalidação antes do envio: cliente ainda existia no CRM, `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo, sem duplicidade ativa de outro broker para o mesmo telefone/JID, Resgate habilitado e vencido. A cadência oficial foi validada: step atual 1, próximo step 2, intervalo mínimo de 90 minutos após `last_sent_at=2026-05-05T16:15:29-03:00`, elegível a partir de 17:45:29 BRT. Não havia inbound posterior identificado na sessão/log individual após o step 1.
-
-Bucket mantido: `viabilidade_financiamento`.
-
-Diferenciação em relação ao step 1: a mensagem deixou de pedir permissão para explicar entrada/financiamento e passou a oferecer uma escolha simples entre três possíveis travas — entrada, parcela ou aprovação. Mudou o ângulo comercial, o tipo de pergunta, o benefício destacado e o CTA de baixa fricção.
+Bucket mantido: `viabilidade_financiamento`. A abordagem mudou de pedido de permissão para explicação de entrada/financiamento para uma escolha simples entre entrada, parcela ou aprovação.
 
 Mensagem enviada:
 > Wilson, pra facilitar: você não precisa decidir o imóvel agora.
@@ -112,16 +100,10 @@ Mensagem enviada:
 >
 > Qual desses três te preocupa mais hoje?
 
-Envio realizado via bridge local direto para o `whatsapp_jid` salvo no CRM. Retorno técnico: `success=true`, message_id `3EB0C107C1339CEE578D2F`, `validationMethod=onWhatsApp`.
-
-Persistência operacional realizada com `mark_reno_followup_sent(flow=resgate)`: `step=2`, `last_context_bucket=viabilidade_financiamento`, `last_sent_at=2026-05-05T17:51:27-03:00`, `next_run_at=2026-05-05T19:51:27-03:00`, `stopped_reason=null`.
+Persistência: `step=2`, `last_sent_at=2026-05-05T17:51:27-03:00`, `next_run_at=2026-05-05T19:51:27-03:00`, `stopped_reason=null`.
 
 ### 2026-05-05 — Resgate step 3 enviado
-Revalidação antes do envio: cliente continuava existente no CRM, `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo, sem duplicidade ativa de outro broker para o mesmo telefone/JID, Resgate habilitado e vencido. A cadência oficial foi validada: step atual 2, próximo step 3, intervalo mínimo de 120 minutos após `last_sent_at=2026-05-05T17:51:27-03:00`, elegível a partir de 19:51:27 BRT. Não havia inbound posterior identificado nos logs/sessão individual após o step 2.
-
-Bucket mantido: `viabilidade_financiamento`.
-
-Diferenciação em relação ao step 2: a mensagem deixou de pedir que Wilson escolhesse entre entrada, parcela ou aprovação e passou a propor um caminho presencial prático para resolver a viabilidade com mais segurança. Mudou o ângulo comercial, o tipo de pergunta, o benefício destacado e o CTA, agora direcionado para visita/conversa na Fama no dia seguinte.
+Bucket mantido: `viabilidade_financiamento`. A abordagem mudou de escolha entre travas para convite prático de conversa presencial na Fama, com foco em resolver viabilidade com segurança e sem chutar parcela por WhatsApp.
 
 Mensagem enviada:
 > Wilson, vou por um caminho mais prático.
@@ -130,27 +112,31 @@ Mensagem enviada:
 >
 > Amanhã no almoço ou no fim do dia fica melhor pra você passar aqui?
 
-Envio realizado via bridge local direto para o `whatsapp_jid` salvo no CRM. Retorno técnico: `success=true`, message_id `3EB0A585F9DB9B1AC3CC50`, `validationMethod=onWhatsApp`.
+Persistência: `step=3`, `last_sent_at=2026-05-05T19:55:09-03:00`, `next_run_at=2026-05-06T19:55:09-03:00`, `stopped_reason=null`.
 
-Persistência operacional realizada com `mark_reno_followup_sent(flow=resgate)`: `step=3`, `last_context_bucket=viabilidade_financiamento`, `last_sent_at=2026-05-05T19:55:09-03:00`, `next_run_at=2026-05-06T19:55:09-03:00`, `stopped_reason=null`.
+### 2026-05-06 — Resgate pausado sem envio por duplicidade/ownership
+O step 4 estava elegível pela cadência oficial de 24h após o step 3. Antes do envio, a revalidação encontrou o mesmo telefone/JID em cadastro recente de outro broker: `cliente 11238`, broker 24, status `Sem Atendimento`, origem `SLA Cascata`, `usuario_anterior=35`, `cliente_original_id=11158`, criado em 2026-05-06 16:18 BRT.
+
+Ação tomada: nenhum WhatsApp foi enviado; o ciclo de Resgate do cliente 11158 foi pausado para revisão manual com `enabled=false`, `next_run_at=null`, `stopped_reason=manual_review_duplicate_active_broker`, preservando `step=3`, `last_sent_at=2026-05-05T19:55:09-03:00` e `last_context_bucket=viabilidade_financiamento`. Nota CRM registrada em 2026-05-06 20:01 BRT.
 
 ## Objeções e travas
 - Nenhuma objeção comercial clara registrada.
 - Trava anterior: silêncio após primeiro contato e repescagens.
-- Trava corrigida: resposta inicial do Reno a “Como assim” ignorou o contexto; nova mensagem contextual já foi enviada.
-- Trava atual: Wilson ainda não confirmou se quer avançar pela viabilidade presencial, entrada, parcela ou aprovação.
+- Trava corrigida: resposta inicial fora de contexto a “Como assim”; correção contextual já enviada.
+- Trava comercial atual: Wilson ainda não confirmou se quer avançar pela viabilidade presencial, entrada, parcela ou aprovação.
+- Trava operacional atual: duplicidade/ownership por cadastro recente em outro broker via SLA Cascata; Resgate pausado até revisão manual.
 
 ## Próximo passo
-Aguardar resposta do Wilson.
+Não enviar novo Resgate automático enquanto o estado estiver pausado com `stopped_reason=manual_review_duplicate_active_broker`.
 
-Se ele responder sobre entrada, parcela, aprovação, financiamento, condição ou disponibilidade para passar na Fama, acionar o atendimento normal/qualificação do Reno, interromper o Resgate com `stopped_reason=client_replied`, explicar com segurança e ressalvas, coletar contexto mínimo sem parecer interrogatório e conduzir para visita presencial/agendamento quando fizer sentido.
-
-Se permanecer em silêncio, próximo Resgate previsto para 2026-05-06T19:55:09-03:00, respeitando cadência de 24h para o step 4.
+Revisão manual recomendada: decidir se o atendimento deve permanecer com Reno no cliente 11158, seguir com o broker 24 no cliente 11238, ou consolidar/ajustar a duplicidade de SLA Cascata. Se Wilson responder no WhatsApp, tratar como inbound normal: validar o cliente correto no CRM, interromper régua ativa se existir, registrar nota e conduzir por `fama-reno-whatsapp-qualification` sem enviar novo step de Resgate.
 
 ## Observações operacionais
-- Cliente validado no CRM: `broker_id=35`, status `Em Atendimento`.
+- Cliente 11158 validado no CRM: `broker_id=35`, status `Em Atendimento`.
 - Nome do CRM parece confiável.
 - WhatsApp identificado pelo `whatsapp_jid` salvo no CRM.
-- O envio do step 3 foi feito com sucesso pelo JID salvo; por isso não foi tentada variante com/sem nono dígito para evitar duplicidade.
-- Não houve alteração de status nos steps 1 a 5 do Resgate; permanece `Em Atendimento`.
-- Não expor ao cliente logs, justificativas internas ou erro operacional. A conversa cliente-facing deve seguir natural, como continuação normal do atendimento.
+- Não há agendamento, visita ou venda registrados no cliente 11158.
+- O cadastro duplicado 11238 não recebeu alterações pelo Reno nesta execução; foi usado apenas como evidência operacional para pausar o Resgate do cliente 11158.
+- Não houve envio de WhatsApp nesta execução.
+- Não houve alteração de status do cliente; permanece `Em Atendimento`.
+- Não expor ao cliente logs, justificativas internas ou erro operacional. A próxima ação depende de revisão manual da duplicidade/ownership.
