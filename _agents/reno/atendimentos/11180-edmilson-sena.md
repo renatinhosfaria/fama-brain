@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Edmilson Sena
 client_id: 11180
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-05'
 updated: '2026-05-06'
@@ -17,89 +17,71 @@ tags:
   - primeiro-contato
   - reprocessamento
   - repescagem
+  - qualificacao
 ---
 # Atendimento — Edmilson Sena
 
 ## Resumo atual
-Cliente segue em `Não Respondeu`. O primeiro contato do Reno foi reenviado com sucesso em 2026-05-05 após falha técnica do webhook. A repescagem step 1 foi enviada em 2026-05-05 para abrir conversa por finalidade (`morar` vs `comparar oportunidade`). Em 2026-05-06 09:40 BRT, a repescagem step 2 foi enviada com novo ângulo de viabilidade prática do Place+Arbi: entrada, parcelas da obra e financiamento antes de se apegar à planta.
+Cliente respondeu pelo WhatsApp após a repescagem do Reno e saiu da condição de silêncio. O CRM está em `Em Atendimento`. A repescagem foi interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. A resposta inicial foi curta (`Oi`) e, no mesmo contexto recente do WhatsApp, o cliente indicou que por enquanto está só olhando e trouxe uma trava percebida de financiamento em nome próprio.
 
 ## Dados operacionais
 - Cliente ID: 11180
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: Facebook Ads
-- WhatsApp: cadastrado no CRM; envios de repescagem feitos pelo JID salvo
-- Última interação relevante: repescagem step 2 enviada em 2026-05-06 09:40 BRT
-- Próxima repescagem prevista: step 3 em 2026-05-07 14:20 BRT, se não houver resposta real antes
+- WhatsApp: cadastrado no CRM; atendimento Reno elegível por `broker_id=35`
+- Empreendimento de interesse no CRM: Place+Arbi, Shopping Park
+- Última interação relevante: resposta inbound em 2026-05-06 após repescagem step 2
+- Follow-up Reno: repescagem step 2 interrompida; resgate ainda sem branch ativa registrada
 
 ## Contexto comercial
-Cliente demonstrou interesse no Place+Arbi, no bairro Shopping Park, em Uberlândia. O empreendimento está em lançamento, com entrega prevista para JUN/2027, plantas de 48m² e 50m², 2 quartos, sacada, lazer e faixa inicial cadastrada a partir de aproximadamente R$221 mil. Ainda não há diagnóstico confirmado sobre finalidade, prazo, decisão ou forma de compra.
+Cliente demonstrou interesse no Place+Arbi, no bairro Shopping Park, em Uberlândia. O empreendimento está em lançamento, com entrega prevista para JUN/2027, plantas cadastradas de 48m² e 50m², 2 quartos, sacada, lazer e faixa inicial cadastrada a partir de aproximadamente R$221 mil, dependendo da unidade.
+
+O cliente ainda está em fase exploratória (`só dando uma olhada`) e trouxe uma preocupação de viabilidade: acredita que o próprio nome talvez não financie. Esse ponto deve ser tratado com cuidado, sem prometer crédito ou aprovação.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. A repescagem step 1 tentou abrir a conversa pela finalidade do interesse no Place+Arbi: morar ou comparar oportunidade de compra.
+Ainda exploratória. O cliente não declarou urgência nem objetivo fechado; parece estar conhecendo opções e testando se a compra seria possível.
 
 ### Momento
-Ainda não identificado. O contexto do empreendimento exige entender se o prazo de obra e a compra na planta fazem sentido para o momento do cliente.
+Frio/morno. A resposta mostra abertura de conversa, mas não urgência de compra imediata.
 
 ### Decisão
-Ainda não identificada.
+Ainda não identificada. Não há informação sobre outras pessoas envolvidas na decisão.
 
 ### Viabilidade
-Ainda não diagnosticada. A repescagem step 2 buscou abrir uma primeira leitura de viabilidade sem prometer crédito: entrada, parcelas da obra e financiamento precisam caber no cenário do cliente antes de avançar.
+Trava principal percebida: financiamento em nome próprio. Próxima condução deve validar a preocupação e entender, de forma simples, se a dificuldade vem de restrição no nome, renda/score ou tentativa anterior negada, sempre sem prometer aprovação.
 
 ## Histórico curado de interações
 ### 2026-05-04 — Falha técnica no primeiro envio
 Webhook `cliente.created` foi aceito, mas o envio WhatsApp não concluiu. Status permaneceu `Sem Atendimento` e a repescagem não foi inicializada naquele momento.
 
 ### 2026-05-05 — Primeiro contato reprocessado
-Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Place+Arbi/Shopping Park e pergunta se o cliente procura imóvel nessa região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
+Reprocessamento autorizado por Renato. Mensagem enviada em duas partes: apresentação curta do Reno contextualizando interesse no Place+Arbi/Shopping Park e pergunta se o cliente procurava imóvel naquela região. CRM atualizado para `Não Respondeu`; repescagem inicializada para acompanhar silêncio.
 
 ### 2026-05-05 — Repescagem step 1 enviada
-Mensagem enviada:
-
-> Oi, Edmilson! Tudo bem? 🏡
->
-> Sobre o Place+Arbi no Shopping Park, às vezes a busca fica meio solta quando a gente olha só o anúncio, porque prazo da obra, planta e forma de compra mudam bastante o caminho.
->
-> Pra eu te orientar de um jeito mais certeiro: você está olhando esse imóvel mais para **morar** ou para **comparar uma oportunidade de compra**?
-
-Ângulo usado: imóvel específico + organização da busca em lançamento. A abordagem mudou em relação ao primeiro contato: em vez de repetir a pergunta sobre região, trouxe prazo da obra, planta e forma de compra como motivo novo para responder, com pergunta de finalidade de baixa fricção.
+Reno retomou o interesse no Place+Arbi com ângulo de organização da busca em lançamento: prazo de obra, planta e forma de compra. A pergunta buscou entender se o cliente olhava o imóvel para morar ou para comparar oportunidade de compra.
 
 ### 2026-05-06 — Repescagem step 2 enviada
-Mensagem enviada:
+Reno enviou novo follow-up com ângulo de viabilidade prática do Place+Arbi: olhar condição de compra antes de se apegar só à planta. A mensagem citou faixa inicial aproximada perto de R$220 mil e propôs uma primeira leitura de entrada, parcelas da obra e financiamento.
 
-> Edmilson, em lançamento como o Place+Arbi, um cuidado importante é olhar a condição de compra antes de se apegar só à planta. 🔑
->
-> As opções começam perto de **R$ 220 mil**, mas o que define se vale avançar é entrada, parcelas da obra e financiamento ficarem confortáveis no seu cenário.
->
-> Quer que eu faça uma primeira leitura contigo pra ver se esse caminho faz sentido pra você?
+### 2026-05-06 — Primeira resposta inbound e interrupção da repescagem
+Cliente respondeu pelo WhatsApp após a repescagem. Conteúdo útil registrado no CRM: saudação inicial, fase exploratória e preocupação de que o nome talvez não financie.
 
-Ângulo usado: financiamento/viabilidade prática. Diferenciação frente ao step 1: mudou de finalidade (`morar` vs `comparar oportunidade`) para condição de compra; mudou a pergunta para convite de primeira leitura; o benefício passou a ser evitar avançar apenas pela planta/anúncio antes de checar entrada, parcelas da obra e financiamento.
+Atualização operacional: atendimento tratado como resposta real do cliente. Status CRM confirmado em `Em Atendimento`; repescagem interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. A rotina silenciosa registrou a persistência no CRM e não enviou mensagem ao cliente.
 
 ## Objeções e travas
-- Nenhuma objeção comercial ainda; apenas silêncio após o primeiro contato e as duas primeiras repescagens.
-- Houve falha técnica no envio original do webhook, já corrigida por reprocessamento antes da repescagem.
+- Trava de viabilidade/financiamento: cliente acredita que o próprio nome talvez não financie.
+- Momento ainda exploratório: cliente disse estar só olhando por enquanto.
+- Histórico operacional: houve falha técnica no envio original do webhook, corrigida por reprocessamento autorizado antes da repescagem.
 
 ## Próximo passo
-Aguardar primeira resposta. Se responder, mover para `Em Atendimento`, registrar a interação no CRM e continuar a qualificação consultiva fora do fluxo de repescagem. Se continuar sem resposta, o próximo step da repescagem será o step 3 em 2026-05-07 14:20 BRT, com novo ângulo obrigatório sem repetir finalidade nem viabilidade.
+Na resposta comercial normal pelo WhatsApp, validar a preocupação do cliente sem prometer aprovação e fazer uma pergunta simples para entender a origem da trava: restrição no nome, score/renda ou tentativa anterior negada. Só depois avançar para opções, viabilidade e eventual convite presencial.
 
 ## Observações operacionais
 - Documento oficial do atendimento mantido no caminho determinístico `_agents/reno/atendimentos/11180-edmilson-sena.md`.
 - Marcador CRM do reprocessamento: `[reno_reprocess_20260505_5_leads]`.
-- Refs. WhatsApp do primeiro contato: 3EB007C3AD239B798CFCA2 / 3EB09582ECE86FEBA0FC1F.
-- Repescagem step 1 enviada via fallback excepcional do bridge local porque `send_message` não estava exposto neste runtime do cron; bridge local estava saudável e conectado. Ref. WhatsApp step 1: 3EB045CE459FBF3DAA5E12.
-- Repescagem step 2 também enviada via fallback excepcional do bridge local, preferindo o JID salvo no CRM. Bridge local saudável (`status=connected`). Ref. WhatsApp step 2: 3EB0ABE78EF0AC1A0F1CEC.
-- CRM registrou a repescagem step 2 com nota automática `mcp_mcp_postgres_mark_reno_followup_sent` (nota ID 16946), `step=2`, `last_sent_at=2026-05-06T09:40:10-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `stopped_reason=null` e `claim_expires_at=null`.
-
-
-### 2026-05-06 — Primeira resposta do cliente e objeção de financiamento
-Cliente respondeu pelo WhatsApp após repescagem: "Oi", "Por enquanto to só dando uma olhada mesmo" e "Infelizmente acho que meu nome não finacia".
-
-Atualização operacional: lead deixou de ser silêncio/repescagem e passou para conversa ativa. Trava principal declarada: acredita que o próprio nome não financia. Próxima condução recomendada: validar a preocupação, não prometer crédito/aprovação, explicar que a Fama pode fazer uma primeira leitura de cenário e perguntar de forma simples se a dificuldade percebida vem de restrição no nome, renda/score ou tentativa anterior negada.
-
-Diagnóstico atualizado:
-- Necessidade: ainda exploratória; cliente está “só dando uma olhada”.
-- Momento: frio/morno, sem urgência declarada.
-- Viabilidade: principal trava percebida é financiamento em nome próprio.
-- Próximo passo: entender causa da trava de financiamento antes de falar de imóvel ou visita.
+- Primeiro contato reprocessado e repescagens foram registrados no CRM antes da resposta inbound.
+- Nota CRM 16947 registrou a resposta inbound composta e a interpretação comercial inicial.
+- Nota CRM 16948 registrou a rotina silenciosa específica para a mensagem `Oi`, a preservação do status `Em Atendimento` e a padronização da repescagem como `client_replied`.
+- Não houve envio de mensagem ao cliente por esta rotina silenciosa.
