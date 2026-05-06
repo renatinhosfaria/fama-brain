@@ -64,3 +64,6 @@ Continuar a qualificação pelo WhatsApp com pergunta curta sobre prioridade do 
 ## Observações operacionais
 - Houve registro anterior de indisponibilidade temporária do Obsidian após o primeiro contato; este documento oficial foi criado posteriormente no caminho determinístico.
 - Documento oficial criado em `_agents/reno/atendimentos/11200-andre-camilo.md` para evitar duplicidade.
+
+### 2026-05-05 — Perfil de quartos confirmado
+Cliente respondeu: “Dois quartos já atende”. Diagnóstico atualizado: objetivo é moradia própria e imóvel de 2 quartos atende a necessidade inicial. Próximo passo comercial recomendado: validar se a região do Jaraguá/zona Oeste atende a rotina dele antes de avançar para viabilidade e convite de visita presencial.
