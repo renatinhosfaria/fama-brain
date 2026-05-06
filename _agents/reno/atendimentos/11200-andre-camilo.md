@@ -1,24 +1,24 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: André Camilo
-client_id: 11200
 broker_id: 35
-status_crm: Em Atendimento
-source: FamaChat
+client_id: 11200
 created: '2026-05-05'
-updated: '2026-05-06'
+entity_name: André Camilo
+entity_type: atendimento
+owner: reno
+source: FamaChat
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
+type: entity-profile
+updated: '2026-05-06'
 ---
 # Atendimento — André Camilo
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno e está em qualificação ativa. Busca imóvel para morar, perfil de 2 quartos atende, região do Jaraguá/zona Oeste atende a rotina, aceita entrega planejada/futura, pretende comprar por financiamento e sinalizou entrada aproximada de R$ 5.000. Atendimento segue em `Em Atendimento`. Repescagem está interrompida por resposta inbound e não há Resgate ativo. Interesse ativo: Union Vereda, no Jaraguá.
+Cliente respondeu ao primeiro contato do Reno e está em qualificação ativa. Busca imóvel para morar, perfil de 2 quartos atende, região do Jaraguá/zona Oeste atende a rotina, aceita entrega planejada/futura, pretende comprar por financiamento, sinalizou entrada aproximada de R$ 5.000 e renda familiar aproximada de R$ 4.000. Em seguida, perguntou o endereço da Fama, sinal quente para converter em visita/atendimento presencial. Atendimento segue em `Em Atendimento`. Repescagem está interrompida por resposta inbound e não há Resgate ativo. Interesse ativo: Union Vereda, no Jaraguá.
 
 ## Dados operacionais
 - Cliente ID: 11200
@@ -26,27 +26,27 @@ Cliente respondeu ao primeiro contato do Reno e está em qualificação ativa. B
 - Status CRM: Em Atendimento
 - Origem: SLA Cascata / FamaChat
 - Telefone/WhatsApp: (34) 99661-1807 / 553496611807@s.whatsapp.net
-- Última interação relevante: 2026-05-05 — cliente sinalizou entrada e depois informou valor aproximado de R$ 5.000.
+- Última interação relevante: 2026-05-05 — cliente perguntou o endereço da Fama após informar entrada e renda aproximadas.
 
 ## Contexto comercial
 - Empreendimento de interesse: Union Vereda.
 - Bairro/região: Jaraguá, zona Oeste de Uberlândia.
 - Origem operacional: cliente chegou ao Reno via SLA Cascata após usuário anterior.
 - Primeiro contato do Reno contextualizou o Union Vereda e perguntou se a busca era para morar ou investir.
-- Respostas inbound úteis: cliente declarou objetivo de moradia própria, informou que 2 quartos atendem, confirmou que a região atende, aceitou entrega planejada, confirmou intenção de compra por financiamento, sinalizou entrada e informou entrada aproximada de R$ 5.000.
+- Respostas inbound úteis: cliente declarou objetivo de moradia própria, informou que 2 quartos atendem, confirmou que a região atende, aceitou entrega planejada, confirmou intenção de compra por financiamento, sinalizou entrada, informou entrada aproximada de R$ 5.000, renda familiar aproximada de R$ 4.000 e perguntou o endereço da Fama.
 
 ## Diagnóstico
 ### Necessidade
 Procura imóvel para morar. Perfil de 2 quartos atende a necessidade inicial.
 
 ### Momento
-Está aberto a imóvel com entrega planejada/futura; ainda em qualificação antes de convite/visita.
+Está aberto a imóvel com entrega planejada/futura. Pergunta pelo endereço da Fama indica disponibilidade/interesse em avançar para atendimento presencial.
 
 ### Decisão
 Ainda não há informação curada sobre quem decide ou influência familiar.
 
 ### Viabilidade
-Cliente pretende comprar por financiamento e sinalizou entrada aproximada de R$ 5.000. Uso de FGTS ainda não informado. Não há promessa de crédito. Próximo passo é validar renda familiar aproximada ou conforto de parcela para orientar viabilidade com segurança e, havendo fit, conduzir para visita presencial na Fama.
+Cliente pretende comprar por financiamento, sinalizou entrada aproximada de R$ 5.000 e renda familiar aproximada de R$ 4.000. Uso de FGTS ainda não informado. Não há promessa de crédito. O próximo passo comercial é atendimento/visita presencial na Fama para análise de viabilidade e apresentação das condições com segurança.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Primeiro contato enviado
@@ -73,16 +73,22 @@ Cliente respondeu “Entrada”. Diagnóstico atualizado no CRM: possui/pretende
 ### 2026-05-05 — Valor aproximado de entrada informado
 Cliente respondeu “5mil” como valor aproximado de entrada. Diagnóstico atualizado: moradia própria, 2 quartos, Jaraguá/zona Oeste atende, entrega planejada é aceitável, pretende financiar e possui entrada aproximada de R$ 5.000.
 
+### 2026-05-05 — Renda familiar aproximada informada
+Cliente respondeu “4mil” como renda familiar aproximada. Diagnóstico atualizado: entrada aproximada de R$ 5.000 e renda familiar aproximada de R$ 4.000; condução deve ser para atendimento presencial na Fama, sem promessa de aprovação de crédito.
+
+### 2026-05-05 — Pergunta pelo endereço da Fama
+Cliente perguntou o endereço da Fama. O CRM registrou como sinal quente para converter em agendamento/atendimento presencial. Ainda não há visita criada no FamaChat.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada até o momento.
-- Ponto de viabilidade pendente: renda familiar aproximada/conforto de parcela e FGTS ainda não foram qualificados.
+- Ponto de viabilidade pendente: FGTS e análise real de financiamento ainda não foram qualificados/validados.
 
 ## Próximo passo
-Continuar a qualificação pelo WhatsApp com uma pergunta curta sobre renda familiar aproximada ou conforto de parcela para orientar viabilidade sem prometer aprovação. Como perfil, região, entrega, financiamento e entrada já fazem sentido, avançar para apresentação/validação do Union Vereda e convite de visita presencial na Fama assim que houver sinal positivo suficiente.
+Responder comercialmente pelo WhatsApp normal, sem exposição de rotina interna, usando a pergunta de endereço como janela quente para conduzir para visita presencial na Fama. Confirmar disponibilidade de horário e só tratar como visita agendada se o agendamento for criado/validado no FamaChat via fluxo `reno-visit-scheduling`.
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11200-andre-camilo.md` para evitar duplicidade.
 - Repescagem está interrompida por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`).
 - Não havia Resgate ativo na verificação desta rotina.
 - Nesta rotina silenciosa, o CRM já estava em `Em Atendimento`; não houve mudança de status nem envio de WhatsApp ao cliente.
-- Nota CRM para o inbound “Entrada” já existia; não foi criada nota duplicada. A branch `meta_data.reno_qualification` foi consolidada com o valor aproximado de entrada registrado no CRM.
+- Nota CRM para o inbound “Entrada” já existia; não foi criada nota duplicada. A branch `meta_data.reno_qualification` foi consolidada com entrada, renda aproximada e sinal de interesse pelo endereço registrados no CRM.
