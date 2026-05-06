@@ -118,3 +118,7 @@ Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina s
 - Inbound "Pode ser dois não tenho preferência" persistido no CRM em nota operacional 17045; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "2" persistido no CRM em nota operacional 17049; nenhum envio ao cliente foi feito nesta rotina silenciosa.
 - Inbound "Financiado" persistido no CRM em nota operacional 17079; status preservado em Em Atendimento; nenhum envio ao cliente foi feito nesta rotina silenciosa.
+
+
+### 2026-05-06 — Saldo devedor alto
+Cliente respondeu que falta "muito" para quitar o apartamento financiado no Jardim Europa/Uberlândia. Conduta: não pressionar por saldo exato neste momento; seguir pela avaliação de mercado e entender outros ativos, especialmente a casa em Araguari.
