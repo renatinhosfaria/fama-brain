@@ -117,3 +117,9 @@ Atualização do diagnóstico: renda formal via MEI. A condução deve explicar 
 Cliente respondeu: "Deve ter um ano e meio mais ou menos".
 
 Atualização do diagnóstico: cliente possui MEI com aproximadamente 18 meses de atividade. Isso permite avançar para leitura inicial de viabilidade, mas ainda é necessário entender movimentação/renda média. Próxima condução: perguntar a média mensal aproximada que entra na conta, explicando que para MEI o banco costuma olhar extratos/movimentação, sem prometer aprovação.
+
+
+### 2026-05-06 — Cliente informa movimentação/renda ambígua
+Cliente respondeu à pergunta sobre quanto entra por mês na conta: "Uns 40".
+
+Atualização do diagnóstico: informação de renda/movimentação ainda ambígua. Antes de qualquer estimativa ou orientação de financiamento, é necessário confirmar se ele quis dizer aproximadamente R$ 4 mil/mês, R$ 40 mil/mês ou outra referência.
