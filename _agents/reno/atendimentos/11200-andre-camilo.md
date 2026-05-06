@@ -68,3 +68,6 @@ Continuar a qualificação pelo WhatsApp com pergunta curta sobre localização/
 - Houve registro anterior de indisponibilidade temporária do Obsidian após o primeiro contato; este documento oficial foi criado posteriormente no caminho determinístico.
 - Documento oficial mantido em `_agents/reno/atendimentos/11200-andre-camilo.md` para evitar duplicidade.
 - O inbound “Dois quartos já atende” já constava em nota CRM e em `meta_data.reno_qualification`; esta atualização consolidou a estrutura curada do documento sem duplicar nota no CRM.
+
+### 2026-05-05 — Prazo validado
+Cliente respondeu: “Pode ser com entrega planejada”. Diagnóstico atualizado: busca para moradia própria, 2 quartos atende, região do Jaraguá/zona Oeste atende e entrega futura/planejada é aceitável. Próximo passo recomendado: aprofundar viabilidade/forma de pagamento antes de conduzir para visita presencial.
