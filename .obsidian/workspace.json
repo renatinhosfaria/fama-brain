@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5d8ecc61d699b00c",
+        "id": "9c56269f63395b00",
         "type": "tabs",
         "children": [
           {
-            "id": "6ef6538711eaa612",
+            "id": "ef1d5c2c519d250e",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "icon": "lucide-file",
+              "title": "Nova aba"
             }
           }
         ]
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 334.5
   },
   "right": {
     "id": "fe5eb299acdb4afe",
@@ -177,8 +177,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6ef6538711eaa612",
+  "active": "ef1d5c2c519d250e",
   "lastOpenFiles": [
+    "metodologia-negocio.md",
     "_shared/context/vault/ceo/avaliacao-organizacao-conexoes-2026-05-07.md",
     "_agents/vault-steward/journal/2026-05-02-cmo-2026-05-snapshot-inicial-funil-meta-ads-crm-fam-27.md",
     "_agents/vault-steward/journal",
@@ -211,7 +212,6 @@
     "_entities/alexsander-pereira.md",
     "_agents/vault-steward/monitoring/2026-05-05.md",
     "_agents/vault-steward/monitoring/2026-05-04.md",
-    "_agents/vault-steward/monitoring/2026-05-03.md",
     "_agents/coder",
     "_agents/cmo",
     "_shared/context/cultura/ceo"
