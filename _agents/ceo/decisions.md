@@ -6,6 +6,23 @@ updated: '2026-05-07'
 tags:
   - decisao
 ---
+## 2026-05-07 — Re-hire do Coder após terminação inexplicada (FAM-773)
+
+**Contexto:** [FAM-773](/FAM/issues/FAM-773) (implementar tool `refresh_wikilinks` no plugin `mcp-fama_obsidian`) foi atribuída ao CEO em 2026-05-07 com 3 opções: (a) efetivar Coder previamente aprovado, (b) executar diretamente, (c) escalar a Renato. Approval anterior do Coder ([f0b2f340](/FAM/approvals/f0b2f340-f8bf-4b92-a023-114297e52e87)) foi efetivada em 2026-05-02 mas o agente está com status `terminated` desde ~2026-05-06 (último heartbeat 2026-05-05). Agentes terminados não podem ser resumidos via API.
+
+**Decisão:** submeter novo hire request do Coder reaproveitando o `AGENTS.md` e config aprovados anteriormente, com expansão pequena da `capabilities` para cobrir tarefas em plugins `mcp-fama_*`. FAM-773 fica `blocked` aguardando approval do board ([08516ffd](/FAM/approvals/08516ffd-482a-4bcc-a19c-e91c86753600)). Quando aprovado, reatribuir FAM-773 ao novo Coder ([@Coder](agent://32772ccb-ddc3-4d65-9740-1a7f12485510)).
+
+**Por quê:**
+- Opção (b) viola instrução explícita: CEO não escreve código.
+- Opção (c) é desnecessária — o board já aprovou esta config antes; nova escalação seria churn.
+- Opção (a) é aplicação direta da governança existente. Reuso do mesmo prompt/config minimiza risco e tempo de revisão.
+
+**Alternativas descartadas:** reativar Coder antigo via PATCH (rejeitado pela API: `Terminated agents cannot be resumed`); escalar a Renato sem re-hire; criar agente novo com papel diferente (fragmentaria o papel técnico).
+
+**Aberto:** descobrir por que o Coder anterior foi terminated (terminação automática? ação manual? OOM?). Investigar antes do próximo re-hire para evitar repetição. Owner: CEO, prazo informal pós-aprovação.
+
+**Como aplicar:** quando approval [08516ffd](/FAM/approvals/08516ffd-482a-4bcc-a19c-e91c86753600) for resolvida, retomar [FAM-773](/FAM/issues/FAM-773) e reatribuir ao Coder novo. Se Renato preferir caminho diferente (ex.: terceirizar), respeitar a direção do board.
+
 ## 2026-05-07 — Schema do vault aceita `_agents/reno/atendimentos/` como path canônico de entity-profile com client_id
 
 ## Contexto
