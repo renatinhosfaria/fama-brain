@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11003
-created: '2026-04-24'
-entity_name: Jisa Dantas
-entity_type: atendimento
+type: entity-profile
 owner: reno
+entity_type: atendimento
+entity_name: Jisa Dantas
+client_id: 11003
+broker_id: 35
 source: SLA Cascata
 status_crm: Em Atendimento
+created: '2026-04-24'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -16,13 +18,14 @@ tags:
   - union-vista
   - viabilidade-financiamento
   - visita-pendente
-type: entity-profile
-updated: '2026-05-03'
+  - manual-review
+  - duplicate-ownership
+  - paused
 ---
 # Atendimento — Jisa Dantas
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, interessada no Union Vista (Grand Ville). Já perguntou sobre valor, planta e parcelamento da entrada. O Resgate vinha no bucket `viabilidade_financiamento`, mas no step 5 foi reclassificado para `visita_pendente` porque a conversa já recebeu várias retomadas sobre financiamento/entrada sem resposta e o próximo passo comercial mais útil passou a ser visita presencial na Fama para olhar planta, entrada e simulação com mais segurança. Como o envio ocorreu em domingo, o CTA priorizou segunda-feira.
+Cliente em `Em Atendimento`, interessada no Union Vista (Grand Ville). O atendimento começou com perguntas sobre valor, planta e parcelamento da entrada e evoluiu para a régua de Resgate. O fluxo chegou ao step 5, com bucket `visita_pendente`, mas em 2026-05-07 a revalidação do CRM encontrou outro cadastro ativo com o mesmo telefone/JID em `Em Atendimento` fora do escopo do Reno (cliente 10915, broker 24). Resultado: Resgate pausado sem novo WhatsApp, com `manual_review_duplicate_active_broker`.
 
 ## Dados operacionais
 - Cliente ID: 11003
@@ -31,70 +34,64 @@ Cliente do Reno em `Em Atendimento`, interessada no Union Vista (Grand Ville). J
 - Origem: SLA Cascata
 - Telefone/WhatsApp: final 3733; JID confirmado no CRM
 - Empreendimento vinculado: Union Vista — Grand Ville — ID 22
-- Última interação relevante: 2026-05-03 17:41 - Resgate step 5 enviado via WhatsApp
-- Estado Resgate após último envio: `step=5`, `last_context_bucket=visita_pendente`, `next_run_at=2026-05-07T17:41:54-03:00`, `stopped_reason=null`
+- Última interação relevante: 2026-05-07 — pausa operacional por duplicidade/ownership; nenhum WhatsApp enviado nesta execução
+- Estado Resgate atual: `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-03T17:41:54-03:00`, `stopped_reason=manual_review_duplicate_active_broker`, `last_context_bucket=visita_pendente`
 
 ## Contexto comercial
-A cliente demonstrou interesse no Union Vista, região do Grand Ville. O empreendimento possui apartamentos de 2 quartos com 1 suíte, opções a partir de R$292.400, plantas de 56,9m², 58,4m² e térreo de 82,2m², entrega prevista para Jul/2027. Foi enviada planta pública anteriormente. A dúvida anterior envolveu valor, planta e parcelamento da entrada.
+A cliente demonstrou interesse no Union Vista, região do Grand Ville. O histórico comercial aponta dúvida recorrente em torno de valor, planta e principalmente parcelamento da entrada/viabilidade. O empreendimento trabalhado no atendimento tem opções a partir de R$292.400, plantas de 56,9m² / 58,4m² e térreo de 82,2m², com entrega prevista para Jul/2027.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não há necessidade declarada com clareza além do interesse no empreendimento/planta.
+Entender se o imóvel e a condição comercial cabem no momento da cliente.
 
 ### Momento
-Cliente entrou em atendimento e silenciou depois de receber informações sobre valor, planta, entrega e possibilidade de parcelamento da entrada. Segue sem visita/agendamento ativo no CRM.
+A conversa ficou silenciosa após o envio de informações consultivas e depois de várias retomadas por Resgate. Não há visita/agendamento ativo no CRM.
 
 ### Decisão
 Não há decisor adicional identificado.
 
 ### Viabilidade
-Bucket histórico principal: `viabilidade_financiamento`. A cliente perguntou sobre parcelamento da entrada; foi explicado que depende de simulação, uso de FGTS, renda e financiamento. Não há dados suficientes para simulação real. Após steps 1 a 4 focados em viabilidade/entrada/planta, o step 5 mudou para `visita_pendente` com convite presencial de baixa fricção para segunda-feira.
+O bucket histórico principal foi `viabilidade_financiamento`, depois reclassificado para `visita_pendente` no step 5 porque a conversa já tinha girado bastante em torno de financiamento/entrada e o próximo passo com mais chance de avanço passou a ser visita presencial.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato e atendimento inicial
-Reno abordou a cliente sobre o Union Vista, no Grand Ville. A cliente perguntou valor, planta e parcelamento da entrada. Reno respondeu com faixas de valor, metragens, entrega Jul/2027, possibilidade de entrada parcelada conforme simulação e perguntou se ela pretendia usar FGTS. Planta pública do Union Vista foi enviada.
+Reno abordou a cliente sobre o Union Vista. A cliente perguntou valor, planta e parcelamento da entrada. Foi respondido com faixa de preço, metragens, entrega prevista e orientação de que a entrada depende de simulação e pode ser parcelada conforme o fluxo da obra. Planta pública foi enviada.
 
 ### 2026-04-25 — Reenvio inicial
-Reno reenviou abertura em duas mensagens sobre o Union Vista e a região do Grand Ville, preservando status operacional da época.
+Reforço da abertura e do interesse no Union Vista, mantendo o contato em atendimento sem mudar o status comercial.
 
 ### 2026-04-28 — Resgate step 1
-Resgate enviado com bucket legado `financiamento_sumiu`, normalizado para `viabilidade_financiamento`. Mensagem focou em entender se a compra ficaria viável antes de escolher imóvel.
+Mensagem de retomada focada em viabilidade de compra antes da escolha do imóvel. Bucket legado `financiamento_sumiu`, normalizado para `viabilidade_financiamento`.
 
 ### 2026-04-30 — Resgate step 2
 Bucket: `viabilidade_financiamento`.
-Mensagem enviada: "Jisa, pra não ficar genérico: na parte do financiamento, sua maior dúvida hoje é entrada, parcela ou aprovação? Com isso eu consigo te direcionar melhor."
-Contexto usado: CRM/FamaChat, histórico Hermes anterior, empreendimento Union Vista, meta_data de Resgate e documento oficial do atendimento.
-Próximo `next_run_at`: 2026-04-30T16:17:29-03:00.
+Gancho: entrada, parcela ou aprovação, para tirar a conversa do genérico e qualificar a principal dúvida financeira.
 
 ### 2026-04-30 — Resgate step 3
 Bucket: `viabilidade_financiamento`.
-Mensagem enviada: "Jisa, pensando no Union Vista, o caminho mais seguro é ver se ele encaixa antes de você decidir pela planta.\n\nSe eu te passar uma prévia simples, ajuda você a entender se vale vir na Fama?"
-Contexto usado: CRM/FamaChat, notas do atendimento, histórico Hermes anterior, empreendimento Union Vista e documento oficial do atendimento.
-Diferença em relação ao step anterior: mudou o ângulo de "qual dúvida financeira?" para "prévia simples para decidir se vale vir à Fama"; mudou o CTA para permissão de avanço; destacou segurança/clareza antes de decidir pela planta.
-Próximo `next_run_at`: 2026-05-01T16:50:41-03:00.
+Gancho: prévia simples para a cliente entender se valia a pena vir à Fama e olhar o empreendimento com mais clareza.
 
 ### 2026-05-01 — Resgate step 4
 Bucket: `viabilidade_financiamento`.
-Mensagem enviada: "Jisa, pra avançar sem te tomar tempo: no Union Vista eu olharia primeiro se a planta de 56/58m² e a entrada parcelada ficam confortáveis para você.\n\nO que mais pesa hoje: tamanho da planta ou valor da entrada?"
-Contexto usado: CRM/FamaChat, notas do atendimento, empreendimento Union Vista, meta_data de Resgate, propriedade ID 22 e documento oficial do atendimento.
-Diferença em relação ao step anterior: mudou o ângulo de permissão para uma escolha simples; trocou o CTA de "quer uma prévia?" por diagnóstico de trava; destacou critérios concretos do Union Vista — planta de 56/58m² e entrada parcelada — para gerar resposta de baixa fricção.
-Próximo `next_run_at`: 2026-05-03T17:19:53-03:00.
+Gancho: olhar primeiro se a planta de 56/58m² e a entrada parcelada cabiam confortavelmente; CTA focada em resposta de baixa fricção.
 
 ### 2026-05-03 — Resgate step 5
 Bucket: `visita_pendente`.
-Mensagem enviada: "Jisa, como a dúvida era planta e entrada, acho mais seguro você ver isso aqui na Fama com mais clareza, sem ficar no chute pelo WhatsApp.\n\nSegunda no horário do almoço ou no fim do dia fica melhor pra você passar aqui?"
-Contexto usado: CRM/FamaChat, notas do atendimento, sessão Hermes/WhatsApp individual, empreendimento Union Vista, meta_data de Resgate e documento oficial do atendimento.
-Diferença em relação ao step anterior: mudou o ângulo de escolha entre planta/entrada para convite presencial; destacou clareza e segurança para não depender de chute pelo WhatsApp; trocou a pergunta diagnóstica por CTA de agenda para segunda-feira, conforme regra de fim de semana; reclassificou com segurança para `visita_pendente` sem aumentar pressão artificial.
-Próximo `next_run_at`: 2026-05-07T17:41:54-03:00.
+Mensagem com convite presencial para segunda-feira, priorizando almoço ou fim do dia, porque o contexto já pedia ver a opção pessoalmente em vez de seguir insistindo só em WhatsApp.
+
+### 2026-05-07 — Resgate pausado por duplicidade/ownership
+Na revalidação do CRM, o mesmo telefone/JID apareceu em outro cadastro ativo em `Em Atendimento` fora do escopo do Reno (cliente 10915, broker Maria Eduarda Moreira Rodrigues). O Resgate foi pausado sem envio, a branch ficou com `enabled=false`, `next_run_at=null` e `stopped_reason=manual_review_duplicate_active_broker`. Foi registrada nota CRM objetiva.
 
 ## Objeções e travas
-- Trava provável: viabilidade de financiamento/entrada/parcelamento, ainda não qualificada.
-- Possível dúvida secundária: tamanho/planta do Union Vista.
-- Lacuna: não há confirmação de FGTS, renda, entrada disponível ou prioridade entre valor/planta/localização.
-- Sem visita ou agendamento ativo no CRM no momento do step 5.
+- Trava histórica: viabilidade de financiamento, entrada e parcelamento.
+- Possível dúvida secundária: planta/tamanho do Union Vista.
+- Trava operacional atual: duplicidade/ownership recente com outro cadastro ativo impede novo envio até revisão manual.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, interromper a régua de Resgate (`client_replied`) e continuar atendimento normal via qualificação consultiva. Se aceitar a visita, registrar agendamento no FamaChat e manter condução para visita presencial na Fama. Se não responder até 2026-05-07T17:41:54-03:00 e os guardrails permanecerem verdadeiros, o próximo envio possível será step 6, sem mensagem de encerramento explícito ao cliente.
+Pausar a régua até revisão manual de ownership/duplicidade. Se o cadastro 11003 continuar como o operacional do Reno após regularização, o fluxo pode ser rearmado a partir de um novo outbound normal seguido de silêncio elegível. Enquanto isso, não enviar Resgate.
 
 ## Observações operacionais
-Documento oficial criado em `_agents/reno/atendimentos/11003-jisa-dantas.md` em 2026-04-30. Existe documento legado/drift em `_agents/reno/clientes/jisa-dantas.md` com frontmatter mínimo e sem conteúdo útil; não continuar escrevendo no legado. CRM permaneceu como fonte de verdade. Resgate e Repescagem tratados como fluxos independentes. Não houve restart de gateway nesta execução.
+- CRM recebeu nota ID 17190 em 2026-05-07.
+- Não houve WhatsApp enviado nesta execução.
+- Documento oficial mantido em `_agents/reno/atendimentos/11003-jisa-dantas.md`.
+- Há outro cadastro ativo com o mesmo telefone/JID sob broker diferente; validar ownership antes de retomar.
