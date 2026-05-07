@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11263
-created: '2026-05-07'
-entity_name: Mary Sá
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Mary Sá
+client_id: 11263
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-07'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -14,13 +16,12 @@ tags:
   - famachat
   - primeiro-contato
   - inbound
-type: entity-profile
-updated: '2026-05-07'
+  - qualificacao
 ---
 # Atendimento — Mary Sá
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno pelo WhatsApp com “Sim”. O CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a Repescagem foi interrompida por resposta inbound (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`). A próxima continuidade deve acontecer pela conversa normal de qualificação, sem novo envio automático por esta rotina silenciosa.
+Cliente respondeu ao primeiro contato do Reno pelo WhatsApp, primeiro com “Sim” e depois com “Pensando em comprar”. O CRM já está em `Em Atendimento`; a Repescagem permanece interrompida por resposta inbound (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não havia Resgate ativo no momento desta rotina. A próxima continuidade deve acontecer pela conversa normal de qualificação, sem envio cliente-facing por esta rotina silenciosa.
 
 ## Dados operacionais
 - Cliente ID: 11263
@@ -29,17 +30,17 @@ Cliente respondeu ao primeiro contato do Reno pelo WhatsApp com “Sim”. O CRM
 - Origem: Facebook Ads
 - Telefone/WhatsApp: contato cadastrado e validado para envio pelo WhatsApp
 - Empreendimento de interesse: Place+Arbi — Shopping Park, Uberlândia
-- Última interação relevante: 2026-05-07 — cliente respondeu “Sim” ao primeiro contato do Reno; status movido para `Em Atendimento` e Repescagem interrompida
+- Última interação relevante: 2026-05-07 — cliente respondeu “Pensando em comprar”; status preservado em `Em Atendimento`; Repescagem já estava interrompida e não havia Resgate ativo
 
 ## Contexto comercial
-Lead originado de Facebook Ads com interesse no Place+Arbi, empreendimento da HLTS Construtora no Shopping Park, Zona Sul de Uberlândia. A abertura do Reno usou o contexto de empreendimento + bairro e perguntou se a cliente está procurando imóvel nessa região. A resposta “Sim” indica aderência inicial à região/contexto e deve ser tratada pela qualificação WhatsApp como gancho para avançar com diagnóstico leve.
+Lead originado de Facebook Ads com interesse no Place+Arbi, empreendimento da HLTS Construtora no Shopping Park, Zona Sul de Uberlândia. A abertura do Reno usou o contexto de empreendimento + bairro e perguntou se a cliente está procurando imóvel nessa região. A cliente respondeu “Sim” e, em seguida, “Pensando em comprar”, indicando que a região/contexto faz sentido e que está em fase inicial de compra. O próximo atendimento deve acolher esse momento e avançar com diagnóstico leve, sem pressionar financiamento cedo demais.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada além do sinal inicial de interesse/região. Próximo contato deve confirmar se busca para morar, investir ou conhecer opções.
+Cliente sinalizou intenção de compra em fase inicial: “Pensando em comprar”. Ainda falta entender se busca para morar, investir ou conhecer opções.
 
 ### Momento
-Lead novo criado e abordado em 2026-05-07. Respondeu rapidamente ao primeiro contato, o que indica oportunidade de continuidade imediata pela qualificação.
+Lead novo criado e abordado em 2026-05-07. Respondeu rapidamente ao primeiro contato, indicando oportunidade de continuidade imediata pela qualificação.
 
 ### Decisão
 Ainda não identificada.
@@ -58,15 +59,20 @@ Cliente respondeu “Sim” pelo WhatsApp. Rotina silenciosa de inbound validou 
 
 Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa. A resposta comercial deve ser feita pela sessão normal de WhatsApp/Qualification, reconstruindo o contexto imediato da conversa.
 
+### 2026-05-07 — Novo inbound sobre intenção de compra
+Cliente respondeu “Pensando em comprar”. No CRM, o status já estava em `Em Atendimento`, então foi preservado sem regressão. A Repescagem já estava interrompida e não havia Resgate ativo para pausar. Foi registrada nota operacional no CRM e nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
 - Nenhuma objeção identificada até o momento.
-- Há somente sinal inicial positivo de região/contexto; ainda falta diagnóstico comercial.
+- Cliente está em fase inicial de compra; ainda falta diagnóstico comercial para entender objetivo, prioridade e viabilidade.
 
 ## Próximo passo
-Na continuidade conversacional, responder de forma curta e contextual: validar que a região faz sentido e fazer uma pergunta de qualificação leve, preferencialmente se a cliente busca para morar, investir ou ainda está conhecendo opções. Após outbound normal em `Em Atendimento`, se a mensagem esperar retorno da cliente, armar novo ciclo de Resgate em step 0 conforme regra da Qualification.
+Na continuidade conversacional, responder de forma curta e contextual, acolhendo que ela está pensando em comprar e fazendo uma pergunta de qualificação leve: entender se busca para morar, investir ou ainda conhecer opções. Após outbound normal em `Em Atendimento`, se a mensagem esperar retorno da cliente, armar novo ciclo de Resgate em step 0 conforme regra da Qualification.
 
 ## Observações operacionais
 - CRM/FamaChat permanece como fonte operacional de verdade.
 - Evento de origem do primeiro contato: evt_3431 / idempotency_key 3431_1778188079916.
-- Nota CRM criada para a resposta inbound e para a interrupção da Repescagem.
+- Nota CRM criada para a resposta inbound “Sim” e para a interrupção da Repescagem.
+- Nota CRM criada para a resposta inbound “Pensando em comprar” com status preservado em `Em Atendimento`.
 - A Repescagem foi desativada por resposta real da cliente; não deve haver nova step de Repescagem para este ciclo.
+- Não havia branch de Resgate ativa no momento deste inbound.
