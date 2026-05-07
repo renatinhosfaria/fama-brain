@@ -112,3 +112,10 @@ Cliente informou que pretende comprar por financiamento.
 
 ### Próxima condução recomendada
 Perguntar a faixa de parcela mensal confortável ou a condição de entrada, um ponto por vez.
+
+
+## Atualização — 2026-05-07 — Dúvida sobre renda
+Cliente perguntou qual valor de renda é necessário para financiamento.
+
+### Condução recomendada
+Responder sem prometer aprovação: não existe renda única; depende da unidade escolhida, entrada e simulação. Explicar que bancos geralmente analisam capacidade de parcela sobre renda familiar. Perguntar a renda familiar aproximada ou faixa para orientar com mais segurança.
