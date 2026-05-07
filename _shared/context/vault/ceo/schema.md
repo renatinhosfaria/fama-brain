@@ -2,7 +2,7 @@
 type: shared-context
 owner: ceo
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-07'
 tags:
   - vault
   - schema
@@ -46,8 +46,8 @@ Cada nota tem exatamente um `type`. Lista fechada — qualquer type fora dessa l
 | `agent-profile` | Papel, escopo, modo de operar de um agente | `_agents/{agente}/profile.md` | `_agents/ceo/profile.md` |
 | `agent-decisions` | Decisões em ordem cronológica reversa, com rationale | `_agents/{agente}/decisions.md` | `_agents/ceo/decisions.md` |
 | `agent-readme` | Índice de pointers para o conteúdo do agente | `_agents/{agente}/README.md` | `_agents/reno/README.md` |
-| `journal` | Atividade diária, log operacional, atendimento, auditoria | `_agents/{agente}/{subtopic}/{slug}.md` | `_agents/reno/atendimentos/10934-mateus-silva.md` |
-| `entity-profile` | Perfil durável de uma entidade externa (cliente, broker, parceiro, lead) | `_agents/{agente}/clientes/{id}-{slug}.md` ou `_agents/{agente}/lead/{slug}.md` | `_agents/reno/clientes/10960-joao.md`, `_agents/reno/lead/jonathan-barbosa.md` |
+| `journal` | Atividade diária, log operacional, atendimento, auditoria | `_agents/{agente}/{subtopic}/{slug}.md` | `_agents/reno/atendimentos/2026-04-27-auditoria.md` |
+| `entity-profile` | Perfil durável de uma entidade externa (cliente, broker, parceiro, lead) | `_agents/{agente}/atendimentos/{id}-{slug}.md` (com `client_id`, canônico via EntityResolver), `_agents/{agente}/clientes/{id}-{slug}.md` (alternativa), ou `_agents/{agente}/lead/{slug}.md` (sem ID) | `_agents/reno/atendimentos/10930-cassio-coimbra.md`, `_agents/reno/lead/jonathan-barbosa.md` |
 | `context` | Contexto institucional curado por tema | `_shared/context/{topic}/{slug}.md` ou `_shared/context/{topic}/{agente}/{slug}.md` | `_shared/context/fama/historia.md` |
 | `shared-context` | Contexto compartilhado escrito por agente, lido por todos | `_shared/context/{topic}/{agente}/{slug}.md` | `_shared/context/vault/ceo/schema.md` |
 | `goal` | Meta declarada para um período | `_shared/goals/{periodo}/{agente}.md` | `_shared/goals/2026-q2/ceo.md` |
@@ -55,6 +55,7 @@ Cada nota tem exatamente um `type`. Lista fechada — qualquer type fora dessa l
 | `moc` | Map of Content — índice estruturado | `{path}/README.md` | `_agents/README.md` |
 | `agents-map` | Ownership map (privilegiado) | `_shared/context/AGENTS.md` | único arquivo |
 | `project-readme` | Doc de projeto técnico | `_infra/{projeto}/README.md` | `_infra/mcp-obsidian/README.md` |
+| `hub` | Nota canônica de empreendimento, fonte ou região (referenciada via auto-wikilinks) | `_shared/hubs/{tipo}/{slug}.md` | `_shared/hubs/empreendimentos/garden-sul.md` |
 
 **Regras de uso:**
 
@@ -71,25 +72,27 @@ Cada nota tem exatamente um `type`. Lista fechada — qualquer type fora dessa l
 Território privado de cada agente. `agente` em lowercase, sem espaços.
 
 Subpastas permitidas:
-- `clientes/` (entity-profile com ID externo do CRM, plural — singular `cliente/` é typo).
-- `lead/` (entity-profile criado pelo MCP `upsert_lead_timeline` — Plan 2 escreve hardcoded em `_agents/<agente>/lead/<slug>.md`. Lead vira `clientes/{id}-{slug}.md` quando o ID externo é atribuído).
-- `atendimentos/` (journal de atendimento — log de interação CRM, não perfil).
-- `auditorias/` (journal de auditoria).
+- `atendimentos/` — convive com dois usos pelo design do MCP:
+  - `entity-profile` com `client_id` na forma `{id}-{slug}.md` — **path canônico via EntityResolver** (busca prefix `{id}-` aqui).
+  - `journal` de atendimento na forma `YYYY-MM-DD-{slug}.md` — log de interação CRM, sem ID.
+- `lead/` — `entity-profile` `entity_type: lead` na forma `{slug}.md`. Sem ID externo. Escrito hardcoded pelo MCP `upsert_lead_timeline`. Lead vira `atendimentos/{id}-{slug}.md` quando o ID externo é atribuído.
+- `clientes/` — caminho alternativo histórico para `entity-profile` com ID. **Mantido apenas para retrocompatibilidade**; novas escritas devem ir para `atendimentos/{id}-{slug}.md` (canônico via resolver).
+- `auditorias/` — `journal` de auditoria.
+- `brokers/` — `entity-profile` de broker na forma `broker-{id}-{slug}.md` (canônico via EntityResolver).
 - `decisions.md`, `profile.md`, `README.md` na raiz.
 
 **Naming de arquivos em subpastas:**
-- Com ID externo: `{id}-{slug}.md` (ex.: `10934-mateus-silva.md`).
-- Sem ID (lead pré-conversão): `{slug}.md` em `lead/` — pelo MCP por design.
-- Auditoria: `YYYY-MM-DD-{slug}.md` (ex.: `2026-04-27-auditoria-12-sem-atendimento.md`).
-
-**Distinção lead/ vs clientes/ vs atendimentos/:**
-- `lead/{slug}.md` — `entity-profile` `entity_type: lead`, sem ID do CRM ainda. Escrito pelo MCP Plan 2.
-- `clientes/{id}-{slug}.md` — `entity-profile` com ID do CRM (cliente convertido).
-- `atendimentos/{id}-{slug}.md` ou `atendimentos/YYYY-MM-DD-{slug}.md` — `journal` de cada interação. NUNCA entity-profile.
+- entity-profile com ID: `{id}-{slug}.md` em `atendimentos/` (preferencial) ou `clientes/` (legado).
+- entity-profile broker: `broker-{id}-{slug}.md` em `brokers/`.
+- entity-profile lead (pré-conversão): `{slug}.md` em `lead/` — pelo MCP por design.
+- journal de atendimento sem ID: `atendimentos/YYYY-MM-DD-{slug}.md`.
+- journal de auditoria: `auditorias/YYYY-MM-DD-{slug}.md`.
 
 **Anti-padrões a corrigir:**
-- `_agents/reno/cliente/` (singular) — mover para `_agents/reno/clientes/`.
-- entity-profile em `atendimentos/` — mover para `lead/` (sem ID) ou `clientes/` (com ID).
+- `_agents/reno/cliente/` (singular) — mover para `_agents/reno/clientes/` ou `atendimentos/` por convenção atual.
+- `entity-profile` solto em `_agents/{agente}/` (fora de subpasta) — mover para `atendimentos/{id}-{slug}.md`.
+- `type: interaction` ou outros types fora da lista canônica — re-tipar para `entity-profile` (com ID) ou `journal` (sem ID).
+- `cliente-{id}-{slug}.md` (prefix legado) — renomear para `{id}-{slug}.md`.
 - Notas duplicadas com e sem ID (`bruno-savio.md` + `10971-bruno-savio.md`) — manter a com ID, deduplicar a outra.
 - Nesting confuso (`atendimentos/clientes/...`) — escolher um nível.
 
@@ -100,6 +103,15 @@ Contexto institucional. `topic` em kebab-case, lowercase.
 - Sem agente owner: `_shared/context/{topic}/{slug}.md` (curado pelo Renato ou CEO).
 - Com agente owner: `_shared/context/{topic}/{agente}/{slug}.md`.
 - Index do tema: `_shared/context/{topic}/index.md` quando o tema tem múltiplas notas.
+
+### `_shared/hubs/{tipo}/`
+
+Notas-âncora canônicas para conectores naturais (empreendimentos, brokers, fontes, regiões). Type `hub`. Criadas via `upsert_hub` ou auto-stub do EntityResolver.
+
+- `_shared/hubs/empreendimentos/{slug}.md` (Garden Sul, Union Vista, Union Vereda, Grand Ville, Place Arbi, Shopping Park, ...).
+- `_shared/hubs/fontes/{slug}.md` (Facebook Ads, WhatsApp, FamaChat).
+- `_shared/hubs/regioes/{slug}.md` (Jaraguá, Zona Sul, Zona Oeste, Centro).
+- `_shared/hubs/brokers/broker-{id}-{slug}.md` (quando relevante a múltiplos agentes).
 
 ### `_shared/goals/` e `_shared/results/`
 
@@ -157,4 +169,5 @@ Schema é vivo. Mas mudança incremental, não reset.
 
 ## 7. Changelog
 
+- 2026-05-07 (vault-steward, autorizado pelo CEO via [FAM-772](/FAM/issues/FAM-772) — D1 `resolver-wins`): schema reconhece `_agents/{agente}/atendimentos/{id}-{slug}.md` como path canônico de `entity-profile` com `client_id`. Motivação: o `EntityResolver` (`src/vault/entity-resolver.ts`) deployado em 2026-05-07 busca client_id por prefix `{id}-` em `atendimentos/`. Mover ~140 arquivos para alinhar a um doc de schema seria cauda balançando o cachorro; ajustar o doc é zero-risco. `clientes/` continua válido para retrocompatibilidade. Adicionado também `hub` à lista de types canônicos e seção `_shared/hubs/{tipo}/`. Anti-padrões atualizados: entity-profile em atendimentos não é mais erro; entity-profile solto fora de subpasta sim.
 - 2026-04-30 (CEO): adicionado `lead/` como subpasta canônica em `_agents/{agente}/`. Motivação: o MCP `upsert_lead_timeline` (Plan 2) escreve hardcoded nesse path por design. Schema deve refletir o que o tool já faz. Atendimentos/ é reservado para journals; entity-profile com `entity_type: lead` mora em `lead/`. Reverter ~70 arquivos migrados erroneamente para `atendimentos/` durante o big-bang. Também explicitada permissão cross-território do vault-steward para saneamento estrutural.
