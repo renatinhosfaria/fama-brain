@@ -1,12 +1,8 @@
 ---
-broker_id: 35
-client_id: 11248
-created: '2026-05-06'
-entity_name: Genilsom Oliveira
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
-status_crm: Em Atendimento
+created: '2026-05-06'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -16,13 +12,18 @@ tags:
   - repescagem
   - inbound
   - em-atendimento
-type: entity-profile
-updated: '2026-05-07'
+  - financiamento
+entity_type: atendimento
+entity_name: Genilsom Oliveira
+broker_id: 35
+client_id: 11248
+source: Facebook Ads
+status_crm: Em Atendimento
 ---
 # Atendimento — Genilsom Oliveira
 
 ## Resumo atual
-Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e repescagem step 1 sobre o Union Vista, o cliente respondeu pelo WhatsApp em 2026-05-07 19:35 BRT. A primeira resposta encerrou a condição de silêncio: o CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Em seguida, houve nova mensagem inbound indicando que o cliente não havia respondido antes por estar com o dia corrido; o status já estava correto e foi preservado.
+Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e repescagem step 1 sobre o Union Vista, o cliente respondeu pelo WhatsApp em 2026-05-07 19:35. A primeira resposta encerrou a condição de silêncio: o CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Depois, o cliente retomou a conversa e perguntou sobre a forma de financiamento, sinalizando interesse em entender viabilidade/condição de compra. A rotina silenciosa apenas registrou a nova mensagem, preservou o status e não enviou resposta ao cliente.
 
 ## Dados operacionais
 - Cliente ID: 11248
@@ -31,10 +32,10 @@ Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e r
 - Origem: Facebook Ads
 - Empreendimento: Union Vista, Grand Ville, Uberlândia
 - WhatsApp: validado no CRM
-- Última interação relevante: 2026-05-07 19:35 BRT — respostas inbound do cliente, status em atendimento e repescagem interrompida
+- Última interação relevante: 2026-05-07 19:54 — inbound do cliente perguntando sobre forma de financiamento; status preservado em `Em Atendimento`
 
 ## Contexto comercial
-Cliente entrou por Facebook Ads com interesse no Union Vista, lançamento no Grand Ville, em Uberlândia. O primeiro contato perguntou sobre a região. A repescagem step 1 retomou o interesse com ângulo consultivo sobre prazo de entrega, entrada e parcela, considerando que o Union Vista está em lançamento com entrega prevista para Jul/2027. O cliente respondeu com saudação e depois justificou a demora por rotina corrida, criando abertura para retomada humana e curta da conversa.
+Cliente entrou por Facebook Ads com interesse no Union Vista, lançamento no Grand Ville, em Uberlândia. O primeiro contato perguntou sobre a região. A repescagem step 1 retomou o interesse com ângulo consultivo sobre prazo de entrega, entrada e parcela, considerando que o Union Vista está em lançamento com entrega prevista para Jul/2027. O cliente respondeu primeiro com saudação, depois justificou a demora por rotina corrida e, em seguida, perguntou: “Qual forma de financiamento”. Isso indica abertura para falar de condição de compra, financiamento e possível encaixe, sem prometer aprovação.
 
 ## Diagnóstico
 ### Necessidade
@@ -47,7 +48,7 @@ Ainda não confirmado. A régua de repescagem tentou entender se o cliente pensa
 Não diagnosticada. Ainda não há informação sobre outros decisores ou influência familiar.
 
 ### Viabilidade
-Ainda não explorada. Não houve conversa sobre financiamento, entrada, renda, FGTS ou capacidade de compra.
+Cliente trouxe dúvida direta sobre forma de financiamento. Isso é sinal de interesse em viabilidade/condição de compra, mas ainda não há dados de entrada, renda, FGTS, subsídio ou capacidade de financiamento. Qualquer resposta comercial deve falar em financiamento como caminho de análise, sem prometer aprovação ou encaixe.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
@@ -65,16 +66,20 @@ Cliente respondeu pelo WhatsApp com saudação curta. A rotina silenciosa valido
 ### 2026-05-07 19:35 — Mensagem inbound adicional registrada
 Nova mensagem inbound foi registrada no CRM indicando que o cliente se desculpou pela demora e relatou dia corrido. O status já estava `Em Atendimento`; a repescagem permaneceu interrompida e não havia Resgate ativo.
 
+### 2026-05-07 19:54 — Pergunta sobre financiamento
+Cliente perguntou pelo WhatsApp: “Qual forma de financiamento”. A rotina silenciosa validou cliente e broker, preservou o status `Em Atendimento`, confirmou que a repescagem já estava interrompida e que não havia Resgate ativo identificado, registrou nota CRM e não enviou mensagem ao cliente.
+
 ## Objeções e travas
 - Ainda não há objeção comercial identificada.
-- O cliente sinalizou disponibilidade de retomada, mas não respondeu ainda à pergunta comercial sobre Union Vista, prazo de entrega ou comparação com entrega mais rápida.
+- Dúvida atual: forma de financiamento do empreendimento/interesse ativo.
+- Oportunidade comercial: explicar financiamento de forma simples, reforçando análise segura e sem promessa de aprovação.
 
 ## Próximo passo
-A sessão WhatsApp normal deve responder de forma curta e acolhedora, sem expor bastidores, retomando o contexto do Union Vista e avançando uma pergunta por vez. Depois de enviar resposta normal em `Em Atendimento`, armar novo ciclo de Resgate step 0 se a mensagem deixar próximo passo em aberto.
+A sessão WhatsApp normal deve responder ao cliente de forma curta e segura sobre financiamento: explicar que normalmente envolve financiamento bancário com entrada trabalhada/parcelada pela construtora, e que o encaixe depende de análise. Como a pergunta mostra interesse em viabilidade, conduzir para um próximo passo objetivo — preferencialmente atendimento presencial na Fama para ver opções e simulação com segurança. Depois de enviar resposta normal em `Em Atendimento`, armar novo ciclo de Resgate step 0 se a mensagem deixar próximo passo em aberto.
 
 ## Observações operacionais
 - Documento mantido no caminho oficial `_agents/reno/atendimentos/11248-genilsom-oliveira.md`.
 - Repescagem interrompida após resposta real do cliente: `step=1`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Nota CRM registrada em 2026-05-07 informando resposta inbound, mudança de status e parada da repescagem.
-- Uma rotina silenciosa posterior registrou nova mensagem inbound e preservou o status `Em Atendimento`.
+- Nota CRM adicional registrada para a pergunta sobre financiamento, com status preservado em `Em Atendimento`.
 - Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
