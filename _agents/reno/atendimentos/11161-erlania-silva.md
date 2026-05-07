@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Erlania Silva
 client_id: 11161
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-05-03'
-updated: '2026-05-06'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -16,29 +16,31 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
+  - step-5
+  - arquivado
 ---
 # Atendimento — Erlania Silva
 
 ## Resumo atual
-Cliente permanece em silêncio após primeiro contato e quatro repescagens. Repescagem step 4 enviada com sucesso em 2026-05-06 às 19:24 BRT, mudando o ângulo para convite consultivo direto: não mandar mais anúncio, mas organizar o caminho de compra do Union Vereda considerando prazo até Dez/2028, condição durante a obra e comparação com opção mais pronta. Status operacional permanece `Não Respondeu`.
+Cliente permaneceu em silêncio durante toda a régua de repescagem e recebeu o step 5 em 2026-05-07 às 09:22 BRT. A mensagem encerrou a régua com pausa respeitosa, porta aberta e comparação futura sobre prazo, condição e alternativas. Após validação do estado final, a repescagem foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado no CRM.
 
 ## Dados operacionais
 - Cliente ID: 11161
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
 - Telefone/WhatsApp: (34) 99224-0613
 - Empreendimento de interesse: Union Vereda — Jaraguá, Uberlândia
-- Última interação relevante: repescagem step 4 enviada em 2026-05-06 19:24 BRT
+- Última interação relevante: repescagem step 5 enviada em 2026-05-07 09:22 BRT; régua encerrada e cliente arquivado
 
 ## Contexto comercial
 Lead entrou por Facebook Ads com interesse vinculado ao Union Vereda. Empreendimento localizado no Jaraguá, zona Oeste de Uberlândia, com entrega prevista para Dez/2028. O CRM indica unidades disponíveis a partir de aproximadamente R$ 289 mil, com plantas de 2 quartos, suíte, varanda e lazer/serviços de condomínio.
 
-A primeira abordagem foi curta e focada em confirmar se a cliente procurava imóvel nessa região. A repescagem step 1 mudou o motivo de resposta para entender se o lançamento fazia sentido para morar ou para comparar oportunidade de compra. Como não houve resposta, o step 2 mudou novamente o ângulo para evitar caminho errado: checar condição de compra antes de comparar unidade. O step 3 não repetiu finalidade nem convite de análise de viabilidade; usou uma pergunta de escolha para descobrir o critério que mais pesa na decisão. O step 4 mudou para convite consultivo direto, com a tese de organizar o caminho da compra em vez de enviar mais anúncio.
+A primeira abordagem foi curta e focada em confirmar se a cliente procurava imóvel nessa região. A repescagem step 1 mudou o motivo de resposta para entender se o lançamento fazia sentido para morar ou para comparar oportunidade de compra. Como não houve resposta, o step 2 mudou novamente o ângulo para evitar caminho errado: checar condição de compra antes de comparar unidade. O step 3 não repetiu finalidade nem convite de análise de viabilidade; usou uma pergunta de escolha para descobrir o critério que mais pesa na decisão. O step 4 mudou para convite consultivo direto, com a tese de organizar o caminho da compra em vez de enviar mais anúncio. O step 5 encerrou a régua com uma pausa respeitosa e porta aberta para retomada futura.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. A régua tenta gerar a primeira microresposta para entender se a cliente busca moradia, comparação de oportunidade ou apenas está pesquisando lançamento no Jaraguá.
+Ainda não diagnosticada. A régua tentou gerar a primeira microresposta para entender se a cliente busca moradia, comparação de oportunidade ou apenas está pesquisando lançamento no Jaraguá.
 
 ### Momento
 Ainda não diagnosticado. O contexto de entrega em Dez/2028 pode ser decisivo para entender timing e expectativa da cliente.
@@ -51,7 +53,7 @@ Ainda não diagnosticada. O step 2 introduziu a necessidade de olhar entrada, fi
 
 ## Histórico curado de interações
 ### 2026-05-03 — Primeiro contato enviado
-Reno enviou duas mensagens curtas pelo WhatsApp: apresentação como consultor digital da Fama, contexto do interesse no Union Vereda no Jaraguá e pergunta se a cliente está procurando imóvel nessa região.
+Reno enviou duas mensagens curtas pelo WhatsApp: apresentação como consultor digital da Fama, contexto do interesse no Union Vereda no Jaraguá e pergunta se a cliente procurava imóvel nessa região.
 
 Após sucesso no WhatsApp, o CRM foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu`. A branch de repescagem foi inicializada com step 0 para acompanhamento futuro caso não houvesse resposta.
 
@@ -113,15 +115,39 @@ Mensagem enviada:
 
 Estado operacional após marcação: `repescagem.step=4`, `enabled=true`, `stopped_reason=null`, `claim_expires_at=null`, próximo step previsto para 2026-05-07 09:10 BRT.
 
+### 2026-05-07 — Repescagem step 5 enviada e régua encerrada
+Mensagem enviada:
+
+> Erlania, vou pausar por aqui, tá bem? 🏡
+>
+> Como você já vinha olhando o Union Vereda, pode ser que agora esteja só comparando com calma. Nessa fase, o mais importante é não ficar presa a um lançamento antes de entender prazo, condição e se existe outra opção que encaixe melhor.
+>
+> Se fizer sentido retomar depois, eu consigo te ajudar a comparar isso de forma objetiva.
+>
+> Posso deixar você à vontade e você me chama quando quiser olhar com calma?
+
+Ângulo usado: pausa respeitosa / porta aberta. Diferenciação em relação ao step 4: saiu do convite consultivo direto e mudou para encerramento elegante; preservou o contexto do Union Vereda, mas sem insistir em agenda, análise ou visita.
+
+Estado operacional final após correção:
+- `repescagem.step=5`
+- `enabled=false`
+- `next_run_at=null`
+- `last_sent_at=2026-05-07T09:22:28.175127-03:00`
+- `stopped_reason=max_steps`
+
+### 2026-05-07 — Arquivamento defensivo registrado
+Reno atualizou o status do CRM de `Não Respondeu` para `Arquivado` após confirmar o step 5 e encerrar a branch com segurança. Nota objetiva de arquivamento registrada no CRM.
+
 ## Objeções e travas
-Nenhuma objeção identificada até o momento. Trava operacional atual: silêncio após primeiro contato e quatro steps de repescagem.
+Nenhuma objeção identificada até o momento. Trava operacional: silêncio persistente e ausência de retorno ao longo de cinco tentativas.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se ela responder, atualizar o CRM de `Não Respondeu` para `Em Atendimento` somente se o status ainda estiver exatamente assim e seguir pelo fluxo de qualificação normal. Se permanecer em silêncio, a próxima repescagem elegível é o step 5 em 2026-05-07 às 09:10 BRT, com encerramento elegante e porta aberta, sem repetir convite de análise/agenda do step 4.
+Sem nova automação. Caso a cliente retome no futuro, reabrir o atendimento com base no status arquivado e retomar a qualificação a partir do contexto atual.
 
 ## Observações operacionais
-- Nome no CRM parece humano e confiável; não foi necessária confirmação de nome.
-- Primeiro contato relacionado ao evento `evt_3329` / idempotência `3329_1777841101343`.
-- Repescagens enviadas pelo WhatsApp usando o JID salvo no CRM.
-- Nas execuções dos steps 2, 3 e 4, `send_message` não estava exposto no runtime do cron; foi usado fallback excepcional pelo bridge local saudável (`/health` conectado), com validação `onWhatsApp`, sucesso técnico e posterior marcação oficial via `mark_reno_followup_sent`.
-- Como era step 4, o status não foi alterado e não houve arquivamento.
+- Nome no CRM segue humano e confiável.
+- JID do WhatsApp validado via bridge antes do envio.
+- `mark_reno_followup_sent` persistiu step 5 mas manteve a branch aberta; foi necessário normalizar com `update_reno_followup_state` antes do arquivamento.
+- Arquivamento defensivo executado somente após confirmar `step=5` e `stopped_reason=max_steps`.
+- Nota CRM de arquivamento registrada (`id=17128`).
+- Sem visitas, appointments ou sales associados.
