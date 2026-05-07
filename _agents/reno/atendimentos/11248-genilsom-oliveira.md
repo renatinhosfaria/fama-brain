@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Genilsom Oliveira
-client_id: 11248
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11248
 created: '2026-05-06'
-updated: '2026-05-07'
+entity_name: Genilsom Oliveira
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -16,13 +14,15 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
-  - qualificacao
   - inbound
+  - em-atendimento
+type: entity-profile
+updated: '2026-05-07'
 ---
 # Atendimento — Genilsom Oliveira
 
 ## Resumo atual
-Cliente do broker 35 reativou a conversa pelo WhatsApp após repescagem step 1. O CRM está em `Em Atendimento`. A repescagem foi interrompida por resposta inbound do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não há Resgate ativo neste momento. A resposta mais recente do cliente foi um pedido de desculpas pelo atraso, indicando que o silêncio foi por rotina corrida, não recusa comercial.
+Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e repescagem step 1 sobre o Union Vista, o cliente respondeu pelo WhatsApp em 2026-05-07 19:35 BRT. A primeira resposta encerrou a condição de silêncio: o CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Em seguida, houve nova mensagem inbound indicando que o cliente não havia respondido antes por estar com o dia corrido; o status já estava correto e foi preservado.
 
 ## Dados operacionais
 - Cliente ID: 11248
@@ -31,23 +31,23 @@ Cliente do broker 35 reativou a conversa pelo WhatsApp após repescagem step 1. 
 - Origem: Facebook Ads
 - Empreendimento: Union Vista, Grand Ville, Uberlândia
 - WhatsApp: validado no CRM
-- Última interação relevante: 2026-05-07 19:35 BRT — inbound do cliente após repescagem, com status preservado em `Em Atendimento`
+- Última interação relevante: 2026-05-07 19:35 BRT — respostas inbound do cliente, status em atendimento e repescagem interrompida
 
 ## Contexto comercial
-Cliente entrou por Facebook Ads com interesse no Union Vista, lançamento no Grand Ville, em Uberlândia. O primeiro contato perguntou se ele procurava imóvel nessa região. A repescagem step 1 reposicionou a conversa para entender se fazia mais sentido seguir olhando o Union Vista como opção para morar mais para frente ou comparar com algo de entrega mais rápida, considerando prazo, entrada e parcela.
+Cliente entrou por Facebook Ads com interesse no Union Vista, lançamento no Grand Ville, em Uberlândia. O primeiro contato perguntou sobre a região. A repescagem step 1 retomou o interesse com ângulo consultivo sobre prazo de entrega, entrada e parcela, considerando que o Union Vista está em lançamento com entrega prevista para Jul/2027. O cliente respondeu com saudação e depois justificou a demora por rotina corrida, criando abertura para retomada humana e curta da conversa.
 
 ## Diagnóstico
 ### Necessidade
-Ainda em diagnóstico. Há interesse inicial no Union Vista, mas o cliente ainda não confirmou se busca moradia, investimento ou apenas comparação de opções.
+Ainda em diagnóstico. Há interesse inicial no Union Vista, mas o objetivo da compra ainda não foi confirmado.
 
 ### Momento
-O cliente informou que o dia foi corrido e pediu desculpas por não responder antes. Isso sugere ausência de resposta por disponibilidade, não necessariamente desinteresse.
+Ainda não confirmado. A régua de repescagem tentou entender se o cliente pensa em morar mais para frente no lançamento ou comparar com entrega mais rápida.
 
 ### Decisão
-Ainda não diagnosticada. Não há informação sobre outros decisores ou influência familiar.
+Não diagnosticada. Ainda não há informação sobre outros decisores ou influência familiar.
 
 ### Viabilidade
-Ainda não explorada. Não houve conversa sobre financiamento, entrada, renda, FGTS ou aprovação. Manter abordagem consultiva sem prometer crédito.
+Ainda não explorada. Não houve conversa sobre financiamento, entrada, renda, FGTS ou capacidade de compra.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
@@ -57,24 +57,24 @@ Reno enviou abertura curta apresentando o atendimento e perguntando se o cliente
 Branch `meta_data.reno_followup.repescagem` criada com `step=0`, `enabled=true` e próxima execução prevista para 2026-05-07 às 19:10, caso o cliente permanecesse sem resposta.
 
 ### 2026-05-07 19:21 — Repescagem step 1 enviada
-Mensagem enviada com foco em prazo de entrega, entrada e parcela do Union Vista, destacando que o lançamento tem entrega prevista para Jul/2027 e pedindo comparação entre morar mais pra frente ou buscar algo com entrega mais rápida. Envio validado pelo bridge local do WhatsApp.
+Mensagem enviada com foco em prazo de entrega, entrada e parcela do Union Vista, destacando que o lançamento tem entrega prevista para Jul/2027 e pedindo comparação entre morar mais pra frente ou buscar algo com entrega mais rápida. Envio validado pelo bridge local do WhatsApp. CRM permaneceu em `Não Respondeu` naquele momento.
 
-### 2026-05-07 19:35 — Primeira resposta inbound registrada
-Cliente respondeu pelo WhatsApp com `Oi`. O CRM foi alterado de `Não Respondeu` para `Em Atendimento`. A repescagem foi interrompida por resposta inbound do cliente, com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.
+### 2026-05-07 19:35 — Resposta inbound e retomada
+Cliente respondeu pelo WhatsApp com saudação curta. A rotina silenciosa validou `broker_id=35`, atualizou o status de `Não Respondeu` para `Em Atendimento`, registrou nota objetiva no CRM e interrompeu a repescagem ativa por resposta do cliente.
 
-### 2026-05-07 19:35 — Cliente justificou demora
-Cliente enviou: `Desculpa não responder antes hj foi corrido pra mim`. Rotina silenciosa validou `broker_id=35`, preservou status `Em Atendimento`, confirmou repescagem já interrompida e registrou que não havia Resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+### 2026-05-07 19:35 — Mensagem inbound adicional registrada
+Nova mensagem inbound foi registrada no CRM indicando que o cliente se desculpou pela demora e relatou dia corrido. O status já estava `Em Atendimento`; a repescagem permaneceu interrompida e não havia Resgate ativo.
 
 ## Objeções e travas
-- Não há objeção comercial explícita.
-- Trava momentânea: cliente teve dia corrido e demorou a responder.
-- O atendimento deve retomar com naturalidade, sem cobrança pela demora.
+- Ainda não há objeção comercial identificada.
+- O cliente sinalizou disponibilidade de retomada, mas não respondeu ainda à pergunta comercial sobre Union Vista, prazo de entrega ou comparação com entrega mais rápida.
 
 ## Próximo passo
-A resposta comercial normal deve retomar o contexto do Union Vista com leveza, validar a disponibilidade do cliente e seguir a qualificação com uma pergunta curta. Após qualquer outbound normal do Reno em `Em Atendimento` que deixe pergunta aberta, armar Resgate step 0 conforme a governança de Qualification.
+A sessão WhatsApp normal deve responder de forma curta e acolhedora, sem expor bastidores, retomando o contexto do Union Vista e avançando uma pergunta por vez. Depois de enviar resposta normal em `Em Atendimento`, armar novo ciclo de Resgate step 0 se a mensagem deixar próximo passo em aberto.
 
 ## Observações operacionais
 - Documento mantido no caminho oficial `_agents/reno/atendimentos/11248-genilsom-oliveira.md`.
-- Repescagem atual: `step=1`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`, `last_sent_at=2026-05-07T19:21:05.554105-03:00`.
-- Resgate: sem branch ativa no momento desta atualização.
-- Esta atualização foi feita apenas para persistência operacional e curadoria; não houve envio de WhatsApp ao cliente.
+- Repescagem interrompida após resposta real do cliente: `step=1`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
+- Nota CRM registrada em 2026-05-07 informando resposta inbound, mudança de status e parada da repescagem.
+- Uma rotina silenciosa posterior registrou nova mensagem inbound e preservou o status `Em Atendimento`.
+- Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
