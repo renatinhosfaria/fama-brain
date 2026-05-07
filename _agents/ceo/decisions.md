@@ -6,6 +6,53 @@ updated: '2026-05-07'
 tags:
   - decisao
 ---
+## 2026-05-07 — Schema do vault aceita `_agents/reno/atendimentos/` como path canônico de entity-profile com client_id
+
+## Contexto
+
+VaultSteward (FAM-772) identificou conflito estrutural ao planejar retrofit em batch das ~280 notas legadas:
+
+- **Schema canônico** (versão antiga) dizia: entity-profile com `client_id` mora em `_agents/reno/clientes/{id}-{slug}.md`. `atendimentos/` era só para journals.
+- **EntityResolver** (deployed pelo Coder em 2026-05-07, em `src/vault/entity-resolver.ts` no MCP `mcp-fama_obsidian`) busca client_id por **prefix `N-` em `_agents/reno/atendimentos/`**.
+
+~140 entity-profiles já vivem em `atendimentos/` no estoque atual. Mover todos para `clientes/` para alinhar ao schema antigo exigia: PR no MCP + git move de 140 arquivos + atualização de wikilinks + risco de quebrar o auto-wikilink que acabou de ir para produção.
+
+## Decisão
+
+**Schema cede ao tool deployado.** A partir de 2026-05-07, `_agents/reno/atendimentos/{id}-{slug}.md` é path canônico válido de `entity-profile` quando o frontmatter tem `client_id`. `_agents/reno/clientes/` continua sendo path canônico válido (não há remoção). VaultSteward atualiza o doc de schema para refletir isso.
+
+## Por quê essa, não a outra
+
+- **Tail-wags-dog**: schema é documentação da realidade. Mover 140 arquivos por causa de uma frase em doc é inverter a hierarquia de fonte da verdade.
+- **Risco**: zero (edit em 1 doc) vs alto (140 git moves + atualizar wikilinks + potencial regressão do EntityResolver em produção).
+- **Custo de oportunidade**: cada hora gasta em "consertar paths que já funcionam" é hora não gasta destravando os ~280 wikilinks órfãos, que é o objetivo real da FAM-772.
+- **Convergência futura**: nenhum custo de manter os dois paths como canônicos. Se algum dia quisermos consolidar, fica mais barato com EntityResolver maduro.
+
+## Decisão complementar (D2 da FAM-772)
+
+Construir tool nova `refresh_wikilinks(path)` no `mcp-fama_obsidian` antes do batch das 280. Subtask delegada via VaultSteward → Coder. Tool reusável, idempotente, auditável.
+
+## O que isto descarta
+
+- Opção "schema-wins" (mover 140 arquivos): rejeitada por risco/custo.
+- Opção "split" (entity-profile pré-conversão em atendimentos, pós em clientes): rejeitada por adicionar lógica de fallback no resolver sem ganho.
+
+## Como aplicar
+
+Para qualquer agente futuro que esteja decidindo onde colocar entity-profile com `client_id` no Reno:
+
+1. Default: `_agents/reno/atendimentos/{client_id}-{slug}.md`. É o que o EntityResolver acha primeiro.
+2. `_agents/reno/clientes/` ainda funciona, mas só use se o caminho `atendimentos/` for impróprio por algum motivo de conteúdo.
+3. **Nunca** mover entity-profile entre os dois sem rodar `refresh_wikilinks` depois para evitar links quebrados.
+
+## Referências
+
+- FAM-772 (issue de retrofit, status: blocked aguardando VaultSteward executar D1+D2)
+- FAM-769 (parent: trabalho geral do vault, autorizado pelo Renato)
+- Plano completo: documento `plan` de FAM-772
+- Interaction com 5 perguntas: `02770bea-b334-4734-8899-7abb9154d31e`
+- Comentário CEO desbloqueando: `15c1c413-88c1-4847-9db5-e60304e49dba` em FAM-772
+
 ## 2026-05-07 — Camada técnica de conectividade do vault entregue; próxima alavanca é retrofit do estoque + dono do enforcement
 
 Em 2026-05-07T20:48Z o Coder/CTO entregou o pacote técnico que ataca a causa primária da desconectividade do vault: `EntityResolver` ID→path, auto-wikilinks em 4 workflows (`upsert_lead_timeline`/`upsert_broker_profile`/`upsert_entity_profile`/`append_lead_interaction`), `ensureHubStub` para criação on-demand, normalização de tags em `src/vault/tags.ts` e tool `upsert_hub`. 333/333 testes passando.
