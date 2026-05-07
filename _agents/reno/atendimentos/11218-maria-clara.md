@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Maria Clara
 client_id: 11218
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: SLA Cascata
 created: '2026-05-05'
 updated: '2026-05-07'
@@ -14,25 +14,26 @@ tags:
   - atendimento
   - whatsapp
   - famachat
-  - primeiro-contato
-  - repescagem
+  - em-atendimento
+  - repescagem-respondida
   - garden-sul
-  - step-2
 ---
 # Atendimento — Maria Clara
 
 ## Resumo atual
-Repescagem step 2 enviada via WhatsApp em 2026-05-07, após o primeiro follow-up de repescagem ter ficado sem resposta. O cliente segue em `Não Respondeu`. A abordagem evoluiu de entrada/parcelamento/planta para uma leitura mais consultiva do encaixe de parcela no momento da cliente, considerando o Garden Sul como lançamento com entrega prevista para set/2028.
+Cliente respondeu pelo WhatsApp durante a repescagem e entrou em atendimento. Status CRM atualizado de `Não Respondeu` para `Em Atendimento` em 2026-05-07 porque ainda estava exatamente nesse status. A branch de repescagem foi interrompida para evitar novos follow-ups automáticos.
+
+O diagnóstico inicial indica intenção ativa de compra e preferência por apartamento. Próxima condução: validar se o perfil de 2 quartos do Garden Sul atende ou se precisa de algo maior; depois avançar para momento, condição de entrada/parcela/financiamento e, se fizer sentido, visita presencial na Fama.
 
 ## Dados operacionais
 - Cliente ID: 11218
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Em Atendimento
 - Origem: SLA Cascata
 - Telefone/WhatsApp: (34) 99789-1120 / JID validado no CRM
 - Cliente original relacionado: 11160, usado apenas como contexto consultivo
 - Empreendimento relacionado: Garden Sul — Jardim Sul, Zona Sul
-- Última interação relevante: 2026-05-07 — repescagem step 2 enviada pelo Reno
+- Última interação relevante: 2026-05-07 — cliente respondeu e qualificação inicial começou
 
 ## Contexto comercial
 Cliente entrou no ciclo atual do Reno por SLA Cascata com interesse no Garden Sul. O empreendimento é um lançamento da Opção Empreendimentos no Jardim Sul, em Uberlândia, com apartamentos de 2 quartos e opções cadastradas a partir de aproximadamente R$ 294.900 no CRM.
@@ -41,20 +42,20 @@ Contexto do cadastro original relacionado (11160), usado apenas como apoio consu
 
 ## Diagnóstico
 ### Necessidade
-Busca residencial no Garden Sul, com atenção ao valor total e à condição de compra.
+Confirmado que busca apartamento. Validar se 2 quartos atende ou se precisa de algo maior.
 
 ### Momento
-Ainda não confirmado no ciclo atual. Silêncio após os dois primeiros contatos do Reno.
+Confirmou que está pensando em comprar. Ainda falta entender prazo/urgência.
 
 ### Decisão
-Ainda não diagnosticada no ciclo atual.
+Ainda não diagnosticada.
 
 ### Viabilidade
-Há indício consultivo, vindo do cliente original relacionado, de compra financiada e preferência por entrada baixa/parcelada. Não há validação formal de renda, entrada disponível ou aprovação de crédito; não prometer aprovação.
+Há indício consultivo, vindo do cliente original relacionado, de compra financiada e preferência por entrada baixa/parcelada. Ainda falta validar faixa de parcela, entrada disponível e caminho de financiamento. Não prometer aprovação de crédito.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Primeiro contato enviado
-Reno enviou mensagem curta e contextual, mencionando o interesse no Garden Sul/Jardim Sul e perguntando se a busca era para morar ou investir.
+Reno enviou mensagem curta e contextual, mencionando o interesse no Garden Sul/Jardim Sul e perguntando se a busca era para morar ou investir. Status foi atualizado de `Sem Atendimento` para `Não Respondeu`.
 
 ### 2026-05-06 — Repescagem step 1 enviada
 Reno enviou follow-up de repescagem pelo WhatsApp usando o `whatsapp_jid` salvo e validado pelo bridge local. A mensagem mudou o ângulo para viabilidade prática do lançamento: entrada, parcelas durante a obra e financiamento depois.
@@ -74,36 +75,17 @@ Reno enviou novo follow-up pelo WhatsApp com um ângulo diferente do step 1, evi
 Mensagem enviada:
 > Maria Clara, como o Garden Sul é um lançamento com entrega prevista pra set/2028, pra eu não te passar algo fora do seu momento, você já tem uma faixa de parcela em mente?
 
+### 2026-05-07 — Cliente respondeu
+Cliente respondeu no WhatsApp. Na qualificação inicial, confirmou que está pensando em comprar e que busca apartamento. Status CRM atualizado para `Em Atendimento`; repescagem marcada como interrompida com `stopped_reason=cliente_respondeu_em_atendimento`.
+
 ## Objeções e travas
-- Silêncio após os dois primeiros contatos do ciclo atual do Reno.
 - Possível trava comercial: valor de parcela, entrada e prazo de entrega do lançamento.
-- O próximo passo precisa continuar consultivo, sem repetir a mesma comparação de entrada/localização.
+- Ainda não há objeção explícita.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, o fluxo correto é atendimento/qualificação WhatsApp: atualizar status de `Não Respondeu` para `Em Atendimento` somente se ainda estiver nesse status e conduzir diagnóstico consultivo.
-
-Se não responder, a próxima repescagem prevista é o step 3 em `2026-05-08T19:10:00-03:00`, com uma nova abordagem comercial e sem repetir a mesma tese do step 2.
+Seguir em turnos curtos no WhatsApp. Perguntar se o perfil de apartamento de 2 quartos do Garden Sul atende ou se precisa de algo maior. Depois validar prazo de compra, faixa de parcela/entrada e decisão. Se houver sinal quente e viabilidade, conduzir para visita presencial no escritório da Fama.
 
 ## Observações operacionais
-- Cliente validado no CRM com `broker_id=35`, `status=Não Respondeu`, branch `meta_data.reno_followup.repescagem.enabled=true`, `stopped_reason=null` e `next_run_at` vencido no momento da seleção.
-- Seleção feita por consulta SQL estrita na branch de repescagem; não houve disputa de outro candidato.
-- Envio realizado via bridge local do WhatsApp em `http://127.0.0.1:3000/send`; healthcheck retornou `connected` e a resposta veio validada (`validated=true`, `validationMethod=onWhatsApp`).
-- `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=2`, `last_sent_at=2026-05-07T21:07:55+02:00`, `next_run_at=2026-05-08T19:10:00-03:00`, `enabled=true` e `stopped_reason=null`.
-- Status CRM permaneceu em `Não Respondeu`, conforme regra de repescagem para steps 1 a 4.
-
-
-## Atualização — 2026-05-07 — Cliente respondeu e entrou em atendimento
-Cliente respondeu pelo WhatsApp durante a repescagem. Status CRM atualizado de `Não Respondeu` para `Em Atendimento` porque ainda estava exatamente nesse status. Branch de repescagem interrompida para não continuar follow-up automático.
-
-### Respostas obtidas
-- Momento: pensando em comprar.
-- Tipo de imóvel: apartamento.
-
-### Diagnóstico atualizado
-- Necessidade: apartamento; validar se o perfil de 2 quartos do Garden Sul atende ou se precisa de algo maior.
-- Momento: existe intenção ativa de compra, ainda sem prazo/urgência definido.
-- Decisão: ainda não diagnosticada.
-- Viabilidade: ainda falta entender faixa de parcela/entrada e caminho de financiamento; não prometer crédito.
-
-### Próximo passo
-Continuar em turnos curtos no WhatsApp. Próxima pergunta recomendada: validar se apartamento de 2 quartos atende, mantendo contexto no Garden Sul antes de avançar para condição de compra e visita presencial.
+- Cliente validado no CRM com `broker_id=35`.
+- Status atual verificado no CRM: `Em Atendimento`.
+- Branch `meta_data.reno_followup.repescagem` verificada com `enabled=false`, `next_run_at=null`, `stopped_reason=cliente_respondeu_em_atendimento`.
