@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-05-05'
-updated: '2026-05-06'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -20,7 +20,7 @@ tags:
 # Atendimento — Jeandra Cândido
 
 ## Resumo atual
-Repescagem step 1 enviada com sucesso em 2026-05-06 para tentar gerar a primeira resposta real da cliente. O status operacional permanece `Não Respondeu`; a próxima repescagem ficou programada para 2026-05-07T14:20:00-03:00 se não houver resposta.
+Repescagem step 2 enviada com sucesso em 2026-05-07. O status operacional segue `Não Respondeu`. Próxima repescagem prevista para `2026-05-08T14:20:00-03:00` se não houver resposta.
 
 ## Dados operacionais
 - Cliente ID: 11208
@@ -30,12 +30,12 @@ Repescagem step 1 enviada com sucesso em 2026-05-06 para tentar gerar a primeira
 - Cliente original relacionado: 11153 (Facebook Ads, broker_id=14; usado apenas como contexto consultivo)
 - Telefone/WhatsApp: (34) 98821-5118 / 553488215118@s.whatsapp.net
 - Empreendimentos vinculados no CRM: 25 (Garden Sul), 67 (Place+Arbi)
-- Última interação relevante: 2026-05-06 — repescagem step 1 enviada pelo Reno
+- Última interação relevante: 2026-05-07 — repescagem step 2 enviada pelo Reno
 
 ## Contexto comercial
 Cliente chegou ao Reno por redistribuição da SLA Cascata, com dois empreendimentos vinculados no CRM: Garden Sul, lançamento no Jardim Sul/Zona Sul com entrega prevista para set/2028, e Place+Arbi, lançamento no Shopping Park/Zona Sul com entrega prevista para jun/2027. O cliente original relacionado tem origem Facebook Ads e também registra esses interesses, mas sem diagnóstico comercial útil para o Reno.
 
-Como o primeiro contato já perguntou se a busca era para morar ou investir, a repescagem step 1 mudou o ângulo para organização da busca entre opções com regiões, prazos e condições diferentes, evitando repetir a pergunta inicial.
+O step 1 já havia organizado a busca por comparação entre opções; o step 2 mudou para viabilidade prática do lançamento, com foco em entrada, financiamento e parcela da compra.
 
 ## Diagnóstico
 ### Necessidade
@@ -48,7 +48,7 @@ Ainda não diagnosticado.
 Ainda não diagnosticada.
 
 ### Viabilidade
-Ainda não diagnosticada. Não houve promessa ou inferência de crédito; a mensagem apenas abriu espaço para entender prioridades de compra.
+Ainda não diagnosticada. Não houve promessa ou inferência de crédito; a mensagem apenas abriu espaço para entender o encaixe prático da compra.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Primeiro contato WhatsApp
@@ -72,18 +72,38 @@ Pra eu te orientar sem chute: hoje você quer priorizar localização, prazo de 
 
 Ângulo usado: criar novo motivo para resposta a partir de comparação/organização de prioridades entre dois lançamentos, sem repetir a pergunta inicial sobre morar/investir.
 
-Envio realizado pelo fallback excepcional do bridge local saudável porque `send_message` não estava exposto nesta sessão de cron. O bridge validou o JID salvo por `onWhatsApp` e retornou sucesso técnico. Em seguida, o CRM foi atualizado por `mcp_mcp_postgres_mark_reno_followup_sent` com `step=1`, `last_sent_at=2026-05-06T10:34:50-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `claim_expires_at=null` e `stopped_reason=null`.
+Envio realizado pelo fallback excepcional do bridge local saudável porque `send_message` não estava exposto nesta sessão. O bridge validou o JID salvo por `onWhatsApp` e retornou sucesso técnico. Em seguida, o CRM foi atualizado por `mcp_mcp_postgres_mark_reno_followup_sent` com `step=1`, `last_sent_at=2026-05-06T10:34:50-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `claim_expires_at=null` e `stopped_reason=null`.
+
+### 2026-05-07 — Repescagem step 2 enviada
+Mensagem enviada pelo Reno:
+
+“Jeandra, tudo bem? 🔑
+
+Como você está olhando Garden Sul e Place+Arbi, o ponto que mais muda a escolha agora é a parte prática da compra: entrada, financiamento e parcela.
+
+Quer que eu faça essa leitura com você pra ver qual dos dois encaixa melhor no seu momento?”
+
+Ângulo usado: sair da comparação de opções e ir para viabilidade prática do lançamento, com leitura objetiva de entrada, financiamento e parcela.
+
+Envio realizado pelo fallback excepcional do bridge local saudável em `http://127.0.0.1:3000/send`, usando o `whatsapp_jid` salvo no CRM. O bridge validou por `onWhatsApp` e retornou sucesso técnico.
+
+Após o envio, o CRM foi persistido por `mcp_mcp_postgres_mark_reno_followup_sent` com:
+- `step=2`
+- `last_sent_at=2026-05-07T15:51:22-03:00`
+- `next_run_at=2026-05-08T14:20:00-03:00`
+- `stopped_reason=null`
+- `claim_expires_at=null`
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 - Ainda não houve primeira resposta real ao Reno neste ciclo.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se continuar sem resposta e permanecer elegível (`broker_id=35`, `status=Não Respondeu`, `repescagem.enabled=true`, `stopped_reason=null`), a próxima execução deve enviar o step 2 a partir de 2026-05-07T14:20:00-03:00, mudando o ângulo para evitar caminho errado/viabilidade prática.
+Aguardar resposta da cliente. Se continuar sem resposta e permanecer elegível (`broker_id=35`, `status=Não Respondeu`, `repescagem.enabled=true`, `stopped_reason=null`), a próxima execução deve enviar o step 3 a partir de `2026-05-08T14:20:00-03:00`, mantendo motivo novo para resposta.
 
 ## Observações operacionais
 - Nome no CRM parece humano e confiável; foi usado na saudação.
-- Como havia dois empreendimentos vinculados, a mensagem citou Garden Sul e Place+Arbi de forma contextual, sem inventar disponibilidade ou condição.
-- O cliente original 11153 foi usado apenas como contexto; a entidade operacional deste atendimento é o cliente 11208.
-- Status não foi alterado no step 1, conforme contrato da repescagem.
+- Como havia dois empreendimentos vinculados, a mensagem citou Garden Sul e Place+Arbi de forma contextual.
+- Status não foi alterado nos steps 1 a 4, conforme contrato da repescagem.
+- Bridge local validou o JID por `onWhatsApp`.
 - Nota operacional automática de envio registrada no CRM pelo usuário Reno (`user_id=35`).
