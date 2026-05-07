@@ -2,10 +2,29 @@
 type: agent-decisions
 owner: ceo
 created: '2026-04-29'
-updated: '2026-05-06'
+updated: '2026-05-07'
 tags:
   - decisao
 ---
+## 2026-05-07 — Camada técnica de conectividade do vault entregue; próxima alavanca é retrofit do estoque + dono do enforcement
+
+Em 2026-05-07T20:48Z o Coder/CTO entregou o pacote técnico que ataca a causa primária da desconectividade do vault: `EntityResolver` ID→path, auto-wikilinks em 4 workflows (`upsert_lead_timeline`/`upsert_broker_profile`/`upsert_entity_profile`/`append_lead_interaction`), `ensureHubStub` para criação on-demand, normalização de tags em `src/vault/tags.ts` e tool `upsert_hub`. 333/333 testes passando.
+
+Toda nota nova escrita pelo MCP a partir de agora carrega `wikilinks` no frontmatter e linha `Vínculos: [[...]]` no body, com IDs preservados via `priorFm` carry-over. Tags ficam normalizadas (ASCII-fold + kebab-case + strip de timestamps) sem rejeitar — `tag_warnings` no response sinaliza casos.
+
+Verificação direta: `_agents/reno/atendimentos/10930-cassio-coimbra.md` (mtime 19:44Z, pré-implementação) ainda saiu com `wikilinks: []`. Confirma que o fix age na borda mas não retroalimenta o estoque legado de ~280 notas.
+
+A pergunta do conselho deixa de ser "como conectar?" e passa a ser executiva:
+
+1) Decidir destino do VaultSteward (em `error` com budget 0 desde 2026-05-06) — sem dono, retrofit e KPI ficam órfãos. Recriar com config corrigida é o caminho de menor fricção dado o investimento já feito.
+2) Semear ~10–15 hubs canônicos via `upsert_hub` (Garden Sul, Union Vista, Union Vereda, Grand Ville, Place Arbi, Shopping Park, Facebook Ads, WhatsApp, FamaChat, Jaraguá, Zona Sul, Zona Oeste, Centro) antes do retrofit, para que auto-wikilinks apontem direto para nota canônica em vez de stub.
+3) Retrofit em batch das ~120 notas de atendimentos + ~60 brokers/contextos via re-disparo de upsert orientado por ID, em 1–2 sprints.
+4) KPI de conectividade: 80% das notas com pelo menos 1 wikilink em 90 dias. Hoje rodamos em ~8%.
+
+Descartei: (a) confiar só no MCP novo sem retrofit — o núcleo legado continuaria isolado; (b) reset do vault — schema, decisões e contextos curados são bons, o problema é conectividade não conteúdo; (c) adiar decisão do VaultSteward — sem dono, retrofit degrada de novo.
+
+Como aplicar: escalar ao Renato no thread da FAM-769 com pedido explícito de aprovar caminho (1)+(2)+(3) e nomear dono do VaultSteward. Depois disso, criar issues filhas para Coder (semear hubs + script de retrofit) e para o substituto do VaultSteward (auditoria semanal contínua).
+
 ## 2026-05-06 — Cancelar cascata de recovery do VaultSteward (FAM-83 → FAM-287)
 
 **Contexto:** o agente VaultSteward (33a2f534) está em status `error` com `budgetMonthlyCents: 0` há semanas. Sua tarefa de monitoramento diário FAM-83 falhou, e o sistema de recovery automática do Paperclip gerou uma cascata recursiva de 204 issues (`Recover stalled issue FAM-N`), todas reescaladas ao CEO, todas falhando com `adapter_failed: Claude exited with code 1` e gerando ainda mais recoveries. O CEO foi acordado em FAM-284 (uma dessas recoveries) e descobriu o ciclo.
