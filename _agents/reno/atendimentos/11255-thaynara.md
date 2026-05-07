@@ -15,46 +15,57 @@ tags:
   - whatsapp
   - famachat
   - primeiro-contato
+  - repescagem
+  - step-1
+  - union-vereda
+  - jaragua
 ---
 # Atendimento — Thaynara
 
 ## Resumo atual
-Primeiro contato do Reno enviado via WhatsApp em 2026-05-07. Cliente demonstrou interesse no Union Vereda, no bairro Jaraguá. Status CRM atualizado para `Não Respondeu` e repescagem inicializada para 2026-05-07 às 19:10.
+Repescagem step 1 enviada em 2026-05-07 via WhatsApp. Como o nome cadastral veio estilizado, a abertura foi neutra e pediu como a cliente prefere ser chamada. O CRM permaneceu em `Não Respondeu` e o próximo follow-up ficou agendado para 2026-05-08 às 09:10.
 
 ## Dados operacionais
 - Cliente ID: 11255
 - Broker ID: 35
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
-- Telefone/WhatsApp: WhatsApp validado no envio
-- Última interação relevante: primeiro contato enviado pelo Reno em 2026-05-07
+- Telefone/WhatsApp: JID validado no envio pelo bridge local
+- Última interação relevante: repescagem step 1 enviada em 2026-05-07
 
 ## Contexto comercial
-Interesse originado por anúncio de Facebook Ads no empreendimento Union Vereda, bairro Jaraguá, Uberlândia. A primeira abertura contextualizou o empreendimento e fez uma pergunta simples para confirmar se a região faz sentido para a busca da cliente.
+Interesse originado por Facebook Ads no empreendimento Union Vereda, bairro Jaraguá, Uberlândia. O primeiro contato já havia apresentado a Fama e o contexto do imóvel; nesta repescagem a abordagem foi neutra, curta e cuidadosa por causa da grafia estilizada do nome cadastrado.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. Aguardando primeira resposta.
+Ainda em confirmação.
 
 ### Momento
-Ainda não diagnosticado. Cliente acabou de demonstrar interesse em campanha digital.
+Ainda em confirmação.
 
 ### Decisão
-Ainda não diagnosticada.
+Ainda em confirmação.
 
 ### Viabilidade
-Ainda não diagnosticada. Não houve conversa sobre financiamento, entrada ou condições.
+Ainda em confirmação. Não houve conversa sobre entrada, parcela ou financiamento nesta etapa.
 
 ## Histórico curado de interações
 ### 2026-05-07 — Primeiro contato enviado
-Reno enviou duas mensagens curtas pelo WhatsApp: apresentação com contexto do Union Vereda no Jaraguá e pergunta se a cliente procura imóvel nessa região. Envio validado tecnicamente pelo WhatsApp. Status foi alterado de `Sem Atendimento` para `Não Respondeu` e a régua de repescagem foi inicializada.
+Reno enviou a abertura inicial via WhatsApp com contexto do Union Vereda no Jaraguá e pergunta simples sobre a região. Envio validado tecnicamente. Cliente permaneceu em `Não Respondeu` e a régua de repescagem foi inicializada.
+
+### 2026-05-07 — Repescagem step 1 enviada
+Reno enviou follow-up curto e neutro pelo WhatsApp: `Oi, tudo bem? Aqui é o Reno, da Fama. Vi seu interesse no Union Vereda, no Jaraguá. Só pra eu te atender certinho, como posso te chamar?`
+A mensagem foi validada no bridge local e a branch de repescagem avançou para step 1 com próximo envio previsto para 2026-05-08 às 09:10.
 
 ## Objeções e travas
-- Nenhuma objeção registrada até o momento.
+- Cadastro veio com grafia estilizada do nome; a abertura foi tratada com cuidado antes de aprofundar a qualificação.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se permanecer sem resposta, seguir a régua de repescagem já inicializada no CRM.
+Aguardar a resposta da cliente para confirmar como prefere ser chamada e continuar a qualificação normal.
 
 ## Observações operacionais
-- Cadastro veio com grafia estilizada do nome; o primeiro nome humano inferível foi tratado como Thaynara.
-- Referência operacional: evt_3423 / 3423_1778179273202.
+- Cadastro veio com grafia estilizada do nome; o primeiro nome humano inferível continuou sendo tratado como Thaynara.
+- WhatsApp enviado via bridge local com `validated=true` e `validationMethod=onWhatsApp`.
+- Branch persistida no CRM: `step=1`, `enabled=true`, `stopped_reason=null`, `next_run_at=2026-05-08T09:10:00-03:00`.
+- Nota CRM automática criada pelo follow-up: `17213`.
+- Ref.: `evt_3423` / `3423_1778179273202`.
