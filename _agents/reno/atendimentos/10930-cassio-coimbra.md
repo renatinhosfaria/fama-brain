@@ -8,29 +8,31 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - resgate
+  - sla-cascata
+  - duplicidade
 ---
 # Atendimento — Cássio Coimbra
 
 ## Resumo atual
-Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`). Está em ciclo de Resgate por silêncio após atendimento anterior. Resgate step 5 foi enviado em 2026-05-03 16:15 com reclassificação segura para bucket `visita_pendente`, usando o interesse no Union Vereda e as preferências registradas como gancho para reduzir a próxima decisão do cliente. Como a execução ocorreu no domingo, o CTA mirou visita presencial na segunda-feira, conforme regra Renato/Reno de fim de semana.
+Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`). O Resgate estava armado no step 5, mas a revalidação de produção encontrou duplicidade ativa recente em SLA Cascata com o mesmo telefone/JID do cliente original em outros cadastros do mesmo contato. Para evitar envio duplicado e possível conflito de ownership entre brokers, o ciclo de Resgate foi pausado manualmente com `stopped_reason=manual_review_duplicate_active_broker`, preservando step 5 e sem enviar WhatsApp nesta execução.
 
 ## Dados operacionais
 - Cliente ID: 10930
 - Broker ID: 35
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
-- Telefone/WhatsApp: cadastrado no CRM; envios realizados sem expor número completo no vault.
+- Telefone/WhatsApp: cadastrado no CRM; não exposto aqui.
 - WhatsApp JID: cadastrado no CRM.
 - Empreendimento vinculado: Union Vereda (`id_empreendimento=161`), Jaraguá, zona Oeste de Uberlândia.
 - Última interação cliente-facing relevante: 2026-05-03 16:15 - Reno enviou Resgate step 5 via WhatsApp.
-- Última atualização operacional: 2026-05-03 16:15 - CRM/meta_data atualizado por `mark_reno_followup_sent`; nota CRM ID 16589.
+- Última atualização operacional: 2026-05-07 16:43 - Resgate pausado por duplicidade ativa/ownership review; nota CRM ID 17160; state atualizado para `enabled=false`, `next_run_at=null`, `stopped_reason=manual_review_duplicate_active_broker`.
 
 ## Contexto comercial
 - Empreendimento vinculado no CRM: Union Vereda, bairro Jaraguá, zona Oeste de Uberlândia.
@@ -43,13 +45,13 @@ Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`
 Busca apartamento que encaixe preferências de planta e rotina, especialmente suíte, lavanderia separada e possível preferência por sol da manhã.
 
 ### Momento
-Cliente está em atendimento, mas parou de responder. Resgate ativo para retomar conversa com baixa fricção e conduzir para próximo passo concreto.
+Cliente está em atendimento, mas ficou silencioso após os outbounds do Reno. O ciclo de Resgate estava em andamento até a pausa manual por duplicidade/ownership.
 
 ### Decisão
 Sem informação curada suficiente sobre decisor adicional.
 
 ### Viabilidade
-Sem dados curados suficientes sobre financiamento, entrada, renda ou FGTS. Não prometer crédito; se o cliente responder, conduzir diagnóstico de viabilidade com naturalidade.
+Sem dados curados suficientes sobre financiamento, entrada, renda ou FGTS. Não prometer crédito; se o cliente voltar a responder, conduzir diagnóstico de viabilidade com naturalidade.
 
 ## Histórico curado de interações
 ### 2026-04-22 — Interesse inicial registrado
@@ -103,16 +105,23 @@ Mensagem enviada:
 
 Contexto usado: CRM/FamaChat, notas anteriores, estado `meta_data.reno_followup.resgate`, ausência de agendamentos/visitas, empreendimento Union Vereda e documento curado oficial. A abordagem mudou em relação ao step 4: saiu de oferta de separar uma opção mais certeira/pausar busca para convite objetivo de visita presencial; mudou o tipo de pergunta para escolha de agenda; destacou o benefício de comparar pessoalmente e reduziu a decisão para segunda-feira no almoço ou fim do dia. Envio confirmado pelo gateway WhatsApp; CRM registrou nota ID 16589.
 
+### 2026-05-07 — Duplicidade ativa e pausa manual do Resgate
+Na revalidação de fila da produção, surgiram cadastros ativos recentes em SLA Cascata com o mesmo telefone/JID do cliente original 10930, especificamente os clientes 11023 e 11088, ambos vinculados ao mesmo contato por `source_details.cliente_original_id=10930`. O caso 11023 ainda traz `source_details.usuario_anterior=35`, reforçando a hipótese de transferência/ownership entre brokers.
+
+Ação executada: o ciclo de Resgate foi pausado manualmente para revisão de duplicidade/ownership, sem novo WhatsApp e sem avanço de step. Estado persistido no CRM com `enabled=false`, `next_run_at=null`, `stopped_reason=manual_review_duplicate_active_broker`, preservando step 5 e `last_sent_at=2026-05-03T16:15:00-03:00`. Nota CRM criada: 17160.
+
 ## Objeções e travas
-- Trava atual: silêncio após mensagens outbound do Reno.
-- Lacuna: histórico conversacional detalhado do WhatsApp não está disponível no CRM consultado; o uso de `visita_pendente` no step 5 se apoia no interesse inicial, nas preferências registradas, na ausência de visita/agendamento e na decisão comercial de testar CTA presencial de baixa fricção em domingo para segunda-feira.
+- Trava atual: revisão manual de duplicidade/ownership por SLA Cascata.
+- Lacuna: histórico conversacional detalhado do WhatsApp não está disponível no CRM consultado; o uso de `visita_pendente` no step 5 se apoiou no interesse inicial, nas preferências registradas, na ausência de visita/agendamento e na decisão comercial de testar CTA presencial de baixa fricção em domingo para segunda-feira.
 
 ## Próximo passo
-Aguardar resposta do cliente. Se responder, interromper ciclo de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e seguir atendimento normal com qualificação consultiva. Se confirmar interesse em visita, usar `reno-visit-scheduling` para criar/validar agendamento no FamaChat antes de confirmar como visita real. Se continuar sem resposta, próximo step de Resgate elegível em 2026-05-07T16:15:00-03:00, respeitando cadência sequencial oficial de 96h para o step 6.
+Aguardar revisão manual de ownership/duplicidade entre os cadastros 10930, 11023 e 11088. Não enviar WhatsApp enquanto o ciclo estiver pausado. Se a situação for liberada manualmente, reativar o Resgate preservando step 5. Se o cliente responder por qualquer canal, retomar o atendimento normal e interromper a régua antiga conforme a política do Reno.
 
 ## Observações operacionais
 - CRM/FamaChat segue como fonte de verdade operacional.
-- Não havia agendamentos, visitas ou vendas ativos no momento da validação de 2026-05-03.
+- Não havia agendamentos, visitas ou vendas ativos no momento da validação de 2026-05-07.
 - Status do cliente preservado como `Em Atendimento`; não há regressão nem avanço de status durante steps 1 a 5 do Resgate.
-- Estado enxuto do Resgate após step 5: `step=5`, `enabled=true`, `stopped_reason=null`, `last_context_bucket=visita_pendente`, `last_sent_at=2026-05-03T16:15:00-03:00`, `next_run_at=2026-05-07T16:15:00-03:00`.
+- Estado enxuto atual do Resgate: `step=5`, `enabled=false`, `stopped_reason=manual_review_duplicate_active_broker`, `last_context_bucket=visita_pendente`, `last_sent_at=2026-05-03T16:15:00-03:00`, `next_run_at=null`.
+- Duplicidades ativas recentes encontradas: cliente 11023 (broker 14) e cliente 11088 (broker 24), ambos com mesmo telefone/JID e `source_details.cliente_original_id=10930`.
+- O 11023 foi criado a partir de `source_details.usuario_anterior=35`, o que aumenta o risco de ownership/transferência entre cadastros.
 - Não usar caminhos legados `_agents/reno/clientes/` ou `_agents/reno/cliente/` para este atendimento.
