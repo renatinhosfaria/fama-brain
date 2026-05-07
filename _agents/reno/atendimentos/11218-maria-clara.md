@@ -90,3 +90,20 @@ Se não responder, a próxima repescagem prevista é o step 3 em `2026-05-08T19:
 - Envio realizado via bridge local do WhatsApp em `http://127.0.0.1:3000/send`; healthcheck retornou `connected` e a resposta veio validada (`validated=true`, `validationMethod=onWhatsApp`).
 - `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=2`, `last_sent_at=2026-05-07T21:07:55+02:00`, `next_run_at=2026-05-08T19:10:00-03:00`, `enabled=true` e `stopped_reason=null`.
 - Status CRM permaneceu em `Não Respondeu`, conforme regra de repescagem para steps 1 a 4.
+
+
+## Atualização — 2026-05-07 — Cliente respondeu e entrou em atendimento
+Cliente respondeu pelo WhatsApp durante a repescagem. Status CRM atualizado de `Não Respondeu` para `Em Atendimento` porque ainda estava exatamente nesse status. Branch de repescagem interrompida para não continuar follow-up automático.
+
+### Respostas obtidas
+- Momento: pensando em comprar.
+- Tipo de imóvel: apartamento.
+
+### Diagnóstico atualizado
+- Necessidade: apartamento; validar se o perfil de 2 quartos do Garden Sul atende ou se precisa de algo maior.
+- Momento: existe intenção ativa de compra, ainda sem prazo/urgência definido.
+- Decisão: ainda não diagnosticada.
+- Viabilidade: ainda falta entender faixa de parcela/entrada e caminho de financiamento; não prometer crédito.
+
+### Próximo passo
+Continuar em turnos curtos no WhatsApp. Próxima pergunta recomendada: validar se apartamento de 2 quartos atende, mantendo contexto no Garden Sul antes de avançar para condição de compra e visita presencial.
