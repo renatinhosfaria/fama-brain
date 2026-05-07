@@ -1,8 +1,12 @@
 ---
-type: entity-profile
-owner: reno
+broker_id: 35
+client_id: 11248
 created: '2026-05-06'
-updated: '2026-05-07'
+entity_name: Genilsom Oliveira
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -12,18 +16,15 @@ tags:
   - repescagem
   - inbound
   - em-atendimento
+  - diagnostico
   - financiamento
-entity_type: atendimento
-entity_name: Genilsom Oliveira
-broker_id: 35
-client_id: 11248
-source: Facebook Ads
-status_crm: Em Atendimento
+type: entity-profile
+updated: '2026-05-07'
 ---
 # Atendimento — Genilsom Oliveira
 
 ## Resumo atual
-Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e repescagem step 1 sobre o Union Vista, o cliente respondeu pelo WhatsApp em 2026-05-07 19:35. A primeira resposta encerrou a condição de silêncio: o CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Depois, o cliente retomou a conversa e perguntou sobre a forma de financiamento, sinalizando interesse em entender viabilidade/condição de compra. A rotina silenciosa apenas registrou a nova mensagem, preservou o status e não enviou resposta ao cliente.
+Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e repescagem step 1 sobre o Union Vista, o cliente respondeu pelo WhatsApp em 2026-05-07, encerrando a condição de silêncio: o CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Nas respostas mais recentes, informou que quer imóvel para morar e perguntou sobre forma de financiamento. O status já estava correto e foi preservado.
 
 ## Dados operacionais
 - Cliente ID: 11248
@@ -32,23 +33,23 @@ Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e r
 - Origem: Facebook Ads
 - Empreendimento: Union Vista, Grand Ville, Uberlândia
 - WhatsApp: validado no CRM
-- Última interação relevante: 2026-05-07 19:54 — inbound do cliente perguntando sobre forma de financiamento; status preservado em `Em Atendimento`
+- Última interação relevante: 2026-05-07 — cliente informou busca para moradia e perguntou sobre financiamento
 
 ## Contexto comercial
-Cliente entrou por Facebook Ads com interesse no Union Vista, lançamento no Grand Ville, em Uberlândia. O primeiro contato perguntou sobre a região. A repescagem step 1 retomou o interesse com ângulo consultivo sobre prazo de entrega, entrada e parcela, considerando que o Union Vista está em lançamento com entrega prevista para Jul/2027. O cliente respondeu primeiro com saudação, depois justificou a demora por rotina corrida e, em seguida, perguntou: “Qual forma de financiamento”. Isso indica abertura para falar de condição de compra, financiamento e possível encaixe, sem prometer aprovação.
+Cliente entrou por Facebook Ads com interesse no Union Vista, lançamento no Grand Ville, em Uberlândia. O primeiro contato perguntou sobre a região. A repescagem step 1 retomou o interesse com ângulo consultivo sobre prazo de entrega, entrada e parcela, considerando que o Union Vista está em lançamento com entrega prevista para Jul/2027. Após justificar a demora por rotina corrida, o cliente respondeu à qualificação inicial indicando que busca imóvel para morar e, em seguida, abriu dúvida sobre forma de financiamento.
 
 ## Diagnóstico
 ### Necessidade
-Ainda em diagnóstico. Há interesse inicial no Union Vista, mas o objetivo da compra ainda não foi confirmado.
+Cliente busca imóvel para morar. Interesse inicial vinculado ao Union Vista/Grand Ville, mas ainda falta confirmar se a região e o prazo de entrega do lançamento fazem sentido para a rotina dele.
 
 ### Momento
-Ainda não confirmado. A régua de repescagem tentou entender se o cliente pensa em morar mais para frente no lançamento ou comparar com entrega mais rápida.
+Ainda não confirmado. A régua de repescagem tentou entender se o cliente pensa em morar mais para frente no lançamento ou comparar com algo de entrega mais rápida.
 
 ### Decisão
 Não diagnosticada. Ainda não há informação sobre outros decisores ou influência familiar.
 
 ### Viabilidade
-Cliente trouxe dúvida direta sobre forma de financiamento. Isso é sinal de interesse em viabilidade/condição de compra, mas ainda não há dados de entrada, renda, FGTS, subsídio ou capacidade de financiamento. Qualquer resposta comercial deve falar em financiamento como caminho de análise, sem prometer aprovação ou encaixe.
+Cliente já demonstrou preocupação/interesse em financiamento ao perguntar sobre a forma de financiamento. Ainda não há dados de entrada, renda, FGTS ou faixa de valor. Não prometer aprovação; responder de forma consultiva e conduzir para validação segura.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
@@ -66,20 +67,24 @@ Cliente respondeu pelo WhatsApp com saudação curta. A rotina silenciosa valido
 ### 2026-05-07 19:35 — Mensagem inbound adicional registrada
 Nova mensagem inbound foi registrada no CRM indicando que o cliente se desculpou pela demora e relatou dia corrido. O status já estava `Em Atendimento`; a repescagem permaneceu interrompida e não havia Resgate ativo.
 
-### 2026-05-07 19:54 — Pergunta sobre financiamento
-Cliente perguntou pelo WhatsApp: “Qual forma de financiamento”. A rotina silenciosa validou cliente e broker, preservou o status `Em Atendimento`, confirmou que a repescagem já estava interrompida e que não havia Resgate ativo identificado, registrou nota CRM e não enviou mensagem ao cliente.
+### 2026-05-07 19:54 — Diagnóstico inicial de finalidade
+Cliente respondeu pelo WhatsApp: `Querendo pra morar`. A rotina silenciosa registrou a finalidade no CRM e preservou o status `Em Atendimento`. Repescagem já estava interrompida e não havia Resgate ativo.
+
+### 2026-05-07 19:54 — Dúvida sobre financiamento
+Outra rotina silenciosa registrou inbound posterior do cliente perguntando sobre forma de financiamento. Status permaneceu `Em Atendimento`; repescagem continuou interrompida e não havia Resgate ativo identificado.
 
 ## Objeções e travas
 - Ainda não há objeção comercial identificada.
-- Dúvida atual: forma de financiamento do empreendimento/interesse ativo.
-- Oportunidade comercial: explicar financiamento de forma simples, reforçando análise segura e sem promessa de aprovação.
+- Ponto a validar: se o prazo de entrega do Union Vista e a região do Grand Ville fazem sentido para moradia do cliente.
+- Dúvida ativa: forma de financiamento/viabilidade inicial.
 
 ## Próximo passo
-A sessão WhatsApp normal deve responder ao cliente de forma curta e segura sobre financiamento: explicar que normalmente envolve financiamento bancário com entrada trabalhada/parcelada pela construtora, e que o encaixe depende de análise. Como a pergunta mostra interesse em viabilidade, conduzir para um próximo passo objetivo — preferencialmente atendimento presencial na Fama para ver opções e simulação com segurança. Depois de enviar resposta normal em `Em Atendimento`, armar novo ciclo de Resgate step 0 se a mensagem deixar próximo passo em aberto.
+A sessão WhatsApp normal deve responder de forma curta sobre financiamento, sem prometer aprovação, e manter uma pergunta por vez. Condução sugerida: explicar que normalmente envolve financiamento bancário com entrada/parte da entrada trabalhada conforme unidade e perfil, e que a Fama ajuda a validar o melhor caminho com segurança; em seguida, perguntar se ele pensa em financiar a maior parte ou se já tem alguma entrada separada. Depois de enviar resposta normal em `Em Atendimento`, armar novo ciclo de Resgate step 0 se a mensagem deixar próximo passo em aberto.
 
 ## Observações operacionais
 - Documento mantido no caminho oficial `_agents/reno/atendimentos/11248-genilsom-oliveira.md`.
 - Repescagem interrompida após resposta real do cliente: `step=1`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Nota CRM registrada em 2026-05-07 informando resposta inbound, mudança de status e parada da repescagem.
-- Nota CRM adicional registrada para a pergunta sobre financiamento, com status preservado em `Em Atendimento`.
+- Nova nota CRM registrada em 2026-05-07 com a finalidade declarada pelo cliente: moradia.
+- CRM também contém nota posterior com pergunta do cliente sobre financiamento, registrada por rotina silenciosa separada.
 - Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
