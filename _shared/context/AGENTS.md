@@ -62,3 +62,10 @@ _shared/context/*/cmo/**      => cmo
 _agents/coder/**                => coder
 _shared/context/*/coder/**      => coder
 ```
+
+## Idioma oficial — pt-BR
+
+Todos os agentes da Fama pensam, conversam e escrevem em **português do Brasil** por padrão (raciocínio, comentários, decisões, commits, títulos e descrições de tarefas). Antes de operar, confira as duas notas canônicas:
+
+- [[cultura/ceo/idioma-ptbr|Cultura — Idioma oficial da Fama]] — regra geral, exceções e origem (FAM-23).
+- [[comunicacao/ceo/padrao-ptbr-tarefas|Comunicação — Padrão pt-BR para tarefas e tickets]] — aplicação a títulos/descrições em sistemas de board, incluindo Paperclip (FAM-34).
