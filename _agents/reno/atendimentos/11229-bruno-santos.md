@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -16,67 +16,92 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
+  - garden-sul
+  - viabilidade
+  - step2
 ---
 # Atendimento — Bruno Santos
 
 ## Resumo atual
-Primeiro contato do Reno enviado via WhatsApp em 2026-05-06. Cliente veio de SLA Cascata e tem interesse vinculado ao Garden Sul, no Jardim Sul/Zona Sul de Uberlândia. Em 2026-05-06 às 19:50 BRT, foi enviada a repescagem step 1 com novo ângulo sobre objetivo da compra em lançamento. Status operacional permanece Não Respondeu. Próxima repescagem prevista para 2026-05-07 às 09:10 BRT se não houver resposta.
+Repescagem step 2 enviada em 2026-05-07 às 10:05 BRT. O cliente segue em `Não Respondeu`. O ângulo saiu de finalidade da compra e passou para viabilidade prática do Garden Sul: entrada, parcelas da obra e financiamento. Próxima repescagem prevista para 2026-05-08 às 14:20 BRT, salvo resposta antes disso.
 
 ## Dados operacionais
 - Cliente ID: 11229
 - Broker ID: 35
 - Status CRM: Não Respondeu
-- Origem: SLA Cascata / sla_cascata (sequência 2; cliente original 11173 usado apenas como contexto consultivo)
-- Telefone/WhatsApp: contato validado pelo WhatsApp no CRM
-- Última interação relevante: 2026-05-06 19:50 BRT — repescagem step 1 enviada
+- Origem: SLA Cascata / `sla_cascata` (sequência 2; cliente original 11173 usado apenas como contexto consultivo)
+- Telefone/WhatsApp: contato validado no CRM via `whatsapp_jid`
+- Última interação relevante: 2026-05-07 10:05 BRT — repescagem step 2 enviada
+- Próximo follow-up previsto: 2026-05-08 14:20 BRT
 
 ## Contexto comercial
-Interesse vinculado ao Garden Sul, no Jardim Sul, Zona Sul de Uberlândia. O Garden Sul é um lançamento com entrega prevista para set/2028 e plantas de 2 quartos com suíte, em faixa inicial aproximada a partir de R$294,9 mil conforme cadastro do empreendimento. A abertura inicial já havia perguntado se o cliente procurava imóvel nessa região; por isso a repescagem não repetiu região/cadastro e mudou para finalidade/objetivo da compra.
+Interesse vinculado ao **Garden Sul**, no Jardim Sul / Zona Sul de Uberlândia. O empreendimento está em status de lançamento, com entrega prevista para **set/2028**, plantas de 2 quartos com suíte e faixa inicial aproximada a partir de **R$ 294,9 mil**. A abordagem inicial já tinha perguntado se o cliente buscava imóvel na região; por isso a repescagem evitou repetir região/cadastro e mudou para leitura de viabilidade.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. A repescagem buscou abrir resposta perguntando se o cliente olha o Garden Sul para morar ou para comparar uma oportunidade de compra.
+Ainda não diagnosticada. A repescagem step 2 buscou abrir resposta com foco em viabilidade do lançamento.
 
 ### Momento
-Ainda não diagnosticado. O contexto de lançamento com entrega futura pode exigir entender prazo e momento de compra em próximos passos.
+Ainda não diagnosticado. O contexto de entrega futura exige entender se a compra faz sentido agora ou em outra janela.
 
 ### Decisão
 Ainda não diagnosticada.
 
 ### Viabilidade
-Ainda não diagnosticada. Não houve promessa, simulação ou aprovação de crédito. Próximos passos devem explorar entrada, parcelas de obra e financiamento apenas se o cliente responder.
+Ainda não diagnosticada. A mensagem focou em entrada, parcelas da obra e financiamento como filtros de caminho, sem prometer crédito ou aprovação.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
-Reno enviou abertura em duas mensagens pelo WhatsApp:
-1. Apresentação e contexto do interesse no Garden Sul, no Jardim Sul.
-2. Pergunta de baixa fricção: se o cliente está procurando imóvel nessa região.
+Reno enviou a abertura em WhatsApp com contexto do Garden Sul e perguntou se o cliente estava procurando imóvel nessa região.
 
-Status CRM atualizado de Sem Atendimento para Não Respondeu. Branch de repescagem inicializada com step 0 e próxima execução prevista para 2026-05-06 às 19:10.
+Status CRM foi alterado de `Sem Atendimento` para `Não Respondeu`. A repescagem foi inicializada para 2026-05-06 às 19:10 BRT.
 
 ### 2026-05-06 — Repescagem step 1 enviada
-Repescagem enviada às 19:50 BRT, após seleção exclusiva do fluxo `repescagem` para cliente broker_id=35/status Não Respondeu. Ângulo usado: novo motivo para resposta, conectando o Garden Sul como lançamento na Zona Sul com entrega futura e mudando a pergunta para objetivo da compra.
+Mensagem enviada às 19:50 BRT, com novo ângulo sobre objetivo da compra no Garden Sul e pergunta simples entre **morar** ou **comparar oportunidade de compra**.
 
-Mensagem enviada:
-> Oi, Bruno! Tudo bem? 🏡
->
-> Sobre o Garden Sul, como é um lançamento na Zona Sul com entrega mais pra frente, o melhor caminho muda bastante conforme o objetivo da compra.
->
-> Antes de te mandar mais informação solta, queria entender seu ponto de partida para deixar a conversa mais útil.
->
-> Você está olhando mais para **morar** ou para **comparar uma oportunidade de compra**?
+CRM/meta_data atualizado após envio:
+- `repescagem.step=1`
+- `last_sent_at=2026-05-06T19:50:38-03:00`
+- `next_run_at=2026-05-07T09:10:00-03:00`
+- `stopped_reason=null`
+- `claim_expires_at=null`
 
-CRM/meta_data atualizado por `mark_reno_followup_sent`: repescagem.step=1, last_sent_at=2026-05-06T19:50:38-03:00, next_run_at=2026-05-07T09:10:00-03:00, stopped_reason=null e claim_expires_at limpo.
+### 2026-05-07 — Repescagem step 2 enviada
+Mensagem enviada via bridge local validado no WhatsApp do CRM:
+
+> Bruno, tudo bem? 🔑
+>
+> Pensando no Garden Sul, como é um lançamento na Zona Sul com entrega em set/2028, vale olhar se entrada, parcelas da obra e financiamento encaixam no seu momento.
+>
+> Assim você entende com clareza se esse caminho faz sentido agora.
+>
+> Quer que eu faça uma primeira leitura objetiva com você?
+
+Validação técnica do envio:
+- `success=true`
+- `validated=true`
+- `validationMethod=onWhatsApp`
+- `validatedJid=553498724038@s.whatsapp.net`
+
+CRM/meta_data atualizado após envio:
+- `repescagem.step=2`
+- `last_sent_at=2026-05-07T10:05:33-03:00`
+- `next_run_at=2026-05-08T14:20:00-03:00`
+- `stopped_reason=null`
+- `claim_expires_at=null`
+
+Nota CRM automática: `clientes_id_anotacoes.id=17132`.
 
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
-- Trava atual: silêncio após primeiro contato e repescagem step 1.
+- Trava atual: silêncio após primeiro contato e depois da repescagem step 1.
 
 ## Próximo passo
-Aguardar primeira resposta do cliente. Se responder, mover condicionalmente de Não Respondeu para Em Atendimento, registrar a resposta no CRM e iniciar qualificação consultiva pelo WhatsApp. Se não responder até a próxima janela, seguir repescagem step 2 em 2026-05-07 às 09:10 BRT, mudando o ângulo para viabilidade prática/evitar caminho errado, sem repetir a pergunta de finalidade.
+Se continuar sem resposta, a próxima repescagem deve ser step 3 em **2026-05-08 às 14:20 BRT**, mudando o ângulo para o **critério principal de escolha** do cliente no Garden Sul — localização, tamanho da planta ou condição de compra — sem repetir finalidade nem viabilidade.
 
 ## Observações operacionais
-- Evento inicial: evt_3397.
-- Idempotência inicial: 3397_1778076946989.
-- Documento mantido no caminho oficial do atendimento por client_id para evitar duplicidade.
-- Envio da repescagem step 1 realizado via fallback excepcional pelo bridge local saudável, pois a ferramenta `send_message` não estava exposta neste runtime. Bridge retornou sucesso técnico com validação `onWhatsApp` para o JID salvo no CRM.
+- Evento inicial: `evt_3397`.
+- Idempotência inicial: `3397_1778076946989`.
+- Documento mantido no caminho oficial por `client_id` para evitar duplicidade.
+- Envio step 1 e step 2 ocorreram com o bridge local saudável, já que `send_message` não estava exposto neste runtime.
+- Status CRM permaneceu `Não Respondeu`; não houve regressão nem arquivamento, porque o fluxo ainda está em steps 1–4.
