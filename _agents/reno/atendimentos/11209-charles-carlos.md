@@ -92,3 +92,9 @@ Se permanecer sem resposta, a próxima repescagem prevista é o step 3 em `2026-
 - Documento mantido no caminho oficial determinístico do Reno.
 - Não houve alteração de status no step 2; cliente permanece em `Não Respondeu` conforme contrato de repescagem.
 - Repescagem e Resgate tratados como filas independentes; esta execução selecionou e enviou apenas um WhatsApp de repescagem.
+
+
+### 2026-05-07 — Primeira resposta real do cliente
+Cliente respondeu por áudios ao Reno após a repescagem step 2. Disse que está em processo de separação/divórcio, com pressão financeira da ex/companheira, e que primeiro precisa resolver essa situação antes de ver apartamento ou casa para ele. Pediu para salvar o contato e afirmou que, assim que resolver, entrará em contato com a Fama. Também mencionou que vinha olhando outros imóveis.
+
+Encaminhamento: acolher o momento pessoal sem pressão, confirmar que o contato ficará salvo e deixar a Fama disponível para retomar a conversa quando ele estiver pronto. Não forçar visita agora. Status operacional: primeira resposta recebida; mover de `Não Respondeu` para `Em Atendimento` se ainda estava nesse status e interromper repescagem.
