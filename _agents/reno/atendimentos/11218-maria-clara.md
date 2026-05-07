@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-05-05'
-updated: '2026-05-06'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -16,21 +16,23 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
+  - garden-sul
+  - step-2
 ---
 # Atendimento — Maria Clara
 
 ## Resumo atual
-Primeiro step de repescagem do Reno enviado via WhatsApp em 2026-05-06, após silêncio ao primeiro contato do ciclo operacional atual. Cliente permanece em `Não Respondeu`. A abordagem mudou da pergunta inicial sobre finalidade (`morar` vs `investir`) para o ângulo de viabilidade prática do Garden Sul: entrada, parcelas durante a obra e financiamento.
+Repescagem step 2 enviada via WhatsApp em 2026-05-07, após o primeiro follow-up de repescagem ter ficado sem resposta. O cliente segue em `Não Respondeu`. A abordagem evoluiu de entrada/parcelamento/planta para uma leitura mais consultiva do encaixe de parcela no momento da cliente, considerando o Garden Sul como lançamento com entrega prevista para set/2028.
 
 ## Dados operacionais
 - Cliente ID: 11218
 - Broker ID: 35
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata
-- Telefone/WhatsApp: (34) 99789-1120 / 553497891120@s.whatsapp.net
+- Telefone/WhatsApp: (34) 99789-1120 / JID validado no CRM
 - Cliente original relacionado: 11160, usado apenas como contexto consultivo
 - Empreendimento relacionado: Garden Sul — Jardim Sul, Zona Sul
-- Última interação relevante: 2026-05-06 — repescagem step 1 enviada pelo Reno
+- Última interação relevante: 2026-05-07 — repescagem step 2 enviada pelo Reno
 
 ## Contexto comercial
 Cliente entrou no ciclo atual do Reno por SLA Cascata com interesse no Garden Sul. O empreendimento é um lançamento da Opção Empreendimentos no Jardim Sul, em Uberlândia, com apartamentos de 2 quartos e opções cadastradas a partir de aproximadamente R$ 294.900 no CRM.
@@ -39,10 +41,10 @@ Contexto do cadastro original relacionado (11160), usado apenas como apoio consu
 
 ## Diagnóstico
 ### Necessidade
-Sinal provável de busca residencial no Garden Sul, com atenção a valor e condição de compra.
+Busca residencial no Garden Sul, com atenção ao valor total e à condição de compra.
 
 ### Momento
-Ainda não confirmado no ciclo atual do Reno. Silêncio após primeiro contato.
+Ainda não confirmado no ciclo atual. Silêncio após os dois primeiros contatos do Reno.
 
 ### Decisão
 Ainda não diagnosticada no ciclo atual.
@@ -52,10 +54,10 @@ Há indício consultivo, vindo do cliente original relacionado, de compra financ
 
 ## Histórico curado de interações
 ### 2026-05-05 — Primeiro contato enviado
-Reno enviou mensagem curta e contextual, mencionando o interesse no Garden Sul/Jardim Sul e perguntando se a busca é para morar ou investir.
+Reno enviou mensagem curta e contextual, mencionando o interesse no Garden Sul/Jardim Sul e perguntando se a busca era para morar ou investir.
 
 ### 2026-05-06 — Repescagem step 1 enviada
-Reno enviou follow-up de repescagem pelo WhatsApp usando o `whatsapp_jid` salvo e validado pelo bridge local. A mensagem criou novo motivo para resposta, saindo da finalidade de compra e indo para o encaixe do caminho financeiro do lançamento.
+Reno enviou follow-up de repescagem pelo WhatsApp usando o `whatsapp_jid` salvo e validado pelo bridge local. A mensagem mudou o ângulo para viabilidade prática do lançamento: entrada, parcelas durante a obra e financiamento depois.
 
 Mensagem enviada:
 > Oi, Maria Clara! Tudo bem? 🏡
@@ -66,18 +68,25 @@ Mensagem enviada:
 >
 > Hoje pesa mais pra você **valor de entrada/parcelamento** ou **planta/localização na Zona Sul**?
 
+### 2026-05-07 — Repescagem step 2 enviada
+Reno enviou novo follow-up pelo WhatsApp com um ângulo diferente do step 1, evitando repetir a pergunta de comparação entre entrada e localização e trazendo o foco para a faixa de parcela compatível com o momento da cliente.
+
+Mensagem enviada:
+> Maria Clara, como o Garden Sul é um lançamento com entrega prevista pra set/2028, pra eu não te passar algo fora do seu momento, você já tem uma faixa de parcela em mente?
+
 ## Objeções e travas
-- Silêncio após o primeiro contato do ciclo atual do Reno.
-- Possível trava comercial: valor de entrada, parcelamento e financiamento do lançamento.
+- Silêncio após os dois primeiros contatos do ciclo atual do Reno.
+- Possível trava comercial: valor de parcela, entrada e prazo de entrega do lançamento.
+- O próximo passo precisa continuar consultivo, sem repetir a mesma comparação de entrada/localização.
 
 ## Próximo passo
 Aguardar resposta da cliente. Se responder, o fluxo correto é atendimento/qualificação WhatsApp: atualizar status de `Não Respondeu` para `Em Atendimento` somente se ainda estiver nesse status e conduzir diagnóstico consultivo.
 
-Se não responder, a próxima repescagem prevista é o step 2 em `2026-05-07T14:20:00-03:00`, mantendo o ângulo diferente do step 1 conforme a régua oficial.
+Se não responder, a próxima repescagem prevista é o step 3 em `2026-05-08T19:10:00-03:00`, com uma nova abordagem comercial e sem repetir a mesma tese do step 2.
 
 ## Observações operacionais
-- Cliente validado no CRM com `broker_id=35`, `status=Não Respondeu`, branch `meta_data.reno_followup.repescagem.enabled=true`, `stopped_reason=null` e `next_run_at` vencido.
-- Seleção feita por claim exclusivo dentro da branch de repescagem; `claim_expires_at` foi limpo após `mark_reno_followup_sent`.
-- Envio realizado via fallback excepcional do bridge local (`/send`) porque `send_message` não estava exposto nesta sessão; bridge estava saudável e retornou sucesso técnico com validação `onWhatsApp` para o JID salvo.
-- `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=1`, `last_sent_at=2026-05-06T11:03:18-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `enabled=true` e `stopped_reason=null`.
-- Status CRM não foi alterado, conforme regra de repescagem para steps 1 a 4.
+- Cliente validado no CRM com `broker_id=35`, `status=Não Respondeu`, branch `meta_data.reno_followup.repescagem.enabled=true`, `stopped_reason=null` e `next_run_at` vencido no momento da seleção.
+- Seleção feita por consulta SQL estrita na branch de repescagem; não houve disputa de outro candidato.
+- Envio realizado via bridge local do WhatsApp em `http://127.0.0.1:3000/send`; healthcheck retornou `connected` e a resposta veio validada (`validated=true`, `validationMethod=onWhatsApp`).
+- `mcp_mcp_postgres_mark_reno_followup_sent` registrou `step=2`, `last_sent_at=2026-05-07T21:07:55+02:00`, `next_run_at=2026-05-08T19:10:00-03:00`, `enabled=true` e `stopped_reason=null`.
+- Status CRM permaneceu em `Não Respondeu`, conforme regra de repescagem para steps 1 a 4.
