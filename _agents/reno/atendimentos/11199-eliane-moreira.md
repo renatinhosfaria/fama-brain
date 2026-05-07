@@ -103,3 +103,8 @@ Aguardar resposta da cliente sobre as plantas enviadas. Se ela demonstrar fit/in
 - Há cliente original relacionado em outro broker (`cliente_original_id=11142`), mas o atendimento Reno elegível é o cliente 11199 com `broker_id=35`.
 - Em 2026-05-06, uma tentativa inicial de enviar `MEDIA:/...` via `send_message` enviou apenas o texto/caption e omitiu o anexo no WhatsApp. As imagens foram então enviadas nativamente pelo bridge WhatsApp `/send-media` com sucesso.
 - Message IDs dos anexos: `3EB09EEFB6F34B24E69673` (Planta 01) e `3EB029E1E02B6C7DCFAE66` (Planta 02). Texto final de condução enviado com `3EB0463EDC2DF08F2F86F8`.
+
+### 2026-05-07 — Resgate pausado por duplicidade/ownership
+Reno avaliou a branch de Resgate em `step=0` e encontrou SLA Cascata ativo, além de outro cadastro relacionado no mesmo telefone/JID (`cliente_original_id=11142`) em outro broker. Para evitar conflito de ownership, o ciclo foi pausado sem envio de WhatsApp com `stopped_reason=manual_review_duplicate_active_broker`, `enabled=false` e `next_run_at=null`.
+
+Campos preservados no estado operacional: `source_outbound_at=2026-05-06T14:37:51-03:00`, `source_outbound_type=media_sent`, `armed_at=2026-05-07T17:19:31-03:00`, `last_context_bucket=midia_opcao_enviada` e `last_sent_at=null`. CRM recebeu nota interna objetiva sobre o pause.
