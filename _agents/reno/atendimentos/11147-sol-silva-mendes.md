@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Sol Silva Mendes
 client_id: 11147
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 created: '2026-05-02'
-updated: '2026-05-06'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
@@ -16,37 +16,39 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
+  - step5
+  - arquivado
 ---
 # Atendimento — Sol Silva Mendes
 
 ## Resumo atual
-Cliente entrou por Facebook Ads com interesse no Union Vista, no Grand Ville. Primeiro contato foi enviado em 2026-05-02 e não houve resposta. Em 2026-05-03, Reno enviou repescagem step 1 com foco em organizar a busca pelo lançamento. Em 2026-05-04 às 15:28 BRT, Reno enviou repescagem step 2 mudando o ângulo para evitar caminho errado: prazo de entrega, entrada, parcela e financiamento antes de avançar na escolha. Em 2026-05-05 às 19:20 BRT, Reno enviou repescagem step 3 com diagnóstico leve pelo critério principal de escolha no lançamento. Em 2026-05-06 às 09:22 BRT, Reno enviou repescagem step 4 com convite consultivo direto para organizar o caminho de compra e possível conversa na Fama. Status CRM permanece `Não Respondeu`.
+Cliente entrou por Facebook Ads com interesse no Union Vista, no Grand Ville. O primeiro contato foi enviado em 2026-05-02 e não houve resposta. Entre 2026-05-03 e 2026-05-07, o Reno conduziu a régua de repescagem até o step 5, alternando os ângulos de abordagem para organizar a busca, validar viabilidade prática e depois encerrar com pausa respeitosa. Em 2026-05-07 às 14:41 BRT, o step 5 foi enviado, a branch de repescagem foi normalizada para estado terminal (`step=5`, `enabled=false`, `stopped_reason=max_steps`) e o cliente foi arquivado defensivamente porque seguia exatamente em `Não Respondeu`. Status CRM atual: `Arquivado`.
 
 ## Dados operacionais
 - Cliente ID: 11147
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads / lead automático
-- Telefone/WhatsApp: contato disponível no CRM; envios feitos pelo JID salvo
+- Telefone/WhatsApp: contato disponível no CRM; envios realizados pelo JID salvo
 - Empreendimento de interesse: Union Vista — Grand Ville, Uberlândia
-- Última interação relevante: repescagem step 4 enviada pelo Reno em 2026-05-06 às 09:22 BRT
-- Próxima repescagem prevista: step 5 em 2026-05-07 às 14:20 BRT, se não houver resposta real
+- Última interação relevante: repescagem step 5 enviada em 2026-05-07 às 14:41 BRT e arquivamento defensivo concluído
+- Régua atual: encerrada, sem nova ação automática
 
 ## Contexto comercial
-Lead demonstrou interesse no Union Vista, lançamento da HLTS Construtora no Grand Ville, Uberlândia, com entrega prevista para Jul/2027. O empreendimento tem unidades de 2 quartos com suíte e vaga, a partir de aproximadamente R$292 mil no CRM. A abertura inicial já havia perguntado se a cliente procurava imóvel nessa região. A repescagem step 1 mudou para organização da busca e finalidade (`morar` vs `comparar oportunidade de compra`). A repescagem step 2 evitou repetir finalidade e trouxe viabilidade prática do lançamento: prazo da obra, entrada, parcela e financiamento precisam caber no momento da cliente antes de avançar. A repescagem step 3 mudou novamente o ângulo para diagnóstico leve de critério principal, perguntando se pesa mais localização, planta/tamanho ou condição de compra. A repescagem step 4 mudou para convite consultivo direto, sem repetir as perguntas anteriores, propondo organizar prazo da obra, condição de pagamento e perfil da planta antes de decidir se avança.
+Lead demonstrou interesse no Union Vista, lançamento da HLTS Construtora no Grand Ville, Uberlândia, com entrega prevista para Jul/2027. O empreendimento tem unidades de 2 quartos com suíte e vaga, em faixa aproximada de R$ 292 mil a R$ 322 mil no CRM. A abertura inicial perguntou se a cliente procurava imóvel nessa região. A repescagem step 1 mudou para organização da busca e finalidade (`morar` vs `comparar oportunidade de compra`). A repescagem step 2 trouxe viabilidade prática do lançamento: prazo da obra, entrada, parcela e financiamento. A repescagem step 3 mudou o ângulo para diagnóstico leve do critério principal de escolha. A repescagem step 4 fez convite consultivo direto para organizar o caminho de compra e possível conversa na Fama. A repescagem step 5 encerrou a régua com pausa respeitosa, porta aberta e sem insistir em agenda.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. O interesse sinalizado é no Union Vista, mas a cliente ainda não respondeu se busca moradia, investimento ou comparação de oportunidade.
+Ainda não diagnosticada de forma completa. O interesse inicial foi no Union Vista, mas não houve resposta suficiente para fechar necessidade com clareza.
 
 ### Momento
-Ainda não diagnosticado. Como o imóvel é lançamento com entrega em Jul/2027, prazo de entrega continua sendo ponto relevante; o step 4 usou esse contexto para propor organização consultiva do caminho de compra.
+Diagnóstico parcial: a cliente permaneceu em silêncio após o primeiro contato e cinco repescagens.
 
 ### Decisão
-Ainda não diagnosticada.
+Não diagnosticada. Não houve confirmação de quem decide nem de janela de compra.
 
 ### Viabilidade
-Ainda não diagnosticada. Step 2 buscou abrir a conversa por viabilidade prática sem prometer crédito; step 4 retomou condição de pagamento de forma consultiva, sem promessa de aprovação, crédito ou encaixe.
+Não confirmada. O Reno explorou o encaixe por entrada, parcelas da obra e financiamento, mas sem retorno da cliente não foi possível consolidar viabilidade.
 
 ## Histórico curado de interações
 ### 2026-05-02 — Primeiro contato enviado
@@ -110,21 +112,35 @@ Mensagem enviada:
 
 Estado CRM após marcação: `repescagem.step=4`, `enabled=true`, `last_sent_at=2026-05-06T09:22:12-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
 
+### 2026-05-07 — Repescagem step 5 enviada e régua encerrada
+Mensagem enviada:
+
+> Sol, vou pausar por aqui, tá bem? 🏡
+>
+> Como você olhou o Union Vista no Grand Ville, pode ser que esteja só comparando com calma. Nessa fase, o mais importante é não ficar presa a um lançamento antes de entender prazo, condição e se existe outra opção que encaixe melhor no seu momento.
+>
+> Se fizer sentido retomar depois, eu consigo te ajudar a comparar isso de forma objetiva.
+>
+> Posso deixar você à vontade e você me chama quando quiser olhar com calma?
+
+A branch de repescagem foi marcada como step 5, depois normalizada para estado terminal com `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Em seguida, o cliente foi arquivado defensivamente no CRM porque seguia exatamente em `Não Respondeu`.
+
 ## Objeções e travas
-- Nenhuma objeção registrada até o momento.
-- Trava atual: silêncio após primeiro contato e quatro repescagens.
+- Nenhuma objeção explícita registrada.
+- Trava principal: silêncio após a sequência completa de cinco mensagens.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, mover de `Não Respondeu` para `Em Atendimento` somente se o status ainda estiver exatamente nesse estado e seguir pelo fluxo normal de qualificação do Reno. Se não houver resposta até a próxima janela, enviar repescagem step 5 em 2026-05-07 às 14:20 BRT com encerramento elegante, sem repetir convite de agenda/análise do step 4.
+Sem nova ação automática. Se houver resposta futura, a conversa deve ser retomada manualmente a partir do histórico já registrado. O cliente permanece arquivado no CRM.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: `evt_3315`.
 - Idempotency key do primeiro contato: `3315_1777768135991`.
 - Repescagem step 1 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16601.
-- Repescagem step 2 enviada por fallback excepcional do bridge local na porta 3000, com bridge saudável (`status=connected`) e usando o `whatsapp_jid` salvo no CRM, porque `send_message` não estava exposto na sessão do cron.
 - Repescagem step 2 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16694.
-- Repescagem step 3 enviada por fallback excepcional do bridge local na porta 3000, com bridge saudável (`status=connected`) e usando o `whatsapp_jid` salvo no CRM, porque `send_message` não está exposto nesta sessão do cron.
 - Repescagem step 3 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16867.
-- Repescagem step 4 enviada por fallback excepcional do bridge local na porta 3000, com bridge saudável (`status=connected`) e usando o `whatsapp_jid` salvo no CRM, porque `send_message` não está exposto nesta sessão do cron. Bridge retornou sucesso técnico com validação `onWhatsApp` no JID salvo.
-- Repescagem step 4 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16943. Status CRM preservado como `Não Respondeu` por ser step 4.
+- Repescagem step 4 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 16943.
+- Repescagem step 5 registrada no CRM pela tool específica `mark_reno_followup_sent`, nota CRM ID 17145.
+- A branch de repescagem precisou de normalização terminal após o step 5: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`.
+- Arquivamento defensivo executado com update condicional por `id`, `broker_id=35`, status atual `Não Respondeu` e estado terminal da repescagem; resultado final no CRM: `Arquivado`.
+- Nota CRM de arquivamento registrada em 2026-05-07.
 - Documento mantido no caminho oficial `_agents/reno/atendimentos/11147-sol-silva-mendes.md`.
