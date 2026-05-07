@@ -5,108 +5,52 @@ entity_type: atendimento
 entity_name: Elias Mourão
 client_id: 10928
 broker_id: 35
-status_crm: Em Atendimento
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-07'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - resgate
+  - arquivado
+  - step-6
+  - visita_pendente
 ---
-# Atendimento — Elias Mourão
+# Atendimento — Elias Mourão (10928)
 
-## Resumo atual
-Cliente em atendimento pelo Reno, com interesse em moradia no Place+Arbi/Shopping Park. Já respondeu anteriormente e refinou busca para uma condição mais leve. Resgate step 5 enviado em 2026-05-03 com mudança de ângulo para convite presencial de baixa fricção: olhar a condição com calma na Fama na segunda-feira, sem prometer aprovação e sem insistir em imóvel específico.
+## Resumo
+- Cliente Reno (`broker_id=35`) com histórico real de conversa e sem agendamento ativo.
+- Contexto comercial consolidado: moradia no Place+Arbi / Shopping Park, busca parcela leve, aceita 1 quarto e também casa se a condição melhorar, sem FGTS e sem entrada no momento.
+- O Resgate foi evoluindo por steps até a reclassificação para `visita_pendente`.
 
-## Dados operacionais
-- Cliente ID: 10928
-- Broker ID: 35
-- Status CRM: Em Atendimento
-- Origem: SLA Cascata
-- Telefone/WhatsApp: final 2708; envio do step 5 realizado para variação brasileira com nono dígito
-- Empreendimento vinculado: Place+Arbi — Shopping Park, Uberlândia
-- Última interação relevante: Resgate step 5 enviado pelo Reno em 2026-05-03 17:16 -03
+## Última interação relevante
+- 2026-05-07: enviado Resgate step 6 via WhatsApp com CTA leve para visita presencial.
+- Mensagem focada em avançar para o escritório sem repetir diagnóstico:
+  > Elias, como você queria uma parcela mais leve, acho que ver isso pessoalmente ajuda a enxergar com calma o que cabe no seu mês. Quer que eu veja um horário rápido pra você passar aqui na Fama essa semana?
+- Depois do envio, o ramo foi terminalizado com:
+  - `step=6`
+  - `enabled=false`
+  - `next_run_at=null`
+  - `stopped_reason=max_steps`
+  - `last_context_bucket=visita_pendente`
+- O CRM foi arquivado defensivamente após checagem de ausência de agendamento ativo.
 
-## Contexto comercial
-Elias demonstrou interesse para moradia e o empreendimento ativo no CRM é o Place+Arbi, no bairro Shopping Park. Histórico de CRM indica preferência atual por Shopping Park, busca de parcela mais leve, abertura para imóvel de 1 quarto e também casa se a condição ficar melhor.
+## Linha do tempo curta
+- 2026-04-30: base comercial consolidada; foco em viabilidade/financiamento.
+- 2026-05-01: step 4 enviado, mantendo `viabilidade_financiamento`.
+- 2026-05-03: step 5 reclassificado para `visita_pendente`.
+- 2026-05-07: step 6 enviado e fluxo encerrado.
 
-## Diagnóstico
-### Necessidade
-Busca imóvel para morar, com atenção a uma opção que caiba no orçamento mensal.
-
-### Momento
-Já houve interação real e refinamento do perfil; cliente ficou silencioso após conduções sucessivas sobre viabilidade/financiamento. O step 5 usou o domingo como oportunidade para propor visita presencial na segunda-feira, reduzindo a necessidade de decidir tudo por WhatsApp.
-
-### Decisão
-Compra sozinho, conforme nota do CRM. Não há decisor terceiro registrado até o momento.
-
-### Viabilidade
-Notas do CRM indicam renda aproximada de R$ 3.700, sem FGTS e sem entrada no momento. A retomada deve priorizar faixa confortável, viabilidade e ajuste de condição, sem prometer aprovação ou encaixe.
-
-## Histórico curado de interações
-### 2026-04-22 — Interesse e perfil inicial
-Cliente respondeu à abertura sobre o Place+Arbi dizendo que procura para morar. Depois refinou interesse: busca parcela mais leve, aceita 1 quarto e também casa se a condição ficar melhor. Sem FGTS, sem entrada no momento, compra sozinho e renda aproximada de R$ 3.700.
-
-### 2026-04-28 — Resgate step 1
-Reno enviou follow-up de Resgate step 1 com foco em financiamento/viabilidade: “Elias, sobre financiamento, o mais importante é ver se a compra fica viável antes de escolher imóvel. Quer que eu te ajude por esse caminho?”. Bucket legado `financiamento_sumiu`, normalizado operacionalmente para `viabilidade_financiamento`.
-
-### 2026-04-30 — Resgate step 2
-Reno enviou Resgate step 2 pelo WhatsApp. Bucket: `viabilidade_financiamento`.
-
-Mensagem enviada:
-“Elias, pensando no que você comentou de buscar uma parcela mais leve, eu não insistiria em opção que aperta seu mês.
-
-Quer que eu veja contigo uma faixa mais confortável pra começar?”
-
-Próximo `next_run_at` registrado no CRM: 2026-04-30T16:01:31.422-03:00.
-
-### 2026-04-30 — Resgate step 3
-Reno enviou Resgate step 3 pelo WhatsApp. Bucket: `viabilidade_financiamento`.
-
-Mensagem enviada:
-“Elias, só pra eu te direcionar sem apertar seu orçamento: hoje sua dúvida principal é entrada, parcela ou aprovação do financiamento?”
-
-Contexto usado: CRM validou cliente `broker_id=35`, status `Em Atendimento`, sem agendamento/visita ativa; histórico curado indica busca para morar no Place+Arbi/Shopping Park, preferência por parcela mais leve, sem FGTS e sem entrada no momento. A mensagem mudou o ângulo em relação ao step 2: saiu de “faixa confortável” para identificação da dúvida principal entre entrada, parcela e aprovação.
-
-Próximo `next_run_at` registrado no CRM: 2026-05-01T16:19:59-03:00.
-
-### 2026-05-01 — Resgate step 4
-Reno enviou Resgate step 4 pelo WhatsApp. Bucket: `viabilidade_financiamento`.
-
-Mensagem enviada:
-“Elias, pensando em parcela leve e no Shopping Park, acho melhor começar pelo que fica confortável no mês, não pelo imóvel mais bonito.
-
-Se eu separar uma opção mais pé no chão, você prefere que eu priorize apartamento de 1 quarto ou casa?”
-
-Contexto usado: CRM validou cliente `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo; notas indicam busca para morar, foco em parcela leve, abertura para apartamento de 1 quarto ou casa, sem FGTS/entrada e renda aproximada de R$ 3.700. Histórico do Resgate mostrava silêncio após step 3, cuja pergunta era sobre entrada/parcela/aprovação. O step 4 mudou o ângulo para escolha simples de perfil mais viável (`apartamento de 1 quarto` versus `casa`) e benefício de não apertar o orçamento.
-
-Próximo `next_run_at` registrado no CRM: 2026-05-03T16:39:26-03:00.
-
-### 2026-05-03 — Resgate step 5
-Reno enviou Resgate step 5 pelo WhatsApp. Bucket: `visita_pendente`.
-
-Mensagem enviada:
-“Elias, pra não ficar só trocando opção por WhatsApp, acho que o mais útil é olhar a condição com calma e ver o que cabe no seu mês.
-
-Como hoje é domingo, quer que eu veja um horário pra você passar aqui na Fama amanhã?”
-
-Contexto usado: CRM validou cliente `broker_id=35`, status `Em Atendimento`, sem visita/agendamento ativo; cadência oficial do step 5 estava vencida 48h após o step 4. Histórico curado indica interesse real em moradia, Shopping Park/Place+Arbi e preocupação com parcela leve/viabilidade. A mensagem mudou o ângulo do step 4: saiu de escolha entre apartamento de 1 quarto e casa para convite presencial na segunda-feira, com benefício de analisar a condição com calma e reduzir decisão por WhatsApp.
-
-Próximo `next_run_at` registrado no CRM: 2026-05-07T17:16:18-03:00.
-
-## Objeções e travas
-- Viabilidade financeira sensível: sem entrada e sem FGTS no momento.
-- Parcela mensal precisa ser leve; evitar condução para imóvel/condição que aperte o orçamento.
-- Silêncio após perguntas sobre viabilidade indica necessidade de CTA simples e de baixa fricção.
-
-## Próximo passo
-Aguardar resposta ao Resgate step 5. Se Elias responder, interromper a régua de Resgate (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) antes de continuar atendimento normal; se aceitar a visita, registrar agendamento presencial na Fama e conduzir a conversa com foco em análise de condição/viabilidade sem promessa de aprovação.
+## Estado final
+- `resgate.step=6`
+- `last_sent_at=2026-05-07T17:38:59-03:00`
+- `next_run_at=null`
+- `enabled=false`
+- `stopped_reason=max_steps`
 
 ## Observações operacionais
-- CRM validado como fonte operacional: cliente existe, `broker_id=35`, status `Em Atendimento`, sem visitas/agendamentos ativos no momento da execução.
-- Documento mantido em caminho oficial `_agents/reno/atendimentos/10928-elias-mourao.md`.
-- Registro do envio persistido no CRM via `mark_reno_followup_sent`; nota CRM criada automaticamente para o step 5.
-- Histórico de WhatsApp ativo individual não está disponível como tabela no CRM; contexto foi reconstruído a partir de CRM, notas, sessão Hermes anterior, vault, log de inbound sem ocorrência para Elias e estado `meta_data.reno_followup.resgate`.
+- O ramo legado do CRM estava sem `source_outbound_at`, `source_outbound_type` e `armed_at` preenchidos; não houve reconstrução retroativa desses campos.
+- Próxima ação só se houver novo inbound/manual reativação.
