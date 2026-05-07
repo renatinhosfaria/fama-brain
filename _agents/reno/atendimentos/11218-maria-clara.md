@@ -89,3 +89,15 @@ Seguir em turnos curtos no WhatsApp. Perguntar se o perfil de apartamento de 2 q
 - Cliente validado no CRM com `broker_id=35`.
 - Status atual verificado no CRM: `Em Atendimento`.
 - Branch `meta_data.reno_followup.repescagem` verificada com `enabled=false`, `next_run_at=null`, `stopped_reason=cliente_respondeu_em_atendimento`.
+
+
+## Atualização — 2026-05-07 — Perfil de imóvel confirmado
+Cliente confirmou que apartamento de 2 quartos atende bem para a busca no Garden Sul.
+
+### Diagnóstico atualizado
+- Necessidade: apartamento de 2 quartos atende.
+- Momento: pensando em comprar.
+- Próximo ponto de qualificação: entender se pretende financiar e qual condição de entrada/parcela faz sentido.
+
+### Próxima condução recomendada
+Perguntar de forma simples se a ideia é fazer financiamento ou se já tem parte à vista/entrada separada. Manter um único ponto por mensagem.
