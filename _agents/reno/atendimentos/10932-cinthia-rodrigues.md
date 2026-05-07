@@ -21,11 +21,12 @@ tags:
   - home-office
   - center-shopping
   - localizacao
+  - disponibilidade
 ---
 # Atendimento — Cinthia Rodrigues
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`. Após Resgate step 6 enviado em 2026-05-07 17:57 -03, a cliente respondeu pelo WhatsApp e a régua de Resgate foi interrompida no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Primeiro inbound relevante do dia reforçou que a opção precisa comportar 3 adultos que trabalham em home office; inbound posterior informou que ela está olhando prédio perto do Center Shopping. Próximo passo: a sessão normal de atendimento deve responder sem novo disparo automático, acolhendo o critério de espaço/home office e a preferência de localização próxima ao Center Shopping, consultando opções reais no CRM antes de apresentar imóvel ou conduzir para visita presencial.
+Cliente do Reno em `Em Atendimento`. Após Resgate step 6 enviado em 2026-05-07 17:57 -03, a cliente respondeu pelo WhatsApp e a régua de Resgate foi interrompida/mantida inativa no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Inbounds do dia adicionaram três critérios relevantes: precisa comportar 3 adultos em rotina de home office; está olhando prédio perto do Center Shopping; não consegue visita no sábado por compromisso o dia inteiro, deixando a possibilidade de visita para a semana seguinte, ainda sem horário claro. Próximo passo: a sessão normal de atendimento deve responder sem novo disparo automático, acolher a indisponibilidade de sábado e conduzir para definição de dia/horário na semana seguinte, consultando opções reais no CRM antes de apresentar imóvel.
 
 ## Dados operacionais
 - Cliente ID: 10932
@@ -34,27 +35,27 @@ Cliente do Reno em `Em Atendimento`. Após Resgate step 6 enviado em 2026-05-07 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: final 3712; WhatsApp disponível no CRM
 - Empreendimento vinculado: Union Vereda, Jaraguá, Uberlândia
-- Última interação relevante: inbound WhatsApp em 2026-05-07 — cliente informou que está olhando prédio perto do Center Shopping
-- Inbound anterior relevante: cliente informou necessidade de comportar 3 adultos em home office
+- Última interação relevante: inbound WhatsApp em 2026-05-07 — áudio informando que sala não é ponto crítico, que não consegue sábado e que visita só ficaria para a semana seguinte, sem horário claro
+- Inbounds anteriores relevantes: necessidade de comportar 3 adultos em home office; interesse por prédio perto do Center Shopping
 - Bucket anterior do Resgate: `visita_pendente`
 - Estado atual do Resgate: interrompido por resposta do cliente; `enabled=false`; `next_run_at=null`; step preservado em 6
-- Notas CRM da persistência inbound: IDs 17205 e 17206
+- Notas CRM da persistência inbound: IDs 17205, 17206 e 17207
 
 ## Contexto comercial
-Interesse vinculado ao empreendimento Union Vereda. Notas do CRM indicam busca para morar, 3 adultos e preferência por 3 quartos. A resposta inbound reforçou que o critério prático é acomodar 3 adultos que trabalham em home office; a mensagem posterior adicionou interesse por prédio perto do Center Shopping. O atendimento deve agora validar a combinação entre localização desejada e perfil de planta/espaço, sem insistir automaticamente no empreendimento vinculado se ele não atender a região ou a rotina informada.
+Interesse vinculado ao empreendimento Union Vereda. Notas do CRM indicam busca para morar, 3 adultos e preferência por 3 quartos. As respostas inbound reforçaram que o critério prático é acomodar 3 adultos em home office, adicionaram preferência por prédio perto do Center Shopping e sinalizaram que a sala não é ponto decisivo porque a rotina parece mais voltada a computador do que televisão. Para visita presencial, a cliente não consegue sábado por compromisso durante o dia inteiro; disponibilidade provável ficou para a semana seguinte, mas ainda sem dia/horário definido.
 
 ## Diagnóstico
 ### Necessidade
-Busca imóvel para moradia que comporte 3 adultos, com rotina de home office. Espaço, privacidade, divisão dos cômodos e localização conveniente perto do Center Shopping tendem a pesar mais que apenas preço inicial.
+Busca imóvel para moradia que comporte 3 adultos, com rotina de home office. Espaço útil, privacidade, divisão dos cômodos e localização conveniente perto do Center Shopping tendem a pesar mais que sala ampla ou apelo de lazer.
 
 ### Momento
-Cliente respondeu após sequência avançada de Resgate. O atendimento deve ser retomado como conversa ativa, sem novos follow-ups automáticos até que haja novo outbound normal do Reno e novo silêncio elegível.
+Cliente respondeu após sequência avançada de Resgate e está retomando a conversa de forma ativa. Há abertura para visita, mas sábado está descartado; o próximo encaixe precisa ser negociado para a semana seguinte.
 
 ### Decisão
 Sem decisor adicional confirmado no CRM/vault. Como são 3 adultos, pode haver influência de mais de uma pessoa na decisão, mas isso ainda precisa ser confirmado com cuidado em atendimento normal.
 
 ### Viabilidade
-Sem dados suficientes de renda, entrada, financiamento ou FGTS. Não há promessa de crédito. A próxima conversa deve primeiro validar se precisa ser 3 quartos obrigatoriamente ou se uma planta muito bem dividida atende, e cruzar isso com a preferência de região próxima ao Center Shopping antes de avançar para condição/financiamento ou visita.
+Sem dados suficientes de renda, entrada, financiamento ou FGTS. Não há promessa de crédito. A próxima conversa deve primeiro validar se precisa ser 3 quartos obrigatoriamente ou se uma planta muito bem dividida atende, cruzando isso com a preferência de localização próxima ao Center Shopping e com a disponibilidade de visita na semana seguinte.
 
 ## Histórico curado de interações
 ### 2026-04-22 — Resposta inicial e qualificação leve
@@ -79,19 +80,24 @@ Reno enviou follow-up de resgate step 5 via WhatsApp. Bucket: `visita_pendente`.
 Reno enviou follow-up de resgate step 6 via WhatsApp. Bucket: `visita_pendente`. Contexto usado: mesma linha de moradia/3 adultos/3 quartos, sem visita ou agendamento ativo, sem inbound posterior confiável, e sem sinais de bloqueio por duplicidade ativa. Mensagem enviada: “Oi, Cinthia. Pra eu te direcionar sem te mandar opção fora do perfil: o ponto principal ainda é 3 quartos, ou você já toparia ver algo que acomode os 3 adultos com mais conforto? Se fizer sentido, eu organizo isso pra você passar na Fama.” Próximo `next_run_at` originalmente gravado: 2026-05-11T17:57:39-03:00.
 
 ### 2026-05-07 — Inbound WhatsApp e interrupção do Resgate
-Cliente respondeu pelo WhatsApp informando que a opção precisa comportar 3 adultos que trabalham em home office. O CRM já estava em `Em Atendimento`, então o status foi preservado. A branch `reno_followup.resgate` foi interrompida por resposta do cliente, com `enabled=false`, `stopped_reason=client_replied` e `next_run_at=null`. Nota CRM objetiva registrada na persistência inbound.
+Cliente respondeu pelo WhatsApp informando que a opção precisa comportar 3 adultos que trabalham em home office. O CRM já estava em `Em Atendimento`, então o status foi preservado. A branch `reno_followup.resgate` foi interrompida por resposta do cliente, com `enabled=false`, `stopped_reason=client_replied` e `next_run_at=null`. Nota CRM 17205 registrada.
 
 ### 2026-05-07 — Novo inbound com preferência de localização
 Cliente enviou novo inbound pelo WhatsApp: está olhando prédio perto do Center Shopping. O CRM permaneceu em `Em Atendimento`; o Resgate já estava interrompido e foi mantido inativo (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`). Nota CRM 17206 registrada. Esse dado adiciona filtro de localização à necessidade anterior de acomodar 3 adultos em home office.
 
+### 2026-05-07 — Inbound em áudio sobre sala e disponibilidade de visita
+Cliente enviou áudio informando que não se importa tanto com a sala, pois não assistem TV e a rotina parece mais voltada ao computador. Também informou que não consegue visitar no sábado por compromisso durante o dia inteiro; para visitar, somente na semana seguinte, ainda sem horário claro. Status já estava em `Em Atendimento` e foi preservado. Resgate já estava interrompido e foi mantido inativo; `meta_data.reno_followup.resgate` foi atualizado com o resumo do inbound mais recente. Nota CRM 17207 registrada.
+
 ## Objeções e travas
 - Critério prático reforçado: imóvel precisa acomodar 3 adultos em rotina de home office.
 - Novo filtro de localização: interesse por prédio perto do Center Shopping.
+- Sala não parece prioridade; cliente valoriza mais uso funcional para computador/rotina do que televisão/sala ampla.
+- Sábado está indisponível para visita por compromisso durante o dia todo; visita deve ser negociada para a semana seguinte.
 - Possível trava de perfil: preferência por 3 quartos, enquanto o empreendimento vinculado pode não resolver sozinho a necessidade se a planta não acomodar privacidade/ambientes de trabalho ou se a localização desejada for outra.
 - Havia registros derivados de SLA Cascata para o mesmo contato em outros brokers, mas o atendimento Reno elegível é o cliente ID 10932 com `broker_id=35`.
 
 ## Próximo passo
-Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa. Condução sugerida: validar que a busca agora combina dois pontos — acomodar 3 adultos/home office e ficar perto do Center Shopping — e consultar o CRM antes de apresentar qualquer opção. Se houver opção compatível, apresentar uma opção principal; se não houver, perguntar com leveza se aceita região próxima. Se houver sinal positivo, conduzir para visita presencial na Fama.
+Responder comercialmente na sessão WhatsApp normal, sem envio por esta rotina silenciosa. Condução sugerida: validar que a busca agora combina funcionalidade para 3 adultos/home office, localização perto do Center Shopping e visita somente na semana seguinte. Consultar o CRM antes de apresentar qualquer opção. Se houver opção compatível, apresentar uma opção principal; se não houver, perguntar com leveza se aceita região próxima. Para agenda, não insistir em sábado; propor dois horários concretos na semana seguinte quando a sessão comercial responder.
 
 ## Observações operacionais
 - CRM/FamaChat tratado como fonte operacional de verdade.
