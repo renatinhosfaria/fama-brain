@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -17,11 +17,13 @@ tags:
   - resgate
   - viabilidade-financiamento
   - place-arbi
+  - duplicidade
+  - resgate-interrompido
 ---
 # Atendimento — Alexsander Pereira
 
 ## Resumo atual
-Cliente do Reno em `Em Atendimento`, associado ao empreendimento Place+Arbi, no Shopping Park. A sessão individual do WhatsApp mostra resposta real anterior do cliente em 2026-04-29: `Valores/viabilidade`, após pergunta sobre o melhor ponto de partida. O CRM segue sem visita/agendamento ativo e sem resposta posterior ao último outbound do Reno. Em 2026-05-03 19:07 -03:00, o Reno enviou Resgate step 5 reclassificando o contexto para `viabilidade_financiamento`, com CTA leve para segunda-feira na Fama, focado em entender entrada e financiamento sem ficar só no anúncio.
+Cliente do Reno em `Em Atendimento`, associado ao empreendimento Place+Arbi, no Shopping Park. A sessão individual do WhatsApp já havia mostrado resposta real anterior do cliente em 2026-04-29: `Valores/viabilidade`, após pergunta sobre o melhor ponto de partida. Em 2026-05-07 19:35 -03:00, a revalidação do CRM encontrou duplicidade/ownership recente em SLA Cascata para o mesmo telefone/JID, com vínculo explícito ao cliente original (`cliente_original_id=10948` e `usuario_anterior=35`). O ciclo de Resgate foi pausado antes de qualquer novo WhatsApp, com `stopped_reason=manual_review_duplicate_active_broker`.
 
 ## Dados operacionais
 - Cliente ID: 10948
@@ -30,24 +32,24 @@ Cliente do Reno em `Em Atendimento`, associado ao empreendimento Place+Arbi, no 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp válido no CRM; número mascarado para registro curado.
 - Empreendimento vinculado: Place+Arbi (id_empreendimento 67), Shopping Park, Uberlândia.
-- Última interação relevante: 2026-05-03 19:07 -03:00 — Resgate step 5 enviado pelo Reno.
-- Próximo Resgate previsto: 2026-05-07T19:07:36-03:00, se o cliente seguir elegível e em silêncio.
+- Última interação relevante: 2026-05-07 19:35 -03:00 — Resgate pausado por duplicidade/ownership; nota CRM 17216.
+- Próximo Resgate previsto: pausado / sem próximo run enquanto a ownership não for saneada.
 
 ## Contexto comercial
-Lead com interesse associado ao Place+Arbi, empreendimento no Shopping Park. Dados do CRM indicam apartamentos de 48m² e 50m², 2 quartos, opção com suíte, 1 vaga, lazer completo, entrega prevista para jun/2027 e entrada parcelada pela construtora. A sessão individual do WhatsApp trouxe um gancho comercial claro: o cliente selecionou `Valores/viabilidade`, portanto a retomada mais útil é sobre encaixe de entrada/financiamento, sem prometer aprovação nem condição exata.
+Lead com interesse associado ao Place+Arbi, empreendimento no Shopping Park. Dados do CRM indicam apartamentos de 48m² e 50m², 2 quartos, opção com suíte, 1 vaga, lazer completo, entrega prevista para jun/2027 e entrada parcelada pela construtora. A sessão individual do WhatsApp trouxe um gancho comercial claro: o cliente selecionou `Valores/viabilidade`, portanto a retomada mais útil é sobre encaixe de entrada/financiamento, sem prometer aprovação nem condição exata. No momento, porém, o resgate está pausado por duplicidade/ownership recente em outro cadastro ligado ao mesmo telefone/JID.
 
 ## Diagnóstico
 ### Necessidade
 Ainda não definida em profundidade. O sinal mais confiável é que o cliente quer entender valores/viabilidade antes de avançar.
 
 ### Momento
-Cliente está em silêncio após múltiplas retomadas do Reno. O CRM permanece em `Em Atendimento`, sem visita ativa/agendada, permitindo Resgate.
+Cliente está em silêncio após múltiplas retomadas do Reno, mas a branch de Resgate foi pausada por revisão de ownership/duplicidade e não deve avançar enquanto isso não for saneado.
 
 ### Decisão
 Sem informação confiável sobre decisores adicionais.
 
 ### Viabilidade
-Cliente demonstrou interesse em valores/viabilidade. Não há dados de renda, entrada, FGTS ou aprovação. Próximo caminho comercial deve ser ajudar a entender se o Place+Arbi encaixa em entrada e financiamento, preferencialmente em atendimento presencial na Fama.
+Cliente demonstrou interesse em valores/viabilidade. Não há dados de renda, entrada, FGTS ou aprovação. Próximo caminho comercial deve ser ajudar a entender se o Place+Arbi encaixa em entrada e financiamento, preferencialmente em atendimento presencial na Fama — porém somente depois de resolver a duplicidade de ownership.
 
 ## Histórico curado de interações
 ### 2026-04-24 — Primeiro contato Reno
@@ -138,13 +140,17 @@ Segunda posso te mostrar rapidinho aqui na Fama o que teria que encaixar de entr
 - Próximo `next_run_at`: 2026-05-07T19:07:36-03:00
 - Nota CRM criada pela persistência do envio: 16619.
 
+### 2026-05-07 — Resgate pausado por duplicidade/ownership recente
+Revalidação do CRM encontrou dois cadastros SLA Cascata com o mesmo telefone/JID (ids 11039 e 11107), ambos vinculados ao cliente original 10948 por `cliente_original_id` e `usuario_anterior=35`. Como isso configura risco de ownership/duplicidade recente, o ciclo de Resgate foi pausado com `stopped_reason=manual_review_duplicate_active_broker`, sem envio de WhatsApp. Nota CRM criada: 17216.
+
 ## Objeções e travas
 - Histórico inicial era fraco no CRM/vault, mas a sessão individual confirmou resposta real anterior do cliente sobre `Valores/viabilidade`.
 - Cliente ainda não informou renda, entrada, FGTS, decisores ou prazo de compra.
-- Evitar promessa de aprovação ou condição exata; usar a Fama como espaço para leitura segura de entrada e financiamento.
+- Existe duplicidade/ownership recente em SLA Cascata ligada ao mesmo telefone/JID, o que exige revisão manual antes de qualquer novo envio.
+- Evitar promessa de aprovação ou condição exata; usar a Fama como espaço para leitura segura de entrada e financiamento apenas depois da regularização operacional.
 
 ## Próximo passo
-Aguardar resposta. Se Alexsander responder, interromper o ciclo de Resgate (`stopped_reason=client_replied`, `next_run_at=null`, `enabled=false`) e continuar pelo atendimento normal com `fama-reno-whatsapp-qualification`, explorando viabilidade com cuidado e conduzindo para visita presencial. Se permanecer em silêncio até 2026-05-07T19:07:36-03:00, avaliar step 6 com abordagem diferente e sem pressão; somente após step 6 enviado e guardrails verdadeiros considerar encerramento operacional conforme política do Resgate.
+Manter o Resgate pausado até revisão manual da ownership dos cadastros duplicados e confirmação de qual registro deve seguir ativo. Enquanto isso, não enviar nova mensagem. Se o CRM for saneado e houver um novo outbound normal do Reno em atendimento regular, um novo ciclo de Resgate poderá ser armado novamente do zero.
 
 ## Observações operacionais
 - Documento oficial criado em `_agents/reno/atendimentos/10948-alexsander-pereira.md` a partir do CRM e do documento legado `_agents/reno/clientes/10948-alexsander-pereira.md`.
@@ -152,3 +158,5 @@ Aguardar resposta. Se Alexsander responder, interromper o ciclo de Resgate (`sto
 - CRM permanece como fonte de verdade operacional; este documento é síntese curada para retomada.
 - Resgate step 4 registrado no CRM pela ferramenta `mcp_mcp_postgres_mark_reno_followup_sent`, nota CRM 16317.
 - Resgate step 5 enviado com sucesso via WhatsApp/JID salvo no CRM e persistido pela ferramenta `mcp_mcp_postgres_mark_reno_followup_sent`, nota CRM 16619. Status CRM preservado como `Em Atendimento`.
+- Em 2026-05-07, o ciclo foi pausado por duplicidade/ownership recente antes de qualquer novo WhatsApp; o CRM foi atualizado com `enabled=false`, `next_run_at=null` e `stopped_reason=manual_review_duplicate_active_broker`.
+- A branch `repescagem` existe separadamente no meta_data, mas não interfere nesta decisão de Resgate.
