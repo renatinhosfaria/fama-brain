@@ -101,3 +101,14 @@ Cliente confirmou que apartamento de 2 quartos atende bem para a busca no Garden
 
 ### Próxima condução recomendada
 Perguntar de forma simples se a ideia é fazer financiamento ou se já tem parte à vista/entrada separada. Manter um único ponto por mensagem.
+
+
+## Atualização — 2026-05-07 — Caminho de compra
+Cliente informou que pretende comprar por financiamento.
+
+### Diagnóstico atualizado
+- Viabilidade: caminho provável é financiamento; ainda falta entender faixa confortável de parcela e condição de entrada.
+- Condução: explicar de forma simples que vale olhar entrada/parcelas durante a obra/financiamento depois, sem prometer crédito.
+
+### Próxima condução recomendada
+Perguntar a faixa de parcela mensal confortável ou a condição de entrada, um ponto por vez.
