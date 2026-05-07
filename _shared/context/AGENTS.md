@@ -2,7 +2,7 @@
 type: agents-map
 owner: renato
 created: '2026-04-14'
-updated: '2026-05-02'
+updated: '2026-05-07'
 tags:
   - agents
 ---
@@ -57,10 +57,6 @@ _shared/results/*/vault-steward.md       => vault-steward
 
 # Catch-all — paths sem dono explícito
 **/*                                     => vault-steward
-_agents/cmo/**                => cmo
-_shared/context/*/cmo/**      => cmo
-_agents/coder/**                => coder
-_shared/context/*/coder/**      => coder
 ```
 
 ## Idioma oficial — pt-BR
