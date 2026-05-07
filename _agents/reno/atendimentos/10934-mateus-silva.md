@@ -117,3 +117,13 @@ Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com 
 - WhatsApp enviado com sucesso para o número com nono dígito; não foi necessário tentar a variação sem nono dígito.
 - Documento atualizado no caminho oficial `_agents/reno/atendimentos/10934-mateus-silva.md`.
 - Não há dump bruto de conversa neste documento; apenas síntese curada para retomada.
+
+
+### 2026-05-07 — Resgate step 6 enviado
+- Bucket: `visita_pendente`
+- Step: 6
+- Mensagem enviada: "Mateus, pra facilitar: eu separo as duas plantas do Place+Arbi e te mostro rapidinho aqui na Fama. Amanhã cedo ou no fim da tarde fica melhor?"
+- Próximo `next_run_at`: `2026-05-11T19:08:11.142000-03:00`
+- Objetivo: manter o convite presencial simples e direto, sem repetir a abordagem anterior, reforçando a visita na Fama como próximo passo.
+- CRM note registrada: `17208`
+- Status CRM preservado em `Em Atendimento`.
