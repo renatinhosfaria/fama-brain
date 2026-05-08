@@ -63,3 +63,6 @@ Cliente aceitou vir presencialmente à Fama para análise de crédito/viabilidad
 
 ## Atualização — 2026-05-08
 Cliente preferiu visita no sábado pela manhã. Próximo passo: oferecer/confirmar horário específico para visita presencial na Fama e, após confirmação, registrar agendamento no CRM/FamaChat.
+
+## Atualização — 2026-05-08
+Cliente confirmou preferência de visita presencial no sábado às 09:00. Data operacional presumida pelo contexto da conversa: sábado seguinte, 2026-05-09 09:00. Necessário registrar no FamaChat/CRM quando o cliente for identificado e o MCP Postgres estiver acessível.
