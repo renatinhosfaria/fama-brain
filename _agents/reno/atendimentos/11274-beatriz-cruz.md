@@ -137,3 +137,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Agenda depende da escala 12/36 e da mãe
 Cliente explicou que precisa alinhar com a mãe e com os próprios dias em casa, pois trabalha em escala 12/36 noturna. A visita precisa ser em dia em que ela não trabalhe e em que a mãe consiga sair mais cedo. Interpretação: aceitou o avanço presencial, mas ainda não tem disponibilidade definida. Próximo passo: reduzir fricção pedindo 2 opções de dia/horário quando ela alinhar com a mãe, sem pressionar.
+
+### 2026-05-08 — Cliente vai alinhar agenda
+Cliente respondeu “Tá bom, obrigada” após orientação para alinhar com a mãe e enviar duas opções de dia/horário compatíveis com sua escala 12/36 noturna. Próximo passo pendente: aguardar cliente retornar com disponibilidade para agendamento presencial na Fama.
