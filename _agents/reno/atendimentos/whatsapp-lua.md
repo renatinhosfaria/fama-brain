@@ -42,3 +42,6 @@ Cliente informou renda familiar comprovável aproximada de R$ 3.900. Mantém int
 
 ## Atualização — 2026-05-08
 Cliente explicou composição familiar pretendida: irão morar ela, o marido, a cunhada e a mulher da cunhada. Renda familiar informada anteriormente: aproximadamente R$ 3.900. Ponto a esclarecer: se a renda/financiamento seria composta por quais pessoas e quem entraria como comprador no crédito.
+
+## Atualização — 2026-05-08
+Cliente esclareceu composição de renda: juntando duas rendas daria aproximadamente R$ 3.900; somando todos que irão morar no imóvel, a renda familiar total seria aproximadamente R$ 8.500. Ponto comercial importante: verificar quem pretende entrar formalmente no financiamento e na propriedade do imóvel, pois isso muda a viabilidade e a análise bancária.
