@@ -19,11 +19,12 @@ tags:
   - qualificacao
   - garden-sul
   - jardim-sul
+  - moradia
 ---
 # Atendimento — Yasmim Rezende
 
 ## Resumo atual
-A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. A conversa ativa está sobre Garden Sul/Jardim Sul e a unidade; na interação mais recente, a cliente disse “Não lembro”, sinalizando que perdeu o fio do contexto anterior. Próximo passo: a resposta comercial deve reexplicar de forma simples o que estava sendo tratado, retomar Garden Sul/Jardim Sul e a dúvida sobre unidade, sem soar cobrança e sem avançar para financiamento antes de restabelecer o contexto.
+A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. A conversa ativa está sobre o Garden Sul, no Jardim Sul. Após perder o contexto da conversa sobre o empreendimento/unidade, a cliente respondeu “Morar”, indicando que a finalidade da busca é moradia. Próximo passo: a resposta comercial deve retomar o Garden Sul/Jardim Sul de forma simples, conectar o empreendimento ao uso para morar e seguir com uma pergunta curta de qualificação, sem triagem financeira precoce.
 
 ## Dados operacionais
 - Cliente ID: 11277
@@ -32,18 +33,20 @@ A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Garden Sul — Jardim Sul, Uberlândia
-- Última interação relevante: cliente enviou “Não lembro” em resposta inbound
+- Última interação relevante: cliente respondeu “Morar” por WhatsApp
 - Repescagem: interrompida em step 0; `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento da rotina silenciosa
 
 ## Contexto comercial
-A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento confirmado no CRM como localizado no bairro Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou esse contexto e perguntou se ela procura imóvel naquela região. A cliente respondeu “Oi”, depois “Então eu perdi aqui”, corrigiu/confirmou que o assunto é “Garden Sul, no Jardim Sul”, complementou com “Da unidade” e agora respondeu “Não lembro”.
+A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento confirmado no CRM como localizado no bairro Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou esse contexto e perguntou se ela procura imóvel naquela região.
 
-A condução deve tratar isso como conversa em andamento em que a cliente perdeu contexto, não como desinteresse. A resposta deve explicar novamente, em linguagem simples, que o atendimento estava retomando o Garden Sul/Jardim Sul e a informação da unidade, mantendo uma pergunta por vez.
+A cliente respondeu “Oi”, depois “Então eu perdi aqui”, confirmou/corrigiu que o assunto era “Garden Sul, no Jardim Sul”, complementou com “Da unidade”, disse “Não lembro” e agora informou “Morar”. A condução deve tratar a conversa como retomada de contexto com finalidade já declarada, não como lead frio nem desinteresse.
+
+Informações seguras do CRM sobre o Garden Sul para uso interno de continuidade: apartamento na Zona Sul/Jardim Sul, plantas de 2 quartos com suíte, sacada gourmet, elevadores, lazer com piscina, espaço gourmet, salão de festas, playground, quadra e academia. Não passar endereço completo espontaneamente.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não informada. A conversa está na fase de retomada e esclarecimento do contexto do empreendimento/unidade.
+Cliente indicou que busca imóvel para morar.
 
 ### Momento
 Ainda não informado.
@@ -77,13 +80,16 @@ A cliente enviou “Da unidade”. O status foi preservado em `Em Atendimento`. 
 ### 2026-05-08 — Cliente não lembra o contexto anterior
 A cliente enviou “Não lembro”. O status foi preservado em `Em Atendimento`; não houve regressão nem alteração necessária. A repescagem permaneceu interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`, e não havia Resgate ativo. Nota objetiva foi registrada no FamaChat. Próximo passo comercial: reexplicar o contexto de forma simples, retomando Garden Sul/Jardim Sul e a dúvida sobre unidade.
 
+### 2026-05-08 — Cliente informa finalidade de moradia
+A cliente enviou “Morar”. O status foi preservado em `Em Atendimento`; não houve regressão nem alteração necessária. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não havia Resgate ativo. Nota objetiva foi registrada no FamaChat. Próximo passo comercial: usar a finalidade de moradia para conectar o Garden Sul ao perfil de uso e fazer uma pergunta curta de qualificação.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada ainda.
-- Houve perda/ajuste de contexto na conversa; tratar com explicação simples e confirmação do Garden Sul no Jardim Sul.
+- Houve perda/ajuste de contexto na conversa; tratar com explicação simples e retomada natural.
 - A mensagem “Não lembro” indica que o Reno deve reexplicar a conversa anterior em vez de cobrar lembrança da cliente.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp com uma explicação curta do contexto: o atendimento estava falando do Garden Sul, no Jardim Sul, e da dúvida sobre a unidade. Em seguida, fazer uma pergunta simples para retomar, sem enviar bloco longo e sem iniciar triagem financeira.
+Responder comercialmente pelo WhatsApp com uma explicação curta do contexto: o atendimento estava falando do Garden Sul, no Jardim Sul. Como a cliente informou que procura para morar, conectar a opção ao perfil de moradia e perguntar uma coisa por vez, por exemplo se a região/planta de 2 quartos com suíte faz sentido para ela.
 
 ## Observações operacionais
 - CRM validado como fonte de verdade: cliente existente, `broker_id=35`.
