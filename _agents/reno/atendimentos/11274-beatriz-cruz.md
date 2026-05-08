@@ -33,7 +33,7 @@ tags:
 # Atendimento — Beatriz Cruz
 
 ## Resumo atual
-Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS. Também informou vínculo de trabalho registrado em dois lugares, com registros recentes, renda/limite aproximado de R$ 3.500 e possível composição/participação da mãe, que é autônoma. No último inbound, complementou que a mãe recebe Bolsa Família; tratar como dado sensível de viabilidade, sem prometer aprovação e sem usar benefício social como garantia de renda para simulação.
+Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS. Também informou vínculo de trabalho registrado em dois lugares, com registros recentes, renda/limite aproximado de R$ 3.500 e possível composição/participação da mãe, que é autônoma. Nos últimos inbounds, complementou que a mãe recebe Bolsa Família e depois esclareceu que o valor/movimentação comentado inclui esse benefício. Tratar como dado sensível de viabilidade, separar renda comprovável/movimentação de trabalho do benefício social, e não prometer aprovação ou encaixe.
 
 ## Dados operacionais
 - Cliente ID: 11274
@@ -42,23 +42,25 @@ Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no envio e nos inbounds
 - Empreendimento vinculado no CRM: Place+Arbi (Shopping Park)
-- Última interação relevante: 2026-05-08 — cliente informou recebimento de benefício social no contexto da possível composição/viabilidade familiar
+- Última interação relevante: 2026-05-08 — cliente complementou que o valor/movimentação da mãe inclui Bolsa Família
 
 ## Contexto comercial
-Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região; ela respondeu “Sim”, depois informou “Morar” e pediu para saber como fica de 2 e 3 quartos. O CRM do Place+Arbi consultado em rotina anterior indicou opções cadastradas de 2 quartos; eventual opção de 3 quartos deve ser buscada com segurança antes de responder comercialmente. Histórico curado indica intenção de financiamento, primeiro imóvel, ausência de entrada formada, ausência de FGTS, vínculo registrado em dois trabalhos recentes, renda/limite aproximado informado de R$ 3.500 e possível participação/composição com a mãe, que é autônoma e recebe benefício social. Não prometer aprovação nem encaixe.
+Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região; ela respondeu “Sim”, depois informou “Morar” e pediu para saber como fica de 2 e 3 quartos. O CRM do Place+Arbi consultado em rotina anterior indicou opções cadastradas de 2 quartos; eventual opção de 3 quartos deve ser buscada com segurança antes de responder comercialmente.
+
+Histórico curado indica intenção de financiamento, primeiro imóvel, ausência de entrada formada, ausência de FGTS, vínculo registrado em dois trabalhos recentes, renda/limite aproximado informado de R$ 3.500 e possível participação/composição com a mãe, que é autônoma. A mãe teria movimentação/renda aproximada a esclarecer, recebe Bolsa Família e a cliente indicou que o valor mencionado inclui o benefício. Não usar benefício social como base principal de aprovação; validar renda comprovável/movimentação de trabalho autônomo com cuidado.
 
 ## Diagnóstico
 ### Necessidade
 Busca imóvel para morar. Interesse declarado em comparar perfil de 2 e 3 quartos. Pode estar avaliando espaço/planta para rotina de moradia.
 
 ### Momento
-Ainda não diagnosticado com segurança. A cliente engajou rapidamente no primeiro contato, mas não informou urgência ou prazo de compra.
+Ainda não diagnosticado com segurança. A cliente engajou rapidamente no primeiro contato, pediu opções/condições e chegou a pedir o endereço da Fama, mas também informou que hoje não consegue ir presencialmente.
 
 ### Decisão
 Cliente mencionou a mãe no contexto do atendimento; pode haver influência ou participação familiar na decisão/viabilidade. Ainda é necessário reconstruir o histórico imediato do WhatsApp para entender se a mãe entraria como compradora, composição de renda, apoio financeiro ou decisora.
 
 ### Viabilidade
-Cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, trabalho registrado em dois vínculos recentes, renda/limite aproximado de R$ 3.500 e possível participação da mãe autônoma. O inbound mais recente acrescentou recebimento de Bolsa Família. Condução recomendada: validar com cuidado se existe renda comprovável/movimentação da mãe independente do benefício, explicar sem tecnicismo que benefício social não deve ser tratado como base principal de aprovação, e evitar qualquer promessa de crédito.
+Cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, trabalho registrado em dois vínculos recentes, renda/limite aproximado de R$ 3.500 e possível participação da mãe autônoma. Os inbounds mais recentes acrescentaram recebimento de Bolsa Família e indicaram que o valor/movimentação informado inclui esse benefício. Condução recomendada: validar com cuidado quanto a mãe movimenta/recebe apenas das faxinas ou trabalho autônomo, sem contar benefício social; explicar sem tecnicismo que a análise precisa considerar renda comprovável/documentação; evitar qualquer promessa de crédito.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -97,24 +99,20 @@ Cliente perguntou “Qual o endereço de vocês”. Interpretação: sinal relev
 ### 2026-05-08 — Benefício social informado
 Cliente respondeu “E recebe o bolsa família”. Interpretação comercial: complemento sensível da viabilidade familiar, provavelmente sobre a mãe mencionada antes. Não tratar o benefício como garantia de renda nem prometer aprovação; usar como contexto para explicar com cuidado que a análise precisa considerar renda comprovável/movimentação e documentação. Status CRM já estava em `Em Atendimento` e foi preservado; repescagem seguia encerrada e não havia resgate ativo. Nota CRM: 17269. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-08 — Renda/movimentação inclui Bolsa Família
+Cliente respondeu “Com o bolsa”. Interpretação comercial: a cliente complementou que o valor/movimentação comentado no contexto da mãe inclui Bolsa Família. Para pré-análise de financiamento, é necessário separar renda proveniente das faxinas/movimentação de trabalho do benefício social, tratando o Bolsa Família com cautela e sem usar como base principal. Status CRM já estava em `Em Atendimento` e foi preservado; repescagem seguia encerrada e não havia resgate ativo. Nota CRM: 17272. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
 - Viabilidade requer cuidado: cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, vínculos registrados recentes, renda/limite aproximado de R$ 3.500, possível composição/participação da mãe autônoma e benefício social no contexto familiar. Usar linguagem de possibilidade e validação, sem prometer crédito ou aprovação.
 - Cliente informou que hoje não consegue ir presencialmente; tratar como objeção de agenda, não como recusa definitiva à visita.
 - Respostas curtas recentes exigem reconstrução do histórico imediato do WhatsApp antes de qualquer resposta comercial; não inferir sozinho encerramento, objeção definitiva ou condição final.
 
 ## Próximo passo
-Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para confirmar a pergunta anterior e o papel da mãe. Conduta sugerida: acolher a informação, explicar de forma simples que o benefício social não deve ser usado como base principal da análise, validar se a mãe tem movimentação/renda comprovável das faxinas/trabalho autônomo e retomar o caminho de visita ou pré-diagnóstico com uma pergunta por vez. Não prometer aprovação, parcela ou encaixe.
+Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para confirmar a pergunta anterior e o papel da mãe. Conduta sugerida: acolher a informação, explicar de forma simples que é melhor separar o que é renda/movimentação das faxinas do benefício social, perguntar quanto a mãe costuma receber ou movimentar por mês apenas do trabalho autônomo, e retomar o caminho de visita ou pré-diagnóstico com uma pergunta por vez. Não prometer aprovação, parcela ou encaixe.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: evt_3442 / 3442_1778226385445.
-- Notas CRM relevantes desta rotina e anteriores: 17246, 17247, 17248, 17253, 17256, 17260, 17263, 17265, 17267, 17269.
+- Notas CRM relevantes desta rotina e anteriores: 17246, 17247, 17248, 17253, 17256, 17260, 17263, 17265, 17267, 17269, 17272.
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Resgate inexistente/sem ciclo ativo no momento do inbound “E recebe o bolsa família”.
+- Resgate inexistente/sem ciclo ativo no momento do inbound “Com o bolsa”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
-
-
-### 2026-05-08 — Renda da mãe inclui Bolsa Família
-Cliente esclareceu que os R$ 5 mil a R$ 6 mil de movimentação/renda aproximada da mãe incluem o Bolsa Família. Interpretação: para pré-análise de financiamento, é necessário separar renda proveniente das faxinas/movimentação de trabalho do benefício social, tratando o Bolsa Família com cautela e sem usar como base principal. Próximo passo: perguntar quanto a mãe movimenta/recebe mensalmente apenas das faxinas, sem contar o benefício.
-
-### 2026-05-08 — Renda da mãe sem Bolsa Família
-Cliente informou que, sem contar o Bolsa Família, a renda/movimentação da mãe com faxinas fica em torno de “uns 3 e pouco” por mês. Diagnóstico atualizado: cliente renda registrada aprox. R$ 3.500; mãe autônoma/faxineira com renda de trabalho estimada pouco acima de R$ 3 mil; Bolsa Família existe, mas deve ser tratado com cautela e não como base principal de financiamento. Próximo passo: validar se ambas estão sem restrição no CPF e conduzir para pré-análise/visita em outro dia.
