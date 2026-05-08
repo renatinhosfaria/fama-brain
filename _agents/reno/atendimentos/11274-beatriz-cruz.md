@@ -119,3 +119,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Objeção à visita hoje / preferência por WhatsApp
 Cliente informou que hoje não consegue ir presencialmente e perguntou se a análise não pode ser feita por aqui. Interpretação: objeção de agenda e preferência por avançar digitalmente antes da visita. Conduta recomendada: validar, aceitar adiantar pré-diagnóstico pelo WhatsApp, evitar passar valores soltos, reforçar que análise presencial fica para confirmar detalhes depois, e seguir com uma pergunta objetiva sobre renda/movimentação da mãe para viabilidade.
+
+### 2026-05-08 — Endereço solicitado e renda da mãe
+Cliente perguntou o endereço da Fama e depois informou movimentação/renda aproximada da mãe autônoma como “uns 5 mil”, seguida de “6” (provável correção para R$ 6 mil ou faixa entre R$ 5 mil e R$ 6 mil). Diagnóstico atualizado: renda própria aprox. R$ 3.500 + possível composição com mãe autônoma com movimentação bancária aproximada de R$ 5 mil a R$ 6 mil. Próximo passo: responder com endereço oficial da Fama, confirmar de forma leve se a movimentação da mãe é em torno de R$ 5 mil/6 mil, e conduzir para análise/possível visita em outro dia.
