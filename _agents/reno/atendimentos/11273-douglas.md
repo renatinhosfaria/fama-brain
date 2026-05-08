@@ -19,7 +19,7 @@ tags:
 # Atendimento — Douglas
 
 ## Resumo atual
-Cliente está em atendimento pelo Reno após responder ao primeiro contato do WhatsApp. Confirmou interesse no Union Vista para investimento, com foco em renda de aluguel, e entrou em viabilidade perguntando sobre entrada/parcela. Pediu fotos da opção de aproximadamente R$292 mil, recebeu fotos gerais do empreendimento e aceitou receber o vídeo do decorado com a resposta "Pode ser". O atendimento comercial registrou envio do link público do vídeo como referência de decorado/planta, sem tratar como confirmação exata da unidade de R$292.400. Status CRM permanece em Em Atendimento. Repescagem está encerrada por resposta do cliente. Resgate atual está ativo em step=0 por ter sido rearmado após o outbound normal de mídia do Reno, para eventual silêncio depois do vídeo enviado.
+Cliente está em atendimento pelo Reno, com interesse no Union Vista para investimento/renda de aluguel. Já passou por diagnóstico de viabilidade, recebeu fotos gerais do empreendimento e depois o vídeo do decorado como referência. Na validação desta rotina, o Resgate em step=0 foi pausado com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`, porque a última mensagem real é inbound do cliente e não há novo outbound normal elegível para abrir step 1. Status CRM permanece em Em Atendimento.
 
 ## Dados operacionais
 - Cliente ID: 11273
@@ -28,10 +28,11 @@ Cliente está em atendimento pelo Reno após responder ao primeiro contato do Wh
 - Origem: Facebook Ads
 - Telefone/WhatsApp: registrado no CRM
 - Empreendimento de interesse: Union Vista (id_empreendimento=22), Grand Ville, Uberlândia
-- Última interação relevante: 2026-05-08 00:34 — rotina silenciosa processou inbound "Pode ser", preservou status Em Atendimento e registrou que o Resgate ativo atual pertence ao ciclo pós-outbound normal de mídia.
+- Resgate atual: step=0 armado após outbound normal de mídia, agora pausado com `enabled=false` / `next_run_at=null` / `stopped_reason=client_replied`
+- Última interação relevante: 2026-05-08 01:06 — worker do Resgate validou a última mensagem inbound do cliente ("Pode ser") e pausou a branch de Resgate antes do step 1.
 
 ## Contexto comercial
-Lead entrou por Facebook Ads com interesse no Union Vista. O primeiro contato do Reno contextualizou o empreendimento e perguntou se o cliente procurava imóvel na região. O cliente confirmou interesse inicial, informou que está olhando para investimento, detalhou foco em renda de aluguel e passou a avaliar viabilidade financeira do investimento. Depois da orientação sobre entrada/parcela, pediu fotos da opção de R$292 mil. Após receber fotos gerais do empreendimento e a oferta de vídeo do decorado, respondeu "Pode ser", aceitando o envio do vídeo.
+Lead entrou por Facebook Ads com interesse no Union Vista. O primeiro contato do Reno contextualizou o empreendimento e perguntou se o cliente procurava imóvel na região. O cliente confirmou interesse inicial, informou que está olhando para investimento, detalhou foco em renda de aluguel e passou a avaliar viabilidade financeira do investimento. Depois da orientação sobre entrada/parcela, pediu fotos da opção de aproximadamente R$292 mil. Após receber fotos gerais do empreendimento e a oferta de vídeo do decorado, respondeu "Pode ser", aceitando o envio do vídeo.
 
 ## Diagnóstico
 ### Necessidade
@@ -72,19 +73,22 @@ Rotina operacional silenciosa processou o inbound "Você teria fotos desse de R$
 Cliente aceitou receber o vídeo do decorado com "Pode ser". O atendimento comercial registrou envio do link público do vídeo Decorado Linha Union do Union Vista, informando que é referência de decorado/planta e não confirmação exata da unidade de R$292.400. Resgate foi rearmado em step=0 após o outbound normal de mídia, contexto `union_vista_decorado_video_followup`.
 
 ### 2026-05-08 — Persistência silenciosa do inbound "Pode ser"
-Rotina operacional silenciosa processou o inbound "Pode ser". Status CRM já estava em Em Atendimento e foi preservado sem regressão. Repescagem já estava encerrada por `client_replied`. O Resgate ativo atual foi preservado porque corresponde ao novo ciclo step=0 armado após outbound normal de mídia do Reno, não ao ciclo anterior de silêncio pré-resposta. Nenhum WhatsApp foi enviado por esta rotina silenciosa.
+Rotina operacional silenciosa processou o inbound "Pode ser". Status CRM já estava em Em Atendimento e foi preservado sem regressão. Repescagem já estava encerrada por `client_replied`. O Resgate ativo atual foi preservado porque correspondia ao novo ciclo step=0 armado após outbound normal de mídia do Reno, não ao ciclo anterior de silêncio pré-resposta. Nenhum WhatsApp foi enviado por esta rotina silenciosa.
+
+### 2026-05-08 — Pausa do Resgate por inbound do cliente
+Worker de Resgate revalidou o CRM e detectou que a última mensagem real é inbound do cliente ("Pode ser"), enviada após o vídeo do decorado. Para evitar envio indevido antes de novo outbound normal, a branch de Resgate foi pausada com `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`. Atendimento continua em Em Atendimento, sem visita/agendamento ativo.
 
 ## Objeções e travas
 - Trava de viabilidade: cliente quer entender entrada suficiente para parcela mais baixa. Precisa de condução consultiva sem prometer aprovação ou parcela exata.
 - Trava de visualização/material: cliente pediu fotos da opção de R$292 mil e aceitou vídeo do decorado; já recebeu fotos gerais e referência de vídeo, mas ainda pode precisar validar presencialmente planta, unidade, tabela e condição real.
 
 ## Próximo passo
-Aguardar reação do cliente ao vídeo do decorado. Se demonstrar interesse positivo, conduzir para visita presencial na Fama para validar opções, entrada e financiamento com segurança. Se pedir mais detalhes, responder com dados seguros do CRM e usar a visita como próximo passo para tabela/unidade/condição, sem prometer aprovação ou parcela exata.
+Aguardar novo outbound normal do Reno ou nova resposta comercial do cliente. Se o cliente retomar interesse, conduzir para o próximo passo consultivo e, havendo sinal positivo, avançar para visita presencial na Fama para validar opções, entrada e financiamento com segurança.
 
 ## Observações operacionais
 - Nome cadastrado "Douglas" é utilizável para atendimento.
 - Cliente pertence ao escopo Reno (`broker_id=35`).
 - Status atual Em Atendimento foi preservado, sem regressão.
 - Repescagem de silêncio inicial está fechada por resposta inbound.
-- Resgate anterior foi interrompido por resposta inbound do cliente; Resgate atual foi rearmado depois de outbound normal de mídia e permanece como follow-up de eventual silêncio após o vídeo enviado.
+- Resgate atual está pausado com `client_replied` e não deve gerar novo WhatsApp até novo outbound normal armando novo ciclo.
 - Documento consolidado no caminho oficial do Reno por client_id.
