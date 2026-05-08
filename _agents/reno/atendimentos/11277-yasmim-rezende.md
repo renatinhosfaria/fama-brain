@@ -23,7 +23,7 @@ tags:
 # Atendimento — Yasmim Rezende
 
 ## Resumo atual
-A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. Na interação mais recente, a cliente corrigiu/confirmou o contexto dizendo: “Mais é garden sul, no jardim sul”. Próximo passo: a resposta comercial deve reconhecer que é o Garden Sul, no Jardim Sul, retomar a explicação de forma simples e conduzir uma pergunta por vez, sem avançar para financiamento antes de entender a busca.
+A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. Na interação mais recente, a cliente complementou a conversa com “Da unidade”, indicando que a dúvida/assunto atual está relacionado à unidade do Garden Sul/Jardim Sul. Próximo passo: a resposta comercial deve retomar o contexto já confirmado, esclarecer a informação da unidade de forma simples e conduzir uma pergunta por vez, sem avançar para financiamento antes de entender a busca.
 
 ## Dados operacionais
 - Cliente ID: 11277
@@ -32,18 +32,18 @@ A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Garden Sul — Jardim Sul, Uberlândia
-- Última interação relevante: cliente corrigiu/confirmou “Garden Sul, no Jardim Sul” em resposta inbound
+- Última interação relevante: cliente complementou “Da unidade” em resposta inbound
 - Repescagem: interrompida em step 0; `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento da rotina silenciosa
 
 ## Contexto comercial
-A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento confirmado no CRM como localizado no bairro Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou esse contexto e perguntou se ela procura imóvel naquela região. A cliente respondeu “Oi”, depois “Então eu perdi aqui” e, na sequência, corrigiu/confirmou que o assunto é “Garden Sul, no Jardim Sul”.
+A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento confirmado no CRM como localizado no bairro Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou esse contexto e perguntou se ela procura imóvel naquela região. A cliente respondeu “Oi”, depois “Então eu perdi aqui”, corrigiu/confirmou que o assunto é “Garden Sul, no Jardim Sul” e em seguida complementou com “Da unidade”.
 
-A condução deve tratar isso como ajuste de contexto, não como objeção: explicar de forma curta que é o Garden Sul no Jardim Sul e retomar a pergunta sobre a região/perfil do imóvel.
+A condução deve tratar isso como conversa em andamento sobre o Garden Sul/Jardim Sul e a unidade, não como novo lead nem como objeção. A resposta deve esclarecer de forma curta e manter a conversa em uma pergunta por vez.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não informada. A conversa está na fase de retomada e confirmação do contexto do empreendimento/região.
+Ainda não informada. A conversa está na fase de retomada e esclarecimento do contexto do empreendimento/unidade.
 
 ### Momento
 Ainda não informado.
@@ -71,12 +71,16 @@ A cliente enviou “Então eu perdi aqui”. O status já estava `Em Atendimento
 ### 2026-05-08 — Correção/confirmação do empreendimento e bairro
 A cliente enviou “Mais é garden sul, no jardim sul”. O CRM confirmou o empreendimento de interesse como Garden Sul, no bairro Jardim Sul. O status foi preservado em `Em Atendimento`; repescagem permaneceu interrompida e não havia Resgate ativo. Nota objetiva foi registrada no FamaChat orientando a continuidade comercial.
 
+### 2026-05-08 — Complemento sobre unidade
+A cliente enviou “Da unidade”. O status foi preservado em `Em Atendimento`. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não havia Resgate ativo. Nota objetiva foi registrada no FamaChat. Próximo passo comercial: esclarecer o ponto da unidade dentro do contexto Garden Sul/Jardim Sul antes de avançar a qualificação.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada ainda.
 - Houve perda/ajuste de contexto na conversa; tratar com explicação simples e confirmação do Garden Sul no Jardim Sul.
+- A mensagem “Da unidade” indica necessidade de esclarecer o assunto da unidade antes de avançar.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp reconhecendo a correção da cliente: o assunto é o Garden Sul, no Jardim Sul. Retomar em linguagem simples e fazer uma pergunta objetiva sobre a região ou objetivo da busca, mantendo uma pergunta por vez e evitando financiamento/renda antes de criar contexto de interesse.
+Responder comercialmente pelo WhatsApp retomando o contexto do Garden Sul/Jardim Sul e esclarecendo a informação relacionada à unidade. Manter tom curto e humano, uma pergunta por vez, evitando financiamento/renda antes de criar contexto de interesse.
 
 ## Observações operacionais
 - CRM validado como fonte de verdade: cliente existente, `broker_id=35`.
