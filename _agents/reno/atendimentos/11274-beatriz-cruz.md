@@ -115,3 +115,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Renda da mãe inclui Bolsa Família
 Cliente esclareceu que os R$ 5 mil a R$ 6 mil de movimentação/renda aproximada da mãe incluem o Bolsa Família. Interpretação: para pré-análise de financiamento, é necessário separar renda proveniente das faxinas/movimentação de trabalho do benefício social, tratando o Bolsa Família com cautela e sem usar como base principal. Próximo passo: perguntar quanto a mãe movimenta/recebe mensalmente apenas das faxinas, sem contar o benefício.
+
+### 2026-05-08 — Renda da mãe sem Bolsa Família
+Cliente informou que, sem contar o Bolsa Família, a renda/movimentação da mãe com faxinas fica em torno de “uns 3 e pouco” por mês. Diagnóstico atualizado: cliente renda registrada aprox. R$ 3.500; mãe autônoma/faxineira com renda de trabalho estimada pouco acima de R$ 3 mil; Bolsa Família existe, mas deve ser tratado com cautela e não como base principal de financiamento. Próximo passo: validar se ambas estão sem restrição no CPF e conduzir para pré-análise/visita em outro dia.
