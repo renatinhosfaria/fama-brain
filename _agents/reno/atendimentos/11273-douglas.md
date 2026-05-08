@@ -1,67 +1,52 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Douglas
-client_id: 11273
 broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
+channel: whatsapp
+client_id: 11273
+client_name: Douglas
 created: '2026-05-08'
-updated: '2026-05-08'
+lead_id: 3021
+owner: reno
+participants:
+  - reno
+  - douglas
+phone: (34) 99167-9404
+property_id: 22
+property_name: Union Vista
+source: Facebook Ads
+status: Em Atendimento
 tags:
   - reno
   - atendimento
   - whatsapp
-  - famachat
-  - primeiro-contato
+  - union-vista
+type: interaction
+updated: '2026-05-08'
 ---
-# Atendimento — Douglas
+# Atendimento Reno — Douglas
 
-## Resumo atual
-Primeiro contato do Reno enviado com sucesso via WhatsApp. O cliente demonstrou interesse no Union Vista, no Grand Ville, e está aguardando resposta inicial para confirmar se procura imóvel nessa região.
+## Contexto operacional
+- Cliente CRM: 11273
+- Lead CRM: 3021
+- Broker responsável: Reno Agente de IA (broker_id=35)
+- Origem: Facebook Ads
+- Empreendimento de interesse: Union Vista (id_empreendimento=22), Grand Ville, Uberlândia
+- Status atual no FamaChat: Em Atendimento
 
-## Dados operacionais
-- Cliente ID: 11273
-- Broker ID: 35
-- Status CRM: Não Respondeu
-- Origem: Facebook Ads / lead_automatico
-- Telefone/WhatsApp: WhatsApp validado no CRM
-- Empreendimento de interesse: Union Vista, no Grand Ville
-- Última interação relevante: 2026-05-08 — primeiro contato enviado pelo Reno
-
-## Contexto comercial
-Lead entrou por Facebook Ads com interesse no empreendimento Union Vista, localizado no bairro Grand Ville. A abertura foi mantida curta e contextual, sem qualificação financeira precoce e sem convite para visita antes da primeira resposta.
+## Histórico curado
+- 2026-05-08 00:15: cliente criado via Facebook Ads com interesse no Union Vista.
+- 2026-05-08 00:16: primeira mensagem do Reno enviada previamente; cliente estava em "Não Respondeu".
+- 2026-05-08 00:17: cliente respondeu no WhatsApp: "Sim".
+- 2026-05-08 00:17: status atualizado no FamaChat de "Não Respondeu" para "Em Atendimento" e nota CRM registrada.
 
 ## Diagnóstico
-### Necessidade
-Ainda não diagnosticada; aguardando primeira resposta.
-
-### Momento
-Ainda não diagnosticado; aguardando primeira resposta.
-
-### Decisão
-Ainda não diagnosticada; aguardando primeira resposta.
-
-### Viabilidade
-Ainda não diagnosticada; não houve conversa sobre financiamento, renda, entrada ou aprovação.
-
-## Histórico curado de interações
-### 2026-05-08 — Primeiro contato enviado
-Reno enviou abertura em duas mensagens pelo WhatsApp:
-1. Cumprimento, apresentação e contexto do interesse no Union Vista, no Grand Ville.
-2. Pergunta simples para primeira resposta: se o cliente está procurando imóvel nessa região.
-
-Após o envio, o CRM foi atualizado de `Sem Atendimento` para `Não Respondeu` e a régua de repescagem foi inicializada em `step=0`, com primeira repescagem prevista para 2026-05-08 às 19:10, caso o cliente não responda.
-
-## Objeções e travas
-- Nenhuma objeção registrada até o momento.
+Ainda não iniciado. Próxima pergunta deve ser curta e natural para entender objetivo inicial.
 
 ## Próximo passo
-Aguardar a primeira resposta do cliente. Se o cliente responder, atualizar o CRM de `Não Respondeu` para `Em Atendimento`, registrar a resposta, interromper a repescagem quando aplicável e iniciar a qualificação consultiva.
+Responder no WhatsApp com uma pergunta simples: se o interesse no Union Vista é mais para morar ou investir.
 
-## Observações operacionais
-- Envio técnico validado pelo WhatsApp.
-- Status CRM confirmado como `Não Respondeu` após o envio.
-- `meta_data.reno_followup.repescagem` inicializada e verificada no CRM.
-- Referência operacional: evt_3441 / 3441_1778210118356.
+## Observações
+Nome cadastrado "Douglas" parece humano e utilizável para atendimento.
+
+## Interação — 2026-05-08 00:18
+- Cliente confirmou interesse com "Sim" após abertura sobre procurar imóvel na região.
+- Reno respondeu com diagnóstico inicial: "Boa, Douglas. Pra eu te orientar melhor sobre o Union Vista: é mais pra morar mesmo ou pensando em investir?"
