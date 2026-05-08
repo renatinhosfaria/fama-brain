@@ -54,3 +54,6 @@ Cliente informou que é menor de idade, porém emancipada, e entende que legalme
 
 ## Atualização — 2026-05-08
 Cliente informou que todos os possíveis participantes do financiamento estão com nome limpo. Contexto atual: possível composição de renda total de aproximadamente R$ 8.500 entre todos os moradores; cliente é menor emancipada; necessidade de validar política bancária, documentação de emancipação, quem entra formalmente no financiamento e forma de comprovação das rendas.
+
+## Atualização — 2026-05-08
+Cliente detalhou a forma de renda dos possíveis participantes: marido e uma cunhada com carteira assinada; cliente autônoma; outra participante com renda informal (provável esposa da cunhada, a confirmar). Todos com nome limpo, segundo cliente. Orientação comercial: CLT tende a ser mais forte para análise bancária; renda autônoma pode ajudar se houver comprovação por extratos/declarações; renda informal pode ter menor aproveitamento formal. Lead com bom potencial para encaminhar para análise de crédito/visita presencial.
