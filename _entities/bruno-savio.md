@@ -1,6 +1,6 @@
 ---
 type: entity-profile
-owner: vault-steward
+owner: renato
 entity_type: person
 entity_name: Bruno Sávio
 subtype: person
@@ -13,7 +13,6 @@ tags:
 schema_version: 1
 status: active
 source: agent-generated
-author_agent: VaultSteward
 verified_by: null
 verified_at: null
 confidence: 0.7
@@ -69,6 +68,5 @@ Cada bullet linka a uma nota de interação isolada com seu próprio chunk:
 
 ## Notas operacionais
 
-- Perfil criado pelo VaultSteward como **piloto** da FAM-16 (frente 3: criar perfis canônicos cross-cutting em `_entities/`).
 - Status `agent-generated` + `verified_by: null` — agente não pode citar este perfil como ground truth em decisão crítica até [[Renato Faria]] ou [[Edilene]] verificarem.
 - Quando o MCP `obsidian` for atualizado para aceitar `type: entity` (schema v1), trocar `type: entity-profile` → `type: entity` aqui.

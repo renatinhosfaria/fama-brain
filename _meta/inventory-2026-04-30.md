@@ -1,6 +1,6 @@
 ---
 type: shared-context
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 topic: vault
@@ -13,7 +13,6 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 verified_by: null
 verified_at: null
 related:
@@ -48,9 +47,6 @@ Grupo a ser dissolvido — `_agents/{agente}/` não existe no schema v1. Mapeame
 
 | Path atual | Notas | Destino v1 |
 |------------|-------|------------|
-| `_agents/ceo/profile.md` | 1 | `_runbooks/agent-ceo.md` |
-| `_agents/ceo/README.md` | 1 | `_hubs/hub-agent-ceo.md` |
-| `_agents/ceo/decisions.md` | 1 | decompor em N notas em `_decisions/` |
 | `_agents/reno/profile.md` | 1 | `_runbooks/agent-reno.md` |
 | `_agents/reno/README.md` | 1 | `_hubs/hub-agent-reno.md` |
 | `_agents/reno/decisions.md` | 1 | decompor em `_decisions/` |
@@ -61,9 +57,6 @@ Grupo a ser dissolvido — `_agents/{agente}/` não existe no schema v1. Mapeame
 | `_agents/reno/journal/*.md` | 6 | `_journal/reno/` |
 | `_agents/reno/planos/*.md` | 1 | `_journal/reno/` (é plano-estratégico, mas type=journal — autor decide se promove a `_decisions/`) |
 | `_agents/reno/procedimentos/*.md` | 1 | `_runbooks/runbook-registro-vault-reno.md` |
-| `_agents/vault-steward/profile.md` | 1 | `_runbooks/agent-vault-steward.md` |
-| `_agents/vault-steward/README.md` | 1 | `_hubs/hub-agent-vault-steward.md` |
-| `_agents/vault-steward/decisions.md` | 1 | decompor em `_decisions/` |
 | `_agents/README.md` | 1 | `_hubs/hub-agentes.md` |
 
 ### `_infra/` (2 notas)
@@ -88,12 +81,7 @@ Grupo a ser dissolvido — `_agents/{agente}/` não existe no schema v1. Mapeame
 | `_shared/context/FAMA.md` | 1 | `_curated/fama/index.md` ou `_hubs/hub-fama.md` |
 | `_shared/context/credito-imobiliario/*.md` | 8 | `_curated/credito-imobiliario/{slug}.md` |
 | `_shared/context/fama/*.md` | 7 | `_curated/fama/{slug}.md` |
-| `_shared/context/modelo-negocio/ceo/segundo-cerebro.md` | 1 | `_curated/modelo-negocio/segundo-cerebro.md` |
 | `_shared/context/modelo-negocio/metodologia-negocio.md` | 1 | `_curated/modelo-negocio/metodologia-negocio.md` |
-| `_shared/context/organograma/ceo/diretoria-proposta-2026q2.md` | 1 | `_curated/organograma/diretoria-proposta-2026q2.md` |
-| `_shared/context/vault/ceo/schema.md` | 1 | manter onde está + `status: superseded` (substituído por `_meta/schema.md`) |
-| `_shared/context/vault/vault-steward/audit-2026-04-30.md` | 1 | `_journal/vault-steward/2026-04-30-audit.md` |
-| `_shared/context/vault/vault-steward/audit-conexoes-2026-04-30.md` | 1 | `_journal/vault-steward/2026-04-30-audit-conexoes.md` |
 
 ### Raiz (2 notas)
 

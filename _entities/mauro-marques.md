@@ -1,6 +1,6 @@
 ---
 type: entity-profile
-owner: vault-steward
+owner: renato
 entity_type: person
 entity_name: Mauro Marques
 subtype: person
@@ -14,7 +14,6 @@ tags:
 schema_version: 1
 status: active
 provenance: agent-generated
-author_agent: VaultSteward
 verified_by: null
 verified_at: null
 confidence: 0.85
@@ -73,5 +72,5 @@ Mauro Marques é cliente do Reno em status **Em Atendimento**, mas **não há fi
 
 - Reno deve **acolher e registrar preferência** sem pressionar
 - Oferecer avisar caso surja loteamento Fama no perfil — não há agora
-- **Insight estratégico para o CEO:** revisar criativo Facebook Ads do Union Vista (atraindo perfil errado) E avaliar se faz sentido captar loteamento como produto
+- **Insight estratégico:** revisar criativo Facebook Ads do Union Vista (atraindo perfil errado) E avaliar se faz sentido captar loteamento como produto
 - Adicionar na lista de gaps de portfólio: **loteamento + Planalto**

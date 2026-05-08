@@ -38,7 +38,7 @@ Sistema interno consolidado como **coração operacional** da empresa: CRM, oper
 - Auditoria completa de MCPs: **60/60 tools operacionais**, expandindo para **91 tools** com ampliação do MCP Meta Ads (CRM, criativos, públicos, lead forms, previews, CAPI).
 
 ### Abril/2026 — Ecossistema OpenClaw estruturado
-Papéis definidos para CEO, FamaAgent, Reno, Sparring e CFO, cada um atuando em canais e contextos específicos. Mudança de paradigma: IA deixa de ser experimento e passa a fazer parte da operação.
+Papéis definidos para diretoria, FamaAgent, Reno, Sparring e CFO, cada um atuando em canais e contextos específicos. Mudança de paradigma: IA deixa de ser experimento e passa a fazer parte da operação.
 
 - **06/04/2026** — migração do WhatsApp principal para **Baileys**, Evolution como fallback. Reforço de confiabilidade sobre o canal principal de atendimento.
 

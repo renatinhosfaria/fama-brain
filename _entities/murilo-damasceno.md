@@ -1,6 +1,6 @@
 ---
 type: entity-profile
-owner: vault-steward
+owner: renato
 entity_type: person
 entity_name: Murilo Damasceno
 subtype: person
@@ -13,7 +13,6 @@ tags:
 schema_version: 1
 status: active
 provenance: agent-generated
-author_agent: VaultSteward
 verified_by: null
 verified_at: null
 confidence: 0.7

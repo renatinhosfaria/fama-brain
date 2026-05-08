@@ -1,6 +1,6 @@
 ---
 type: moc
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 tags:
@@ -10,12 +10,11 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 ---
 
 # `_curated/` — Ground truth
 
-Pasta para conteúdo **verificado** que o vault trata como ground truth: conceitos institucionais, references a fontes externas, contexto curado pelo CEO/Renato, política de comissão, modelo de negócio, regulamentação.
+Pasta para conteúdo **verificado** que o vault trata como ground truth: conceitos institucionais, references a fontes externas, contexto curado pelo Renato, política de comissão, modelo de negócio, regulamentação.
 
 ## Indexação
 
@@ -34,7 +33,7 @@ Pasta para conteúdo **verificado** que o vault trata como ground truth: conceit
 
 Conteúdo só vai para `_curated/` quando:
 
-1. `verified_by` está preenchido (por humano OU por VaultSteward em revisão estrutural cruzada com fonte).
+1. `verified_by` está preenchido por humano ou por revisão estrutural autorizada com fonte.
 2. `confidence` declarada se relevante (0..1).
 3. Self-contained chunk (§6 do schema) respeitado.
 

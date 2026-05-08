@@ -1,6 +1,6 @@
 ---
 type: moc
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 tags:
@@ -10,7 +10,6 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 ---
 
 # `_runbooks/` — Procedimentos operacionais
@@ -24,7 +23,7 @@ Runbook = sequência de passos repetível e verificável. Inclui:
 ## Naming
 
 - Procedimentos: `runbook-{procedimento-slug}.md`. Ex.: `runbook-deploy-mcp-obsidian-caddy.md`.
-- Perfis de agente: `agent-{nome}.md`. Ex.: `agent-vault-steward.md`, `agent-reno.md`.
+- Perfis de agente: `agent-{nome}.md`. Ex.: `agent-reno.md`.
 
 Título: `Runbook: {Sujeito} ({qualificador})` ou `Runbook: agent-{nome}`.
 
@@ -32,7 +31,7 @@ Título: `Runbook: {Sujeito} ({qualificador})` ou `Runbook: agent-{nome}`.
 
 ```yaml
 type: runbook
-procedure_owner: "[[VaultSteward]]"
+procedure_owner: "[[Responsavel]]"
 trigger: cron | manual | webhook | event
 mentions_entity: []
 related: []

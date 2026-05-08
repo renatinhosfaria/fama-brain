@@ -1,6 +1,6 @@
 ---
 type: moc
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 tags:
@@ -10,7 +10,6 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 ---
 
 # `_journal/` — Atividade do dia / log operacional

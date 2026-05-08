@@ -1,6 +1,6 @@
 ---
 type: moc
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 tags:
@@ -10,7 +10,6 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 ---
 
 # `_inbox/` — Pré-curadoria
@@ -27,4 +26,4 @@ Sem convenção rígida — é rascunho. Quando promover, renomear para a conven
 
 ## Promoção
 
-Rotina diária do VaultSteward (FAM-18) varre `_inbox/`, valida frontmatter, regras de self-contained chunk, decide destino (`_curated/`, `_journal/`, `_decisions/`, `_entities/`, `_runbooks/`, `_projects/`) e move com wikilinks atualizados.
+Rotina de governança varre `_inbox/`, valida frontmatter, regras de self-contained chunk, decide destino (`_curated/`, `_journal/`, `_decisions/`, `_entities/`, `_runbooks/`, `_projects/`) e move com wikilinks atualizados.

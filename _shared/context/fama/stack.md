@@ -125,7 +125,7 @@ Timeline de lançamento: não documentada.
 - **Runtime:** VPSs Linux na Contabo. Sessão atual: `vmi3094636`. Agentes **compartilham infraestrutura**, separados logicamente por conta/canal.
 - **Memória:** arquivos locais (`MEMORY.md`, `memory/YYYY-MM-DD.md`) + CRM via MCP.
 - **Heartbeats:** Reno WhatsApp 30 min.
-- **Canais/papéis:** CEO, FamaAgent, Reno, EF.Arq e outros.
+- **Canais/papéis:** diretoria, FamaAgent, Reno, EF.Arq e outros.
 
 ### Confirmado — Claude no ecossistema
 
@@ -134,7 +134,7 @@ Timeline de lançamento: não documentada.
 
 ### Parcialmente documentado — Paperclip
 
-Ecossistema de agentes de nível **diretoria** (CEO, CRO) — estratégia, governança, orquestração. Complementar ao OpenClaw.
+Ecossistema de agentes de nível **diretoria** (ex.: CRO) — estratégia, governança, orquestração. Complementar ao OpenClaw.
 
 Documentado nesta sessão do fama-brain:
 - Divisão clara Paperclip (estratégia) vs OpenClaw (execução).
@@ -151,7 +151,7 @@ Não documentado em detalhe:
 **Este vault Obsidian em Git.** Topologia: `C:\fama-brain` (Obsidian local Windows) → GitHub (`renatinhosfaria/fama-brain`) → uma única VPS runtime (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Na VPS, o container Docker Swarm `mcp-obsidian` expõe o vault como 34 tools MCP via HTTPS (`mcp-obsidian.famachat.com.br`); todos os agentes Paperclip/OpenClaw escrevem por ele. Cron `_infra/brain-sync.sh` roda só nessa VPS, coordenando commits do MCP com edições do Windows via `/tmp/brain-sync.lock`. Detalhes em [[../../_infra/mcp-obsidian]]. Serve como:
 
 - **Contexto institucional compartilhado** — FAMA, mercado, produtos, stack, pessoas, agents map.
-- **Metas e resultados mensais** — por diretor Paperclip, agregados pelo CEO.
+- **Metas e resultados mensais** — por diretor Paperclip, agregados por Renato.
 - **Memória individual de cada agente** — `_agents/<nome>/` com profile, decisions, journal.
 
 Complementa (não substitui) as memórias locais `MEMORY.md` dos OpenClaw e o FamaChat como memória operacional viva.

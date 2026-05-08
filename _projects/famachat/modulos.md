@@ -24,7 +24,7 @@ legados).
 | `agenda-v2` | Calendário comercial (FullCalendar), agendamentos, visitas | CRO |
 | `arquivos` | File manager — upload, preview, thumbnails, grid, seleção, download, ZIP | CTO |
 | `clientes` | Kanban de atendimento, dialog de venda, funil, board interativo (dnd-kit) | CRO |
-| `dashboard` | Dashboards por role (gestão, atendimento, vendas) | CEO / CRO |
+| `dashboard` | Dashboards por role (gestão, atendimento, vendas) | Diretoria / CRO |
 | `imoveis` | Listagem, detalhes, novo imóvel/empreendimento, seleção de proprietário | CRO |
 | `leads` | Captação e atribuição de leads | CRO |
 | `_template` | Template para criar novos módulos | — |

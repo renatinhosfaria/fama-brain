@@ -1,6 +1,6 @@
 ---
 type: moc
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 tags:
@@ -10,7 +10,6 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 ---
 
 # `_meta/` — Documentação do próprio vault
@@ -26,6 +25,6 @@ Pasta para o que **não** é conteúdo do segundo cérebro mas governa-o.
 
 ## Regras
 
-- `_meta/` **não vetoriza** nem entra no grafo. Apenas humanos e o VaultSteward leem.
-- Mudanças em `schema.md` requerem decisão registrada em `_decisions/` e aprovação do CEO.
+- `_meta/` **não vetoriza** nem entra no grafo. Apenas humanos e responsáveis autorizados leem.
+- Mudanças em `schema.md` requerem decisão registrada em `_decisions/` e aprovação de Renato.
 - Arquivos aqui não seguem a convenção de título `{Tipo}: {Sujeito}` — são docs internos do vault.

@@ -1,6 +1,6 @@
 ---
 type: moc
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 tags:
@@ -10,7 +10,6 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 ---
 
 # `_decisions/` — Decision log
@@ -44,7 +43,7 @@ Quando decisão A é substituída por B:
 - A: `status: superseded`, `superseded_by: ["[[B]]"]`.
 - B: `supersedes: ["[[A]]"]`.
 
-VaultSteward enforça ambos os lados quando o autor só preenche um.
+O responsável pela governança enforça ambos os lados quando o autor só preenche um.
 
 ## Indexação
 
@@ -53,4 +52,4 @@ VaultSteward enforça ambos os lados quando o autor só preenche um.
 
 ## Imutabilidade
 
-Decisões nunca são editadas materialmente. Erro factual → criar decisão nova com `supersedes`. VaultSteward NÃO altera conteúdo de decisão de outro agente.
+Decisões nunca são editadas materialmente. Erro factual → criar decisão nova com `supersedes`. Nenhum agente altera conteúdo de decisão de outro agente.

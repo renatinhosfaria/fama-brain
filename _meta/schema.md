@@ -1,6 +1,6 @@
 ---
 type: shared-context
-owner: vault-steward
+owner: renato
 created: '2026-04-30'
 updated: '2026-04-30'
 topic: vault
@@ -13,7 +13,6 @@ tags:
 schema_version: 1
 status: active
 source: human-curated
-author_agent: VaultSteward
 verified_by: null
 verified_at: null
 confidence: null
@@ -25,7 +24,7 @@ related:
 
 # Schema v1 do vault FAM (RAG / Segundo cérebro)
 
-**Status:** v1 **aprovada** mas **não enforçada ainda** (depende de MCP). Aprovada por Renato Faria (CEO) em [FAM-15](/FAM/issues/FAM-15) (revisão `0f1e41b5`). Substituirá o schema legado em `_shared/context/vault/ceo/schema.md` quando o MCP suportar v1.
+**Status:** v1 **aprovada** mas **não enforçada ainda** (depende de MCP). Aprovada por Renato Faria em [FAM-15](/FAM/issues/FAM-15) (revisão `0f1e41b5`).
 
 Este documento é a **single source of truth** do schema. Toda nota do vault FAM, **uma vez migrada**, terá `schema_version: 1` e seguirá as regras abaixo.
 
@@ -34,7 +33,7 @@ Este documento é a **single source of truth** do schema. Toda nota do vault FAM
 ## 0. Pré-requisitos técnicos (antes de aplicar v1 em massa)
 
 1. **MCP `obsidian` aceitar novos types.** Lista canônica v1: `interaction | decision | entity | hub | journal | concept | reference | runbook | project`. Adicional: `goal`, `result`.
-2. **MCP aceitar datas ISO-8601 com timezone** (ou manter YYYY-MM-DD se o CEO preferir simplicidade — decisão pendente).
+2. **MCP aceitar datas ISO-8601 com timezone** (ou manter YYYY-MM-DD se Renato preferir simplicidade — decisão pendente).
 3. **MCP aceitar campos extra** sem rejeitar (`schema_version`, `status`, `source`, `author_agent`, `verified_by`, `verified_at`, `confidence`, `mentions_entity`, `participants`, `decided_by`, `supersedes`, `superseded_by`, `implements`, `derives_from`, `related`, `aliases`, `relationships`, `external_ids`, `subtype`, `channel`, `valid_until`, `scope`, `maintainer`, `procedure_owner`, `trigger`, `goal`, `status_lifecycle`, `source_url`, `source_author`, `source_date`).
 4. **Filtro `min_trust` no retrieve do MCP** (FAM-18).
 
@@ -112,7 +111,7 @@ status: draft | active | superseded | archived
 created: 2026-04-30
 updated: 2026-04-30
 source: human-curated | agent-generated | imported
-author_agent: VaultSteward                # null se human-curated puro
+author_agent: null                        # null se human-curated puro
 verified_by: null
 verified_at: null
 confidence: null
@@ -170,7 +169,7 @@ related: ["[[Hub: Clientes ativos]]"]
 ```yaml
 type: hub
 scope: "Clientes ativos 2026"
-maintainer: "[[VaultSteward]]"
+maintainer: "[[Responsavel]]"
 ```
 
 Hubs **não duplicam** conteúdo. Mora em `_hubs/`.
@@ -213,7 +212,7 @@ Mora em `_curated/`.
 
 ```yaml
 type: runbook
-procedure_owner: "[[VaultSteward]]"
+procedure_owner: "[[Responsavel]]"
 trigger: cron | manual | webhook
 mentions_entity: []
 ```
@@ -276,7 +275,7 @@ Anti-padrões: `#cliente-bruno`, `#projeto-xpto` (isso é wikilink).
 2. **Verificação humana** = `verified_by: "[[Renato Faria]]"` + `verified_at: <data>`.
 3. **Verificação cruzada agente-agente** vale menos que humana.
 4. **Agente consumidor não pode citar KPI de outro agente sem flag.**
-5. **VaultSteward marca `verified_by`** apenas pra correções estruturais, nunca pra fato/conteúdo.
+5. **`verified_by` em correções estruturais** nunca substitui verificação humana de fato/conteúdo.
 
 Implementação: filtro `min_trust` no retrieve do MCP (FAM-18).
 
@@ -290,11 +289,11 @@ Implementação: filtro `min_trust` no retrieve do MCP (FAM-18).
 
 ---
 
-## 10. Permissões e escopo do VaultSteward
+## 10. Permissões e escopo de governança
 
 Pode: adicionar/corrigir frontmatter, mover notas, deduplicar, renomear, atualizar hubs.
 
-Não pode: editar conteúdo substantivo, alterar `_decisions/` de outro agente, decidir schema sem CEO.
+Não pode: editar conteúdo substantivo, alterar `_decisions/` de outro agente, decidir schema sem aprovação de Renato.
 
 ---
 
@@ -327,4 +326,4 @@ Não pode: editar conteúdo substantivo, alterar `_decisions/` de outro agente, 
 
 ## 12. Changelog
 
-- **2026-04-30** (VaultSteward, aprovado por CEO em [FAM-15](/FAM/issues/FAM-15) revisão `0f1e41b5`): publicação da v1. Não enforçada ainda — aguarda atualização do MCP `obsidian` para aceitar novos types/campos. Substitui em conteúdo o schema legado em `_shared/context/vault/ceo/schema.md`.
+- **2026-04-30** (aprovado por Renato em [FAM-15](/FAM/issues/FAM-15) revisão `0f1e41b5`): publicação da v1. Não enforçada ainda — aguarda atualização do MCP `obsidian` para aceitar novos types/campos.
