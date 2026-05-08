@@ -20,11 +20,12 @@ tags:
   - garden-sul
   - jardim-sul
   - moradia
+  - resposta-numerica
 ---
 # Atendimento — Yasmim Rezende
 
 ## Resumo atual
-A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. A conversa ativa está sobre o Garden Sul, no Jardim Sul. Após perder o contexto da conversa sobre o empreendimento/unidade, a cliente respondeu “Morar”, indicando que a finalidade da busca é moradia. Próximo passo: a resposta comercial deve retomar o Garden Sul/Jardim Sul de forma simples, conectar o empreendimento ao uso para morar e seguir com uma pergunta curta de qualificação, sem triagem financeira precoce.
+A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. A conversa ativa está sobre o Garden Sul, no Jardim Sul. A cliente já indicou que a finalidade da busca é moradia e, na última interação, enviou a resposta curta “2”. Próximo passo: antes da resposta comercial, reconstruir o contexto imediato da conversa para interpretar corretamente o significado da opção “2”, sem assumir fora do histórico e sem disparar follow-up automático.
 
 ## Dados operacionais
 - Cliente ID: 11277
@@ -33,14 +34,14 @@ A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Garden Sul — Jardim Sul, Uberlândia
-- Última interação relevante: cliente respondeu “Morar” por WhatsApp
+- Última interação relevante: cliente respondeu “2” por WhatsApp
 - Repescagem: interrompida em step 0; `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento da rotina silenciosa
 
 ## Contexto comercial
 A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento confirmado no CRM como localizado no bairro Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou esse contexto e perguntou se ela procura imóvel naquela região.
 
-A cliente respondeu “Oi”, depois “Então eu perdi aqui”, confirmou/corrigiu que o assunto era “Garden Sul, no Jardim Sul”, complementou com “Da unidade”, disse “Não lembro” e agora informou “Morar”. A condução deve tratar a conversa como retomada de contexto com finalidade já declarada, não como lead frio nem desinteresse.
+A cliente respondeu “Oi”, depois “Então eu perdi aqui”, confirmou/corrigiu que o assunto era “Garden Sul, no Jardim Sul”, complementou com “Da unidade”, disse “Não lembro”, informou “Morar” e agora enviou “2”. A condução deve tratar a resposta numérica como dependente do contexto imediato do WhatsApp: se “2” era escolha entre alternativas apresentadas, executar a alternativa correspondente; se o histórico não estiver visível, retomar de forma curta e contextual, sem perguntar genericamente o que ela quer.
 
 Informações seguras do CRM sobre o Garden Sul para uso interno de continuidade: apartamento na Zona Sul/Jardim Sul, plantas de 2 quartos com suíte, sacada gourmet, elevadores, lazer com piscina, espaço gourmet, salão de festas, playground, quadra e academia. Não passar endereço completo espontaneamente.
 
@@ -83,13 +84,17 @@ A cliente enviou “Não lembro”. O status foi preservado em `Em Atendimento`;
 ### 2026-05-08 — Cliente informa finalidade de moradia
 A cliente enviou “Morar”. O status foi preservado em `Em Atendimento`; não houve regressão nem alteração necessária. A repescagem já estava interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não havia Resgate ativo. Nota objetiva foi registrada no FamaChat. Próximo passo comercial: usar a finalidade de moradia para conectar o Garden Sul ao perfil de uso e fazer uma pergunta curta de qualificação.
 
+### 2026-05-08 — Resposta curta/numérica inbound
+A cliente enviou “2” pelo WhatsApp. O status já estava `Em Atendimento` e foi preservado. A repescagem seguia interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não havia Resgate ativo. Nota objetiva foi registrada no FamaChat. Próximo passo comercial: reconstruir o contexto imediato para interpretar o que a opção “2” representa antes de responder.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada ainda.
 - Houve perda/ajuste de contexto na conversa; tratar com explicação simples e retomada natural.
 - A mensagem “Não lembro” indica que o Reno deve reexplicar a conversa anterior em vez de cobrar lembrança da cliente.
+- A mensagem “2” é uma resposta numérica e depende do contexto imediato; não assumir significado sem ler a última pergunta/oferta enviada.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp com uma explicação curta do contexto: o atendimento estava falando do Garden Sul, no Jardim Sul. Como a cliente informou que procura para morar, conectar a opção ao perfil de moradia e perguntar uma coisa por vez, por exemplo se a região/planta de 2 quartos com suíte faz sentido para ela.
+Responder comercialmente pelo WhatsApp somente após reconstruir o contexto imediato da sessão. Se “2” for escolha entre opções apresentadas, executar a opção correspondente. Se o contexto não estiver disponível, retomar de forma curta: conectar Garden Sul/Jardim Sul ao objetivo de moradia e fazer uma pergunta simples de continuidade, evitando triagem financeira precoce.
 
 ## Observações operacionais
 - CRM validado como fonte de verdade: cliente existente, `broker_id=35`.
