@@ -2,11 +2,12 @@
 type: context
 owner: renato
 created: 2026-04-14
-updated: 2026-04-14
+updated: '2026-05-08'
 tags: [fama, mercado]
 ---
 # Mercado
 
+Vínculos: [[fama-overview]], [[renato]], [[fama-produtos]].
 ## Região de atuação
 
 **Foco principal e explícito:** Uberlândia/MG.

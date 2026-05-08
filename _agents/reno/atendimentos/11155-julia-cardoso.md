@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Julia Cardoso (nome a confirmar)
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Primeiro contato do Reno enviado via WhatsApp em 2026-05-03, após validação da cliente no CRM (`broker_id=35`). O cadastro trazia o nome em caracteres estilizados, então a abordagem inicial foi neutra e pediu como a cliente prefere ser chamada antes de iniciar a qualificação.

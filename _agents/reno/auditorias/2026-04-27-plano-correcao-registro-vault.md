@@ -8,10 +8,11 @@ tags:
   - correcao
   - rastreabilidade
 type: journal
-updated: '2026-04-27'
+updated: '2026-05-08'
 ---
 # Plano de correção — registro do Reno no vault
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 Data: 2026-04-27.
 
 ## Problema

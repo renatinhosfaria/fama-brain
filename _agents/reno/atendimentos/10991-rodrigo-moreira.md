@@ -24,5 +24,5 @@ proximo_passo: Revisar/validar contato WhatsApp antes de qualquer novo envio aut
 ---
 
 
-V?nculos: [[reno]], [[playbook-atendimento]].
+Vínculos: [[reno]], [[playbook-atendimento]].
 

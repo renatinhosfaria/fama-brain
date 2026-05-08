@@ -2,7 +2,7 @@
 type: context
 owner: renato
 created: '2026-04-21'
-updated: '2026-04-21'
+updated: '2026-05-08'
 tags:
   - credito-imobiliario
   - simulacao
@@ -11,6 +11,7 @@ tags:
 ---
 # Simulações de Referência — ICP Fama
 
+Vínculos: [[credito-imobiliario]], [[fama-overview]], [[mcmv]].
 Cenários padrão de simulação para o ICP da Fama (Uberlândia/MG, econômico/MCMV). Use estes como base para primeira conversa com o cliente — valores aproximados, confirmar no simulador CEF antes de oferta formal.
 
 **Última verificação: 2026-04-21.** Taxas e parâmetros MCMV das novas regras em vigor a partir de 22/04/2026.

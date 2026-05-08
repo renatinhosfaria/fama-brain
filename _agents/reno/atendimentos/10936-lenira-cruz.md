@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Lenira Cruz
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de **5 repescagens** sem resposta real registrada. Veio de Facebook Ads com interesse no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. O step 5 foi enviado com encerramento elegante e porta aberta; a branch `reno_followup.repescagem` ficou encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.

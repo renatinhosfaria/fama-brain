@@ -23,7 +23,7 @@ tags:
 ---
 # Atendimento — Danielly Cristina Justen Souza
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente validada no CRM como `broker_id=35` e status `Em Atendimento`. A primeira resposta inbound (`Sim`) já moveu o CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a Repescagem em `step=0`, com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.

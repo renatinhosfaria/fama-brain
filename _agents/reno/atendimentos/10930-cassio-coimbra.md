@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Cássio Coimbra
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente em `Em Atendimento` no CRM, sob responsabilidade do Reno (`broker_id=35`). O Resgate estava armado no step 5, mas a revalidação de produção encontrou duplicidade ativa recente em SLA Cascata com o mesmo telefone/JID do cliente original em outros cadastros do mesmo contato. Para evitar envio duplicado e possível conflito de ownership entre brokers, o ciclo de Resgate foi pausado manualmente com `stopped_reason=manual_review_duplicate_active_broker`, preservando step 5 e sem enviar WhatsApp nesta execução.

@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Mauro Marques
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[mauro-marques]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[mauro-marques]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Mauro respondeu pelo WhatsApp após o primeiro contato e a repescagem do Reno. O atendimento está em `Em Atendimento`; a repescagem permanece interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. Não há resgate ativo.
@@ -93,4 +93,4 @@ Na resposta comercial normal fora desta rotina silenciosa, acolher a preferênci
 - Repescagem atual: `step=1`, `enabled=false`, `last_sent_at=2026-05-05T19:33:50-03:00`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate: inexistente no momento da verificação.
 - Nota CRM da rotina silenciosa atual criada registrando o áudio sobre loteamento fechado/Planalto, preservação do status, follow-up seguro e ausência de envio ao cliente.
-- Existe documento legado/drift em `_agents/reno/11177-mauro-marques.md`; conteúdo útil já foi consolidado neste documento oficial em `_agents/reno/atendimentos/11177-mauro-marques.md`. Não deletar legado sem autorização explícita.
+- Documento legado/drift consolidado neste arquivo oficial em 2026-05-08.

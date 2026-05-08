@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - runbooks
   - moc
@@ -14,6 +14,7 @@ source: human-curated
 
 # `_runbooks/` — Procedimentos operacionais
 
+Vínculos: [[schema]], [[fama-overview]].
 Runbook = sequência de passos repetível e verificável. Inclui:
 
 - **Procedimentos técnicos** — Deploy de serviço, sync do vault, restart de cron, troubleshooting.

@@ -28,7 +28,7 @@ tags:
 ---
 # Atendimento — Kamily
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno em `Agendamento`. Kamily busca o primeiro imóvel próprio para morar, vinculada ao interesse no Place+Arbi / Shopping Park. Ela informou que já fez simulação de financiamento, que a simulação ficou dentro do esperado e que pretende comprar nos próximos meses.

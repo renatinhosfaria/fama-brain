@@ -34,7 +34,7 @@ tags:
 ---
 # Atendimento — Nome a confirmar
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente respondeu pelo WhatsApp em 2026-05-08 após o primeiro contato. A rotina silenciosa do Reno validou o cliente no CRM (`broker_id=35`), alterou o status de `Não Respondeu` para `Em Atendimento` no primeiro inbound e interrompeu a Repescagem com `stopped_reason=client_replied`. Nas interações seguintes, indicou busca para moradia, pediu recomendação, informou “Granja marileusa” como preferência/foco de localização, perguntou se os imóveis são 100% financiados, disse que aguardaria fazer 18 anos, voltou com dúvida sobre média de entrada e agora pediu valores. O nome/preferência de tratamento ainda não foi confirmado. Nenhuma mensagem cliente-facing foi enviada por estas rotinas silenciosas.

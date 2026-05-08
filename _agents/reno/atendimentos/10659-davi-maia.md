@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Davi Maia
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[davi-maia]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[davi-maia]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente em 2026-05-03 após conclusão da régua de **5 repescagens** sem evidência de resposta real. A última mensagem foi um encerramento elegante sobre o Garden Sul, deixando a porta aberta para retomada futura sem nova ação automática.

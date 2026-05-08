@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Michele Oliveira
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (broker_id=35), status atual no CRM: Arquivado. Origem: Facebook Ads. Interesse vinculado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia.

@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Evellyn Eduardo Pereira
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Atendimento de repescagem concluído. O Reno enviou o step 5 em 2026-05-07 09:13 BRT com encerramento elegante/porta aberta, depois confirmou o estado final da branch com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. O cliente foi arquivado no CRM após a confirmação defensiva do estado final.

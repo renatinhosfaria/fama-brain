@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Erlania Silva
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O interesse contextual era no Union Vereda / região do Jaraguá. O step 5 foi enviado via WhatsApp pelo JID salvo, com encerramento elegante, pausa respeitosa e porta aberta para retomada futura.

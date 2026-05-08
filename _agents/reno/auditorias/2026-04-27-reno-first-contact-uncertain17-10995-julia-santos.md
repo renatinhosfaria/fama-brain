@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-27'
-updated: '2026-04-27'
+updated: '2026-05-08'
 tags:
   - reno
   - auditoria
@@ -16,6 +16,7 @@ status: suprimido
 ---
 # Supressão — fila manual uncertain17
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 Cliente: 10995 — Julia santos
 Fila: [reno_first_contact_uncertain17_20260427_3min]
 

@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-27'
-updated: '2026-04-27'
+updated: '2026-05-08'
 tags:
   - reno
   - auditoria
@@ -12,6 +12,7 @@ tags:
 ---
 # Auditoria — registro do Reno no vault
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 Data da verificação: 2026-04-27.
 
 ## Conclusão

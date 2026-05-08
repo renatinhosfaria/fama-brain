@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-05-08'
 tags:
   - reno
   - obsidian
@@ -11,6 +11,7 @@ tags:
   - second-brain
 title: Governança e manutenção do segundo cérebro formalizadas
 ---
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 ## Contexto
 A camada de arquitetura, taxonomia, política de escrita, templates, playbooks e workflow do segundo cérebro do Reno já estava construída, mas a governança/manutenção ainda não existia como peça explícita e dedicada.
 

@@ -28,7 +28,7 @@ tags:
 ---
 # Atendimento — Marco Antonio Goncalves
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente está em `Em Atendimento` com interesse relacionado ao **Place+Arbi**, no Shopping Park/Zona Sul.

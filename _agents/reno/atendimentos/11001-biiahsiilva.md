@@ -18,7 +18,7 @@ source: Facebook Ads
 ---
 # Atendimento — Biiahsiilva
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real registrada no CRM. O interesse estava vinculado ao Union Vista, no Grand Ville. O step 5 foi enviado via WhatsApp com encerramento elegante, sem insistir em agenda após o step 4 já ter feito convite consultivo/possível visita na segunda-feira. A mensagem final preservou porta aberta para retomada futura e não usou o nome cadastrado como saudação por parecer nome de perfil/usuário não confirmado.

@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Eva Neves
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno originada de SLA Cascata, com interesse contextual no **Union Vereda**. Permaneceu sem resposta real após reenvio inicial e 5 repescagens enviadas por WhatsApp. Em **2026-05-03**, a repescagem step 5 foi enviada como encerramento elegante; a branch `reno_followup.repescagem` foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Como o CRM ainda estava em `Não Respondeu`, o cliente foi arquivado automaticamente por regra operacional defensiva.

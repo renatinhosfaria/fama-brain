@@ -18,7 +18,7 @@ tags:
 ---
 # Atendimento — Wilson Passos
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Wilson é cliente do Reno (`broker_id=35`) em `Em Atendimento`, com interesse no Place+Arbi, no Shopping Park. Ele respondeu à Repescagem com “Como assim” em 2026-05-05; a repescagem foi interrompida e o Reno corrigiu o atendimento explicando o contexto do Place+Arbi e oferecendo seguir pela planta ou pela condição de compra.

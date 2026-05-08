@@ -23,7 +23,7 @@ updated: '2026-05-08'
 ---
 # Atendimento — Genilsom Oliveira
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente operacional do broker 35 em `Em Atendimento`. Após primeiro contato e repescagem step 1 sobre o Union Vista, o cliente respondeu pelo WhatsApp em 2026-05-07 19:35. A primeira resposta encerrou a condição de silêncio: o CRM foi atualizado de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Depois, o cliente informou que está querendo imóvel para morar e perguntou sobre a forma de financiamento, sinalizando interesse residencial e viabilidade/condição de compra. A rotina silenciosa apenas registrou a nova mensagem, preservou o status e não enviou resposta ao cliente.

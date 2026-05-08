@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Samuel Kim
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[samuel-kim]], [[union-vereda]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[samuel-kim]], [[union-vereda]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]].
 
 ## Resumo atual
 Samuel respondeu pelo WhatsApp após a repescagem step 3. O CRM foi corrigido em 2026-04-30: status saiu de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`.

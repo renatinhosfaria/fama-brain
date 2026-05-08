@@ -19,7 +19,7 @@ flow: repescagem
 ---
 # Jonathan Barbosa — Repescagem Reno
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[jonathan-barbosa]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[jonathan-barbosa]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Identificação
 - Cliente: Jonathan Barbosa

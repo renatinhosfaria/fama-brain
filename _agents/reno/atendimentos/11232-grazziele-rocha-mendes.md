@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Grazziele Rocha Mendes
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente está em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas corrigiu o contexto: pensou que o anúncio/imóvel era em Araguari e informou que Uberlândia não interessa para a compra atual. Mora/tem apartamento em Uberlândia, no Jardim Europa, não se adaptou à cidade/região e quer ir para Araguari.

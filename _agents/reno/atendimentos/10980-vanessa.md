@@ -21,7 +21,7 @@ source: FamaChat / SLA Cascata
 ---
 # Atendimento — Vanessa
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Vanessa (`client_id=10980`) estava sob responsabilidade do Reno (`broker_id=35`) no fluxo de repescagem por ausência de resposta ao primeiro contato. A régua de 5 repescagens foi concluída sem resposta real identificada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante e porta aberta; em seguida a branch de repescagem foi encerrada com `step=5`/`stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra operacional defensiva.

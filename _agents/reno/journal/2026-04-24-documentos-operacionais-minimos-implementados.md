@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-05-08'
 tags:
   - reno
   - obsidian
@@ -12,6 +12,7 @@ tags:
 title: Documentos operacionais mínimos implementados
 ---
 # Contexto
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 Renato pediu para seguir com a implementação dos documentos ainda ausentes na configuração operacional do Reno.
 
 # O que foi implementado

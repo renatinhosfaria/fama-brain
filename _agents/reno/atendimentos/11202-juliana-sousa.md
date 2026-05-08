@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Juliana Sousa
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem step 3 enviada com sucesso por WhatsApp em 2026-05-08. A cliente segue sem resposta real ao Reno e permanece em `Não Respondeu` no CRM. O novo ângulo da régua busca identificar o critério principal de escolha no Place+Arbi, no Shopping Park, depois do step 2 já ter tratado viabilidade prática, entrada, parcelas da obra e financiamento.

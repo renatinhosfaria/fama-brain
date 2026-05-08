@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Sonia Silva
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville/Zona Leste. O primeiro contato e a régua completa de repescagem foram enviados por WhatsApp sem resposta real até o step 5; em 2026-05-03 a repescagem foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente.

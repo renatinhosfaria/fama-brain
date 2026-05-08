@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Mário Lukosevicius
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente novo do Reno vindo de Facebook Ads, com interesse registrado no Union Vereda, no Jaraguá. O primeiro contato automático pelo WhatsApp foi tentado, mas o número cadastrado não foi validado como disponível no WhatsApp. O status operacional foi preservado em `Sem Atendimento` e nenhuma régua de repescagem foi inicializada.

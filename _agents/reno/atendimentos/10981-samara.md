@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Samara
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente `10981`, sob responsabilidade do Reno (`broker_id=35`), foi **arquivada automaticamente** em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real registrada.

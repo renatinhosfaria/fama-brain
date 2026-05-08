@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Eliane Maria Martins
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem step 3 enviada com sucesso via WhatsApp em 2026-05-07 14:54 BRT. A cliente permanece em `Não Respondeu`, sem alteração de status. Próxima repescagem prevista para 2026-05-08 19:10 BRT se continuar silenciosa.

@@ -18,7 +18,7 @@ tags:
 ---
 # Atendimento — Andreia Carvalho
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[andreia-carvalho]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[andreia-carvalho]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente respondeu após o Resgate step 2 e voltou ao atendimento normal. O ciclo de Resgate foi interrompido em 2026-04-30 com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; nenhum novo WhatsApp de Resgate deve ser enviado enquanto não houver novo outbound normal do Reno seguido de novo silêncio elegível.

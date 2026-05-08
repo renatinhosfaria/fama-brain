@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-28'
-updated: '2026-04-28'
+updated: '2026-05-08'
 tags:
   - reno
   - auditoria
@@ -12,6 +12,7 @@ tags:
 ---
 # Correção — diretório lead descontinuado e atendimentos como fonte única
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 ## Resumo executivo
 Em 2026-04-28 foi concluída a correção operacional do vault do Reno para impedir confusão entre registros de clientes em `_agents/reno/lead/` e `_agents/reno/atendimentos/`.
 

@@ -25,7 +25,7 @@ tags:
 ---
 # Atendimento — Eliane Moreira
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente está em `Em Atendimento` no CRM. Após repescagem step 1 sobre o Union Vereda, respondeu pelo WhatsApp, confirmou o contexto do empreendimento, pediu para receber a opção mencionada e solicitou a planta.

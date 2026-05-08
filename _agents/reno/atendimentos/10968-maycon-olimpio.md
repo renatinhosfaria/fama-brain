@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Maycon Olimpio
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente CRM 10968 sob responsabilidade do Reno (`broker_id=35`), agora em status `Arquivado`. Lead veio de Facebook Ads com interesse no empreendimento Union Vista, no Grand Ville. O Reno enviou primeiro contato e completou a régua de 5 repescagens sem resposta real do cliente. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante/porta aberta; em seguida a branch `reno_followup.repescagem` foi corrigida para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`, e o cliente foi arquivado defensivamente no FamaChat.

@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-05-08'
 tags:
   - reno
   - auditoria
@@ -14,6 +14,7 @@ tags:
 ---
 # Auditoria — Fase 1 Medição e Controle do Reno
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 ## Escopo
 Execução da próxima fase recomendada para o Reno: **Fase 1 — Medição e controle**.
 

@@ -15,7 +15,7 @@ tags:
 ---
 # Atendimento Reno — Lead Garden Sul
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente do Reno (broker_id=35) em status Não Respondeu, com interesse no empreendimento Garden Sul, no Jardim Sul.

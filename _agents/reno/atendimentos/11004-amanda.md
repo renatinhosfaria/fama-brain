@@ -18,7 +18,7 @@ empreendimento: Place+Arbi
 ---
 # Atendimento — Amanda (cliente 11004)
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[amanda]], [[place-arbi]], [[shopping-park]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[amanda]], [[place-arbi]], [[shopping-park]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Contexto
 - Cliente Amanda, broker_id 35 (Reno), telefone (34) 9914-6913.

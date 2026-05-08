@@ -19,7 +19,7 @@ status_crm: Em Atendimento
 ---
 # Atendimento — Levi Santos
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[levi-santos]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[levi-santos]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Levi Santos, CRM client_id 10951, broker_id 35/Reno, em `Em Atendimento`. Interesse associado ao empreendimento Union Vereda, no Jaraguá. O cliente respondeu à repescagem, pediu mais informações e depois perguntou sobre a metragem; após resposta do Reno sobre plantas de 57/58m² e opção térrea maior, ficou em silêncio. Resgate step 1 foi enviado em 2026-04-30 com gancho para escolher entre planta padrão e térrea maior. Como não respondeu, Resgate step 2 foi enviado em 2026-04-30 16:40 com abordagem diferente: reduzir a decisão para escolher entre planta mais enxuta/valor menor ou metragem maior. Em 2026-04-30 18:47, Resgate step 3 foi enviado com novo ângulo: oferecer um comparativo simples entre as opções, reduzindo fricção e evitando despejar opções.
@@ -101,7 +101,7 @@ Estado operacional após envio: `step=3`, `last_sent_at=2026-04-30T18:47:11-03:0
 ## Objeções e travas
 - Trava atual: cliente parou após receber explicação sobre metragem/opções e não respondeu aos resgates sobre escolher planta/prioridade.
 - Hipótese comercial atual: decisão pode estar travada entre perfil de metragem, valor e excesso de opções; step 3 busca reduzir fricção oferecendo um comparativo simples.
-- Lacuna: documento legado anterior estava em `_agents/reno/clientes/10951-levi-santos.md` e documento antigo em `_agents/reno/atendimentos/cliente-10951-levi-santos.md`; este arquivo oficial consolida o atendimento no padrão atual.
+- Lacuna histórica consolidada neste arquivo oficial em 2026-05-08; manter este documento como registro canônico do atendimento.
 
 ## Próximo passo
 Aguardar resposta do cliente. Se ele aceitar o comparativo, continuar atendimento normal com `fama-reno-whatsapp-qualification`, mandar resumo curto comparando 57/58m² versus térrea maior e conduzir para visita presencial se houver sinal positivo. Se permanecer em silêncio até `2026-05-01T18:47:11-03:00`, avaliar step 4 de Resgate com nova abordagem, sem repetir pedido de escolha ou comparativo.

@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Ana Júlia
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do escopo Reno (`broker_id=35`) segue em `Não Respondeu`. O primeiro contato foi enviado em 05/05/2026 sobre o Place+Arbi. A repescagem step 1 foi enviada em 06/05 com foco em prazo de entrega e forma de pagamento durante a obra. Em 07/05/2026, o Reno enviou a repescagem step 2 com foco em entrada e financiamento para evitar opções fora do momento. Aguardar resposta; próximo step previsto para 08/05/2026 às 19:10 BRT se permanecer em silêncio.

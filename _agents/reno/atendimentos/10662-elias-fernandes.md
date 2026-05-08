@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Elias Fernandes
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[elias-fernandes]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[elias-fernandes]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) com interesse originado em Facebook Ads - Garden Sul / Garden Sul na região do Jardim Sul. Primeiro contato recuperado/enviado em 2026-04-27. Repescagens steps 1, 2, 3, 4 e 5 enviadas com sucesso via WhatsApp, sem resposta real registrada. Em 2026-05-02, após envio do step 5, a régua foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra defensiva.

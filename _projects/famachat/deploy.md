@@ -3,7 +3,7 @@ type: context
 owner: renato
 project: famachat
 created: '2026-04-19'
-updated: '2026-04-19'
+updated: '2026-05-08'
 tags:
   - projeto
   - famachat
@@ -11,6 +11,7 @@ tags:
 ---
 # Deploy — FamaChat
 
+Vínculos: [[fama-overview]], [[operacao-crm-webhook]], [[schema]].
 ## Ambiente
 
 - **VPS:** Contabo (Linux).

@@ -18,7 +18,7 @@ tags:
 ---
 # Atendimento — Mateus Silva
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno em `Em Atendimento`, com interesse vinculado ao Place+Arbi, no Shopping Park. O histórico da sessão individual do WhatsApp confirmou uma resposta real em 2026-04-28: o cliente disse "Sim" e "Gostaria de saber mais" após a abertura do Reno; depois disso, ficou silencioso após respostas/outbounds do Reno. Em 2026-05-03, foi enviado Resgate step 5, reclassificado com segurança para `visita_pendente`, usando CTA de visita para segunda-feira por ser domingo.

@@ -2,10 +2,12 @@
 type: agents-map
 owner: renato
 created: '2026-04-14'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - agents
 ---
+Vínculos: [[reno]], [[fama-overview]], [[schema]].
+
 **Legenda de escopos:**
 - **(primary)** — dono primário; edita qualquer conteúdo nesse território.
 

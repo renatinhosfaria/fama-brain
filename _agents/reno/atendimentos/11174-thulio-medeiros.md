@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Thulio Medeiros
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.

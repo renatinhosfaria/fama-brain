@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - inbox
   - moc
@@ -14,6 +14,7 @@ source: human-curated
 
 # `_inbox/` — Pré-curadoria
 
+Vínculos: [[schema]], [[fama-overview]].
 Rascunhos antes de promover. Notas aqui têm `status: draft` por padrão.
 
 ## Indexação

@@ -9,10 +9,11 @@ tags:
   - empreendimentos
 title: Reno — contexto Fama e produtos
 type: context
-updated: '2026-04-24'
+updated: '2026-05-08'
 ---
 # Reno — contexto Fama e produtos
 
+Vínculos: [[reno]], [[fama-overview]], [[credito-imobiliario]].
 ## Posicionamento da Fama para o atendimento do Reno
 A Fama Negócios Imobiliários é uma operação imobiliária de Uberlândia, digital-first, compacta e orientada por tecnologia, com forte diferencial em crédito imobiliário, financiamento e viabilidade real de compra.
 

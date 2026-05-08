@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Sebastiao Adao Junior
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Resgate pausado antes de qualquer envio por duplicidade/ownership recente no mesmo telefone/JID. O cliente permanece em **Em Atendimento** com broker **35**. A branch de Resgate ficou em **step 0**, com **enabled=false** e **stopped_reason=manual_review_duplicate_active_broker**. Nenhum WhatsApp foi enviado nesta execução.

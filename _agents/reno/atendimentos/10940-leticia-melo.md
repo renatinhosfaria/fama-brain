@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Letícia Melo
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[leticia-melo]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[leticia-melo]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real registrada. A demanda era originada de Facebook Ads/lead automático, com interesse operacional vinculado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. O step 5 foi enviado como encerramento elegante, pausando as mensagens e deixando porta aberta para retomada futura.

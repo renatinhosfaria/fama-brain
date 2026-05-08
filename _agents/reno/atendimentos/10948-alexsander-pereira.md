@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Alexsander Pereira
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[alexsander-pereira]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[alexsander-pereira]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno em `Em Atendimento`, associado ao empreendimento Place+Arbi, no Shopping Park. A sessão individual do WhatsApp já havia mostrado resposta real anterior do cliente em 2026-04-29: `Valores/viabilidade`, após pergunta sobre o melhor ponto de partida. Em 2026-05-07 19:35 -03:00, a revalidação do CRM encontrou duplicidade/ownership recente em SLA Cascata para o mesmo telefone/JID, com vínculo explícito ao cliente original (`cliente_original_id=10948` e `usuario_anterior=35`). O ciclo de Resgate foi pausado antes de qualquer novo WhatsApp, com `stopped_reason=manual_review_duplicate_active_broker`.

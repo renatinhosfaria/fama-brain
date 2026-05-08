@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Patricia Soares
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem step 2 enviada com sucesso via WhatsApp em 2026-05-07 às 09:55 BRT. A cliente segue em `Não Respondeu`. A abordagem avançou de “morar vs oportunidade de compra” para viabilidade prática do lançamento, destacando entrada, parcela e prazo de entrega como fatores de encaixe.

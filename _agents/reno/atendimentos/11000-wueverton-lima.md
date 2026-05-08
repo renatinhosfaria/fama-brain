@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Wueverton Lima
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[wueverton-lima]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[wueverton-lima]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`). Interesse associado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e cinco repescagens foram enviados via WhatsApp sem resposta real registrada no CRM. A régua de repescagem foi concluída no step 5 em 2026-05-03 e o cliente foi arquivado automaticamente no FamaChat por regra operacional.

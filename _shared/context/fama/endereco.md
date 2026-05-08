@@ -2,7 +2,7 @@
 type: context
 owner: renato
 created: '2026-04-20'
-updated: '2026-04-20'
+updated: '2026-05-08'
 tags:
   - endereco
   - uberlandia
@@ -10,6 +10,7 @@ tags:
   - fama-escritorio
 title: Endereço da Fama Negócios Imobiliários
 ---
+Vínculos: [[fama-overview]], [[renato]], [[fama-produtos]].
 Avenida: Raulino Cotta Pacheco
 Numero: 304
 Bairro: Martins

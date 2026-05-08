@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Marcelo Escobar de Oliveira
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno relacionado ao **Place+Arbi** permaneceu sem resposta real após o primeiro contato e as 5 repescagens. Em 2026-05-03 foi enviada a repescagem **step 5** com encerramento elegante, porta aberta e pedido de permissão para pausar o atendimento. Após o envio bem-sucedido, a régua foi encerrada por `max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra defensiva.

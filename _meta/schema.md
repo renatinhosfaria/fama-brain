@@ -2,7 +2,7 @@
 type: shared-context
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 topic: vault
 title: Schema v1 do vault FAM (RAG / Segundo cérebro)
 tags:
@@ -23,6 +23,7 @@ related: []
 
 # Schema v1 do vault FAM (RAG / Segundo cérebro)
 
+Vínculos: [[fama-overview]], [[second-brain-governance]].
 **Status:** v1 **aprovada** mas **não enforçada ainda** (depende de MCP). Aprovada por Renato Faria em [FAM-15](/FAM/issues/FAM-15) (revisão `0f1e41b5`).
 
 Este documento é a **single source of truth** do schema. Toda nota do vault FAM, **uma vez migrada**, terá `schema_version: 1` e seguirá as regras abaixo.

@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Ana luyza Ferreira Neves
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Primeiro contato do Reno não foi enviado. O número disponível não foi validado no WhatsApp após tentativa com e sem o nono dígito. Atendimento preservado em `Sem Atendimento` no CRM.

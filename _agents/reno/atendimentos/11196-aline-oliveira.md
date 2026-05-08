@@ -18,7 +18,7 @@ updated: '2026-05-08'
 ---
 # Atendimento — Aline Oliveira
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[aline-oliveira]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[aline-oliveira]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente novo do Reno, originado de Facebook Ads, com interesse vinculado ao Garden Sul. Inbound do WhatsApp informou que preencheu formulário e gostaria de saber mais sobre a Fama. Durante a rotina houve corrida operacional: o primeiro contato automático foi enviado e moveu o status para `Não Respondeu`, mas como já havia inbound real nesta execução, o atendimento foi corrigido para `Em Atendimento` e a repescagem foi interrompida.

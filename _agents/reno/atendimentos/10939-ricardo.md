@@ -21,7 +21,7 @@ tags:
 ---
 # Atendimento — Ricardo
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) arquivado no CRM após conclusão da régua de **5 repescagens** sem resposta real registrada. Lead originado por Facebook Ads com interesse operacional associado ao empreendimento Place+Arbi, região do Shopping Park/Zona Sul. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, mudando o ângulo do convite consultivo do step 4 para pausa respeitosa e porta aberta.

@@ -17,7 +17,7 @@ source: Facebook Ads - Union Vista
 ---
 # Giovanna
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente broker_id=35 que respondeu à repescagem ativa do Reno em 2026-04-29. Status operacional atualizado de **Não Respondeu** para **Em Atendimento**; repescagem parada com `client_replied`.

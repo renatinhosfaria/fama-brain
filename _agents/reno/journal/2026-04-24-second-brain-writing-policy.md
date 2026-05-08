@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-05-08'
 tags:
   - second-brain
   - policy
@@ -10,4 +10,5 @@ tags:
   - operacao
 title: second-brain-writing-policy
 ---
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 Formalizada a política operacional de escrita do segundo cérebro do Reno: critérios de timing, hierarquia CRM vs memória persistente vs Obsidian, gatilhos concretos por tipo de registro e padrões mínimos de síntese por lead, broker, journal e decision.

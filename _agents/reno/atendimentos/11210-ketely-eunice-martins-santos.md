@@ -20,6 +20,7 @@ source: SLA Cascata
 ---
 # Atendimento — Ketely Eunice Martins Santos
 
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 ## Resumo atual
 Cliente segue em Não Respondeu. Repescagem step 3 enviada em 2026-05-08 15:56 BRT com pergunta consultiva sobre objetivo da compra no Place+Arbi.
 

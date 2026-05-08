@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Hilton Oliveira Leite
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) foi arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O interesse era no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. A última mensagem enviada foi um encerramento elegante, com pausa/porta aberta para retomada futura.

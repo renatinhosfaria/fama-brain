@@ -9,10 +9,11 @@ tags:
   - operacional
 title: 'Repescagem e Resgate independentes, sem trava global compartilhada'
 type: agent-decisions
-updated: '2026-04-30'
+updated: '2026-05-08'
 ---
 # Repescagem e Resgate independentes
 
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 ## Decisão
 
 Renato corrigiu a política operacional: **Repescagem e Resgate são estratégias independentes**.

@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - journal
   - moc
@@ -14,6 +14,7 @@ source: human-curated
 
 # `_journal/` — Atividade do dia / log operacional
 
+Vínculos: [[schema]], [[fama-overview]].
 Journals capturam eventos crus. Atendimentos, calls, visitas, auditorias diárias, daily notes.
 
 ## Tipos canônicos aqui

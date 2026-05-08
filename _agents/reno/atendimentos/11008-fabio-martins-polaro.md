@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Fabio Martins Polaro
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real registrada no CRM. Origem Facebook Ads, interesse associado ao Garden Sul, no Jardim Sul/Zona Sul de Uberlândia. O step 5 foi enviado como encerramento elegante: pausa respeitosa, porta aberta para retomada futura e comparação do Garden Sul com alternativas por prazo/condição, sem insistir em agenda depois do convite consultivo do step 4.

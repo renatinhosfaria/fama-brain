@@ -2,7 +2,7 @@
 type: agent-decisions
 owner: reno
 created: '2026-04-24'
-updated: '2026-05-02'
+updated: '2026-05-08'
 tags:
   - decisao
 ---
@@ -88,4 +88,5 @@ CRM continua como verdade operacional atual; Obsidian passa a concentrar context
 
 # Decisões — reno
 
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 <!-- Decisões mais recentes no topo. Use append_decision; nunca edite histórico. -->

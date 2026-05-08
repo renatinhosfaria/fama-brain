@@ -2,7 +2,7 @@
 type: context
 owner: renato
 created: '2026-04-23'
-updated: '2026-04-23'
+updated: '2026-05-08'
 tags:
   - metodologia-de-vendas
   - atendimento-consultivo
@@ -12,6 +12,7 @@ title: Metodologia de Negócio da Fama Negócios Imobiliários
 ---
 # Metodologia de Negócio da Fama Negócios Imobiliários
 
+Vínculos: [[fama-overview]], [[renato]], [[schema]].
 ## 1. Resumo executivo
 
 A metodologia de negócio da Fama Negócios Imobiliários parte de uma tese central: comprar um imóvel é uma decisão complexa, emocional e financeiramente relevante, e o cliente não deve ser tratado como alguém que precisa apenas receber opções de imóveis. Ele precisa ser diagnosticado, orientado, educado, acompanhado e conduzido com segurança até a decisão.

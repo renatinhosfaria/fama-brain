@@ -2,7 +2,7 @@
 type: agent-profile
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-05-08'
 tags:
   - agent
   - reno
@@ -12,6 +12,7 @@ title: reno-profile
 ---
 # Reno
 
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 ## Papel
 Agente digital consultivo da Fama Negócios Imobiliários para primeiro atendimento e avanço comercial de leads elegíveis.
 

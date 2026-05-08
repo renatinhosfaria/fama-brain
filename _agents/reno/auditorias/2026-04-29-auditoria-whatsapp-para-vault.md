@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-29'
-updated: '2026-04-29'
+updated: '2026-05-08'
 tags:
   - reno
   - auditoria
@@ -14,6 +14,7 @@ title: Auditoria — atendimentos WhatsApp virando documentos no vault
 ---
 # Auditoria — atendimentos WhatsApp virando documentos no vault
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 Data da verificação: 2026-04-29.
 
 ## Escopo verificado

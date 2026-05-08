@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Mary Sá
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente está em `Em Atendimento` após responder ao primeiro contato do Reno sobre o Place+Arbi, no Shopping Park. A sequência inbound foi: “Sim”, “Pensando em comprar”, “Apartamento”, “Sim é ótimo” e, por último, “Financiamento”. O conjunto indica busca real por apartamento, boa recepção inicial ao contexto/região e financiamento como prioridade comercial/viabilidade a explorar. A Repescagem está encerrada por resposta inbound (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e não havia Resgate ativo nas validações silenciosas. Nenhuma mensagem foi enviada ao cliente por estas rotinas silenciosas.

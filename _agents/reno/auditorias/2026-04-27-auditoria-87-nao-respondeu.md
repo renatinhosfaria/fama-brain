@@ -1,6 +1,6 @@
 ---
 created: '2026-04-27'
-updated: '2026-04-27'
+updated: '2026-05-08'
 owner: reno
 status: concluida
 tags:
@@ -13,6 +13,7 @@ type: journal
 ---
 # Auditoria dos 87 clientes Não Respondeu — Reno
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 Data da auditoria: 2026-04-27T16:39:15+02:00
 Escopo: clientes com `broker_id=35` e `status='Não Respondeu'`.
 Ação realizada: auditoria de elegibilidade/entrega. Nenhum WhatsApp foi enviado e nenhum status foi alterado.

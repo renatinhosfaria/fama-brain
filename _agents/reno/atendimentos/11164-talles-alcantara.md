@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Talles Alcântara
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem step 1 enviada pelo Reno via WhatsApp em 2026-05-04 10:03 BRT, após silêncio ao primeiro contato. Cliente segue em `Não Respondeu`. O contexto principal é interesse no Garden Sul, no Jardim Sul/Zona Sul, com abordagem de repescagem focada em criar um novo motivo de resposta: entender se o lançamento faz sentido para morar ou para comparar oportunidade de compra.

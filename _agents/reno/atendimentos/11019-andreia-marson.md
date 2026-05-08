@@ -19,7 +19,7 @@ status_crm: Arquivado
 ---
 # Atendimento — Andreia Marson
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno no CRM (`broker_id=35`), origem Facebook Ads, interesse vinculado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. Não houve resposta real da cliente após o primeiro contato e as cinco repescagens tecnicamente enviadas. A repescagem step 5 foi enviada em 2026-05-04 09:39 -03:00 com encerramento elegante/pausa respeitosa. A branch de repescagem foi encerrada com `step=5` e `stopped_reason=max_steps`, e o cliente foi arquivado automaticamente no FamaChat por regra operacional defensiva.

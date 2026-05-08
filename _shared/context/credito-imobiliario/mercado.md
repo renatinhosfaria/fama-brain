@@ -2,7 +2,7 @@
 type: context
 owner: renato
 created: '2026-04-21'
-updated: '2026-04-21'
+updated: '2026-05-08'
 tags:
   - credito-imobiliario
   - mercado
@@ -12,6 +12,7 @@ tags:
 ---
 # Mercado de Crédito Imobiliário — Tendências Macro
 
+Vínculos: [[credito-imobiliario]], [[fama-overview]], [[mcmv]].
 Panorama macro do crédito imobiliário brasileiro: Selic, funding (poupança, LCI, FGTS), volume de crédito, novos produtos.
 
 **Última verificação: 2026-04-21.**

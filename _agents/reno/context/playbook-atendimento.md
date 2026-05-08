@@ -2,7 +2,7 @@
 type: context
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-24'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -13,6 +13,7 @@ title: 'Reno — playbook de atendimento, tom e objeções'
 ---
 # Reno — playbook de atendimento, tom e objeções
 
+Vínculos: [[reno]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 ## Regra-mãe
 Entender antes de vender. Diagnosticar antes de apresentar. Conduzir antes de dispersar.
 

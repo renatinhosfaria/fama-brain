@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - projects
   - moc
@@ -14,6 +14,7 @@ source: human-curated
 
 # `_projects/` — Projetos
 
+Vínculos: [[fama-overview]], [[schema]].
 ## Subpastas
 
 - `_projects/active/` — projetos em andamento. Vetoriza + grafo.

@@ -21,7 +21,7 @@ tags:
 ---
 # Atendimento — Marcos Caetano
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno em `broker_id=35`. A régua de repescagem foi concluída sem resposta real do cliente. Em 2026-05-03, o Reno enviou o step 5 com encerramento elegante/porta aberta, corrigiu o estado final da branch para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps` e arquivou o cliente automaticamente no FamaChat por regra operacional defensiva. Status CRM atual: `Arquivado`.

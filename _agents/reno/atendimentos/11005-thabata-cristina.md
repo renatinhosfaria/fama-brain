@@ -20,7 +20,7 @@ status_crm: Arquivado
 ---
 # Atendimento — Thabata Cristina
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) foi **arquivada automaticamente** em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. Contexto principal: interesse no empreendimento **Union Vereda**, no Jaraguá, Uberlândia. O step 5 foi enviado como encerramento elegante, sem repetir convite de agenda, preservando porta aberta para retomada futura.

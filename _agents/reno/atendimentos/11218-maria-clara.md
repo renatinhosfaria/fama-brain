@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Maria Clara
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente respondeu pelo WhatsApp durante a repescagem e entrou em atendimento. Status CRM atualizado de `Não Respondeu` para `Em Atendimento` em 2026-05-07 porque ainda estava exatamente nesse status. A branch de repescagem foi interrompida para evitar novos follow-ups automáticos.

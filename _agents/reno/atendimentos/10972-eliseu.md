@@ -24,7 +24,7 @@ tags:
 ---
 # Atendimento — Eliseu
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[eliseu]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[eliseu]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente em atendimento pelo Reno, com interesse no Union Vista e foco em investimento/valorização. O Resgate chegou ao step 5 em 2026-05-03 com bucket `visita_pendente`, mas na revalidação de 2026-05-07 foi encontrada duplicidade/ownership ativa no mesmo telefone/JID em outro cadastro em atendimento (cliente 10845, broker 24). Por isso o step 6 não foi enviado e o fluxo de Resgate foi pausado com `manual_review_duplicate_active_broker`.

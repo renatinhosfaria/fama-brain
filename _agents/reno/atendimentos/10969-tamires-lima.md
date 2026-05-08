@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Tamires Lima
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) agora em status CRM **Arquivado**. Primeiro contato e repescagens steps 1 a 5 foram enviados com sucesso técnico via WhatsApp, sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausando a insistência e deixando porta aberta para retomada futura. Após o envio final, a branch de repescagem foi corrigida para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`; como o status ainda estava exatamente em **Não Respondeu**, o cliente foi arquivado automaticamente no FamaChat por condição defensiva.

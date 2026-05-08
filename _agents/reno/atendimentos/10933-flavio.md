@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Flávio
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente em 2026-05-02 após conclusão da régua de 5 repescagens sem resposta real. Origem Facebook Ads, com interesse inicial no empreendimento Union Vereda, no Jaraguá. O step 5 foi enviado com encerramento elegante e porta aberta; depois o ramo `reno_followup.repescagem` foi encerrado com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.

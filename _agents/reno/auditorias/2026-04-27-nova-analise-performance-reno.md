@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-27'
-updated: '2026-04-27'
+updated: '2026-05-08'
 tags:
   - reno
   - auditoria
@@ -11,6 +11,7 @@ tags:
 ---
 # Nova análise de performance do Reno — 2026-04-27
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 ## Recorte
 Carteira Reno (`broker_id=35`) criada nos últimos 30 dias, consultada após a fila manual de duplicidades `[reno_dup_recovery_20260427_3min]`.
 

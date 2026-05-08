@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-27'
-updated: '2026-04-28'
+updated: '2026-05-08'
 tags:
   - reno
   - procedimento
@@ -12,6 +12,7 @@ tags:
 ---
 # Procedimento — RegistroVaultReno
 
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 ## Objetivo
 Manter um documento principal, único e auditável para cada atendimento do Reno no vault.
 

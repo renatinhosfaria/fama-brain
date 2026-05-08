@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Esther Osklen
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[esther-osklen]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[esther-osklen]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de **5 repescagens** concluída sem resposta real registrada. Interesse operacional associado ao empreendimento **Union Vereda**, no bairro Jaraguá. Em 2026-05-03, a repescagem step 5 foi enviada como encerramento elegante/porta aberta; após confirmação do envio, a branch foi encerrada com `stopped_reason=max_steps` e o status CRM foi alterado defensivamente de `Não Respondeu` para `Arquivado`.

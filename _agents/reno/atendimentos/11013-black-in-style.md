@@ -18,7 +18,7 @@ tags:
 ---
 # Atendimento — Black in style
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno com interesse histórico no Union Vista, no Grand Ville, e histórico comercial fraco, mas com conversa WhatsApp real anterior: perguntou se era apartamento e respondeu que procura para morar. O nome cadastrado no CRM segue suspeito (`𝑩𝒍𝒂𝒄𝒌 𝒊𝒏 𝒔𝒕𝒚𝒍𝒆`) e não foi tratado como confirmado. Em 2026-05-07 a fila de Resgate venceu para step 6, mas o envio foi bloqueado antes de qualquer WhatsApp por duplicidade/ownership recente no mesmo telefone/JID em cadastro SLA Cascata ativo; o ciclo foi pausado com `stopped_reason=manual_review_duplicate_active_broker`.

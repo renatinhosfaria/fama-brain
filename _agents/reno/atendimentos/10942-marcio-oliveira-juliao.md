@@ -21,7 +21,7 @@ tags:
 ---
 # Atendimento — Márcio Oliveira Julião
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[marcio-oliveira-juliao]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[marcio-oliveira-juliao]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse no Union Vista, no Grand Ville/Zona Leste de Uberlândia. Após primeiro contato e repescagens, respondeu e a repescagem foi interrompida (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`). Cliente trouxe sinais de viabilidade (`Tenho a entrada`, cerca de R$ 5.000) e em 2026-05-03 retomou pedindo confirmação sobre Minha Casa Minha Vida, prazo de entrega e planta dos apartamentos do mesmo empreendimento.

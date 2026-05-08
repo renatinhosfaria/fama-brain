@@ -21,7 +21,7 @@ tags:
 ---
 # Atendimento — Elias Mourão (10928)
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 - Cliente Reno (`broker_id=35`) com histórico real de conversa e sem agendamento ativo.

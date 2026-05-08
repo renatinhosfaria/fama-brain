@@ -2,7 +2,7 @@
 type: context
 owner: renato
 created: '2026-04-21'
-updated: '2026-04-21'
+updated: '2026-05-08'
 tags:
   - credito-imobiliario
   - regulamentacao
@@ -11,6 +11,7 @@ tags:
 ---
 # Regulamentação do Crédito Imobiliário
 
+Vínculos: [[credito-imobiliario]], [[fama-overview]], [[mcmv]].
 Normativos-chave vigentes que regem o crédito imobiliário brasileiro.
 
 **Última verificação: 2026-04-21.**

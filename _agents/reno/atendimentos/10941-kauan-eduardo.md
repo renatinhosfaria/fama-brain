@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Kauan Eduardo
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente após conclusão da régua de **5 repescagens** sem resposta real registrada no CRM. O interesse operacional vinha do Facebook Ads/lead automático para o **Union Vereda**, no Jaraguá. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausa respeitosa e porta aberta para retomada futura.

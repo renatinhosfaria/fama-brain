@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Alessandra Nascimento
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de repescagem concluída sem resposta real registrada. O step 5 foi enviado via WhatsApp em 2026-05-03, com encerramento elegante e porta aberta para retomada futura. Após correção do estado final da branch `repescagem` para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, o status no FamaChat foi atualizado defensivamente para `Arquivado`.

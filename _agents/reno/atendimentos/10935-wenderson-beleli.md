@@ -20,7 +20,7 @@ source: FamaChat / Facebook Ads
 ---
 # Atendimento — Wenderson Beleli
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente CRM 10935, broker Reno (35), foi **arquivado automaticamente em 2026-05-03** após conclusão da régua de 5 repescagens.

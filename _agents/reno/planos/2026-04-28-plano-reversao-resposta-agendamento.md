@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-28'
-updated: '2026-04-28'
+updated: '2026-05-08'
 tags:
   - reno
   - plano-estrategico
@@ -12,6 +12,7 @@ tags:
 ---
 # Plano estratégico — reversão resposta/agendamento Reno
 
+Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
 ## Cenário atual verificado no CRM
 
 - Base Reno total: 99 clientes.

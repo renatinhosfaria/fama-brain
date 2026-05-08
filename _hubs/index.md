@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - hubs
   - moc
@@ -14,6 +14,7 @@ source: human-curated
 
 # `_hubs/` — MOCs (Map of Content)
 
+Vínculos: [[schema]], [[fama-overview]].
 Hubs **agregam** notas atômicas. Não duplicam conteúdo. Cada bullet usa um wikilink para a nota e um micro-resumo de 1 linha.
 
 ## Camadas

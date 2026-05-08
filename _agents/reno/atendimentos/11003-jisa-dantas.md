@@ -24,7 +24,7 @@ tags:
 ---
 # Atendimento — Jisa Dantas
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[jisa-dantas]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[jisa-dantas]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente em `Em Atendimento`, interessada no Union Vista (Grand Ville). O atendimento começou com perguntas sobre valor, planta e parcelamento da entrada e evoluiu para a régua de Resgate. O fluxo chegou ao step 5, com bucket `visita_pendente`, mas em 2026-05-07 a revalidação do CRM encontrou outro cadastro ativo com o mesmo telefone/JID em `Em Atendimento` fora do escopo do Reno (cliente 10915, broker 24). Resultado: Resgate pausado sem novo WhatsApp, com `manual_review_duplicate_active_broker`.

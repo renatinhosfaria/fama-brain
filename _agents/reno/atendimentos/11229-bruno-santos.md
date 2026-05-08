@@ -22,7 +22,7 @@ tags:
 ---
 # Atendimento — Bruno Santos
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem step 2 enviada em 2026-05-07 às 10:05 BRT. O cliente segue em `Não Respondeu`. O ângulo saiu de finalidade da compra e passou para viabilidade prática do Garden Sul: entrada, parcelas da obra e financiamento. Próxima repescagem prevista para 2026-05-08 às 14:20 BRT, salvo resposta antes disso.

@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Nayara Frois
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente criada no FamaChat a partir de Facebook Ads, atribuída ao Reno (`broker_id=35`) e validada no CRM. Primeiro contato do Reno foi enviado sobre o Union Vereda, no Jaraguá. Em 2026-05-06 houve inbound WhatsApp; o status foi movido de `Não Respondeu` para `Em Atendimento` e a Repescagem foi interrompida com `stopped_reason=client_replied`.

@@ -21,7 +21,7 @@ tags:
 ---
 # Atendimento — João Pressendo
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno em status operacional `Em Atendimento`. O primeiro contato foi enviado em 2026-05-02 sobre o Union Vereda, no Jaraguá. Em 2026-05-02 às 22:56 BRT, foi enviada a repescagem step 1 com pergunta de confirmação de nome porque o cadastro estava como `Pressendo`. Em 2026-05-03, o cliente respondeu pelo WhatsApp informando o nome correto: João; `Pressendo` é o sobrenome. O CRM foi corrigido para `João Pressendo`, o status saiu de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`.

@@ -10,10 +10,11 @@ tags:
   - fgts
 title: Reno — guia consultivo de crédito imobiliário
 type: context
-updated: '2026-04-24'
+updated: '2026-05-08'
 ---
 # Reno — guia consultivo de crédito imobiliário
 
+Vínculos: [[reno]], [[fama-overview]], [[fgts]], [[mcmv]].
 ## Objetivo
 Orientar conversas sobre crédito imobiliário sem prometer aprovação ou condições bancárias.
 

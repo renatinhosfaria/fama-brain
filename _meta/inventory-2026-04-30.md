@@ -71,7 +71,7 @@ Grupo a ser dissolvido — `_agents/{agente}/` não existe no schema v1. Mapeame
 | Path atual | Notas | Destino v1 |
 |------------|-------|------------|
 | `_shared/context/AGENTS.md` | 1 | `_hubs/hub-agents-map.md` |
-| `_shared/context/FAMA.md` | 1 | `_curated/fama/index.md` ou `_hubs/hub-fama.md` |
+| `_shared/context/fama-overview.md` | 1 | `_curated/fama/index.md` ou `_hubs/hub-fama.md` |
 | `_shared/context/credito-imobiliario/*.md` | 8 | `_curated/credito-imobiliario/{slug}.md` |
 | `_shared/context/fama/*.md` | 7 | `_curated/fama/{slug}.md` |
 | `_shared/context/modelo-negocio/metodologia-negocio.md` | 1 | `_curated/modelo-negocio/metodologia-negocio.md` |

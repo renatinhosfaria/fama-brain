@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - decisions
   - moc
@@ -14,6 +14,7 @@ source: human-curated
 
 # `_decisions/` — Decision log
 
+Vínculos: [[schema]], [[fama-overview]].
 **1 decisão = 1 nota.** O log compilado por agente (`_agents/{agente}/decisions.md`) será dissolvido em N notas atômicas durante a migração FAM-16, preservando timestamps e rationale.
 
 ## Naming

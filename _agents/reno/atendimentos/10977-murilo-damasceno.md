@@ -15,7 +15,7 @@ tags:
 ---
 # Atendimento Reno — Murilo Damasceno
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[murilo-damasceno]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[murilo-damasceno]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo
 Cliente do Reno (broker_id 35), status atual no CRM: Não Respondeu. Entrada por SLA Cascata, com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park.

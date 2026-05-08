@@ -21,7 +21,7 @@ tags:
 ---
 # Atendimento — Erlania Silva
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente permaneceu em silêncio durante toda a régua de repescagem e recebeu o step 5 em 2026-05-07 às 09:22 BRT. A mensagem encerrou a régua com pausa respeitosa, porta aberta e comparação futura sobre prazo, condição e alternativas. Após validação do estado final, a repescagem foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado no CRM.

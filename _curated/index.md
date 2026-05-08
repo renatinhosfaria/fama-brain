@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - curated
   - moc
@@ -14,6 +14,7 @@ source: human-curated
 
 # `_curated/` — Ground truth
 
+Vínculos: [[schema]], [[fama-overview]].
 Pasta para conteúdo **verificado** que o vault trata como ground truth: conceitos institucionais, references a fontes externas, contexto curado pelo Renato, política de comissão, modelo de negócio, regulamentação.
 
 ## Indexação

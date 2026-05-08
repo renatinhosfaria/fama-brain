@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-27'
-updated: '2026-04-27'
+updated: '2026-05-08'
 tags:
   - reno
   - auditoria
@@ -12,6 +12,7 @@ tags:
 ---
 # Auditoria Reno — 12 clientes ainda em Sem Atendimento — 2026-04-27
 
+Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
 ## Objetivo
 Responder por que os 12 clientes ainda em `Sem Atendimento` não receberam a primeira mensagem do Reno.
 

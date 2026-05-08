@@ -16,5 +16,5 @@ origem: Facebook Ads
 ---
 
 
-V?nculos: [[reno]], [[playbook-atendimento]].
+Vínculos: [[reno]], [[playbook-atendimento]].
 

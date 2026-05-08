@@ -19,7 +19,7 @@ tags:
 ---
 # Atendimento — Sibely Cortes
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[sibely-cortes]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[sibely-cortes]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno (`client_id=10996`) teve a régua de repescagem concluída sem resposta real. Interesse contextual no CRM: Union Vereda, no Jaraguá.

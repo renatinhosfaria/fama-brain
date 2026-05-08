@@ -2,7 +2,7 @@
 type: context
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-28'
+updated: '2026-05-08'
 tags:
   - reno
   - obsidian
@@ -13,6 +13,7 @@ title: Reno — governança do segundo cérebro
 ---
 # Reno — governança do segundo cérebro
 
+Vínculos: [[reno]], [[schema]], [[fama-overview]].
 ## Regra de caminho
 Tudo que for conteúdo do Reno deve ser salvo exclusivamente em `_agents/reno/`.
 Não criar notas, journals, decisões, perfis, contextos ou registros operacionais pertencentes ao Reno fora desse caminho.

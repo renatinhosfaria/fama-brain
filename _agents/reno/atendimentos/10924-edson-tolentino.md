@@ -21,7 +21,7 @@ tags:
 ---
 # Atendimento — Edson Tolentino
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[edson-tolentino]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[edson-tolentino]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente em 2026-05-03 após conclusão da régua de **5 repescagens** sem resposta real registrada. O interesse/contexto estava vinculado ao **Union Vista**, no Grand Ville, por origem SLA Cascata a partir de lead original do Facebook Ads. O step 5 foi enviado como encerramento elegante, com pausa/porta aberta, e o ramo `reno_followup.repescagem` foi encerrado com `stopped_reason=max_steps`.

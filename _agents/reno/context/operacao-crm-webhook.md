@@ -2,7 +2,7 @@
 type: context
 owner: reno
 created: '2026-04-24'
-updated: '2026-04-28'
+updated: '2026-05-08'
 tags:
   - reno
   - crm
@@ -14,6 +14,7 @@ title: 'Reno — operação CRM, webhook, elegibilidade e handoff'
 ---
 # Reno — operação CRM, webhook, elegibilidade e handoff
 
+Vínculos: [[reno]], [[schema]], [[second-brain-governance]].
 ## Regra central
 Webhook é sinal de entrada. CRM é a fonte de verdade. Nenhum envio deve ocorrer antes de validar o cliente real no CRM.
 

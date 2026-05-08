@@ -20,7 +20,7 @@ tags:
 ---
 # Atendimento — Mateus Costa
 
-V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (broker_id 35), origem SLA Cascata, permaneceu sem resposta real após primeiro contato e cinco repescagens. Interesse associado ao empreendimento Union Vereda, no Jaraguá, Uberlândia. Repescagem step 5 enviada com sucesso em 2026-05-03 como encerramento elegante da régua, sem insistir em agenda após o step 4 já ter convidado para conversa/visita na segunda-feira. A branch de repescagem foi encerrada com `step=5` e `stopped_reason=max_steps`, e o status CRM foi atualizado defensivamente para `Arquivado`.
