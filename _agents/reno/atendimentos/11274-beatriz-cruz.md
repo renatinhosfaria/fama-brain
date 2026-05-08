@@ -91,3 +91,7 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate inexistente/sem ciclo ativo no momento do inbound “Não”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Vínculo de trabalho
+Cliente informou que trabalha registrada. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada separada, vínculo CLT/registrado. Próximo passo: validar se possui FGTS disponível para compor entrada/viabilidade, sem prometer aprovação ou condições.
