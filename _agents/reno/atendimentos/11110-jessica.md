@@ -126,7 +126,6 @@ Sem nova ação automática enquanto o caso permanecer arquivado. Se a cliente r
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11110-jessica.md`.
-- Existe caminho legado `_agents/reno/clientes/11110-jessica.md` localizado em busca anterior; não foi atualizado nesta execução para evitar continuar drift. Conteúdo útil deve ser consolidado no documento oficial em momento de migração/auditoria.
 - Seleção/claim feita exclusivamente no fluxo `repescagem`, sem trava global compartilhada com Resgate.
 - Pitfall recorrente confirmado no step final: `mark_reno_followup_sent` registrou `step=5`, mas não encerrou a branch. Correção aplicada via `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção da branch final compactou o estado operacional para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem final foi preservada na nota CRM automática e neste documento oficial.

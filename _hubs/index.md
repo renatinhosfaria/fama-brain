@@ -17,6 +17,11 @@ source: human-curated
 Vínculos: [[schema]], [[fama-overview]].
 Hubs **agregam** notas atômicas. Não duplicam conteúdo. Cada bullet usa um wikilink para a nota e um micro-resumo de 1 linha.
 
+
+## Navega??o raiz
+
+- [[README|README]] ? ?ndice raiz do vault.
+
 ## Camadas
 
 - **Hubs de entidade** — 1 hub por entidade ativa relevante (top 30 clientes/brokers/imóveis). Ex.: `Hub: Bruno Sávio`.

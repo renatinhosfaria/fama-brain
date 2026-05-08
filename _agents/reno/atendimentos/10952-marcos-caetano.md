@@ -156,7 +156,6 @@ Sem nova ação automática do Reno. Caso o cliente responda futuramente ou seja
 
 ## Observações operacionais
 - Documento oficial mantido no caminho canônico `_agents/reno/atendimentos/10952-marcos-caetano.md`.
-- Existe documento legado anterior em `_agents/reno/clientes/10952-marcos-caetano.md`; conteúdo curado útil foi consolidado neste documento oficial. Não escrever novos eventos no caminho legado.
 - A régua de 5 repescagens foi concluída sem resposta real do cliente.
 - O arquivamento automático foi feito somente após verificação defensiva de `broker_id=35`, status `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.
 - Pitfall observado novamente: `mark_reno_followup_sent` não encerrou automaticamente a branch no step 5; foi necessária correção com `update_reno_followup_state`. A correção compactou a branch final para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem enviada está preservada na nota CRM automática e neste documento oficial do vault.

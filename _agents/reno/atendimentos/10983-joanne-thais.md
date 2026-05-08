@@ -124,7 +124,6 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, i
 
 ## Observações operacionais
 - Documento consolidado no caminho oficial `_agents/reno/atendimentos/10983-joanne-thais.md`.
-- Há referência legada em `_agents/reno/clientes/10983-joanne-thais.md`; novos registros devem permanecer apenas no caminho oficial de atendimentos.
 - Envio do step 5 realizado pelo JID salvo no CRM; telefone completo não foi exposto no relatório.
 - `message_id` WhatsApp do step 5: `3EB0C440B7597907723E18`.
 - Pitfall confirmado: `mark_reno_followup_sent` não encerrou automaticamente o step final e criou nota com próximo follow-up indevido; estado final foi corrigido via `update_reno_followup_state` antes do arquivamento defensivo.

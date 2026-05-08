@@ -146,7 +146,6 @@ Registro operacional: WhatsApp enviado com sucesso para o `whatsapp_jid` salvo n
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10950-ivens-paiva.md` conforme governança atual.
-- Existe documento legado em `_agents/reno/clientes/10950-ivens-paiva.md`; conteúdo útil foi consolidado aqui. Não deletar legado sem autorização explícita.
 - Os envios de repescagem usaram o `whatsapp_jid` salvo no CRM como destino preferencial.
 - Pitfall operacional confirmado no step final: `mcp_mcp_postgres_mark_reno_followup_sent` não encerrou automaticamente a branch de repescagem no step 5; a correção foi feita pela tool específica de estado antes do arquivamento defensivo.
 - A correção final compactou a branch `repescagem` para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`), comportamento já observado em produção e aceitável no step final.

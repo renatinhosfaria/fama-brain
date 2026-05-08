@@ -134,7 +134,6 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, r
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10994-alineferkdu.md` conforme governança do Reno.
-- Há registro legado em `_agents/reno/clientes/10994-alineferkdu.md`; novos registros devem permanecer neste documento oficial de atendimentos.
 - Envio de 2026-05-03 realizado usando o JID salvo no CRM, conforme política operacional de WhatsApp para número brasileiro quando o JID está disponível.
 - Pitfall recorrente confirmado: `mark_reno_followup_sent` registrou `step=5`, mas não encerrou automaticamente `enabled/next_run_at/stopped_reason`; correção feita com `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção do estado final compactou a branch de repescagem, removendo campos auxiliares como `last_message`, `entry_shift` e `entry_reference_at`; a mensagem final foi preservada na nota CRM e neste documento oficial.

@@ -89,7 +89,6 @@ Responder comercialmente ao cliente no WhatsApp com um resumo curto do Union Ver
 ## Observações operacionais
 - Documento oficial consolidado no caminho canônico `_agents/reno/atendimentos/10999-guilherme-mendes.md`.
 - Conteúdo anterior de supressão/override foi preservado em síntese curada, mas o estado operacional atual do CRM prevalece.
-- Não usar caminhos legados `_agents/reno/clientes/` ou `_agents/reno/cliente/` para novas atualizações deste atendimento.
 
 
 ### 2026-04-30 — Resumo do Union Vereda enviado após aceite

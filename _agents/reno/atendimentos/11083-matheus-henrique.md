@@ -131,7 +131,6 @@ Sem nova ação automática de repescagem. Se o cliente responder futuramente, r
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11083-matheus-henrique.md`.
-- Existe documento legado em `_agents/reno/clientes/11083-matheus-henrique.md`; não foi atualizado nesta execução para evitar continuar drift de governança.
 - Envio realizado pelo JID salvo no CRM, conforme política do worker.
 - Mensagem enviada em produção pelo worker `reno-repescagem-message-queue-production`.
 - O step final confirmou o pitfall recorrente: `mcp_mcp_postgres_mark_reno_followup_sent` não encerrou automaticamente a branch da repescagem. A correção via `mcp_mcp_postgres_update_reno_followup_state` compactou a branch final, removendo campos auxiliares como `last_message`, `entry_shift` e `entry_reference_at`; a mensagem final ficou preservada na nota CRM automática e neste documento oficial do Vault.

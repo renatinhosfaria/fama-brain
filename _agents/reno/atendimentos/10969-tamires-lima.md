@@ -126,7 +126,6 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, s
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10969-tamires-lima.md`.
-- Existe documento legado em `_agents/reno/clientes/10969-tamires-lima.md`; não foi usado como destino novo para evitar drift.
 - A nota automática da tool `mark_reno_followup_sent` no step 5 registrou um “próximo follow-up previsto” como efeito colateral técnico; a verdade operacional final é a branch corrigida com `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
 - A correção final compactou a branch de repescagem no `meta_data`, preservando os campos essenciais para encerramento: `step`, `enabled`, `next_run_at`, `last_sent_at` e `stopped_reason`.
 - Arquivamento executado somente após validação defensiva por `id`, `broker_id=35`, status anterior `Não Respondeu`, `step=5` e `stopped_reason=max_steps`.

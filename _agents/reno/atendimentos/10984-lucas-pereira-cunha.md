@@ -149,7 +149,6 @@ Sem nova ação automática de repescagem. Retomar somente se houver resposta do
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10984-lucas-pereira-cunha.md` conforme governança atual.
-- Existe documento legado em `_agents/reno/clientes/10984-lucas-pereira-cunha.md`; conteúdo útil foi consolidado aqui. Não continuar escrevendo no caminho legado.
 - Envio do step 5 realizado pelo WhatsApp/JID salvo no CRM; não houve exposição de telefone completo no vault.
 - A tool `mark_reno_followup_sent` registrou inicialmente `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado final foi corrigido com a tool específica `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção do step final compactou a branch de repescagem, removendo campos auxiliares como `last_message`/`entry_shift`; a mensagem final e o contexto foram preservados neste documento e nas notas do CRM.

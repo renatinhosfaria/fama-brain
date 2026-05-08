@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Davi Maia
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-08'
 tags:
   - cliente
   - lead
@@ -53,4 +53,3 @@ Davi Maia é lead do Reno em status **Não Respondeu**, originário de Facebook 
 ## Próximas ações sugeridas
 
 - Próximo step (4) elegível em 2026-05-01T19:10 com convite consultivo direto.
-- Documento legado em `_agents/reno/clientes/10659-davi-maia.md` deve ser ignorado.

@@ -166,4 +166,3 @@ Sem nova ação automática de repescagem ou resgate. Manter cliente arquivado e
 - Nota CRM de encerramento/arquivamento registrada pelo Reno em 2026-05-03.
 - Nota CRM de rotina inbound silenciosa registrada em 2026-05-03 para evento anterior classificado como ruído operacional/sistêmico.
 - Nota CRM de inbound real registrada em 2026-05-03 com a mensagem “Sim, isso mesmo.”; status preservado como Arquivado e nenhum fluxo ativo interrompido.
-- Há documento legado em `_agents/reno/clientes/10935-wenderson-beleli.md`; o caminho oficial atualizado é este documento em `_agents/reno/atendimentos/`.

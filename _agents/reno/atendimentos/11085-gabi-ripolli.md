@@ -127,4 +127,3 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, r
 - O retorno da tool `mark_reno_followup_sent` no step final gerou nota automática com “Próximo follow-up previsto” por exigir `next_run_at`; esse efeito colateral foi superado pela correção posterior do estado para encerramento definitivo.
 - A correção via `update_reno_followup_state` compactou a branch final de repescagem, removendo campos auxiliares como `last_message`, `entry_shift` e `entry_reference_at`; a mensagem final foi preservada na nota CRM e neste documento oficial.
 - WhatsApp step 5 enviado com sucesso para o JID salvo no CRM (`message_id` do runtime: `3EB09D83201895A6CF9F1A`).
-- Existe documento legado em `_agents/reno/clientes/11085-gabi-ripolli.md`; este registro foi mantido no caminho oficial `_agents/reno/atendimentos/11085-gabi-ripolli.md` conforme governança.

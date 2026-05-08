@@ -102,7 +102,6 @@ Cliente respondeu pelo WhatsApp: “E mrv”. Interpretação comercial: pergunt
 Responder à cliente de forma curta: Union Vereda não é MRV; é da HLTS Construtora. Se ela quiser comparar com MRV, Reno pode explicar as diferenças presencialmente. Retomar CTA de visita para segunda-feira, perguntando se manhã ou fim do dia fica melhor. Se ela escolher período/horário, acionar `reno-visit-scheduling` para criar/validar visita no FamaChat antes de confirmar.
 
 ## Observações operacionais
-Documento oficial consolidado em `_agents/reno/atendimentos/11021-claudia-rosangela.md`. Existe documento legado em `_agents/reno/clientes/cliente-11021-claudia-rosangela.md`; conteúdo útil foi incorporado aqui, mas o legado não foi removido.
 
 
 ### 2026-05-02 — Dúvida sobre evolução de obra e localização

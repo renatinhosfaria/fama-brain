@@ -136,6 +136,5 @@ Sem nova ação automática de repescagem. Se o cliente responder futuramente, r
 
 ## Observações operacionais
 - Documento oficial em `_agents/reno/atendimentos/11008-fabio-martins-polaro.md` conforme governança atual.
-- Conteúdo útil de documento legado em `_agents/reno/clientes/11008-fabio-martins-polaro.md` foi consolidado neste caminho oficial; o legado não deve receber novas atualizações.
 - CRM/FamaChat permanece como fonte operacional de verdade para status, envio e encerramento da repescagem.
 - Pitfall confirmado no step final: `mark_reno_followup_sent` registrou `step=5`, mas não encerrou a branch automaticamente; a correção com `update_reno_followup_state` compactou a branch final e preservou a mensagem neste documento e nas notas do CRM.

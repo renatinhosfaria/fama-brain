@@ -126,4 +126,3 @@ Aguardar revisão manual de ownership/duplicidade entre os cadastros 10930, 1102
 - Estado enxuto atual do Resgate: `step=5`, `enabled=false`, `stopped_reason=manual_review_duplicate_active_broker`, `last_context_bucket=visita_pendente`, `last_sent_at=2026-05-03T16:15:00-03:00`, `next_run_at=null`.
 - Duplicidades ativas recentes encontradas: cliente 11023 (broker 14) e cliente 11088 (broker 24), ambos com mesmo telefone/JID e `source_details.cliente_original_id=10930`.
 - O 11023 foi criado a partir de `source_details.usuario_anterior=35`, o que aumenta o risco de ownership/transferência entre cadastros.
-- Não usar caminhos legados `_agents/reno/clientes/` ou `_agents/reno/cliente/` para este atendimento.

@@ -134,6 +134,5 @@ Sem nova ação automática do Reno enquanto o cliente permanecer arquivado. Se 
 
 ## Observações operacionais
 - Documento oficial atualizado no caminho determinístico `_agents/reno/atendimentos/10659-davi-maia.md`.
-- Existe documento legado observado em `_agents/reno/clientes/10659-davi-maia.md`; novos registros devem seguir o caminho oficial em `atendimentos/`.
 - O step 5 expôs o pitfall operacional já conhecido: `mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; a correção foi feita com `update_reno_followup_state` antes do arquivamento defensivo.
 - Status final confirmado no CRM: `Arquivado`.

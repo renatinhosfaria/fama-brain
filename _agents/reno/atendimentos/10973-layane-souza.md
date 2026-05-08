@@ -176,7 +176,6 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, r
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10973-layane-souza.md` conforme governança atual.
-- Existe documento legado em `_agents/reno/clientes/10973-layane-souza.md`; conteúdo útil já havia sido consolidado neste caminho oficial. Não foi removido nesta execução.
 - CRM/FamaChat permanece como fonte operacional de verdade; vault registra apenas contexto curado e rastreabilidade do atendimento.
 - Execução de 2026-05-03: claim exclusivo de repescagem aplicado; envio realizado pelo JID salvo; `mark_reno_followup_sent` limpou o claim, mas não encerrou corretamente o step final. A branch foi corrigida com `update_reno_followup_state` antes do arquivamento.
 - Pitfall observado: a correção final compactou a branch de repescagem para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem enviada ficou preservada na nota CRM automática e neste documento oficial.

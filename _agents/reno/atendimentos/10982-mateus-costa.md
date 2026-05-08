@@ -150,7 +150,6 @@ Sem nova ação automática de repescagem. Se o cliente responder futuramente, i
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10982-mateus-costa.md` conforme governança atual.
-- Existe documento legado em `_agents/reno/clientes/10982-mateus-costa.md`; conteúdo curado relevante foi consolidado no documento oficial em execução anterior. Não deletado nesta execução.
 - Envio do step 5 realizado pelo `whatsapp_jid` salvo no CRM.
 - Estado de repescagem atualizado no CRM via `mark_reno_followup_sent`; pitfall recorrente confirmado no step final, pois a tool não encerrou automaticamente a branch com `max_steps`.
 - Correção final feita via `update_reno_followup_state`; a branch final ficou compactada, preservando `step`, `enabled`, `next_run_at`, `last_sent_at` e `stopped_reason`. A mensagem final foi preservada na nota CRM automática e neste documento oficial.

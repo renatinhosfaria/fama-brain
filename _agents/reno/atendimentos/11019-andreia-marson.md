@@ -115,7 +115,6 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, i
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11019-andreia-marson.md`.
-- Existe registro legado em `_agents/reno/clientes/11019-andreia-marson.md`; não foi usado como destino novo para evitar drift de governança.
 - Status CRM alterado para `Arquivado` somente após verificação defensiva de `step=5` e `stopped_reason=max_steps`.
 - Envio do step 5 realizado via JID salvo no CRM; telefone completo não exposto no vault.
 - A branch final da repescagem foi compactada pela ferramenta específica de estado, preservando a mensagem final no CRM e neste documento curado.

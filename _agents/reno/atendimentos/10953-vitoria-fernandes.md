@@ -167,6 +167,5 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, t
 
 ## Observações operacionais
 - Documento oficial consolidado no caminho determinístico `_agents/reno/atendimentos/10953-vitoria-fernandes.md`.
-- Há registros legados/drift anteriores em `_agents/reno/atendimentos/vitoria-fernandes.md` e `_agents/reno/clientes/10953-vitoria-fernandes.md`; este documento permanece como destino oficial por `client_id` conforme governança.
 - O step final expôs novamente a incompatibilidade conhecida da ferramenta `mark_reno_followup_sent`, que pode registrar step 5 sem encerrar `enabled/next_run_at/stopped_reason`; o estado foi corrigido pela ferramenta específica antes do arquivamento defensivo.
 - A correção final compactou a branch `reno_followup.repescagem` para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem enviada está preservada na nota automática do CRM e neste documento oficial.

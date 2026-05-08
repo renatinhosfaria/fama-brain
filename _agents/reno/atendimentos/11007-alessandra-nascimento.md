@@ -152,7 +152,6 @@ Sem nova ação automática de repescagem. Caso a cliente responda futuramente, 
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11007-alessandra-nascimento.md` seguindo governança atual.
-- Existe documento legado em `_agents/reno/clientes/11007-alessandra-nascimento.md`; conteúdo útil foi consolidado aqui anteriormente. Não foi removido nesta execução.
 - CRM/FamaChat permanece como fonte operacional de verdade; Vault concentra contexto curado.
 - Step 5 confirmou o pitfall recorrente: `mark_reno_followup_sent` registrou `step=5`, mas não encerrou automaticamente a branch. A branch foi corrigida via `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção final compactou a branch `repescagem`; a mensagem final foi preservada nas notas CRM e neste documento oficial do Vault.

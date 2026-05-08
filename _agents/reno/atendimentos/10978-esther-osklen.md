@@ -161,7 +161,6 @@ Sem nova ação automática de repescagem. Caso a cliente responda ou seja reati
 
 ## Observações operacionais
 - Documento oficial mantido no caminho canônico `_agents/reno/atendimentos/10978-esther-osklen.md`.
-- Havia documento legado em `_agents/reno/clientes/10978-esther-osklen.md`; conteúdo útil foi consolidado aqui. Não continuar escrevendo no caminho legado.
 - Envio do step 5 realizado pelo JID WhatsApp salvo no CRM.
 - Pitfall observado novamente: `mark_reno_followup_sent` registrou `step=5`, mas manteve `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; a branch foi corrigida via `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção da branch final compactou o ramo de repescagem e removeu campos auxiliares como `last_message`; a mensagem final ficou preservada nas notas CRM e neste documento oficial do Vault.

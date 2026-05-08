@@ -184,7 +184,6 @@ Sem nova ação automática de repescagem. Caso o cliente responda futuramente, 
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/10957-leonardo-de-castro-ferreira.md` conforme governança atual.
-- Existe documento legado anterior em `_agents/reno/clientes/10957-leonardo-de-castro-ferreira.md`; conteúdo útil foi consolidado neste documento oficial. Não foi removido nesta execução.
 - Repescagem e Resgate tratados como fluxos independentes; esta execução selecionou exclusivamente branch `reno_followup.repescagem`.
 - Execução de 2026-05-03 enviou no máximo 1 WhatsApp bem-sucedido de repescagem.
 - Foi observado o pitfall conhecido do step 5: `mark_reno_followup_sent` não encerrou automaticamente a branch final. O estado foi corrigido com `update_reno_followup_state` antes do `UPDATE` defensivo de arquivamento.

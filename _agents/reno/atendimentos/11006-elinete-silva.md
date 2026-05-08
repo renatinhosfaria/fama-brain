@@ -157,7 +157,6 @@ Posso deixar você à vontade e você me chama quando quiser olhar com calma?
 Sem nova ação automática de repescagem. Caso a cliente responda futuramente ou seja reativada por atendimento humano, retomar pelo contexto do Union Vereda/Jaraguá, validando primeiro se ela ainda quer comparar lançamento com alternativas por prazo, condição e momento de compra.
 
 ## Observações operacionais
-- Documento oficial criado em `_agents/reno/atendimentos/11006-elinete-silva.md` consolidando conteúdo útil do documento legado `_agents/reno/clientes/11006-elinete-silva.md`.
 - Caminho legado não foi removido; deve ser tratado como drift histórico se houver auditoria/migração futura.
 - CRM/FamaChat permanece fonte operacional de verdade; vault é síntese curada.
 - Step 5 enviado em produção pelo worker `reno-repescagem-message-queue-production` com no máximo 1 WhatsApp bem-sucedido nesta execução.

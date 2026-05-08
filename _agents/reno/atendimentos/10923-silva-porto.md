@@ -161,5 +161,4 @@ Responder comercialmente no WhatsApp sem reativar repescagem: validar que CLT aj
 
 ## Observações operacionais
 - CRM/FamaChat confirmou cliente 10923 com `broker_id=35`.
-- Documento legado encontrado anteriormente em `_agents/reno/clientes/10923-silva-porto.md`; o caminho oficial determinístico atual é este arquivo em `_agents/reno/atendimentos/10923-silva-porto.md`.
 - Esta atualização é persistência operacional silenciosa de inbound; nenhuma mensagem foi enviada ao cliente nesta execução.

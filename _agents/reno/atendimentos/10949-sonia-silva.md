@@ -111,4 +111,3 @@ Seguir atendimento conversacional normal pelo Reno. Como a cliente já informou 
 - Repescagem anterior permanece encerrada com `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`; não havia Resgate ativo.
 - Nota CRM registrada para o inbound `So meu capital`, com contexto de capital próprio/sem FGTS e próxima condução de viabilidade.
 - Busca por telefone retornou registros duplicados com outros brokers; o Reno atuou apenas no cliente em seu escopo (`client_id=10949`, `broker_id=35`).
-- Há documentos legados/drift relacionados a este cliente em `_agents/reno/atendimentos/sonia-silva.md` e `_agents/reno/clientes/10949-sonia-silva.md`; este arquivo é o caminho determinístico oficial por `client_id`.

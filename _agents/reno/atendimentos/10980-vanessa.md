@@ -163,7 +163,6 @@ Após o envio, o estado de repescagem foi corrigido para final (`step=5`, `enabl
 
 ## Observações operacionais
 - Documento oficial no caminho determinístico `_agents/reno/atendimentos/10980-vanessa.md` conforme governança atual.
-- Há documentos legados/drift localizados em `_agents/reno/atendimentos/vanessa.md` e `_agents/reno/clientes/10980-vanessa.md`; o conteúdo útil já foi consolidado neste documento oficial. Não foram removidos nesta execução.
 - Envio do step 5 realizado pelo JID salvo no CRM, sem expor número completo.
 - A tool `mark_reno_followup_sent` registrou o step 5, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`. Conforme pitfall conhecido, o estado foi corrigido com `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção da branch final compactou o estado de repescagem para os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem do step final está preservada na nota CRM automática e neste documento.

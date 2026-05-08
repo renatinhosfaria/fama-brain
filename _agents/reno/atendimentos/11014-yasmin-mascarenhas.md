@@ -140,7 +140,6 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, t
 
 ## Observações operacionais
 - Documento oficial mantido no caminho determinístico `_agents/reno/atendimentos/11014-yasmin-mascarenhas.md`.
-- Existe documento legado em `_agents/reno/clientes/11014-yasmin-mascarenhas.md`; conteúdo útil foi considerado e consolidado aqui. Não continuar escrevendo no caminho legado.
 - Envio do step 5 usou o JID salvo no CRM, sem expor telefone completo neste documento.
 - Pitfall recorrente confirmado: `mark_reno_followup_sent` registrou step 5 com próximo follow-up indevido antes da correção. A mensagem final foi preservada no CRM e neste documento antes/apesar da compactação do ramo final.
 - Cliente arquivado automaticamente em 2026-05-04 após conclusão da régua de 5 repescagens sem resposta registrada.

@@ -135,4 +135,3 @@ Sem nova ação automática. Cliente arquivado após conclusão da régua de 5 r
 - CRM note de arquivamento: `clientes_id_anotacoes.id=16583`.
 - Houve incompatibilidade recorrente da tool/backend no step final: `mark_reno_followup_sent` registrou o envio, mas não encerrou `enabled/next_run_at/stopped_reason`. O estado foi corrigido com `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção do estado final compactou a branch da repescagem, preservando apenas campos essenciais; a mensagem final e o histórico foram preservados nas notas CRM e neste documento oficial.
-- Há documento legado em `_agents/reno/clientes/11009-diasalvez111q1-qqq.md`; este documento em `_agents/reno/atendimentos/` é o caminho oficial a ser mantido.

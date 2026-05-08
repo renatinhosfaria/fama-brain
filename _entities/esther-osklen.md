@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Esther Osklen
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-08'
 tags:
   - cliente
   - lead
@@ -60,4 +60,3 @@ Esther Osklen é lead do Reno em status **Não Respondeu** após primeiro contat
 
 ## Observações operacionais
 
-- Documento legado em `_agents/reno/clientes/10978-esther-osklen.md` consolidado no caminho atual. Não escrever no legado.

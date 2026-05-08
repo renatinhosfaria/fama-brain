@@ -150,4 +150,3 @@ Sem nova ação automática de repescagem. Se a cliente responder futuramente, o
 - `mark_reno_followup_sent` registrou o envio do step 5, mas manteve inicialmente `enabled=true`, `next_run_at` preenchido e `stopped_reason=null`; o estado foi corrigido com a tool específica `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção final compactou a branch da repescagem, preservando os campos essenciais (`step`, `enabled`, `next_run_at`, `last_sent_at`, `stopped_reason`). A mensagem final está preservada na nota CRM automática e neste documento oficial do vault.
 - Nota CRM de arquivamento registrada pelo Reno após a mudança de status.
-- Existe documento legado em `_agents/reno/clientes/10959-michele-oliveira.md`; este documento oficial em `_agents/reno/atendimentos/` deve ser mantido como fonte curada principal para o Reno.

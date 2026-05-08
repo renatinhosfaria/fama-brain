@@ -244,7 +244,6 @@ Responder pelo fluxo normal de qualificação WhatsApp, reconstruindo o contexto
 
 ## Observações operacionais
 - Documento oficial mantido em `_agents/reno/atendimentos/11002-marco-antonio-goncalves.md` conforme governança canônica.
-- Conteúdo consolidado originalmente a partir do documento legado `_agents/reno/clientes/11002-marco-antonio-goncalves.md`; o legado não foi deletado nesta execução.
 - O CRM/FamaChat permanece a fonte de verdade operacional para status, meta_data e notas.
 - A duplicidade de registros com o mesmo telefone em outros brokers (`SLA Cascata`) não foi alterada; a atuação desta rotina foi limitada ao cliente Reno `client_id=11002`, `broker_id=35`.
 - Em 2026-05-04, rotinas silenciosas de inbound apenas persistiram CRM/vault e não enviaram mensagem ao cliente.

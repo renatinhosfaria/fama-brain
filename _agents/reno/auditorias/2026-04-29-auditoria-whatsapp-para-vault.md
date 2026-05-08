@@ -42,9 +42,6 @@ Critério CRM usado:
 - Foi encontrada escrita recente no vault para todos os 59 clientes de hoje, mas a escrita não está padronizada no caminho oficial.
 
 Distribuição observada no vault:
-- `_agents/reno/clientes/`: 56 documentos recentes de clientes, usados principalmente pela repescagem/follow-up.
-- `_agents/reno/cliente/`: 1 documento recente (`10945-hilton-oliveira-leite.md`), em pasta singular não padronizada.
-- `_agents/reno/atendimentos/`: há documentos corretos/recentes para alguns casos de hoje, como `11012`, `11083`, `11084`, `11085`, `11110`, `cliente-10951`, `cliente-10992`, `cliente-11004`, `cliente-11010`.
 
 ## Conclusão
 
@@ -56,11 +53,9 @@ Porém, a implementação atual ainda não respeita totalmente a governança def
 
 Na prática, a automação recente está criando muitos documentos em:
 
-`_agents/reno/clientes/{client_id}-{slug}.md`
 
 E pelo menos um caso em:
 
-`_agents/reno/cliente/{client_id}-{slug}.md`
 
 Isso significa que a escrita está funcionando, mas o destino está parcialmente errado e ainda há risco de duplicidade ou fragmentação de histórico.
 
@@ -76,13 +71,11 @@ A auditoria anterior já apontava casos com histórico comercial sem documento �
 
 1. O fluxo recente de repescagem/follow-up está criando documentos no vault.
 2. O fluxo não está consolidando tudo no documento único oficial de atendimento.
-3. A pasta `_agents/reno/clientes/` virou um destino operacional real, apesar de a governança apontar `_agents/reno/atendimentos/` como destino oficial.
 4. Alguns atendimentos comerciais mais ricos e anteriores ao lote atual continuam sem documento individual adequado.
 5. O CRM segue sendo a fonte mais completa para estado e histórico operacional.
 
 ## Recomendação
 
 - Corrigir o writer/worker para escrever sempre em `_agents/reno/atendimentos/{client_id}-{slug}.md`.
-- Migrar ou consolidar os documentos de `_agents/reno/clientes/` e `_agents/reno/cliente/` para `_agents/reno/atendimentos/`.
 - Priorizar reconciliação de conversas com valor comercial: 10986, 10928 e 10930.
 - Manter o CRM como fonte de verdade e usar o vault como histórico curado, evitando duplicidade entre pastas.

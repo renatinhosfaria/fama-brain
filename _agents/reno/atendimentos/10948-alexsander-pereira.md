@@ -75,7 +75,6 @@ Alexsander, passando para retomar sobre o Place+Arbi, no Shopping Park.
 Essa região ainda faz sentido para você ou prefere que eu ajuste as opções?
 ```
 
-- Contexto usado: CRM/FamaChat, estado `meta_data.reno_followup.resgate`, empreendimento 67 e documento legado em `_agents/reno/clientes/10948-alexsander-pereira.md`.
 - Próximo `next_run_at`: 2026-04-30T15:56:23-03:00
 
 ### 2026-04-30 — Resgate step 2 enviado
@@ -155,8 +154,6 @@ Revalidação do CRM encontrou dois cadastros SLA Cascata com o mesmo telefone/J
 Manter o Resgate pausado até revisão manual da ownership dos cadastros duplicados e confirmação de qual registro deve seguir ativo. Enquanto isso, não enviar nova mensagem. Se o CRM for saneado e houver um novo outbound normal do Reno em atendimento regular, um novo ciclo de Resgate poderá ser armado novamente do zero.
 
 ## Observações operacionais
-- Documento oficial criado em `_agents/reno/atendimentos/10948-alexsander-pereira.md` a partir do CRM e do documento legado `_agents/reno/clientes/10948-alexsander-pereira.md`.
-- Não continuar escrevendo no caminho legado `_agents/reno/clientes/`.
 - CRM permanece como fonte de verdade operacional; este documento é síntese curada para retomada.
 - Resgate step 4 registrado no CRM pela ferramenta `mcp_mcp_postgres_mark_reno_followup_sent`, nota CRM 16317.
 - Resgate step 5 enviado com sucesso via WhatsApp/JID salvo no CRM e persistido pela ferramenta `mcp_mcp_postgres_mark_reno_followup_sent`, nota CRM 16619. Status CRM preservado como `Em Atendimento`.

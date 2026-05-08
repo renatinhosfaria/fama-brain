@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: 2026-04-14
-updated: 2026-04-20
+updated: '2026-05-08'
 tags: [moc, fama-brain]
 ---
 # fama-brain
@@ -10,6 +10,28 @@ tags: [moc, fama-brain]
 Vault Obsidian que serve como **contexto e memória de longo prazo** do ecossistema de agentes da Fama Negócios Imobiliários.
 
 **Topologia:** `C:\fama-brain` (Obsidian local) → GitHub (`renatinhosfaria/fama-brain`) → VPS MCP-host (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Uma única VPS hospeda o vault runtime; todos os agentes escrevem via HTTPS no servidor **mcp-obsidian** (`mcp-obsidian.famachat.com.br`), nunca tocando o filesystem diretamente. Cada arquivo tem um único dono de escrita, enforced pelo MCP no momento da escrita (erro `OWNERSHIP_VIOLATION`).
+
+
+<!-- codex:inbound-index:start -->
+
+## ?ndice de navega??o do vault
+
+- [[_curated/index|_curated/index]]
+- [[_decisions/index|_decisions/index]]
+- [[_entities/index|_entities/index]]
+- [[_inbox/index|_inbox/index]]
+- [[_journal/index|_journal/index]]
+- [[_meta/index|_meta/index]]
+- [[_meta/inventory-2026-04-30|_meta/inventory-2026-04-30]]
+- [[_projects/famachat/README|_projects/famachat/README]]
+- [[_projects/index|_projects/index]]
+- [[_projects/portalcef/README|_projects/portalcef/README]]
+- [[_runbooks/index|_runbooks/index]]
+- [[_shared/context/credito-imobiliario/index|_shared/context/credito-imobiliario/index]]
+- [[_shared/context/fama/endereco|_shared/context/fama/endereco]]
+- [[_shared/context/modelo-negocio/metodologia-negocio|_shared/context/modelo-negocio/metodologia-negocio]]
+
+<!-- codex:inbound-index:end -->
 
 ## Convenções
 

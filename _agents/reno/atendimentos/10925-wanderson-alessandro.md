@@ -126,7 +126,6 @@ Após o envio, a branch `reno_followup.repescagem` foi encerrada com `step=5`, `
 
 ## Objeções e travas
 - Cliente não respondeu; não há objeção explícita.
-- Trava operacional histórica: havia documento legado em `_agents/reno/clientes/`; este arquivo oficial consolida o atendimento pelo caminho determinístico em `_agents/reno/atendimentos/`.
 
 ## Próximo passo
 Sem nova ação automática de repescagem. Se o cliente responder futuramente, reativar o atendimento pelo fluxo normal do Reno, validar status atual no CRM e conduzir diagnóstico consultivo antes de qualquer nova proposta.

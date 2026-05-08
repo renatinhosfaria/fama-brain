@@ -161,6 +161,5 @@ Sem nova ação automática de repescagem. Se o cliente responder futuramente, r
 
 ## Observações operacionais
 - A decisão operacional anterior autorizou o Reno a assumir este contato apesar de duplicidade posterior por SLA Cascata atribuída a outro corretor.
-- Existe documento legado em `_agents/reno/clientes/11000-wueverton-lima.md`; o caminho oficial consolidado para continuidade é este arquivo em `_agents/reno/atendimentos/11000-wueverton-lima.md`.
 - O envio do step 5 foi registrado no CRM pela tool específica do Reno (`mark_reno_followup_sent`). Como a tool não encerrou automaticamente o ramo final, o estado foi corrigido com `update_reno_followup_state` antes do arquivamento defensivo.
 - A correção da branch final compactou o estado da repescagem; a mensagem final e o contexto operacional foram preservados nas notas do CRM e neste documento oficial do Vault.
