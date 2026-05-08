@@ -106,3 +106,7 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate inexistente/sem ciclo ativo no momento do inbound “Registrado”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Renda informada
+Cliente informou renda registrada somada de aproximadamente R$ 3.500, considerando os dois vínculos de trabalho. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada e sem FGTS, trabalha em dois lugares com vínculos recentes, renda aproximada R$ 3.500. Próximo passo: confirmar se comprará sozinha ou se poderá compor renda, e então orientar que 2 quartos tende a ser mais viável inicialmente enquanto 3 quartos exige análise cuidadosa.
