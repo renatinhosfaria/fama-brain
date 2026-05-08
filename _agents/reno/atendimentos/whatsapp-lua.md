@@ -60,3 +60,6 @@ Cliente detalhou a forma de renda dos possíveis participantes: marido e uma cun
 
 ## Atualização — 2026-05-08
 Cliente aceitou vir presencialmente à Fama para análise de crédito/viabilidade e perguntou se pode ser no sábado. Próximo passo: confirmar disponibilidade de agenda/horário e registrar visita no FamaChat quando CRM/Postgres estiver acessível.
+
+## Atualização — 2026-05-08
+Cliente preferiu visita no sábado pela manhã. Próximo passo: oferecer/confirmar horário específico para visita presencial na Fama e, após confirmação, registrar agendamento no CRM/FamaChat.
