@@ -48,3 +48,6 @@ Cliente esclareceu composição de renda: juntando duas rendas daria aproximadam
 
 ## Atualização — 2026-05-08
 Cliente perguntou se seria possível colocar o imóvel/financiamento no nome de todo mundo. Orientação comercial: responder que pode ser analisado, mas depende das regras do banco e que quem compõe renda normalmente assume também participação no financiamento/documentação. Próximo ponto de qualificação: restrição no CPF dos participantes e renda comprovável.
+
+## Atualização — 2026-05-08
+Cliente informou que é menor de idade, porém emancipada, e entende que legalmente pode assumir obrigações/documentos em seu nome. Orientação necessária: reconhecer que a emancipação ajuda na capacidade civil, mas financiamento imobiliário depende da política do banco, análise de crédito, renda, idade, documentação e aceitação de menor emancipado na operação. Próximo passo: confirmar se possui documentação formal da emancipação e se os demais participantes estão sem restrição.
