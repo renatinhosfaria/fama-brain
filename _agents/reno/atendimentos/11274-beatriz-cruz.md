@@ -127,3 +127,7 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate inexistente/sem ciclo ativo no momento do inbound “Minha mãe sim eu não”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Prazo desejado de compra
+Cliente informou que quer comprar ainda este ano. Interpretação comercial: lead com intenção temporal clara e potencialmente quente, mas com trava de CPF da própria cliente e ausência de entrada/FGTS. Próximo passo recomendado: organizar plano de viabilidade com etapas (regularização de CPF, comprovação de renda dela e da mãe, composição de renda, análise de 2 vs 3 quartos e possibilidade de entrada), conduzindo para atendimento presencial em data alternativa, já que hoje não consegue comparecer.
