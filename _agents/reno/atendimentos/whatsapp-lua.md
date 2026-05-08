@@ -51,3 +51,6 @@ Cliente perguntou se seria possível colocar o imóvel/financiamento no nome de 
 
 ## Atualização — 2026-05-08
 Cliente informou que é menor de idade, porém emancipada, e entende que legalmente pode assumir obrigações/documentos em seu nome. Orientação necessária: reconhecer que a emancipação ajuda na capacidade civil, mas financiamento imobiliário depende da política do banco, análise de crédito, renda, idade, documentação e aceitação de menor emancipado na operação. Próximo passo: confirmar se possui documentação formal da emancipação e se os demais participantes estão sem restrição.
+
+## Atualização — 2026-05-08
+Cliente informou que todos os possíveis participantes do financiamento estão com nome limpo. Contexto atual: possível composição de renda total de aproximadamente R$ 8.500 entre todos os moradores; cliente é menor emancipada; necessidade de validar política bancária, documentação de emancipação, quem entra formalmente no financiamento e forma de comprovação das rendas.
