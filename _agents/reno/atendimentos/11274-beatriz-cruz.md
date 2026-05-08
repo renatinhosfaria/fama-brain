@@ -80,3 +80,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Financiamento
 Cliente confirmou que pretende financiar. Diagnóstico atualizado: finalidade = moradia; interesse = comparar opções de 2 e 3 quartos; forma provável = financiamento. Próximo passo: entender entrada disponível para viabilidade inicial e depois conduzir para simulação/visita presencial se fizer sentido.
+
+### 2026-05-08 — Primeiro imóvel e sem entrada formada
+Cliente informou que ainda não tem valor separado para entrada e que será seu primeiro imóvel. Diagnóstico atualizado: moradia, interesse em comparar 2 e 3 quartos, pretende financiar, sem entrada formada, possível enquadramento em soluções de primeiro imóvel/FGTS/subsídio/entrada planejada a validar sem promessa. Próximo passo: entender vínculo de trabalho/renda para avaliar viabilidade inicial.
