@@ -77,3 +77,14 @@ Atualização de diagnóstico:
 
 ## Interação — 2026-05-08 00:23
 Reno respondeu no WhatsApp: "Boa. Nesse caso faz sentido olhar mais preço de entrada, prazo de entrega e potencial de valorização. Você pensa mais em renda com aluguel depois de pronto, ou em valorização pra revender no futuro?"
+
+### 2026-05-08 — Tipo de investimento identificado
+Cliente respondeu: "uma renda como um aluguel".
+
+Atualização de diagnóstico:
+- Finalidade: investimento.
+- Retorno desejado: renda mensal com aluguel após entrega/pronto.
+- Próximo passo: entender viabilidade financeira e estrutura de compra — financiamento ou entrada maior para reduzir custo mensal.
+
+## Interação — 2026-05-08 00:25
+Reno respondeu no WhatsApp: "Entendi. Como o Union Vista é lançamento, a renda de aluguel vem depois da entrega; então o principal é a conta fazer sentido até lá. Você pensa em fazer com financiamento, ou teria uma entrada maior pra deixar o custo mensal mais baixo?"
