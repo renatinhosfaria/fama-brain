@@ -179,6 +179,13 @@
   },
   "active": "ef1d5c2c519d250e",
   "lastOpenFiles": [
+    "_shared/context/vault/vault-steward/audit-consolidacao-clientes-atendimentos-2026-04-30.md",
+    "_shared/context/empreendimentos/reno/bari-construtora-tabela-promocional.md",
+    "_shared/context/empreendimentos/reno",
+    "_shared/context/empreendimentos",
+    "_agents/reno/atendimentos/whatsapp-lua.md",
+    "_agents/reno/atendimentos/11277-yasmim-rezende.md",
+    "_agents/reno/atendimentos/11276-alfred-bertoli.md",
     "metodologia-negocio.md",
     "_shared/context/vault/ceo/avaliacao-organizacao-conexoes-2026-05-07.md",
     "_agents/vault-steward/journal/2026-05-02-cmo-2026-05-snapshot-inicial-funil-meta-ads-crm-fam-27.md",
@@ -207,13 +214,6 @@
     "_entities/chacara-tubalina.md",
     "_entities/byanca-guerra.md",
     "_entities/bella-vita.md",
-    "_entities/andre-luiz-duca.md",
-    "_entities/aline-oliveira.md",
-    "_entities/alexsander-pereira.md",
-    "_agents/vault-steward/monitoring/2026-05-05.md",
-    "_agents/vault-steward/monitoring/2026-05-04.md",
-    "_agents/coder",
-    "_agents/cmo",
-    "_shared/context/cultura/ceo"
+    "_agents/coder"
   ]
 }
