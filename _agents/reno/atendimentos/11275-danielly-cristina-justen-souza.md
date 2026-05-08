@@ -19,15 +19,16 @@ tags:
   - inbound
   - viabilidade
   - agendamento-a-confirmar
+  - confirmacao-curta
 ---
 # Atendimento — Danielly Cristina Justen Souza
 
 ## Resumo atual
 Cliente validada no CRM como `broker_id=35` e status `Em Atendimento`. A primeira resposta inbound (`Sim`) já moveu o CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a Repescagem em `step=0`, com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`.
 
-A conversa evoluiu rapidamente para viabilidade: cliente busca imóvel até cerca de R$ 280 mil, pretende financiar, informou recurso inicial provável de R$ 30 mil a R$ 40 mil, mencionou renda de R$ 3.900 em duas rendas e possibilidade de renda total familiar de R$ 8.500. Também informou ser menor de idade, mas emancipada legalmente, o que exige validação documental/capacidade civil antes de qualquer afirmação de contratação ou financiamento. O CRM indica interesse no Place+Arbi, no Shopping Park.
+A conversa evoluiu para viabilidade: cliente busca imóvel até cerca de R$ 280 mil, pretende financiar, informou recurso inicial provável de R$ 30 mil a R$ 40 mil, mencionou renda de R$ 3.900 em duas rendas e possibilidade de renda total familiar de R$ 8.500. Também informou ser menor de idade, mas emancipada legalmente, ponto que exige validação documental/capacidade civil antes de qualquer afirmação de contratação ou financiamento. O CRM indica interesse no Place+Arbi, no Shopping Park.
 
-Últimos inbounds registrados pelas rotinas silenciosas: `Posso sim`, `Manhã`, `Pode ser às 09:00` e, por último, confirmação/informação do nome completo `Danielly Cristina Justen Souza` (nota CRM 17274). O CRM já estava com esse mesmo `full_name`, portanto não houve alteração de nome. Antes de responder comercialmente, reconstruir o contexto imediato do WhatsApp para entender se `09:00` se refere a visita presencial, atendimento remoto, envio de informações ou outro compromisso. Se for aceite de visita, acionar `reno-visit-scheduling` e só confirmar ao cliente depois de persistir o agendamento no FamaChat.
+Últimos inbounds registrados pelas rotinas silenciosas: `Posso sim`, `Manhã`, `Pode ser às 09:00`, confirmação/informação do nome completo `Danielly Cristina Justen Souza` e, por último, `Ok` (nota CRM 17276). O `Ok` é uma confirmação curta; antes de responder comercialmente, reconstruir o contexto imediato do WhatsApp para entender se confirma nome, horário, visita, atendimento remoto, envio de informações ou outro compromisso. Se houver aceite claro de visita, acionar `reno-visit-scheduling` e só confirmar ao cliente depois de persistir o agendamento no FamaChat.
 
 ## Dados operacionais
 - Cliente ID: 11275
@@ -36,16 +37,16 @@ A conversa evoluiu rapidamente para viabilidade: cliente busca imóvel até cerc
 - Origem: Facebook Ads
 - WhatsApp: validado pelo canal cadastrado no CRM
 - Empreendimento de interesse no CRM: Place+Arbi, Shopping Park, Uberlândia
-- Última interação relevante no CRM: cliente confirmou/informou nome completo `Danielly Cristina Justen Souza`; CRM já tinha o mesmo nome
-- Nota CRM desta rotina: 17274
+- Última interação relevante no CRM: cliente respondeu `Ok` via WhatsApp; confirmação curta, sem novo dado isolado
+- Nota CRM desta rotina: 17276
 - Repescagem: interrompida em step 0, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento desta persistência
-- Agendamentos no CRM: nenhum agendamento listado na verificação desta rotina
+- Agendamentos no CRM: nenhum agendamento listado em verificação anterior desta rotina de atendimento; revalidar antes de confirmar visita
 
 ## Contexto comercial
 A cliente entrou como lead de Facebook Ads com interesse no Place+Arbi, empreendimento no bairro Shopping Park, em Uberlândia. O primeiro contato do Reno contextualizou esse interesse e perguntou se a cliente estava procurando imóvel nessa região.
 
-A cliente confirmou inicialmente com `Sim`, pediu esclarecimento com `Como assim?`, sinalizou continuidade com `Continuar o atendimento`, perguntou se havia opção até R$ 280 mil, respondeu `Financiamento`, esclareceu que não precisa ser exatamente condomínio fechado, informou entrada/recurso inicial provável de R$ 30 mil a R$ 40 mil, enviou `3.900`, depois explicou que duas rendas dariam R$ 3.900 e que juntando a renda de todo mundo daria R$ 8.500. Também houve mensagem ruidosa (`Teria como no bom eu de todo mundo?`), provavelmente ligada à dúvida sobre compor renda/nome de todos no financiamento. Em nota posterior, informou ser menor de idade, mas emancipada legalmente. Depois respondeu positivamente (`Posso sim`), indicou período (`Manhã`), aceitou/indicou `Pode ser às 09:00` e confirmou/informou nome completo.
+A cliente confirmou inicialmente com `Sim`, pediu esclarecimento com `Como assim?`, sinalizou continuidade com `Continuar o atendimento`, perguntou se havia opção até R$ 280 mil, respondeu `Financiamento`, esclareceu que não precisa ser exatamente condomínio fechado, informou entrada/recurso inicial provável de R$ 30 mil a R$ 40 mil, enviou `3.900`, depois explicou que duas rendas dariam R$ 3.900 e que juntando a renda de todo mundo daria R$ 8.500. Também houve mensagem ruidosa (`Teria como no bom eu de todo mundo?`), provavelmente ligada à dúvida sobre compor renda/nome de todos no financiamento. Em nota posterior, informou ser menor de idade, mas emancipada legalmente. Depois respondeu positivamente (`Posso sim`), indicou período (`Manhã`), aceitou/indicou `Pode ser às 09:00`, confirmou/informou nome completo e respondeu `Ok`.
 
 Dados do CRM sobre o Place+Arbi no momento de consulta anterior:
 - Empreendimento: Place+Arbi
@@ -93,10 +94,13 @@ Cliente enviou `3.900`, depois explicou que duas rendas dariam R$ 3.900 e que ju
 O CRM registrou inbound em que a cliente informou ser menor de idade, porém emancipada legalmente. Interpretação comercial: ponto relevante de viabilidade/documentação/capacidade civil para financiamento ou compra; responder com cuidado, sem promessa de aprovação, e validar documentação quando necessário.
 
 ### 2026-05-08 — Respostas positivas e possível disponibilidade
-Cliente respondeu `Posso sim`, depois `Manhã` e, em seguida, `Pode ser às 09:00`. Interpretação operacional: possível aceite/disponibilidade de horário, mas ainda depende de reconstrução do contexto imediato do WhatsApp antes de tratar como visita ou agendamento real. Até a verificação desta rotina não havia agendamento listado no CRM.
+Cliente respondeu `Posso sim`, depois `Manhã` e, em seguida, `Pode ser às 09:00`. Interpretação operacional: possível aceite/disponibilidade de horário, mas ainda depende de reconstrução do contexto imediato do WhatsApp antes de tratar como visita ou agendamento real. Até a verificação anterior não havia agendamento listado no CRM.
 
 ### 2026-05-08 — Confirmação/informação de nome completo
 Cliente informou/confirmou via WhatsApp o nome completo `Danielly Cristina Justen Souza`. O CRM já estava com o mesmo `full_name`, então não houve alteração de nome. Status preservado em `Em Atendimento`; Repescagem já interrompida; sem Resgate ativo. Nota CRM: 17274. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Confirmação curta `Ok`
+Cliente respondeu via WhatsApp com `Ok`. Interpretação: confirmação curta, sem dado novo suficiente fora do contexto imediato. Status preservado em `Em Atendimento`; Repescagem permanecia interrompida com `stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`; sem Resgate ativo. Nota CRM: 17276. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
 ## Objeções e travas
 - Teto declarado: até cerca de R$ 280 mil.
@@ -106,19 +110,20 @@ Cliente informou/confirmou via WhatsApp o nome completo `Danielly Cristina Juste
 - Dúvida ruidosa: possivelmente quer saber se dá para usar nome/renda de todos na composição do financiamento; confirmar antes de responder como fato.
 - Ponto documental sensível: cliente informou ser menor de idade, mas emancipada; validar documentação/capacidade civil e não prometer financiamento/contratação em nome dela.
 - Horário `09:00`: não assumir visita confirmada sem reconstruir o contexto e, se for visita, sem registrar/validar no FamaChat.
+- `Ok`: confirmação curta; usar contexto da sessão antes de interpretar.
 - Perfil do empreendimento: condomínio fechado não é obrigatório.
 - Atenção: responder com valores como referência do CRM, sem tratar como garantia fixa de tabela/unidade.
 
 ## Próximo passo
-Reconstruir o contexto imediato da sessão WhatsApp antes de responder. Se `Pode ser às 09:00` for aceite de visita presencial, confirmar qual dia está sendo tratado e acionar obrigatoriamente `reno-visit-scheduling` para criar/validar o agendamento no FamaChat antes de qualquer confirmação ao cliente. Se o contexto for continuidade de viabilidade, responder validando a abertura e explicar que composição de renda/nome de participantes e emancipação podem ser analisadas com documentação, mas dependem de validação do banco/contrato.
+Reconstruir o contexto imediato da sessão WhatsApp antes de responder. Se `Pode ser às 09:00` + `Ok` configurarem aceite de visita presencial com dia/horário claros, confirmar qual dia está sendo tratado e acionar obrigatoriamente `reno-visit-scheduling` para criar/validar o agendamento no FamaChat antes de qualquer confirmação ao cliente. Se o contexto for continuidade de viabilidade, responder validando a abertura e explicar que composição de renda/nome de participantes e emancipação podem ser analisadas com documentação, mas dependem de validação do banco/contrato.
 
 Depois de um outbound normal em `Em Atendimento` que deixe pergunta/próximo passo em aberto, armar Resgate em `step=0` conforme a régua de qualificação.
 
 ## Observações operacionais
 - Cliente elegível para Reno confirmado no CRM (`broker_id=35`).
 - Status atual verificado como `Em Atendimento`; não houve transição de status nesta rotina.
-- `full_name` no CRM já era `Danielly Cristina Justen Souza`; a mensagem inbound confirmou/informou o mesmo nome, sem alteração operacional de nome.
 - Repescagem permanece encerrada por resposta real da cliente antes do primeiro step automático: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Não havia Resgate ativo a interromper.
+- A nota CRM 17276 registrou o inbound `Ok` e a preservação operacional do status/follow-up.
 - Rotina silenciosa não enviou mensagem ao cliente.
 - O vault foi atualizado como camada curada; o CRM/FamaChat permanece a fonte operacional da verdade.
