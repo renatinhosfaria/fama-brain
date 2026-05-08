@@ -5,8 +5,8 @@ entity_type: atendimento
 entity_name: Sergio daniel Moraes
 client_id: 11298
 broker_id: 35
-status_crm: Em Atendimento
-source: FamaChat
+status_crm: Não Respondeu
+source: Facebook Ads
 created: '2026-05-08'
 updated: '2026-05-08'
 tags:
@@ -14,53 +14,45 @@ tags:
   - atendimento
   - whatsapp
   - famachat
-  - inbound
+  - primeiro-contato
 ---
 ## Resumo atual
+Primeiro contato do Reno enviado com sucesso pelo WhatsApp em 2026-05-08, após validação do cliente no CRM/FamaChat.
 
-Cliente respondeu ao primeiro contato do Reno no WhatsApp com a mensagem curta: "Era porta". O CRM foi reativado operacionalmente de `Não Respondeu` para `Em Atendimento` e a régua de Repescagem foi interrompida por resposta inbound do cliente.
+Cliente pertence ao escopo do Reno (`broker_id=35`) e ficou com status CRM `Não Respondeu` após envio. Interesse inicial validado no CRM: Union Vista, no bairro Grand Ville, Zona Leste de Uberlândia.
 
 ## Dados operacionais
-
-- Cliente CRM: 11298
-- Broker atual: 35 — Reno Agente de IA
-- Status CRM validado após persistência: Em Atendimento
-- Origem: Facebook Ads / FamaChat
-- Empreendimento de interesse registrado: Union Vista / Grand Ville
-- Follow-up Reno: Repescagem desativada com `stopped_reason=client_replied`; Resgate não ativo no momento da validação.
+- Cliente CRM: `11298`
+- Nome CRM: Sergio daniel Moraes
+- Broker: Reno Agente de IA (`broker_id=35`)
+- Status CRM após execução: `Não Respondeu`
+- Origem: Facebook Ads
+- WhatsApp validado: `553492032322@s.whatsapp.net`
+- Evento webhook: `evt_3466`
+- Idempotency key: `3466_1778278774047`
+- Mensagens técnicas enviadas: `3EB0FAE651B67B8709C7C6`, `3EB02A3B174A78F8775306`
 
 ## Contexto comercial
-
-O primeiro contato enviado pelo Reno contextualizou o interesse no Union Vista, no Grand Ville, e perguntou se o cliente estava procurando imóvel naquela região. A resposta inbound "Era porta" parece ser continuação/correção de contexto e precisa ser considerada antes de qualquer resposta comercial futura.
+O cliente entrou por anúncio do Facebook Ads com interesse no empreendimento Union Vista, no Grand Ville. A primeira abordagem foi contextual e curta, sem promessa de crédito, preço, disponibilidade ou aprovação.
 
 ## Diagnóstico
-
-### Necessidade
-Ainda não diagnosticada.
-
-### Momento
-Cliente respondeu ao primeiro contato, indicando abertura mínima de conversa.
-
-### Decisão
-Ainda não diagnosticada.
-
-### Viabilidade
-Ainda não diagnosticada.
+- Necessidade: pendente de resposta do cliente.
+- Momento: pendente de resposta do cliente.
+- Decisão: pendente de resposta do cliente.
+- Viabilidade: pendente de resposta do cliente.
 
 ## Histórico curado de interações
-
-- 2026-05-08 19:24 — Primeiro contato do Reno enviado com sucesso pelo WhatsApp sobre Union Vista / Grand Ville; status saiu de `Sem Atendimento` para `Não Respondeu` e Repescagem foi inicializada.
-- 2026-05-08 19:26 — Inbound WhatsApp recebido: "Era porta". Persistência silenciosa executada: status atualizado para `Em Atendimento`, Repescagem interrompida e nota objetiva registrada no CRM.
+- 2026-05-08 19:19 — Primeiro contato enviado pelo Reno:
+  - "Oi, Sergio. Aqui é o Reno, da Fama Negócios Imobiliários. Vi que você demonstrou interesse no Union Vista, no Grand Ville."
+  - "Você está procurando imóvel nessa região?"
 
 ## Objeções e travas
-
-Nenhuma objeção comercial registrada até o momento.
+Nenhuma objeção registrada ainda. Aguardando primeira resposta.
 
 ## Próximo passo
-
-Antes de responder ao cliente, reconstruir o contexto exato da frase "Era porta" a partir da conversa recente. Se for correção de informação do imóvel/região, responder de forma curta reconhecendo a correção e retomando a pergunta de qualificação sem pressão.
+Aguardar a primeira resposta do cliente. Se permanecer em `Não Respondeu`, a branch de Repescagem está preparada com `step=0` e `next_run_at=2026-05-09T09:10:00-03:00`.
 
 ## Observações operacionais
-
-- Rotina automática executou somente persistência operacional; nenhuma mensagem foi enviada ao cliente nesta etapa.
-- CRM/FamaChat permanece como fonte operacional de verdade; este documento é síntese curada para retomada.
+- CRM/FamaChat foi usado como fonte operacional da verdade.
+- Status foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu` após envio validado.
+- `meta_data.reno_followup.repescagem` foi inicializada de forma idempotente após verificação.
