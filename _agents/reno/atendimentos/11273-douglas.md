@@ -1,71 +1,68 @@
 ---
-broker_id: 35
-client_id: 11273
-created: '2026-05-08'
-entity_name: Douglas
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Douglas
+client_id: 11273
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-08'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
-  - primeiro-contato
-  - primeira-resposta
-type: entity-profile
-updated: '2026-05-08'
+  - union-vista
 ---
 # Atendimento — Douglas
 
 ## Resumo atual
-Primeiro contato do Reno foi enviado com sucesso via WhatsApp e o cliente respondeu rapidamente com `Sim`. O atendimento já avançou no CRM para `Em Atendimento`. A repescagem inicial foi interrompida para evitar follow-up automático após resposta real.
+Cliente respondeu ao primeiro contato do Reno com "Sim" e o atendimento foi operacionalmente retomado/iniciado como Em Atendimento. A repescagem de silêncio inicial foi interrompida com stopped_reason=client_replied e next_run_at=null. O próximo passo comercial é continuar a qualificação curta sobre o objetivo no Union Vista.
 
 ## Dados operacionais
 - Cliente ID: 11273
 - Broker ID: 35
 - Status CRM: Em Atendimento
-- Origem: Facebook Ads / lead_automatico
-- Telefone/WhatsApp: WhatsApp validado no CRM
-- Empreendimento de interesse: Union Vista, no Grand Ville
-- Última interação relevante: 2026-05-08 — cliente respondeu ao primeiro contato com `Sim`
+- Origem: Facebook Ads
+- Telefone/WhatsApp: registrado no CRM
+- Empreendimento de interesse: Union Vista (id_empreendimento=22), Grand Ville, Uberlândia
+- Última interação relevante: 2026-05-08 00:18 — inbound "Sim" processado; repescagem interrompida; diagnóstico inicial registrado no CRM.
 
 ## Contexto comercial
-Lead entrou por Facebook Ads com interesse no empreendimento Union Vista, localizado no bairro Grand Ville. A abertura foi mantida curta e contextual, sem qualificação financeira precoce e sem convite para visita antes da primeira resposta. A resposta positiva indica abertura para continuidade da conversa sobre a região/empreendimento.
+Lead entrou por Facebook Ads com interesse no Union Vista. Primeiro contato do Reno contextualizou o empreendimento e perguntou se o cliente procurava imóvel na região. A resposta "Sim" indica confirmação inicial de interesse/região, mas ainda sem diagnóstico de finalidade, momento, decisão ou viabilidade.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. Próxima pergunta recomendada: entender se busca imóvel para morar, investir ou conhecer opções.
+Ainda não detalhada. Confirmou interesse inicial no contexto do Union Vista/região.
 
 ### Momento
-Ainda não diagnosticado.
+Ainda não identificado.
 
 ### Decisão
-Ainda não diagnosticada.
+Ainda não identificada.
 
 ### Viabilidade
-Ainda não diagnosticada; não houve conversa sobre financiamento, renda, entrada ou aprovação.
+Ainda não identificada. Não há dados de financiamento, entrada ou faixa de valor informados.
 
 ## Histórico curado de interações
-### 2026-05-08 — Primeiro contato enviado
-Reno enviou abertura em duas mensagens pelo WhatsApp:
-1. Cumprimento, apresentação e contexto do interesse no Union Vista, no Grand Ville.
-2. Pergunta simples para primeira resposta: se o cliente está procurando imóvel nessa região.
+### 2026-05-08 — Entrada e primeiro contato
+Cliente criado no FamaChat por Facebook Ads com interesse no Union Vista. Reno enviou abertura curta pelo WhatsApp, status passou de Sem Atendimento para Não Respondeu e repescagem foi inicializada para silêncio inicial.
 
-Após o envio, o CRM foi atualizado de `Sem Atendimento` para `Não Respondeu` e a régua de repescagem foi inicializada em `step=0`.
+### 2026-05-08 — Primeira resposta inbound
+Cliente respondeu "Sim" ao contexto de procurar imóvel na região. Status foi preservado/confirmado como Em Atendimento após resposta real do cliente. A repescagem foi interrompida no CRM: enabled=false, next_run_at=null, stopped_reason=client_replied.
 
-### 2026-05-08 — Primeira resposta do cliente
-Cliente respondeu com `Sim`. O CRM avançou para `Em Atendimento` conforme a regra operacional do Reno. Em seguida, a branch de repescagem foi interrompida com motivo `client_replied`, evitando follow-up automático de silêncio inicial.
+### 2026-05-08 — Continuidade comercial registrada
+CRM registrou a continuidade com pergunta de diagnóstico inicial sobre o Union Vista: entender se o interesse é para morar ou investir.
 
 ## Objeções e travas
-- Nenhuma objeção registrada até o momento.
+Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Conduzir a qualificação consultiva em mensagem curta: confirmar o contexto de busca e entender se Douglas procura para morar, investir ou ainda está conhecendo opções. Depois, aprofundar prioridade do imóvel antes de apresentar detalhes do Union Vista.
+Aguardar resposta ao diagnóstico inicial e conduzir com uma pergunta por vez. Se houver sinal positivo sobre o empreendimento/região, avançar para apresentação útil do Union Vista e convite presencial na Fama quando fizer sentido.
 
 ## Observações operacionais
-- Envio técnico validado pelo WhatsApp.
-- Status CRM atual confirmado como `Em Atendimento`.
-- `meta_data.reno_followup.repescagem` verificada como `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Referência operacional do primeiro contato: evt_3441 / 3441_1778210118356.
+- Nome cadastrado "Douglas" é utilizável para atendimento.
+- Repescagem de silêncio inicial foi fechada por resposta inbound para evitar novo envio automático.
+- Documento consolidado no caminho oficial do Reno por client_id.
