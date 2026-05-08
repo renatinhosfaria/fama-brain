@@ -57,3 +57,6 @@ Cliente informou que todos os possíveis participantes do financiamento estão c
 
 ## Atualização — 2026-05-08
 Cliente detalhou a forma de renda dos possíveis participantes: marido e uma cunhada com carteira assinada; cliente autônoma; outra participante com renda informal (provável esposa da cunhada, a confirmar). Todos com nome limpo, segundo cliente. Orientação comercial: CLT tende a ser mais forte para análise bancária; renda autônoma pode ajudar se houver comprovação por extratos/declarações; renda informal pode ter menor aproveitamento formal. Lead com bom potencial para encaminhar para análise de crédito/visita presencial.
+
+## Atualização — 2026-05-08
+Cliente aceitou vir presencialmente à Fama para análise de crédito/viabilidade e perguntou se pode ser no sábado. Próximo passo: confirmar disponibilidade de agenda/horário e registrar visita no FamaChat quando CRM/Postgres estiver acessível.
