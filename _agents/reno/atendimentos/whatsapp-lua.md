@@ -66,3 +66,6 @@ Cliente preferiu visita no sábado pela manhã. Próximo passo: oferecer/confirm
 
 ## Atualização — 2026-05-08
 Cliente confirmou preferência de visita presencial no sábado às 09:00. Data operacional presumida pelo contexto da conversa: sábado seguinte, 2026-05-09 09:00. Necessário registrar no FamaChat/CRM quando o cliente for identificado e o MCP Postgres estiver acessível.
+
+## Atualização — 2026-05-08
+Cliente informou nome completo: Danielly Cristina Justen Souza. Perguntou quem deve procurar ao chegar à Fama para a visita de sábado às 09:00. Necessário confirmar/registrar agendamento no CRM/FamaChat assim que possível.
