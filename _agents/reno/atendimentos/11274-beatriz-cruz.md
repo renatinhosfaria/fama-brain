@@ -59,3 +59,7 @@ Aguardar resposta da cliente. Se ela responder, mover para Em Atendimento quando
 - Evento de origem: evt_3442 / 3442_1778226385445.
 - WhatsApp validado pelo envio técnico antes da persistência operacional.
 - Repescagem inicializada com step 0, enabled=true, entrada na madrugada e próximo disparo previsto para a noite do mesmo dia, conforme matriz oficial.
+
+
+### 2026-05-08 — Primeira resposta recebida
+Cliente respondeu “Sim” à pergunta inicial sobre estar procurando imóvel na região do Shopping Park/Place+Arbi. Interpretação operacional: lead engajou e confirmou interesse inicial na região. Próximo passo: conduzir qualificação leve com uma pergunta por vez, começando por finalidade de compra (morar ou investir). CRM deveria sair de Não Respondeu para Em Atendimento se ainda estiver exatamente em Não Respondeu; atualização/notas no CRM pendentes porque o mcp-postgres estava temporariamente indisponível no momento da resposta.
