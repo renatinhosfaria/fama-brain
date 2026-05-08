@@ -110,3 +110,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Renda informada
 Cliente informou renda registrada somada de aproximadamente R$ 3.500, considerando os dois vínculos de trabalho. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada e sem FGTS, trabalha em dois lugares com vínculos recentes, renda aproximada R$ 3.500. Próximo passo: confirmar se comprará sozinha ou se poderá compor renda, e então orientar que 2 quartos tende a ser mais viável inicialmente enquanto 3 quartos exige análise cuidadosa.
+
+### 2026-05-08 — Possível composição de renda com mãe autônoma
+Cliente informou que poderia compor renda com a mãe, que é autônoma. Diagnóstico atualizado: compra para moradia/primeiro imóvel, interesse em 2 e 3 quartos, financiamento, sem entrada/FGTS, renda própria aproximada R$ 3.500, possível composição de renda com familiar autônoma. Próximo passo: validar se a mãe consegue comprovar renda/movimentação para análise de financiamento, sem prometer aprovação.
