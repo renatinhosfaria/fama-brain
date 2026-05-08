@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Sergio daniel Moraes
 client_id: 11298
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-08'
 updated: '2026-05-08'
@@ -14,45 +14,51 @@ tags:
   - atendimento
   - whatsapp
   - famachat
-  - primeiro-contato
+  - inbound
 ---
 ## Resumo atual
-Primeiro contato do Reno enviado com sucesso pelo WhatsApp em 2026-05-08, após validação do cliente no CRM/FamaChat.
+Cliente identificado no CRM como atendimento do Reno (`broker_id=35`). Primeiro contato do Reno foi enviado com sucesso pelo WhatsApp sobre o Union Vista. Em seguida, o cliente respondeu ao WhatsApp dizendo: "Nao errei na propaganda".
 
-Cliente pertence ao escopo do Reno (`broker_id=35`) e ficou com status CRM `Não Respondeu` após envio. Interesse inicial validado no CRM: Union Vista, no bairro Grand Ville, Zona Leste de Uberlândia.
+Status operacional atual validado no CRM: `Em Atendimento`.
 
 ## Dados operacionais
 - Cliente CRM: `11298`
 - Nome CRM: Sergio daniel Moraes
 - Broker: Reno Agente de IA (`broker_id=35`)
-- Status CRM após execução: `Não Respondeu`
 - Origem: Facebook Ads
-- WhatsApp validado: `553492032322@s.whatsapp.net`
-- Evento webhook: `evt_3466`
-- Idempotency key: `3466_1778278774047`
-- Mensagens técnicas enviadas: `3EB0FAE651B67B8709C7C6`, `3EB02A3B174A78F8775306`
+- Empreendimento de contexto inicial: Union Vista, Grand Ville
+- Status anterior registrado no atendimento inicial: `Não Respondeu`
+- Status atual validado: `Em Atendimento`
+- Follow-up automático: Repescagem interrompida por resposta do cliente (`client_replied`), com `enabled=false` e `next_run_at=null`
 
 ## Contexto comercial
-O cliente entrou por anúncio do Facebook Ads com interesse no empreendimento Union Vista, no Grand Ville. A primeira abordagem foi contextual e curta, sem promessa de crédito, preço, disponibilidade ou aprovação.
+O cliente entrou por anúncio do Facebook Ads com interesse no Union Vista. A primeira abordagem foi contextual e curta, perguntando se ele procurava imóvel naquela região.
+
+A resposta inbound atual indica possível ruído de entendimento/interesse relacionado à propaganda. Não tratar como recusa definitiva sem esclarecer.
 
 ## Diagnóstico
-- Necessidade: pendente de resposta do cliente.
-- Momento: pendente de resposta do cliente.
-- Decisão: pendente de resposta do cliente.
-- Viabilidade: pendente de resposta do cliente.
+### Necessidade
+Ainda não diagnosticada.
+
+### Momento
+Cliente respondeu ao primeiro contato e reabriu a conversa.
+
+### Decisão
+Ainda não identificada.
+
+### Viabilidade
+Ainda não identificada.
 
 ## Histórico curado de interações
-- 2026-05-08 19:19 — Primeiro contato enviado pelo Reno:
-  - "Oi, Sergio. Aqui é o Reno, da Fama Negócios Imobiliários. Vi que você demonstrou interesse no Union Vista, no Grand Ville."
-  - "Você está procurando imóvel nessa região?"
+- 2026-05-08 — Primeiro contato do Reno enviado com sucesso pelo WhatsApp sobre o Union Vista.
+- 2026-05-08 — Cliente respondeu: "Nao errei na propaganda".
+- 2026-05-08 — Rotina silenciosa validou CRM, confirmou `broker_id=35`, registrou nota no CRM, manteve/validou status `Em Atendimento` e interrompeu a Repescagem com `client_replied`.
 
 ## Objeções e travas
-Nenhuma objeção registrada ainda. Aguardando primeira resposta.
+Possível ruído na propaganda ou no entendimento do interesse. Precisa de esclarecimento curto e humano na continuidade comercial.
 
 ## Próximo passo
-Aguardar a primeira resposta do cliente. Se permanecer em `Não Respondeu`, a branch de Repescagem está preparada com `step=0` e `next_run_at=2026-05-09T09:10:00-03:00`.
+Na próxima resposta comercial, esclarecer com naturalidade o que ele quis dizer com a propaganda e manter a conversa contextualizada, sem pressão e sem pressupor desinteresse definitivo.
 
 ## Observações operacionais
-- CRM/FamaChat foi usado como fonte operacional da verdade.
-- Status foi atualizado condicionalmente de `Sem Atendimento` para `Não Respondeu` após envio validado.
-- `meta_data.reno_followup.repescagem` foi inicializada de forma idempotente após verificação.
+Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa. O CRM/FamaChat permanece como fonte operacional da verdade.
