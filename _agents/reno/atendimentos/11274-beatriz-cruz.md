@@ -21,24 +21,27 @@ tags:
   - perfil-2-3-quartos
   - financiamento
   - primeiro-imovel
-  - resposta-negativa
+  - sem-entrada
+  - sem-fgts
+  - vinculo-registrado
+  - resposta-curta
 ---
 # Atendimento — Beatriz Cruz
 
 ## Resumo atual
-Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park, confirmou interesse inicial na região, informou que procura para morar, pediu para entender opções de 2 e 3 quartos, confirmou intenção de financiamento e indicou primeiro imóvel/sem entrada formada em histórico curado anterior. O inbound atual foi “Não”; por ser resposta curta, a sessão normal do WhatsApp deve reconstruir a pergunta imediatamente anterior antes de formular resposta comercial. Repescagem permanece encerrada por resposta inbound e não há resgate ativo registrado.
+Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS. Também informou vínculo de trabalho registrado, com dois vínculos recentes. O inbound mais recente foi “Registrado”; por ser resposta curta, a sessão normal do WhatsApp deve reconstruir a pergunta imediatamente anterior antes de formular resposta comercial. Repescagem permanece encerrada por resposta inbound e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11274
 - Broker ID: 35
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
-- Telefone/WhatsApp: WhatsApp validado no envio e no inbound
+- Telefone/WhatsApp: WhatsApp validado no envio e nos inbounds
 - Empreendimento vinculado no CRM: Place+Arbi (Shopping Park)
-- Última interação relevante: 2026-05-08 — cliente respondeu “Não” no WhatsApp
+- Última interação relevante: 2026-05-08 — cliente respondeu “Registrado” no WhatsApp
 
 ## Contexto comercial
-Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região; ela respondeu “Sim”, depois informou “Morar” e pediu para saber como fica de 2 e 3 quartos. O CRM do Place+Arbi consultado nesta rotina mostra opções cadastradas de 2 quartos; eventual opção de 3 quartos deve ser buscada com segurança antes de responder comercialmente. Histórico curado anterior indica intenção de financiamento, primeiro imóvel e ausência de entrada formada; não prometer aprovação nem encaixe.
+Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região; ela respondeu “Sim”, depois informou “Morar” e pediu para saber como fica de 2 e 3 quartos. O CRM do Place+Arbi consultado em rotina anterior indicou opções cadastradas de 2 quartos; eventual opção de 3 quartos deve ser buscada com segurança antes de responder comercialmente. Histórico curado indica intenção de financiamento, primeiro imóvel, ausência de entrada formada, ausência de FGTS e renda/vínculo registrado em dois trabalhos recentes; não prometer aprovação nem encaixe.
 
 ## Diagnóstico
 ### Necessidade
@@ -48,10 +51,10 @@ Busca imóvel para morar. Interesse declarado em comparar perfil de 2 e 3 quarto
 Ainda não diagnosticado com segurança. A cliente engajou rapidamente no primeiro contato, mas não informou urgência ou prazo de compra.
 
 ### Decisão
-Ainda não diagnosticada. Não há informação segura sobre outras pessoas envolvidas na decisão.
+Ainda não diagnosticada. Não há informação segura sobre outras pessoas envolvidas na decisão ou soma de renda.
 
 ### Viabilidade
-Histórico curado indica intenção de financiamento, primeiro imóvel e sem entrada formada. A resposta atual “Não” é ambígua sem o trecho anterior da conversa; não inferir qual dado de viabilidade foi negado sem reconstruir o contexto imediato do WhatsApp. Manter abordagem consultiva e sem promessa de crédito/aprovação.
+Cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS e trabalho registrado em dois vínculos recentes. O inbound “Registrado” reforça contexto de vínculo formal, mas deve ser interpretado à luz da pergunta imediatamente anterior da sessão WhatsApp. Manter abordagem consultiva e sem promessa de crédito/aprovação.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -78,26 +81,28 @@ Cliente informou que ainda não tem valor separado para entrada e que será seu 
 ### 2026-05-08 — Resposta negativa curta
 Cliente respondeu “Não” no WhatsApp. Interpretação operacional: resposta inbound real registrada no CRM; significado comercial depende da pergunta imediatamente anterior da sessão WhatsApp. Status já estava em `Em Atendimento` e foi preservado. Repescagem já estava encerrada (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
-## Objeções e travas
-- Resposta curta “Não” sem contexto imediato persistido nesta rotina. Não tratar automaticamente como encerramento, desinteresse geral ou objeção definitiva; a sessão normal deve reler o histórico imediato do WhatsApp antes de responder.
-- Viabilidade ainda requer cuidado: cliente sinalizou financiamento/primeiro imóvel/sem entrada formada. Usar linguagem de possibilidade e validação, sem prometer crédito ou aprovação.
-
-## Próximo passo
-Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para entender a que pergunta o “Não” respondeu. Se foi negativa a uma condição de viabilidade, validar sem desanimar e fazer uma pergunta útil por vez; se foi negativa a uma opção/critério, usar como filtro. Buscar opção segura no CRM antes de citar 3 quartos, valores ou disponibilidade.
-
-## Observações operacionais
-- Evento de origem do primeiro contato: evt_3442 / 3442_1778226385445.
-- Nota CRM do inbound atual: 17253.
-- Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Resgate inexistente/sem ciclo ativo no momento do inbound “Não”.
-- Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
-
-
 ### 2026-05-08 — Vínculo de trabalho
-Cliente informou que trabalha registrada. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada separada, vínculo CLT/registrado. Próximo passo: validar se possui FGTS disponível para compor entrada/viabilidade, sem prometer aprovação ou condições.
+Cliente informou que trabalha registrada. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada separada, vínculo formal/registrado. Próximo passo: validar se possui FGTS disponível para compor entrada/viabilidade, sem prometer aprovação ou condições.
 
 ### 2026-05-08 — FGTS
 Cliente informou que não tem FGTS para usar na compra. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada separada e sem FGTS, trabalha registrada. Próximo passo: entender se comprará sozinha ou somando renda com outra pessoa antes de avançar para faixa de renda/viabilidade.
 
 ### 2026-05-08 — Trabalho em dois lugares / pouco tempo de registro
 Cliente informou que trabalha em dois lugares: 2 meses registrada em uma empresa e 3 meses em outra. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada/FGTS, renda registrada em dois vínculos recentes. Próximo passo: pedir faixa de renda somada para avaliar viabilidade inicial com cuidado, sem prometer aprovação.
+
+### 2026-05-08 — Resposta curta “Registrado”
+Cliente respondeu “Registrado” no WhatsApp. Interpretação operacional: inbound real registrado no CRM; conteúdo parece reforçar vínculo de trabalho registrado, mas a resposta é curta e depende da pergunta imediatamente anterior da sessão WhatsApp. Status já estava em `Em Atendimento` e foi preservado. Repescagem já estava encerrada (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+## Objeções e travas
+- Viabilidade requer cuidado: cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS e vínculos registrados recentes. Usar linguagem de possibilidade e validação, sem prometer crédito ou aprovação.
+- Respostas curtas recentes (“Não” e “Registrado”) exigem reconstrução do histórico imediato do WhatsApp antes de qualquer resposta comercial; não inferir sozinho encerramento, objeção definitiva ou dado financeiro final.
+
+## Próximo passo
+Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para entender a que pergunta “Registrado” respondeu. Se o contexto for vínculo formal/renda, avançar com uma pergunta útil por vez sobre renda somada ou possibilidade de soma de renda. Se houver sinal de viabilidade positiva ou interesse na opção, conduzir para simulação/visita presencial na Fama com cuidado e sem promessa de aprovação. Buscar opção segura no CRM antes de citar 3 quartos, valores ou disponibilidade.
+
+## Observações operacionais
+- Evento de origem do primeiro contato: evt_3442 / 3442_1778226385445.
+- Notas CRM relevantes desta rotina e anteriores: 17246, 17247, 17248, 17253, 17256.
+- Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
+- Resgate inexistente/sem ciclo ativo no momento do inbound “Registrado”.
+- Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
