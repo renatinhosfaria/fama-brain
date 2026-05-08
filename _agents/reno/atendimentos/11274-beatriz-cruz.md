@@ -98,3 +98,6 @@ Cliente informou que trabalha registrada. Diagnóstico atualizado: primeiro imó
 
 ### 2026-05-08 — FGTS
 Cliente informou que não tem FGTS para usar na compra. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada separada e sem FGTS, trabalha registrada. Próximo passo: entender se comprará sozinha ou somando renda com outra pessoa antes de avançar para faixa de renda/viabilidade.
+
+### 2026-05-08 — Trabalho em dois lugares / pouco tempo de registro
+Cliente informou que trabalha em dois lugares: 2 meses registrada em uma empresa e 3 meses em outra. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada/FGTS, renda registrada em dois vínculos recentes. Próximo passo: pedir faixa de renda somada para avaliar viabilidade inicial com cuidado, sem prometer aprovação.
