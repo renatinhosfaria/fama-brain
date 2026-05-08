@@ -17,11 +17,12 @@ tags:
   - primeiro-contato
   - primeira-resposta
   - em-atendimento
+  - finalidade-moradia
 ---
 # Atendimento — Beatriz Cruz
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno no WhatsApp com “Sim”, confirmando engajamento inicial após pergunta sobre interesse na região do Place+Arbi/Shopping Park. CRM foi corrigido de `Não Respondeu` para `Em Atendimento` e a repescagem foi interrompida por resposta inbound.
+Cliente respondeu ao primeiro contato do Reno no WhatsApp, confirmou que a região do Place+Arbi/Shopping Park faz sentido e informou que procura imóvel para morar. O atendimento está em `Em Atendimento`; a repescagem foi interrompida por resposta inbound e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11274
@@ -29,23 +30,23 @@ Cliente respondeu ao primeiro contato do Reno no WhatsApp com “Sim”, confirm
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no envio e no inbound
-- Última interação relevante: 2026-05-08 — primeira resposta inbound registrada; status alterado para Em Atendimento; repescagem pausada
+- Última interação relevante: 2026-05-08 — cliente respondeu “Morar”; finalidade de compra registrada como moradia
 
 ## Contexto comercial
-Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no bairro Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região. A resposta “Sim” indica que a região/empreendimento podem fazer sentido como ponto inicial da qualificação.
+Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região. A cliente respondeu “Sim” e, na sequência, “Morar”, indicando que a região/empreendimento podem fazer sentido para moradia.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. Resposta inicial confirma abertura para conversa sobre o imóvel/região.
+Busca imóvel para morar. Ainda falta entender composição familiar, quantidade de quartos desejada, planta/tamanho e prioridades do imóvel.
 
 ### Momento
-Ainda não diagnosticado.
+Ainda não diagnosticado. A cliente engajou rapidamente no primeiro contato, mas não informou urgência ou prazo de compra.
 
 ### Decisão
-Ainda não diagnosticada.
+Ainda não diagnosticada. Não há informação sobre outras pessoas envolvidas na decisão.
 
 ### Viabilidade
-Ainda não diagnosticada. Não houve conversa sobre financiamento, entrada, renda ou documentação.
+Ainda não diagnosticada. Não houve conversa sobre financiamento, entrada, renda, FGTS, documentação ou faixa de valor. Não prometer crédito/aprovação.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -57,17 +58,17 @@ Cliente respondeu “Sim” à pergunta inicial sobre estar procurando imóvel n
 ### 2026-05-08 — Persistência operacional corrigida
 Rotina silenciosa do Reno validou o cliente no CRM (`broker_id=35`), alterou o status de `Não Respondeu` para `Em Atendimento`, interrompeu a repescagem (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e registrou nota objetiva no FamaChat. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-08 — Finalidade de compra informada
+Cliente respondeu “Morar”. Interpretação comercial: finalidade inicial de compra = moradia. CRM recebeu nota objetiva preservando o status `Em Atendimento`; repescagem permanecia encerrada e não havia ciclo de resgate ativo.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Responder comercialmente no WhatsApp pela sessão normal, sem uso desta rotina silenciosa: conduzir qualificação leve com uma pergunta por vez, começando por finalidade da compra, por exemplo se está procurando para morar, investir ou conhecendo opções.
+Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Conduzir qualificação leve com uma pergunta por vez: validar a busca para moradia e entender perfil do imóvel, começando por quantidade de quartos, composição familiar ou prioridade da planta. Depois, se houver fit, apresentar o Place+Arbi de forma curta e visual antes de avançar para visita presencial.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: evt_3442 / 3442_1778226385445.
-- Repescagem ficou encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- A rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
-
-
-### 2026-05-08 — Resposta sobre finalidade
-Cliente informou que busca imóvel para morar. Diagnóstico atualizado: finalidade de compra = moradia. Próximo passo na conversa: entender composição/necessidade do imóvel, começando por quantidade de quartos ou perfil familiar.
+- Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
+- Resgate não estava ativo no momento da resposta “Morar”.
+- Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
