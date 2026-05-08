@@ -1,12 +1,14 @@
 ---
-broker_id: 35
-client_id: 11267
-created: '2026-05-07'
-entity_name: "\U0001D597\U0001D594\U0001D589\U0001D597\U0001D58E\U0001D58C\U0001D59A\U0001D58A\U0001D598_\U0001D58C\U0001D58A\U0001D58C\U0001D58A\U0001D59C❦"
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: "\U0001D597\U0001D594\U0001D589\U0001D597\U0001D58E\U0001D58C\U0001D59A\U0001D58A\U0001D598_\U0001D58C\U0001D58A\U0001D58C\U0001D58A\U0001D59C❦"
+client_id: 11267
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,13 +21,12 @@ tags:
   - nome-a-confirmar
   - union-vista
   - moradia
-type: entity-profile
-updated: '2026-05-08'
+  - pedido-recomendacao
 ---
 # Atendimento — Nome a confirmar
 
 ## Resumo atual
-Cliente respondeu pelo WhatsApp em 2026-05-08 após o primeiro contato. A rotina silenciosa do Reno validou o cliente no CRM (`broker_id=35`), alterou o status de `Não Respondeu` para `Em Atendimento` e interrompeu a Repescagem com `stopped_reason=client_replied`. Em nota posterior já registrada no CRM, o cliente indicou finalidade de busca para moradia. O nome/preferência de tratamento ainda não foi confirmado. Nenhuma mensagem cliente-facing foi enviada por estas rotinas silenciosas.
+Cliente respondeu pelo WhatsApp em 2026-05-08 após o primeiro contato. A rotina silenciosa do Reno validou o cliente no CRM (`broker_id=35`), alterou o status de `Não Respondeu` para `Em Atendimento` no primeiro inbound e interrompeu a Repescagem com `stopped_reason=client_replied`. Em interações seguintes, indicou que procura imóvel para morar e pediu recomendação: “Qual vc me recomenda”. O nome/preferência de tratamento ainda não foi confirmado. Nenhuma mensagem cliente-facing foi enviada por estas rotinas silenciosas.
 
 ## Dados operacionais
 - Cliente ID: 11267
@@ -33,23 +34,25 @@ Cliente respondeu pelo WhatsApp em 2026-05-08 após o primeiro contato. A rotina
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp cadastrado e validado no envio inicial
-- Última interação relevante: 2026-05-08 — respostas inbound; status movido para Em Atendimento, Repescagem interrompida e finalidade inicial indicada como moradia
+- Última interação relevante: 2026-05-08 — cliente pediu recomendação de opção após indicar busca para moradia; status preservado em Em Atendimento e Repescagem já interrompida
 
 ## Contexto comercial
-Cliente demonstrou interesse no Union Vista, no bairro Grand Ville, em Uberlândia. O cadastro possui nome ruidoso/inseguro; por isso, antes de aprofundar a qualificação, a próxima resposta comercial deve confirmar como o cliente prefere ser chamado. A finalidade inicial já registrada em nota CRM é moradia.
+Cliente demonstrou interesse no Union Vista, no bairro Grand Ville, em Uberlândia. O empreendimento de interesse ativo tem apartamentos de 2 quartos, 1 suíte, sacada/varanda e 1 vaga, com opções a partir de aproximadamente R$ 292 mil conforme CRM, além de lazer e serviços como piscina, academia, salão de festas, beach tennis, espaço gourmet, churrasqueira, playground, quadra, portaria 24h e elevadores.
+
+O cadastro possui nome ruidoso/inseguro; por isso, antes de aprofundar a qualificação ou tratar o nome cadastrado como certo, a próxima resposta comercial deve confirmar como o cliente prefere ser chamado. A finalidade inicial já registrada no CRM é moradia, e o pedido atual é por recomendação.
 
 ## Diagnóstico
 ### Necessidade
-Busca aparente para moradia, conforme resposta inbound posterior registrada no CRM.
+Busca aparente para moradia, conforme resposta inbound registrada no CRM. O cliente pediu orientação/recomendação de opção, sugerindo abertura para condução consultiva.
 
 ### Momento
-Lead novo originado de Facebook Ads. Saiu da condição de silêncio inicial e entrou em atendimento por resposta inbound.
+Lead novo originado de Facebook Ads. Saiu da condição de silêncio inicial e entrou em atendimento por resposta inbound. Ainda está no começo da qualificação.
 
 ### Decisão
-Ainda não identificada.
+Ainda não identificada. Não há registro de influência familiar, co-decisor ou prazo de decisão.
 
 ### Viabilidade
-Ainda não identificada. Não houve conversa sobre renda, entrada, financiamento ou crédito.
+Ainda não identificada. Não houve conversa sobre renda, entrada, financiamento, FGTS ou crédito. Não prometer aprovação nem condição exata.
 
 ## Histórico curado de interações
 ### 2026-05-07 — Primeiro contato enviado
@@ -65,15 +68,21 @@ Cliente respondeu pelo WhatsApp com cumprimento inicial. A rotina silenciosa val
 ### 2026-05-08 — Finalidade inicial indicada
 Nota posterior no CRM registra nova resposta inbound com indicação de finalidade: moradia. Status permaneceu `Em Atendimento`; Repescagem já estava interrompida. Nome/preferência de tratamento continua pendente.
 
+### 2026-05-08 — Pedido de recomendação
+Cliente enviou: “Qual vc me recomenda”. A rotina silenciosa registrou nota no CRM interpretando como pedido de recomendação/orientação de opção após indicar busca para moradia. Status preservado em `Em Atendimento`; Repescagem continuou interrompida e não há Resgate ativo registrado.
+
 ## Objeções e travas
-- Nome cadastrado ruidoso/inseguro: confirmar como o cliente prefere ser chamado antes de aprofundar a qualificação.
+- Nome cadastrado ruidoso/inseguro: confirmar como o cliente prefere ser chamado antes de aprofundar a qualificação ou tratar o nome como certo.
 - Ainda não há diagnóstico de decisão ou viabilidade.
+- Pedido de recomendação deve ser conduzido com base no interesse ativo, sem virar catálogo e sem inventar condição.
 
 ## Próximo passo
-Na resposta comercial normal pelo WhatsApp, reconhecer de forma curta que o cliente procura para morar e confirmar como ele prefere ser chamado antes de avançar: depois de um nome claro, atualizar `clientes.full_name` no CRM e retomar o contexto do Union Vista/Grand Ville.
+Na resposta comercial normal pelo WhatsApp, confirmar de forma curta como o cliente prefere ser chamado e, em seguida, conduzir a recomendação com base no interesse ativo no Union Vista/Grand Ville e na finalidade de moradia. Depois que houver nome claro, atualizar `clientes.full_name` no CRM. A recomendação deve ser consultiva e curta, evitando dados financeiros prematuros; se houver sinal positivo, avançar para convite de visita presencial na Fama.
 
 ## Observações operacionais
 - Evento inicial: evt_3435 / idempotency_key 3435_1778197814400.
 - Inbound silencioso: sessão 20260508_112118_d489495a.
+- Nota CRM do pedido de recomendação: 17283.
 - Repescagem: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
+- Não há Resgate ativo registrado no momento desta atualização.
 - Não houve promessa de crédito, valor, condição ou visita.
