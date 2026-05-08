@@ -69,3 +69,6 @@ Cliente confirmou preferência de visita presencial no sábado às 09:00. Data o
 
 ## Atualização — 2026-05-08
 Cliente informou nome completo: Danielly Cristina Justen Souza. Perguntou quem deve procurar ao chegar à Fama para a visita de sábado às 09:00. Necessário confirmar/registrar agendamento no CRM/FamaChat assim que possível.
+
+## Atualização — 2026-05-08
+Cliente agradeceu o atendimento após confirmar visita presencial para sábado às 09:00. Mensagem final deve reforçar horário, quem procurar e documentos básicos para análise de financiamento.
