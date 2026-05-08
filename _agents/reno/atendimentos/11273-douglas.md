@@ -1,20 +1,20 @@
 ---
-broker_id: 35
-client_id: 11273
-created: '2026-05-08'
-entity_name: Douglas
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Douglas
+client_id: 11273
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-08'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - union-vista
-type: entity-profile
-updated: '2026-05-08'
 ---
 # Atendimento — Douglas
 
@@ -28,7 +28,7 @@ Cliente está em atendimento pelo Reno após responder ao primeiro contato do Wh
 - Origem: Facebook Ads
 - Telefone/WhatsApp: registrado no CRM
 - Empreendimento de interesse: Union Vista (id_empreendimento=22), Grand Ville, Uberlândia
-- Última interação relevante: 2026-05-08 00:28 — cliente perguntou sobre entrada para parcela mais baixa; Reno respondeu com orientação de entrada/faixa mensal; Resgate reajustado em step=0 após o outbound mais recente.
+- Última interação relevante: 2026-05-08 00:29 — rotina silenciosa verificou que a persistência principal do inbound já estava aplicada; status preservado e Resgate atual mantido por ser ciclo novo pós-outbound normal.
 
 ## Contexto comercial
 Lead entrou por Facebook Ads com interesse no Union Vista. O primeiro contato do Reno contextualizou o empreendimento e perguntou se o cliente procurava imóvel na região. O cliente confirmou interesse inicial, informou que está olhando para investimento, detalhou foco em renda de aluguel e passou a avaliar viabilidade financeira do investimento. O atendimento está em fase de entender capacidade de entrada/parcela sem prometer aprovação, parcela exata ou encaixe.
@@ -65,6 +65,9 @@ Cliente perguntou qual seria uma entrada boa para deixar a parcela relativamente
 ### 2026-05-08 — Persistência silenciosa e follow-up técnico
 Rotina operacional silenciosa registrou a resposta inbound, preservou o status Em Atendimento, confirmou repescagem encerrada e reajustou Resgate em step=0 após o outbound normal mais recente. Nenhum WhatsApp foi enviado por esta rotina silenciosa.
 
+### 2026-05-08 — Verificação silenciosa tardia/idempotente
+Nova execução silenciosa validou que o cliente continuava no escopo Reno e que o status já estava em Em Atendimento. A repescagem permaneceu interrompida por `client_replied`. O Resgate ativo atual foi mantido porque corresponde ao novo ciclo `step=0` armado após o outbound normal do Reno sobre entrada/parcela, não a um ciclo anterior a ser interrompido.
+
 ## Objeções e travas
 - Trava de viabilidade: cliente quer entender entrada suficiente para parcela mais baixa. Precisa de condução consultiva sem prometer aprovação ou parcela exata.
 
@@ -78,3 +81,6 @@ Aguardar o cliente informar a faixa mensal confortável. Depois, direcionar a co
 - Repescagem de silêncio inicial está fechada por resposta inbound.
 - Resgate está em step=0 após o outbound normal mais recente, aguardando silêncio antes de qualquer envio automático.
 - Documento consolidado no caminho oficial do Reno por client_id.
+
+### 2026-05-08 — Pedido de fotos
+Cliente perguntou se havia fotos da opção de R$292 mil. Dados do CRM: unidade de R$292.400, 56,9m², 2 quartos, 1 suíte, 2 banheiros, 1 vaga coberta, sacada/varanda, empreendimento Union Vista. Reno enviou fotos gerais do empreendimento/áreas (Portaria, Fachada, Piscina, Fitness), esclarecendo que não são fotos internas específicas da unidade, e abriu possibilidade de enviar vídeo do decorado.
