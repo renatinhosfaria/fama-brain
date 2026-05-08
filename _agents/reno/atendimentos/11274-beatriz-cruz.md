@@ -76,3 +76,7 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate não estava ativo no momento da pergunta sobre 2 e 3 quartos.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Financiamento
+Cliente confirmou que pretende financiar. Diagnóstico atualizado: finalidade = moradia; interesse = comparar opções de 2 e 3 quartos; forma provável = financiamento. Próximo passo: entender entrada disponível para viabilidade inicial e depois conduzir para simulação/visita presencial se fizer sentido.
