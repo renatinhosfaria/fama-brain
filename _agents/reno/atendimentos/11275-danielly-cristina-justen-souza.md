@@ -21,7 +21,7 @@ tags:
 # Atendimento — Danielly Cristina Justen Souza
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno via WhatsApp em 2026-05-08. Primeiro respondeu com sinal curto positivo (`Sim`), o que moveu o atendimento no CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a repescagem. Em seguida, enviou `Como assim?`, indicando necessidade de explicação do ponto anterior da conversa. A próxima resposta comercial não deve tratar isso como falta de contexto; deve reconstruir o histórico imediato e explicar de forma simples a última pergunta/mensagem do Reno.
+Cliente respondeu ao primeiro contato do Reno via WhatsApp em 2026-05-08. Primeiro respondeu com sinal curto positivo (`Sim`), o que moveu o atendimento no CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a repescagem. Em seguida, enviou `Como assim?`, indicando necessidade de explicação do ponto anterior da conversa. Depois enviou `Continuar o atendimento`, sinalizando continuidade/retomada da conversa. A próxima resposta comercial deve reconstruir o histórico imediato, explicar de forma simples o último ponto se ainda necessário e continuar a qualificação leve sobre o interesse no Place+Arbi/Shopping Park, sem perder contexto.
 
 ## Dados operacionais
 - Cliente ID: 11275
@@ -30,12 +30,12 @@ Cliente respondeu ao primeiro contato do Reno via WhatsApp em 2026-05-08. Primei
 - Origem: Facebook Ads
 - WhatsApp: validado pelo canal cadastrado no CRM
 - Empreendimento de interesse: Place+Arbi, Shopping Park, Uberlândia
-- Última interação relevante: resposta inbound da cliente (`Como assim?`) após início da qualificação/conversa sobre o Place+Arbi/Shopping Park
+- Última interação relevante: resposta inbound da cliente (`Continuar o atendimento`) após início da qualificação/conversa sobre o Place+Arbi/Shopping Park
 - Repescagem: interrompida em step 0, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento desta persistência
 
 ## Contexto comercial
-A cliente entrou como lead de Facebook Ads com interesse no Place+Arbi, empreendimento no bairro Shopping Park, em Uberlândia. O primeiro contato do Reno contextualizou esse interesse e perguntou se a região faz sentido para a busca da cliente. A resposta curta `Sim` foi tratada como confirmação inicial de que a região/empreendimento faz sentido. A mensagem seguinte `Como assim?` deve ser interpretada como pedido de esclarecimento da última fala do Reno, mantendo o contexto do empreendimento ativo.
+A cliente entrou como lead de Facebook Ads com interesse no Place+Arbi, empreendimento no bairro Shopping Park, em Uberlândia. O primeiro contato do Reno contextualizou esse interesse e perguntou se a região faz sentido para a busca da cliente. A resposta curta `Sim` foi tratada como confirmação inicial de que a região/empreendimento faz sentido. A mensagem seguinte `Como assim?` deve ser interpretada como pedido de esclarecimento da última fala do Reno, mantendo o contexto do empreendimento ativo. O inbound posterior `Continuar o atendimento` indica que a cliente/fluxo quer seguir a conversa; a resposta comercial deve continuar do ponto certo, não reiniciar o atendimento nem perguntar genericamente o que ela precisa.
 
 ## Diagnóstico
 ### Necessidade
@@ -64,12 +64,16 @@ Cliente respondeu pelo WhatsApp com `Sim`. A rotina silenciosa do Reno validou o
 ### 2026-05-08 — Novo inbound pedindo esclarecimento
 Cliente enviou `Como assim?`. A rotina silenciosa validou que o cliente continua elegível para Reno (`broker_id=35`) e que o status já estava em `Em Atendimento`, portanto não houve mudança de status. A repescagem já estava interrompida com `client_replied` e não havia Resgate ativo. Foi registrada nota operacional no CRM. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-08 — Inbound de continuidade do atendimento
+Cliente enviou `Continuar o atendimento`. A rotina silenciosa validou o cliente no CRM (`broker_id=35`) e preservou o status em `Em Atendimento`, sem regressão ou avanço artificial. A repescagem já estava encerrada por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia Resgate ativo. Foi registrada nota operacional no CRM. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada até o momento.
 - Atenção conversacional: `Como assim?` deve ser tratado como pedido de explicação da última mensagem do Reno, não como perda de contexto ou necessidade de perguntar genericamente o que a cliente quer.
+- `Continuar o atendimento` deve ser tratado como sinal de continuidade; a resposta comercial deve retomar o fio da conversa sobre o Place+Arbi/Shopping Park.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp reconstruindo o histórico imediato. Explicar de forma simples o ponto anterior e continuar a qualificação leve, uma pergunta por vez. Se a última pergunta do Reno foi sobre o objetivo da busca, a resposta deve esclarecer algo como: entender se ela procura para morar, investir ou apenas conhecer opções, para direcionar melhor o atendimento sobre o Place+Arbi.
+Responder comercialmente pelo WhatsApp reconstruindo o histórico imediato. Explicar de forma simples o ponto anterior se ainda fizer sentido e continuar a qualificação leve, uma pergunta por vez. Exemplo de intenção: confirmar se a cliente procura para morar, investir ou apenas conhecer opções, para direcionar melhor o atendimento sobre o Place+Arbi.
 
 ## Observações operacionais
 - Cliente elegível para Reno confirmado no CRM (`broker_id=35`).
