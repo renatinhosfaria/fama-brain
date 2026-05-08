@@ -24,11 +24,13 @@ tags:
   - pedido-recomendacao
   - granja-marileusa
   - preferencia-localizacao
+  - financiamento
+  - viabilidade
 ---
 # Atendimento — Nome a confirmar
 
 ## Resumo atual
-Cliente respondeu pelo WhatsApp em 2026-05-08 após o primeiro contato. A rotina silenciosa do Reno validou o cliente no CRM (`broker_id=35`), alterou o status de `Não Respondeu` para `Em Atendimento` no primeiro inbound e interrompeu a Repescagem com `stopped_reason=client_replied`. Nas interações seguintes, indicou que procura imóvel para morar, pediu recomendação e depois informou “Granja marileusa”, sinalizando preferência ou foco de localização para a condução atual. O nome/preferência de tratamento ainda não foi confirmado. Nenhuma mensagem cliente-facing foi enviada por estas rotinas silenciosas.
+Cliente respondeu pelo WhatsApp em 2026-05-08 após o primeiro contato. A rotina silenciosa do Reno validou o cliente no CRM (`broker_id=35`), alterou o status de `Não Respondeu` para `Em Atendimento` no primeiro inbound e interrompeu a Repescagem com `stopped_reason=client_replied`. Nas interações seguintes, indicou que procura imóvel para morar, pediu recomendação, informou “Granja marileusa” como preferência/foco de localização e perguntou se os imóveis são 100% financiados. O nome/preferência de tratamento ainda não foi confirmado. Nenhuma mensagem cliente-facing foi enviada por estas rotinas silenciosas.
 
 ## Dados operacionais
 - Cliente ID: 11267
@@ -36,12 +38,12 @@ Cliente respondeu pelo WhatsApp em 2026-05-08 após o primeiro contato. A rotina
 - Status CRM: Em Atendimento
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp cadastrado e validado no envio inicial
-- Última interação relevante: 2026-05-08 — cliente informou “Granja marileusa” após pedir recomendação de opção para moradia; status preservado em Em Atendimento e Repescagem já interrompida
+- Última interação relevante: 2026-05-08 — cliente perguntou “Bom os imóveis são 100% financiados?”; status preservado em Em Atendimento, Repescagem já interrompida e nenhum Resgate ativo identificado
 
 ## Contexto comercial
 Cliente demonstrou interesse inicial no Union Vista, no bairro Grand Ville, em Uberlândia. O empreendimento de interesse ativo tem apartamentos de 2 quartos, 1 suíte, sacada/varanda e 1 vaga, com opções a partir de aproximadamente R$ 292 mil conforme CRM, além de lazer e serviços como piscina, academia, salão de festas, beach tennis, espaço gourmet, churrasqueira, playground, quadra, portaria 24h e elevadores.
 
-A conversa evoluiu depois do primeiro inbound: cliente indicou finalidade de moradia, pediu recomendação e informou “Granja marileusa”. Para a próxima resposta comercial, tratar Granja Marileusa como sinal de preferência/possibilidade de região, sem assumir disponibilidade antes de consultar o CRM. Se a recomendação for feita, priorizar opções compatíveis com Granja Marileusa quando houver disponibilidade segura; se não houver opção adequada, explicar de forma consultiva e propor alternativa próxima.
+A conversa evoluiu depois do primeiro inbound: cliente indicou finalidade de moradia, pediu recomendação, informou “Granja marileusa” e agora trouxe dúvida de financiamento 100%. Para a próxima resposta comercial, tratar Granja Marileusa como sinal de preferência/possibilidade de região, sem assumir disponibilidade antes de consultar o CRM. A dúvida sobre financiamento deve ser respondida com segurança: não prometer aprovação nem financiamento integral; explicar que depende de análise, enquadramento, renda, unidade e composição de entrada/subsídio/FGTS quando aplicável.
 
 O cadastro possui nome ruidoso/inseguro; por isso, antes de aprofundar a qualificação ou tratar o nome cadastrado como certo, a próxima resposta comercial deve confirmar como o cliente prefere ser chamado.
 
@@ -50,13 +52,13 @@ O cadastro possui nome ruidoso/inseguro; por isso, antes de aprofundar a qualifi
 Busca aparente para moradia, conforme resposta inbound registrada no CRM. O cliente pediu orientação/recomendação de opção, sugerindo abertura para condução consultiva.
 
 ### Momento
-Lead novo originado de Facebook Ads. Saiu da condição de silêncio inicial e entrou em atendimento por resposta inbound. Ainda está no começo da qualificação, mas já trouxe preferência de localização.
+Lead novo originado de Facebook Ads. Saiu da condição de silêncio inicial e entrou em atendimento por resposta inbound. Ainda está no começo da qualificação, mas já trouxe preferência de localização e dúvida de viabilidade.
 
 ### Decisão
 Ainda não identificada. Não há registro de influência familiar, co-decisor ou prazo de decisão.
 
 ### Viabilidade
-Ainda não identificada. Não houve conversa sobre renda, entrada, financiamento, FGTS ou crédito. Não prometer aprovação nem condição exata.
+Cliente perguntou se os imóveis são 100% financiados, sinalizando preocupação com entrada/condição de compra. Tratar como dúvida de viabilidade inicial. Não prometer crédito, aprovação, financiamento integral ou condição exata. Resposta comercial deve usar linguagem segura: “depende da análise e do enquadramento”; “alguns casos conseguem financiar uma parte maior, mas normalmente existe composição de entrada/FGTS/subsídio/condição da construtora”.
 
 ## Histórico curado de interações
 ### 2026-05-07 — Primeiro contato enviado
@@ -78,20 +80,25 @@ Cliente enviou: “Qual vc me recomenda”. A rotina silenciosa registrou nota n
 ### 2026-05-08 — Preferência de localização: Granja Marileusa
 Cliente enviou: “Granja marileusa”. A rotina silenciosa registrou nota no CRM interpretando como preferência ou foco de localização para a recomendação. Status preservado em `Em Atendimento`; Repescagem já estava interrompida (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não há Resgate ativo registrado.
 
+### 2026-05-08 — Dúvida sobre financiamento 100%
+Cliente enviou: “Bom os imóveis são 100% financiados?”. A rotina silenciosa registrou nota no CRM interpretando como dúvida de viabilidade/financiamento. Status preservado em `Em Atendimento`; Repescagem já estava interrompida e não há Resgate ativo registrado. Próxima resposta comercial deve responder sem prometer financiamento integral ou aprovação.
+
 ## Objeções e travas
 - Nome cadastrado ruidoso/inseguro: confirmar como o cliente prefere ser chamado antes de aprofundar a qualificação ou tratar o nome como certo.
-- Ainda não há diagnóstico de decisão ou viabilidade.
 - Cliente indicou “Granja marileusa”; consultar CRM antes de recomendar imóveis nessa região e não inventar disponibilidade.
+- Dúvida de financiamento 100%: responder com cuidado, sem prometer aprovação, financiamento integral, condição exata ou encaixe garantido.
+- Ainda não há diagnóstico de decisão, renda, entrada, FGTS ou prazo de compra.
 - Pedido de recomendação deve ser conduzido com base no interesse ativo e na preferência de localização atual, sem virar catálogo e sem inventar condição.
 
 ## Próximo passo
-Na resposta comercial normal pelo WhatsApp, confirmar de forma curta como o cliente prefere ser chamado e reconhecer a preferência por Granja Marileusa. Depois que houver nome claro, atualizar `clientes.full_name` no CRM. Para recomendar, consultar o CRM por opções compatíveis com Granja Marileusa e apresentar uma opção principal, de forma consultiva e curta; se houver sinal positivo, avançar para convite de visita presencial na Fama.
+Na resposta comercial normal pelo WhatsApp, confirmar de forma curta como o cliente prefere ser chamado e responder a dúvida de financiamento com segurança. Depois que houver nome claro, atualizar `clientes.full_name` no CRM. Para recomendação de imóvel, consultar o CRM por opções compatíveis com Granja Marileusa e apresentar uma opção principal, de forma consultiva e curta; se houver sinal positivo, avançar para convite de visita presencial na Fama.
 
 ## Observações operacionais
 - Evento inicial: evt_3435 / idempotency_key 3435_1778197814400.
 - Inbound silencioso: sessão 20260508_112118_d489495a.
 - Nota CRM do pedido de recomendação: 17283.
 - Nota CRM da preferência “Granja marileusa”: 17284.
+- Nota CRM da dúvida sobre financiamento 100%: 17285.
 - Repescagem: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Não há Resgate ativo registrado no momento desta atualização.
-- Não houve promessa de crédito, valor, condição ou visita.
+- Resgate: não há branch ativa registrada no momento desta atualização.
+- Não houve promessa de crédito, valor, condição, financiamento integral ou visita.
