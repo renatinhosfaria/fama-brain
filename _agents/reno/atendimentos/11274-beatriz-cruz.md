@@ -29,11 +29,16 @@ tags:
   - composicao-renda
   - mae-autonoma
   - beneficio-social
+  - cpf-restricao
 ---
 # Atendimento — Beatriz Cruz
 
 ## Resumo atual
-Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS. Também informou vínculo de trabalho registrado em dois lugares, com registros recentes, renda/limite aproximado de R$ 3.500 e possível composição/participação da mãe, que é autônoma. Nos últimos inbounds, complementou que a mãe recebe Bolsa Família, que o valor/movimentação comentado inclui esse benefício, e depois estimou o valor em “uns 3 e pouco”. Tratar como dado sensível de viabilidade, separar renda comprovável/movimentação de trabalho do benefício social, e não prometer aprovação ou encaixe.
+Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS.
+
+Na viabilidade, informou vínculo registrado em dois lugares recentes, renda/limite aproximado de R$ 3.500 e possível participação da mãe, que é autônoma. Também informou que a mãe recebe Bolsa Família e que o valor/movimentação mencionado inclui esse benefício. Em interações posteriores, surgiu contexto de CPF/restrição: a mãe parece estar em condição mais favorável, enquanto a própria cliente indicou restrição/limitação pessoal. Último inbound registrado: “Minha mãe sim eu não”, reforçando que a informação em discussão se aplica à mãe, não à cliente.
+
+Conduta recomendada: tratar como dado sensível de viabilidade, separar renda comprovável/movimentação de trabalho autônomo de benefício social, confirmar cuidadosamente quem seria proponente/composição de renda e não prometer aprovação, parcela ou encaixe.
 
 ## Dados operacionais
 - Cliente ID: 11274
@@ -42,12 +47,12 @@ Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no envio e nos inbounds
 - Empreendimento vinculado no CRM: Place+Arbi (Shopping Park)
-- Última interação relevante: 2026-05-08 — cliente estimou valor/movimentação em “uns 3 e pouco” no contexto de viabilidade com mãe autônoma/Bolsa Família
+- Última interação relevante: 2026-05-08 — cliente respondeu “Minha mãe sim eu não” no contexto de viabilidade/CPF/composição familiar; CRM note 17277
 
 ## Contexto comercial
 Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região; ela respondeu “Sim”, depois informou “Morar” e pediu para saber como fica de 2 e 3 quartos. O CRM do Place+Arbi consultado em rotina anterior indicou opções cadastradas de 2 quartos; eventual opção de 3 quartos deve ser buscada com segurança antes de responder comercialmente.
 
-Histórico curado indica intenção de financiamento, primeiro imóvel, ausência de entrada formada, ausência de FGTS, vínculo registrado em dois trabalhos recentes, renda/limite aproximado informado de R$ 3.500 e possível participação/composição com a mãe, que é autônoma. A mãe teria movimentação/renda aproximada a esclarecer, recebe Bolsa Família e a cliente indicou que o valor mencionado inclui o benefício; em novo inbound, estimou o valor como “uns 3 e pouco”. Não usar benefício social como base principal de aprovação; validar renda comprovável/movimentação de trabalho autônomo com cuidado.
+Histórico curado indica intenção de financiamento, primeiro imóvel, ausência de entrada formada, ausência de FGTS, vínculo registrado em dois trabalhos recentes, renda/limite aproximado informado de R$ 3.500 e possível participação/composição com a mãe, que é autônoma. A mãe teria movimentação/renda aproximada a esclarecer, recebe Bolsa Família e a cliente indicou que o valor mencionado inclui o benefício. Também há sinal de restrição/limitação no CPF da própria cliente e possível condição melhor no CPF da mãe. Não usar benefício social como garantia de aprovação; validar renda comprovável, documentação, restrições e papel de cada pessoa na composição.
 
 ## Diagnóstico
 ### Necessidade
@@ -57,10 +62,10 @@ Busca imóvel para morar. Interesse declarado em comparar perfil de 2 e 3 quarto
 Ainda não diagnosticado com segurança. A cliente engajou rapidamente no primeiro contato, pediu opções/condições e chegou a pedir o endereço da Fama, mas também informou que hoje não consegue ir presencialmente.
 
 ### Decisão
-Cliente mencionou a mãe no contexto do atendimento; pode haver influência ou participação familiar na decisão/viabilidade. Ainda é necessário reconstruir o histórico imediato do WhatsApp para entender se a mãe entraria como compradora, composição de renda, apoio financeiro ou decisora.
+Cliente mencionou a mãe repetidas vezes no contexto de viabilidade. A mãe pode ser compradora, co-componente de renda, apoio financeiro ou decisora; confirmar na conversa normal antes de orientar caminho de financiamento.
 
 ### Viabilidade
-Cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, trabalho registrado em dois vínculos recentes, renda/limite aproximado de R$ 3.500 e possível participação da mãe autônoma. Os inbounds mais recentes acrescentaram recebimento de Bolsa Família, indicaram que o valor/movimentação informado inclui esse benefício e depois estimaram o valor em “uns 3 e pouco”. Condução recomendada: validar com cuidado quanto a mãe movimenta/recebe apenas das faxinas ou trabalho autônomo, sem contar benefício social como garantia; explicar sem tecnicismo que a análise precisa considerar renda comprovável/documentação; evitar qualquer promessa de crédito.
+Cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, trabalho registrado em dois vínculos recentes, renda/limite aproximado de R$ 3.500 e possível participação da mãe autônoma. A mãe recebe Bolsa Família e a cliente informou que parte do valor/movimentação citado inclui esse benefício. Também há contexto de CPF/restrição: mãe possivelmente sem restrição e cliente com restrição/limitação. Condução recomendada: validar com cuidado quanto a mãe movimenta/recebe apenas do trabalho autônomo, separar benefício social, checar papel da cliente no contrato e orientar sem promessa de crédito.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -105,24 +110,20 @@ Cliente respondeu “Com o bolsa”. Interpretação comercial: a cliente comple
 ### 2026-05-08 — Valor aproximado reforçado
 Cliente respondeu “Uns 3 e pouco”. Interpretação comercial: a cliente estimou valor/movimentação em torno de R$ 3 mil e pouco no contexto da conversa sobre viabilidade, mãe autônoma e Bolsa Família. Tratar como estimativa, não como renda comprovada; antes de orientar financiamento, separar o que é renda/movimentação do trabalho autônomo do que é benefício social. Status CRM já estava em `Em Atendimento` e foi preservado; repescagem seguia encerrada e não havia resgate ativo. Nota CRM: 17275. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-08 — Restrição/CPF e papel da mãe
+Contexto curado anterior indicava que a mãe está sem restrição/mais favorável, mas a própria cliente não. No inbound atual, cliente respondeu “Minha mãe sim eu não”, reforçando que a condição em discussão se aplica à mãe, não a ela. Interpretação: mãe pode ser a pessoa com melhor viabilidade para compor/propor, enquanto a cliente pode ter restrição/limitação. Status CRM já estava em `Em Atendimento` e foi preservado; repescagem encerrada e resgate inexistente/sem ciclo ativo. Nota CRM do inbound atual: 17277. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
-- Viabilidade requer cuidado: cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, vínculos registrados recentes, renda/limite aproximado de R$ 3.500, possível composição/participação da mãe autônoma, benefício social no contexto familiar e estimativa recente de “uns 3 e pouco”. Usar linguagem de possibilidade e validação, sem prometer crédito ou aprovação.
+- Viabilidade requer cuidado: cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, vínculos registrados recentes, renda/limite aproximado de R$ 3.500, possível composição/participação da mãe autônoma, benefício social no contexto familiar e possível restrição/limitação no CPF da própria cliente. Usar linguagem de possibilidade e validação, sem prometer crédito ou aprovação.
 - Cliente informou que hoje não consegue ir presencialmente; tratar como objeção de agenda, não como recusa definitiva à visita.
 - Respostas curtas recentes exigem reconstrução do histórico imediato do WhatsApp antes de qualquer resposta comercial; não inferir sozinho encerramento, objeção definitiva ou condição final.
 
 ## Próximo passo
-Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para confirmar a pergunta anterior e o papel da mãe. Conduta sugerida: acolher a informação, explicar de forma simples que é melhor separar o que é renda/movimentação das faxinas do benefício social, perguntar quanto a mãe costuma receber ou movimentar por mês apenas do trabalho autônomo, e retomar o caminho de visita ou pré-diagnóstico com uma pergunta por vez. Não prometer aprovação, parcela ou encaixe.
+Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para confirmar a pergunta anterior e o papel da mãe. Conduta sugerida: acolher a informação, explicar de forma simples que, se a mãe for entrar como principal/composição, é preciso olhar a renda/movimentação dela e a documentação com cuidado; separar benefício social de renda comprovável; e confirmar se a mãe participaria da compra ou se a cliente pretende regularizar a própria situação. Uma pergunta por vez e sem prometer aprovação, parcela ou encaixe.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: evt_3442 / 3442_1778226385445.
-- Notas CRM relevantes desta rotina e anteriores: 17246, 17247, 17248, 17253, 17256, 17260, 17263, 17265, 17267, 17269, 17272, 17275.
+- Notas CRM relevantes desta rotina e anteriores: 17246, 17247, 17248, 17253, 17256, 17260, 17263, 17265, 17267, 17269, 17272, 17275, 17277.
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Resgate inexistente/sem ciclo ativo no momento do inbound “Uns 3 e pouco”.
+- Resgate inexistente/sem ciclo ativo no momento do inbound “Minha mãe sim eu não”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
-
-
-### 2026-05-08 — Restrição no CPF
-Cliente informou que a mãe está com CPF sem restrição, mas ela própria não está. Interpretação: há restrição no CPF da cliente, o que pode dificultar ou impedir aprovação de financiamento se ela participar da composição/renda/contrato. Próximo passo: orientar com cuidado que o ideal é regularizar antes da análise, sem encerrar oportunidade, e perguntar se a restrição é algo que consegue negociar/regularizar.
-
-### 2026-05-08 — Possibilidade de regularizar CPF
-Cliente confirmou que consegue regularizar a restrição no CPF nos próximos meses. Diagnóstico atualizado: restrição atual no CPF da cliente é uma trava relevante, mas há intenção/possibilidade de regularização. Próximo passo: entender prazo de compra/mudança para organizar estratégia de financiamento e comparar 2 vs 3 quartos sem prometer aprovação.
