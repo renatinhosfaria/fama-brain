@@ -131,3 +131,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Prazo desejado de compra
 Cliente informou que quer comprar ainda este ano. Interpretação comercial: lead com intenção temporal clara e potencialmente quente, mas com trava de CPF da própria cliente e ausência de entrada/FGTS. Próximo passo recomendado: organizar plano de viabilidade com etapas (regularização de CPF, comprovação de renda dela e da mãe, composição de renda, análise de 2 vs 3 quartos e possibilidade de entrada), conduzindo para atendimento presencial em data alternativa, já que hoje não consegue comparecer.
+
+### 2026-05-08 — Aceitou visita em outro dia
+Cliente confirmou que consegue vir em outro dia com a mãe para montar análise de viabilidade. Interpretação comercial: avanço para tentativa de agendamento presencial. Próximo passo na conversa: pedir preferência objetiva de dia/turno, priorizando segunda-feira ou outro horário viável, e então registrar visita no FamaChat quando data/hora forem definidos.
