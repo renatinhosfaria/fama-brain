@@ -6,104 +6,66 @@ entity_name: Jeandra Cândido
 client_id: 11208
 broker_id: 35
 status_crm: Não Respondeu
-source: SLA Cascata
-created: '2026-05-05'
-updated: '2026-05-07'
+source: FamaChat
+created: '2026-05-06'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
   - whatsapp
-  - famachat
-  - primeiro-contato
   - repescagem
+  - famachat
 ---
 # Atendimento — Jeandra Cândido
 
 ## Resumo atual
-Repescagem step 2 enviada com sucesso em 2026-05-07. O status operacional segue `Não Respondeu`. Próxima repescagem prevista para `2026-05-08T14:20:00-03:00` se não houver resposta.
+Repescagem ativa para a cliente operacional `11208` segue em `Não Respondeu`. O fluxo já passou por três ângulos: step 1 organizou a busca entre Garden Sul e Place+Arbi; step 2 tratou viabilidade prática da compra; step 3 foi enviado hoje com foco no critério principal de escolha entre os lançamentos.
 
 ## Dados operacionais
 - Cliente ID: 11208
 - Broker ID: 35
 - Status CRM: Não Respondeu
-- Origem: SLA Cascata / sla_cascata
-- Cliente original relacionado: 11153 (Facebook Ads, broker_id=14; usado apenas como contexto consultivo)
-- Telefone/WhatsApp: (34) 98821-5118 / 553488215118@s.whatsapp.net
-- Empreendimentos vinculados no CRM: 25 (Garden Sul), 67 (Place+Arbi)
-- Última interação relevante: 2026-05-07 — repescagem step 2 enviada pelo Reno
+- Origem: SLA Cascata
+- Cliente original de contexto: 11153 (apenas consultivo)
+- Empreendimentos: Garden Sul; Place+Arbi
+- Última interação relevante: envio da repescagem step 3 via WhatsApp validado no JID do CRM
+- Próximo step previsto: step 4 em 2026-05-09T09:10:00-03:00
 
 ## Contexto comercial
-Cliente chegou ao Reno por redistribuição da SLA Cascata, com dois empreendimentos vinculados no CRM: Garden Sul, lançamento no Jardim Sul/Zona Sul com entrega prevista para set/2028, e Place+Arbi, lançamento no Shopping Park/Zona Sul com entrega prevista para jun/2027. O cliente original relacionado tem origem Facebook Ads e também registra esses interesses, mas sem diagnóstico comercial útil para o Reno.
-
-O step 1 já havia organizado a busca por comparação entre opções; o step 2 mudou para viabilidade prática do lançamento, com foco em entrada, financiamento e parcela da compra.
+Lead com interesse em Garden Sul e Place+Arbi. A conversa vem alternando entre organizar a busca entre opções, viabilidade prática e critério principal de escolha.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não diagnosticada. Há interesse em mais de um lançamento, o que sugere necessidade de organizar prioridade entre localização, prazo de entrega e condição de pagamento.
+Escolher entre lançamentos com propostas diferentes sem perder o eixo de viabilidade.
 
 ### Momento
-Ainda não diagnosticado.
+Ainda sem resposta direta ao ciclo de repescagem; segue em qualificação silenciosa.
 
 ### Decisão
-Ainda não diagnosticada.
+Ainda comparando prioridade entre localização, prazo de entrega e condição de compra.
 
 ### Viabilidade
-Ainda não diagnosticada. Não houve promessa ou inferência de crédito; a mensagem apenas abriu espaço para entender o encaixe prático da compra.
+Step 2 já tocou entrada, financiamento e parcela; sem prometer crédito.
 
 ## Histórico curado de interações
-### 2026-05-05 — Primeiro contato WhatsApp
-Mensagem enviada pelo Reno: “Oi, Jeandra! Tudo bem? Aqui é o Reno, da Fama. Vi seu interesse em alguns imóveis e queria entender rapidinho: você procura pra morar ou investir?”
+### 2026-05-06 — Step 1
+Reno abriu a conversa organizando a busca entre Garden Sul e Place+Arbi, perguntando qual critério pesava mais: localização, prazo de entrega ou condição de pagamento.
 
-O envio foi feito para o JID priorizado `553488215118@s.whatsapp.net` e teve retorno técnico de sucesso. O status CRM mudou de `Sem Atendimento` para `Não Respondeu`.
+### 2026-05-07 — Step 2
+Reno reforçou a viabilidade prática da compra, destacando entrada, financiamento e parcela como filtros antes de avançar.
 
-### 2026-05-05 — Repescagem inicializada
-Branch `meta_data.reno_followup.repescagem` criada com `enabled=true`, `step=0`, `entry_shift=noite`, `entry_reference_at=2026-05-05T21:04:36-03:00` e `next_run_at=2026-05-06T09:10:00-03:00`.
-
-### 2026-05-06 — Repescagem step 1 enviada
-Mensagem enviada pelo Reno:
-
-“Oi, Jeandra! Tudo bem? 🏡
-
-Como você apareceu com interesse em mais de uma opção, tipo Garden Sul e Place+Arbi, o ponto não é só mandar mais anúncio.
-
-São lançamentos com regiões, prazos e condições diferentes, então vale organizar primeiro **o que pesa mais pra você**.
-
-Pra eu te orientar sem chute: hoje você quer priorizar localização, prazo de entrega ou condição de pagamento?”
-
-Ângulo usado: criar novo motivo para resposta a partir de comparação/organização de prioridades entre dois lançamentos, sem repetir a pergunta inicial sobre morar/investir.
-
-Envio realizado pelo fallback excepcional do bridge local saudável porque `send_message` não estava exposto nesta sessão. O bridge validou o JID salvo por `onWhatsApp` e retornou sucesso técnico. Em seguida, o CRM foi atualizado por `mcp_mcp_postgres_mark_reno_followup_sent` com `step=1`, `last_sent_at=2026-05-06T10:34:50-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `claim_expires_at=null` e `stopped_reason=null`.
-
-### 2026-05-07 — Repescagem step 2 enviada
-Mensagem enviada pelo Reno:
-
-“Jeandra, tudo bem? 🔑
-
-Como você está olhando Garden Sul e Place+Arbi, o ponto que mais muda a escolha agora é a parte prática da compra: entrada, financiamento e parcela.
-
-Quer que eu faça essa leitura com você pra ver qual dos dois encaixa melhor no seu momento?”
-
-Ângulo usado: sair da comparação de opções e ir para viabilidade prática do lançamento, com leitura objetiva de entrada, financiamento e parcela.
-
-Envio realizado pelo fallback excepcional do bridge local saudável em `http://127.0.0.1:3000/send`, usando o `whatsapp_jid` salvo no CRM. O bridge validou por `onWhatsApp` e retornou sucesso técnico.
-
-Após o envio, o CRM foi persistido por `mcp_mcp_postgres_mark_reno_followup_sent` com:
-- `step=2`
-- `last_sent_at=2026-05-07T15:51:22-03:00`
-- `next_run_at=2026-05-08T14:20:00-03:00`
-- `stopped_reason=null`
-- `claim_expires_at=null`
+### 2026-05-08 — Step 3
+Reno mudou o ângulo e perguntou por outro critério de escolha entre Garden Sul e Place+Arbi: localização, prazo de entrega ou condição de compra.
 
 ## Objeções e travas
-- Nenhuma objeção registrada até o momento.
-- Ainda não houve primeira resposta real ao Reno neste ciclo.
+- Silêncio após os contatos anteriores.
+- Nenhuma objeção explícita registrada ainda.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se continuar sem resposta e permanecer elegível (`broker_id=35`, `status=Não Respondeu`, `repescagem.enabled=true`, `stopped_reason=null`), a próxima execução deve enviar o step 3 a partir de `2026-05-08T14:20:00-03:00`, mantendo motivo novo para resposta.
+Aguardar resposta. Se a cliente seguir sem responder, o fluxo avança para step 4 na janela prevista.
 
 ## Observações operacionais
-- Nome no CRM parece humano e confiável; foi usado na saudação.
-- Como havia dois empreendimentos vinculados, a mensagem citou Garden Sul e Place+Arbi de forma contextual.
-- Status não foi alterado nos steps 1 a 4, conforme contrato da repescagem.
-- Bridge local validou o JID por `onWhatsApp`.
-- Nota operacional automática de envio registrada no CRM pelo usuário Reno (`user_id=35`).
+- Envio realizado via bridge local `http://127.0.0.1:3000/send`.
+- Bridge validou o destino antes da marcação no CRM.
+- CRM/meta_data persistidos com step 3 e próximo `next_run_at` calculado pela matriz.
+- Status do cliente permaneceu `Não Respondeu`.
