@@ -35,3 +35,7 @@ Validar renda familiar comprovada para estimar viabilidade de financiamento e en
 
 ## Observações operacionais
 Tentativa de consulta/registro no CRM via MCP Postgres falhou por indisponibilidade temporária do servidor. Registrar no CRM assim que o serviço voltar.
+
+
+## Atualização — 2026-05-08
+Cliente informou renda familiar comprovável aproximada de R$ 3.900. Mantém interesse em casa até R$ 280 mil, financiamento, com entrada/FGTS em torno de R$ 30–40 mil. Próxima validação: forma de comprovação da renda e análise de viabilidade de crédito.
