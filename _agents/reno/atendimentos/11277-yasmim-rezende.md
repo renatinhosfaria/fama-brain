@@ -17,11 +17,13 @@ tags:
   - primeiro-contato
   - primeira-resposta
   - qualificacao
+  - garden-sul
+  - jardim-sul
 ---
 # Atendimento — Yasmim Rezende
 
 ## Resumo atual
-A cliente respondeu ao primeiro contato do Reno no WhatsApp em 2026-05-08. O CRM foi atualizado de `Não Respondeu` para `Em Atendimento`, e a repescagem foi interrompida por resposta inbound. Em nova mensagem, a cliente disse “Então eu perdi aqui”, indicando perda de contexto da conversa. Próximo passo: resposta comercial curta, retomando com clareza o contexto do Garden Sul/Jardim Sul e a pergunta sobre a região, sem avançar para financiamento antes de entender a busca.
+A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. Na interação mais recente, a cliente corrigiu/confirmou o contexto dizendo: “Mais é garden sul, no jardim sul”. Próximo passo: a resposta comercial deve reconhecer que é o Garden Sul, no Jardim Sul, retomar a explicação de forma simples e conduzir uma pergunta por vez, sem avançar para financiamento antes de entender a busca.
 
 ## Dados operacionais
 - Cliente ID: 11277
@@ -30,16 +32,18 @@ A cliente respondeu ao primeiro contato do Reno no WhatsApp em 2026-05-08. O CRM
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Garden Sul — Jardim Sul, Uberlândia
-- Última interação relevante: cliente enviou “Então eu perdi aqui” após já ter respondido ao primeiro contato
+- Última interação relevante: cliente corrigiu/confirmou “Garden Sul, no Jardim Sul” em resposta inbound
 - Repescagem: interrompida em step 0; `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento da rotina silenciosa
 
 ## Contexto comercial
-A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento no Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou o contexto do empreendimento e do bairro, perguntando se ela procura imóvel naquela região. A primeira resposta foi “Oi”; depois a cliente enviou “Então eu perdi aqui”, sugerindo que a próxima resposta deve recuperar o contexto de forma simples, sem tratar como objeção e sem perguntar dados financeiros.
+A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento confirmado no CRM como localizado no bairro Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou esse contexto e perguntou se ela procura imóvel naquela região. A cliente respondeu “Oi”, depois “Então eu perdi aqui” e, na sequência, corrigiu/confirmou que o assunto é “Garden Sul, no Jardim Sul”.
+
+A condução deve tratar isso como ajuste de contexto, não como objeção: explicar de forma curta que é o Garden Sul no Jardim Sul e retomar a pergunta sobre a região/perfil do imóvel.
 
 ## Diagnóstico
 ### Necessidade
-Ainda não informada. A conversa ainda está na retomada do contexto inicial.
+Ainda não informada. A conversa está na fase de retomada e confirmação do contexto do empreendimento/região.
 
 ### Momento
 Ainda não informado.
@@ -64,12 +68,15 @@ A cliente respondeu “Oi” pelo WhatsApp. Como o status estava `Não Respondeu
 ### 2026-05-08 — Nova resposta inbound com perda de contexto
 A cliente enviou “Então eu perdi aqui”. O status já estava `Em Atendimento`, então foi preservado sem regressão ou alteração. A repescagem já estava interrompida e não havia Resgate ativo. Nota objetiva foi registrada no FamaChat para orientar a resposta comercial: retomar o contexto do Garden Sul/Jardim Sul de forma clara e curta.
 
+### 2026-05-08 — Correção/confirmação do empreendimento e bairro
+A cliente enviou “Mais é garden sul, no jardim sul”. O CRM confirmou o empreendimento de interesse como Garden Sul, no bairro Jardim Sul. O status foi preservado em `Em Atendimento`; repescagem permaneceu interrompida e não havia Resgate ativo. Nota objetiva foi registrada no FamaChat orientando a continuidade comercial.
+
 ## Objeções e travas
 - Nenhuma objeção comercial registrada ainda.
-- Possível perda de contexto da conversa; tratar com explicação simples do que o Reno havia perguntado.
+- Houve perda/ajuste de contexto na conversa; tratar com explicação simples e confirmação do Garden Sul no Jardim Sul.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp com uma retomada breve: explicar que o contato é sobre o Garden Sul, no Jardim Sul, e perguntar se essa região faz sentido para a cliente. Manter uma pergunta por vez e não iniciar financiamento/renda antes de obter contexto de busca.
+Responder comercialmente pelo WhatsApp reconhecendo a correção da cliente: o assunto é o Garden Sul, no Jardim Sul. Retomar em linguagem simples e fazer uma pergunta objetiva sobre a região ou objetivo da busca, mantendo uma pergunta por vez e evitando financiamento/renda antes de criar contexto de interesse.
 
 ## Observações operacionais
 - CRM validado como fonte de verdade: cliente existente, `broker_id=35`.
