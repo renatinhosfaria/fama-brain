@@ -21,9 +21,9 @@ updated: '2026-05-08'
 # Atendimento — Danielly Cristina Justen Souza
 
 ## Resumo atual
-Cliente está em `Em Atendimento` após responder ao primeiro contato do Reno via WhatsApp em 2026-05-08. O primeiro inbound (`Sim`) moveu o CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a repescagem. A conversa avançou para teto de valor, financiamento, flexibilidade de produto, entrada, composição de renda e uma questão documental importante.
+Cliente está em `Em Atendimento` após responder ao primeiro contato do Reno via WhatsApp em 2026-05-08. O primeiro inbound (`Sim`) moveu o CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a repescagem. Depois, a conversa evoluiu para esclarecimento, continuidade do atendimento, teto de valor (`Até 280 mil vc consegue?`), financiamento, flexibilidade sobre não precisar ser exatamente condomínio fechado, faixa provável de entrada/recursos iniciais (`Até uns 30 a 40 mil`), possível referência financeira (`3.900`), composição de rendas (`duas rendas dariam 3.900` e renda total do grupo familiar poderia chegar a `8.500`), dúvida ruidosa sobre possível composição de nome/renda de todos e, em nota CRM mais recente, informação de que a cliente é menor de idade, mas emancipada legalmente.
 
-Leitura comercial atual: cliente busca opção até cerca de R$ 280 mil, pretende financiar, teria aproximadamente R$ 30 mil a R$ 40 mil de recurso inicial/entrada, não exige condomínio fechado e informou composição de renda com duas rendas somando R$ 3.900 ou renda total ampliada de R$ 8.500. Depois sinalizou dúvida sobre usar o nome/renda de todo mundo e informou ser menor de idade, porém emancipada legalmente. Esse ponto exige resposta cuidadosa: tratar como dado de viabilidade/documentação, não prometer aprovação e conduzir para validação segura. O CRM indica interesse no Place+Arbi, no Shopping Park.
+Leitura comercial atual: cliente busca opção até cerca de R$ 280 mil, pretende financiar, teria aproximadamente R$ 30 mil a R$ 40 mil de recurso inicial/entrada e está explorando composição de renda familiar para viabilidade. A conversa agora exige cuidado documental: a menoridade com emancipação precisa ser tratada como ponto de validação formal, sem promessa de aprovação, financiamento ou contratação em nome da cliente antes de análise/documentação. O CRM indica interesse no Place+Arbi, no Shopping Park.
 
 ## Dados operacionais
 - Cliente ID: 11275
@@ -32,14 +32,15 @@ Leitura comercial atual: cliente busca opção até cerca de R$ 280 mil, pretend
 - Origem: Facebook Ads
 - WhatsApp: validado pelo canal cadastrado no CRM
 - Empreendimento de interesse: Place+Arbi, Shopping Park, Uberlândia
-- Última interação relevante no CRM: cliente informou ser menor de idade, porém emancipada legalmente; questão relevante para documentação/capacidade civil e financiamento
+- Última interação relevante no CRM: cliente informou ser menor de idade, porém emancipada legalmente; tratar como dúvida de viabilidade/documentação/capacidade civil
+- Inbound desta rotina: `Teria como no bom eu de todo mundo?`; mensagem ruidosa possivelmente sobre composição de renda/nome de todos no financiamento
 - Repescagem: interrompida em step 0, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento desta persistência
 
 ## Contexto comercial
 A cliente entrou como lead de Facebook Ads com interesse no Place+Arbi, empreendimento no bairro Shopping Park, em Uberlândia. O primeiro contato do Reno contextualizou esse interesse e perguntou se a cliente está procurando imóvel nessa região.
 
-A cliente confirmou inicialmente com `Sim`, pediu esclarecimento com `Como assim?`, sinalizou continuidade com `Continuar o atendimento`, perguntou se há opção até R$ 280 mil, respondeu `Financiamento`, esclareceu que não precisa ser exatamente em condomínio fechado, informou faixa de entrada/recursos iniciais de aproximadamente R$ 30 mil a R$ 40 mil, enviou `3.900`, explicou que duas rendas somariam R$ 3.900 e que juntando a renda de todo mundo daria R$ 8.500, depois enviou mensagem ambígua possivelmente sobre colocar/considerar nome ou renda de todo mundo e, por fim, informou ser menor de idade, mas emancipada legalmente.
+A cliente confirmou inicialmente com `Sim`, pediu esclarecimento com `Como assim?`, sinalizou continuidade com `Continuar o atendimento`, perguntou se há opção até R$ 280 mil, respondeu `Financiamento`, esclareceu que não precisa ser exatamente em condomínio fechado, informou faixa de entrada/recursos iniciais de aproximadamente R$ 30 mil a R$ 40 mil, enviou `3.900`, depois explicou que juntando duas rendas daria R$ 3.900 e juntando a renda de todo mundo daria R$ 8.500. Em seguida, enviou uma mensagem ruidosa (`Teria como no bom eu de todo mundo?`), provavelmente ainda ligada à dúvida sobre compor renda/nome de todos no financiamento. O CRM já contém também nota posterior indicando que a cliente informou ser menor de idade, mas emancipada legalmente.
 
 Dados do CRM sobre o Place+Arbi no momento da consulta anterior:
 - Empreendimento: Place+Arbi
@@ -57,13 +58,13 @@ Usar esses valores como referência do CRM, com ressalva de que dependem da unid
 A cliente busca uma opção compatível com teto de até cerca de R$ 280 mil. O perfil não precisa ficar restrito a condomínio fechado; pode considerar alternativa que encaixe melhor em valor, financiamento e perfil.
 
 ### Momento
-Ainda não informado. A sequência de perguntas sobre valor, financiamento, entrada, renda e documentação indica avanço real na análise de compra, mas ainda não confirma urgência.
+Ainda não informado. A sequência de perguntas sobre valor, financiamento, tipo de empreendimento, entrada, renda, composição de renda familiar e emancipação indica avanço na análise de compra, mas ainda não confirma urgência.
 
 ### Decisão
-Há indício de que outras pessoas podem estar envolvidas financeiramente ou na decisão, pois a cliente citou `duas rendas`, `todo mundo` e dúvida sobre usar nome/renda de outras pessoas. Precisa esclarecer com naturalidade quem participaria da compra/financiamento, sem transformar a conversa em interrogatório.
+Ainda não informado. O comentário sobre juntar rendas de “todo mundo” sugere possível envolvimento de outras pessoas na viabilidade/compra. A informação de menoridade com emancipação pode impactar quem participa da contratação/financiamento e precisa ser validada formalmente.
 
 ### Viabilidade
-Cliente declarou teto de valor de até cerca de R$ 280 mil, financiamento como forma de compra e aproximadamente R$ 30 mil a R$ 40 mil de recurso inicial/entrada. Sobre renda, informou duas referências: R$ 3.900 somando duas rendas e R$ 8.500 somando todo o grupo familiar. Também informou ser menor de idade, mas emancipada legalmente. Esses dados são relevantes para triagem, porém aprovação, composição de renda aceita, comprometimento, enquadramento, capacidade civil e documentação dependem de análise. Não prometer crédito ou aprovação.
+Cliente declarou teto de valor de até R$ 280 mil, financiamento como forma de compra e aproximadamente R$ 30 mil a R$ 40 mil de recurso inicial/entrada. Informou que duas rendas somariam cerca de R$ 3.900 e que a renda total do grupo familiar poderia chegar a R$ 8.500. A dúvida sobre compor renda/nome de todos deve ser respondida como possibilidade a analisar, nunca como garantia. A informação de menoridade com emancipação exige validação documental/capacidade civil antes de qualquer afirmação de financiamento ou compra em nome da cliente. O Place+Arbi tem referências no CRM abaixo do teto informado, mas a conversa ainda não levantou FGTS, documentação, vínculo formal dos participantes, score ou análise bancária. Não prometer crédito ou aprovação.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -76,31 +77,49 @@ Referência operacional: evt_3443 / 3443_1778227853527.
 ### 2026-05-08 — Primeira resposta inbound e persistência operacional
 Cliente respondeu pelo WhatsApp com `Sim`. A rotina silenciosa do Reno validou o cliente no CRM (`broker_id=35`), alterou o status de `Não Respondeu` para `Em Atendimento`, interrompeu a repescagem com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`, e registrou nota operacional no FamaChat. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
-### 2026-05-08 — Sequência de qualificação financeira e perfil
-Cliente enviou mensagens sucessivas pedindo continuidade e trazendo dados de compra: teto de até R$ 280 mil, compra por financiamento, flexibilidade sobre não precisar ser condomínio fechado, entrada/recursos iniciais de R$ 30 mil a R$ 40 mil e referência de R$ 3.900. O CRM permaneceu em `Em Atendimento`; repescagem continuou interrompida e não havia Resgate ativo. Nenhuma mensagem foi enviada ao cliente pelas rotinas silenciosas.
+### 2026-05-08 — Novo inbound pedindo esclarecimento
+Cliente enviou `Como assim?`. A rotina silenciosa validou que o cliente continua elegível para Reno (`broker_id=35`) e que o status já estava em `Em Atendimento`, portanto não houve mudança de status. A repescagem já estava interrompida com `client_replied` e não havia Resgate ativo. Foi registrada nota operacional no CRM. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
-### 2026-05-08 — Inbound com composição de renda
-Cliente informou pelo WhatsApp: `Aí juntando duas rendas daria 3.900 e se juntar a de todo mundo da 8.500`. Interpretação operacional registrada: dado relevante de viabilidade/renda familiar para financiamento; duas rendas somam R$ 3.900 e renda total do grupo familiar pode chegar a R$ 8.500. Status permaneceu em `Em Atendimento`; repescagem já estava interrompida com `client_replied` e não havia Resgate ativo. Nota operacional registrada no CRM (nota 17261). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+### 2026-05-08 — Inbound de continuidade do atendimento
+Cliente enviou `Continuar o atendimento`. A rotina silenciosa validou o cliente no CRM (`broker_id=35`) e preservou o status em `Em Atendimento`, sem regressão ou avanço artificial. A repescagem já estava encerrada por resposta do cliente (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia Resgate ativo. Foi registrada nota operacional no CRM. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
-### 2026-05-08 — Inbound ambíguo sobre nome/renda de todo mundo
-Cliente enviou mensagem com provável erro de digitação/ditado: `Teria como no bom eu de todo mundo?`. Interpretação registrada no CRM: possível dúvida sobre considerar renda ou nome de todo mundo no financiamento; confirmar sentido na resposta comercial antes de avançar. Status preservado em `Em Atendimento`; repescagem interrompida e sem Resgate ativo.
+### 2026-05-08 — Inbound com teto de valor
+Cliente perguntou pelo WhatsApp: `Até 280 mil vc consegue?`. A rotina silenciosa validou o cliente no CRM (`broker_id=35`) e preservou o status em `Em Atendimento`, sem transição necessária. A repescagem já estava interrompida com `client_replied` e não havia Resgate ativo. Foi registrada nota operacional no CRM (nota 17254). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound sobre financiamento
+Cliente respondeu pelo WhatsApp com `Financiamento`. A rotina silenciosa preservou o status em `Em Atendimento`, confirmou que a repescagem seguia interrompida e que não havia Resgate ativo, e registrou nota operacional no CRM (nota 17255). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound flexibilizando condomínio fechado
+Cliente informou pelo WhatsApp: `Mas não precisa ser exatamente em condomínio fechado`. A rotina silenciosa preservou o status em `Em Atendimento`, confirmou que a repescagem seguia interrompida e que não havia Resgate ativo, e registrou nota operacional no CRM (nota 17257). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound com faixa provável de entrada
+Cliente informou pelo WhatsApp: `Até uns 30 a 40 mil`. Interpretação operacional registrada: provável faixa disponível de entrada/recursos iniciais para compra financiada. Status permaneceu em `Em Atendimento`; repescagem já estava interrompida e não havia Resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound com possível parcela/valor mensal
+Cliente enviou pelo WhatsApp: `3.900`. A rotina silenciosa validou o cliente no CRM (`broker_id=35`), preservou o status em `Em Atendimento`, confirmou que a repescagem já estava interrompida com `client_replied` e que não havia Resgate ativo, e registrou nota operacional no CRM (nota 17259). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound com composição de renda familiar
+Cliente informou pelo WhatsApp: `Aí juntando duas rendas daria 3.900 e se juntar a de todo mundo da 8.500`. Interpretação operacional: informação relevante de viabilidade/renda familiar para financiamento; duas rendas somam R$ 3.900 e renda total do grupo familiar pode chegar a R$ 8.500. Status preservado em `Em Atendimento`; repescagem já estava interrompida e não havia Resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound ruidoso sobre possível composição de nomes/rendas
+Cliente enviou pelo WhatsApp: `Teria como no bom eu de todo mundo?`. A rotina silenciosa interpretou como mensagem possivelmente ditada/com erro de digitação, talvez perguntando se seria possível considerar o nome/renda de todos no financiamento. Status preservado em `Em Atendimento`; repescagem já estava interrompida com `client_replied` e não havia Resgate ativo. Foi registrada nota operacional no CRM (nota 17262). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
 ### 2026-05-08 — Inbound sobre menoridade e emancipação
-Cliente informou ser menor de idade, porém emancipada legalmente, e entende que pode colocar obrigações/contratações em seu nome. Interpretação registrada no CRM: dúvida relevante de viabilidade, documentação e capacidade civil para financiamento/compra; responder sem promessa de aprovação e, se necessário, orientar validação documental. Status preservado em `Em Atendimento`; repescagem interrompida e sem Resgate ativo. Nota operacional mais recente no CRM: 17264.
+O CRM registrou inbound posterior em que a cliente informou ser menor de idade, porém emancipada legalmente, e entende que pode colocar obrigações/contratações em seu nome. Interpretação comercial: dúvida relevante de viabilidade/documentação/capacidade civil para financiamento ou compra; responder com cuidado, sem promessa de aprovação e com validação documental quando necessário. Status preservado em `Em Atendimento`; repescagem interrompida e sem Resgate ativo. Nenhuma mensagem foi enviada ao cliente por rotina silenciosa.
 
 ## Objeções e travas
 - Teto declarado: até cerca de R$ 280 mil.
 - Forma de compra em pauta: financiamento.
 - Entrada/recursos iniciais prováveis: R$ 30 mil a R$ 40 mil.
-- Renda informada: duas rendas somam R$ 3.900; renda ampliada do grupo familiar soma R$ 8.500.
-- Trava/atenção de viabilidade: precisa confirmar quem realmente participaria da compra e se a composição de renda pode ser considerada; não prometer aprovação.
-- Trava documental: cliente informou ser menor de idade e emancipada legalmente; capacidade civil/documentação deve ser validada com segurança, sem resposta categórica de aprovação.
+- Renda/composição: duas rendas somam cerca de R$ 3.900; grupo familiar total poderia chegar a R$ 8.500.
+- Dúvida ruidosa: possivelmente quer saber se dá para usar nome/renda de todos na composição do financiamento; confirmar antes de responder como fato.
+- Ponto documental sensível: cliente informou ser menor de idade, mas emancipada; validar documentação/capacidade civil e não prometer financiamento/contratação em nome dela.
 - Perfil do empreendimento: condomínio fechado não é obrigatório; não restringir a busca a esse critério.
 - Atenção: responder com valores como referência do CRM, sem tratar como garantia fixa de tabela/unidade.
 - Atenção conversacional: `Como assim?` já ocorreu antes e deve ser tratado como pedido de explicação, não como falta de contexto.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp com cuidado: reconhecer que a renda maior pode ajudar, mas que precisa validar certinho quem entra na composição de renda e a documentação, especialmente por envolver emancipação. Evitar promessa de aprovação. Conduzir para uma validação segura e, se houver abertura, propor conversa/visita presencial na Fama para organizar renda, entrada, documentos e opções compatíveis.
+Responder comercialmente pelo WhatsApp validando a dúvida sem prometer aprovação: explicar que composição de renda/nome de participantes e emancipação podem ser analisadas, mas dependem de documentação e validação do banco/contrato. Conectar ao contexto já informado: teto até R$ 280 mil, financiamento, entrada de R$ 30 mil a R$ 40 mil, rendas de R$ 3.900 ou até R$ 8.500 no grupo familiar. Usar essa dúvida como ponte para atendimento presencial na Fama se houver abertura, porque a simulação segura e a validação documental exigem calma e documentação.
 
 Depois de responder normalmente ao cliente em `Em Atendimento`, se a mensagem deixar uma pergunta/próximo passo em aberto, armar Resgate em `step=0` conforme a régua de qualificação.
 
@@ -109,5 +128,5 @@ Depois de responder normalmente ao cliente em `Em Atendimento`, se a mensagem de
 - Status atual no CRM verificado como `Em Atendimento`; não houve regressão ou avanço artificial nesta rotina.
 - Repescagem encerrada por resposta real da cliente antes do primeiro step automático e permanece com `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Não havia Resgate ativo a interromper.
-- Rotinas silenciosas não enviaram mensagem ao cliente.
+- Rotina silenciosa não enviou mensagem ao cliente.
 - O vault foi atualizado como camada curada; o CRM/FamaChat permanece a fonte operacional da verdade.
