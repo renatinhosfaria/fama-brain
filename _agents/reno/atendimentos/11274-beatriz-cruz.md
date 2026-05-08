@@ -95,3 +95,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Vínculo de trabalho
 Cliente informou que trabalha registrada. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada separada, vínculo CLT/registrado. Próximo passo: validar se possui FGTS disponível para compor entrada/viabilidade, sem prometer aprovação ou condições.
+
+### 2026-05-08 — FGTS
+Cliente informou que não tem FGTS para usar na compra. Diagnóstico atualizado: primeiro imóvel, pretende financiar, sem entrada separada e sem FGTS, trabalha registrada. Próximo passo: entender se comprará sozinha ou somando renda com outra pessoa antes de avançar para faixa de renda/viabilidade.
