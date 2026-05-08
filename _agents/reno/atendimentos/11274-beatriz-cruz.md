@@ -26,11 +26,13 @@ tags:
   - vinculo-registrado
   - renda-informada
   - viabilidade
+  - composicao-renda
+  - mae-autonoma
 ---
 # Atendimento — Beatriz Cruz
 
 ## Resumo atual
-Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS. Também informou vínculo de trabalho registrado em dois lugares, com registros recentes, e renda aproximada de R$ 3.500. Repescagem permanece encerrada por resposta inbound e não há resgate ativo registrado.
+Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS. Também informou vínculo de trabalho registrado em dois lugares, com registros recentes, renda aproximada de R$ 3.500 e, no contexto de composição/viabilidade, mencionou a mãe como possível envolvida, porém autônoma. Repescagem permanece encerrada por resposta inbound e não há resgate ativo registrado.
 
 ## Dados operacionais
 - Cliente ID: 11274
@@ -39,10 +41,10 @@ Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no envio e nos inbounds
 - Empreendimento vinculado no CRM: Place+Arbi (Shopping Park)
-- Última interação relevante: 2026-05-08 — cliente respondeu “3500” no WhatsApp, interpretado como renda/limite de R$ 3.500 no contexto de viabilidade
+- Última interação relevante: 2026-05-08 — cliente respondeu “Minha mãe, mais ela é autônoma”, indicando possível composição/participação da mãe na viabilidade, com atenção ao fato de ser autônoma
 
 ## Contexto comercial
-Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região; ela respondeu “Sim”, depois informou “Morar” e pediu para saber como fica de 2 e 3 quartos. O CRM do Place+Arbi consultado em rotina anterior indicou opções cadastradas de 2 quartos; eventual opção de 3 quartos deve ser buscada com segurança antes de responder comercialmente. Histórico curado indica intenção de financiamento, primeiro imóvel, ausência de entrada formada, ausência de FGTS, vínculo registrado em dois trabalhos recentes e renda/limite aproximado informado de R$ 3.500. Não prometer aprovação nem encaixe.
+Lead entrou por Facebook Ads com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park. A abertura do Reno perguntou se a cliente está procurando imóvel nessa região; ela respondeu “Sim”, depois informou “Morar” e pediu para saber como fica de 2 e 3 quartos. O CRM do Place+Arbi consultado em rotina anterior indicou opções cadastradas de 2 quartos; eventual opção de 3 quartos deve ser buscada com segurança antes de responder comercialmente. Histórico curado indica intenção de financiamento, primeiro imóvel, ausência de entrada formada, ausência de FGTS, vínculo registrado em dois trabalhos recentes, renda/limite aproximado informado de R$ 3.500 e possível participação/composição com a mãe, que é autônoma. Não prometer aprovação nem encaixe.
 
 ## Diagnóstico
 ### Necessidade
@@ -52,10 +54,10 @@ Busca imóvel para morar. Interesse declarado em comparar perfil de 2 e 3 quarto
 Ainda não diagnosticado com segurança. A cliente engajou rapidamente no primeiro contato, mas não informou urgência ou prazo de compra.
 
 ### Decisão
-Ainda não diagnosticada. Não há informação segura sobre outras pessoas envolvidas na decisão ou soma de renda além da renda própria mencionada.
+Cliente mencionou a mãe no contexto do atendimento; pode haver influência ou participação familiar na decisão/viabilidade. Ainda é necessário reconstruir a pergunta anterior do WhatsApp para entender se a mãe entraria como compradora, composição de renda, apoio financeiro ou decisora.
 
 ### Viabilidade
-Cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, trabalho registrado em dois vínculos recentes e renda/limite aproximado de R$ 3.500. Isso exige condução cuidadosa: validar se compra sozinha ou se pode compor renda, evitar promessa de aprovação e provavelmente priorizar uma opção mais viável de 2 quartos antes de falar em 3 quartos.
+Cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, trabalho registrado em dois vínculos recentes, renda/limite aproximado de R$ 3.500 e possível participação da mãe autônoma. Isso exige condução cuidadosa: validar o papel da mãe e se há renda comprovável/composição possível, evitar promessa de aprovação e provavelmente priorizar uma opção mais viável de 2 quartos antes de falar em 3 quartos.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -97,16 +99,19 @@ Cliente respondeu “Registrado” no WhatsApp. Interpretação operacional: inb
 ### 2026-05-08 — Renda/limite informado
 Cliente respondeu “3500” no WhatsApp. Interpretação comercial: no contexto de viabilidade/condição, tratar como renda ou limite aproximado de R$ 3.500, a confirmar na condução comercial se necessário. Status já estava em `Em Atendimento` e foi preservado. Repescagem já estava encerrada e não havia resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
+### 2026-05-08 — Mãe autônoma mencionada
+Cliente respondeu “Minha mãe, mais ela é autônoma”. Interpretação comercial: há possível participação da mãe na decisão ou composição de renda/viabilidade, mas a mãe é autônoma, o que exige validação cuidadosa de documentação/renda antes de qualquer orientação de financiamento. Status já estava em `Em Atendimento` e foi preservado. Repescagem já estava encerrada e não havia resgate ativo. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
 ## Objeções e travas
-- Viabilidade requer cuidado: cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, vínculos registrados recentes e renda/limite aproximado de R$ 3.500. Usar linguagem de possibilidade e validação, sem prometer crédito ou aprovação.
-- Respostas curtas recentes (“Não”, “Registrado” e “3500”) exigem reconstrução do histórico imediato do WhatsApp antes de qualquer resposta comercial; não inferir sozinho encerramento, objeção definitiva ou condição final.
+- Viabilidade requer cuidado: cliente sinalizou financiamento, primeiro imóvel, sem entrada formada, sem FGTS, vínculos registrados recentes, renda/limite aproximado de R$ 3.500 e possível composição/participação da mãe autônoma. Usar linguagem de possibilidade e validação, sem prometer crédito ou aprovação.
+- Respostas curtas recentes (“Não”, “Registrado”, “3500” e menção à mãe autônoma) exigem reconstrução do histórico imediato do WhatsApp antes de qualquer resposta comercial; não inferir sozinho encerramento, objeção definitiva ou condição final.
 
 ## Próximo passo
-Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para confirmar se “3500” se refere à renda, limite de parcela ou outro valor. Se for renda aproximada, conduzir com uma pergunta útil por vez: confirmar se comprará sozinha ou se pode compor renda; depois orientar que a opção de 2 quartos tende a ser o caminho inicial mais viável, enquanto 3 quartos exigirá análise cuidadosa. Buscar opção segura no CRM antes de citar valores, disponibilidade ou 3 quartos.
+Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina silenciosa. Antes de responder, reconstruir o histórico imediato para confirmar a pergunta anterior e o papel da mãe: compradora, composição de renda, apoio financeiro ou decisora. Conduzir com uma pergunta útil por vez e sem promessa de aprovação; se for composição de renda, validar se a mãe consegue comprovar renda autônoma e depois buscar opção segura no CRM antes de citar valores, disponibilidade ou 3 quartos.
 
 ## Observações operacionais
 - Evento de origem do primeiro contato: evt_3442 / 3442_1778226385445.
-- Notas CRM relevantes desta rotina e anteriores: 17246, 17247, 17248, 17253, 17256, 17260.
+- Notas CRM relevantes desta rotina e anteriores: 17246, 17247, 17248, 17253, 17256, 17260, 17263.
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
-- Resgate inexistente/sem ciclo ativo no momento do inbound “3500”.
+- Resgate inexistente/sem ciclo ativo no momento do inbound “Minha mãe, mais ela é autônoma”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
