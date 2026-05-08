@@ -21,9 +21,9 @@ tags:
 # Atendimento — Danielly Cristina Justen Souza
 
 ## Resumo atual
-Cliente respondeu ao primeiro contato do Reno via WhatsApp em 2026-05-08. Primeiro respondeu com sinal curto positivo (`Sim`), o que moveu o atendimento no CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a repescagem. Em seguida, enviou `Como assim?`, depois `Continuar o atendimento`, perguntou `Até 280 mil vc consegue?` e agora respondeu `Financiamento`.
+Cliente está em `Em Atendimento` após responder ao primeiro contato do Reno via WhatsApp em 2026-05-08. O primeiro inbound (`Sim`) moveu o CRM de `Não Respondeu` para `Em Atendimento` e interrompeu a repescagem. Depois, a conversa evoluiu para esclarecimento, continuidade do atendimento, limite de valor (`Até 280 mil vc consegue?`), financiamento e, no inbound mais recente, a cliente informou: `Mas não precisa ser exatamente em condomínio fechado`.
 
-A conversa avançou para viabilidade/preço e forma de compra. O CRM indica interesse no Place+Arbi, no Shopping Park, com opções de referência abaixo de R$ 280 mil. A próxima resposta comercial deve tratar `Financiamento` como foco da cliente, explicar de forma curta que dá para olhar o encaixe com segurança, sem prometer aprovação, e conduzir para separar a opção mais econômica ou a planta com suíte dentro da faixa.
+A leitura comercial atual é: cliente busca opção até cerca de R$ 280 mil, tem financiamento como tema ativo e flexibilizou o critério de condomínio fechado. O CRM indica interesse no Place+Arbi, no Shopping Park. A próxima resposta comercial deve reconhecer a flexibilidade, não limitar a busca a condomínio fechado, manter valores como referência do CRM sem promessa de disponibilidade/condição fixa e conduzir com uma pergunta simples sobre região/perfil.
 
 ## Dados operacionais
 - Cliente ID: 11275
@@ -32,16 +32,16 @@ A conversa avançou para viabilidade/preço e forma de compra. O CRM indica inte
 - Origem: Facebook Ads
 - WhatsApp: validado pelo canal cadastrado no CRM
 - Empreendimento de interesse: Place+Arbi, Shopping Park, Uberlândia
-- Última interação relevante: cliente respondeu `Financiamento`, após perguntar sobre limite de até R$ 280 mil
+- Última interação relevante: cliente informou que não precisa ser exatamente em condomínio fechado
 - Repescagem: interrompida em step 0, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento desta persistência
 
 ## Contexto comercial
 A cliente entrou como lead de Facebook Ads com interesse no Place+Arbi, empreendimento no bairro Shopping Park, em Uberlândia. O primeiro contato do Reno contextualizou esse interesse e perguntou se a cliente está procurando imóvel nessa região.
 
-A cliente confirmou inicialmente com `Sim`, pediu esclarecimento com `Como assim?`, sinalizou continuidade com `Continuar o atendimento`, trouxe limite de valor (`Até 280 mil vc consegue?`) e agora indicou que o foco é `Financiamento`. O pedido deve ser tratado como sinal relevante de viabilidade e intenção de compra, não como simples curiosidade genérica.
+A cliente confirmou inicialmente com `Sim`, pediu esclarecimento com `Como assim?`, sinalizou continuidade com `Continuar o atendimento`, perguntou se há opção até R$ 280 mil, respondeu `Financiamento` e agora esclareceu que não precisa ser exatamente em condomínio fechado. O pedido deve ser tratado como avanço real de qualificação: há limite de valor, forma de compra em pauta e uma flexibilização de perfil do imóvel.
 
-Dados do CRM sobre o Place+Arbi no momento da persistência:
+Dados do CRM sobre o Place+Arbi no momento das persistências anteriores:
 - Empreendimento: Place+Arbi
 - Bairro: Shopping Park
 - Zona: Zona Sul
@@ -50,20 +50,20 @@ Dados do CRM sobre o Place+Arbi no momento da persistência:
 - Opção 48m²: 2 quartos, 1 banheiro, sacada, 1 vaga descoberta, valor de referência R$ 221.760
 - Opção 50m²: 2 quartos, 1 suíte, 2 banheiros, sacada, 1 vaga descoberta, valor de referência R$ 240.010
 
-Usar esses valores como referência do CRM, com ressalva de que depende da unidade/tabela vigente. Não prometer condição, aprovação ou disponibilidade final sem validação comercial.
+Usar esses valores como referência do CRM, com ressalva de que dependem da unidade/tabela vigente. Não prometer condição, aprovação ou disponibilidade final sem validação comercial.
 
 ## Diagnóstico
 ### Necessidade
-A cliente busca uma opção compatível com teto de até R$ 280 mil e quer entender o caminho via financiamento, possivelmente dentro do empreendimento/região já apresentado.
+A cliente busca uma opção compatível com teto de até cerca de R$ 280 mil. O perfil não precisa ficar restrito a condomínio fechado; pode considerar alternativa que encaixe melhor em valor, financiamento e perfil.
 
 ### Momento
-Ainda não informado. A sequência de perguntas sobre valor e financiamento sugere avanço na análise de compra, mas não confirma urgência.
+Ainda não informado. A sequência de perguntas sobre valor, financiamento e tipo de empreendimento indica avanço na análise de compra, mas ainda não confirma urgência.
 
 ### Decisão
-Ainda não informado.
+Ainda não informado. Não há sinal registrado sobre outras pessoas envolvidas na decisão.
 
 ### Viabilidade
-Cliente declarou teto de valor de até R$ 280 mil e indicou financiamento como foco. O Place+Arbi tem referências no CRM abaixo desse teto, mas a conversa ainda não levantou entrada, FGTS, renda, composição familiar ou simulação. Não prometer crédito ou aprovação.
+Cliente declarou teto de valor de até R$ 280 mil e trouxe financiamento como tema ativo. O Place+Arbi tem referências no CRM abaixo desse teto, mas a conversa ainda não levantou entrada, FGTS, renda, composição familiar ou aprovação. Não prometer crédito ou aprovação.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -85,25 +85,28 @@ Cliente enviou `Continuar o atendimento`. A rotina silenciosa validou o cliente 
 ### 2026-05-08 — Inbound com teto de valor
 Cliente perguntou pelo WhatsApp: `Até 280 mil vc consegue?`. A rotina silenciosa validou o cliente no CRM (`broker_id=35`) e preservou o status em `Em Atendimento`, sem transição necessária. A repescagem já estava interrompida com `client_replied` e não havia Resgate ativo. Foi registrada nota operacional no CRM (nota 17254). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
-### 2026-05-08 — Inbound com foco em financiamento
-Cliente respondeu pelo WhatsApp com `Financiamento`. A rotina silenciosa validou o cliente no CRM (`broker_id=35`) e preservou o status em `Em Atendimento`, sem transição necessária. A repescagem já estava interrompida com `client_replied` e não havia Resgate ativo. Foi registrada nota operacional no CRM (nota 17255). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+### 2026-05-08 — Inbound sobre financiamento
+Cliente respondeu pelo WhatsApp com `Financiamento`. A rotina silenciosa preservou o status em `Em Atendimento`, confirmou que a repescagem seguia interrompida e que não havia Resgate ativo, e registrou nota operacional no CRM (nota 17255). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound flexibilizando condomínio fechado
+Cliente informou pelo WhatsApp: `Mas não precisa ser exatamente em condomínio fechado`. A rotina silenciosa preservou o status em `Em Atendimento`, confirmou que a repescagem seguia interrompida e que não havia Resgate ativo, e registrou nota operacional no CRM (nota 17257). Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
 
 ## Objeções e travas
-- Teto declarado: até R$ 280 mil.
-- Foco atual: financiamento.
-- Atenção: responder com valor como referência do CRM, sem tratar como garantia fixa de tabela/unidade.
-- Atenção: financiamento deve ser tratado como análise/encaixe, sem prometer aprovação, parcela ou condição.
+- Teto declarado: até cerca de R$ 280 mil.
+- Forma de compra em pauta: financiamento.
+- Perfil do empreendimento: condomínio fechado não é obrigatório; não restringir a busca a esse critério.
+- Atenção: responder com valores como referência do CRM, sem tratar como garantia fixa de tabela/unidade.
 - Atenção conversacional: `Como assim?` já ocorreu antes e deve ser tratado como pedido de explicação, não como falta de contexto.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp conectando valor e financiamento: dizer que dentro dessa faixa existem referências no Place+Arbi, que dá para olhar o financiamento com segurança, e que a aprovação/condição depende da análise. Sugerir de forma simples as duas opções do CRM: 48m² como mais econômica e 50m² com suíte dentro da faixa. Fazer uma pergunta objetiva para avançar, por exemplo se ela quer priorizar menor valor de entrada/financiamento ou uma planta com suíte.
+Responder comercialmente pelo WhatsApp reconhecendo a flexibilidade: não travar a busca só em condomínio fechado e priorizar opções até R$ 280 mil que façam sentido para financiamento e perfil. Usar dados do CRM como referência segura e conduzir com uma pergunta simples, por exemplo se ela prefere manter Shopping Park/Zona Sul como prioridade ou se pode olhar outras regiões caso o valor/perfil fique melhor.
 
 Depois de responder normalmente ao cliente em `Em Atendimento`, se a mensagem deixar uma pergunta/próximo passo em aberto, armar Resgate em `step=0` conforme a régua de qualificação.
 
 ## Observações operacionais
 - Cliente elegível para Reno confirmado no CRM (`broker_id=35`).
-- Status atual no CRM verificado como `Em Atendimento`; não houve regressão ou avanço artificial.
-- Repescagem encerrada por resposta real da cliente antes do primeiro step automático.
+- Status atual no CRM verificado como `Em Atendimento`; não houve regressão ou avanço artificial nesta rotina.
+- Repescagem encerrada por resposta real da cliente antes do primeiro step automático e permanece com `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Não havia Resgate ativo a interromper.
 - Rotina silenciosa não enviou mensagem ao cliente.
 - O vault foi atualizado como camada curada; o CRM/FamaChat permanece a fonte operacional da verdade.
