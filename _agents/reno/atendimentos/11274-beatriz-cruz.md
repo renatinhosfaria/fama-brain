@@ -128,3 +128,6 @@ Cliente explicou que a mãe faz faxina fixa em duas casas de família e em outra
 
 ### 2026-05-08 — Inbound: impossibilidade para hoje
 Cliente respondeu “Hoje não consigo”. Interpretação operacional: objeção de agenda/impossibilidade para hoje no atendimento em andamento; preservar para a condução comercial normal, com possível remarcação ou continuidade por WhatsApp conforme histórico imediato. Status CRM já estava em `Em Atendimento` e foi preservado. Repescagem estava encerrada (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia Resgate ativo. Nota CRM: 17265. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
+
+### 2026-05-08 — Inbound: pedido de endereço da Fama
+Cliente perguntou “Qual o endereço de vocês”. Interpretação operacional/comercial: pedido de endereço da Fama é sinal relevante de avanço e possível intenção de visita ou validação presencial. Status CRM já estava em `Em Atendimento` e foi preservado. Repescagem permanecia encerrada (`enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`) e não havia Resgate ativo no `meta_data`. Nota CRM: 17267. Nenhuma mensagem foi enviada ao cliente por esta rotina silenciosa.
