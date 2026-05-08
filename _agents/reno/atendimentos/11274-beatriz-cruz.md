@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Beatriz Cruz
-client_id: 11274
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11274
 created: '2026-05-08'
-updated: '2026-05-08'
+entity_name: Beatriz Cruz
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -19,6 +17,8 @@ tags:
   - em-atendimento
   - finalidade-moradia
   - perfil-2-3-quartos
+type: entity-profile
+updated: '2026-05-08'
 ---
 # Atendimento — Beatriz Cruz
 
@@ -76,7 +76,3 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate não estava ativo no momento da pergunta sobre 2 e 3 quartos.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
-
-
-### 2026-05-08 — Interesse em opções 2 e 3 quartos
-Cliente perguntou como ficam as opções de 2 e 3 quartos. Interpretação: deseja comparar tipologias do empreendimento/região antes de avançar. Próximo passo: responder de forma consultiva sem inventar valores, explicar diferença de perfil e conduzir para orçamento/condição de financiamento.
