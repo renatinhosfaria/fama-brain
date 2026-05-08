@@ -119,3 +119,7 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate inexistente/sem ciclo ativo no momento do inbound “Uns 3 e pouco”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Restrição no CPF
+Cliente informou que a mãe está com CPF sem restrição, mas ela própria não está. Interpretação: há restrição no CPF da cliente, o que pode dificultar ou impedir aprovação de financiamento se ela participar da composição/renda/contrato. Próximo passo: orientar com cuidado que o ideal é regularizar antes da análise, sem encerrar oportunidade, e perguntar se a restrição é algo que consegue negociar/regularizar.
