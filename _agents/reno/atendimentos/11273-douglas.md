@@ -84,3 +84,8 @@ Aguardar o cliente informar a faixa mensal confortável. Depois, direcionar a co
 
 ### 2026-05-08 — Pedido de fotos
 Cliente perguntou se havia fotos da opção de R$292 mil. Dados do CRM: unidade de R$292.400, 56,9m², 2 quartos, 1 suíte, 2 banheiros, 1 vaga coberta, sacada/varanda, empreendimento Union Vista. Reno enviou fotos gerais do empreendimento/áreas (Portaria, Fachada, Piscina, Fitness), esclarecendo que não são fotos internas específicas da unidade, e abriu possibilidade de enviar vídeo do decorado.
+
+### 2026-05-08 — Vídeo do decorado enviado
+Cliente aceitou receber vídeo do decorado com: "Pode ser". Reno enviou o vídeo público do Decorado Linha Union do Union Vista, como referência de decorado/planta, sem afirmar que representa exatamente a unidade de R$292.400. Resgate reajustado em step=0 para eventual silêncio após envio de mídia, bucket `union_vista_decorado_video_followup`.
+
+Vídeo enviado: https://s3.famachat.com.br/famaserver-files/public/empreendimentos/HLTS-Construtora/Union-Vista/videos/Decorado_Linha_Union-1774868896744-627539494.mp4
