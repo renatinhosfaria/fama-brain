@@ -74,3 +74,6 @@ Atualização de diagnóstico:
 - Necessidade/finalidade: investimento.
 - Empreendimento de interesse: Union Vista.
 - Próximo passo: entender o tipo de investimento desejado — renda com aluguel após pronto ou valorização/revenda.
+
+## Interação — 2026-05-08 00:23
+Reno respondeu no WhatsApp: "Boa. Nesse caso faz sentido olhar mais preço de entrada, prazo de entrega e potencial de valorização. Você pensa mais em renda com aluguel depois de pronto, ou em valorização pra revender no futuro?"
