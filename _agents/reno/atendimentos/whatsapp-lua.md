@@ -45,3 +45,6 @@ Cliente explicou composição familiar pretendida: irão morar ela, o marido, a 
 
 ## Atualização — 2026-05-08
 Cliente esclareceu composição de renda: juntando duas rendas daria aproximadamente R$ 3.900; somando todos que irão morar no imóvel, a renda familiar total seria aproximadamente R$ 8.500. Ponto comercial importante: verificar quem pretende entrar formalmente no financiamento e na propriedade do imóvel, pois isso muda a viabilidade e a análise bancária.
+
+## Atualização — 2026-05-08
+Cliente perguntou se seria possível colocar o imóvel/financiamento no nome de todo mundo. Orientação comercial: responder que pode ser analisado, mas depende das regras do banco e que quem compõe renda normalmente assume também participação no financiamento/documentação. Próximo ponto de qualificação: restrição no CPF dos participantes e renda comprovável.
