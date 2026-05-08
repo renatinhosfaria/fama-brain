@@ -1,25 +1,25 @@
 ---
-broker_id: 35
-client_id: 11273
-created: '2026-05-08'
-entity_name: Douglas
-entity_type: atendimento
+type: entity-profile
 owner: reno
-source: Facebook Ads
+entity_type: atendimento
+entity_name: Douglas
+client_id: 11273
+broker_id: 35
 status_crm: Em Atendimento
+source: Facebook Ads
+created: '2026-05-08'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - union-vista
-type: entity-profile
-updated: '2026-05-08'
 ---
 # Atendimento — Douglas
 
 ## Resumo atual
-Cliente está em atendimento pelo Reno após responder ao primeiro contato do WhatsApp. Confirmou interesse no Union Vista para investimento, com foco em renda de aluguel, e entrou em viabilidade perguntando sobre entrada/parcela. Pediu fotos da opção de aproximadamente R$292 mil; o atendimento comercial registrou envio de fotos gerais do empreendimento e, depois, envio de vídeo do decorado como referência. A repescagem está encerrada por resposta do cliente. O Resgate atual está em `step=0` rearmado após o outbound de mídia mais recente, para eventual novo silêncio.
+Cliente está em atendimento pelo Reno após responder ao primeiro contato do WhatsApp. Confirmou interesse no Union Vista para investimento, com foco em renda de aluguel, e entrou em viabilidade perguntando sobre entrada/parcela. Pediu fotos da opção de aproximadamente R$292 mil, recebeu fotos gerais do empreendimento e aceitou receber o vídeo do decorado com a resposta "Pode ser". O atendimento comercial registrou envio do link público do vídeo como referência de decorado/planta, sem tratar como confirmação exata da unidade de R$292.400. Status CRM permanece em Em Atendimento. Repescagem está encerrada por resposta do cliente. Resgate atual está ativo em step=0 por ter sido rearmado após o outbound normal de mídia do Reno, para eventual silêncio depois do vídeo enviado.
 
 ## Dados operacionais
 - Cliente ID: 11273
@@ -28,10 +28,10 @@ Cliente está em atendimento pelo Reno após responder ao primeiro contato do Wh
 - Origem: Facebook Ads
 - Telefone/WhatsApp: registrado no CRM
 - Empreendimento de interesse: Union Vista (id_empreendimento=22), Grand Ville, Uberlândia
-- Última interação relevante: 2026-05-08 00:32 — cliente aceitou receber vídeo do decorado; Reno enviou link público como referência e o Resgate foi rearmado em step=0 para eventual silêncio após mídia.
+- Última interação relevante: 2026-05-08 00:34 — rotina silenciosa processou inbound "Pode ser", preservou status Em Atendimento e registrou que o Resgate ativo atual pertence ao ciclo pós-outbound normal de mídia.
 
 ## Contexto comercial
-Lead entrou por Facebook Ads com interesse no Union Vista. O primeiro contato do Reno contextualizou o empreendimento e perguntou se o cliente procurava imóvel na região. O cliente confirmou interesse inicial, informou que está olhando para investimento, detalhou foco em renda de aluguel e passou a avaliar viabilidade financeira do investimento. Depois da orientação sobre entrada/parcela, pediu fotos da opção de R$292 mil e aceitou receber vídeo do decorado.
+Lead entrou por Facebook Ads com interesse no Union Vista. O primeiro contato do Reno contextualizou o empreendimento e perguntou se o cliente procurava imóvel na região. O cliente confirmou interesse inicial, informou que está olhando para investimento, detalhou foco em renda de aluguel e passou a avaliar viabilidade financeira do investimento. Depois da orientação sobre entrada/parcela, pediu fotos da opção de R$292 mil. Após receber fotos gerais do empreendimento e a oferta de vídeo do decorado, respondeu "Pode ser", aceitando o envio do vídeo.
 
 ## Diagnóstico
 ### Necessidade
@@ -65,23 +65,26 @@ Cliente perguntou qual seria uma entrada boa para deixar a parcela relativamente
 ### 2026-05-08 — Pedido de fotos da opção de R$292 mil
 Cliente perguntou se havia fotos da opção de R$292 mil. Dados registrados no CRM: opção de R$292.400, 56,9m², 2 quartos, 1 suíte, 2 banheiros, 1 vaga coberta, sacada/varanda, empreendimento Union Vista. O atendimento comercial registrou envio de fotos gerais do empreendimento/áreas (Portaria, Fachada, Piscina, Fitness), esclarecendo que não eram fotos internas específicas da unidade, e abriu possibilidade de enviar vídeo do decorado.
 
-### 2026-05-08 — Persistência silenciosa do inbound
-Rotina operacional silenciosa processou o inbound "Você teria fotos desse de R$292mil?". Status atual já estava em Em Atendimento, então foi preservado sem regressão. Repescagem já estava interrompida por `client_replied`. O Resgate ativo daquele momento foi interrompido no CRM por resposta inbound do cliente: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`. Nenhum WhatsApp foi enviado por esta rotina silenciosa.
+### 2026-05-08 — Persistência silenciosa do pedido de fotos
+Rotina operacional silenciosa processou o inbound "Você teria fotos desse de R$292mil?". Status atual já estava em Em Atendimento, então foi preservado sem regressão. Repescagem já estava interrompida por `client_replied`. Resgate ativo naquele momento foi interrompido no CRM por resposta inbound do cliente: `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`. Nenhum WhatsApp foi enviado por esta rotina silenciosa.
 
-### 2026-05-08 — Vídeo do decorado enviado
-Cliente aceitou receber o vídeo do decorado com "Pode ser". Reno enviou link público do vídeo Decorado Linha Union do Union Vista, registrando que é referência do decorado/planta e não confirmação exata da unidade de R$292.400. Após o outbound de mídia, o Resgate foi rearmado em `step=0` para eventual novo silêncio, com contexto `union_vista_decorado_video_followup`.
+### 2026-05-08 — Aceite de vídeo do decorado e envio de referência
+Cliente aceitou receber o vídeo do decorado com "Pode ser". O atendimento comercial registrou envio do link público do vídeo Decorado Linha Union do Union Vista, informando que é referência de decorado/planta e não confirmação exata da unidade de R$292.400. Resgate foi rearmado em step=0 após o outbound normal de mídia, contexto `union_vista_decorado_video_followup`.
+
+### 2026-05-08 — Persistência silenciosa do inbound "Pode ser"
+Rotina operacional silenciosa processou o inbound "Pode ser". Status CRM já estava em Em Atendimento e foi preservado sem regressão. Repescagem já estava encerrada por `client_replied`. O Resgate ativo atual foi preservado porque corresponde ao novo ciclo step=0 armado após outbound normal de mídia do Reno, não ao ciclo anterior de silêncio pré-resposta. Nenhum WhatsApp foi enviado por esta rotina silenciosa.
 
 ## Objeções e travas
 - Trava de viabilidade: cliente quer entender entrada suficiente para parcela mais baixa. Precisa de condução consultiva sem prometer aprovação ou parcela exata.
-- Trava de visualização/material: cliente pediu fotos da opção de R$292 mil; recebeu fotos gerais do empreendimento e vídeo do decorado como referência, mas pode precisar de confirmação visual/material específico se disponível.
+- Trava de visualização/material: cliente pediu fotos da opção de R$292 mil e aceitou vídeo do decorado; já recebeu fotos gerais e referência de vídeo, mas ainda pode precisar validar presencialmente planta, unidade, tabela e condição real.
 
 ## Próximo passo
-Aguardar reação do cliente às fotos/vídeo. Se demonstrar interesse positivo, conduzir para visita presencial na Fama para validar opções, entrada e financiamento com segurança. Se seguir apenas em dúvidas de material, responder com dados oficiais disponíveis sem prometer fotos internas específicas da unidade quando não houver evidência.
+Aguardar reação do cliente ao vídeo do decorado. Se demonstrar interesse positivo, conduzir para visita presencial na Fama para validar opções, entrada e financiamento com segurança. Se pedir mais detalhes, responder com dados seguros do CRM e usar a visita como próximo passo para tabela/unidade/condição, sem prometer aprovação ou parcela exata.
 
 ## Observações operacionais
 - Nome cadastrado "Douglas" é utilizável para atendimento.
 - Cliente pertence ao escopo Reno (`broker_id=35`).
 - Status atual Em Atendimento foi preservado, sem regressão.
 - Repescagem de silêncio inicial está fechada por resposta inbound.
-- Resgate atual no CRM está rearmado após outbound de mídia: `step=0`, `enabled=true`, `next_run_at=2026-05-08T01:02:30-03:00`, contexto `union_vista_decorado_video_followup`.
+- Resgate anterior foi interrompido por resposta inbound do cliente; Resgate atual foi rearmado depois de outbound normal de mídia e permanece como follow-up de eventual silêncio após o vídeo enviado.
 - Documento consolidado no caminho oficial do Reno por client_id.
