@@ -123,3 +123,6 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 
 ### 2026-05-08 — Restrição no CPF
 Cliente informou que a mãe está com CPF sem restrição, mas ela própria não está. Interpretação: há restrição no CPF da cliente, o que pode dificultar ou impedir aprovação de financiamento se ela participar da composição/renda/contrato. Próximo passo: orientar com cuidado que o ideal é regularizar antes da análise, sem encerrar oportunidade, e perguntar se a restrição é algo que consegue negociar/regularizar.
+
+### 2026-05-08 — Possibilidade de regularizar CPF
+Cliente confirmou que consegue regularizar a restrição no CPF nos próximos meses. Diagnóstico atualizado: restrição atual no CPF da cliente é uma trava relevante, mas há intenção/possibilidade de regularização. Próximo passo: entender prazo de compra/mudança para organizar estratégia de financiamento e comparar 2 vs 3 quartos sem prometer aprovação.
