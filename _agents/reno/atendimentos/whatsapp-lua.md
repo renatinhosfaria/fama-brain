@@ -39,3 +39,6 @@ Tentativa de consulta/registro no CRM via MCP Postgres falhou por indisponibilid
 
 ## Atualização — 2026-05-08
 Cliente informou renda familiar comprovável aproximada de R$ 3.900. Mantém interesse em casa até R$ 280 mil, financiamento, com entrada/FGTS em torno de R$ 30–40 mil. Próxima validação: forma de comprovação da renda e análise de viabilidade de crédito.
+
+## Atualização — 2026-05-08
+Cliente explicou composição familiar pretendida: irão morar ela, o marido, a cunhada e a mulher da cunhada. Renda familiar informada anteriormente: aproximadamente R$ 3.900. Ponto a esclarecer: se a renda/financiamento seria composta por quais pessoas e quem entraria como comprador no crédito.
