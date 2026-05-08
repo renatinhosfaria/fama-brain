@@ -67,3 +67,7 @@ Responder comercialmente no WhatsApp pela sessão normal, sem uso desta rotina s
 - Evento de origem do primeiro contato: evt_3442 / 3442_1778226385445.
 - Repescagem ficou encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - A rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Resposta sobre finalidade
+Cliente informou que busca imóvel para morar. Diagnóstico atualizado: finalidade de compra = moradia. Próximo passo na conversa: entender composição/necessidade do imóvel, começando por quantidade de quartos ou perfil familiar.
