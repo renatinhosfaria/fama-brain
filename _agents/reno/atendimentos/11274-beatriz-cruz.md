@@ -133,3 +133,7 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate inexistente/sem ciclo ativo no momento do inbound “Quero comprar ainda esse ano”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Agenda depende da escala 12/36 e da mãe
+Cliente explicou que precisa alinhar com a mãe e com os próprios dias em casa, pois trabalha em escala 12/36 noturna. A visita precisa ser em dia em que ela não trabalhe e em que a mãe consiga sair mais cedo. Interpretação: aceitou o avanço presencial, mas ainda não tem disponibilidade definida. Próximo passo: reduzir fricção pedindo 2 opções de dia/horário quando ela alinhar com a mãe, sem pressionar.
