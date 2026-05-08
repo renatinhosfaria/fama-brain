@@ -66,3 +66,11 @@ Aguardar resposta ao diagnóstico inicial e conduzir com uma pergunta por vez. S
 - Nome cadastrado "Douglas" é utilizável para atendimento.
 - Repescagem de silêncio inicial foi fechada por resposta inbound para evitar novo envio automático.
 - Documento consolidado no caminho oficial do Reno por client_id.
+
+### 2026-05-08 — Finalidade identificada
+Cliente respondeu ao diagnóstico inicial: "Para investir no momento".
+
+Atualização de diagnóstico:
+- Necessidade/finalidade: investimento.
+- Empreendimento de interesse: Union Vista.
+- Próximo passo: entender o tipo de investimento desejado — renda com aluguel após pronto ou valorização/revenda.
