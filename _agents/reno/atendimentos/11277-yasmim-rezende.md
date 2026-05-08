@@ -25,11 +25,13 @@ tags:
   - financiamento
   - pedido-midia
   - pedido-valor
+  - faixa-valor
+  - viabilidade
 ---
 # Atendimento — Yasmim Rezende
 
 ## Resumo atual
-A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. A conversa ativa está sobre o Garden Sul, no Jardim Sul. A cliente indicou que procura imóvel para morar, declarou intenção de compra e agora informou que pretende comprar financiado, pedindo uma prévia do interior/perfil do empreendimento e do valor antes de avançar para o restante do atendimento. Próximo passo: resposta comercial deve enviar uma prévia segura do Garden Sul com fotos/vídeo ou descrição interna, valor inicial com ressalva por unidade/condição e manter ponte leve para visita presencial quando houver sinal positivo, sem prometer aprovação de crédito.
+A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. A conversa ativa está sobre o Garden Sul, no Jardim Sul. A cliente indicou que procura imóvel para morar, declarou intenção de compra, informou que pretende comprar financiado, pediu uma prévia do interior/perfil e valor do empreendimento e, por fim, sinalizou faixa aproximada de valor em torno de R$ 290.000. Próximo passo: resposta comercial deve reconhecer a faixa informada, explicar com segurança que o Garden Sul aparece próximo dessa faixa conforme unidade/condição, evitar promessa de aprovação e conduzir para validação de opção/valor/financiamento com segurança, preferencialmente abrindo caminho para visita presencial quando houver sinal positivo.
 
 ## Dados operacionais
 - Cliente ID: 11277
@@ -38,16 +40,16 @@ A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno 
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no CRM
 - Empreendimento de interesse: Garden Sul — Jardim Sul, Uberlândia
-- Última interação relevante: cliente pediu prévia do interior/perfil do Garden Sul e valor, informando intenção de compra financiada
+- Última interação relevante: cliente informou faixa aproximada de valor/orçamento: “290.000 eu achooo”
 - Repescagem: interrompida em step 0; `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`
 - Resgate: sem ciclo ativo no momento da rotina silenciosa
 
 ## Contexto comercial
 A cliente entrou como lead automático de Facebook Ads com interesse no Garden Sul, empreendimento confirmado no CRM como localizado no bairro Jardim Sul/Zona Sul de Uberlândia. A abertura do Reno usou esse contexto e perguntou se ela procura imóvel naquela região.
 
-A cliente respondeu “Oi”, depois “Então eu perdi aqui”, confirmou/corrigiu que o assunto era “Garden Sul, no Jardim Sul”, complementou com “Da unidade”, disse “Não lembro”, informou “Morar”, respondeu “2” em contexto que depende do histórico imediato, enviou “Eu quero comprar” e, na sequência, informou: “Financiado, vc pode só me mandar como ele é por dentro e o valor? Depois vemos o restante?”.
+A cliente respondeu “Oi”, depois “Então eu perdi aqui”, confirmou/corrigiu que o assunto era “Garden Sul, no Jardim Sul”, complementou com “Da unidade”, disse “Não lembro”, informou “Morar”, respondeu “2” em contexto que depende do histórico imediato, enviou “Eu quero comprar”, informou que quer comprar financiado e pediu: “vc pode só me mandar como ele é por dentro e o valor? Depois vemos o restante?”. Depois, sinalizou faixa aproximada de valor: “290.000 eu achooo”.
 
-A intenção atual deve ser tratada como sinal quente com preferência por atendimento gradual: ela quer uma prévia objetiva antes de avançar para diagnóstico ou visita. A resposta comercial deve atender ao pedido sem virar catálogo, usando dados seguros do CRM e evitando promessa de aprovação.
+A intenção atual deve ser tratada como sinal quente com preferência por atendimento gradual: ela quer uma prévia objetiva antes de avançar para diagnóstico ou visita. A faixa de R$ 290.000 deve ser usada como referência inicial de viabilidade, não como limite rígido, porque a própria cliente trouxe incerteza na resposta.
 
 Informações seguras do CRM sobre o Garden Sul para continuidade: empreendimento no Jardim Sul/Zona Sul, plantas de 2 quartos com suíte, sacada gourmet, sala em dois ambientes, 1 vaga, 3 elevadores, lazer com piscina, espaço gourmet, salão de festas, playground, quadra e academia. Plantas cadastradas variam de 52,01m² a 82,70m², com valores a partir de R$ 294.900,00, dependendo da unidade. Não passar endereço completo espontaneamente.
 
@@ -56,13 +58,13 @@ Informações seguras do CRM sobre o Garden Sul para continuidade: empreendiment
 Cliente indicou que busca imóvel para morar e quer entender melhor o Garden Sul antes de avançar.
 
 ### Momento
-Há sinal de momento ativo: declarou “Eu quero comprar” e pediu informações objetivas de interior/perfil e valor. Ainda não há urgência/prazo de compra qualificados.
+Há sinal de momento ativo: declarou “Eu quero comprar”, pediu informações objetivas de interior/perfil e valor, e informou uma faixa aproximada de orçamento.
 
 ### Decisão
 Ainda não informado quem decide ou se há outra pessoa envolvida.
 
 ### Viabilidade
-Cliente informou que pretende comprar financiado. Ainda não foram informados entrada, renda, FGTS ou faixa de parcela. A resposta deve tratar financiamento como caminho de viabilidade, sem prometer aprovação, e pode mencionar que o valor/condição dependem da unidade e análise.
+Cliente informou que pretende comprar financiado e sinalizou faixa aproximada de valor em torno de R$ 290.000. Ainda não foram informados entrada, renda, FGTS ou faixa de parcela. A resposta deve tratar financiamento como caminho de viabilidade, sem prometer aprovação, e pode mencionar que o valor/condição dependem da unidade e análise. Como o CRM indica valor inicial do Garden Sul a partir de R$ 294.900,00, a faixa informada parece próxima do ticket inicial, mas precisa ser validada com unidade/condição atualizada e simulação segura.
 
 ## Histórico curado de interações
 ### 2026-05-08 — Primeiro contato enviado
@@ -99,14 +101,18 @@ A cliente enviou “Eu quero comprar” pelo WhatsApp. O status já estava `Em A
 ### 2026-05-08 — Compra financiada e pedido de prévia de interior/valor
 A cliente informou que pretende comprar financiado e pediu para receber como o Garden Sul é por dentro e o valor antes de ver o restante. O status já estava `Em Atendimento` e foi preservado. A repescagem seguia interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não havia Resgate ativo. Nota objetiva foi registrada no FamaChat. Próximo passo comercial: atender ao pedido com prévia segura do empreendimento e valor inicial por unidade, sem promessa de aprovação, mantendo o presencial como próximo passo lógico se a prévia agradar.
 
+### 2026-05-08 — Faixa aproximada de valor/orçamento
+A cliente enviou “290.000 eu achooo”. O status já estava `Em Atendimento` e foi preservado. A repescagem seguia interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; não havia Resgate ativo. Nota objetiva foi registrada no FamaChat. Próximo passo comercial: reconhecer a faixa como referência inicial de viabilidade, explicar que o Garden Sul fica próximo do ticket inicial informado no CRM conforme unidade/condição, não tratar como aprovação/encaixe garantido e conduzir para validação segura de unidade, valor e financiamento.
+
 ## Objeções e travas
 - A cliente prefere receber primeiro uma prévia por WhatsApp (“como ele é por dentro e o valor”) antes de avançar para o restante; tratar como pedido legítimo, não como recusa de atendimento.
+- A cliente sinalizou faixa aproximada de valor de R$ 290.000 com incerteza; usar como referência, sem endurecer como limite rígido.
 - Houve perda/ajuste de contexto na conversa; tratar com explicação simples e retomada natural.
 - A mensagem “Não lembro” indica que o Reno deve reexplicar a conversa anterior em vez de cobrar lembrança da cliente.
 - A mensagem “2” é uma resposta numérica e depende do contexto imediato; não assumir significado sem ler a última pergunta/oferta enviada.
 
 ## Próximo passo
-Responder comercialmente pelo WhatsApp somente após reconstruir o contexto imediato da sessão. A resposta deve atender ao pedido atual: enviar/explicar uma prévia do Garden Sul por dentro e citar valor inicial seguro com ressalva de variação por unidade/condição. Como a cliente informou financiamento, usar linguagem de viabilidade sem prometer aprovação. Se a prévia agradar, conduzir para visita presencial na Fama como próximo passo para ver opções, valores e financiamento com segurança. Não enviar follow-up automático antes do outbound normal do Reno.
+Responder comercialmente pelo WhatsApp somente após reconstruir o contexto imediato da sessão. A resposta deve reconhecer a faixa aproximada de R$ 290.000, atender ao pedido atual com uma prévia do Garden Sul por dentro e citar valor inicial seguro com ressalva de variação por unidade/condição. Como a cliente informou financiamento, usar linguagem de viabilidade sem prometer aprovação. Se a prévia agradar ou se ela confirmar que a faixa faz sentido, conduzir para visita presencial na Fama como próximo passo para ver opções, valores e financiamento com segurança. Não enviar follow-up automático antes do outbound normal do Reno.
 
 ## Observações operacionais
 - CRM validado como fonte de verdade: cliente existente, `broker_id=35`.
