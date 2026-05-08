@@ -103,3 +103,11 @@ Aguardar resposta da cliente. Se responder, mover atendimento para `Em Atendimen
 - Envio feito por fallback excepcional do bridge local porque a ferramenta `send_message` não estava exposta nesta sessão do worker; o bridge estava saudável e conectado.
 - `mark_reno_followup_sent` confirmou o estado persistido correto para step 2 e já agendou o próximo envio.
 - Não repetir o mesmo argumento da viabilidade no próximo step; a próxima mensagem deve mudar pelo menos o ângulo, a pergunta e o benefício destacado.
+### 2026-05-08 — repescagem step 3
+- WhatsApp enviado com validação onWhatsApp.
+- Mensagem: "Oi, Patricia! Tudo bem? 🔑
+
+Pra eu te orientar melhor no Union Vista, no Grand Ville, o que pesa mais pra você nessa busca: localização, tamanho da planta ou condição de compra?"
+- Cliente segue em Não Respondeu.
+- Próximo follow-up: 2026-05-09 19:10 BRT.
+- Ângulo da régua ajustado para critério principal de escolha: localização, tamanho da planta ou condição de compra.
