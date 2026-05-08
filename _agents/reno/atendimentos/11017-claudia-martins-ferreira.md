@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-28'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - preferencia-regiao-leste
 ---
 # Atendimento — Claudia Martins Ferreira
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) em `Em Atendimento`. Após pedir informações do Union Vereda em 2026-05-04, enviou novo inbound especificando busca por empreendimentos na região leste, até R$ 400 mil, com entrega a partir do meio de 2027. Status já estava em `Em Atendimento` e foi preservado. Resgate e Repescagem já estavam interrompidos por resposta do cliente (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`) e foram mantidos inativos.

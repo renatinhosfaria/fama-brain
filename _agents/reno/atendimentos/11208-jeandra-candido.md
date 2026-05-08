@@ -18,6 +18,8 @@ tags:
 ---
 # Atendimento — Jeandra Cândido
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[place-arbi]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+
 ## Resumo atual
 Repescagem ativa para a cliente operacional `11208` segue em `Não Respondeu`. O fluxo já passou por três ângulos: step 1 organizou a busca entre Garden Sul e Place+Arbi; step 2 tratou viabilidade prática da compra; step 3 foi enviado hoje com foco no critério principal de escolha entre os lançamentos.
 

@@ -18,6 +18,8 @@ tags:
 ---
 # Atendimento — Douglas
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+
 ## Resumo atual
 Cliente está em atendimento pelo Reno, com interesse no Union Vista para investimento/renda de aluguel. Já passou por diagnóstico de viabilidade, recebeu fotos gerais do empreendimento e depois o vídeo do decorado como referência. Na validação desta rotina, o Resgate em step=0 foi pausado com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`, porque a última mensagem real é inbound do cliente e não há novo outbound normal elegível para abrir step 1. Status CRM permanece em Em Atendimento.
 

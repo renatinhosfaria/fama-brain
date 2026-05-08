@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads / lead_automatico
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - max-steps
 ---
 # Atendimento — Vitória Fernandes
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) foi **arquivada automaticamente** após conclusão da régua de **5 repescagens** sem resposta real registrada. Lead veio de Facebook Ads/lead automático com interesse associado ao **Place+Arbi**, na região do Shopping Park. O step 5 foi enviado com sucesso em 2026-05-03T11:28:32-03:00, a branch `reno_followup.repescagem` foi encerrada com `stopped_reason=max_steps` e o status CRM passou de `Não Respondeu` para **Arquivado** por atualização defensiva.

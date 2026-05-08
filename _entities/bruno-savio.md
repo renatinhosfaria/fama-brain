@@ -68,5 +68,5 @@ Cada bullet linka a uma nota de interação isolada com seu próprio chunk:
 
 ## Notas operacionais
 
-- Status `agent-generated` + `verified_by: null` — agente não pode citar este perfil como ground truth em decisão crítica até [[Renato Faria]] ou [[Edilene]] verificarem.
+- Status `agent-generated` + `verified_by: null` — agente não pode citar este perfil como ground truth em decisão crítica até Renato Faria ou Edilene verificarem.
 - Quando o MCP `obsidian` for atualizado para aceitar `type: entity` (schema v1), trocar `type: entity-profile` → `type: entity` aqui.

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-05-05'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - step-2
 ---
 # Atendimento — Amanda Xavier
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem step 2 enviada com sucesso pelo WhatsApp em 07/05/2026 às 15:19, após o primeiro follow-up já concluído. A cliente segue sob responsabilidade do Reno (`broker_id=35`) em `Não Respondeu`. A abordagem avançou do ângulo de prazo/forma de pagamento do lançamento para a leitura de viabilidade prática do Place+Arbi: entrada, parcelas da obra e financiamento.

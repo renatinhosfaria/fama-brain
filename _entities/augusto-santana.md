@@ -29,7 +29,7 @@ external_ids:
   broker_id: 35
 interactions:
   - '[[10954-augusto-santana]]'
-  - '[[11046-augusto-santana]]'
+  - 11046-augusto-santana
 mentions_property:
   - '[[union-vista]]'
 regions_of_interest:

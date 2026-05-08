@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-05-02'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -24,6 +24,8 @@ tags:
   - facebook-ads
 ---
 # Atendimento — Adelitatavarescampos
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) finalizado em `Arquivado`. A 5ª repescagem foi enviada com sucesso, a branch operacional foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, e o cliente foi arquivado automaticamente após a validação defensiva no CRM.

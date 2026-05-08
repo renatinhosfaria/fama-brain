@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -22,6 +22,8 @@ tags:
   - jaragua
 ---
 # Atendimento — Elinete Silva
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno originada de Facebook Ads com interesse vinculado ao **Union Vereda**, no Jaraguá. Primeiro contato e repescagens steps 1 a 5 foram enviados por WhatsApp sem resposta real registrada. Em 2026-05-03 foi enviado o **step 5 da repescagem** com encerramento elegante: pausa respeitosa, reconhecimento de pesquisa/comparação e porta aberta para retomada futura. Após correção do estado final da repescagem para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, o cliente foi arquivado automaticamente no FamaChat por regra defensiva.

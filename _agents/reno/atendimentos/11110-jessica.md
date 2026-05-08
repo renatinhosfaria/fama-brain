@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Jessica
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) foi arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real registrada no CRM. O interesse estava associado ao empreendimento Garden Sul. O step 5 foi enviado com encerramento elegante, pausa respeitosa e porta aberta para retomada futura, sem repetir o convite de análise/visita usado no step 4.

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-05-05'
-updated: '2026-05-05'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - reprocessamento
 ---
 # Atendimento — Thulio Medeiros
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Primeiro contato do Reno foi reenviado com sucesso via WhatsApp em 2026-05-05, após falha técnica no envio original do webhook. Cliente está em `Não Respondeu`, aguardando primeira resposta.

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -17,6 +17,8 @@ tags:
   - resgate
 ---
 # Atendimento — Guilherme Mendes
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[guilherme-mendes]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno em atendimento pelo WhatsApp, com interesse no Union Vereda, no Jaraguá. Após envio de planta do empreendimento, respondeu que a planta agradou; Reno convidou para visita presencial na Fama. Em 2026-04-30 foram enviados Resgate step 1 e step 2 no bucket `visita_pendente`. O cliente respondeu `Sim` ao step 2, indicando aceite para receber o resumo simples/oferta de continuidade. O status já estava em `Em Atendimento`; Resgate e Repescagem foram interrompidos no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.

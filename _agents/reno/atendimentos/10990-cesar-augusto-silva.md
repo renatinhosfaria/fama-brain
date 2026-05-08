@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-29'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -20,6 +20,8 @@ tags:
   - arquivado
 ---
 # Atendimento — César Augusto Silva
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno com interesse de origem Facebook Ads no empreendimento Place+Arbi, no Shopping Park, Uberlândia. Primeiro contato e repescagens steps 1 a 5 foram enviados sem resposta real registrada. Em 2026-05-04, foi enviada a repescagem step 5 com encerramento elegante, pausa respeitosa e porta aberta para retomada futura; após o envio, a régua foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat por regra operacional defensiva.

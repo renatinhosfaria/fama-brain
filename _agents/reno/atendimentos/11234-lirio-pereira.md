@@ -16,9 +16,11 @@ tags:
   - diagnostico
   - financiamento
 type: entity-profile
-updated: '2026-05-06'
+updated: '2026-05-08'
 ---
 # Atendimento — Lirio pereira
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Facebook Ads sob responsabilidade do Reno (broker_id 35), interessado no Union Vista, no Grand Ville. Primeiro contato foi enviado por WhatsApp em 2026-05-06 e o atendimento evoluiu para `Em Atendimento`. O cliente confirmou interesse na região, informou finalidade de moradia, uso somente para si, momento de pesquisa com calma, prioridade por valores, intenção de financiamento, entrada/FGTS aproximado de R$ 7 mil e renda mensal aproximada de R$ 6.300. Repescagem está interrompida por resposta do cliente e não há Resgate ativo identificado.

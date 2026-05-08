@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ source: Facebook Ads
 status_crm: Arquivado
 ---
 # Atendimento — Carmen Vicente Santos Vicente Santos
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno (`client_id=10998`) arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta. O interesse estava associado ao Garden Sul / Jardim Sul. A repescagem step 5 foi enviada com encerramento elegante, sem insistir em agenda, e a branch `reno_followup.repescagem` foi encerrada com `step=5` e `stopped_reason=max_steps` antes do arquivamento defensivo no FamaChat.

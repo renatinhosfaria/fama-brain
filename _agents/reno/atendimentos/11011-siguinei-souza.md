@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -21,6 +21,8 @@ tags:
   - shopping-park
 ---
 # Atendimento — Siguinei Souza
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) foi arquivado automaticamente em 2026-05-04 após conclusão da régua de 5 repescagens sem resposta real. A repescagem step 5 foi enviada via WhatsApp com encerramento elegante e porta aberta, sem repetir convite de agenda/visita. A branch `reno_followup.repescagem` foi corrigida para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps` antes do arquivamento defensivo.

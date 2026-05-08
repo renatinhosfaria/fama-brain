@@ -26,7 +26,7 @@ interactions:
 mentions_property:
   - '[[union-vereda]]'
   - '[[zurique]]'
-  - '[[martinsville]]'
+  - martinsville
 mentions_neighborhood:
   - '[[jaragua]]'
   - '[[martins]]'

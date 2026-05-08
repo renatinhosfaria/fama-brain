@@ -21,7 +21,7 @@ external_ids:
   crm_client_id: 10718
   broker_id: 35
 interactions:
-  - '[[10718-priscila-nogueira]]'
+  - 10718-priscila-nogueira
 mentions_property:
   - '[[park-espanha]]'
 broker: '[[reno]]'

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — ALINEFERKDU⚘
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de **5 repescagens** concluída em 2026-05-03 sem resposta real registrada. O atendimento foi arquivado automaticamente no CRM após o step 5, com branch de repescagem encerrada (`step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`).

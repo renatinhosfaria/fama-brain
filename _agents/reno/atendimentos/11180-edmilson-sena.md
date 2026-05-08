@@ -19,9 +19,11 @@ tags:
   - financiamento
   - mei
 type: entity-profile
-updated: '2026-05-06'
+updated: '2026-05-08'
 ---
 # Atendimento — Edmilson Sena
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente respondeu pelo WhatsApp após a repescagem do Reno e segue em `Em Atendimento`. A repescagem está interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`; não há Resgate ativo registrado.

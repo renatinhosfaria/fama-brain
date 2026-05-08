@@ -40,8 +40,8 @@ valid_until: null
 
 Quando decisão A é substituída por B:
 
-- A: `status: superseded`, `superseded_by: ["[[B]]"]`.
-- B: `supersedes: ["[[A]]"]`.
+- A: `status: superseded`, `superseded_by: ["id-ou-slug-da-decisao-B"]`.
+- B: `supersedes: ["id-ou-slug-da-decisao-A"]`.
 
 O responsável pela governança enforça ambos os lados quando o autor só preenche um.
 

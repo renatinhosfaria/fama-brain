@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -21,6 +21,8 @@ tags:
   - grand-ville
 ---
 # Atendimento — Alessandra Nascimento
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de repescagem concluída sem resposta real registrada. O step 5 foi enviado via WhatsApp em 2026-05-03, com encerramento elegante e porta aberta para retomada futura. Após correção do estado final da branch `repescagem` para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, o status no FamaChat foi atualizado defensivamente para `Arquivado`.

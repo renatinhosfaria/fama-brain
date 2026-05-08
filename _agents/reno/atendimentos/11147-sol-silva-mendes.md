@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-05-02'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -20,6 +20,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Sol Silva Mendes
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente entrou por Facebook Ads com interesse no Union Vista, no Grand Ville. O primeiro contato foi enviado em 2026-05-02 e não houve resposta. Entre 2026-05-03 e 2026-05-07, o Reno conduziu a régua de repescagem até o step 5, alternando os ângulos de abordagem para organizar a busca, validar viabilidade prática e depois encerrar com pausa respeitosa. Em 2026-05-07 às 14:41 BRT, o step 5 foi enviado, a branch de repescagem foi normalizada para estado terminal (`step=5`, `enabled=false`, `stopped_reason=max_steps`) e o cliente foi arquivado defensivamente porque seguia exatamente em `Não Respondeu`. Status CRM atual: `Arquivado`.

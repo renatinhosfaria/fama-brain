@@ -19,6 +19,8 @@ tags:
 ---
 # Atendimento — Alfred Bertoli
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+
 ## Resumo atual
 Primeiro contato automático do Reno não foi enviado porque o WhatsApp não validou o número disponível nas tentativas realizadas. O cliente permanece em `Sem Atendimento`, sem repescagem inicializada.
 

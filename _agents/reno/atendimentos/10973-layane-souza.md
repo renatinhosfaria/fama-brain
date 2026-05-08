@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -20,6 +20,8 @@ tags:
   - jaragua
 ---
 # Atendimento — Layane Souza
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Layane Souza teve a régua de **repescagem do Reno concluída no step 5** sem resposta real registrada no CRM/FamaChat. O atendimento estava vinculado ao `broker_id=35` e ao status `Não Respondeu`; após o envio bem-sucedido do step final em 2026-05-03, a branch `reno_followup.repescagem` foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Como o cliente ainda permanecia exatamente em `Não Respondeu`, o status foi atualizado defensivamente para `Arquivado`.

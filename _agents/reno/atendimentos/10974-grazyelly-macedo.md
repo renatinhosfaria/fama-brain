@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Grazyelly Macêdo
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[grazyelly-macedo]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente Reno (`client_id=10974`) foi arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta. O contexto comercial era interesse no Place+Arbi / Shopping Park, com cadastro original sugerindo busca inicial e possível compra junto com outra pessoa. A repescagem step 5 foi enviada por WhatsApp com encerramento elegante e porta aberta; em seguida o ramo `reno_followup.repescagem` foi encerrado com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, permitindo o arquivamento defensivo no CRM.

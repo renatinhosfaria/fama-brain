@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10716
   broker_id: 35
 interactions:
-  - '[[10716-larissa-martins]]'
+  - 10716-larissa-martins
 mentions_property:
   - '[[bris]]'
 broker: '[[reno]]'

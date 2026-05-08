@@ -12,9 +12,11 @@ tags:
   - atendimento
   - union-vereda
 type: journal
-updated: '2026-04-29'
+updated: '2026-05-08'
 ---
 # Atendimento — Levi Santos
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[levi-santos]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente Levi Santos, CRM client_id 10951, broker_id 35/Reno. Origem Facebook Ads. Interesse associado ao empreendimento Union Vereda, no Jaraguá.

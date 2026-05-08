@@ -11,9 +11,11 @@ tags:
   - sem-interesse
   - arquivado
 type: journal
-updated: '2026-04-29'
+updated: '2026-05-08'
 ---
 # Atendimento Reno — Rosii Gonçalves (cliente 10992)
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente do Reno (`broker_id=35`) com interesse anterior no empreendimento Union Vereda, região do Jaraguá. Após primeiro contato/follow-up via WhatsApp, respondeu informando que no momento não tem mais interesse.

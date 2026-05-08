@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -22,6 +22,8 @@ tags:
   - grand-ville
 ---
 # Atendimento — Santiago Derson
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[santiago-derson]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente de Facebook Ads sob responsabilidade do Reno (`broker_id=35`). Interesse identificado no empreendimento Union Vista, no Grand Ville. Primeiro contato e repescagens steps 1 a 5 foram enviados via WhatsApp; até o encerramento da régua, não houve resposta real registrada no CRM. Após o envio bem-sucedido do step 5 em 2026-05-03, o ramo de repescagem foi encerrado com `stopped_reason=max_steps` e o cliente foi arquivado automaticamente no FamaChat com condição defensiva.

@@ -5,9 +5,17 @@ created: '2026-04-29'
 owner: reno
 status: Em Atendimento
 type: journal
-updated: '2026-04-29'
+updated: '2026-05-08'
+tags:
+  - reno
+  - atendimento
+  - whatsapp
+  - famachat
+  - credito-imobiliario
 ---
 # Atendimento — Eduarda (cliente 11010)
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[eduarda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente Eduarda, broker_id=35, atendimento do Reno em andamento. Perfil já levantado: 20 anos, mora na região leste de Uberlândia, prefere permanecer na região leste, gosta mais de casa mas entende que apartamento pode ser mais viável pelo valor.

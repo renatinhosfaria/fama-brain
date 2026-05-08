@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: SLA Cascata
 created: '2026-05-05'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -20,6 +20,8 @@ tags:
   - em-atendimento
 ---
 # Atendimento — Charles Carlos
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente respondeu por áudio ao Reno em 2026-05-07 após a repescagem step 2. O atendimento foi retomado para `Em Atendimento` e a repescagem foi interrompida com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.

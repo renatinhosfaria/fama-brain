@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: FamaChat
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -20,6 +20,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Edson Tolentino
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[edson-tolentino]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente em 2026-05-03 após conclusão da régua de **5 repescagens** sem resposta real registrada. O interesse/contexto estava vinculado ao **Union Vista**, no Grand Ville, por origem SLA Cascata a partir de lead original do Facebook Ads. O step 5 foi enviado como encerramento elegante, com pausa/porta aberta, e o ramo `reno_followup.repescagem` foi encerrado com `stopped_reason=max_steps`.

@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-29'
-updated: '2026-04-29'
+updated: '2026-05-08'
 tags:
   - reno
   - repescagem
@@ -18,6 +18,8 @@ client_name: Jonathan Barbosa
 flow: repescagem
 ---
 # Jonathan Barbosa — Repescagem Reno
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[jonathan-barbosa]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Identificação
 - Cliente: Jonathan Barbosa

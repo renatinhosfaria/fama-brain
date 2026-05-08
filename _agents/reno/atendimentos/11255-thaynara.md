@@ -23,6 +23,8 @@ tags:
 ---
 # Atendimento — Thaynara
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+
 ## Resumo atual
 Repescagem step 2 enviada em 2026-05-08 via WhatsApp com abordagem neutra, sem usar o nome cadastral estilizado. O convite avançou para uma leitura prática do Union Vereda, no Jaraguá, focando em entrada, parcela ou prazo de entrega. O CRM permaneceu em `Não Respondeu` e o próximo follow-up ficou agendado para 2026-05-09 às 19:10.
 

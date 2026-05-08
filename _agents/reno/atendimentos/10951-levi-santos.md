@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-29'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ source: Facebook Ads
 status_crm: Em Atendimento
 ---
 # Atendimento — Levi Santos
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[levi-santos]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Levi Santos, CRM client_id 10951, broker_id 35/Reno, em `Em Atendimento`. Interesse associado ao empreendimento Union Vereda, no Jaraguá. O cliente respondeu à repescagem, pediu mais informações e depois perguntou sobre a metragem; após resposta do Reno sobre plantas de 57/58m² e opção térrea maior, ficou em silêncio. Resgate step 1 foi enviado em 2026-04-30 com gancho para escolher entre planta padrão e térrea maior. Como não respondeu, Resgate step 2 foi enviado em 2026-04-30 16:40 com abordagem diferente: reduzir a decisão para escolher entre planta mais enxuta/valor menor ou metragem maior. Em 2026-04-30 18:47, Resgate step 3 foi enviado com novo ângulo: oferecer um comparativo simples entre as opções, reduzindo fricção e evitando despejar opções.

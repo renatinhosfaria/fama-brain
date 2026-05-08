@@ -14,7 +14,7 @@ source: human-curated
 
 # `_hubs/` — MOCs (Map of Content)
 
-Hubs **agregam** notas atômicas. Não duplicam conteúdo. Cada bullet: `[[Nota]] — micro-resumo de 1 linha`.
+Hubs **agregam** notas atômicas. Não duplicam conteúdo. Cada bullet usa um wikilink para a nota e um micro-resumo de 1 linha.
 
 ## Camadas
 

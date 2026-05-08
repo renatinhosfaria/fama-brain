@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Sibely Cortes
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[sibely-cortes]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno (`client_id=10996`) teve a régua de repescagem concluída sem resposta real. Interesse contextual no CRM: Union Vereda, no Jaraguá.

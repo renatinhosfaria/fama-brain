@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: FamaChat
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Kauan Eduardo
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente após conclusão da régua de **5 repescagens** sem resposta real registrada no CRM. O interesse operacional vinha do Facebook Ads/lead automático para o **Union Vereda**, no Jaraguá. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausa respeitosa e porta aberta para retomada futura.

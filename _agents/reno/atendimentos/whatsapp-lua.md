@@ -20,6 +20,8 @@ updated: '2026-05-08'
 ---
 # Atendimento — Lua
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+
 ## Resumo curado
 Cliente procura casa, inicialmente citou condomínio fechado, mas flexibilizou que não precisa ser exatamente em condomínio fechado. Faixa de investimento informada: até R$ 280 mil. Modalidade: financiamento. Entrada/FGTS disponível: aproximadamente R$ 30 a 40 mil.
 

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -22,6 +22,8 @@ tags:
   - shopping-park
 ---
 # Atendimento — 𝒥𝓊́𝓁𝒾𝒶 𝒢𝒶𝒷𝓇𝒾ℯ𝓁𝓎
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Primeiro contato do Reno foi enviado com sucesso via WhatsApp. O CRM tinha nome em caracteres estilizados, então a abertura pediu confirmação de como a cliente prefere ser chamada antes de iniciar a qualificação. Em 2026-05-02 a cliente respondeu pelo WhatsApp e o atendimento já está operacionalmente em `Em Atendimento`; a repescagem foi interrompida por resposta do cliente. A cliente trouxe contexto de localização e reforçou que busca somente no bairro Shopping Park. O CRM confirma que o interesse vinculado é o Place+Arbi, no bairro Shopping Park.

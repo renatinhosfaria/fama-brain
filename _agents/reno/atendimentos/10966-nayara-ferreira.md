@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - max-steps
 ---
 # Atendimento — Nayara Ferreira
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de repescagem concluída em **2026-05-04**. A repescagem **step 5** foi enviada com encerramento elegante, sem repetir convite de agenda/análise da step 4. Após o envio, o ramo `reno_followup.repescagem` foi encerrado com `step=5` e `stopped_reason=max_steps`; como o cliente ainda estava exatamente em **Não Respondeu**, o status foi atualizado defensivamente para **Arquivado**.

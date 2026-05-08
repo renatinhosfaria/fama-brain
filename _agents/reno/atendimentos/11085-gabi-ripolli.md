@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Gabi Ripolli
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) originada por SLA Cascata. Interesse contextualizado no empreendimento Union Vista, no bairro Grand Ville, em Uberlândia. Primeiro contato e cinco repescagens foram enviados via WhatsApp sem resposta real da cliente. A régua de repescagem foi encerrada em 2026-05-03 com `step=5` e `stopped_reason=max_steps`; o cliente foi arquivado automaticamente no FamaChat por proteção defensiva do fluxo.

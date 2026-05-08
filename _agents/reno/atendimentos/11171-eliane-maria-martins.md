@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: Facebook Ads
 created: '2026-05-05'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - step-3
 ---
 # Atendimento — Eliane Maria Martins
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem step 3 enviada com sucesso via WhatsApp em 2026-05-07 14:54 BRT. A cliente permanece em `Não Respondeu`, sem alteração de status. Próxima repescagem prevista para 2026-05-08 19:10 BRT se continuar silenciosa.

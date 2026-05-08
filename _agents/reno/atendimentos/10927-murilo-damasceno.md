@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: FamaChat
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -21,6 +21,8 @@ tags:
   - jaragua
 ---
 # Atendimento — Murilo Damasceno
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[murilo-damasceno]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) vindo de SLA Cascata, com interesse contextual no **Union Vereda**. Permaneceu sem resposta real após primeiro contato e 5 repescagens. Em 2026-05-03, a repescagem step 5 foi enviada com encerramento elegante; o ramo `reno_followup.repescagem` foi encerrado com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. Como o cliente ainda estava em `Não Respondeu`, o status foi arquivado automaticamente no CRM.

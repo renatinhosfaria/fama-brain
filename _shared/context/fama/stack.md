@@ -148,7 +148,7 @@ Não documentado em detalhe:
 
 ### fama-brain — camada compartilhada de memória
 
-**Este vault Obsidian em Git.** Topologia: `C:\fama-brain` (Obsidian local Windows) → GitHub (`renatinhosfaria/fama-brain`) → uma única VPS runtime (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Na VPS, o container Docker Swarm `mcp-obsidian` expõe o vault como 34 tools MCP via HTTPS (`mcp-obsidian.famachat.com.br`); todos os agentes Paperclip/OpenClaw escrevem por ele. Cron `_infra/brain-sync.sh` roda só nessa VPS, coordenando commits do MCP com edições do Windows via `/tmp/brain-sync.lock`. Detalhes em [[../../_infra/mcp-obsidian]]. Serve como:
+**Este vault Obsidian em Git.** Topologia: `C:\fama-brain` (Obsidian local Windows) → GitHub (`renatinhosfaria/fama-brain`) → uma única VPS runtime (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Na VPS, o container Docker Swarm `mcp-obsidian` expõe o vault como 34 tools MCP via HTTPS (`mcp-obsidian.famachat.com.br`); todos os agentes Paperclip/OpenClaw escrevem por ele. A coordenação de commits entre MCP e edições locais é responsabilidade do runtime remoto. Serve como:
 
 - **Contexto institucional compartilhado** — FAMA, mercado, produtos, stack, pessoas, agents map.
 - **Metas e resultados mensais** — por diretor Paperclip, agregados por Renato.

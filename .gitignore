@@ -1,0 +1,12 @@
+# Obsidian local state and installed plugins
+.obsidian/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local/transient files
+.trash/
+*.tmp
+*.bak

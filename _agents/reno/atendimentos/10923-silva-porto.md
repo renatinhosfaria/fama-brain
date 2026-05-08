@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-30'
-updated: '2026-05-01'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -23,6 +23,8 @@ source: FamaChat / SLA Cascata / Facebook Ads
 status_crm: Em Atendimento
 ---
 # Atendimento — Silva Porto
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[silva-porto]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente CRM 10923, broker Reno (35), em status **Em Atendimento** após resposta inbound no WhatsApp.

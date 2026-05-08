@@ -59,13 +59,6 @@ Grupo a ser dissolvido — `_agents/{agente}/` não existe no schema v1. Mapeame
 | `_agents/reno/procedimentos/*.md` | 1 | `_runbooks/runbook-registro-vault-reno.md` |
 | `_agents/README.md` | 1 | `_hubs/hub-agentes.md` |
 
-### `_infra/` (2 notas)
-
-| Path atual | Notas | Destino v1 |
-|------------|-------|------------|
-| `_infra/mcp-obsidian.md` | 1 | `_runbooks/runbook-mcp-obsidian.md` |
-| `_infra/README.md` | 1 | `_hubs/hub-infra.md` |
-
 ### `_projects/` (8 notas, fica)
 
 | Path atual | Notas | Destino v1 |

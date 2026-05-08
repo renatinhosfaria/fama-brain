@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Silvio Humberto Silva
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno (`client_id=10976`, `broker_id=35`) foi **arquivado automaticamente** em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real registrada. O atendimento partiu de interesse no Union Vereda, no Jaraguá, e passou por primeiro contato + repescagens steps 1 a 5.

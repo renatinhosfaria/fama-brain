@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: FamaChat
 created: '2026-05-07'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - sla-cascata
 ---
 # Atendimento — Liriel Fernandes
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Repescagem ativa do Reno para a cliente 11221. O step 2 foi enviado em 2026-05-07 09:34 BRT via WhatsApp, com foco em viabilidade da compra do Union Vereda. Cliente segue sem resposta e permanece em status `Não Respondeu`.

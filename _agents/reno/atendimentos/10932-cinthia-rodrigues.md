@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -24,6 +24,8 @@ tags:
   - disponibilidade
 ---
 # Atendimento — Cinthia Rodrigues
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno em `Em Atendimento`. Após Resgate step 6 enviado em 2026-05-07 17:57 -03, a cliente respondeu pelo WhatsApp e a régua de Resgate foi interrompida/mantida inativa no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`. Inbounds do dia adicionaram três critérios relevantes: precisa comportar 3 adultos em rotina de home office; está olhando prédio perto do Center Shopping; não consegue visita no sábado por compromisso o dia inteiro, deixando a possibilidade de visita para a semana seguinte, ainda sem horário claro. Próximo passo: a sessão normal de atendimento deve responder sem novo disparo automático, acolher a indisponibilidade de sábado e conduzir para definição de dia/horário na semana seguinte, consultando opções reais no CRM antes de apresentar imóvel.

@@ -19,6 +19,8 @@ tags:
 ---
 # Atendimento — Marcia Maria
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
+
 ## Resumo atual
 Primeiro contato enviado com sucesso em 2026-05-07. Em 2026-05-08 foi enviado follow-up de repescagem step 1 via WhatsApp, com abordagem consultiva sobre a intenção de compra no Garden Sul. O status CRM permanece `Não Respondeu`. Próximo follow-up previsto para 2026-05-10 às 14:20, caso siga sem resposta.
 

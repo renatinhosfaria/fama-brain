@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-30'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -27,6 +27,8 @@ tags:
   - cobertura
 ---
 # Atendimento — Marco Antonio Goncalves
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente está em `Em Atendimento` com interesse relacionado ao **Place+Arbi**, no Shopping Park/Zona Sul.

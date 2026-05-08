@@ -26,7 +26,6 @@ _agents/README.md                        => renato
 _shared/context/fama/**                  => renato (primary)
 _shared/context/modelo-negocio/**        => renato (primary)
 _shared/context/credito-imobiliario/**   => renato (primary)
-_infra/**                                => renato (primary)
 
 # Territórios primários — Reno (corretor, OpenClaw)
 _agents/reno/**                          => reno (primary)

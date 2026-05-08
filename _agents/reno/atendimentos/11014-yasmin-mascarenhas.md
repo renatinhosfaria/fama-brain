@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-28'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Yasmin Mascarenhas
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno no CRM (`broker_id=35`), origem Facebook Ads, interesse vinculado ao empreendimento Garden Sul, no Jardim Sul, Uberlândia. A cliente não respondeu ao primeiro contato nem aos 5 steps da régua de repescagem. Em 2026-05-04, o step 5 foi enviado com encerramento elegante, o ramo `reno_followup.repescagem` foi encerrado com `step=5` e `stopped_reason=max_steps`, e o cliente foi arquivado automaticamente no FamaChat por ainda estar em `Não Respondeu`.

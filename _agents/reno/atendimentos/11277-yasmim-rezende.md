@@ -32,6 +32,8 @@ tags:
 ---
 # Atendimento — Yasmim Rezende
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+
 ## Resumo atual
 A cliente está em `Em Atendimento` após responder ao primeiro contato do Reno no WhatsApp. A repescagem foi interrompida por resposta inbound e permanece fechada. A conversa ativa está sobre o Garden Sul, no Jardim Sul. A cliente indicou que procura imóvel para morar, declarou intenção de compra, informou que pretende comprar financiado, pediu uma prévia do interior/perfil e valor, explicou que não consegue identificar a opção porque viu só o anúncio sem fotos/material e sinalizou faixa aproximada de valor em torno de R$ 290.000. A última mensagem inbound foi “Ta ok”, uma confirmação curta sem novo dado comercial; a resposta comercial deve reconstruir o contexto imediato da sessão antes de assumir o significado do ok e continuar a partir do último outbound real.
 

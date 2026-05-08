@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -21,6 +21,8 @@ tags:
   - grand-ville
 ---
 # Atendimento — Wueverton Lima
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[wueverton-lima]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`). Interesse associado ao empreendimento Union Vista, no Grand Ville. Primeiro contato e cinco repescagens foram enviados via WhatsApp sem resposta real registrada no CRM. A régua de repescagem foi concluída no step 5 em 2026-05-03 e o cliente foi arquivado automaticamente no FamaChat por regra operacional.

@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ status_crm: Arquivado
 source: FamaChat
 ---
 # Atendimento — Leonardo De Castro Ferreira
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. Origem Facebook Ads/lead automático, associado ao empreendimento Garden Sul no Jardim Sul, Uberlândia-MG. O step 5 foi enviado com encerramento elegante e porta aberta; branch `reno_followup.repescagem` encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.

@@ -27,7 +27,7 @@ provenance: human-curated
 
 ### Pessoas (clientes/leads) — 38
 
-**Lote 1–6 (33):** ver [versão anterior do index](_entities/index.md) — todos preservados.
+**Lote 1–6 (33):** preservados no histórico do Git.
 
 **Lote 7 (5 + 2 atualizações) — 2026-05-06:**
 - [[thiago-tesch]] — **Agendamento, visita 15/05 15h30**, perfil MCMV-target, [[union-vista]]

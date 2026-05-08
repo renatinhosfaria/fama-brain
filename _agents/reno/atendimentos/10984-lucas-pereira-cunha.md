@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -21,6 +21,8 @@ status_crm: Arquivado
 source: FamaChat / SLA Cascata
 ---
 # Atendimento — Lucas Pereira Cunha
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) teve a régua de repescagem concluída em 2026-05-03 com **5 follow-ups enviados por WhatsApp** e sem resposta real registrada no FamaChat. Após o step 5, a branch `reno_followup.repescagem` foi encerrada com `step=5` e `stopped_reason=max_steps`, e o cliente foi arquivado automaticamente no CRM por regra defensiva do Reno.

@@ -10,9 +10,11 @@ tags:
   - auditoria
   - whatsapp
 type: context
-updated: '2026-04-27'
+updated: '2026-05-08'
 ---
 # Lote Reno — recuperação duplicidades 2026-04-27 3min
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[operacao-crm-webhook]].
 
 Marcador: `[reno_dup_recovery_20260427_3min]`
 

@@ -25,9 +25,11 @@ tags:
   - viabilidade
   - garden-sul
 type: entity-profile
-updated: '2026-05-05'
+updated: '2026-05-08'
 ---
 # Atendimento — Byanca Guerra
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[byanca-guerra]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente está em `Em Atendimento` e avaliando o Garden Sul, com interesse concentrado na planta de 56,32m². Já recebeu fotos/plantas, perguntou sobre acabamento, recebeu leitura inicial de valor/condição e informou entrada aproximada de R$ 10.000,00 para avaliar viabilidade.

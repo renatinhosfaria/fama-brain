@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: Facebook Ads
 created: '2026-04-22'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -22,6 +22,8 @@ tags:
   - max-steps
 ---
 # Atendimento — Vitória Oliveira
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[place-arbi]], [[shopping-park]], [[jardim-sul]], [[credito-imobiliario]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) arquivada no CRM em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. A repescagem step 5 foi enviada com sucesso via WhatsApp pelo JID salvo no CRM e mudou a abordagem para encerramento elegante: pausa respeitosa, porta aberta e comparação futura por prazo/condição, sem repetir convite de análise ou agenda.

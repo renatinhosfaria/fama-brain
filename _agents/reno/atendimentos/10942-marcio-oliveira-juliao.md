@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -20,6 +20,8 @@ tags:
   - midia
 ---
 # Atendimento — Márcio Oliveira Julião
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[marcio-oliveira-juliao]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse no Union Vista, no Grand Ville/Zona Leste de Uberlândia. Após primeiro contato e repescagens, respondeu e a repescagem foi interrompida (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`). Cliente trouxe sinais de viabilidade (`Tenho a entrada`, cerca de R$ 5.000) e em 2026-05-03 retomou pedindo confirmação sobre Minha Casa Minha Vida, prazo de entrega e planta dos apartamentos do mesmo empreendimento.

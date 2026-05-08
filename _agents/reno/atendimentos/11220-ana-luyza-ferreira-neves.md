@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Sem Atendimento
 source: Facebook Ads
 created: '2026-05-05'
-updated: '2026-05-05'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - falha-envio
 ---
 # Atendimento — Ana luyza Ferreira Neves
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Primeiro contato do Reno não foi enviado. O número disponível não foi validado no WhatsApp após tentativa com e sem o nono dígito. Atendimento preservado em `Sem Atendimento` no CRM.

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Andre Luiz duca
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[andre-luiz-duca]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`) teve a régua de repescagem concluída sem resposta real. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante/porta aberta sobre o Union Vista, mudando a abordagem do step 4 que já havia feito convite consultivo/visita na segunda-feira. Após o envio final, o estado da repescagem foi corrigido para `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`; o cliente foi arquivado automaticamente no CRM por ainda estar exatamente em `Não Respondeu`.

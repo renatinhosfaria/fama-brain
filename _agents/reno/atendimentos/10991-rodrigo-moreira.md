@@ -2,7 +2,7 @@
 type: entity-profile
 owner: renato
 created: '2026-04-27'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - reno
   - backlog-sem-atendimento
@@ -22,4 +22,7 @@ objecoes_ativas:
     disparo automático.
 proximo_passo: Revisar/validar contato WhatsApp antes de qualquer novo envio automático.
 ---
+
+
+V?nculos: [[reno]], [[playbook-atendimento]].
 

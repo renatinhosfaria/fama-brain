@@ -2,7 +2,7 @@
 type: journal
 owner: reno
 created: '2026-04-27'
-updated: '2026-04-27'
+updated: '2026-05-08'
 client_id: 10992
 lead_name: Rosii Gonçalves
 status: Não Respondeu
@@ -14,6 +14,8 @@ tags:
   - reno_recuperacao_20260427_2min
 ---
 # Atendimento Reno — Rosii Gonçalves
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente recuperada da fila de falha confirmada de primeiro contato. Primeiro contato enviado pelo Reno via WhatsApp em 2026-04-27.

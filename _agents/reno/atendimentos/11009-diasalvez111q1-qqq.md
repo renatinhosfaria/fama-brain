@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-28'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ source: Facebook Ads
 status_crm: Arquivado
 ---
 # Atendimento — Diasalvez111q1~qqq
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno (`broker_id=35`), origem Facebook Ads, interesse vinculado ao Union Vista, no Grand Ville. Primeiro contato e repescagens 1 a 5 foram enviados via WhatsApp para o JID salvo no CRM, sem resposta real registrada. A régua de repescagem foi concluída em 2026-05-03 com `step=5`, `stopped_reason=max_steps` e o status CRM foi atualizado defensivamente de `Não Respondeu` para `Arquivado`.

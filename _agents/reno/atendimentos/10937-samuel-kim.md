@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-24'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - em-atendimento
 ---
 # Atendimento — Samuel Kim
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[samuel-kim]], [[union-vereda]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]].
 
 ## Resumo atual
 Samuel respondeu pelo WhatsApp após a repescagem step 3. O CRM foi corrigido em 2026-04-30: status saiu de `Não Respondeu` para `Em Atendimento` e a régua de repescagem foi interrompida com `stopped_reason=client_replied`.

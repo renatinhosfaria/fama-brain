@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-29'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Matheus Henrique
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno (`broker_id=35`) arquivado automaticamente após conclusão da régua de 5 repescagens sem resposta. Interesse registrado no empreendimento Garden Sul, no Jardim Sul/Zona Sul de Uberlândia. O step 5 foi enviado em 2026-05-03 às 15:56 (-03) com encerramento elegante, pausa respeitosa e porta aberta para retomada futura; em seguida a branch de repescagem foi encerrada com `stopped_reason=max_steps` e o status CRM passou para `Arquivado` por update defensivo.

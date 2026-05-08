@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10998
   broker_id: 35
 interactions:
-  - '[[10998-carmen-vicente-santos]]'
+  - '[[10998-carmen-vicente-santos-vicente-santos]]'
 mentions_property:
   - '[[garden-sul]]'
 mentions_neighborhood:

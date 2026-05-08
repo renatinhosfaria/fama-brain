@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Agendamento
 source: Facebook Ads
 created: '2026-05-05'
-updated: '2026-05-05'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -25,6 +25,8 @@ tags:
   - sem-restricao
 ---
 # Atendimento — Thiago Tesch
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[thiago-tesch]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente está em `Agendamento` no FamaChat após atendimento ativo pelo Reno. A visita/análise presencial foi remarcada e está registrada no CRM como appointment_id 244 para sexta-feira, 2026-05-15, às 15h30, na Fama Negócios Imobiliários.

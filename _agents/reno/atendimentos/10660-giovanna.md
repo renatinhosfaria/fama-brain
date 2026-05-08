@@ -2,7 +2,7 @@
 type: entity-profile
 owner: renato
 created: '2026-04-29'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - reno
   - whatsapp
@@ -16,6 +16,8 @@ client_id: 10660
 source: Facebook Ads - Union Vista
 ---
 # Giovanna
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente broker_id=35 que respondeu à repescagem ativa do Reno em 2026-04-29. Status operacional atualizado de **Não Respondeu** para **Em Atendimento**; repescagem parada com `client_replied`.

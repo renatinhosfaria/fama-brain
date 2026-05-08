@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Agendamento
 source: Facebook Ads
 created: '2026-05-05'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -27,6 +27,8 @@ tags:
   - sinal-quente
 ---
 # Atendimento — Kamily
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente Reno em `Agendamento`. Kamily busca o primeiro imóvel próprio para morar, vinculada ao interesse no Place+Arbi / Shopping Park. Ela informou que já fez simulação de financiamento, que a simulação ficou dentro do esperado e que pretende comprar nos próximos meses.

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-04-28'
-updated: '2026-05-02'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -17,6 +17,8 @@ tags:
   - resgate
 ---
 # Atendimento — Claudia Rosângela
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[claudia-rosangela]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno em atendimento, com interesse positivo no Union Vereda, no Jaraguá. Gostou da planta/perfil do empreendimento e perguntou valor. A trava atual continua sendo agenda/visita: informou que não conseguiria visitar na semana do primeiro convite e que teria que ser na próxima semana. Em 2026-05-02 recebeu Resgate step 5 com CTA para visita presencial na segunda-feira e respondeu “E mrv”, interpretado como dúvida se o Union Vereda é MRV. Resgate foi interrompido no CRM com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`.

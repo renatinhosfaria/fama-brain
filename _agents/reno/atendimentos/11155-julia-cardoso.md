@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-03'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - sinal-positivo
 ---
 # Atendimento — Julia Cardoso (nome a confirmar)
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Primeiro contato do Reno enviado via WhatsApp em 2026-05-03, após validação da cliente no CRM (`broker_id=35`). O cadastro trazia o nome em caracteres estilizados, então a abordagem inicial foi neutra e pediu como a cliente prefere ser chamada antes de iniciar a qualificação.

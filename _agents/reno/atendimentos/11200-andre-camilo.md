@@ -17,9 +17,11 @@ tags:
   - viabilidade
   - visita-agendada
 type: entity-profile
-updated: '2026-05-06'
+updated: '2026-05-08'
 ---
 # Atendimento — André Camilo
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente está com visita presencial registrada no FamaChat para segunda-feira, 11/05/2026, às 16h, na Fama Negócios Imobiliários. Busca imóvel para morar, perfil de 2 quartos atende, região do Jaraguá/zona Oeste atende a rotina, aceita entrega planejada/futura, pretende comprar por financiamento, informou entrada aproximada de R$ 5.000 e renda familiar aproximada de R$ 4.000. Status CRM atual: `Agendamento`. Interesse ativo: Union Vereda, no Jaraguá. Repescagem está interrompida por resposta inbound, não há Resgate ativo, e o follow-up de Agendamento está inicializado para o appointment_id 246.

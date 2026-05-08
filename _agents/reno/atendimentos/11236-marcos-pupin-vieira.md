@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - qualificacao
 ---
 # Atendimento — Marcos Pupin Vieira
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente elegível do Reno (`broker_id=35`) respondeu pelo WhatsApp após o primeiro contato. O atendimento foi retomado/iniciado no CRM como `Em Atendimento`, sem envio de mensagem ao cliente por esta rotina silenciosa. A repescagem foi interrompida por resposta inbound do cliente.

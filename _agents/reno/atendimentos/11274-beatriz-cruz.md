@@ -36,6 +36,8 @@ updated: '2026-05-08'
 ---
 # Atendimento — Beatriz Cruz
 
+V?nculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
+
 ## Resumo atual
 Cliente está em `Em Atendimento` no CRM. Entrou por Facebook Ads com interesse no Place+Arbi, no Shopping Park. Confirmou interesse inicial na região, informou que procura para morar, quer entender opções de 2 e 3 quartos, pretende financiar e indicou contexto de primeiro imóvel, sem entrada formada e sem FGTS.
 

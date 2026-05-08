@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Agendamento
 source: Facebook Ads
 created: '2026-05-04'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -17,6 +17,8 @@ tags:
   - agendamento
 ---
 # Atendimento — Thiago Santos Mendes
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo operacional
 

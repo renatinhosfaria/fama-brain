@@ -21,7 +21,7 @@ external_ids:
   crm_client_id: 11010
   broker_id: 35
 interactions:
-  - '[[11010-eduarda]]'
+  - '[[cliente-11010-eduarda]]'
 mentions_property:
   - '[[union-vereda]]'
 mentions_neighborhood:

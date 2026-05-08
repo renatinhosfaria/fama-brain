@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: FamaChat / SLA Cascata
 created: '2026-04-25'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Wanderson Alessandro
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno arquivado automaticamente em **2026-05-03** após conclusão da régua de **5 repescagens** sem resposta real. Veio de **SLA Cascata** e o contexto comercial usado foi o interesse no **Union Vista**, na região do **Grand Ville**. O step 5 foi enviado via WhatsApp para o JID salvo no CRM com encerramento elegante e porta aberta para retomada.

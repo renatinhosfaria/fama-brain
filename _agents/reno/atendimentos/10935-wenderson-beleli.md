@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-04-24'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ status_crm: Arquivado
 source: FamaChat / Facebook Ads
 ---
 # Atendimento — Wenderson Beleli
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente CRM 10935, broker Reno (35), foi **arquivado automaticamente em 2026-05-03** após conclusão da régua de 5 repescagens.

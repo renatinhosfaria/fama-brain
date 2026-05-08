@@ -6,7 +6,7 @@ lead_name: Murilo Damasceno
 status: Não Respondeu
 source: SLA Cascata
 created: '2026-04-28'
-updated: '2026-04-28'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -14,6 +14,8 @@ tags:
   - fila-incertos
 ---
 # Atendimento Reno — Murilo Damasceno
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[murilo-damasceno]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo
 Cliente do Reno (broker_id 35), status atual no CRM: Não Respondeu. Entrada por SLA Cascata, com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park.

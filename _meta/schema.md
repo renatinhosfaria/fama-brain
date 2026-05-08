@@ -16,8 +16,7 @@ source: human-curated
 verified_by: null
 verified_at: null
 confidence: null
-related:
-  - '[[Hub: Vault governance]]'
+related: []
 ---
 
 > **AVISO OPERACIONAL (2026-04-30):** o frontmatter desta nota usa o schema **legado** (types: `moc`, `shared-context`, `entity-profile`, `journal`, etc.) porque o MCP `obsidian` ainda rejeita os types do schema v1 (`entity`, `decision`, `concept`, `reference`, `runbook`, `hub`, `interaction`, `project`) e exige datas em `YYYY-MM-DD` (não ISO-8601 com timezone). A migração só pode ser executada depois que o MCP for atualizado para aceitar v1. Ver [FAM-16](/FAM/issues/FAM-16) — blocker registrado e escalado.
@@ -272,7 +271,7 @@ Anti-padrões: `#cliente-bruno`, `#projeto-xpto` (isso é wikilink).
 ## 8. Provenance & trust — regras de uso
 
 1. **Agente não pode citar como ground truth nota com `source: agent-generated` E `verified_by: null`.**
-2. **Verificação humana** = `verified_by: "[[Renato Faria]]"` + `verified_at: <data>`.
+2. **Verificação humana** = `verified_by: "Renato Faria"` + `verified_at: <data>`.
 3. **Verificação cruzada agente-agente** vale menos que humana.
 4. **Agente consumidor não pode citar KPI de outro agente sem flag.**
 5. **`verified_by` em correções estruturais** nunca substitui verificação humana de fato/conteúdo.

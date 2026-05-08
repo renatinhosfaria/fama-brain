@@ -2,7 +2,7 @@
 type: entity-profile
 owner: renato
 created: '2026-04-26'
-updated: '2026-04-30'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -16,6 +16,8 @@ lead_name: Augusto Santana
 source: Facebook Ads / SLA Cascata
 ---
 # Atendimento — Augusto Santana
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[augusto-santana]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo
 Cliente do Reno com interesse no Union Vista, região do Grand Ville. Atendimento avançou pelo WhatsApp até visita presencial agendada na Fama.

@@ -24,7 +24,7 @@ external_ids:
   broker_id: 35
   appointment_id: 245
 interactions:
-  - '[[11190-kamily]]'
+  - '[[11190-kamily-vitoria]]'
 mentions_property:
   - '[[place-arbi]]'
 mentions_neighborhood:

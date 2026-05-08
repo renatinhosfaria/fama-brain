@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata
 created: '2026-04-27'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Flaviahair Especialista em Mechas e Loiro
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) concluída na régua de repescagem em 2026-05-04. Interesse relacionado ao Union Vereda, no Jaraguá. Permaneceu sem resposta real após primeiro contato e cinco repescagens; após o step 5 enviado com sucesso, a branch `reno_followup.repescagem` foi encerrada com `step=5`/`stopped_reason=max_steps` e o status foi alterado defensivamente para `Arquivado` no FamaChat.

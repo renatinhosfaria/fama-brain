@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: SLA Cascata / FamaChat
 created: '2026-04-30'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - union-vereda
 ---
 # Atendimento — Esther Osklen
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[esther-osklen]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de **5 repescagens** concluída sem resposta real registrada. Interesse operacional associado ao empreendimento **Union Vereda**, no bairro Jaraguá. Em 2026-05-03, a repescagem step 5 foi enviada como encerramento elegante/porta aberta; após confirmação do envio, a branch foi encerrada com `stopped_reason=max_steps` e o status CRM foi alterado defensivamente de `Não Respondeu` para `Arquivado`.

@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: SLA Cascata
 created: '2026-04-30'
-updated: '2026-05-07'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - resposta-negativa
 ---
 # Atendimento — Christine Moreira
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente com interesse anterior no Union Vereda, com dúvida recorrente sobre entrada e financiamento. O ciclo de Resgate chegou ao step 6 em 2026-05-07 e havia sido encerrado por ausência de resposta, com status CRM em `Arquivado`. Em 2026-05-07, a cliente respondeu pelo WhatsApp com recusa curta: "Nao, obrigado". Por regra operacional de inbound real, o atendimento foi reativado no CRM para `Em Atendimento`, sem envio de nova mensagem ao cliente nesta rotina silenciosa.

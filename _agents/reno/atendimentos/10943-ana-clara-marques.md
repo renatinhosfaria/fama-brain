@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: FamaChat / SLA Cascata
 created: '2026-04-24'
-updated: '2026-05-03'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Ana Clara Marques
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[ana-clara-marques]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Cliente do Reno originada por SLA Cascata, com interesse associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. Primeiro contato, reenvio inicial e cinco steps de repescagem foram enviados sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausando a insistência e deixando porta aberta para retomada futura. Após correção do estado final da repescagem para `stopped_reason=max_steps`, o CRM foi arquivado automaticamente com condição defensiva.

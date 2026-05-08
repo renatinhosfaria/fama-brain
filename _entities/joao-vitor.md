@@ -21,7 +21,7 @@ external_ids:
   crm_client_id: 10717
   broker_id: 35
 interactions:
-  - '[[10717-joao-vitor]]'
+  - 10717-joao-vitor
 mentions_property:
   - '[[bella-vita]]'
 broker: '[[reno]]'

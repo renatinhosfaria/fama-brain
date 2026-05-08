@@ -6,7 +6,7 @@ lead_name: Lead Garden Sul
 status: Não Respondeu
 source: WhatsApp - Garden Sul
 created: '2026-04-28'
-updated: '2026-04-28'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -14,6 +14,8 @@ tags:
   - reno-first-contact-uncertain17-20260427-3min
 ---
 # Atendimento Reno — Lead Garden Sul
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo
 Cliente do Reno (broker_id=35) em status Não Respondeu, com interesse no empreendimento Garden Sul, no Jardim Sul.

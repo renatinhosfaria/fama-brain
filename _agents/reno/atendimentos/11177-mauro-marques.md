@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-05'
-updated: '2026-05-06'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -19,6 +19,8 @@ tags:
   - inbound
 ---
 # Atendimento — Mauro Marques
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[mauro-marques]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
 Mauro respondeu pelo WhatsApp após o primeiro contato e a repescagem do Reno. O atendimento está em `Em Atendimento`; a repescagem permanece interrompida com `enabled=false`, `next_run_at=null` e `stopped_reason=client_replied`. Não há resgate ativo.

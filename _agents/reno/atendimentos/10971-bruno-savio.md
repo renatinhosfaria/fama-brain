@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Arquivado
 source: FamaChat
 created: '2026-04-27'
-updated: '2026-05-04'
+updated: '2026-05-08'
 tags:
   - reno
   - atendimento
@@ -18,6 +18,8 @@ tags:
   - arquivado
 ---
 # Atendimento — Bruno Sávio
+
+V?nculos: [[reno]], [[playbook-atendimento]], [[bruno-savio]], [[union-vista]], [[zona-leste]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
 Cliente Bruno Sávio foi arquivado automaticamente em 2026-05-04 após conclusão da régua de 5 repescagens do Reno sem resposta real no cliente operacional `10971`. O interesse estava associado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. O step 5 foi enviado com encerramento elegante, sem repetir convite de agenda após o step 4 já ter proposto análise/visita na segunda-feira.
