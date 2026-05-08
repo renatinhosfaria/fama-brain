@@ -115,3 +115,7 @@ Responder comercialmente pela sessão normal do WhatsApp, não por esta rotina s
 - Repescagem encerrada por resposta inbound: `step=0`, `enabled=false`, `next_run_at=null`, `stopped_reason=client_replied`.
 - Resgate inexistente/sem ciclo ativo no momento do inbound “Minha mãe, mais ela é autônoma”.
 - Rotina silenciosa executou apenas persistência operacional; não houve envio cliente-facing.
+
+
+### 2026-05-08 — Objeção à visita hoje / preferência por WhatsApp
+Cliente informou que hoje não consegue ir presencialmente e perguntou se a análise não pode ser feita por aqui. Interpretação: objeção de agenda e preferência por avançar digitalmente antes da visita. Conduta recomendada: validar, aceitar adiantar pré-diagnóstico pelo WhatsApp, evitar passar valores soltos, reforçar que análise presencial fica para confirmar detalhes depois, e seguir com uma pergunta objetiva sobre renda/movimentação da mãe para viabilidade.
