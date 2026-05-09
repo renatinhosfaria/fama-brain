@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Eduardo Rodrigues
-client_id: 11302
 broker_id: 35
-status_crm: Em Atendimento
-source: Facebook Ads
+client_id: 11302
 created: '2026-05-09'
-updated: '2026-05-09'
+entity_name: Eduardo Rodrigues
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -17,11 +15,16 @@ tags:
   - primeiro-contato
   - inbound
   - qualificacao
+  - resposta-negativa
+  - moradia
+  - momento-com-calma
+type: entity-profile
+updated: '2026-05-09'
 ---
 ## Resumo atual
-Cliente Eduardo Rodrigues entrou via Facebook Ads demonstrando interesse no empreendimento Place+Arbi, no bairro Shopping Park. CRM validado como cliente `11302`, broker Reno (`broker_id=35`) e status atual `Em Atendimento`.
+Cliente Eduardo Rodrigues entrou via Facebook Ads demonstrando interesse no empreendimento Place+Arbi, no bairro Shopping Park. CRM validado como cliente `11302`, broker Reno (`broker_id=35`).
 
-Primeiro contato do Reno foi enviado por WhatsApp e o cliente respondeu `Sim` ao contexto apresentado. Na sequência, respondeu `Morar`, indicando busca para moradia/uso próprio. Depois respondeu `Não` e, em novo inbound silencioso, `Com calma`, sinalizando ritmo sem urgência e necessidade de condução leve. As rotinas silenciosas de inbound não enviaram mensagem ao cliente; apenas persistiram eventos operacionalmente. Não havia branch ativa de repescagem ou resgate para interromper.
+Primeiro contato do Reno foi enviado por WhatsApp. Na sequência, o cliente respondeu em mensagens curtas: `Sim`, `Morar`, `Não` e, posteriormente, `Com calma`. As rotinas silenciosas de inbound não enviaram mensagem ao cliente; apenas persistiram eventos operacionalmente. Status CRM permanece `Em Atendimento`.
 
 ## Dados operacionais
 - Cliente: Eduardo Rodrigues
@@ -34,16 +37,20 @@ Primeiro contato do Reno foi enviado por WhatsApp e o cliente respondeu `Sim` ao
 - Zona: Zona Sul
 - Idempotency key do primeiro contato: 3470_1778327117427
 - Message ID WhatsApp do primeiro contato: 3EB054DE05B2B4DA8ADC2B
-- Follow-up Reno: sem branch ativa de repescagem ou resgate no `meta_data` após os inbounds recentes
+- Inbounds recentes registrados no CRM: `Sim`, `Morar`, `Não`, `Com calma`
+- Nota CRM deste inbound específico (`Não`): 17402
+- Última nota inbound observada no CRM na verificação: 17403 (`Com calma`)
+- Follow-up Reno: sem branch ativa de repescagem ou resgate no `meta_data` após os inbounds verificados
 
 ## Contexto comercial
-Interesse inicial em apartamento no Place+Arbi. A resposta `Sim` foi interpretada como continuidade do último outbound do Reno, que perguntava se o cliente estava procurando imóvel na região do Shopping Park. A resposta posterior `Morar` indica que o objetivo principal é uso próprio/moradia, não investimento. A resposta `Com calma` indica que o cliente não quer pressão e deve ser conduzido com explicação objetiva, um passo por vez.
+Interesse inicial em apartamento no Place+Arbi. A resposta `Sim` foi interpretada como continuidade do primeiro contato, que perguntava se o cliente procurava imóvel na região do Shopping Park. O cliente indicou finalidade de moradia (`Morar`) e sinalizou um momento sem pressa (`Com calma`). A mensagem curta `Não` deve ser interpretada apenas com o histórico imediato completo do WhatsApp antes de qualquer resposta comercial, para evitar assumir uma recusa ampla sem contexto.
 
 ## Diagnóstico
-- Necessidade: imóvel para morar/uso próprio, com interesse no contexto do Place+Arbi/Shopping Park.
-- Momento: sem urgência declarada; cliente sinalizou que quer tratar com calma.
+- Necessidade: moradia/uso próprio.
+- Momento: compra sem urgência, indicado por `Com calma`.
 - Decisão: ainda não identificada.
 - Viabilidade: ainda não identificada.
+- Observação: `Não` é uma negativa curta sem contexto suficiente para classificar como objeção definitiva.
 
 ## Histórico curado de interações
 - 2026-05-09 08:45 America/Sao_Paulo — Evento `cliente.created` recebido na rota `famachat-created` para o cliente 11302.
@@ -51,18 +58,19 @@ Interesse inicial em apartamento no Place+Arbi. A resposta `Sim` foi interpretad
 - 2026-05-09 08:45 America/Sao_Paulo — Primeiro contato enviado ao cliente pelo Reno, contextualizando o interesse no Place+Arbi/Shopping Park e perguntando se ele procurava imóvel naquela região.
 - 2026-05-09 08:48 America/Sao_Paulo — Nota CRM registrada com envio validado, idempotência e pendência operacional de status/repescagem.
 - 2026-05-09 08:59 America/Sao_Paulo — Inbound recebido: cliente respondeu `Sim`. CRM validado novamente; cliente segue com `broker_id=35`. Status atualizado de `Sem Atendimento` para `Em Atendimento` por resposta real após primeiro contato já registrado. Nenhuma branch ativa de repescagem/resgate foi encontrada para interrupção. Nota CRM registrada. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
-- 2026-05-09 09:01 America/Sao_Paulo — Novo inbound recebido: cliente respondeu `Morar`. CRM validado: cliente segue com `broker_id=35` e status `Em Atendimento`. Sem branch ativa de repescagem/resgate. Nota CRM registrada. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
-- 2026-05-09 09:01 America/Sao_Paulo — Novo inbound recebido: cliente respondeu `Não`. CRM validado: cliente segue com `broker_id=35` e status `Em Atendimento`. Sem branch ativa de repescagem/resgate. Nota CRM registrada. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
-- 2026-05-09 09:02 America/Sao_Paulo — Novo inbound recebido: cliente respondeu `Com calma`. CRM validado: cliente segue com `broker_id=35` e status `Em Atendimento`. Sem branch ativa de repescagem/resgate. Nota CRM registrada. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
+- 2026-05-09 09:01 America/Sao_Paulo — Inbound registrado no CRM: cliente respondeu `Morar`. Status já estava `Em Atendimento`; sem alteração de status. Nenhuma branch ativa de repescagem/resgate para interromper. Nenhuma mensagem enviada pela rotina silenciosa.
+- 2026-05-09 09:01 America/Sao_Paulo — Inbound deste acionamento: cliente respondeu `Não`. CRM validado novamente; cliente segue com `broker_id=35` e status já estava `Em Atendimento`, então não houve alteração de status. `meta_data.reno_followup` sem repescagem/resgate ativo. Nota CRM 17402 registrada. Nenhuma mensagem foi enviada ao cliente nesta rotina silenciosa.
+- 2026-05-09 09:02 America/Sao_Paulo — Verificação posterior encontrou novo inbound já registrado no CRM: `Com calma` (nota 17403). Status permaneceu `Em Atendimento`; sem follow-up ativo de repescagem/resgate.
 
 ## Objeções e travas
-Cliente sinalizou ritmo mais cauteloso (`Com calma`). Tratar como preferência de condução, não como recusa definitiva. Não há follow-up Reno ativo em `meta_data` para interromper.
+Não há objeção definitiva registrada. O `Não` é uma negativa curta e deve ser cruzado com o histórico imediato da conversa antes de resposta comercial. Como o cliente também indicou `Morar` e `Com calma`, a condução deve ser consultiva e sem pressão.
 
 ## Próximo passo
-Na próxima resposta comercial, acolher o ritmo do cliente e conduzir com uma pergunta leve, sem pressão. Exemplo de direção: reconhecer que pode ser com calma e perguntar o que pesa mais para ele nesse primeiro filtro — localização, valor, tamanho ou facilidade no financiamento.
+Na próxima resposta comercial, reconstruir o histórico imediato do WhatsApp antes de interpretar o `Não`. A continuidade provável é acolher que ele está olhando com calma, confirmar prioridade de busca e seguir com uma pergunta curta, sem pressionar visita neste momento.
 
 ## Observações operacionais
 - O payload foi tratado como sinal; o CRM foi a fonte de verdade.
 - Não houve uso de payload bruto como evidência final.
 - Não houve promessa de crédito, preço, aprovação ou disponibilidade.
 - Não houve envio de WhatsApp nesta rotina.
+- Não houve alteração de status nem meta_data nesta execução porque o cliente já estava em `Em Atendimento` e não havia follow-up ativo.
