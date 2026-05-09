@@ -8,18 +8,19 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-05-08'
-updated: '2026-05-08'
+updated: '2026-05-09'
 tags:
   - reno
   - atendimento
   - whatsapp
   - famachat
   - repescagem
+  - step-3
 ---
 # Atendimento — Ana Júlia
 
 ## Resumo atual
-Repescagem step 2 enviada com sucesso via WhatsApp. Cliente segue em `Não Respondeu` e aguarda resposta.
+Repescagem step 3 enviada com sucesso via WhatsApp. Cliente segue em `Não Respondeu` e aguarda resposta. Próximo follow-up previsto para 2026-05-10 09:10 -03.
 
 ## Dados operacionais
 - Cliente ID: 11201
@@ -27,14 +28,14 @@ Repescagem step 2 enviada com sucesso via WhatsApp. Cliente segue em `Não Respo
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata
 - WhatsApp: JID do CRM validado no bridge local
-- Última interação relevante: 2026-05-08 20:52:01 -03 — envio da repescagem step 2.
+- Última interação relevante: 2026-05-09 10:08:34 -03 — envio da repescagem step 3.
 
 ## Contexto comercial
-Interesse no Place+Arbi. O último ângulo da régua está focado em filtrar o que faz sentido no momento, sem repetir a abertura inicial.
+Interesse no Place+Arbi. O último ângulo da régua foca agora em priorização de parcela versus localização, sem repetir a abertura anterior.
 
 ## Diagnóstico
 ### Necessidade
-Descobrir se a busca é para morar ou investir.
+Entender qual critério pesa mais agora para orientar a conversa sem perder tempo.
 
 ### Momento
 Lead silencioso após o primeiro contato; follow-up segue em fase consultiva.
@@ -43,7 +44,7 @@ Lead silencioso após o primeiro contato; follow-up segue em fase consultiva.
 Ainda sem resposta real do cliente.
 
 ### Viabilidade
-Ainda não houve nova sinalização sobre entrada, financiamento ou timing. A repescagem serve para abrir a microresposta e avançar o diagnóstico.
+Ainda em aberto quanto a parcela, localização e momento de compra. A repescagem continua servindo para abrir microresposta e avançar o diagnóstico.
 
 ## Histórico curado de interações
 ### 2026-05-07 — Step 1
@@ -52,14 +53,18 @@ Primeira repescagem contextualizou o interesse no Place+Arbi e perguntou sobre e
 ### 2026-05-08 — Step 2
 Mensagem enviada: `Ana Júlia, pra eu te direcionar sem te fazer perder tempo no Place+Arbi: hoje você quer olhar algo pra morar ou investir?`
 
+### 2026-05-09 — Step 3
+Mensagem enviada: `Oi, Ana Júlia! Pra eu te direcionar melhor no Place+Arbi: hoje você quer priorizar parcela ou localização?`
+
 ## Objeções e travas
 - Silêncio após o primeiro contato.
-- Ainda sem sinal de timing ou viabilidade.
+- Ainda sem sinal claro de timing ou viabilidade.
+- Repescagem segue ativa para tentar primeira resposta real.
 
 ## Próximo passo
-Aguardar resposta e, se houver retorno, seguir qualificação consultiva.
+Aguardar resposta do cliente; se continuar em silêncio, o próximo follow-up está programado para 2026-05-10 09:10 -03.
 
 ## Observações operacionais
-- WhatsApp enviado via bridge local com `validated=true`.
-- CRM/meta_data atualizado com `mark_reno_followup_sent`.
-- Status preservado em `Não Respondeu` (step 2; sem arquivamento).
+- WhatsApp enviado via bridge local com `validated=true` e `validatedJid`.
+- CRM/meta_data atualizado com `mark_reno_followup_sent` (step 3).
+- Status preservado em `Não Respondeu` (sem arquivamento).
