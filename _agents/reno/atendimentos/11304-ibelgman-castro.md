@@ -5,7 +5,7 @@ entity_type: atendimento
 entity_name: Ibelgman Castro
 client_id: 11304
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Em Atendimento
 source: Facebook Ads
 created: '2026-05-09'
 updated: '2026-05-09'
@@ -15,42 +15,43 @@ tags:
   - whatsapp
   - famachat
   - primeiro-contato
+  - inbound
+  - qualificacao
 ---
 # Ibelgman Castro — atendimento Reno
 
 ## Resumo atual
-Primeiro contato do Reno enviado via WhatsApp em 2026-05-09T12:55:08-03:00. O CRM foi validado antes do envio: cliente existente, broker_id=35 e status inicial `Sem Atendimento`. Após envio validado, o status foi atualizado para `Não Respondeu` e a Repescagem foi inicializada em step 0.
+Cliente respondeu ao primeiro contato do Reno em 2026-05-09 com “Ibelgman”, após a abertura neutra perguntando como prefere ser chamado. O CRM foi validado: cliente existente, `broker_id=35`, status anterior `Não Respondeu`. Persistência operacional aplicada: status atualizado para `Em Atendimento` e Repescagem interrompida por resposta real do cliente.
 
 ## Dados operacionais
 - Cliente FamaChat: 11304
 - Broker responsável: Reno (`broker_id=35`)
-- Status CRM verificado após persistência: `Não Respondeu`
+- Status CRM verificado após inbound: `Em Atendimento`
 - Origem: Facebook Ads
-- Evento: `evt_3472`
-- Idempotency key: `3472_1778342108493`
-- WhatsApp validado: `553498208803@s.whatsapp.net`
-- MessageId técnico: `3EB0CBBDC81A0229686CAE`
+- Empreendimento de interesse no CRM: Union Vereda (`id_empreendimento=161`)
+- Estado de follow-up após inbound: `repescagem.enabled=false`, `stopped_reason=client_replied`, `next_run_at=null`
 
 ## Contexto comercial
-Lead demonstrou interesse no empreendimento **Union Vereda**, no bairro **Jaraguá**. Ainda não há diagnóstico comercial de necessidade, momento, decisão ou viabilidade.
+Lead demonstrou interesse no empreendimento **Union Vereda**, no bairro **Jaraguá**. Ainda não há diagnóstico comercial de necessidade, momento, decisão ou viabilidade. A resposta “Ibelgman” indica confirmação/preferência de tratamento após a pergunta inicial do Reno.
 
 ## Diagnóstico
-- Necessidade: pendente de resposta.
-- Momento: pendente de resposta.
-- Decisão: pendente de resposta.
-- Viabilidade: pendente de resposta.
+- Necessidade: pendente.
+- Momento: pendente.
+- Decisão: pendente.
+- Viabilidade: pendente.
 
 ## Histórico curado de interações
 - 2026-05-09T12:55:08-03:00 — Primeiro WhatsApp enviado pelo Reno. Mensagem enviada: “Oi, tudo bem? Aqui é o Reno, da Fama. Vi seu interesse no Union Vereda. Só pra eu te atender certinho, como posso te chamar?”
-- 2026-05-09 — Abertura neutra usada para confirmar como o cliente prefere ser chamado antes da qualificação.
+- 2026-05-09 — Cliente respondeu: “Ibelgman”. Rotina silenciosa não enviou mensagem ao cliente; apenas persistiu o inbound no CRM/vault.
+- 2026-05-09 — CRM atualizado de `Não Respondeu` para `Em Atendimento`; Repescagem interrompida com `client_replied`.
 
 ## Objeções e travas
 Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Aguardar primeira resposta do cliente. Quando responder, conduzir pela skill de qualificação: confirmar nome/preferência de tratamento, atualizar CRM se necessário, registrar nota e mover `Não Respondeu -> Em Atendimento` apenas se o status ainda estiver exatamente `Não Respondeu`.
+Continuar a qualificação pelo WhatsApp com mensagem curta, contextual e uma pergunta por vez. Como o cliente respondeu à pergunta de tratamento, a próxima resposta deve reconhecer o nome e avançar suavemente para entender se está buscando para morar, investir ou conhecer opções, sem acionar Repescagem.
 
 ## Observações operacionais
-- `meta_data.reno_followup.repescagem` verificada após reparo seguro de branch aninhada.
-- Repescagem: `enabled=true`, `step=0`, `entry_shift=manha`, `entry_reference_at=2026-05-09T12:55:08.493-03:00`, `next_run_at=2026-05-09T19:10:00-03:00`, `stopped_reason=null`.
 - CRM/FamaChat permanece como fonte operacional da verdade; este documento é síntese curada.
+- Nenhuma mensagem foi enviada ao cliente durante a rotina operacional silenciosa de inbound.
+- Não houve criação de visita nem alteração de status avançado além da transição permitida para `Em Atendimento`.
