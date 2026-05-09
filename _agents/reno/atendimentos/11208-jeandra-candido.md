@@ -71,3 +71,9 @@ Aguardar resposta. Se a cliente seguir sem responder, o fluxo avança para step 
 - Bridge validou o destino antes da marcação no CRM.
 - CRM/meta_data persistidos com step 3 e próximo `next_run_at` calculado pela matriz.
 - Status do cliente permaneceu `Não Respondeu`.
+
+## Atualização — 2026-05-09
+- Step 4 enviado via bridge local validada no JID do CRM.
+- Mensagem: Jeandra, olhando Garden Sul e Place+Arbi, hoje o que pesa mais na sua decisão: parcela/financiamento ou prazo de entrega? Se fizer sentido, na segunda eu te recebo na Fama e a gente compara com calma o caminho mais viável.
+- CRM/meta_data atualizados para step 4, com próximo next_run_at em 2026-05-10T14:20:00-03:00.
+- Status do cliente permaneceu Não Respondeu.
