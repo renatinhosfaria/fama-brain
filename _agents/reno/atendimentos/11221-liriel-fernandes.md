@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: FamaChat
 created: '2026-05-07'
-updated: '2026-05-08'
+updated: '2026-05-09'
 tags:
   - reno
   - atendimento
@@ -17,13 +17,14 @@ tags:
   - repescagem
   - union-vereda
   - sla-cascata
+  - step-4
 ---
 # Atendimento — Liriel Fernandes
 
 Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
-Repescagem ativa do Reno para a cliente 11221. O step 3 foi enviado em 2026-05-08 16:22 BRT via WhatsApp, com foco em alinhar o objetivo da compra antes de insistir em qualquer opção. A cliente segue sem resposta e permanece em status `Não Respondeu`.
+Repescagem ativa do Reno para a cliente 11221. O step 4 foi enviado em 2026-05-09 19:16 BRT via WhatsApp validado no bridge local (`onWhatsApp`), com foco em orientar o caminho mais viável entre entrada, financiamento e imóvel certo, e abrindo o próximo passo para segunda-feira. A cliente segue sem resposta e permanece em status `Não Respondeu`.
 
 ## Dados operacionais
 - Cliente ID: 11221
@@ -32,15 +33,15 @@ Repescagem ativa do Reno para a cliente 11221. O step 3 foi enviado em 2026-05-0
 - Origem: SLA Cascata
 - Empreendimento: Union Vereda (id_empreendimento 161)
 - WhatsApp: JID salvo no CRM
-- Última interação relevante: repescagem step 3 enviada em 2026-05-08 16:22 BRT
-- Próximo follow-up: 2026-05-09 19:10 BRT
+- Última interação relevante: repescagem step 4 enviada em 2026-05-09 19:16 BRT
+- Próximo follow-up: 2026-05-10 09:10 BRT
 
 ## Contexto comercial
-Lead vindo de SLA Cascata, com contexto do Union Vereda no Jaraguá. A repescagem mudou do eixo de viabilidade prática para o objetivo da compra: entender se a cliente quer morar ou investir antes de mandar qualquer sugestão mais fechada.
+Lead vindo de SLA Cascata, com contexto do Union Vereda no Jaraguá. A repescagem saiu do eixo de objetivo da compra para um convite consultivo mais direto: a Fama pode organizar o caminho entre entrada, financiamento e o imóvel certo, sem pressionar fechamento cedo demais.
 
 ## Diagnóstico
 ### Necessidade
-Entender se a compra no lançamento faz sentido no momento atual e qual é o objetivo principal da busca.
+Entender o caminho de compra mais viável e o que pesa mais na decisão atual.
 
 ### Momento
 Lead frio, ainda sem resposta ao primeiro contato e às repescagens anteriores.
@@ -49,7 +50,7 @@ Lead frio, ainda sem resposta ao primeiro contato e às repescagens anteriores.
 Sem sinais de decisor adicional ou urgência definidos.
 
 ### Viabilidade
-O step 2 já tratou entrada, parcela e financiamento. Agora o foco é qualificar a direção da busca sem prometer crédito.
+O step 2 já tratou entrada, parcela e financiamento. O step 3 confirmou que a conversa precisava ser mais consultiva. O step 4 abriu o próximo passo com CTA leve para segunda-feira.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Primeiro contato
@@ -68,12 +69,16 @@ Você quer que eu te ajude a começar por qual deles?"
 ### 2026-05-08 — Repescagem step 3
 Mensagem enviada: "Oi, Liriel. Pra eu te orientar melhor e não te mandar coisa fora do alvo: essa compra é pra morar ou investir?"
 
+### 2026-05-09 — Repescagem step 4
+Mensagem enviada: "Liriel, pra eu te orientar sem te mandar coisa fora do seu momento, eu consigo te mostrar o caminho mais viável entre entrada, financiamento e o imóvel certo.
+
+Se fizer sentido, eu já deixo a visita pra segunda-feira. Hoje o que pesa mais pra você: entrada/financiamento ou o imóvel em si?"
+
 ## Próximo passo
-Aguardar resposta. Se houver retorno, seguir para qualificação consultiva; se não houver, manter a régua e aguardar o próximo horário elegível.
+Aguardar resposta. Se houver retorno, seguir para qualificação consultiva; se não houver, manter a régua e aguardar o próximo horário elegível para step 5.
 
 ## Observações operacionais
 - WhatsApp enviado com validação `onWhatsApp` usando o JID do CRM.
-- A marcação de envio no wrapper do CRM/MCP teve timeout, então o estado foi persistido via fallback SQL no MCP Postgres e verificado em seguida.
-- Registro CRM de apoio criado com o envio do step 3.
-- Branch de repescagem agora está em `step=3`, `enabled=true`, `stopped_reason=null`, `claim_expires_at=null` e `next_run_at=2026-05-09T19:10:00-03:00`.
+- O bridge local em `http://127.0.0.1:3000/health` respondeu `connected`.
+- A marcação de envio do step 4 persistiu em `meta_data.reno_followup.repescagem` com `step=4` e `next_run_at=2026-05-10T09:10:00-03:00`.
 - Documento mantido de forma determinística neste atendimento para evitar duplicidade futura.
