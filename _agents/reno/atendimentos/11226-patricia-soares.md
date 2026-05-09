@@ -111,3 +111,9 @@ Pra eu te orientar melhor no Union Vista, no Grand Ville, o que pesa mais pra vo
 - Cliente segue em Não Respondeu.
 - Próximo follow-up: 2026-05-09 19:10 BRT.
 - Ângulo da régua ajustado para critério principal de escolha: localização, tamanho da planta ou condição de compra.
+### 2026-05-09 — repescagem step 4
+- WhatsApp enviado com validação `onWhatsApp` via bridge local.
+- Mensagem: "Oi, Patricia! Tudo bem?\n\nPra eu te orientar sem te fazer perder tempo, o melhor agora é olhar isso pessoalmente. Se eu separar um horário na segunda pra você vir na Fama e a gente ver a viabilidade do Union Vista, faz sentido?"
+- Cliente segue em `Não Respondeu`.
+- Próximo follow-up previsto: 2026-05-10T09:10:00-03:00.
+- Ângulo da régua: convite consultivo direto para visita na Fama na segunda-feira.
