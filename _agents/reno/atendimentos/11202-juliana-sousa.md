@@ -8,7 +8,7 @@ broker_id: 35
 status_crm: Não Respondeu
 source: SLA Cascata
 created: '2026-05-05'
-updated: '2026-05-08'
+updated: '2026-05-09'
 tags:
   - reno
   - atendimento
@@ -16,8 +16,10 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
+  - repescagem-step-1
   - repescagem-step-2
   - repescagem-step-3
+  - repescagem-step-4
   - place-arbi
 ---
 # Atendimento — Juliana Sousa
@@ -25,7 +27,7 @@ tags:
 Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
-Repescagem step 3 enviada com sucesso por WhatsApp em 2026-05-08. A cliente segue sem resposta real ao Reno e permanece em `Não Respondeu` no CRM. O novo ângulo da régua busca identificar o critério principal de escolha no Place+Arbi, no Shopping Park, depois do step 2 já ter tratado viabilidade prática, entrada, parcelas da obra e financiamento.
+Repescagem step 4 enviada com sucesso em 2026-05-09. A cliente continua sem resposta real e permanece em `Não Respondeu`. A régua passou para um convite consultivo mais direto: organizar o caminho de compra do Place+Arbi, com CTA suave para segunda-feira no escritório e foco em condição de compra vs planta.
 
 ## Dados operacionais
 - Cliente ID: 11202
@@ -34,79 +36,60 @@ Repescagem step 3 enviada com sucesso por WhatsApp em 2026-05-08. A cliente segu
 - Origem: SLA Cascata
 - Cliente original de contexto: 11137 (Facebook Ads, broker anterior 24)
 - WhatsApp/JID validado no CRM
-- Última interação relevante: 2026-05-08 15:19:18-03:00 — repescagem step 3 enviada
-- Próximo follow-up previsto: 2026-05-09T09:10:00-03:00
+- Última interação relevante: 2026-05-09 10:40:32.965Z — nota CRM da repescagem step 4
+- Próximo follow-up previsto: 2026-05-10T14:20:00-03:00
 
 ## Contexto comercial
-A cliente entrou no fluxo por SLA Cascata e chegou ao Reno com interesse vinculado ao Place+Arbi. O empreendimento é um lançamento no Shopping Park/Zona Sul, com entrega prevista para JUN/2027, e o step 2 já havia avançado para a leitura prática da viabilidade da compra. Agora a conversa procura o critério principal de escolha para evitar repetir o mesmo argumento de viabilidade.
+O interesse segue vinculado ao Place+Arbi, no Shopping Park, com entrega prevista para JUN/2027. A conversa evoluiu em camadas:
+1. prazo de entrega e forma de pagamento;
+2. viabilidade prática da compra (entrada, parcelas da obra e financiamento);
+3. critério principal de escolha;
+4. convite consultivo para organizar o caminho de compra e, se fizer sentido, conversar com calma na segunda no escritório.
 
 ## Diagnóstico
 ### Necessidade
-Entender qual critério pesa mais para orientar a decisão.
+Entender como a cliente quer decidir: pelo encaixe financeiro, pela planta ou por outro critério dominante.
 
 ### Momento
-Ainda em silêncio após os primeiros contatos, mas com branch ativa de repescagem.
+Silêncio persistente após os primeiros contatos, mas com branch ativa de repescagem.
 
 ### Decisão
-Ainda não confirmada. Não há sinal validado sobre decisores, comparação entre opções ou urgência.
+Ainda não confirmada.
 
 ### Viabilidade
-Viabilidade já foi introduzida no step anterior; o próximo passo é descobrir o que tem mais peso hoje para a cliente.
+Já introduzida nas mensagens anteriores; o próximo avanço esperado é resposta da cliente para destravar interesse real ou encaminhar para visita/atendimento presencial.
 
 ## Histórico curado de interações
-### 2026-05-05 — Primeiro contato enviado
-Reno enviou mensagem de abertura pelo WhatsApp informado no CRM, contextualizando o interesse no Place+Arbi e perguntando se a busca era para morar ou investir.
+### 2026-05-05 — Primeiro contato
+Mensagem de abertura contextualizou o interesse no Place+Arbi e perguntou se a busca era para morar ou investir. O CRM foi atualizado para `Não Respondeu` e a branch de repescagem foi inicializada.
 
-Após envio bem-sucedido, o CRM foi atualizado de Sem Atendimento para Não Respondeu e a branch `reno_followup.repescagem` foi inicializada com step 0.
+### 2026-05-06 — Step 1
+Novo motivo para responder: prazo de entrega e forma de pagamento como leitura inicial, sem repetir a pergunta de morar/investir.
 
-### 2026-05-06 — Repescagem step 1 enviada
-Mensagem enviada por WhatsApp usando o JID salvo no CRM, com validação técnica `onWhatsApp` pelo bridge local:
+### 2026-05-07 — Step 2
+Ângulo de viabilidade prática: entrada, parcelas da obra e financiamento no contexto do lançamento.
 
-“Oi, Juliana! Bom dia 🏡
+### 2026-05-08 — Step 3
+Diagnóstico leve sobre o critério principal de escolha: localização no Shopping Park, tamanho da planta ou condição de compra.
 
-Sobre o Place+Arbi, antes de comparar planta ou valor, o que costuma evitar perda de tempo é entender se o prazo de entrega e a forma de pagamento do lançamento combinam com o seu momento.
+### 2026-05-09 — Step 4
+Mensagem enviada:
 
-Posso te ajudar a fazer essa leitura inicial de um jeito bem objetivo?”
+"Juliana, eu consigo te mostrar o Place+Arbi de um jeito mais objetivo, olhando o que faz sentido pro seu momento.
 
-Ângulo usado: novo motivo para responder, diferenciando do primeiro contato. Em vez de repetir a pergunta de morar/investir, a mensagem abordou prazo de entrega e forma de pagamento do lançamento como leitura inicial.
+Se fizer sentido, na segunda eu te mostro isso com calma no escritório: você prefere começar pela condição de compra ou pela planta?"
 
-Estado CRM após marcação: `repescagem.step=1`, `enabled=true`, `last_sent_at=2026-05-06T10:27:03.855-03:00`, `next_run_at=2026-05-07T14:20:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
-
-### 2026-05-07 — Repescagem step 2 enviada
-Mensagem enviada por WhatsApp usando o JID salvo no CRM, com validação técnica `onWhatsApp` pelo bridge local:
-
-“Juliana, tudo bem? 🔑
-
-No Place+Arbi, no Shopping Park, como é um lançamento com entrega prevista pra JUN/2027, o ponto principal agora é ver se entrada, parcelas da obra e financiamento fazem sentido no seu momento.
-
-Quer que eu faça uma leitura rápida e bem pé no chão com você?”
-
-Ângulo usado: viabilidade prática do lançamento, sem repetir região, finalidade ou a leitura já feita no step 1.
-
-Estado CRM após marcação: `repescagem.step=2`, `enabled=true`, `last_sent_at=2026-05-07T15:39:25.715-03:00`, `next_run_at=2026-05-08T14:20:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
-
-### 2026-05-08 — Repescagem step 3 enviada
-Mensagem enviada por WhatsApp usando o JID salvo no CRM, com validação técnica `onWhatsApp` pelo bridge local:
-
-“Oi, Juliana! Tudo bem? 🏡
-
-Pra eu te orientar melhor no Place+Arbi, o que pesa mais pra você hoje: localização no Shopping Park, tamanho da planta ou condição de compra?
-
-Assim eu consigo te passar o caminho mais certeiro.”
-
-Ângulo usado: diagnóstico leve sobre o critério principal de escolha, mudando o foco da viabilidade para a prioridade real da cliente.
-
-Estado CRM após marcação: `repescagem.step=3`, `enabled=true`, `last_sent_at=2026-05-08T15:19:18-03:00`, `next_run_at=2026-05-09T09:10:00-03:00`, `stopped_reason=null`, `claim_expires_at=null`.
+Estado persistido após marcação: `repescagem.step=4`, `enabled=true`, `last_sent_at=2026-05-09T10:39:51-03:00`, `next_run_at=2026-05-10T14:20:00-03:00`, `stopped_reason=null`.
 
 ## Objeções e travas
-- Nenhuma objeção identificada até o momento.
-- Trava atual: silêncio após primeiro contato, step 1, step 2 e step 3.
+- Nenhuma objeção explícita registrada.
+- Trava atual: silêncio após contato inicial, mas branch segue ativa.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se continuar sem resposta e permanecer em `Não Respondeu`, seguir a repescagem step 4 conforme a matriz oficial: 2026-05-09 às 09:10 BRT.
+Aguardar resposta da cliente. Se o silêncio persistir, o step 5 fica previsto para 2026-05-10 às 14:20 BRT.
 
 ## Observações operacionais
-- Nome no CRM considerado confiável para saudação: Juliana Sousa.
-- Repescagem executada via fallback excepcional do bridge local porque a ferramenta `send_message` não estava exposta no runtime do cron; bridge local estava saudável e conectado na porta 3000.
-- Envio realizado com validação técnica `validated=true` e `validationMethod=onWhatsApp`.
-- Status não foi alterado nesta execução porque steps 1 a 4 da repescagem mantêm o cliente em `Não Respondeu` até resposta real.
+- Nome no CRM confiável para saudação: Juliana Sousa.
+- Envio feito pelo bridge local com validação técnica `validated=true` e `validationMethod=onWhatsApp`.
+- Status não foi alterado porque steps 1 a 4 da repescagem mantêm o cliente em `Não Respondeu`.
+- Nota CRM registrada com id 17411.
