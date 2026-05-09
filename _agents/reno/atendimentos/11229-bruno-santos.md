@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-05-06'
-updated: '2026-05-08'
+updated: '2026-05-09'
 tags:
   - reno
   - atendimento
@@ -14,6 +14,7 @@ tags:
   - viabilidade
   - step2
   - step3
+  - step4
 entity_type: atendimento
 entity_name: Bruno Santos
 client_id: 11229
@@ -24,7 +25,7 @@ source: SLA Cascata
 # Bruno Santos — Atendimento Reno
 
 ## Resumo atual
-Repescagem step 3 enviada em 2026-05-08 17:37 BRT. Cliente segue em Não Respondeu. Próxima repescagem prevista para 2026-05-09 19:10 BRT, com foco em critério principal de escolha e momento da compra.
+Repescagem step 4 enviada em 2026-05-09 19:35 BRT. Cliente segue em Não Respondeu. Próxima repescagem prevista para 2026-05-10 09:10 BRT, com foco em leitura objetiva do Garden Sul e encaixe de entrada, parcela e financiamento.
 
 ## Dados operacionais
 - Cliente ID: 11229
@@ -32,8 +33,8 @@ Repescagem step 3 enviada em 2026-05-08 17:37 BRT. Cliente segue em Não Respond
 - Status CRM: Não Respondeu
 - Origem: SLA Cascata / sla_cascata
 - WhatsApp validado no CRM via whatsapp_jid
-- Última interação relevante: 2026-05-08 17:37 BRT — repescagem step 3 enviada
-- Próximo follow-up: 2026-05-09 19:10 BRT
+- Última interação relevante: 2026-05-09 19:35 BRT — repescagem step 4 enviada
+- Próximo follow-up: 2026-05-10 09:10 BRT
 
 ## Contexto comercial
 - Produto: Garden Sul
@@ -52,15 +53,16 @@ Repescagem step 3 enviada em 2026-05-08 17:37 BRT. Cliente segue em Não Respond
 ## Histórico curado de interações
 - 2026-05-06: primeiro contato enviado. Abertura por WhatsApp com contexto do Garden Sul perguntando como a pessoa buscava imóvel na região. Status CRM alterado de Sem Atendimento para Não Respondeu.
 - 2026-05-06 19:50 BRT: repescagem step 1 enviada. Ângulo sobre objetivo da compra no Garden Sul: morar ou comparar oportunidade de compra.
-- 2026-05-07 10:05 BRT: repescagem step 2 enviada. Mensagem sobre viabilidade prática: entrada, parcelas da obra e financiamento. Envio validado no WhatsApp.
-- 2026-05-08 17:37 BRT: repescagem step 3 enviada. Ângulo de diagnóstico leve perguntando se a compra é para morar ou investir. Envio validado no WhatsApp.
+- 2026-05-07 10:05 BRT: repescagem step 2 enviada. Mensagem sobre viabilidade prática: entrada, parcelas da obra e financiamento.
+- 2026-05-08 17:37 BRT: repescagem step 3 enviada. Ângulo de diagnóstico leve perguntando se a compra é para morar ou investir.
+- 2026-05-09 19:35 BRT: repescagem step 4 enviada. Ângulo consultivo direto sobre entrada, parcela e financiamento, com CTA para segunda-feira no escritório.
 
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens steps 1, 2 e 3.
+- Silêncio após primeiro contato e repescagens steps 1, 2, 3 e 4.
 
 ## Próximo passo
-- Se seguir sem resposta, enviar repescagem step 4 em 2026-05-09 19:10 BRT com foco em critério principal de escolha e avanço consultivo.
+- Se seguir sem resposta, enviar repescagem step 5 em 2026-05-10 09:10 BRT com encerramento elegante e porta aberta.
 
 ## Observações operacionais
-- Repescagem step 3 persistida com `next_run_at=2026-05-09T19:10:00-03:00`.
+- Repescagem step 4 persistida com `next_run_at=2026-05-10T09:10:00-03:00`.
 - Status CRM permanece Não Respondeu; sem arquivamento.
