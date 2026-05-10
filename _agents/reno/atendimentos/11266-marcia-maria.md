@@ -1,14 +1,12 @@
 ---
-type: entity-profile
-owner: reno
-entity_type: atendimento
-entity_name: Marcia Maria
-client_id: 11266
 broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
+client_id: 11266
 created: '2026-05-07'
-updated: '2026-05-10'
+entity_name: Marcia Maria
+entity_type: atendimento
+owner: reno
+source: Facebook Ads
+status_crm: Não Respondeu
 tags:
   - reno
   - atendimento
@@ -17,14 +15,16 @@ tags:
   - repescagem
   - garden-sul
   - nao-respondeu
-  - step-2
+  - step-3
+type: entity-profile
+updated: '2026-05-10'
 ---
 # Atendimento — Marcia Maria
 
 Vínculos: [[reno]], [[playbook-atendimento]], [[garden-sul]], [[jardim-sul]], [[credito-imobiliario]], [[operacao-crm-webhook]].
 
 ## Resumo atual
-Cliente segue em `Não Respondeu`. Em 2026-05-10 foi enviado follow-up de repescagem step 2 via WhatsApp validado, mudando o ângulo para viabilidade prática da compra no Garden Sul — foco em faixa de entrada e momento de compra. Próximo follow-up previsto para 2026-05-10 às 19:10, caso siga sem resposta.
+Cliente segue em `Não Respondeu`. Em 2026-05-10 foi enviado follow-up de repescagem step 3 via WhatsApp validado, mudando o ângulo para viabilidade prática da compra no Garden Sul — foco em financiamento versus compra à vista. Próximo follow-up previsto para 2026-05-11 às 09:10, caso siga sem resposta.
 
 ## Dados operacionais
 - Cliente ID: 11266
@@ -32,10 +32,10 @@ Cliente segue em `Não Respondeu`. Em 2026-05-10 foi enviado follow-up de repesc
 - Status CRM: Não Respondeu
 - Origem: Facebook Ads
 - Telefone/WhatsApp: WhatsApp validado no envio
-- Última interação relevante: follow-up de repescagem step 2 enviado em 2026-05-10
+- Última interação relevante: follow-up de repescagem step 3 enviado em 2026-05-10
 
 ## Contexto comercial
-Cliente interessada no Garden Sul, no Jardim Sul, em Uberlândia. O step 2 saiu do ângulo de intenção geral e passou para uma leitura mais prática do encaixe da compra: entrada e momento atual, para evitar avançar por uma opção que não faça sentido.
+Cliente interessada no Garden Sul, no Jardim Sul, em Uberlândia. O step 3 saiu do ângulo de intenção/entrada e passou para a leitura de viabilidade: financiamento ou compra à vista, para entender o encaixe real da compra antes de avançar.
 
 ## Diagnóstico
 ### Necessidade
@@ -60,13 +60,16 @@ Mensagem curta e consultiva enviada via WhatsApp validado: `Oi, Marcia! Tudo bem
 ### 2026-05-10 — Follow-up de repescagem step 2 enviado
 Mensagem enviada via WhatsApp validado: `Oi, Marcia! Passando rapidinho de novo sobre o Garden Sul.\nPra eu te orientar sem te mostrar opção fora do seu momento, você já tem uma faixa de entrada em mente ou está começando do zero?`
 
+### 2026-05-10 — Follow-up de repescagem step 3 enviado
+Mensagem enviada via WhatsApp validado: `Oi, Marcia!\n\nPra eu te orientar sem te empurrar opção fora do que faz sentido: você pensa em financiar ou está considerando compra à vista?`
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
 
 ## Próximo passo
-Aguardar resposta. Se não houver retorno, a régua seguirá para step 3 em 2026-05-10 às 19:10.
+Aguardar resposta. Se não houver retorno, a régua seguirá para step 4 em 2026-05-11 às 09:10.
 
 ## Observações operacionais
 - O WhatsApp foi validado pelo bridge com JID confirmado.
-- Regra de repescagem para `entry_shift=noite`: o próximo step foi materializado para `2026-05-10T19:10:00-03:00`.
+- Regra de repescagem para `entry_shift=noite`: o próximo step foi materializado para `2026-05-11T09:10:00-03:00`.
 - Não houve alteração de status de CRM nesta etapa.
