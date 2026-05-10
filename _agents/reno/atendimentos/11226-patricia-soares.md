@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-05-06'
-updated: '2026-05-09'
+updated: '2026-05-10'
 tags:
   - reno
   - atendimento
@@ -10,11 +10,12 @@ tags:
   - famachat
   - primeiro-contato
   - repescagem
+  - arquivado
 entity_type: atendimento
 entity_name: Patricia Soares
 client_id: 11226
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: Facebook Ads
 ---
 # Atendimento — Patricia Soares
@@ -22,16 +23,16 @@ source: Facebook Ads
 Vínculos: [[reno]], [[playbook-atendimento]], [[union-vista]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
-Repescagem step 4 enviada com sucesso via WhatsApp em 2026-05-09 às 19:26 BRT. A cliente segue em `Não Respondeu`. O ângulo da régua passou para convite consultivo direto para visita presencial na Fama, com foco em olhar a viabilidade do Union Vista na segunda-feira.
+Repescagem step 5 enviada com sucesso via WhatsApp em 2026-05-10 às 09:39 BRT. A régua foi encerrada por `max_steps`, o branch de repescagem foi normalizado e a cliente ficou `Arquivada` no CRM.
 
 ## Dados operacionais
 - Cliente ID: 11226
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - WhatsApp cadastrado e validado para envio
-- Última interação relevante: repescagem step 4 enviada via bridge local em 2026-05-09 às 19:26 BRT
-- Próxima repescagem prevista: step 5 em 2026-05-10T09:10:00-03:00, se não houver resposta
+- Última interação relevante: repescagem step 5 enviada via bridge local em 2026-05-10 às 09:39 BRT com validação `onWhatsApp`
+- Branch final: `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`
 - Referência operacional do primeiro contato: evt_3394 / 3394_1778064731537
 
 ## Contexto comercial
@@ -43,7 +44,8 @@ Repescagem step 4 enviada com sucesso via WhatsApp em 2026-05-09 às 19:26 BRT. 
   - step 1: morar vs oportunidade de compra;
   - step 2: entrada vs parcela;
   - step 3: localização vs tamanho da planta vs condição de compra;
-  - step 4: convite direto para olhar a viabilidade presencialmente na Fama.
+  - step 4: convite direto para olhar a viabilidade presencialmente na Fama;
+  - step 5: encerramento elegante da cadência, com porta aberta para retomada futura.
 
 ## Histórico curado de interações
 ### 2026-05-06 — Primeiro contato enviado
@@ -81,16 +83,25 @@ O Reno enviou uma abertura curta com contexto do interesse no Union Vista, no Gr
 
 Ângulo: convite consultivo direto para visita presencial, com CTA ajustado para segunda-feira por ser fim de semana.
 
+### 2026-05-10 — Repescagem step 5 enviada e régua encerrada
+> Oi, Patricia.
+>
+> Vou pausar meu acompanhamento por aqui para não te incomodar. Se fizer sentido retomar depois sobre o Union Vista, sigo à disposição para te ajudar com calma.
+
+Ângulo: encerramento elegante, sem pressão e com porta aberta para retomada futura.
+
 ## Objeções e travas
 - Nenhuma objeção registrada até o momento.
-- Trava atual: silêncio após o primeiro contato e após as repescagens.
+- Trava anterior: silêncio após o primeiro contato e após as repescagens.
+- Régua encerrada por `max_steps` após o step 5.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se responder, o fluxo deve sair da repescagem e seguir qualificação consultiva. Se permanecer em silêncio, a próxima execução deve avaliar o step 5 e, se ainda estiver em `Não Respondeu`, encerrar a régua conforme governança.
+Sem nova ação de repescagem. Se a cliente responder no futuro, o caso deve sair da repescagem e seguir qualificação consultiva. Enquanto isso, o atendimento fica arquivado no CRM.
 
 ## Observações operacionais
 - CRM/FamaChat permanece como fonte de verdade operacional.
-- Steps 1 a 4 não alteram o status do cliente.
-- O envio do step 4 foi validado como `onWhatsApp` via bridge local.
-- `mark_reno_followup_sent` persistiu `step=4`, `last_sent_at=2026-05-09T19:26:50-03:00` e `next_run_at=2026-05-10T09:10:00-03:00`.
-- A mensagem mudou de ângulo e evitou repetir a mesma abordagem das etapas anteriores.
+- Steps 1 a 4 não alteraram o status do cliente.
+- O step 5 foi validado com `validated=true` e JID compatível com o CRM.
+- `mark_reno_followup_sent` persistiu `step=5` e `last_sent_at=2026-05-10T09:39:00-03:00`.
+- A branch foi normalizada para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
+- O status foi alterado para `Arquivado` após a confirmação defensiva no CRM.
