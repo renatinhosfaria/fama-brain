@@ -2,7 +2,7 @@
 type: entity-profile
 owner: reno
 created: '2026-05-06'
-updated: '2026-05-09'
+updated: '2026-05-10'
 tags:
   - reno
   - atendimento
@@ -15,26 +15,29 @@ tags:
   - step2
   - step3
   - step4
+  - step5
+  - arquivado
+  - max_steps
 entity_type: atendimento
 entity_name: Bruno Santos
 client_id: 11229
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 ---
 # Bruno Santos — Atendimento Reno
 
 ## Resumo atual
-Repescagem step 4 enviada em 2026-05-09 19:35 BRT. Cliente segue em Não Respondeu. Próxima repescagem prevista para 2026-05-10 09:10 BRT, com foco em leitura objetiva do Garden Sul e encaixe de entrada, parcela e financiamento.
+Repescagem step 5 enviada em 2026-05-10 09:45 BRT. A régua foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado defensivamente após permanecer em Não Respondeu durante todo o fluxo.
 
 ## Dados operacionais
 - Cliente ID: 11229
 - Broker: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: SLA Cascata / sla_cascata
 - WhatsApp validado no CRM via whatsapp_jid
-- Última interação relevante: 2026-05-09 19:35 BRT — repescagem step 4 enviada
-- Próximo follow-up: 2026-05-10 09:10 BRT
+- Última interação relevante: 2026-05-10 09:45 BRT — repescagem step 5 enviada
+- Próximo follow-up: nenhum; régua encerrada
 
 ## Contexto comercial
 - Produto: Garden Sul
@@ -56,13 +59,19 @@ Repescagem step 4 enviada em 2026-05-09 19:35 BRT. Cliente segue em Não Respond
 - 2026-05-07 10:05 BRT: repescagem step 2 enviada. Mensagem sobre viabilidade prática: entrada, parcelas da obra e financiamento.
 - 2026-05-08 17:37 BRT: repescagem step 3 enviada. Ângulo de diagnóstico leve perguntando se a compra é para morar ou investir.
 - 2026-05-09 19:35 BRT: repescagem step 4 enviada. Ângulo consultivo direto sobre entrada, parcela e financiamento, com CTA para segunda-feira no escritório.
+- 2026-05-10 09:45 BRT: repescagem step 5 enviada. Encerramento elegante com porta aberta: "Bruno, vou pausar por aqui pra não te incomodar. Se quiser retomar depois, sigo à disposição pra te ajudar a organizar a compra no seu ritmo." 
+- 2026-05-10 09:46 BRT: branch normalizada para step final e cliente arquivado defensivamente.
 
 ## Objeções e travas
-- Silêncio após primeiro contato e repescagens steps 1, 2, 3 e 4.
+- Silêncio após primeiro contato e repescagens steps 1, 2, 3, 4 e 5.
 
-## Próximo passo
-- Se seguir sem resposta, enviar repescagem step 5 em 2026-05-10 09:10 BRT com encerramento elegante e porta aberta.
+## Encerramento
+- Repescagem encerrada após step 5.
+- Branch normalizada para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`.
+- Status CRM atualizado de Não Respondeu para Arquivado.
+- Nota CRM objetiva registrada sobre o arquivamento defensivo.
 
 ## Observações operacionais
-- Repescagem step 4 persistida com `next_run_at=2026-05-10T09:10:00-03:00`.
-- Status CRM permanece Não Respondeu; sem arquivamento.
+- Repescagem step 5 persistida com `last_sent_at=2026-05-10T09:45:06-03:00`.
+- Arquivamento defensivo confirmado no CRM e no vault.
+- Não há próximo follow-up automático.
