@@ -5,10 +5,10 @@ entity_type: atendimento
 entity_name: Juliana Sousa
 client_id: 11202
 broker_id: 35
-status_crm: Não Respondeu
+status_crm: Arquivado
 source: SLA Cascata
 created: '2026-05-05'
-updated: '2026-05-09'
+updated: '2026-05-10'
 tags:
   - reno
   - atendimento
@@ -20,44 +20,48 @@ tags:
   - repescagem-step-2
   - repescagem-step-3
   - repescagem-step-4
+  - repescagem-step-5
   - place-arbi
+  - arquivado
+  - max-steps
 ---
 # Atendimento — Juliana Sousa
 
 Vínculos: [[reno]], [[playbook-atendimento]], [[place-arbi]], [[shopping-park]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
-Repescagem step 4 enviada com sucesso em 2026-05-09. A cliente continua sem resposta real e permanece em `Não Respondeu`. A régua passou para um convite consultivo mais direto: organizar o caminho de compra do Place+Arbi, com CTA suave para segunda-feira no escritório e foco em condição de compra vs planta.
+A repescagem foi concluída no step 5 em 2026-05-10. O WhatsApp foi validado com sucesso, a régua foi encerrada com `stopped_reason=max_steps` e o cliente foi arquivado defensivamente após confirmação de que o status ainda estava exatamente `Não Respondeu` no momento do encerramento.
 
 ## Dados operacionais
 - Cliente ID: 11202
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM atual: Arquivado
 - Origem: SLA Cascata
 - Cliente original de contexto: 11137 (Facebook Ads, broker anterior 24)
 - WhatsApp/JID validado no CRM
-- Última interação relevante: 2026-05-09 10:40:32.965Z — nota CRM da repescagem step 4
-- Próximo follow-up previsto: 2026-05-10T14:20:00-03:00
+- Última interação relevante: 2026-05-10 15:10:29.109Z — nota CRM da repescagem step 5
+- Estado final da repescagem: `step=5`, `enabled=false`, `next_run_at=null`, `last_sent_at=2026-05-10T15:10:06-03:00`, `stopped_reason=max_steps`
 
 ## Contexto comercial
 O interesse segue vinculado ao Place+Arbi, no Shopping Park, com entrega prevista para JUN/2027. A conversa evoluiu em camadas:
 1. prazo de entrega e forma de pagamento;
 2. viabilidade prática da compra (entrada, parcelas da obra e financiamento);
 3. critério principal de escolha;
-4. convite consultivo para organizar o caminho de compra e, se fizer sentido, conversar com calma na segunda no escritório.
+4. convite consultivo para organizar o caminho de compra;
+5. fechamento elegante da régua sem insistência.
 
 ## Diagnóstico
 ### Necessidade
 Entender como a cliente quer decidir: pelo encaixe financeiro, pela planta ou por outro critério dominante.
 
 ### Momento
-Silêncio persistente após os primeiros contatos, mas com branch ativa de repescagem.
+Silêncio persistente após o primeiro contato e as quatro primeiras repescagens, sem resposta real posterior.
 
 ### Decisão
-Ainda não confirmada.
+Não confirmada durante a régua; a sequência foi encerrada por max_steps.
 
 ### Viabilidade
-Já introduzida nas mensagens anteriores; o próximo avanço esperado é resposta da cliente para destravar interesse real ou encaminhar para visita/atendimento presencial.
+Já introduzida nas mensagens anteriores. Como não houve retorno, a régua foi concluída e o caso fica pronto para retomada manual se a cliente voltar a responder.
 
 ## Histórico curado de interações
 ### 2026-05-05 — Primeiro contato
@@ -81,15 +85,25 @@ Se fizer sentido, na segunda eu te mostro isso com calma no escritório: você p
 
 Estado persistido após marcação: `repescagem.step=4`, `enabled=true`, `last_sent_at=2026-05-09T10:39:51-03:00`, `next_run_at=2026-05-10T14:20:00-03:00`, `stopped_reason=null`.
 
+### 2026-05-10 — Step 5 / encerramento
+Mensagem enviada:
+
+"Juliana, vou pausar por aqui pra não insistir. Quando quiser retomar o Place+Arbi, eu organizo tudo de forma objetiva pra você."
+
+Validação do envio: `validated=true`, `validationMethod=onWhatsApp`, `validatedJid=553484084573@s.whatsapp.net`, `mirrored=true`.
+
+Depois do registro do envio, a branch foi relida, normalizada para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`, e o cliente foi arquivado defensivamente com proteção contra regressão.
+
 ## Objeções e travas
 - Nenhuma objeção explícita registrada.
-- Trava atual: silêncio após contato inicial, mas branch segue ativa.
+- Trava atual encerrada: silêncio persistente e régua finalizada em `max_steps`.
 
 ## Próximo passo
-Aguardar resposta da cliente. Se o silêncio persistir, o step 5 fica previsto para 2026-05-10 às 14:20 BRT.
+Nenhum follow-up automático adicional. Se a cliente responder no futuro, a retomada deve seguir o fluxo de qualificação, não a repescagem.
 
 ## Observações operacionais
 - Nome no CRM confiável para saudação: Juliana Sousa.
-- Envio feito pelo bridge local com validação técnica `validated=true` e `validationMethod=onWhatsApp`.
-- Status não foi alterado porque steps 1 a 4 da repescagem mantêm o cliente em `Não Respondeu`.
-- Nota CRM registrada com id 17411.
+- Envio feito pelo bridge local com validação técnica completa.
+- Status alterado para `Arquivado` somente após confirmação defensiva da branch final.
+- Notas CRM registradas com ids 17443 e 17444.
+- O documento curado foi atualizado para refletir o encerramento da régua e o status final do CRM.
