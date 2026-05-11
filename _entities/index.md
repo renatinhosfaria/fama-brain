@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - entities
   - moc
@@ -11,120 +11,50 @@ schema_version: 1
 status: active
 provenance: human-curated
 ---
-## `_entities/` — Perfis canônicos
+# `_entities/` - Perfis canonicos
 
-**Uma e somente uma** nota por entidade real. Aliases ficam no campo `aliases` do frontmatter, não em arquivos separados. Quando o CRM tiver múltiplos cadastros para a mesma pessoa, use `external_ids.crm_client_ids: [array]` + `external_ids.crm_client_id_canonical: <id>`.
+**Uma e somente uma** nota por entidade real. Aliases ficam no campo `aliases` do frontmatter, nao em arquivos separados. Quando o CRM tiver multiplos cadastros para a mesma pessoa, use `external_ids.crm_client_ids: [array]` + `external_ids.crm_client_id_canonical: <id>`.
+
+## Proposito
+
+`_entities/` guarda perfis consolidados de pessoas, organizacoes, propriedades e lugares. Eventos operacionais datados ficam em `_journal/reno/`; decisoes ficam em `_decisions/`; procedimentos duraveis ficam em `_runbooks/`.
 
 ## Subtypes
 
-- `person` — clientes, brokers, parceiros, funcionários, leads.
-- `org` — construtoras, parceiros institucionais, fornecedores.
-- `property` — imóveis (apartamentos, terrenos, lotes específicos, empreendimentos).
-- `place` — bairros, regiões, zonas urbanas.
-- `project` — projetos como entidades (raro — geralmente vai em `_projects/`).
+- `person` - clientes, brokers, parceiros, funcionarios, leads.
+- `org` - construtoras, parceiros institucionais, fornecedores.
+- `property` - imoveis, apartamentos, terrenos, lotes especificos e empreendimentos.
+- `place` - bairros, regioes e zonas urbanas.
+- `project` - projetos como entidades, raro; geralmente vai em `_projects/`.
 
-## Perfis canônicos ativos
+## Estado atual
 
-### Pessoas (clientes/leads) — 38
+- Total atual de notas de entidade: **175** (`_entities/*.md`, excluindo `index.md`).
+- Pessoas com `entity_type: person` explicito: **138**.
+- Lugares com `entity_type: place` explicito: **10**.
+- Propriedades com `entity_type: property` explicito: **8**.
+- Organizacoes com `entity_type: org` explicito: **1**.
+- Notas legadas sem `entity_type` explicito: **18**.
+- Status: **172 active** / **3 archived**.
 
-**Lote 1–6 (33):** preservados no histórico do Git.
+## Migracao Reno 2026-05-11
 
-**Lote 7 (5 + 2 atualizações) — 2026-05-06:**
-- [[thiago-tesch]] — **Agendamento, visita 15/05 15h30**, perfil MCMV-target, [[union-vista]]
-- [[kamily]] — **Agendamento, visita 07/05 9h** (amanhã!), [[place-arbi]]
-- [[mauro-marques]] — Em Atendimento, **fora de fit** (quer loteamento Planalto), [[union-vista]]
-- [[byanca-guerra]] — Em Atendimento, **Garden Sul engajou!**, planta 56,32m²/R$330k, entrada R$10k
-- [[aline-oliveira]] — Em Atendimento, **2º Garden Sul engajado**, diagnóstico em curso
+Os atendimentos antigos de `_agents/reno/atendimentos/` foram migrados para modelo duplo:
 
-**Atualizações:**
-- [[pedro]] — **VISITA REALIZADA** 01/05 (status CRM = Visita) — primeira conversão completa
-- [[claudia-rosangela]] — confusão de marca ("E mrv") a esclarecer + perguntou evolução de obra
+- perfil consolidado em `_entities/`;
+- evento operacional datado em `_journal/reno/`.
 
-### Pessoas (brokers) — 1
+Quando houve duplicidade provavel, a entidade canonica recebeu aliases e multiplos IDs externos. Quando houve ambiguidade real, a nota manteve secao `## Ambiguidade` ou observacao equivalente.
 
-- [[reno]] — broker_id 35, agente IA principal, broker dos 38 leads canônicos
+Status dos atendimentos migrados:
 
-### Organizações — 1
+- 153 fontes de atendimento foram inventariadas.
+- 152 fontes foram migradas ou special-migrated para o novo modelo.
+- `whatsapp-lua` ficou como revisao manual pendente.
+- `pending` normal no manifesto: 0.
 
-- [[hlts-construtora]] — construtora de [[union-vista]] e [[union-vereda]] (25 leads canônicos no funil)
+Use o manifesto da migracao e os eventos em `_journal/reno/` para navegar os atendimentos migrados. Este indice nao tenta listar todos os 175 perfis.
 
-### Lugares (bairros/regiões) — 11
+## Historico
 
-**Com empreendimento Fama:**
-- [[grand-ville]] — [[union-vista]], 12 leads
-- [[jaragua]] — Zona Oeste, [[union-vereda]], 13 leads (**maior cobertura**)
-- [[jardim-sul]] — Zona Sul, [[garden-sul]], 5 leads (**anomalia 0% quebrada — 2 engajaram**)
-- [[shopping-park]] — Zona Sul, [[place-arbi]], 5 leads
-
-**Sem empreendimento Fama (gap de portfólio):**
-- [[martins]] — preferência [[andreia-carvalho]]
-- [[jardim-patricia]] — preferência [[andreia-carvalho]]
-- [[roosevelt]] — preferência [[andreia-carvalho]], concorrente [[zurique]]
-- [[chacara-tubalina]] — trabalho [[jonathan-barbosa]]
-- [[zona-leste]] — preferência [[eduarda]]
-- [[regiao-central]] — preferência [[silva-porto]]
-- **NOVO gap:** Planalto/loteamento — perfil [[mauro-marques]]
-
-### Propriedades (empreendimentos) — 8
-
-**Em campanha ativa:**
-- [[union-vista]] — [[grand-ville]], [[hlts-construtora]], **12 leads** (incluindo Thiago Tesch agendado 15/05 e Mauro fora de fit)
-- [[union-vereda]] — [[jaragua]], [[hlts-construtora]], **13 leads** (incluindo Pedro visita realizada)
-- [[place-arbi]] — [[shopping-park]], **5 leads** (Kamily visita 07/05 amanhã!)
-- [[garden-sul]] — [[jardim-sul]], **5 leads** (Byanca + Aline engajaram, anomalia quebrada)
-
-**Captados mas dados incompletos:**
-- [[bris]] — Instagram, 1 lead (arquivado)
-- [[bella-vita]] — Google Ads, 1 lead (arquivado)
-- [[park-espanha]] — Facebook Ads, 1 lead (arquivado)
-
-**Concorrente:**
-- [[zurique]] — [[roosevelt]], referência competitiva
-
-## Estatísticas
-
-- **Total de perfis canônicos:** 60 (38 pessoas-cliente + 1 broker + 1 org + 11 lugares + 8 propriedades + 1 concorrente).
-- **Leads canônicos do Reno:** 38 (eram 33 pré-Lote 7).
-- **Visitas confirmadas/realizadas no funil canônico:** 4 (Pedro realizada, Kamily 07/05, Thiago 15/05, Augusto remarcação)
-- **Cobertura por imóvel:** Union Vereda 13, Union Vista 12, Place+Arbi 5, Garden Sul 5.
-
-## Insights consolidados (Lotes 3–7)
-
-### Funil comercial — conversões em vista
-1. **[[pedro]]** — VISITA REALIZADA 01/05 (status CRM = Visita)
-2. **[[kamily]]** — visita confirmada **AMANHÃ 07/05 9h** ([[place-arbi]])
-3. **[[thiago-tesch]]** — visita confirmada 15/05 15h30 ([[union-vista]], perfil MCMV-target ideal)
-4. **[[augusto-santana]]** — Visita aguardando remarcação ([[union-vista]], crédito Caixa R$230k)
-5. **[[claudia-rosangela]]** — visita acordada para semana 05/05 ([[union-vereda]], "é bem isso")
-6. **[[byanca-guerra]]** — conduzindo para visita ([[garden-sul]] 56,32m²)
-7. **[[amanda]]** — alvo iminente ([[place-arbi]] "Simplesmente perfeito", precisa marido)
-
-### Perfis emergentes
-- **MCMV-target perfeito:** [[thiago-tesch]] (visita 15/05) — perfil financeiro coerente, sem objeções
-- **Investidor:** [[eliseu]] (tese valorização)
-- **MCMV-dependente:** [[marcio-oliveira-juliao]]
-- **Multi-imóvel exigente:** [[andreia-carvalho]]
-- **Dual morar+investir:** [[jonathan-barbosa]]
-- **Fora de fit declarado:** [[mauro-marques]] (quer loteamento)
-
-### Operacional — bloqueios CRÍTICOS antes de 07/05 e 15/05
-- **HOJE 06/05:** resolver planta baixa [[place-arbi]] no MinIO (visita Kamily amanhã 9h)
-- **Antes de 15/05:** validar enquadramento MCMV [[union-vista]] (visita Thiago Tesch)
-- **Em aberto:** WhatsApp shutdown (Levi), book Union Vereda completo, memorial Garden Sul
-- **Dedup CRM falho:** Augusto 4 cadastros, Wueverton 3, Jisa 3 — bug grave do FamaChat
-
-### Validações HLTS pendentes
-- Enquadramento MCMV (gatilho [[marcio-oliveira-juliao]] e [[thiago-tesch]])
-- Plano investidor 10% entrada (gatilho [[eliseu]])
-- Configuração futura com 2 vagas (caminho [[andreia-carvalho]])
-
-### Marketing/Aquisição — anomalias e descobertas
-- **Garden Sul anomalia QUEBRADA:** Lote 7 trouxe 2 leads engajados (Byanca + Aline) — antes era 0/3
-- **Union Vista mismatch persistente:** Mauro queria loteamento; 5/12 leads silentes — vale revisão criativa
-- **Canais alternativos:** Instagram (Bris) e Google Ads (Bella Vita) seguem com 1 lead cada — base pequena
-- **NOVO gap:** loteamento/Planalto — Mauro vai para concorrente
-- **Gap de portfólio nos bairros nobres:** Martins, Jardim Patrícia, Roosevelt — concorrentes capturam
-
-## Cobertura do funil canônico
-
-A curadoria FAM-15 cobriu agora **38 dos ~75+ leads ativos** do Reno. **5 conversões em vista no horizonte de uma semana**, incluindo a primeira visita já realizada ([[pedro]]). O grafo é navegável e as decisões comerciais críticas têm contexto.
+Antes da migracao Reno 2026-05-11, este indice descrevia uma curadoria menor de 60 perfis canonicos, incluindo 38 leads do Reno. Esses numeros eram uma fotografia operacional anterior, nao o estado atual de `_entities/`.

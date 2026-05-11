@@ -12,51 +12,64 @@ confidence: null
 tags: [meta, migration, vault, second-brain]
 related: ["[[schema]]", "[[reno]]"]
 ---
-# Migração Reno Second Brain — 2026-05-11
+# Migracao Reno Second Brain - 2026-05-11
 
 ## Objetivo
 
-Migrar o conteúdo operacional do Reno de `_agents/reno/**` para a arquitetura global por tipo definida na spec `docs/superpowers/specs/2026-05-11-reno-second-brain-vault-design.md`.
+Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura global por tipo definida na spec `docs/superpowers/specs/2026-05-11-reno-second-brain-vault-design.md`.
 
 ## Escopo
 
-- Migrar runbooks, decisões, atendimentos, auditorias e journals operacionais do Reno.
-- Atualizar índices e mapas do vault.
-- Remover `_agents/` como namespace permanente após auditoria.
+- Migrar runbooks, decisoes, atendimentos, auditorias e journals operacionais do Reno.
+- Atualizar indices e mapas do vault.
+- Remover `_agents/` como namespace permanente somente apos auditoria final e aprovacao.
 
 ## Fora de escopo
 
-- Mudanças no MCP.
-- Mudanças no CRM/FamaChat.
-- Mudanças em produção.
+- Mudancas no MCP.
+- Mudancas no CRM/FamaChat.
+- Mudancas em producao.
 
-## Inventário inicial
+## Inventario inicial
 
-| Área | Contagem inicial | Observação |
+| Area | Contagem inicial | Observacao |
 | --- | ---: | --- |
 | `_agents/reno/atendimentos/` | 153 | Migrar para `_entities/` + `_journal/reno/`. |
 | `_agents/reno/auditorias/` | 15 | Migrar para `_journal/reno/`. |
 | `_agents/reno/context/` | 5 | Migrar para `_runbooks/reno-*.md`. |
 | `_agents/reno/journal/` | 6 | Migrar para `_journal/reno/`. |
-| `_agents/reno/decisions.md` | 1 log compilado | Dividir em decisões atômicas em `_decisions/`. |
+| `_agents/reno/decisions.md` | 1 log compilado | Dividir em decisoes atomicas em `_decisions/`. |
 | `_agents/reno/decisions/` | 1 | Migrar para `_decisions/`. |
 | `_agents/reno/procedimentos/` | 1 | Migrar para `_runbooks/`. |
-| `_agents/reno/planos/` | 1 | Migrar para `_journal/reno/` se for plano datado, ou `_runbooks/` se virar procedimento durável. |
+| `_agents/reno/planos/` | 1 | Migrar para `_journal/reno/` se for plano datado, ou `_runbooks/` se virar procedimento duravel. |
 
 ## Status por fase
 
-- [ ] Fase 1 — mapas e schema
-- [ ] Fase 2 — runbooks do Reno
-- [ ] Fase 3 — decisões do Reno
-- [ ] Fase 4 — atendimentos piloto
-- [ ] Fase 5 — atendimentos em lote
-- [ ] Fase 6 — auditorias, journals e planos
-- [ ] Fase 7 — remoção de `_agents/`
-- [ ] Fase 8 — auditoria final
+- [x] Fase 1 - mapas e schema
+- [x] Fase 2 - runbooks do Reno
+- [x] Fase 3 - decisoes do Reno
+- [x] Fase 4 - atendimentos piloto
+- [x] Fase 5 - atendimentos em lote
+- [ ] Fase 6 - auditorias, journals e planos
+- [ ] Fase 7 - remocao de `_agents/`
+- [ ] Fase 8 - auditoria final
 
-## Decisões de migração
+## Status dos atendimentos
 
-- `_entities/` guarda o perfil consolidado de pessoa, imóvel, empreendimento, construtora ou organização.
-- `_journal/reno/` guarda eventos datados e histórico operacional.
-- Quando houver risco de perda de nuance, preservar trecho original em seção `## Evidência original`.
-- Quando houver risco de deduplicação incorreta, manter entidades separadas e registrar a ambiguidade.
+- `_entities/*.md`, excluindo `index.md`: 175 notas.
+- `entity_type` explicito: `person: 138`, `property: 8`, `place: 10`, `org: 1`.
+- Notas legadas sem `entity_type` explicito: 18.
+- Status de entidades: `active: 172`, `archived: 3`.
+- `_journal/reno/*.md`: 152 notas.
+- Journals de atendimento `2026-05-11-atendimento-*.md`: 149.
+- Manifesto de atendimentos: 153 fontes totais.
+- Manifesto por status: `migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`, `pending-manual-review: 1`.
+- `whatsapp-lua` permanece como revisao manual pendente.
+- `pending` normal no manifesto: 0.
+
+## Decisoes de migracao
+
+- `_entities/` guarda o perfil consolidado de pessoa, imovel, empreendimento, construtora ou organizacao.
+- `_journal/reno/` guarda eventos datados e historico operacional.
+- Quando houver risco de perda de nuance, preservar trecho original em secao `## Evidencia original`.
+- Quando houver risco de deduplicacao incorreta, manter entidades separadas e registrar a ambiguidade.
