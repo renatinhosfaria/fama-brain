@@ -129,3 +129,9 @@ Aguardar resposta do cliente. Se responder, interromper a régua de Resgate com 
 - Objetivo: manter o convite presencial simples e direto, sem repetir a abordagem anterior, reforçando a visita na Fama como próximo passo.
 - CRM note registrada: `17208`
 - Status CRM preservado em `Em Atendimento`.
+
+### 2026-05-11 — Resgate pausado para revisão de duplicidade
+- Resultado: nenhum WhatsApp enviado nesta execução.
+- Motivo: o mesmo telefone/JID também aparece em outro cadastro ativo de outro broker, então a branch de Resgate foi pausada para revisão manual.
+- CRM/meta_data: `resgate.enabled=false`, `next_run_at=null`, `stopped_reason=manual_review_duplicate_active_broker`.
+- Próximo passo: revisar ownership/duplicidade antes de reativar ou encerrar a régua.
