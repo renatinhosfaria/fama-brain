@@ -122,3 +122,8 @@ Cliente respondeu “16hrs”. Interpretação operacional: confirmação do hor
 
 ### 2026-05-11 — Confirmação proativa enviada
 Follow-up de Agendamento executado com sucesso para o appointment_id 246. WhatsApp enviado ao número cadastrado com mensagem curta de confirmação da visita de hoje às 16h na Fama. CRM atualizado com nota operacional e branch `reno_followup.agendamento` encerrada após o envio (`enabled=false`, `step=1`, `next_run_at=null`, `stopped_reason=confirmacao_visita_enviada`). Próximo passo: aguardar comparecimento; sem novo disparo automático neste fluxo.
+
+
+### 2026-05-11 — Sincronização desta execução
+- CRM note #17490 criada para o envio de confirmação proativa.
+- Branch `reno_followup.agendamento` encerrada com sucesso para o appointment_id 246 (`enabled=false`, `next_run_at=null`, `stopped_reason=confirmacao_visita_enviada`).
