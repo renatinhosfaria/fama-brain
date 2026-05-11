@@ -175,7 +175,7 @@ Este manifesto prepara a migracao futura dos arquivos de atendimento de `_agents
 | `_agents\reno\atendimentos\11248-genilsom-oliveira.md` | 11248 | genilsom-oliveira | `_entities/genilsom-oliveira.md` | no | `_journal/reno/2026-05-11-atendimento-genilsom-oliveira.md` | pending |
 | `_agents\reno\atendimentos\11255-thaynara.md` | 11255 | thaynara | `_entities/thaynara.md` | no | `_journal/reno/2026-05-11-atendimento-thaynara.md` | pending |
 | `_agents\reno\atendimentos\11263-mary-sa.md` | 11263 | mary-sa | `_entities/mary-sa.md` | no | `_journal/reno/2026-05-11-atendimento-mary-sa.md` | pending |
-| `_agents\reno\atendimentos\11266-marcia-maria.md` | 11266 | marcia-maria | `_entities/marcia-maria.md` | no | `_journal/reno/2026-05-11-atendimento-marcia-maria.md` | pending |
+| `_agents\reno\atendimentos\11266-marcia-maria.md` | 11266 | marcia-maria | `_entities/marcia-maria.md` | no | `_journal/reno/2026-05-10-atendimento-marcia-maria.md` | migrated-pilot |
 | `_agents\reno\atendimentos\11267-rodrigues-gegew.md` | 11267 | rodrigues-gegew | `_entities/rodrigues-gegew.md` | no | `_journal/reno/2026-05-11-atendimento-rodrigues-gegew.md` | pending |
 | `_agents\reno\atendimentos\11270-mario-lukosevicius.md` | 11270 | mario-lukosevicius | `_entities/mario-lukosevicius.md` | no | `_journal/reno/2026-05-11-atendimento-mario-lukosevicius.md` | pending |
 | `_agents\reno\atendimentos\11273-douglas.md` | 11273 | douglas | `_entities/douglas.md` | no | `_journal/reno/2026-05-11-atendimento-douglas.md` | pending |
@@ -190,6 +190,6 @@ Este manifesto prepara a migracao futura dos arquivos de atendimento de `_agents
 | `_agents\reno\atendimentos\11308-geisy-souza.md` | 11308 | geisy-souza | `_entities/geisy-souza.md` | no | `_journal/reno/2026-05-11-atendimento-geisy-souza.md` | pending |
 | `_agents\reno\atendimentos\11312-japao-pereira.md` | 11312 | japao-pereira | `_entities/japao-pereira.md` | no | `_journal/reno/2026-05-11-atendimento-japao-pereira.md` | pending |
 | `_agents\reno\atendimentos\11313-joaneci-pereira-dos-santos.md` | 11313 | joaneci-pereira-dos-santos | `_entities/joaneci-pereira-dos-santos.md` | no | `_journal/reno/2026-05-11-atendimento-joaneci-pereira-dos-santos.md` | pending |
-| `_agents\reno\atendimentos\cliente-11010-eduarda.md` | 11010 | eduarda | `_entities/eduarda.md` | yes | `_journal/reno/2026-05-11-atendimento-eduarda.md` | pending |
-| `_agents\reno\atendimentos\lote-reno-dup-recovery-20260427-3min.md` |  | lote-reno-dup-recovery-20260427-3min | N/A (journal-only) | N/A | `_journal/reno/2026-04-27-lote-reno-dup-recovery-3min.md` | pending-journal-only |
+| `_agents\reno\atendimentos\cliente-11010-eduarda.md` | 11010 | eduarda | `_entities/eduarda.md` | yes | `_journal/reno/2026-04-24-atendimento-eduarda.md` | migrated-pilot |
+| `_agents\reno\atendimentos\lote-reno-dup-recovery-20260427-3min.md` |  | lote-reno-dup-recovery-20260427-3min | N/A (journal-only) | N/A | `_journal/reno/2026-04-27-lote-reno-dup-recovery-3min.md` | migrated-pilot-journal-only |
 | `_agents\reno\atendimentos\whatsapp-lua.md` |  | whatsapp-lua | `_entities/lua.md if identifiable` | manual-review | `_journal/reno/2026-05-11-atendimento-lua.md if identifiable` | pending-manual-review |

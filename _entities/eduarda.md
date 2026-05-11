@@ -19,6 +19,7 @@ confidence: 0.85
 aliases: []
 external_ids:
   crm_client_id: 11010
+  crm_client_ids: [11010]
   broker_id: 35
 interactions:
   - '[[cliente-11010-eduarda]]'
@@ -70,6 +71,7 @@ Eduarda é cliente do Reno em status **Em Atendimento** com perfil **primeiro im
 
 ## Linha do tempo de interações
 
+- [[2026-04-24-atendimento-eduarda]]
 - 2026-04-24 — primeiro contato (texto/áudio): primeiro imóvel, viabilidade apertada
 - 2026-04-24 — diagnóstico financeiro completo
 - 2026-04-25 — reenvio inicial suprimido (já em interação)
