@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Guilherme Mendes
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -66,3 +66,15 @@ Guilherme Mendes é cliente do Reno em status **Em Atendimento** após reação 
 - Validar entrada/financiamento presencialmente
 - Verificar se 1 vaga é suficiente (vs Andreia Carvalho que descartou Union Vereda por isso)
 - Pós-visita: avaliar conversão para Negociação
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10999 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente do Reno em atendimento pelo WhatsApp, com interesse no Union Vereda, no Jaraguá. Após envio de planta do empreendimento, respondeu que a planta agradou; Reno convidou para visita presencial na Fama.
+
+Status: Em Atendimento. Vínculos semânticos identificados: [[union-vereda]], [[guilherme-mendes]].
+
+Pr?ximo passo: Responder comercialmente ao cliente no WhatsApp com um resumo curto do Union Vereda e do que vale validar presencialmente, mantendo o foco em visita na Fama como próximo passo lógico. Não há próxima step automática ativa de Resgate ou Repescagem neste momento.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-guilherme-mendes]].
+
+Origem migrada: `_agents/reno/atendimentos/10999-guilherme-mendes.md`.

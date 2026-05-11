@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Andreia Carvalho
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -86,3 +86,15 @@ Cliente **multi-imóvel** — testou várias opções:
 - Monitorar lançamentos com 2 vagas + metragem >65m² nos bairros aceitos
 - Não pressionar — postura aguardar
 - Considerar opções HLTS futuras com 2 vagas
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10986 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente respondeu após o Resgate step 2 e voltou ao atendimento normal. O ciclo de Resgate foi interrompido em 2026-04-30 com `stopped_reason=client_replied`, `enabled=false` e `next_run_at=null`; nenhum novo WhatsApp de Resgate deve ser enviado enquanto não houver novo outbound normal do Reno seguido de novo silêncio elegível.
+
+Status: Em Atendimento. Vínculos semânticos identificados: [[union-vereda]], [[andreia-carvalho]].
+
+Pr?ximo passo: Monitorar e buscar oportunidade compatível com perfil recalibrado: na planta/em construção, 2 vagas, metragem mais confortável, regiões aceitas, entrega em 1–2 anos se possível e fluxo de pagamento seguro. Quando houver uma opção concreta, apresentar uma alternativa bem escolhida e conduzir para visita presencial na Fama como validação segura de planta, condição e financiamento.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-andreia-carvalho]].
+
+Origem migrada: `_agents/reno/atendimentos/10986-andreia-carvalho.md`.

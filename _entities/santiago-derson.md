@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Santiago Derson
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -67,3 +67,15 @@ Santiago Derson é lead em status **Não Respondeu**, com interesse declarado no
 - Aguardar step 3 (próximo 2026-05-02 19:10)
 - Se step 4 sem resposta: encerrar régua
 - Padrão Union Vista silente similar a [[bruno-savio]], [[wueverton-lima]], [[edson-tolentino]] — vale revisar discurso/criativo Facebook Ads desse empreendimento (mesmo padrão de Garden Sul)
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10997 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente de Facebook Ads sob responsabilidade do Reno (`broker_id=35`). Interesse identificado no empreendimento Union Vista, no Grand Ville.
+
+Status: Arquivado. Vínculos semânticos identificados: [[union-vista]], [[grand-ville]], [[santiago-derson]].
+
+Pr?ximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, reabrir o atendimento pelo fluxo normal do Reno, mover status conforme regra operacional aplicável e retomar a qualificação consultiva a partir do contexto Union Vista/Grand Ville.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-santiago-derson]].
+
+Origem migrada: `_agents/reno/atendimentos/10997-santiago-derson.md`.

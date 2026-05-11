@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Esther Osklen
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-08'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -60,3 +60,14 @@ Esther Osklen é lead do Reno em status **Não Respondeu** após primeiro contat
 
 ## Observações operacionais
 
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10978 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de **5 repescagens** concluída sem resposta real registrada. Interesse operacional associado ao empreendimento **Union Vereda**, no bairro Jaraguá.
+
+Status: Arquivado. Vínculos semânticos identificados: [[union-vereda]], [[esther-osklen]].
+
+Pr?ximo passo: Sem nova ação automática de repescagem. Caso a cliente responda ou seja reativada futuramente, retomar a partir do contexto Union Vereda/Jaraguá, validar momento atual, finalidade de uso e viabilidade antes de propor nova visita ou análise presencial.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-esther-osklen]].
+
+Origem migrada: `_agents/reno/atendimentos/10978-esther-osklen.md`.

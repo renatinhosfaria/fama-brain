@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Grazyelly Macêdo
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -66,3 +66,15 @@ Grazyelly Macêdo é lead em status **Não Respondeu** com interesse no [[place-
 
 - Aguardar step 3 (2026-05-02 19:10)
 - **Anomalia:** Place+Arbi tem 2 leads quentíssimos (Samuel, Amanda) e 2 silentes (Grazyelly + Alexsander). Vale entender o que faz a diferença.
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10974 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente Reno (`client_id=10974`) foi arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta. O contexto comercial era interesse no Place+Arbi / Shopping Park, com cadastro original sugerindo busca inicial e possível compra junto com outra pessoa.
+
+Status: Arquivado. Vínculos semânticos identificados: [[place-arbi]], [[shopping-park]], [[grazyelly-macedo]].
+
+Pr?ximo passo: Sem nova ação automática de repescagem. Se a cliente responder futuramente ou for reativada por ação humana, retomar o atendimento normal do Reno por fluxo de qualificação, validando nome, objetivo, prazo, decisão compartilhada e viabilidade antes de propor visita ou imóveis.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-grazyelly-macedo]].
+
+Origem migrada: `_agents/reno/atendimentos/10974-grazyelly-macedo.md`.

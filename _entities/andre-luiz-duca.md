@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Andre Luiz Duca
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -69,3 +69,15 @@ Andre Luiz Duca é lead em status **Não Respondeu** com interesse no [[union-vi
 - Aguardar step 4 (próximo 2026-05-02 19:10)
 - Se não responder: encerrar régua
 - Padrão Union Vista silente: somar ao caso para revisar criativo Facebook Ads
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10975 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente do Reno (`broker_id=35`) teve a régua de repescagem concluída sem resposta real. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante/porta aberta sobre o Union Vista, mudando a abordagem do step 4 que já havia feito convite consultivo/visita na segunda-feira.
+
+Status: Arquivado. Vínculos semânticos identificados: [[union-vista]], [[grand-ville]], [[zona-leste]], [[andre-luiz-duca]].
+
+Pr?ximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, tratar como retomada/inbound fora desta skill, validar o status no CRM, registrar a resposta e seguir pelo fluxo normal de atendimento consultivo do Reno.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-andre-luiz-duca]].
+
+Origem migrada: `_agents/reno/atendimentos/10975-andre-luiz-duca.md`.

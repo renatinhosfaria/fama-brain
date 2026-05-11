@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Wueverton Lima
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -71,3 +71,15 @@ Wueverton Lima é lead do Reno em status **Não Respondeu** (cadastro canônico 
 - Se responder, mover pra Em Atendimento e seguir diagnóstico consultivo
 - **Operacional:** consolidar 3 cadastros CRM e investigar por que Facebook Ads recapturou o mesmo lead 3 vezes
 - Padrão Union Vista silente: somar ao caso para revisar criativo Facebook Ads
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 11000 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Lead de Facebook Ads sob responsabilidade do Reno (`broker_id=35`). Interesse associado ao empreendimento Union Vista, no Grand Ville.
+
+Status: Arquivado. Vínculos semânticos identificados: [[union-vista]], [[grand-ville]], [[wueverton-lima]].
+
+Pr?ximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, reativar atendimento por fluxo normal do Reno, registrar resposta no CRM, mover o status conforme regra operacional aplicável e retomar diagnóstico consultivo sem tratar como novo step de repescagem.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-wueverton-lima]].
+
+Origem migrada: `_agents/reno/atendimentos/11000-wueverton-lima.md`.

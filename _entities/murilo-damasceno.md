@@ -19,7 +19,10 @@ confidence: 0.7
 aliases:
   - Murilo
 external_ids:
-  crm_client_id: 10927
+  crm_client_ids:
+    - 10927
+    - 10977
+  crm_client_id_canonical: 10927
   broker_id: 35
 interactions:
   - '[[10927-murilo-damasceno]]'
@@ -57,11 +60,25 @@ Murilo Damasceno é lead do Reno em status **Não Respondeu**, originário de SL
 
 ## Migracao Reno batch 1 - 2026-05-11
 
-Murilo Damasceno e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10927 com vinculo a [[murilo-damasceno]], [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
+Murilo Damasceno é lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10927 com vinculo a [[murilo-damasceno]], [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
 
-### Atualizacao operacional
+### Atualiza??o operacional
 
 - CRM client id confirmado na origem migrada: 10927.
 - Status consolidado na origem migrada: `Arquivado`.
 - Atendimento migrado para o journal [[2026-05-11-atendimento-10927-murilo-damasceno]].
-- Proximo passo: Sem nova acao automatica registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.
+- Pr?ximo passo: Sem nova ação automática registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10977 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente do Reno (broker_id 35), status atual no CRM: Não Respondeu. Entrada por SLA Cascata, com interesse vinculado ao empreendimento Place+Arbi, no Shopping Park.
+
+Status: Não Respondeu. Vínculos semânticos identificados: [[place-arbi]], [[shopping-park]], [[murilo-damasceno]].
+
+Pr?ximo passo: Aguardar resposta do cliente. Se responder, conduzir diagnóstico leve e atualizar status de Não Respondeu para Em Atendimento somente se ainda estiver exatamente nesse status.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-10977-murilo-damasceno]].
+
+Origem migrada: `_agents/reno/atendimentos/10977-murilo-damasceno.md`.
+
+Observação de deduplicação: este perfil já concentrava o atendimento CRM 10927. O atendimento CRM 10977 foi registrado como novo evento separado para evitar colisão histórica e preservar a origem distinta.

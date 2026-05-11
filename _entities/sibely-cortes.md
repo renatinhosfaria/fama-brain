@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Sibely Cortes
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -67,3 +67,15 @@ Sibely Cortes é lead em status **Não Respondeu**, com interesse declarado no [
 - Aguardar step 3 (próximo 2026-05-02 19:10)
 - Se step 4 sem resposta: encerrar régua e arquivar
 - Padrão semelhante a [[carmen-vicente-santos]] e [[elias-fernandes]] — leads silentes da campanha Facebook Ads sem engajamento
+
+## Migracao Reno batch 3 - 2026-05-11
+
+Resumo: atendimento CRM 10996 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente Reno (`client_id=10996`) teve a régua de repescagem concluída sem resposta real. Interesse contextual no CRM: Union Vereda, no Jaraguá.
+
+Status: Arquivado. Vínculos semânticos identificados: [[union-vereda]], [[sibely-cortes]].
+
+Pr?ximo passo: Sem nova ação automática de repescagem. Se a cliente responder futuramente, retomar pelo atendimento normal do Reno, mover para `Em Atendimento` somente se a regra operacional aplicável permitir no momento e reconstruir diagnóstico antes de qualquer novo convite comercial.
+
+Atendimento migrado para o journal [[2026-05-11-atendimento-sibely-cortes]].
+
+Origem migrada: `_agents/reno/atendimentos/10996-sibely-cortes.md`.
