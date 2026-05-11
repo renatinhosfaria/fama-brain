@@ -120,7 +120,7 @@ Create `_meta/migration-2026-05-11-reno-second-brain.md`:
 ```markdown
 ---
 schema_version: 1
-type: meta
+type: reference
 status: active
 created: 2026-05-11
 updated: 2026-05-11
@@ -661,7 +661,7 @@ Create `_meta/reno-atendimentos-migration-manifest-2026-05-11.md` with this stru
 ```markdown
 ---
 schema_version: 1
-type: meta
+type: reference
 status: active
 created: 2026-05-11
 updated: 2026-05-11
@@ -1261,6 +1261,6 @@ Placeholder scan:
 
 Type consistency:
 
-- New notes use schema v1 `type` values: `meta`, `hub`, `runbook`, `decision`, `entity`, `interaction`, and `journal`.
+- New notes use schema v1 `type` values: `reference`, `hub`, `runbook`, `decision`, `entity`, `interaction`, and `journal`.
 - Reno hub filename is `reno-hub.md` to avoid collision with `_entities/reno.md`.
 - Journals consistently live under `_journal/reno/`.
