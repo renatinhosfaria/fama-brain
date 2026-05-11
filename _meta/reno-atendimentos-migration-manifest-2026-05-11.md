@@ -4,7 +4,7 @@ type: reference
 status: active
 created: 2026-05-11
 updated: 2026-05-11
-source: generated
+source: agent-generated
 author_agent: null
 verified_by: null
 verified_at: null
@@ -50,7 +50,7 @@ Este manifesto prepara a migracao futura dos arquivos de atendimento de `_agents
 | `_agents\reno\atendimentos\10924-edson-tolentino.md` | 10924 | edson-tolentino | `_entities/edson-tolentino.md` | yes | `_journal/reno/2026-05-11-atendimento-edson-tolentino.md` | pending |
 | `_agents\reno\atendimentos\10925-wanderson-alessandro.md` | 10925 | wanderson-alessandro | `_entities/wanderson-alessandro.md` | no | `_journal/reno/2026-05-11-atendimento-wanderson-alessandro.md` | pending |
 | `_agents\reno\atendimentos\10926-christine-moreira.md` | 10926 | christine-moreira | `_entities/christine-moreira.md` | no | `_journal/reno/2026-05-11-atendimento-christine-moreira.md` | pending |
-| `_agents\reno\atendimentos\10927-murilo-damasceno.md` | 10927 | murilo-damasceno | `_entities/murilo-damasceno.md` | yes | `_journal/reno/2026-05-11-atendimento-murilo-damasceno.md` | pending |
+| `_agents\reno\atendimentos\10927-murilo-damasceno.md` | 10927 | murilo-damasceno | `_entities/murilo-damasceno.md` | yes | `_journal/reno/2026-05-11-atendimento-10927-murilo-damasceno.md` | pending |
 | `_agents\reno\atendimentos\10928-elias-mourao.md` | 10928 | elias-mourao | `_entities/elias-mourao.md` | no | `_journal/reno/2026-05-11-atendimento-elias-mourao.md` | pending |
 | `_agents\reno\atendimentos\10929-eva-neves.md` | 10929 | eva-neves | `_entities/eva-neves.md` | no | `_journal/reno/2026-05-11-atendimento-eva-neves.md` | pending |
 | `_agents\reno\atendimentos\10930-cassio-coimbra.md` | 10930 | cassio-coimbra | `_entities/cassio-coimbra.md` | no | `_journal/reno/2026-05-11-atendimento-cassio-coimbra.md` | pending |
@@ -93,7 +93,7 @@ Este manifesto prepara a migracao futura dos arquivos de atendimento de `_agents
 | `_agents\reno\atendimentos\10974-grazyelly-macedo.md` | 10974 | grazyelly-macedo | `_entities/grazyelly-macedo.md` | yes | `_journal/reno/2026-05-11-atendimento-grazyelly-macedo.md` | pending |
 | `_agents\reno\atendimentos\10975-andre-luiz-duca.md` | 10975 | andre-luiz-duca | `_entities/andre-luiz-duca.md` | yes | `_journal/reno/2026-05-11-atendimento-andre-luiz-duca.md` | pending |
 | `_agents\reno\atendimentos\10976-silvio-humberto-silva.md` | 10976 | silvio-humberto-silva | `_entities/silvio-humberto-silva.md` | no | `_journal/reno/2026-05-11-atendimento-silvio-humberto-silva.md` | pending |
-| `_agents\reno\atendimentos\10977-murilo-damasceno.md` | 10977 | murilo-damasceno | `_entities/murilo-damasceno.md` | yes | `_journal/reno/2026-05-11-atendimento-murilo-damasceno.md` | pending |
+| `_agents\reno\atendimentos\10977-murilo-damasceno.md` | 10977 | murilo-damasceno | `_entities/murilo-damasceno.md` | yes | `_journal/reno/2026-05-11-atendimento-10977-murilo-damasceno.md` | pending |
 | `_agents\reno\atendimentos\10978-esther-osklen.md` | 10978 | esther-osklen | `_entities/esther-osklen.md` | yes | `_journal/reno/2026-05-11-atendimento-esther-osklen.md` | pending |
 | `_agents\reno\atendimentos\10979-julia.md` | 10979 | julia | `_entities/julia.md` | no | `_journal/reno/2026-05-11-atendimento-julia.md` | pending |
 | `_agents\reno\atendimentos\10980-vanessa.md` | 10980 | vanessa | `_entities/vanessa.md` | no | `_journal/reno/2026-05-11-atendimento-vanessa.md` | pending |
@@ -191,5 +191,5 @@ Este manifesto prepara a migracao futura dos arquivos de atendimento de `_agents
 | `_agents\reno\atendimentos\11312-japao-pereira.md` | 11312 | japao-pereira | `_entities/japao-pereira.md` | no | `_journal/reno/2026-05-11-atendimento-japao-pereira.md` | pending |
 | `_agents\reno\atendimentos\11313-joaneci-pereira-dos-santos.md` | 11313 | joaneci-pereira-dos-santos | `_entities/joaneci-pereira-dos-santos.md` | no | `_journal/reno/2026-05-11-atendimento-joaneci-pereira-dos-santos.md` | pending |
 | `_agents\reno\atendimentos\cliente-11010-eduarda.md` | 11010 | eduarda | `_entities/eduarda.md` | yes | `_journal/reno/2026-05-11-atendimento-eduarda.md` | pending |
-| `_agents\reno\atendimentos\lote-reno-dup-recovery-20260427-3min.md` |  | lote-reno-dup-recovery-20260427-3min | `_entities/lote-reno-dup-recovery-20260427-3min.md` | no | `_journal/reno/2026-05-11-atendimento-lote-reno-dup-recovery-20260427-3min.md` | pending |
-| `_agents\reno\atendimentos\whatsapp-lua.md` |  | whatsapp-lua | `_entities/whatsapp-lua.md` | no | `_journal/reno/2026-05-11-atendimento-whatsapp-lua.md` | pending |
+| `_agents\reno\atendimentos\lote-reno-dup-recovery-20260427-3min.md` |  | lote-reno-dup-recovery-20260427-3min | N/A (journal-only) | N/A | `_journal/reno/2026-04-27-lote-reno-dup-recovery-3min.md` | pending-journal-only |
+| `_agents\reno\atendimentos\whatsapp-lua.md` |  | whatsapp-lua | `_entities/lua.md if identifiable` | manual-review | `_journal/reno/2026-05-11-atendimento-lua.md if identifiable` | pending-manual-review |
