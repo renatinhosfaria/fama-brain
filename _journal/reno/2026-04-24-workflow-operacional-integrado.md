@@ -13,7 +13,7 @@ mentions_entity: ["[[reno]]"]
 related: ["[[reno-hub]]"]
 tags: [journal, operacional, second-brain]
 ---
-Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
+Vínculos: [[reno]], [[reno-second-brain-governance]], [[schema]].
 Formalizado workflow operacional integrado do Reno: triagem por elegibilidade, consulta em CRM como fonte de verdade, uso seletivo do segundo cérebro para contexto curado, critérios de registro por fase do atendimento e handoff orientado por lead timeline/broker profile quando houver valor futuro.
 
 ## Evidencia original

@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Nova análise de performance do Reno — 2026-04-27
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 ## Recorte
 Carteira Reno (`broker_id=35`) criada nos últimos 30 dias, consultada após a fila manual de duplicidades `[reno_dup_recovery_20260427_3min]`.
 

@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Auditoria Reno — Não Respondeu e fila de recuperação (continuidade)
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 ## Recorte
 Clientes Reno (`broker_id=35`) auditados após retomada da sessão em 2026-04-27.
 

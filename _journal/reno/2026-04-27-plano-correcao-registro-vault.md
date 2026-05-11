@@ -19,7 +19,7 @@ tags: [journal, auditoria, operacional]
 
 Esta nota preserva evidencia historica de caminhos legados em `_agents/reno/`. Os destinos canonicos atuais sao `_entities/` para entidades consolidadas, `_journal/reno/` para logs operacionais datados, `_runbooks/` para procedimentos duraveis e `_decisions/` para decisoes atomicas.
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 Data: 2026-04-27.
 
 ## Problema

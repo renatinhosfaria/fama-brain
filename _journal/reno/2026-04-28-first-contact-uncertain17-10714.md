@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Auditoria de recuperação — 10714 João pedro
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 Fila: [reno_first_contact_uncertain17_20260427_3min]
 
 Resultado: envio automático não realizado.

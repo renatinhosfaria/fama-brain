@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Auditoria — Fase 1 Medição e Controle do Reno
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 ## Escopo
 Execução da próxima fase recomendada para o Reno: **Fase 1 — Medição e controle**.
 

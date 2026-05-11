@@ -13,7 +13,7 @@ mentions_entity: ["[[reno]]"]
 related: ["[[reno-hub]]"]
 tags: [journal, operacional, second-brain]
 ---
-Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
+Vínculos: [[reno]], [[reno-second-brain-governance]], [[schema]].
 Formalizada a política operacional de escrita do segundo cérebro do Reno: critérios de timing, hierarquia CRM vs memória persistente vs Obsidian, gatilhos concretos por tipo de registro e padrões mínimos de síntese por lead, broker, journal e decision.
 
 ## Evidencia original

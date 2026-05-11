@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Auditoria dos 19 clientes `Não Respondeu` sem certeza de primeiro contato — 2026-04-27
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 ## Objetivo
 Confirmar, dentro do possível pelas evidências operacionais, se os 19 clientes em `Não Respondeu` sem prova forte receberam ou não receberam o primeiro contato do Reno.
 

@@ -10,7 +10,7 @@ verified_by: null
 verified_at: null
 confidence: null
 tags: [meta, migration, vault, second-brain]
-related: ["[[schema]]", "[[reno]]"]
+related: ["[[schema]]", "[[reno-hub]]", "[[reno]]"]
 ---
 # Migracao Reno Second Brain - 2026-05-11
 
@@ -22,7 +22,7 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 
 - Migrar runbooks, decisoes, atendimentos, auditorias e journals operacionais do Reno.
 - Atualizar indices e mapas do vault.
-- Remover `_agents/` como namespace permanente somente apos auditoria final e aprovacao.
+- Remover `_agents/` como namespace permanente apos auditoria das referencias ativas.
 
 ## Fora de escopo
 
@@ -51,7 +51,7 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 - [x] Fase 4 - atendimentos piloto
 - [x] Fase 5 - atendimentos em lote
 - [x] Fase 6 - auditorias, journals e planos
-- [ ] Fase 7 - remocao de `_agents/`
+- [x] Fase 7 - remocao de `_agents/`
 - [ ] Fase 8 - auditoria final
 
 ## Status dos atendimentos
@@ -75,6 +75,12 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 - Plano datado migrado: 1 nota.
 - Total operacional migrado na Fase 6: 22 notas.
 - Escolha de migracao: o plano datado foi mantido como `type: journal`, nao promovido para runbook nesta etapa.
+
+## Status da remocao do namespace legado
+
+- 2026-05-11: `_agents/` removido apos verificacao do caminho absoluto `C:\fama-brain\_agents`.
+- Wikilinks canonicos legados fora de `_agents/**` foram substituidos pelos destinos Reno-first: [[reno-hub]], [[reno-playbook-atendimento]], [[reno-second-brain-governance]], [[reno-operacao-crm-webhook]] e [[reno-registro-vault]].
+- Fase 8 permanece pendente porque ainda depende de revisao global posterior.
 
 ## Decisoes de migracao
 

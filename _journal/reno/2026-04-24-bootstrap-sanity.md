@@ -13,7 +13,7 @@ mentions_entity: ["[[reno]]"]
 related: ["[[reno-hub]]"]
 tags: [journal, operacional, second-brain]
 ---
-Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
+Vínculos: [[reno]], [[reno-second-brain-governance]], [[schema]].
 Sanity check: reno owner is registered. Plugin integration ready.
 
 ## Evidencia original

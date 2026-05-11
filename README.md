@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: 2026-04-14
-updated: '2026-05-08'
+updated: '2026-05-11'
 tags: [moc, fama-brain]
 ---
 # fama-brain
@@ -40,6 +40,7 @@ Nesta fase, a arquitetura é **Reno-first**: o vault é organizado por tipo de c
 - Tags planas (sem hierarquia).
 - Nomes de arquivo em kebab-case, sem acentos.
 - **Cada arquivo tem um único dono de escrita** (ver [[_shared/context/AGENTS]]).
+- O namespace legado `_agents/` foi removido em 2026-05-11; o hub canônico do Reno é [[reno-hub]].
 - Conteúdo operacional do Reno fica organizado por tipo:
   - fatos duráveis sobre pessoas, imóveis e organizações em `_entities/`;
   - eventos datados em `_journal/reno/`;

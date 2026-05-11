@@ -14,7 +14,7 @@ related: ["[[reno-hub]]"]
 tags: [journal, operacional, second-brain]
 ---
 # Contexto
-Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
+Vínculos: [[reno]], [[reno-second-brain-governance]], [[schema]].
 Renato pediu para seguir com a implementação dos documentos ainda ausentes na configuração operacional do Reno.
 
 # O que foi implementado

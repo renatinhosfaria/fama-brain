@@ -11,7 +11,7 @@ tags:
 ---
 # Domínio — FamaChat
 
-Vínculos: [[fama-overview]], [[operacao-crm-webhook]], [[schema]].
+Vínculos: [[fama-overview]], [[reno-operacao-crm-webhook]], [[schema]].
 CRM imobiliário. Fluxo central: **lead → cliente → agendamento → visita →
 venda**, com rotação automática de leads entre corretores via SLA Cascata.
 

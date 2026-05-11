@@ -17,7 +17,7 @@ tags: [journal, operacional, second-brain]
 
 Esta nota preserva evidencia historica de caminhos legados em `_agents/reno/`. Os destinos canonicos atuais sao `_entities/` para entidades consolidadas, `_journal/reno/` para logs operacionais datados, `_runbooks/` para procedimentos duraveis e `_decisions/` para decisoes atomicas.
 
-Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
+Vínculos: [[reno]], [[reno-second-brain-governance]], [[schema]].
 ## Contexto
 A camada de arquitetura, taxonomia, política de escrita, templates, playbooks e workflow do segundo cérebro do Reno já estava construída, mas a governança/manutenção ainda não existia como peça explícita e dedicada.
 

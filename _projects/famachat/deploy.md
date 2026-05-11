@@ -11,7 +11,7 @@ tags:
 ---
 # Deploy — FamaChat
 
-Vínculos: [[fama-overview]], [[operacao-crm-webhook]], [[schema]].
+Vínculos: [[fama-overview]], [[reno-operacao-crm-webhook]], [[schema]].
 ## Ambiente
 
 - **VPS:** Contabo (Linux).

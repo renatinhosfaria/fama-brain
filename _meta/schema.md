@@ -25,7 +25,7 @@ related: []
 
 > **Decisão de migração (2026-05-11):** a reorganização Reno-first atualiza mapas e destinos ideais do schema v1, mas não executa migração em massa de frontmatter/types v1 enquanto o MCP não aceitar v1. O MCP não será alterado nesta migração.
 
-Vínculos: [[fama-overview]], [[second-brain-governance]].
+Vínculos: [[fama-overview]], [[reno-second-brain-governance]].
 **Status:** v1 **aprovada** mas **não enforçada ainda** (depende de MCP). Aprovada por Renato Faria em [FAM-15](/FAM/issues/FAM-15) (revisão `0f1e41b5`).
 
 Este documento é a **single source of truth** do schema. Toda nota do vault FAM, **uma vez migrada**, terá `schema_version: 1` e seguirá as regras abaixo.

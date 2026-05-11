@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Supressão — fila manual uncertain17
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 Cliente: 10995 — Julia santos
 Fila: [reno_first_contact_uncertain17_20260427_3min]
 

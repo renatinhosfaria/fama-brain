@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Auditoria Reno — 12 clientes ainda em Sem Atendimento — 2026-04-27
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 ## Objetivo
 Responder por que os 12 clientes ainda em `Sem Atendimento` não receberam a primeira mensagem do Reno.
 

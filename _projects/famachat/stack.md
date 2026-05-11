@@ -11,7 +11,7 @@ tags:
 ---
 # Stack — FamaChat
 
-Vínculos: [[fama-overview]], [[operacao-crm-webhook]], [[schema]].
+Vínculos: [[fama-overview]], [[reno-operacao-crm-webhook]], [[schema]].
 Tecnologias, versões-chave e gotchas herdados. Fonte de verdade:
 `package.json` na raiz do repo.
 

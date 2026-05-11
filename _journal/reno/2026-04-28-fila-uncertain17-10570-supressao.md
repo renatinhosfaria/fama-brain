@@ -15,7 +15,7 @@ tags: [journal, auditoria, operacional]
 ---
 # Supressão em fila de recuperação uncertain17
 
-Vínculos: [[reno]], [[operacao-crm-webhook]], [[second-brain-governance]].
+Vínculos: [[reno]], [[reno-operacao-crm-webhook]], [[reno-second-brain-governance]].
 Cliente: 10570 — +553496511323
 
 Marcador: [reno_first_contact_uncertain17_20260427_3min]

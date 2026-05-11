@@ -15,7 +15,7 @@ tags: [journal, plano, operacional]
 ---
 # Plano estratégico — reversão resposta/agendamento Reno
 
-Vínculos: [[reno]], [[second-brain-governance]], [[schema]].
+Vínculos: [[reno]], [[reno-second-brain-governance]], [[schema]].
 ## Cenário atual verificado no CRM
 
 - Base Reno total: 99 clientes.

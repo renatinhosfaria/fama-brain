@@ -11,7 +11,7 @@ tags:
 ---
 # Integrações — FamaChat
 
-Vínculos: [[fama-overview]], [[operacao-crm-webhook]], [[schema]].
+Vínculos: [[fama-overview]], [[reno-operacao-crm-webhook]], [[schema]].
 Integrações externas e internas. Todas opcionais via env vars — sistema
 degrada com graça quando desligadas.
 
