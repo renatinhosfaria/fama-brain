@@ -37,7 +37,7 @@ title: 'Entity: Bruno Sávio (lead — interesse Union Vista/Grand Ville)'
 
 Bruno Sávio é um lead em fase de **primeiro contato**, capturado via WhatsApp em 2026-04-27. Demonstrou interesse em dois empreendimentos da FAMA: [[union-vista]] e [[grand-ville]]. Status CRM no momento: **Não Respondeu** após pergunta de aderência da região.
 
-Esta nota é o **perfil canônico** dessa pessoa no vault. Toda interação com Bruno Sávio (call, WhatsApp, visita, e-mail) deve ser registrada como nota separada em `_agents/{agente}/atendimentos/` ou pasta análoga, e linkada aqui via `interactions`. Quando uma decisão comercial sobre Bruno Sávio for tomada, ela vira nota em `_decisions/` e linka este perfil em `mentions_entity`.
+Esta nota é o **perfil canônico** dessa pessoa no vault. Toda interação com Bruno Sávio (call, WhatsApp, visita, e-mail) deve ser registrada como nota separada em `_journal/reno/` e linkada aqui via `interactions`. Quando uma decisão comercial sobre Bruno Sávio for tomada, ela vira nota em `_decisions/` e linka este perfil em `mentions_entity`.
 
 ## Identificação
 

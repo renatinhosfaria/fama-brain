@@ -152,7 +152,7 @@ Não documentado em detalhe:
 
 - **Contexto institucional compartilhado** — FAMA, mercado, produtos, stack, pessoas, agents map.
 - **Metas e resultados mensais** — por diretor Paperclip, agregados por Renato.
-- **Memória individual de cada agente** — `_agents/<nome>/` com profile, decisions, journal.
+- **Memória operacional por tipo** — perfis e procedimentos em `_runbooks/`, eventos de alto volume em `_journal/{agente}/`, decisões atômicas em `_decisions/` e mapas em `_hubs/`.
 
 Complementa (não substitui) as memórias locais `MEMORY.md` dos OpenClaw e o FamaChat como memória operacional viva.
 

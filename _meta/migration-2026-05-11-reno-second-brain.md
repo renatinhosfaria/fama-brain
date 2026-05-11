@@ -98,6 +98,7 @@ Checks executados:
 - Indices: `README.md`, `_hubs/index.md`, `_runbooks/index.md`, `_journal/index.md`, `_decisions/index.md` e `_meta/index.md` apontam para as areas canonicas Reno-first ou para o ledger/spec da migracao.
 - Manifesto de atendimentos: 153 fontes; 152 migradas ou special-migrated (`migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`); `pending-manual-review: 1` para `whatsapp-lua`; `pending` normal: 0.
 - `git diff --check`: executado antes do commit, sem erros.
+- Revisao final pos-auditoria: saneadas duas instrucoes ativas antigas que ainda citavam `_agents/` como destino em `_shared/context/fama/stack.md` e `_entities/bruno-savio.md`.
 
 Pendencias fora da migracao:
 
