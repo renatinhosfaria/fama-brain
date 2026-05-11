@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Nayara Ferreira, cl
 
 ## Resumo
 
-Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de repescagem concluída em **2026-05-04**. A repescagem **step 5** foi enviada com encerramento elegante, sem repetir convite de agenda/análise da step 4. Após o envio, o ramo `reno_followup.repescagem` foi encerrado com `step=5` e `stopped_reason=ma...
+Cliente sob responsabilidade do Reno (`broker_id=35`) teve a régua de repescagem concluída em **2026-05-04**. A repescagem **step 5** foi enviada com encerramento elegante, sem repetir convite de agenda/análise da step 4. Após o envio, o ramo `reno_followup.repescagem` foi encerrado com `step=5` e `stopped_reason=max_steps`.
 
 ## Resultado
 
@@ -29,7 +29,7 @@ Status consolidado na origem migrada: Arquivado. Vínculos semânticos identific
 
 ## Próximo passo registrado na origem
 
-Sem nova ação automática de repescagem. Se a cliente responder futuramente, reabrir atendimento no fluxo consultivo normal do Reno, avaliar mudança de status conforme regra operacional vigente e retomar a conversa a partir do contexto do Union Vista/Grand V...
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reabrir atendimento no fluxo consultivo normal do Reno, avaliar mudança de status conforme regra operacional vigente e retomar a conversa a partir do contexto do Union Vista/Grand Ville.
 
 ## Evidência original
 

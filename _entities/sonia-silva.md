@@ -43,7 +43,7 @@ Status CRM registrado na origem migrada: Em Atendimento.
 
 ## Próximo passo
 
-Seguir atendimento conversacional normal pelo Reno. Como a cliente já informou que vai financiar, tem R$ 30 mil de entrada e usará somente capital próprio, a próxima pergunta deve ser uma só: renda mensal/familiar aproximada para estimar se o financiamento...
+Seguir atendimento conversacional normal pelo Reno. Como a cliente já informou que vai financiar, tem R$ 30 mil de entrada e usará somente capital próprio, a próxima pergunta deve ser uma só: renda mensal/familiar aproximada para estimar se o financiamento cabe com segurança no orçamento, sem prometer crédito.
 
 ## Links operacionais
 

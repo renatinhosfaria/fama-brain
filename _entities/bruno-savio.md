@@ -44,7 +44,8 @@ Esta nota é o **perfil canônico** dessa pessoa no vault. Toda interação com 
 - **Nome:** Bruno Sávio
 - **Aliases:** Bruno, Bruno S., B. Sávio
 - **CRM client id:** 10971
-- **Broker responsável:** ainda não atribuído
+- **Broker responsável:** [[reno]] (broker_id: 35), confirmado pela migração do atendimento CRM 10971 em 2026-05-11.
+- **Histórico de atribuição:** antes da migração, este perfil antigo não trazia broker confirmado.
 
 ## Interesses imobiliários
 

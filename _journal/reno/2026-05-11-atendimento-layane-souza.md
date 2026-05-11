@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Layane Souza, clien
 
 ## Resumo
 
-Layane Souza teve a régua de **repescagem do Reno concluída no step 5** sem resposta real registrada no CRM/FamaChat. O atendimento estava vinculado ao `broker_id=35` e ao status `Não Respondeu`; após o envio bem-sucedido do step final em 2026-05-03, a branch `reno_followup.repescagem` foi encerrada com `step=5`, `e...
+Layane Souza teve a régua de **repescagem do Reno concluída no step 5** sem resposta real registrada no CRM/FamaChat. O atendimento estava vinculado ao `broker_id=35` e ao status `Não Respondeu`; após o envio bem-sucedido do step final em 2026-05-03, a branch `reno_followup.repescagem` foi encerrada com `step=5` e `enabled=false`.
 
 ## Resultado
 

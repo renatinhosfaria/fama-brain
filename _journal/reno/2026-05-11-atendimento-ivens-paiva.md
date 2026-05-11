@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Ivens Paiva, client
 
 ## Resumo
 
-Cliente sob atendimento do Reno (`broker_id=35`) foi arquivado no CRM em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O step 5 foi enviado via WhatsApp com encerramento elegante e porta aberta para retomada. Após o envio, o estado da repescagem precisou ser corrigido pela tool específica pa...
+Cliente sob atendimento do Reno (`broker_id=35`) foi arquivado no CRM em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O step 5 foi enviado via WhatsApp com encerramento elegante e porta aberta para retomada. Após o envio, o estado da repescagem precisou ser corrigido pela tool específica para refletir encerramento por máximo de etapas.
 
 ## Resultado
 

@@ -84,4 +84,4 @@ Márcio Oliveira Julião teve o atendimento CRM 10942 migrado para o modelo dupl
 - CRM client id confirmado na origem migrada: 10942.
 - Broker responsavel confirmado: [[reno]] (`broker_id=35`).
 - Atendimento migrado para o journal [[2026-05-11-atendimento-marcio-oliveira-juliao]].
-- Proximo passo: Enviar ao cliente a planta localizada e responder: Union Vista tem possibilidade de financiamento pelo Minha Casa Minha Vida conforme unidade/enquadramento; entrega prevista Jul/2027; plantas principais de 56,9m² e 58,4m² com 2 quartos, 1 suíte, varanda gou...
+- Proximo passo: Enviar ao cliente a planta localizada e responder: Union Vista tem possibilidade de financiamento pelo Minha Casa Minha Vida conforme unidade/enquadramento; entrega prevista Jul/2027; plantas principais de 56,9m² e 58,4m² com 2 quartos, 1 suíte e varanda gourmet. Validar renda, entrada e parcela confortável antes de orientar próximos passos de financiamento.

@@ -43,7 +43,7 @@ Status CRM registrado na origem migrada: Arquivado.
 
 ## Próximo passo
 
-Sem nova ação automática de repescagem. Se a cliente responder futuramente, reabrir atendimento no fluxo consultivo normal do Reno, avaliar mudança de status conforme regra operacional vigente e retomar a conversa a partir do contexto do Union Vista/Grand V...
+Sem nova ação automática de repescagem. Se a cliente responder futuramente, reabrir atendimento no fluxo consultivo normal do Reno, avaliar mudança de status conforme regra operacional vigente e retomar a conversa a partir do contexto do Union Vista/Grand Ville.
 
 ## Links operacionais
 

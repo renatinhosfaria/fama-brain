@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Flaviahair Especial
 
 ## Resumo
 
-Cliente sob responsabilidade do Reno (`broker_id=35`) concluída na régua de repescagem em 2026-05-04. Interesse relacionado ao Union Vereda, no Jaraguá. Permaneceu sem resposta real após primeiro contato e cinco repescagens; após o step 5 enviado com sucesso, a branch `reno_followup.repescagem` foi encerrada com `st...
+Cliente sob responsabilidade do Reno (`broker_id=35`) concluída na régua de repescagem em 2026-05-04. Interesse relacionado ao Union Vereda, no Jaraguá. Permaneceu sem resposta real após primeiro contato e cinco repescagens; após o step 5 enviado com sucesso, a branch `reno_followup.repescagem` foi encerrada com `stopped_reason=max_steps`.
 
 ## Resultado
 
@@ -29,7 +29,7 @@ Status consolidado na origem migrada: Arquivado. Vínculos semânticos identific
 
 ## Próximo passo registrado na origem
 
-Sem nova ação automática de repescagem. Caso a cliente responda futuramente, reabrir atendimento pelo fluxo adequado do Reno, validar como prefere ser chamada, atualizar o nome no CRM se houver nome confirmado, registrar nota objetiva e conduzir diagnóstico...
+Sem nova ação automática de repescagem. Caso a cliente responda futuramente, reabrir atendimento pelo fluxo adequado do Reno, validar como prefere ser chamada, atualizar o nome no CRM se houver nome confirmado, registrar nota objetiva e conduzir diagnóstico inicial antes de avançar.
 
 ## Evidência original
 

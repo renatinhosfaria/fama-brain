@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Vitória Fernandes,
 
 ## Resumo
 
-Cliente sob responsabilidade do Reno (`broker_id=35`) foi **arquivada automaticamente** após conclusão da régua de **5 repescagens** sem resposta real registrada. Lead veio de Facebook Ads/lead automático com interesse associado ao **Place+Arbi**, na região do Shopping Park. O step 5 foi enviado com sucesso em 2026-...
+Cliente sob responsabilidade do Reno (`broker_id=35`) foi **arquivada automaticamente** após conclusão da régua de **5 repescagens** sem resposta real registrada. Lead veio de Facebook Ads/lead automático com interesse associado ao **Place+Arbi**, na região do Shopping Park. O step 5 foi enviado com sucesso em 2026-05-03 e o atendimento foi arquivado sem resposta real.
 
 ## Resultado
 

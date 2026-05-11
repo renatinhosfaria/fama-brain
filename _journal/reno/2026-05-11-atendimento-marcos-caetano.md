@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Marcos Caetano, cli
 
 ## Resumo
 
-Cliente do Reno em `broker_id=35`. A régua de repescagem foi concluída sem resposta real do cliente. Em 2026-05-03, o Reno enviou o step 5 com encerramento elegante/porta aberta, corrigiu o estado final da branch para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps` e arquivou o cliente auto...
+Cliente do Reno em `broker_id=35`. A régua de repescagem foi concluída sem resposta real do cliente. Em 2026-05-03, o Reno enviou o step 5 com encerramento elegante/porta aberta, corrigiu o estado final da branch para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps` e arquivou o cliente automaticamente.
 
 ## Resultado
 
@@ -29,7 +29,7 @@ Status consolidado na origem migrada: Arquivado. Vínculos semânticos identific
 
 ## Próximo passo registrado na origem
 
-Sem nova ação automática do Reno. Caso o cliente responda futuramente ou seja reativado por humano, sair do histórico de repescagem encerrada e retomar por atendimento consultivo normal, validando contexto, necessidade, decisão e viabilidade antes de propor...
+Sem nova ação automática do Reno. Caso o cliente responda futuramente ou seja reativado por humano, sair do histórico de repescagem encerrada e retomar por atendimento consultivo normal, validando contexto, necessidade, decisão e viabilidade antes de propor próximo passo.
 
 ## Evidência original
 

@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Eliseu, cliente CRM
 
 ## Resumo
 
-Cliente em atendimento pelo Reno, com interesse no Union Vista e foco em investimento/valorização. O Resgate chegou ao step 5 em 2026-05-03 com bucket `visita_pendente`, mas na revalidação de 2026-05-07 foi encontrada duplicidade/ownership ativa no mesmo telefone/JID em outro cadastro em atendimento (cliente 10845,...
+Cliente em atendimento pelo Reno, com interesse no Union Vista e foco em investimento/valorização. O Resgate chegou ao step 5 em 2026-05-03 com bucket `visita_pendente`, mas na revalidação de 2026-05-07 foi encontrada duplicidade/ownership ativa no mesmo telefone/JID em outro cadastro em atendimento (cliente 10845), exigindo revisão manual antes de qualquer retomada.
 
 ## Resultado
 

@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Márcio Oliveira Ju
 
 ## Resumo
 
-Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse no Union Vista, no Grand Ville/Zona Leste de Uberlândia. Após primeiro contato e repescagens, respondeu e a repescagem foi interrompida (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`). Cliente trouxe sinais de viabilidad...
+Cliente do Reno em `Em Atendimento`, vindo de Facebook Ads, com interesse no Union Vista, no Grand Ville/Zona Leste de Uberlândia. Após primeiro contato e repescagens, respondeu e a repescagem foi interrompida (`stopped_reason=client_replied`, `enabled=false`, `next_run_at=null`). Cliente trouxe sinais de viabilidade e pediu detalhes objetivos sobre planta, MCMV e entrega.
 
 ## Resultado
 
@@ -29,7 +29,7 @@ Status consolidado na origem migrada: Em Atendimento. Vínculos semânticos iden
 
 ## Próximo passo registrado na origem
 
-Enviar ao cliente a planta localizada e responder: Union Vista tem possibilidade de financiamento pelo Minha Casa Minha Vida conforme unidade/enquadramento; entrega prevista Jul/2027; plantas principais de 56,9m² e 58,4m² com 2 quartos, 1 suíte, varanda gou...
+Enviar ao cliente a planta localizada e responder: Union Vista tem possibilidade de financiamento pelo Minha Casa Minha Vida conforme unidade/enquadramento; entrega prevista Jul/2027; plantas principais de 56,9m² e 58,4m² com 2 quartos, 1 suíte e varanda gourmet. Validar renda, entrada e parcela confortável antes de orientar próximos passos de financiamento.
 
 ## Evidência original
 

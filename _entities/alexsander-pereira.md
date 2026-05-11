@@ -77,4 +77,4 @@ Alexsander Pereira teve o atendimento CRM 10948 migrado para o modelo duplo de e
 - CRM client id confirmado na origem migrada: 10948.
 - Broker responsavel confirmado: [[reno]] (`broker_id=35`).
 - Atendimento migrado para o journal [[2026-05-11-atendimento-alexsander-pereira]].
-- Proximo passo: Manter o Resgate pausado até revisão manual da ownership dos cadastros duplicados e confirmação de qual registro deve seguir ativo. Enquanto isso, não enviar nova mensagem. Se o CRM for saneado e houver um novo outbound normal do Reno em atendimento regular...
+- Proximo passo: Manter o Resgate pausado até revisão manual da ownership dos cadastros duplicados e confirmação de qual registro deve seguir ativo. Enquanto isso, não enviar nova mensagem. Somente retomar outbound após saneamento manual do CRM e confirmação de ownership.

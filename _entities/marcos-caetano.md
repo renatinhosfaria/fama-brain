@@ -43,7 +43,7 @@ Status CRM registrado na origem migrada: Arquivado.
 
 ## Próximo passo
 
-Sem nova ação automática do Reno. Caso o cliente responda futuramente ou seja reativado por humano, sair do histórico de repescagem encerrada e retomar por atendimento consultivo normal, validando contexto, necessidade, decisão e viabilidade antes de propor...
+Sem nova ação automática do Reno. Caso o cliente responda futuramente ou seja reativado por humano, sair do histórico de repescagem encerrada e retomar por atendimento consultivo normal, validando contexto, necessidade, decisão e viabilidade antes de propor próximo passo.
 
 ## Links operacionais
 

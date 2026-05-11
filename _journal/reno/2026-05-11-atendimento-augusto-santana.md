@@ -21,15 +21,15 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Augusto Santana, cl
 
 ## Resumo
 
-Cliente do Reno com interesse no Union Vista, região do Grand Ville. Atendimento avançou pelo WhatsApp até visita presencial agendada na Fama.
+Origem operacional migrada CRM 10954, histórica/duplicada, com interesse no Union Vista, região do Grand Ville. A origem dizia Agendamento, mas a entidade canônica preserva CRM 11046/status Visita, com visita presencial cancelada em 2026-04-27 e remarcação pendente.
 
 ## Resultado
 
-Status consolidado na origem migrada: Agendamento. Vínculos semânticos identificados: [[union-vista]].
+Status consolidado na origem migrada: Agendamento. Registro canônico do vault: CRM 11046/status Visita/cancelamento/remarcação. Vínculos semânticos identificados: [[union-vista]].
 
 ## Próximo passo registrado na origem
 
-Receber o cliente na Fama, apresentar opções compatíveis com acesso ao Tibery e validar o melhor encaixe de financiamento.
+Manter o canônico 11046, aguardar retorno/remarcação e revisar/deduplicar 10954 antes de qualquer automação ou outbound.
 
 ## Evidência original
 

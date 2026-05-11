@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Leonardo De Castro 
 
 ## Resumo
 
-Cliente do Reno arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. Origem Facebook Ads/lead automático, associado ao empreendimento Garden Sul no Jardim Sul, Uberlândia-MG. O step 5 foi enviado com encerramento elegante e porta aberta; branch `reno_followup.repescagem...
+Cliente do Reno arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. Origem Facebook Ads/lead automático, associado ao empreendimento Garden Sul no Jardim Sul, Uberlândia-MG. O step 5 foi enviado com encerramento elegante e porta aberta; branch `reno_followup.repescagem` encerrada e cliente arquivado.
 
 ## Resultado
 

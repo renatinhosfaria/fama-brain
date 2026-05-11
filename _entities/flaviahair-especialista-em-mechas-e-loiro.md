@@ -43,7 +43,7 @@ Status CRM registrado na origem migrada: Arquivado.
 
 ## Próximo passo
 
-Sem nova ação automática de repescagem. Caso a cliente responda futuramente, reabrir atendimento pelo fluxo adequado do Reno, validar como prefere ser chamada, atualizar o nome no CRM se houver nome confirmado, registrar nota objetiva e conduzir diagnóstico...
+Sem nova ação automática de repescagem. Caso a cliente responda futuramente, reabrir atendimento pelo fluxo adequado do Reno, validar como prefere ser chamada, atualizar o nome no CRM se houver nome confirmado, registrar nota objetiva e conduzir diagnóstico inicial antes de avançar.
 
 ## Links operacionais
 

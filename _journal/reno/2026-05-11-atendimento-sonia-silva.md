@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Sonia Silva, client
 
 ## Resumo
 
-Cliente do Reno (`broker_id=35`) originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville/Zona Leste. O primeiro contato e a régua completa de repescagem foram enviados por WhatsApp sem resposta real até o step 5; em 2026-05-03 a repescagem foi encerra...
+Cliente do Reno (`broker_id=35`) originada de Facebook Ads/lead automático, com interesse associado ao empreendimento Union Vista na região do Grand Ville/Zona Leste. O primeiro contato e a régua completa de repescagem foram enviados por WhatsApp sem resposta real até o step 5; em 2026-05-03 a repescagem foi encerrada com arquivamento automático.
 
 ## Resultado
 
@@ -29,7 +29,7 @@ Status consolidado na origem migrada: Em Atendimento. Vínculos semânticos iden
 
 ## Próximo passo registrado na origem
 
-Seguir atendimento conversacional normal pelo Reno. Como a cliente já informou que vai financiar, tem R$ 30 mil de entrada e usará somente capital próprio, a próxima pergunta deve ser uma só: renda mensal/familiar aproximada para estimar se o financiamento...
+Seguir atendimento conversacional normal pelo Reno. Como a cliente já informou que vai financiar, tem R$ 30 mil de entrada e usará somente capital próprio, a próxima pergunta deve ser uma só: renda mensal/familiar aproximada para estimar se o financiamento cabe com segurança no orçamento, sem prometer crédito.
 
 ## Evidência original
 

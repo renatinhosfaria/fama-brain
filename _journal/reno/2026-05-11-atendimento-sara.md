@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Sara, cliente CRM 1
 
 ## Resumo
 
-Lead originado de Facebook Ads, associado ao empreendimento **Place+Arbi**, no bairro Shopping Park, Uberlândia/MG. Primeiro contato anterior mencionou interesse no Place+Arbi e região do Shopping Park, sem resposta real registrada. Ângulo usado nesta repescagem: **imóvel específico** com argumento de organizar se o...
+Lead originado de Facebook Ads, associado ao empreendimento **Place+Arbi**, no bairro Shopping Park, Uberlândia/MG. Primeiro contato anterior mencionou interesse no Place+Arbi e região do Shopping Park, sem resposta real registrada. Ângulo usado nesta repescagem: **imóvel específico** com argumento de organizar se o imóvel ainda faz sentido.
 
 ## Resultado
 

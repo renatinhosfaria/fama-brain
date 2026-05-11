@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Ana Clara Marques, 
 
 ## Resumo
 
-Cliente do Reno originada por SLA Cascata, com interesse associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. Primeiro contato, reenvio inicial e cinco steps de repescagem foram enviados sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, paus...
+Cliente do Reno originada por SLA Cascata, com interesse associado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. Primeiro contato, reenvio inicial e cinco steps de repescagem foram enviados sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausando a insistência e deixando porta aberta para retorno futuro.
 
 ## Resultado
 

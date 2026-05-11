@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Tamires Lima, clien
 
 ## Resumo
 
-Cliente do Reno (`broker_id=35`) agora em status CRM **Arquivado**. Primeiro contato e repescagens steps 1 a 5 foram enviados com sucesso técnico via WhatsApp, sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausando a insistência e deixando porta aberta para re...
+Cliente do Reno (`broker_id=35`) agora em status CRM **Arquivado**. Primeiro contato e repescagens steps 1 a 5 foram enviados com sucesso técnico via WhatsApp, sem resposta real registrada. Em 2026-05-03 foi enviada a repescagem step 5 com encerramento elegante, pausando a insistência e deixando porta aberta para retomada futura se a cliente responder.
 
 ## Resultado
 

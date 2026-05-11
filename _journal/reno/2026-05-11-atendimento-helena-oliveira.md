@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Helena Oliveira, cl
 
 ## Resumo
 
-Cliente do Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. Interesse original veio de Facebook Ads para o empreendimento Union Vista, no Grand Ville. A repescagem final foi enviada com encerramento elegante e porta aberta, mudando o ângulo da análise/comparaçã...
+Cliente do Reno arquivada automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. Interesse original veio de Facebook Ads para o empreendimento Union Vista, no Grand Ville. A repescagem final foi enviada com encerramento elegante e porta aberta, mudando o ângulo da análise/comparação sem nova insistência.
 
 ## Resultado
 

@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Rouse, cliente CRM 
 
 ## Resumo
 
-Cliente Reno em `Em Atendimento`, broker_id 35. Lead de Facebook Ads / lead automático com interesse associado ao empreendimento Union Vereda, no Jaraguá. Em 2026-05-02, após repescagem step 4, a rotina silenciosa de inbound consolidou a resposta real do cliente no WhatsApp: `Esse tem evolução de obra`. A mensagem p...
+Cliente Reno em `Em Atendimento`, broker_id 35. Lead de Facebook Ads / lead automático com interesse associado ao empreendimento Union Vereda, no Jaraguá. Em 2026-05-02, após repescagem step 4, a rotina silenciosa de inbound consolidou a resposta real do cliente no WhatsApp: `Esse tem evolução de obra`. A mensagem pede confirmação comercial antes de responder.
 
 ## Resultado
 
@@ -29,7 +29,7 @@ Status consolidado na origem migrada: Em Atendimento. Vínculos semânticos iden
 
 ## Próximo passo registrado na origem
 
-Responder comercialmente ao cliente, em sessão própria, tratando a pergunta sobre evolução de obra do Union Vereda com fonte segura. Se houver material oficial de obra, enviar ou explicar de forma curta; se não houver, informar que será confirmado com mater...
+Responder comercialmente ao cliente, em sessão própria, tratando a pergunta sobre evolução de obra do Union Vereda com fonte segura. Se houver material oficial de obra, enviar ou explicar de forma curta; se não houver, informar que será confirmado com material oficial atualizado.
 
 ## Evidência original
 

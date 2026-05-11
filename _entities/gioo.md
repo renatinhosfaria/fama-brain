@@ -43,7 +43,7 @@ Status CRM registrado na origem migrada: Em Atendimento.
 
 ## Próximo passo
 
-Enquanto a duplicidade não for resolvida, manter o Resgate pausado. Se o atendimento voltar a ocorrer no fluxo normal, retomar a qualificação consultiva com foco em viabilidade: entrada disponível, FGTS, composição de renda e faixa de parcela confortável. S...
+Enquanto a duplicidade não for resolvida, manter o Resgate pausado. Se o atendimento voltar a ocorrer no fluxo normal, retomar a qualificação consultiva com foco em viabilidade: entrada disponível, FGTS, composição de renda e faixa de parcela confortável. Somente retomar outbound após saneamento manual do CRM e confirmação de ownership.
 
 ## Links operacionais
 

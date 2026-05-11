@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Hilton Oliveira Lei
 
 ## Resumo
 
-Cliente do Reno (`broker_id=35`) foi arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O interesse era no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. A última mensagem enviada foi um encerramento elegante, com pausa/porta aberta para retomada f...
+Cliente do Reno (`broker_id=35`) foi arquivado automaticamente em 2026-05-03 após conclusão da régua de 5 repescagens sem resposta real. O interesse era no empreendimento **Union Vereda**, no bairro Jaraguá, em Uberlândia. A última mensagem enviada foi um encerramento elegante, com pausa/porta aberta para retomada futura caso o cliente responda.
 
 ## Resultado
 

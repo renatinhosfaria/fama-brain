@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Levi Santos, client
 
 ## Resumo
 
-Cliente Levi Santos, CRM client_id 10951, broker_id 35/Reno, em `Em Atendimento`. Interesse associado ao empreendimento Union Vereda, no Jaraguá. O cliente respondeu à repescagem, pediu mais informações e depois perguntou sobre a metragem; após resposta do Reno sobre plantas de 57/58m² e opção térrea maior, ficou em...
+Cliente Levi Santos, CRM client_id 10951, broker_id 35/Reno, em `Em Atendimento`. Interesse associado ao empreendimento Union Vereda, no Jaraguá. O cliente respondeu à repescagem, pediu mais informações e depois perguntou sobre a metragem; após resposta do Reno sobre plantas de 57/58m² e opção térrea maior, ficou em aberto aguardando resposta.
 
 ## Resultado
 
@@ -29,7 +29,7 @@ Status consolidado na origem migrada: Em Atendimento. Vínculos semânticos iden
 
 ## Próximo passo registrado na origem
 
-Aguardar resposta do cliente. Se ele aceitar o comparativo, continuar atendimento normal com `fama-reno-whatsapp-qualification`, mandar resumo curto comparando 57/58m² versus térrea maior e conduzir para visita presencial se houver sinal positivo. Se perman...
+Aguardar resposta do cliente. Se ele aceitar o comparativo, continuar atendimento normal com `fama-reno-whatsapp-qualification`, mandar resumo curto comparando 57/58m² versus térrea maior e conduzir para visita presencial se houver sinal positivo. Se permanecer sem resposta, aguardar novo sinal antes de insistir.
 
 ## Evidência original
 

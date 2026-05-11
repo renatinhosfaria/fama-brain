@@ -81,11 +81,11 @@ Augusto Santana é cliente do Reno em status **Visita** (cadastro CRM 11046, o c
 
 ## Migracao Reno batch 2 - 2026-05-11
 
-Augusto Santana teve o atendimento CRM 10954 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Agendamento.
+Augusto Santana teve a origem migrada CRM 10954 registrada no modelo duplo de entidade e journal do segundo cérebro do [[reno]]. A origem 10954 indicava status Agendamento, mas é histórica/duplicada e não substitui o canônico atual CRM 11046/status Visita, com cancelamento de visita e remarcação pendente.
 
 ### Atualizacao operacional
 
 - CRM client id confirmado na origem migrada: 10954.
 - Broker responsavel confirmado: [[reno]] (`broker_id=35`).
 - Atendimento migrado para o journal [[2026-05-11-atendimento-augusto-santana]].
-- Proximo passo: Receber o cliente na Fama, apresentar opções compatíveis com acesso ao Tibery e validar o melhor encaixe de financiamento.
+- Proximo passo: Manter o canônico 11046 em Visita, aguardar retorno/remarcação do cliente e revisar/deduplicar 10954 antes de qualquer automação ou outbound.

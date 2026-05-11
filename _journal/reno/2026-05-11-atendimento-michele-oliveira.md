@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Michele Oliveira, c
 
 ## Resumo
 
-Cliente do Reno (broker_id=35), status atual no CRM: Arquivado. Origem: Facebook Ads. Interesse vinculado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. A cliente recebeu o primeiro contato e a régua completa de repescagem steps 1 a 5. Até o envio final, não houve resposta real registrada. Em 2026...
+Cliente do Reno (broker_id=35), status atual no CRM: Arquivado. Origem: Facebook Ads. Interesse vinculado ao empreendimento Union Vereda, no bairro Jaraguá, em Uberlândia. A cliente recebeu o primeiro contato e a régua completa de repescagem steps 1 a 5. Até o envio final, não houve resposta real registrada. Em 2026-05-03 foi enviada a repescagem final e o atendimento foi arquivado.
 
 ## Resultado
 

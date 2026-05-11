@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Jonathan Barbosa, c
 
 ## Resumo
 
-Lead demonstrou interesse no empreendimento **Union Vereda**, no bairro **Jaraguá**, em Uberlândia. O primeiro contato operacional enviado anteriormente mencionou o Union Vereda e perguntou se a região combinava com a busca. Não há resposta real registrada do cliente até este follow-up. Empreendimento relacionado: U...
+Lead demonstrou interesse no empreendimento **Union Vereda**, no bairro **Jaraguá**, em Uberlândia. O primeiro contato operacional enviado anteriormente mencionou o Union Vereda e perguntou se a região combinava com a busca. Não há resposta real registrada do cliente até este follow-up. Empreendimento relacionado: Union Vereda.
 
 ## Resultado
 

@@ -79,4 +79,4 @@ Levi Santos teve o atendimento CRM 10951 migrado para o modelo duplo de entidade
 - CRM client id confirmado na origem migrada: 10951.
 - Broker responsavel confirmado: [[reno]] (`broker_id=35`).
 - Atendimento migrado para o journal [[2026-05-11-atendimento-levi-santos]].
-- Proximo passo: Aguardar resposta do cliente. Se ele aceitar o comparativo, continuar atendimento normal com `fama-reno-whatsapp-qualification`, mandar resumo curto comparando 57/58m² versus térrea maior e conduzir para visita presencial se houver sinal positivo. Se perman...
+- Proximo passo: Aguardar resposta do cliente. Se ele aceitar o comparativo, continuar atendimento normal com `fama-reno-whatsapp-qualification`, mandar resumo curto comparando 57/58m² versus térrea maior e conduzir para visita presencial se houver sinal positivo. Se permanecer sem resposta, aguardar novo sinal antes de insistir.

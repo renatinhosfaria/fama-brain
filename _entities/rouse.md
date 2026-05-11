@@ -43,7 +43,7 @@ Status CRM registrado na origem migrada: Em Atendimento.
 
 ## Próximo passo
 
-Responder comercialmente ao cliente, em sessão própria, tratando a pergunta sobre evolução de obra do Union Vereda com fonte segura. Se houver material oficial de obra, enviar ou explicar de forma curta; se não houver, informar que será confirmado com mater...
+Responder comercialmente ao cliente, em sessão própria, tratando a pergunta sobre evolução de obra do Union Vereda com fonte segura. Se houver material oficial de obra, enviar ou explicar de forma curta; se não houver, informar que será confirmado com material oficial atualizado.
 
 ## Links operacionais
 

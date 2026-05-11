@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Bruno Sávio, clien
 
 ## Resumo
 
-Cliente Bruno Sávio foi arquivado automaticamente em 2026-05-04 após conclusão da régua de 5 repescagens do Reno sem resposta real no cliente operacional `10971`. O interesse estava associado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. O step 5 foi enviado com encerramento elegante, sem repetir con...
+Cliente Bruno Sávio foi arquivado automaticamente em 2026-05-04 após conclusão da régua de 5 repescagens do Reno sem resposta real no cliente operacional `10971`. O interesse estava associado ao empreendimento Union Vista, no Grand Ville, em Uberlândia. O step 5 foi enviado com encerramento elegante, sem repetir convite e sem nova ação automática após o arquivamento.
 
 ## Resultado
 
