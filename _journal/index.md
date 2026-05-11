@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-08'
+updated: '2026-05-11'
 tags:
   - journal
   - moc
@@ -31,6 +31,7 @@ Subpastas permitidas por agente: `_journal/{agente}/YYYY-MM-DD-{slug}.md` (opcio
 ## Subpastas
 
 - `_journal/reno/` — eventos operacionais de alto volume do Reno: atendimentos, auditorias, rotinas, logs e planos datados.
+- Migracao 2026-05-11: alem dos atendimentos, `_journal/reno/` inclui 22 notas operacionais migradas de auditorias, journals antigos e planos datados.
 
 ## Indexação
 

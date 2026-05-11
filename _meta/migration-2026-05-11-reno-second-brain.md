@@ -50,7 +50,7 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 - [x] Fase 3 - decisoes do Reno
 - [x] Fase 4 - atendimentos piloto
 - [x] Fase 5 - atendimentos em lote
-- [ ] Fase 6 - auditorias, journals e planos
+- [x] Fase 6 - auditorias, journals e planos
 - [ ] Fase 7 - remocao de `_agents/`
 - [ ] Fase 8 - auditoria final
 
@@ -66,6 +66,15 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 - Manifesto por status: `migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`, `pending-manual-review: 1`.
 - `whatsapp-lua` permanece como revisao manual pendente.
 - `pending` normal no manifesto: 0.
+
+## Status operacional Reno
+
+- Destino canonico: `_journal/reno/`.
+- Auditorias migradas: 15 notas.
+- Journal files migrados: 6 notas.
+- Plano datado migrado: 1 nota.
+- Total operacional migrado na Fase 6: 22 notas.
+- Escolha de migracao: o plano datado foi mantido como `type: journal`, nao promovido para runbook nesta etapa.
 
 ## Decisoes de migracao
 
