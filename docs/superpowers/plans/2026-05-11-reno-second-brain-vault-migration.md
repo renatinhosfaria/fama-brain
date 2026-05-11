@@ -19,7 +19,7 @@ This plan implements one subsystem: the local vault reorganization approved in `
 Create:
 
 - `_meta/migration-2026-05-11-reno-second-brain.md` — migration ledger, counts, batch status, and audit notes.
-- `_hubs/reno.md` — Reno navigation hub replacing `_agents/reno/README.md` as the human map.
+- `_hubs/reno-hub.md` — Reno navigation hub replacing `_agents/reno/README.md` as the human map.
 - `_runbooks/reno-profile.md` — stable Reno role and operating principles from `_agents/reno/profile.md`.
 - `_runbooks/reno-playbook-atendimento.md` — atendimento playbook from `_agents/reno/context/playbook-atendimento.md`.
 - `_runbooks/reno-second-brain-governance.md` — second-brain governance from `_agents/reno/context/second-brain-governance.md`.
@@ -40,7 +40,7 @@ Modify:
 - `_journal/index.md` — make `_journal/reno/` the canonical high-volume Reno event area.
 - `_runbooks/index.md` — link Reno runbooks.
 - `_decisions/index.md` — link Reno decision notes.
-- `_hubs/index.md` — link `_hubs/reno.md`.
+- `_hubs/index.md` — link `_hubs/reno-hub.md`.
 - `_shared/context/AGENTS.md` — remove `_agents/reno/**` as the Reno-owned territory and replace it with global Reno write destinations.
 
 Delete after final audit:
@@ -156,7 +156,7 @@ Migrar o conteúdo operacional do Reno de `_agents/reno/**` para a arquitetura g
 | --- | ---: | --- |
 | `_agents/reno/atendimentos/` | 153 | Migrar para `_entities/` + `_journal/reno/`. |
 | `_agents/reno/auditorias/` | 15 | Migrar para `_journal/reno/`. |
-| `_agents/reno/context/` | 4 | Migrar para `_runbooks/reno-*.md`. |
+| `_agents/reno/context/` | 5 | Migrar para `_runbooks/reno-*.md`. |
 | `_agents/reno/journal/` | 6 | Migrar para `_journal/reno/`. |
 | `_agents/reno/decisions.md` | 1 log compilado | Dividir em decisões atômicas em `_decisions/`. |
 | `_agents/reno/decisions/` | 1 | Migrar para `_decisions/`. |
@@ -300,7 +300,7 @@ Add:
 - [[reno-hub]] — mapa operacional do segundo cérebro do Reno.
 ```
 
-If the hub file is named `_hubs/reno.md`, use `[[reno]]` only if it will not collide semantically with `_entities/reno.md`. If the collision is confusing in Obsidian, name the hub file `_hubs/reno-hub.md` and use `[[reno-hub]]`.
+Name the hub file `_hubs/reno-hub.md` and use `[[reno-hub]]` to avoid semantic collision with `_entities/reno.md`.
 
 - [ ] **Step 6: Update `_meta/schema.md` status**
 
