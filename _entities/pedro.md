@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Pedro
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - cliente
   - visita-realizada
@@ -77,3 +77,12 @@ Pedro foi a **primeira visita realizada do funil canônico**. Status CRM agora �
 ## Observações
 
 - O `clientes_id_anotacoes` não tem notas pós-visita até hoje (2026-05-06) — provável que o resultado da visita esteja em outra tabela (`clientes_visitas`) ou ainda não tenha sido formalmente registrado pelo Reno. Vale investigar.
+## Migracao Reno batch 4 - 2026-05-11
+
+Resumo: Fonte de atendimento registra Pedro em Agendamento para visita em 2026-05-01 as 18h, com confirmacoes por WhatsApp e possibilidade de atraso.
+
+Status na origem migrada: Agendamento. Origem operacional registrada: SLA Cascata.
+
+Proximo passo: Na origem, receber Pedro na Fama em 2026-05-01 e validar financiamento, entrada parcelada e melhor caminho comercial presencialmente.
+
+Link operacional: [[2026-05-11-atendimento-pedro]].

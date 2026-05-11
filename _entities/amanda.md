@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Amanda
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -70,3 +70,12 @@ Amanda é o **lead mais quente do Lote 4**. Em status Em Atendimento, declarou e
 - Resolver bloqueio de planta baixa Place+Arbi (escalar p/ Renato — material faltando no MinIO)
 - Pós-visita: simulação financeira + condição comercial específica para Place+Arbi 50m²
 - **Status alvo:** Visita confirmada, similar ao [[pedro]]
+## Migracao Reno batch 4 - 2026-05-11
+
+Resumo: Cliente em atendimento com interesse em Place+Arbi, Shopping Park. A origem migrada registra resposta ao step 1 pedindo planta/foto e pedido de midia no CRM.
+
+Status na origem migrada: Em Atendimento. Origem operacional registrada: SLA Cascata.
+
+Proximo passo: Enviar fotos disponiveis, explicar opcoes de 48m2 e 50m2 e conduzir para visita presencial se houver sinal positivo.
+
+Link operacional: [[2026-05-11-atendimento-amanda]].

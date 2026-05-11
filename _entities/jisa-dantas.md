@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Jisa Dantas
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -78,3 +78,12 @@ Jisa Dantas é cliente do Reno em status **Em Atendimento** (cadastro canônico 
 
 - Aguardar resposta. Se responder, parar régua e seguir qualificação consultiva.
 - **Operacional:** consolidar 3 cadastros CRM em 1 (canônico 11003) — pedir Renato
+## Migracao Reno batch 4 - 2026-05-11
+
+Resumo: Cliente em atendimento, interessada no Union Vista, Grand Ville. O atendimento tem duvidas sobre valor, planta e parcelamento da entrada; a regua de Resgate foi pausada por duplicidade/ownership com outro cadastro ativo.
+
+Status na origem migrada: Em Atendimento. Origem operacional registrada: SLA Cascata.
+
+Proximo passo: Pausar a regua ate revisao manual de duplicidade. Se 11003 continuar como cadastro operacional do Reno, rearmar fluxo apenas depois de novo outbound normal e silencio elegivel.
+
+Link operacional: [[2026-05-11-atendimento-jisa-dantas]].

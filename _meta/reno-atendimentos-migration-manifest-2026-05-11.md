@@ -28,6 +28,7 @@ Este manifesto controla a migracao dos arquivos de atendimento de `_agents/reno/
 - Batch 1: concluido.
 - Batch 2: concluido.
 - Batch 3: concluido.
+- Batch 4: concluido.
 - Demais linhas: permanecem pendentes ate os proximos lotes.
 
 ## Regras de destino
@@ -123,31 +124,31 @@ Este manifesto controla a migracao dos arquivos de atendimento de `_agents/reno/
 | `_agents\reno\atendimentos\10999-guilherme-mendes.md` | 10999 | guilherme-mendes | `_entities/guilherme-mendes.md` | yes | `_journal/reno/2026-05-11-atendimento-guilherme-mendes.md` | migrated-batch-3 |
 | `_agents\reno\atendimentos\11000-wueverton-lima.md` | 11000 | wueverton-lima | `_entities/wueverton-lima.md` | yes | `_journal/reno/2026-05-11-atendimento-wueverton-lima.md` | migrated-batch-3 |
 | `_agents\reno\atendimentos\11001-biiahsiilva.md` | 11001 | biiahsiilva | `_entities/biiahsiilva.md` | no | `_journal/reno/2026-05-11-atendimento-biiahsiilva.md` | migrated-batch-3 |
-| `_agents\reno\atendimentos\11002-marco-antonio-goncalves.md` | 11002 | marco-antonio-goncalves | `_entities/marco-antonio-goncalves.md` | no | `_journal/reno/2026-05-11-atendimento-marco-antonio-goncalves.md` | pending |
-| `_agents\reno\atendimentos\11003-jisa-dantas.md` | 11003 | jisa-dantas | `_entities/jisa-dantas.md` | yes | `_journal/reno/2026-05-11-atendimento-jisa-dantas.md` | pending |
-| `_agents\reno\atendimentos\11004-amanda.md` | 11004 | amanda | `_entities/amanda.md` | yes | `_journal/reno/2026-05-11-atendimento-amanda.md` | pending |
-| `_agents\reno\atendimentos\11005-thabata-cristina.md` | 11005 | thabata-cristina | `_entities/thabata-cristina.md` | no | `_journal/reno/2026-05-11-atendimento-thabata-cristina.md` | pending |
-| `_agents\reno\atendimentos\11006-elinete-silva.md` | 11006 | elinete-silva | `_entities/elinete-silva.md` | no | `_journal/reno/2026-05-11-atendimento-elinete-silva.md` | pending |
-| `_agents\reno\atendimentos\11007-alessandra-nascimento.md` | 11007 | alessandra-nascimento | `_entities/alessandra-nascimento.md` | no | `_journal/reno/2026-05-11-atendimento-alessandra-nascimento.md` | pending |
-| `_agents\reno\atendimentos\11008-fabio-martins-polaro.md` | 11008 | fabio-martins-polaro | `_entities/fabio-martins-polaro.md` | no | `_journal/reno/2026-05-11-atendimento-fabio-martins-polaro.md` | pending |
-| `_agents\reno\atendimentos\11009-diasalvez111q1-qqq.md` | 11009 | diasalvez111q1-qqq | `_entities/diasalvez111q1-qqq.md` | no | `_journal/reno/2026-05-11-atendimento-diasalvez111q1-qqq.md` | pending |
-| `_agents\reno\atendimentos\11011-siguinei-souza.md` | 11011 | siguinei-souza | `_entities/siguinei-souza.md` | no | `_journal/reno/2026-05-11-atendimento-siguinei-souza.md` | pending |
-| `_agents\reno\atendimentos\11012-ton.md` | 11012 | ton | `_entities/ton.md` | no | `_journal/reno/2026-05-11-atendimento-ton.md` | pending |
-| `_agents\reno\atendimentos\11013-black-in-style.md` | 11013 | black-in-style | `_entities/black-in-style.md` | no | `_journal/reno/2026-05-11-atendimento-black-in-style.md` | pending |
-| `_agents\reno\atendimentos\11014-yasmin-mascarenhas.md` | 11014 | yasmin-mascarenhas | `_entities/yasmin-mascarenhas.md` | no | `_journal/reno/2026-05-11-atendimento-yasmin-mascarenhas.md` | pending |
-| `_agents\reno\atendimentos\11017-claudia-martins-ferreira.md` | 11017 | claudia-martins-ferreira | `_entities/claudia-martins-ferreira.md` | no | `_journal/reno/2026-05-11-atendimento-claudia-martins-ferreira.md` | pending |
-| `_agents\reno\atendimentos\11019-andreia-marson.md` | 11019 | andreia-marson | `_entities/andreia-marson.md` | no | `_journal/reno/2026-05-11-atendimento-andreia-marson.md` | pending |
-| `_agents\reno\atendimentos\11021-claudia-rosangela.md` | 11021 | claudia-rosangela | `_entities/claudia-rosangela.md` | yes | `_journal/reno/2026-05-11-atendimento-claudia-rosangela.md` | pending |
-| `_agents\reno\atendimentos\11083-matheus-henrique.md` | 11083 | matheus-henrique | `_entities/matheus-henrique.md` | no | `_journal/reno/2026-05-11-atendimento-matheus-henrique.md` | pending |
-| `_agents\reno\atendimentos\11084-pedro.md` | 11084 | pedro | `_entities/pedro.md` | yes | `_journal/reno/2026-05-11-atendimento-pedro.md` | pending |
-| `_agents\reno\atendimentos\11085-gabi-ripolli.md` | 11085 | gabi-ripolli | `_entities/gabi-ripolli.md` | no | `_journal/reno/2026-05-11-atendimento-gabi-ripolli.md` | pending |
-| `_agents\reno\atendimentos\11110-jessica.md` | 11110 | jessica | `_entities/jessica.md` | no | `_journal/reno/2026-05-11-atendimento-jessica.md` | pending |
-| `_agents\reno\atendimentos\11135-pressendo.md` | 11135 | pressendo | `_entities/pressendo.md` | no | `_journal/reno/2026-05-11-atendimento-pressendo.md` | pending |
-| `_agents\reno\atendimentos\11138-julia-gabriely.md` | 11138 | julia-gabriely | `_entities/julia-gabriely.md` | no | `_journal/reno/2026-05-11-atendimento-julia-gabriely.md` | pending |
-| `_agents\reno\atendimentos\11141-thiago-santos-mendes.md` | 11141 | thiago-santos-mendes | `_entities/thiago-santos-mendes.md` | no | `_journal/reno/2026-05-11-atendimento-thiago-santos-mendes.md` | pending |
-| `_agents\reno\atendimentos\11144-adelitatavarescampos.md` | 11144 | adelitatavarescampos | `_entities/adelitatavarescampos.md` | no | `_journal/reno/2026-05-11-atendimento-adelitatavarescampos.md` | pending |
-| `_agents\reno\atendimentos\11147-sol-silva-mendes.md` | 11147 | sol-silva-mendes | `_entities/sol-silva-mendes.md` | no | `_journal/reno/2026-05-11-atendimento-sol-silva-mendes.md` | pending |
-| `_agents\reno\atendimentos\11150-evellyn-eduardo-pereira.md` | 11150 | evellyn-eduardo-pereira | `_entities/evellyn-eduardo-pereira.md` | no | `_journal/reno/2026-05-11-atendimento-evellyn-eduardo-pereira.md` | pending |
+| `_agents\reno\atendimentos\11002-marco-antonio-goncalves.md` | 11002 | marco-antonio-goncalves | `_entities/marco-antonio-goncalves.md` | no | `_journal/reno/2026-05-11-atendimento-marco-antonio-goncalves.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11003-jisa-dantas.md` | 11003 | jisa-dantas | `_entities/jisa-dantas.md` | yes | `_journal/reno/2026-05-11-atendimento-jisa-dantas.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11004-amanda.md` | 11004 | amanda | `_entities/amanda.md` | yes | `_journal/reno/2026-05-11-atendimento-amanda.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11005-thabata-cristina.md` | 11005 | thabata-cristina | `_entities/thabata-cristina.md` | no | `_journal/reno/2026-05-11-atendimento-thabata-cristina.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11006-elinete-silva.md` | 11006 | elinete-silva | `_entities/elinete-silva.md` | no | `_journal/reno/2026-05-11-atendimento-elinete-silva.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11007-alessandra-nascimento.md` | 11007 | alessandra-nascimento | `_entities/alessandra-nascimento.md` | no | `_journal/reno/2026-05-11-atendimento-alessandra-nascimento.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11008-fabio-martins-polaro.md` | 11008 | fabio-martins-polaro | `_entities/fabio-martins-polaro.md` | no | `_journal/reno/2026-05-11-atendimento-fabio-martins-polaro.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11009-diasalvez111q1-qqq.md` | 11009 | diasalvez111q1-qqq | `_entities/diasalvez111q1-qqq.md` | no | `_journal/reno/2026-05-11-atendimento-diasalvez111q1-qqq.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11011-siguinei-souza.md` | 11011 | siguinei-souza | `_entities/siguinei-souza.md` | no | `_journal/reno/2026-05-11-atendimento-siguinei-souza.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11012-ton.md` | 11012 | ton | `_entities/ton.md` | no | `_journal/reno/2026-05-11-atendimento-ton.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11013-black-in-style.md` | 11013 | black-in-style | `_entities/black-in-style.md` | no | `_journal/reno/2026-05-11-atendimento-black-in-style.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11014-yasmin-mascarenhas.md` | 11014 | yasmin-mascarenhas | `_entities/yasmin-mascarenhas.md` | no | `_journal/reno/2026-05-11-atendimento-yasmin-mascarenhas.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11017-claudia-martins-ferreira.md` | 11017 | claudia-martins-ferreira | `_entities/claudia-martins-ferreira.md` | no | `_journal/reno/2026-05-11-atendimento-claudia-martins-ferreira.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11019-andreia-marson.md` | 11019 | andreia-marson | `_entities/andreia-marson.md` | no | `_journal/reno/2026-05-11-atendimento-andreia-marson.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11021-claudia-rosangela.md` | 11021 | claudia-rosangela | `_entities/claudia-rosangela.md` | yes | `_journal/reno/2026-05-11-atendimento-claudia-rosangela.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11083-matheus-henrique.md` | 11083 | matheus-henrique | `_entities/matheus-henrique.md` | no | `_journal/reno/2026-05-11-atendimento-matheus-henrique.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11084-pedro.md` | 11084 | pedro | `_entities/pedro.md` | yes | `_journal/reno/2026-05-11-atendimento-pedro.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11085-gabi-ripolli.md` | 11085 | gabi-ripolli | `_entities/gabi-ripolli.md` | no | `_journal/reno/2026-05-11-atendimento-gabi-ripolli.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11110-jessica.md` | 11110 | jessica | `_entities/jessica.md` | no | `_journal/reno/2026-05-11-atendimento-jessica.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11135-pressendo.md` | 11135 | pressendo | `_entities/pressendo.md` | no | `_journal/reno/2026-05-11-atendimento-pressendo.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11138-julia-gabriely.md` | 11138 | julia-gabriely | `_entities/julia-gabriely.md` | no | `_journal/reno/2026-05-11-atendimento-julia-gabriely.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11141-thiago-santos-mendes.md` | 11141 | thiago-santos-mendes | `_entities/thiago-santos-mendes.md` | no | `_journal/reno/2026-05-11-atendimento-thiago-santos-mendes.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11144-adelitatavarescampos.md` | 11144 | adelitatavarescampos | `_entities/adelitatavarescampos.md` | no | `_journal/reno/2026-05-11-atendimento-adelitatavarescampos.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11147-sol-silva-mendes.md` | 11147 | sol-silva-mendes | `_entities/sol-silva-mendes.md` | no | `_journal/reno/2026-05-11-atendimento-sol-silva-mendes.md` | migrated-batch-4 |
+| `_agents\reno\atendimentos\11150-evellyn-eduardo-pereira.md` | 11150 | evellyn-eduardo-pereira | `_entities/evellyn-eduardo-pereira.md` | no | `_journal/reno/2026-05-11-atendimento-evellyn-eduardo-pereira.md` | migrated-batch-4 |
 | `_agents\reno\atendimentos\11152-sebastiao-adao-junior.md` | 11152 | sebastiao-adao-junior | `_entities/sebastiao-adao-junior.md` | no | `_journal/reno/2026-05-11-atendimento-sebastiao-adao-junior.md` | pending |
 | `_agents\reno\atendimentos\11155-julia-cardoso.md` | 11155 | julia-cardoso | `_entities/julia-cardoso.md` | no | `_journal/reno/2026-05-11-atendimento-julia-cardoso.md` | pending |
 | `_agents\reno\atendimentos\11158-wilson-passos.md` | 11158 | wilson-passos | `_entities/wilson-passos.md` | no | `_journal/reno/2026-05-11-atendimento-wilson-passos.md` | pending |

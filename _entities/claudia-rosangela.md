@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Claudia Rosângela
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -74,3 +74,12 @@ Claudia Rosângela é cliente do Reno em status **Em Atendimento** com **lead qu
 - Material visual: localização Jaraguá, evolução obra, simulação financeira
 - Status alvo: Visita confirmada / Agendamento
 - Comparar com [[pedro]] (visita realizada) para padrão de fechamento
+## Migracao Reno batch 4 - 2026-05-11
+
+Resumo: Cliente em atendimento com interesse positivo no Union Vereda. Gostou da planta, perguntou valor e depois perguntou se era MRV; origem confirma que Union Vereda e da HLTS.
+
+Status na origem migrada: Em Atendimento. Origem operacional registrada: Facebook Ads.
+
+Proximo passo: Responder curto que Union Vereda nao e MRV, e da HLTS, e retomar visita perguntando se manha ou fim do dia fica melhor.
+
+Link operacional: [[2026-05-11-atendimento-claudia-rosangela]].
