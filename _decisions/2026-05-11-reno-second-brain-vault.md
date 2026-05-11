@@ -15,7 +15,7 @@ supersedes: ["[[2026-04-24-reno-conteudo-em-global-second-brain]]"]
 related: ["[[reno-hub]]", "[[schema]]"]
 tags: [decision, vault, second-brain, governanca]
 ---
-# Decision: FAMA-BRAIN como segundo cérebro Reno-first (2026-05-11)
+# Decision: Vault Reno-first como segundo cérebro (2026-05-11)
 
 Renato aprovou que o `fama-brain` seja reestruturado, nesta fase, como segundo cérebro operacional do Reno, com memória organizada por tipo de conhecimento e sem `_agents/` como namespace permanente.
 

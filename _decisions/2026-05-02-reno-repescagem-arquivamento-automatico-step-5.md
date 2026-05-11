@@ -19,7 +19,11 @@ tags: [decision, repescagem, atendimento, crm]
 
 ## Decisão
 
-Renato solicitou que, após o encerramento da última etapa da régua de Repescagem, o cliente seja alterado automaticamente para status Arquivado no FamaChat. A política foi incorporada à skill repescagem-follow-up e ao cronjob de produção reno-repescagem-message-queue-production. Regra operacional: somente após WhatsApp de step 5 enviado com sucesso e mark_reno_followup_sent persistir step=5/stopped_reason=max_steps; atualizar status para Arquivado apenas se o cliente ainda estiver exatamente em Não Respondeu, broker_id=35, com condição defensiva para não regredir status avançado. Registrar nota no CRM e atualizar o documento de atendimento no vault.
+Renato solicitou que, após o encerramento da última etapa da régua de Repescagem, o cliente seja alterado automaticamente para status Arquivado no FamaChat. A política foi incorporada à skill repescagem-follow-up e ao cronjob de produção reno-repescagem-message-queue-production. Regra operacional: somente após WhatsApp de step 5 enviado com sucesso e mark_reno_followup_sent persistir step=5/stopped_reason=max_steps; atualizar status para Arquivado apenas se o cliente ainda estiver exatamente em Não Respondeu, broker_id=35, com condição defensiva para não regredir status avançado. Registrar nota no CRM e atualizar o documento de atendimento em `_agents/reno/atendimentos/`.
+
+## Estado atual
+
+A regra de arquivamento automático após step 5 permanece como decisão operacional. Apenas a parte que fixava o destino do documento em `_agents/reno/atendimentos/` foi superada pela decisão Reno-first [[2026-05-11-reno-second-brain-vault]].
 
 ## Origem
 

@@ -1,7 +1,7 @@
 ---
 schema_version: 1
 type: decision
-status: active
+status: superseded
 created: 2026-04-29
 updated: 2026-05-11
 source: imported
@@ -12,6 +12,7 @@ confidence: null
 decided_by: ["[[Renato Faria]]"]
 mentions_entity: ["[[reno]]"]
 implements: ["[[reno-operacao-crm-webhook]]"]
+superseded_by: ["[[2026-04-29-reno-worker-inbound-whatsapp-removido]]"]
 related: ["[[reno-hub]]"]
 tags: [decision, repescagem, atendimento, handoff]
 ---
@@ -20,6 +21,10 @@ tags: [decision, repescagem, atendimento, handoff]
 ## Decisão
 
 Renato definiu que webhook do lado do FamaChat não garante o evento, porque o FamaChat não sabe quando o Reno recebeu uma mensagem diretamente no WhatsApp. A garantia operacional deve vir de um worker que monitore novas mensagens recebidas no WhatsApp/Hermes, detecte respostas de clientes broker_id=35 em repescagem e execute o checklist obrigatório: status Em Atendimento, parar repescagem com client_replied, registrar CRM/Obsidian e continuar pela skill fama-reno-whatsapp-qualification.
+
+## Estado atual
+
+Esta decisão foi superada por [[2026-04-29-reno-worker-inbound-whatsapp-removido]] na parte que definia um worker inbound WhatsApp específico como mecanismo. A necessidade genérica de handoff pós-repescagem permanece válida; o mecanismo por esse worker específico não permanece ativo.
 
 ## Origem
 

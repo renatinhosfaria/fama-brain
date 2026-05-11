@@ -12,7 +12,7 @@ confidence: null
 decided_by: ["[[Renato Faria]]"]
 mentions_entity: ["[[reno]]"]
 implements: ["[[reno-second-brain-governance]]"]
-superseded_by: ["[[Decision: FAMA-BRAIN como segundo cérebro Reno-first (2026-05-11)]]"]
+superseded_by: ["[[2026-05-11-reno-second-brain-vault]]"]
 related: ["[[reno-hub]]", "[[2026-05-11-reno-second-brain-vault]]"]
 tags: [decision, vault, second-brain, governanca]
 ---
