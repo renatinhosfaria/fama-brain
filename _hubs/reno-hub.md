@@ -1,0 +1,35 @@
+---
+schema_version: 1
+type: hub
+status: active
+created: 2026-05-11
+updated: 2026-05-11
+source: human-curated
+author_agent: null
+verified_by: null
+verified_at: null
+confidence: null
+tags: [hub, reno, atendimento, second-brain]
+related: ["[[reno]]", "[[reno-profile]]", "[[reno-playbook-atendimento]]"]
+---
+# Hub: Reno
+
+Reno e o agente digital consultivo da Fama para atendimento e avanco comercial de leads elegiveis.
+
+## Mapas principais
+
+- [[reno]] - entidade canonica do Reno.
+- [[reno-profile]] - perfil e escopo operacional.
+- [[reno-playbook-atendimento]] - metodo de atendimento.
+- [[reno-second-brain-governance]] - politica de uso do segundo cerebro.
+- [[reno-operacao-crm-webhook]] - contrato operacional com CRM/FamaChat.
+- [[reno-registro-vault]] - procedimento de registro no vault.
+- [[reno-credito-imobiliario]] - lente operacional de credito imobiliario.
+- [[reno-fama-produtos]] - lente operacional de produtos da Fama.
+
+## Areas de escrita
+
+- Eventos datados: `_journal/reno/`.
+- Fatos duraveis sobre leads, imoveis e organizacoes: `_entities/`.
+- Procedimentos: `_runbooks/`.
+- Decisoes duraveis: `_decisions/`.
