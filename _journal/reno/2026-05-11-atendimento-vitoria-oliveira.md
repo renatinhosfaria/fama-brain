@@ -13,7 +13,7 @@ channel: whatsapp
 participants: ["[[vitoria-oliveira]]", "[[reno]]"]
 mentions_entity: ["[[vitoria-oliveira]]", "[[reno]]", "[[garden-sul]]", "[[place-arbi]]", "[[shopping-park]]", "[[jardim-sul]]"]
 related: ["[[reno-hub]]"]
-tags: [interaction, atendimento, whatsapp, repescagem, garden-sul, place-arbi]
+tags: [interaction, atendimento, whatsapp, repescagem, arquivado]
 ---
 # Interaction: VitÃ³ria Oliveira atendimento Reno (2026-05-11)
 

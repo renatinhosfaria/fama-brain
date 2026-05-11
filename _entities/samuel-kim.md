@@ -5,9 +5,11 @@ entity_type: person
 entity_name: Samuel Kim
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
-  - cliente
+  - entity
+  - lead
+  - atendimento
   - em-atendimento
 schema_version: 1
 status: active

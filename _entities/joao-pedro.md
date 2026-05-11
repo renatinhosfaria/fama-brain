@@ -5,7 +5,7 @@ entity_type: person
 entity_name: João Pedro
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead

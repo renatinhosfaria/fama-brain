@@ -14,13 +14,19 @@ related: ["[[migration-2026-05-11-reno-second-brain]]", "[[reno-hub]]"]
 ---
 # Manifesto de migracao dos atendimentos Reno - 2026-05-11
 
-Este manifesto prepara a migracao futura dos arquivos de atendimento de `_agents/reno/atendimentos/` para o modelo duplo de entidades canonicas em `_entities/` e eventos datados em `_journal/reno/`.
+Este manifesto controla a migracao dos arquivos de atendimento de `_agents/reno/atendimentos/` para o modelo duplo de entidades canonicas em `_entities/` e eventos datados em `_journal/reno/`. Algumas linhas ja podem estar com status migrado conforme os lotes forem concluidos.
 
 ## Escopo
 
 - Total de fontes mapeadas: 153.
-- Status inicial: `pending` para todas as linhas.
-- Esta task nao migra atendimentos; apenas registra origem, destino proposto e casos especiais para revisao.
+- Status de cada linha registrado na tabela fonte-destino.
+- O manifesto registra origem, destino proposto, casos especiais para revisao e lotes ja migrados.
+
+## Status dos lotes
+
+- Piloto: concluido.
+- Batch 1: concluido.
+- Demais linhas: permanecem pendentes ate os proximos lotes.
 
 ## Regras de destino
 

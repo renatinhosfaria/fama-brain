@@ -18,7 +18,7 @@ external_ids:
   crm_client_ids: [10931]
   crm_client_id_canonical: 10931
 related: ["[[reno-hub]]", "[[garden-sul]]", "[[place-arbi]]", "[[shopping-park]]", "[[jardim-sul]]"]
-tags: [entity, lead, atendimento, garden-sul, place-arbi, jardim-sul]
+tags: [entity, lead, atendimento, garden-sul, arquivado]
 ---
 # Entity: VitÃ³ria Oliveira
 

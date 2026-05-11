@@ -13,7 +13,7 @@ channel: whatsapp
 participants: ["[[samuel-kim]]", "[[reno]]"]
 mentions_entity: ["[[samuel-kim]]", "[[reno]]", "[[union-vereda]]", "[[place-arbi]]", "[[shopping-park]]"]
 related: ["[[reno-hub]]"]
-tags: [interaction, atendimento, whatsapp, repescagem, union-vereda, place-arbi]
+tags: [interaction, atendimento, whatsapp, repescagem, em-atendimento]
 ---
 # Interaction: Samuel Kim atendimento Reno (2026-05-11)
 
