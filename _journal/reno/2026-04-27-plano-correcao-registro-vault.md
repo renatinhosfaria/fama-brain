@@ -26,20 +26,24 @@ Data: 2026-04-27.
 
 O Reno escreve no vault, mas não de forma totalmente consistente. Parte dos registros vai para `_agents/reno/atendimentos/`, parte para `_agents/reno/lead/`, e alguns casos tiveram falha explícita de escrita no Obsidian registrada no CRM.
 
-## Causas prováveis
+## Causas provaveis na regra antiga (superado)
 
 1. O prompt da rota exige documento único em `_agents/reno/atendimentos/`, mas usa frontmatter `type: reno-atendimento`, que pode não ser aceito pelo schema atual do mcp-obsidian. Para evitar falha de validação, usar `type: journal` ou outro tipo aceito.
 2. Algumas rotinas/batches usam `upsert_lead_timeline` / `append_lead_interaction`, criando registros em `_agents/reno/lead/`, enquanto a convenção operacional principal exige `_agents/reno/atendimentos/{client_id}-{slug}.md`.
 3. A persistência no vault ainda depende demais do modelo seguir instrução e escolher ferramenta correta; não há camada determinística única garantindo a escrita depois de cada envio/supressão/avanço.
 4. Não existe ainda reconciliação automática para casos em que CRM foi atualizado, mas Obsidian falhou.
 
-## Correção recomendada
+As causas acima registram o diagnostico da epoca. Na arquitetura atual, novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
+
+## Correcao recomendada na epoca (superada)
 
 1. Corrigir o prompt da rota `famachat-created`:
    - trocar frontmatter `type: reno-atendimento` por `type: journal`;
-   - deixar explícito que o documento principal é sempre `_agents/reno/atendimentos/{client_id}-{slug}.md`;
-   - usar `_agents/reno/lead/` apenas como apoio, nunca como substituto do atendimento;
+   - registrar que, pela regra antiga, o documento principal era `_agents/reno/atendimentos/{client_id}-{slug}.md`;
+   - registrar que, pela regra antiga, `_agents/reno/lead/` era apenas apoio, nunca substituto do atendimento;
    - registrar também supressões relevantes em `atendimentos/`, quando o cliente foi processado pelo Reno.
+
+   Estado atual: novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
 2. Criar helper/padrão único de escrita:
    - `ensure_reno_atendimento_doc(client_id, lead_name, status, source, resumo, evento)`;
@@ -60,9 +64,11 @@ O Reno escreve no vault, mas não de forma totalmente consistente. Parte dos reg
 
 5. Rodar reconciliação retroativa:
    - listar clientes Reno com nota CRM recente do Reno;
-   - verificar existência de `_agents/reno/atendimentos/{client_id}-*.md`;
-   - criar/atualizar os documentos faltantes a partir das notas do CRM;
+   - pela regra antiga, verificar existencia de `_agents/reno/atendimentos/{client_id}-*.md`;
+   - pela regra antiga, criar/atualizar os documentos faltantes a partir das notas do CRM;
    - priorizar casos com envio, resposta, agendamento ou falha explícita de Obsidian.
+
+   Estado atual: novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
 6. Adicionar auditoria recorrente:
    - relatório diário ou sob demanda com contagem CRM vs vault;
@@ -70,12 +76,14 @@ O Reno escreve no vault, mas não de forma totalmente consistente. Parte dos reg
    - IDs com falha Obsidian registrada no CRM;
    - IDs com arquivo em `lead/` mas sem documento principal em `atendimentos/`.
 
-## Ordem de execução sugerida
+## Ordem de execucao sugerida na epoca (superada)
 
 1. Corrigir prompt/schema para parar novas falhas.
 2. Corrigir scripts/jobs que escrevem em `lead/` sem atualizar `atendimentos/`.
 3. Reconciliar backlog recente.
 4. Ativar auditoria periódica.
+
+Esta ordem registra a recomendacao original e nao deve ser usada como procedimento vigente. Na arquitetura atual, novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
 ## Evidencia original
 

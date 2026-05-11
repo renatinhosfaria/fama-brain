@@ -52,9 +52,11 @@ Distribuição observada no vault:
 
 Os atendimentos de WhatsApp do Reno estão sim virando documentos no vault, especialmente os atendimentos/follow-ups executados em 2026-04-29.
 
-Porém, a implementação atual ainda não respeita totalmente a governança definida no próprio vault. A regra oficial diz que o documento único de cliente deve ficar em:
+Porem, a implementacao da epoca ainda nao respeitava totalmente a governanca entao definida no proprio vault. A regra antiga dizia que o documento unico de cliente ficava em:
 
 `_agents/reno/atendimentos/{client_id}-{lead-slug}.md`
+
+Essa regra e historica e esta superada. Na arquitetura atual, novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
 Na prática, a automação recente está criando muitos documentos em:
 
@@ -72,18 +74,20 @@ A auditoria anterior já apontava casos com histórico comercial sem documento �
 - 10928 — Elias Mourão: status `Em Atendimento`, follow-up de resgate em 2026-04-28, sem documento localizado por ID/nome.
 - 10930 — Cássio Coimbra: status `Em Atendimento`, follow-up de resgate em 2026-04-28, sem documento localizado por ID/nome.
 
-## Diagnóstico
+## Diagnostico na regra antiga (superado)
 
 1. O fluxo recente de repescagem/follow-up está criando documentos no vault.
-2. O fluxo não está consolidando tudo no documento único oficial de atendimento.
+2. O fluxo nao estava consolidando tudo no documento unico oficial de atendimento da regra antiga.
 4. Alguns atendimentos comerciais mais ricos e anteriores ao lote atual continuam sem documento individual adequado.
 5. O CRM segue sendo a fonte mais completa para estado e histórico operacional.
 
-## Recomendação
+## Recomendacao original (superada)
 
-- Corrigir o writer/worker para escrever sempre em `_agents/reno/atendimentos/{client_id}-{slug}.md`.
+- Corrigir o writer/worker para, pela regra antiga, escrever em `_agents/reno/atendimentos/{client_id}-{slug}.md`.
 - Priorizar reconciliação de conversas com valor comercial: 10986, 10928 e 10930.
 - Manter o CRM como fonte de verdade e usar o vault como histórico curado, evitando duplicidade entre pastas.
+
+Esta recomendacao e historica e nao e instrucao vigente. Na arquitetura atual, novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
 ## Evidencia original
 

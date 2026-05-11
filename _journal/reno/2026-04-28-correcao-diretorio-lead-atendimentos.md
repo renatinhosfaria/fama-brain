@@ -29,12 +29,12 @@ Resultado final verificado:
 - Busca em `_agents/reno/lead` por conteúdo do Reno retornou 0 matches.
 - Tentativa idempotente de deletar `_agents/reno/lead` retornou `Path not found`, confirmando que o diretório legado não está mais disponível.
 
-## Diretório correto
-Todo atendimento/cliente do Reno deve usar exclusivamente:
+## Diretorio correto na regra antiga (superado)
+Na regra antiga preservada como contexto historico, todo atendimento/cliente do Reno usava exclusivamente:
 
 `_agents/reno/atendimentos/{client_id}-{lead-slug}.md`
 
-Esse documento é o contexto futuro oficial do cliente para próximos atendimentos.
+Essa era a referencia operacional da epoca para contexto futuro do cliente. Na arquitetura atual, novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
 ## Diretório descontinuado
 `_agents/reno/lead/` foi descontinuado, migrado e removido.
@@ -71,10 +71,10 @@ Foram atualizados/reforçados os seguintes pontos:
 - `mcp_mcp_obsidian_search_content(path='_agents/reno/lead', query='reno')`: 0 matches.
 - `mcp_mcp_obsidian_delete_path(path='_agents/reno/lead')`: retorno posterior `Path not found`, confirmando remoção.
 
-## Decisão operacional
-A partir desta correção, qualquer documento de cliente encontrado fora de `_agents/reno/atendimentos/` deve ser migrado para o caminho correto e removido da origem incorreta.
+## Decisao operacional antiga (superada)
+A partir desta correcao, pela regra antiga, qualquer documento de cliente encontrado fora de `_agents/reno/atendimentos/` seria migrado para o destino entao adotado e removido da origem incorreta.
 
-O Reno deve consultar esse documento antes de continuar atendimento e atualizá-lo após toda interação relevante.
+Essa instrucao nao e vigente. Na arquitetura atual, novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
 ## Evidencia original
 
