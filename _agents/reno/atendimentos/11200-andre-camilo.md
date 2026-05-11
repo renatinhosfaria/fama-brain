@@ -119,3 +119,6 @@ Manter cliente em `Agendamento` e preservar a visita de 11/05/2026 às 16h. O fo
 
 ### 2026-05-05 — Inbound “16hrs” persistido pela rotina silenciosa
 Cliente respondeu “16hrs”. Interpretação operacional: confirmação do horário de 16h para a visita/atendimento presencial já registrado no FamaChat (appointment_id 246). Status CRM já estava em `Agendamento`; não houve mudança nem regressão de status. Repescagem já estava interrompida por resposta do cliente e não havia Resgate ativo identificado. Nota CRM silenciosa desta execução: #16936. Nenhuma mensagem foi enviada ao cliente por esta rotina.
+
+### 2026-05-11 — Confirmação proativa enviada
+Follow-up de Agendamento executado com sucesso para o appointment_id 246. WhatsApp enviado ao número cadastrado com mensagem curta de confirmação da visita de hoje às 16h na Fama. CRM atualizado com nota operacional e branch `reno_followup.agendamento` encerrada após o envio (`enabled=false`, `step=1`, `next_run_at=null`, `stopped_reason=confirmacao_visita_enviada`). Próximo passo: aguardar comparecimento; sem novo disparo automático neste fluxo.
