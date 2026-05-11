@@ -28,6 +28,10 @@ Filename: `YYYY-MM-DD-{slug}.md`. Ex.: `2026-04-30-bootstrap-sanity.md`, `2026-0
 
 Subpastas permitidas por agente: `_journal/{agente}/YYYY-MM-DD-{slug}.md` (opcional, para volume alto). Ex.: `_journal/reno/2026-04-30-atendimento-elias.md`.
 
+## Subpastas
+
+- `_journal/reno/` — eventos operacionais de alto volume do Reno: atendimentos, auditorias, rotinas, logs e planos datados.
+
 ## Indexação
 
 - **Não vetoriza** (alto volume, baixo sinal).

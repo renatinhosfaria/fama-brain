@@ -7,7 +7,9 @@ tags: [moc, fama-brain]
 ---
 # fama-brain
 
-Vault Obsidian que serve como **contexto e memória de longo prazo** do ecossistema de agentes da Fama Negócios Imobiliários.
+Vault Obsidian que serve como **segundo cérebro operacional do Reno** e memória de longo prazo da Fama Negócios Imobiliários.
+
+Nesta fase, a arquitetura é **Reno-first**: o vault é organizado por tipo de conhecimento, não por namespace permanente de agente. Multiagente fica como evolução futura.
 
 **Topologia:** `C:\fama-brain` (Obsidian local) → GitHub (`renatinhosfaria/fama-brain`) → VPS MCP-host (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Uma única VPS hospeda o vault runtime; todos os agentes escrevem via HTTPS no servidor **mcp-obsidian** (`mcp-obsidian.famachat.com.br`), nunca tocando o filesystem diretamente. Cada arquivo tem um único dono de escrita, enforced pelo MCP no momento da escrita (erro `OWNERSHIP_VIOLATION`).
 
@@ -37,8 +39,12 @@ Vault Obsidian que serve como **contexto e memória de longo prazo** do ecossist
 - Links internos sempre em formato Obsidian, apontando para notas existentes.
 - Tags planas (sem hierarquia).
 - Nomes de arquivo em kebab-case, sem acentos.
-- Journal de agente: `YYYY-MM-DD-titulo-curto.md`.
-- **Cada arquivo tem um único dono de escrita** (ver [[_shared/context/AGENTS]] e matriz completa em [[_agents/README]]).
+- **Cada arquivo tem um único dono de escrita** (ver [[_shared/context/AGENTS]]).
+- Conteúdo operacional do Reno fica organizado por tipo:
+  - fatos duráveis sobre pessoas, imóveis e organizações em `_entities/`;
+  - eventos datados em `_journal/reno/`;
+  - procedimentos em `_runbooks/`;
+  - decisões duráveis em `_decisions/`.
 
 ## Infraestrutura
 

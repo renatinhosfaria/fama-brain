@@ -22,6 +22,11 @@ Hubs **agregam** notas atômicas. Não duplicam conteúdo. Cada bullet usa um wi
 
 - [[README|README]] — índice raiz do vault.
 
+## Agentes e operação
+
+- [[reno]] — entidade canônica do Reno.
+- [[reno-hub]] — mapa operacional do segundo cérebro do Reno.
+
 ## Camadas
 
 - **Hubs de entidade** — 1 hub por entidade ativa relevante (top 30 clientes/brokers/imóveis). Ex.: `Hub: Bruno Sávio`.

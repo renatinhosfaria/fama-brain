@@ -23,6 +23,8 @@ related: []
 
 # Schema v1 do vault FAM (RAG / Segundo cérebro)
 
+> **Decisão de migração (2026-05-11):** a reorganização Reno-first usa o schema v1 ideal no vault, mesmo que a adaptação do MCP seja tratada depois. O MCP não será alterado nesta migração.
+
 Vínculos: [[fama-overview]], [[second-brain-governance]].
 **Status:** v1 **aprovada** mas **não enforçada ainda** (depende de MCP). Aprovada por Renato Faria em [FAM-15](/FAM/issues/FAM-15) (revisão `0f1e41b5`).
 

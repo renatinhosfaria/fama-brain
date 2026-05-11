@@ -21,6 +21,16 @@ Runbook = sequência de passos repetível e verificável. Inclui:
 - **Perfis de agente** — Papel, escopo, modo de operar de cada agente. Perfil de agente é runbook do sistema multi-agente: descreve trigger, comportamento, output, limites.
 - **Playbooks de atendimento** — Sequência de ações comerciais reutilizáveis.
 
+## Reno
+
+- [[reno-profile]]
+- [[reno-playbook-atendimento]]
+- [[reno-second-brain-governance]]
+- [[reno-operacao-crm-webhook]]
+- [[reno-registro-vault]]
+- [[reno-credito-imobiliario]]
+- [[reno-fama-produtos]]
+
 ## Naming
 
 - Procedimentos: `runbook-{procedimento-slug}.md`. Ex.: `runbook-deploy-mcp-obsidian-caddy.md`.

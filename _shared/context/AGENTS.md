@@ -30,10 +30,12 @@ _shared/context/modelo-negocio/**        => renato (primary)
 _shared/context/credito-imobiliario/**   => renato (primary)
 
 # Territórios primários — Reno (corretor, OpenClaw)
-_agents/reno/**                          => reno (primary)
-_shared/context/*/reno/**                => reno (primary)
-_agents/Reno/**                          => reno (primary)
-_shared/context/*/Reno/**                => reno (primary)
+_journal/reno/**                         => reno (primary)
+_runbooks/reno-*.md                      => reno (primary)
+_decisions/*reno*.md                     => reno (primary)
+
+# Entidades são globais; Reno pode atualizar entidades de atendimento quando o fato vier da operação do Reno.
+_entities/**                             => renato (primary)
 
 # Catch-all — paths sem dono explícito
 **/*                                     => renato

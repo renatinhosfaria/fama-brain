@@ -19,6 +19,7 @@ Pasta para o que **não** é conteúdo do segundo cérebro mas governa-o.
 ## Conteúdo
 
 - [[schema.md]] — Schema v1 canônico (types, frontmatter, paths, regras).
+- [[migration-2026-05-11-reno-second-brain]] — ledger da migração Reno-first.
 - `embedding-state.md` *(pendente)* — Registro de qual modelo embedou qual fatia.
 - `golden-queries.md` *(pendente — FAM-17)* — 30 queries reais com respostas esperadas, baseline de recall@5.
 - `inventory-2026-04-30.md` *(em construção neste FAM-16)* — Inventário das notas pré-migração.
