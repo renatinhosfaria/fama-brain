@@ -74,7 +74,7 @@ Resumo: atendimento CRM 10996 migrado para o modelo duplo de entidade e journal 
 
 Status: Arquivado. Vínculos semânticos identificados: [[union-vereda]], [[sibely-cortes]].
 
-Pr?ximo passo: Sem nova ação automática de repescagem. Se a cliente responder futuramente, retomar pelo atendimento normal do Reno, mover para `Em Atendimento` somente se a regra operacional aplicável permitir no momento e reconstruir diagnóstico antes de qualquer novo convite comercial.
+Proximo passo: Sem nova ação automática de repescagem. Se a cliente responder futuramente, retomar pelo atendimento normal do Reno, mover para `Em Atendimento` somente se a regra operacional aplicável permitir no momento e reconstruir diagnóstico antes de qualquer novo convite comercial.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-sibely-cortes]].
 

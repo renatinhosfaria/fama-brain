@@ -21,7 +21,7 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Rodrigo Moreira, cl
 
 ## Ação tomada
 
-Rodrigo Moreira ? cliente CRM 10991 do Reno com contexto registrado de interesse em Union Vereda, região do Jaraguá. Status consolidado na origem migrada: Sem Atendimento.
+Rodrigo Moreira e cliente CRM 10991 do Reno com contexto registrado de interesse em Union Vereda, região do Jaraguá. Status consolidado na origem migrada: Sem Atendimento.
 
 Origem operacional registrada: Facebook Ads / recuperação Reno. Vínculos semânticos identificados: [[union-vereda]].
 

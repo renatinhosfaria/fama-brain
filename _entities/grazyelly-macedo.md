@@ -73,7 +73,7 @@ Resumo: atendimento CRM 10974 migrado para o modelo duplo de entidade e journal 
 
 Status: Arquivado. Vínculos semânticos identificados: [[place-arbi]], [[shopping-park]], [[grazyelly-macedo]].
 
-Pr?ximo passo: Sem nova ação automática de repescagem. Se a cliente responder futuramente ou for reativada por ação humana, retomar o atendimento normal do Reno por fluxo de qualificação, validando nome, objetivo, prazo, decisão compartilhada e viabilidade antes de propor visita ou imóveis.
+Proximo passo: Sem nova ação automática de repescagem. Se a cliente responder futuramente ou for reativada por ação humana, retomar o atendimento normal do Reno por fluxo de qualificação, validando nome, objetivo, prazo, decisão compartilhada e viabilidade antes de propor visita ou imóveis.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-grazyelly-macedo]].
 

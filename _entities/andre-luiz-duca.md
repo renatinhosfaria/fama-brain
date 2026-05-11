@@ -76,7 +76,7 @@ Resumo: atendimento CRM 10975 migrado para o modelo duplo de entidade e journal 
 
 Status: Arquivado. Vínculos semânticos identificados: [[union-vista]], [[grand-ville]], [[zona-leste]], [[andre-luiz-duca]].
 
-Pr?ximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, tratar como retomada/inbound fora desta skill, validar o status no CRM, registrar a resposta e seguir pelo fluxo normal de atendimento consultivo do Reno.
+Proximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, tratar como retomada/inbound fora desta skill, validar o status no CRM, registrar a resposta e seguir pelo fluxo normal de atendimento consultivo do Reno.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-andre-luiz-duca]].
 

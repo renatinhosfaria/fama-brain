@@ -74,7 +74,7 @@ Resumo: atendimento CRM 10997 migrado para o modelo duplo de entidade e journal 
 
 Status: Arquivado. Vínculos semânticos identificados: [[union-vista]], [[grand-ville]], [[santiago-derson]].
 
-Pr?ximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, reabrir o atendimento pelo fluxo normal do Reno, mover status conforme regra operacional aplicável e retomar a qualificação consultiva a partir do contexto Union Vista/Grand Ville.
+Proximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, reabrir o atendimento pelo fluxo normal do Reno, mover status conforme regra operacional aplicável e retomar a qualificação consultiva a partir do contexto Union Vista/Grand Ville.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-santiago-derson]].
 

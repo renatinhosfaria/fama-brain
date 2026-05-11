@@ -93,7 +93,7 @@ Resumo: atendimento CRM 10986 migrado para o modelo duplo de entidade e journal 
 
 Status: Em Atendimento. Vínculos semânticos identificados: [[union-vereda]], [[andreia-carvalho]].
 
-Pr?ximo passo: Monitorar e buscar oportunidade compatível com perfil recalibrado: na planta/em construção, 2 vagas, metragem mais confortável, regiões aceitas, entrega em 1–2 anos se possível e fluxo de pagamento seguro. Quando houver uma opção concreta, apresentar uma alternativa bem escolhida e conduzir para visita presencial na Fama como validação segura de planta, condição e financiamento.
+Proximo passo: Monitorar e buscar oportunidade compatível com perfil recalibrado: na planta/em construção, 2 vagas, metragem mais confortável, regiões aceitas, entrega em 1–2 anos se possível e fluxo de pagamento seguro. Quando houver uma opção concreta, apresentar uma alternativa bem escolhida e conduzir para visita presencial na Fama como validação segura de planta, condição e financiamento.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-andreia-carvalho]].
 

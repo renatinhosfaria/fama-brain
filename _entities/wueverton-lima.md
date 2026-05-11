@@ -78,7 +78,7 @@ Resumo: atendimento CRM 11000 migrado para o modelo duplo de entidade e journal 
 
 Status: Arquivado. Vínculos semânticos identificados: [[union-vista]], [[grand-ville]], [[wueverton-lima]].
 
-Pr?ximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, reativar atendimento por fluxo normal do Reno, registrar resposta no CRM, mover o status conforme regra operacional aplicável e retomar diagnóstico consultivo sem tratar como novo step de repescagem.
+Proximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, reativar atendimento por fluxo normal do Reno, registrar resposta no CRM, mover o status conforme regra operacional aplicável e retomar diagnóstico consultivo sem tratar como novo step de repescagem.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-wueverton-lima]].
 

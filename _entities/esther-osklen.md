@@ -66,7 +66,7 @@ Resumo: atendimento CRM 10978 migrado para o modelo duplo de entidade e journal 
 
 Status: Arquivado. Vínculos semânticos identificados: [[union-vereda]], [[esther-osklen]].
 
-Pr?ximo passo: Sem nova ação automática de repescagem. Caso a cliente responda ou seja reativada futuramente, retomar a partir do contexto Union Vereda/Jaraguá, validar momento atual, finalidade de uso e viabilidade antes de propor nova visita ou análise presencial.
+Proximo passo: Sem nova ação automática de repescagem. Caso a cliente responda ou seja reativada futuramente, retomar a partir do contexto Union Vereda/Jaraguá, validar momento atual, finalidade de uso e viabilidade antes de propor nova visita ou análise presencial.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-esther-osklen]].
 

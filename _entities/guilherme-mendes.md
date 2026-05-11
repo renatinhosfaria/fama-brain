@@ -73,7 +73,7 @@ Resumo: atendimento CRM 10999 migrado para o modelo duplo de entidade e journal 
 
 Status: Em Atendimento. Vínculos semânticos identificados: [[union-vereda]], [[guilherme-mendes]].
 
-Pr?ximo passo: Responder comercialmente ao cliente no WhatsApp com um resumo curto do Union Vereda e do que vale validar presencialmente, mantendo o foco em visita na Fama como próximo passo lógico. Não há próxima step automática ativa de Resgate ou Repescagem neste momento.
+Proximo passo: Responder comercialmente ao cliente no WhatsApp com um resumo curto do Union Vereda e do que vale validar presencialmente, mantendo o foco em visita na Fama como próximo passo lógico. Não há próxima step automática ativa de Resgate ou Repescagem neste momento.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-guilherme-mendes]].
 

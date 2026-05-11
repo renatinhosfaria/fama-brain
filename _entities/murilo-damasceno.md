@@ -60,14 +60,14 @@ Murilo Damasceno é lead do Reno em status **Não Respondeu**, originário de SL
 
 ## Migracao Reno batch 1 - 2026-05-11
 
-Murilo Damasceno é lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10927 com vinculo a [[murilo-damasceno]], [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
+Murilo Damasceno e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10927 com vinculo a [[murilo-damasceno]], [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
 
-### Atualiza??o operacional
+### Atualizacao operacional
 
 - CRM client id confirmado na origem migrada: 10927.
 - Status consolidado na origem migrada: `Arquivado`.
 - Atendimento migrado para o journal [[2026-05-11-atendimento-10927-murilo-damasceno]].
-- Pr?ximo passo: Sem nova ação automática registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.
+- Proximo passo: Sem nova acao automatica registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.
 
 ## Migracao Reno batch 3 - 2026-05-11
 
@@ -75,7 +75,7 @@ Resumo: atendimento CRM 10977 migrado para o modelo duplo de entidade e journal 
 
 Status: Não Respondeu. Vínculos semânticos identificados: [[place-arbi]], [[shopping-park]], [[murilo-damasceno]].
 
-Pr?ximo passo: Aguardar resposta do cliente. Se responder, conduzir diagnóstico leve e atualizar status de Não Respondeu para Em Atendimento somente se ainda estiver exatamente nesse status.
+Proximo passo: Aguardar resposta do cliente. Se responder, conduzir diagnóstico leve e atualizar status de Não Respondeu para Em Atendimento somente se ainda estiver exatamente nesse status.
 
 Atendimento migrado para o journal [[2026-05-11-atendimento-10977-murilo-damasceno]].
 

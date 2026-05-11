@@ -40,7 +40,7 @@ Status CRM registrado na origem migrada: Sem Atendimento.
 
 ## Contexto comercial consolidado
 
-Rodrigo Moreira ? cliente CRM 10991 do Reno com contexto registrado de interesse em Union Vereda, região do Jaraguá. Status consolidado na origem migrada: Sem Atendimento.
+Rodrigo Moreira e cliente CRM 10991 do Reno com contexto registrado de interesse em Union Vereda, região do Jaraguá. Status consolidado na origem migrada: Sem Atendimento.
 
 Origem operacional registrada: Facebook Ads / recuperação Reno.
 
