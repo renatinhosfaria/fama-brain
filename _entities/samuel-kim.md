@@ -67,3 +67,14 @@ Samuel Kim é cliente do Reno em status **Em Atendimento** após resposta real �
 - Validar com cliente que faz sentido não pagar multa.
 - Posicionar Fama como apoio pra organizar crédito + simulação + opções agora pra mudança segura no fim do contrato.
 - Próxima pergunta: bairros/zonas prioritários antes de apresentar empreendimento.
+
+## Migracao Reno batch 1 - 2026-05-11
+
+Samuel Kim e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10937 com vinculo a [[samuel-kim]], [[union-vereda]], [[place-arbi]], [[shopping-park]]. Status consolidado na origem migrada: Em Atendimento.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10937.
+- Status consolidado na origem migrada: `Em Atendimento`.
+- Atendimento migrado para o journal [[2026-05-11-atendimento-samuel-kim]].
+- Proximo passo: Continuar qualificacao consultiva pelo Reno, validando necessidade, momento, decisao e viabilidade antes de propor visita ou imovel.

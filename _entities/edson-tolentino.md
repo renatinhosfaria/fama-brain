@@ -54,3 +54,14 @@ Edson Tolentino é lead do Reno em status **Não Respondeu**, originário de SLA
 
 - Próximo step (3) elegível quando next_run_at vencer.
 - Se responder, mover pra Em Atendimento e seguir qualificação.
+
+## Migracao Reno batch 1 - 2026-05-11
+
+Edson Tolentino e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10924 com vinculo a [[edson-tolentino]], [[union-vista]], [[zona-leste]]. Status consolidado na origem migrada: Arquivado.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10924.
+- Status consolidado na origem migrada: `Arquivado`.
+- Atendimento migrado para o journal [[2026-05-11-atendimento-edson-tolentino]].
+- Proximo passo: Sem nova acao automatica registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.

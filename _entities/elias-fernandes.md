@@ -69,3 +69,14 @@ Elias Fernandes é lead em status **Não Respondeu**, mas a régua continua ativ
 - Aguardar step 4 (próximo 2026-05-02 14:20)
 - Se não responder após step 4: encerrar repescagem
 - Caso responda: validar se interesse Garden Sul é real ou se é compra remota Bahia → Uberlândia
+
+## Migracao Reno batch 1 - 2026-05-11
+
+Elias Fernandes e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10662 com vinculo a [[elias-fernandes]], [[garden-sul]], [[jardim-sul]]. Status consolidado na origem migrada: Arquivado.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10662.
+- Status consolidado na origem migrada: `Arquivado`.
+- Atendimento migrado para o journal [[2026-05-11-atendimento-elias-fernandes]].
+- Proximo passo: Sem nova acao automatica registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.

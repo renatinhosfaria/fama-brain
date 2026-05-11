@@ -80,3 +80,14 @@ Silva Porto é cliente do Reno em status **Em Atendimento** após responder à r
 - Simulação de financiamento CLT com entrada parcelada
 - Avançar para visita presencial Fama
 - Comparar parcela vs. aluguel atual (R$900) com cuidado
+
+## Migracao Reno batch 1 - 2026-05-11
+
+Silva Porto e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10923 com vinculo a [[silva-porto]], [[union-vista]]. Status consolidado na origem migrada: Em Atendimento.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10923.
+- Status consolidado na origem migrada: `Em Atendimento`.
+- Atendimento migrado para o journal [[2026-05-11-atendimento-silva-porto]].
+- Proximo passo: Continuar qualificacao consultiva pelo Reno, validando necessidade, momento, decisao e viabilidade antes de propor visita ou imovel.

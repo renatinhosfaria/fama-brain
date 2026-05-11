@@ -64,3 +64,14 @@ João Pedro é lead em status **Não Respondeu** desde criação (2026-04-10), s
 - Aguardar step 4 (próximo 2026-05-02 14:20)
 - Se não responder após step 4: encerrar régua e arquivar definitivamente
 - **Operacional:** revisar política de captura de JID em leads do Facebook Ads sem empreendimento associado
+
+## Migracao Reno batch 1 - 2026-05-11
+
+JoÃ£o pedro e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10714 com vinculo a [[joao-pedro]]. Status consolidado na origem migrada: Arquivado.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10714.
+- Status consolidado na origem migrada: `Arquivado`.
+- Atendimento migrado para o journal [[2026-05-11-atendimento-joao-pedro]].
+- Proximo passo: Sem nova acao automatica registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.

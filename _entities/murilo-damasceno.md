@@ -54,3 +54,14 @@ Murilo Damasceno é lead do Reno em status **Não Respondeu**, originário de SL
 ## Próximas ações sugeridas
 
 - Próximo step (4) previsto pra 2026-05-01T19:10 com convite consultivo direto, sem repetir morar/investir.
+
+## Migracao Reno batch 1 - 2026-05-11
+
+Murilo Damasceno e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10927 com vinculo a [[murilo-damasceno]], [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10927.
+- Status consolidado na origem migrada: `Arquivado`.
+- Atendimento migrado para o journal [[2026-05-11-atendimento-10927-murilo-damasceno]].
+- Proximo passo: Sem nova acao automatica registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.

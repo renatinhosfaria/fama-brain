@@ -53,3 +53,14 @@ Davi Maia é lead do Reno em status **Não Respondeu**, originário de Facebook 
 ## Próximas ações sugeridas
 
 - Próximo step (4) elegível em 2026-05-01T19:10 com convite consultivo direto.
+
+## Migracao Reno batch 1 - 2026-05-11
+
+Davi Maia e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10659 com vinculo a [[davi-maia]], [[garden-sul]], [[jardim-sul]]. Status consolidado na origem migrada: Arquivado.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10659.
+- Status consolidado na origem migrada: `Arquivado`.
+- Atendimento migrado para o journal [[2026-05-11-atendimento-davi-maia]].
+- Proximo passo: Sem nova acao automatica registrada; se o cliente responder futuramente, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.

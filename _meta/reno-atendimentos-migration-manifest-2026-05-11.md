@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: 1
 type: reference
 status: active
@@ -40,31 +40,31 @@ Este manifesto prepara a migracao futura dos arquivos de atendimento de `_agents
 
 | Source | Client ID | Slug | Entity target | Entity exists? | Journal target | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| `_agents\reno\atendimentos\10570-553496511323.md` | 10570 | 553496511323 | `_entities/553496511323.md` | no | `_journal/reno/2026-05-11-atendimento-553496511323.md` | pending |
-| `_agents\reno\atendimentos\10657-lead-garden-sul.md` | 10657 | lead-garden-sul | `_entities/lead-garden-sul.md` | no | `_journal/reno/2026-05-11-atendimento-lead-garden-sul.md` | pending |
-| `_agents\reno\atendimentos\10659-davi-maia.md` | 10659 | davi-maia | `_entities/davi-maia.md` | yes | `_journal/reno/2026-05-11-atendimento-davi-maia.md` | pending |
-| `_agents\reno\atendimentos\10660-giovanna.md` | 10660 | giovanna | `_entities/giovanna.md` | no | `_journal/reno/2026-05-11-atendimento-giovanna.md` | pending |
-| `_agents\reno\atendimentos\10662-elias-fernandes.md` | 10662 | elias-fernandes | `_entities/elias-fernandes.md` | yes | `_journal/reno/2026-05-11-atendimento-elias-fernandes.md` | pending |
-| `_agents\reno\atendimentos\10714-joao-pedro.md` | 10714 | joao-pedro | `_entities/joao-pedro.md` | yes | `_journal/reno/2026-05-11-atendimento-joao-pedro.md` | pending |
-| `_agents\reno\atendimentos\10923-silva-porto.md` | 10923 | silva-porto | `_entities/silva-porto.md` | yes | `_journal/reno/2026-05-11-atendimento-silva-porto.md` | pending |
-| `_agents\reno\atendimentos\10924-edson-tolentino.md` | 10924 | edson-tolentino | `_entities/edson-tolentino.md` | yes | `_journal/reno/2026-05-11-atendimento-edson-tolentino.md` | pending |
-| `_agents\reno\atendimentos\10925-wanderson-alessandro.md` | 10925 | wanderson-alessandro | `_entities/wanderson-alessandro.md` | no | `_journal/reno/2026-05-11-atendimento-wanderson-alessandro.md` | pending |
-| `_agents\reno\atendimentos\10926-christine-moreira.md` | 10926 | christine-moreira | `_entities/christine-moreira.md` | no | `_journal/reno/2026-05-11-atendimento-christine-moreira.md` | pending |
-| `_agents\reno\atendimentos\10927-murilo-damasceno.md` | 10927 | murilo-damasceno | `_entities/murilo-damasceno.md` | yes | `_journal/reno/2026-05-11-atendimento-10927-murilo-damasceno.md` | pending |
-| `_agents\reno\atendimentos\10928-elias-mourao.md` | 10928 | elias-mourao | `_entities/elias-mourao.md` | no | `_journal/reno/2026-05-11-atendimento-elias-mourao.md` | pending |
-| `_agents\reno\atendimentos\10929-eva-neves.md` | 10929 | eva-neves | `_entities/eva-neves.md` | no | `_journal/reno/2026-05-11-atendimento-eva-neves.md` | pending |
-| `_agents\reno\atendimentos\10930-cassio-coimbra.md` | 10930 | cassio-coimbra | `_entities/cassio-coimbra.md` | no | `_journal/reno/2026-05-11-atendimento-cassio-coimbra.md` | pending |
-| `_agents\reno\atendimentos\10931-vitoria-oliveira.md` | 10931 | vitoria-oliveira | `_entities/vitoria-oliveira.md` | no | `_journal/reno/2026-05-11-atendimento-vitoria-oliveira.md` | pending |
-| `_agents\reno\atendimentos\10932-cinthia-rodrigues.md` | 10932 | cinthia-rodrigues | `_entities/cinthia-rodrigues.md` | no | `_journal/reno/2026-05-11-atendimento-cinthia-rodrigues.md` | pending |
-| `_agents\reno\atendimentos\10933-flavio.md` | 10933 | flavio | `_entities/flavio.md` | no | `_journal/reno/2026-05-11-atendimento-flavio.md` | pending |
-| `_agents\reno\atendimentos\10934-mateus-silva.md` | 10934 | mateus-silva | `_entities/mateus-silva.md` | no | `_journal/reno/2026-05-11-atendimento-mateus-silva.md` | pending |
-| `_agents\reno\atendimentos\10935-wenderson-beleli.md` | 10935 | wenderson-beleli | `_entities/wenderson-beleli.md` | no | `_journal/reno/2026-05-11-atendimento-wenderson-beleli.md` | pending |
-| `_agents\reno\atendimentos\10936-lenira-cruz.md` | 10936 | lenira-cruz | `_entities/lenira-cruz.md` | no | `_journal/reno/2026-05-11-atendimento-lenira-cruz.md` | pending |
-| `_agents\reno\atendimentos\10937-samuel-kim.md` | 10937 | samuel-kim | `_entities/samuel-kim.md` | yes | `_journal/reno/2026-05-11-atendimento-samuel-kim.md` | pending |
-| `_agents\reno\atendimentos\10938-marcelo-escobar-de-oliveira.md` | 10938 | marcelo-escobar-de-oliveira | `_entities/marcelo-escobar-de-oliveira.md` | no | `_journal/reno/2026-05-11-atendimento-marcelo-escobar-de-oliveira.md` | pending |
-| `_agents\reno\atendimentos\10939-ricardo.md` | 10939 | ricardo | `_entities/ricardo.md` | no | `_journal/reno/2026-05-11-atendimento-ricardo.md` | pending |
-| `_agents\reno\atendimentos\10940-leticia-melo.md` | 10940 | leticia-melo | `_entities/leticia-melo.md` | yes | `_journal/reno/2026-05-11-atendimento-leticia-melo.md` | pending |
-| `_agents\reno\atendimentos\10941-kauan-eduardo.md` | 10941 | kauan-eduardo | `_entities/kauan-eduardo.md` | no | `_journal/reno/2026-05-11-atendimento-kauan-eduardo.md` | pending |
+| `_agents\reno\atendimentos\10570-553496511323.md` | 10570 | 553496511323 | `_entities/553496511323.md` | no | `_journal/reno/2026-05-11-atendimento-553496511323.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10657-lead-garden-sul.md` | 10657 | lead-garden-sul | `_entities/lead-garden-sul.md` | no | `_journal/reno/2026-05-11-atendimento-lead-garden-sul.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10659-davi-maia.md` | 10659 | davi-maia | `_entities/davi-maia.md` | yes | `_journal/reno/2026-05-11-atendimento-davi-maia.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10660-giovanna.md` | 10660 | giovanna | `_entities/giovanna.md` | no | `_journal/reno/2026-05-11-atendimento-giovanna.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10662-elias-fernandes.md` | 10662 | elias-fernandes | `_entities/elias-fernandes.md` | yes | `_journal/reno/2026-05-11-atendimento-elias-fernandes.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10714-joao-pedro.md` | 10714 | joao-pedro | `_entities/joao-pedro.md` | yes | `_journal/reno/2026-05-11-atendimento-joao-pedro.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10923-silva-porto.md` | 10923 | silva-porto | `_entities/silva-porto.md` | yes | `_journal/reno/2026-05-11-atendimento-silva-porto.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10924-edson-tolentino.md` | 10924 | edson-tolentino | `_entities/edson-tolentino.md` | yes | `_journal/reno/2026-05-11-atendimento-edson-tolentino.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10925-wanderson-alessandro.md` | 10925 | wanderson-alessandro | `_entities/wanderson-alessandro.md` | no | `_journal/reno/2026-05-11-atendimento-wanderson-alessandro.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10926-christine-moreira.md` | 10926 | christine-moreira | `_entities/christine-moreira.md` | no | `_journal/reno/2026-05-11-atendimento-christine-moreira.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10927-murilo-damasceno.md` | 10927 | murilo-damasceno | `_entities/murilo-damasceno.md` | yes | `_journal/reno/2026-05-11-atendimento-10927-murilo-damasceno.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10928-elias-mourao.md` | 10928 | elias-mourao | `_entities/elias-mourao.md` | no | `_journal/reno/2026-05-11-atendimento-elias-mourao.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10929-eva-neves.md` | 10929 | eva-neves | `_entities/eva-neves.md` | no | `_journal/reno/2026-05-11-atendimento-eva-neves.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10930-cassio-coimbra.md` | 10930 | cassio-coimbra | `_entities/cassio-coimbra.md` | no | `_journal/reno/2026-05-11-atendimento-cassio-coimbra.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10931-vitoria-oliveira.md` | 10931 | vitoria-oliveira | `_entities/vitoria-oliveira.md` | no | `_journal/reno/2026-05-11-atendimento-vitoria-oliveira.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10932-cinthia-rodrigues.md` | 10932 | cinthia-rodrigues | `_entities/cinthia-rodrigues.md` | no | `_journal/reno/2026-05-11-atendimento-cinthia-rodrigues.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10933-flavio.md` | 10933 | flavio | `_entities/flavio.md` | no | `_journal/reno/2026-05-11-atendimento-flavio.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10934-mateus-silva.md` | 10934 | mateus-silva | `_entities/mateus-silva.md` | no | `_journal/reno/2026-05-11-atendimento-mateus-silva.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10935-wenderson-beleli.md` | 10935 | wenderson-beleli | `_entities/wenderson-beleli.md` | no | `_journal/reno/2026-05-11-atendimento-wenderson-beleli.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10936-lenira-cruz.md` | 10936 | lenira-cruz | `_entities/lenira-cruz.md` | no | `_journal/reno/2026-05-11-atendimento-lenira-cruz.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10937-samuel-kim.md` | 10937 | samuel-kim | `_entities/samuel-kim.md` | yes | `_journal/reno/2026-05-11-atendimento-samuel-kim.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10938-marcelo-escobar-de-oliveira.md` | 10938 | marcelo-escobar-de-oliveira | `_entities/marcelo-escobar-de-oliveira.md` | no | `_journal/reno/2026-05-11-atendimento-marcelo-escobar-de-oliveira.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10939-ricardo.md` | 10939 | ricardo | `_entities/ricardo.md` | no | `_journal/reno/2026-05-11-atendimento-ricardo.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10940-leticia-melo.md` | 10940 | leticia-melo | `_entities/leticia-melo.md` | yes | `_journal/reno/2026-05-11-atendimento-leticia-melo.md` | migrated-batch-1 |
+| `_agents\reno\atendimentos\10941-kauan-eduardo.md` | 10941 | kauan-eduardo | `_entities/kauan-eduardo.md` | no | `_journal/reno/2026-05-11-atendimento-kauan-eduardo.md` | migrated-batch-1 |
 | `_agents\reno\atendimentos\10942-marcio-oliveira-juliao.md` | 10942 | marcio-oliveira-juliao | `_entities/marcio-oliveira-juliao.md` | yes | `_journal/reno/2026-05-11-atendimento-marcio-oliveira-juliao.md` | pending |
 | `_agents\reno\atendimentos\10943-ana-clara-marques.md` | 10943 | ana-clara-marques | `_entities/ana-clara-marques.md` | yes | `_journal/reno/2026-05-11-atendimento-ana-clara-marques.md` | pending |
 | `_agents\reno\atendimentos\10944-helena-oliveira.md` | 10944 | helena-oliveira | `_entities/helena-oliveira.md` | no | `_journal/reno/2026-05-11-atendimento-helena-oliveira.md` | pending |
