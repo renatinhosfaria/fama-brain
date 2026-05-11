@@ -52,7 +52,7 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 - [x] Fase 5 - atendimentos em lote
 - [x] Fase 6 - auditorias, journals e planos
 - [x] Fase 7 - remocao de `_agents/`
-- [ ] Fase 8 - auditoria final
+- [x] Fase 8 - auditoria final
 
 ## Status dos atendimentos
 
@@ -80,7 +80,29 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 
 - 2026-05-11: `_agents/` removido apos verificacao do caminho absoluto `C:\fama-brain\_agents`.
 - Wikilinks canonicos legados fora de `_agents/**` foram substituidos pelos destinos Reno-first: [[reno-hub]], [[reno-playbook-atendimento]], [[reno-second-brain-governance]], [[reno-operacao-crm-webhook]] e [[reno-registro-vault]].
-- Fase 8 permanece pendente porque ainda depende de revisao global posterior.
+- 2026-05-11: auditoria final executada; Fase 8 concluida.
+
+## Auditoria final
+
+Data: 2026-05-11.
+
+Resultado: aprovado para encerramento da migracao Reno-first. A auditoria nao encontrou namespace `_agents/` ativo, nem wikilinks canonicos obsoletos fora de `docs/superpowers/**`. As referencias restantes ao antigo namespace do Reno foram classificadas como evidencias historicas permitidas: paths de origem migrada em entidades/journals, manifesto, ledger, inventario antigo e decisoes historicas.
+
+Checks executados:
+
+- `git status --short --untracked-files=all`: limpo no inicio da auditoria.
+- `Test-Path -LiteralPath '_agents'`: `False`.
+- Busca pelos cinco wikilinks canonicos obsoletos e pelo wikilink de subpasta do Reno fora de `docs/superpowers/**`: sem resultados.
+- Busca pelo namespace historico do Reno fora de `docs/**`: 435 referencias historicas totais. Excluindo o proprio ledger e o manifesto de atendimentos, restaram 272 referencias distribuidas em `_journal` (222), `_decisions` (27), `_entities` (10) e `_meta` (13); todas sao origem/evidencia/inventario/decisao historica permitida.
+- Frontmatter em `.md`: somente `docs/superpowers/plans/2026-05-11-reno-second-brain-vault-migration.md` permanece sem `---` inicial; nenhum conteudo de vault relacionado a esta migracao precisou de correcao.
+- Indices: `README.md`, `_hubs/index.md`, `_runbooks/index.md`, `_journal/index.md`, `_decisions/index.md` e `_meta/index.md` apontam para as areas canonicas Reno-first ou para o ledger/spec da migracao.
+- Manifesto de atendimentos: 153 fontes; 152 migradas ou special-migrated (`migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`); `pending-manual-review: 1` para `whatsapp-lua`; `pending` normal: 0.
+- `git diff --check`: executado antes do commit, sem erros.
+
+Pendencias fora da migracao:
+
+- `whatsapp-lua` permanece como revisao manual aprovada no manifesto; nao foi migrado nesta etapa.
+- A aplicacao em massa do schema v1/frontmatter continua fora de escopo enquanto depender de evolucao do MCP.
 
 ## Decisoes de migracao
 

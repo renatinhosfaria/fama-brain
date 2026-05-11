@@ -2,7 +2,7 @@
 type: agents-map
 owner: renato
 created: '2026-04-14'
-updated: '2026-05-08'
+updated: '2026-05-11'
 tags:
   - agents
 ---
@@ -11,9 +11,9 @@ Vínculos: [[reno]], [[fama-overview]], [[schema]].
 **Legenda de escopos:**
 - **(primary)** — dono primário; edita qualquer conteúdo nesse território.
 
-## Imutabilidade de `decisions.md`
+## Historico de `decisions.md`
 
-`_agents/*/decisions.md` é **append-only via `append_decision`** (MCP `mcp-fama_obsidian`). Ninguém — nem o próprio agente dono — deve usar `write_note` nele. O ownership do arquivo permanece com o agente dono (cobertura via patterns territoriais abaixo); a imutabilidade é enforçada pelo tool, não pelo mapa.
+O namespace `_agents/` foi removido na migracao Reno-first de 2026-05-11. Nao ha mais ownership ativo para `_agents/*/decisions.md`; futuras decisoes devem ser registradas como notas atomicas em `_decisions/`.
 
 > Nota histórica: até 2026-05-02 havia uma regra `_agents/*/decisions.md => owner-only` que sobrepunha o ownership territorial e quebrava `append_decision(agent='<dono>')` (FAM-24). A regra foi removida — `append_decision` continua sendo a única forma legítima de escrever em `decisions.md`.
 
@@ -22,7 +22,6 @@ Vínculos: [[reno]], [[fama-overview]], [[schema]].
 
 # Governança e meta
 _shared/context/AGENTS.md                => renato
-_agents/README.md                        => renato
 
 # Territórios primários — Renato (humano / board / founder)
 _shared/context/fama/**                  => renato (primary)

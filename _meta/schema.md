@@ -2,7 +2,7 @@
 type: shared-context
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-08'
+updated: '2026-05-11'
 topic: vault
 title: Schema v1 do vault FAM (RAG / Segundo cérebro)
 tags:
@@ -316,11 +316,14 @@ Não pode: editar conteúdo substantivo, alterar `_decisions/` de outro agente, 
 | `result` | `result` (extensão) | `_projects/` ou `_shared/context/` |
 | `financial-snapshot` | `entity` (subtype: snapshot) ou `reference` | `_entities/` ou `_shared/context/` |
 
-**Decisões abertas durante migração** (escaladas em [FAM-16](/FAM/issues/FAM-16)):
+**Decisões resolvidas na migração Reno-first (2026-05-11):**
 
-1. `_agents/{agente}/` é dissolvido? Plan v2 §2 não lista `_agents/`. Mapeamento proposto: profile → `_runbooks/agent-{nome}.md`, README → `_hubs/agent-{nome}.md`, decisions.md compilado → N notas atômicas em `_decisions/{date}-{slug}.md`.
-2. `_shared/goals/` e `_shared/results/` viram notas em `_projects/` ou permanecem em `_shared/context/`?
-3. Datas: ISO-8601 com timezone (precisão de hora) ou YYYY-MM-DD (compatível com MCP atual)?
+1. `_agents/{agente}/` foi dissolvido na fase Reno-first. O namespace `_agents/` nao deve ser recriado como espaco permanente; perfis de agente vivem em `_runbooks/`, hubs em `_hubs/`, decisoes atomicas em `_decisions/` e eventos de alto volume em `_journal/{agente}/`.
+
+**Decisões abertas restantes** (escaladas em [FAM-16](/FAM/issues/FAM-16)):
+
+1. `_shared/goals/` e `_shared/results/` viram notas em `_projects/` ou permanecem em `_shared/context/`?
+2. Datas: ISO-8601 com timezone (precisão de hora) ou YYYY-MM-DD (compatível com MCP atual)?
 
 ---
 
