@@ -12,7 +12,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: manual
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, vault, atendimento]
+tags: [runbook, vault, registro, governanca]
 related: ["[[reno-hub]]", "[[reno-second-brain-governance]]", "[[schema]]"]
 ---
 # Runbook: Reno Registro Vault
@@ -64,7 +64,7 @@ updated: YYYY-MM-DD
 source: imported
 author_agent: reno
 mentions_entity: ["[[reno]]"]
-tags: [entity, lead, reno]
+tags: [entity, lead, atendimento]
 ```
 
 Journal:
@@ -79,7 +79,7 @@ source: imported
 author_agent: reno
 participants: ["[[lead]]", "[[reno]]"]
 mentions_entity: ["[[lead]]", "[[reno]]"]
-tags: [interaction, reno, atendimento]
+tags: [interaction, atendimento, whatsapp]
 ```
 
 ## Conteudo minimo da entidade

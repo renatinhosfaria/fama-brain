@@ -12,7 +12,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: webhook
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, crm, webhook]
+tags: [runbook, crm, webhook, atendimento]
 related: ["[[reno-hub]]", "[[reno-profile]]", "[[reno-second-brain-governance]]", "[[schema]]"]
 ---
 # Runbook: Reno Operacao CRM E Webhook

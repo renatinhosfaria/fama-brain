@@ -12,7 +12,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: manual
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, perfil, atendimento]
+tags: [runbook, atendimento, comercial, agente]
 related: ["[[reno-hub]]", "[[reno-second-brain-governance]]", "[[schema]]"]
 ---
 # Runbook: Reno Profile

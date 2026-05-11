@@ -12,7 +12,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: manual
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, fama, produtos]
+tags: [runbook, produtos, atendimento, comercial]
 related: ["[[reno-hub]]", "[[_shared/context/fama/produtos]]", "[[reno-credito-imobiliario]]"]
 ---
 # Runbook: Reno Fama Produtos

@@ -12,7 +12,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: manual
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, vault, governanca]
+tags: [runbook, second-brain, governanca, vault]
 related: ["[[reno-hub]]", "[[schema]]", "[[_shared/context/fama-overview]]"]
 ---
 # Runbook: Reno Second Brain Governance

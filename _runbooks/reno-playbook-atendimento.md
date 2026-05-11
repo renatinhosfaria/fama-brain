@@ -12,7 +12,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: manual
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, atendimento, whatsapp]
+tags: [runbook, atendimento, whatsapp, comercial]
 related: ["[[reno-hub]]", "[[reno-profile]]", "[[reno-second-brain-governance]]", "[[_shared/context/credito-imobiliario/index]]", "[[_shared/context/fama/produtos]]"]
 ---
 # Runbook: Reno Playbook De Atendimento

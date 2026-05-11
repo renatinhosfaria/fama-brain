@@ -9,7 +9,7 @@ author_agent: null
 verified_by: null
 verified_at: null
 confidence: null
-tags: [hub, reno, atendimento, second-brain]
+tags: [hub, atendimento, second-brain, operacao]
 related: ["[[reno]]", "[[reno-profile]]", "[[reno-playbook-atendimento]]"]
 ---
 # Hub: Reno

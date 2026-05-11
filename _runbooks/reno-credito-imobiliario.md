@@ -12,7 +12,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: manual
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, credito-imobiliario, financiamento]
+tags: [runbook, credito-imobiliario, atendimento, financiamento]
 related: ["[[reno-hub]]", "[[_shared/context/credito-imobiliario/index]]", "[[reno-playbook-atendimento]]"]
 ---
 # Runbook: Reno Credito Imobiliario
