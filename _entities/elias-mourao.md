@@ -10,7 +10,7 @@ verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["Elias MourÃ£o"]
+aliases: ["Elias Mourão"]
 relationships:
   broker: "[[reno]]"
   interested_in: "[[place-arbi]]"
@@ -20,9 +20,9 @@ external_ids:
 related: ["[[reno-hub]]", "[[place-arbi]]", "[[shopping-park]]"]
 tags: [entity, lead, atendimento, place-arbi]
 ---
-# Entity: Elias MourÃ£o
+# Entity: Elias Mourão
 
-Elias MourÃ£o e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10928 com vinculo a [[place-arbi]], [[shopping-park]]. Status consolidado na origem migrada: Arquivado.
+Elias Mourão e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10928 com vinculo a [[place-arbi]], [[shopping-park]]. Status consolidado na origem migrada: Arquivado.
 
 ## Estado atual
 

@@ -10,7 +10,7 @@ verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["CÃ¡ssio Coimbra"]
+aliases: ["Cássio Coimbra"]
 relationships:
   broker: "[[reno]]"
   interested_in: "[[union-vereda]]"
@@ -20,9 +20,9 @@ external_ids:
 related: ["[[reno-hub]]", "[[union-vereda]]"]
 tags: [entity, lead, atendimento, union-vereda]
 ---
-# Entity: CÃ¡ssio Coimbra
+# Entity: Cássio Coimbra
 
-CÃ¡ssio Coimbra e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10930 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Em Atendimento.
+Cássio Coimbra e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10930 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Em Atendimento.
 
 ## Estado atual
 

@@ -15,9 +15,9 @@ mentions_entity: ["[[flavio]]", "[[reno]]", "[[union-vereda]]"]
 related: ["[[reno-hub]]"]
 tags: [interaction, atendimento, whatsapp, repescagem, union-vereda]
 ---
-# Interaction: FlÃ¡vio atendimento Reno (2026-05-11)
+# Interaction: Flávio atendimento Reno (2026-05-11)
 
-Em 2026-05-11, [[reno]] consolidou no vault o atendimento de FlÃ¡vio, cliente CRM 10933, a partir da origem operacional migrada.
+Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Flávio, cliente CRM 10933, a partir da origem operacional migrada.
 
 ## Acao tomada
 
@@ -25,7 +25,7 @@ Reno conduziu a repescagem ate o step 5, com encerramento respeitoso e porta abe
 
 ## Resultado
 
-Status consolidado na origem migrada: `Arquivado`. FlÃ¡vio e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10933 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
+Status consolidado na origem migrada: `Arquivado`. Flávio e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10933 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
 
 ## Proximo passo registrado na origem
 

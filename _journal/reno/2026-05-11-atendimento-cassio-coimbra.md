@@ -15,9 +15,9 @@ mentions_entity: ["[[cassio-coimbra]]", "[[reno]]", "[[union-vereda]]"]
 related: ["[[reno-hub]]"]
 tags: [interaction, atendimento, whatsapp, union-vereda]
 ---
-# Interaction: CÃ¡ssio Coimbra atendimento Reno (2026-05-11)
+# Interaction: Cássio Coimbra atendimento Reno (2026-05-11)
 
-Em 2026-05-11, [[reno]] consolidou no vault o atendimento de CÃ¡ssio Coimbra, cliente CRM 10930, a partir da origem operacional migrada.
+Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Cássio Coimbra, cliente CRM 10930, a partir da origem operacional migrada.
 
 ## Acao tomada
 
@@ -25,7 +25,7 @@ Reno registrou resposta real do cliente, interrompeu a repescagem quando aplicav
 
 ## Resultado
 
-Status consolidado na origem migrada: `Em Atendimento`. CÃ¡ssio Coimbra e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10930 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Em Atendimento.
+Status consolidado na origem migrada: `Em Atendimento`. Cássio Coimbra e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10930 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Em Atendimento.
 
 ## Proximo passo registrado na origem
 

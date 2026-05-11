@@ -15,9 +15,9 @@ mentions_entity: ["[[elias-mourao]]", "[[reno]]", "[[place-arbi]]", "[[shopping-
 related: ["[[reno-hub]]"]
 tags: [interaction, atendimento, whatsapp, place-arbi]
 ---
-# Interaction: Elias MourÃ£o atendimento Reno (2026-05-11)
+# Interaction: Elias Mourão atendimento Reno (2026-05-11)
 
-Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Elias MourÃ£o, cliente CRM 10928, a partir da origem operacional migrada.
+Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Elias Mourão, cliente CRM 10928, a partir da origem operacional migrada.
 
 ## Acao tomada
 
@@ -25,7 +25,7 @@ Reno conduziu a repescagem ate o step 5, com encerramento respeitoso e porta abe
 
 ## Resultado
 
-Status consolidado na origem migrada: `Arquivado`. Elias MourÃ£o e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10928 com vinculo a [[place-arbi]], [[shopping-park]]. Status consolidado na origem migrada: Arquivado.
+Status consolidado na origem migrada: `Arquivado`. Elias Mourão e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10928 com vinculo a [[place-arbi]], [[shopping-park]]. Status consolidado na origem migrada: Arquivado.
 
 ## Proximo passo registrado na origem
 

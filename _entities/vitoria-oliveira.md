@@ -10,7 +10,7 @@ verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["VitÃ³ria Oliveira"]
+aliases: ["Vitória Oliveira"]
 relationships:
   broker: "[[reno]]"
   interested_in: "[[garden-sul]]"
@@ -20,9 +20,9 @@ external_ids:
 related: ["[[reno-hub]]", "[[garden-sul]]", "[[place-arbi]]", "[[shopping-park]]", "[[jardim-sul]]"]
 tags: [entity, lead, atendimento, garden-sul, arquivado]
 ---
-# Entity: VitÃ³ria Oliveira
+# Entity: Vitória Oliveira
 
-VitÃ³ria Oliveira e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10931 com vinculo a [[garden-sul]], [[place-arbi]], [[shopping-park]], [[jardim-sul]]. Status consolidado na origem migrada: Arquivado.
+Vitória Oliveira e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10931 com vinculo a [[garden-sul]], [[place-arbi]], [[shopping-park]], [[jardim-sul]]. Status consolidado na origem migrada: Arquivado.
 
 ## Estado atual
 

@@ -18,7 +18,7 @@ verified_by: null
 verified_at: null
 confidence: 0.6
 aliases:
-  - João pedro
+  - João Pedro
 external_ids:
   crm_client_id: 10714
   broker_id: 35
@@ -67,7 +67,7 @@ João Pedro é lead em status **Não Respondeu** desde criação (2026-04-10), s
 
 ## Migracao Reno batch 1 - 2026-05-11
 
-JoÃ£o pedro e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10714 com vinculo a [[joao-pedro]]. Status consolidado na origem migrada: Arquivado.
+João Pedro e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10714 com vinculo a [[joao-pedro]]. Status consolidado na origem migrada: Arquivado.
 
 ### Atualizacao operacional
 

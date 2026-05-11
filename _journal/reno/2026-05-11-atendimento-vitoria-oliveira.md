@@ -15,9 +15,9 @@ mentions_entity: ["[[vitoria-oliveira]]", "[[reno]]", "[[garden-sul]]", "[[place
 related: ["[[reno-hub]]"]
 tags: [interaction, atendimento, whatsapp, repescagem, arquivado]
 ---
-# Interaction: VitÃ³ria Oliveira atendimento Reno (2026-05-11)
+# Interaction: Vitória Oliveira atendimento Reno (2026-05-11)
 
-Em 2026-05-11, [[reno]] consolidou no vault o atendimento de VitÃ³ria Oliveira, cliente CRM 10931, a partir da origem operacional migrada.
+Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Vitória Oliveira, cliente CRM 10931, a partir da origem operacional migrada.
 
 ## Acao tomada
 
@@ -25,7 +25,7 @@ Reno conduziu a repescagem ate o step 5, com encerramento respeitoso e porta abe
 
 ## Resultado
 
-Status consolidado na origem migrada: `Arquivado`. VitÃ³ria Oliveira e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10931 com vinculo a [[garden-sul]], [[place-arbi]], [[shopping-park]], [[jardim-sul]]. Status consolidado na origem migrada: Arquivado.
+Status consolidado na origem migrada: `Arquivado`. Vitória Oliveira e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10931 com vinculo a [[garden-sul]], [[place-arbi]], [[shopping-park]], [[jardim-sul]]. Status consolidado na origem migrada: Arquivado.
 
 ## Proximo passo registrado na origem
 

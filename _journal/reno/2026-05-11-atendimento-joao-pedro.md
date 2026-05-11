@@ -15,9 +15,9 @@ mentions_entity: ["[[joao-pedro]]", "[[reno]]"]
 related: ["[[reno-hub]]"]
 tags: [interaction, atendimento, whatsapp, repescagem]
 ---
-# Interaction: JoÃ£o pedro atendimento Reno (2026-05-11)
+# Interaction: João Pedro atendimento Reno (2026-05-11)
 
-Em 2026-05-11, [[reno]] consolidou no vault o atendimento de JoÃ£o pedro, cliente CRM 10714, a partir da origem operacional migrada.
+Em 2026-05-11, [[reno]] consolidou no vault o atendimento de João Pedro, cliente CRM 10714, a partir da origem operacional migrada.
 
 ## Acao tomada
 
@@ -25,7 +25,7 @@ Reno conduziu a repescagem ate o step 5, com encerramento respeitoso e porta abe
 
 ## Resultado
 
-Status consolidado na origem migrada: `Arquivado`. JoÃ£o pedro e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10714 com vinculo a [[joao-pedro]]. Status consolidado na origem migrada: Arquivado.
+Status consolidado na origem migrada: `Arquivado`. João Pedro e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10714 com vinculo a [[joao-pedro]]. Status consolidado na origem migrada: Arquivado.
 
 ## Proximo passo registrado na origem
 

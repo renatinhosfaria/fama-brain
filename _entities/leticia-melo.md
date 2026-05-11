@@ -57,7 +57,7 @@ Letícia Melo é lead do Reno em status **Não Respondeu**, originária de Faceb
 
 ## Migracao Reno batch 1 - 2026-05-11
 
-LetÃ­cia Melo e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10940 com vinculo a [[leticia-melo]], [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
+Letícia Melo e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10940 com vinculo a [[leticia-melo]], [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
 
 ### Atualizacao operacional
 

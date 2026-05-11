@@ -10,7 +10,7 @@ verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["FlÃ¡vio"]
+aliases: ["Flávio"]
 relationships:
   broker: "[[reno]]"
   interested_in: "[[union-vereda]]"
@@ -20,9 +20,9 @@ external_ids:
 related: ["[[reno-hub]]", "[[union-vereda]]"]
 tags: [entity, lead, atendimento, union-vereda]
 ---
-# Entity: FlÃ¡vio
+# Entity: Flávio
 
-FlÃ¡vio e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10933 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
+Flávio e lead/cliente atendido por [[reno]], vinculado ao cliente CRM 10933 com vinculo a [[union-vereda]]. Status consolidado na origem migrada: Arquivado.
 
 ## Estado atual
 
