@@ -26,13 +26,13 @@ Data da verificação: 2026-04-27.
 
 O Reno está registrando no vault, mas ainda não de forma totalmente correta e consistente.
 
-Há evidência positiva de escrita em `_agents/reno/`, inclusive documentos de atendimento em `_agents/reno/atendimentos/` e perfis/interações em `_agents/reno/lead/`. Porém a regra operacional desejada é manter um documento único por atendimento em `_agents/reno/atendimentos/{client_id}-{slug}.md`; essa regra ainda não está 100% cumprida.
+Como evidencia historica, ha registro positivo de escrita em `_agents/reno/`, inclusive documentos de atendimento em `_agents/reno/atendimentos/` e perfis/interacoes em `_agents/reno/lead/`. Na epoca, a regra operacional desejada era manter um documento unico por atendimento em `_agents/reno/atendimentos/{client_id}-{slug}.md`; essa regra ainda nao estava 100% cumprida.
 
 ## Evidências observadas
 
 - `_agents/reno/` contém 97 itens.
-- `_agents/reno/atendimentos/` contém 11 documentos.
-- `_agents/reno/lead/` contém 70 documentos.
+- Evidencia historica: `_agents/reno/atendimentos/` continha 11 documentos.
+- Evidencia historica: `_agents/reno/lead/` continha 70 documentos.
 - O batch `reno_recuperacao_20260427_2min` teve 26 clientes registrados no CRM: 11 enviados e 15 suprimidos.
 - No vault, a tag `reno_recuperacao_20260427_2min` apareceu em 22 notas.
 - Há documentos corretos em `atendimentos` para casos recentes como:
@@ -46,17 +46,19 @@ Há evidência positiva de escrita em `_agents/reno/`, inclusive documentos de a
 ## Diagnóstico operacional
 
 1. Escrita no vault existe e está parcialmente funcional.
-2. O padrão de pasta está inconsistente: parte vai para `_agents/reno/atendimentos/`, parte para `_agents/reno/lead/`.
+2. O padrao legado de pasta estava inconsistente na epoca: parte ia para `_agents/reno/atendimentos/`, parte para `_agents/reno/lead/`.
 3. Há falhas pontuais de integração Obsidian registradas no CRM.
 4. O CRM está mais completo que o vault neste recorte.
 5. Para dizer que está correto, seria necessário reconciliar os faltantes e padronizar futuras escritas no documento único de atendimento.
 
 ## Recomendação
 
-- Reconciliar os clientes processados no batch que não têm documento único em `_agents/reno/atendimentos/`.
-- Manter os perfis em `_agents/reno/lead/` como apoio, mas não como registro principal do atendimento.
-- Endurecer o fluxo do Reno para sempre criar/atualizar `_agents/reno/atendimentos/{client_id}-{slug}.md` após envio, supressão relevante ou avanço de atendimento.
-- Quando a escrita no Obsidian falhar, registrar falha no CRM sem reenviar WhatsApp e incluir o caso em fila de reconciliação.
+Esta era a recomendacao original da epoca, hoje superada como regra ativa de arquitetura. A arquitetura atual usa `_entities/` para perfil consolidado, `_journal/reno/` para eventos datados, `_runbooks/` para procedimentos e `_decisions/` para decisoes.
+
+- Na recomendacao antiga, reconciliar os clientes processados no batch que nao tinham documento unico em `_agents/reno/atendimentos/`.
+- Na recomendacao antiga, manter os perfis em `_agents/reno/lead/` como apoio, mas nao como registro principal do atendimento.
+- Na recomendacao antiga, endurecer o fluxo do Reno para criar/atualizar `_agents/reno/atendimentos/{client_id}-{slug}.md` apos envio, supressao relevante ou avanco de atendimento.
+- Na recomendacao antiga, quando a escrita no Obsidian falhasse, registrar falha no CRM sem reenviar WhatsApp e incluir o caso em fila de reconciliacao.
 
 ## Evidencia original
 

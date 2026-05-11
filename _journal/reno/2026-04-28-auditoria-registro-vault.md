@@ -26,17 +26,17 @@ Data da verificação: 2026-04-28.
 
 O Reno está registrando no vault, mas ainda não está registrando corretamente de forma completa e consistente.
 
-Houve melhora em relação à auditoria anterior: a pasta `_agents/reno/atendimentos/` agora tem mais documentos e há registros recentes em 2026-04-28. Mesmo assim, o CRM ainda mostra atendimentos/notas relevantes sem documento único correspondente em `_agents/reno/atendimentos/{client_id}-{slug}.md`.
+Como evidencia historica, houve melhora em relacao a auditoria anterior: a pasta legada `_agents/reno/atendimentos/` tinha mais documentos e havia registros recentes em 2026-04-28. Mesmo assim, o CRM ainda mostrava atendimentos/notas relevantes sem documento unico correspondente no padrao antigo `_agents/reno/atendimentos/{client_id}-{slug}.md`.
 
 ## Evidências desta verificação
 
 - `_agents/reno/` listou 129 itens.
-- `_agents/reno/atendimentos/` listou 33 itens, sendo 32 documentos de cliente e 1 documento de lote.
+- Evidencia historica: `_agents/reno/atendimentos/` listou 33 itens, sendo 32 documentos de cliente e 1 documento de lote.
 - No CRM, há 99 clientes com `broker_id=35`.
 - Nos últimos 48h, 44 clientes Reno tiveram nota relevante no CRM envolvendo Reno/WhatsApp/primeiro contato/mensagem/resposta/agendamento.
-- Comparando esses 44 clientes com os documentos de `_agents/reno/atendimentos/`, 12 clientes com atividade recente no CRM não tinham documento de atendimento correspondente pelo `client_id`.
+- Como evidencia historica, comparando esses 44 clientes com os documentos de `_agents/reno/atendimentos/`, 12 clientes com atividade recente no CRM nao tinham documento de atendimento correspondente pelo `client_id`.
 
-## Clientes recentes sem documento em `_agents/reno/atendimentos/`
+## Clientes recentes sem documento no caminho legado `_agents/reno/atendimentos/`
 
 - 10570 — +553496511323 — Arquivado — supressão por possível número errado/contato indevido.
 - 10660 — Giovanna — Não Respondeu — primeiro contato enviado no CRM.
@@ -54,17 +54,19 @@ Houve melhora em relação à auditoria anterior: a pasta `_agents/reno/atendime
 ## Diagnóstico
 
 1. A escrita no vault está funcional, mas parcial.
-2. A regra de documento único por atendimento em `_agents/reno/atendimentos/{client_id}-{slug}.md` ainda não está garantida para todos os casos.
+2. Na epoca, a regra antiga de documento unico por atendimento em `_agents/reno/atendimentos/{client_id}-{slug}.md` ainda nao estava garantida para todos os casos.
 3. O CRM continua sendo a fonte mais completa neste momento.
 4. Casos de envio bem-sucedido e até conversa em andamento ainda podem ficar sem documento no vault, especialmente o caso 10986 — Andreia Carvalho.
 5. Há evidência explícita no CRM de falhas de escrita no Obsidian em execuções anteriores.
 
 ## Recomendação
 
-- Reconciliar os 12 clientes listados acima, criando ou atualizando documentos únicos em `_agents/reno/atendimentos/`.
-- Priorizar os casos com envio/conversa real: 10986, 10660, 10982 e 10990.
-- Manter `_agents/reno/lead/` como apoio, mas não como substituto do documento principal de atendimento.
-- Corrigir o fluxo para que cada resposta/avanço relevante do Reno atualize CRM e vault de forma determinística, sem depender apenas do modelo decidir chamar a ferramenta.
+Esta era a recomendacao original da epoca, hoje superada como regra ativa de arquitetura. A arquitetura atual usa `_entities/` para perfil consolidado, `_journal/reno/` para eventos datados, `_runbooks/` para procedimentos e `_decisions/` para decisoes.
+
+- Na recomendacao antiga, reconciliar os 12 clientes listados acima, criando ou atualizando documentos unicos em `_agents/reno/atendimentos/`.
+- Na recomendacao antiga, priorizar os casos com envio/conversa real: 10986, 10660, 10982 e 10990.
+- Na recomendacao antiga, manter `_agents/reno/lead/` como apoio, mas nao como substituto do documento principal de atendimento.
+- Na recomendacao antiga, corrigir o fluxo para que cada resposta/avanco relevante do Reno atualizasse CRM e vault de forma deterministica, sem depender apenas do modelo decidir chamar a ferramenta.
 
 ## Evidencia original
 
