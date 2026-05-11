@@ -9,7 +9,7 @@ author_agent: null
 verified_by: null
 verified_at: null
 confidence: null
-tags: [meta, migration, reno, vault]
+tags: [meta, migration, vault, second-brain]
 related: ["[[schema]]", "[[reno]]"]
 ---
 # Migração Reno Second Brain — 2026-05-11

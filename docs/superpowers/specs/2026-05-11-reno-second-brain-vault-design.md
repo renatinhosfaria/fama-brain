@@ -3,7 +3,7 @@ type: design
 owner: renato
 created: 2026-05-11
 updated: 2026-05-11
-tags: [design, reno, vault, second-brain]
+tags: [design, vault, second-brain, architecture]
 ---
 # Design: FAMA-BRAIN como segundo cérebro do Reno
 
@@ -92,7 +92,7 @@ type: entity
 owner: renato
 created: 2026-05-11
 updated: 2026-05-11
-tags: [lead, reno]
+tags: [lead, atendimento]
 ---
 ```
 

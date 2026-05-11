@@ -7,9 +7,10 @@ subtype: person
 created: '2026-05-02'
 updated: '2026-05-11'
 tags:
+  - entity
   - broker
-  - ia-agent
-  - reno
+  - atendimento
+  - ia
 schema_version: 1
 status: active
 provenance: agent-generated
