@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Aline Oliveira
 subtype: person
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -63,3 +63,13 @@ Aline Oliveira é cliente do Reno em status **Em Atendimento**, **segundo lead c
 - Se morar: caminho Byanca Guerra (planta + valor + visita)
 - Se investir: tese valorização Garden Sul (entrega set/2028)
 - **Junto com Byanca, valida que Garden Sul tem público real** — anomalia 0% engajamento dos lotes 1–6 era amostra pequena, não problema estrutural de campanha
+
+## Migracao Reno batch 5 - 2026-05-11
+
+Resumo: Cliente novo do Reno, originado de Facebook Ads, com interesse vinculado ao Garden Sul. Inbound do WhatsApp informou que preencheu formulario e gostaria de saber mais sobre a Fama.
+
+Status na origem migrada: Em Atendimento. Origem operacional registrada: Facebook Ads / FamaChat. Vinculos identificados: [[garden-sul]], [[jardim-sul]].
+
+Proximo passo: Conduzir a resposta comercial pelo atendimento normal do Reno, retomando o contexto do Garden Sul/Jardim Sul de forma curta e humana, sem prometer condicoes ou credito antes de diagnostico.
+
+Link operacional: [[2026-05-11-atendimento-aline-oliveira]].

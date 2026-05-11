@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Byanca Guerra
 subtype: person
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -79,3 +79,13 @@ Byanca Guerra é cliente do Reno em status **Em Atendimento** com **engajamento 
 - Trabalhar fluxo entrada R$10k + parcelas obra + financiamento saldo
 - Validar memorial descritivo Garden Sul (faltando informação de revestimentos)
 - **Insight estratégico:** Garden Sul não era 100% inviável — quebra a percepção anterior. Vale revisar campanha mais sutilmente, não cortar.
+
+## Migracao Reno batch 5 - 2026-05-11
+
+Resumo: Cliente esta em Em Atendimento e avaliando o Garden Sul, com interesse concentrado na planta de 56,32m2. Ja recebeu fotos/plantas, perguntou sobre acabamento, recebeu leitura inicial de valor/condicao e informou entrada aproximada de R$ 10.000,00 para avaliar viabilidade.
+
+Status na origem migrada: Em Atendimento. Origem operacional registrada: Facebook Ads. Vinculos identificados: [[garden-sul]], [[jardim-sul]].
+
+Proximo passo: Na conducao comercial normal, reconstruir o contexto imediato antes de responder/continuar. Usar a entrada aproximada de R$ 10.000,00 como dado inicial de viabilidade, sem prometer aprovacao.
+
+Link operacional: [[2026-05-11-atendimento-byanca-guerra]].

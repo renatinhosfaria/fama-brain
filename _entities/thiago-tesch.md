@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Thiago Tesch
 subtype: person
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - cliente
   - agendamento
@@ -83,3 +83,13 @@ Thiago Tesch é cliente do Reno em status **Agendamento** com **visita confirmad
 - Validar enquadramento Union Vista MCMV antes da visita (mesmo gatilho do [[marcio-oliveira-juliao]])
 - Trazer FGTS (R$2k) + entrada (R$3k) na conta de viabilidade
 - **Conversão potencial mais limpa do funil canônico** (perfil financeiro coerente, sem objeções, agendamento confirmado)
+
+## Migracao Reno batch 5 - 2026-05-11
+
+Resumo: Cliente esta em Agendamento no FamaChat apos atendimento ativo pelo Reno. A visita/analise presencial foi remarcada e esta registrada no CRM como appointmentid 244 para sexta-feira, 2026-05-15, as 15h30, na Fama Negocios Imobiliarios.
+
+Status na origem migrada: Agendamento. Origem operacional registrada: Facebook Ads. Vinculos identificados: [[union-vista]].
+
+Proximo passo: Manter appointmentid 244 ativo para sexta 15/05/2026 as 15h30 e seguir a regua de Agendamento. No presencial, conduzir analise de viabilidade com foco em subsidio/MCMV, FGTS, entrada parcelada e opcao que caiba na parcela confortavel informada, sem prometer aprovacao.
+
+Link operacional: [[2026-05-11-atendimento-thiago-tesch]].

@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Mauro Marques
 subtype: person
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -74,3 +74,13 @@ Mauro Marques é cliente do Reno em status **Em Atendimento**, mas **não há fi
 - Oferecer avisar caso surja loteamento Fama no perfil — não há agora
 - **Insight estratégico:** revisar criativo Facebook Ads do Union Vista (atraindo perfil errado) E avaliar se faz sentido captar loteamento como produto
 - Adicionar na lista de gaps de portfólio: **loteamento + Planalto**
+
+## Migracao Reno batch 5 - 2026-05-11
+
+Resumo: Mauro respondeu pelo WhatsApp apos o primeiro contato e a repescagem do Reno. O atendimento esta em Em Atendimento; a repescagem permanece interrompida com enabled=false, next_run_at=null e stopped_reason=client_replied. Nao ha resgate ativo.
+
+Status na origem migrada: Em Atendimento. Origem operacional registrada: Facebook Ads. Vinculos identificados: [[union-vista]].
+
+Proximo passo: Na resposta comercial normal fora desta rotina silenciosa, acolher a preferencia do cliente sem pressionar: reconhecer que, se ele esta buscando loteamento fechado/terreno, o Union Vista talvez nao seja o melhor encaixe. Oferecer ajuda para filtrar algo nesse perfil ou para avisar caso surja opcao compativel na regiao do Planalto.
+
+Link operacional: [[2026-05-11-atendimento-mauro-marques]].
