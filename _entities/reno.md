@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Reno
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-06'
+updated: '2026-05-11'
 tags:
   - broker
   - ia-agent
@@ -63,14 +63,14 @@ clients:
   - '[[byanca-guerra]]'
   - '[[aline-oliveira]]'
 related:
-  - '[[_agents/reno/profile|profile-agente]]'
+  - '[[reno-profile]]'
   - '[[_hubs/index|Hubs]]'
 ---
 ## Resumo
 
 Reno é o **agente de IA principal de vendas** da Fama Negócios Imobiliários. Atua como broker autônomo (broker_id 35, role Executivo, departamento Vendas) operando WhatsApp e CRM. Conduz primeiro contato, repescagem (steps 1–5), resgate (steps 1–5), apresentação de empreendimentos, agendamento de visitas e qualificação consultiva de viabilidade.
 
-Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfil operacional do agente vive em [[_agents/reno/profile|_agents/reno/profile]].
+Esta nota é o **perfil canônico institucional** do Reno como entidade. O perfil operacional do agente vive em [[reno-profile]] (`_runbooks/reno-profile.md`).
 
 ## Identificação
 
