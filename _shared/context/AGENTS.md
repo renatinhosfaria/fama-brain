@@ -15,7 +15,7 @@ Vínculos: [[reno]], [[fama-overview]], [[schema]].
 
 O namespace `_agents/` foi removido na migracao Reno-first de 2026-05-11. Nao ha mais ownership ativo para `_agents/*/decisions.md`; futuras decisoes devem ser registradas como notas atomicas em `_decisions/`.
 
-> Nota histórica: até 2026-05-02 havia uma regra `_agents/*/decisions.md => owner-only` que sobrepunha o ownership territorial e quebrava `append_decision(agent='<dono>')` (FAM-24). A regra foi removida — `append_decision` continua sendo a única forma legítima de escrever em `decisions.md`.
+> Nota histórica: até 2026-05-02 havia uma regra `_agents/*/decisions.md => owner-only` que sobrepunha o ownership territorial e quebrava `append_decision(agent='<dono>')` (FAM-24). Esse fluxo pertencia ao namespace legado e não define a escrita atual de decisões.
 
 ```
 # Ownership map — vault Obsidian
