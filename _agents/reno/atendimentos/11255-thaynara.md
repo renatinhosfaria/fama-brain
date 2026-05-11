@@ -1,14 +1,8 @@
 ---
 type: entity-profile
 owner: reno
-entity_type: atendimento
-entity_name: Thaynara
-client_id: 11255
-broker_id: 35
-status_crm: Não Respondeu
-source: Facebook Ads
 created: '2026-05-07'
-updated: '2026-05-10'
+updated: '2026-05-11'
 tags:
   - reno
   - atendimento
@@ -20,40 +14,48 @@ tags:
   - step-2
   - step-3
   - step-4
+  - step-5
   - union-vereda
   - jaragua
+  - arquivado
+entity_type: atendimento
+entity_name: Thaynara
+client_id: 11255
+broker_id: 35
+status_crm: Arquivado
+source: Facebook Ads
 ---
 # Atendimento — Thaynara
 
 Vínculos: [[reno]], [[playbook-atendimento]], [[union-vereda]], [[credito-imobiliario]], [[operacao-crm-webhook]], [[fama-produtos]].
 
 ## Resumo atual
-Repescagem step 4 enviada em 2026-05-10 via WhatsApp. A abordagem saiu da leitura de intenção (morar ou investir) e avançou para um convite consultivo direto: alinhar uma conversa rápida no escritório na segunda para ver o caminho de compra com calma. O CRM permaneceu em `Não Respondeu` e o próximo follow-up ficou agendado para 2026-05-11 às 09:10.
+Repescagem step 5 enviada em 2026-05-11 via WhatsApp, com abertura neutra por causa da grafia estilizada do nome. O bridge local validou o envio e a régua foi encerrada com `step=5`, `enabled=false`, `stopped_reason=max_steps`. O CRM foi arquivado defensivamente após confirmar que o status ainda estava em `Não Respondeu` no momento do encerramento.
 
 ## Dados operacionais
 - Cliente ID: 11255
 - Broker ID: 35
-- Status CRM: Não Respondeu
+- Status CRM: Arquivado
 - Origem: Facebook Ads
 - Telefone/WhatsApp: JID validado no envio via bridge local
-- Última interação relevante: repescagem step 4 enviada em 2026-05-10
-- Nota CRM automática: 17458
+- Última interação relevante: repescagem step 5 enviada e branch encerrada em 2026-05-11
+- Nota CRM automática: 17466 / 17467
 
 ## Contexto comercial
-Interesse originado por Facebook Ads no empreendimento Union Vereda, bairro Jaraguá, Uberlândia. O primeiro contato apresentou a Fama e o contexto do imóvel; as repescagens anteriores foram afinando o recorte da conversa: nome, viabilidade prática, intenção de uso e, agora, convite para um avanço consultivo presencial no escritório.
+Interesse originado por Facebook Ads no empreendimento Union Vereda, bairro Jaraguá, Uberlândia. A régua foi conduzida com abordagem progressiva até o step 5, mantendo o atendimento neutro por causa da grafia estilizada do nome. Não houve resposta real antes do encerramento automático da sequência.
 
 ## Diagnóstico
 ### Necessidade
-Ainda em confirmação.
+Ainda não consolidada.
 
 ### Momento
-Ainda em confirmação.
+Não consolidado por falta de resposta.
 
 ### Decisão
-Ainda em confirmação.
+Não consolidada.
 
 ### Viabilidade
-Ainda em confirmação. Os steps anteriores já trouxeram recortes de entrada, parcela, prazo de entrega, intenção de uso e agora abertura para conversa presencial, mas ainda não houve resposta para aprofundar.
+Não consolidada. A sequência foi encerrada sem retorno do cliente, após cinco tentativas de repescagem.
 
 ## Histórico curado de interações
 ### 2026-05-07 — Primeiro contato enviado
@@ -76,16 +78,24 @@ Reno enviou o step 4 com foco em convite consultivo direto: `Oi, tudo bem? Aqui 
 Pra eu te mostrar o cenário mais real do Union Vereda e não te fazer perder tempo, faz sentido a gente deixar uma conversa rápida no escritório na segunda pra ver o melhor caminho de compra?`
 O bridge local validou o envio com `validated=true` / `validationMethod=onWhatsApp`. A ferramenta persistiu o envio e a nota CRM automática `17458`.
 
+### 2026-05-11 — Repescagem step 5 enviada e régua encerrada
+Reno enviou o step 5 com abertura neutra, sem usar o nome estilizado, para preservar o cuidado de atendimento:
+`Oi, tudo bem? Aqui é o Reno, da Fama. Vi seu interesse no Union Vereda. Só pra eu te atender certinho, como posso te chamar?`
+O bridge local validou o envio com `validated=true` / `validationMethod=onWhatsApp`.
+A ferramenta persistiu o envio com a nota CRM `17466`.
+Na sequência, a branch foi normalizada para `step=5`, `enabled=false`, `next_run_at=null`, `stopped_reason=max_steps`.
+Como o cliente ainda estava exatamente em `Não Respondeu` no momento da checagem defensiva, o CRM foi atualizado para `Arquivado` e a nota de encerramento `17467` foi registrada.
+
 ## Objeções e travas
-- Cadastro segue com grafia estilizada e não validada; o atendimento continua neutro até a cliente confirmar como prefere ser chamada.
-- Ainda não houve resposta real para consolidar necessidade/viabilidade.
+- Cadastro segue com grafia estilizada e não validada; o atendimento foi mantido neutro até o encerramento.
+- Não houve resposta real antes do fim da régua.
 
 ## Próximo passo
-Aguardar a resposta da cliente. Se não houver retorno até o próximo horário da régua, o step 5 deverá encerrar o fluxo com porta aberta.
+Atendimento encerrado por `max_steps`. Se houver novo contato do cliente, reabrir manualmente a partir da resposta real.
 
 ## Observações operacionais
-- Cadastro veio com grafia estilizada do nome; o primeiro nome humano inferível continuou sendo tratado como Thaynara.
+- Grafia estilizada do nome tratada com abertura neutra; sem uso de nome confirmado.
 - WhatsApp enviado via bridge local com `validated=true` e `validationMethod=onWhatsApp`.
-- Branch persistida no CRM após o envio: `step=4`, `enabled=true`, `stopped_reason=null`, `next_run_at=2026-05-11T09:10:00-03:00`.
-- Bridge local validado no horário da execução.
-- Ref.: `evt_3423` / `3423_1778179273202`.
+- Branch final persistida no CRM: `step=5`, `enabled=false`, `stopped_reason=max_steps`, `next_run_at=null`.
+- CRM arquivado defensivamente após confirmar status anterior em `Não Respondeu`.
+- Ref.: `evt_3423` / `3423_1778179273202` / notas CRM `17466` e `17467`.
