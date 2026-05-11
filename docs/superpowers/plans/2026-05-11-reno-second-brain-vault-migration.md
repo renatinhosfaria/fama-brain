@@ -254,7 +254,8 @@ with:
 # Territórios primários — Reno (corretor, OpenClaw)
 _journal/reno/**                         => reno (primary)
 _runbooks/reno-*.md                      => reno (primary)
-_decisions/*reno*.md                     => reno (primary)
+_decisions/reno-*.md                     => reno (primary)
+_decisions/*-reno-*.md                   => reno (primary)
 
 # Entidades são globais; Reno pode atualizar entidades de atendimento quando o fato vier da operação do Reno.
 _entities/**                             => renato (primary)

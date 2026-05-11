@@ -32,7 +32,8 @@ _shared/context/credito-imobiliario/**   => renato (primary)
 # Territórios primários — Reno (corretor, OpenClaw)
 _journal/reno/**                         => reno (primary)
 _runbooks/reno-*.md                      => reno (primary)
-_decisions/*reno*.md                     => reno (primary)
+_decisions/reno-*.md                     => reno (primary)
+_decisions/*-reno-*.md                   => reno (primary)
 
 # Entidades globais — nesta fase Renato permanece dono primário; permissões futuras do Reno dependem de regra/tooling posterior.
 _entities/**                             => renato (primary)
