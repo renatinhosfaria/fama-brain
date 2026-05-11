@@ -58,13 +58,10 @@ Porem, a implementacao da epoca ainda nao respeitava totalmente a governanca ent
 
 Essa regra e historica e esta superada. Na arquitetura atual, novos registros de atendimento devem usar `_entities/` e `_journal/reno/`; procedimentos duraveis ficam em `_runbooks/`; decisoes ficam em `_decisions/`.
 
-Na prática, a automação recente está criando muitos documentos em:
+Na fonte original, este trecho deveria listar os destinos observados, mas a lista nao foi preenchida.
+Por isso, esta nota preserva a conclusao como evidencia historica sem reconstruir caminhos nao registrados.
 
-
-E pelo menos um caso em:
-
-
-Isso significa que a escrita está funcionando, mas o destino está parcialmente errado e ainda há risco de duplicidade ou fragmentação de histórico.
+Isso significa que a escrita esta funcionando, mas o destino esta parcialmente errado; a lista de destinos estava ausente na origem migrada, e ainda ha risco de duplicidade ou fragmentacao de historico.
 
 ## Casos críticos ainda pendentes da auditoria anterior
 
