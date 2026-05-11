@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Augusto Santana
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -78,3 +78,14 @@ Augusto Santana é cliente do Reno em status **Visita** (cadastro CRM 11046, o c
 - Aguardar retorno do cliente pra propor remarcação objetiva
 - Status preservado em Visita (canônico 11046) pra não regredir automação
 - **Operacional:** consolidar 4 cadastros CRM em 1 (limpar 10246, 10395, 10954) — pedir Renato
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Augusto Santana teve o atendimento CRM 10954 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Agendamento.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10954.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-augusto-santana]].
+- Proximo passo: Receber o cliente na Fama, apresentar opções compatíveis com acesso ao Tibery e validar o melhor encaixe de financiamento.

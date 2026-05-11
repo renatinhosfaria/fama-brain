@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Jonathan Barbosa
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -69,3 +69,14 @@ Jonathan Barbosa é cliente do Reno em status **Em Atendimento** com perfil **du
 - Reno deve apresentar Union Vereda explicando proximidade Jaraguá ↔ Chácara Tubalina
 - Validar se Jaraguá atende critério de proximidade ou se cliente prefere bairros mais próximos do trabalho
 - Cliente tem perfil dual morar+investir → Reno pode enquadrar com argumentos de valorização (similar [[eliseu]])
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Jonathan Barbosa teve o atendimento CRM 10955 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Não Respondeu.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10955.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-jonathan-barbosa]].
+- Proximo passo: Sem nova ação automática registrada; se houver resposta futura, reabrir pelo fluxo normal do Reno e validar o contexto atual no CRM.

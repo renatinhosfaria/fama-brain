@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Eliseu
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -64,3 +64,14 @@ Eliseu é cliente do Reno em status **Em Atendimento** com perfil **investidor**
 - Aguardar resposta ao step 4 do resgate
 - Se responder: preparar simulação investidor com fluxo + projeção de valorização Union Vista
 - Ainda sem visita marcada — seria a primeira conversão de tese investidora no funil
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Eliseu teve o atendimento CRM 10972 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Em Atendimento.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10972.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-eliseu]].
+- Proximo passo: Não enviar novo Resgate enquanto a duplicidade/ownership não for resolvida. Aguardar revisão manual; se o contato for confirmado como único/adequado ao Reno, reavaliar a régua a partir do estado operacional vigente.

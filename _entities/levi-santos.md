@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Levi Santos
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -69,3 +69,14 @@ Levi Santos é cliente do Reno em status **Em Atendimento** com interesse confir
 - Após desbloqueio: enviar comparativo planta 57/58m² vs térrea 82,2m²
 - Validar enquadramento MCMV (Reno mencionou "documentação grátis MCMV" no primeiro contato)
 - Conduzir para visita Fama
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Levi Santos teve o atendimento CRM 10951 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Em Atendimento.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10951.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-levi-santos]].
+- Proximo passo: Aguardar resposta do cliente. Se ele aceitar o comparativo, continuar atendimento normal com `fama-reno-whatsapp-qualification`, mandar resumo curto comparando 57/58m² versus térrea maior e conduzir para visita presencial se houver sinal positivo. Se perman...

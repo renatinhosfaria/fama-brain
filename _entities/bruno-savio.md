@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Bruno Sávio
 subtype: person
 created: '2026-05-01'
-updated: '2026-05-01'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -22,12 +22,13 @@ aliases:
   - B. Sávio
 external_ids:
   crm_client_id: 10971
+  broker_id: 35
 interactions:
   - '[[10971-bruno-savio]]'
 mentions_property:
   - '[[union-vista]]'
   - '[[grand-ville]]'
-broker: null
+broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
 title: 'Entity: Bruno Sávio (lead — interesse Union Vista/Grand Ville)'
@@ -70,3 +71,14 @@ Cada bullet linka a uma nota de interação isolada com seu próprio chunk:
 
 - Status `agent-generated` + `verified_by: null` — agente não pode citar este perfil como ground truth em decisão crítica até Renato Faria ou Edilene verificarem.
 - Quando o MCP `obsidian` for atualizado para aceitar `type: entity` (schema v1), trocar `type: entity-profile` → `type: entity` aqui.
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Bruno Sávio teve o atendimento CRM 10971 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Arquivado.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10971.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-bruno-savio]].
+- Proximo passo: Sem nova ação automática de repescagem. Se o cliente responder futuramente, parar qualquer régua automática e retomar por atendimento consultivo normal do Reno, reavaliando status e contexto antes de avançar.

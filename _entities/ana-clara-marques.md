@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Ana Clara Marques
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - lead
@@ -55,3 +55,14 @@ Ana Clara Marques é lead do Reno em status **Não Respondeu**, originária de S
 ## Próximas ações sugeridas
 
 - Próximo step (4) previsto pra 2026-05-01T19:10 com convite consultivo direto, sem repetir morar/investir.
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Ana Clara Marques teve o atendimento CRM 10943 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Arquivado.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10943.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-ana-clara-marques]].
+- Proximo passo: Sem nova ação automática de repescagem. Caso a cliente responda futuramente, reabrir atendimento pelo fluxo normal do Reno, validar o contexto atual, atualizar status conforme regra operacional e retomar de forma consultiva sem tratar como nova repescagem.

@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Márcio Oliveira Julião
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -74,3 +74,14 @@ Márcio Oliveira Julião é cliente do Reno em status **Em Atendimento** com **d
 - Se sim: simulação MCMV + entrada R$5k → caminho realista
 - Se não: oferecer alternativa MCMV-friendly se houver no portfolio Fama
 - Investigar comprovação de renda formal antes de prometer enquadramento
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Márcio Oliveira Julião teve o atendimento CRM 10942 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Em Atendimento.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10942.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-marcio-oliveira-juliao]].
+- Proximo passo: Enviar ao cliente a planta localizada e responder: Union Vista tem possibilidade de financiamento pelo Minha Casa Minha Vida conforme unidade/enquadramento; entrega prevista Jul/2027; plantas principais de 56,9m² e 58,4m² com 2 quartos, 1 suíte, varanda gou...

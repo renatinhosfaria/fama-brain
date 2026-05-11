@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Alexsander Pereira
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-05-11'
 tags:
   - cliente
   - em-atendimento
@@ -67,3 +67,14 @@ Alexsander Pereira é cliente do Reno em status **Em Atendimento** (mas comporta
 - Aguardar step 4 (próximo 2026-05-03 18:24)
 - Se silêncio continuar: status pode regredir para Não Respondeu / Arquivado
 - **Operacional:** revisar critério de "Em Atendimento" — Alexsander parece classificado por engano
+
+## Migracao Reno batch 2 - 2026-05-11
+
+Alexsander Pereira teve o atendimento CRM 10948 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Status consolidado na origem migrada: Em Atendimento.
+
+### Atualizacao operacional
+
+- CRM client id confirmado na origem migrada: 10948.
+- Broker responsavel confirmado: [[reno]] (`broker_id=35`).
+- Atendimento migrado para o journal [[2026-05-11-atendimento-alexsander-pereira]].
+- Proximo passo: Manter o Resgate pausado até revisão manual da ownership dos cadastros duplicados e confirmação de qual registro deve seguir ativo. Enquanto isso, não enviar nova mensagem. Se o CRM for saneado e houver um novo outbound normal do Reno em atendimento regular...
