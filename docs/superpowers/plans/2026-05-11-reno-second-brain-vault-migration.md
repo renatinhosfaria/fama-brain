@@ -28,7 +28,7 @@ Create:
 - `_runbooks/reno-credito-imobiliario.md` — Reno-specific credit lens from `_agents/reno/context/credito-imobiliario.md`.
 - `_runbooks/reno-fama-produtos.md` — Reno-specific product lens from `_agents/reno/context/fama-produtos.md`.
 - `_journal/reno/*.md` — migrated operational journals, auditorias, dated planos, and atendimento events.
-- `_decisions/2026-*-reno-*.md` — atomic Reno decision notes split from `_agents/reno/decisions.md`.
+- `_decisions/YYYY-MM-DD-reno-slug.md` — atomic Reno decision notes split from `_agents/reno/decisions.md`.
 - New `_entities/*.md` only when an atendimento source has no safe existing canonical entity.
 
 Modify:
@@ -129,7 +129,7 @@ author_agent: null
 verified_by: null
 verified_at: null
 confidence: null
-tags: [meta, migration, reno, vault]
+tags: [meta, migration, vault]
 related: ["[[schema]]", "[[reno]]"]
 ---
 # Migração Reno Second Brain — 2026-05-11
@@ -365,7 +365,7 @@ author_agent: null
 verified_by: null
 verified_at: null
 confidence: null
-tags: [hub, reno, atendimento, second-brain]
+tags: [hub, atendimento, second-brain]
 related: ["[[reno]]", "[[reno-profile]]", "[[reno-playbook-atendimento]]"]
 ---
 # Hub: Reno
@@ -422,7 +422,7 @@ confidence: null
 procedure_owner: "[[reno]]"
 trigger: manual
 mentions_entity: ["[[reno]]"]
-tags: [runbook, reno, atendimento]
+tags: [runbook, atendimento]
 related: ["[[reno-hub]]"]
 ---
 ```
@@ -671,7 +671,7 @@ author_agent: null
 verified_by: null
 verified_at: null
 confidence: null
-tags: [meta, migration, reno, atendimentos]
+tags: [meta, migration, atendimentos]
 related: ["[[migration-2026-05-11-reno-second-brain]]", "[[reno-hub]]"]
 ---
 # Manifesto de migração dos atendimentos do Reno
@@ -753,7 +753,7 @@ external_ids:
   crm_client_ids: [11266]
   crm_client_id_canonical: 11266
 related: ["[[reno-hub]]", "[[garden-sul]]", "[[jardim-sul]]"]
-tags: [entity, lead, reno, garden-sul]
+tags: [entity, lead, garden-sul]
 ---
 # Entity: Marcia Maria
 
@@ -799,7 +799,7 @@ channel: whatsapp
 participants: ["[[marcia-maria]]", "[[reno]]"]
 mentions_entity: ["[[marcia-maria]]", "[[garden-sul]]", "[[jardim-sul]]"]
 related: ["[[reno-hub]]"]
-tags: [interaction, reno, atendimento, repescagem]
+tags: [interaction, atendimento, repescagem]
 ---
 # Interaction: Marcia Maria atendimento Garden Sul (2026-05-10)
 
@@ -979,7 +979,7 @@ Expected: commit succeeds.
 
 - [ ] **Step 1: Migrate auditorias**
 
-Move each `_agents/reno/auditorias/*.md` into `_journal/reno/` with the same basename unless the basename lacks a date. Preserve the date prefix. Use `type: journal`, `tags: [journal, reno, auditoria]`, and `mentions_entity: ["[[reno]]"]`.
+Move each `_agents/reno/auditorias/*.md` into `_journal/reno/` with the same basename unless the basename lacks a date. Preserve the date prefix. Use `type: journal`, `tags: [journal, auditoria]`, and `mentions_entity: ["[[reno]]"]`.
 
 Expected destinations include:
 

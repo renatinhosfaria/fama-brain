@@ -54,3 +54,17 @@ O responsável pela governança enforça ambos os lados quando o autor só preen
 ## Imutabilidade
 
 Decisões nunca são editadas materialmente. Erro factual → criar decisão nova com `supersedes`. Nenhum agente altera conteúdo de decisão de outro agente.
+
+## Reno
+
+- [[2026-05-11-reno-second-brain-vault]]
+- [[2026-05-02-reno-repescagem-arquivamento-automatico-step-5]]
+- [[2026-05-02-reno-confirmar-nome-estranho-famachat]]
+- [[2026-04-30-reno-repescagem-muda-angulo-cta]]
+- [[2026-04-29-reno-skill-repescagem-somente-envio-ativo]]
+- [[2026-04-29-reno-status-em-atendimento-para-repescagem]]
+- [[2026-04-29-reno-worker-inbound-whatsapp-removido]]
+- [[2026-04-28-reno-guardrail-whatsapp-nono-digito]]
+- [[2026-04-28-reno-guardrail-whatsapp-tentar-envio]]
+- [[2026-04-26-reno-persistencia-operacional-atendimento]]
+- [[2026-04-24-reno-obsidian-segundo-cerebro]]
