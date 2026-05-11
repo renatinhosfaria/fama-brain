@@ -29,15 +29,15 @@ Snapshot tirado em 2026-04-30 antes da migração FAM-16 (schema legado → sche
 |-------------|-------|-----------------|----------------|
 | `entity-profile` | 89 | `entity` (após dedup) ou `interaction` (~60 que são journal disfarçado em `_agents/reno/atendimentos/`) | `_entities/` ou `_journal/` |
 | `journal` | 32 | `journal` ou `interaction` | `_journal/` |
-| `context` | 30 | `concept` ou `reference` | `_curated/` |
-| `shared-context` | 6 | `concept` ou `reference` | `_curated/` ou `_meta/` (já migrados) |
+| `context` | 30 | `concept` ou `reference` | `_shared/context/` |
+| `shared-context` | 6 | `concept` ou `reference` | `_shared/context/` ou `_meta/` (já migrados) |
 | `agent-decisions` | 4 | `decision` (decompor logs em N notas atômicas) | `_decisions/` |
 | `agent-readme` | 3 | `hub` | `_hubs/` |
 | `agent-profile` | 3 | `runbook` | `_runbooks/` |
 | `project-readme` | 3 | `project` | `_projects/active/` ou `_projects/archived/` |
 | `moc` | 3 | `hub` | `_hubs/` |
 | `agents-map` | 1 | `hub` | `_hubs/agents-map.md` |
-| (sem frontmatter) | 1 (`metodologia-negocio.md` raiz) | a inspecionar; provavelmente `concept` | `_curated/` |
+| (sem frontmatter) | 1 (`metodologia-negocio.md` raiz) | a inspecionar; provavelmente `concept` | `_shared/context/` |
 
 ## Distribuição por path atual
 
@@ -53,7 +53,7 @@ Grupo a ser dissolvido — `_agents/{agente}/` não existe no schema v1. Mapeame
 | `_agents/reno/decisions/2026-04-30-followups-independentes.md` | 1 | `_decisions/2026-04-30-reno-followups-independentes.md` |
 | `_agents/reno/atendimentos/*.md` | 99 | inspeção 1-a-1: entity-profile real → `_entities/` (com merge de duplicatas), journal → `_journal/reno/` |
 | `_agents/reno/auditorias/*.md` | 16 | `_journal/reno/` (todos são auditorias diárias, type v1 = `journal`) |
-| `_agents/reno/context/*.md` | 5 | `_curated/` (5 contextos institucionais: credito-imobiliario, fama-produtos, operacao-crm-webhook, playbook-atendimento, second-brain-governance) |
+| `_agents/reno/context/*.md` | 5 | `_shared/context/` ou manter em `_agents/reno/context/` conforme ownership |
 | `_agents/reno/journal/*.md` | 6 | `_journal/reno/` |
 | `_agents/reno/planos/*.md` | 1 | `_journal/reno/` (é plano-estratégico, mas type=journal — autor decide se promove a `_decisions/`) |
 | `_agents/reno/procedimentos/*.md` | 1 | `_runbooks/runbook-registro-vault-reno.md` |
@@ -71,10 +71,10 @@ Grupo a ser dissolvido — `_agents/{agente}/` não existe no schema v1. Mapeame
 | Path atual | Notas | Destino v1 |
 |------------|-------|------------|
 | `_shared/context/AGENTS.md` | 1 | `_hubs/hub-agents-map.md` |
-| `_shared/context/fama-overview.md` | 1 | `_curated/fama/index.md` ou `_hubs/hub-fama.md` |
-| `_shared/context/credito-imobiliario/*.md` | 8 | `_curated/credito-imobiliario/{slug}.md` |
-| `_shared/context/fama/*.md` | 7 | `_curated/fama/{slug}.md` |
-| `_shared/context/modelo-negocio/metodologia-negocio.md` | 1 | `_curated/modelo-negocio/metodologia-negocio.md` |
+| `_shared/context/fama-overview.md` | 1 | `_hubs/hub-fama.md` ou manter em `_shared/context/` |
+| `_shared/context/credito-imobiliario/*.md` | 8 | manter em `_shared/context/credito-imobiliario/{slug}.md` |
+| `_shared/context/fama/*.md` | 7 | manter em `_shared/context/fama/{slug}.md` |
+| `_shared/context/modelo-negocio/metodologia-negocio.md` | 1 | manter em `_shared/context/modelo-negocio/metodologia-negocio.md` |
 
 ### Raiz (2 notas)
 

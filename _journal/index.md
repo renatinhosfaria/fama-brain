@@ -36,4 +36,4 @@ Subpastas permitidas por agente: `_journal/{agente}/YYYY-MM-DD-{slug}.md` (opcio
 
 ## Promoção
 
-Quando um aprendizado de journal vira reutilizável, autor cria nota em `_curated/` (concept) e backlinks o journal de origem.
+Quando um aprendizado de journal vira reutilizável, autor cria nota no contexto temático adequado e backlinks o journal de origem.

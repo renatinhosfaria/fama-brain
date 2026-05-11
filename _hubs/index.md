@@ -18,9 +18,9 @@ Vínculos: [[schema]], [[fama-overview]].
 Hubs **agregam** notas atômicas. Não duplicam conteúdo. Cada bullet usa um wikilink para a nota e um micro-resumo de 1 linha.
 
 
-## Navega??o raiz
+## Navegação raiz
 
-- [[README|README]] ? ?ndice raiz do vault.
+- [[README|README]] — índice raiz do vault.
 
 ## Camadas
 

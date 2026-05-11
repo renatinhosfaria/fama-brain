@@ -14,12 +14,10 @@ Vault Obsidian que serve como **contexto e memória de longo prazo** do ecossist
 
 <!-- codex:inbound-index:start -->
 
-## ?ndice de navega??o do vault
+## Índice de navegação do vault
 
-- [[_curated/index|_curated/index]]
 - [[_decisions/index|_decisions/index]]
 - [[_entities/index|_entities/index]]
-- [[_inbox/index|_inbox/index]]
 - [[_journal/index|_journal/index]]
 - [[_meta/index|_meta/index]]
 - [[_meta/inventory-2026-04-30|_meta/inventory-2026-04-30]]

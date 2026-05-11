@@ -57,7 +57,6 @@ Este documento é a **single source of truth** do schema. Toda nota do vault FAM
 
 | Folder | Vetorizar? | Grafo? | Conteúdo |
 |--------|-----------|--------|----------|
-| `_curated/` | sim | sim | Ground truth (verified). Conceitos, references, contexto institucional. |
 | `_projects/active/` | sim | sim | Trabalho em andamento. |
 | `_projects/archived/` | não | sim | Histórico operacional, recuperável por link. |
 | `_entities/` | sim | sim | Perfis canônicos (1 por entidade real). |
@@ -65,7 +64,6 @@ Este documento é a **single source of truth** do schema. Toda nota do vault FAM
 | `_decisions/` | sim | sim | Decision log (1 nota por decisão). |
 | `_runbooks/` | sim | sim | Procedimentos operacionais. Inclui perfis de agente. |
 | `_journal/` | não | sim | Daily/raw. |
-| `_inbox/` | não | não | Pré-curadoria. |
 | `_meta/` | não | não | Schema, golden queries, scripts. |
 
 **Override por `status` no frontmatter:**
@@ -194,7 +192,7 @@ implements: []
 derives_from: ["[[Reference: ...]]"]
 ```
 
-Mora em `_curated/`.
+Mora no diretório temático adequado, normalmente em `_shared/context/`.
 
 ### 4.8 `reference`
 
@@ -206,7 +204,7 @@ source_date: 2024-08-01
 derives_from: []
 ```
 
-Mora em `_curated/`.
+Mora no diretório temático adequado, normalmente em `_shared/context/` ou `_meta/`.
 
 ### 4.9 `runbook`
 
@@ -307,19 +305,19 @@ Não pode: editar conteúdo substantivo, alterar `_decisions/` de outro agente, 
 | `entity-profile` (lead/cliente/broker) | `entity` | `_entities/` |
 | `entity-profile` em `atendimentos/` (journal disfarçado) | `journal` ou `interaction` | `_journal/` |
 | `journal` | `journal` | `_journal/` |
-| `context` (institucional) | `concept` ou `reference` | `_curated/` |
-| `shared-context` | `concept` ou `reference` | `_curated/` |
+| `context` (institucional) | `concept` ou `reference` | `_shared/context/` |
+| `shared-context` | `concept` ou `reference` | `_shared/context/` ou `_meta/` |
 | `moc` (README de pasta) | `hub` | `_hubs/` |
 | `project-readme` | `project` | `_projects/active/` ou `_projects/archived/` |
 | `agents-map` (`_shared/context/AGENTS.md`) | `hub` | `_hubs/agents-map.md` |
-| `goal` | `goal` (extensão) | `_curated/goals/{periodo}/` |
-| `result` | `result` (extensão) | `_curated/results/{periodo}/` |
-| `financial-snapshot` | `entity` (subtype: snapshot) ou `reference` | `_curated/financials/` |
+| `goal` | `goal` (extensão) | `_projects/` ou `_shared/context/` |
+| `result` | `result` (extensão) | `_projects/` ou `_shared/context/` |
+| `financial-snapshot` | `entity` (subtype: snapshot) ou `reference` | `_entities/` ou `_shared/context/` |
 
 **Decisões abertas durante migração** (escaladas em [FAM-16](/FAM/issues/FAM-16)):
 
 1. `_agents/{agente}/` é dissolvido? Plan v2 §2 não lista `_agents/`. Mapeamento proposto: profile → `_runbooks/agent-{nome}.md`, README → `_hubs/agent-{nome}.md`, decisions.md compilado → N notas atômicas em `_decisions/{date}-{slug}.md`.
-2. `_shared/goals/` e `_shared/results/` viram `_curated/goals/{periodo}/` e `_curated/results/{periodo}/`?
+2. `_shared/goals/` e `_shared/results/` viram notas em `_projects/` ou permanecem em `_shared/context/`?
 3. Datas: ISO-8601 com timezone (precisão de hora) ou YYYY-MM-DD (compatível com MCP atual)?
 
 ---
