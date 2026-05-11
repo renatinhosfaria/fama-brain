@@ -28,7 +28,7 @@ Create:
 - `_runbooks/reno-credito-imobiliario.md` — Reno-specific credit lens from `_agents/reno/context/credito-imobiliario.md`.
 - `_runbooks/reno-fama-produtos.md` — Reno-specific product lens from `_agents/reno/context/fama-produtos.md`.
 - `_journal/reno/*.md` — migrated operational journals, auditorias, dated planos, and atendimento events.
-- `_decisions/2026-*.md` — atomic decision notes split from `_agents/reno/decisions.md`.
+- `_decisions/2026-*-reno-*.md` — atomic Reno decision notes split from `_agents/reno/decisions.md`.
 - New `_entities/*.md` only when an atendimento source has no safe existing canonical entity.
 
 Modify:
@@ -452,27 +452,27 @@ Expected: commit succeeds with new hub and runbooks.
 
 **Files:**
 
-- Create: `_decisions/2026-04-24-obsidian-segundo-cerebro-reno.md`
-- Create: `_decisions/2026-04-24-documentos-operacionais-minimos-reno.md`
-- Create: `_decisions/2026-04-24-disparo-controlado-backlog-sem-atendimento.md`
-- Create: `_decisions/2026-04-24-conteudo-reno-em-global-second-brain.md`
+- Create: `_decisions/2026-04-24-reno-obsidian-segundo-cerebro.md`
+- Create: `_decisions/2026-04-24-reno-documentos-operacionais-minimos.md`
+- Create: `_decisions/2026-04-24-reno-disparo-controlado-backlog-sem-atendimento.md`
+- Create: `_decisions/2026-04-24-reno-conteudo-em-global-second-brain.md`
 - Create: `_decisions/2026-04-24-reno-prioriza-produto-antes-financeiro.md`
 - Create: `_decisions/2026-04-24-reno-nao-perde-timing-visita.md`
-- Create: `_decisions/2026-04-24-backlog-sem-atendimento-lote-2.md`
-- Create: `_decisions/2026-04-26-persistencia-operacional-atendimento-reno.md`
-- Create: `_decisions/2026-04-27-plano-reversao-performance-reno.md`
-- Create: `_decisions/2026-04-28-guardrail-whatsapp-tentar-envio.md`
-- Create: `_decisions/2026-04-28-guardrail-whatsapp-nono-digito.md`
-- Create: `_decisions/2026-04-29-resposta-repescagem-handoff-obrigatorio.md`
-- Create: `_decisions/2026-04-29-handoff-pos-repescagem-worker-inbound.md`
-- Create: `_decisions/2026-04-29-worker-inbound-whatsapp-criado.md`
-- Create: `_decisions/2026-04-29-worker-inbound-whatsapp-removido.md`
-- Create: `_decisions/2026-04-29-status-em-atendimento-para-repescagem.md`
-- Create: `_decisions/2026-04-29-skill-repescagem-somente-envio-ativo.md`
-- Create: `_decisions/2026-04-30-repescagem-muda-angulo-cta.md`
-- Create: `_decisions/2026-04-30-followups-independentes.md`
-- Create: `_decisions/2026-05-02-repescagem-arquivamento-automatico-step-5.md`
-- Create: `_decisions/2026-05-02-confirmar-nome-estranho-famachat.md`
+- Create: `_decisions/2026-04-24-reno-backlog-sem-atendimento-lote-2.md`
+- Create: `_decisions/2026-04-26-reno-persistencia-operacional-atendimento.md`
+- Create: `_decisions/2026-04-27-reno-plano-reversao-performance.md`
+- Create: `_decisions/2026-04-28-reno-guardrail-whatsapp-tentar-envio.md`
+- Create: `_decisions/2026-04-28-reno-guardrail-whatsapp-nono-digito.md`
+- Create: `_decisions/2026-04-29-reno-resposta-repescagem-handoff-obrigatorio.md`
+- Create: `_decisions/2026-04-29-reno-handoff-pos-repescagem-worker-inbound.md`
+- Create: `_decisions/2026-04-29-reno-worker-inbound-whatsapp-criado.md`
+- Create: `_decisions/2026-04-29-reno-worker-inbound-whatsapp-removido.md`
+- Create: `_decisions/2026-04-29-reno-status-em-atendimento-para-repescagem.md`
+- Create: `_decisions/2026-04-29-reno-skill-repescagem-somente-envio-ativo.md`
+- Create: `_decisions/2026-04-30-reno-repescagem-muda-angulo-cta.md`
+- Create: `_decisions/2026-04-30-reno-followups-independentes.md`
+- Create: `_decisions/2026-05-02-reno-repescagem-arquivamento-automatico-step-5.md`
+- Create: `_decisions/2026-05-02-reno-confirmar-nome-estranho-famachat.md`
 - Modify: `_decisions/index.md`
 - Read: `_agents/reno/decisions.md`
 - Read: `_agents/reno/decisions/2026-04-30-followups-independentes.md`
@@ -497,7 +497,7 @@ decided_by: ["[[Renato Faria]]"]
 mentions_entity: ["[[reno]]"]
 implements: ["[[reno-playbook-atendimento]]"]
 related: ["[[reno-hub]]"]
-tags: [decision, reno, atendimento]
+tags: [decision, atendimento, comercial]
 ---
 # Decision: Repescagem deve mudar ângulo/CTA entre tentativas (2026-04-30)
 
@@ -512,11 +512,11 @@ Migrado de `_agents/reno/decisions.md` em 2026-05-11.
 
 For each remaining decision file, use the exact heading date and title from `_agents/reno/decisions.md`, copy the paragraph under that heading, and only normalize obsolete path references when Task 4 Step 2 explicitly says the old decision is superseded.
 
-For `_decisions/2026-04-30-followups-independentes.md`, use `_agents/reno/decisions/2026-04-30-followups-independentes.md` as the source if it has more complete content than the compiled `decisions.md`.
+For `_decisions/2026-04-30-reno-followups-independentes.md`, use `_agents/reno/decisions/2026-04-30-followups-independentes.md` as the source if it has more complete content than the compiled `decisions.md`.
 
 - [ ] **Step 2: Replace the obsolete 2026-04-24 path decision**
 
-In `_decisions/2026-04-24-conteudo-reno-em-global-second-brain.md`, do not preserve the old rule as active. Use this status and body:
+In `_decisions/2026-04-24-reno-conteudo-em-global-second-brain.md`, do not preserve the old rule as active. Use this status and body:
 
 ```yaml
 status: superseded
@@ -553,7 +553,7 @@ decided_by: ["[[Renato Faria]]"]
 mentions_entity: ["[[reno]]"]
 supersedes: ["[[Decision: Conteúdo do Reno deve ficar exclusivamente em _agents/reno (2026-04-24)]]"]
 related: ["[[reno-hub]]", "[[schema]]"]
-tags: [decision, reno, vault, second-brain]
+tags: [decision, vault, second-brain, governanca]
 ---
 # Decision: FAMA-BRAIN como segundo cérebro Reno-first (2026-05-11)
 
@@ -577,16 +577,16 @@ Add a section:
 ## Reno
 
 - [[2026-05-11-reno-second-brain-vault]]
-- [[2026-05-02-repescagem-arquivamento-automatico-step-5]]
-- [[2026-05-02-confirmar-nome-estranho-famachat]]
-- [[2026-04-30-repescagem-muda-angulo-cta]]
-- [[2026-04-29-skill-repescagem-somente-envio-ativo]]
-- [[2026-04-29-status-em-atendimento-para-repescagem]]
-- [[2026-04-29-worker-inbound-whatsapp-removido]]
-- [[2026-04-28-guardrail-whatsapp-nono-digito]]
-- [[2026-04-28-guardrail-whatsapp-tentar-envio]]
-- [[2026-04-26-persistencia-operacional-atendimento-reno]]
-- [[2026-04-24-obsidian-segundo-cerebro-reno]]
+- [[2026-05-02-reno-repescagem-arquivamento-automatico-step-5]]
+- [[2026-05-02-reno-confirmar-nome-estranho-famachat]]
+- [[2026-04-30-reno-repescagem-muda-angulo-cta]]
+- [[2026-04-29-reno-skill-repescagem-somente-envio-ativo]]
+- [[2026-04-29-reno-status-em-atendimento-para-repescagem]]
+- [[2026-04-29-reno-worker-inbound-whatsapp-removido]]
+- [[2026-04-28-reno-guardrail-whatsapp-nono-digito]]
+- [[2026-04-28-reno-guardrail-whatsapp-tentar-envio]]
+- [[2026-04-26-reno-persistencia-operacional-atendimento]]
+- [[2026-04-24-reno-obsidian-segundo-cerebro]]
 ```
 
 Keep the full set of decision files discoverable even if the index highlights only the most important ones.
