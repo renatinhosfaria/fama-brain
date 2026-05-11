@@ -34,7 +34,7 @@ _journal/reno/**                         => reno (primary)
 _runbooks/reno-*.md                      => reno (primary)
 _decisions/*reno*.md                     => reno (primary)
 
-# Entidades são globais; Reno pode atualizar entidades de atendimento quando o fato vier da operação do Reno.
+# Entidades globais — nesta fase Renato permanece dono primário; permissões futuras do Reno dependem de regra/tooling posterior.
 _entities/**                             => renato (primary)
 
 # Catch-all — paths sem dono explícito
