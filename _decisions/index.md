@@ -2,13 +2,12 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-11'
+updated: '2026-05-13'
 tags:
   - decisions
   - moc
   - decision-log
 ---
-
 # `_decisions/` — Decision log
 
 Vínculos: [[schema]], [[fama-overview]].
@@ -76,3 +75,4 @@ Decisões nunca são editadas materialmente. Erro factual → criar decisão nov
 - [[2026-05-02-reno-confirmar-nome-estranho-famachat]]
 - [[2026-05-02-reno-repescagem-arquivamento-automatico-step-5]]
 - [[2026-05-11-reno-second-brain-vault]]
+- [[2026-05-12-reno-vault-memoria-autonoma]] — decisão canônica atual sobre a autonomia do Reno no vault com guardrails.
