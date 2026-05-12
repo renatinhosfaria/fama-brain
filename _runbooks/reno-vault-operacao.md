@@ -166,3 +166,19 @@ O Reno deve parar e pedir confirmacao ao Renato quando:
 - [[_shared/context/README]]
 - [[_shared/context/AGENTS]]
 - [[schema]]
+
+## Atualizacao 2026-05-12 — decisao de autonomia
+
+A operacao autonoma do Reno no vault foi aprovada por Renato e registrada em `_decisions/2026-05-12-reno-vault-memoria-autonoma.md`.
+
+Ao escrever, o Reno deve manter a separacao:
+
+- evento ou auditoria em `_journal/reno/`;
+- fato duravel em `_entities/`;
+- procedimento em `_runbooks/`;
+- navegacao em `_hubs/`;
+- contexto institucional em `_shared/context/`;
+- decisao aprovada em `_decisions/`;
+- schema e ownership em `_meta/`, apenas com aprovacao.
+
+Toda escrita relevante precisa de read-back via MCP.
