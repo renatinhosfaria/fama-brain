@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Andreia Carvalho
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10986
   broker_id: 35
 interactions:
-  - '[[10986-andreia-carvalho]]'
+  - '[[2026-05-11-atendimento-andreia-carvalho|10986-andreia-carvalho]]'
 mentions_property:
   - '[[union-vereda]]'
   - '[[zurique]]'
@@ -35,6 +35,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Andreia Carvalho
 ---
 ## Resumo
 

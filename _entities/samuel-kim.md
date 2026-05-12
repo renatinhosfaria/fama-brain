@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Samuel Kim
@@ -23,13 +23,15 @@ external_ids:
   crm_client_id: 10937
   broker_id: 35
 interactions:
-  - '[[10937-samuel-kim]]'
+  - '[[2026-05-11-atendimento-samuel-kim|10937-samuel-kim]]'
 mentions_property:
   - '[[place-arbi]]'
   - '[[union-vereda]]'
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Samuel Kim
 ---
 ## Resumo
 
@@ -61,7 +63,7 @@ Samuel Kim é cliente do Reno em status **Em Atendimento** após resposta real �
 - 2026-04-25 — reenvio inicial suprimido (flag operacional)
 - 2026-04-28 — repescagem step 1
 - 2026-04-29 — repescagem step 2
-- 2026-04-30 — repescagem step 3 + cliente respondeu → Em Atendimento ([[10937-samuel-kim]])
+- 2026-04-30 — repescagem step 3 + cliente respondeu → Em Atendimento ([[2026-05-11-atendimento-samuel-kim|10937-samuel-kim]])
 - 2026-04-30 — diagnósticos: aluguel até dez, busca apto 2br, prioridades localização/valor
 
 ## Próximas ações sugeridas

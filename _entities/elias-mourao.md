@@ -2,23 +2,31 @@
 schema_version: 1
 type: entity
 status: active
-created: 2026-05-11
-updated: 2026-05-11
+created: 2026-05-11T00:00:00.000Z
+updated: 2026-05-11T00:00:00.000Z
 source: imported
-author_agent: reno
 verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["Elias Mourão"]
+aliases:
+  - Elias Mourão
 relationships:
-  broker: "[[reno]]"
-  interested_in: "[[place-arbi]]"
+  broker: '[[reno]]'
+  interested_in: '[[place-arbi]]'
 external_ids:
-  crm_client_ids: [10928]
+  crm_client_ids:
+    - 10928
   crm_client_id_canonical: 10928
-related: ["[[reno-hub]]", "[[place-arbi]]", "[[shopping-park]]"]
-tags: [entity, lead, atendimento, place-arbi]
+related:
+  - '[[reno-hub]]'
+  - '[[place-arbi]]'
+  - '[[shopping-park]]'
+tags:
+  - entity
+  - lead
+  - atendimento
+  - place-arbi
 ---
 # Entity: Elias Mourão
 

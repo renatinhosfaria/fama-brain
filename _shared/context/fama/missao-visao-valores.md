@@ -7,7 +7,7 @@ tags: [fama, missao, visao, valores]
 ---
 # Missão, Visão e Valores
 
-Vínculos: [[fama-overview]], [[renato]], [[fama-produtos]].
+Vínculos: [[fama-overview]], [[renato]], [[_shared/context/fama/produtos|fama-produtos]].
 ## Missão
 
 > Ser a imobiliária que melhor entende e orienta quem quer comprar ou vender imóvel na região, garantindo jornada segura do primeiro contato até a entrega das chaves.

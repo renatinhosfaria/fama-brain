@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Eduarda
@@ -19,10 +19,11 @@ confidence: 0.85
 aliases: []
 external_ids:
   crm_client_id: 11010
-  crm_client_ids: [11010]
+  crm_client_ids:
+    - 11010
   broker_id: 35
 interactions:
-  - '[[cliente-11010-eduarda]]'
+  - '[[2026-04-24-atendimento-eduarda|cliente-11010-eduarda]]'
 mentions_property:
   - '[[union-vereda]]'
 mentions_neighborhood:
@@ -31,6 +32,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Eduarda
 ---
 ## Resumo
 

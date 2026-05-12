@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: property
 entity_name: Union Vereda
@@ -41,6 +41,8 @@ delivery_date: 2028-12
 developer: '[[hlts-construtora]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Union Vereda
 ---
 ## Resumo
 

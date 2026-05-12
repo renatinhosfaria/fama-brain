@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Bruno Sávio
@@ -12,7 +12,7 @@ tags:
   - primeiro-contato
 schema_version: 1
 status: active
-source: agent-generated
+source: imported
 verified_by: null
 verified_at: null
 confidence: 0.7
@@ -24,7 +24,7 @@ external_ids:
   crm_client_id: 10971
   broker_id: 35
 interactions:
-  - '[[10971-bruno-savio]]'
+  - '[[2026-05-11-atendimento-bruno-savio|10971-bruno-savio]]'
 mentions_property:
   - '[[union-vista]]'
   - '[[grand-ville]]'
@@ -32,6 +32,7 @@ broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
 title: 'Entity: Bruno Sávio (lead — interesse Union Vista/Grand Ville)'
+name: Bruno Sávio
 ---
 ## Resumo
 
@@ -60,7 +61,7 @@ Ainda não há perfis canônicos para essas propriedades — criar quando outros
 
 Cada bullet linka a uma nota de interação isolada com seu próprio chunk:
 
-- 2026-04-27 — [[10971-bruno-savio]] — primeiro contato WhatsApp; pergunta de aderência enviada; sem resposta até 2026-04-30.
+- 2026-04-27 — [[2026-05-11-atendimento-bruno-savio|10971-bruno-savio]] — primeiro contato WhatsApp; pergunta de aderência enviada; sem resposta até 2026-04-30.
 
 ## Próximas ações sugeridas
 

@@ -7,9 +7,6 @@ tags:
   - journal
   - moc
   - timeline
-schema_version: 1
-status: active
-source: human-curated
 ---
 
 # `_journal/` — Atividade do dia / log operacional

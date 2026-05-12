@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Marco Antonio Goncalves
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[place-arbi]]'
   - '[[shopping-park]]'
+source: imported
+name: Marco Antonio Goncalves
 ---
 # Marco Antonio Goncalves
 

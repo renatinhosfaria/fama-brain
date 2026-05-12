@@ -2,23 +2,30 @@
 schema_version: 1
 type: entity
 status: active
-created: 2026-05-11
-updated: 2026-05-11
+created: 2026-05-11T00:00:00.000Z
+updated: 2026-05-11T00:00:00.000Z
 source: imported
-author_agent: reno
 verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["Flávio"]
+aliases:
+  - Flávio
 relationships:
-  broker: "[[reno]]"
-  interested_in: "[[union-vereda]]"
+  broker: '[[reno]]'
+  interested_in: '[[union-vereda]]'
 external_ids:
-  crm_client_ids: [10933]
+  crm_client_ids:
+    - 10933
   crm_client_id_canonical: 10933
-related: ["[[reno-hub]]", "[[union-vereda]]"]
-tags: [entity, lead, atendimento, union-vereda]
+related:
+  - '[[reno-hub]]'
+  - '[[union-vereda]]'
+tags:
+  - entity
+  - lead
+  - atendimento
+  - union-vereda
 ---
 # Entity: Flávio
 

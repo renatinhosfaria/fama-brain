@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Alexsander Pereira
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10948
   broker_id: 35
 interactions:
-  - '[[10948-alexsander-pereira]]'
+  - '[[2026-05-11-atendimento-alexsander-pereira|10948-alexsander-pereira]]'
 mentions_property:
   - '[[place-arbi]]'
 mentions_neighborhood:
@@ -30,6 +30,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Alexsander Pereira
 ---
 ## Resumo
 

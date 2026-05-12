@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Claudia Martins Ferreira
@@ -29,6 +29,8 @@ related:
   - '[[union-vereda]]'
   - '[[jaragua]]'
   - '[[zona-leste]]'
+source: imported
+name: Claudia Martins Ferreira
 ---
 # Claudia Martins Ferreira
 

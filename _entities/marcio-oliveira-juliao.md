@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Márcio Oliveira Julião
@@ -22,7 +22,8 @@ external_ids:
   crm_client_id: 10942
   broker_id: 35
 interactions:
-  - '[[10942-marcio-oliveira-juliao]]'
+  - >-
+    [[2026-05-11-atendimento-marcio-oliveira-juliao|10942-marcio-oliveira-juliao]]
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -30,6 +31,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Márcio Oliveira Julião
 ---
 ## Resumo
 

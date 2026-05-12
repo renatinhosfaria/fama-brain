@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: org
 entity_name: HLTS Construtora
@@ -24,6 +24,8 @@ properties:
   - '[[union-vereda]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: HLTS Construtora
 ---
 ## Resumo
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: property
 entity_name: Zurique
@@ -27,6 +27,8 @@ developer: null
 is_competitor: true
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Zurique
 ---
 ## Resumo
 

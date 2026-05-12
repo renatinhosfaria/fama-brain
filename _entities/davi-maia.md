@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Davi Maia
@@ -22,12 +22,14 @@ external_ids:
   crm_client_id: 10659
   broker_id: 35
 interactions:
-  - '[[10659-davi-maia]]'
+  - '[[2026-05-11-atendimento-davi-maia|10659-davi-maia]]'
 mentions_property:
   - '[[garden-sul]]'
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Davi Maia
 ---
 ## Resumo
 
@@ -48,7 +50,7 @@ Davi Maia é lead do Reno em status **Não Respondeu**, originário de Facebook 
 - Histórico operacional 2026-04-07 a 2026-04-19 (resgate/repescagem antigos sem resposta)
 - 2026-04-28 — repescagem step 1
 - 2026-04-29 — repescagem step 2 (encaixe + planta/valor)
-- 2026-04-30 — repescagem step 3 (morar vs investir, prazo entrega) ([[10659-davi-maia]])
+- 2026-04-30 — repescagem step 3 (morar vs investir, prazo entrega) ([[2026-05-11-atendimento-davi-maia|10659-davi-maia]])
 
 ## Próximas ações sugeridas
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Thiago Tesch
@@ -24,7 +24,7 @@ external_ids:
   broker_id: 35
   appointment_id: 244
 interactions:
-  - '[[11182-thiago-tesch]]'
+  - '[[2026-05-11-atendimento-thiago-tesch|11182-thiago-tesch]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -32,6 +32,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Thiago Tesch
 ---
 ## Resumo
 

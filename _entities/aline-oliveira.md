@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Aline Oliveira
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 11196
   broker_id: 35
 interactions:
-  - '[[11196-aline-oliveira]]'
+  - '[[2026-05-11-atendimento-aline-oliveira|11196-aline-oliveira]]'
 mentions_property:
   - '[[garden-sul]]'
 mentions_neighborhood:
@@ -30,6 +30,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Aline Oliveira
 ---
 ## Resumo
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Gioo (nome não confirmado)
@@ -26,6 +26,8 @@ external_ids:
 broker: '[[reno]]'
 related:
   - '[[reno-hub]]'
+source: imported
+name: Gioo (nome não confirmado)
 ---
 # Gioo (nome não confirmado)
 

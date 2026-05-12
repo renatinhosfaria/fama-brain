@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Mauro Marques
@@ -23,7 +23,7 @@ external_ids:
   crm_client_id: 11177
   broker_id: 35
 interactions:
-  - '[[11177-mauro-marques]]'
+  - '[[2026-05-11-atendimento-mauro-marques|11177-mauro-marques]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -32,6 +32,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Mauro Marques
 ---
 ## Resumo
 

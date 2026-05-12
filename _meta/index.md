@@ -7,9 +7,6 @@ tags:
   - meta
   - moc
   - governance
-schema_version: 1
-status: active
-source: human-curated
 ---
 
 # `_meta/` — Documentação do próprio vault

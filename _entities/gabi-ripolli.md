@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Gabi Ripolli
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[union-vista]]'
   - '[[grand-ville]]'
+source: imported
+name: Gabi Ripolli
 ---
 # Gabi Ripolli
 

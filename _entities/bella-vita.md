@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: property
 entity_name: Bella Vita
@@ -27,6 +27,8 @@ delivery_date: null
 developer: null
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Bella Vita
 ---
 ## Resumo
 

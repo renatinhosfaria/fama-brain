@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Silva Porto
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10923
   broker_id: 35
 interactions:
-  - '[[10923-silva-porto]]'
+  - '[[2026-05-11-atendimento-silva-porto|10923-silva-porto]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -31,6 +31,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Silva Porto
 ---
 ## Resumo
 

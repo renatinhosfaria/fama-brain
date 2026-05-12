@@ -9,7 +9,7 @@ author_agent: null
 verified_by: "Renato Faria"
 verified_at: 2026-05-11
 confidence: high
-decided_by: ["[[Renato Faria]]"]
+decided_by: ["[[renato|Renato Faria]]"]
 mentions_entity: ["[[reno]]"]
 supersedes: ["[[2026-04-24-reno-conteudo-em-global-second-brain]]"]
 related: ["[[reno-hub]]", "[[schema]]"]

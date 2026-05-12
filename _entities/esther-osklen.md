@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Esther Osklen
@@ -22,12 +22,14 @@ external_ids:
   crm_client_id: 10978
   broker_id: 35
 interactions:
-  - '[[10978-esther-osklen]]'
+  - '[[2026-05-11-atendimento-esther-osklen|10978-esther-osklen]]'
 mentions_property:
   - '[[union-vereda]]'
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Esther Osklen
 ---
 ## Resumo
 
@@ -51,7 +53,7 @@ Esther Osklen é lead do Reno em status **Não Respondeu** após primeiro contat
 - 2026-04-25 — reenvio inicial em 2 mensagens
 - 2026-04-29 — repescagem step 1 (encaixe imóvel + sem pressionar visita)
 - 2026-04-30 — repescagem step 2 (evitar caminho errado)
-- 2026-05-01 — repescagem step 3 (morar vs investir) ([[10978-esther-osklen]])
+- 2026-05-01 — repescagem step 3 (morar vs investir) ([[2026-05-11-atendimento-esther-osklen|10978-esther-osklen]])
 
 ## Próximas ações sugeridas
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: place
 entity_name: Jaraguá
@@ -35,6 +35,8 @@ city: Uberlândia/MG
 zone: Zona Oeste
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Jaraguá
 ---
 ## Resumo
 

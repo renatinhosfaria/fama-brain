@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Elias Fernandes
@@ -21,7 +21,7 @@ external_ids:
   crm_client_id: 10662
   broker_id: 35
 interactions:
-  - '[[10662-elias-fernandes]]'
+  - '[[2026-05-11-atendimento-elias-fernandes|10662-elias-fernandes]]'
 mentions_property:
   - '[[garden-sul]]'
 mentions_neighborhood:
@@ -29,6 +29,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Elias Fernandes
 ---
 ## Resumo
 

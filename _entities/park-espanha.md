@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: property
 entity_name: Park Espanha
@@ -27,6 +27,8 @@ delivery_date: null
 developer: null
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Park Espanha
 ---
 ## Resumo
 

@@ -11,7 +11,7 @@ tags:
 ---
 # Regulamentação do Crédito Imobiliário
 
-Vínculos: [[credito-imobiliario]], [[fama-overview]], [[mcmv]].
+Vínculos: [[_shared/context/credito-imobiliario/index|credito-imobiliario]], [[fama-overview]], [[mcmv]].
 Normativos-chave vigentes que regem o crédito imobiliário brasileiro.
 
 **Última verificação: 2026-04-21.**

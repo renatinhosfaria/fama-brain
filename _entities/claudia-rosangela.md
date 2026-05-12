@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Claudia Rosângela
@@ -24,7 +24,7 @@ external_ids:
   crm_client_id: 11021
   broker_id: 35
 interactions:
-  - '[[11021-claudia-rosangela]]'
+  - '[[2026-05-11-atendimento-claudia-rosangela|11021-claudia-rosangela]]'
 mentions_property:
   - '[[union-vereda]]'
 mentions_neighborhood:
@@ -32,6 +32,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Claudia Rosângela
 ---
 ## Resumo
 

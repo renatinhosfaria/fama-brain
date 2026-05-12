@@ -1,9 +1,12 @@
 ---
-type: design-spec
+type: context
 owner: renato
 created: '2026-05-12'
 updated: '2026-05-12'
-tags: [reno, vault, memoria, runbook]
+tags:
+  - design-spec
+  - reno
+  - vault
 ---
 # Design: Manuais de operacao do vault para o Reno
 

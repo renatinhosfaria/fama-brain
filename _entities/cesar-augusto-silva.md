@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: César Augusto Silva
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[place-arbi]]'
   - '[[shopping-park]]'
+source: imported
+name: César Augusto Silva
 ---
 # César Augusto Silva
 

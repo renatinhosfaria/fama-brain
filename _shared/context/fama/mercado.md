@@ -7,7 +7,7 @@ tags: [fama, mercado]
 ---
 # Mercado
 
-Vínculos: [[fama-overview]], [[renato]], [[fama-produtos]].
+Vínculos: [[fama-overview]], [[renato]], [[_shared/context/fama/produtos|fama-produtos]].
 ## Região de atuação
 
 **Foco principal e explícito:** Uberlândia/MG.

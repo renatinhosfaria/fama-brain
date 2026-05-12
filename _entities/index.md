@@ -7,8 +7,6 @@ tags:
   - entities
   - moc
   - perfis-canonicos
-schema_version: 1
-status: active
 provenance: human-curated
 ---
 # `_entities/` - Perfis canonicos

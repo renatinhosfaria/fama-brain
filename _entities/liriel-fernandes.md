@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Liriel Fernandes
@@ -27,6 +27,8 @@ broker: '[[reno]]'
 related:
   - '[[reno-hub]]'
   - '[[union-vereda]]'
+source: imported
+name: Liriel Fernandes
 ---
 # Liriel Fernandes
 

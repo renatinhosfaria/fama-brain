@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Ketely Eunice Martins Santos
@@ -27,6 +27,8 @@ broker: '[[reno]]'
 related:
   - '[[reno-hub]]'
   - '[[place-arbi]]'
+source: imported
+name: Ketely Eunice Martins Santos
 ---
 # Ketely Eunice Martins Santos
 

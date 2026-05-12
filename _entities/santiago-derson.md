@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Santiago Derson
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10997
   broker_id: 35
 interactions:
-  - '[[10997-santiago-derson]]'
+  - '[[2026-05-11-atendimento-santiago-derson|10997-santiago-derson]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -30,6 +30,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Santiago Derson
 ---
 ## Resumo
 

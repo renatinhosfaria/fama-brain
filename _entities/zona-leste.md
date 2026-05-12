@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: place
 entity_name: Zona Leste
@@ -24,6 +24,8 @@ interested_clients:
 city: Uberlândia/MG
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Zona Leste
 ---
 ## Resumo
 

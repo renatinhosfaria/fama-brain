@@ -9,7 +9,7 @@ author_agent: reno
 verified_by: null
 verified_at: null
 confidence: null
-decided_by: ["[[Renato Faria]]"]
+decided_by: ["[[renato|Renato Faria]]"]
 mentions_entity: ["[[reno]]"]
 implements: ["[[reno-playbook-atendimento]]", "[[reno-registro-vault]]"]
 related: ["[[reno-hub]]", "[[2026-05-11-reno-second-brain-vault]]"]

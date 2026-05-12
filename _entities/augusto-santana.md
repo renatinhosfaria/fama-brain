@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Augusto Santana
@@ -28,7 +28,7 @@ external_ids:
   crm_client_id_canonical: 11046
   broker_id: 35
 interactions:
-  - '[[10954-augusto-santana]]'
+  - '[[2026-05-11-atendimento-augusto-santana|10954-augusto-santana]]'
   - 11046-augusto-santana
 mentions_property:
   - '[[union-vista]]'
@@ -42,6 +42,8 @@ regions_of_interest:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Augusto Santana
 ---
 ## Resumo
 
@@ -71,7 +73,7 @@ Augusto Santana é cliente do Reno em status **Visita** (cadastro CRM 11046, o c
 - 2026-04-25 — quarto cadastro (11046) → combinou visita via WhatsApp
 - 2026-04-26 — status CRM corrigido pra Agendamento
 - 2026-04-27 — confirmação enviada; cliente cancelou (viagem); appointment id 232 → Cancelado
-- 2026-05-02 — aguardando retorno do cliente pra remarcação ([[10954-augusto-santana]])
+- 2026-05-02 — aguardando retorno do cliente pra remarcação ([[2026-05-11-atendimento-augusto-santana|10954-augusto-santana]])
 
 ## Próximas ações sugeridas
 

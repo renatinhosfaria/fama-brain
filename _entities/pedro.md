@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Pedro
@@ -23,7 +23,7 @@ external_ids:
   broker_id: 35
   appointment_id: 235
 interactions:
-  - '[[11084-pedro]]'
+  - '[[2026-05-11-atendimento-pedro|11084-pedro]]'
 mentions_property:
   - '[[union-vereda]]'
 mentions_neighborhood:
@@ -31,6 +31,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Pedro
 ---
 ## Resumo
 

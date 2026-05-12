@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: property
 entity_name: Garden Sul
@@ -33,6 +33,8 @@ delivery_date: 2028-09
 developer: null
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Garden Sul
 ---
 ## Resumo
 

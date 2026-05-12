@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: diasalvez111q1-qqq
@@ -29,6 +29,8 @@ related:
   - '[[union-vista]]'
   - '[[grand-ville]]'
   - '[[zona-leste]]'
+source: imported
+name: diasalvez111q1-qqq
 ---
 # diasalvez111q1-qqq
 

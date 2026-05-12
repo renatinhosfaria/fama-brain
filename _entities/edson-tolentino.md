@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Edson Tolentino
@@ -22,12 +22,14 @@ external_ids:
   crm_client_id: 10924
   broker_id: 35
 interactions:
-  - '[[10924-edson-tolentino]]'
+  - '[[2026-05-11-atendimento-edson-tolentino|10924-edson-tolentino]]'
 mentions_property:
   - '[[union-vista]]'
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Edson Tolentino
 ---
 ## Resumo
 
@@ -48,7 +50,7 @@ Edson Tolentino é lead do Reno em status **Não Respondeu**, originário de SLA
 
 - 2026-04-25 — reenvio inicial
 - 2026-04-28 — repescagem step 1
-- 2026-04-29 — repescagem step 2 (morar vs investir) ([[10924-edson-tolentino]])
+- 2026-04-29 — repescagem step 2 (morar vs investir) ([[2026-05-11-atendimento-edson-tolentino|10924-edson-tolentino]])
 
 ## Próximas ações sugeridas
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Jonathan Barbosa
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10955
   broker_id: 35
 interactions:
-  - '[[10955-jonathan-barbosa]]'
+  - '[[2026-05-11-atendimento-jonathan-barbosa|10955-jonathan-barbosa]]'
 mentions_property:
   - '[[union-vereda]]'
 mentions_neighborhood:
@@ -31,6 +31,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Jonathan Barbosa
 ---
 ## Resumo
 

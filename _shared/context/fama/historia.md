@@ -7,7 +7,7 @@ tags: [fama, historia]
 ---
 # História da Fama
 
-Vínculos: [[fama-overview]], [[renato]], [[fama-produtos]].
+Vínculos: [[fama-overview]], [[renato]], [[_shared/context/fama/produtos|fama-produtos]].
 ## Fundação
 
 A Fama foi fundada em **2015, em Uberlândia/MG**, sob a marca **Fama Correspondente Bancário**, pelo economista **Renato Faria** (graduado pela UFU, especialização em Finanças pela FGV), com trajetória prévia no mercado financeiro e bancário.

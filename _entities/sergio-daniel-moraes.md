@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Sergio Daniel Moraes
@@ -25,6 +25,8 @@ external_ids:
 broker: '[[reno]]'
 related:
   - '[[reno-hub]]'
+source: imported
+name: Sergio Daniel Moraes
 ---
 # Sergio Daniel Moraes
 

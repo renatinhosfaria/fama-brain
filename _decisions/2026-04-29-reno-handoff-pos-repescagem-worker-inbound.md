@@ -9,7 +9,7 @@ author_agent: reno
 verified_by: null
 verified_at: null
 confidence: null
-decided_by: ["[[Renato Faria]]"]
+decided_by: ["[[renato|Renato Faria]]"]
 mentions_entity: ["[[reno]]"]
 implements: ["[[reno-operacao-crm-webhook]]"]
 superseded_by: ["[[2026-04-29-reno-worker-inbound-whatsapp-removido]]"]

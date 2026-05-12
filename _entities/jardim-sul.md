@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: place
 entity_name: Jardim Sul
@@ -28,6 +28,8 @@ city: Uberlândia/MG
 zone: Zona Sul
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Jardim Sul
 ---
 ## Resumo
 

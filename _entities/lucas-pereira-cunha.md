@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Lucas Pereira Cunha
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[place-arbi]]'
   - '[[shopping-park]]'
+source: imported
+name: Lucas Pereira Cunha
 ---
 # Lucas Pereira Cunha
 

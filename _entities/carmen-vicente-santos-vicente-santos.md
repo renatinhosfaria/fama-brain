@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Carmen Vicente Santos Vicente Santos
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[garden-sul]]'
   - '[[jardim-sul]]'
+source: imported
+name: Carmen Vicente Santos Vicente Santos
 ---
 # Carmen Vicente Santos Vicente Santos
 

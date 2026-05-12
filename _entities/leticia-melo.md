@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Letícia Melo
@@ -22,12 +22,14 @@ external_ids:
   crm_client_id: 10940
   broker_id: 35
 interactions:
-  - '[[10940-leticia-melo]]'
+  - '[[2026-05-11-atendimento-leticia-melo|10940-leticia-melo]]'
 mentions_property:
   - '[[union-vereda]]'
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Letícia Melo
 ---
 ## Resumo
 
@@ -49,7 +51,7 @@ Letícia Melo é lead do Reno em status **Não Respondeu**, originária de Faceb
 - 2026-04-24 — primeiro contato (Union Vereda/Jaraguá)
 - 2026-04-28 — repescagem step 1 (mensagem genérica)
 - 2026-04-29 — repescagem step 2 (encaixe + análise simples)
-- 2026-04-30 — repescagem step 3 (morar vs investir + prazo Dez/2028) ([[10940-leticia-melo]])
+- 2026-04-30 — repescagem step 3 (morar vs investir + prazo Dez/2028) ([[2026-05-11-atendimento-leticia-melo|10940-leticia-melo]])
 
 ## Próximas ações sugeridas
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Guilherme Mendes
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10999
   broker_id: 35
 interactions:
-  - '[[10999-guilherme-mendes]]'
+  - '[[2026-05-11-atendimento-guilherme-mendes|10999-guilherme-mendes]]'
 mentions_property:
   - '[[union-vereda]]'
 mentions_neighborhood:
@@ -30,6 +30,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Guilherme Mendes
 ---
 ## Resumo
 

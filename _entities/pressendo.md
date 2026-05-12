@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: pressendo
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[union-vereda]]'
   - '[[jaragua]]'
+source: imported
+name: pressendo
 ---
 # pressendo
 

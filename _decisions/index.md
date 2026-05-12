@@ -7,9 +7,6 @@ tags:
   - decisions
   - moc
   - decision-log
-schema_version: 1
-status: active
-source: human-curated
 ---
 
 # `_decisions/` — Decision log
@@ -28,7 +25,7 @@ Título: `Decision: {Sujeito} ({YYYY-MM})`. Ex.: `Decision: Adotar schema vault 
 ```yaml
 type: decision
 status: active | superseded | archived
-decided_by: ["[[Renato Faria]]"]
+decided_by: ["[[renato|Renato Faria]]"]
 supersedes: []
 superseded_by: null
 implements: []

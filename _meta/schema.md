@@ -1,5 +1,5 @@
 ---
-type: shared-context
+type: concept
 owner: renato
 created: '2026-04-30'
 updated: '2026-05-11'
@@ -138,7 +138,7 @@ Mora em `_journal/`.
 
 ```yaml
 type: decision
-decided_by: ["[[Renato Faria]]"]
+decided_by: ["[[renato|Renato Faria]]"]
 supersedes: ["[[Decision: Comissão broker padrão (2024-09)]]"]
 superseded_by: null
 mentions_entity: ["[[Bruno Sávio]]"]
@@ -179,7 +179,7 @@ Hubs **não duplicam** conteúdo. Mora em `_hubs/`.
 ```yaml
 type: journal
 date: 2026-04-30
-author: "[[Renato Faria]]"
+author: "[[renato|Renato Faria]]"
 mentions_entity: ["[[Bruno Sávio]]"]
 ```
 
@@ -225,7 +225,7 @@ Mora em `_runbooks/`. Inclui perfis de agente.
 type: project
 goal: "..."
 status_lifecycle: active | archived
-owner: "[[Renato Faria]]"
+owner: "[[renato|Renato Faria]]"
 mentions_entity: []
 ```
 

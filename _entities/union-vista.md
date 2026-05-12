@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: property
 entity_name: Union Vista
@@ -40,6 +40,8 @@ developer: '[[hlts-construtora]]'
 endereco: 'Alameda dos Mandaris, 201'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Union Vista
 ---
 ## Resumo
 

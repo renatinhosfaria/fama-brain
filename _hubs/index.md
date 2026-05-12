@@ -7,9 +7,6 @@ tags:
   - hubs
   - moc
   - navegacao
-schema_version: 1
-status: active
-source: human-curated
 ---
 
 # `_hubs/` — MOCs (Map of Content)

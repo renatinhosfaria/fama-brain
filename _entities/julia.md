@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Júlia
@@ -29,6 +29,8 @@ related:
   - '[[union-vereda]]'
   - '[[place-arbi]]'
   - '[[jardim-sul]]'
+source: imported
+name: Júlia
 ---
 # Júlia
 

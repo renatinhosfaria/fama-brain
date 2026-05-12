@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Carmen Vicente Santos
@@ -22,7 +22,8 @@ external_ids:
   crm_client_id: 10998
   broker_id: 35
 interactions:
-  - '[[10998-carmen-vicente-santos-vicente-santos]]'
+  - >-
+    [[2026-05-11-atendimento-carmen-vicente-santos-vicente-santos|10998-carmen-vicente-santos-vicente-santos]]
 mentions_property:
   - '[[garden-sul]]'
 mentions_neighborhood:
@@ -30,6 +31,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Carmen Vicente Santos
 ---
 ## Resumo
 

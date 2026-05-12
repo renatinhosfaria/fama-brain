@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Biiahsiilva
@@ -29,6 +29,8 @@ related:
   - '[[union-vista]]'
   - '[[grand-ville]]'
   - '[[zona-leste]]'
+source: imported
+name: Biiahsiilva
 ---
 # Biiahsiilva
 

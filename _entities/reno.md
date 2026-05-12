@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Reno
@@ -66,6 +66,8 @@ clients:
 related:
   - '[[reno-profile]]'
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Reno
 ---
 ## Resumo
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Jeandra Candido
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[garden-sul]]'
   - '[[place-arbi]]'
+source: imported
+name: Jeandra Candido
 ---
 # Jeandra Candido
 

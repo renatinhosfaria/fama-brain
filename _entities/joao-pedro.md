@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: João Pedro
@@ -23,10 +23,12 @@ external_ids:
   crm_client_id: 10714
   broker_id: 35
 interactions:
-  - '[[10714-joao-pedro]]'
+  - '[[2026-05-11-atendimento-joao-pedro|10714-joao-pedro]]'
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: João Pedro
 ---
 ## Resumo
 

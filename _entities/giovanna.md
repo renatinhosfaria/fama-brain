@@ -2,23 +2,30 @@
 schema_version: 1
 type: entity
 status: active
-created: 2026-05-11
-updated: 2026-05-11
+created: 2026-05-11T00:00:00.000Z
+updated: 2026-05-11T00:00:00.000Z
 source: imported
-author_agent: reno
 verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["Giovanna"]
+aliases:
+  - Giovanna
 relationships:
-  broker: "[[reno]]"
-  interested_in: "[[union-vista]]"
+  broker: '[[reno]]'
+  interested_in: '[[union-vista]]'
 external_ids:
-  crm_client_ids: [10660]
+  crm_client_ids:
+    - 10660
   crm_client_id_canonical: 10660
-related: ["[[reno-hub]]", "[[union-vista]]"]
-tags: [entity, lead, atendimento, union-vista]
+related:
+  - '[[reno-hub]]'
+  - '[[union-vista]]'
+tags:
+  - entity
+  - lead
+  - atendimento
+  - union-vista
 ---
 # Entity: Giovanna
 

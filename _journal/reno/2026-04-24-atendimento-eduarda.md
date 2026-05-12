@@ -11,7 +11,7 @@ verified_at: null
 confidence: medium
 channel: whatsapp
 participants: ["[[eduarda]]", "[[reno]]"]
-mentions_entity: ["[[eduarda]]", "[[credito-imobiliario]]", "[[fama-produtos]]"]
+mentions_entity: ["[[eduarda]]", "[[_shared/context/credito-imobiliario/index|credito-imobiliario]]", "[[_shared/context/fama/produtos|fama-produtos]]"]
 related: ["[[reno-hub]]"]
 tags: [interaction, atendimento, whatsapp, credito-imobiliario]
 ---

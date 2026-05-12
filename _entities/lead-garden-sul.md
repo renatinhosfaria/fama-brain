@@ -2,23 +2,32 @@
 schema_version: 1
 type: entity
 status: active
-created: 2026-05-11
-updated: 2026-05-11
+created: 2026-05-11T00:00:00.000Z
+updated: 2026-05-11T00:00:00.000Z
 source: imported
-author_agent: reno
 verified_by: null
 verified_at: null
 confidence: medium
 subtype: person
-aliases: ["Lead Garden Sul"]
+aliases:
+  - Lead Garden Sul
 relationships:
-  broker: "[[reno]]"
-  interested_in: "[[garden-sul]]"
+  broker: '[[reno]]'
+  interested_in: '[[garden-sul]]'
 external_ids:
-  crm_client_ids: [10657]
+  crm_client_ids:
+    - 10657
   crm_client_id_canonical: 10657
-related: ["[[reno-hub]]", "[[garden-sul]]", "[[jardim-sul]]"]
-tags: [entity, lead, atendimento, garden-sul, jardim-sul]
+related:
+  - '[[reno-hub]]'
+  - '[[garden-sul]]'
+  - '[[jardim-sul]]'
+tags:
+  - entity
+  - lead
+  - atendimento
+  - garden-sul
+  - jardim-sul
 ---
 # Entity: Lead Garden Sul
 

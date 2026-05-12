@@ -1,9 +1,20 @@
 ---
 type: runbook
-owner: renato
+owner: reno
 created: '2026-05-12'
 updated: '2026-05-12'
-tags: [reno, vault, memoria, operacao]
+tags:
+  - reno
+  - vault
+  - memoria
+  - operacao
+schema_version: 1
+status: active
+source: human-curated
+procedure_owner: renato
+trigger: >-
+  duvida ou operacao do Reno sobre busca, criacao, atualizacao ou governanca de
+  documentos no vault
 ---
 # Runbook: Operacao do vault pelo Reno
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Flaviahair Especialista em Mechas e Loiro
@@ -26,6 +26,8 @@ external_ids:
 broker: '[[reno]]'
 related:
   - '[[reno-hub]]'
+source: imported
+name: Flaviahair Especialista em Mechas e Loiro
 ---
 # Flaviahair Especialista em Mechas e Loiro
 

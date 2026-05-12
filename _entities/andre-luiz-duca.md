@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Andre Luiz Duca
@@ -24,7 +24,7 @@ external_ids:
   broker_id: 35
   lead_retorno_id: 2926
 interactions:
-  - '[[10975-andre-luiz-duca]]'
+  - '[[2026-05-11-atendimento-andre-luiz-duca|10975-andre-luiz-duca]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -32,6 +32,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Andre Luiz Duca
 ---
 ## Resumo
 

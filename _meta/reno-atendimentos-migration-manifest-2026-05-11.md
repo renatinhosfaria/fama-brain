@@ -1,16 +1,22 @@
 ---
 schema_version: 1
-type: reference
+type: concept
 status: active
-created: 2026-05-11
-updated: 2026-05-11
-source: agent-generated
+created: 2026-05-11T00:00:00.000Z
+updated: 2026-05-11T00:00:00.000Z
+source: imported
 author_agent: null
 verified_by: null
 verified_at: null
 confidence: medium
-tags: [meta, migration, atendimentos, second-brain]
-related: ["[[migration-2026-05-11-reno-second-brain]]", "[[reno-hub]]"]
+tags:
+  - meta
+  - migration
+  - atendimentos
+  - second-brain
+related:
+  - '[[migration-2026-05-11-reno-second-brain]]'
+  - '[[reno-hub]]'
 ---
 # Manifesto de migracao dos atendimentos Reno - 2026-05-11
 

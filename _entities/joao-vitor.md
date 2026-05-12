@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: João Vitor
@@ -27,6 +27,8 @@ mentions_property:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: João Vitor
 ---
 ## Resumo
 

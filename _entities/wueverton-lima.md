@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Wueverton Lima
@@ -27,7 +27,7 @@ external_ids:
   crm_client_id_canonical: 11000
   broker_id: 35
 interactions:
-  - '[[11000-wueverton-lima]]'
+  - '[[2026-05-11-atendimento-wueverton-lima|11000-wueverton-lima]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -35,6 +35,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Wueverton Lima
 ---
 ## Resumo
 
@@ -63,7 +65,7 @@ Wueverton Lima é lead do Reno em status **Não Respondeu** (cadastro canônico 
 - 2026-04-29 — repescagem step 1 (região / perfil do imóvel)
 - 2026-04-29 — terceiro cadastro (11116)
 - 2026-04-30 — repescagem step 2
-- 2026-05-01 — repescagem step 3 (morar vs investir) ([[11000-wueverton-lima]])
+- 2026-05-01 — repescagem step 3 (morar vs investir) ([[2026-05-11-atendimento-wueverton-lima|11000-wueverton-lima]])
 
 ## Próximas ações sugeridas
 

@@ -3,7 +3,10 @@ type: moc
 owner: renato
 created: '2026-05-12'
 updated: '2026-05-12'
-tags: [entities, reno, memoria]
+tags:
+  - entities
+  - reno
+  - memoria
 ---
 # `_entities/`
 

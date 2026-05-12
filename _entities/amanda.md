@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Amanda
@@ -21,7 +21,7 @@ external_ids:
   crm_client_id: 11004
   broker_id: 35
 interactions:
-  - '[[11004-amanda]]'
+  - '[[2026-05-11-atendimento-amanda|11004-amanda]]'
 mentions_property:
   - '[[place-arbi]]'
 mentions_neighborhood:
@@ -29,6 +29,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Amanda
 ---
 ## Resumo
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Sibely Cortes
@@ -22,7 +22,7 @@ external_ids:
   crm_client_id: 10996
   broker_id: 35
 interactions:
-  - '[[10996-sibely-cortes]]'
+  - '[[2026-05-11-atendimento-sibely-cortes|10996-sibely-cortes]]'
 mentions_property:
   - '[[union-vereda]]'
 mentions_neighborhood:
@@ -30,6 +30,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Sibely Cortes
 ---
 ## Resumo
 

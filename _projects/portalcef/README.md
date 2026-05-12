@@ -7,5 +7,5 @@ tags: [projeto, portalcef]
 ---
 # portalcef
 
-Vínculos: [[fama-overview]], [[credito-imobiliario]], [[schema]].
+Vínculos: [[fama-overview]], [[_shared/context/credito-imobiliario/index|credito-imobiliario]], [[schema]].
 Documentação do projeto PortalCEF (a desenvolver).

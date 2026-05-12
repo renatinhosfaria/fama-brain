@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Jisa Dantas
@@ -27,7 +27,7 @@ external_ids:
   crm_client_id_canonical: 11003
   broker_id: 35
 interactions:
-  - '[[11003-jisa-dantas]]'
+  - '[[2026-05-11-atendimento-jisa-dantas|11003-jisa-dantas]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -35,6 +35,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Jisa Dantas
 ---
 ## Resumo
 

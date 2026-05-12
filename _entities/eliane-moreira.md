@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Eliane Moreira
@@ -27,6 +27,8 @@ broker: '[[reno]]'
 related:
   - '[[reno-hub]]'
   - '[[union-vereda]]'
+source: imported
+name: Eliane Moreira
 ---
 # Eliane Moreira
 

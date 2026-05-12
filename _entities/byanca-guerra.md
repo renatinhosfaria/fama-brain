@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Byanca Guerra
@@ -24,7 +24,7 @@ external_ids:
   crm_client_id: 11168
   broker_id: 35
 interactions:
-  - '[[11168-byanca-guerra]]'
+  - '[[2026-05-11-atendimento-byanca-guerra|11168-byanca-guerra]]'
 mentions_property:
   - '[[garden-sul]]'
 mentions_neighborhood:
@@ -32,6 +32,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Byanca Guerra
 ---
 ## Resumo
 

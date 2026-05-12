@@ -12,7 +12,7 @@ tags:
 ---
 # Mercado de Crédito Imobiliário — Tendências Macro
 
-Vínculos: [[credito-imobiliario]], [[fama-overview]], [[mcmv]].
+Vínculos: [[_shared/context/credito-imobiliario/index|credito-imobiliario]], [[fama-overview]], [[mcmv]].
 Panorama macro do crédito imobiliário brasileiro: Selic, funding (poupança, LCI, FGTS), volume de crédito, novos produtos.
 
 **Última verificação: 2026-04-21.**

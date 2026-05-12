@@ -11,7 +11,7 @@ tags:
 ---
 # Taxas de Financiamento Imobiliário
 
-Vínculos: [[credito-imobiliario]], [[fama-overview]], [[mcmv]].
+Vínculos: [[_shared/context/credito-imobiliario/index|credito-imobiliario]], [[fama-overview]], [[mcmv]].
 Tabela comparativa das taxas praticadas pelos principais bancos para financiamento imobiliário.
 
 **Última verificação: 2026-04-21.** Confirmar com simulador oficial de cada banco antes de oferta formal ao cliente — taxas variam com perfil, relacionamento e produto.

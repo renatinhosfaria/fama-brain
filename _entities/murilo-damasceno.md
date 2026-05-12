@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Murilo Damasceno
@@ -25,12 +25,14 @@ external_ids:
   crm_client_id_canonical: 10927
   broker_id: 35
 interactions:
-  - '[[10927-murilo-damasceno]]'
+  - '[[2026-05-11-atendimento-10927-murilo-damasceno|10927-murilo-damasceno]]'
 mentions_property:
   - '[[union-vereda]]'
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Murilo Damasceno
 ---
 ## Resumo
 
@@ -52,7 +54,7 @@ Murilo Damasceno é lead do Reno em status **Não Respondeu**, originário de SL
 - 2026-04-25 — reenvio inicial (Union Vereda/Jaraguá)
 - 2026-04-28 — repescagem step 1 (genérica)
 - 2026-04-29 — repescagem step 2 (encaixe + viabilidade)
-- 2026-04-30 — repescagem step 3 (morar vs investir) ([[10927-murilo-damasceno]])
+- 2026-04-30 — repescagem step 3 (morar vs investir) ([[2026-05-11-atendimento-10927-murilo-damasceno|10927-murilo-damasceno]])
 
 ## Próximas ações sugeridas
 

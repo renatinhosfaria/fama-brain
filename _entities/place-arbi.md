@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: property
 entity_name: Place+Arbi
@@ -33,6 +33,8 @@ delivery_date: 2027-06
 developer: null
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Place+Arbi
 ---
 ## Resumo
 

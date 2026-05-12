@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Larissa Martins
@@ -28,6 +28,8 @@ mentions_property:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Larissa Martins
 ---
 ## Resumo
 

@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Joanne Thais
@@ -27,6 +27,8 @@ broker: '[[reno]]'
 related:
   - '[[reno-hub]]'
   - '[[union-vereda]]'
+source: imported
+name: Joanne Thais
 ---
 # Joanne Thais
 

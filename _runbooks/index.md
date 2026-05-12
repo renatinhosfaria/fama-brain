@@ -7,9 +7,6 @@ tags:
   - runbooks
   - moc
   - procedimentos
-schema_version: 1
-status: active
-source: human-curated
 ---
 
 # `_runbooks/` — Procedimentos operacionais

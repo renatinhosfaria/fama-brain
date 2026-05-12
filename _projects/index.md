@@ -7,9 +7,6 @@ tags:
   - projects
   - moc
   - lifecycle
-schema_version: 1
-status: active
-source: human-curated
 ---
 
 # `_projects/` — Projetos
@@ -33,7 +30,7 @@ Título: `Project: {Nome do projeto} ({active|archived})`.
 type: project
 goal: "..."
 status_lifecycle: active | archived
-owner: "[[Renato Faria]]"
+owner: "[[renato|Renato Faria]]"
 mentions_entity: []
 related: []
 ```

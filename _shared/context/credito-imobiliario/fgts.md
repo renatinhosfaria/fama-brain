@@ -10,7 +10,7 @@ tags:
 ---
 # FGTS — Uso em Crédito Imobiliário
 
-Vínculos: [[credito-imobiliario]], [[fama-overview]], [[mcmv]].
+Vínculos: [[_shared/context/credito-imobiliario/index|credito-imobiliario]], [[fama-overview]], [[mcmv]].
 Regras vigentes para uso do saldo do FGTS na compra, amortização e liquidação de imóveis residenciais.
 
 **Última verificação: 2026-04-21.**

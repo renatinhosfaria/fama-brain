@@ -10,7 +10,7 @@ tags:
   - fama-escritorio
 title: Endereço da Fama Negócios Imobiliários
 ---
-Vínculos: [[fama-overview]], [[renato]], [[fama-produtos]].
+Vínculos: [[fama-overview]], [[renato]], [[_shared/context/fama/produtos|fama-produtos]].
 Avenida: Raulino Cotta Pacheco
 Numero: 304
 Bairro: Martins

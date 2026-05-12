@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Eliseu
@@ -21,7 +21,7 @@ external_ids:
   crm_client_id: 10972
   broker_id: 35
 interactions:
-  - '[[10972-eliseu]]'
+  - '[[2026-05-11-atendimento-eliseu|10972-eliseu]]'
 mentions_property:
   - '[[union-vista]]'
 mentions_neighborhood:
@@ -29,6 +29,8 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+source: imported
+name: Eliseu
 ---
 ## Resumo
 

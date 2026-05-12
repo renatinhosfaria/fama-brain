@@ -1,5 +1,5 @@
 ---
-type: entity-profile
+type: entity
 owner: renato
 entity_type: person
 entity_name: Talles Alcantara
@@ -28,6 +28,8 @@ related:
   - '[[reno-hub]]'
   - '[[garden-sul]]'
   - '[[jardim-sul]]'
+source: imported
+name: Talles Alcantara
 ---
 # Talles Alcantara
 
