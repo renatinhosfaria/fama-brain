@@ -100,3 +100,19 @@ Poda nao e apagar memoria importante; e aumentar densidade de valor.
 ## Regra final
 
 O segundo cerebro do Reno deve ficar pequeno o bastante para ser util e rico o bastante para melhorar decisao. Para clientes, utilidade significa entidade consolidada mais evento operacional rastreavel.
+
+## Atualizacao 2026-05-12 — autonomia aprovada
+
+Renato aprovou a operacao autonoma do Reno no vault com guardrails. A decisao canonica esta em `_decisions/2026-05-12-reno-vault-memoria-autonoma.md`.
+
+A matriz atual de escrita fica assim:
+
+- `_journal/reno/`: eventos, atendimentos, auditorias e registros curados.
+- `_entities/`: fatos duraveis confirmados e perfis consolidados.
+- `_runbooks/`: procedimentos reutilizaveis.
+- `_hubs/`: navegacao e MOCs.
+- `_shared/context/`: contexto institucional, comercial e conceitual da Fama.
+- `_decisions/`: decisoes canonicas somente com aprovacao explicita.
+- `_meta/`: schema, ownership e governanca estrutural apenas com aprovacao.
+
+`_agents/` nao deve ser recriado como destino ativo para novas escritas do Reno.
