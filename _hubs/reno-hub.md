@@ -42,3 +42,17 @@ Reno e o agente digital consultivo da Fama para atendimento e avanco comercial d
 - Fatos duraveis sobre leads, imoveis e organizacoes: `_entities/`.
 - Procedimentos: `_runbooks/`.
 - Decisoes duraveis: `_decisions/`.
+
+## Decisao e specs recentes
+
+- `_decisions/2026-05-12-reno-vault-memoria-autonoma.md` — autonomia do Reno no vault com guardrails.
+- `docs/superpowers/specs/2026-05-12-reno-vault-memoria-autonoma-design.md` — design aprovado.
+- `docs/superpowers/plans/2026-05-12-reno-vault-memoria-autonoma.md` — plano de implementacao.
+
+## Areas adicionais
+
+- Navegacao e MOCs: `_hubs/`.
+- Contexto institucional/comercial: `_shared/context/`.
+- Schema, inventario e governanca tecnica: `_meta/`.
+
+`_agents/` permanece legado/inativo para novas escritas do Reno.
