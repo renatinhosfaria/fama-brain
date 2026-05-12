@@ -23,13 +23,21 @@ Em 2026-05-10, Reno registrou a continuidade da repescagem de Marcia Maria, lead
 
 Reno enviou follow-up de repescagem step 3 via WhatsApp validado, mudando o angulo para viabilidade pratica da compra: financiamento versus compra a vista.
 
+Em 2026-05-11, Reno enviou a repescagem step 4 via WhatsApp validado, com convite consultivo para a cliente ir a Fama e alinhar compra/financiamento do Garden Sul.
+
 ## Resultado
 
 Cliente permaneceu em `Nao Respondeu` na origem migrada.
 
 ## Proximo passo registrado na origem
 
-Aguardar resposta. Se nao houvesse retorno, a regua seguiria para step 4 em 2026-05-11 as 09:10.
+Aguardar resposta. Se nao houver retorno, a regua seguira para step 5 em 2026-05-12 as 14:20.
+
+## Sincronizacao 2026-05-11
+
+- Mensagem step 4 enviada: "Oi, Marcia! Pra nao te mostrar opcao fora do teu momento, o melhor agora e eu te receber na Fama e te mostrar so o que faz sentido pra compra/financiamento do Garden Sul. Voce consegue passar aqui essa semana?"
+- WhatsApp validado pelo bridge local com JID confirmado e espelhamento ativo.
+- Status CRM permaneceu em `Nao Respondeu`.
 
 ## Evidencia original
 

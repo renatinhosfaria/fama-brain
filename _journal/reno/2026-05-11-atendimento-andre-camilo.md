@@ -25,13 +25,20 @@ Cliente esta com visita presencial registrada no FamaChat para segunda-feira, 11
 
 Origem operacional registrada: FamaChat. Vinculos identificados: [[union-vereda]].
 
+Follow-up de Agendamento executado em 2026-05-11 para o appointment_id 246. WhatsApp enviado ao numero cadastrado com mensagem curta de confirmacao da visita de hoje as 16h na Fama.
+
 ## Resultado
 
 Status consolidado na origem migrada: Agendamento.
 
 ## Proximo passo registrado na origem
 
-Manter cliente em Agendamento e preservar a visita de 11/05/2026 as 16h. O follow-up proativo de Agendamento deve atuar antes da visita, com primeira elegibilidade em 11/05/2026 as 09:10.
+Aguardar comparecimento; sem novo disparo automatico neste fluxo.
+
+## Sincronizacao 2026-05-11
+
+- CRM note `17490` criada para o envio de confirmacao proativa.
+- Branch `reno_followup.agendamento` encerrada com sucesso para o appointment_id 246: `enabled=false`, `step=1`, `next_run_at=null`, `stopped_reason=confirmacao_visita_enviada`.
 
 ## Evidencia original
 

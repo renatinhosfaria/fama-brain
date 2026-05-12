@@ -49,10 +49,11 @@ Origem operacional registrada: FamaChat.
 ## Historico resumido
 
 - 2026-05-11: atendimento importado para o modelo duplo de entidade e journal do segundo cerebro do [[reno]].
+- 2026-05-11: follow-up proativo de confirmacao da visita enviado com sucesso para o appointment_id 246; nota CRM `17490`.
 
 ## Proximo passo
 
-Manter cliente em Agendamento e preservar a visita de 11/05/2026 as 16h. O follow-up proativo de Agendamento deve atuar antes da visita, com primeira elegibilidade em 11/05/2026 as 09:10.
+Aguardar comparecimento na visita de 11/05/2026 as 16h. O follow-up proativo de Agendamento foi enviado e a branch `reno_followup.agendamento` foi encerrada com `enabled=false`, `step=1`, `next_run_at=null` e `stopped_reason=confirmacao_visita_enviada`.
 
 ## Links operacionais
 

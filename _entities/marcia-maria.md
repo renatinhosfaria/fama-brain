@@ -30,7 +30,7 @@ Status CRM registrado na origem migrada: `Nao Respondeu`.
 
 ## Contexto comercial consolidado
 
-Marcia demonstrou interesse no Garden Sul. Ate a ultima interacao migrada, ainda nao havia confirmacao de necessidade, momento, decisao, entrada, orcamento ou forma de pagamento.
+Marcia demonstrou interesse no Garden Sul. Ate a ultima interacao migrada, ainda nao havia confirmacao de necessidade, momento, decisao, entrada, orcamento ou forma de pagamento. Em 2026-05-11, recebeu repescagem step 4 com convite consultivo para vir a Fama e alinhar compra/financiamento do Garden Sul.
 
 ## Historico resumido
 
@@ -38,6 +38,7 @@ Marcia demonstrou interesse no Garden Sul. Ate a ultima interacao migrada, ainda
 - 2026-05-08: repescagem step 1 enviada perguntando se a busca era para morar ou investir.
 - 2026-05-10: repescagem step 2 enviada sobre faixa de entrada.
 - 2026-05-10: repescagem step 3 enviada sobre financiamento ou compra a vista.
+- 2026-05-11: repescagem step 4 enviada via WhatsApp validado; proximo step materializado para 2026-05-12 as 14:20.
 
 ## Links operacionais
 

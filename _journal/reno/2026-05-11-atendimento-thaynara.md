@@ -13,7 +13,7 @@ channel: whatsapp
 participants: ["[[thaynara]]", "[[reno]]"]
 mentions_entity: ["[[thaynara]]", "[[reno]]", "[[union-vereda]]"]
 related: ["[[reno-hub]]"]
-tags: [cliente, atendimento, whatsapp, nao-respondeu, union-vereda]
+tags: [cliente, atendimento, whatsapp, arquivado, union-vereda]
 ---
 # Atendimento: Thaynara (2026-05-11)
 
@@ -21,22 +21,28 @@ Em 2026-05-11, [[reno]] consolidou no vault o atendimento de Thaynara, cliente C
 
 ## Resumo
 
-Repescagem step 4 enviada em 2026-05-10 via WhatsApp. A abordagem saiu da leitura de intencao (morar ou investir) e avancou para um convite consultivo direto: alinhar uma conversa rapida no escritorio na segunda para ver o caminho de compra com calma. O CRM permaneceu em Nao Respondeu e o proximo follow-up ficou agendado para 2026-05-11 as 09:10.
+Repescagem step 5 enviada em 2026-05-11 via WhatsApp, com abertura neutra por causa da grafia estilizada do nome. O bridge local validou o envio e a regua foi encerrada com `step=5`, `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`. O CRM foi arquivado defensivamente apos confirmar que o status ainda estava em `Nao Respondeu` no momento do encerramento.
 
 ## Dados operacionais
 
 - Cliente CRM: 11255
 - Broker ID: 35
-- Status CRM na origem: Nao Respondeu
+- Status CRM na origem: Arquivado
 - Origem operacional registrada: Facebook Ads
 
 ## Resultado
 
-Status consolidado na origem migrada: Nao Respondeu.
+Status consolidado na origem migrada: Arquivado.
 
 ## Proximo passo registrado na origem
 
-Aguardar a resposta da cliente. Se nao houver retorno ate o proximo horario da regua, o step 5 devera encerrar o fluxo com porta aberta.
+Atendimento encerrado por `max_steps`. Se houver novo contato da cliente, reabrir manualmente a partir da resposta real.
+
+## Sincronizacao 2026-05-11
+
+- Step 5 enviado com abertura neutra: "Oi, tudo bem? Aqui e o Reno, da Fama. Vi seu interesse no Union Vereda. So pra eu te atender certinho, como posso te chamar?"
+- Envio validado pelo bridge local com `validated=true` / `validationMethod=onWhatsApp`.
+- Notas CRM registradas: `17466` para o envio e `17467` para o encerramento defensivo.
 
 ## Evidencia original
 
