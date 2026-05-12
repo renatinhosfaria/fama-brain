@@ -2,57 +2,90 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-11'
+updated: '2026-05-13'
+status: active
 tags:
   - entities
   - moc
   - perfis-canonicos
+  - reno
+  - post-migration
 provenance: human-curated
 ---
-# `_entities/` - Perfis canonicos
+# `_entities/` — Perfis canônicos
 
-**Uma e somente uma** nota por entidade real. Aliases ficam no campo `aliases` do frontmatter, nao em arquivos separados. Quando o CRM tiver multiplos cadastros para a mesma pessoa, use `external_ids.crm_client_ids: [array]` + `external_ids.crm_client_id_canonical: <id>`.
+**Uma e somente uma** nota por entidade real. Aliases ficam no campo `aliases` do frontmatter, não em arquivos separados. Quando o CRM tiver múltiplos cadastros para a mesma pessoa, use `external_ids.crm_client_ids: [array]` + `external_ids.crm_client_id_canonical: <id>`.
 
-## Proposito
+Vínculos de governança: [[schema]], [[retrieval-policy]], [[reno-atendimentos-migration-manifest-2026-05-11]].
 
-`_entities/` guarda perfis consolidados de pessoas, organizacoes, propriedades e lugares. Eventos operacionais datados ficam em `_journal/reno/`; decisoes ficam em `_decisions/`; procedimentos duraveis ficam em `_runbooks/`.
+## Propósito
+
+`_entities/` guarda perfis consolidados de pessoas, organizações, propriedades e lugares. Eventos operacionais datados ficam em `_journal/reno/`; decisões ficam em `_decisions/`; procedimentos duráveis ficam em `_runbooks/`.
+
+O CRM/FamaChat continua sendo a fonte operacional de verdade para status, broker, visitas, vendas e atendimento atual. Entidades no vault são memória curada e contexto recuperável.
+
+## Campos atuais
+
+Para novas entidades, seguir o alvo do [[schema]] v1:
+
+- `type: entity` identifica a nota como entidade.
+- `subtype` classifica a natureza da entidade.
+- `aliases`, `relationships`, `external_ids` e `related` ajudam deduplicação e navegação.
+
+Durante a transição pós-migração, algumas notas também preservam `entity_type` como campo de compatibilidade/importação. Esse campo não deve ser usado como critério único de validade: a combinação atual `type: entity` + `subtype` é suficiente para o modelo operacional vigente.
 
 ## Subtypes
 
-- `person` - clientes, brokers, parceiros, funcionarios, leads.
-- `org` - construtoras, parceiros institucionais, fornecedores.
-- `property` - imoveis, apartamentos, terrenos, lotes especificos e empreendimentos.
-- `place` - bairros, regioes e zonas urbanas.
-- `project` - projetos como entidades, raro; geralmente vai em `_projects/`.
+- `person` — clientes, brokers, parceiros, funcionários, leads.
+- `org` — construtoras, parceiros institucionais, fornecedores.
+- `property` — imóveis, apartamentos, terrenos, lotes específicos e empreendimentos.
+- `neighborhood` — bairros.
+- `region` — regiões e zonas urbanas.
+- `project` — projetos como entidades, raro; geralmente vai em `_projects/`.
 
-## Estado atual
+## Estado atual em 2026-05-13
 
-- Total atual de notas de entidade: **175** (`_entities/*.md`, excluindo `index.md`).
-- Pessoas com `entity_type: person` explicito: **138**.
-- Lugares com `entity_type: place` explicito: **10**.
-- Propriedades com `entity_type: property` explicito: **8**.
-- Organizacoes com `entity_type: org` explicito: **1**.
-- Notas legadas sem `entity_type` explicito: **18**.
+Auditoria por MCP/Obsidian durante a Fase 3 do plano pós-migração:
+
+- Total atual de notas de entidade: **175** (`_entities/*.md`, excluindo `README.md` e `index.md`).
+- Todas as 175 notas de entidade têm `type: entity` e `subtype` explícito.
+- Distribuição por `subtype`:
+  - `person`: **156**.
+  - `property`: **8**.
+  - `org`: **1**.
+  - `neighborhood`: **8**.
+  - `region`: **2**.
 - Status: **172 active** / **3 archived**.
+- Compatibilidade histórica: **157** notas ainda têm `entity_type` explícito; **18** notas importadas recentes usam `subtype` sem duplicar `entity_type`. Isso não é pendência funcional sob o schema v1 atual.
 
-## Migracao Reno 2026-05-11
+## Migração Reno 2026-05-11
 
-Os atendimentos antigos de `_agents/reno/atendimentos/` foram migrados para modelo duplo:
+Os atendimentos antigos do namespace legado de atendimentos do Reno foram migrados para modelo duplo:
 
 - perfil consolidado em `_entities/`;
 - evento operacional datado em `_journal/reno/`.
 
-Quando houve duplicidade provavel, a entidade canonica recebeu aliases e multiplos IDs externos. Quando houve ambiguidade real, a nota manteve secao `## Ambiguidade` ou observacao equivalente.
+Quando houve duplicidade provável, a entidade canônica recebeu aliases e múltiplos IDs externos. Quando houve ambiguidade real, a nota manteve seção `## Ambiguidade` ou observação equivalente.
 
-Status dos atendimentos migrados:
+Status dos atendimentos migrados conforme manifesto e revisão pós-migração:
 
 - 153 fontes de atendimento foram inventariadas.
 - 152 fontes foram migradas ou special-migrated para o novo modelo.
-- `whatsapp-lua` ficou como revisao manual pendente.
+- `whatsapp-lua` foi descartado por decisão de Renato em 2026-05-12; **não criar entidade nem journal** para esse item.
 - `pending` normal no manifesto: 0.
 
-Use o manifesto da migracao e os eventos em `_journal/reno/` para navegar os atendimentos migrados. Este indice nao tenta listar todos os 175 perfis.
+Use o manifesto da migração e os eventos em `_journal/reno/` para navegar os atendimentos migrados. Este índice não tenta listar todos os 175 perfis.
 
-## Historico
+## Uso em retrieval
 
-Antes da migracao Reno 2026-05-11, este indice descrevia uma curadoria menor de 60 perfis canonicos, incluindo 38 leads do Reno. Esses numeros eram uma fotografia operacional anterior, nao o estado atual de `_entities/`.
+- Para fato durável sobre cliente, empreendimento, bairro ou organização, priorizar a entidade canônica.
+- Para sequência temporal de atendimento, usar `_journal/reno/`.
+- Para origem/migração/histórico, usar o manifesto em `_meta/`.
+- Para decisões e regras atuais, priorizar `_decisions/`, `_runbooks/` e [[retrieval-policy]].
+- Specs/plans históricos em `docs/superpowers/**` podem explicar por que algo mudou, mas não substituem a governança atual.
+
+## Histórico
+
+Antes da migração Reno 2026-05-11, este índice descrevia uma curadoria menor de 60 perfis canônicos, incluindo 38 leads do Reno. Esses números eram uma fotografia operacional anterior, não o estado atual de `_entities/`.
+
+Atualização de 2026-05-13: índice ajustado para o estado pós-migração, removendo `whatsapp-lua` da condição de pendência e clarificando que `subtype` é o campo operacional atual para classificação de entidades.
