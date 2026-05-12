@@ -1,332 +1,427 @@
 ---
-type: concept
-owner: renato
+confidence: null
 created: '2026-04-30'
-updated: '2026-05-11'
-topic: vault
-title: Schema v1 do vault FAM (RAG / Segundo cérebro)
+owner: renato
+related:
+  - '[[fama-overview]]'
+  - '[[reno-second-brain-governance]]'
+  - '[[2026-05-12-reno-vault-memoria-autonoma]]'
+  - '[[inventory-2026-05-13-reno-post-migration]]'
+schema_version: 1
+source: human-curated
+status: active
 tags:
   - meta
   - schema
   - governance
   - rag
-schema_version: 1
-status: active
-source: human-curated
-verified_by: null
+title: Schema v1 do vault FAM (RAG / Segundo cérebro)
+topic: vault
+type: concept
+updated: '2026-05-13'
 verified_at: null
-confidence: null
-related: []
+verified_by: null
 ---
-
-> **AVISO OPERACIONAL (2026-04-30):** o frontmatter desta nota usa o schema **legado** (types: `moc`, `shared-context`, `entity-profile`, `journal`, etc.) porque o MCP `obsidian` ainda rejeita os types do schema v1 (`entity`, `decision`, `concept`, `reference`, `runbook`, `hub`, `interaction`, `project`) e exige datas em `YYYY-MM-DD` (não ISO-8601 com timezone). A migração só pode ser executada depois que o MCP for atualizado para aceitar v1. Ver [FAM-16](/FAM/issues/FAM-16) — blocker registrado e escalado.
-
 # Schema v1 do vault FAM (RAG / Segundo cérebro)
 
-> **Decisão de migração (2026-05-11):** a reorganização Reno-first atualiza mapas e destinos ideais do schema v1, mas não executa migração em massa de frontmatter/types v1 enquanto o MCP não aceitar v1. O MCP não será alterado nesta migração.
+> **Estado operacional atualizado em 2026-05-13:** o vault já opera parcialmente com o modelo v1/Reno-first via `mcp-obsidian`. O MCP aceita os tipos e campos atualmente observados no vault, mas ainda há conteúdo legado e tipos compatíveis de transição. Este documento descreve o alvo canônico e o modo operacional seguro enquanto a migração completa não é enforçada em massa.
 
-Vínculos: [[fama-overview]], [[reno-second-brain-governance]].
-**Status:** v1 **aprovada** mas **não enforçada ainda** (depende de MCP). Aprovada por Renato Faria em [FAM-15](/FAM/issues/FAM-15) (revisão `0f1e41b5`).
+Vínculos: [[fama-overview]], [[reno-second-brain-governance]], [[2026-05-12-reno-vault-memoria-autonoma]], [[inventory-2026-05-13-reno-post-migration]].
 
-Este documento é a **single source of truth** do schema. Toda nota do vault FAM, **uma vez migrada**, terá `schema_version: 1` e seguirá as regras abaixo.
+**Status:** v1 aprovada, em uso operacional parcial e aplicada por governança/read-back, não por migração massiva obrigatória. CRM/FamaChat continua fonte operacional de verdade; o vault é memória curada e contexto recuperável.
 
 ---
 
-## 0. Pré-requisitos técnicos (antes de aplicar v1 em massa)
+## 0. Estado atual do MCP e da migração
 
-1. **MCP `obsidian` aceitar novos types.** Lista canônica v1: `interaction | decision | entity | hub | journal | concept | reference | runbook | project`. Adicional: `goal`, `result`.
-2. **MCP aceitar datas ISO-8601 com timezone** (ou manter YYYY-MM-DD se Renato preferir simplicidade — decisão pendente).
-3. **MCP aceitar campos extra** sem rejeitar (`schema_version`, `status`, `source`, `author_agent`, `verified_by`, `verified_at`, `confidence`, `mentions_entity`, `participants`, `decided_by`, `supersedes`, `superseded_by`, `implements`, `derives_from`, `related`, `aliases`, `relationships`, `external_ids`, `subtype`, `channel`, `valid_until`, `scope`, `maintainer`, `procedure_owner`, `trigger`, `goal`, `status_lifecycle`, `source_url`, `source_author`, `source_date`).
-4. **Filtro `min_trust` no retrieve do MCP** (FAM-18).
+### Types observados no vault em 2026-05-13
+
+A auditoria pós-migração observou 11 tipos em uso:
+
+- `agents-map`
+- `concept`
+- `context`
+- `decision`
+- `entity`
+- `hub`
+- `interaction`
+- `journal`
+- `moc`
+- `project-readme`
+- `runbook`
+
+Esses tipos coexistem durante a fase de transição. Não é necessário reescrever notas apenas para trocar type quando o documento já estiver funcional e corretamente roteado.
+
+### Types v1 preferenciais para novas notas
+
+Para novas notas, preferir:
+
+- `interaction`
+- `decision`
+- `entity`
+- `hub`
+- `journal`
+- `concept`
+- `reference`
+- `runbook`
+- `project`
+
+Extensões ainda aceitas quando refletirem o vault atual:
+
+- `moc`
+- `context`
+- `project-readme`
+- `agents-map`
+
+### Datas
+
+- Para documentos de governança, decisões, inventários e notas canônicas, preferir `YYYY-MM-DD`.
+- Datas ISO-8601 com timezone podem permanecer em documentos importados ou quando a precisão de horário for necessária.
+- Não migrar datas em massa sem necessidade operacional.
+
+### Campos extras
+
+O MCP aceita campos extras nos documentos atuais. Ao escrever, preservar campos existentes quando fizer read-write de nota canônica.
+
+Campos úteis:
+
+- `schema_version`
+- `status`
+- `source`
+- `author_agent`
+- `verified_by`
+- `verified_at`
+- `confidence`
+- `mentions_entity`
+- `participants`
+- `decided_by`
+- `supersedes`
+- `superseded_by`
+- `implements`
+- `derives_from`
+- `related`
+- `aliases`
+- `relationships`
+- `external_ids`
+- `subtype`
+- `channel`
+- `valid_until`
+- `scope`
+- `maintainer`
+- `procedure_owner`
+- `trigger`
+- `goal`
+- `status_lifecycle`
+- `source_url`
+- `source_author`
+- `source_date`
+
+### Pendências técnicas
+
+- `min_trust`/retrieval por confiança ainda deve ser tratado como política de consumo, salvo validação específica do MCP.
+- Embeddings e escopo indexado ficam documentados em `_meta/embedding-state.md`.
+- Golden queries ficam documentadas em `_meta/golden-queries.md`.
+- Política de retrieval fica documentada em `_meta/retrieval-policy.md`.
 
 ---
 
 ## 1. Princípios não-negociáveis
 
-1. **Atomic notes.** 1 conceito/fato/entidade por nota, 50–500 palavras.
-2. **Self-contained chunks.** Cada nota e cada `##` é legível sem clicar em link nenhum.
-3. **Dense bidirectional linking.** ≥3 outbound + ≥1 backlink por nota.
-4. **Frontmatter como contrato.** YAML obrigatório, schema versionado.
-5. **Hybrid retrieval-ready.** Vector + grafo + metadata + provenance.
-6. **Provenance explícita.** Agente nunca trata `agent-generated` não verificado como ground truth.
-7. **Frescor = correção.** `updated`, `status`, `supersedes`/`superseded_by`.
-8. **Hubs (MOCs) emergentes.** Folders pra estado de ciclo de vida; hubs pra tópico.
-9. **Mensurabilidade.** Golden query set + recall@5 antes/depois de cada mudança.
+1. **Atomic notes.** Uma nota deve representar um sujeito principal.
+2. **Self-contained chunks.** Cada nota e cada seção importante devem ser legíveis sem depender de contexto oculto.
+3. **Links bidirecionais úteis.** Hubs, decisões, runbooks e entidades devem ser fáceis de descobrir.
+4. **Frontmatter como contrato.** YAML curto, preservado e compatível com o MCP.
+5. **Hybrid retrieval-ready.** Vector, grafo, metadados e proveniência devem se complementar.
+6. **Proveniência explícita.** Nota importada ou gerada por agente não verificada não vira ground truth sem fonte adicional.
+7. **Frescor = correção.** `updated`, `status`, `supersedes`/`superseded_by` quando aplicável.
+8. **Hubs (MOCs) emergentes.** Folders guardam ciclo de vida; hubs guardam navegação por tópico.
+9. **Mensurabilidade.** Golden queries e recall qualitativo antes/depois de mudanças relevantes.
 
 ---
 
 ## 2. Folder convention + política de indexação
 
-| Folder | Vetorizar? | Grafo? | Conteúdo |
-|--------|-----------|--------|----------|
-| `_projects/active/` | sim | sim | Trabalho em andamento. |
-| `_projects/archived/` | não | sim | Histórico operacional, recuperável por link. |
-| `_entities/` | sim | sim | Perfis canônicos (1 por entidade real). |
-| `_hubs/` | sim | sim | MOCs (entidade, temático, tipo). |
-| `_decisions/` | sim | sim | Decision log (1 nota por decisão). |
-| `_runbooks/` | sim | sim | Procedimentos operacionais. Inclui perfis de agente. |
-| `_journal/` | não | sim | Daily/raw. |
-| `_meta/` | não | não | Schema, golden queries, scripts. |
+| Folder | Uso operacional | Conteúdo |
+|--------|-----------------|----------|
+| `_entities/` | Alta prioridade | Perfis canônicos e fatos duráveis. |
+| `_hubs/` | Alta prioridade | MOCs e navegação. |
+| `_decisions/` | Alta prioridade | Decision log atômico. |
+| `_runbooks/` | Alta prioridade | Procedimentos operacionais. |
+| `_shared/context/` | Alta prioridade temática | Contexto institucional, comercial e conceitual. |
+| `_journal/reno/` | Grafo/recent history | Eventos datados, interações e auditorias curadas. |
+| `_projects/` | Projeto/histórico | Trabalho em andamento e documentação de iniciativa. |
+| `_meta/` | Governança/auditoria | Schema, inventário, migração, avaliação e estado técnico. |
+| `docs/superpowers/**` | Histórico controlado | Specs/plans; usar como auditoria, não como fonte operacional padrão. |
 
-**Override por `status` no frontmatter:**
+**Override por `status`:**
 
-- `draft` → não vetoriza nem grafo.
-- `superseded` → não vetoriza, mantém grafo.
-- `archived` → idem `superseded`.
-- `active` → segue regra da pasta.
+- `draft` → não tratar como fonte operacional sem revisão.
+- `superseded` → usar apenas para histórico/rastreabilidade.
+- `archived` → usar apenas para histórico/rastreabilidade.
+- `active` → pode ser fonte operacional, respeitando hierarquia de fontes.
 
 ---
 
-## 3. Convenção de título — sinal de retrieval #1
+## 3. Convenção de título — sinal de retrieval
 
-```
+Formato recomendado:
+
+```text
 {Tipo}: {Sujeito} ({qualificador opcional})
 ```
 
-Exemplos canônicos:
+Exemplos:
 
-- `Decision: Migrar agentes low-volume para Opus 4.7 (2026-04)`
-- `Entity: João Silva (broker setor Vila Marielza)`
-- `Concept: Hybrid retrieval (vetorial + grafo + metadata)`
-- `Runbook: Deploy mcp-obsidian via Caddy (vmi3094636)`
-- `Hub: Clientes ativos 2026`
-- `Interaction: Bruno Sávio call comissão (2026-04-29)`
-- `Journal: 2026-04-30 (Renato)`
-- `Reference: LlamaIndex MarkdownNodeParser`
-- `Project: famachat (active)`
+- `Decision: memória autônoma do Reno no vault (2026-05)`
+- `Entity: João Silva (broker)`
+- `Concept: crédito imobiliário na Fama`
+- `Runbook: operação do vault pelo Reno`
+- `Hub: Reno`
+- `Interaction: atendimento Pedro (2026-05-11)`
+- `Journal: auditoria Reno (2026-05-13)`
+- `Project: FamaChat`
 
-**Filename** = slug do título em kebab-case, lowercase, sem acentos.
+Filename preferencial: slug em kebab-case, lowercase, sem acentos.
 
 ---
 
-## 4. Frontmatter por tipo
+## 4. Frontmatter comum
 
-### 4.1 Campos comuns (obrigatórios em todo tipo)
+Campos mínimos para nova nota canônica:
 
 ```yaml
 ---
-schema_version: 1
 type: interaction | decision | entity | hub | journal | concept | reference | runbook | project
+owner: renato | reno
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
 status: draft | active | superseded | archived
-created: 2026-04-30
-updated: 2026-04-30
-source: human-curated | agent-generated | imported
-author_agent: null                        # null se human-curated puro
+source: human-curated | agent-generated | imported | crm | mcp-obsidian-audit
+tags: [meta, schema]
+---
+```
+
+Campos adicionais recomendados conforme o caso:
+
+```yaml
+schema_version: 1
+author_agent: reno
 verified_by: null
 verified_at: null
 confidence: null
-tags: [meta, schema]
-related: ["[[Hub: ...]]"]
----
+related: []
+mentions_entity: []
 ```
 
-**Tag policy:** 3–5 tags, kebab-case, específicas, sem nome do agente.
+**Tag policy:** 3–5 tags, kebab-case, específicas, sem substituir wikilinks.
 
-### 4.2 `interaction`
+---
+
+## 5. Frontmatter por tipo
+
+### 5.1 `interaction`
 
 ```yaml
 type: interaction
-channel: whatsapp | call | email | meeting | visit
-participants: ["[[Bruno Sávio]]", "[[João Silva]]"]
-mentions_entity: ["[[Apartamento 304-A]]"]
-related: ["[[Hub: Bruno Sávio]]"]
+channel: whatsapp | call | email | meeting | visit | internal
+participants: ["[[Cliente]]", "[[reno]]"]
+mentions_entity: ["[[Empreendimento]]"]
+related: ["[[reno-hub]]"]
 ```
 
-Mora em `_journal/`.
+Destino preferencial: `_journal/reno/` quando for evento do Reno.
 
-### 4.3 `decision`
+### 5.2 `decision`
 
 ```yaml
 type: decision
-decided_by: ["[[renato|Renato Faria]]"]
-supersedes: ["[[Decision: Comissão broker padrão (2024-09)]]"]
+decided_by: Renato Faria
+supersedes: []
 superseded_by: null
-mentions_entity: ["[[Bruno Sávio]]"]
-implements: ["[[Concept: Política de comissão escalonada]]"]
-related: ["[[Hub: Comissões 2026]]"]
+implements: []
+mentions_entity: []
+related: []
 valid_until: null
 ```
 
-Bidirecional explícito. Mora em `_decisions/`.
+Destino: `_decisions/`.
 
-### 4.4 `entity`
+Decisão canônica exige aprovação explícita de Renato. Não editar materialmente decisão antiga; criar nova decisão ou marcar relação `supersedes`/`superseded_by` quando autorizado.
+
+### 5.3 `entity`
 
 ```yaml
 type: entity
-subtype: person | org | property | project
-aliases: ["Bruno", "Bruno S.", "B. Sávio"]
-relationships:
-  broker: "[[João Silva]]"
-external_ids:
-  crm_client_id: 10971
-related: ["[[Hub: Clientes ativos]]"]
+subtype: person | org | property | project | system | concept
+aliases: []
+relationships: {}
+external_ids: {}
+related: []
 ```
 
-**Uma e somente uma** nota por entidade real. Mora em `_entities/`.
+Destino: `_entities/`.
 
-### 4.5 `hub`
+Uma nota por entidade real. Buscar por nome, telefone, aliases e IDs externos antes de criar.
+
+### 5.4 `hub`
 
 ```yaml
 type: hub
-scope: "Clientes ativos 2026"
-maintainer: "[[Responsavel]]"
+scope: "reno"
+maintainer: renato
+related: []
 ```
 
-Hubs **não duplicam** conteúdo. Mora em `_hubs/`.
+Destino: `_hubs/`.
 
-### 4.6 `journal`
+Hubs linkam fontes; não duplicam conteúdo fonte.
+
+### 5.5 `journal`
 
 ```yaml
 type: journal
-date: 2026-04-30
-author: "[[renato|Renato Faria]]"
-mentions_entity: ["[[Bruno Sávio]]"]
+date: YYYY-MM-DD
+author_agent: reno
+mentions_entity: []
 ```
 
-Mora em `_journal/`. Filename: `YYYY-MM-DD-{slug}.md`.
+Destino: `_journal/` ou `_journal/reno/` conforme o agente.
 
-### 4.7 `concept`
+### 5.6 `concept`
 
 ```yaml
 type: concept
-mentions_entity: []
-implements: []
-derives_from: ["[[Reference: ...]]"]
+topic: credito-imobiliario
+related: []
+derives_from: []
 ```
 
-Mora no diretório temático adequado, normalmente em `_shared/context/`.
+Destino típico: `_shared/context/`, `_meta/` ou pasta temática adequada.
 
-### 4.8 `reference`
+### 5.7 `reference`
 
 ```yaml
 type: reference
 source_url: "https://..."
-source_author: "Andy Matuschak"
-source_date: 2024-08-01
+source_author: ""
+source_date: YYYY-MM-DD
 derives_from: []
 ```
 
-Mora no diretório temático adequado, normalmente em `_shared/context/` ou `_meta/`.
+Destino típico: `_shared/context/` ou `_meta/`.
 
-### 4.9 `runbook`
+### 5.8 `runbook`
 
 ```yaml
 type: runbook
-procedure_owner: "[[Responsavel]]"
-trigger: cron | manual | webhook
+procedure_owner: renato | reno
+trigger: manual | cron | webhook | event
 mentions_entity: []
 ```
 
-Mora em `_runbooks/`. Inclui perfis de agente.
+Destino: `_runbooks/`.
 
-### 4.10 `project`
+### 5.9 `project`
 
 ```yaml
 type: project
-goal: "..."
+owner: renato
+goal: ""
 status_lifecycle: active | archived
-owner: "[[renato|Renato Faria]]"
 mentions_entity: []
 ```
 
-Mora em `_projects/active/` ou `_projects/archived/`.
+Destino: `_projects/`.
 
 ---
 
-## 5. Typed links — arestas semânticas
+## 6. Typed links — arestas semânticas
 
 | Campo | Semântica |
 |-------|-----------|
 | `mentions_entity` | Entidade citada no corpo |
-| `participants` | Quem participou (interaction) |
-| `decided_by` | Quem decidiu (decision) |
-| `supersedes` | Esta substitui aquela |
-| `superseded_by` | Aquela me substitui |
+| `participants` | Quem participou da interação |
+| `decided_by` | Quem decidiu |
+| `supersedes` | Esta decisão substitui aquela |
+| `superseded_by` | Aquela decisão substitui esta |
 | `implements` | Operacionaliza um conceito/política |
 | `derives_from` | Citação/origem |
-| `related` | Cross-ref geral (fallback) |
+| `related` | Cross-ref geral |
 
 ---
 
-## 6. Self-contained chunk — regras de escrita
+## 7. Regras de escrita self-contained
 
-1. Primeira frase re-introduz o sujeito.
-2. Sem pronomes anafóricos no início de seção.
-3. Acrônimos expandidos pelo menos 1x por nota.
-4. Datas absolutas, nunca relativas.
-5. Quem é quem — primeira menção de pessoa usa nome completo + papel.
-
----
-
-## 7. Tags — facetas controladas
-
-- **Status**: `#draft`, `#active`, `#superseded`, `#archived`
-- **Domínio**: `#cliente`, `#broker`, `#parceiro`, `#imovel`, `#financeiro`, `#operacional`
-- **Tipo de evento**: `#renovacao`, `#venda`, `#visita`, `#comissao`, `#contrato`
-- **Sensibilidade**: `#confidencial`, `#publico-interno`
-
-Anti-padrões: `#cliente-bruno`, `#projeto-xpto` (isso é wikilink).
+1. Primeira frase reintroduz o sujeito.
+2. Datas absolutas; evitar “hoje”, “ontem” e “semana passada”.
+3. Primeira menção de pessoa deve dizer nome completo e papel quando relevante.
+4. Separar fato, inferência e pendência.
+5. Nunca salvar payload bruto, logs técnicos completos, segredos ou raciocínio interno.
+6. Toda escrita relevante precisa de read-back via MCP.
 
 ---
 
-## 8. Provenance & trust — regras de uso
+## 8. Provenance & trust
 
-1. **Agente não pode citar como ground truth nota com `source: agent-generated` E `verified_by: null`.**
-2. **Verificação humana** = `verified_by: "Renato Faria"` + `verified_at: <data>`.
-3. **Verificação cruzada agente-agente** vale menos que humana.
-4. **Agente consumidor não pode citar KPI de outro agente sem flag.**
-5. **`verified_by` em correções estruturais** nunca substitui verificação humana de fato/conteúdo.
-
-Implementação: filtro `min_trust` no retrieve do MCP (FAM-18).
+1. Nota com `source: agent-generated` e sem verificação humana deve ser tratada como contexto auxiliar, não como ground truth isolado.
+2. Verificação humana deve usar `verified_by: Renato Faria` e `verified_at: YYYY-MM-DD` quando aplicável.
+3. CRM/FamaChat prevalece para estado operacional de clientes, leads, broker, status, visitas, appointments, vendas e `meta_data`.
+4. O vault prevalece para memória curada, decisões aprovadas, runbooks e contexto recuperável.
+5. Docs históricos e specs/plans devem ser usados como auditoria, não como instrução operacional ativa quando houver runbook/decisão mais recente.
 
 ---
 
 ## 9. Schema versioning + embedding state
 
-- **`schema_version: 1`** em toda nota.
-- **`_meta/schema.md`** = source of truth do schema.
-- **`_meta/embedding-state.md`** registra modelo + fatia + data.
+- `schema_version: 1` é preferido em novas notas canônicas, mas notas legadas não precisam ser migradas só por esse motivo.
+- `_meta/schema.md` é a fonte de verdade do schema.
+- `_meta/embedding-state.md` registra modelo, fatia, data e exclusões de indexação quando essa informação estiver disponível.
+- `_meta/golden-queries.md` registra o conjunto de perguntas de validação.
+- `_meta/retrieval-policy.md` define prioridade de fontes e tratamento de histórico.
 
 ---
 
 ## 10. Permissões e escopo de governança
 
-Pode: adicionar/corrigir frontmatter, mover notas, deduplicar, renomear, atualizar hubs.
+Pode, com autorização e read-back:
 
-Não pode: editar conteúdo substantivo, alterar `_decisions/` de outro agente, decidir schema sem aprovação de Renato.
+- adicionar/corrigir frontmatter;
+- atualizar hubs;
+- registrar inventário e auditoria;
+- consolidar entidades óbvias;
+- atualizar runbooks.
+
+Não pode sem aprovação explícita de Renato:
+
+- editar materialmente decisões antigas;
+- alterar ownership;
+- mudar schema estrutural;
+- apagar histórico de migração;
+- deduplicar entidade ambígua;
+- transformar inferência em fato durável.
 
 ---
 
 ## 11. Migração desde o schema legado
 
-| Type legado | Type v1 | Folder destino |
-|-------------|---------|----------------|
+| Type legado | Type atual/preferencial | Destino |
+|-------------|--------------------------|---------|
 | `agent-profile` | `runbook` | `_runbooks/` |
 | `agent-readme` | `hub` | `_hubs/` |
-| `agent-decisions` (log compilado) | `decision` (1 nota por decisão) | `_decisions/` |
-| `entity-profile` (lead/cliente/broker) | `entity` | `_entities/` |
-| `entity-profile` em `atendimentos/` (journal disfarçado) | `journal` ou `interaction` | `_journal/` |
-| `journal` | `journal` | `_journal/` |
-| `context` (institucional) | `concept` ou `reference` | `_shared/context/` |
-| `shared-context` | `concept` ou `reference` | `_shared/context/` ou `_meta/` |
-| `moc` (README de pasta) | `hub` | `_hubs/` |
-| `project-readme` | `project` | `_projects/active/` ou `_projects/archived/` |
-| `agents-map` (`_shared/context/AGENTS.md`) | `hub` | `_hubs/agents-map.md` |
-| `goal` | `goal` (extensão) | `_projects/` ou `_shared/context/` |
-| `result` | `result` (extensão) | `_projects/` ou `_shared/context/` |
-| `financial-snapshot` | `entity` (subtype: snapshot) ou `reference` | `_entities/` ou `_shared/context/` |
+| `agent-decisions` | `decision` | `_decisions/` |
+| `entity-profile` | `entity` ou `interaction` | `_entities/` ou `_journal/reno/` |
+| `journal` | `journal` ou `interaction` | `_journal/` |
+| `context` | `concept`, `reference` ou `context` de transição | `_shared/context/`, `_meta/` ou `_projects/` |
+| `moc` | `hub` ou `moc` de transição | `_hubs/` ou README/index local |
+| `project-readme` | `project` ou `project-readme` de transição | `_projects/` |
+| `agents-map` | `agents-map` de transição | `_shared/context/AGENTS.md` |
 
-**Decisões resolvidas na migração Reno-first (2026-05-11):**
-
-1. `_agents/{agente}/` foi dissolvido na fase Reno-first. O namespace `_agents/` nao deve ser recriado como espaco permanente; perfis de agente vivem em `_runbooks/`, hubs em `_hubs/`, decisoes atomicas em `_decisions/` e eventos de alto volume em `_journal/{agente}/`.
-
-**Decisões abertas restantes** (escaladas em [FAM-16](/FAM/issues/FAM-16)):
-
-1. `_shared/goals/` e `_shared/results/` viram notas em `_projects/` ou permanecem em `_shared/context/`?
-2. Datas: ISO-8601 com timezone (precisão de hora) ou YYYY-MM-DD (compatível com MCP atual)?
+**Decisão resolvida na migração Reno-first (2026-05-11):** `_agents/` foi dissolvido como namespace ativo. Perfis de agente vivem em `_runbooks/`, hubs em `_hubs/`, decisões atômicas em `_decisions/` e eventos de alto volume em `_journal/{agente}/`.
 
 ---
 
 ## 12. Changelog
 
-- **2026-04-30** (aprovado por Renato em [FAM-15](/FAM/issues/FAM-15) revisão `0f1e41b5`): publicação da v1. Não enforçada ainda — aguarda atualização do MCP `obsidian` para aceitar novos types/campos.
+- **2026-04-30**: publicação inicial da v1 aprovada por Renato em FAM-15.
+- **2026-05-11**: migração Reno-first por tipo de conhecimento; `_agents/` deixa de ser destino ativo.
+- **2026-05-13**: atualização pós-migração para refletir uso operacional parcial do schema v1, coexistência de types de transição, política de datas e referências para embedding-state, golden-queries e retrieval-policy.
