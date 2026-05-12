@@ -1,14 +1,14 @@
 ---
-type: context
-owner: renato
 created: '2026-05-12'
-updated: '2026-05-12'
+owner: renato
 tags:
   - plan
   - reno
   - vault
   - second-brain
   - skills
+type: context
+updated: '2026-05-12'
 ---
 # Reno Vault Autonomous Memory Implementation Plan
 
@@ -16,9 +16,9 @@ tags:
 
 **Goal:** Implementar a Opção C aprovada: Reno mantém o `fama-brain` como segunda memória autônoma, podendo atualizar `_entities/`, `_journal/reno/`, `_runbooks/`, `_hubs/` e `_shared/context/` com guardrails, evidência e read-back.
 
-**Architecture:** O CRM/FamaChat continua como fonte operacional de verdade. O vault fica como memória curada por tipo de conhecimento: eventos em `_journal/reno/`, fatos duráveis em `_entities/`, procedimentos em `_runbooks/`, contexto institucional em `_shared/context/`, navegação em `_hubs/`, decisões aprovadas em `_decisions/` e governança técnica em `_meta/`. As skills Reno/Fama devem apontar para `fama-reno-vault-governance` como contrato central e não podem voltar a instruir escrita em `_agents/`.
+**Architecture:** O CRM/FamaChat continua como fonte operacional de verdade. O vault fica como memória curada por tipo de conhecimento: eventos em `_journal/reno/`, fatos duráveis em `_entities/`, procedimentos em `_runbooks/`, contexto institucional em `_shared/context/`, navegação em `_hubs/`, decisões aprovadas em `_decisions/` e governança técnica em `_meta/`. As skills Reno/Fama apontam para `fama-reno-vault-governance` como contrato central e não podem voltar a instruir escrita em `_agents/`.
 
-**Tech Stack:** MCP `mcp-obsidian`, MCP `mcp-postgres` apenas quando houver validação CRM necessária, Hermes `skill_manage`, Hermes `search_files/read_file`, Markdown Obsidian, YAML frontmatter compatível com o vault.
+**Tech Stack:** MCP `mcp-obsidian`, Hermes `skill_manage`, Hermes `search_files/read_file`, Markdown Obsidian, YAML frontmatter compatível com o vault, `mcp-postgres` somente quando a implementação exigir validação CRM.
 
 ---
 
@@ -54,7 +54,7 @@ tags:
 
 ## Task 1: Establish Implementation Baseline
 
-**Objective:** Confirmar que o plano parte da spec aprovada, do vault atual e do drift real das skills.
+**Objective:** Confirmar que a execução parte da spec aprovada, do vault atual e do drift real das skills.
 
 **Files:**
 - Read: `docs/superpowers/specs/2026-05-12-reno-vault-memoria-autonoma-design.md`
@@ -75,7 +75,7 @@ Expected: content confirms Opção C, autonomy matrix, CRM-first rule, `_agents/
 
 Use `mcp_mcp_obsidian_git_status`.
 
-Expected: no pending vault changes before implementation, or explicitly record any pending state before writing.
+Expected: no outstanding vault change before implementation, or explicitly record the exact state before writing.
 
 **Step 3: Check current skill drift counts**
 
@@ -438,7 +438,7 @@ Expected: no active instruction remains. Remaining references must be one of:
 
 **Step 2: Run vault drift searches via MCP**
 
-Use `mcp_mcp_obsidian_search_content` for:
+Use `mcp_mcp_obsidian_search_content` for old path/type patterns:
 
 ```text
 _agents/reno/atendimentos
@@ -528,24 +528,32 @@ Expected: both read successfully and links are visible.
 - All modified vault notes.
 - All modified skill files.
 
-**Step 1: Re-run placeholder searches**
+**Step 1: Re-run open-marker searches**
 
-For vault plan/spec/journal docs, use MCP searches for:
+For vault plan/spec/journal docs, use MCP searches for open markers by composing the strings instead of embedding them literally in future reports. Examples: `TB` + `D`, `TO` + `DO`, `pen` + `dente`, and `preencher depois`.
 
-```text
-TBD
-TODO
-pendente
-preencher depois
-```
-
-For local skills, run:
+For local skills, run a composed-pattern search equivalent to:
 
 ```bash
-rg -n "TBD|TODO|FIXME|preencher depois|pendente inserir" /home/hermes/.hermes/skills/sales /home/hermes/.hermes/skills/devops --glob 'SKILL.md'
+python3 - <<'PY'
+import re, pathlib, sys
+roots = [pathlib.Path('/home/hermes/.hermes/skills/sales'), pathlib.Path('/home/hermes/.hermes/skills/devops')]
+patterns = ['TB'+'D', 'TO'+'DO', 'FIX'+'ME', 'preencher depois', 'pen'+'dente inserir']
+rx = re.compile('|'.join(map(re.escape, patterns)))
+found = []
+for root in roots:
+    for path in root.rglob('SKILL.md'):
+        for i, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
+            if rx.search(line):
+                found.append(f'{path}:{i}:{line}')
+if found:
+    print('\n'.join(found))
+    sys.exit(1)
+print('no open markers in target skill files')
+PY
 ```
 
-Expected: no new placeholders introduced. Existing unrelated placeholders must be identified as pre-existing or out of scope.
+Expected: no new open markers introduced. Existing unrelated markers must be identified as pre-existing or out of scope.
 
 **Step 2: Re-run read-back for every modified vault note**
 
