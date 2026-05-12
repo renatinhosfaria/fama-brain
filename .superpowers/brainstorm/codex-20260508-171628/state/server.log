@@ -1,7 +1,0 @@
-{"type":"server-started","port":56382,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:56382","screen_dir":"C:\\fama-brain\\.superpowers\\brainstorm\\codex-20260508-171628\\content","state_dir":"C:\\fama-brain\\.superpowers\\brainstorm\\codex-20260508-171628\\state"}
-{"type":"screen-added","file":"C:\\fama-brain\\.superpowers\\brainstorm\\codex-20260508-171628\\content\\architecture-global-folders.html"}
-{"source":"user-event","type":"click","text":"B\n    \n      Global completo e enxuto\n      Manter _agents, _entities, _decisions, _journal, _runbooks, _projects, _shared, _hubs e _meta. Cada pasta tem uma função clara.","choice":"b","id":null,"timestamp":1778271559613}
-{"source":"user-event","type":"click","text":"B\n    \n      Global completo e enxuto\n      Manter _agents, _entities, _decisions, _journal, _runbooks, _projects, _shared, _hubs e _meta. Cada pasta tem uma função clara.","choice":"b","id":null,"timestamp":1778271593610}
-{"type":"screen-added","file":"C:\\fama-brain\\.superpowers\\brainstorm\\codex-20260508-171628\\content\\waiting-after-global-folders.html"}
-{"type":"screen-added","file":"C:\\fama-brain\\.superpowers\\brainstorm\\codex-20260508-171628\\content\\final-architecture-phases.html"}
-{"type":"server-stopped","reason":"idle timeout"}

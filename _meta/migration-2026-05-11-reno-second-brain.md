@@ -63,8 +63,8 @@ Migrar o conteudo operacional do Reno de `_agents/reno/**` para a arquitetura gl
 - `_journal/reno/*.md`: 152 notas.
 - Journals de atendimento `2026-05-11-atendimento-*.md`: 149.
 - Manifesto de atendimentos: 153 fontes totais.
-- Manifesto por status: `migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`, `pending-manual-review: 1`.
-- `whatsapp-lua` permanece como revisao manual pendente.
+- Manifesto por status: `migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`, `skipped-user-approved-delete: 1`.
+- `whatsapp-lua` foi descartado por decisao do Renato em 2026-05-12; nao foi criada entidade nem journal.
 - `pending` normal no manifesto: 0.
 
 ## Status operacional Reno
@@ -96,13 +96,16 @@ Checks executados:
 - Busca pelo namespace historico do Reno fora de `docs/**`: 435 referencias historicas totais. Excluindo o proprio ledger e o manifesto de atendimentos, restaram 272 referencias distribuidas em `_journal` (222), `_decisions` (27), `_entities` (10) e `_meta` (13); todas sao origem/evidencia/inventario/decisao historica permitida.
 - Frontmatter em `.md`: somente `docs/superpowers/plans/2026-05-11-reno-second-brain-vault-migration.md` permanece sem `---` inicial; nenhum conteudo de vault relacionado a esta migracao precisou de correcao.
 - Indices: `README.md`, `_hubs/index.md`, `_runbooks/index.md`, `_journal/index.md`, `_decisions/index.md` e `_meta/index.md` apontam para as areas canonicas Reno-first ou para o ledger/spec da migracao.
-- Manifesto de atendimentos: 153 fontes; 152 migradas ou special-migrated (`migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`); `pending-manual-review: 1` para `whatsapp-lua`; `pending` normal: 0.
+- Manifesto de atendimentos: 153 fontes; 152 migradas ou special-migrated (`migrated-batch-1..6: 149`, `migrated-pilot: 2`, `migrated-pilot-journal-only: 1`); `skipped-user-approved-delete: 1` para `whatsapp-lua`; `pending` normal: 0.
 - `git diff --check`: executado antes do commit, sem erros.
 - Revisao final pos-auditoria: saneadas duas instrucoes ativas antigas que ainda citavam `_agents/` como destino em `_shared/context/fama/stack.md` e `_entities/bruno-savio.md`.
 
+Item descartado por decisao:
+
+- `whatsapp-lua` foi descartado por decisao do Renato em 2026-05-12; nao foi migrado por falta de identificacao suficiente e porque o arquivo legado ja nao existe apos a remocao de `_agents/`.
+
 Pendencias fora da migracao:
 
-- `whatsapp-lua` permanece como revisao manual aprovada no manifesto; nao foi migrado nesta etapa.
 - A aplicacao em massa do schema v1/frontmatter continua fora de escopo enquanto depender de evolucao do MCP.
 
 ## Decisoes de migracao

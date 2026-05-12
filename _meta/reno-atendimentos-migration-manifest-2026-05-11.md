@@ -31,7 +31,7 @@ Este manifesto controla a migracao dos arquivos de atendimento de `_agents/reno/
 - Batch 4: concluido.
 - Batch 5: concluido.
 - Batch 6: concluido.
-- Resta apenas `whatsapp-lua` em `pending-manual-review`; nao migrar este caso nesta etapa.
+- `whatsapp-lua` foi descartado por decisao do Renato em 2026-05-12; nao criar entidade nem journal.
 
 ## Regras de destino
 
@@ -44,7 +44,7 @@ Este manifesto controla a migracao dos arquivos de atendimento de `_agents/reno/
 ## Casos especiais
 
 - `lote-reno-dup-recovery-20260427-3min.md` is journal-only, target `_journal/reno/2026-04-27-lote-reno-dup-recovery-3min.md`.
-- `whatsapp-lua.md` manual review; if Lua is identifiable, create/update `_entities/lua.md` and journal.
+- `whatsapp-lua.md` descartado por decisao do Renato em 2026-05-12; nao migrar para `_entities/` nem `_journal/reno/`.
 - `cliente-11010-eduarda.md` consolidates with `_entities/eduarda.md`, preserving `crm_client_ids`.
 
 ## Tabela fonte-destino
@@ -203,4 +203,4 @@ Este manifesto controla a migracao dos arquivos de atendimento de `_agents/reno/
 | `_agents\reno\atendimentos\11313-joaneci-pereira-dos-santos.md` | 11313 | joaneci-pereira-dos-santos | `_entities/joaneci-pereira-dos-santos.md` | no | `_journal/reno/2026-05-11-atendimento-joaneci-pereira-dos-santos.md` | migrated-batch-6 |
 | `_agents\reno\atendimentos\cliente-11010-eduarda.md` | 11010 | eduarda | `_entities/eduarda.md` | yes | `_journal/reno/2026-04-24-atendimento-eduarda.md` | migrated-pilot |
 | `_agents\reno\atendimentos\lote-reno-dup-recovery-20260427-3min.md` |  | lote-reno-dup-recovery-20260427-3min | N/A (journal-only) | N/A | `_journal/reno/2026-04-27-lote-reno-dup-recovery-3min.md` | migrated-pilot-journal-only |
-| `_agents\reno\atendimentos\whatsapp-lua.md` |  | whatsapp-lua | `_entities/lua.md if identifiable` | manual-review | `_journal/reno/2026-05-11-atendimento-lua.md if identifiable` | pending-manual-review |
+| `_agents\reno\atendimentos\whatsapp-lua.md` |  | whatsapp-lua | n/a | descartado | n/a | skipped-user-approved-delete |
