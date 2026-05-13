@@ -1,0 +1,41 @@
+---
+schema_version: 1
+type: interaction
+status: active
+created: '2026-05-13'
+updated: '2026-05-13'
+source: agent-generated
+author_agent: reno
+tags:
+  - cliente
+  - repescagem
+  - whatsapp
+  - follow-up
+title: Repescagem step 1 enviada para Japao Pereira
+event_date: '2026-05-13'
+occurred_at: '2026-05-13T15:41:06-03:00'
+channel: whatsapp
+participants:
+  - Japao Pereira
+  - reno
+mentions_entity:
+  - japao-pereira
+  - reno
+related:
+  - reno-hub
+confidence: 0.95
+external_ids:
+  client_id: '11312'
+  flow: repescagem
+  step: '1'
+  crm_note_id: '17683'
+  message_id: 3EB047F6052D2DE0F0A749
+---
+Em 2026-05-13, o Reno enviou o primeiro follow-up de repescagem para o cliente CRM 11312 após a reconciliação do primeiro contato.
+
+- WhatsApp validado e enviado com sucesso.
+- A branch de repescagem permaneceu em `Não Respondeu` com `step=1`.
+- Próximo follow-up agendado para 2026-05-15 09:10 BRT.
+- Mensagem curta e consultiva sobre o Union Vereda, sem usar o nome do cliente, para abrir resposta sobre viabilidade.
+
+Próximo passo: aguardar resposta do cliente; se houver retorno, seguir a qualificação e atualizar o nome apenas se a pessoa corrigir a forma de tratamento.
