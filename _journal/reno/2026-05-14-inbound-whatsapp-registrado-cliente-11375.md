@@ -17,20 +17,24 @@ occurred_at: '2026-05-14T11:22:36.947Z'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - 'client_id:11375'
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 related:
   - 'crm:clientes:11375'
   - 'crm:clientes_notas:17777'
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
   crm_note_id: '17777'
   message_id: 3AF341A32B5C8E1C7E91
   session_id: '20260514_153259_118091'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-inbound-whatsapp-registrado-cliente-11375.md
+  original_sha256: 84b380c63e08da3f71887c5249e6e3f57ec4d42379086566cfd13b2b5db16351
 ---
 ## Resumo
 Rotina operacional silenciosa registrou inbound WhatsApp de cliente do escopo Reno.
@@ -49,3 +53,7 @@ Rotina operacional silenciosa registrou inbound WhatsApp de cliente do escopo Re
 
 ## Próximo passo
 Interpretar os valores junto ao histórico comercial antes de qualquer resposta ao cliente.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
