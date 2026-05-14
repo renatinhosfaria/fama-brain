@@ -18,13 +18,13 @@ occurred_at: '2026-05-14T08:26:11-03:00'
 channel: whatsapp
 participants:
   - Gustavo Nunes
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Gustavo Nunes
-  - Union Vista
-  - Reno
+  - '[[union-vista]]'
+  - '[[reno]]'
 related:
-  - reno-hub
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11371'
@@ -32,6 +32,10 @@ external_ids:
   idempotency_key: '3539_1778757493767'
   crm_note_id: '17706'
   whatsapp_message_id: 3EB08A5467953FB023F885
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-primeiro-contato-enviado-gustavo-nunes-union-vista.md
+  original_sha256: 58342cb5eb14a4a968f155ec5ca96e3ab73e01931458ccd2d33ffef52a61e610
 ---
 ## Resumo
 Primeiro contato do Reno enviado com sucesso para o cliente Gustavo Nunes, client_id 11371, após validação no CRM/FamaChat.
@@ -52,3 +56,8 @@ Mensagem enviada:
 
 ## Próximo passo
 Aguardar primeira resposta do cliente. Se houver resposta real, a condução passa para Qualification e o status deve avançar de Não Respondeu para Em Atendimento somente se ainda estiver exatamente em Não Respondeu.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
