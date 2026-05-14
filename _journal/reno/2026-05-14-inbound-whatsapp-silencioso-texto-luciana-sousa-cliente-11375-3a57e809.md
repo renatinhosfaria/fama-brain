@@ -17,12 +17,12 @@ event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 related:
-  - reno-hub
+  - '[[reno-hub]]'
   - 2026-05-14-inbound-whatsapp-registrado-luciana-sousa-cliente-11375
 confidence: 1
 external_ids:
@@ -30,6 +30,10 @@ external_ids:
   crm_note_id: '17784'
   session_id: '20260514_153259_118091'
   whatsapp_message_id: 3A57E809840BC6E9E0A8
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-silencioso-texto-luciana-sousa-cliente-11375-3a57e809.md
+  original_sha256: 24d89704de096d32ee4aa82bd79d24d7e844594c04dabc2d5e29c97b166074c0
 ---
 ## Resumo
 Rotina silenciosa registrou inbound WhatsApp da cliente Luciana Sousa. Conteúdo literal recebido: "Texto".
@@ -55,3 +59,7 @@ Mensagem textual curta/genérica; deve ser interpretada junto ao histórico come
 
 ## Próximo passo
 A continuidade comercial deve reconstruir o último outbound/contexto da conversa antes de responder a cliente.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
