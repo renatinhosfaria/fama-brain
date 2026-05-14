@@ -19,14 +19,15 @@ occurred_at: '2026-05-14T11:09:18-03:00'
 channel: whatsapp
 participants:
   - Luis Carlos Bernardes
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11372-luis-carlos-bernardes
-  - Union Vista
-  - Reno
+  - '[[union-vista]]'
+  - '[[reno]]'
 related:
   - primeiro-contato
   - repescagem
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11372'
@@ -34,6 +35,10 @@ external_ids:
   message_id_1: 3EB0F857744CC7E327FFD3
   message_id_2: 3EB0F2BEB1490B15BA0424
   property_id: '22'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-primeiro-contato-enviado-luis-carlos-bernardes-11372.md
+  original_sha256: 3431e2fa757633dbcdb40bf77be768ba884190dd73750942a77abc65fd4e664f
 ---
 ## Resumo
 Primeiro contato do Reno enviado em reprocessamento autorizado por Renato para Luis Carlos Bernardes (client_id 11372).
@@ -56,3 +61,8 @@ Mensagens enviadas:
 
 ## Próximo passo
 Aguardar resposta do cliente. Se não responder, a Repescagem fica programada para a régua a partir de 2026-05-14T19:10:00-03:00.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
