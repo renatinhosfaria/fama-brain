@@ -2,8 +2,8 @@
 schema_version: 1
 type: interaction
 status: active
-created: '2026-05-13'
-updated: '2026-05-13'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -17,13 +17,13 @@ event_date: '2026-05-13'
 channel: whatsapp
 participants:
   - Angelo Gomes de Oliveira
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11367-angelo-gomes-de-oliveira
-  - union-vista
-  - reno
+  - '[[union-vista]]'
+  - '[[reno]]'
 related:
-  - reno-hub
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11367'
@@ -31,6 +31,10 @@ external_ids:
   idempotency_key: '3535_1778722030688'
   crm_note_id: '17702'
   property_id: '22'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-13-falha-no-primeiro-contato-whatsapp-angelo-gomes-de-oliveira-11367.md
+  original_sha256: 45526c1599743a1e7d12187797abad1f10efff3277ee0105e8627899e5fa29c7
 ---
 ## Resumo
 Evento `cliente.created` da rota `famachat-created` para o cliente 11367. O CRM/FamaChat foi validado como fonte operacional: cliente existente, `broker_id=35`, status `Sem Atendimento`, origem Facebook Ads, interesse no empreendimento Union Vista (Grand Ville).
@@ -52,3 +56,8 @@ Reno preparou uma mensagem curta e contextual de primeiro contato, mas o WhatsAp
 
 ## Próximo passo
 Não executar repescagem automática para este cliente enquanto não houver contato WhatsApp válido ou nova orientação operacional.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
