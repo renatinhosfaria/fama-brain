@@ -2,8 +2,8 @@
 schema_version: 1
 type: interaction
 status: active
-created: '2026-05-13'
-updated: '2026-05-13'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -12,25 +12,30 @@ tags:
   - inbound
   - silent-hook
   - 'client_id:11361'
+  - reno
 title: Inbound WhatsApp persistido — Wesley Jeovane
 event_date: '2026-05-13'
 occurred_at: '2026-05-13T17:47:13.914Z'
 channel: whatsapp
 participants:
   - Wesley Jeovane
-  - reno
+  - '[[reno]]'
 mentions_entity:
   - Wesley Jeovane
-  - Union Vereda
-  - reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - _journal/reno/2026-05-13-primeiro-contato-enviado-wesley-jeovane.md
+  - '[[reno-hub]]'
 confidence: 0.8
 external_ids:
   client_id: '11361'
   crm_note_id: '17691'
   whatsapp_message_id: AC367717FDE8277C844598CE1EB4BF37
   session_id: 20260513_224430_732ad0a7
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-13-inbound-whatsapp-persistido-wesley-jeovane.md
+  original_sha256: 6b63eab596b5a49a95fa4363f1b49ec3190afbae5f0228361efe016b80271469
 ---
 ## Resumo
 Rotina silenciosa de WhatsApp inbound identificou o cliente Wesley Jeovane no CRM (client_id 11361), broker_id 35, com status anterior `Não Respondeu` e repescagem ativa.
@@ -46,3 +51,8 @@ O conteúdo recebido no hook aparentava ruído técnico/sistêmico sem intençã
 
 ## Próximo passo
 Fluxo cliente-facing deve reconstruir a conversa WhatsApp real antes de responder; se não houver mensagem comercial útil, não presumir preferência, interesse ou aceite de visita.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
