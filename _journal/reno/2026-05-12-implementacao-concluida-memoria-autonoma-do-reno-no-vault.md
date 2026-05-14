@@ -1,9 +1,9 @@
 ---
 schema_version: 1
-type: journal
+type: interaction
 status: active
-created: '2026-05-12'
-updated: '2026-05-12'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -15,6 +15,18 @@ tags:
   - skills
 title: 'Implementação concluída: memória autônoma do Reno no vault'
 event_date: '2026-05-12'
+channel: internal
+participants:
+  - '[[reno]]'
+mentions_entity:
+  - '[[reno]]'
+related:
+  - '[[reno-hub]]'
+external_ids:
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-12-implementacao-concluida-memoria-autonoma-do-reno-no-vault.md
+  original_sha256: c413e819c69abea6e0364cc363048643ecebb8535b4495e2df7afcd1de720460
 ---
 Implementação concluída da memória autônoma do Reno no vault, conforme spec `docs/superpowers/specs/2026-05-12-reno-vault-memoria-autonoma-design.md`, plano `docs/superpowers/plans/2026-05-12-reno-vault-memoria-autonoma.md` e decisão `_decisions/2026-05-12-reno-vault-memoria-autonoma.md`.
 
@@ -34,3 +46,7 @@ Auditoria final:
 - `mcp-obsidian git_status` retornou limpo: `modified=0 untracked=0 ahead=0 behind=0`.
 
 Restrição respeitada: nenhum worktree foi criado.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
