@@ -2,8 +2,8 @@
 schema_version: 1
 type: interaction
 status: active
-created: '2026-05-13'
-updated: '2026-05-13'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -18,8 +18,9 @@ occurred_at: '2026-05-13T14:10:16-03:00'
 channel: crm
 participants:
   - Reno Agente de IA
+  - '[[reno]]'
 mentions_entity:
-  - Reno
+  - '[[reno]]'
   - Suely Rodrigues OGrady de Paiva
   - Bruna Santos
   - Geisy Souza
@@ -29,12 +30,17 @@ related:
   - fama-reno-webhook-first-contact
   - repescagem-follow-up
   - reno-follow-up-recovery
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   batch: first-contact-reconciliation-2026-05-13
   client_ids: '11299,11300,11308,11312,11313'
   crm_note_ids: '17672,17673,17674,17675,17676'
   source_note_ids: '17392,17395,17420,17424,17425'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-13-reconciliacao-historica-do-primeiro-contato-reno-5-clientes.md
+  original_sha256: 025c83cfe7b96ce7235c24f2f546947d56d33ba85e1507927235fa96bec10254
 ---
 ## Resumo
 Reconciliação operacional histórica do Primeiro Contato Reno após correção do runtime `famachat-created`.
@@ -62,3 +68,7 @@ Para cada cliente elegível, foi aplicada correção idempotente:
 
 ## Próximo passo
 Os cinco casos estão aptos a seguir pela Repescagem normal do Reno. CRM/FamaChat permanece fonte operacional da verdade.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
