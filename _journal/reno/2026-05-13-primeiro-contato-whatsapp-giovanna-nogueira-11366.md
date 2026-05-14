@@ -2,8 +2,8 @@
 schema_version: 1
 type: interaction
 status: active
-created: '2026-05-13'
-updated: '2026-05-13'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -18,13 +18,13 @@ occurred_at: '2026-05-13T21:13:04-03:00'
 channel: whatsapp
 participants:
   - Giovanna Nogueira
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Giovanna Nogueira
-  - Union Vista
-  - Reno
+  - '[[union-vista]]'
+  - '[[reno]]'
 related:
-  - reno-hub
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11366'
@@ -33,6 +33,10 @@ external_ids:
   crm_note_id: '17701'
   whatsapp_message_id: 3EB0ACC4E319DC6AA88D3C
   property_id: '22'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-13-primeiro-contato-whatsapp-giovanna-nogueira-11366.md
+  original_sha256: fd3515f9c82e33c0e09d1f57bd9db65bbb9432d335fa3a4638298d98c90fc913
 ---
 ## Resumo
 Primeiro contato do Reno enviado para Giovanna Nogueira, cliente `11366`, após validação operacional no CRM/FamaChat. Cliente pertence ao Reno (`broker_id=35`) e estava em `Sem Atendimento` antes do envio.
@@ -51,3 +55,8 @@ Após envio validado, o CRM foi atualizado de `Sem Atendimento` para `Não Respo
 
 ## Próximo passo
 Aguardar primeira resposta da cliente. Se responder, conduzir pela qualificação WhatsApp do Reno e mover de `Não Respondeu` para `Em Atendimento` somente se o CRM ainda estiver exatamente nesse status.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
