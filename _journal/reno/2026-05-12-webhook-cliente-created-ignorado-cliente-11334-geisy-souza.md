@@ -1,9 +1,9 @@
 ---
 schema_version: 1
-type: journal
+type: interaction
 status: active
-created: '2026-05-12'
-updated: '2026-05-12'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -14,6 +14,18 @@ tags:
   - broker-fora-escopo
 title: Webhook cliente.created ignorado — cliente 11334 Geisy Souza
 event_date: '2026-05-12'
+channel: internal
+participants:
+  - '[[reno]]'
+mentions_entity:
+  - '[[reno]]'
+related:
+  - '[[reno-hub]]'
+external_ids:
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-12-webhook-cliente-created-ignorado-cliente-11334-geisy-souza.md
+  original_sha256: 9c029b13511d4eff72303a4f705d3fa1d9a73391b5380a6d048f08c3d0970446
 ---
 ## Resumo
 Evento `cliente.created` recebido pela rota `famachat-created` para o cliente 11334. O payload foi tratado apenas como sinal e o CRM/FamaChat foi validado antes de qualquer envio.
@@ -33,3 +45,7 @@ Ignorado: o cliente existe no CRM, mas o `broker_id` real validado é 14. O esco
 
 ## Próximo passo
 Sem ação operacional do Reno neste cliente enquanto o CRM não indicar `broker_id=35`.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
