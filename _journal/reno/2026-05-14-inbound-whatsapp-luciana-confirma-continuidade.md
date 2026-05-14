@@ -17,19 +17,23 @@ event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 related:
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-registrado-luciana-sousa-cliente-11375.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
   crm_note_id: '17756'
   message_id: 3A8EF67D43ED42F73AB4
   session_id: 20260514_142359_a296d7cc
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-inbound-whatsapp-luciana-confirma-continuidade.md
+  original_sha256: 2c275e43caebeeefc8fd3211b4b3fe6eaa62c6e73983e3278f252d8995d22d70
 ---
 ## Resumo
 Luciana Sousa (cliente 11375) respondeu no WhatsApp: "Sim por favor".
@@ -48,3 +52,7 @@ Resposta afirmativa/solicitação de continuidade. Deve ser interpretada junto a
 
 ## Próximo passo
 Responder em fluxo cliente-facing separado, reconstruindo a oferta/pergunta anterior e entregando o que foi solicitado antes de nova pergunta.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
