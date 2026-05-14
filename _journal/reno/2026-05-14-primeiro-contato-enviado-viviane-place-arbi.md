@@ -18,14 +18,14 @@ occurred_at: '2026-05-14T02:08:33-03:00'
 channel: whatsapp
 participants:
   - Viviane
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Viviane
-  - Place+Arbi
-  - Reno
+  - '[[place-arbi]]'
+  - '[[reno]]'
 related:
-  - reno-hub
-  - Place+Arbi
+  - '[[reno-hub]]'
+  - '[[place-arbi]]'
 confidence: 1
 external_ids:
   client_id: '11368'
@@ -34,6 +34,9 @@ external_ids:
   message_id: 3EB0CE730803185BCB8718
   crm_note_id: '17703'
   property_id: '67'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-primeiro-contato-enviado-viviane-place-arbi.md
+  original_sha256: 482d8ee3cdbb86abb54ca5ff319d6bcfb657e9cf3318760412bc89ff31ddd9f7
 ---
 ## Resumo
 Primeiro contato do Reno enviado para a cliente Viviane (client_id 11368), validada no CRM com broker_id=35 e status inicial Sem Atendimento.
@@ -50,3 +53,8 @@ Mensagem WhatsApp enviada para o JID validado 553492769395@s.whatsapp.net, conte
 
 ## Próximo passo
 Aguardar primeira resposta da cliente. Se não responder até o horário programado, a régua de Repescagem poderá atuar conforme contrato do fluxo.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[place-arbi]]
