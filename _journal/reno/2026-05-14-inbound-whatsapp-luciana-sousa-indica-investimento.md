@@ -18,16 +18,17 @@ occurred_at: '2026-05-14T09:39:27.333Z'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - >-
     _journal/reno/2026-05-14-primeiro-contato-enviado-luciana-sousa-cliente-11375.md
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-luciana-sousa-informa-morar-na-aspirante-mega.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
@@ -35,6 +36,10 @@ external_ids:
   crm_note_id: '17722'
   message_id: 3AE29D28C559DF6C77B5
   session_id: 20260514_142359_a296d7cc
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-luciana-sousa-indica-investimento.md
+  original_sha256: 68b81e24666ead846391ff36442239e5a690b1ab5c8f711a1dcfdb361adc7380
 ---
 ## Resumo
 Luciana Sousa (cliente 11375) respondeu no WhatsApp: "Investimento".
@@ -50,3 +55,8 @@ O conteúdo útil do inbound é que a cliente está olhando o imóvel como inves
 
 ## Próximo passo
 Responder em continuidade comercial pela qualificação WhatsApp, usando o interesse como investimento para conduzir diagnóstico leve e, se fizer sentido, visita presencial na Fama.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
