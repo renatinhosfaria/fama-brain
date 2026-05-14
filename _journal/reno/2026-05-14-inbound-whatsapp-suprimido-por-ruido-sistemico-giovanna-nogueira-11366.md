@@ -19,23 +19,28 @@ occurred_at: '2026-05-14T10:23:49.719Z'
 channel: whatsapp
 participants:
   - Giovanna Nogueira
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Giovanna Nogueira
-  - Union Vista
+  - '[[union-vista]]'
   - Grand Ville
-  - Reno
+  - '[[reno]]'
 related:
   - >-
     _journal/reno/2026-05-13-primeiro-contato-whatsapp-giovanna-nogueira-11366.md
   - >-
     _journal/reno/2026-05-14-repescagem-whatsapp-giovanna-nogueira-11366-step-1.md
+  - '[[reno-hub]]'
 confidence: 0.95
 external_ids:
   client_id: '11366'
   crm_note_id: '17757'
   message_id: 3A2ED4202947DD41794E
   session_id: 20260514_152147_48d86af9
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-suprimido-por-ruido-sistemico-giovanna-nogueira-11366.md
+  original_sha256: b215efba2fe3aa45fe279e0f71168f1a9560a8835ebe7fa0ac654f0a6b521a5d
 ---
 ## Resumo
 Evento inbound do WhatsApp associado à cliente Giovanna Nogueira (`client_id=11366`) foi classificado pela rotina silenciosa como ruído operacional/sistêmico auto-carregado, sem resposta comercial útil identificável da cliente.
@@ -54,3 +59,8 @@ Evento inbound do WhatsApp associado à cliente Giovanna Nogueira (`client_id=11
 
 ## Próximo passo
 Aguardar resposta real da cliente no WhatsApp. Não considerar este evento como inbound comercial para interromper repescagem ou avançar status.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
