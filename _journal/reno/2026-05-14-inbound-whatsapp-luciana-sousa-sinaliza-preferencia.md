@@ -11,26 +11,32 @@ tags:
   - atendimento
   - whatsapp
   - silent-inbound
+  - reno
 title: Inbound WhatsApp — Luciana Sousa sinaliza preferência
 event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Reno
-  - Union Vereda
+  - '[[reno]]'
+  - '[[union-vereda]]'
 related:
   - >-
     _journal/reno/2026-05-14-primeiro-contato-enviado-luciana-sousa-cliente-11375.md
   - _journal/reno/2026-05-14-inbound-whatsapp-luciana-pergunta-sobre-a-fama.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
   crm_note_id: '17743'
   message_id: 3A28E2CECA2C0F556CF1
   session_id: 20260514_142359_a296d7cc
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-luciana-sousa-sinaliza-preferencia.md
+  original_sha256: 1bf8c9c1db9161729015da9681260dd458b0ebbe3eb91acba9913658a45353df
 ---
 ## Resumo
 Rotina silenciosa de inbound WhatsApp processou a mensagem curta `Sim prefiro` da cliente Luciana Sousa.
@@ -47,3 +53,8 @@ A resposta indica preferência/continuidade em relação à pergunta anterior da
 
 ## Próximo passo
 A continuidade comercial deve reconstruir o histórico imediato antes de responder ao cliente, pois `Sim prefiro` depende da pergunta anterior.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
