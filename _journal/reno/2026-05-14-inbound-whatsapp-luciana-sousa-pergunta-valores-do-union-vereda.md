@@ -18,22 +18,27 @@ occurred_at: '2026-05-14T10:03:37.239Z'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-luciana-prefere-resumo-por-whatsapp.md
   - >-
     _journal/reno/2026-05-14-primeiro-contato-enviado-luciana-sousa-cliente-11375.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
   crm_note_id: '17744'
   message_id: 3A197247693EA6F6996C
   session_id: 20260514_142359_a296d7cc
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-luciana-sousa-pergunta-valores-do-union-vereda.md
+  original_sha256: 4f8ddfe7d7867a31279027184bd78ccf3a1012831d8dee7a11550faf9af8fbc9
 ---
 ## Resumo
 Luciana Sousa (cliente 11375) respondeu no WhatsApp: "Valores?".
@@ -51,3 +56,8 @@ A pergunta ocorre dentro do atendimento do Union Vereda/Jaraguá, depois de a cl
 
 ## Próximo passo
 Responder no WhatsApp em sessão cliente-facing com valores/condições validados do Union Vereda e um CTA claro, sem prometer preço ou disponibilidade sem checagem operacional.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
