@@ -20,19 +20,24 @@ occurred_at: '2026-05-14T11:35:56.031Z'
 channel: whatsapp
 participants:
   - Cliente 11373
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11373
-  - Reno
-  - Union Vereda
+  - '[[reno]]'
+  - '[[union-vereda]]'
 related:
   - _journal/reno/2026-05-14-primeiro-contato-neutro-enviado-cliente-11373.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11373'
   crm_note_id: '17779'
   message_id: AC636C5E3FD149E1134B4AD9D0A76B67
   session_id: 20260514_163256_dee8972c
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-silencioso-processado-cliente-11373.md
+  original_sha256: 3e9979b8fc8ad7bfb08a582970c590090d82635dad5f121da47b2ee61c7f6ec4
 ---
 ## Resumo
 Rotina silenciosa de inbound WhatsApp processada para o cliente 11373 após mensagem recebida no canal WhatsApp.
@@ -50,3 +55,8 @@ O conteúdo recebido aparenta texto operacional/sistêmico auto-carregado ou ten
 
 ## Próximo passo
 Não avançar qualificação com base nesse conteúdo. Se houver mensagem real subsequente com nome/preferência do cliente, atualizar `full_name` e conduzir qualificação normal.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
