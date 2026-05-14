@@ -17,17 +17,21 @@ event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Mariana Ferreira dos Santos Nunes
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Mariana Ferreira dos Santos Nunes
-  - Reno
+  - '[[reno]]'
 related:
-  - reno-hub
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11377'
   crm_note_id: '17787'
   whatsapp_message_id: 3A8E62A68A5CCED9B471
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-nome-completo-confirmado-mariana-ferreira-dos-santos-nunes.md
+  original_sha256: ce9ff19cf00cb873dcd3e075483dc4e86564e5506290cd5a98d94fdc26d7eb90
 ---
 ## Resumo
 Inbound WhatsApp processado pela rotina silenciosa do Reno para cliente validada no CRM (client_id 11377, broker_id 35). A cliente informou o nome completo: Mariana Ferreira dos Santos Nunes.
@@ -46,3 +50,7 @@ Inbound WhatsApp processado pela rotina silenciosa do Reno para cliente validada
 
 ## Próximo passo
 Continuar atendimento comercial pelo runtime cliente-facing, usando o nome confirmado e mantendo uma pergunta por vez.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
