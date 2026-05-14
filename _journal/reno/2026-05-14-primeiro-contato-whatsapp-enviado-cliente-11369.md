@@ -17,14 +17,14 @@ event_date: '2026-05-14'
 occurred_at: '2026-05-14T07:03:29-03:00'
 channel: whatsapp
 participants:
-  - Reno
+  - '[[reno]]'
   - Cliente CRM 11369
 mentions_entity:
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
   - Cliente CRM 11369
 related:
-  - reno-hub
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11369'
@@ -33,6 +33,9 @@ external_ids:
   idempotency_key: '3537_1778752677126'
   whatsapp_message_id: 3EB094702DC258666055D1
   property_id: '161'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-primeiro-contato-whatsapp-enviado-cliente-11369.md
+  original_sha256: aee2000bc664059b173af94f224e11bda83996ab3bd7541ad58fa07959807a5f
 ---
 ## Resumo
 Primeiro contato do Reno enviado via WhatsApp para o cliente CRM `11369`, sob `broker_id=35`, com origem Facebook Ads.
@@ -55,3 +58,8 @@ Mensagem cliente-facing enviada:
 
 ## Próximo passo
 Aguardar resposta do cliente. Se responder informando o nome, a continuidade deve passar para Qualification: atualizar `full_name` no CRM, registrar nota e conduzir a qualificação consultiva.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
