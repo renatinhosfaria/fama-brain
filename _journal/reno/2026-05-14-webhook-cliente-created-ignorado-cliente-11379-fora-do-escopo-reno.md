@@ -17,20 +17,25 @@ title: Webhook cliente.created ignorado — cliente 11379 fora do escopo Reno
 event_date: '2026-05-14'
 channel: webhook/famachat-created
 participants:
-  - reno
+  - '[[reno]]'
   - cliente-11379
 mentions_entity:
   - cliente-11379
-  - reno
+  - '[[reno]]'
 related:
   - famachat-created
   - primeiro-contato
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11379'
   event_id: evt_3547
   idempotency_key: '3547_1778770714797'
   crm_note_id: '17788'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-webhook-cliente-created-ignorado-cliente-11379-fora-do-escopo-reno.md
+  original_sha256: 0d0bbb81831a60621731e104217a362bfa85e2966df209d1bd998d39bfd44d4d
 ---
 ## Resumo
 Evento `cliente.created` recebido na rota `famachat-created` para o cliente 11379. O payload foi tratado apenas como sinal; o CRM/FamaChat foi validado via MCP fallback JSON-RPC porque o wrapper integrado estava degradado.
@@ -47,3 +52,7 @@ Cliente encontrado no CRM com `broker_id=24`, diferente do escopo operacional do
 
 ## Próximo passo
 Sem ação do Reno. O atendimento permanece fora do escopo operacional do Reno enquanto o cliente não estiver atribuído ao broker 35.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
