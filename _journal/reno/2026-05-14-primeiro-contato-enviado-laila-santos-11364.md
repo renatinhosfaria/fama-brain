@@ -19,14 +19,15 @@ occurred_at: '2026-05-14T10:57:49-03:00'
 channel: whatsapp
 participants:
   - Laila Santos
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11364-laila-santos
-  - Union Vista
-  - Reno
+  - '[[union-vista]]'
+  - '[[reno]]'
 related:
   - primeiro-contato
   - repescagem
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11364'
@@ -34,6 +35,9 @@ external_ids:
   message_id_1: 3EB0ED10240F56DC629A70
   message_id_2: 3EB010650507A4ECA9426E
   property_id: '22'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-primeiro-contato-enviado-laila-santos-11364.md
+  original_sha256: 6c10328fc47d875c341b8762177566df3f5f14cd563738c7e0bc9672ea52f6b5
 ---
 ## Resumo
 Primeiro contato do Reno enviado em reprocessamento autorizado por Renato para Laila Santos (client_id 11364).
@@ -56,3 +60,8 @@ Mensagens enviadas:
 
 ## Próximo passo
 Aguardar resposta da cliente. Se não responder, a Repescagem fica programada para a régua a partir de 2026-05-14T19:10:00-03:00.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
