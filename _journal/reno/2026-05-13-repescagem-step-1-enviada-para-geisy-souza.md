@@ -2,8 +2,8 @@
 schema_version: 1
 type: interaction
 status: active
-created: '2026-05-13'
-updated: '2026-05-13'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -17,18 +17,23 @@ occurred_at: '2026-05-13T14:44:36-03:00'
 channel: whatsapp
 participants:
   - Geisy Souza
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Geisy Souza
-  - Union Vista
+  - '[[union-vista]]'
   - Grand Ville
+  - '[[reno]]'
 related:
-  - reno
+  - '[[reno]]'
+  - '[[reno-hub]]'
 confidence: 0.98
 external_ids:
   client_id: '11308'
   crm_note_id: '17680'
   whatsapp_message_id: 3EB08F83767E75ECF5F002
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-13-repescagem-step-1-enviada-para-geisy-souza.md
+  original_sha256: 6ee624f22f1278e4cc499b0848a410ac455ce74d9cccfe9c36c16877e85c296b
 ---
 ## Resumo
 Repescagem step 1 enviada com sucesso para a cliente Geisy Souza (client_id 11308), mantendo o cliente em `Não Respondeu` e com a régua ativa.
@@ -61,3 +66,8 @@ Aguardar resposta do cliente. Se houver silêncio até o próximo ciclo, a régu
 - CRM client_id: 11308
 - Nota CRM de envio inicial: #17420
 - Nota CRM de repescagem: #17680
+
+<!-- WikiLinks canônicos adicionados na migração autorizada de 2026-05-14. -->
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
