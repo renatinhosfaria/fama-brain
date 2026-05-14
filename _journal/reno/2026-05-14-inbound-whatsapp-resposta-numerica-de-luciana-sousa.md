@@ -16,20 +16,25 @@ event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Reno
-  - Union Vereda
+  - '[[reno]]'
+  - '[[union-vereda]]'
 related:
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-registrado-luciana-sousa-cliente-11375.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
   crm_note_id: '17751'
   message_id: 3A1BBD683458A0CC0076
   session_id: 20260514_142359_a296d7cc
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-resposta-numerica-de-luciana-sousa.md
+  original_sha256: 2ccda45ba97c630f8ef33e7ba07fb92928da51c7900485ef799d26ddab1cdd0f
 ---
 ## Resumo
 Luciana Sousa (cliente 11375) respondeu "30" no WhatsApp em continuidade da conversa comercial do Reno.
@@ -52,3 +57,8 @@ A resposta é numérica e deve ser interpretada junto ao histórico imediato da 
 
 ## Próximo passo
 Na resposta cliente-facing, reconstruir o último outbound/contexto antes de interpretar "30" e conduzir a conversa sem inventar significado operacional.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
