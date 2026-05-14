@@ -19,14 +19,15 @@ occurred_at: '2026-05-14T10:54:39-03:00'
 channel: whatsapp
 participants:
   - Aline de Souza
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11362-aline-de-souza
-  - Union Vista
-  - Reno
+  - '[[union-vista]]'
+  - '[[reno]]'
 related:
   - primeiro-contato
   - repescagem
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11362'
@@ -34,6 +35,9 @@ external_ids:
   message_id_1: 3EB04B70B924A03F7F9A47
   message_id_2: 3EB080D7D6EB23354C59CD
   property_id: '22'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-primeiro-contato-enviado-aline-de-souza-11362.md
+  original_sha256: e0b2bdb2eee5d003f7c79385df51c78652a7f1c89a26197f796f96630c4c70f8
 ---
 ## Resumo
 Primeiro contato do Reno enviado em reprocessamento autorizado por Renato para Aline de Souza (client_id 11362).
@@ -56,3 +60,8 @@ Mensagens enviadas:
 
 ## Próximo passo
 Aguardar resposta da cliente. Se não responder, a Repescagem fica programada para a régua a partir de 2026-05-14T19:10:00-03:00.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
