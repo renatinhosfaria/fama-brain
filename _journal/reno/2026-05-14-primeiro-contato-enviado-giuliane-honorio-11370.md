@@ -19,14 +19,15 @@ occurred_at: '2026-05-14T11:00:29-03:00'
 channel: whatsapp
 participants:
   - Giuliane Honorio
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11370-giuliane-honorio
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - primeiro-contato
   - repescagem
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11370'
@@ -34,6 +35,9 @@ external_ids:
   message_id_1: 3EB0BE3C2114003A9F35DF
   message_id_2: 3EB063FBEB3BE9D6E77AB0
   property_id: '161'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-primeiro-contato-enviado-giuliane-honorio-11370.md
+  original_sha256: 60e1a47b50926cb0751862840c68729451f030e0666d17b69b28ee3aee3e700f
 ---
 ## Resumo
 Primeiro contato do Reno enviado em reprocessamento autorizado por Renato para Giuliane Honorio (client_id 11370).
@@ -56,3 +60,8 @@ Mensagens enviadas:
 
 ## Próximo passo
 Aguardar resposta da cliente. Se não responder, a Repescagem fica programada para a régua a partir de 2026-05-14T19:10:00-03:00.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
