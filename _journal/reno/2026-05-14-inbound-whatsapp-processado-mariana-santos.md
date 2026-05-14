@@ -12,24 +12,29 @@ tags:
   - inbound
   - qualification
   - repescagem
+  - reno
 title: Inbound WhatsApp processado — Mariana Santos
 event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Mariana Santos
-  - reno
+  - '[[reno]]'
 mentions_entity:
   - Mariana Santos
-  - reno
-  - Place+Arbi
+  - '[[reno]]'
+  - '[[place-arbi]]'
 related:
   - >-
     _journal/reno/2026-05-14-primeiro-contato-enviado-mariana-santos-place-arbi.md
+  - '[[reno-hub]]'
 confidence: 0.9
 external_ids:
   client_id: '11377'
   message_id: 3AFABD4244C2CD2AE736
   session_id: 20260514_163843_4ddc24c8
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-inbound-whatsapp-processado-mariana-santos.md
+  original_sha256: 2d68270545aa6fd590bc8f0cd9e66dcdce982f23115cfd44b152f4e22d533cff
 ---
 ## Resumo
 Inbound WhatsApp recebido para Mariana Santos (client_id 11377) e processado pela rotina operacional silenciosa do Reno.
@@ -53,3 +58,8 @@ A mensagem recebida aparenta conter ruído técnico/instruções de sistema, sem
 
 ## Próximo passo
 Manter cliente em `Em Atendimento`. A próxima resposta cliente-facing, se necessária, deve ser produzida pelo fluxo principal de WhatsApp/qualificação, com reconstrução do contexto antes de responder.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[place-arbi]]
