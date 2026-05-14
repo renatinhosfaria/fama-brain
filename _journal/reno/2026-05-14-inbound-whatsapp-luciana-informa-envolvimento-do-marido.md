@@ -17,19 +17,24 @@ event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-registrado-luciana-sousa-cliente-11375.md
+  - '[[reno-hub]]'
 confidence: 0.95
 external_ids:
   client_id: '11375'
   message_id: 3AC4B38B0BF8A74B0655
   session_id: 20260514_142359_a296d7cc
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-luciana-informa-envolvimento-do-marido.md
+  original_sha256: 69021be84e98b906dc8f264b0f0e4df12b2be52bc18bd4a36301dcc5f66bee73
 ---
 ## Resumo
 Luciana Sousa respondeu no WhatsApp: "Meu marido".
@@ -46,3 +51,8 @@ A resposta indica que o marido participa da decisão ou continuidade do atendime
 
 ## Próximo passo
 Reconstruir o histórico imediato da conversa antes da próxima resposta comercial e conduzir de forma consultiva, considerando o marido como parte envolvida na decisão.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
