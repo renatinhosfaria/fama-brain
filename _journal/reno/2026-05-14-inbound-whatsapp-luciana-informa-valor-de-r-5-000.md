@@ -17,20 +17,25 @@ event_date: '2026-05-14'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-registrado-luciana-sousa-cliente-11375.md
+  - '[[reno-hub]]'
 confidence: 0.95
 external_ids:
   client_id: '11375'
   message_id: 3A2803CB4345126AC0B8
   session_id: 20260514_142359_a296d7cc
   crm_note_id: '17763'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-luciana-informa-valor-de-r-5-000.md
+  original_sha256: 453a6367064bac5d1632beba3cf88c409409a14bac711bc1e3c454e7ab29dfd9
 ---
 ## Resumo
 Luciana Sousa (cliente 11375) respondeu no WhatsApp: "5.000".
@@ -47,3 +52,8 @@ A resposta deve ser interpretada no contexto recente de viabilidade/entrada/cond
 
 ## Próximo passo
 Na próxima resposta cliente-facing, contextualizar o valor informado com cuidado e conduzir para validação segura de condição/financiamento, preservando o objetivo de visita presencial quando fizer sentido.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
