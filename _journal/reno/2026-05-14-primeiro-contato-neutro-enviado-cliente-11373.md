@@ -20,21 +20,25 @@ occurred_at: '2026-05-14T11:13:23-03:00'
 channel: whatsapp
 participants:
   - Cliente 11373
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11373
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - primeiro-contato
   - repescagem
   - nome-inseguro
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11373'
   crm_note_id: '17773'
   message_id_1: 3EB0F3EFF05C08924CC23F
   property_id: '161'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-primeiro-contato-neutro-enviado-cliente-11373.md
+  original_sha256: 6ba5f587b83c5ad75a80ce70d356b613bb5b59c903f62fae63b09ea0de3f2518
 ---
 ## Resumo
 Primeiro contato neutro do Reno enviado em reprocessamento autorizado por Renato para o cliente 11373.
@@ -56,3 +60,8 @@ Mensagem enviada:
 
 ## Próximo passo
 Aguardar a resposta com o nome correto. Quando responder, atualizar o `full_name` no CRM, registrar nota objetiva da correção e só então continuar a qualificação normal.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
