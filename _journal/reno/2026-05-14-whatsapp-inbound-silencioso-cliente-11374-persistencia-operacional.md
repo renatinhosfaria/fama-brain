@@ -18,20 +18,25 @@ occurred_at: '2026-05-14T09:35:09-03:00'
 channel: whatsapp
 participants:
   - cliente-11374
-  - reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11374
-  - reno
-  - union-vista
+  - '[[reno]]'
+  - '[[union-vista]]'
 related:
   - >-
     _journal/reno/2026-05-14-primeiro-contato-enviado-cliente-11374-union-vista.md
+  - '[[reno-hub]]'
 confidence: 0.95
 external_ids:
   client_id: '11374'
   crm_note_id: '17718'
   whatsapp_message_id: A5313FB3C85D54290B1921FF935826D4
   session_id: 20260514_143315_8435dcd4
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-whatsapp-inbound-silencioso-cliente-11374-persistencia-operacional.md
+  original_sha256: 47a9ccde97e39ad5022a405f2bbed9b084a01102aafacd24cd1264369c7c21ae
 ---
 ## Resumo
 Rotina silenciosa de WhatsApp inbound executada para cliente CRM 11374, validado como atendimento do Reno (`broker_id=35`).
@@ -52,3 +57,8 @@ O conteúdo recebido não trouxe intenção comercial útil identificável e apa
 
 ## Próximo passo
 Se houver resposta cliente-facing posterior, reconstruir o histórico real do WhatsApp antes de responder. Este evento silencioso não deve ser tratado como fala comercial do cliente quando houver transcript limpo divergente.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
