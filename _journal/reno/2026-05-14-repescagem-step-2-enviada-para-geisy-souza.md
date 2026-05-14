@@ -17,17 +17,22 @@ occurred_at: '2026-05-14T09:13:35-03:00'
 channel: whatsapp
 participants:
   - Geisy Souza
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Geisy Souza
-  - Union Vista
+  - '[[union-vista]]'
   - Grand Ville
+  - '[[reno]]'
 related:
-  - reno
+  - '[[reno]]'
+  - '[[reno-hub]]'
 confidence: 0.98
 external_ids:
   client_id: '11308'
   crm_note_id: '17710'
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-repescagem-step-2-enviada-para-geisy-souza.md
+  original_sha256: dfce57039d9086f339f0edb8e421c7fb748d1bc07f42e531c1d1da0724c99e1a
 ---
 ## Resumo
 Repescagem step 2 enviada com sucesso para a cliente Geisy Souza (client_id 11308), mantendo o cliente em `Não Respondeu` e com a régua ativa.
@@ -55,3 +60,8 @@ Mensagem enviada:
 
 ## Próximo passo
 Aguardar resposta da cliente. Se houver silêncio até o próximo ciclo, a régua seguirá para o próximo step conforme cadência.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
