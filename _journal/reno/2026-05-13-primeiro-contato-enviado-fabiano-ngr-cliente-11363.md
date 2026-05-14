@@ -2,8 +2,8 @@
 schema_version: 1
 type: interaction
 status: active
-created: '2026-05-13'
-updated: '2026-05-13'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -18,13 +18,14 @@ occurred_at: '2026-05-13T20:23:34-03:00'
 channel: whatsapp
 participants:
   - Fabiano Ngr
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - 'cliente:11363'
   - 'empreendimento:Garden Sul'
-  - reno
+  - '[[reno]]'
+  - '[[garden-sul]]'
 related:
-  - reno-hub
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11363'
@@ -32,6 +33,10 @@ external_ids:
   event_id: evt_3531
   idempotency_key: '3531_1778714329591'
   message_id: 3EB0E74CB6A03F8F3BC67B
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-13-primeiro-contato-enviado-fabiano-ngr-cliente-11363.md
+  original_sha256: 8c61bf3d538d915d5a3983e2f1d71de3a1772e3f2290c62a20a04786be0fbff1
 ---
 ## Resumo
 Primeiro contato do Reno enviado com sucesso via WhatsApp para o cliente 11363, atribuído ao broker_id 35.
@@ -48,3 +53,8 @@ Mensagem curta e contextual enviada sobre o interesse no empreendimento Garden S
 
 ## Próximo passo
 Aguardar primeira resposta. Se permanecer em `Não Respondeu`, a régua de Repescagem fica preparada para o próximo contato no horário programado.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[garden-sul]]
