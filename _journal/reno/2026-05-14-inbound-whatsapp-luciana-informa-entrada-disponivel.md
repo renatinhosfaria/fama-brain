@@ -18,11 +18,11 @@ occurred_at: '2026-05-14T10:14:29.497Z'
 channel: whatsapp
 participants:
   - Luciana Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Luciana Sousa
-  - Union Vereda
-  - Reno
+  - '[[union-vereda]]'
+  - '[[reno]]'
 related:
   - >-
     _journal/reno/2026-05-14-primeiro-contato-enviado-luciana-sousa-cliente-11375.md
@@ -30,6 +30,7 @@ related:
     _journal/reno/2026-05-14-inbound-whatsapp-luciana-prefere-resumo-por-whatsapp.md
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-registrado-luciana-sousa-cliente-11375.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
@@ -38,6 +39,10 @@ external_ids:
   message_id: 3A328915D40B68D53CB2
   session_id: 20260514_142359_a296d7cc
   crm_status: Em Atendimento
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-luciana-informa-entrada-disponivel.md
+  original_sha256: a9671d2a2ffbfb78164f032009cabd9ec829f9594db52ba8e6191c4178b054c6
 ---
 ## Resumo
 Luciana Sousa (cliente 11375) respondeu no WhatsApp: "Sim tenho entrada".
@@ -54,3 +59,8 @@ A resposta indica disponibilidade de entrada e é sinal positivo de viabilidade 
 
 ## Próximo passo
 Responder comercialmente em execução cliente-facing separada, retomando contexto de valores/condições do Union Vereda e conduzindo com segurança para próximo passo consultivo.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
