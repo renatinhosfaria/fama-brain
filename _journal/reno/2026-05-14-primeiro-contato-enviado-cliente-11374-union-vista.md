@@ -19,13 +19,13 @@ occurred_at: '2026-05-14T09:05:39-03:00'
 channel: whatsapp
 participants:
   - José Allison
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11374
-  - Union Vista
-  - Reno
+  - '[[union-vista]]'
+  - '[[reno]]'
 related:
-  - reno-hub
+  - '[[reno-hub]]'
   - primeiro-contato
 confidence: 1
 external_ids:
@@ -35,6 +35,10 @@ external_ids:
   message_id: 3EB094F8B11D37FD78C24A
   crm_note_id: '17709'
   property_id: '22'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-primeiro-contato-enviado-cliente-11374-union-vista.md
+  original_sha256: ef211294ff1ffa18a9077e14f0b4d7448602c52042a220a6c3fb57c33c95ddba
 ---
 ## Resumo
 Primeiro contato do Reno enviado por WhatsApp para o cliente 11374, validado no CRM como broker_id=35 e status inicial `Sem Atendimento`.
@@ -55,3 +59,8 @@ Mensagem enviada ao WhatsApp validado do cliente:
 
 ## Próximo passo
 Aguardar primeira resposta do cliente. Se responder, condução passa para Qualification; se permanecer sem resposta, Repescagem fica preparada para a próxima janela.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vista]]
