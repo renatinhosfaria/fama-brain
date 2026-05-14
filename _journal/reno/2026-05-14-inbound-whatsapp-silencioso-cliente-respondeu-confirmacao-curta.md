@@ -18,18 +18,23 @@ occurred_at: '2026-05-14T11:36:35.330Z'
 channel: whatsapp
 participants:
   - 'client:11375'
-  - reno
+  - '[[reno]]'
 mentions_entity:
   - 'client:11375'
-  - reno
+  - '[[reno]]'
 related:
   - _hubs/reno-hub
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11375'
   crm_note_id: '17781'
   message_id: 3A370B96ABB3C0A44B2B
   session_id: '20260514_153259_118091'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-silencioso-cliente-respondeu-confirmacao-curta.md
+  original_sha256: 03ed737045df1b1e5b6593870d293c5eeeb8b0aeb07a385955b538f4d2b7b4d0
 ---
 ## Resumo
 Cliente Reno identificado no CRM respondeu pelo WhatsApp com uma confirmação curta: "Sim".
@@ -49,3 +54,7 @@ Cliente Reno identificado no CRM respondeu pelo WhatsApp com uma confirmação c
 
 ## Próximo passo
 Antes de qualquer resposta cliente-facing, reconstruir o histórico imediato para interpretar a que oferta ou pergunta o "Sim" respondeu.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
