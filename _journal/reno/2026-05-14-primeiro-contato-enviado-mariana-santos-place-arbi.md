@@ -18,14 +18,15 @@ occurred_at: '2026-05-14T11:37:20-03:00'
 channel: whatsapp
 participants:
   - Mariana Santos
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Mariana Santos
-  - Place+Arbi
-  - Reno
+  - '[[place-arbi]]'
+  - '[[reno]]'
 related:
-  - reno
-  - Place+Arbi
+  - '[[reno]]'
+  - '[[place-arbi]]'
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11377'
@@ -34,6 +35,10 @@ external_ids:
   message_id: 3EB0DF2AE4D3DFB5AD4CE6
   crm_note_id: '17782'
   property_id: '67'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-primeiro-contato-enviado-mariana-santos-place-arbi.md
+  original_sha256: 29c6a803638b360bf075d124da131eb68105f2d47333498a15b890a0755e7647
 ---
 ## Resumo
 Primeiro contato do Reno enviado para Mariana Santos (client_id 11377), cliente validada no CRM com broker_id=35 e origem Facebook Ads.
@@ -51,3 +56,8 @@ Mensagem WhatsApp enviada com contexto do empreendimento Place+Arbi, no Shopping
 
 ## Próximo passo
 Aguardar primeira resposta da cliente. Se não responder, a Repescagem seguirá pela régua do Reno no horário programado.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[place-arbi]]
