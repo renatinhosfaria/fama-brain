@@ -18,21 +18,26 @@ occurred_at: '2026-05-14T11:38:49.827Z'
 channel: whatsapp
 participants:
   - Cliente 11373
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - cliente-11373
-  - Reno
-  - Union Vereda
+  - '[[reno]]'
+  - '[[union-vereda]]'
 related:
   - _journal/reno/2026-05-14-primeiro-contato-neutro-enviado-cliente-11373.md
   - >-
     _journal/reno/2026-05-14-inbound-whatsapp-silencioso-processado-cliente-11373.md
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11373'
   crm_note_id: '17783'
   message_id: AC0F817D20967438EE96C8BBF4D1B500
   session_id: 20260514_163256_dee8972c
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-inbound-whatsapp-silencioso-resposta-curta-cliente-11373.md
+  original_sha256: 8ebc9b299f87f04379fff05c0d6089c9b7bbc6939d1a63a0af278aa10dede2e9
 ---
 ## Resumo
 Rotina silenciosa de inbound WhatsApp processada para cliente 11373 após mensagem curta recebida no canal WhatsApp.
@@ -52,3 +57,8 @@ Mensagem recebida: "Tá bom". A resposta não confirmou o nome correto do client
 
 ## Próximo passo
 Aguardar resposta com nome/preferência ou nova mensagem útil para continuidade da qualificação; se o nome for informado, atualizar `full_name` no CRM antes da qualificação normal.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
+- [[union-vereda]]
