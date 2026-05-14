@@ -2,8 +2,8 @@
 schema_version: 1
 type: interaction
 status: active
-created: '2026-05-13'
-updated: '2026-05-13'
+created: '2026-05-14'
+updated: '2026-05-14'
 source: agent-generated
 author_agent: reno
 tags:
@@ -18,20 +18,25 @@ occurred_at: '2026-05-13T17:49:51.694Z'
 channel: whatsapp
 participants:
   - Wesley Jeovane
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Wesley Jeovane
   - Martins
-  - Reno
+  - '[[reno]]'
 related:
   - _journal/reno/2026-05-13-inbound-whatsapp-persistido-wesley-jeovane.md
   - _journal/reno/2026-05-13-primeiro-contato-enviado-wesley-jeovane.md
+  - '[[reno-hub]]'
 confidence: 0.95
 external_ids:
   client_id: '11361'
   crm_note_id: '17692'
   message_id: ACFF62288F0AB6AA28E413F25F0B82C2
   session_id: 20260513_224430_732ad0a7
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-13-inbound-whatsapp-preferencia-por-regiao-do-martins-wesley-jeovane.md
+  original_sha256: d95fa8a7b7e8b11bebd0c2cc22257cb4a2dcfc0c56cba11a1fe1e9194a13760f
 ---
 ## Resumo
 Cliente respondeu pelo WhatsApp informando preferência por imóvel na região do Martins.
@@ -52,3 +57,7 @@ Preferência declarada: região do Martins. Isso deve orientar a próxima respos
 
 ## Próximo passo
 Runtime cliente-facing deve responder de forma curta e consultiva, validar opções seguras na região do Martins e conduzir uma pergunta por vez.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
