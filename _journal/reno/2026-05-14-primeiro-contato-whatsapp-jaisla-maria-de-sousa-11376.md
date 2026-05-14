@@ -18,13 +18,14 @@ occurred_at: '2026-05-14T09:32:24-03:00'
 channel: whatsapp
 participants:
   - Jaísla Maria de Sousa
-  - Reno
+  - '[[reno]]'
 mentions_entity:
   - Jaísla Maria de Sousa
-  - Place+Arbi
-  - Reno
+  - '[[place-arbi]]'
+  - '[[reno]]'
 related:
-  - Place+Arbi
+  - '[[place-arbi]]'
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11376'
@@ -33,6 +34,10 @@ external_ids:
   crm_note_id: '17720'
   whatsapp_message_id: 3EB080E648276FB077A014
   property_id: '67'
+  migration: wikilinks-2026-05-14
+  original_path: >-
+    _journal/reno/2026-05-14-primeiro-contato-whatsapp-jaisla-maria-de-sousa-11376.md
+  original_sha256: b43763971cd89a23320325a9d1e9ce0a1d6e52e9d3d471a35cecc434a9029efb
 ---
 ## Resumo
 Primeiro contato do Reno enviado para a cliente Jaísla Maria de Sousa, validada no CRM como `client_id=11376`, `broker_id=35`, origem Facebook Ads e interesse no empreendimento Place+Arbi, no Shopping Park.
@@ -53,3 +58,7 @@ Mensagem enviada pelo WhatsApp:
 
 ## Próximo passo
 Aguardar a primeira resposta da cliente. Se responder, condução passa para Qualification e o status pode avançar de `Não Respondeu` para `Em Atendimento` conforme regra do Reno.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
