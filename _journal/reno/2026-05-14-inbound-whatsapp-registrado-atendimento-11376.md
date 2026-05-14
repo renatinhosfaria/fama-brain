@@ -16,20 +16,24 @@ title: Inbound WhatsApp registrado - atendimento 11376
 event_date: '2026-05-14'
 channel: whatsapp
 participants:
-  - reno
+  - '[[reno]]'
   - cliente-11376
 mentions_entity:
   - cliente-11376
-  - reno
+  - '[[reno]]'
 related:
   - 'crm:clientes/11376'
   - 'crm:clientes_id_anotacoes/17737'
+  - '[[reno-hub]]'
 confidence: 1
 external_ids:
   client_id: '11376'
   crm_note_id: '17737'
   message_id: AC90421B968CA27EE8A25361FF51F0A4
   session_id: 20260514_143706_3077c8a7
+  migration: wikilinks-2026-05-14
+  original_path: _journal/reno/2026-05-14-inbound-whatsapp-registrado-atendimento-11376.md
+  original_sha256: 4dc70788a9fe55145cb679e6b40ad51fd19f901c51dc947f11703a87aed4d3a5
 ---
 ## Resumo
 Cliente respondeu no WhatsApp: "Pode ser por aqui".
@@ -47,3 +51,7 @@ A resposta indica preferência ou possibilidade de seguir a conversa pelo WhatsA
 
 ## Próximo passo
 A continuidade cliente-facing deve tratar a preferência por WhatsApp sem prometer condição financeira não validada e mantendo a condução consultiva.
+
+## Links relacionados
+- [[reno]]
+- [[reno-hub]]
