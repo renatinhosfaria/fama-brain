@@ -23,12 +23,13 @@ tags:
   - qualificacao-whatsapp
   - 3-quartos
   - morar
+  - zona-oeste
 author_agent: reno
 ---
 Cliente Reno validada no CRM/FamaChat e relacionada ao [[union-vereda]].
 
 client_id=11524, broker_id=35, origem Facebook Ads. Respondeu ao primeiro contato em 2026-05-20 e entrou em qualificação WhatsApp.
 
-Preferência declarada: busca imóvel para morar e gostaria de opção com 3 quartos. Como o [[union-vereda]] é perfil de 2 quartos, alternativa apresentada/indicada para validação de fit: [[colinas-do-praia-ii]], na Tubalina/Zona Oeste, 3 quartos, 1 suíte, 65m², faixa de R$385 mil.
+Preferência declarada: busca imóvel para morar, com 3 quartos. Regiões desejadas: Mansour, Jardim Europa, Fruta do Conde, Luizote em geral e Taiamã/Taiaman. Como o [[union-vereda]] é perfil de 2 quartos, alternativa anterior indicada para validação de fit foi [[colinas-do-praia-ii]], mas a cliente refinou regiões para esse eixo Oeste.
 
-Próximo passo: confirmar se prefere região Oeste/Tubalina/Jaraguá ou se considera outra região de Uberlândia.
+Busca CRM em 2026-05-20: opções cadastradas exatamente nas regiões citadas aparecem majoritariamente como 2 quartos; não foi localizada opção ativa de 3 quartos exatamente nesses bairros na busca atual. Próximo passo: perguntar faixa de valor para filtrar 3 quartos nesse eixo e bairros próximos sem mandar imóvel fora do perfil.
