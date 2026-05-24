@@ -1,16 +1,5 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-05-21'
-updated: '2026-05-21'
-source: agent-generated
-tags:
-  - cliente
-  - repescagem
-  - whatsapp
-  - place-arbi
-author_agent: renato
 name: Thaynara da Silva Bonfim
 entity_type: person
 aliases:
@@ -18,18 +7,31 @@ aliases:
   - Thaynara Bonfim
   - Thaynara
 external_ids:
-  crm_client_id: '11460'
   broker_id: '35'
+  crm_client_id: '11460'
 mentions_entity:
   - '[[reno-hub]]'
 related:
   - '[[reno-hub]]'
-  - '[[2026-05-21-repescagem-step-3-enviada-thaynara-da-silva-bonfim]]'
+  - >-
+    [[2026-05-24-repescagem-step-5-enviada-e-cliente-arquivada-thaynara-da-silva-bonfim]]
+  - '[[2026-05-22-repescagem-step-4-enviada-para-thaynara-da-silva-bonfim]]'
+schema_version: 1
+status: archived
+created: '2026-05-21'
+updated: '2026-05-24'
+source: agent-generated
+tags:
+  - cliente
+  - repescagem
+  - whatsapp
+  - place-arbi
+author_agent: renato
 ---
 # Thaynara da Silva Bonfim
 
 ## Resumo atual
-Cliente CRM `11460`, `broker_id=35`, em repescagem Reno, com status CRM `Não Respondeu`. O último envio confirmado foi o step 3 em `2026-05-21T15:11:50-03:00`, e o próximo follow-up está previsto para `2026-05-22T19:10:00-03:00`.
+Cliente CRM `11460`, `broker_id=35`, com a repescagem do Reno concluída no step 5. O status final no CRM ficou `Arquivado` após confirmação do encerramento defensivo. A branch `reno_followup.repescagem` foi normalizada para `enabled=false`, `next_run_at=null` e `stopped_reason=max_steps`.
 
 ## Identificadores e aliases
 - CRM client ID: `11460`
@@ -37,16 +39,18 @@ Cliente CRM `11460`, `broker_id=35`, em repescagem Reno, com status CRM `Não Re
 - Empreendimento associado: `Place+Arbi`
 
 ## Fatos consolidados
-- O primeiro contato já havia sido realizado pelo Reno.
-- A repescagem estava ativa e fora da janela de anti-catch-up no momento do step 3.
-- O step 2 havia explorado viabilidade/entrada/parcela; o step 3 pivotou para o principal critério de escolha.
-- O cliente permanece operacionalmente em `Não Respondeu`.
+- O primeiro contato e toda a régua de repescagem foram executados pelo Reno.
+- A cliente recebeu os steps 1 a 5 da repescagem conforme a cadência operacional.
+- O último envio confirmado foi o step 5 em `2026-05-24T10:26:30-03:00`.
+- Após a confirmação do estado final, a cliente foi arquivada defensivamente no CRM.
+- Não há novo envio automático previsto enquanto a branch permanecer encerrada.
 
 ## Histórico relevante
 - `2026-05-18`: primeiro contato enviado.
-- `2026-05-18` a `2026-05-21`: repescagem steps 1 a 3 enviados conforme a régua.
-- `2026-05-19`: houve needs_repair de cadência; depois a branch foi normalizada.
-- Journal relacionado: [[2026-05-21-repescagem-step-3-enviada-thaynara-da-silva-bonfim]]
+- `2026-05-18` a `2026-05-24`: repescagem steps 1 a 5 enviados conforme a régua.
+- `2026-05-24`: branch encerrada com `stopped_reason=max_steps` e cliente arquivada.
+- Journal relacionado: [[2026-05-24-repescagem-step-5-enviada-e-cliente-arquivada-thaynara-da-silva-bonfim]]
+- Journal anterior: [[2026-05-22-repescagem-step-4-enviada-para-thaynara-da-silva-bonfim]]
 
 ## Próximo passo
-Aguardar a resposta da cliente; manter a repescagem ativa até a próxima janela da régua.
+Sem automação adicional. Se houver nova resposta futura, retomar o atendimento a partir do CRM.
