@@ -2,7 +2,8 @@
 created: '2026-05-13'
 owner: renato
 schema_version: 1
-source: mcp-obsidian-audit
+source: agent-generated
+provenance: mcp-obsidian-audit
 status: active
 tags:
   - meta
@@ -10,7 +11,7 @@ tags:
   - indexacao
   - reno
   - vault
-type: context
+type: concept
 updated: '2026-06-01'
 ---
 # Política de retrieval e indexação operacional

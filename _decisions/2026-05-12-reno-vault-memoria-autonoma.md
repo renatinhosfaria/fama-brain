@@ -7,8 +7,10 @@ related:
   - '[[reno-second-brain-governance]]'
   - '[[reno-vault-operacao]]'
   - '[[reno-hub]]'
-source: human-approved
-status: approved
+source: human-curated
+status: active
+decision_state: approved
+provenance: human-approved
 tags:
   - reno
   - vault
