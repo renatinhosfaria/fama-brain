@@ -1,5 +1,6 @@
 ---
 type: entity
+owner: renato
 name: Debora Braga
 entity_type: client
 external_ids:
@@ -15,7 +16,7 @@ verified_by: null
 schema_version: 1
 status: active
 created: '2026-05-20'
-updated: '2026-05-20'
+updated: '2026-06-01'
 source: agent-generated
 tags:
   - reno
@@ -25,7 +26,7 @@ tags:
   - morar
   - zona-oeste
   - orcamento
-author_agent: reno
+author_agent: renato
 ---
 Cliente Reno validada no CRM/FamaChat e relacionada ao [[union-vereda]].
 

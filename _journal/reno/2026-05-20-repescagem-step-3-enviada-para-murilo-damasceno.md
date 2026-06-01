@@ -16,7 +16,7 @@ occurred_at: '2026-05-20T19:47:20-03:00'
 channel: whatsapp
 participants:
   - '[[reno]]'
-  - '[[Murilo Damasceno]]'
+  - '[[murilo-damasceno|Murilo Damasceno]]'
 mentions_entity:
   - '[[reno-hub]]'
 related:

@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Kamily
 subtype: person
 created: '2026-05-06'
-updated: '2026-05-06'
+updated: '2026-06-01'
 tags:
   - cliente
   - agendamento
@@ -19,6 +19,7 @@ verified_at: null
 confidence: 0.9
 aliases:
   - "\U0001D50A\U0001D526\U0001D52C\U0001D52C"
+  - Kamily Vitoria
 external_ids:
   crm_client_id: 11190
   broker_id: 35
@@ -32,12 +33,18 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+supersedes:
+  - '[[kamily-vitoria]]'
 source: imported
 name: Kamily
 ---
 ## Resumo
 
 Kamily é cliente do Reno em status **Agendamento** com **visita confirmada para quinta 07/05/2026 às 9h** na Fama (appointment_id 245). **Visita iminente — amanhã na rotina do Reno.** Perfil: primeiro imóvel para morar, já fez simulação ("ficou dentro do esperado"), planeja comprar nos próximos meses. Nome no CRM tinha grafia estilizada (𝔊𝔦𝔬𝔬) e foi corrigido para "Kamily" pelo Reno após cliente informar preferência.
+
+## Deduplicação
+
+Esta é a entidade canônica para o CRM client id `11190`. A nota [[kamily-vitoria]] foi mantida apenas como ponte histórica/superseded da importação pós-migração.
 
 ## Identificação
 

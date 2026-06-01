@@ -18,10 +18,10 @@ event_date: '2026-05-14'
 occurred_at: '2026-05-14T14:15:06Z'
 channel: whatsapp
 participants:
-  - '[[cliente-11372-luis-carlos-bernardes]]'
+  - '[[luis-carlos-bernardes]]'
   - '[[reno]]'
 mentions_entity:
-  - '[[cliente-11372-luis-carlos-bernardes]]'
+  - '[[luis-carlos-bernardes]]'
   - '[[reno]]'
 related:
   - '[[reno-hub]]'

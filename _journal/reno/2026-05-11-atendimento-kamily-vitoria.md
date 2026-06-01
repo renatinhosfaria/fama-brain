@@ -10,8 +10,8 @@ verified_by: null
 verified_at: null
 confidence: medium
 channel: whatsapp
-participants: ["[[kamily-vitoria]]", "[[reno]]"]
-mentions_entity: ["[[kamily-vitoria]]", "[[reno]]", "[[place-arbi]]", "[[shopping-park]]"]
+participants: ["[[kamily|Kamily]]", "[[reno]]"]
+mentions_entity: ["[[kamily|Kamily]]", "[[reno]]", "[[place-arbi]]", "[[shopping-park]]"]
 related: ["[[reno-hub]]"]
 tags: [cliente, atendimento, whatsapp, agendamento, place-arbi]
 ---

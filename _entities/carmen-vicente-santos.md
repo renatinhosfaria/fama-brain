@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Carmen Vicente Santos
 subtype: person
 created: '2026-05-02'
-updated: '2026-05-02'
+updated: '2026-06-01'
 tags:
   - cliente
   - lead
@@ -31,12 +31,18 @@ mentions_neighborhood:
 broker: '[[reno]]'
 related:
   - '[[_hubs/index|Hubs]]'
+supersedes:
+  - '[[carmen-vicente-santos-vicente-santos]]'
 source: imported
 name: Carmen Vicente Santos
 ---
 ## Resumo
 
 Carmen Vicente Santos é lead em status **Não Respondeu**, com repescagem step 3 ativa (próximo follow-up 2026-05-02 19:10). Origem: Facebook Ads — Garden Sul. **Histórico operacional pesado:** múltiplas tentativas suprimidas por duplicidade entre cadastros e corretores; Renato precisou dar override manual em 2026-04-27 para Reno enviar primeiro contato. Nome no CRM aparece duplicado ("Carmen Vicente Santos Vicente Santos") indicando bug de captura.
+
+## Deduplicação
+
+Esta é a entidade canônica para o CRM client id `10998`. A nota [[carmen-vicente-santos-vicente-santos]] foi mantida apenas como ponte histórica/superseded por preservar o nome duplicado importado do CRM.
 
 ## Identificação
 

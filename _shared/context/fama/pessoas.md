@@ -66,4 +66,4 @@ Estrutura **extremamente horizontal** mas na prática **bastante centralizada** 
 - **Sem coordenação intermediária**: sem gerente comercial, sem líder de marketing, sem gestor operacional separado.
 - **Sem equipe administrativa fixa**.
 
-Os **agentes de IA** (Paperclip + OpenClaw — ver [[../AGENTS]]) funcionam como camada operacional complementar, absorvendo parte da carga que em outra estrutura caberia a time humano adicional.
+Os **agentes de IA** (Paperclip + OpenClaw — ver [[AGENTS]]) funcionam como camada operacional complementar, absorvendo parte da carga que em outra estrutura caberia a time humano adicional.

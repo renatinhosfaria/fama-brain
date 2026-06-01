@@ -1,5 +1,7 @@
 ---
+schema_version: 1
 agent: reno
+author_agent: reno
 broker_id: 35
 client_id: 11387
 client_name: Luciene Martins Bezerra

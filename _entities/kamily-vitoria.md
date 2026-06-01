@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Kamily
 subtype: person
 created: '2026-05-11'
-updated: '2026-05-11'
+updated: '2026-06-01'
 tags:
   - cliente
   - atendimento
@@ -13,25 +13,32 @@ tags:
   - agendamento
   - place-arbi
 schema_version: 1
-status: active
+status: superseded
 provenance: agent-generated
 verified_by: null
 verified_at: null
 confidence: 0.6
 aliases:
   - Kamily
+  - Kamily Vitoria
 external_ids:
   crm_client_id: 11190
   broker_id: 35
 broker: '[[reno]]'
 related:
+  - '[[kamily]]'
   - '[[reno-hub]]'
   - '[[place-arbi]]'
   - '[[shopping-park]]'
+superseded_by: '[[kamily]]'
 source: imported
 name: Kamily
 ---
 # Kamily
+
+## Nota de deduplicação
+
+Esta nota foi preservada como ponte histórica da importação pós-migração. A entidade canônica atual é [[kamily]].
 
 ## Resumo
 

@@ -224,8 +224,8 @@ mentions_entity: []
 ```yaml
 type: interaction
 channel: whatsapp | call | email | meeting | visit | internal
-participants: ["[[Cliente]]", "[[reno]]"]
-mentions_entity: ["[[Empreendimento]]"]
+participants: ["Cliente", "[[reno]]"]
+mentions_entity: ["Empreendimento"]
 related: ["[[reno-hub]]"]
 ```
 

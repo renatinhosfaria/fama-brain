@@ -139,7 +139,7 @@ Ecossistema de agentes de nível **diretoria** (ex.: CRO) — estratégia, gover
 Documentado nesta sessão do fama-brain:
 - Divisão clara Paperclip (estratégia) vs OpenClaw (execução).
 - Papéis de cada agente Paperclip.
-- Regra de ownership de escrita (ver [[../AGENTS]]).
+- Regra de ownership de escrita (ver [[AGENTS]]).
 
 Não documentado em detalhe:
 - Runtime técnico de Paperclip (Claude Code em sessão interativa vs VPS dedicada).

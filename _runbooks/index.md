@@ -39,7 +39,7 @@ Título: `Runbook: {Sujeito} ({qualificador})` ou `Runbook: agent-{nome}`.
 
 ```yaml
 type: runbook
-procedure_owner: "[[Responsavel]]"
+procedure_owner: "Responsável"
 trigger: cron | manual | webhook | event
 mentions_entity: []
 related: []

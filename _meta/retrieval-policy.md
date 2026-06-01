@@ -1,6 +1,7 @@
 ---
 created: '2026-05-13'
 owner: renato
+schema_version: 1
 source: mcp-obsidian-audit
 status: active
 tags:
@@ -10,7 +11,7 @@ tags:
   - reno
   - vault
 type: context
-updated: '2026-05-13'
+updated: '2026-06-01'
 ---
 # Política de retrieval e indexação operacional
 

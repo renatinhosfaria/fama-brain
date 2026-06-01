@@ -2,6 +2,7 @@
 created: '2026-05-12'
 decided_by: Renato Faria
 owner: reno
+schema_version: 1
 related:
   - '[[reno-second-brain-governance]]'
   - '[[reno-vault-operacao]]'
@@ -15,7 +16,7 @@ tags:
   - autonomy
   - skills
 type: decision
-updated: '2026-05-12'
+updated: '2026-06-01'
 ---
 # Decisão: memória autônoma do Reno no vault
 

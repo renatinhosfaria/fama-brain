@@ -15,9 +15,9 @@ Atende especialmente **o comprador de primeiro imóvel dependente de financiamen
 
 ## Seções
 
-- [[fama/historia]]
-- [[fama/missao-visao-valores]]
-- [[fama/mercado]]
-- [[fama/produtos]]
-- [[fama/stack]]
-- [[fama/pessoas]]
+- [[_shared/context/fama/historia|História]]
+- [[_shared/context/fama/missao-visao-valores|Missão, visão e valores]]
+- [[_shared/context/fama/mercado|Mercado]]
+- [[_shared/context/fama/produtos|Produtos]]
+- [[_shared/context/fama/stack|Stack]]
+- [[_shared/context/fama/pessoas|Pessoas]]

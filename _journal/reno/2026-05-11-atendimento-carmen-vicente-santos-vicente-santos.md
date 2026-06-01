@@ -10,8 +10,8 @@ verified_by: null
 verified_at: null
 confidence: medium
 channel: whatsapp
-participants: ["[[carmen-vicente-santos-vicente-santos]]", "[[reno]]"]
-mentions_entity: ["[[carmen-vicente-santos-vicente-santos]]", "[[reno]]", "[[garden-sul]]", "[[jardim-sul]]"]
+participants: ["[[carmen-vicente-santos|Carmen Vicente Santos]]", "[[reno]]"]
+mentions_entity: ["[[carmen-vicente-santos|Carmen Vicente Santos]]", "[[reno]]", "[[garden-sul]]", "[[jardim-sul]]"]
 related: ["[[reno-hub]]"]
 tags: [cliente, atendimento, whatsapp, arquivado, garden-sul]
 ---

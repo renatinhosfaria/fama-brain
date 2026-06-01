@@ -11,13 +11,13 @@ verified_by: null
 schema_version: 1
 status: active
 created: '2026-05-17'
-updated: '2026-05-17'
+updated: '2026-06-01'
 source: agent-generated
 tags:
   - reno
   - cliente
   - famachat
-author_agent: reno
+author_agent: renato
 owner: renato
 ---
 Cliente FamaChat/Reno vinculado ao atendimento do [[reno-hub]].

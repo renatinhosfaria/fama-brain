@@ -88,5 +88,5 @@ Este arquivo é sobre **Renato como pessoa e como liderança** — complementa [
 ## Ver também
 
 - [[pessoas]] — estrutura societária e organizacional da Fama.
-- [[../fama-overview|Fama]] — resumo da empresa.
+- [[fama-overview|Fama]] — resumo da empresa.
 - [[historia]] — história da Fama.

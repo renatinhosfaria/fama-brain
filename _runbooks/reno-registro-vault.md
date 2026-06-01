@@ -77,8 +77,8 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 source: imported
 author_agent: reno
-participants: ["[[lead]]", "[[reno]]"]
-mentions_entity: ["[[lead]]", "[[reno]]"]
+participants: ["lead", "[[reno]]"]
+mentions_entity: ["lead", "[[reno]]"]
 tags: [interaction, atendimento, whatsapp]
 ```
 

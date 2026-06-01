@@ -1,16 +1,17 @@
 ---
 schema_version: 1
 type: entity
+owner: renato
 status: active
 created: '2026-05-20'
-updated: '2026-05-20'
+updated: '2026-06-01'
 source: agent-generated
 tags:
   - reno
   - empreendimento
   - zona-oeste
   - 3-quartos
-author_agent: reno
+author_agent: renato
 name: Colinas do Praia II
 entity_type: property
 external_ids:

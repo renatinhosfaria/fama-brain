@@ -1,6 +1,7 @@
 ---
 created: '2026-05-13'
 owner: renato
+schema_version: 1
 source: mcp-obsidian-audit
 status: active
 tags:
@@ -10,7 +11,7 @@ tags:
   - reno
   - vault
 type: context
-updated: '2026-05-13'
+updated: '2026-06-01'
 ---
 # Estado de embeddings e retrieval
 
@@ -28,6 +29,20 @@ Este documento registra o estado conhecido de embeddings, retrieval e indexaçã
 - Modelo de embedding: não informado pelo runtime consultado.
 - Último rebuild vetorial: não informado pelo runtime consultado.
 - Escopo exato indexado em vetor: não confirmado.
+
+## Verificação de 2026-06-01
+
+Consulta read-only via MCP/Obsidian confirmou que o runtime ainda expõe estatísticas do vault e idade de índice, mas não expõe, nesta sessão, modelo de embedding, escopo vetorial nem ferramenta de rebuild vetorial.
+
+Estado operacional desta rodada:
+
+- `stat_vault` disponível.
+- `validate_vault` disponível.
+- `index_age_ms` disponível como métrica de idade de índice do runtime.
+- `last_sync` retornou `null`.
+- Rebuild vetorial: não executado nesta sessão porque nenhuma ferramenta MCP disponível expôs essa ação.
+
+Até o runtime expor rebuild/modelo/escopo, a política segura continua sendo tratar o retrieval como busca textual + grafo + leitura de notas canônicas.
 
 ## Regra operacional enquanto embeddings não estiverem confirmados
 

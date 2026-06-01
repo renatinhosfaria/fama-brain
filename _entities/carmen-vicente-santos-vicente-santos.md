@@ -5,7 +5,7 @@ entity_type: person
 entity_name: Carmen Vicente Santos Vicente Santos
 subtype: person
 created: '2026-05-11'
-updated: '2026-05-11'
+updated: '2026-06-01'
 tags:
   - cliente
   - atendimento
@@ -13,7 +13,7 @@ tags:
   - arquivado
   - garden-sul
 schema_version: 1
-status: active
+status: superseded
 provenance: agent-generated
 verified_by: null
 verified_at: null
@@ -25,13 +25,19 @@ external_ids:
   broker_id: 35
 broker: '[[reno]]'
 related:
+  - '[[carmen-vicente-santos]]'
   - '[[reno-hub]]'
   - '[[garden-sul]]'
   - '[[jardim-sul]]'
+superseded_by: '[[carmen-vicente-santos]]'
 source: imported
 name: Carmen Vicente Santos Vicente Santos
 ---
 # Carmen Vicente Santos Vicente Santos
+
+## Nota de deduplicação
+
+Esta nota foi preservada como ponte histórica para o nome duplicado importado do CRM. A entidade canônica atual é [[carmen-vicente-santos]].
 
 ## Resumo
 
