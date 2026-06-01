@@ -18,7 +18,7 @@ updated: '2026-06-01'
 
 ## Objetivo
 
-Esta política orienta quais fontes o Reno deve priorizar ao recuperar contexto do vault `fama-brain`, especialmente após a migração Reno-first e a remoção do namespace `_agents/` como destino ativo.
+Esta politica orienta quais fontes agentes devem priorizar ao recuperar contexto do vault `fama-brain`, especialmente apos a evolucao para multiagent por territorios e a remocao do namespace `_agents/` como destino ativo.
 
 ## Hierarquia de fontes
 
@@ -30,16 +30,29 @@ Ao responder ou decidir onde escrever, usar a seguinte ordem:
 4. **Hubs** em `_hubs/` para navegação e descoberta.
 5. **Entidades** em `_entities/` para fatos duráveis.
 6. **Contexto compartilhado** em `_shared/context/` para Fama, crédito, produtos e metodologia.
-7. **Journal recente** em `_journal/reno/` para eventos datados e histórico curado.
+7. **Journal recente** em `_journal/{agent_id}/` para eventos datados e historico curado do agente responsavel.
 8. **Projetos** em `_projects/` quando a pergunta envolver iniciativa, arquitetura ou trabalho em andamento.
 9. **Meta** em `_meta/` para schema, inventário, migração, avaliação e estado técnico.
 10. **Docs históricos/specs/plans** somente quando a pergunta for sobre histórico de implementação ou auditoria.
+
+## Tratamento de territorios por agente
+
+Quando a pergunta envolver um agente especifico, priorizar primeiro o territorio desse agente dentro da hierarquia normal de fontes.
+
+Exemplos:
+
+- Pergunta sobre atendimento ou follow-up do Reno: priorizar [[reno-hub]], `_runbooks/reno-*.md` e `_journal/reno/`.
+- Pergunta sobre campanha, calendario ou comunicacao de Marketing: priorizar [[marketing-hub]], `_runbooks/marketing-*.md`, `_projects/marketing/`, `_journal/marketing/` e `_shared/context/marketing/`.
+- Pergunta sobre entidade compartilhada: consultar `_entities/` e depois eventos dos agentes relacionados.
+
+Um agente pode consultar e linkar territorio de outro agente, mas nao deve editar o territorio primario de outro agente sem confirmacao do Renato.
 
 ## Fontes que não devem ser destino ativo
 
 - `_agents/` é namespace legado/inativo.
 - Caminhos `_agents/reno/...` em linhas de proveniência, manifestos ou inventários são evidência histórica.
 - Nenhuma resposta operacional deve instruir nova escrita em `_agents/`.
+- Territorios ativos de agentes vivem em `_journal/{agent_id}/`, `_projects/{agent_id}/`, `_runbooks/{agent_id}-*.md`, `_hubs/{agent_id}-hub.md` e decisoes nomeadas por agente em `_decisions/`.
 
 ## Tratamento de `docs/superpowers/**`
 
@@ -76,7 +89,7 @@ Não usar para:
 - reabrir namespace legado;
 - apagar histórico sem autorização.
 
-## Tratamento de `_journal/reno/`
+## Tratamento de `_journal/{agent_id}/`
 
 O journal é fonte de eventos datados, mas não substitui entidade canônica nem CRM.
 
@@ -130,4 +143,4 @@ Se dado sensível aparecer, substituir por `[REDACTED]`.
 
 ## Golden queries
 
-A qualidade do retrieval deve ser avaliada com [[golden-queries]]. Quando uma mudança de schema, política ou indexação ocorrer, repetir as golden queries principais e registrar resultado em `_meta/` ou `_journal/reno/`, conforme o tipo da avaliação.
+A qualidade do retrieval deve ser avaliada com [[golden-queries]]. Quando uma mudança de schema, política ou indexação ocorrer, repetir as golden queries principais e registrar resultado em `_meta/` ou `_journal/{agent_id}/` conforme o tipo da avaliacao e o agente responsavel.

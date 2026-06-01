@@ -18,7 +18,7 @@ tags:
 title: Schema v1 do vault FAM (RAG / Segundo cérebro)
 topic: vault
 type: concept
-updated: '2026-05-13'
+updated: '2026-06-01'
 verified_at: null
 verified_by: null
 ---
@@ -148,10 +148,25 @@ Campos úteis:
 | `_decisions/` | Alta prioridade | Decision log atômico. |
 | `_runbooks/` | Alta prioridade | Procedimentos operacionais. |
 | `_shared/context/` | Alta prioridade temática | Contexto institucional, comercial e conceitual. |
-| `_journal/reno/` | Grafo/recent history | Eventos datados, interações e auditorias curadas. |
+| `_journal/{agent_id}/` | Grafo/recent history por agente | Eventos datados, interações e auditorias curadas de agentes. Exemplos ativos: `_journal/reno/` e `_journal/marketing/`. |
 | `_projects/` | Projeto/histórico | Trabalho em andamento e documentação de iniciativa. |
 | `_meta/` | Governança/auditoria | Schema, inventário, migração, avaliação e estado técnico. |
 | `docs/superpowers/**` | Histórico controlado | Specs/plans; usar como auditoria, não como fonte operacional padrão. |
+
+### Convencao multiagent por territorio
+
+Agentes sao identificados por `agent_id` estavel. O `agent_id` aparece em caminhos, hubs, runbooks e decisoes, sem recriar `_agents/`.
+
+| Tipo de memoria | Padrao |
+|-----------------|--------|
+| Evento datado do agente | `_journal/{agent_id}/YYYY-MM-DD-{slug}.md` |
+| Hub do agente | `_hubs/{agent_id}-hub.md` |
+| Runbook do agente | `_runbooks/{agent_id}-*.md` |
+| Projeto do agente | `_projects/{agent_id}/` |
+| Decisao ligada ao agente | `_decisions/YYYY-MM-DD-{agent_id}-{slug}.md` |
+| Contexto tematico | `_shared/context/{tema}/` |
+
+Reno e Marketing sao os agentes ativos iniciais. Futuros agentes devem ser cadastrados em [[_shared/context/AGENTS]] antes de receber territorio proprio.
 
 **Override por `status`:**
 
@@ -192,7 +207,7 @@ Campos mínimos para nova nota canônica:
 ```yaml
 ---
 type: interaction | decision | entity | hub | journal | concept | reference | runbook | project
-owner: renato | reno
+owner: renato | reno | marketing
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 status: draft | active | superseded | archived
@@ -206,6 +221,7 @@ Campos adicionais recomendados conforme o caso:
 ```yaml
 schema_version: 1
 author_agent: reno
+agent_id: reno | marketing
 verified_by: null
 verified_at: null
 confidence: null
@@ -285,7 +301,7 @@ author_agent: reno
 mentions_entity: []
 ```
 
-Destino: `_journal/` ou `_journal/reno/` conforme o agente.
+Destino: `_journal/{agent_id}/` quando o evento pertencer a um agente. Exemplos ativos: `_journal/reno/` e `_journal/marketing/`.
 
 ### 5.6 `concept`
 
@@ -314,7 +330,7 @@ Destino típico: `_shared/context/` ou `_meta/`.
 
 ```yaml
 type: runbook
-procedure_owner: renato | reno
+procedure_owner: renato | reno | marketing
 trigger: manual | cron | webhook | event
 mentions_entity: []
 ```
@@ -332,6 +348,8 @@ mentions_entity: []
 ```
 
 Destino: `_projects/`.
+
+Projetos territoriais de agente devem viver em `_projects/{agent_id}/`. O primeiro territorio novo e `_projects/marketing/`.
 
 ---
 
@@ -409,8 +427,8 @@ Não pode sem aprovação explícita de Renato:
 | `agent-profile` | `runbook` | `_runbooks/` |
 | `agent-readme` | `hub` | `_hubs/` |
 | `agent-decisions` | `decision` | `_decisions/` |
-| `entity-profile` | `entity` ou `interaction` | `_entities/` ou `_journal/reno/` |
-| `journal` | `journal` ou `interaction` | `_journal/` |
+| `entity-profile` | `entity` ou `interaction` | `_entities/` ou `_journal/{agent_id}/` |
+| `journal` | `journal` ou `interaction` | `_journal/{agent_id}/` |
 | `context` | `concept`, `reference` ou `context` de transição | `_shared/context/`, `_meta/` ou `_projects/` |
 | `moc` | `hub` ou `moc` de transição | `_hubs/` ou README/index local |
 | `project-readme` | `project` ou `project-readme` de transição | `_projects/` |
@@ -425,3 +443,4 @@ Não pode sem aprovação explícita de Renato:
 - **2026-04-30**: publicação inicial da v1 aprovada por Renato em FAM-15.
 - **2026-05-11**: migração Reno-first por tipo de conhecimento; `_agents/` deixa de ser destino ativo.
 - **2026-05-13**: atualização pós-migração para refletir uso operacional parcial do schema v1, coexistência de types de transição, política de datas e referências para embedding-state, golden-queries e retrieval-policy.
+- **2026-06-01**: convencao multiagent por territorio documentada; Marketing passa a ser o primeiro novo territorio de agente alem do Reno.

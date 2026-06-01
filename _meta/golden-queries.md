@@ -14,11 +14,11 @@ tags:
 type: concept
 updated: '2026-06-01'
 ---
-# Golden queries do vault Reno
+# Golden queries do vault multiagent
 
 ## Objetivo
 
-Este conjunto de perguntas valida se o vault recupera as fontes certas para governança, operação e memória curada do Reno.
+Este conjunto de perguntas valida se o vault recupera as fontes certas para governança, operação e memória curada em um modelo multiagent, cobrindo Reno, Marketing e futuros agentes. Muitas queries continuam Reno-específicas por preservarem a base operacional existente.
 
 Cada query deve ser respondida preferencialmente a partir de decisões, runbooks, READMEs locais, hubs e entidades canônicas. Specs/plans históricos só devem ser usados quando a pergunta for explicitamente sobre histórico de implementação.
 
@@ -141,3 +141,33 @@ Uma resposta passa quando:
 25. **Pergunta:** Quando uma informação deve sair do journal e virar entidade?
     - **Fonte esperada:** [[reno-vault-operacao]], [[reno-registro-vault]], [[_entities/README]].
     - **Resposta esperada:** quando for fato durável confirmado, útil para retomada futura e com fonte rastreável.
+
+## Queries multiagent por territorio
+
+26. **Pergunta:** Onde o agente de Marketing deve registrar um evento datado de campanha?
+   - **Fonte esperada:** [[marketing-vault-operacao]], [[_journal/marketing/README]], [[marketing-hub]].
+   - **Resposta esperada:** `_journal/marketing/`.
+
+27. **Pergunta:** Onde o agente de Marketing deve registrar uma campanha ou experimento ativo?
+   - **Fonte esperada:** [[marketing-vault-operacao]], [[_projects/marketing/README]].
+   - **Resposta esperada:** `_projects/marketing/`.
+
+28. **Pergunta:** Marketing pode editar `_journal/reno/`?
+   - **Fonte esperada:** [[_shared/context/AGENTS]], [[marketing-vault-operacao]], [[marketing-hub]].
+   - **Resposta esperada:** Nao; pode consultar e linkar, mas deve registrar propria leitura no territorio de Marketing.
+
+29. **Pergunta:** Onde fica o hub canonico do Marketing?
+   - **Fonte esperada:** [[marketing-hub]], [[_hubs/index]].
+   - **Resposta esperada:** `_hubs/marketing-hub.md` / [[marketing-hub]].
+
+30. **Pergunta:** Um novo agente futuro deve ganhar `_agents/{agent_id}/`?
+   - **Fonte esperada:** [[README]], [[schema]], [[_shared/context/AGENTS]].
+   - **Resposta esperada:** Nao; deve ganhar territorio por tipo de memoria e cadastro em [[_shared/context/AGENTS]].
+
+31. **Pergunta:** Quando Marketing pode atualizar `_entities/**`?
+   - **Fonte esperada:** [[_shared/context/AGENTS]], [[marketing-vault-operacao]], [[_shared/context/marketing/README]].
+   - **Resposta esperada:** Apenas quando for fato duravel confirmado, com fonte rastreavel, ownership correto e read-back; Renato permanece dono primario.
+
+32. **Pergunta:** Onde contexto duravel de marketing deve ser consolidado?
+   - **Fonte esperada:** [[_shared/context/marketing/README]], [[marketing-vault-operacao]].
+   - **Resposta esperada:** `_shared/context/marketing/`.
