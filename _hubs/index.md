@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-11'
+updated: '2026-06-01'
 tags:
   - hubs
   - moc
@@ -19,17 +19,18 @@ Hubs **agregam** notas atômicas. Não duplicam conteúdo. Cada bullet usa um wi
 
 - [[README|README]] — índice raiz do vault.
 
-## Reno e operação
+## Agentes e operacao
 
 - [[reno]] — entidade canônica do Reno.
 - [[reno-hub]] — mapa operacional do segundo cérebro do Reno.
+- [[marketing-hub]] — mapa operacional do agente de Marketing.
 
 ## Camadas
 
 - **Hubs de entidade** — 1 hub por entidade ativa relevante (top 30 clientes/brokers/imóveis). Ex.: `Hub: Bruno Sávio`.
 - **Hubs temáticos** — transversais. Ex.: `Hub: Comissões 2026`, `Hub: Renovações Q2 2026`, `Hub: Decisões 2026`, `Hub: Pipeline Vendas`.
 - **Hubs de tipo** — índice geral. Ex.: `Hub: Clientes ativos`, `Hub: Brokers`, `Hub: Decisões`, `Hub: Vault governance`.
-- **Hubs operacionais** — concentram mapas de navegação sem recriar namespaces de agente. O hub canônico do Reno é [[reno-hub]].
+- **Hubs operacionais** — concentram mapas de navegacao sem recriar namespaces de agente. Hubs canonicos iniciais: [[reno-hub]] e [[marketing-hub]].
 
 ## Naming
 

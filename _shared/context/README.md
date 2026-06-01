@@ -2,14 +2,16 @@
 type: moc
 owner: renato
 created: '2026-05-12'
-updated: '2026-05-12'
-tags: [contexto, reno, fama]
+updated: '2026-06-01'
+tags: [contexto, agentes, fama]
 ---
 # `_shared/context/`
 
 ## Finalidade
 
-`_shared/context/` guarda contexto institucional, comercial, conceitual e referencial da Fama que o Reno pode reutilizar em diferentes conversas e operacoes.
+`_shared/context/` guarda contexto institucional, comercial, conceitual e referencial da Fama que agentes podem reutilizar em diferentes conversas e operacoes.
+
+Contexto tematico controlado pode viver em subpastas como `_shared/context/marketing/`. Contexto institucional amplo da Fama permanece mais sensivel e exige confirmacao quando a alteracao mudar posicionamento, promessa, criterio comercial ou governanca.
 
 ## Quando buscar aqui
 
@@ -25,19 +27,21 @@ tags: [contexto, reno, fama]
 - Quando uma atualizacao aprovada melhorar o entendimento geral da operacao.
 - Quando o conteudo nao for evento, decisao, procedimento, projeto, hub, entidade ou meta.
 
-## Regras para o Reno
+## Regras para agentes
 
-- Deve buscar contexto existente antes de criar novo arquivo tematico.
-- Deve manter documentos autocontidos, com assunto claro e links para notas relacionadas.
-- Deve separar contexto institucional de fato individual de cliente.
-- Deve linkar para [[fama-overview]] quando a informacao depender da visao geral da Fama.
-- Deve consultar [[_shared/context/AGENTS]] antes de escrever em territorio com ownership especifico.
-- Nao deve alterar contexto sensivel, comercial ou estrategico sem confirmacao do Renato.
-- Nao deve promover inferencia nao verificada para contexto institucional.
+- Devem buscar contexto existente antes de criar novo arquivo tematico.
+- Devem manter documentos autocontidos, com assunto claro e links para notas relacionadas.
+- Devem separar contexto institucional de fato individual de cliente.
+- Devem linkar para [[fama-overview]] quando a informacao depender da visao geral da Fama.
+- Devem consultar [[_shared/context/AGENTS]] antes de escrever em territorio com ownership especifico.
+- Nao devem alterar contexto sensivel, comercial ou estrategico sem confirmacao do Renato.
+- Nao devem promover inferencia nao verificada para contexto institucional.
 
 ## Ver tambem
 
 - [[reno-vault-operacao]]
+- [[marketing-vault-operacao]]
 - [[fama-overview]]
 - [[_shared/context/AGENTS]]
+- [[_shared/context/marketing/README]]
 - [[schema]]
