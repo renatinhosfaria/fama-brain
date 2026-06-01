@@ -34,7 +34,7 @@ Vínculos: [[reno]], [[fama-overview]], [[schema]], [[2026-05-12-reno-vault-memo
 
 ## Historico de `decisions.md`
 
-O namespace `_agents/` foi removido na migracao Reno-first de 2026-05-11. Nao ha mais ownership ativo para `_agents/*/decisions.md`; futuras decisoes devem ser registradas como notas atomicas em `_decisions/`.
+O namespace `_agents/` foi removido na migracao de 2026-05-11 que dissolveu o modelo centrado no Reno como namespace ativo. Nao ha mais ownership ativo para `_agents/*/decisions.md`; futuras decisoes devem ser registradas como notas atomicas em `_decisions/`.
 
 > Nota histórica: até 2026-05-02 havia uma regra `_agents/*/decisions.md => owner-only` que sobrepunha o ownership territorial e quebrava `append_decision(agent='<dono>')` (FAM-24). Esse fluxo pertencia ao namespace legado e não define a escrita atual de decisões.
 

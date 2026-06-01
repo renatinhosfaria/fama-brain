@@ -24,7 +24,7 @@ verified_by: null
 ---
 # Schema v1 do vault FAM (RAG / Segundo cérebro)
 
-> **Estado operacional atualizado em 2026-05-13:** o vault já opera parcialmente com o modelo v1/Reno-first via `mcp-obsidian`. O MCP aceita os tipos e campos atualmente observados no vault, mas ainda há conteúdo legado e tipos compatíveis de transição. Este documento descreve o alvo canônico e o modo operacional seguro enquanto a migração completa não é enforçada em massa.
+> **Estado operacional atualizado em 2026-05-13:** o vault ja operava parcialmente com o modelo v1 centrado no Reno via `mcp-obsidian`. O MCP aceita os tipos e campos atualmente observados no vault, mas ainda ha conteudo legado e tipos compativeis de transicao. Este documento descreve o alvo canonico e o modo operacional seguro enquanto a migracao completa nao e enforcada em massa.
 
 Vínculos: [[fama-overview]], [[reno-second-brain-governance]], [[2026-05-12-reno-vault-memoria-autonoma]], [[inventory-2026-05-13-reno-post-migration]].
 
@@ -434,13 +434,13 @@ Não pode sem aprovação explícita de Renato:
 | `project-readme` | `project` ou `project-readme` de transição | `_projects/` |
 | `agents-map` | `agents-map` de transição | `_shared/context/AGENTS.md` |
 
-**Decisão resolvida na migração Reno-first (2026-05-11):** `_agents/` foi dissolvido como namespace ativo. Perfis de agente vivem em `_runbooks/`, hubs em `_hubs/`, decisões atômicas em `_decisions/` e eventos de alto volume em `_journal/{agente}/`.
+**Decisao resolvida na migracao de 2026-05-11:** `_agents/` foi dissolvido como namespace ativo. Perfis de agente vivem em `_runbooks/`, hubs em `_hubs/`, decisoes atomicas em `_decisions/` e eventos de alto volume em `_journal/{agent_id}/`.
 
 ---
 
 ## 12. Changelog
 
 - **2026-04-30**: publicação inicial da v1 aprovada por Renato em FAM-15.
-- **2026-05-11**: migração Reno-first por tipo de conhecimento; `_agents/` deixa de ser destino ativo.
+- **2026-05-11**: migracao por tipo de conhecimento; `_agents/` deixa de ser destino ativo.
 - **2026-05-13**: atualização pós-migração para refletir uso operacional parcial do schema v1, coexistência de types de transição, política de datas e referências para embedding-state, golden-queries e retrieval-policy.
 - **2026-06-01**: convencao multiagent por territorio documentada; Marketing passa a ser o primeiro novo territorio de agente alem do Reno.
