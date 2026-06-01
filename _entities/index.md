@@ -2,13 +2,13 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-13'
+updated: '2026-06-01'
 status: active
 tags:
   - entities
   - moc
   - perfis-canonicos
-  - reno
+  - agentes
   - post-migration
 provenance: human-curated
 ---
@@ -20,7 +20,7 @@ Vínculos de governança: [[schema]], [[retrieval-policy]], [[reno-atendimentos-
 
 ## Propósito
 
-`_entities/` guarda perfis consolidados de pessoas, organizações, propriedades e lugares. Eventos operacionais datados ficam em `_journal/reno/`; decisões ficam em `_decisions/`; procedimentos duráveis ficam em `_runbooks/`.
+`_entities/` guarda perfis consolidados de pessoas, organizações, propriedades e lugares. Eventos operacionais datados ficam em `_journal/{agent_id}/`; decisões ficam em `_decisions/`; procedimentos duráveis ficam em `_runbooks/`.
 
 O CRM/FamaChat continua sendo a fonte operacional de verdade para status, broker, visitas, vendas e atendimento atual. Entidades no vault são memória curada e contexto recuperável.
 
@@ -58,7 +58,7 @@ Auditoria por MCP/Obsidian durante a Fase 3 do plano pós-migração:
 - Status: **172 active** / **3 archived**.
 - Compatibilidade histórica: **157** notas ainda têm `entity_type` explícito; **18** notas importadas recentes usam `subtype` sem duplicar `entity_type`. Isso não é pendência funcional sob o schema v1 atual.
 
-## Migração Reno 2026-05-11
+## Migração do Reno em 2026-05-11
 
 Os atendimentos antigos do namespace legado de atendimentos do Reno foram migrados para modelo duplo:
 
@@ -79,7 +79,7 @@ Use o manifesto da migração e os eventos em `_journal/reno/` para navegar os a
 ## Uso em retrieval
 
 - Para fato durável sobre cliente, empreendimento, bairro ou organização, priorizar a entidade canônica.
-- Para sequência temporal de atendimento, usar `_journal/reno/`.
+- Para sequência temporal de evento ou atendimento, usar `_journal/{agent_id}/`; para histórico migrado do Reno, usar `_journal/reno/`.
 - Para origem/migração/histórico, usar o manifesto em `_meta/`.
 - Para decisões e regras atuais, priorizar `_decisions/`, `_runbooks/` e [[retrieval-policy]].
 - Specs/plans históricos em `docs/superpowers/**` podem explicar por que algo mudou, mas não substituem a governança atual.
@@ -89,3 +89,5 @@ Use o manifesto da migração e os eventos em `_journal/reno/` para navegar os a
 Antes da migração Reno 2026-05-11, este índice descrevia uma curadoria menor de 60 perfis canônicos, incluindo 38 leads do Reno. Esses números eram uma fotografia operacional anterior, não o estado atual de `_entities/`.
 
 Atualização de 2026-05-13: índice ajustado para o estado pós-migração, removendo `whatsapp-lua` da condição de pendência e clarificando que `subtype` é o campo operacional atual para classificação de entidades.
+
+Atualizacao de 2026-06-01: indice alinhado ao modelo multiagent por territorios; `_journal/{agent_id}/` passa a ser o destino geral de eventos por agente, com `_journal/reno/` preservado como historico e territorio ativo do Reno.
