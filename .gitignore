@@ -8,5 +8,6 @@ desktop.ini
 
 # Local/transient files
 .trash/
+.worktrees/
 *.tmp
 *.bak
