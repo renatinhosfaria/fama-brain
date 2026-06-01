@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-08'
+updated: '2026-06-01'
 tags:
   - runbooks
   - moc
@@ -18,7 +18,7 @@ Runbook = sequência de passos repetível e verificável. Inclui:
 - **Perfis de agente** — Papel, escopo, modo de operar de cada agente. Perfil de agente é runbook do sistema multi-agente: descreve trigger, comportamento, output, limites.
 - **Playbooks de atendimento** — Sequência de ações comerciais reutilizáveis.
 
-## Reno
+## Agente Reno
 
 - [[reno-profile]]
 - [[reno-playbook-atendimento]]
@@ -27,6 +27,11 @@ Runbook = sequência de passos repetível e verificável. Inclui:
 - [[reno-registro-vault]]
 - [[reno-credito-imobiliario]]
 - [[reno-fama-produtos]]
+
+## Agente Marketing
+
+- [[marketing-vault-operacao]]
+- [[marketing-hub]]
 
 ## Naming
 

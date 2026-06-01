@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-11'
+updated: '2026-06-01'
 tags:
   - journal
   - moc
@@ -23,11 +23,12 @@ Journals capturam eventos crus. Atendimentos, calls, visitas, auditorias diária
 
 Filename: `YYYY-MM-DD-{slug}.md`. Ex.: `2026-04-30-bootstrap-sanity.md`, `2026-04-29-bruno-savio-call-comissao.md`.
 
-Subpastas permitidas por agente: `_journal/{agente}/YYYY-MM-DD-{slug}.md` (opcional, para volume alto). Ex.: `_journal/reno/2026-04-30-atendimento-elias.md`.
+Subpastas ativas por agente: `_journal/{agent_id}/YYYY-MM-DD-{slug}.md`. Ex.: `_journal/reno/2026-04-30-atendimento-elias.md`.
 
 ## Subpastas
 
 - `_journal/reno/` — eventos operacionais de alto volume do Reno: atendimentos, auditorias, rotinas, logs e planos datados.
+- `_journal/marketing/` — eventos datados de marketing: campanhas, leituras de resultado, experimentos e rotinas do agente de Marketing.
 - Migracao 2026-05-11: alem dos atendimentos, `_journal/reno/` inclui 22 notas operacionais migradas de auditorias, journals antigos e planos datados.
 
 ## Indexação

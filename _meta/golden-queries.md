@@ -46,7 +46,7 @@ Uma resposta passa quando:
    - **Fonte esperada:** [[2026-05-12-reno-vault-memoria-autonoma]], [[reno-vault-operacao]], [[schema]].
    - **Resposta esperada:** decisões canônicas, schema, ownership, mudanças estruturais e alterações sensíveis.
 
-4. **Pergunta:** Quem é o dono primário de `_entities/**`?
+4. **Pergunta:** Quem e dono primario de _entities/**?
    - **Fonte esperada:** [[_shared/context/AGENTS]].
    - **Resposta esperada:** Renato; Reno pode atualizar fatos duráveis confirmados sob Opção C e ownership correto.
 

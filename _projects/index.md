@@ -2,7 +2,7 @@
 type: moc
 owner: renato
 created: '2026-04-30'
-updated: '2026-05-08'
+updated: '2026-06-01'
 tags:
   - projects
   - moc
@@ -16,6 +16,12 @@ Vínculos: [[fama-overview]], [[schema]].
 
 - `_projects/active/` — projetos em andamento. Vetoriza + grafo.
 - `_projects/archived/` — concluídos ou abandonados. Não vetoriza, mantém grafo.
+- `_projects/{agent_id}/` — territorios de projetos por agente, como `_projects/marketing/`.
+
+## Marketing
+
+- [[_projects/marketing/README]]
+- [[marketing-hub]]
 
 ## Naming
 
