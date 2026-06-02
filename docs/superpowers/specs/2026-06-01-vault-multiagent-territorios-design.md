@@ -1,5 +1,5 @@
 ---
-title: Design: vault multiagent por territorios
+title: "Design: vault multiagent por territorios"
 type: context
 status: approved-for-spec-review
 created: 2026-06-01
