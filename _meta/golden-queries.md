@@ -3,6 +3,7 @@ created: '2026-05-13'
 owner: renato
 schema_version: 1
 source: agent-generated
+author_agent: renato
 provenance: mcp-obsidian-audit
 status: active
 tags:
@@ -12,7 +13,7 @@ tags:
   - reno
   - retrieval
 type: concept
-updated: '2026-06-01'
+updated: '2026-06-02'
 ---
 # Golden queries do vault multiagent
 
@@ -171,3 +172,25 @@ Uma resposta passa quando:
 32. **Pergunta:** Onde contexto duravel de marketing deve ser consolidado?
    - **Fonte esperada:** [[_shared/context/marketing/README]], [[marketing-vault-operacao]].
    - **Resposta esperada:** `_shared/context/marketing/`.
+
+## Queries MCP multiagent e privacidade
+
+33. **Pergunta:** O que `read_agent_context` deve retornar para o Reno?
+   - **Fonte esperada:** [[reno-hub]], [[reno-vault-operacao]], `_decisions/*-reno-*.md`, `_journal/reno/`.
+   - **Resposta esperada:** hub, decisoes recentes, journals/interactions recentes, runbooks do Reno e avisos sem usar `_agents/` como fonte ativa.
+
+34. **Pergunta:** O que `read_agent_context` deve retornar para Marketing?
+   - **Fonte esperada:** [[marketing-hub]], [[marketing-vault-operacao]], `_projects/marketing/`, `_journal/marketing/`, `_shared/context/marketing/`.
+   - **Resposta esperada:** hub e territorio de Marketing mesmo quando houver pouco historico.
+
+35. **Pergunta:** Reno ou Marketing podem atualizar `_entities/**`?
+   - **Fonte esperada:** [[_shared/context/AGENTS]], [[schema]], [[pii-redaction-policy]].
+   - **Resposta esperada:** Podem registrar fatos duraveis confirmados sob delegacao controlada, sem alterar campos protegidos nem marcar fonte como `human-curated`.
+
+36. **Pergunta:** Como um agente deve expor telefone, JID, email ou CPF encontrado no vault?
+   - **Fonte esperada:** [[pii-redaction-policy]], [[retrieval-policy]], [[pii-scan-2026-06-02]].
+   - **Resposta esperada:** Deve redigir o valor, preservar contexto por entidade/ID interno e nunca devolver o dado bruto.
+
+37. **Pergunta:** O scanner `scan_sensitive_data` pode retornar valores brutos?
+   - **Fonte esperada:** [[pii-redaction-policy]], [[pii-scan-2026-06-02]].
+   - **Resposta esperada:** Nao; apenas contagens e exemplos redigidos.

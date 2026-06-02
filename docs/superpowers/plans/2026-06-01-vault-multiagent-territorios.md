@@ -1,3 +1,13 @@
+---
+type: context
+owner: renato
+created: '2026-06-01'
+updated: '2026-06-01'
+tags:
+  - vault
+  - multiagent
+  - implementation-plan
+---
 # Vault Multiagent Por Territorios Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.

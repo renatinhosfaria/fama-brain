@@ -18,7 +18,7 @@ tags:
 title: Schema v1 do vault FAM (RAG / Segundo cérebro)
 topic: vault
 type: concept
-updated: '2026-06-01'
+updated: '2026-06-02'
 verified_at: null
 verified_by: null
 ---
@@ -122,6 +122,7 @@ Campos úteis:
 - Embeddings e escopo indexado ficam documentados em `_meta/embedding-state.md`.
 - Golden queries ficam documentadas em `_meta/golden-queries.md`.
 - Política de retrieval fica documentada em `_meta/retrieval-policy.md`.
+- Política de redaction fica documentada em `_meta/pii-redaction-policy.md`.
 
 ---
 
@@ -167,6 +168,21 @@ Agentes sao identificados por `agent_id` estavel. O `agent_id` aparece em caminh
 | Contexto tematico | `_shared/context/{tema}/` |
 
 Reno e Marketing sao os agentes ativos iniciais. Futuros agentes devem ser cadastrados em [[_shared/context/AGENTS]] antes de receber territorio proprio.
+
+### Delegacao controlada em entidades
+
+`_entities/**` permanece memoria compartilhada com Renato como dono primario. Agentes como Reno e Marketing podem escrever fatos duraveis confirmados quando estiverem delegados em [[_shared/context/AGENTS]], houver fonte rastreavel e o MCP aplicar os guardrails de campos protegidos.
+
+Agentes delegados nao devem:
+
+- marcar `source: human-curated`;
+- definir `verified_by`, `verified_at` ou `superseded_by`;
+- trocar nome canonico ou tipo de uma entidade existente;
+- expor PII sem redaction conforme [[pii-redaction-policy]].
+
+### Ferramentas MCP Schema v1
+
+O `mcp-obsidian` deve tratar `read_agent_context`, `bootstrap_agent`, lead/broker workflows e scanners como ferramentas compativeis com territorios v1. Ferramentas de compatibilidade nao devem criar nem escrever em `_agents/`; o destino ativo e definido por tipo de memoria.
 
 **Override por `status`:**
 
@@ -375,7 +391,8 @@ Projetos territoriais de agente devem viver em `_projects/{agent_id}/`. O primei
 3. Primeira menção de pessoa deve dizer nome completo e papel quando relevante.
 4. Separar fato, inferência e pendência.
 5. Nunca salvar payload bruto, logs técnicos completos, segredos ou raciocínio interno.
-6. Toda escrita relevante precisa de read-back via MCP.
+6. Nunca expor telefone completo, WhatsApp JID, email, CPF ou segredo em respostas; usar redaction especifica.
+7. Toda escrita relevante precisa de read-back via MCP.
 
 ---
 
@@ -396,6 +413,7 @@ Projetos territoriais de agente devem viver em `_projects/{agent_id}/`. O primei
 - `_meta/embedding-state.md` registra modelo, fatia, data e exclusões de indexação quando essa informação estiver disponível.
 - `_meta/golden-queries.md` registra o conjunto de perguntas de validação.
 - `_meta/retrieval-policy.md` define prioridade de fontes e tratamento de histórico.
+- `_meta/pii-redaction-policy.md` define minimizacao e redaction de dados sensiveis.
 
 ---
 
@@ -444,3 +462,4 @@ Não pode sem aprovação explícita de Renato:
 - **2026-05-11**: migracao por tipo de conhecimento; `_agents/` deixa de ser destino ativo.
 - **2026-05-13**: atualização pós-migração para refletir uso operacional parcial do schema v1, coexistência de types de transição, política de datas e referências para embedding-state, golden-queries e retrieval-policy.
 - **2026-06-01**: convencao multiagent por territorio documentada; Marketing passa a ser o primeiro novo territorio de agente alem do Reno.
+- **2026-06-02**: delegacao controlada em `_entities/**`, politica PII e scanner sensivel MCP documentados.

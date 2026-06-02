@@ -3,6 +3,7 @@ created: '2026-05-13'
 owner: renato
 schema_version: 1
 source: agent-generated
+author_agent: renato
 provenance: mcp-obsidian-audit
 status: active
 tags:
@@ -12,7 +13,7 @@ tags:
   - reno
   - vault
 type: concept
-updated: '2026-06-01'
+updated: '2026-06-02'
 ---
 # Política de retrieval e indexação operacional
 
@@ -135,11 +136,17 @@ Nunca usar retrieval para expor ou preservar:
 - senhas;
 - API keys;
 - connection strings;
+- telefones completos;
+- WhatsApp JIDs;
+- e-mails de clientes;
+- CPF ou identificador equivalente;
 - payload bruto;
 - logs técnicos completos;
 - raciocínio interno.
 
-Se dado sensível aparecer, substituir por `[REDACTED]`.
+Se dado sensível aparecer, substituir por marcador específico de redaction conforme [[pii-redaction-policy]]. Agentes podem usar `client_id`, `broker_id`, entidade canônica, data absoluta e wikilinks para preservar rastreabilidade sem expor PII.
+
+O scanner oficial para auditoria read-only e `scan_sensitive_data` no MCP. Relatórios derivados devem registrar apenas contagens e exemplos redigidos, como [[pii-scan-2026-06-02]].
 
 ## Golden queries
 

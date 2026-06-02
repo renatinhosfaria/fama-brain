@@ -73,7 +73,7 @@ _decisions/*-marketing-*.md              => marketing (primary)
 
 # Entidades globais - memoria compartilhada controlada.
 # Renato permanece dono primario; Reno e Marketing podem atualizar fatos duraveis confirmados sob guardrails, com fonte rastreavel, ownership correto e read-back via MCP.
-_entities/**                             => renato (primary)
+_entities/**                             => renato (primary) | reno (confirmed-facts) | marketing (confirmed-facts)
 
 # Catch-all - paths sem dono explicito
 **/*                                     => renato

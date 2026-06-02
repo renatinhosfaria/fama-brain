@@ -1,7 +1,9 @@
 ---
 title: Design: vault multiagent por territorios
+type: context
 status: approved-for-spec-review
 created: 2026-06-01
+updated: 2026-06-01
 owner: renato
 source: brainstorming
 tags: [vault, multiagent, governance, marketing]

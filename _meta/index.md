@@ -6,7 +6,7 @@ tags:
   - moc
   - governance
 type: moc
-updated: '2026-05-13'
+updated: '2026-06-02'
 ---
 # `_meta/` — Documentação do próprio vault
 
@@ -22,6 +22,8 @@ Pasta para o que **não** é conteúdo do segundo cérebro, mas governa seu func
 - [[embedding-state]] — estado conhecido de embeddings/retrieval e limitações atuais.
 - [[golden-queries]] — perguntas canônicas para validar recuperação de contexto.
 - [[retrieval-policy]] — política de prioridade de fontes, indexação operacional e tratamento de docs históricos.
+- [[pii-redaction-policy]] — política de minimização e redaction de dados sensíveis em respostas e novas escritas.
+- [[pii-scan-2026-06-02]] — auditoria redigida de ocorrências sensíveis no vault.
 
 ## Regras
 
@@ -30,3 +32,4 @@ Pasta para o que **não** é conteúdo do segundo cérebro, mas governa seu func
 - Arquivos aqui não seguem obrigatoriamente a convenção de título `{Tipo}: {Sujeito}` — são docs internos do vault.
 - Referências históricas a `_agents/reno` podem permanecer em manifestos, inventários e linhas de proveniência, mas não devem aparecer como destino ativo de escrita.
 - Specs/plans históricos devem ser tratados como auditoria, não como fonte operacional superior a decisões, runbooks e READMEs locais.
+- Relatórios PII devem registrar contagens e exemplos redigidos, nunca valores brutos.

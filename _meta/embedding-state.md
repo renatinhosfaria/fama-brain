@@ -3,6 +3,7 @@ created: '2026-05-13'
 owner: renato
 schema_version: 1
 source: agent-generated
+author_agent: renato
 provenance: mcp-obsidian-audit
 status: active
 tags:

@@ -11,6 +11,8 @@ Vault Obsidian que serve como **segundo cerebro operacional multiagent** e memor
 
 A arquitetura atual e **multiagent por territorios**: o vault continua organizado por tipo de conhecimento, mas cada agente tem `agent_id`, hub proprio, journal proprio, projetos proprios, runbooks proprios e ownership explicito. O namespace legado `_agents/` permanece inativo.
 
+O MCP `mcp-obsidian` deve recuperar contexto por territorio ativo, via hubs, runbooks, journals, projetos e contexto compartilhado. Ferramentas de compatibilidade nao devem recriar `_agents/`; quando precisarem preservar lead, broker ou perfil, devem escrever em `_entities/`, `_journal/{agent_id}/`, `_runbooks/` ou `_shared/context/` conforme o tipo de memoria.
+
 **Topologia:** `C:\fama-brain` (Obsidian local) → GitHub (`renatinhosfaria/fama-brain`) → VPS MCP-host (vmi1988871 / `144.126.134.23`, `/root/fama-brain`). Uma única VPS hospeda o vault runtime; todos os agentes escrevem via HTTPS no servidor **mcp-obsidian** (`mcp-obsidian.famachat.com.br`), nunca tocando o filesystem diretamente. Cada arquivo tem um único dono de escrita, enforced pelo MCP no momento da escrita (erro `OWNERSHIP_VIOLATION`).
 
 
@@ -25,6 +27,7 @@ Regras universais:
 - Deve separar fato duravel, evento datado, decisao e procedimento em pastas diferentes.
 - Deve registrar incerteza como incerteza e pedir confirmacao quando a fonte for fraca ou contraditoria.
 - Nao deve recriar o namespace legado `_agents/`.
+- Deve redigir telefone completo, WhatsApp JID, email, CPF e segredos antes de devolver trechos do vault.
 - Nao deve alterar ownership, schema ou decisoes duraveis sem confirmacao do Renato.
 
 Ordem padrao de busca:
@@ -49,6 +52,7 @@ Manuais locais:
 - [[_hubs/README|_hubs/README]]
 - [[_projects/README|_projects/README]]
 - [[_meta/README|_meta/README]]
+- [[_meta/pii-redaction-policy|_meta/pii-redaction-policy]]
 - [[_shared/README|_shared/README]]
 - [[_shared/context/README|_shared/context/README]]
 
@@ -95,4 +99,5 @@ Manuais locais:
 ## Infraestrutura
 
 - O gateway de escrita do vault é o **mcp-obsidian**, exposto via HTTPS em `mcp-obsidian.famachat.com.br`.
+- O scanner sensivel oficial do gateway e `scan_sensitive_data`, que deve retornar apenas contagens e exemplos redigidos.
 - A documentação local de infraestrutura foi removida; referências operacionais remanescentes devem ser registradas em `_runbooks/` ou `_meta/`.

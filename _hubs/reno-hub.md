@@ -12,14 +12,14 @@ tags:
   - fama
   - crm
   - whatsapp
-author_agent: renato
+author_agent: reno
 verified_by: null
 verified_at: null
 confidence: null
 related:
   - repescagem-follow-up
   - fama-reno-vault-governance
-owner: renato
+owner: reno
 title: Reno Hub
 summary: Ponto de entrada do contexto curado e da documentação operacional do Reno.
 ---
