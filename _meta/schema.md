@@ -476,3 +476,23 @@ A convenção ativa para agentes é territorial por tipo de memória: eventos em
 ## 14. Changelog adicional
 
 - **2026-06-03**: reforço literal de regressão para novos agentes: não recriar `_agents/{agent_id}/`; cadastrar em [[_shared/context/AGENTS]] e usar território por tipo de memória.
+
+## 15. Vetorização seletiva de documentos canônicos em `_meta/`
+
+Por aprovação explícita de Renato em 2026-06-03, a política de indexação do vault passa a permitir vetorização seletiva de documentos canônicos em `_meta/` quando eles forem necessários para perguntas normativas de governança, segurança, schema e retrieval.
+
+A allowlist inicial é:
+
+- [[schema]]
+- [[retrieval-policy]]
+- [[pii-redaction-policy]]
+- [[embedding-state]]
+- [[golden-queries]]
+
+Essa allowlist não transforma `_meta/` em fonte operacional genérica. Inventários, manifestos, documentos de migração, auditorias sensíveis e relatórios com risco de PII continuam fora da vetorização operacional por padrão.
+
+Critério de uso: perguntas normativas devem poder recuperar esses documentos por busca semântica, mas agentes ainda devem aplicar a hierarquia de fontes, redaction de PII e read-back antes de alterar governança.
+
+## 16. Changelog adicional de indexação
+
+- **2026-06-03**: Renato aprovou a opção 1 para corrigir lacunas de ranking: permitir vetorização seletiva de documentos canônicos em `_meta/`, começando por [[schema]], [[retrieval-policy]], [[pii-redaction-policy]], [[embedding-state]] e [[golden-queries]].
