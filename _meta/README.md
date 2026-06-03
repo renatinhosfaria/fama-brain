@@ -41,3 +41,10 @@ tags: [meta, agentes, governanca]
 - [[_meta/index]]
 - [[schema]]
 - [[_shared/context/AGENTS]]
+
+
+## Regra literal de localização meta
+
+Schema, inventário e política de retrieval ficam em `_meta/`.
+
+Quando a pergunta for “onde registrar schema, inventário e política de retrieval?”, a resposta canônica é `_meta/`, consultando especialmente [[schema]], [[_meta/index]], [[retrieval-policy]], [[embedding-state]] e [[golden-queries]].
