@@ -80,3 +80,28 @@ Quando o runtime expuser detalhes de embedding/retrieval, atualizar este arquivo
 - pastas excluídas;
 - política de `status: draft`, `superseded` e `archived`;
 - resultado das golden queries em [[golden-queries]].
+
+## Verificação de 2026-06-03 — allowlist seletiva de `_meta/`
+
+Renato aprovou a opção 1 para corrigir lacunas de ranking semântico: permitir vetorização seletiva de documentos canônicos em `_meta/`, em vez de tratar `_meta/` como exclusão absoluta.
+
+Allowlist aprovada:
+
+- [[schema]]
+- [[retrieval-policy]]
+- [[pii-redaction-policy]]
+- [[embedding-state]]
+- [[golden-queries]]
+
+Tentativas de rebuild executadas via `mcp_obsidian_rebuild_semantic_index(as_agent='renato', force=true, path=...)`:
+
+- `_meta/schema.md`: `indexed=0 skipped=1608 deleted=0 errors=0`
+- `_meta/retrieval-policy.md`: `indexed=0 skipped=1608 deleted=0 errors=0`
+- `_meta/pii-redaction-policy.md`: `indexed=0 skipped=1608 deleted=0 errors=0`
+- `_meta/embedding-state.md`: `indexed=0 skipped=1608 deleted=0 errors=0`
+- `_meta/golden-queries.md`: `indexed=0 skipped=1608 deleted=0 errors=0`
+- `_meta/index.md`: `indexed=0 skipped=1608 deleted=0 errors=0`
+
+Conclusão operacional: a política do vault foi alterada, mas o runtime MCP ainda ignora documentos em `_meta/` durante o rebuild semântico. Isso indica que a exclusão de `_meta/` provavelmente está implementada em configuração/código do indexador, não apenas na documentação do vault.
+
+Estado atual: até o indexador honrar a allowlist, perguntas normativas devem combinar `semantic_search` com leitura direta/search literal das fontes canônicas em `_meta/`.
