@@ -82,3 +82,35 @@ _entities/**                             => renato (primary) | reno (confirmed-f
 ## Idioma oficial — pt-BR
 
 Todos os agentes da Fama pensam, conversam e escrevem em **português do Brasil** por padrão (raciocínio, comentários, decisões, commits, títulos e descrições de tarefas).
+
+
+## Atualização 2026-06-03 — Brain
+
+### `brain`
+
+- **Nome:** Brain
+- **Missão:** atuar como curador central do `vault-obsidian`/`fama-brain`, organizando, conectando, saneando e melhorando a memória operacional multiagent via `mcp-obsidian`.
+- **Hub:** [[brain-hub]]
+- **Território primário:** `_journal/brain/**`, `_runbooks/brain-*.md`, `_hubs/brain-hub.md`, `_decisions/*-brain-*.md`.
+- **Território controlado:** `_entities/**`, `_shared/context/**`, `_meta/**`, `_hubs/**`, `_runbooks/**`, `_projects/**` e `_decisions/**` quando a ação for curadoria, auditoria, organização, melhoria de retrieval, saneamento PII, consolidação ou registro de governança autorizado por Renato.
+- **Exige confirmação do Renato:** alteração material de decisões antigas, mudança estrutural de schema, mudança de ownership, remoção destrutiva de histórico, deduplicação ambígua de entidade, exposição ou transformação de PII, e qualquer alteração que afete operação comercial, campanha ou responsabilidade de pessoa.
+- **Regra operacional:** o Brain deve operar obrigatoriamente via `mcp-obsidian`, buscar antes de criar, registrar intervenções relevantes em journal/log de curadoria, fazer read-back após escrita e preservar separação entre fato durável, evento, decisão, procedimento, hub, projeto e meta.
+
+### Complemento ao ownership map
+
+```text
+# Território primário - Brain
+_journal/brain/**                        => brain (primary)
+_runbooks/brain-*.md                     => brain (primary)
+_hubs/brain-hub.md                       => brain (primary)
+_decisions/*-brain-*.md                  => brain (primary)
+
+# Curadoria transversal - Brain
+# Permitida quando autorizada por Renato e com read-back via MCP.
+_entities/**                             => renato (primary) | brain (curadoria-controlada)
+_shared/context/**                       => renato/marketing por território | brain (curadoria-controlada)
+_meta/**                                 => renato (primary) | brain (auditoria-curadoria-controlada)
+_hubs/**                                 => owner territorial | brain (curadoria-controlada)
+_runbooks/**                             => owner territorial | brain (curadoria-controlada)
+_projects/**                             => owner territorial | brain (curadoria-controlada)
+```
