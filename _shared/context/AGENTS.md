@@ -107,3 +107,10 @@ _decisions/**                            => owner territorial | brain (curadoria
 ## Idioma oficial — pt-BR
 
 Todos os agentes da Fama pensam, conversam e escrevem em **português do Brasil** por padrão (raciocínio, comentários, decisões, commits, títulos e descrições de tarefas).
+
+
+## Regra literal para novos agentes e namespace legado
+
+Um novo agente futuro não deve ganhar `_agents/{agent_id}/`; deve ser cadastrado em `_shared/context/AGENTS` e receber território por tipo de memória.
+
+Para futuros agentes, o território ativo deve seguir o modelo v1 por tipo: `_journal/{agent_id}/`, `_projects/{agent_id}/`, `_runbooks/{agent_id}-*.md`, `_hubs/{agent_id}-hub.md` e decisões nomeadas em `_decisions/`. O namespace `_agents/` permanece legado/inativo e não deve ser recriado como destino operacional.
