@@ -177,3 +177,25 @@ O scanner oficial para auditoria read-only e `scan_sensitive_data` no MCP. Relat
 A qualidade do retrieval deve ser avaliada com [[golden-queries]]. Quando uma mudança de schema, política ou indexação ocorrer, repetir as golden queries principais e registrar resultado em `_meta/` ou `_journal/{agent_id}/` conforme o tipo da avaliacao e o agente responsavel.
 
 Para avaliação de regressão, incluir consultas literais curtas. Se a consulta literal falhar mas a consulta expandida passar, registrar como lacuna de ranking/recall e adicionar aliases ou trechos explícitos na fonte normativa canônica.
+
+## Vetorização seletiva de `_meta/`
+
+Por aprovação explícita de Renato em 2026-06-03, `_meta/` deixa de ser uma exclusão absoluta para retrieval semântico. A regra ativa passa a ser: `_meta/` não entra no grafo operacional por padrão, **exceto documentos canônicos de governança necessários para perguntas normativas**.
+
+Allowlist inicial de vetorização seletiva:
+
+- [[schema]] — schema v1, folder convention, política de namespace e contrato de frontmatter.
+- [[retrieval-policy]] — hierarquia de fontes, ranking, confiança e política de indexação.
+- [[pii-redaction-policy]] — minimização e redaction de dados sensíveis.
+- [[embedding-state]] — estado técnico conhecido de embeddings e escopo indexado.
+- [[golden-queries]] — perguntas canônicas para regressão de retrieval.
+
+Critérios para incluir novo documento `_meta/` na allowlist:
+
+1. ser fonte normativa ativa, não apenas inventário histórico;
+2. ter `status: active`;
+3. não conter PII bruta, segredos, payloads ou logs técnicos completos;
+4. melhorar respostas a perguntas normativas sem substituir decisões aprovadas, runbooks ou READMEs locais;
+5. ser registrado em [[embedding-state]] e validado com [[golden-queries]].
+
+Documentos de migração, inventários históricos, auditorias PII detalhadas e manifests continuam fora da vetorização operacional por padrão, salvo nova autorização explícita.
