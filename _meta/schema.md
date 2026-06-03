@@ -463,3 +463,16 @@ Não pode sem aprovação explícita de Renato:
 - **2026-05-13**: atualização pós-migração para refletir uso operacional parcial do schema v1, coexistência de types de transição, política de datas e referências para embedding-state, golden-queries e retrieval-policy.
 - **2026-06-01**: convencao multiagent por territorio documentada; Marketing passa a ser o primeiro novo territorio de agente alem do Reno.
 - **2026-06-02**: delegacao controlada em `_entities/**`, politica PII e scanner sensivel MCP documentados.
+
+
+## 13. Regra literal para novos agentes e namespace legado
+
+Um novo agente futuro não deve ganhar `_agents/{agent_id}/`; deve ser cadastrado em `_shared/context/AGENTS` e receber território por tipo de memória.
+
+A convenção ativa para agentes é territorial por tipo de memória: eventos em `_journal/{agent_id}/`, projetos em `_projects/{agent_id}/`, runbooks em `_runbooks/{agent_id}-*.md`, hubs em `_hubs/{agent_id}-hub.md` e decisões ligadas ao agente em `_decisions/YYYY-MM-DD-{agent_id}-{slug}.md`.
+
+`_agents/` é namespace legado/inativo. Referências históricas a `_agents/` podem permanecer como proveniência, mas não definem destino ativo de escrita.
+
+## 14. Changelog adicional
+
+- **2026-06-03**: reforço literal de regressão para novos agentes: não recriar `_agents/{agent_id}/`; cadastrar em [[_shared/context/AGENTS]] e usar território por tipo de memória.
