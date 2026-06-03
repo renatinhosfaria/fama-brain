@@ -48,3 +48,17 @@ tags: [meta, agentes, governanca]
 Schema, inventário e política de retrieval ficam em `_meta/`.
 
 Quando a pergunta for “onde registrar schema, inventário e política de retrieval?”, a resposta canônica é `_meta/`, consultando especialmente [[schema]], [[_meta/index]], [[retrieval-policy]], [[embedding-state]] e [[golden-queries]].
+
+## Vetorização seletiva aprovada
+
+Por aprovação explícita de Renato em 2026-06-03, `_meta/` continua sendo área sensível e não operacional por padrão, mas passa a admitir vetorização seletiva de documentos canônicos de governança para melhorar respostas normativas.
+
+Allowlist inicial:
+
+- [[schema]]
+- [[retrieval-policy]]
+- [[pii-redaction-policy]]
+- [[embedding-state]]
+- [[golden-queries]]
+
+Inventários, manifestos, migrações e auditorias sensíveis continuam fora da vetorização operacional por padrão, salvo nova autorização explícita.
