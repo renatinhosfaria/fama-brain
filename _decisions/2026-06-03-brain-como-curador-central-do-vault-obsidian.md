@@ -1,32 +1,33 @@
 ---
-schema_version: 1
-type: decision
-status: active
+author_agent: brain
 created: '2026-06-03'
-updated: '2026-06-03'
+decided_by:
+  - Renato Faria
+implements:
+  - '[[_shared/context/AGENTS]]'
+  - '[[schema]]'
+  - '[[retrieval-policy]]'
+mentions_entity:
+  - '[[brain-hub]]'
+related:
+  - '[[brain-vault-curadoria]]'
+  - '[[brain-hub]]'
+  - '[[_meta/pii-redaction-policy]]'
+schema_version: 1
 source: human-curated
+status: active
+superseded_by: []
+supersedes: []
 tags:
   - brain
   - vault
   - curadoria
   - mcp-obsidian
   - governanca
-author_agent: renato
 title: Brain como curador central do vault Obsidian
-decided_by:
-  - Renato Faria
-supersedes: []
-superseded_by: []
-mentions_entity:
-  - '[[brain-hub]]'
-implements:
-  - '[[_shared/context/AGENTS]]'
-  - '[[schema]]'
-  - '[[retrieval-policy]]'
-related:
-  - '[[brain-vault-curadoria]]'
-  - '[[brain-hub]]'
-  - '[[_meta/pii-redaction-policy]]'
+type: decision
+updated: '2026-06-03'
+owner: brain
 ---
 # Brain como curador central do vault Obsidian
 
