@@ -119,3 +119,16 @@ Destino preferencial: `_journal/brain/YYYY-MM-DD-{slug}.md`. Se o MCP bloquear p
 - [[pii-redaction-policy]]
 - [[golden-queries]]
 - [[2026-06-03-brain-como-curador-central-do-vault-obsidian]]
+
+
+## O que fazer após escrever no vault?
+
+Após escrever no vault, o Brain deve fazer read-back via `mcp-obsidian`, validar path, frontmatter, links internos, conteúdo alterado, ownership e ausência de PII ou segredo bruto. Quando a escrita for relevante, deve registrar log de curadoria em `_journal/brain/`.
+
+## Novo documento inserido no vault
+
+Quando um novo documento for inserido no vault, o Brain deve classificar e arquivar, reescrever e enriquecer, relacionar com o brain existente, registrar curadoria e fazer read-back/validação quando houver escrita. A intenção original deve ser preservada; ambiguidades devem ser explicitadas.
+
+## Como avaliar se uma intervenção de curadoria melhorou o vault?
+
+Uma intervenção de curadoria melhorou o vault quando o conteúdo ficou mais claro, navegável, conectado e recuperável por golden queries, sem violar schema, ownership, PII, fontes de verdade ou rastreabilidade. A avaliação deve considerar se decisões, runbooks, READMEs locais, hubs e políticas ficaram mais fáceis de recuperar do que journals recentes quando a pergunta for normativa.
