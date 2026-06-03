@@ -1,12 +1,12 @@
 ---
-created: '2026-04-30'
+type: moc
 owner: renato
+created: '2026-04-30'
+updated: '2026-06-03'
 tags:
   - meta
   - moc
   - governance
-type: moc
-updated: '2026-06-02'
 ---
 # `_meta/` — Documentação do próprio vault
 
@@ -27,13 +27,14 @@ Pasta para o que **não** é conteúdo do segundo cérebro, mas governa seu func
 
 ## Regras
 
-- `_meta/` **não vetoriza** nem entra no grafo operacional por padrão. Serve para auditoria, schema, migração e avaliação.
+- `_meta/` **não entra no grafo operacional por padrão**, exceto pela allowlist de vetorização seletiva aprovada por Renato em 2026-06-03 para documentos canônicos de governança.
+- Allowlist inicial de vetorização seletiva em `_meta/`: [[schema]], [[retrieval-policy]], [[pii-redaction-policy]], [[embedding-state]] e [[golden-queries]].
 - Mudanças em `schema.md`, inventário, migração, avaliação ou política de indexação requerem aprovação de Renato.
 - Arquivos aqui não seguem obrigatoriamente a convenção de título `{Tipo}: {Sujeito}` — são docs internos do vault.
 - Referências históricas a `_agents/reno` podem permanecer em manifestos, inventários e linhas de proveniência, mas não devem aparecer como destino ativo de escrita.
 - Specs/plans históricos devem ser tratados como auditoria, não como fonte operacional superior a decisões, runbooks e READMEs locais.
 - Relatórios PII devem registrar contagens e exemplos redigidos, nunca valores brutos.
-
+- Documentos `_meta/` fora da allowlist, especialmente inventários, manifestos, migrações e auditorias sensíveis, continuam fora da vetorização operacional por padrão.
 
 ## Regra literal de localização meta
 
