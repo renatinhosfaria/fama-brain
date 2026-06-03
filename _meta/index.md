@@ -33,3 +33,10 @@ Pasta para o que **não** é conteúdo do segundo cérebro, mas governa seu func
 - Referências históricas a `_agents/reno` podem permanecer em manifestos, inventários e linhas de proveniência, mas não devem aparecer como destino ativo de escrita.
 - Specs/plans históricos devem ser tratados como auditoria, não como fonte operacional superior a decisões, runbooks e READMEs locais.
 - Relatórios PII devem registrar contagens e exemplos redigidos, nunca valores brutos.
+
+
+## Regra literal de localização meta
+
+Schema, inventário e política de retrieval ficam em `_meta/`.
+
+Quando a pergunta for “onde registrar schema, inventário e política de retrieval?”, a resposta canônica é `_meta/`, consultando especialmente [[schema]], [[_meta/README]], [[retrieval-policy]], [[embedding-state]] e [[golden-queries]].
