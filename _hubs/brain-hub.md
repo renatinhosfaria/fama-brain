@@ -49,3 +49,8 @@ Hub canônico do Brain, curador central do vault Obsidian. Centraliza decisões,
 - **Hubs:** manutenção de hubs canônicos e redução de busca repetida.
 - **Consolidações:** deduplicação e fusão apenas quando houver identidade clara e preservação de proveniência.
 - **Retrieval:** avaliação com golden queries, filtros por tipo/fonte e read-back canônico.
+
+
+## Onboarding e governança de agentes
+
+- [[brain-cadastro-novo-agente-ia]] — procedimento para detectar, avaliar, cadastrar ou isolar notas criadas por agentes de IA/LLMs desconhecidos.
