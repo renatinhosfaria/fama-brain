@@ -3,14 +3,16 @@ schema_version: 1
 type: entity
 status: active
 created: '2026-06-04'
-updated: '2026-06-04'
+updated: '2026-06-05'
 source: agent-generated
+author_agent: reno
+curated_by: brain
 tags:
   - reno
   - atendimento
   - agendamento
   - garden-sul
-author_agent: reno
+  - curado-brain
 name: Atendimento Reno - Cliente 11601 - Cris Bags
 entity_type: reno-atendimento
 aliases:
@@ -21,53 +23,75 @@ external_ids:
   famachat_client_id: '11601'
 related:
   - '[[reno-hub]]'
+  - '[[2026-06-03-falha-operacional-no-primeiro-contato-do-cliente-11601]]'
+  - '[[2026-06-03-resgate-step-3-enviado-cris-bags]]'
+  - '[[2026-06-03-cliente-11601-confirmou-visita-para-garden-sul-amanha-as-18h]]'
+mentions_entity:
+  - '[[reno-hub]]'
 confidence: 0.9
 verified_by: null
+owner: brain
 ---
-[[reno-hub]]
-
 # Atendimento Reno — Cliente 11601 — Cris Bags
 
+[[reno-hub]]
+
+## Resumo curado
+
+Registro consolidado de atendimento conduzido pelo Reno para cliente interessada no Garden Sul, com avanço de conversa para visita presencial na Fama em 2026-06-04 às 18:00 BRT.
+
+**Interpretação adotada nesta curadoria:** esta nota funciona como entidade operacional consolidada do atendimento, não como substituto do CRM/FamaChat. O CRM/FamaChat continua sendo a fonte operacional de verdade para status atual, presença efetiva na visita e próximos passos comerciais.
+
+## Classificação
+
+- **Tipo:** entidade operacional de atendimento Reno.
+- **Tema/projeto:** Reno / atendimento WhatsApp / Garden Sul / agendamento de visita.
+- **Prioridade:** média-alta como memória recuperável de contexto comercial recente.
+- **Estado no vault:** consolidada e conectada a eventos de origem; requer verificação externa para desfecho pós-visita.
+- **Local canônico:** `_entities/`, por reunir fatos duráveis confirmados a partir de múltiplos eventos em `_journal/reno/`.
+
 ## Contexto operacional
-- Cliente no FamaChat: 11601
-- Broker: Reno Agente de IA (`broker_id=35`)
-- Status CRM atual: Agendamento
-- Empreendimento/contexto: Garden Sul
-- Visita presencial registrada: appointment_id 261
-- Data/horário da visita: 2026-06-04 às 18:00 BRT
-- Local: Fama Negócios Imobiliários, Av. Raulino Cotta Pacheco, 304, Martins
+
+- Cliente no FamaChat: 11601.
+- Broker: Reno Agente de IA (`broker_id=35`).
+- Status CRM registrado no momento da consolidação original: Agendamento.
+- Empreendimento/contexto: Garden Sul.
+- Visita presencial registrada: appointment_id 261.
+- Data/horário da visita: 2026-06-04 às 18:00 BRT.
+- Local: Fama Negócios Imobiliários, Av. Raulino Cotta Pacheco, 304, Martins.
 
 ## Histórico curado
-- Primeiro contato Reno enviado em 2026-06-03.
-- Cliente avançou para visita presencial após conversa sobre Garden Sul e possibilidade de pagamento à vista dependendo do valor.
-- Visita presencial criada e validada no FamaChat: appointment_id 261.
-- Em 2026-06-04, houve correção operacional de envio da confirmação para o LID ativo da conversa: `126190568374288@lid`.
-- Renato confirmou visualmente que o reenvio apareceu no WhatsApp da cliente.
 
-## Interação mais recente
-- Cliente respondeu à confirmação da visita com: "Ou td bem e vc?"
-- Interpretação: resposta cordial/greeting; ainda não confirma presença na visita.
-- Próximo passo: responder de forma humana e curta, agradecer e reforçar a confirmação do horário de hoje às 18h.
+1. Primeiro contato/entrada operacional registrada em 2026-06-03, inicialmente com falha de envio WhatsApp e nota objetiva no CRM.
+2. Fluxo de resgate avançou para convite de visita presencial após contexto de valor à vista e Garden Sul.
+3. Cliente confirmou o horário proposto para visita presencial; appointment 261 foi criado no FamaChat como Visita/Agendado.
+4. Em 2026-06-04, houve correção operacional de envio da confirmação para o canal ativo da conversa. O identificador técnico do canal foi redigido nesta nota por política de PII.
+5. Renato confirmou visualmente que o reenvio apareceu no WhatsApp da cliente.
+6. Cliente respondeu à confirmação inicial com saudação cordial; depois confirmou explicitamente presença às 18h.
+7. Cliente respondeu “Combinado” após a confirmação final, indicando ciência/aceite da visita marcada.
 
-## Próxima mensagem planejada
-"Tudo bem também, Cris. Obrigado! Só confirmando: ficou tudo certo pra você vir hoje às 18h aqui na Fama?"
+## Interações e decisões operacionais registradas
 
-## Decisão operacional
-- Não alterar status: cliente já está em Agendamento.
-- Não registrar novo agendamento: appointment 261 já existe.
-- Objetivo imediato: obter confirmação explícita da presença hoje às 18h.
+- Cliente respondeu à confirmação da visita com saudação cordial.
+  - **Interpretação:** resposta cordial/greeting; ainda não confirmava presença.
+  - **Próximo passo planejado:** perguntar de forma humana e curta se estava tudo certo para a visita às 18h.
+- Cliente respondeu: “Sim confirmado às 18h”.
+  - **Interpretação:** presença confirmada para visita presencial de 2026-06-04 às 18:00 BRT.
+  - **Ação CRM indicada:** registrar nota objetiva e marcar appointment 261 como Confirmado.
+  - **Status do cliente:** preservar em Agendamento.
+- Cliente respondeu: “Combinado”.
+  - **Interpretação:** aceite/ciência da visita confirmada.
+  - **Próximo passo histórico:** aguardar comparecimento da cliente às 18h na Fama.
 
+## Links relacionados
 
-## Confirmação explícita da visita
-- Cliente respondeu: "Sim confirmado às 18h".
-- Interpretação: presença confirmada para a visita presencial de 2026-06-04 às 18:00 BRT.
-- Ação CRM: registrar nota objetiva e marcar appointment 261 como Confirmado.
-- Status do cliente: preservar em Agendamento.
-- Próxima resposta cliente-facing: confirmar recebimento e reforçar que a Fama aguardará a cliente às 18h.
+- [[2026-06-03-falha-operacional-no-primeiro-contato-do-cliente-11601]] — origem/falha inicial e registro CRM.
+- [[2026-06-03-resgate-step-3-enviado-cris-bags]] — convite de visita no fluxo de resgate.
+- [[2026-06-03-cliente-11601-confirmou-visita-para-garden-sul-amanha-as-18h]] — criação/validação do appointment 261.
+- [[reno-hub]] — mapa operacional do Reno.
 
-## Aceite final
-- Cliente respondeu: "Combinado" após confirmação final.
-- Interpretação: aceite/ciência da visita confirmada.
-- Appointment 261 permanece Confirmado.
-- Status CRM permanece Agendamento.
-- Próximo passo: aguardar comparecimento da cliente às 18h na Fama.
+## Pendências e incertezas
+
+- Não foi verificado nesta rotina se a cliente compareceu à visita ou qual foi o desfecho comercial após 2026-06-04 às 18h.
+- Se o CRM/FamaChat tiver atualização posterior, esta entidade deve ser revisada para refletir o desfecho, mantendo o CRM como fonte de verdade.
+- O identificador técnico de canal/WhatsApp foi removido do corpo desta nota por saneamento de PII; consultar fonte operacional apropriada apenas quando necessário.
