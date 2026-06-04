@@ -64,3 +64,10 @@ verified_by: null
 - Ação CRM: registrar nota objetiva e marcar appointment 261 como Confirmado.
 - Status do cliente: preservar em Agendamento.
 - Próxima resposta cliente-facing: confirmar recebimento e reforçar que a Fama aguardará a cliente às 18h.
+
+## Aceite final
+- Cliente respondeu: "Combinado" após confirmação final.
+- Interpretação: aceite/ciência da visita confirmada.
+- Appointment 261 permanece Confirmado.
+- Status CRM permanece Agendamento.
+- Próximo passo: aguardar comparecimento da cliente às 18h na Fama.
