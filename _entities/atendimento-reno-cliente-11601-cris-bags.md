@@ -56,3 +56,11 @@ verified_by: null
 - Não alterar status: cliente já está em Agendamento.
 - Não registrar novo agendamento: appointment 261 já existe.
 - Objetivo imediato: obter confirmação explícita da presença hoje às 18h.
+
+
+## Confirmação explícita da visita
+- Cliente respondeu: "Sim confirmado às 18h".
+- Interpretação: presença confirmada para a visita presencial de 2026-06-04 às 18:00 BRT.
+- Ação CRM: registrar nota objetiva e marcar appointment 261 como Confirmado.
+- Status do cliente: preservar em Agendamento.
+- Próxima resposta cliente-facing: confirmar recebimento e reforçar que a Fama aguardará a cliente às 18h.
