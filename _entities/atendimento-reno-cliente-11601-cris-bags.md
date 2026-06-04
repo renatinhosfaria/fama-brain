@@ -1,36 +1,37 @@
 ---
-schema_version: 1
-type: entity
-status: active
-created: '2026-06-04'
-updated: '2026-06-05'
-source: agent-generated
+aliases:
+  - cliente-11601-cris-bags
+  - Cris Bags - Garden Sul
 author_agent: reno
+confidence: 0.9
+created: '2026-06-04'
 curated_by: brain
+entity_type: reno-atendimento
+external_ids:
+  famachat_appointment_id: '261'
+  famachat_client_id: '11601'
+mentions_entity:
+  - '[[reno-hub]]'
+name: Atendimento Reno - Cliente 11601 - Cris Bags
+owner: renato
+related:
+  - '[[reno-hub]]'
+  - '[[2026-06-03-falha-operacional-no-primeiro-contato-do-cliente-11601]]'
+  - '[[2026-06-03-primeiro-contato-enviado-para-cris-bags-cliente-11601]]'
+  - '[[2026-06-03-resgate-step-3-enviado-cris-bags]]'
+  - '[[2026-06-03-cliente-11601-confirmou-visita-para-garden-sul-amanha-as-18h]]'
+schema_version: 1
+source: agent-generated
+status: active
 tags:
   - reno
   - atendimento
   - agendamento
   - garden-sul
   - curado-brain
-name: Atendimento Reno - Cliente 11601 - Cris Bags
-entity_type: reno-atendimento
-aliases:
-  - cliente-11601-cris-bags
-  - Cris Bags - Garden Sul
-external_ids:
-  famachat_appointment_id: '261'
-  famachat_client_id: '11601'
-related:
-  - '[[reno-hub]]'
-  - '[[2026-06-03-falha-operacional-no-primeiro-contato-do-cliente-11601]]'
-  - '[[2026-06-03-resgate-step-3-enviado-cris-bags]]'
-  - '[[2026-06-03-cliente-11601-confirmou-visita-para-garden-sul-amanha-as-18h]]'
-mentions_entity:
-  - '[[reno-hub]]'
-confidence: 0.9
+type: entity
+updated: '2026-06-05'
 verified_by: null
-owner: brain
 ---
 # Atendimento Reno — Cliente 11601 — Cris Bags
 
@@ -63,12 +64,13 @@ Registro consolidado de atendimento conduzido pelo Reno para cliente interessada
 ## Histórico curado
 
 1. Primeiro contato/entrada operacional registrada em 2026-06-03, inicialmente com falha de envio WhatsApp e nota objetiva no CRM.
-2. Fluxo de resgate avançou para convite de visita presencial após contexto de valor à vista e Garden Sul.
-3. Cliente confirmou o horário proposto para visita presencial; appointment 261 foi criado no FamaChat como Visita/Agendado.
-4. Em 2026-06-04, houve correção operacional de envio da confirmação para o canal ativo da conversa. O identificador técnico do canal foi redigido nesta nota por política de PII.
-5. Renato confirmou visualmente que o reenvio apareceu no WhatsApp da cliente.
-6. Cliente respondeu à confirmação inicial com saudação cordial; depois confirmou explicitamente presença às 18h.
-7. Cliente respondeu “Combinado” após a confirmação final, indicando ciência/aceite da visita marcada.
+2. Primeiro contato foi reprocessado manualmente e registrado como enviado com sucesso em evento posterior.
+3. Fluxo de resgate avançou para convite de visita presencial após contexto de valor à vista e Garden Sul.
+4. Cliente confirmou o horário proposto para visita presencial; appointment 261 foi criado no FamaChat como Visita/Agendado.
+5. Em 2026-06-04, houve correção operacional de envio da confirmação para o canal ativo da conversa. O identificador técnico do canal foi redigido nesta nota por política de PII.
+6. Renato confirmou visualmente que o reenvio apareceu no WhatsApp da cliente.
+7. Cliente respondeu à confirmação inicial com saudação cordial; depois confirmou explicitamente presença às 18h.
+8. Cliente respondeu “Combinado” após a confirmação final, indicando ciência/aceite da visita marcada.
 
 ## Interações e decisões operacionais registradas
 
@@ -86,6 +88,7 @@ Registro consolidado de atendimento conduzido pelo Reno para cliente interessada
 ## Links relacionados
 
 - [[2026-06-03-falha-operacional-no-primeiro-contato-do-cliente-11601]] — origem/falha inicial e registro CRM.
+- [[2026-06-03-primeiro-contato-enviado-para-cris-bags-cliente-11601]] — reprocessamento manual e primeiro contato enviado com sucesso.
 - [[2026-06-03-resgate-step-3-enviado-cris-bags]] — convite de visita no fluxo de resgate.
 - [[2026-06-03-cliente-11601-confirmou-visita-para-garden-sul-amanha-as-18h]] — criação/validação do appointment 261.
 - [[reno-hub]] — mapa operacional do Reno.
