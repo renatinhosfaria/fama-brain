@@ -132,3 +132,8 @@ Quando um novo documento for inserido no vault, o Brain deve classificar e arqui
 ## Como avaliar se uma intervenção de curadoria melhorou o vault?
 
 Uma intervenção de curadoria melhorou o vault quando o conteúdo ficou mais claro, navegável, conectado e recuperável por golden queries, sem violar schema, ownership, PII, fontes de verdade ou rastreabilidade. A avaliação deve considerar se decisões, runbooks, READMEs locais, hubs e políticas ficaram mais fáceis de recuperar do que journals recentes quando a pergunta for normativa.
+
+
+## Procedimento relacionado: novo agente desconhecido
+
+Quando uma nota do vault for criada por agente de IA, LLM, CLI ou automação ainda não cadastrado, aplicar [[brain-cadastro-novo-agente-ia]] antes de promover o conteúdo a memória canônica. A origem deve ser tratada como proveniência incerta até haver identificação, registro em [[_shared/context/AGENTS]] ou decisão de manter como entrada externa não cadastrada.
