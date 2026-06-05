@@ -98,3 +98,14 @@ Registro consolidado de atendimento conduzido pelo Reno para cliente interessada
 - Não foi verificado nesta rotina se a cliente compareceu à visita ou qual foi o desfecho comercial após 2026-06-04 às 18h.
 - Se o CRM/FamaChat tiver atualização posterior, esta entidade deve ser revisada para refletir o desfecho, mantendo o CRM como fonte de verdade.
 - O identificador técnico de canal/WhatsApp foi removido do corpo desta nota por saneamento de PII; consultar fonte operacional apropriada apenas quando necessário.
+
+## Verificação CRM — 2026-06-05
+
+Consulta operacional ao CRM/FamaChat feita pelo Brain durante a rotina recorrente de curadoria.
+
+- Appointment 261 permanece registrado como `Confirmado` para a visita Garden Sul de 2026-06-04 às 18:00 BRT.
+- Cliente permanece em status `Agendamento` no CRM no momento da verificação.
+- Não foram encontrados registros de visita realizada, venda ou desfecho comercial posterior no read-back disponível.
+- Interpretação: a entidade continua útil como memória de agendamento confirmado, mas ainda não deve ser tratada como fechamento, comparecimento ou visita efetivamente realizada.
+
+**Pendência atualizada:** revisar novamente se houver nota CRM posterior, visita registrada ou atualização de status comercial.
