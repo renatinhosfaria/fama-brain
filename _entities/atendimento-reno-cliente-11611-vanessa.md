@@ -82,3 +82,9 @@ Entidade consolidada de atendimento Reno para cliente 11611, criada para reunir 
 - Não há confirmação no vault ou CRM, até a verificação de 2026-06-05, de resposta da cliente após o primeiro contato.
 - A causa exata da duplicidade foi interpretada como concorrência/redelivery operacional com base nos próprios journals e notas CRM; não foi feita auditoria de código nesta rotina.
 - Telefones, JIDs e message IDs foram omitidos do corpo consolidado por política de PII; consultar o CRM/FamaChat apenas quando operacionalmente necessário.
+
+## Nota de desambiguação — Vanessa
+
+Busca semântica durante a curadoria encontrou também [[vanessa]], entidade antiga vinculada ao cliente CRM 10980 / Union Vereda / status Arquivado. Esta nota trata de outra Vanessa, cliente 11611, vinculada a Place+Arbi em 2026-06-04.
+
+**Guardrail:** não consolidar automaticamente estas duas entidades apenas pelo mesmo primeiro nome; os IDs CRM, empreendimento e contexto comercial são distintos.
