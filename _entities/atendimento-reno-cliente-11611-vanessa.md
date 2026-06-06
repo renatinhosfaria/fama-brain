@@ -15,8 +15,9 @@ related:
   - '[[2026-06-04-primeiro-contato-enviado-cliente-11611-vanessa]]'
   - '[[2026-06-04-primeiro-contato-enviado-vanessa-cliente-11611]]'
   - '[[2026-06-05-repescagem-step-1-enviada-cliente-11611-vanessa]]'
+  - '[[2026-06-06-repescagem-whatsapp-encerrada-por-contato-nao-resolvido]]'
   - '[[vanessa]]'
-confidence: 0.92
+confidence: 0.93
 verified_by: null
 schema_version: 1
 status: active
@@ -30,59 +31,25 @@ tags:
   - repescagem
   - place-arbi
   - duplicidade-operacional
+  - whatsapp-failure
   - curado-brain
 author_agent: brain
 ---
 # Atendimento Reno — Cliente 11611 — Vanessa
 
-[[reno-hub]]
-
 ## Resumo curado
-Entidade consolidada de atendimento Reno para cliente 11611, criada para reunir dois registros de primeiro contato do mesmo evento FamaChat/cliente.created em 2026-06-04 e atualizada com a repescagem step 1 enviada em 2026-06-05.
 
-**Interpretação adotada nesta curadoria:** os dois journals de primeiro contato parecem representar concorrência/redelivery operacional do mesmo evento, com dois envios técnicos próximos para o mesmo contexto comercial. A repescagem posterior deve ser entendida como continuidade da mesma trilha, não como novo lead separado. Esta entidade não substitui o CRM/FamaChat; o CRM permanece como fonte operacional de verdade para status, telefone/JID e próximos disparos.
+Cliente do fluxo Reno vinculado ao Place+Arbi. Há duplicidade operacional de registros de primeiro contato em 2026-06-04, seguida por repescagem step 1 em 2026-06-05. Em 2026-06-06, a tentativa seguinte foi encerrada porque o WhatsApp não resolveu o contato após as variações tentáveis.
 
-## Classificação
-- Tipo: entidade operacional de atendimento Reno.
-- Tema/projeto: Reno / primeiro contato / Place+Arbi / Facebook Ads / repescagem.
-- Prioridade: média, por conter alerta de idempotência e risco de duplicidade de envio.
-- Estado no vault: consolidada; journals de origem preservados como evidência histórica.
-- Local canônico: `_entities/`, por resumir fatos duráveis e conectar registros redundantes em `_journal/reno/`.
+Leitura curada atual, validada por read-back no CRM/FamaChat em 2026-06-06: status comercial preservado como `Não Respondeu`; branch `reno_followup.repescagem` está desativada com `stopped_reason=whatsapp_unresolvable`. A entidade não substitui o CRM/FamaChat como fonte operacional de verdade.
 
-## Contexto operacional sem PII
-- Cliente FamaChat: 11611.
-- Nome registrado: Vanessa.
-- Broker: Reno Agente de IA (`broker_id=35`).
-- Origem: Facebook Ads.
-- Empreendimento: Place+Arbi (`property_id=67`), Shopping Park / Zona Sul.
-- Status CRM verificado em 2026-06-06: `Não Respondeu`.
-- Follow-up verificado em 2026-06-06: `reno_followup.repescagem` em `step=1`, `enabled=true`, com próxima execução registrada para 2026-06-06 09:10 BRT.
+## Linha do tempo consolidada
 
-## Histórico curado
-1. 2026-06-04: primeiro contato registrado em [[2026-06-04-primeiro-contato-enviado-cliente-11611-vanessa]].
-2. 2026-06-04: poucos segundos depois, outro journal registrou primeiro contato para o mesmo cliente/evento em [[2026-06-04-primeiro-contato-enviado-vanessa-cliente-11611]].
-3. Ambos os registros indicam o mesmo contexto comercial e alertam para não reenviar sem nova evidência de necessidade.
-4. 2026-06-05: repescagem step 1 enviada com pergunta consultiva sobre peso entre localização e valor da parcela; CRM atualizado para próxima execução em 2026-06-06.
-5. Read-back no CRM em 2026-06-06 confirmou status `Não Respondeu`, ausência de appointments/vendas/visitas e repescagem ativa em step 1.
+- [[2026-06-04-primeiro-contato-enviado-cliente-11611-vanessa]] e [[2026-06-04-primeiro-contato-enviado-vanessa-cliente-11611]] — registros duplicados/complementares de primeiro contato.
+- [[2026-06-05-repescagem-step-1-enviada-cliente-11611-vanessa]] — follow-up de repescagem enviado.
+- [[2026-06-06-repescagem-whatsapp-encerrada-por-contato-nao-resolvido]] — fluxo encerrado por contato WhatsApp não resolvido.
+- [[vanessa]] — possível nota homônima/legada; manter desambiguação pelo ID 11611.
 
-## Guardrail de continuidade
-- Não tratar os dois journals de primeiro contato como dois interesses comerciais distintos.
-- Não acionar novo primeiro contato apenas por haver duas notas no vault; validar no CRM/FamaChat antes de qualquer ação operacional.
-- A repescagem step 1 é continuidade da trilha consolidada e deve linkar esta entidade em futuras curadorias.
-- Se houver resposta da cliente, o próximo documento curado deve linkar esta entidade e preservar a trilha de idempotência.
+## Próximo uso como contexto
 
-## Links relacionados
-- [[2026-06-04-primeiro-contato-enviado-cliente-11611-vanessa]] — registro mais completo do primeiro contato e alerta de concorrência.
-- [[2026-06-04-primeiro-contato-enviado-vanessa-cliente-11611]] — registro paralelo/concorrente do mesmo cliente/evento.
-- [[2026-06-05-repescagem-step-1-enviada-cliente-11611-vanessa]] — continuidade de repescagem step 1.
-- [[reno-hub]] — hub operacional do Reno.
-
-## Pendências e incertezas
-- Não há confirmação no vault ou CRM, até a verificação de 2026-06-06, de resposta da cliente após a repescagem step 1.
-- A causa exata da duplicidade foi interpretada como concorrência/redelivery operacional com base nos próprios journals e notas CRM; não foi feita auditoria de código nesta rotina.
-- Telefones, JIDs e message IDs foram omitidos do corpo consolidado por política de PII; consultar o CRM/FamaChat apenas quando operacionalmente necessário.
-
-## Nota de desambiguação — Vanessa
-Busca semântica durante curadoria anterior encontrou também [[vanessa]], entidade antiga vinculada a outro cliente CRM / empreendimento / status. Esta nota trata de outra Vanessa, cliente 11611, vinculada a Place+Arbi em 2026-06-04.
-
-**Guardrail:** não consolidar automaticamente estas duas entidades apenas pelo mesmo primeiro nome; os IDs CRM, empreendimento e contexto comercial são distintos.
+Usar esta entidade para preservar a desambiguação da Vanessa por `famachat_client_id=11611` e evitar fusão automática com homônimos.
