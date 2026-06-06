@@ -1,19 +1,5 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-06-05'
-updated: '2026-06-05'
-source: agent-generated
-tags:
-  - reno
-  - atendimento
-  - primeiro-contato
-  - repescagem
-  - garden-sul
-  - needs-repair
-  - curado-brain
-author_agent: brain
 name: Atendimento Reno - Cliente 11609 - Wellington Souza
 entity_type: reno-atendimento
 aliases:
@@ -32,36 +18,41 @@ related:
   - '[[2026-06-04-repescagem-needs-repair-wellington-souza]]'
   - '[[2026-06-05-repescagem-step-2-enviada-cliente-11609]]'
   - '[[2026-06-05-repescagem-needs-repair-wellington-souza-cliente-11609]]'
-confidence: 0.9
+  - '[[2026-06-06-repescagem-step-3-enviada-para-wellington-souza]]'
+confidence: 0.93
 verified_by: null
+schema_version: 1
+status: active
+created: '2026-06-05'
+updated: '2026-06-06'
+source: agent-generated
+tags:
+  - reno
+  - atendimento
+  - primeiro-contato
+  - repescagem
+  - garden-sul
+  - needs-repair
+  - curado-brain
+author_agent: brain
 ---
-# Atendimento Reno - Cliente 11609 - Wellington Souza
+# Atendimento Reno — Cliente 11609 — Wellington Souza
 
 ## Resumo curado
-Entidade canônica de atendimento Reno para o cliente CRM 11609, criada para consolidar os journals operacionais fragmentados de primeiro contato, repescagem e normalizações de cadência.
 
-## Classificação
-- Tipo: entidade operacional de atendimento Reno (`reno-atendimento`).
-- Tema: automação Reno / Facebook Ads / follow-up de repescagem.
-- Estado atual verificado no CRM em 2026-06-05T18:08Z: cliente em `Não Respondeu`; branch `repescagem` ativa em step 2; `next_run_at` ajustado para 2026-06-06 14:20 BRT após normalização `needs_repair` por cadência fresca.
-- Empreendimento de interesse: Garden Sul, Jardim Sul, Zona Sul.
-- Prioridade de curadoria: média — útil para preservar continuidade entre eventos concorrentes e evitar duplicidade de interpretação.
+Cliente do fluxo Reno vinculado ao Garden Sul. O histórico inclui primeiro contato, repescagem step 1, normalizações por janela mínima, step 2 e, em 2026-06-06, envio confirmado do step 3.
+
+Leitura curada atual, validada por read-back no CRM/FamaChat em 2026-06-06: status comercial permanece `Não Respondeu`; branch `reno_followup.repescagem` está ativa, com step 3 enviado e próxima janela programada para 2026-06-07 à noite. A entidade não substitui o CRM/FamaChat como fonte operacional de verdade.
 
 ## Linha do tempo consolidada
-- 2026-06-03: primeiro contato Reno enviado e validado; houve registro concorrente/read-back sem sobrescrever estado.
-- 2026-06-03: repescagem step 1 enviada.
-- 2026-06-04: branch normalizada por freshness gate de 18h, sem novo WhatsApp.
-- 2026-06-05 10:29 BRT: repescagem step 2 enviada.
-- 2026-06-05 14:29 BRT: execução posterior entrou em `needs_repair` porque o último envio ainda estava abaixo da janela mínima; nenhum novo WhatsApp enviado e o próximo disparo foi remarcado para step 3.
 
-## Interpretação assumida
-Os journals de `needs_repair` são eventos de normalização/idempotência, não falhas comerciais do lead. O CRM permanece fonte de verdade para o estado atual.
+- [[2026-06-03-primeiro-contato-whatsapp-cliente-11609-wellington-souza]] / [[2026-06-03-primeiro-contato-enviado-cliente-11609-wellington-souza]] — primeiro contato registrado.
+- [[2026-06-03-repescagem-step-1-enviada-wellington-souza]] — início de repescagem.
+- [[2026-06-04-repescagem-needs-repair-wellington-souza]] — normalização de cadência.
+- [[2026-06-05-repescagem-step-2-enviada-cliente-11609]] — segundo follow-up enviado.
+- [[2026-06-05-repescagem-needs-repair-wellington-souza-cliente-11609]] — nova preservação de cadência.
+- [[2026-06-06-repescagem-step-3-enviada-para-wellington-souza]] — terceiro follow-up enviado e próximo run programado.
 
-## Links relacionados
-- [[reno-hub]]
-- [[2026-06-03-primeiro-contato-whatsapp-cliente-11609-wellington-souza]]
-- [[2026-06-03-primeiro-contato-enviado-cliente-11609-wellington-souza]]
-- [[2026-06-03-repescagem-step-1-enviada-wellington-souza]]
-- [[2026-06-04-repescagem-needs-repair-wellington-souza]]
-- [[2026-06-05-repescagem-step-2-enviada-cliente-11609]]
-- [[2026-06-05-repescagem-needs-repair-wellington-souza-cliente-11609]]
+## Próximo uso como contexto
+
+Usar esta entidade para recuperar rapidamente a cadência ativa da repescagem e evitar interpretar entradas `needs_repair` como falha terminal.
