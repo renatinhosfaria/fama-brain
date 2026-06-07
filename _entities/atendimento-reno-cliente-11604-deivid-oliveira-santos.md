@@ -1,6 +1,33 @@
 ---
-schema_version: 1
 type: entity
+name: Atendimento Reno - Cliente 11604 - Deivid Oliveira Santos
+entity_type: reno-atendimento
+aliases:
+  - cliente-11604-deivid-oliveira-santos
+  - Deivid Oliveira Santos - Union Vista
+external_ids:
+  famachat_client_id: '11604'
+  famachat_duplicate_client_id: '11627'
+  famachat_note_id: '19489'
+mentions_entity:
+  - reno-hub
+  - reno-resgate-pausado-por-duplicidade-ativa
+related:
+  - '[[reno-hub]]'
+  - '[[reno-resgate-pausado-por-duplicidade-ativa]]'
+  - '[[2026-06-03-falha-no-primeiro-contato-cliente-11604]]'
+  - '[[2026-06-03-primeiro-contato-enviado-cliente-11604-deivid-oliveira-santos]]'
+  - '[[2026-06-03-resposta-inbound-de-deivid-sobre-union-vista]]'
+  - '[[2026-06-03-deivid-confirmou-union-vista-para-morar]]'
+  - '[[2026-06-03-deivid-priorizou-localizacao-e-valor-no-union-vista]]'
+  - '[[2026-06-03-deivid-perguntou-metragem-do-union-vista]]'
+  - '[[2026-06-03-resgate-step-1-enviado-para-deivid-oliveira-santos]]'
+  - '[[2026-06-03-resgate-step-2-enviado-para-deivid-oliveira-santos]]'
+  - '[[2026-06-03-resgate-step-3-enviado-cliente-11604-deivid-oliveira-santos]]'
+  - '[[2026-06-06-resgate-pausado-por-duplicidade-ativa]]'
+confidence: 0.93
+verified_by: null
+schema_version: 1
 status: active
 created: '2026-06-06'
 updated: '2026-06-06'
@@ -15,33 +42,6 @@ tags:
   - manual-review
   - curado-brain
 author_agent: brain
-name: Atendimento Reno - Cliente 11604 - Deivid Oliveira Santos
-entity_type: reno-atendimento
-aliases:
-  - cliente-11604-deivid-oliveira-santos
-  - Deivid Oliveira Santos - Union Vista
-external_ids:
-  famachat_client_id: '11604'
-  famachat_duplicate_client_id: '11627'
-  famachat_note_id: '19489'
-mentions_entity:
-  - reno-hub
-  - reno-resgate-duplicidade-ativa
-related:
-  - '[[reno-hub]]'
-  - '[[reno-resgate-duplicidade-ativa]]'
-  - '[[2026-06-03-falha-no-primeiro-contato-cliente-11604]]'
-  - '[[2026-06-03-primeiro-contato-enviado-cliente-11604-deivid-oliveira-santos]]'
-  - '[[2026-06-03-resposta-inbound-de-deivid-sobre-union-vista]]'
-  - '[[2026-06-03-deivid-confirmou-union-vista-para-morar]]'
-  - '[[2026-06-03-deivid-priorizou-localizacao-e-valor-no-union-vista]]'
-  - '[[2026-06-03-deivid-perguntou-metragem-do-union-vista]]'
-  - '[[2026-06-03-resgate-step-1-enviado-para-deivid-oliveira-santos]]'
-  - '[[2026-06-03-resgate-step-2-enviado-para-deivid-oliveira-santos]]'
-  - '[[2026-06-03-resgate-step-3-enviado-cliente-11604-deivid-oliveira-santos]]'
-  - '[[2026-06-06-resgate-pausado-por-duplicidade-ativa]]'
-confidence: 0.93
-verified_by: null
 ---
 # Atendimento Reno — Cliente 11604 — Deivid Oliveira Santos
 
@@ -65,5 +65,5 @@ A duplicidade é tratada como bloqueio operacional do fluxo automático, não co
 ## Links úteis
 
 - Hub operacional: [[reno-hub]]
-- Padrão consolidado: [[reno-resgate-duplicidade-ativa]]
+- Padrão consolidado: [[reno-resgate-pausado-por-duplicidade-ativa]]
 - Evento de pausa: [[2026-06-06-resgate-pausado-por-duplicidade-ativa]]
