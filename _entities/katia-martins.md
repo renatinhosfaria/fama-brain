@@ -48,3 +48,11 @@ Place+Arbi, Shopping Park, Uberlândia. Diagnóstico inicial aberto com pergunta
 Aguardar resposta. Se responder, mover Não Respondeu -> Em Atendimento somente se ainda estiver exatamente em Não Respondeu e continuar diagnóstico consultivo. Se não responder, repescagem step=0 em 2026-06-10T19:10:00-03:00.
 
 ## Histórico de interações
+
+### 2026-06-09 — Canary primeiro contato WhatsApp
+- Canal: WhatsApp.
+- Contexto: cliente 11660, origem Facebook Ads, interesse no Place+Arbi (Shopping Park), `broker_id=35`.
+- Mensagem enviada: "Oi, Katia, tudo bem? Aqui é o Reno, da Fama Negócios Imobiliários. Vi seu interesse no Place+Arbi, no Shopping Park. Pra eu te ajudar do jeito certo: você está buscando mais pra morar ou investir?"
+- Evidência de envio: `whatsapp_validated=true`, `validation_method=onWhatsApp`, `validated_jid=553498934251@s.whatsapp.net`, `provider_message_id=3EB084DB617AC08AF8EB08`.
+- Persistência CRM: `reno_first_contacts.id=24`, `status=sent`, `outcome_code=sent`, nota CRM `19514`, status do cliente `Não Respondeu`.
+- Automação: `reno_followup.repescagem.step=0`, `next_run_at=2026-06-10T19:10:00-03:00`, `stopped_reason=null`.
