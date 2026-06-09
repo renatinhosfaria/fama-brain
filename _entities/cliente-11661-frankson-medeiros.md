@@ -84,3 +84,7 @@ Cliente reforçou que é autônomo ao ser perguntado sobre movimentação média
 
 ## Atualização — FGTS
 Cliente informou que não possui FGTS. Contexto atual: autônomo, sem declaração de IR, boa movimentação bancária, sem FGTS, parcela-alvo de R$ 2.550, compromissos mensais de R$ 4.430. Próximo passo: perguntar se possui entrada própria e/ou retomar faixa de movimentação média mensal.
+
+
+## Atualização — entrada própria
+Cliente informou possuir mais de R$ 10 mil de entrada própria. Não possui FGTS. Perfil desejado segue: apartamento para morar, aceita 1 quarto desde que tenha elevador, parcela-alvo R$ 2.550. Compromissos mensais atuais: R$ 4.430. Próximo passo: levantar faixa de movimentação média mensal para estimar viabilidade com segurança.
