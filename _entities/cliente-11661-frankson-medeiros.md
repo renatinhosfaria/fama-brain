@@ -55,3 +55,11 @@ Perguntar a faixa de parcela que o cliente considera confortável para iniciar a
 - Aceita apartamento de 1 quarto, desde que tenha elevador.
 - Possui carro financiado, ponto que deve entrar no cálculo de comprometimento de renda.
 - Próximo passo: perguntar entrada/FGTS e conduzir para análise de viabilidade antes de apresentar opções ou propor visita presencial.
+
+
+## Atualização — carro financiado
+Cliente reforçou que possui carro financiado. Próximo passo imediato: perguntar valor mensal da parcela do carro para estimar comprometimento de renda antes de aprofundar entrada/FGTS.
+
+
+## Atualização — consórcios
+Cliente informou que possui 2 motos em consórcio, além do carro financiado. Esses compromissos mensais precisam entrar no cálculo de comprometimento de renda. Próximo passo: perguntar o total mensal pago em carro + consórcios.
