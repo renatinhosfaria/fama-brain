@@ -63,3 +63,7 @@ Cliente reforçou que possui carro financiado. Próximo passo imediato: pergunta
 
 ## Atualização — consórcios
 Cliente informou que possui 2 motos em consórcio, além do carro financiado. Esses compromissos mensais precisam entrar no cálculo de comprometimento de renda. Próximo passo: perguntar o total mensal pago em carro + consórcios.
+
+
+## Atualização — resposta ambígua sobre compromissos
+Após pergunta sobre o total mensal de carro financiado + 2 consórcios de moto, cliente respondeu “Não”. Resposta ambígua. Próxima mensagem deve esclarecer com leveza se ele não sabe/não quer informar agora ou se não há parcela mensal, sem pressionar.
