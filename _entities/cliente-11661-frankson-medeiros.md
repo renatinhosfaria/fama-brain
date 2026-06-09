@@ -88,3 +88,7 @@ Cliente informou que não possui FGTS. Contexto atual: autônomo, sem declaraç�
 
 ## Atualização — entrada própria
 Cliente informou possuir mais de R$ 10 mil de entrada própria. Não possui FGTS. Perfil desejado segue: apartamento para morar, aceita 1 quarto desde que tenha elevador, parcela-alvo R$ 2.550. Compromissos mensais atuais: R$ 4.430. Próximo passo: levantar faixa de movimentação média mensal para estimar viabilidade com segurança.
+
+
+## Atualização — parcelamento de entrada
+Cliente gostaria de parcelar a entrada, se possível. Direção comercial: explicar que depende do empreendimento/construtora e precisa ser compatibilizado com parcela do financiamento + compromissos atuais. Bom gancho para análise de viabilidade presencial, sem prometer aprovação nem condições.
