@@ -46,3 +46,12 @@ Relacionado a [[reno-hub]].
 
 ## Próximo passo recomendado
 Perguntar a faixa de parcela que o cliente considera confortável para iniciar a análise de viabilidade e conduzir gradualmente para visita presencial quando houver encaixe real.
+
+
+## Atualização — diagnóstico financeiro inicial
+- Cliente informou ser autônomo.
+- Não declara imposto de renda, mas relata boa movimentação bancária.
+- Parcela desejada/confortável: aproximadamente R$ 2.550.
+- Aceita apartamento de 1 quarto, desde que tenha elevador.
+- Possui carro financiado, ponto que deve entrar no cálculo de comprometimento de renda.
+- Próximo passo: perguntar entrada/FGTS e conduzir para análise de viabilidade antes de apresentar opções ou propor visita presencial.
