@@ -48,3 +48,11 @@ Union Vista, Grand Ville, Uberlândia. Diagnóstico inicial aberto com pergunta:
 Aguardar resposta. Se responder, mover Não Respondeu -> Em Atendimento somente se ainda estiver exatamente em Não Respondeu e continuar diagnóstico consultivo. Se não responder, repescagem step=0 em 2026-06-10T19:10:00-03:00.
 
 ## Histórico de interações
+
+### 2026-06-09 — Canary primeiro contato WhatsApp
+- Canal: WhatsApp.
+- Contexto: cliente 11608, origem Facebook Ads, interesse no Union Vista (Grand Ville), `broker_id=35`.
+- Mensagem enviada: "Oi, Maria Isabel, tudo bem? Aqui é o Reno, da Fama Negócios Imobiliários. Vi seu interesse no Union Vista, no Grand Ville. Pra eu te ajudar do jeito certo: você está buscando mais pra morar ou investir?"
+- Evidência de envio: `whatsapp_validated=true`, `validation_method=onWhatsApp`, `validated_jid=553492919933@s.whatsapp.net`, `provider_message_id=3EB096D0CF806683C90C0C`.
+- Persistência CRM: `reno_first_contacts.id=27`, `status=sent`, `outcome_code=sent`, nota CRM `19517`, status do cliente `Não Respondeu`.
+- Automação: `reno_followup.repescagem.step=0`, `next_run_at=2026-06-10T19:10:00-03:00`, `stopped_reason=null`.
