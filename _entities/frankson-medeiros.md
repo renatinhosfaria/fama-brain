@@ -49,3 +49,11 @@ Union Vereda, bairro Jaraguá, Uberlândia. Diagnóstico inicial aberto com perg
 Aguardar resposta do cliente. Se responder, mover de Não Respondeu para Em Atendimento somente se ainda estiver exatamente em Não Respondeu e continuar diagnóstico consultivo. Se não responder, repescagem step=0 está inicializada para 2026-06-10T19:10:00-03:00.
 
 ## Histórico de interações
+
+### 2026-06-09 — Canary primeiro contato WhatsApp
+- Canal: WhatsApp.
+- Contexto: cliente 11661, origem Facebook Ads, interesse no Union Vereda (Jaraguá), `broker_id=35`.
+- Mensagem enviada: "Oi, Frankson, tudo bem? Aqui é o Reno, da Fama Negócios Imobiliários. Vi seu interesse no Union Vereda, no Jaraguá. Pra eu te ajudar do jeito certo: você está buscando mais pra morar ou investir?"
+- Evidência de envio: `whatsapp_validated=true`, `validation_method=onWhatsApp`, `validated_jid=553498256131@s.whatsapp.net`, `provider_message_id=3EB0BD9C36CF4B85ED55A2`.
+- Persistência CRM: `reno_first_contacts.id=23` marcado como `sent`; nota CRM `19512`; status `Sem Atendimento -> Não Respondeu`; repescagem `step=0`, `next_run_at=2026-06-10T19:10:00-03:00`.
+- Journal relacionado: [[canary-primeiro-contato-enviado-para-frankson-medeiros]].
