@@ -67,3 +67,12 @@ Cliente informou que possui 2 motos em consórcio, além do carro financiado. Es
 
 ## Atualização — resposta ambígua sobre compromissos
 Após pergunta sobre o total mensal de carro financiado + 2 consórcios de moto, cliente respondeu “Não”. Resposta ambígua. Próxima mensagem deve esclarecer com leveza se ele não sabe/não quer informar agora ou se não há parcela mensal, sem pressionar.
+
+
+## Atualização — valores dos compromissos mensais
+Cliente informou:
+- Carro financiado: R$ 1.700/mês.
+- Consórcio moto: R$ 1.950/mês.
+- Consórcio moto: R$ 780/mês.
+
+Total informado de compromissos recorrentes: R$ 4.430/mês. Com a parcela-alvo do apartamento de R$ 2.550, desembolso mensal projetado ficaria em R$ 6.980/mês. Próximo passo: perguntar movimentação/renda média mensal e depois entrada/FGTS, sem prometer aprovação.
