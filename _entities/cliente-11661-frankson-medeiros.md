@@ -76,3 +76,11 @@ Cliente informou:
 - Consórcio moto: R$ 780/mês.
 
 Total informado de compromissos recorrentes: R$ 4.430/mês. Com a parcela-alvo do apartamento de R$ 2.550, desembolso mensal projetado ficaria em R$ 6.980/mês. Próximo passo: perguntar movimentação/renda média mensal e depois entrada/FGTS, sem prometer aprovação.
+
+
+## Atualização — reforço de autônomo
+Cliente reforçou que é autônomo ao ser perguntado sobre movimentação média. Próxima mensagem deve explicar de forma simples que, por ser autônomo e não declarar IR, a análise considera média de movimentação/extratos, pedindo apenas uma faixa aproximada.
+
+
+## Atualização — FGTS
+Cliente informou que não possui FGTS. Contexto atual: autônomo, sem declaração de IR, boa movimentação bancária, sem FGTS, parcela-alvo de R$ 2.550, compromissos mensais de R$ 4.430. Próximo passo: perguntar se possui entrada própria e/ou retomar faixa de movimentação média mensal.
