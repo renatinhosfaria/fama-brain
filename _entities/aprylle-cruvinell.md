@@ -1,6 +1,16 @@
 ---
-schema_version: 1
 type: entity
+name: Aprylle Cruvinell
+entity_type: lead
+external_ids:
+  client_id: '11667'
+  broker_id: '35'
+  empreendimento_id: '161'
+  regiao: Setor Sul / Jaraguá como origem do anúncio
+related:
+  - '[[aprylle-cruvinell]]'
+  - '[[reno-hub]]'
+schema_version: 1
 status: active
 created: '2026-06-10'
 updated: '2026-06-10'
@@ -8,40 +18,31 @@ source: agent-generated
 tags:
   - reno
   - atendimento
-  - whatsapp
-  - primeira-resposta
+  - agendamento
+  - financiamento
+  - visita
 author_agent: reno
-name: Aprylle Cruvinell
-entity_type: lead
-related:
-  - '[[aprylle-cruvinell]]'
-  - '[[reno-hub]]'
-external_ids:
-  client_id: '11667'
-  broker_id: '35'
-  empreendimento_id: '161'
-  empreendimento_slug: union-vereda
-  fonte: Facebook Ads
-  regiao: 'Jaraguá, Uberlândia'
-status_comercial: Em Atendimento
+status_comercial: Agendamento
 origem: Facebook Ads
 objecoes_ativas:
-  - >-
-    Dúvida sobre viabilidade/documentação e compra sem cônjuge (a confirmar;
-    áudio com transcrição parcial).
+  - Quer entender possibilidade de financiamento antes de escolher imóvel
+  - Entrada prevista apenas para o final de julho
+  - FGTS baixo por saque-aniversário
 proximo_passo: >-
-  Confirmar entendimento do áudio, esclarecer que financiamento depende de
-  análise e perguntar se pretende comprar sozinha ou compor renda com alguém.
+  Visita presencial agendada para segunda-feira, 15/06/2026 às 10h na Fama para
+  simulação de financiamento. Orientar levar documento e comprovante de renda.
 ---
 [[aprylle-cruvinell]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato do Reno por áudio. Transcrição automática ficou parcial/ruidosa; sinais indicam que gostou do Union Vereda, possivelmente pela varanda/varanda gourmet, considera morar ou investir e quer entender viabilidade/documentação.
+Cliente CRM 11667 respondeu ao primeiro contato do Reno. Busca imóvel para morar, pesquisando com calma. Preferência inicial pelo setor Sul, aberta a opções, com foco em apartamento de 2 quartos. Quer entender viabilidade de financiamento antes de escolher imóvel. Informou entrada possível em torno de R$ 6 mil no final de julho, renda fixa de R$ 3.123 com variação por horas extras/trabalho noturno e FGTS baixo por saque-aniversário. Visita presencial agendada no CRM (appointment_id 262) para 15/06/2026 às 10h.
 
 ## Objeções ativas
-- Dúvida sobre viabilidade/documentação e compra sem cônjuge (a confirmar; áudio com transcrição parcial).
+- Quer entender possibilidade de financiamento antes de escolher imóvel
+- Entrada prevista apenas para o final de julho
+- FGTS baixo por saque-aniversário
 
 ## Próximo passo
-Confirmar entendimento do áudio, esclarecer que financiamento depende de análise e perguntar se pretende comprar sozinha ou compor renda com alguém.
+Visita presencial agendada para segunda-feira, 15/06/2026 às 10h na Fama para simulação de financiamento. Orientar levar documento e comprovante de renda.
 
 ## Histórico de interações
