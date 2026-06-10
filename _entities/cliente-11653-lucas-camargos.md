@@ -57,3 +57,7 @@ Cliente confirmou que o Grand Ville faz sentido para moradia. Próximo passo: en
 
 ## Interação — reforço de fit de região
 Cliente informou que a família também mora no Grand Ville, reforçando aderência da região para moradia. Próximo passo: retomar diagnóstico de configuração do imóvel (2 ou 3 quartos) e necessidade prática antes de propor visita.
+
+
+## Interação — configuração desejada
+Cliente informou que procura apartamento de 2 quartos para morar no Grand Ville, com família no mesmo bairro. Próximo passo: diagnosticar forma de compra/viabilidade, especialmente se pretende financiar, antes de propor visita presencial.
