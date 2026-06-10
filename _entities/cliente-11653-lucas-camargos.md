@@ -1,6 +1,21 @@
 ---
-schema_version: 1
 type: entity
+name: cliente-11653-lucas-camargos
+entity_type: reno-atendimento
+external_ids:
+  broker_id: '35'
+  client_id: '11653'
+  empreendimento_id: '22'
+  fonte: Facebook Ads
+mentions_entity:
+  - reno-hub
+related:
+  - reno-hub
+  - Union Vista
+  - Grand Ville
+confidence: 0.94
+verified_by: null
+schema_version: 1
 status: active
 created: '2026-06-10'
 updated: '2026-06-10'
@@ -8,64 +23,34 @@ source: agent-generated
 tags:
   - reno
   - atendimento
-  - primeiro-contato
+  - financiamento
   - union-vista
-author_agent: reno
-name: cliente-11653-lucas-camargos
-entity_type: reno-atendimento
-external_ids:
-  famachat_client_id: '11653'
-mentions_entity:
-  - reno-hub
-related:
-  - reno-hub
-  - Union Vista
-  - Grand Ville
-confidence: 0.9
-verified_by: null
+  - grand-ville
+  - curado-brain
+author_agent: brain
+aliases:
+  - Lucas Camargos
 ---
-# Atendimento — Lucas Camargos
+# Lucas Camargos — atendimento Reno
 
-Relacionado: [[reno-hub]]
-
-Cliente ID: 11653
-Broker ID: 35 (Reno)
-Empreendimento de origem: Union Vista — Grand Ville
-Origem: Facebook Ads
-Status atual no CRM: Em Atendimento
+Relacionado: [[reno-hub]].
 
 ## Resumo curado
-Lucas respondeu ao primeiro contato do Reno informando que a busca é para morar. O atendimento deve seguir com diagnóstico consultivo curto, sem despejar opções cedo demais, e conduzir para visita presencial quando houver aderência.
+Lead/cliente CRM 11653, origem Facebook Ads, atendido pelo Reno. O primeiro contato sobre Union Vista / Grand Ville foi recuperado e validado; o cliente respondeu que busca **morar**. CRM verificado nesta rodada como **Em Atendimento**; repescagem desativada por resposta do cliente.
 
-## Histórico relevante
-- 2026-06-10 12:39: primeiro contato enviado em recuperação via WhatsApp sobre Union Vista, Grand Ville, perguntando se a busca era para morar ou investir. Status saiu de Sem Atendimento para Não Respondeu e repescagem foi inicializada.
-- 2026-06-10 12:58: cliente respondeu: "Seria para morar". CRM atualizado de Não Respondeu para Em Atendimento quando aplicável. Repescagem interrompida por resposta do cliente.
+## Interesse atual
+Busca apartamento de 2 quartos para morar no Grand Ville. Fit de região reforçado porque a família também mora no bairro.
 
-## Diagnóstico atual
-- Finalidade: morar.
-- Necessidade/uso: ainda não detalhado.
-- Região: interesse veio por Union Vista / Grand Ville, mas preferência real ainda precisa ser confirmada.
-- Decisão e viabilidade: ainda não levantadas.
+## Diagnóstico de compra
+Pretende comprar via financiamento. Ainda não há definição de entrada/imóvel porque o cliente precisa entender o valor que poderá ser liberado no financiamento.
+
+## Objeções / restrições ativas
+- Necessidade de simulação/análise de viabilidade antes de decidir entrada e imóvel.
+- Preferência/aderência regional forte ao Grand Ville.
 
 ## Próximo passo recomendado
-Responder de forma breve, validando a intenção de moradia, e fazer uma pergunta por vez para entender necessidade familiar e prioridade prática. Próxima pergunta sugerida: confirmar se o Grand Ville faz sentido para ele ou se está aberto a outras regiões próximas.
+Convidar para visita presencial ou análise estruturada na Fama para avaliar financiamento com segurança e, em seguida, filtrar opções de 2 quartos no Grand Ville. Evitar apresentar catálogo amplo antes da simulação.
 
-
-## Interação — confirmação de região
-Cliente confirmou que o Grand Ville faz sentido para moradia. Próximo passo: entender configuração desejada e necessidade prática do imóvel antes de apresentar opções ou conduzir para visita presencial.
-
-
-## Interação — reforço de fit de região
-Cliente informou que a família também mora no Grand Ville, reforçando aderência da região para moradia. Próximo passo: retomar diagnóstico de configuração do imóvel (2 ou 3 quartos) e necessidade prática antes de propor visita.
-
-
-## Interação — configuração desejada
-Cliente informou que procura apartamento de 2 quartos para morar no Grand Ville, com família no mesmo bairro. Próximo passo: diagnosticar forma de compra/viabilidade, especialmente se pretende financiar, antes de propor visita presencial.
-
-
-## Interação — forma de compra
-Cliente confirmou que pretende comprar usando financiamento. Contexto qualificado até aqui: moradia, Grand Ville por proximidade da família, apartamento de 2 quartos, financiamento. Próximo passo: levantar entrada/renda ou faixa confortável de parcela para avaliar viabilidade antes de propor visita presencial.
-
-
-## Interação — viabilidade de financiamento
-Cliente informou que a entrada/decisão depende do valor que será liberado no financiamento. Interpretação: precisa de análise inicial de viabilidade antes de definir entrada e imóvel. Próximo passo comercial indicado: convidar para visita presencial na Fama para olhar financiamento com segurança e opções de 2 quartos no Grand Ville.
+## Fontes e rastreabilidade
+- CRM/FamaChat verificado via `get_client(11653)` em 2026-06-10.
+- Nota histórica mantida como identidade estável por `client_id` para evitar deduplicação destrutiva sem necessidade.
