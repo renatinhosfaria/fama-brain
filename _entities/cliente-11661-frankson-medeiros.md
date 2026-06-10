@@ -104,3 +104,7 @@ Cliente informou que precisa conferir exatamente, mas estima movimentação banc
 
 ## Atualização — composição de renda
 Cliente informou que compraria sozinho, apenas no próprio nome. Sem composição de renda. Contexto de viabilidade mais restrito: autônomo sem IR, movimentação ~R$ 10 mil/mês, compromissos R$ 4.430/mês, entrada > R$ 10 mil, sem FGTS, parcela-alvo R$ 2.550. Próximo passo recomendado: explicar com transparência que precisa de análise cuidadosa e propor visita presencial na Fama para simulação/viabilidade, sem prometer aprovação.
+
+
+## Atualização — dependentes e primeiro imóvel
+Cliente informou que não possui dependentes e que será o primeiro imóvel. Contexto consolidado: autônomo sem IR, movimentação ~R$ 10 mil/mês, sem FGTS, entrada própria > R$ 10 mil, compra sozinho, parcela-alvo R$ 2.550, compromissos mensais R$ 4.430. Direção: usar essa informação como positiva para análise, mas manter cautela e conduzir para simulação presencial na Fama sem prometer aprovação.
