@@ -61,3 +61,7 @@ Cliente informou que a família também mora no Grand Ville, reforçando aderên
 
 ## Interação — configuração desejada
 Cliente informou que procura apartamento de 2 quartos para morar no Grand Ville, com família no mesmo bairro. Próximo passo: diagnosticar forma de compra/viabilidade, especialmente se pretende financiar, antes de propor visita presencial.
+
+
+## Interação — forma de compra
+Cliente confirmou que pretende comprar usando financiamento. Contexto qualificado até aqui: moradia, Grand Ville por proximidade da família, apartamento de 2 quartos, financiamento. Próximo passo: levantar entrada/renda ou faixa confortável de parcela para avaliar viabilidade antes de propor visita presencial.
