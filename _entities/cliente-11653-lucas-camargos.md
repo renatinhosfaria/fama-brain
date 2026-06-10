@@ -53,3 +53,7 @@ Responder de forma breve, validando a intenção de moradia, e fazer uma pergunt
 
 ## Interação — confirmação de região
 Cliente confirmou que o Grand Ville faz sentido para moradia. Próximo passo: entender configuração desejada e necessidade prática do imóvel antes de apresentar opções ou conduzir para visita presencial.
+
+
+## Interação — reforço de fit de região
+Cliente informou que a família também mora no Grand Ville, reforçando aderência da região para moradia. Próximo passo: retomar diagnóstico de configuração do imóvel (2 ou 3 quartos) e necessidade prática antes de propor visita.
