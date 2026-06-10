@@ -3,57 +3,100 @@ schema_version: 1
 type: entity
 status: active
 created: '2026-06-09'
-updated: '2026-06-09'
+updated: '2026-06-10'
 source: agent-generated
+author_agent: brain
 tags:
   - reno
-  - first-contact
-  - canary
+  - atendimento
+  - fama-chat
+  - cliente
+  - facebook-ads
   - union-vereda
-author_agent: reno
+  - curado-brain
 name: Frankson Medeiros
 entity_type: lead
-related:
-  - '[[frankson-medeiros]]'
-  - '[[reno-hub]]'
 external_ids:
   client_id: '11661'
   broker_id: '35'
   empreendimento_id: '161'
   fonte: Facebook Ads
   regiao: Jaraguá / Oeste
-status_comercial: Não Respondeu
+related:
+  - '[[reno-hub]]'
+  - '[[cliente-11661-frankson-medeiros]]'
+  - '[[canary-primeiro-contato-enviado-para-frankson-medeiros]]'
+status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vereda, bairro Jaraguá, Uberlândia. Diagnóstico inicial aberto com
-  pergunta de baixa fricção: se busca mais para morar ou investir.
-objecoes_ativas: []
+  Union Vereda/Jaraguá para moradia. Perfil financeiro em diagnóstico: autônomo
+  sem declaração de IR, sem FGTS, entrada própria acima de R$ 10 mil, compra
+  sozinho, parcela-alvo de R$ 2.550 e compromissos mensais informados de R$
+  4.430. Aceita 1 quarto se houver elevador.
+objecoes_ativas:
+  - Disponibilidade/tempo para ir presencialmente à Fama
+  - Dúvida sobre diferença entre análise presencial e WhatsApp
+  - Dúvida sobre Caixa/outros bancos e subsídio
 proximo_passo: >-
-  Aguardar resposta do cliente. Se responder, mover de Não Respondeu para Em
-  Atendimento somente se ainda estiver exatamente em Não Respondeu e continuar
-  diagnóstico consultivo. Se não responder, repescagem step=0 está inicializada
-  para 2026-06-10T19:10:00-03:00.
+  Fazer pré-análise por WhatsApp com dados/documentos básicos e explicar, sem
+  prometer aprovação, que Caixa/subsídio dependem de renda enquadrável, valor do
+  imóvel, primeiro imóvel, região, regras vigentes, comprovação de renda e
+  comprometimento.
+owner: brain
 ---
-[[frankson-medeiros]] [[reno-hub]]
+[[reno-hub]] [[cliente-11661-frankson-medeiros]] [[canary-primeiro-contato-enviado-para-frankson-medeiros]]
 
-## Resumo
-Canary controlado do primeiro contato Reno executado em 2026-06-09 para cliente 11661. Cliente entrou por Facebook Ads, broker_id=35, status inicial Sem Atendimento, interesse no Union Vereda (Jaraguá). Primeiro contato enviado via WhatsApp com validação onWhatsApp; ledger reno_first_contacts id=23 marcado como sent.
+# Frankson Medeiros — atendimento Reno
 
-## Interesse atual
-Union Vereda, bairro Jaraguá, Uberlândia. Diagnóstico inicial aberto com pergunta de baixa fricção: se busca mais para morar ou investir.
+## Resumo curado
+Lead/cliente CRM 11661 entrou por Facebook Ads com interesse no Union Vereda, no Jaraguá. O primeiro contato Reno foi enviado e validado em 2026-06-09; o cliente respondeu, a repescagem foi interrompida e o status operacional no CRM está em **Em Atendimento**.
 
-## Objeções ativas
+A conversa evoluiu de abertura (“morar ou investir?”) para diagnóstico financeiro inicial. A intenção declarada é **morar** e a prioridade é **valor da parcela**. O caso exige cautela: cliente é autônomo, não declara IR, compra sozinho, não possui FGTS e tem compromissos mensais relevantes. O CRM/FamaChat segue como fonte operacional de verdade; esta nota consolida memória recuperável para continuidade.
 
+## Classificação
+- Tipo: entidade/lead em atendimento.
+- Tema: Reno, primeiro contato, qualificação imobiliária, financiamento/viabilidade.
+- Projeto/área relacionada: [[reno-hub]].
+- Prioridade de curadoria: alta para continuidade operacional, porque havia duas entidades para o mesmo `client_id`.
+- Estado: ativo, em diagnóstico por WhatsApp.
 
-## Próximo passo
-Aguardar resposta do cliente. Se responder, mover de Não Respondeu para Em Atendimento somente se ainda estiver exatamente em Não Respondeu e continuar diagnóstico consultivo. Se não responder, repescagem step=0 está inicializada para 2026-06-10T19:10:00-03:00.
+## Contexto comercial consolidado
+- Objetivo: morar.
+- Interesse de entrada: Union Vereda, Jaraguá.
+- Prioridade declarada: parcela.
+- Perfil: autônomo, sem declaração de IR.
+- Movimentação informada: aproximadamente R$ 10 mil/mês, ainda dependente de comprovação/extratos.
+- FGTS: não possui.
+- Entrada própria: acima de R$ 10 mil.
+- Compra: sozinho, apenas no próprio nome.
+- Dependentes: não possui.
+- Primeiro imóvel: sim.
+- Preferência: aceita apartamento de 1 quarto se tiver elevador.
+- Parcela-alvo do imóvel: R$ 2.550.
+- Compromissos mensais informados: R$ 4.430/mês (carro financiado e dois consórcios de moto).
 
-## Histórico de interações
+## Objeções e dúvidas ativas
+1. **Disponibilidade/tempo:** cliente disse estar “meio corrido” para ir presencialmente.
+2. **Valor da visita presencial:** perguntou a diferença entre seguir por WhatsApp e fazer análise presencial na Fama.
+3. **Instituição financeira:** perguntou se o financiamento seria pela Caixa ou por outro banco.
+4. **Subsídio:** perguntou se pela Caixa pega subsídio.
 
-### 2026-06-09 — Canary primeiro contato WhatsApp
-- Canal: WhatsApp.
-- Contexto: cliente 11661, origem Facebook Ads, interesse no Union Vereda (Jaraguá), `broker_id=35`.
-- Mensagem enviada: "Oi, Frankson, tudo bem? Aqui é o Reno, da Fama Negócios Imobiliários. Vi seu interesse no Union Vereda, no Jaraguá. Pra eu te ajudar do jeito certo: você está buscando mais pra morar ou investir?"
-- Evidência de envio: `whatsapp_validated=true`, `validation_method=onWhatsApp`, `validated_jid=553498256131@s.whatsapp.net`, `provider_message_id=3EB0BD9C36CF4B85ED55A2`.
-- Persistência CRM: `reno_first_contacts.id=23` marcado como `sent`; nota CRM `19512`; status `Sem Atendimento -> Não Respondeu`; repescagem `step=0`, `next_run_at=2026-06-10T19:10:00-03:00`.
-- Journal relacionado: [[canary-primeiro-contato-enviado-para-frankson-medeiros]].
+## Direção de atendimento recomendada
+- Validar a dificuldade de agenda e oferecer **pré-análise por WhatsApp** com dados/documentos básicos.
+- Explicar que pelo WhatsApp dá para fazer triagem; presencialmente é possível olhar extratos/documentos, simular cenários e evitar “número solto”.
+- Sobre Caixa/outros bancos: explicar que depende de perfil, documentação, enquadramento, taxa, comprometimento e tipo de imóvel; para autônomo, comparar caminhos sem prometer aprovação.
+- Sobre subsídio: explicar que pode existir em programas como Minha Casa Minha Vida/Caixa, mas depende de renda enquadrável, valor do imóvel, primeiro imóvel, região e regras vigentes. Primeiro imóvel e ausência de dependentes ajudam no diagnóstico, mas compromissos mensais e comprovação de renda pesam na análise.
+- Não prometer aprovação, subsídio, taxa ou condição.
+
+## Linha do tempo relevante
+- 2026-06-09 — Primeiro contato Reno enviado e validado para o cliente 11661; status avançou de Sem Atendimento para Não Respondeu e repescagem foi inicializada.
+- 2026-06-09 — Cliente respondeu que busca imóvel para morar; atendimento avançou e a repescagem foi interrompida.
+- 2026-06-09 — Cliente indicou parcela como prioridade.
+- 2026-06-09 — Diagnóstico financeiro inicial: autônomo, sem IR, sem FGTS, entrada própria acima de R$ 10 mil, movimentação estimada em torno de R$ 10 mil/mês, compra sozinho, parcela-alvo R$ 2.550, compromissos mensais de R$ 4.430.
+- 2026-06-09 — Cliente informou não ter dependentes e ser primeiro imóvel.
+- 2026-06-09 — Surgiram objeções/dúvidas sobre disponibilidade presencial, diferença WhatsApp x presencial, Caixa/outros bancos e possibilidade de subsídio.
+
+## Notas de curadoria
+- Esta é a entidade canônica para o `client_id=11661`.
+- A nota [[cliente-11661-frankson-medeiros]] foi mantida apenas como registro operacional arquivado/supersedido para evitar perda histórica, mas a continuidade deve apontar para esta nota.
+- Interpretação assumida: resposta “Não não” sobre entrada parcelada foi tratada como ausência de capacidade/abertura para parcela adicional de entrada, não como recusa de compra.
