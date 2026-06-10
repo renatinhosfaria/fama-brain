@@ -100,3 +100,7 @@ Cliente respondeu “Não não” ao ser perguntado sobre valor mensal que conse
 
 ## Atualização — movimentação média
 Cliente informou que precisa conferir exatamente, mas estima movimentação bancária por volta de R$ 10 mil/mês. Com compromissos mensais atuais de R$ 4.430 e parcela-alvo de R$ 2.550, a análise deve ser cautelosa. Próximo passo: perguntar se compra sozinho ou se pode compor renda com alguém.
+
+
+## Atualização — composição de renda
+Cliente informou que compraria sozinho, apenas no próprio nome. Sem composição de renda. Contexto de viabilidade mais restrito: autônomo sem IR, movimentação ~R$ 10 mil/mês, compromissos R$ 4.430/mês, entrada > R$ 10 mil, sem FGTS, parcela-alvo R$ 2.550. Próximo passo recomendado: explicar com transparência que precisa de análise cuidadosa e propor visita presencial na Fama para simulação/viabilidade, sem prometer aprovação.
