@@ -92,3 +92,7 @@ Cliente informou possuir mais de R$ 10 mil de entrada própria. Não possui FGTS
 
 ## Atualização — parcelamento de entrada
 Cliente gostaria de parcelar a entrada, se possível. Direção comercial: explicar que depende do empreendimento/construtora e precisa ser compatibilizado com parcela do financiamento + compromissos atuais. Bom gancho para análise de viabilidade presencial, sem prometer aprovação nem condições.
+
+
+## Atualização — entrada parcelada recusada/indisponível
+Cliente respondeu “Não não” ao ser perguntado sobre valor mensal que conseguiria pagar de entrada parcelada separada do financiamento. Interpretação: não assumir capacidade de parcela adicional de entrada; trabalhar com entrada própria já disponível (> R$ 10 mil) e buscar menor pressão mensal possível. Próximo passo: retomar faixa de movimentação bancária média para avaliar viabilidade.
