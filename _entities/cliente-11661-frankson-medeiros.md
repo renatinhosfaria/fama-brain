@@ -108,3 +108,7 @@ Cliente informou que compraria sozinho, apenas no próprio nome. Sem composiçã
 
 ## Atualização — dependentes e primeiro imóvel
 Cliente informou que não possui dependentes e que será o primeiro imóvel. Contexto consolidado: autônomo sem IR, movimentação ~R$ 10 mil/mês, sem FGTS, entrada própria > R$ 10 mil, compra sozinho, parcela-alvo R$ 2.550, compromissos mensais R$ 4.430. Direção: usar essa informação como positiva para análise, mas manter cautela e conduzir para simulação presencial na Fama sem prometer aprovação.
+
+
+## Atualização — objeção de disponibilidade
+Cliente disse que para ele está “meio corrido” ir presencialmente. Objeção de tempo/disponibilidade. Direção: validar, oferecer pré-análise por WhatsApp com dados/documentos básicos e manter visita presencial como próximo passo se houver viabilidade/encaixe, sem pressão.
