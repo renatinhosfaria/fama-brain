@@ -1,11 +1,37 @@
 ---
-schema_version: 1
-type: entity
-status: active
-created: '2026-06-09'
-updated: '2026-06-10'
-source: agent-generated
 author_agent: brain
+created: '2026-06-09'
+entity_type: lead
+external_ids:
+  broker_id: '35'
+  client_id: '11661'
+  empreendimento_id: '161'
+  fonte: Facebook Ads
+  regiao: Jaraguá / Oeste
+interesse_atual: >-
+  Union Vereda/Jaraguá para moradia. Perfil financeiro em diagnóstico: autônomo
+  sem declaração de IR, sem FGTS, entrada própria acima de R$ 10 mil, compra
+  sozinho, parcela-alvo de R$ 2.550 e compromissos mensais informados de R$
+  4.430. Aceita 1 quarto se houver elevador.
+name: Frankson Medeiros
+objecoes_ativas:
+  - Disponibilidade/tempo para ir presencialmente à Fama
+  - Dúvida sobre diferença entre análise presencial e WhatsApp
+  - Dúvida sobre Caixa/outros bancos e subsídio
+origem: Facebook Ads
+proximo_passo: >-
+  Fazer pré-análise por WhatsApp com dados/documentos básicos e explicar, sem
+  prometer aprovação, que Caixa/subsídio dependem de renda enquadrável, valor do
+  imóvel, primeiro imóvel, região, regras vigentes, comprovação de renda e
+  comprometimento.
+related:
+  - '[[reno-hub]]'
+  - '[[cliente-11661-frankson-medeiros]]'
+  - '[[2026-06-09-canary-primeiro-contato-enviado-para-frankson-medeiros]]'
+schema_version: 1
+source: agent-generated
+status: active
+status_comercial: Em Atendimento
 tags:
   - reno
   - atendimento
@@ -14,37 +40,11 @@ tags:
   - facebook-ads
   - union-vereda
   - curado-brain
-name: Frankson Medeiros
-entity_type: lead
-external_ids:
-  client_id: '11661'
-  broker_id: '35'
-  empreendimento_id: '161'
-  fonte: Facebook Ads
-  regiao: Jaraguá / Oeste
-related:
-  - '[[reno-hub]]'
-  - '[[cliente-11661-frankson-medeiros]]'
-  - '[[canary-primeiro-contato-enviado-para-frankson-medeiros]]'
-status_comercial: Em Atendimento
-origem: Facebook Ads
-interesse_atual: >-
-  Union Vereda/Jaraguá para moradia. Perfil financeiro em diagnóstico: autônomo
-  sem declaração de IR, sem FGTS, entrada própria acima de R$ 10 mil, compra
-  sozinho, parcela-alvo de R$ 2.550 e compromissos mensais informados de R$
-  4.430. Aceita 1 quarto se houver elevador.
-objecoes_ativas:
-  - Disponibilidade/tempo para ir presencialmente à Fama
-  - Dúvida sobre diferença entre análise presencial e WhatsApp
-  - Dúvida sobre Caixa/outros bancos e subsídio
-proximo_passo: >-
-  Fazer pré-análise por WhatsApp com dados/documentos básicos e explicar, sem
-  prometer aprovação, que Caixa/subsídio dependem de renda enquadrável, valor do
-  imóvel, primeiro imóvel, região, regras vigentes, comprovação de renda e
-  comprometimento.
+type: entity
+updated: '2026-06-10'
 owner: brain
 ---
-[[reno-hub]] [[cliente-11661-frankson-medeiros]] [[canary-primeiro-contato-enviado-para-frankson-medeiros]]
+[[reno-hub]] [[cliente-11661-frankson-medeiros]] [[2026-06-09-canary-primeiro-contato-enviado-para-frankson-medeiros]]
 
 # Frankson Medeiros — atendimento Reno
 
