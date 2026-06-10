@@ -49,3 +49,7 @@ Lucas respondeu ao primeiro contato do Reno informando que a busca é para morar
 
 ## Próximo passo recomendado
 Responder de forma breve, validando a intenção de moradia, e fazer uma pergunta por vez para entender necessidade familiar e prioridade prática. Próxima pergunta sugerida: confirmar se o Grand Ville faz sentido para ele ou se está aberto a outras regiões próximas.
+
+
+## Interação — confirmação de região
+Cliente confirmou que o Grand Ville faz sentido para moradia. Próximo passo: entender configuração desejada e necessidade prática do imóvel antes de apresentar opções ou conduzir para visita presencial.
