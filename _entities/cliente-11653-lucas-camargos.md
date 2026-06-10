@@ -65,3 +65,7 @@ Cliente informou que procura apartamento de 2 quartos para morar no Grand Ville,
 
 ## Interação — forma de compra
 Cliente confirmou que pretende comprar usando financiamento. Contexto qualificado até aqui: moradia, Grand Ville por proximidade da família, apartamento de 2 quartos, financiamento. Próximo passo: levantar entrada/renda ou faixa confortável de parcela para avaliar viabilidade antes de propor visita presencial.
+
+
+## Interação — viabilidade de financiamento
+Cliente informou que a entrada/decisão depende do valor que será liberado no financiamento. Interpretação: precisa de análise inicial de viabilidade antes de definir entrada e imóvel. Próximo passo comercial indicado: convidar para visita presencial na Fama para olhar financiamento com segurança e opções de 2 quartos no Grand Ville.
