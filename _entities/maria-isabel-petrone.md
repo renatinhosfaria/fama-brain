@@ -1,27 +1,30 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-06-09'
-updated: '2026-06-09'
-source: agent-generated
-tags:
-  - reno
-  - first-contact
-  - canary
-  - union-vista
-author_agent: reno
 name: Maria Isabel Petrone
 entity_type: lead
-related:
-  - '[[maria-isabel-petrone]]'
-  - '[[reno-hub]]'
 external_ids:
   client_id: '11608'
   broker_id: '35'
   empreendimento_id: '22'
   fonte: Facebook Ads
   regiao: Grand Ville / Zona Leste
+related:
+  - '[[maria-isabel-petrone]]'
+  - '[[reno-hub]]'
+schema_version: 1
+status: active
+created: '2026-06-09'
+updated: '2026-06-10'
+source: agent-generated
+tags:
+  - reno
+  - first-contact
+  - canary
+  - union-vista
+  - repescagem
+  - whatsapp
+  - follow-up
+author_agent: reno
 status_comercial: Não Respondeu
 origem: Facebook Ads
 interesse_atual: >-
@@ -32,33 +35,34 @@ proximo_passo: >-
   Aguardar resposta. Se responder, mover Não Respondeu -> Em Atendimento somente
   se ainda estiver exatamente em Não Respondeu e continuar diagnóstico
   consultivo. Se não responder, repescagem step=0 em 2026-06-10T19:10:00-03:00.
+verified_by: null
 ---
-[[maria-isabel-petrone]] [[reno-hub]]
+# Maria Isabel Petrone
 
-## Resumo
-Canary pequeno do primeiro contato Reno executado em 2026-06-09 para cliente 11608. Cliente de Facebook Ads, broker_id=35, status inicial Sem Atendimento, interesse no Union Vista (Grand Ville). WhatsApp enviado e validado; CRM avançou para Não Respondeu; repescagem inicializada em step=0.
+## Resumo atual
+Repescagem step 1 enviada via WhatsApp em 2026-06-10 19:26 BRT. O bridge local validou o envio (`validated=true`), mas o mirror interno falhou após o envio (`mirrored=false`), então não repetir o disparo. O cliente segue em `Não Respondeu` e o próximo follow-up está previsto para 2026-06-11 09:10 BRT.
 
-## Interesse atual
-Union Vista, Grand Ville, Uberlândia. Diagnóstico inicial aberto com pergunta: se busca mais para morar ou investir.
+## Contexto do atendimento
+- Cliente ID: 11608
+- Broker ID: 35
+- Origem: Facebook Ads
+- Primeiro contato canary: 2026-06-09
+- Empreendimento/contexto: Union Vista / Grand Ville
+- Ângulo do primeiro contato: morar vs investir
+- Ângulo da repescagem: entrada vs parcela
 
-## Objeções ativas
+## Diagnóstico
+### Necessidade
+Entender se a compra fecha melhor pela entrada ou pela parcela.
 
+### Momento
+Lead silencioso após o primeiro contato; segue elegível para a cadência de repescagem.
+
+### Decisão
+Ainda sem resposta real do cliente.
+
+### Viabilidade
+Em aberto; a próxima resposta deve indicar se vale aprofundar financiamento ou ajustar o encaixe mensal.
 
 ## Próximo passo
-Aguardar resposta. Se responder, mover Não Respondeu -> Em Atendimento somente se ainda estiver exatamente em Não Respondeu e continuar diagnóstico consultivo. Se não responder, repescagem step=0 em 2026-06-10T19:10:00-03:00.
-
-## Histórico de interações
-
-### 2026-06-09 — Canary primeiro contato WhatsApp
-- Canal: WhatsApp.
-- Contexto: cliente 11608, origem Facebook Ads, interesse no Union Vista (Grand Ville), `broker_id=35`.
-- Mensagem enviada: "Oi, Maria Isabel, tudo bem? Aqui é o Reno, da Fama Negócios Imobiliários. Vi seu interesse no Union Vista, no Grand Ville. Pra eu te ajudar do jeito certo: você está buscando mais pra morar ou investir?"
-- Evidência de envio: `whatsapp_validated=true`, `validation_method=onWhatsApp`, `validated_jid=553492919933@s.whatsapp.net`, `provider_message_id=3EB096D0CF806683C90C0C`.
-- Persistência CRM: `reno_first_contacts.id=27`, `status=sent`, `outcome_code=sent`, nota CRM `19517`, status do cliente `Não Respondeu`.
-- Automação: `reno_followup.repescagem.step=0`, `next_run_at=2026-06-10T19:10:00-03:00`, `stopped_reason=null`.
-
-
-## Relações de curadoria Brain
-
-- Lote consolidado relacionado: [[reno-canary-pequeno-de-primeiro-contato-2026-06-09]].
-- Observação de governança: manter referência por `client_id`, pois a revisão de 2026-06-10 indicou possível duplicidade operacional com outro registro em SLA Cascata.
+Aguardar retorno ao step 1 e, se continuar em silêncio, seguir a régua oficial do próximo passo.
