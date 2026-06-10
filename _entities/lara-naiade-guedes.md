@@ -56,3 +56,9 @@ Aguardar resposta. Se responder, mover Não Respondeu -> Em Atendimento somente 
 - Evidência de envio: `whatsapp_validated=true`, `validation_method=onWhatsApp`, `validated_jid=553497712969@s.whatsapp.net`, `provider_message_id=3EB080E8A7F0B1BDBE9284`.
 - Persistência CRM: `reno_first_contacts.id=25`, `status=sent`, `outcome_code=sent`, nota CRM `19515`, status do cliente `Não Respondeu`.
 - Automação: `reno_followup.repescagem.step=0`, `next_run_at=2026-06-10T19:10:00-03:00`, `stopped_reason=null`.
+
+
+## Relações de curadoria Brain
+
+- Lote consolidado relacionado: [[reno-canary-pequeno-de-primeiro-contato-2026-06-09]].
+- Observação de governança: manter referência por `client_id`; na revisão de 2026-06-10 o CRM retornou um registro único para este nome.
