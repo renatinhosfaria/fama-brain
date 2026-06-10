@@ -96,3 +96,7 @@ Cliente gostaria de parcelar a entrada, se possível. Direção comercial: expli
 
 ## Atualização — entrada parcelada recusada/indisponível
 Cliente respondeu “Não não” ao ser perguntado sobre valor mensal que conseguiria pagar de entrada parcelada separada do financiamento. Interpretação: não assumir capacidade de parcela adicional de entrada; trabalhar com entrada própria já disponível (> R$ 10 mil) e buscar menor pressão mensal possível. Próximo passo: retomar faixa de movimentação bancária média para avaliar viabilidade.
+
+
+## Atualização — movimentação média
+Cliente informou que precisa conferir exatamente, mas estima movimentação bancária por volta de R$ 10 mil/mês. Com compromissos mensais atuais de R$ 4.430 e parcela-alvo de R$ 2.550, a análise deve ser cautelosa. Próximo passo: perguntar se compra sozinho ou se pode compor renda com alguém.
