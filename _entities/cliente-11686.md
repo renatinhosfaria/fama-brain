@@ -1,54 +1,56 @@
 ---
-type: entity
-name: cliente-11686
-entity_type: lead
 aliases:
   - Pedro Símaro
+  - pedro-simaro
+  - 'client:11686'
+author_agent: brain
+confidence: 0.94
+created: '2026-06-11'
+entity_type: lead
 external_ids:
-  client_id: '11686'
   broker_id: '35'
+  client_id: '11686'
   fonte: CRM/FamaChat + WhatsApp inbound silencioso
 mentions_entity:
-  - '[[reno-hub]]'
+  - reno-hub
+  - pedro-simaro
+name: cliente-11686
+owner: brain
 related:
-  - '[[cliente-11686]]'
+  - '[[pedro-simaro]]'
   - '[[reno-hub]]'
-confidence: 0.9
-verified_by: null
+  - '[[2026-06-11-cliente-11686-inbound-whatsapp-informou-clt]]'
 schema_version: 1
-status: active
-created: '2026-06-11'
-updated: '2026-06-11'
 source: agent-generated
+status: superseded
+superseded_by: '[[pedro-simaro]]'
 tags:
   - reno
   - whatsapp-inbound
   - qualificacao
   - first-contact-response
-author_agent: reno
-status_comercial: Em Atendimento
-origem: Facebook Ads
-interesse_atual: >-
-  Qualificação inicial em andamento; resposta indica vínculo/regime CLT no
-  diagnóstico de viabilidade.
-objecoes_ativas: []
-proximo_passo: >-
-  Fluxo cliente-facing deve continuar a qualificação com uma pergunta por vez;
-  rotina silenciosa não enviou resposta. Primeiro contato já estava marcado como
-  respondido anteriormente nesta conversa.
+  - duplicata-consolidada
+  - curado-brain
+type: entity
+updated: '2026-06-11'
+verified_by: null
 ---
-[[cliente-11686]] [[reno-hub]]
+# Cliente 11686 (duplicata consolidada)
 
-## Resumo
-Lead Reno identificado no CRM (broker_id=35). Inbound WhatsApp em 2026-06-11T16:59:19.300063Z: respondeu ao diagnóstico: "CLT mesmo".
+Esta nota foi preservada como histórico operacional, mas a entidade canônica agora é [[pedro-simaro]].
 
-## Interesse atual
-Qualificação inicial em andamento; resposta indica vínculo/regime CLT no diagnóstico de viabilidade.
+## Motivo da consolidação
+Havia duas entidades para o mesmo cliente CRM (`11686`):
+- [[pedro-simaro]] — entidade por nome, com diagnóstico comercial mais completo.
+- `cliente-11686` — nota criada em torno do ID do cliente e de um inbound específico sobre CLT.
 
-## Objeções ativas
+A curadoria consolidou o dado útil de vínculo CLT e a referência operacional em [[pedro-simaro]], preservando esta nota como `superseded`.
 
+## Conteúdo preservado
+- Cliente CRM 11686, broker Reno.
+- Origem operacional ligada a Facebook Ads / WhatsApp inbound.
+- Resposta inbound relevante: confirmou vínculo CLT no diagnóstico de viabilidade.
+- Fluxo cliente-facing deve seguir com qualificação consultiva, uma pergunta por vez, sem promessa de crédito.
 
-## Próximo passo
-Fluxo cliente-facing deve continuar a qualificação com uma pergunta por vez; rotina silenciosa não enviou resposta. Primeiro contato já estava marcado como respondido anteriormente nesta conversa.
-
-## Histórico de interações
+## Próximo passo preservado
+Acompanhar a entidade canônica [[pedro-simaro]] para próximos passos e atualizações.
