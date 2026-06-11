@@ -9,8 +9,9 @@ external_ids:
   client_id: '11680'
   broker_id: '35'
   empreendimento_id: '161'
+  empreendimento_slug: union-vereda
   fonte: Facebook Ads
-  regiao: Jaraguá
+  regiao: Jaraguá / Uberlândia
 mentions_entity:
   - reno-hub
 related:
@@ -26,32 +27,31 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
+  - em-atendimento
   - union-vereda
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vereda; avaliar planta de 2 quartos com suíte e condições de
-  entrada/financiamento antes de conduzir para visita presencial.
+  Union Vereda, Jaraguá. Cliente recebeu material/planta e sinalizou aderência:
+  “Atende bem”.
 objecoes_ativas: []
 proximo_passo: >-
-  Na próxima resposta cliente-facing, validar se a planta/fotos atendem ao que
-  ele procura; se sim, avançar para diagnóstico de entrada/financiamento e
-  propor visita presencial quando fizer sentido.
+  Levantar forma de compra/financiamento/FGTS e disponibilidade; se houver
+  viabilidade e interesse, conduzir para visita presencial na Fama.
 ---
 [[francisco-bruno]] [[reno-hub]]
 
 ## Resumo
-Cliente de Facebook Ads interessado no Union Vereda/Jaraguá. Primeiro contato e repescagem já foram respondidos; conversa está em atendimento. Histórico recente: pediu planta/fotos, recebeu material interno disponível e respondeu de forma breve confirmando recebimento/continuidade.
+Cliente em atendimento pelo Reno para Union Vereda. Primeira resposta ao primeiro contato já estava registrada; repescagem está encerrada por client_replied. Inbound atual reforça aderência ao produto/planta.
 
 ## Interesse atual
-Union Vereda; avaliar planta de 2 quartos com suíte e condições de entrada/financiamento antes de conduzir para visita presencial.
+Union Vereda, Jaraguá. Cliente recebeu material/planta e sinalizou aderência: “Atende bem”.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Na próxima resposta cliente-facing, validar se a planta/fotos atendem ao que ele procura; se sim, avançar para diagnóstico de entrada/financiamento e propor visita presencial quando fizer sentido.
+Levantar forma de compra/financiamento/FGTS e disponibilidade; se houver viabilidade e interesse, conduzir para visita presencial na Fama.
 
 ## Histórico de interações
