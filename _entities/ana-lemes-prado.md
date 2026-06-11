@@ -87,3 +87,11 @@ Cliente respondeu que prefere atendimento/visita no período da tarde.
 Agenda consultada para 2026-06-11 à tarde: sem compromissos encontrados para broker Reno. Resposta enviada propondo amanhã às 15h para pré-análise presencial na Fama e pedindo confirmação.
 
 Próximo passo: se cliente confirmar, criar agendamento no FamaChat, alterar status de Em Atendimento para Agendamento se ainda estiver nesse status, e registrar visita/agendamento.
+
+
+## Interação — 2026-06-10 — WhatsApp
+Cliente informou que amanhã à tarde terá consulta e exame, então não pode no dia/horário proposto. Pediu para conversar por mensagem em outro dia/horário a partir de segunda-feira.
+
+Ação operacional: nenhum agendamento presencial criado, pois não houve confirmação de visita. Resgate/reminder programado para 2026-06-15 às 14:00 para retomar por WhatsApp.
+
+Resposta/condução: acolher sem pressão e confirmar que será por mensagem na segunda à tarde; manter porta aberta para futura visita presencial após pré-análise.
