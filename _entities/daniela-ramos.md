@@ -57,3 +57,9 @@ Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando viabi
 Conduzir pelo atendimento normal para simulação/análise real de crédito e, se o cenário fizer sentido, propor visita presencial na Fama para avançar com segurança.
 
 ## Histórico de interações
+
+
+## Interação — 2026-06-11 — WhatsApp
+Cliente informou que trabalha o dia todo e que durante a semana sua disponibilidade é após as 18h.
+
+Condução: oportunidade clara para avançar para visita/atendimento presencial. Propor horário objetivo após 18h, preferencialmente 18h30, e confirmar a data antes de registrar agendamento no FamaChat.
