@@ -7,7 +7,7 @@ external_ids:
   broker_id: '35'
   empreendimento_id: '22'
   fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
+  regiao: Grand Ville / Uberlândia
 related:
   - '[[daniela-ramos]]'
   - '[[reno-hub]]'
@@ -18,10 +18,9 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp
+  - whatsapp-inbound
   - qualificacao
-  - viabilidade
-  - union-vista
+  - agendamento
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
@@ -34,36 +33,38 @@ objecoes_ativas:
     renda individual de R$ 3.500,00, FGTS ~R$ 6.000,00, entrada ~R$ 20.000,00 e
     sem gasto alto declarado.
   - >-
+    Agenda: cliente informou que amanhã não consegue; disponibilidade indicada
+    para segunda-feira.
+  - >-
     Evitar promessa de aprovação; conduzir como avaliação inicial de cenário e
     próximo passo presencial/consultivo.
 proximo_passo: >-
-  Conduzir pelo atendimento normal para simulação/análise real de crédito e, se
-  o cenário fizer sentido, propor visita presencial na Fama para avançar com
-  segurança.
+  Confirmar segunda-feira (15/06/2026) às 18h30 para atendimento/visita
+  presencial na Fama antes de registrar agendamento no FamaChat. Se confirmar,
+  criar agendamento no CRM e seguir fluxo de visita.
 ---
 [[daniela-ramos]] [[reno-hub]]
 
 ## Resumo
-Cliente do Reno identificado no CRM (broker_id=35), origem Facebook Ads, interesse no Union Vista/Grand Ville. Já respondeu ao primeiro contato e está em Em Atendimento. Diagnóstico de viabilidade atual: busca imóvel para morar, renda individual declarada de R$ 3.500,00, FGTS aproximado de R$ 6.000,00, cerca de R$ 20.000,00 guardados para entrada e informou não ter gasto/parcela alta no nome. Não prometer aprovação; conduzir para simulação/análise real de crédito e visita/atendimento presencial na Fama quando fizer sentido.
+Cliente do Reno identificado no CRM (broker_id=35), origem Facebook Ads, interesse no Union Vista/Grand Ville. Já respondeu ao primeiro contato e está em Em Atendimento. Diagnóstico de viabilidade atual: busca imóvel para morar, renda individual declarada de R$ 3.500,00, FGTS aproximado de R$ 6.000,00, cerca de R$ 20.000,00 guardados para entrada e informou não ter gasto/parcela alta no nome. Disponibilidade atual: não consegue amanhã, mas consegue na segunda-feira. Não prometer aprovação; conduzir para simulação/análise real de crédito e visita/atendimento presencial na Fama quando fizer sentido.
 
 ## Interesse atual
 Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando viabilidade com renda individual, FGTS e entrada.
 
 ## Objeções ativas
 - Viabilidade financeira ainda depende de simulação/análise real de crédito: renda individual de R$ 3.500,00, FGTS ~R$ 6.000,00, entrada ~R$ 20.000,00 e sem gasto alto declarado.
+- Agenda: cliente informou que amanhã não consegue; disponibilidade indicada para segunda-feira.
 - Evitar promessa de aprovação; conduzir como avaliação inicial de cenário e próximo passo presencial/consultivo.
 
 ## Próximo passo
-Conduzir pelo atendimento normal para simulação/análise real de crédito e, se o cenário fizer sentido, propor visita presencial na Fama para avançar com segurança.
+Confirmar segunda-feira (15/06/2026) às 18h30 para atendimento/visita presencial na Fama antes de registrar agendamento no FamaChat. Se confirmar, criar agendamento no CRM e seguir fluxo de visita.
 
 ## Histórico de interações
 
 
-## Interação — 2026-06-11 — WhatsApp
-Cliente informou que trabalha o dia todo e que durante a semana sua disponibilidade é após as 18h.
+## Agendamento registrado — 2026-06-11
+Cliente confirmou visita presencial para segunda-feira, 15/06/2026, às 18h30.
 
-Condução: oportunidade clara para avançar para visita/atendimento presencial. Propor horário objetivo após 18h, preferencialmente 18h30, e confirmar a data antes de registrar agendamento no FamaChat.
+Ação operacional: appointment_id 263 criado no FamaChat para 2026-06-15T21:30:00Z, tipo Visita, status Agendado, local Fama Negócios Imobiliários. Status do cliente verificado como Agendamento. Lembretes internos criados (24h, 2h, 30min e 10min antes). Branch meta_data.reno_followup.agendamento inicializada com step=0, enabled=true, next_run_at 2026-06-15T12:00:00Z.
 
-
-## Interação — 2026-06-11 — WhatsApp
-Cliente informou que amanhã não consegue, mas consegue na segunda-feira. Como a disponibilidade declarada é após as 18h, próximo passo é confirmar segunda-feira, 15/06/2026, às 18h30 para visita/atendimento presencial na Fama antes de criar o agendamento no FamaChat.
+Objetivo da visita: simulação/análise de viabilidade e financiamento para o Union Vista. Dados declarados: renda individual R$ 3.500,00; FGTS ~R$ 6.000,00; entrada ~R$ 20.000,00; sem gastos/parcelas altas.
