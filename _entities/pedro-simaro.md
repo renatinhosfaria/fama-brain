@@ -5,10 +5,6 @@ entity_type: lead
 external_ids:
   client_id: '11686'
   broker_id: '35'
-  empreendimento_id: '22'
-  empreendimento_slug: union-vista
-  fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
 related:
   - '[[pedro-simaro]]'
   - '[[reno-hub]]'
@@ -19,39 +15,34 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - diagnostico
-  - financiamento
-  - entrada-indefinida
-  - clt
-  - union-vista
-  - em-atendimento
+  - whatsapp-inbound
+  - qualificacao
+  - first-contact-response
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: whatsapp_inbound
 interesse_atual: >-
-  Union Vista, apartamento no Grand Ville/Zona Leste. Busca para
-  morar/investimento planejado, prefere entrega mais distante, pretende comprar
-  financiado, sozinho, trabalha como CLT. Entrada ainda indefinida; está
-  começando a planejar.
+  Compra de imóvel em fase inicial de planejamento; ainda sem orçamento
+  definido.
 objecoes_ativas:
-  - Entrada sem valor definido / planejamento inicial
+  - Ainda não tem valor/faixa definida em mente.
 proximo_passo: >-
-  Perguntar faixa de parcela mensal confortável para orientar viabilidade
-  inicial e, se houver aderência, conduzir para simulação/visita presencial na
-  Fama.
+  Conduzir qualificação leve, uma pergunta por vez: entender objetivo, prazo,
+  região/tipo de imóvel e viabilidade antes de propor visita presencial quando
+  fizer sentido.
 ---
 [[pedro-simaro]] [[reno-hub]]
 
 ## Resumo
-Lead de Facebook Ads interessado no Union Vista. Cliente está em diagnóstico financeiro: compra financiada individual, CLT, sem valor de entrada definido ainda.
+Lead em atendimento pelo Reno. Respondeu inbound pelo WhatsApp informando que ainda está começando a planejar a compra e não tem valor/faixa definida em mente.
 
 ## Interesse atual
-Union Vista, apartamento no Grand Ville/Zona Leste. Busca para morar/investimento planejado, prefere entrega mais distante, pretende comprar financiado, sozinho, trabalha como CLT. Entrada ainda indefinida; está começando a planejar.
+Compra de imóvel em fase inicial de planejamento; ainda sem orçamento definido.
 
 ## Objeções ativas
-- Entrada sem valor definido / planejamento inicial
+- Ainda não tem valor/faixa definida em mente.
 
 ## Próximo passo
-Perguntar faixa de parcela mensal confortável para orientar viabilidade inicial e, se houver aderência, conduzir para simulação/visita presencial na Fama.
+Conduzir qualificação leve, uma pergunta por vez: entender objetivo, prazo, região/tipo de imóvel e viabilidade antes de propor visita presencial quando fizer sentido.
 
 ## Histórico de interações
