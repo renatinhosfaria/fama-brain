@@ -1,60 +1,44 @@
 ---
-schema_version: 1
 type: entity
+name: Carolina Grotto Leal
+entity_type: lead
+external_ids:
+  client_id: '11685'
+  broker_id: '35'
+related:
+  - '[[carolina-grotto-leal]]'
+  - '[[reno-hub]]'
+schema_version: 1
 status: active
 created: '2026-06-11'
 updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp
-  - union-vereda
-  - em-atendimento
+  - whatsapp-inbound
+  - first-contact-responded
 author_agent: reno
-name: Carolina Grotto Leal
-entity_type: lead
-related:
-  - '[[carolina-grotto-leal]]'
-  - '[[reno-hub]]'
-external_ids:
-  client_id: '11685'
-  broker_id: '35'
-  empreendimento_id: '161'
-  empreendimento_slug: union-vereda
-  fonte: Facebook Ads
-  regiao: 'Jaraguá, Uberlândia'
 status_comercial: Em Atendimento
-origem: Facebook Ads
-interesse_atual: >-
-  Union Vereda (ID 161), apartamento no Jaraguá, Uberlândia. Interesse ativo em
-  receber mais informações sobre o empreendimento.
+origem: WhatsApp inbound
+interesse_atual: Quer saber mais sobre o empreendimento citado no primeiro contato.
 objecoes_ativas: []
 proximo_passo: >-
-  Responder de forma curta com informações essenciais do Union Vereda e
-  diagnosticar se a busca é para morar ou investir antes de conduzir para visita
-  presencial.
+  Fluxo cliente-facing deve continuar em qualificação consultiva, com uma
+  pergunta por vez, sem promessa de crédito e conduzindo para diagnóstico antes
+  de visita.
 ---
 [[carolina-grotto-leal]] [[reno-hub]]
 
 ## Resumo
-Cliente do CRM 11685, origem Facebook Ads, elegível para Reno (broker_id=35). Demonstrou interesse em saber mais sobre o empreendimento Union Vereda após primeiro contato no WhatsApp.
+Cliente respondeu ao primeiro contato do Reno pelo WhatsApp confirmando interesse em saber mais sobre o empreendimento. CRM validado: cliente elegível do Reno (broker_id=35) e status operacional atual em Em Atendimento.
 
 ## Interesse atual
-Union Vereda (ID 161), apartamento no Jaraguá, Uberlândia. Interesse ativo em receber mais informações sobre o empreendimento.
+Quer saber mais sobre o empreendimento citado no primeiro contato.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Responder de forma curta com informações essenciais do Union Vereda e diagnosticar se a busca é para morar ou investir antes de conduzir para visita presencial.
+Fluxo cliente-facing deve continuar em qualificação consultiva, com uma pergunta por vez, sem promessa de crédito e conduzindo para diagnóstico antes de visita.
 
 ## Histórico de interações
-
-
-## Interação — 2026-06-11 13:14 BRT
-- Canal: WhatsApp
-- Cliente: Carolina Grotto Leal (CRM 11685)
-- Empreendimento: Union Vereda (ID 161)
-- Resumo: cliente respondeu ao primeiro contato dizendo que tem interesse em saber mais sobre o empreendimento.
-- Decisão operacional: cliente elegível para Reno (`broker_id=35`); status no CRM atualizado de `Não Respondeu` para `Em Atendimento`; nota registrada no FamaChat.
-- Próximo passo: enviar resposta breve com informações essenciais do Union Vereda e perguntar se a busca é para morar ou investir.
