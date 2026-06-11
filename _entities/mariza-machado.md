@@ -8,6 +8,9 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
+  empreendimento_id: '22'
+  fonte: Facebook Ads
+  regiao: Uberlândia
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -27,38 +30,41 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - audio
+  - em-atendimento
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: WhatsApp inbound / Facebook Ads
 interesse_atual: >-
-  Busca opção de imóvel compatível com faixa em torno de R$240 mil, com
-  possibilidade de negociação se ultrapassar um pouco a faixa. Outubro pode ser
-  aceitável se a entrega for confiável.
+  Receber curadoria por WhatsApp e enviar prints/nomes de opções para o Reno
+  conferir aderência, entrega, andar e condições antes de evoluir para visita
+  presencial.
 objecoes_ativas:
-  - Não tem interesse no Terriu.
-  - Sensível a prazo/risco de atraso na entrega.
+  - Não quer apartamento térreo.
+  - Tem atenção a prazo de entrega e risco de atraso.
   - >-
-    Faixa de preço em torno de R$240 mil, com abertura limitada se houver
-    negociação.
+    Preço-alvo perto de R$ 240 mil; aceita avaliar um pouco acima se houver
+    negociação à vista.
+  - Condomínio desejado em torno de R$ 350–360.
 proximo_passo: >-
-  Retomar qualificação consultiva: confirmar região/perfil desejado e apresentar
-  alternativa aderente antes de conduzir para visita quando fizer sentido.
+  Aguardar os prints/nomes prometidos pela cliente, conferir as opções com
+  estoque/entrega/valor e responder com curadoria objetiva. Se houver opção
+  aderente, conduzir para visita presencial no escritório da Fama.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu por áudio no WhatsApp em 2026-06-11. Considera entrega em outubro viável se não houver atraso, descartou interesse no Terriu e sinalizou abertura para avaliar opções um pouco acima de R$240 mil se houver negociação.
+Cliente em atendimento pelo Reno. Busca apartamento de 2 quartos, não térreo, com entrega curta/pronto, priorizando Grand Ville/Gran Ville e bairros compatíveis. Referência atual: valor perto de R$ 240 mil, condomínio em torno de R$ 360 e possibilidade de negociar à vista. Compra à vista depende do recebimento da venda de um terreno, com prazo estimado de até 60 dias. Em 2026-06-11T15:25:33Z respondeu “Tá bom mando sim”, confirmando que enviará prints/nomes das opções que viu para conferência.
 
 ## Interesse atual
-Busca opção de imóvel compatível com faixa em torno de R$240 mil, com possibilidade de negociação se ultrapassar um pouco a faixa. Outubro pode ser aceitável se a entrega for confiável.
+Receber curadoria por WhatsApp e enviar prints/nomes de opções para o Reno conferir aderência, entrega, andar e condições antes de evoluir para visita presencial.
 
 ## Objeções ativas
-- Não tem interesse no Terriu.
-- Sensível a prazo/risco de atraso na entrega.
-- Faixa de preço em torno de R$240 mil, com abertura limitada se houver negociação.
+- Não quer apartamento térreo.
+- Tem atenção a prazo de entrega e risco de atraso.
+- Preço-alvo perto de R$ 240 mil; aceita avaliar um pouco acima se houver negociação à vista.
+- Condomínio desejado em torno de R$ 350–360.
 
 ## Próximo passo
-Retomar qualificação consultiva: confirmar região/perfil desejado e apresentar alternativa aderente antes de conduzir para visita quando fizer sentido.
+Aguardar os prints/nomes prometidos pela cliente, conferir as opções com estoque/entrega/valor e responder com curadoria objetiva. Se houver opção aderente, conduzir para visita presencial no escritório da Fama.
 
 ## Histórico de interações
