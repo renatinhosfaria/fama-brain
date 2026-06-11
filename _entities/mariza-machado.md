@@ -8,8 +8,6 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
-  empreendimento_id: '22'
-  fonte: Facebook Ads
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -29,42 +27,38 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - cliente-11684
+  - audio
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Compra de apartamento 2 quartos em Uberlândia, preferencialmente pronto/mais
-  novo/seminovo, com foco em Grand Ville/Gran Ville e bairros como Umuarama/Alto
-  Umuarama, Santa Mônica, Custódio Pereira e Tibery. Considera compra à vista,
-  mas o recurso depende do recebimento da venda de um terreno já negociada;
-  comprador do terreno está financiando e o prazo estimado de recebimento pode
-  chegar a cerca de 60 dias.
+  Busca opção de imóvel compatível com faixa em torno de R$240 mil, com
+  possibilidade de negociação se ultrapassar um pouco a faixa. Outubro pode ser
+  aceitável se a entrega for confiável.
 objecoes_ativas:
+  - Não tem interesse no Terriu.
+  - Sensível a prazo/risco de atraso na entrega.
   - >-
-    Necessita alinhar prazo de entrega/posse do imóvel com recebimento da venda
-    do terreno.
-  - >-
-    Quer opções dentro de faixa de preço/condomínio enxuta; comparar ofertas
-    vistas no Grand Ville/Gran Ville antes de propor visita.
+    Faixa de preço em torno de R$240 mil, com abertura limitada se houver
+    negociação.
 proximo_passo: >-
-  Retomar curadoria com previsão de entrega das opções e pedir prints/nomes dos
-  imóveis que a cliente viu para filtrar; conduzir para visita presencial
-  somente após opções compatíveis e timing financeiro ficarem claros.
+  Retomar qualificação consultiva: confirmar região/perfil desejado e apresentar
+  alternativa aderente antes de conduzir para visita quando fizer sentido.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao atendimento Reno e segue em Em Atendimento. Perfil apurado: compra à vista, apartamento 2 quartos, preferência por pronto/mais novo/seminovo, condomínio controlado e bairros definidos. Inbound de áudio em 2026-06-11 informou que o pagamento à vista depende da venda de um terreno já negociada; o comprador do terreno está financiando e o recebimento pode levar até cerca de 60 dias. First contact já estava marcado como respondido; Repescagem permanece encerrada por client_replied; sem Resgate ativo no readback.
+Cliente respondeu por áudio no WhatsApp em 2026-06-11. Considera entrega em outubro viável se não houver atraso, descartou interesse no Terriu e sinalizou abertura para avaliar opções um pouco acima de R$240 mil se houver negociação.
 
 ## Interesse atual
-Compra de apartamento 2 quartos em Uberlândia, preferencialmente pronto/mais novo/seminovo, com foco em Grand Ville/Gran Ville e bairros como Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Considera compra à vista, mas o recurso depende do recebimento da venda de um terreno já negociada; comprador do terreno está financiando e o prazo estimado de recebimento pode chegar a cerca de 60 dias.
+Busca opção de imóvel compatível com faixa em torno de R$240 mil, com possibilidade de negociação se ultrapassar um pouco a faixa. Outubro pode ser aceitável se a entrega for confiável.
 
 ## Objeções ativas
-- Necessita alinhar prazo de entrega/posse do imóvel com recebimento da venda do terreno.
-- Quer opções dentro de faixa de preço/condomínio enxuta; comparar ofertas vistas no Grand Ville/Gran Ville antes de propor visita.
+- Não tem interesse no Terriu.
+- Sensível a prazo/risco de atraso na entrega.
+- Faixa de preço em torno de R$240 mil, com abertura limitada se houver negociação.
 
 ## Próximo passo
-Retomar curadoria com previsão de entrega das opções e pedir prints/nomes dos imóveis que a cliente viu para filtrar; conduzir para visita presencial somente após opções compatíveis e timing financeiro ficarem claros.
+Retomar qualificação consultiva: confirmar região/perfil desejado e apresentar alternativa aderente antes de conduzir para visita quando fizer sentido.
 
 ## Histórico de interações
