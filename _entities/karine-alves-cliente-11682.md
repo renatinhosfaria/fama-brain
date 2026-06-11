@@ -2,6 +2,9 @@
 type: entity
 name: Karine Alves - cliente 11682
 entity_type: reno-atendimento
+aliases:
+  - 'client:11682'
+  - Karine Alves
 external_ids:
   crm_client_id: '11682'
 mentions_entity:
@@ -26,9 +29,6 @@ tags:
   - diagnostico
   - inbound-whatsapp
 author_agent: reno
-aliases:
-  - 'client:11682'
-  - Karine Alves
 ---
 # Atendimento Reno — Karine Alves
 
@@ -40,9 +40,10 @@ Relacionado a [[reno-hub]].
 - Origem: Facebook Ads.
 - Interesse inicial: Place+Arbi, Shopping Park, Uberlândia.
 - Status atual confirmado no CRM: Em Atendimento.
-- Primeiro contato estruturado já possui `responded_at` registrado; chamada de rotina inbound retornou `already_responded`.
+- Primeiro contato estruturado já possui `responded_at` registrado; chamada de rotina inbound desta execução retornou `already_responded`.
 - Repescagem está encerrada (`enabled=false`, `stopped_reason=client_responded_first_reply`).
-- Resgate não está ativo.
+- Resgate não está ativo no `meta_data.reno_followup`.
+- Não houve envio de WhatsApp nesta rotina silenciosa.
 
 ## Histórico curado
 ### 2026-06-11 — Primeiro contato enviado
@@ -54,17 +55,21 @@ Ação operacional: status atualizado de Não Respondeu para Em Atendimento; rep
 
 ### 2026-06-11 — Diagnóstico inicial: finalidade de uso
 Reno perguntou se a busca era para morar ou investir.
-Cliente respondeu: "Pra morar".
-Ação operacional desta rotina silenciosa: CRM validado, resposta inbound tratada como já registrada em primeiro contato, status mantido como Em Atendimento, sem envio de WhatsApp ao cliente e sem duplicar nota já existente no CRM.
+Cliente respondeu que busca imóvel para morar.
+Ação operacional: CRM validado, status mantido como Em Atendimento e sem duplicar métrica de primeiro contato já registrada.
 
-### 2026-06-11 — Próxima pergunta já registrada no CRM
-Reno perguntou se o prazo de entrega previsto do Place+Arbi (jun/2027) funciona para a cliente ou se ela precisa de algo mais pronto. Não usar o vault como prova de resposta sobre prazo; validar no CRM/conversa antes de avançar.
+### 2026-06-11 — Timing/prazo de entrega
+Cliente respondeu que o prazo de entrega do Place+Arbi (jun/2027) funciona para ela.
+Evidência operacional: nota CRM já existente registra essa resposta e o próximo passo; esta rotina silenciosa evitou duplicar nota.
+
+### 2026-06-11 — Pergunta seguinte já registrada no CRM
+Reno já avançou com pergunta curta para validar se uma planta de 2 quartos atende ao dia a dia da cliente. Próxima resposta deve ser tratada a partir desse contexto.
 
 ## Diagnóstico atual
 - Finalidade declarada: morar.
-- Precisa validar timing/prazo de entrega antes de avançar para proposta de visita.
-- Depois do timing, validar se planta de 2 quartos atende e entender composição/necessidade de moradia sem parecer interrogatório.
-- Entender viabilidade e forma de compra antes de conduzir visita.
+- Timing/prazo: entrega prevista para jun/2027 funciona para a cliente.
+- Necessidade em validação: confirmar se planta de 2 quartos atende e entender composição/necessidade de moradia sem parecer interrogatório.
+- Ainda falta aprofundar viabilidade/forma de compra antes de conduzir visita.
 
 ## Próximo passo recomendado
-Aguardar/validar a resposta sobre prazo de entrega. Se o prazo fizer sentido, avançar com uma pergunta curta sobre a planta de 2 quartos e, havendo sinal positivo, conduzir para visita presencial na Fama.
+Aguardar a resposta sobre a planta de 2 quartos. Se houver sinal positivo, avançar com uma pergunta curta de viabilidade/forma de compra e conduzir para visita presencial na Fama quando fizer sentido.
