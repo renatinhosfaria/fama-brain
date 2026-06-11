@@ -11,7 +11,7 @@ external_ids:
   empreendimento_id: '161'
   empreendimento_slug: union-vereda
   fonte: Facebook Ads
-  regiao: Jaraguá
+  regiao: Oeste
 mentions_entity:
   - reno-hub
 related:
@@ -27,32 +27,35 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - union-vereda
+  - qualificacao
+  - midia-imovel
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vereda, Jaraguá. Perguntou se possui 1 suíte; CRM do empreendimento
-  mostra opções cadastradas com 2 quartos, 1 suíte, 2 banheiros, varanda/sacada
-  e 1 vaga.
+  Fotos da planta e fotos do apartamento do Union Vereda. Pedido indica
+  interesse por material visual do empreendimento/unidade antes do próximo
+  avanço comercial.
 objecoes_ativas: []
 proximo_passo: >-
-  No atendimento cliente-facing, responder de forma curta e segura sobre a suíte
-  com base no CRM e seguir para condições/viabilidade e visita se o engajamento
-  continuar. Esta rotina foi apenas persistência; nenhum WhatsApp enviado.
+  No fluxo cliente-facing, localizar assets adequados do Union Vereda e
+  responder pelo WhatsApp com mídia nativa quando disponível. Se faltar
+  planta/foto validada, registrar lacuna operacional e escalar; não prometer
+  disponibilidade sem fonte. Esta rotina silenciosa apenas persistiu o inbound e
+  não enviou mensagem ao cliente.
 ---
 [[francisco-bruno]] [[reno-hub]]
 
 ## Resumo
-Cliente elegível do Reno em atendimento. Primeiro contato já consta como respondido; repescagem está encerrada por resposta do cliente. Histórico recente indica interesse no Union Vereda e dúvidas específicas sobre características da unidade.
+Cliente elegível do Reno (broker_id=35), status atual Em Atendimento. Origem Facebook Ads. Interesse ligado ao Union Vereda, no bairro Jaraguá. Inbound WhatsApp de 2026-06-11: pediu foto da planta e do apartamento.
 
 ## Interesse atual
-Union Vereda, Jaraguá. Perguntou se possui 1 suíte; CRM do empreendimento mostra opções cadastradas com 2 quartos, 1 suíte, 2 banheiros, varanda/sacada e 1 vaga.
+Fotos da planta e fotos do apartamento do Union Vereda. Pedido indica interesse por material visual do empreendimento/unidade antes do próximo avanço comercial.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-No atendimento cliente-facing, responder de forma curta e segura sobre a suíte com base no CRM e seguir para condições/viabilidade e visita se o engajamento continuar. Esta rotina foi apenas persistência; nenhum WhatsApp enviado.
+No fluxo cliente-facing, localizar assets adequados do Union Vereda e responder pelo WhatsApp com mídia nativa quando disponível. Se faltar planta/foto validada, registrar lacuna operacional e escalar; não prometer disponibilidade sem fonte. Esta rotina silenciosa apenas persistiu o inbound e não enviou mensagem ao cliente.
 
 ## Histórico de interações
