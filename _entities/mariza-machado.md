@@ -33,17 +33,18 @@ author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Apartamento 2 quartos, pronto para morar, até cerca de R$ 240 mil, compra à
-  vista. Bairros aceitos: Umuarama, Alto Umuarama, Santa Mônica, Custódio
-  Pereira e Tibery. Cliente não tem interesse em Monte Hebron nem Chácaras
-  Tubalina.
+  Apartamento 2 quartos, pronto para morar, até cerca de R$240 mil, compra à
+  vista. Bairros aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira
+  e Tibery. Aceita prédio mais simples ou sem elevador se a localização for boa.
 objecoes_ativas:
   - Não tem interesse em Monte Hebron ou Chácaras Tubalina.
   - Não aceita lançamento/em construção; precisa estar pronto para morar.
+  - >-
+    Recorte de preço é restrito para imóveis prontos nesses bairros; provável
+    necessidade de garimpo de imóvel usado/avulso ou negociação.
 proximo_passo: >-
-  Filtrar imóveis prontos dentro da região e faixa; se estoque ficar restrito,
-  validar abertura para condomínios mais simples/sem elevador ou imóveis usados
-  avulsos.
+  Conduzir para atendimento/visita presencial na Fama ou checagem com corretor
+  de imóveis usados/avulsos compatíveis; evitar enviar opções fora do perfil.
 ---
 [[mariza-machado]] [[reno-hub]]
 
@@ -51,13 +52,14 @@ proximo_passo: >-
 Cliente respondeu ao atendimento digital do Reno e reforçou requisito de imóvel pronto para morar. Contexto comercial curado no CRM: busca apartamento de 2 quartos, orçamento aproximado até R$ 240 mil, compra à vista, preferência por Alto Umuarama, Custódio Pereira e Tibery.
 
 ## Interesse atual
-Apartamento 2 quartos, pronto para morar, até cerca de R$ 240 mil, compra à vista. Bairros aceitos: Umuarama, Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Cliente não tem interesse em Monte Hebron nem Chácaras Tubalina.
+Apartamento 2 quartos, pronto para morar, até cerca de R$240 mil, compra à vista. Bairros aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Aceita prédio mais simples ou sem elevador se a localização for boa.
 
 ## Objeções ativas
 - Não tem interesse em Monte Hebron ou Chácaras Tubalina.
 - Não aceita lançamento/em construção; precisa estar pronto para morar.
+- Recorte de preço é restrito para imóveis prontos nesses bairros; provável necessidade de garimpo de imóvel usado/avulso ou negociação.
 
 ## Próximo passo
-Filtrar imóveis prontos dentro da região e faixa; se estoque ficar restrito, validar abertura para condomínios mais simples/sem elevador ou imóveis usados avulsos.
+Conduzir para atendimento/visita presencial na Fama ou checagem com corretor de imóveis usados/avulsos compatíveis; evitar enviar opções fora do perfil.
 
 ## Histórico de interações
