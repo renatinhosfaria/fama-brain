@@ -56,3 +56,11 @@ Union Vista para moradia; avaliação inicial de viabilidade financeira com rend
 Confirmar se há algum valor adicional de entrada além do FGTS ou possibilidade de fluxo/parcelamento durante a obra; manter linguagem segura, sem prometer aprovação, e conduzir para atendimento presencial/visita se houver sinal mínimo de viabilidade.
 
 ## Histórico de interações
+
+
+## Interação — 2026-06-11 — WhatsApp
+Cliente informou ter aproximadamente R$ 20.000,00 guardados além de cerca de R$ 6.000,00 de FGTS.
+
+Leitura financeira inicial: entrada/FGTS potencial de ~R$ 26.000,00. Sobre a menor unidade do Union Vista registrada no CRM (R$ 292.400,00), isso representa cerca de 8,89%, com saldo estimado de R$ 266.400,00 antes de condições finais. Cenário ainda depende de análise de crédito, banco, fluxo da obra e comprometimentos existentes, mas melhorou e merece simulação real.
+
+Próximo passo: confirmar se há parcelas/financiamentos/empréstimos no nome e conduzir para atendimento presencial na Fama para avaliação segura.
