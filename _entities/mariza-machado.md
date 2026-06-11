@@ -8,6 +8,8 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
+  empreendimento_id: '22'
+  fonte: Facebook Ads
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -32,41 +34,37 @@ author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como
-  faixa confortável, com abertura para analisar oportunidade um pouco acima se
-  houver boa negociação à vista. Cliente citou ter visto opções no Grand Ville
-  na faixa de R$240 mil com condomínio de R$360, sinalizando que aceita comparar
-  opções com condomínio ligeiramente acima do teto anterior se fizer sentido.
+  Compra de apartamento 2 quartos em Uberlândia, preferencialmente pronto/mais
+  novo/seminovo, com foco em Grand Ville/Gran Ville e bairros como Umuarama/Alto
+  Umuarama, Santa Mônica, Custódio Pereira e Tibery. Considera compra à vista,
+  mas o recurso depende do recebimento da venda de um terreno já negociada;
+  comprador do terreno está financiando e o prazo estimado de recebimento pode
+  chegar a cerca de 60 dias.
 objecoes_ativas:
-  - Não quer Monte Hebron nem Chácaras Tubalina.
   - >-
-    Condomínio ideal era até cerca de R$350/mês, mas citou Grand Ville com
-    condomínio de R$360 como referência aceitável para comparação.
-  - Prédio simples ou sem elevador só faz sentido se a localização for boa.
+    Necessita alinhar prazo de entrega/posse do imóvel com recebimento da venda
+    do terreno.
   - >-
-    Cliente já pesquisou opções no Grand Ville e tende a comparar
-    preço/condomínio com a curadoria apresentada.
+    Quer opções dentro de faixa de preço/condomínio enxuta; comparar ofertas
+    vistas no Grand Ville/Gran Ville antes de propor visita.
 proximo_passo: >-
-  Revisar a curadoria considerando a referência do Grand Ville/Gran Ville:
-  distinguir opção pronta/usada vs lançamento/em construção, checar aderência
-  real a R$240 mil e condomínio em torno de R$350-360, e só avançar para visita
-  presencial quando houver imóveis que despertem interesse.
+  Retomar curadoria com previsão de entrega das opções e pedir prints/nomes dos
+  imóveis que a cliente viu para filtrar; conduzir para visita presencial
+  somente após opções compatíveis e timing financeiro ficarem claros.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento com o Reno. Perfil curado: compra à vista, apartamento de 2 quartos, pronto para morar, preferência por imóvel mais novo/seminovo, faixa confortável em torno de R$240 mil. Bairros de interesse: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery; agora também comparou opções vistas no Grand Ville nessa faixa. Prefere receber curadoria pelo WhatsApp antes de combinar visita.
+Cliente respondeu ao atendimento Reno e segue em Em Atendimento. Perfil apurado: compra à vista, apartamento 2 quartos, preferência por pronto/mais novo/seminovo, condomínio controlado e bairros definidos. Inbound de áudio em 2026-06-11 informou que o pagamento à vista depende da venda de um terreno já negociada; o comprador do terreno está financiando e o recebimento pode levar até cerca de 60 dias. First contact já estava marcado como respondido; Repescagem permanece encerrada por client_replied; sem Resgate ativo no readback.
 
 ## Interesse atual
-Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como faixa confortável, com abertura para analisar oportunidade um pouco acima se houver boa negociação à vista. Cliente citou ter visto opções no Grand Ville na faixa de R$240 mil com condomínio de R$360, sinalizando que aceita comparar opções com condomínio ligeiramente acima do teto anterior se fizer sentido.
+Compra de apartamento 2 quartos em Uberlândia, preferencialmente pronto/mais novo/seminovo, com foco em Grand Ville/Gran Ville e bairros como Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Considera compra à vista, mas o recurso depende do recebimento da venda de um terreno já negociada; comprador do terreno está financiando e o prazo estimado de recebimento pode chegar a cerca de 60 dias.
 
 ## Objeções ativas
-- Não quer Monte Hebron nem Chácaras Tubalina.
-- Condomínio ideal era até cerca de R$350/mês, mas citou Grand Ville com condomínio de R$360 como referência aceitável para comparação.
-- Prédio simples ou sem elevador só faz sentido se a localização for boa.
-- Cliente já pesquisou opções no Grand Ville e tende a comparar preço/condomínio com a curadoria apresentada.
+- Necessita alinhar prazo de entrega/posse do imóvel com recebimento da venda do terreno.
+- Quer opções dentro de faixa de preço/condomínio enxuta; comparar ofertas vistas no Grand Ville/Gran Ville antes de propor visita.
 
 ## Próximo passo
-Revisar a curadoria considerando a referência do Grand Ville/Gran Ville: distinguir opção pronta/usada vs lançamento/em construção, checar aderência real a R$240 mil e condomínio em torno de R$350-360, e só avançar para visita presencial quando houver imóveis que despertem interesse.
+Retomar curadoria com previsão de entrega das opções e pedir prints/nomes dos imóveis que a cliente viu para filtrar; conduzir para visita presencial somente após opções compatíveis e timing financeiro ficarem claros.
 
 ## Histórico de interações
