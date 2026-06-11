@@ -8,6 +8,7 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
+  fonte: WhatsApp
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -30,17 +31,19 @@ tags:
   - pronto-para-morar
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound - reno_whatsapp_inbound_qualification
+origem: Facebook Ads
 interesse_atual: >-
-  Apartamento 2 quartos pronto para morar; regiões Alto Umuarama, Custódio
-  Pereira e Tibery; compra à vista até cerca de R$ 240 mil.
+  Apartamento 2 quartos, pronto para morar, até cerca de R$ 240 mil, compra à
+  vista. Bairros aceitos: Umuarama, Alto Umuarama, Santa Mônica, Custódio
+  Pereira e Tibery. Cliente não tem interesse em Monte Hebron nem Chácaras
+  Tubalina.
 objecoes_ativas:
-  - >-
-    Imóvel em construção/lançamento não atende ao requisito atual; precisa estar
-    pronto para morar.
+  - Não tem interesse em Monte Hebron ou Chácaras Tubalina.
+  - Não aceita lançamento/em construção; precisa estar pronto para morar.
 proximo_passo: >-
-  Prosseguir qualificação/curadoria com foco em opções prontas para morar e
-  conduzir para visita presencial quando fizer sentido.
+  Filtrar imóveis prontos dentro da região e faixa; se estoque ficar restrito,
+  validar abertura para condomínios mais simples/sem elevador ou imóveis usados
+  avulsos.
 ---
 [[mariza-machado]] [[reno-hub]]
 
@@ -48,12 +51,13 @@ proximo_passo: >-
 Cliente respondeu ao atendimento digital do Reno e reforçou requisito de imóvel pronto para morar. Contexto comercial curado no CRM: busca apartamento de 2 quartos, orçamento aproximado até R$ 240 mil, compra à vista, preferência por Alto Umuarama, Custódio Pereira e Tibery.
 
 ## Interesse atual
-Apartamento 2 quartos pronto para morar; regiões Alto Umuarama, Custódio Pereira e Tibery; compra à vista até cerca de R$ 240 mil.
+Apartamento 2 quartos, pronto para morar, até cerca de R$ 240 mil, compra à vista. Bairros aceitos: Umuarama, Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Cliente não tem interesse em Monte Hebron nem Chácaras Tubalina.
 
 ## Objeções ativas
-- Imóvel em construção/lançamento não atende ao requisito atual; precisa estar pronto para morar.
+- Não tem interesse em Monte Hebron ou Chácaras Tubalina.
+- Não aceita lançamento/em construção; precisa estar pronto para morar.
 
 ## Próximo passo
-Prosseguir qualificação/curadoria com foco em opções prontas para morar e conduzir para visita presencial quando fizer sentido.
+Filtrar imóveis prontos dentro da região e faixa; se estoque ficar restrito, validar abertura para condomínios mais simples/sem elevador ou imóveis usados avulsos.
 
 ## Histórico de interações
