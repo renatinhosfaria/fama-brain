@@ -19,36 +19,35 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - diagnostico
-  - moradia
-  - investimento-planejado
+  - whatsapp-inbound
+  - qualificacao
   - union-vista
-  - em-atendimento
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vista, apartamento no Grand Ville/Zona Leste. Finalidade inicial
-  declarada: morar; cliente também descreveu como investimento e prefere entrega
-  mais distante, indicando compra planejada/patrimonial. Prazo do Union Vista
-  tende a aderir.
+  Union Vista, Grand Ville. Cliente confirmou que a região/empreendimento
+  combina, informou finalidade de moradia e sinalizou preferência por
+  investimento/compra planejada com entrega mais distante. Prazo do
+  empreendimento (Jul/2027) tende a aderir ao perfil declarado.
 objecoes_ativas: []
 proximo_passo: >-
-  Avançar para viabilidade financeira: confirmar se pretende comprar financiado
-  e depois entender entrada/renda/composição, sem prometer crédito.
+  Seguir diagnóstico consultivo de viabilidade: forma de compra, financiamento,
+  organização de entrada e composição financeira antes de conduzir para visita
+  presencial quando fizer sentido.
 ---
 [[pedro-simaro]] [[reno-hub]]
 
 ## Resumo
-Lead de Facebook Ads interessado no Union Vista. Cliente declarou busca para morar e informou que prefere entrega mais distante, tratando a compra como investimento planejado.
+Cliente elegível do Reno identificado no CRM (broker_id=35), em atendimento pelo WhatsApp após primeiro contato sobre o Union Vista. O CRM permanece como fonte operacional; esta timeline resume apenas contexto curado do atendimento.
 
 ## Interesse atual
-Union Vista, apartamento no Grand Ville/Zona Leste. Finalidade inicial declarada: morar; cliente também descreveu como investimento e prefere entrega mais distante, indicando compra planejada/patrimonial. Prazo do Union Vista tende a aderir.
+Union Vista, Grand Ville. Cliente confirmou que a região/empreendimento combina, informou finalidade de moradia e sinalizou preferência por investimento/compra planejada com entrega mais distante. Prazo do empreendimento (Jul/2027) tende a aderir ao perfil declarado.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Avançar para viabilidade financeira: confirmar se pretende comprar financiado e depois entender entrada/renda/composição, sem prometer crédito.
+Seguir diagnóstico consultivo de viabilidade: forma de compra, financiamento, organização de entrada e composição financeira antes de conduzir para visita presencial quando fizer sentido.
 
 ## Histórico de interações
