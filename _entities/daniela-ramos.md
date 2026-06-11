@@ -22,7 +22,7 @@ tags:
   - qualificacao
   - agendamento
 author_agent: reno
-status_comercial: Em Atendimento
+status_comercial: Agendamento
 origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
   Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando
@@ -39,14 +39,14 @@ objecoes_ativas:
     Evitar promessa de aprovação; conduzir como avaliação inicial de cenário e
     próximo passo presencial/consultivo.
 proximo_passo: >-
-  Confirmar segunda-feira (15/06/2026) às 18h30 para atendimento/visita
-  presencial na Fama antes de registrar agendamento no FamaChat. Se confirmar,
-  criar agendamento no CRM e seguir fluxo de visita.
+  Acompanhar visita presencial registrada no FamaChat para segunda-feira
+  (15/06/2026) às 18h30 e seguir fluxo de agendamento/comparecimento sem
+  regredir status.
 ---
 [[daniela-ramos]] [[reno-hub]]
 
 ## Resumo
-Cliente do Reno identificado no CRM (broker_id=35), origem Facebook Ads, interesse no Union Vista/Grand Ville. Já respondeu ao primeiro contato e está em Em Atendimento. Diagnóstico de viabilidade atual: busca imóvel para morar, renda individual declarada de R$ 3.500,00, FGTS aproximado de R$ 6.000,00, cerca de R$ 20.000,00 guardados para entrada e informou não ter gasto/parcela alta no nome. Disponibilidade atual: não consegue amanhã, mas consegue na segunda-feira. Não prometer aprovação; conduzir para simulação/análise real de crédito e visita/atendimento presencial na Fama quando fizer sentido.
+Cliente do Reno identificado no CRM (broker_id=35), origem Facebook Ads, interesse no Union Vista/Grand Ville. Já respondeu ao primeiro contato; CRM está em Agendamento com visita presencial registrada para segunda-feira (15/06/2026) às 18h30. Diagnóstico de viabilidade atual: busca imóvel para morar, renda individual declarada de R$ 3.500,00, FGTS aproximado de R$ 6.000,00, cerca de R$ 20.000,00 guardados para entrada e informou não ter gasto/parcela alta no nome. Não prometer aprovação; conduzir para simulação/análise real de crédito no atendimento presencial.
 
 ## Interesse atual
 Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando viabilidade com renda individual, FGTS e entrada.
@@ -57,14 +57,6 @@ Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando viabi
 - Evitar promessa de aprovação; conduzir como avaliação inicial de cenário e próximo passo presencial/consultivo.
 
 ## Próximo passo
-Confirmar segunda-feira (15/06/2026) às 18h30 para atendimento/visita presencial na Fama antes de registrar agendamento no FamaChat. Se confirmar, criar agendamento no CRM e seguir fluxo de visita.
+Acompanhar visita presencial registrada no FamaChat para segunda-feira (15/06/2026) às 18h30 e seguir fluxo de agendamento/comparecimento sem regredir status.
 
 ## Histórico de interações
-
-
-## Agendamento registrado — 2026-06-11
-Cliente confirmou visita presencial para segunda-feira, 15/06/2026, às 18h30.
-
-Ação operacional: appointment_id 263 criado no FamaChat para 2026-06-15T21:30:00Z, tipo Visita, status Agendado, local Fama Negócios Imobiliários. Status do cliente verificado como Agendamento. Lembretes internos criados (24h, 2h, 30min e 10min antes). Branch meta_data.reno_followup.agendamento inicializada com step=0, enabled=true, next_run_at 2026-06-15T12:00:00Z.
-
-Objetivo da visita: simulação/análise de viabilidade e financiamento para o Union Vista. Dados declarados: renda individual R$ 3.500,00; FGTS ~R$ 6.000,00; entrada ~R$ 20.000,00; sem gastos/parcelas altas.
