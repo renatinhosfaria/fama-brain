@@ -5,6 +5,10 @@ entity_type: lead
 external_ids:
   client_id: '11686'
   broker_id: '35'
+  empreendimento_id: '22'
+  empreendimento_slug: union-vista
+  fonte: Facebook Ads
+  regiao: Grand Ville / Zona Leste
 related:
   - '[[pedro-simaro]]'
   - '[[reno-hub]]'
@@ -15,34 +19,40 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
-  - qualificacao
-  - first-contact-response
+  - diagnostico
+  - financiamento
+  - teto-parcela
+  - visita-potencial
+  - union-vista
+  - em-atendimento
 author_agent: reno
 status_comercial: Em Atendimento
-origem: whatsapp_inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Compra de imóvel em fase inicial de planejamento; ainda sem orçamento
-  definido.
+  Union Vista, apartamento no Grand Ville/Zona Leste. Busca para
+  morar/investimento planejado, prefere entrega mais distante, pretende comprar
+  financiado, sozinho, trabalha como CLT. Teto mensal confortável informado: R$
+  1.700-1.800 total, considerando aluguel e outros gastos.
 objecoes_ativas:
-  - Ainda não tem valor/faixa definida em mente.
+  - Entrada sem valor definido / planejamento inicial
+  - Teto mensal total de R$ 1.700-1.800 precisa ser validado em simulação
 proximo_passo: >-
-  Conduzir qualificação leve, uma pergunta por vez: entender objetivo, prazo,
-  região/tipo de imóvel e viabilidade antes de propor visita presencial quando
-  fizer sentido.
+  Convidar para visita/simulação presencial na Fama para montar cenário de
+  financiamento e fluxo de obra sem prometer crédito.
 ---
 [[pedro-simaro]] [[reno-hub]]
 
 ## Resumo
-Lead em atendimento pelo Reno. Respondeu inbound pelo WhatsApp informando que ainda está começando a planejar a compra e não tem valor/faixa definida em mente.
+Lead de Facebook Ads interessado no Union Vista. Diagnóstico indica compra planejada: financiamento individual, CLT, sem entrada definida ainda, com teto mensal confortável em torno de R$ 1.700 a R$ 1.800 considerando entrada, financiamento e evolução da obra.
 
 ## Interesse atual
-Compra de imóvel em fase inicial de planejamento; ainda sem orçamento definido.
+Union Vista, apartamento no Grand Ville/Zona Leste. Busca para morar/investimento planejado, prefere entrega mais distante, pretende comprar financiado, sozinho, trabalha como CLT. Teto mensal confortável informado: R$ 1.700-1.800 total, considerando aluguel e outros gastos.
 
 ## Objeções ativas
-- Ainda não tem valor/faixa definida em mente.
+- Entrada sem valor definido / planejamento inicial
+- Teto mensal total de R$ 1.700-1.800 precisa ser validado em simulação
 
 ## Próximo passo
-Conduzir qualificação leve, uma pergunta por vez: entender objetivo, prazo, região/tipo de imóvel e viabilidade antes de propor visita presencial quando fizer sentido.
+Convidar para visita/simulação presencial na Fama para montar cenário de financiamento e fluxo de obra sem prometer crédito.
 
 ## Histórico de interações
