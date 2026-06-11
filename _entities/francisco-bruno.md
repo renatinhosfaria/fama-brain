@@ -9,8 +9,9 @@ external_ids:
   client_id: '11680'
   broker_id: '35'
   empreendimento_id: '161'
-  fonte: whatsapp
-  regiao: Oeste
+  empreendimento_slug: union-vereda
+  fonte: Facebook Ads
+  regiao: Jaraguá / Avenida Aspirante Mega
 mentions_entity:
   - reno-hub
 related:
@@ -26,30 +27,34 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - first-contact-responded
-  - asset-request
+  - first-contact-response
+  - union-vereda
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound
-interesse_atual: Fotos e planta do Union Vereda.
+origem: Facebook Ads / WhatsApp inbound
+interesse_atual: >-
+  Fotos/planta e confirmação do empreendimento Union Vereda, localizado na
+  Avenida Aspirante Mega.
 objecoes_ativas: []
 proximo_passo: >-
-  Atendimento deve responder no WhatsApp com fotos/planta como mídia nativa ou
-  asset validado, e depois retomar diagnóstico consultivo para avançar ao
-  próximo passo comercial. Nesta rotina silenciosa nenhum WhatsApp foi enviado.
+  Atendimento cliente-facing deve retomar pelo WhatsApp sem mencionar rotina
+  interna: confirmar de forma simples que é o Union Vereda na Avenida Aspirante
+  Mega, enviar fotos/planta como mídia nativa ou asset validado quando for
+  responder, e seguir diagnóstico consultivo rumo a visita. Esta rotina
+  silenciosa não enviou mensagem.
 ---
 [[francisco-bruno]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato do Reno pelo WhatsApp pedindo fotos e planta do empreendimento de interesse. CRM validado como broker_id=35; status operacional passou de Não Respondeu para Em Atendimento; repescagem encerrada por resposta do cliente.
+Cliente elegível do Reno (CRM broker_id=35) respondeu pelo WhatsApp. Primeiro inbound anterior já havia registrado resposta ao primeiro contato e colocado o atendimento em Em Atendimento; nova mensagem contextualizou que o imóvel citado é o da Avenida Aspirante Mega, coerente com o Union Vereda no CRM.
 
 ## Interesse atual
-Fotos e planta do Union Vereda.
+Fotos/planta e confirmação do empreendimento Union Vereda, localizado na Avenida Aspirante Mega.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Atendimento deve responder no WhatsApp com fotos/planta como mídia nativa ou asset validado, e depois retomar diagnóstico consultivo para avançar ao próximo passo comercial. Nesta rotina silenciosa nenhum WhatsApp foi enviado.
+Atendimento cliente-facing deve retomar pelo WhatsApp sem mencionar rotina interna: confirmar de forma simples que é o Union Vereda na Avenida Aspirante Mega, enviar fotos/planta como mídia nativa ou asset validado quando for responder, e seguir diagnóstico consultivo rumo a visita. Esta rotina silenciosa não enviou mensagem.
 
 ## Histórico de interações
