@@ -21,8 +21,8 @@ tags:
   - reno
   - diagnostico
   - financiamento
+  - entrada-indefinida
   - clt
-  - compra-individual
   - union-vista
   - em-atendimento
 author_agent: reno
@@ -31,24 +31,27 @@ origem: Facebook Ads
 interesse_atual: >-
   Union Vista, apartamento no Grand Ville/Zona Leste. Busca para
   morar/investimento planejado, prefere entrega mais distante, pretende comprar
-  financiado, sozinho, e trabalha como CLT.
-objecoes_ativas: []
+  financiado, sozinho, trabalha como CLT. Entrada ainda indefinida; está
+  começando a planejar.
+objecoes_ativas:
+  - Entrada sem valor definido / planejamento inicial
 proximo_passo: >-
-  Perguntar faixa de entrada disponível ou planejada para avançar diagnóstico de
-  viabilidade sem prometer crédito.
+  Perguntar faixa de parcela mensal confortável para orientar viabilidade
+  inicial e, se houver aderência, conduzir para simulação/visita presencial na
+  Fama.
 ---
 [[pedro-simaro]] [[reno-hub]]
 
 ## Resumo
-Lead de Facebook Ads interessado no Union Vista. Cliente declarou compra financiada e individual, com comprovação de renda CLT.
+Lead de Facebook Ads interessado no Union Vista. Cliente está em diagnóstico financeiro: compra financiada individual, CLT, sem valor de entrada definido ainda.
 
 ## Interesse atual
-Union Vista, apartamento no Grand Ville/Zona Leste. Busca para morar/investimento planejado, prefere entrega mais distante, pretende comprar financiado, sozinho, e trabalha como CLT.
+Union Vista, apartamento no Grand Ville/Zona Leste. Busca para morar/investimento planejado, prefere entrega mais distante, pretende comprar financiado, sozinho, trabalha como CLT. Entrada ainda indefinida; está começando a planejar.
 
 ## Objeções ativas
-
+- Entrada sem valor definido / planejamento inicial
 
 ## Próximo passo
-Perguntar faixa de entrada disponível ou planejada para avançar diagnóstico de viabilidade sem prometer crédito.
+Perguntar faixa de parcela mensal confortável para orientar viabilidade inicial e, se houver aderência, conduzir para simulação/visita presencial na Fama.
 
 ## Histórico de interações
