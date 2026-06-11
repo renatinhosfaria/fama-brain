@@ -79,3 +79,11 @@ Condução recomendada: não prometer aprovação; explicar que R$ 3.000 pode aj
 
 ### Resposta enviada — 2026-06-10
 "Entendi, Ana. Esses R$ 3.000 já ajudam a gente a montar a análise, mas com renda de 2 salários o ideal é fazer uma simulação bem certinha pra ver parcela, entrada e o que encaixa no Minha Casa Minha Vida. Vou considerar até 2 quartos e deixar Mansur/Luizote fora. O melhor caminho agora é você vir até a Fama pra gente fazer essa pré-análise com calma. Pra você fica melhor em qual período: manhã ou tarde?"
+
+
+## Interação — 2026-06-10 — WhatsApp
+Cliente respondeu que prefere atendimento/visita no período da tarde.
+
+Agenda consultada para 2026-06-11 à tarde: sem compromissos encontrados para broker Reno. Resposta enviada propondo amanhã às 15h para pré-análise presencial na Fama e pedindo confirmação.
+
+Próximo passo: se cliente confirmar, criar agendamento no FamaChat, alterar status de Em Atendimento para Agendamento se ainda estiver nesse status, e registrar visita/agendamento.
