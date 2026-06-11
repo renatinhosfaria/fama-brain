@@ -27,34 +27,34 @@ author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando
-  viabilidade com renda individual, FGTS e entrada.
+  Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; cenário
+  financeiro inicial ficou mais favorável para simulação real.
 objecoes_ativas:
   - >-
-    Viabilidade financeira ainda em diagnóstico: renda individual de R$ 3.500,00
-    e entrada/FGTS aproximados de R$ 26.000,00 precisam de simulação
-    real/análise de crédito.
+    Viabilidade financeira ainda depende de simulação/análise de crédito; renda
+    individual de R$ 3.500,00, entrada/FGTS aproximados de R$ 26.000,00 e
+    ausência declarada de comprometimentos altos não garantem aprovação.
   - >-
-    Confirmar se há parcelas/comprometimentos no nome e possibilidade de
-    composição de renda ou fluxo/parcelamento durante obra.
+    Conduzir sem promessa de crédito; próximo avanço recomendado é atendimento
+    presencial para análise de viabilidade e fluxo.
 proximo_passo: >-
-  Retomar pelo atendimento normal confirmando se há parcelas/comprometimentos e
-  conduzir para simulação/análise de crédito; se o cenário fizer sentido, propor
-  visita presencial na Fama.
+  Convidar para atendimento presencial na Fama para avaliar viabilidade, fluxo e
+  simulação de crédito do Union Vista, mantendo linguagem consultiva e sem
+  promessa de aprovação.
 ---
 [[daniela-ramos]] [[reno-hub]]
 
 ## Resumo
-Cliente do Reno identificado no CRM (broker_id=35), origem Facebook Ads, interesse no Union Vista/Grand Ville. Já respondeu ao primeiro contato e está em Em Atendimento. Conversa atual está em diagnóstico de viabilidade: informou renda individual de R$ 3.500,00, FGTS aproximado de R$ 6.000,00 e agora cerca de R$ 20.000,00 guardados para entrada, totalizando potencial aproximado de R$ 26.000,00 entre entrada/FGTS. Não prometer aprovação; conduzir para análise/simulação real e visita presencial quando fizer sentido.
+Cliente do Reno identificado no CRM (broker_id=35), origem Facebook Ads, interesse no Union Vista/Grand Ville. Já respondeu ao primeiro contato e está em Em Atendimento. Diagnóstico financeiro atual no CRM: renda individual de R$ 3.500,00, FGTS aproximado de R$ 6.000,00, cerca de R$ 20.000,00 guardados para entrada e declaração de ausência de empréstimo/financiamento/cartão muito alto. Cenário merece simulação/análise real de crédito e pode ser conduzido para atendimento presencial na Fama, sem promessa de aprovação.
 
 ## Interesse atual
-Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando viabilidade com renda individual, FGTS e entrada.
+Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; cenário financeiro inicial ficou mais favorável para simulação real.
 
 ## Objeções ativas
-- Viabilidade financeira ainda em diagnóstico: renda individual de R$ 3.500,00 e entrada/FGTS aproximados de R$ 26.000,00 precisam de simulação real/análise de crédito.
-- Confirmar se há parcelas/comprometimentos no nome e possibilidade de composição de renda ou fluxo/parcelamento durante obra.
+- Viabilidade financeira ainda depende de simulação/análise de crédito; renda individual de R$ 3.500,00, entrada/FGTS aproximados de R$ 26.000,00 e ausência declarada de comprometimentos altos não garantem aprovação.
+- Conduzir sem promessa de crédito; próximo avanço recomendado é atendimento presencial para análise de viabilidade e fluxo.
 
 ## Próximo passo
-Retomar pelo atendimento normal confirmando se há parcelas/comprometimentos e conduzir para simulação/análise de crédito; se o cenário fizer sentido, propor visita presencial na Fama.
+Convidar para atendimento presencial na Fama para avaliar viabilidade, fluxo e simulação de crédito do Union Vista, mantendo linguagem consultiva e sem promessa de aprovação.
 
 ## Histórico de interações
