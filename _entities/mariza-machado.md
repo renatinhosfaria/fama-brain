@@ -9,6 +9,8 @@ external_ids:
   client_id: '11684'
   broker_id: '35'
   empreendimento_id: '22'
+  fonte: Facebook Ads
+  regiao: Uberlândia
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -42,13 +44,14 @@ objecoes_ativas:
   - Prédio simples ou sem elevador só faz sentido se a localização for boa.
 proximo_passo: >-
   Selecionar opções aderentes ao perfil, priorizando chance real de negociação à
-  vista; quando houver alternativa compatível, conduzir para visita presencial
-  na Fama como próximo passo comercial.
+  vista e condomínio até cerca de R$350/mês; quando houver alternativa
+  compatível, conduzir para visita presencial na Fama como próximo passo
+  comercial.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento com o Reno. Perfil curado: compra à vista, apartamento de 2 quartos, pronto para morar, preferência por imóvel mais novo/seminovo, condomínio até cerca de R$350, bairros Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Cliente autorizou considerar oportunidades um pouco acima de R$240 mil quando houver chance real de negociação por pagamento à vista.
+Cliente em atendimento com o Reno. Perfil curado: compra à vista, apartamento de 2 quartos, pronto para morar, preferência por imóvel mais novo/seminovo, condomínio até cerca de R$350/mês, bairros Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Cliente autorizou considerar oportunidades um pouco acima de R$240 mil quando houver chance real de negociação por pagamento à vista.
 
 ## Interesse atual
 Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como faixa confortável, com abertura para analisar opção um pouco acima se houver boa negociação à vista.
@@ -59,6 +62,6 @@ Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como fai
 - Prédio simples ou sem elevador só faz sentido se a localização for boa.
 
 ## Próximo passo
-Selecionar opções aderentes ao perfil, priorizando chance real de negociação à vista; quando houver alternativa compatível, conduzir para visita presencial na Fama como próximo passo comercial.
+Selecionar opções aderentes ao perfil, priorizando chance real de negociação à vista e condomínio até cerca de R$350/mês; quando houver alternativa compatível, conduzir para visita presencial na Fama como próximo passo comercial.
 
 ## Histórico de interações
