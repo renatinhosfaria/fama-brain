@@ -8,7 +8,6 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
-  fonte: WhatsApp
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -28,38 +27,36 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - pronto-para-morar
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: WhatsApp inbound
 interesse_atual: >-
-  Apartamento 2 quartos, pronto para morar, até cerca de R$240 mil, compra à
-  vista. Bairros aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira
-  e Tibery. Aceita prédio mais simples ou sem elevador se a localização for boa.
+  Apartamento 2 quartos, pronto para morar, até cerca de R$ 240.000, compra à
+  vista. Bairros/regiões aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio
+  Pereira e Tibery.
 objecoes_ativas:
-  - Não tem interesse em Monte Hebron ou Chácaras Tubalina.
-  - Não aceita lançamento/em construção; precisa estar pronto para morar.
-  - >-
-    Recorte de preço é restrito para imóveis prontos nesses bairros; provável
-    necessidade de garimpo de imóvel usado/avulso ou negociação.
+  - Não tem interesse em Monte Hebron.
+  - Não tem interesse em Chácaras Tubalina.
+  - Aceita prédio mais simples ou sem elevador apenas se a localização for boa.
 proximo_passo: >-
-  Conduzir para atendimento/visita presencial na Fama ou checagem com corretor
-  de imóveis usados/avulsos compatíveis; evitar enviar opções fora do perfil.
+  Usar as preferências atualizadas para conduzir qualificação e apresentar
+  opções aderentes; quando houver opção compatível, conduzir para visita
+  presencial na Fama sem pressionar avanço artificial.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao atendimento digital do Reno e reforçou requisito de imóvel pronto para morar. Contexto comercial curado no CRM: busca apartamento de 2 quartos, orçamento aproximado até R$ 240 mil, compra à vista, preferência por Alto Umuarama, Custódio Pereira e Tibery.
+Cliente em atendimento pelo Reno. Resposta inbound no WhatsApp em 2026-06-11: recusou Monte Hebron e Chácaras Tubalina e pediu incluir Umuarama e Santa Mônica nas opções. Contexto curado a partir do CRM/FamaChat: busca apartamento 2 quartos, pronto para morar, até cerca de R$ 240.000, compra à vista; bairros aceitos incluem Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Aceita prédio mais simples ou sem elevador se a localização for boa.
 
 ## Interesse atual
-Apartamento 2 quartos, pronto para morar, até cerca de R$240 mil, compra à vista. Bairros aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Aceita prédio mais simples ou sem elevador se a localização for boa.
+Apartamento 2 quartos, pronto para morar, até cerca de R$ 240.000, compra à vista. Bairros/regiões aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery.
 
 ## Objeções ativas
-- Não tem interesse em Monte Hebron ou Chácaras Tubalina.
-- Não aceita lançamento/em construção; precisa estar pronto para morar.
-- Recorte de preço é restrito para imóveis prontos nesses bairros; provável necessidade de garimpo de imóvel usado/avulso ou negociação.
+- Não tem interesse em Monte Hebron.
+- Não tem interesse em Chácaras Tubalina.
+- Aceita prédio mais simples ou sem elevador apenas se a localização for boa.
 
 ## Próximo passo
-Conduzir para atendimento/visita presencial na Fama ou checagem com corretor de imóveis usados/avulsos compatíveis; evitar enviar opções fora do perfil.
+Usar as preferências atualizadas para conduzir qualificação e apresentar opções aderentes; quando houver opção compatível, conduzir para visita presencial na Fama sem pressionar avanço artificial.
 
 ## Histórico de interações
