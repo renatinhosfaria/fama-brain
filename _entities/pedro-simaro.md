@@ -21,6 +21,7 @@ tags:
   - reno
   - diagnostico
   - financiamento
+  - clt
   - compra-individual
   - union-vista
   - em-atendimento
@@ -29,25 +30,25 @@ status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
   Union Vista, apartamento no Grand Ville/Zona Leste. Busca para
-  morar/investimento planejado, prefere entrega mais distante e pretende comprar
-  financiado. Compra seria somente no próprio nome, sem composição de renda.
+  morar/investimento planejado, prefere entrega mais distante, pretende comprar
+  financiado, sozinho, e trabalha como CLT.
 objecoes_ativas: []
 proximo_passo: >-
-  Perguntar como comprova renda hoje (CLT, autônomo, empresário etc.) para
-  avançar diagnóstico de viabilidade.
+  Perguntar faixa de entrada disponível ou planejada para avançar diagnóstico de
+  viabilidade sem prometer crédito.
 ---
 [[pedro-simaro]] [[reno-hub]]
 
 ## Resumo
-Lead de Facebook Ads interessado no Union Vista. Cliente declarou compra financiada e individual, sem composição de renda.
+Lead de Facebook Ads interessado no Union Vista. Cliente declarou compra financiada e individual, com comprovação de renda CLT.
 
 ## Interesse atual
-Union Vista, apartamento no Grand Ville/Zona Leste. Busca para morar/investimento planejado, prefere entrega mais distante e pretende comprar financiado. Compra seria somente no próprio nome, sem composição de renda.
+Union Vista, apartamento no Grand Ville/Zona Leste. Busca para morar/investimento planejado, prefere entrega mais distante, pretende comprar financiado, sozinho, e trabalha como CLT.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Perguntar como comprova renda hoje (CLT, autônomo, empresário etc.) para avançar diagnóstico de viabilidade.
+Perguntar faixa de entrada disponível ou planejada para avançar diagnóstico de viabilidade sem prometer crédito.
 
 ## Histórico de interações
