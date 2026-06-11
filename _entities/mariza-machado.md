@@ -9,9 +9,8 @@ external_ids:
   client_id: '11684'
   broker_id: '35'
   empreendimento_id: '22'
-  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
+  regiao: Zona Leste
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -30,41 +29,29 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - em-atendimento
   - first-contact-responded
+  - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
-interesse_atual: >-
-  Apartamento 2 quartos; cliente comparou opções no Grand Ville/Gran Ville,
-  aceita avaliar imóveis perto ou um pouco acima de R$ 240 mil se houver
-  negociação à vista; evita térreo; interesse associado ao Union Vista e
-  curadoria de alternativas.
-objecoes_ativas:
-  - Não quer apartamento térreo.
-  - >-
-    Compra à vista depende do recebimento da venda de um terreno; prazo estimado
-    anterior de até 60 dias.
-  - Quer avaliar opções pelo WhatsApp antes de combinar visita.
+origem: Facebook Ads
+interesse_atual: Interesse associado ao empreendimento Union Vista.
+objecoes_ativas: []
 proximo_passo: >-
-  Aguardar a cliente enviar prints/nomes das opções que viu para conferência;
-  depois curar alternativas coerentes e conduzir para visita apenas dos imóveis
-  com aderência real.
+  Manter atendimento consultivo no WhatsApp e conduzir para o próximo passo
+  comercial combinado, preservando CRM como fonte de verdade.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Atendimento Reno em andamento. Cliente respondeu ao primeiro contato e vem refinando busca por apartamento em Uberlândia, com foco em 2 quartos, não térreo, preferência por Grand Ville/Gran Ville e entrega curta/pronto quando possível. Inbound mais recente foi confirmação/agradecimento: “Ok, obrigada!”. [[reno-hub]]
+Atendimento Reno em curso. Em 2026-06-11, houve resposta inbound curta pelo WhatsApp confirmando combinação anterior; persistência operacional registrada no CRM/FamaChat sem envio automático ao cliente por este hook.
 
 ## Interesse atual
-Apartamento 2 quartos; cliente comparou opções no Grand Ville/Gran Ville, aceita avaliar imóveis perto ou um pouco acima de R$ 240 mil se houver negociação à vista; evita térreo; interesse associado ao Union Vista e curadoria de alternativas.
+Interesse associado ao empreendimento Union Vista.
 
 ## Objeções ativas
-- Não quer apartamento térreo.
-- Compra à vista depende do recebimento da venda de um terreno; prazo estimado anterior de até 60 dias.
-- Quer avaliar opções pelo WhatsApp antes de combinar visita.
+
 
 ## Próximo passo
-Aguardar a cliente enviar prints/nomes das opções que viu para conferência; depois curar alternativas coerentes e conduzir para visita apenas dos imóveis com aderência real.
+Manter atendimento consultivo no WhatsApp e conduzir para o próximo passo comercial combinado, preservando CRM como fonte de verdade.
 
 ## Histórico de interações
