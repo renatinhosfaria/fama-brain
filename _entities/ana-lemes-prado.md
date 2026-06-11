@@ -97,3 +97,11 @@ Retomar por WhatsApp em 15/06/2026 à tarde para pré-análise. A condução dev
 
 ## Interpretação adotada
 Havia duas entidades para o mesmo cliente: esta nota nominal e `cliente-11652-ana-lemes-prado`. Esta nota foi preservada como canônica por ter nome humano, backlinks e histórico mais completo. A nota por ID foi marcada como superseded e mantida como ponte para rastreabilidade.
+
+
+## Interação — 2026-06-10 — WhatsApp
+Cliente confirmou o combinado de retomar por mensagem na segunda-feira à tarde.
+
+Ação operacional: manter follow-up/resgate programado para 2026-06-15 às 14:00. Nenhum agendamento presencial criado neste momento.
+
+Próximo passo: na segunda à tarde, retomar por WhatsApp com simulação/viabilidade MCMV e, se houver abertura, voltar a conduzir para visita presencial.
