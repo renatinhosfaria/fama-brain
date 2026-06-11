@@ -63,3 +63,7 @@ Conduzir pelo atendimento normal para simulação/análise real de crédito e, s
 Cliente informou que trabalha o dia todo e que durante a semana sua disponibilidade é após as 18h.
 
 Condução: oportunidade clara para avançar para visita/atendimento presencial. Propor horário objetivo após 18h, preferencialmente 18h30, e confirmar a data antes de registrar agendamento no FamaChat.
+
+
+## Interação — 2026-06-11 — WhatsApp
+Cliente informou que amanhã não consegue, mas consegue na segunda-feira. Como a disponibilidade declarada é após as 18h, próximo passo é confirmar segunda-feira, 15/06/2026, às 18h30 para visita/atendimento presencial na Fama antes de criar o agendamento no FamaChat.
