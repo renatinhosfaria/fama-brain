@@ -8,7 +8,7 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
-  fonte: WhatsApp
+  empreendimento_id: '22'
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -27,44 +27,38 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - em-atendimento
-  - union-vista
+  - qualificacao
+  - cliente-11684
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Apartamento 2 quartos, pronto para morar, mais novo/seminovo, compra à vista.
-  Teto base cerca de R$240 mil, mas cliente aceita considerar oportunidades um
-  pouco acima se houver chance real de negociação à vista. Condomínio desejado
-  até R$350/mês. Bairros aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio
-  Pereira e Tibery.
+  Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como
+  faixa confortável, com abertura para analisar opção um pouco acima se houver
+  boa negociação à vista.
 objecoes_ativas:
-  - Não tem interesse em Monte Hebron ou Chácaras Tubalina.
-  - Não aceita lançamento/em construção; precisa estar pronto para morar.
-  - Prefere condomínio até R$350/mês.
-  - >-
-    Pode considerar acima de R$240 mil somente se houver chance real de
-    negociação à vista.
+  - Não quer Monte Hebron nem Chácaras Tubalina.
+  - Condomínio precisa ficar em torno de até R$350/mês.
+  - Prédio simples ou sem elevador só faz sentido se a localização for boa.
 proximo_passo: >-
-  Conduzir para visita/atendimento presencial na Fama para seleção de
-  oportunidades usadas/avulsas e negociação à vista; evitar opções fora dos
-  bairros ou muito acima do teto.
+  Selecionar opções aderentes ao perfil, priorizando chance real de negociação à
+  vista; quando houver alternativa compatível, conduzir para visita presencial
+  na Fama como próximo passo comercial.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Primeira resposta ao contato já registrada no CRM/FamaChat; resposta inbound posterior em 2026-06-11T14:34Z confirmou que aceita prédio mais simples ou sem elevador se a localização for boa. Contexto curado do CRM: busca apartamento 2 quartos, pronto para morar, até cerca de R$ 240.000, compra à vista; bairros aceitos incluem Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Recusou Monte Hebron e Chácaras Tubalina; demonstrou preferência por apartamento mais novo e condomínio mais em conta.
+Cliente em atendimento com o Reno. Perfil curado: compra à vista, apartamento de 2 quartos, pronto para morar, preferência por imóvel mais novo/seminovo, condomínio até cerca de R$350, bairros Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Cliente autorizou considerar oportunidades um pouco acima de R$240 mil quando houver chance real de negociação por pagamento à vista.
 
 ## Interesse atual
-Apartamento 2 quartos, pronto para morar, mais novo/seminovo, compra à vista. Teto base cerca de R$240 mil, mas cliente aceita considerar oportunidades um pouco acima se houver chance real de negociação à vista. Condomínio desejado até R$350/mês. Bairros aceitos: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery.
+Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como faixa confortável, com abertura para analisar opção um pouco acima se houver boa negociação à vista.
 
 ## Objeções ativas
-- Não tem interesse em Monte Hebron ou Chácaras Tubalina.
-- Não aceita lançamento/em construção; precisa estar pronto para morar.
-- Prefere condomínio até R$350/mês.
-- Pode considerar acima de R$240 mil somente se houver chance real de negociação à vista.
+- Não quer Monte Hebron nem Chácaras Tubalina.
+- Condomínio precisa ficar em torno de até R$350/mês.
+- Prédio simples ou sem elevador só faz sentido se a localização for boa.
 
 ## Próximo passo
-Conduzir para visita/atendimento presencial na Fama para seleção de oportunidades usadas/avulsas e negociação à vista; evitar opções fora dos bairros ou muito acima do teto.
+Selecionar opções aderentes ao perfil, priorizando chance real de negociação à vista; quando houver alternativa compatível, conduzir para visita presencial na Fama como próximo passo comercial.
 
 ## Histórico de interações
