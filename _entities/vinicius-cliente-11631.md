@@ -1,13 +1,24 @@
 ---
+schema_version: 1
 type: entity
+status: active
+created: '2026-06-10'
+updated: '2026-06-11'
+source: agent-generated
+author_agent: brain
 name: vinicius - cliente 11631
 entity_type: lead
+aliases:
+  - vinicius-cliente-11631
+  - Vinicius cliente 11631
 external_ids:
   client_id: '11631'
   broker_id: '35'
   empreendimento_id: '67'
   fonte: Facebook Ads
   regiao: Shopping Park / Zona Sul
+mentions_entity:
+  - reno-hub
 related:
   - reno-hub
   - >-
@@ -16,11 +27,7 @@ related:
     2026-06-10-vinicius-cliente-11631-cliente-informou-que-qualquer-localizacao-serve-para-a-busca-de-moradia-indicando-abertura-para-opcoes-por-custo-beneficio-e-viabilidade
   - >-
     2026-06-10-vinicius-cliente-11631-cliente-confirmou-que-apartamento-de-2-quartos-atende-para-moradia-localizacao-e-flexivel-abrindo-caminho-para-selecao-por-custo-beneficio-e-viabilidade
-schema_version: 1
-status: active
-created: '2026-06-10'
-updated: '2026-06-10'
-source: agent-generated
+confidence: 0.94
 tags:
   - reno
   - atendimento
@@ -30,23 +37,20 @@ tags:
   - localizacao-flexivel
   - crm-verified
   - curado-brain
-author_agent: brain
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Moradia própria; ainda sem região/bairro, prazo, decisão e viabilidade
-  definidos.
-objecoes_ativas: []
+  Moradia própria; localização flexível; apartamento de 2 quartos atende.
+  Interesse inicial associado a Place+Arbi / Shopping Park, mas a abertura de
+  localização permite comparar opções por custo-benefício.
+objecoes_ativas:
+  - Ainda não há faixa de parcela confortável registrada.
+  - Ainda não há confirmação explícita de compra via financiamento.
+  - Ainda faltam dados de renda/entrada para qualificação de viabilidade.
 proximo_passo: >-
-  Perguntar se já tem região ou bairro em mente para morar e avançar no
-  diagnóstico consultivo.
-aliases:
-  - vinicius-cliente-11631
-  - Vinicius cliente 11631
-mentions_entity:
-  - reno-hub
-confidence: 0.94
-verified_by: null
+  Perguntar se a compra seria por financiamento e qual faixa de parcela
+  confortável, mantendo a conversa consultiva e sem prometer aprovação.
+owner: brain
 ---
 [[reno-hub]] [[2026-06-10-vinicius-cliente-11631-cliente-respondeu-ao-primeiro-contato-com-morar-crm-atualizado-para-em-atendimento-repescagem-desativada]] [[2026-06-10-vinicius-cliente-11631-cliente-informou-que-qualquer-localizacao-serve-para-a-busca-de-moradia-indicando-abertura-para-opcoes-por-custo-beneficio-e-viabilidade]] [[2026-06-10-vinicius-cliente-11631-cliente-confirmou-que-apartamento-de-2-quartos-atende-para-moradia-localizacao-e-flexivel-abrindo-caminho-para-selecao-por-custo-beneficio-e-viabilidade]]
 
