@@ -9,9 +9,8 @@ external_ids:
   client_id: '11680'
   broker_id: '35'
   empreendimento_id: '161'
-  empreendimento_slug: union-vereda
   fonte: Facebook Ads
-  regiao: Oeste
+  regiao: Jaraguá
 mentions_entity:
   - reno-hub
 related:
@@ -28,34 +27,31 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - midia-imovel
+  - union-vereda
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Fotos da planta e fotos do apartamento do Union Vereda. Pedido indica
-  interesse por material visual do empreendimento/unidade antes do próximo
-  avanço comercial.
+  Union Vereda; avaliar planta de 2 quartos com suíte e condições de
+  entrada/financiamento antes de conduzir para visita presencial.
 objecoes_ativas: []
 proximo_passo: >-
-  No fluxo cliente-facing, localizar assets adequados do Union Vereda e
-  responder pelo WhatsApp com mídia nativa quando disponível. Se faltar
-  planta/foto validada, registrar lacuna operacional e escalar; não prometer
-  disponibilidade sem fonte. Esta rotina silenciosa apenas persistiu o inbound e
-  não enviou mensagem ao cliente.
+  Na próxima resposta cliente-facing, validar se a planta/fotos atendem ao que
+  ele procura; se sim, avançar para diagnóstico de entrada/financiamento e
+  propor visita presencial quando fizer sentido.
 ---
 [[francisco-bruno]] [[reno-hub]]
 
 ## Resumo
-Cliente elegível do Reno (broker_id=35), status atual Em Atendimento. Origem Facebook Ads. Interesse ligado ao Union Vereda, no bairro Jaraguá. Inbound WhatsApp de 2026-06-11: pediu foto da planta e do apartamento.
+Cliente de Facebook Ads interessado no Union Vereda/Jaraguá. Primeiro contato e repescagem já foram respondidos; conversa está em atendimento. Histórico recente: pediu planta/fotos, recebeu material interno disponível e respondeu de forma breve confirmando recebimento/continuidade.
 
 ## Interesse atual
-Fotos da planta e fotos do apartamento do Union Vereda. Pedido indica interesse por material visual do empreendimento/unidade antes do próximo avanço comercial.
+Union Vereda; avaliar planta de 2 quartos com suíte e condições de entrada/financiamento antes de conduzir para visita presencial.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-No fluxo cliente-facing, localizar assets adequados do Union Vereda e responder pelo WhatsApp com mídia nativa quando disponível. Se faltar planta/foto validada, registrar lacuna operacional e escalar; não prometer disponibilidade sem fonte. Esta rotina silenciosa apenas persistiu o inbound e não enviou mensagem ao cliente.
+Na próxima resposta cliente-facing, validar se a planta/fotos atendem ao que ele procura; se sim, avançar para diagnóstico de entrada/financiamento e propor visita presencial quando fizer sentido.
 
 ## Histórico de interações
