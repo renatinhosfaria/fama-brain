@@ -19,35 +19,36 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
-  - qualificacao
+  - diagnostico
+  - financiamento
+  - moradia
+  - investimento-planejado
   - union-vista
+  - em-atendimento
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vista, Grand Ville. Cliente confirmou que a região/empreendimento
-  combina, informou finalidade de moradia e sinalizou preferência por
-  investimento/compra planejada com entrega mais distante. Prazo do
-  empreendimento (Jul/2027) tende a aderir ao perfil declarado.
+  Union Vista, apartamento no Grand Ville/Zona Leste. Finalidade inicial
+  declarada: morar; cliente também descreveu como investimento planejado e
+  prefere entrega mais distante. Forma de compra pretendida: financiamento.
 objecoes_ativas: []
 proximo_passo: >-
-  Seguir diagnóstico consultivo de viabilidade: forma de compra, financiamento,
-  organização de entrada e composição financeira antes de conduzir para visita
-  presencial quando fizer sentido.
+  Perguntar se compraria sozinho ou compondo renda com alguém para avançar
+  diagnóstico de viabilidade.
 ---
 [[pedro-simaro]] [[reno-hub]]
 
 ## Resumo
-Cliente elegível do Reno identificado no CRM (broker_id=35), em atendimento pelo WhatsApp após primeiro contato sobre o Union Vista. O CRM permanece como fonte operacional; esta timeline resume apenas contexto curado do atendimento.
+Lead de Facebook Ads interessado no Union Vista. Cliente declarou busca para morar, prefere entrega mais distante e confirmou intenção de compra financiada.
 
 ## Interesse atual
-Union Vista, Grand Ville. Cliente confirmou que a região/empreendimento combina, informou finalidade de moradia e sinalizou preferência por investimento/compra planejada com entrega mais distante. Prazo do empreendimento (Jul/2027) tende a aderir ao perfil declarado.
+Union Vista, apartamento no Grand Ville/Zona Leste. Finalidade inicial declarada: morar; cliente também descreveu como investimento planejado e prefere entrega mais distante. Forma de compra pretendida: financiamento.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Seguir diagnóstico consultivo de viabilidade: forma de compra, financiamento, organização de entrada e composição financeira antes de conduzir para visita presencial quando fizer sentido.
+Perguntar se compraria sozinho ou compondo renda com alguém para avançar diagnóstico de viabilidade.
 
 ## Histórico de interações
