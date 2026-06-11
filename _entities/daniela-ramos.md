@@ -8,7 +8,7 @@ external_ids:
   empreendimento_id: '22'
   empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: 'Grand Ville / Zona Leste, Uberlândia'
+  regiao: Grand Ville / Zona Leste
 related:
   - '[[daniela-ramos]]'
   - '[[reno-hub]]'
@@ -25,42 +25,36 @@ tags:
   - viabilidade
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Union Vista para moradia; avaliação inicial de viabilidade financeira com
-  renda individual de R$ 3.500,00 e FGTS aproximado de R$ 6.000,00.
+  Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando
+  viabilidade com renda individual, FGTS e entrada.
 objecoes_ativas:
-  - 'Dúvida de viabilidade financeira com renda individual de R$ 3.500,00'
   - >-
-    FGTS disponível aproximado de R$ 6.000,00 pode ser insuficiente isoladamente
-    como entrada
+    Viabilidade financeira ainda em diagnóstico: renda individual de R$ 3.500,00
+    e entrada/FGTS aproximados de R$ 26.000,00 precisam de simulação
+    real/análise de crédito.
+  - >-
+    Confirmar se há parcelas/comprometimentos no nome e possibilidade de
+    composição de renda ou fluxo/parcelamento durante obra.
 proximo_passo: >-
-  Confirmar se há algum valor adicional de entrada além do FGTS ou possibilidade
-  de fluxo/parcelamento durante a obra; manter linguagem segura, sem prometer
-  aprovação, e conduzir para atendimento presencial/visita se houver sinal
-  mínimo de viabilidade.
+  Retomar pelo atendimento normal confirmando se há parcelas/comprometimentos e
+  conduzir para simulação/análise de crédito; se o cenário fizer sentido, propor
+  visita presencial na Fama.
 ---
 [[daniela-ramos]] [[reno-hub]]
 
 ## Resumo
-Cliente interessada no Union Vista (Grand Ville) para moradia. Já perguntou sobre viabilidade com renda individual de R$ 3.500,00 e informou que possui cerca de R$ 6.000,00 de FGTS. Condução deve seguir consultiva, sem promessa de crédito/aprovação: avaliar entrada/FGTS/fluxo e composição de renda antes de avançar para visita/atendimento presencial.
+Cliente do Reno identificado no CRM (broker_id=35), origem Facebook Ads, interesse no Union Vista/Grand Ville. Já respondeu ao primeiro contato e está em Em Atendimento. Conversa atual está em diagnóstico de viabilidade: informou renda individual de R$ 3.500,00, FGTS aproximado de R$ 6.000,00 e agora cerca de R$ 20.000,00 guardados para entrada, totalizando potencial aproximado de R$ 26.000,00 entre entrada/FGTS. Não prometer aprovação; conduzir para análise/simulação real e visita presencial quando fizer sentido.
 
 ## Interesse atual
-Union Vista para moradia; avaliação inicial de viabilidade financeira com renda individual de R$ 3.500,00 e FGTS aproximado de R$ 6.000,00.
+Union Vista, Grand Ville, Uberlândia. Busca imóvel para morar; avaliando viabilidade com renda individual, FGTS e entrada.
 
 ## Objeções ativas
-- Dúvida de viabilidade financeira com renda individual de R$ 3.500,00
-- FGTS disponível aproximado de R$ 6.000,00 pode ser insuficiente isoladamente como entrada
+- Viabilidade financeira ainda em diagnóstico: renda individual de R$ 3.500,00 e entrada/FGTS aproximados de R$ 26.000,00 precisam de simulação real/análise de crédito.
+- Confirmar se há parcelas/comprometimentos no nome e possibilidade de composição de renda ou fluxo/parcelamento durante obra.
 
 ## Próximo passo
-Confirmar se há algum valor adicional de entrada além do FGTS ou possibilidade de fluxo/parcelamento durante a obra; manter linguagem segura, sem prometer aprovação, e conduzir para atendimento presencial/visita se houver sinal mínimo de viabilidade.
+Retomar pelo atendimento normal confirmando se há parcelas/comprometimentos e conduzir para simulação/análise de crédito; se o cenário fizer sentido, propor visita presencial na Fama.
 
 ## Histórico de interações
-
-
-## Interação — 2026-06-11 — WhatsApp
-Cliente informou ter aproximadamente R$ 20.000,00 guardados além de cerca de R$ 6.000,00 de FGTS.
-
-Leitura financeira inicial: entrada/FGTS potencial de ~R$ 26.000,00. Sobre a menor unidade do Union Vista registrada no CRM (R$ 292.400,00), isso representa cerca de 8,89%, com saldo estimado de R$ 266.400,00 antes de condições finais. Cenário ainda depende de análise de crédito, banco, fluxo da obra e comprometimentos existentes, mas melhorou e merece simulação real.
-
-Próximo passo: confirmar se há parcelas/financiamentos/empréstimos no nome e conduzir para atendimento presencial na Fama para avaliação segura.
