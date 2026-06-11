@@ -65,3 +65,9 @@ Próximo passo: obter dados mínimos de renda/entrada/FGTS para noção inicial 
 Cliente informou que a renda de R$ 3.500,00 é somente dela/individual.
 
 Interpretação: avançar diagnóstico financeiro inicial sem prometer aprovação. Próximo dado necessário: existência de entrada e/ou FGTS para compor a compra e estimar viabilidade do Union Vista.
+
+
+## Interação — 2026-06-11 — WhatsApp
+Cliente informou que possui aproximadamente R$ 6.000,00 de FGTS.
+
+Interpretação: FGTS ajuda na composição, mas isoladamente tende a deixar o cenário apertado para Union Vista. Próximo passo: confirmar se existe entrada adicional/reserva ou possibilidade de fluxo durante a obra. Manter condução consultiva, sem promessa de aprovação.
