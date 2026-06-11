@@ -6,8 +6,9 @@ external_ids:
   client_id: '11686'
   broker_id: '35'
   empreendimento_id: '22'
+  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville
+  regiao: Grand Ville / Zona Leste
 related:
   - '[[pedro-simaro]]'
   - '[[reno-hub]]'
@@ -18,32 +19,36 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
-  - qualificacao
+  - diagnostico
   - moradia
-  - first-contact-responded
+  - investimento-planejado
+  - union-vista
+  - em-atendimento
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
-interesse_atual: 'Procura imóvel para morar. Interesse contextual no Union Vista, Grand Ville.'
+origem: Facebook Ads
+interesse_atual: >-
+  Union Vista, apartamento no Grand Ville/Zona Leste. Finalidade inicial
+  declarada: morar; cliente também descreveu como investimento e prefere entrega
+  mais distante, indicando compra planejada/patrimonial. Prazo do Union Vista
+  tende a aderir.
 objecoes_ativas: []
 proximo_passo: >-
-  Continuar diagnóstico curto: validar se prazo/entrega do Union Vista atende a
-  necessidade e seguir para composição/viabilidade antes de propor visita
-  presencial.
+  Avançar para viabilidade financeira: confirmar se pretende comprar financiado
+  e depois entender entrada/renda/composição, sem prometer crédito.
 ---
 [[pedro-simaro]] [[reno-hub]]
 
 ## Resumo
-Lead do Reno identificado no CRM como broker_id=35. Primeiro contato sobre Union Vista/Grand Ville já tinha resposta registrada; novo inbound informou finalidade da busca: moradia.
+Lead de Facebook Ads interessado no Union Vista. Cliente declarou busca para morar e informou que prefere entrega mais distante, tratando a compra como investimento planejado.
 
 ## Interesse atual
-Procura imóvel para morar. Interesse contextual no Union Vista, Grand Ville.
+Union Vista, apartamento no Grand Ville/Zona Leste. Finalidade inicial declarada: morar; cliente também descreveu como investimento e prefere entrega mais distante, indicando compra planejada/patrimonial. Prazo do Union Vista tende a aderir.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Continuar diagnóstico curto: validar se prazo/entrega do Union Vista atende a necessidade e seguir para composição/viabilidade antes de propor visita presencial.
+Avançar para viabilidade financeira: confirmar se pretende comprar financiado e depois entender entrada/renda/composição, sem prometer crédito.
 
 ## Histórico de interações
