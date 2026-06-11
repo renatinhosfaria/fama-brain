@@ -1,17 +1,5 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-06-11'
-updated: '2026-06-11'
-source: agent-generated
-tags:
-  - reno
-  - atendimento
-  - cliente
-  - place-arbi
-  - diagnostico
-author_agent: reno
 name: Karine Alves - cliente 11682
 entity_type: reno-atendimento
 external_ids:
@@ -25,6 +13,19 @@ related:
   - 'empreendimento:67'
 confidence: 1
 verified_by: null
+schema_version: 1
+status: active
+created: '2026-06-11'
+updated: '2026-06-11'
+source: agent-generated
+tags:
+  - reno
+  - atendimento
+  - cliente
+  - place-arbi
+  - diagnostico
+  - prazo-ok
+author_agent: reno
 ---
 # Atendimento Reno — Karine Alves
 
@@ -47,12 +48,14 @@ Ação operacional: status atualizado de Não Respondeu para Em Atendimento; rep
 
 ### 2026-06-11 — Diagnóstico inicial
 Cliente informou que busca o imóvel para morar.
+Reno validou que o Place+Arbi é lançamento com entrega prevista para jun/2027.
+Cliente respondeu que o prazo funciona.
 
 ## Diagnóstico pendente
-- Validar se prazo do Place+Arbi (lançamento, entrega prevista em jun/2027) atende.
-- Entender composição familiar/necessidade de quartos.
+- Validar se a planta de 2 quartos atende.
+- Entender composição/necessidade de moradia sem parecer interrogatório.
 - Entender viabilidade e forma de compra antes de conduzir visita.
 - Conduzir para visita presencial na Fama quando fizer sentido.
 
 ## Próximo passo recomendado
-Perguntar de forma curta se o prazo de entrega do Place+Arbi atende ou se precisa de algo mais pronto.
+Perguntar de forma curta se uma planta de 2 quartos atende para o dia a dia da cliente.
