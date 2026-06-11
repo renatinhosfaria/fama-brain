@@ -11,7 +11,7 @@ external_ids:
   empreendimento_id: '161'
   empreendimento_slug: union-vereda
   fonte: Facebook Ads
-  regiao: Jaraguá / Uberlândia
+  regiao: 'Jaraguá, Uberlândia - Oeste'
 mentions_entity:
   - reno-hub
 related:
@@ -27,31 +27,36 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - em-atendimento
+  - qualificacao
   - union-vereda
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vereda, Jaraguá. Cliente recebeu material/planta e sinalizou aderência:
-  “Atende bem”.
-objecoes_ativas: []
+  Union Vereda, Jaraguá. Interesse concentrado em entender planta,
+  condomínio/áreas comuns e torre antes de avançar.
+objecoes_ativas:
+  - >-
+    Precisa visualizar planta, condomínio e torre antes de decidir se o imóvel
+    está no seu agrado.
 proximo_passo: >-
-  Levantar forma de compra/financiamento/FGTS e disponibilidade; se houver
-  viabilidade e interesse, conduzir para visita presencial na Fama.
+  No atendimento cliente-facing, apresentar material validado de
+  planta/condomínio/torre como mídia nativa quando disponível; depois confirmar
+  aderência, levantar forma de compra/financiamento/FGTS e conduzir para visita
+  presencial na Fama quando fizer sentido.
 ---
 [[francisco-bruno]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno para Union Vereda. Primeira resposta ao primeiro contato já estava registrada; repescagem está encerrada por client_replied. Inbound atual reforça aderência ao produto/planta.
+Cliente em atendimento pelo Reno para Union Vereda. Primeira resposta ao primeiro contato já estava registrada; repescagem está encerrada por client_replied. Inbound mais recente: cliente quer ver planta, condomínio e torre para avaliar se o produto está no seu agrado.
 
 ## Interesse atual
-Union Vereda, Jaraguá. Cliente recebeu material/planta e sinalizou aderência: “Atende bem”.
+Union Vereda, Jaraguá. Interesse concentrado em entender planta, condomínio/áreas comuns e torre antes de avançar.
 
 ## Objeções ativas
-
+- Precisa visualizar planta, condomínio e torre antes de decidir se o imóvel está no seu agrado.
 
 ## Próximo passo
-Levantar forma de compra/financiamento/FGTS e disponibilidade; se houver viabilidade e interesse, conduzir para visita presencial na Fama.
+No atendimento cliente-facing, apresentar material validado de planta/condomínio/torre como mídia nativa quando disponível; depois confirmar aderência, levantar forma de compra/financiamento/FGTS e conduzir para visita presencial na Fama quando fizer sentido.
 
 ## Histórico de interações
