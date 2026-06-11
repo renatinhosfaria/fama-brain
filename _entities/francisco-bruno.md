@@ -9,9 +9,8 @@ external_ids:
   client_id: '11680'
   broker_id: '35'
   empreendimento_id: '161'
-  empreendimento_slug: union-vereda
   fonte: Facebook Ads
-  regiao: Jaraguá / Avenida Aspirante Mega
+  regiao: Jaraguá / Oeste
 mentions_entity:
   - reno-hub
 related:
@@ -27,34 +26,33 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - first-contact-response
+  - qualificacao
   - union-vereda
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Fotos/planta e confirmação do empreendimento Union Vereda, localizado na
-  Avenida Aspirante Mega.
+  Union Vereda, Jaraguá. Perguntou se a varanda vem com churrasqueira e
+  confirmou interesse no andamento da conversa sobre condições/financiamento.
 objecoes_ativas: []
 proximo_passo: >-
-  Atendimento cliente-facing deve retomar pelo WhatsApp sem mencionar rotina
-  interna: confirmar de forma simples que é o Union Vereda na Avenida Aspirante
-  Mega, enviar fotos/planta como mídia nativa ou asset validado quando for
-  responder, e seguir diagnóstico consultivo rumo a visita. Esta rotina
-  silenciosa não enviou mensagem.
+  No atendimento cliente-facing, responder com cautela: CRM/material indica
+  varanda gourmet e lazer com churrasqueira/espaço grill; confirmar detalhe de
+  entrega/ponto na varanda por unidade antes de afirmar. Avançar para condições
+  e viabilidade.
 ---
 [[francisco-bruno]] [[reno-hub]]
 
 ## Resumo
-Cliente elegível do Reno (CRM broker_id=35) respondeu pelo WhatsApp. Primeiro inbound anterior já havia registrado resposta ao primeiro contato e colocado o atendimento em Em Atendimento; nova mensagem contextualizou que o imóvel citado é o da Avenida Aspirante Mega, coerente com o Union Vereda no CRM.
+Cliente identificado no CRM como elegível do Reno e em atendimento. Primeiro contato já constava como respondido; inbound atual trouxe dúvida sobre a varanda/churrasqueira do Union Vereda.
 
 ## Interesse atual
-Fotos/planta e confirmação do empreendimento Union Vereda, localizado na Avenida Aspirante Mega.
+Union Vereda, Jaraguá. Perguntou se a varanda vem com churrasqueira e confirmou interesse no andamento da conversa sobre condições/financiamento.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Atendimento cliente-facing deve retomar pelo WhatsApp sem mencionar rotina interna: confirmar de forma simples que é o Union Vereda na Avenida Aspirante Mega, enviar fotos/planta como mídia nativa ou asset validado quando for responder, e seguir diagnóstico consultivo rumo a visita. Esta rotina silenciosa não enviou mensagem.
+No atendimento cliente-facing, responder com cautela: CRM/material indica varanda gourmet e lazer com churrasqueira/espaço grill; confirmar detalhe de entrega/ponto na varanda por unidade antes de afirmar. Avançar para condições e viabilidade.
 
 ## Histórico de interações
