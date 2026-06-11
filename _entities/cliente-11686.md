@@ -34,7 +34,8 @@ interesse_atual: >-
 objecoes_ativas: []
 proximo_passo: >-
   Fluxo cliente-facing deve continuar a qualificação com uma pergunta por vez;
-  esta rotina silenciosa não enviou resposta ao cliente.
+  rotina silenciosa não enviou resposta. Primeiro contato já estava marcado como
+  respondido anteriormente nesta conversa.
 ---
 [[cliente-11686]] [[reno-hub]]
 
@@ -48,6 +49,6 @@ Qualificação inicial em andamento; resposta indica vínculo/regime CLT no diag
 
 
 ## Próximo passo
-Fluxo cliente-facing deve continuar a qualificação com uma pergunta por vez; esta rotina silenciosa não enviou resposta ao cliente.
+Fluxo cliente-facing deve continuar a qualificação com uma pergunta por vez; rotina silenciosa não enviou resposta. Primeiro contato já estava marcado como respondido anteriormente nesta conversa.
 
 ## Histórico de interações
