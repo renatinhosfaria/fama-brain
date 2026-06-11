@@ -1,20 +1,5 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-06-11'
-updated: '2026-06-11'
-source: agent-generated
-tags:
-  - reno
-  - atendimento
-  - primeiro-contato
-  - facebook-ads
-  - union-vereda
-  - nao-respondeu
-  - crm-verified
-  - curado-brain
-author_agent: brain
 name: Francisco Bruno
 entity_type: lead
 aliases:
@@ -24,32 +9,47 @@ external_ids:
   client_id: '11680'
   broker_id: '35'
   empreendimento_id: '161'
-  fonte: Facebook Ads
-  first_contact_id: '71'
+  fonte: whatsapp
+  regiao: Oeste
 mentions_entity:
   - reno-hub
 related:
+  - '[[francisco-bruno]]'
   - '[[reno-hub]]'
-  - '[[2026-06-11-primeiro-contato-enviado-francisco-bruno]]'
 confidence: 0.94
 verified_by: null
+schema_version: 1
+status: active
+created: '2026-06-11'
+updated: '2026-06-11'
+source: agent-generated
+tags:
+  - reno
+  - whatsapp-inbound
+  - first-contact-responded
+  - asset-request
+author_agent: reno
+status_comercial: Em Atendimento
+origem: WhatsApp inbound
+interesse_atual: Fotos e planta do Union Vereda.
+objecoes_ativas: []
+proximo_passo: >-
+  Atendimento deve responder no WhatsApp com fotos/planta como mídia nativa ou
+  asset validado, e depois retomar diagnóstico consultivo para avançar ao
+  próximo passo comercial. Nesta rotina silenciosa nenhum WhatsApp foi enviado.
 ---
-# Francisco Bruno
+[[francisco-bruno]] [[reno-hub]]
 
-## Resumo curado
-Lead de Facebook Ads atendido pelo Reno. Primeiro contato WhatsApp enviado em 2026-06-11 com contexto de interesse em Union Vereda/Jaraguá; CRM verificado como `Não Respondeu`, broker Reno e repescagem inicializada.
+## Resumo
+Cliente respondeu ao primeiro contato do Reno pelo WhatsApp pedindo fotos e planta do empreendimento de interesse. CRM validado como broker_id=35; status operacional passou de Não Respondeu para Em Atendimento; repescagem encerrada por resposta do cliente.
 
-## Classificação
-- Tipo: lead / atendimento Reno.
-- Tema: primeiro contato e repescagem de lead MCMV.
-- Estado comercial verificado no CRM: Não Respondeu.
-- Prioridade de curadoria: normal; preservar como memória operacional recuperável sem criar tarefa imediata.
+## Interesse atual
+Fotos e planta do Union Vereda.
 
-## Contexto operacional
-- Interesse inicial: Union Vereda, Jaraguá.
-- Origem: Facebook Ads.
-- Próximo passo operacional sugerido pelo evento Reno: aguardar resposta; se responder, qualificar de forma consultiva e atualizar status conforme regra do CRM.
+## Objeções ativas
 
-## Links úteis
-- Hub: [[reno-hub]].
-- Evento fonte: [[2026-06-11-primeiro-contato-enviado-francisco-bruno]].
+
+## Próximo passo
+Atendimento deve responder no WhatsApp com fotos/planta como mídia nativa ou asset validado, e depois retomar diagnóstico consultivo para avançar ao próximo passo comercial. Nesta rotina silenciosa nenhum WhatsApp foi enviado.
+
+## Histórico de interações
