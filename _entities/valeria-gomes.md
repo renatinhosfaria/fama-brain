@@ -9,8 +9,9 @@ external_ids:
   client_id: '11681'
   broker_id: '35'
   empreendimento_id: '22'
+  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville
+  regiao: Grand Ville / Zona Leste
 mentions_entity:
   - reno-hub
 related:
@@ -25,29 +26,31 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp
-  - primeira-resposta
+  - whatsapp-inbound
+  - qualificacao
+  - first-contact-responded
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
-interesse_atual: 'Morar. Interesse original no Union Vista, no Grand Ville.'
+interesse_atual: 'Morar. Interesse associado ao Union Vista, no Grand Ville, conforme CRM.'
 objecoes_ativas: []
 proximo_passo: >-
-  Entender rotina/composição da moradia e necessidade principal para conduzir o
-  próximo passo comercial; priorizar visita presencial se fizer sentido.
+  Retomar qualificação consultiva no atendimento cliente-facing: entender
+  composição/rotina, prazo e viabilidade; avançar para visita presencial quando
+  fizer sentido.
 ---
 [[valeria-gomes]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao contato do Reno indicando que busca imóvel para morar.
+Cliente do escopo Reno respondeu ao WhatsApp inbound em 2026-06-11T15:44:16Z. Resposta útil: busca imóvel para morar. CRM permanece como fonte operacional; status atual Em Atendimento.
 
 ## Interesse atual
-Morar. Interesse original no Union Vista, no Grand Ville.
+Morar. Interesse associado ao Union Vista, no Grand Ville, conforme CRM.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Entender rotina/composição da moradia e necessidade principal para conduzir o próximo passo comercial; priorizar visita presencial se fizer sentido.
+Retomar qualificação consultiva no atendimento cliente-facing: entender composição/rotina, prazo e viabilidade; avançar para visita presencial quando fizer sentido.
 
 ## Histórico de interações
