@@ -1,16 +1,19 @@
 ---
-type: entity
-name: cliente-11652-ana-lemes-prado
+author_agent: brain
+confidence: 0.95
+created: '2026-06-10'
 entity_type: reno-atendimento
 external_ids:
   famachat_client_id: '11652'
-confidence: 0.95
-verified_by: null
+name: cliente-11652-ana-lemes-prado
+owner: brain
+related:
+  - '[[ana-lemes-prado]]'
+  - '[[reno-hub]]'
 schema_version: 1
-status: active
-created: '2026-06-10'
-updated: '2026-06-10'
 source: agent-generated
+status: superseded
+superseded_by: '[[ana-lemes-prado]]'
 tags:
   - reno
   - atendimento
@@ -18,32 +21,30 @@ tags:
   - sair-do-aluguel
   - financiamento
   - renda-familiar
-author_agent: reno
+  - duplicata-consolidada
+  - curado-brain
+type: entity
+updated: '2026-06-11'
+verified_by: null
 ---
-# Atendimento Reno — Ana Lemes Prado
+# Registro supersedido — cliente 11652 Ana Lemes Prado
 
-Relacionado a [[reno-hub]].
+Este registro foi preservado apenas como ponte de rastreabilidade. A entidade canônica consolidada é [[ana-lemes-prado]].
 
-## Identificação
-- Cliente CRM: 11652
-- Responsável CRM: Reno (`broker_id=35`)
-- Origem: Facebook Ads
-- Empreendimento de contexto: Union Vista — Grand Ville
-- Status CRM: Em Atendimento
+## Motivo da consolidação
+Havia duas notas de entidade para o mesmo cliente CRM 11652:
+- esta nota por identificador técnico (`cliente-11652-ana-lemes-prado`);
+- a nota nominal [[ana-lemes-prado]], com histórico mais completo e melhor valor de navegação.
 
-## Histórico curado
-- 2026-06-10 12:39 - Primeiro contato enviado via WhatsApp com contexto do Union Vista, perguntando se a busca era para morar ou investir.
-- 2026-06-10 14:58 - Cliente respondeu: "Morar".
-- 2026-06-10 15:05 - Cliente informou desejo forte de sair do aluguel, ansiedade pela demora e sonho de ter apartamento próprio.
-- 2026-06-10 15:09 - Cliente informou que quer começar do zero, sem entrada/FGTS informados até o momento.
-- 2026-06-10 - Cliente informou composição de renda: ela é autônoma e o marido é aposentado.
+A curadoria manteve a nota nominal como canônica por ser mais legível para recuperação semântica e por já concentrar o histórico operacional mais recente. O conteúdo desta nota foi incorporado ao resumo e histórico de [[ana-lemes-prado]].
 
-## Diagnóstico atual
-- Finalidade: moradia própria.
-- Momento: quer avançar assim que for possível; sente urgência por estar pagando aluguel.
-- Motivação: sair do aluguel e realizar o sonho do apartamento próprio.
-- Viabilidade: pretende começar do zero; renda familiar possivelmente composta por renda autônoma da cliente + aposentadoria do marido. Valor mensal aproximado ainda pendente.
-- Decisão: marido envolvido no núcleo familiar/financeiro; validar participação na decisão.
+## Conteúdo preservado
+- Cliente CRM: 11652.
+- Responsável CRM: Reno.
+- Origem: Facebook Ads.
+- Empreendimento de contexto: Union Vista / Grand Ville.
+- Status verificado no CRM durante a consolidação: Em Atendimento.
+- Diagnóstico preservado: moradia própria, desejo de sair do aluguel, renda familiar baixa, necessidade de análise MCMV/financiamento sem promessa de aprovação.
 
-## Próximo passo comercial
-Perguntar renda mensal aproximada dos dois juntos para orientar a viabilidade inicial de financiamento, sem prometer aprovação. Havendo sinal mínimo de viabilidade, conduzir para visita/atendimento presencial na Fama para simulação e documentos.
+## Encaminhamento
+Usar [[ana-lemes-prado]] para qualquer leitura futura, atualização de contexto ou consolidação de novas interações Reno sobre este atendimento.
