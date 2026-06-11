@@ -66,3 +66,12 @@ Em aberto; a próxima resposta deve indicar se vale aprofundar financiamento ou 
 
 ## Próximo passo
 Aguardar retorno ao step 1 e, se continuar em silêncio, seguir a régua oficial do próximo passo.
+
+## 2026-06-11 — Repescagem repair-only
+- Run time: 11/06 09:22 BRT
+- Strict due row existed, but the 18h BRT freshness gate blocked another send
+- No WhatsApp sent
+- `next_run_at` normalized to `2026-06-12 09:10 BRT`
+- `recovery_reason=needs_repair`
+- CRM note: 19647
+- Journal entry: `_journal/reno/2026-06-11-maria-isabel-petrone-repescagem-repair-only.md`
