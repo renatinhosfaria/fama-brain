@@ -8,9 +8,6 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
-  empreendimento_id: '22'
-  fonte: Facebook Ads
-  regiao: Uberlândia
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -36,32 +33,40 @@ status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
   Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como
-  faixa confortável, com abertura para analisar opção um pouco acima se houver
-  boa negociação à vista. Preferiu receber a curadoria de opções pelo WhatsApp
-  antes de definir visita.
+  faixa confortável, com abertura para analisar oportunidade um pouco acima se
+  houver boa negociação à vista. Cliente citou ter visto opções no Grand Ville
+  na faixa de R$240 mil com condomínio de R$360, sinalizando que aceita comparar
+  opções com condomínio ligeiramente acima do teto anterior se fizer sentido.
 objecoes_ativas:
   - Não quer Monte Hebron nem Chácaras Tubalina.
-  - Condomínio precisa ficar em torno de até R$350/mês.
+  - >-
+    Condomínio ideal era até cerca de R$350/mês, mas citou Grand Ville com
+    condomínio de R$360 como referência aceitável para comparação.
   - Prédio simples ou sem elevador só faz sentido se a localização for boa.
+  - >-
+    Cliente já pesquisou opções no Grand Ville e tende a comparar
+    preço/condomínio com a curadoria apresentada.
 proximo_passo: >-
-  Enviar seleção de opções aderentes pelo WhatsApp, priorizando chance real de
-  negociação à vista e condomínio até cerca de R$350/mês; depois combinar visita
-  presencial apenas dos imóveis que despertarem interesse.
+  Revisar a curadoria considerando a referência do Grand Ville/Gran Ville:
+  distinguir opção pronta/usada vs lançamento/em construção, checar aderência
+  real a R$240 mil e condomínio em torno de R$350-360, e só avançar para visita
+  presencial quando houver imóveis que despertem interesse.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento com o Reno. Perfil curado: compra à vista, apartamento de 2 quartos, pronto para morar, preferência por imóvel mais novo/seminovo, condomínio até cerca de R$350/mês, bairros Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery. Cliente pediu receber as opções pelo WhatsApp e combinar visita apenas dos imóveis que interessarem.
+Cliente em atendimento com o Reno. Perfil curado: compra à vista, apartamento de 2 quartos, pronto para morar, preferência por imóvel mais novo/seminovo, faixa confortável em torno de R$240 mil. Bairros de interesse: Umuarama/Alto Umuarama, Santa Mônica, Custódio Pereira e Tibery; agora também comparou opções vistas no Grand Ville nessa faixa. Prefere receber curadoria pelo WhatsApp antes de combinar visita.
 
 ## Interesse atual
-Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como faixa confortável, com abertura para analisar opção um pouco acima se houver boa negociação à vista. Preferiu receber a curadoria de opções pelo WhatsApp antes de definir visita.
+Apartamento 2 quartos pronto para morar, até aproximadamente R$240 mil como faixa confortável, com abertura para analisar oportunidade um pouco acima se houver boa negociação à vista. Cliente citou ter visto opções no Grand Ville na faixa de R$240 mil com condomínio de R$360, sinalizando que aceita comparar opções com condomínio ligeiramente acima do teto anterior se fizer sentido.
 
 ## Objeções ativas
 - Não quer Monte Hebron nem Chácaras Tubalina.
-- Condomínio precisa ficar em torno de até R$350/mês.
+- Condomínio ideal era até cerca de R$350/mês, mas citou Grand Ville com condomínio de R$360 como referência aceitável para comparação.
 - Prédio simples ou sem elevador só faz sentido se a localização for boa.
+- Cliente já pesquisou opções no Grand Ville e tende a comparar preço/condomínio com a curadoria apresentada.
 
 ## Próximo passo
-Enviar seleção de opções aderentes pelo WhatsApp, priorizando chance real de negociação à vista e condomínio até cerca de R$350/mês; depois combinar visita presencial apenas dos imóveis que despertarem interesse.
+Revisar a curadoria considerando a referência do Grand Ville/Gran Ville: distinguir opção pronta/usada vs lançamento/em construção, checar aderência real a R$240 mil e condomínio em torno de R$350-360, e só avançar para visita presencial quando houver imóveis que despertem interesse.
 
 ## Histórico de interações
