@@ -6,21 +6,20 @@ aliases:
   - mariza-machado
   - cliente-11684-mariza-machado
 external_ids:
-  broker_id: '35'
   client_id: '11684'
+  broker_id: '35'
   empreendimento_id: '22'
-  first_contact_id: '75'
+  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  reno_event_id: '129'
+  regiao: Grand Ville / Zona Leste
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
   - 'first_contact:75'
   - 'reno_event:129'
 related:
+  - '[[mariza-machado]]'
   - '[[reno-hub]]'
-  - '[[2026-06-11-primeiro-contato-enviado-mariza-machado-cliente-11684]]'
-  - '[[2026-06-11-primeira-resposta-recebida-mariza-machado-cliente-11684]]'
 confidence: 0.98
 verified_by: null
 schema_version: 1
@@ -30,44 +29,33 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - atendimento
-  - primeiro-contato
-  - first-contact-responded
-  - facebook-ads
-  - union-vista
-  - em-atendimento
-  - crm-verified
-  - curado-brain
+  - whatsapp-inbound
+  - qualificacao
+  - first-contact-response
 author_agent: reno
+status_comercial: Em Atendimento
+origem: Facebook Ads
+interesse_atual: >-
+  Apartamento de 2 quartos; interesse inicial associado ao Union Vista / Grand
+  Ville; compra à vista informada no inbound de 2026-06-11.
+objecoes_ativas: []
+proximo_passo: >-
+  Confirmar se aceita lançamento/em construção ou se prefere pronto para morar;
+  em seguida filtrar opções compatíveis com a faixa informada e conduzir para
+  próximo passo comercial adequado.
 ---
-# Mariza Machado
+[[mariza-machado]] [[reno-hub]]
 
-## Resumo curado
-Lead de Facebook Ads atendida pelo Reno. Primeiro contato WhatsApp enviado em 2026-06-11 com contexto de interesse em Union Vista/Grand Ville. Em 2026-06-11, respondeu ao primeiro contato informando orçamento até cerca de R$ 240.000; CRM também registra preferência por apartamento de 2 quartos e regiões Alto Umuarama, Custódio Pereira e Tibery.
+## Resumo
+Cliente elegível do Reno (broker_id=35) respondeu ao primeiro contato e entrou em atendimento. Informou que a compra seria à vista; contexto recente no CRM indica busca por apartamento de 2 quartos, até cerca de R$ 240 mil, considerando Alto Umuarama, Custódio Pereira e Tibery.
 
-## Classificação
-- Tipo: lead / atendimento Reno.
-- Tema: primeiro contato respondido e início de qualificação consultiva.
-- Estado comercial verificado no CRM: Em Atendimento.
-- Prioridade de curadoria: normal; preservar contexto para continuidade sem repetir perguntas já respondidas.
+## Interesse atual
+Apartamento de 2 quartos; interesse inicial associado ao Union Vista / Grand Ville; compra à vista informada no inbound de 2026-06-11.
 
-## Contexto operacional verificado
-- Cliente CRM: client_id 11684, broker_id 35.
-- Origem: Facebook Ads.
-- Interesse inicial: Union Vista, Grand Ville.
-- Primeiro contato: first_contact_id 75, template `first_contact_opening_v2`, status `sent`.
-- Primeira resposta estruturada: `responded_at` registrado em `reno_first_contacts`, evento `first_contact.responded` criado e tempo até primeira resposta calculado.
-- Follow-up: branch `reno_followup.repescagem` encerrada com `stopped_reason=client_replied` e `enabled=false`.
+## Objeções ativas
 
-## Diagnóstico inicial conhecido
-- Orçamento informado: até cerca de R$ 240.000.
-- Preferência registrada no CRM: apartamento de 2 quartos.
-- Regiões citadas no CRM: Alto Umuarama, Custódio Pereira e Tibery.
 
-## Próximo passo curado
-Continuar qualificação consultiva: validar entrada/viabilidade e filtrar opções compatíveis antes de sugerir próximo passo presencial. Não prometer crédito, aprovação, preço ou disponibilidade sem validação no FamaChat/CRM.
+## Próximo passo
+Confirmar se aceita lançamento/em construção ou se prefere pronto para morar; em seguida filtrar opções compatíveis com a faixa informada e conduzir para próximo passo comercial adequado.
 
-## Links úteis
-- Hub: [[reno-hub]].
-- Evento de primeiro contato: [[2026-06-11-primeiro-contato-enviado-mariza-machado-cliente-11684]].
-- Evento de primeira resposta: [[2026-06-11-primeira-resposta-recebida-mariza-machado-cliente-11684]].
+## Histórico de interações
