@@ -59,3 +59,9 @@ Contexto: interesse no Union Vista para moradia. CRM confirma cliente 11679, bro
 Condução: responder de forma consultiva, sem prometer aprovação. Explicar que pode ser possível, mas depende de análise de crédito, valor da unidade, entrada/FGTS e composição de renda. Usar como referência que a parcela costuma precisar caber em torno de R$ 1.050,00 (30% da renda de R$ 3.500,00), e perguntar se a renda é individual ou familiar e se possui entrada/FGTS.
 
 Próximo passo: obter dados mínimos de renda/entrada/FGTS para noção inicial de viabilidade e, se houver sinal positivo, conduzir para atendimento presencial/visita na Fama.
+
+
+## Interação — 2026-06-11 — WhatsApp
+Cliente informou que a renda de R$ 3.500,00 é somente dela/individual.
+
+Interpretação: avançar diagnóstico financeiro inicial sem prometer aprovação. Próximo dado necessário: existência de entrada e/ou FGTS para compor a compra e estimar viabilidade do Union Vista.
