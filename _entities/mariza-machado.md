@@ -9,8 +9,9 @@ external_ids:
   client_id: '11684'
   broker_id: '35'
   empreendimento_id: '22'
+  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Uberlândia
+  regiao: Grand Ville / Zona Leste
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -29,42 +30,41 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
   - em-atendimento
+  - first-contact-responded
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound / Facebook Ads
+origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Receber curadoria por WhatsApp e enviar prints/nomes de opções para o Reno
-  conferir aderência, entrega, andar e condições antes de evoluir para visita
-  presencial.
+  Apartamento 2 quartos; cliente comparou opções no Grand Ville/Gran Ville,
+  aceita avaliar imóveis perto ou um pouco acima de R$ 240 mil se houver
+  negociação à vista; evita térreo; interesse associado ao Union Vista e
+  curadoria de alternativas.
 objecoes_ativas:
   - Não quer apartamento térreo.
-  - Tem atenção a prazo de entrega e risco de atraso.
   - >-
-    Preço-alvo perto de R$ 240 mil; aceita avaliar um pouco acima se houver
-    negociação à vista.
-  - Condomínio desejado em torno de R$ 350–360.
+    Compra à vista depende do recebimento da venda de um terreno; prazo estimado
+    anterior de até 60 dias.
+  - Quer avaliar opções pelo WhatsApp antes de combinar visita.
 proximo_passo: >-
-  Aguardar os prints/nomes prometidos pela cliente, conferir as opções com
-  estoque/entrega/valor e responder com curadoria objetiva. Se houver opção
-  aderente, conduzir para visita presencial no escritório da Fama.
+  Aguardar a cliente enviar prints/nomes das opções que viu para conferência;
+  depois curar alternativas coerentes e conduzir para visita apenas dos imóveis
+  com aderência real.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Busca apartamento de 2 quartos, não térreo, com entrega curta/pronto, priorizando Grand Ville/Gran Ville e bairros compatíveis. Referência atual: valor perto de R$ 240 mil, condomínio em torno de R$ 360 e possibilidade de negociar à vista. Compra à vista depende do recebimento da venda de um terreno, com prazo estimado de até 60 dias. Em 2026-06-11T15:25:33Z respondeu “Tá bom mando sim”, confirmando que enviará prints/nomes das opções que viu para conferência.
+Atendimento Reno em andamento. Cliente respondeu ao primeiro contato e vem refinando busca por apartamento em Uberlândia, com foco em 2 quartos, não térreo, preferência por Grand Ville/Gran Ville e entrega curta/pronto quando possível. Inbound mais recente foi confirmação/agradecimento: “Ok, obrigada!”. [[reno-hub]]
 
 ## Interesse atual
-Receber curadoria por WhatsApp e enviar prints/nomes de opções para o Reno conferir aderência, entrega, andar e condições antes de evoluir para visita presencial.
+Apartamento 2 quartos; cliente comparou opções no Grand Ville/Gran Ville, aceita avaliar imóveis perto ou um pouco acima de R$ 240 mil se houver negociação à vista; evita térreo; interesse associado ao Union Vista e curadoria de alternativas.
 
 ## Objeções ativas
 - Não quer apartamento térreo.
-- Tem atenção a prazo de entrega e risco de atraso.
-- Preço-alvo perto de R$ 240 mil; aceita avaliar um pouco acima se houver negociação à vista.
-- Condomínio desejado em torno de R$ 350–360.
+- Compra à vista depende do recebimento da venda de um terreno; prazo estimado anterior de até 60 dias.
+- Quer avaliar opções pelo WhatsApp antes de combinar visita.
 
 ## Próximo passo
-Aguardar os prints/nomes prometidos pela cliente, conferir as opções com estoque/entrega/valor e responder com curadoria objetiva. Se houver opção aderente, conduzir para visita presencial no escritório da Fama.
+Aguardar a cliente enviar prints/nomes das opções que viu para conferência; depois curar alternativas coerentes e conduzir para visita apenas dos imóveis com aderência real.
 
 ## Histórico de interações
