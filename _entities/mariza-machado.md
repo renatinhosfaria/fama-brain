@@ -8,10 +8,6 @@ aliases:
 external_ids:
   client_id: '11684'
   broker_id: '35'
-  empreendimento_id: '22'
-  empreendimento_slug: union-vista
-  fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
 mentions_entity:
   - reno-hub
   - 'cliente:11684'
@@ -31,31 +27,33 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - first-contact-response
+  - pronto-para-morar
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: WhatsApp inbound - reno_whatsapp_inbound_qualification
 interesse_atual: >-
-  Apartamento de 2 quartos; interesse inicial associado ao Union Vista / Grand
-  Ville; compra à vista informada no inbound de 2026-06-11.
-objecoes_ativas: []
+  Apartamento 2 quartos pronto para morar; regiões Alto Umuarama, Custódio
+  Pereira e Tibery; compra à vista até cerca de R$ 240 mil.
+objecoes_ativas:
+  - >-
+    Imóvel em construção/lançamento não atende ao requisito atual; precisa estar
+    pronto para morar.
 proximo_passo: >-
-  Confirmar se aceita lançamento/em construção ou se prefere pronto para morar;
-  em seguida filtrar opções compatíveis com a faixa informada e conduzir para
-  próximo passo comercial adequado.
+  Prosseguir qualificação/curadoria com foco em opções prontas para morar e
+  conduzir para visita presencial quando fizer sentido.
 ---
 [[mariza-machado]] [[reno-hub]]
 
 ## Resumo
-Cliente elegível do Reno (broker_id=35) respondeu ao primeiro contato e entrou em atendimento. Informou que a compra seria à vista; contexto recente no CRM indica busca por apartamento de 2 quartos, até cerca de R$ 240 mil, considerando Alto Umuarama, Custódio Pereira e Tibery.
+Cliente respondeu ao atendimento digital do Reno e reforçou requisito de imóvel pronto para morar. Contexto comercial curado no CRM: busca apartamento de 2 quartos, orçamento aproximado até R$ 240 mil, compra à vista, preferência por Alto Umuarama, Custódio Pereira e Tibery.
 
 ## Interesse atual
-Apartamento de 2 quartos; interesse inicial associado ao Union Vista / Grand Ville; compra à vista informada no inbound de 2026-06-11.
+Apartamento 2 quartos pronto para morar; regiões Alto Umuarama, Custódio Pereira e Tibery; compra à vista até cerca de R$ 240 mil.
 
 ## Objeções ativas
-
+- Imóvel em construção/lançamento não atende ao requisito atual; precisa estar pronto para morar.
 
 ## Próximo passo
-Confirmar se aceita lançamento/em construção ou se prefere pronto para morar; em seguida filtrar opções compatíveis com a faixa informada e conduzir para próximo passo comercial adequado.
+Prosseguir qualificação/curadoria com foco em opções prontas para morar e conduzir para visita presencial quando fizer sentido.
 
 ## Histórico de interações
