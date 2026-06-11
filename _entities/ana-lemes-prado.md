@@ -75,3 +75,7 @@ Cliente informou que está esperando receber aproximadamente R$ 3.000 para poss�
 Contexto consolidado: renda familiar aproximada de 2 salários; busca apartamento MCMV de até 2 quartos; localização flexível em Uberlândia, exceto Mansur/Mansour e Luizote de Freitas; motivação de sair do aluguel.
 
 Condução recomendada: não prometer aprovação; explicar que R$ 3.000 pode ajudar, mas precisa de simulação realista; propor visita/atendimento presencial na Fama para pré-análise de viabilidade.
+
+
+### Resposta enviada — 2026-06-10
+"Entendi, Ana. Esses R$ 3.000 já ajudam a gente a montar a análise, mas com renda de 2 salários o ideal é fazer uma simulação bem certinha pra ver parcela, entrada e o que encaixa no Minha Casa Minha Vida. Vou considerar até 2 quartos e deixar Mansur/Luizote fora. O melhor caminho agora é você vir até a Fama pra gente fazer essa pré-análise com calma. Pra você fica melhor em qual período: manhã ou tarde?"
