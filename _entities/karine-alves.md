@@ -1,20 +1,5 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-06-11'
-updated: '2026-06-11'
-source: agent-generated
-tags:
-  - reno
-  - atendimento
-  - primeiro-contato
-  - facebook-ads
-  - place-arbi
-  - nao-respondeu
-  - crm-verified
-  - curado-brain
-author_agent: brain
 name: Karine Alves
 entity_type: lead
 aliases:
@@ -24,32 +9,49 @@ external_ids:
   client_id: '11682'
   broker_id: '35'
   empreendimento_id: '67'
+  empreendimento_slug: place-arbi
   fonte: Facebook Ads
-  first_contact_id: '73'
+  regiao: Shopping Park / Zona Sul
 mentions_entity:
   - reno-hub
 related:
+  - '[[karine-alves]]'
   - '[[reno-hub]]'
-  - '[[2026-06-11-primeiro-contato-enviado-karine-alves-cliente-11682]]'
 confidence: 0.94
 verified_by: null
+schema_version: 1
+status: active
+created: '2026-06-11'
+updated: '2026-06-11'
+source: agent-generated
+tags:
+  - reno
+  - whatsapp-inbound
+  - first-contact-responded
+author_agent: reno
+status_comercial: Em Atendimento
+origem: Facebook Ads
+interesse_atual: >-
+  Interesse inicial no Place+Arbi. Resposta inbound útil: confirmou que ainda
+  está interessada; diagnóstico comercial ainda pendente.
+objecoes_ativas: []
+proximo_passo: >-
+  Continuar qualificação consultiva em turnos curtos: confirmar se busca para
+  morar ou investir, entender momento/viabilidade e conduzir para visita
+  presencial quando fizer sentido.
 ---
-# Karine Alves
+[[karine-alves]] [[reno-hub]]
 
-## Resumo curado
-Lead de Facebook Ads atendida pelo Reno. Primeiro contato WhatsApp enviado em 2026-06-11 com contexto de interesse em Place+Arbi/Shopping Park; CRM verificado como `Não Respondeu`, broker Reno e repescagem inicializada.
+## Resumo
+Cliente de Facebook Ads respondeu positivamente ao primeiro contato do Reno sobre o empreendimento Place+Arbi, no Shopping Park. CRM confirmou cliente elegível do Reno (broker_id=35) e status atual Em Atendimento.
 
-## Classificação
-- Tipo: lead / atendimento Reno.
-- Tema: primeiro contato e repescagem de lead MCMV.
-- Estado comercial verificado no CRM: Não Respondeu.
-- Prioridade de curadoria: normal; preservar como memória operacional recuperável sem criar tarefa imediata.
+## Interesse atual
+Interesse inicial no Place+Arbi. Resposta inbound útil: confirmou que ainda está interessada; diagnóstico comercial ainda pendente.
 
-## Contexto operacional
-- Interesse inicial: Place+Arbi, Shopping Park.
-- Origem: Facebook Ads.
-- Próximo passo operacional sugerido pelo evento Reno: aguardar resposta; se responder, qualificar de forma consultiva e atualizar status conforme regra do CRM.
+## Objeções ativas
 
-## Links úteis
-- Hub: [[reno-hub]].
-- Evento fonte: [[2026-06-11-primeiro-contato-enviado-karine-alves-cliente-11682]].
+
+## Próximo passo
+Continuar qualificação consultiva em turnos curtos: confirmar se busca para morar ou investir, entender momento/viabilidade e conduzir para visita presencial quando fizer sentido.
+
+## Histórico de interações
