@@ -59,3 +59,11 @@ Cliente informou renda familiar aproximada de 2 salários e busca por apartament
 Resposta/condução do Reno: validar que o caminho precisa ser MCMV com simulação realista e perguntar se há algum valor guardado ou FGTS para compor a compra.
 
 Próximo passo: obter entrada/FGTS; depois orientar viabilidade sem prometer aprovação e conduzir para visita presencial consultiva se fizer sentido.
+
+
+## Interação — 2026-06-10 — WhatsApp
+Cliente informou que aceita localização em qualquer bairro de Uberlândia, exceto Mansur/Mansour e Luizote de Freitas.
+
+Resposta/condução do Reno: acolher flexibilidade de bairro, registrar exclusões e retomar pergunta essencial de viabilidade: se há FGTS ou algum valor guardado para entrada.
+
+Próximo passo: obter informação de entrada/FGTS para orientar simulação MCMV sem prometer aprovação.
