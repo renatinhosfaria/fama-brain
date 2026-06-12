@@ -20,28 +20,31 @@ tags:
   - reno
   - qualificacao
   - moradia-futura
+  - prazo-6-12-meses
   - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
-interesse_atual: Morar futuramente; interesse inicial no Union Vista / região Grand Ville.
+interesse_atual: >-
+  Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses
+  a 1 ano.
 objecoes_ativas: []
 proximo_passo: >-
-  Entender prazo aproximado para mudança/compra e seguir diagnóstico consultivo
-  sem pressionar visita cedo demais.
+  Entender se pretende comprar sozinho ou com composição de renda para orientar
+  viabilidade financeira sem promessa de crédito.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead Facebook Ads atribuído ao Reno (broker_id=35). Primeiro contato enviado sobre interesse no Union Vista, no Grand Ville. Cliente respondeu "Sim" sobre aderência da região e informou que quer comprar para morar futuramente.
+Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, informou que quer comprar para morar futuramente e indicou prazo de 6 meses a 1 ano.
 
 ## Interesse atual
-Morar futuramente; interesse inicial no Union Vista / região Grand Ville.
+Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses a 1 ano.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Entender prazo aproximado para mudança/compra e seguir diagnóstico consultivo sem pressionar visita cedo demais.
+Entender se pretende comprar sozinho ou com composição de renda para orientar viabilidade financeira sem promessa de crédito.
 
 ## Histórico de interações
