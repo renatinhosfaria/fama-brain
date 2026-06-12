@@ -8,7 +8,7 @@ external_ids:
   empreendimento_id: '22'
   empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
+  regiao: Grand Ville
 related:
   - '[[jonatas-batista-de-oliveira]]'
   - '[[reno-hub]]'
@@ -20,45 +20,39 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
+  - agendamento
   - union-vista
-  - agendamento-online
 author_agent: reno
-status_comercial: Agendamento online
+status_comercial: Agendamento
 origem: Facebook Ads
 interesse_atual: >-
-  Moradia futura no Union Vista / Grand Ville; atendimento online porque cliente
-  mora na Espanha; renda familiar aproximada de R$ 6.000 a R$ 7.000 comprovada
-  no Brasil como retirada; ele tem empresa e esposa tem MEI; quer entender
-  possibilidade sem entrada, sem FGTS e com entrada parcelada; respondeu
-  preferência por período da tarde para chamada/simulação online.
+  Union Vista, bairro Grand Ville, com foco em simulação/validação de
+  viabilidade e possibilidade de entrada parcelada.
 objecoes_ativas:
-  - Não consegue atendimento presencial por morar na Espanha
-  - Sem entrada
-  - Sem FGTS
-  - Quer entender entrada parcelada
-  - Renda via empresa própria e MEI precisa validação documental
+  - Cliente mora na Espanha e precisa conduzir atendimento online.
+  - >-
+    Sem entrada e sem FGTS no momento; precisa avaliar viabilidade sem promessa
+    de crédito.
+  - Renda familiar via empresa/MEI/retirada precisa de validação documental.
 proximo_passo: >-
-  Reunião online agendada no FamaChat para 15/06/2026 às 16h BRT (appointment_id
-  264) para simulação/validação de viabilidade. Orientar cliente a alinhar
-  documentação de retirada/renda com contador, sem promessa de crédito.
+  Reunião online registrada no FamaChat para segunda-feira, 15/06/2026, às 16h
+  BRT, para simulação/validação de viabilidade do Union Vista. Manter status
+  avançado sem reabrir follow-ups automáticos.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, busca moradia futura, prazo de 6 meses a 1 ano, compra com esposa compondo renda, sem entrada/FGTS no momento. Renda familiar aproximada entre R$ 6.000 e R$ 7.000 comprovada no Brasil como retirada. Mora na Espanha e precisa fazer atendimento online. Ele tem empresa e esposa possui MEI; cliente pode verificar documentação com contador. Em inbound de 2026-06-12, respondeu "tarde", indicando preferência por período da tarde para chamada/simulação online. Reunião online agendada no FamaChat para segunda-feira, 15/06/2026, às 16h BRT, appointment_id 264.
+Lead do Facebook Ads em atendimento pelo Reno. Interesse em Union Vista / Grand Ville para moradia futura, com atendimento remoto por estar morando na Espanha. Conversa qualificou viabilidade de financiamento, renda familiar aproximada e ausência de entrada/FGTS. Em 2026-06-12 respondeu disponibilidade para segunda-feira e o atendimento já está em etapa de agendamento no CRM.
 
 ## Interesse atual
-Moradia futura no Union Vista / Grand Ville; atendimento online porque cliente mora na Espanha; renda familiar aproximada de R$ 6.000 a R$ 7.000 comprovada no Brasil como retirada; ele tem empresa e esposa tem MEI; quer entender possibilidade sem entrada, sem FGTS e com entrada parcelada; respondeu preferência por período da tarde para chamada/simulação online.
+Union Vista, bairro Grand Ville, com foco em simulação/validação de viabilidade e possibilidade de entrada parcelada.
 
 ## Objeções ativas
-- Não consegue atendimento presencial por morar na Espanha
-- Sem entrada
-- Sem FGTS
-- Quer entender entrada parcelada
-- Renda via empresa própria e MEI precisa validação documental
+- Cliente mora na Espanha e precisa conduzir atendimento online.
+- Sem entrada e sem FGTS no momento; precisa avaliar viabilidade sem promessa de crédito.
+- Renda familiar via empresa/MEI/retirada precisa de validação documental.
 
 ## Próximo passo
-Reunião online agendada no FamaChat para 15/06/2026 às 16h BRT (appointment_id 264) para simulação/validação de viabilidade. Orientar cliente a alinhar documentação de retirada/renda com contador, sem promessa de crédito.
+Reunião online registrada no FamaChat para segunda-feira, 15/06/2026, às 16h BRT, para simulação/validação de viabilidade do Union Vista. Manter status avançado sem reabrir follow-ups automáticos.
 
 ## Histórico de interações
