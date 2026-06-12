@@ -1,59 +1,67 @@
 ---
+type: entity
+name: Karine Alves - cliente 11682
+entity_type: reno-atendimento
 aliases:
   - 'client:11682'
   - Karine Alves
-author_agent: brain
-confidence: 0.95
-created: '2026-06-11'
-entity_type: reno-atendimento
 external_ids:
   crm_client_id: '11682'
 mentions_entity:
   - Place+Arbi
   - reno-hub
-  - karine-alves
-name: Karine Alves - cliente 11682
-owner: brain
 related:
-  - '[[karine-alves]]'
-  - '[[reno-hub]]'
+  - reno-hub
+  - 'client:11682'
   - 'empreendimento:67'
-schema_version: 1
-source: agent-generated
-status: superseded
+confidence: 1
+verified_by: null
 superseded_by: '[[karine-alves]]'
+schema_version: 1
+status: active
+created: '2026-06-11'
+updated: '2026-06-11'
+source: agent-generated
 tags:
   - reno
   - atendimento
   - cliente
   - place-arbi
   - diagnostico
-  - inbound-whatsapp
-  - duplicata-consolidada
-  - curado-brain
-type: entity
-updated: '2026-06-11'
-verified_by: null
+  - moradia
+  - planta-ok
+author_agent: reno
+owner: brain
 ---
-# Atendimento Reno — Karine Alves (duplicata consolidada)
+# Atendimento Reno — Karine Alves
 
-Esta nota foi preservada como histórico operacional, mas a entidade canônica agora é [[karine-alves]].
+Relacionado a [[reno-hub]].
 
-## Motivo da consolidação
-Havia duas entidades para o mesmo cliente CRM (`11682`):
-- [[karine-alves]] — entidade por nome, mais adequada como memória canônica.
-- `karine-alves-cliente-11682` — nota operacional detalhada, sem backlinks e com escopo de atendimento.
-
-A curadoria consolidou o diagnóstico e o histórico útil em [[karine-alves]] e marcou esta nota como `superseded` para preservar rastreabilidade sem duplicar contexto ativo.
-
-## Conteúdo preservado
-- Escopo Reno confirmado no CRM.
+## Resumo operacional
+- Cliente CRM: 11682
+- Escopo Reno confirmado: broker_id=35.
 - Origem: Facebook Ads.
 - Interesse inicial: Place+Arbi, Shopping Park, Uberlândia.
-- Status operacional observado: Em Atendimento.
-- Primeiro contato respondido; repescagem encerrada por resposta da cliente.
-- Resgate não ativo no `meta_data.reno_followup` no momento da fonte original.
-- Diagnóstico: cliente busca imóvel para morar; prazo de entrega do empreendimento funciona; ainda falta validar planta de 2 quartos e viabilidade/forma de compra.
+- Status atual no CRM: Em Atendimento.
 
-## Próximo passo preservado
-Acompanhar a entidade canônica [[karine-alves]] para próximos passos e atualizações.
+## Histórico curado
+### 2026-06-11 — Primeiro contato enviado
+Reno enviou abertura curta via WhatsApp contextualizando interesse no Place+Arbi e perguntando se a região combina com o que a cliente busca. Status ficou como Não Respondeu.
+
+### 2026-06-11 — Primeira resposta da cliente
+Cliente respondeu: "Boa tarde\nEstou sim".
+Ação operacional: status atualizado de Não Respondeu para Em Atendimento; repescagem desativada com motivo `client_responded_first_reply`; nota registrada no CRM.
+
+### 2026-06-11 — Diagnóstico inicial
+Cliente informou que busca o imóvel para morar.
+Reno validou que o Place+Arbi é lançamento com entrega prevista para jun/2027.
+Cliente respondeu que o prazo funciona.
+Cliente confirmou que uma planta de 2 quartos atende para o dia a dia.
+
+## Diagnóstico pendente
+- Entender viabilidade e forma de compra.
+- Validar se pretende financiar e se já fez alguma simulação.
+- Conduzir para visita presencial na Fama quando fizer sentido.
+
+## Próximo passo recomendado
+Responder de forma humana à demora e perguntar, em uma pergunta só, se pretende comprar via financiamento ou outra forma.
