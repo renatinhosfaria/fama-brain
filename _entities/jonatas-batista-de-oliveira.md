@@ -6,9 +6,8 @@ external_ids:
   client_id: '11693'
   broker_id: '35'
   empreendimento_id: '22'
-  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
+  regiao: Grand Ville
 related:
   - '[[jonatas-batista-de-oliveira]]'
   - '[[reno-hub]]'
@@ -19,33 +18,30 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
-  - first-contact-responded
+  - qualificacao
+  - moradia-futura
   - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
-interesse_atual: >-
-  Union Vista / Grand Ville. Sinal inicial positivo: confirmou que a região
-  combina com o que está buscando.
+interesse_atual: Morar futuramente; interesse inicial no Union Vista / região Grand Ville.
 objecoes_ativas: []
 proximo_passo: >-
-  Retomar atendimento consultivo pelo WhatsApp com uma pergunta por vez:
-  entender momento de compra, necessidade e viabilidade antes de propor visita
-  presencial na Fama quando fizer sentido.
+  Entender prazo aproximado para mudança/compra e seguir diagnóstico consultivo
+  sem pressionar visita cedo demais.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead originado de Facebook Ads e atribuído ao Reno (broker_id=35). Primeiro contato do Reno foi enviado sobre o Union Vista, no Grand Ville. Em 2026-06-12, respondeu "Sim" ao contexto da região, indicando abertura para continuar o diagnóstico consultivo.
+Lead Facebook Ads atribuído ao Reno (broker_id=35). Primeiro contato enviado sobre interesse no Union Vista, no Grand Ville. Cliente respondeu "Sim" sobre aderência da região e informou que quer comprar para morar futuramente.
 
 ## Interesse atual
-Union Vista / Grand Ville. Sinal inicial positivo: confirmou que a região combina com o que está buscando.
+Morar futuramente; interesse inicial no Union Vista / região Grand Ville.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Retomar atendimento consultivo pelo WhatsApp com uma pergunta por vez: entender momento de compra, necessidade e viabilidade antes de propor visita presencial na Fama quando fizer sentido.
+Entender prazo aproximado para mudança/compra e seguir diagnóstico consultivo sem pressionar visita cedo demais.
 
 ## Histórico de interações
