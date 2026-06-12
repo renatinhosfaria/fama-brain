@@ -6,9 +6,8 @@ external_ids:
   client_id: '11693'
   broker_id: '35'
   empreendimento_id: '22'
-  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
+  regiao: Grand Ville
 related:
   - '[[jonatas-batista-de-oliveira]]'
   - '[[reno-hub]]'
@@ -19,34 +18,38 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
   - qualificacao
+  - financiamento
+  - sem-entrada
+  - sem-fgts
   - union-vista
-  - prazo-6-12-meses
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Moradia futura no contexto do Union Vista/Grand Ville. Prazo declarado para
-  compra/mudança: 6 a 12 meses; viabilidade financeira ainda precisa ser
-  diagnosticada.
-objecoes_ativas: []
+  Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses
+  a 1 ano; compra com esposa compondo renda; quer entender possibilidade sem
+  entrada e sem FGTS.
+objecoes_ativas:
+  - Sem entrada
+  - Sem FGTS
 proximo_passo: >-
-  Continuar qualificação consultiva entendendo se a compra será individual ou
-  com composição de renda, antes de orientar viabilidade e visita presencial.
+  Levantar faixa de renda mensal do casal para orientar análise de viabilidade
+  financeira sem promessa de crédito.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead do primeiro contato Reno para o Union Vista/Grand Ville. Respondeu ao contato inicial, declarou objetivo de moradia futura e informou prazo de 6 a 12 meses para compra/mudança.
+Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, informou que quer comprar para morar futuramente, prazo de 6 meses a 1 ano, compra junto com a esposa compondo renda, e quer entender viabilidade sem entrada e sem FGTS.
 
 ## Interesse atual
-Moradia futura no contexto do Union Vista/Grand Ville. Prazo declarado para compra/mudança: 6 a 12 meses; viabilidade financeira ainda precisa ser diagnosticada.
+Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses a 1 ano; compra com esposa compondo renda; quer entender possibilidade sem entrada e sem FGTS.
 
 ## Objeções ativas
-
+- Sem entrada
+- Sem FGTS
 
 ## Próximo passo
-Continuar qualificação consultiva entendendo se a compra será individual ou com composição de renda, antes de orientar viabilidade e visita presencial.
+Levantar faixa de renda mensal do casal para orientar análise de viabilidade financeira sem promessa de crédito.
 
 ## Histórico de interações
