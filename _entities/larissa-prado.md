@@ -35,7 +35,7 @@ proximo_passo: >-
 [[larissa-prado]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato e confirmou que procura apartamento para morar. Atendimento em diagnóstico inicial.
+Cliente respondeu ao primeiro contato e confirmou que está à procura de apartamento. Atendimento em diagnóstico inicial; histórico curado já indica finalidade residencial.
 
 ## Interesse atual
 Apartamento para morar; origem Facebook Ads; interesse contextual no Garden Sul / Jardim Sul.
