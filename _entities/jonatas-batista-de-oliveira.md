@@ -19,41 +19,43 @@ source: agent-generated
 tags:
   - reno
   - qualificacao
+  - online
+  - exterior
+  - espanha
   - financiamento
-  - renda-familiar
-  - entrada-parcelada
   - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses
-  a 1 ano; compra com esposa compondo renda; renda familiar aproximada R$ 6.000
-  a R$ 7.000; quer entender possibilidade sem entrada, sem FGTS e com entrada
+  Moradia futura no Union Vista / região Grand Ville; atendimento precisa ser
+  online porque cliente mora na Espanha; renda familiar aproximada R$ 6.000 a R$
+  7.000; quer entender possibilidade sem entrada, sem FGTS e com entrada
   parcelada.
 objecoes_ativas:
+  - Não consegue atendimento presencial por morar na Espanha
   - Sem entrada
   - Sem FGTS
   - Quer entender entrada parcelada
 proximo_passo: >-
-  Responder com cautela: entrada parcelada pode ser estudada, mas depende da
-  unidade/tabela/construtora; conduzir para simulação/visita presencial na Fama
-  para validar viabilidade com números reais.
+  Acolher atendimento online e perguntar se a renda do casal é comprovada no
+  Brasil ou no exterior, pois isso impacta análise de financiamento.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, informou que quer comprar para morar futuramente, prazo de 6 meses a 1 ano, compra junto com a esposa compondo renda, sem entrada/FGTS no momento. Renda familiar aproximada entre R$ 6.000 e R$ 7.000. Perguntou se existe opção de entrada parcelada.
+Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, busca moradia futura, prazo de 6 meses a 1 ano, compra com esposa compondo renda, sem entrada/FGTS no momento. Renda familiar aproximada entre R$ 6.000 e R$ 7.000. Perguntou sobre entrada parcelada. Informou que mora na Espanha e precisa fazer todo atendimento online.
 
 ## Interesse atual
-Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses a 1 ano; compra com esposa compondo renda; renda familiar aproximada R$ 6.000 a R$ 7.000; quer entender possibilidade sem entrada, sem FGTS e com entrada parcelada.
+Moradia futura no Union Vista / região Grand Ville; atendimento precisa ser online porque cliente mora na Espanha; renda familiar aproximada R$ 6.000 a R$ 7.000; quer entender possibilidade sem entrada, sem FGTS e com entrada parcelada.
 
 ## Objeções ativas
+- Não consegue atendimento presencial por morar na Espanha
 - Sem entrada
 - Sem FGTS
 - Quer entender entrada parcelada
 
 ## Próximo passo
-Responder com cautela: entrada parcelada pode ser estudada, mas depende da unidade/tabela/construtora; conduzir para simulação/visita presencial na Fama para validar viabilidade com números reais.
+Acolher atendimento online e perguntar se a renda do casal é comprovada no Brasil ou no exterior, pois isso impacta análise de financiamento.
 
 ## Histórico de interações
