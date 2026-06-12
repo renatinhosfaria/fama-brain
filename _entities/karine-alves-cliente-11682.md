@@ -29,8 +29,9 @@ tags:
   - place-arbi
   - diagnostico
   - moradia
-  - planta-ok
   - financiamento
+  - sem-simulacao
+  - visita-recomendada
 author_agent: reno
 owner: brain
 ---
@@ -59,11 +60,15 @@ Reno validou que o Place+Arbi é lançamento com entrega prevista para jun/2027.
 Cliente respondeu que o prazo funciona.
 Cliente confirmou que uma planta de 2 quartos atende para o dia a dia.
 Cliente informou que pretende comprar via financiamento.
+Cliente informou que ainda não fez simulação de crédito.
 
-## Diagnóstico pendente
-- Entender se já fez simulação de financiamento ou se seria a primeira análise.
-- Entender viabilidade sem prometer crédito.
-- Conduzir para visita presencial/análise na Fama quando fizer sentido.
+## Diagnóstico atual
+- Finalidade: morar.
+- Empreendimento: Place+Arbi.
+- Prazo: entrega jun/2027 funciona.
+- Planta: 2 quartos atende.
+- Forma de compra: financiamento.
+- Crédito: ainda não simulado.
 
 ## Próximo passo recomendado
-Responder destacando que crédito é uma parte importante do atendimento da Fama e perguntar se a cliente já fez alguma simulação de financiamento ou se seria a primeira.
+Conduzir para visita presencial na Fama para pré-análise/organização do financiamento e apresentação das condições do Place+Arbi, sem prometer aprovação.
