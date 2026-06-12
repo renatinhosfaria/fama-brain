@@ -1,21 +1,5 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-06-11'
-updated: '2026-06-12'
-source: agent-generated
-author_agent: brain
-owner: brain
-tags:
-  - reno
-  - whatsapp-inbound
-  - qualificacao
-  - first-contact-response
-  - garden-sul
-  - facebook-ads
-  - crm-verified
-  - curado-brain
 name: Larissa Prado
 entity_type: lead
 aliases:
@@ -26,50 +10,51 @@ external_ids:
   client_id: '11692'
   broker_id: '35'
   empreendimento_id: '25'
-  first_contact_id: '91'
+  empreendimento_slug: garden-sul
   fonte: Facebook Ads
+  regiao: Jardim Sul / Zona Sul
 mentions_entity:
   - reno-hub
 related:
+  - '[[larissa-prado]]'
   - '[[reno-hub]]'
-  - '[[2026-06-12-primeiro-contato-enviado-larissa-prado-cliente-11692]]'
-  - '[[2026-06-12-larissa-prado-inbound-whatsapp-respondeu-morar]]'
 confidence: 0.94
+schema_version: 1
+status: active
+created: '2026-06-11'
+updated: '2026-06-12'
+source: agent-generated
+tags:
+  - reno
+  - whatsapp
+  - qualificacao
+  - 3-quartos
+author_agent: reno
+owner: brain
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
-interesse_atual: Busca apartamento para morar; contexto inicial Garden Sul/Jardim Sul.
+origem: Facebook Ads
+interesse_atual: >-
+  Apartamento para morar, com preferência por 3 quartos. Interesse inicial veio
+  pelo Garden Sul, mas Garden Sul possui plantas cadastradas de 2 quartos; se 3
+  quartos for indispensável, conduzir para alternativas semelhantes na Zona Sul.
 objecoes_ativas: []
 proximo_passo: >-
-  Continuar qualificação consultiva: entender quantidade de quartos/tamanho,
-  momento de compra, viabilidade e aderência real ao Garden Sul antes de propor
-  visita.
+  Validar se 3 quartos é requisito indispensável e se a cliente aceita opções
+  semelhantes na Zona Sul/Jardim Sul antes de apresentar imóveis ou convidar
+  para visita.
 ---
-[[reno-hub]]
+[[larissa-prado]] [[reno-hub]]
 
-# Larissa Prado — atendimento Reno
-
-## Resumo curado
-Cliente CRM 11692, origem Facebook Ads, inicialmente vinculada ao contexto **Garden Sul / Jardim Sul**. O CRM/FamaChat foi verificado nesta curadoria: primeiro contato enviado, resposta inbound registrada e status atual **Em Atendimento**. A resposta curta consolidada foi intenção de compra para **morar**.
-
-## Classificação
-- Tipo: entidade de lead/atendimento Reno.
-- Tema: primeiro contato, resposta inbound, qualificação inicial, Garden Sul.
-- Prioridade: qualificação comercial normal; não transformar em tarefa imediata além do próximo diagnóstico.
-- Estado: em atendimento, repescagem encerrada por resposta.
-
-## Linha do tempo consolidada
-- 2026-06-12 — Primeiro contato enviado: [[2026-06-12-primeiro-contato-enviado-larissa-prado-cliente-11692]].
-- 2026-06-12 — Inbound registrado com resposta “Morar”: [[2026-06-12-larissa-prado-inbound-whatsapp-respondeu-morar]].
-- CRM verificado nesta curadoria: status **Em Atendimento**; repescagem desabilitada por resposta ao primeiro contato.
+## Resumo
+Cliente em atendimento Reno (CRM client_id 11692, lead_id 3215), origem Facebook Ads, interesse inicial no Garden Sul/Jardim Sul. Busca apartamento para morar e informou preferência por 3 quartos.
 
 ## Interesse atual
-Busca apartamento para morar; contexto inicial Garden Sul/Jardim Sul.
+Apartamento para morar, com preferência por 3 quartos. Interesse inicial veio pelo Garden Sul, mas Garden Sul possui plantas cadastradas de 2 quartos; se 3 quartos for indispensável, conduzir para alternativas semelhantes na Zona Sul.
 
 ## Objeções ativas
-Nenhuma objeção explícita registrada até aqui.
+
 
 ## Próximo passo
-Continuar qualificação consultiva: entender quantidade de quartos/tamanho, momento de compra, viabilidade e aderência real ao Garden Sul antes de propor visita.
+Validar se 3 quartos é requisito indispensável e se a cliente aceita opções semelhantes na Zona Sul/Jardim Sul antes de apresentar imóveis ou convidar para visita.
 
-## Interpretação adotada
-A resposta “Morar” foi tratada como sinal de finalidade residencial, não como validação completa de aderência ao empreendimento ou de viabilidade financeira.
+## Histórico de interações
