@@ -6,8 +6,9 @@ external_ids:
   client_id: '11693'
   broker_id: '35'
   empreendimento_id: '22'
+  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville
+  regiao: Grand Ville / Zona Leste
 related:
   - '[[jonatas-batista-de-oliveira]]'
   - '[[reno-hub]]'
@@ -18,33 +19,32 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
+  - whatsapp-inbound
   - qualificacao
-  - moradia-futura
-  - prazo-6-12-meses
   - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses
-  a 1 ano.
+  Moradia futura. Interesse associado ao Union Vista, no Grand Ville; prazo e
+  viabilidade financeira ainda precisam ser diagnosticados.
 objecoes_ativas: []
 proximo_passo: >-
-  Entender se pretende comprar sozinho ou com composição de renda para orientar
-  viabilidade financeira sem promessa de crédito.
+  Retomar qualificação consultiva com uma pergunta por vez, começando pelo prazo
+  aproximado para mudança/compra.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, informou que quer comprar para morar futuramente e indicou prazo de 6 meses a 1 ano.
+Lead do primeiro contato Reno para o Union Vista/Grand Ville. Já respondeu ao contato inicial; no inbound mais recente informou que quer comprar para morar futuramente.
 
 ## Interesse atual
-Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses a 1 ano.
+Moradia futura. Interesse associado ao Union Vista, no Grand Ville; prazo e viabilidade financeira ainda precisam ser diagnosticados.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Entender se pretende comprar sozinho ou com composição de renda para orientar viabilidade financeira sem promessa de crédito.
+Retomar qualificação consultiva com uma pergunta por vez, começando pelo prazo aproximado para mudança/compra.
 
 ## Histórico de interações
