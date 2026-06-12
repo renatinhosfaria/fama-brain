@@ -11,7 +11,7 @@ external_ids:
   broker_id: '35'
   empreendimento_id: '67'
   fonte: Facebook Ads
-  regiao: 'Shopping Park, Uberlândia'
+  regiao: Uberlândia
 mentions_entity:
   - reno-hub
   - karine-alves-cliente-11682
@@ -27,9 +27,9 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
-  - financiamento
-  - place-arbi
+  - whatsapp
+  - qualificacao
+  - visita
 author_agent: reno
 owner: brain
 status_comercial: Em Atendimento
@@ -40,25 +40,24 @@ interesse_atual: >-
 objecoes_ativas:
   - >-
     Viabilidade/financiamento ainda não simulado; precisa de pré-análise antes
-    de decisão.
+    da decisão.
 proximo_passo: >-
-  CRM atual indica condução para visita presencial/pré-análise na Fama; cliente
-  demonstrou abertura para ir ao escritório e pediu endereço. Próximo passo
-  operacional: informar endereço e alinhar melhor dia/horário antes de registrar
-  visita.
+  Cliente pediu o endereço para visita; CRM já contém a resposta operacional com
+  endereço. Próximo passo: aguardar/confirmar melhor dia e horário para
+  registrar a visita presencial/pré-análise na Fama.
 ---
 [[karine-alves]] [[reno-hub]]
 
 ## Resumo
-Lead elegível do Reno (broker_id=35), originado de Facebook Ads para o empreendimento Place+Arbi. Cliente busca imóvel para morar; prazo de entrega jun/2027 e planta de 2 quartos atendem. Conversa avançou para viabilidade via financiamento: cliente informou que ainda não fez simulação de crédito.
+Lead elegível do Reno (broker_id=35), originado de Facebook Ads para o empreendimento Place+Arbi. Cliente busca imóvel para morar; prazo de entrega jun/2027 e planta de 2 quartos atendem. Conversa avançou para viabilidade via financiamento: cliente ainda não fez simulação de crédito e demonstrou abertura para ir ao escritório da Fama.
 
 ## Interesse atual
 Place+Arbi; compra para moradia; planta de 2 quartos; via financiamento ainda sem simulação prévia.
 
 ## Objeções ativas
-- Viabilidade/financiamento ainda não simulado; precisa de pré-análise antes de decisão.
+- Viabilidade/financiamento ainda não simulado; precisa de pré-análise antes da decisão.
 
 ## Próximo passo
-CRM atual indica condução para visita presencial/pré-análise na Fama; cliente demonstrou abertura para ir ao escritório e pediu endereço. Próximo passo operacional: informar endereço e alinhar melhor dia/horário antes de registrar visita.
+Cliente pediu o endereço para visita; CRM já contém a resposta operacional com endereço. Próximo passo: aguardar/confirmar melhor dia e horário para registrar a visita presencial/pré-análise na Fama.
 
 ## Histórico de interações
