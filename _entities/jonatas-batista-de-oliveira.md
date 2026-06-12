@@ -6,8 +6,9 @@ external_ids:
   client_id: '11693'
   broker_id: '35'
   empreendimento_id: '22'
-  fonte: WhatsApp inbound
-  regiao: Grand Ville
+  empreendimento_slug: union-vista
+  fonte: Facebook Ads
+  regiao: Grand Ville / Zona Leste
 related:
   - '[[jonatas-batista-de-oliveira]]'
   - '[[reno-hub]]'
@@ -20,33 +21,32 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - persistencia-operacional
-  - atendimento-online
+  - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Moradia futura no Union Vista / região Grand Ville; quer entender viabilidade
-  de compra sem entrada, sem FGTS e com possibilidade de entrada parcelada.
-  Atendimento precisa ser online porque cliente mora na Espanha.
+  Moradia futura no Union Vista / região Grand Ville. Quer entender viabilidade
+  de compra sem entrada, sem FGTS e com possível entrada parcelada. Renda
+  familiar aproximada de R$ 6.000 a R$ 7.000 foi informada como comprovada no
+  Brasil.
 objecoes_ativas:
   - Não consegue atendimento presencial por morar na Espanha
   - Precisa fazer tudo online
   - Sem entrada no momento
   - Sem FGTS no momento
 proximo_passo: >-
-  No atendimento principal, acolher o atendimento online e qualificar
-  viabilidade com cautela: confirmar se a renda familiar aproximada de R$ 6.000
-  a R$ 7.000 é comprovada no Brasil ou no exterior, sem prometer
-  crédito/aprovação.
+  Atendimento principal deve seguir online e qualificar a forma de comprovação
+  da renda no Brasil (CLT/holerite, autônomo, empresa, IR etc.) para orientar
+  viabilidade sem prometer crédito/aprovação.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead Facebook Ads atribuído ao Reno (broker_id=35), CRM em Em Atendimento. Interesse no Union Vista / região Grand Ville. Cliente informou que mora na Espanha, não consegue ir presencialmente e precisa conduzir o atendimento online.
+Lead Facebook Ads atribuído ao Reno (broker_id=35), CRM em Em Atendimento. Interesse no Union Vista / região Grand Ville. Cliente mora na Espanha, não consegue ir presencialmente no momento e precisa conduzir atendimento online.
 
 ## Interesse atual
-Moradia futura no Union Vista / região Grand Ville; quer entender viabilidade de compra sem entrada, sem FGTS e com possibilidade de entrada parcelada. Atendimento precisa ser online porque cliente mora na Espanha.
+Moradia futura no Union Vista / região Grand Ville. Quer entender viabilidade de compra sem entrada, sem FGTS e com possível entrada parcelada. Renda familiar aproximada de R$ 6.000 a R$ 7.000 foi informada como comprovada no Brasil.
 
 ## Objeções ativas
 - Não consegue atendimento presencial por morar na Espanha
@@ -55,6 +55,6 @@ Moradia futura no Union Vista / região Grand Ville; quer entender viabilidade d
 - Sem FGTS no momento
 
 ## Próximo passo
-No atendimento principal, acolher o atendimento online e qualificar viabilidade com cautela: confirmar se a renda familiar aproximada de R$ 6.000 a R$ 7.000 é comprovada no Brasil ou no exterior, sem prometer crédito/aprovação.
+Atendimento principal deve seguir online e qualificar a forma de comprovação da renda no Brasil (CLT/holerite, autônomo, empresa, IR etc.) para orientar viabilidade sem prometer crédito/aprovação.
 
 ## Histórico de interações
