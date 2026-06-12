@@ -10,9 +10,8 @@ external_ids:
   client_id: '11682'
   broker_id: '35'
   empreendimento_id: '67'
-  empreendimento_slug: place-arbi
   fonte: Facebook Ads
-  regiao: Shopping Park / Zona Sul
+  regiao: 'Shopping Park, Uberlândia'
 mentions_entity:
   - reno-hub
   - karine-alves-cliente-11682
@@ -28,51 +27,38 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - atendimento
-  - cliente
-  - place-arbi
-  - diagnostico
-  - inbound-whatsapp
+  - whatsapp-inbound
   - financiamento
-  - curado-brain
+  - place-arbi
 author_agent: reno
 owner: brain
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Place+Arbi, Shopping Park. Busca imóvel para morar; prazo de entrega previsto
-  para jun/2027 funciona; planta de 2 quartos atende; forma de compra
-  pretendida: financiamento.
+  Place+Arbi; compra para moradia; planta de 2 quartos; via financiamento ainda
+  sem simulação prévia.
 objecoes_ativas:
   - >-
-    Aprofundar viabilidade de financiamento com cuidado consultivo, sem prometer
-    crédito ou aprovação.
-  - >-
-    Validar se a cliente já fez simulação de crédito ou se será a primeira
-    análise.
-  - >-
-    Conduzir para visita presencial na Fama quando o diagnóstico de viabilidade
-    e momento estiver minimamente claro.
+    Viabilidade/financiamento ainda não simulado; precisa de pré-análise antes
+    de decisão.
 proximo_passo: >-
-  Aguardar resposta à pergunta já enviada sobre simulação de crédito. Se houver
-  abertura, propor visita presencial na Fama como próximo passo natural para
-  organizar financiamento e apresentar condições do Place+Arbi, sem prometer
-  aprovação.
+  CRM atual indica condução para visita presencial/pré-análise na Fama; cliente
+  demonstrou abertura para ir ao escritório e pediu endereço. Próximo passo
+  operacional: informar endereço e alinhar melhor dia/horário antes de registrar
+  visita.
 ---
 [[karine-alves]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento ativo pelo Reno. Confirmou interesse no Place+Arbi para moradia; prazo de entrega previsto para jun/2027 funciona; planta de 2 quartos atende; informou que pretende comprar via financiamento.
+Lead elegível do Reno (broker_id=35), originado de Facebook Ads para o empreendimento Place+Arbi. Cliente busca imóvel para morar; prazo de entrega jun/2027 e planta de 2 quartos atendem. Conversa avançou para viabilidade via financiamento: cliente informou que ainda não fez simulação de crédito.
 
 ## Interesse atual
-Place+Arbi, Shopping Park. Busca imóvel para morar; prazo de entrega previsto para jun/2027 funciona; planta de 2 quartos atende; forma de compra pretendida: financiamento.
+Place+Arbi; compra para moradia; planta de 2 quartos; via financiamento ainda sem simulação prévia.
 
 ## Objeções ativas
-- Aprofundar viabilidade de financiamento com cuidado consultivo, sem prometer crédito ou aprovação.
-- Validar se a cliente já fez simulação de crédito ou se será a primeira análise.
-- Conduzir para visita presencial na Fama quando o diagnóstico de viabilidade e momento estiver minimamente claro.
+- Viabilidade/financiamento ainda não simulado; precisa de pré-análise antes de decisão.
 
 ## Próximo passo
-Aguardar resposta à pergunta já enviada sobre simulação de crédito. Se houver abertura, propor visita presencial na Fama como próximo passo natural para organizar financiamento e apresentar condições do Place+Arbi, sem prometer aprovação.
+CRM atual indica condução para visita presencial/pré-análise na Fama; cliente demonstrou abertura para ir ao escritório e pediu endereço. Próximo passo operacional: informar endereço e alinhar melhor dia/horário antes de registrar visita.
 
 ## Histórico de interações
