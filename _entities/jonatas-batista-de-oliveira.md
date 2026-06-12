@@ -6,6 +6,7 @@ external_ids:
   client_id: '11693'
   broker_id: '35'
   empreendimento_id: '22'
+  empreendimento_slug: union-vista
   fonte: Facebook Ads
   regiao: Grand Ville
 related:
@@ -18,11 +19,8 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
+  - whatsapp-inbound
   - qualificacao
-  - online
-  - exterior
-  - espanha
-  - financiamento
   - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
