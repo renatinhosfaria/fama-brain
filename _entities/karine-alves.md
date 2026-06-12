@@ -33,6 +33,7 @@ tags:
   - place-arbi
   - diagnostico
   - inbound-whatsapp
+  - financiamento
   - curado-brain
 author_agent: reno
 owner: brain
@@ -40,34 +41,38 @@ status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
   Place+Arbi, Shopping Park. Busca imóvel para morar; prazo de entrega previsto
-  para 2027 funciona; planta de 2 quartos atende.
+  para jun/2027 funciona; planta de 2 quartos atende; forma de compra
+  pretendida: financiamento.
 objecoes_ativas:
-  - 'Validar forma de compra: financiamento ou outra modalidade.'
   - >-
-    Aprofundar viabilidade com cuidado consultivo, sem prometer
-    crédito/aprovação.
+    Aprofundar viabilidade de financiamento com cuidado consultivo, sem prometer
+    crédito ou aprovação.
   - >-
-    Conduzir para visita presencial na Fama quando forma de compra e momento
-    estiverem minimamente claros.
+    Validar se a cliente já fez simulação de crédito ou se será a primeira
+    análise.
+  - >-
+    Conduzir para visita presencial na Fama quando o diagnóstico de viabilidade
+    e momento estiver minimamente claro.
 proximo_passo: >-
-  Aguardar resposta à pergunta já enviada sobre forma de compra/financiamento.
-  Se houver sinal de viabilidade ou abertura para avançar, propor visita
-  presencial na Fama como próximo passo natural.
+  Aguardar resposta à pergunta já enviada sobre simulação de crédito. Se houver
+  abertura, propor visita presencial na Fama como próximo passo natural para
+  organizar financiamento e apresentar condições do Place+Arbi, sem prometer
+  aprovação.
 ---
 [[karine-alves]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento ativo pelo Reno. Já confirmou interesse no Place+Arbi, finalidade de moradia, prazo de entrega compatível e planta de 2 quartos adequada. No inbound mais recente, justificou a demora por reunião no trabalho e confirmou que o atendimento por WhatsApp atende.
+Cliente em atendimento ativo pelo Reno. Confirmou interesse no Place+Arbi para moradia; prazo de entrega previsto para jun/2027 funciona; planta de 2 quartos atende; informou que pretende comprar via financiamento.
 
 ## Interesse atual
-Place+Arbi, Shopping Park. Busca imóvel para morar; prazo de entrega previsto para 2027 funciona; planta de 2 quartos atende.
+Place+Arbi, Shopping Park. Busca imóvel para morar; prazo de entrega previsto para jun/2027 funciona; planta de 2 quartos atende; forma de compra pretendida: financiamento.
 
 ## Objeções ativas
-- Validar forma de compra: financiamento ou outra modalidade.
-- Aprofundar viabilidade com cuidado consultivo, sem prometer crédito/aprovação.
-- Conduzir para visita presencial na Fama quando forma de compra e momento estiverem minimamente claros.
+- Aprofundar viabilidade de financiamento com cuidado consultivo, sem prometer crédito ou aprovação.
+- Validar se a cliente já fez simulação de crédito ou se será a primeira análise.
+- Conduzir para visita presencial na Fama quando o diagnóstico de viabilidade e momento estiver minimamente claro.
 
 ## Próximo passo
-Aguardar resposta à pergunta já enviada sobre forma de compra/financiamento. Se houver sinal de viabilidade ou abertura para avançar, propor visita presencial na Fama como próximo passo natural.
+Aguardar resposta à pergunta já enviada sobre simulação de crédito. Se houver abertura, propor visita presencial na Fama como próximo passo natural para organizar financiamento e apresentar condições do Place+Arbi, sem prometer aprovação.
 
 ## Histórico de interações
