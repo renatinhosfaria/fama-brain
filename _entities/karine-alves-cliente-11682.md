@@ -29,7 +29,8 @@ tags:
   - place-arbi
   - diagnostico
   - financiamento
-  - visita-em-negociacao
+  - visita-em-aberto
+  - follow-up
 author_agent: reno
 owner: brain
 ---
@@ -61,7 +62,8 @@ Cliente informou que pretende comprar via financiamento.
 Cliente informou que ainda não fez simulação de crédito.
 Reno propôs visita presencial na Fama para pré-análise/condições do Place+Arbi.
 Cliente respondeu que consegue e perguntou o endereço.
-Reno informou o endereço: Av. Raulino Cotta Pacheco, 304, bairro Martins, Uberlândia, e pediu dia/horário para formalizar o agendamento.
+Reno informou o endereço: Av. Raulino Cotta Pacheco, 304, bairro Martins, Uberlândia.
+Cliente informou que prefere após 17h, mas não conseguirá ir nesta semana e estará com agenda apertada nas próximas duas semanas por causa do trabalho. Disse que avisará com antecedência o dia/horário.
 
 ## Diagnóstico atual
 - Finalidade: morar.
@@ -70,7 +72,7 @@ Reno informou o endereço: Av. Raulino Cotta Pacheco, 304, bairro Martins, Uberl
 - Planta: 2 quartos atende.
 - Forma de compra: financiamento.
 - Crédito: ainda não simulado.
-- Status comercial: convite para visita aceito em princípio; aguardando dia/horário.
+- Status comercial: visita aceita em princípio, preferência após 17h, sem data definida por agenda de trabalho.
 
 ## Próximo passo recomendado
-Quando a cliente indicar dia e horário, criar appointment real no FamaChat, avançar status para Agendamento se ainda estiver Em Atendimento, registrar nota e enviar confirmação com local/endereço.
+Responder sem pressão, validar que está tudo bem e manter abertura. Se a cliente não avisar, fazer follow-up respeitoso por volta de 25/06 após 17h. Quando indicar dia/horário, criar appointment real no FamaChat, avançar status para Agendamento se ainda estiver Em Atendimento, registrar nota e enviar confirmação com local/endereço.
