@@ -1,38 +1,43 @@
 ---
-schema_version: 1
-type: entity
-status: active
-created: '2026-06-12'
-updated: '2026-06-12'
-source: agent-generated
-author_agent: reno
-tags:
-  - reno
-  - whatsapp-inbound
-  - agendamento
-  - union-vista
-  - atendimento-online
-  - exterior
-  - financiamento
-  - crm-verified
-  - curado-brain
-name: Jonatas Batista de Oliveira
-entity_type: lead
 aliases:
   - jonatas-batista-de-oliveira
   - cliente-11693
   - 'client:11693'
+author_agent: reno
+confidence: 0.96
+created: '2026-06-12'
+entity_type: lead
 external_ids:
-  client_id: '11693'
-  broker_id: '35'
   appointment_id: '264'
+  broker_id: '35'
+  client_id: '11693'
   empreendimento_id: '22'
   empreendimento_slug: union-vista
   fonte: Facebook Ads
   regiao: Grand Ville
+interesse_atual: >-
+  Union Vista / Grand Ville para moradia futura, com compra em conjunto com a
+  esposa e simulação online de viabilidade. Quer entender possibilidade de
+  financiamento sem entrada/FGTS e eventual entrada parcelada.
 mentions_entity:
   - reno-hub
   - union-vista
+name: Jonatas Batista de Oliveira
+objecoes_ativas:
+  - Cliente mora na Espanha e precisa conduzir atendimento 100% online.
+  - >-
+    Sem entrada e sem FGTS no momento; precisa avaliar viabilidade sem promessa
+    de crédito.
+  - >-
+    Renda familiar informada como retirada de empresa própria + MEI da esposa;
+    precisa validação documental no Brasil com contador/documentos.
+origem: Facebook Ads
+owner: renato
+proximo_passo: >-
+  Reunião online registrada no FamaChat para 15/06/2026 às 16h BRT para
+  simulação/validação de viabilidade do Union Vista. Manter status de
+  Agendamento, sem reabrir follow-ups automáticos, e validar documentação/renda
+  antes de qualquer orientação de crédito.
 related:
   - '[[reno-hub]]'
   - >-
@@ -47,27 +52,22 @@ related:
     [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-ele-tem-uma-empresa-e-a-esposa-possui-mei-como-forma-de-renda-comprovacao]]
   - >-
     [[2026-06-12-jonatas-batista-de-oliveira-cliente-aceitou-agendamento-para-segunda-feira-reuniao-online-criada-no-famachat-para-15-06-2026-as-16h-brt-appointment-id-264]]
-confidence: 0.96
+schema_version: 1
+source: agent-generated
+status: active
 status_comercial: Agendamento
-origem: Facebook Ads
-interesse_atual: >-
-  Union Vista / Grand Ville para moradia futura, com compra em conjunto com a
-  esposa e simulação online de viabilidade. Quer entender possibilidade de
-  financiamento sem entrada/FGTS e eventual entrada parcelada.
-objecoes_ativas:
-  - Cliente mora na Espanha e precisa conduzir atendimento 100% online.
-  - >-
-    Sem entrada e sem FGTS no momento; precisa avaliar viabilidade sem promessa
-    de crédito.
-  - >-
-    Renda familiar informada como retirada de empresa própria + MEI da esposa;
-    precisa validação documental no Brasil com contador/documentos.
-proximo_passo: >-
-  Reunião online registrada no FamaChat para 15/06/2026 às 16h BRT para
-  simulação/validação de viabilidade do Union Vista. Manter status de
-  Agendamento, sem reabrir follow-ups automáticos, e validar documentação/renda
-  antes de qualquer orientação de crédito.
-owner: brain
+tags:
+  - reno
+  - whatsapp-inbound
+  - agendamento
+  - union-vista
+  - atendimento-online
+  - exterior
+  - financiamento
+  - crm-verified
+  - curado-brain
+type: entity
+updated: '2026-06-12'
 ---
 [[reno-hub]]
 
