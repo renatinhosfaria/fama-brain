@@ -30,6 +30,7 @@ tags:
   - diagnostico
   - moradia
   - planta-ok
+  - financiamento
 author_agent: reno
 owner: brain
 ---
@@ -57,11 +58,12 @@ Cliente informou que busca o imóvel para morar.
 Reno validou que o Place+Arbi é lançamento com entrega prevista para jun/2027.
 Cliente respondeu que o prazo funciona.
 Cliente confirmou que uma planta de 2 quartos atende para o dia a dia.
+Cliente informou que pretende comprar via financiamento.
 
 ## Diagnóstico pendente
-- Entender viabilidade e forma de compra.
-- Validar se pretende financiar e se já fez alguma simulação.
-- Conduzir para visita presencial na Fama quando fizer sentido.
+- Entender se já fez simulação de financiamento ou se seria a primeira análise.
+- Entender viabilidade sem prometer crédito.
+- Conduzir para visita presencial/análise na Fama quando fizer sentido.
 
 ## Próximo passo recomendado
-Responder de forma humana à demora e perguntar, em uma pergunta só, se pretende comprar via financiamento ou outra forma.
+Responder destacando que crédito é uma parte importante do atendimento da Fama e perguntar se a cliente já fez alguma simulação de financiamento ou se seria a primeira.
