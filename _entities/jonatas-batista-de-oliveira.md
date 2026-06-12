@@ -5,7 +5,8 @@ entity_type: lead
 external_ids:
   client_id: '11693'
   broker_id: '35'
-  fonte: whatsapp
+  empreendimento_id: '22'
+  fonte: Facebook Ads
   regiao: Grand Ville
 related:
   - '[[jonatas-batista-de-oliveira]]'
@@ -17,42 +18,47 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
+  - agendamento-online
   - qualificacao
+  - online
+  - exterior
+  - financiamento
   - union-vista
 author_agent: reno
-status_comercial: Em Atendimento
+status_comercial: Agendamento online
 origem: Facebook Ads
 interesse_atual: >-
-  Entender viabilidade de financiamento/compra com composição de renda do casal
-  para o Union Vista/região Grand Ville.
+  Moradia futura no Union Vista / Grand Ville; atendimento online porque cliente
+  mora na Espanha; renda familiar aproximada R$ 6.000 a R$ 7.000 comprovada no
+  Brasil como retirada; ele tem empresa e esposa tem MEI; quer entender
+  possibilidade sem entrada, sem FGTS e com entrada parcelada.
 objecoes_ativas:
-  - Atendimento precisa ser remoto porque o cliente mora na Espanha.
-  - >-
-    Renda vem de empresa própria/MEI e foi descrita como retirada, exigindo
-    validação contábil/documental.
-  - >-
-    Sem entrada/FGTS no momento; quer avaliar possibilidade de entrada
-    parcelada.
+  - Não consegue atendimento presencial por morar na Espanha
+  - Sem entrada
+  - Sem FGTS
+  - Quer entender entrada parcelada
+  - Renda via empresa própria e MEI precisa validação documental
 proximo_passo: >-
-  Conduzir para simulação remota/validação documental da renda: esclarecer se a
-  retirada é comprovável e orientar organização de documentos com contador,
-  extratos, pró-labore/DAS/IR, sem prometer crédito.
+  Reunião online agendada para 15/06/2026 às 16h BRT para simulação/validação de
+  viabilidade. Orientar cliente a alinhar documentação de retirada/renda com
+  contador.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Busca moradia futura no Union Vista/região Grand Ville e está avaliando viabilidade de compra sem entrada/FGTS, com possível entrada parcelada. Mora na Espanha, então precisa de condução online/remota.
+Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, busca moradia futura, prazo de 6 meses a 1 ano, compra com esposa compondo renda, sem entrada/FGTS no momento. Renda familiar aproximada entre R$ 6.000 e R$ 7.000 comprovada no Brasil como retirada. Mora na Espanha e precisa fazer atendimento online. Ele tem empresa e esposa possui MEI; cliente pode verificar documentação com contador. Reunião online agendada no FamaChat para segunda-feira, 15/06/2026, às 16h BRT, appointment_id 264.
 
 ## Interesse atual
-Entender viabilidade de financiamento/compra com composição de renda do casal para o Union Vista/região Grand Ville.
+Moradia futura no Union Vista / Grand Ville; atendimento online porque cliente mora na Espanha; renda familiar aproximada R$ 6.000 a R$ 7.000 comprovada no Brasil como retirada; ele tem empresa e esposa tem MEI; quer entender possibilidade sem entrada, sem FGTS e com entrada parcelada.
 
 ## Objeções ativas
-- Atendimento precisa ser remoto porque o cliente mora na Espanha.
-- Renda vem de empresa própria/MEI e foi descrita como retirada, exigindo validação contábil/documental.
-- Sem entrada/FGTS no momento; quer avaliar possibilidade de entrada parcelada.
+- Não consegue atendimento presencial por morar na Espanha
+- Sem entrada
+- Sem FGTS
+- Quer entender entrada parcelada
+- Renda via empresa própria e MEI precisa validação documental
 
 ## Próximo passo
-Conduzir para simulação remota/validação documental da renda: esclarecer se a retirada é comprovável e orientar organização de documentos com contador, extratos, pró-labore/DAS/IR, sem prometer crédito.
+Reunião online agendada para 15/06/2026 às 16h BRT para simulação/validação de viabilidade. Orientar cliente a alinhar documentação de retirada/renda com contador.
 
 ## Histórico de interações
