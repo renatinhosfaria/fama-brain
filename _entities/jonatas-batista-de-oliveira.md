@@ -20,41 +20,42 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
+  - em-atendimento
   - union-vista
+  - financiamento
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Moradia futura no Union Vista / região Grand Ville. Quer entender viabilidade
-  de compra sem entrada, sem FGTS e com possível entrada parcelada. Renda
-  familiar aproximada de R$ 6.000 a R$ 7.000 foi informada como comprovada no
-  Brasil.
+  Union Vista / região Grand Ville para moradia futura; prazo declarado de 6
+  meses a 1 ano. Cliente quer avaliar compra sem entrada e sem FGTS, com
+  possível entrada parcelada, compondo renda com a esposa.
 objecoes_ativas:
-  - Não consegue atendimento presencial por morar na Espanha
-  - Precisa fazer tudo online
-  - Sem entrada no momento
-  - Sem FGTS no momento
+  - Atendimento precisa ser remoto porque o cliente está morando na Espanha.
+  - Cliente relata não ter entrada nem FGTS no momento.
+  - >-
+    Renda envolve empresa própria e MEI da esposa; falta esclarecer se o valor
+    informado é retirada líquida/comprovável, faturamento bruto ou outra forma
+    de comprovação.
 proximo_passo: >-
-  Atendimento principal deve seguir online e qualificar a forma de comprovação
-  da renda no Brasil (CLT/holerite, autônomo, empresa, IR etc.) para orientar
-  viabilidade sem prometer crédito/aprovação.
+  Esclarecer documentação e natureza da renda comprovável: retirada/pro-labore,
+  extratos, DAS/MEI, IR, contrato social e demais documentos úteis; depois
+  orientar próximo passo de simulação/atendimento online sem prometer aprovação.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead Facebook Ads atribuído ao Reno (broker_id=35), CRM em Em Atendimento. Interesse no Union Vista / região Grand Ville. Cliente mora na Espanha, não consegue ir presencialmente no momento e precisa conduzir atendimento online.
+Atendimento Reno em andamento. Cliente mora na Espanha e precisa conduzir simulação/atendimento online. Informou renda familiar aproximada de R$ 6.000 a R$ 7.000 comprovada no Brasil e, no inbound mais recente, esclareceu que ele tem empresa e a esposa possui MEI. Foco atual: qualificar viabilidade de financiamento/entrada parcelada sem prometer crédito.
 
 ## Interesse atual
-Moradia futura no Union Vista / região Grand Ville. Quer entender viabilidade de compra sem entrada, sem FGTS e com possível entrada parcelada. Renda familiar aproximada de R$ 6.000 a R$ 7.000 foi informada como comprovada no Brasil.
+Union Vista / região Grand Ville para moradia futura; prazo declarado de 6 meses a 1 ano. Cliente quer avaliar compra sem entrada e sem FGTS, com possível entrada parcelada, compondo renda com a esposa.
 
 ## Objeções ativas
-- Não consegue atendimento presencial por morar na Espanha
-- Precisa fazer tudo online
-- Sem entrada no momento
-- Sem FGTS no momento
+- Atendimento precisa ser remoto porque o cliente está morando na Espanha.
+- Cliente relata não ter entrada nem FGTS no momento.
+- Renda envolve empresa própria e MEI da esposa; falta esclarecer se o valor informado é retirada líquida/comprovável, faturamento bruto ou outra forma de comprovação.
 
 ## Próximo passo
-Atendimento principal deve seguir online e qualificar a forma de comprovação da renda no Brasil (CLT/holerite, autônomo, empresa, IR etc.) para orientar viabilidade sem prometer crédito/aprovação.
+Esclarecer documentação e natureza da renda comprovável: retirada/pro-labore, extratos, DAS/MEI, IR, contrato social e demais documentos úteis; depois orientar próximo passo de simulação/atendimento online sem prometer aprovação.
 
 ## Histórico de interações
