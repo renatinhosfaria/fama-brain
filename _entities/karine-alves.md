@@ -10,8 +10,9 @@ external_ids:
   client_id: '11682'
   broker_id: '35'
   empreendimento_id: '67'
+  empreendimento_slug: place-arbi
   fonte: Facebook Ads
-  regiao: Uberlândia
+  regiao: Shopping Park / Zona Sul
 mentions_entity:
   - reno-hub
   - karine-alves-cliente-11682
@@ -27,37 +28,36 @@ updated: '2026-06-11'
 source: agent-generated
 tags:
   - reno
-  - whatsapp
+  - whatsapp-inbound
   - qualificacao
-  - visita
+  - visita-em-aberto
 author_agent: reno
 owner: brain
-status_comercial: Em Atendimento
+status_comercial: Em Atendimento — visita em aberto sem agendamento formal.
 origem: Facebook Ads
 interesse_atual: >-
-  Place+Arbi; compra para moradia; planta de 2 quartos; via financiamento ainda
-  sem simulação prévia.
+  Place+Arbi — apartamento 2 quartos para moradia, com atenção a
+  financiamento/pré-análise.
 objecoes_ativas:
-  - >-
-    Viabilidade/financiamento ainda não simulado; precisa de pré-análise antes
-    da decisão.
+  - Agenda restrita por trabalho; disponibilidade apenas após 17h.
+  - 'Visita presencial aceita em princípio, mas ainda sem data/horário definidos.'
 proximo_passo: >-
-  Cliente pediu o endereço para visita; CRM já contém a resposta operacional com
-  endereço. Próximo passo: aguardar/confirmar melhor dia e horário para
-  registrar a visita presencial/pré-análise na Fama.
+  Aguardar a cliente indicar com antecedência um dia e horário após 17h; se não
+  houver retorno, fazer follow-up respeitoso mais à frente, sem pressão.
 ---
 [[karine-alves]] [[reno-hub]]
 
 ## Resumo
-Lead elegível do Reno (broker_id=35), originado de Facebook Ads para o empreendimento Place+Arbi. Cliente busca imóvel para morar; prazo de entrega jun/2027 e planta de 2 quartos atendem. Conversa avançou para viabilidade via financiamento: cliente ainda não fez simulação de crédito e demonstrou abertura para ir ao escritório da Fama.
+Cliente identificada no CRM como broker_id=35 e status Em Atendimento. Atendimento sobre o empreendimento Place+Arbi, no Shopping Park. Busca imóvel para morar; prazo de entrega JUN/2027 e planta de 2 quartos atendem. Compra prevista via financiamento, ainda sem simulação registrada. No inbound de 2026-06-12T00:51:40Z, informou que pode ser após 17h, mas não consegue ir esta semana e terá agenda apertada nas próximas duas semanas por causa do trabalho.
 
 ## Interesse atual
-Place+Arbi; compra para moradia; planta de 2 quartos; via financiamento ainda sem simulação prévia.
+Place+Arbi — apartamento 2 quartos para moradia, com atenção a financiamento/pré-análise.
 
 ## Objeções ativas
-- Viabilidade/financiamento ainda não simulado; precisa de pré-análise antes da decisão.
+- Agenda restrita por trabalho; disponibilidade apenas após 17h.
+- Visita presencial aceita em princípio, mas ainda sem data/horário definidos.
 
 ## Próximo passo
-Cliente pediu o endereço para visita; CRM já contém a resposta operacional com endereço. Próximo passo: aguardar/confirmar melhor dia e horário para registrar a visita presencial/pré-análise na Fama.
+Aguardar a cliente indicar com antecedência um dia e horário após 17h; se não houver retorno, fazer follow-up respeitoso mais à frente, sem pressão.
 
 ## Histórico de interações
