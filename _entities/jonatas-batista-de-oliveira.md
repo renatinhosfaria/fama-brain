@@ -6,9 +6,8 @@ external_ids:
   client_id: '11693'
   broker_id: '35'
   empreendimento_id: '22'
-  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
+  regiao: Grand Ville
 related:
   - '[[jonatas-batista-de-oliveira]]'
   - '[[reno-hub]]'
@@ -19,32 +18,33 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
   - qualificacao
+  - moradia-futura
+  - composicao-de-renda
   - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Moradia futura. Interesse associado ao Union Vista, no Grand Ville; prazo e
-  viabilidade financeira ainda precisam ser diagnosticados.
+  Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses
+  a 1 ano; compra junto com a esposa compondo renda.
 objecoes_ativas: []
 proximo_passo: >-
-  Retomar qualificação consultiva com uma pergunta por vez, começando pelo prazo
-  aproximado para mudança/compra.
+  Entender entrada/FGTS ou faixa de parcela confortável para orientar
+  viabilidade financeira sem promessa de crédito.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead do primeiro contato Reno para o Union Vista/Grand Ville. Já respondeu ao contato inicial; no inbound mais recente informou que quer comprar para morar futuramente.
+Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, informou que quer comprar para morar futuramente, indicou prazo de 6 meses a 1 ano e disse que pretende comprar junto com a esposa compondo renda.
 
 ## Interesse atual
-Moradia futura. Interesse associado ao Union Vista, no Grand Ville; prazo e viabilidade financeira ainda precisam ser diagnosticados.
+Moradia futura no Union Vista / região Grand Ville; prazo desejado de 6 meses a 1 ano; compra junto com a esposa compondo renda.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Retomar qualificação consultiva com uma pergunta por vez, começando pelo prazo aproximado para mudança/compra.
+Entender entrada/FGTS ou faixa de parcela confortável para orientar viabilidade financeira sem promessa de crédito.
 
 ## Histórico de interações
