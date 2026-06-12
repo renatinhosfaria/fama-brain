@@ -12,7 +12,7 @@ external_ids:
   empreendimento_id: '25'
   empreendimento_slug: garden-sul
   fonte: Facebook Ads
-  regiao: Jardim Sul / Zona Sul
+  regiao: Zona Sul
 mentions_entity:
   - reno-hub
 related:
@@ -26,7 +26,7 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
-  - whatsapp
+  - whatsapp-inbound
   - qualificacao
   - 3-quartos
 author_agent: reno
@@ -37,7 +37,10 @@ interesse_atual: >-
   Apartamento para morar, com preferência por 3 quartos. Interesse inicial veio
   pelo Garden Sul, mas Garden Sul possui plantas cadastradas de 2 quartos; se 3
   quartos for indispensável, conduzir para alternativas semelhantes na Zona Sul.
-objecoes_ativas: []
+objecoes_ativas:
+  - >-
+    Possível desalinhamento entre Garden Sul e requisito de 3 quartos, pois o
+    empreendimento consultado tem plantas cadastradas de 2 quartos.
 proximo_passo: >-
   Validar se 3 quartos é requisito indispensável e se a cliente aceita opções
   semelhantes na Zona Sul/Jardim Sul antes de apresentar imóveis ou convidar
@@ -52,7 +55,7 @@ Cliente em atendimento Reno (CRM client_id 11692, lead_id 3215), origem Facebook
 Apartamento para morar, com preferência por 3 quartos. Interesse inicial veio pelo Garden Sul, mas Garden Sul possui plantas cadastradas de 2 quartos; se 3 quartos for indispensável, conduzir para alternativas semelhantes na Zona Sul.
 
 ## Objeções ativas
-
+- Possível desalinhamento entre Garden Sul e requisito de 3 quartos, pois o empreendimento consultado tem plantas cadastradas de 2 quartos.
 
 ## Próximo passo
 Validar se 3 quartos é requisito indispensável e se a cliente aceita opções semelhantes na Zona Sul/Jardim Sul antes de apresentar imóveis ou convidar para visita.
