@@ -1,58 +1,120 @@
 ---
-type: entity
-name: Jonatas Batista de Oliveira
-entity_type: lead
-external_ids:
-  client_id: '11693'
-  broker_id: '35'
-  empreendimento_id: '22'
-  empreendimento_slug: union-vista
-  fonte: Facebook Ads
-  regiao: Grand Ville
-related:
-  - '[[jonatas-batista-de-oliveira]]'
-  - '[[reno-hub]]'
 schema_version: 1
+type: entity
 status: active
 created: '2026-06-12'
 updated: '2026-06-12'
 source: agent-generated
+author_agent: reno
 tags:
   - reno
   - whatsapp-inbound
   - agendamento
   - union-vista
-author_agent: reno
+  - atendimento-online
+  - exterior
+  - financiamento
+  - crm-verified
+  - curado-brain
+name: Jonatas Batista de Oliveira
+entity_type: lead
+aliases:
+  - jonatas-batista-de-oliveira
+  - cliente-11693
+  - 'client:11693'
+external_ids:
+  client_id: '11693'
+  broker_id: '35'
+  appointment_id: '264'
+  empreendimento_id: '22'
+  empreendimento_slug: union-vista
+  fonte: Facebook Ads
+  regiao: Grand Ville
+mentions_entity:
+  - reno-hub
+  - union-vista
+related:
+  - '[[reno-hub]]'
+  - >-
+    [[2026-06-12-jonatas-batista-de-oliveira-cliente-respondeu-sim-ao-contato-inicial-do-reno-sobre-o-union-vista-grand-ville-sinal-interpretado-como-confirmacao-de-aderencia-da-regiao]]
+  - >-
+    [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-mora-na-espanha-nao-consegue-ir-presencialmente-e-precisa-fazer-todo-o-atendimento-online]]
+  - >-
+    [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-renda-familiar-aproximada-de-r-6-000-a-r-7-000-e-perguntou-se-ha-opcao-de-entrada-parcelada]]
+  - >-
+    [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-a-renda-familiar-de-r-6-000-a-r-7-000-e-comprovada-no-brasil-embora-esteja-morando-na-espanha]]
+  - >-
+    [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-ele-tem-uma-empresa-e-a-esposa-possui-mei-como-forma-de-renda-comprovacao]]
+  - >-
+    [[2026-06-12-jonatas-batista-de-oliveira-cliente-aceitou-agendamento-para-segunda-feira-reuniao-online-criada-no-famachat-para-15-06-2026-as-16h-brt-appointment-id-264]]
+confidence: 0.96
 status_comercial: Agendamento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vista, bairro Grand Ville, com foco em simulação/validação de
-  viabilidade e possibilidade de entrada parcelada.
+  Union Vista / Grand Ville para moradia futura, com compra em conjunto com a
+  esposa e simulação online de viabilidade. Quer entender possibilidade de
+  financiamento sem entrada/FGTS e eventual entrada parcelada.
 objecoes_ativas:
-  - Cliente mora na Espanha e precisa conduzir atendimento online.
+  - Cliente mora na Espanha e precisa conduzir atendimento 100% online.
   - >-
     Sem entrada e sem FGTS no momento; precisa avaliar viabilidade sem promessa
     de crédito.
-  - Renda familiar via empresa/MEI/retirada precisa de validação documental.
+  - >-
+    Renda familiar informada como retirada de empresa própria + MEI da esposa;
+    precisa validação documental no Brasil com contador/documentos.
 proximo_passo: >-
-  Reunião online registrada no FamaChat para segunda-feira, 15/06/2026, às 16h
-  BRT, para simulação/validação de viabilidade do Union Vista. Manter status
-  avançado sem reabrir follow-ups automáticos.
+  Reunião online registrada no FamaChat para 15/06/2026 às 16h BRT para
+  simulação/validação de viabilidade do Union Vista. Manter status de
+  Agendamento, sem reabrir follow-ups automáticos, e validar documentação/renda
+  antes de qualquer orientação de crédito.
+owner: brain
 ---
-[[jonatas-batista-de-oliveira]] [[reno-hub]]
+[[reno-hub]]
 
-## Resumo
-Lead do Facebook Ads em atendimento pelo Reno. Interesse em Union Vista / Grand Ville para moradia futura, com atendimento remoto por estar morando na Espanha. Conversa qualificou viabilidade de financiamento, renda familiar aproximada e ausência de entrada/FGTS. Em 2026-06-12 respondeu disponibilidade para segunda-feira e o atendimento já está em etapa de agendamento no CRM.
+# Jonatas Batista de Oliveira
+
+## Resumo curado
+Lead originado em Facebook Ads para o **Union Vista / Grand Ville**. A conversa saiu de primeira resposta simples para qualificação de compra para moradia futura, com atendimento necessariamente online porque o cliente está morando na Espanha.
+
+O CRM/FamaChat confirma o estado operacional atual como **Agendamento** e registra uma reunião online para simulação/validação de viabilidade em 15/06/2026 às 16h BRT. A memória do vault deve ser usada como contexto consultivo; o CRM segue como fonte operacional de verdade.
+
+## Classificação
+- **Tipo:** entidade / lead comercial.
+- **Tema:** Reno, WhatsApp inbound, qualificação de financiamento, atendimento online, Union Vista.
+- **Projeto/área:** [[reno-hub]].
+- **Prioridade operacional:** alta para continuidade do atendimento, porque há reunião agendada e restrições de documentação/viabilidade.
+- **Estado:** ativo, em agendamento.
 
 ## Interesse atual
-Union Vista, bairro Grand Ville, com foco em simulação/validação de viabilidade e possibilidade de entrada parcelada.
+Union Vista / Grand Ville para moradia futura, com compra em conjunto com a esposa e simulação online de viabilidade. Quer entender possibilidade de financiamento sem entrada/FGTS e eventual entrada parcelada.
 
-## Objeções ativas
-- Cliente mora na Espanha e precisa conduzir atendimento online.
+## Objeções e restrições ativas
+- Cliente mora na Espanha e precisa conduzir atendimento 100% online.
 - Sem entrada e sem FGTS no momento; precisa avaliar viabilidade sem promessa de crédito.
-- Renda familiar via empresa/MEI/retirada precisa de validação documental.
+- Renda familiar informada como retirada de empresa própria + MEI da esposa; precisa validação documental no Brasil com contador/documentos.
+- Compra envolve composição de renda com a esposa.
 
 ## Próximo passo
-Reunião online registrada no FamaChat para segunda-feira, 15/06/2026, às 16h BRT, para simulação/validação de viabilidade do Union Vista. Manter status avançado sem reabrir follow-ups automáticos.
+Reunião online registrada no FamaChat para **15/06/2026 às 16h BRT** para simulação/validação de viabilidade do Union Vista. Manter status de Agendamento, sem reabrir follow-ups automáticos, e validar documentação/renda antes de qualquer orientação de crédito.
 
-## Histórico de interações
+## Verificação no CRM/FamaChat
+- Cliente CRM verificado: `client_id:11693`.
+- Status CRM verificado: **Agendamento**.
+- Agendamento verificado: `appointment_id:264`, reunião online, 15/06/2026 16h BRT.
+- Observação de segurança comercial: não prometer aprovação de crédito; validar renda, documentação, fluxo de entrada e enquadramento.
+
+## Histórico de interações relacionadas
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-respondeu-sim-ao-contato-inicial-do-reno-sobre-o-union-vista-grand-ville-sinal-interpretado-como-confirmacao-de-aderencia-da-regiao]] — primeira resposta/aderência à região.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-quer-comprar-para-morar-futuramente]] — intenção de moradia futura.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-pretende-comprar-junto-com-a-esposa-compondo-renda]] — composição de renda com esposa.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-mora-na-espanha-nao-consegue-ir-presencialmente-e-precisa-fazer-todo-o-atendimento-online]] — restrição de atendimento online/exterior.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-renda-familiar-aproximada-de-r-6-000-a-r-7-000-e-perguntou-se-ha-opcao-de-entrada-parcelada]] — renda aproximada e entrada parcelada.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-a-renda-familiar-de-r-6-000-a-r-7-000-e-comprovada-no-brasil-embora-esteja-morando-na-espanha]] — renda comprovada no Brasil.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-ele-tem-uma-empresa-e-a-esposa-possui-mei-como-forma-de-renda-comprovacao]] — empresa própria + MEI da esposa.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-que-pode-verificar-com-contador-mas-que-a-renda-familiar-e-como-retirada-da-empresa-mei]] — renda como retirada e necessidade de validação documental.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-informou-preferencia-para-chamada-simulacao-online-no-periodo-da-tarde-horario-do-brasil]] — preferência de horário.
+- [[2026-06-12-jonatas-batista-de-oliveira-cliente-aceitou-agendamento-para-segunda-feira-reuniao-online-criada-no-famachat-para-15-06-2026-as-16h-brt-appointment-id-264]] — agendamento criado.
+- [[2026-06-12-jonatas-batista-de-oliveira-readback-inbound-status-atual-agendamento-sem-envio-automatico]] — readback operacional confirmando que não houve novo envio automático nem reabertura de follow-ups.
+
+## Interpretação assumida pela curadoria
+A sequência de journals foi tratada como um único arco de atendimento: primeira resposta → qualificação de moradia/viabilidade → restrição de atendimento online por residência no exterior → renda/entrada/documentação → reunião online agendada. Não foi criada tarefa comercial nova; a curadoria apenas consolidou memória recuperável para continuidade.
