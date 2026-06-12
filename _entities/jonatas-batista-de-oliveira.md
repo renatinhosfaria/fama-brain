@@ -21,32 +21,32 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
+  - first-contact-responded
   - union-vista
-  - prazo-6-12-meses
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Moradia futura no contexto do Union Vista/Grand Ville; prazo declarado de 6 a
-  12 meses para compra/mudança.
+  Apartamento no Union Vista / região Grand Ville, para morar futuramente. Sinal
+  atual: casal participando da decisão/viabilidade.
 objecoes_ativas: []
 proximo_passo: >-
-  Continuar diagnóstico consultivo pela viabilidade: entender entrada/FGTS ou
-  faixa de parcela confortável antes de orientar financiamento e propor visita
-  presencial quando fizer sentido.
+  Seguir diagnóstico consultivo sem prometer crédito: entender entrada/FGTS ou
+  faixa de parcela confortável para orientar viabilidade e, se fizer sentido,
+  conduzir para visita presencial na Fama.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Lead do primeiro contato Reno para Union Vista/Grand Ville. Respondeu ao contato inicial, informou objetivo de moradia futura e declarou prazo de compra/mudança entre 6 meses e 1 ano. CRM já registra composição de renda com a esposa como contexto relevante.
+Atendimento Reno ativo. Lead veio de Facebook Ads com interesse no Union Vista, bairro Grand Ville. Já respondeu ao primeiro contato e iniciou diagnóstico: busca compra para moradia futura, com prazo estimado de 6 meses a 1 ano, e informou que a compra envolve ele e a esposa, com possível composição de renda.
 
 ## Interesse atual
-Moradia futura no contexto do Union Vista/Grand Ville; prazo declarado de 6 a 12 meses para compra/mudança.
+Apartamento no Union Vista / região Grand Ville, para morar futuramente. Sinal atual: casal participando da decisão/viabilidade.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Continuar diagnóstico consultivo pela viabilidade: entender entrada/FGTS ou faixa de parcela confortável antes de orientar financiamento e propor visita presencial quando fizer sentido.
+Seguir diagnóstico consultivo sem prometer crédito: entender entrada/FGTS ou faixa de parcela confortável para orientar viabilidade e, se fizer sentido, conduzir para visita presencial na Fama.
 
 ## Histórico de interações
