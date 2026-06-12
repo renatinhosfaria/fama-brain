@@ -6,9 +6,8 @@ external_ids:
   client_id: '11693'
   broker_id: '35'
   empreendimento_id: '22'
-  empreendimento_slug: union-vista
   fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
+  regiao: Grand Ville
 related:
   - '[[jonatas-batista-de-oliveira]]'
   - '[[reno-hub]]'
@@ -19,43 +18,49 @@ updated: '2026-06-12'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
-  - em-atendimento
-  - union-vista
+  - qualificacao
+  - online
+  - exterior
+  - renda-brasil
+  - empresa
+  - mei
+  - retirada
   - financiamento
+  - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Union Vista / região Grand Ville para moradia futura; prazo declarado de 6
-  meses a 1 ano. Cliente quer avaliar compra sem entrada e sem FGTS, com
-  possível entrada parcelada, compondo renda com a esposa.
+  Moradia futura no Union Vista / região Grand Ville; atendimento online porque
+  cliente mora na Espanha; renda familiar aproximada R$ 6.000 a R$ 7.000
+  comprovada no Brasil como retirada; ele tem empresa e a esposa tem MEI; quer
+  entender possibilidade sem entrada, sem FGTS e com entrada parcelada.
 objecoes_ativas:
-  - Atendimento precisa ser remoto porque o cliente está morando na Espanha.
-  - Cliente relata não ter entrada nem FGTS no momento.
-  - >-
-    Renda envolve empresa própria e MEI da esposa; falta esclarecer se o valor
-    informado é retirada líquida/comprovável, faturamento bruto ou outra forma
-    de comprovação.
+  - Não consegue atendimento presencial por morar na Espanha
+  - Sem entrada
+  - Sem FGTS
+  - Quer entender entrada parcelada
+  - Renda via empresa própria e MEI precisa validação documental
 proximo_passo: >-
-  Esclarecer documentação e natureza da renda comprovável: retirada/pro-labore,
-  extratos, DAS/MEI, IR, contrato social e demais documentos úteis; depois
-  orientar próximo passo de simulação/atendimento online sem prometer aprovação.
+  Conduzir para simulação/atendimento online com validação documental da renda
+  junto ao contador, sem promessa de crédito.
 ---
 [[jonatas-batista-de-oliveira]] [[reno-hub]]
 
 ## Resumo
-Atendimento Reno em andamento. Cliente mora na Espanha e precisa conduzir simulação/atendimento online. Informou renda familiar aproximada de R$ 6.000 a R$ 7.000 comprovada no Brasil e, no inbound mais recente, esclareceu que ele tem empresa e a esposa possui MEI. Foco atual: qualificar viabilidade de financiamento/entrada parcelada sem prometer crédito.
+Lead Facebook Ads atribuído ao Reno (broker_id=35). Interesse no Union Vista, no Grand Ville. Cliente confirmou aderência da região, busca moradia futura, prazo de 6 meses a 1 ano, compra com esposa compondo renda, sem entrada/FGTS no momento. Renda familiar aproximada entre R$ 6.000 e R$ 7.000 comprovada no Brasil como retirada. Mora na Espanha e precisa fazer atendimento online. Ele tem empresa e a esposa possui MEI; cliente pode verificar documentação com contador. Necessário validar viabilidade online sem promessa de crédito.
 
 ## Interesse atual
-Union Vista / região Grand Ville para moradia futura; prazo declarado de 6 meses a 1 ano. Cliente quer avaliar compra sem entrada e sem FGTS, com possível entrada parcelada, compondo renda com a esposa.
+Moradia futura no Union Vista / região Grand Ville; atendimento online porque cliente mora na Espanha; renda familiar aproximada R$ 6.000 a R$ 7.000 comprovada no Brasil como retirada; ele tem empresa e a esposa tem MEI; quer entender possibilidade sem entrada, sem FGTS e com entrada parcelada.
 
 ## Objeções ativas
-- Atendimento precisa ser remoto porque o cliente está morando na Espanha.
-- Cliente relata não ter entrada nem FGTS no momento.
-- Renda envolve empresa própria e MEI da esposa; falta esclarecer se o valor informado é retirada líquida/comprovável, faturamento bruto ou outra forma de comprovação.
+- Não consegue atendimento presencial por morar na Espanha
+- Sem entrada
+- Sem FGTS
+- Quer entender entrada parcelada
+- Renda via empresa própria e MEI precisa validação documental
 
 ## Próximo passo
-Esclarecer documentação e natureza da renda comprovável: retirada/pro-labore, extratos, DAS/MEI, IR, contrato social e demais documentos úteis; depois orientar próximo passo de simulação/atendimento online sem prometer aprovação.
+Conduzir para simulação/atendimento online com validação documental da renda junto ao contador, sem promessa de crédito.
 
 ## Histórico de interações
