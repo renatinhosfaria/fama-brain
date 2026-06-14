@@ -9,7 +9,7 @@ external_ids:
   broker_id: '35'
   empreendimento_id: '67'
   fonte: Facebook Ads
-  regiao: Shopping Park / Jardim Sul
+  regiao: Shopping Park / Zona Sul
 mentions_entity:
   - reno-hub
 related:
@@ -25,37 +25,39 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - em-atendimento
-  - primeiro-contato-respondido
+  - qualificacao
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Opções econômicas na planta; Jardim Sul entrou como alternativa de distância
-  aceitável; Place+Arbi sem suíte também foi citado no histórico recente.
+  Opções econômicas na planta com elevador; Place+Arbi sem suíte/2º andar segue
+  possível se atender requisito, e alternativas sem elevador devem sair do
+  filtro.
 objecoes_ativas:
+  - Elevador indispensável
   - Distância/localização entre Shopping Park e Jardim Sul
   - Preço mais baixo
-  - Preferência por andares 3º/4º
+  - Preferência por menor impacto mensal durante obra
 proximo_passo: >-
-  No fluxo cliente-facing, retomar que Jardim Sul pode ser uma opção viável,
-  confirmar prioridade entre localização e valor e conduzir diagnóstico para
-  possível visita quando fizer sentido.
+  Sem envio nesta rotina. No fluxo cliente-facing, priorizar opções com
+  elevador, confirmar se Jardim Sul deve sair do filtro se não tiver elevador e
+  conduzir diagnóstico para visita quando fizer sentido.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato do Reno e segue em atendimento. Contexto recente: busca imóvel na planta/valor mais baixo, avaliando Place+Arbi/Shopping Park e alternativas no Jardim Sul; comentou que Jardim Sul não parece tão longe.
+Cliente respondeu ao primeiro contato do Reno e segue em atendimento. Contexto recente: busca imóvel na planta/valor mais baixo, avaliando Place+Arbi/Shopping Park e alternativas; agora informou que elevador é requisito indispensável.
 
 ## Interesse atual
-Opções econômicas na planta; Jardim Sul entrou como alternativa de distância aceitável; Place+Arbi sem suíte também foi citado no histórico recente.
+Opções econômicas na planta com elevador; Place+Arbi sem suíte/2º andar segue possível se atender requisito, e alternativas sem elevador devem sair do filtro.
 
 ## Objeções ativas
+- Elevador indispensável
 - Distância/localização entre Shopping Park e Jardim Sul
 - Preço mais baixo
-- Preferência por andares 3º/4º
+- Preferência por menor impacto mensal durante obra
 
 ## Próximo passo
-No fluxo cliente-facing, retomar que Jardim Sul pode ser uma opção viável, confirmar prioridade entre localização e valor e conduzir diagnóstico para possível visita quando fizer sentido.
+Sem envio nesta rotina. No fluxo cliente-facing, priorizar opções com elevador, confirmar se Jardim Sul deve sair do filtro se não tiver elevador e conduzir diagnóstico para visita quando fizer sentido.
 
 ## Histórico de interações
