@@ -1,6 +1,16 @@
 ---
-schema_version: 1
 type: entity
+name: Gi Santos Freitas
+entity_type: lead
+external_ids:
+  client_id: '11714'
+  broker_id: '35'
+  fonte: WhatsApp
+  regiao: Shopping Park
+related:
+  - '[[gi-santos-freitas]]'
+  - '[[reno-hub]]'
+schema_version: 1
 status: active
 created: '2026-06-14'
 updated: '2026-06-14'
@@ -8,40 +18,33 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - first-contact-responded
-  - em-atendimento
+  - qualificacao
+  - shopping-park
 author_agent: reno
-name: Gi Santos Freitas
-entity_type: lead
-related:
-  - '[[gi-santos-freitas]]'
-  - '[[reno-hub]]'
-external_ids:
-  client_id: '11714'
-  broker_id: '35'
 status_comercial: Em Atendimento
-origem: WhatsApp inbound após primeiro contato Reno
+origem: WhatsApp inbound
 interesse_atual: >-
-  Sondagem inicial; interesse despertado pela planta e necessidade de entender
-  melhor a localização do empreendimento.
+  Shopping Park ou região relacionada, com necessidade de recorte melhor de
+  localização.
 objecoes_ativas:
-  - Poucos detalhes sobre localização do imóvel/empreendimento.
+  - Shopping Park percebido como uma região muito grande/ampla.
 proximo_passo: >-
-  Retomar atendimento consultivo no canal principal, esclarecer
-  contexto/localização e conduzir diagnóstico antes de propor visita presencial.
+  Responder em atendimento normal com pergunta curta para entender qual
+  parte/região faz sentido para a busca e manter avanço consultivo; não enviar
+  catálogo cedo.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato do Reno pelo WhatsApp em 2026-06-14. Informou que ainda está em sondagem, viu a planta, achou interessante e precisa de mais detalhes de localização.
+Atendimento Reno em andamento no WhatsApp. Cliente respondeu ao contexto de Shopping Park indicando que considera a região muito grande; o próximo atendimento deve afunilar localização/recorte antes de sugerir imóvel ou visita.
 
 ## Interesse atual
-Sondagem inicial; interesse despertado pela planta e necessidade de entender melhor a localização do empreendimento.
+Shopping Park ou região relacionada, com necessidade de recorte melhor de localização.
 
 ## Objeções ativas
-- Poucos detalhes sobre localização do imóvel/empreendimento.
+- Shopping Park percebido como uma região muito grande/ampla.
 
 ## Próximo passo
-Retomar atendimento consultivo no canal principal, esclarecer contexto/localização e conduzir diagnóstico antes de propor visita presencial.
+Responder em atendimento normal com pergunta curta para entender qual parte/região faz sentido para a busca e manter avanço consultivo; não enviar catálogo cedo.
 
 ## Histórico de interações
