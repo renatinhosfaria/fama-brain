@@ -5,7 +5,6 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  fonte: WhatsApp
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -18,35 +17,31 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
+  - valor
 author_agent: reno
 status_comercial: Em Atendimento
-origem: lead_automatico
+origem: Facebook Ads
 interesse_atual: >-
-  Cliente em sondagem/qualificação inicial; informou holerite, renda aproximada
-  de R$ 3.000, renda variável, compra sozinha e prazo ainda indefinido.
+  Continuar diagnóstico consultivo para entender faixa desejada, percepção de
+  valor e próximo passo comercial possível.
 objecoes_ativas:
-  - Prazo de compra/mudança indefinido
-  - Viabilidade deve considerar renda individual e renda variável
-  - Não prometer crédito/aprovação sem análise
+  - 'Comentário/dúvida sobre valor: "O valor é baixo"'
 proximo_passo: >-
-  Próximo atendimento deve seguir diagnóstico consultivo de viabilidade:
-  confirmar objetivo, entrada/FGTS, parcela confortável e região/empreendimento
-  adequado antes de conduzir para visita presencial.
+  Retomar qualificação de forma curta e humana, explorando contexto de
+  valor/faixa antes de propor visita.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente identificado no CRM e em atendimento pelo Reno. Já respondeu ao primeiro contato; repescagem está encerrada por resposta. Interações recentes indicam compra sozinha, renda aproximada de R$ 3.000, renda variável, holerite e prazo indefinido.
+Cliente em atendimento pelo Reno. Primeiro contato já tinha resposta registrada no CRM; novo inbound de WhatsApp trouxe comentário/dúvida sobre valor.
 
 ## Interesse atual
-Cliente em sondagem/qualificação inicial; informou holerite, renda aproximada de R$ 3.000, renda variável, compra sozinha e prazo ainda indefinido.
+Continuar diagnóstico consultivo para entender faixa desejada, percepção de valor e próximo passo comercial possível.
 
 ## Objeções ativas
-- Prazo de compra/mudança indefinido
-- Viabilidade deve considerar renda individual e renda variável
-- Não prometer crédito/aprovação sem análise
+- Comentário/dúvida sobre valor: "O valor é baixo"
 
 ## Próximo passo
-Próximo atendimento deve seguir diagnóstico consultivo de viabilidade: confirmar objetivo, entrada/FGTS, parcela confortável e região/empreendimento adequado antes de conduzir para visita presencial.
+Retomar qualificação de forma curta e humana, explorando contexto de valor/faixa antes de propor visita.
 
 ## Histórico de interações
