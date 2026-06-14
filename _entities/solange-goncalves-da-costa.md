@@ -7,6 +7,7 @@ aliases:
 external_ids:
   client_id: '11716'
   broker_id: '35'
+  fonte: whatsapp inbound
 mentions_entity:
   - reno-hub
 related:
@@ -23,6 +24,7 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
+  - renda
 author_agent: reno
 status_comercial: Em Atendimento
 origem: whatsapp inbound
@@ -31,13 +33,14 @@ interesse_atual: >-
   proximo passo comercial.
 objecoes_ativas: []
 proximo_passo: >-
-  Na resposta cliente-facing, confirmar quem sera o comprador/financiado e
-  seguir qualificacao natural rumo a visita quando fizer sentido.
+  Aguardar os comprovantes de renda citados e, na próxima resposta
+  cliente-facing, confirmar composição de renda/quem será o comprador antes de
+  avançar para visita quando fizer sentido.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao WhatsApp e trouxe informacao inicial de viabilidade: relatou que a pessoa citada esta com nome limpo.
+Cliente respondeu ao WhatsApp e informou que enviaria comprovantes de renda da pessoa citada para avaliação de viabilidade.
 
 ## Interesse atual
 Atendimento em andamento; aprofundar diagnostico consultivo antes de conduzir proximo passo comercial.
@@ -46,6 +49,6 @@ Atendimento em andamento; aprofundar diagnostico consultivo antes de conduzir pr
 
 
 ## Próximo passo
-Na resposta cliente-facing, confirmar quem sera o comprador/financiado e seguir qualificacao natural rumo a visita quando fizer sentido.
+Aguardar os comprovantes de renda citados e, na próxima resposta cliente-facing, confirmar composição de renda/quem será o comprador antes de avançar para visita quando fizer sentido.
 
 ## Histórico de interações
