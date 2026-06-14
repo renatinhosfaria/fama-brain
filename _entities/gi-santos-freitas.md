@@ -5,9 +5,6 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  empreendimento_id: '67'
-  fonte: Facebook Ads
-  regiao: Uberlândia / Shopping Park
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -20,7 +17,7 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - credito-imobiliario
+  - viabilidade-financeira
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
@@ -35,15 +32,16 @@ objecoes_ativas:
     Cliente está reunindo informações para repassar a uma pessoa de apoio que
     questiona/avalia como poderia ajudar.
 proximo_passo: >-
-  Manter condução consultiva e objetiva: resumir a lógica de crédito/viabilidade
-  para a cliente repassar à pessoa de apoio, reforçando que estimativa
-  preliminar pode ser feita com premissas, mas simulação confiável depende de
-  renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
+  Manter condução consultiva, clara e sem pressão: consolidar a lógica de
+  crédito/viabilidade para a cliente repassar à pessoa de apoio, reforçando que
+  estimativa preliminar pode ser feita com premissas, mas simulação confiável
+  depende de renda, entrada/FGTS, comprometimento e situação da pendência de
+  crédito.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente do atendimento Reno identificado no CRM (broker_id 35), em Em Atendimento, com interesse no Place+Arbi. A conversa atual está centrada em viabilidade de financiamento, organização/esclarecimento de pendência de crédito e em reunir uma resposta objetiva para repassar a uma pessoa de apoio.
+Cliente do atendimento Reno identificado no CRM (broker_id 35), em Em Atendimento, com interesse no Place+Arbi. A conversa atual está centrada em viabilidade de financiamento, organização/esclarecimento de pendência de crédito e em reunir uma explicação objetiva para repassar a uma pessoa de apoio. Cliente deu feedback positivo de que foi a primeira vez que explicaram a lógica dessa forma.
 
 ## Interesse atual
 Place+Arbi; busca entender localização, planta, preço e viabilidade financeira antes de avançar.
@@ -53,6 +51,6 @@ Place+Arbi; busca entender localização, planta, preço e viabilidade financeir
 - Cliente está reunindo informações para repassar a uma pessoa de apoio que questiona/avalia como poderia ajudar.
 
 ## Próximo passo
-Manter condução consultiva e objetiva: resumir a lógica de crédito/viabilidade para a cliente repassar à pessoa de apoio, reforçando que estimativa preliminar pode ser feita com premissas, mas simulação confiável depende de renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
+Manter condução consultiva, clara e sem pressão: consolidar a lógica de crédito/viabilidade para a cliente repassar à pessoa de apoio, reforçando que estimativa preliminar pode ser feita com premissas, mas simulação confiável depende de renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
 
 ## Histórico de interações
