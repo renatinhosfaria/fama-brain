@@ -5,6 +5,9 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
+  empreendimento_id: '67'
+  fonte: Facebook Ads
+  regiao: Zona Sul
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -17,43 +20,44 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
+  - serasa
   - financiamento
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Avaliar viabilidade real considerando renda própria da cliente,
-  pendências/restrições financeiras, entrada possível e eventual apoio externo
+  Avaliar viabilidade real de compra após entender/regularizar pendência no
+  Serasa, considerando renda própria, entrada possível e eventual apoio externo
   apenas para fluxo inicial/obra.
 objecoes_ativas:
   - >-
-    Ajuda de terceira pessoa não entra como composição de renda; usar apenas
-    como possível reforço de entrada/parcelas iniciais.
+    Pendência/restrição financeira no Serasa precisa ser detalhada e, se
+    necessário, regularizada antes de análise de crédito.
   - >-
-    Pendência financeira/restrição precisa ser entendida/regularizada antes de
-    qualquer análise de crédito.
+    Ajuda de terceira pessoa deve ser tratada como possível apoio de
+    entrada/fluxo inicial, não como composição de renda sem validação formal.
   - >-
     Renda/comprometimento mensal exigem simulação conservadora, sem promessa de
     aprovação.
 proximo_passo: >-
-  No atendimento normal, conduzir diagnóstico curto sobre quanto a terceira
-  pessoa conseguiria aportar por mês/entrada e calcular cenário de financiamento
-  com a renda da cliente sozinha; não enviar WhatsApp nesta rotina silenciosa.
+  No atendimento normal, levantar credor/CNPJ, valor, data de inclusão e caminho
+  de negociação/contestação no Serasa; depois retomar análise de viabilidade e
+  eventual visita conforme cenário real.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno, com diagnóstico de viabilidade/financiamento em andamento. Primeiro contato já estava respondido; novo inbound reforçou que uma terceira pessoa poderia ajudar nas parcelas iniciais até a entrega das chaves, mas não comporia renda por já possuir imóveis.
+Cliente em atendimento pelo Reno. Primeiro contato já estava respondido; inbound atual reforça contexto de pendência/restrição no Serasa dentro da qualificação financeira. CRM segue como fonte operacional; status mantido em Em Atendimento e Repescagem já encerrada por resposta do cliente.
 
 ## Interesse atual
-Avaliar viabilidade real considerando renda própria da cliente, pendências/restrições financeiras, entrada possível e eventual apoio externo apenas para fluxo inicial/obra.
+Avaliar viabilidade real de compra após entender/regularizar pendência no Serasa, considerando renda própria, entrada possível e eventual apoio externo apenas para fluxo inicial/obra.
 
 ## Objeções ativas
-- Ajuda de terceira pessoa não entra como composição de renda; usar apenas como possível reforço de entrada/parcelas iniciais.
-- Pendência financeira/restrição precisa ser entendida/regularizada antes de qualquer análise de crédito.
+- Pendência/restrição financeira no Serasa precisa ser detalhada e, se necessário, regularizada antes de análise de crédito.
+- Ajuda de terceira pessoa deve ser tratada como possível apoio de entrada/fluxo inicial, não como composição de renda sem validação formal.
 - Renda/comprometimento mensal exigem simulação conservadora, sem promessa de aprovação.
 
 ## Próximo passo
-No atendimento normal, conduzir diagnóstico curto sobre quanto a terceira pessoa conseguiria aportar por mês/entrada e calcular cenário de financiamento com a renda da cliente sozinha; não enviar WhatsApp nesta rotina silenciosa.
+No atendimento normal, levantar credor/CNPJ, valor, data de inclusão e caminho de negociação/contestação no Serasa; depois retomar análise de viabilidade e eventual visita conforme cenário real.
 
 ## Histórico de interações
