@@ -6,6 +6,8 @@ external_ids:
   client_id: '11714'
   broker_id: '35'
   empreendimento_id: '67'
+  fonte: Facebook Ads
+  regiao: Uberlândia
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -19,43 +21,40 @@ tags:
   - whatsapp-inbound
   - qualificacao
   - viabilidade
+  - fgts
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Busca orientação consultiva para entender viabilidade. Informou aluguel atual
-  em torno de R$ 1.200 como referência inicial de parcela confortável; critérios
-  citados no histórico incluem localização, espaço e valor de parcela.
+  Busca informação e análise de viabilidade antes de escolher imóvel. Contexto
+  recente: entrada/FGTS parecem pequenos; cliente trabalha por contrato e
+  acredita que o FGTS não estaria disponível agora porque o Estado não deposita
+  como CLT.
 objecoes_ativas:
+  - Entrada/FGTS percebidos como insuficientes ou indisponíveis no curto prazo.
   - >-
-    Ainda está em fase de sondagem/planejamento e não quer assumir compra de
-    qualquer forma.
-  - >-
-    Entrada/FGTS e forma de comprovação de renda exigem diagnóstico antes de
-    avanço comercial.
-  - >-
-    Quer evitar que o investimento vire dor de cabeça; abordagem deve ser
-    consultiva e sem pressão.
+    Cautela com crédito/parcela para evitar transformar investimento em dor de
+    cabeça.
+  - Momento atual mais informativo/planejamento do que decisão imediata.
 proximo_passo: >-
-  Continuar qualificação de viabilidade: confirmar renda/comprovação,
-  entrada/FGTS possível, parcela confortável e prioridade real de localização.
-  Só conduzir para visita presencial quando houver mínimo de viabilidade e
-  intenção clara.
+  Conduzir diagnóstico de viabilidade de forma consultiva, sem prometer crédito:
+  entender renda/contrato, documentação possível, valor de entrada real e
+  parcela confortável antes de sugerir visita ou opções.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo WhatsApp; primeiro contato já estava registrado como respondido. Perfil atual é de sondagem/planejamento, com cautela sobre viabilidade antes de avançar para imóvel ou visita.
+Cliente em atendimento pelo Reno. Perfil de sondagem/planejamento: paga aluguel, valoriza localização, espaço e parcela viável, e demonstrou cautela para não assumir compra sem segurança.
 
 ## Interesse atual
-Busca orientação consultiva para entender viabilidade. Informou aluguel atual em torno de R$ 1.200 como referência inicial de parcela confortável; critérios citados no histórico incluem localização, espaço e valor de parcela.
+Busca informação e análise de viabilidade antes de escolher imóvel. Contexto recente: entrada/FGTS parecem pequenos; cliente trabalha por contrato e acredita que o FGTS não estaria disponível agora porque o Estado não deposita como CLT.
 
 ## Objeções ativas
-- Ainda está em fase de sondagem/planejamento e não quer assumir compra de qualquer forma.
-- Entrada/FGTS e forma de comprovação de renda exigem diagnóstico antes de avanço comercial.
-- Quer evitar que o investimento vire dor de cabeça; abordagem deve ser consultiva e sem pressão.
+- Entrada/FGTS percebidos como insuficientes ou indisponíveis no curto prazo.
+- Cautela com crédito/parcela para evitar transformar investimento em dor de cabeça.
+- Momento atual mais informativo/planejamento do que decisão imediata.
 
 ## Próximo passo
-Continuar qualificação de viabilidade: confirmar renda/comprovação, entrada/FGTS possível, parcela confortável e prioridade real de localização. Só conduzir para visita presencial quando houver mínimo de viabilidade e intenção clara.
+Conduzir diagnóstico de viabilidade de forma consultiva, sem prometer crédito: entender renda/contrato, documentação possível, valor de entrada real e parcela confortável antes de sugerir visita ou opções.
 
 ## Histórico de interações
