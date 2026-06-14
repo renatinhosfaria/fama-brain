@@ -1,6 +1,6 @@
 ---
 type: entity
-name: Solange Gonçalves da Costa
+name: Solange Goncalves da Costa
 entity_type: lead
 aliases:
   - Solange Goncalves da Costa
@@ -9,7 +9,7 @@ external_ids:
   broker_id: '35'
   empreendimento_id: '67'
   fonte: Facebook Ads
-  regiao: Zona Sul
+  regiao: Uberlandia
 mentions_entity:
   - reno-hub
 related:
@@ -24,48 +24,42 @@ updated: '2026-06-14'
 source: agent-generated
 tags:
   - reno
-  - whatsapp
-  - qualificacao
+  - whatsapp-inbound
+  - em-atendimento
   - place-arbi
-  - fluxo-pre-chaves
 author_agent: reno
 status_comercial: Em Atendimento
-origem: lead_automatico
+origem: Facebook Ads
 interesse_atual: >-
-  Avalia avancar no Place+Arbi se houver campanha/preco/condicao que encaixe
-  sinal/ato, entrada parcelada e fluxo de obra dentro do limite pratico
-  informado.
+  Place+Arbi; cliente avalia encaixe financeiro, renda/financiamento e fluxo
+  pre-chaves antes de avancar.
 objecoes_ativas:
-  - Viabilidade dos 20% nao financiados pela instituicao financeira.
-  - Ato/sinal e fluxo durante obra precisam caber no teto pratico da cliente.
   - >-
-    R$1.500 deve ser tratado como teto total de fluxo pre-chaves, somando todos
-    os pagamentos ate a entrega da obra.
+    Precisa validar capacidade formal de financiamento/renda e possivel
+    composicao de renda.
+  - Ato desejado ate R$ 10.000 e fluxo pre-chaves em torno de R$ 1.500.
   - >-
-    Necessidade de validar tabela/campanha atual e custos imediatos com
-    corretor/construtora.
+    Precisa comparar cenarios com/sem composicao de renda e impactos em
+    faixa/subsidio.
 proximo_passo: >-
-  Responder no fluxo cliente-facing normal com orientacao consultiva sobre
-  financiamento/entrada sem prometer credito; separar custo para assinar hoje,
-  entrada parcelada, evolucao/intermediarias e custo mensal total ate chaves;
-  validar tabela/campanha atual antes de conduzir para visita presencial se
-  houver encaixe.
+  Manter atendimento consultivo sem envio automatico nesta rotina. Proximo
+  movimento comercial: validar simulacao/proposta objetiva do Place+Arbi e
+  conduzir para pre-analise/visita presencial quando houver encaixe.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo WhatsApp para viabilidade do Place+Arbi. Gargalo atual e financeiro: ato/sinal, fluxo durante obra e composicao dos 20% nao financiados; cliente confirmou que o teto de R$1.500 deve englobar todos os pagamentos ate a entrega da obra.
+Cliente elegivel do Reno (broker_id 35) em atendimento via WhatsApp. Primeiro contato ja estava respondido e o status operacional no CRM esta em Em Atendimento. Interacao atual: cliente respondeu "Entendi." apos explicacoes sobre simulacao/viabilidade.
 
 ## Interesse atual
-Avalia avancar no Place+Arbi se houver campanha/preco/condicao que encaixe sinal/ato, entrada parcelada e fluxo de obra dentro do limite pratico informado.
+Place+Arbi; cliente avalia encaixe financeiro, renda/financiamento e fluxo pre-chaves antes de avancar.
 
 ## Objeções ativas
-- Viabilidade dos 20% nao financiados pela instituicao financeira.
-- Ato/sinal e fluxo durante obra precisam caber no teto pratico da cliente.
-- R$1.500 deve ser tratado como teto total de fluxo pre-chaves, somando todos os pagamentos ate a entrega da obra.
-- Necessidade de validar tabela/campanha atual e custos imediatos com corretor/construtora.
+- Precisa validar capacidade formal de financiamento/renda e possivel composicao de renda.
+- Ato desejado ate R$ 10.000 e fluxo pre-chaves em torno de R$ 1.500.
+- Precisa comparar cenarios com/sem composicao de renda e impactos em faixa/subsidio.
 
 ## Próximo passo
-Responder no fluxo cliente-facing normal com orientacao consultiva sobre financiamento/entrada sem prometer credito; separar custo para assinar hoje, entrada parcelada, evolucao/intermediarias e custo mensal total ate chaves; validar tabela/campanha atual antes de conduzir para visita presencial se houver encaixe.
+Manter atendimento consultivo sem envio automatico nesta rotina. Proximo movimento comercial: validar simulacao/proposta objetiva do Place+Arbi e conduzir para pre-analise/visita presencial quando houver encaixe.
 
 ## Histórico de interações
