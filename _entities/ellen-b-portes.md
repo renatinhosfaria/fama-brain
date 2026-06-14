@@ -6,7 +6,8 @@ external_ids:
   client_id: '11718'
   broker_id: '35'
   empreendimento_id: '22'
-  fonte: whatsapp
+  fonte: Facebook Ads
+  regiao: Grand Ville / Uberlandia
 related:
   - '[[ellen-b-portes]]'
   - '[[reno-hub]]'
@@ -19,28 +20,36 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - moradia
+  - primeiro-contato-respondido
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
-interesse_atual: Compra para moradia na regiao do Union Vista/Grand Ville.
-objecoes_ativas: []
+origem: Facebook Ads
+interesse_atual: >-
+  Interesse ligado ao Union Vista, no Grand Ville. Busca imovel mais espacoso
+  para moradia; ainda depende de encontrar uma opcao adequada.
+objecoes_ativas:
+  - Decisao/prazo depende do imovel encontrado.
+  - >-
+    Cliente ainda precisa detalhar o que significa mais espacoso: quartos,
+    sala/varanda ou metragem geral.
 proximo_passo: >-
-  Continuar diagnostico consultivo sobre prazo/momento de compra, decisao e
-  viabilidade; conduzir para visita presencial quando fizer sentido.
+  Retomar diagnostico em turno curto: esclarecer qual tipo de espaco falta,
+  faixa de valor/forma de pagamento e disponibilidade para visita presencial
+  quando fizer sentido.
 ---
 [[ellen-b-portes]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato do Reno e, na qualificacao inicial pelo WhatsApp, informou que busca o imovel para moradia. CRM/FamaChat esta em Em Atendimento; primeiro contato ja estava marcado como respondido.
+Cliente de Facebook Ads em atendimento pelo Reno. Primeiro contato do Reno ja havia sido marcado como respondido; novo inbound de WhatsApp trouxe qualificacao: compra para moradia, prazo depende do imovel encontrado e cliente busca algo mais espacoso.
 
 ## Interesse atual
-Compra para moradia na regiao do Union Vista/Grand Ville.
+Interesse ligado ao Union Vista, no Grand Ville. Busca imovel mais espacoso para moradia; ainda depende de encontrar uma opcao adequada.
 
 ## Objeções ativas
-
+- Decisao/prazo depende do imovel encontrado.
+- Cliente ainda precisa detalhar o que significa mais espacoso: quartos, sala/varanda ou metragem geral.
 
 ## Próximo passo
-Continuar diagnostico consultivo sobre prazo/momento de compra, decisao e viabilidade; conduzir para visita presencial quando fizer sentido.
+Retomar diagnostico em turno curto: esclarecer qual tipo de espaco falta, faixa de valor/forma de pagamento e disponibilidade para visita presencial quando fizer sentido.
 
 ## Histórico de interações
