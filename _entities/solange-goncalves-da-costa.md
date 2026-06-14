@@ -7,7 +7,7 @@ external_ids:
   broker_id: '35'
   empreendimento_id: '67'
   fonte: Facebook Ads
-  regiao: Zona Sul / Shopping Park
+  regiao: Shopping Park / Zona Sul
 related:
   - '[[solange-goncalves-da-costa]]'
   - '[[reno-hub]]'
@@ -20,33 +20,34 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - place-arbi
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Comparar opcoes na regiao sul/Shopping Park; perguntou se Jardim Sul fica na
-  Avenida Sul Americana e observou ausencia de elevador.
+  Considera o Place+Arbi sem suite uma opcao boa; tambem avaliou alternativas
+  como Jardim Sul. Preferencia recente: imovel na planta, sem pressa, andares
+  3o/4o quando possivel.
 objecoes_ativas:
-  - Duvida de localizacao/regiao entre Jardim Sul e Avenida Sul Americana.
-  - Observacao sobre ausencia de elevador no empreendimento citado pelo cliente.
+  - Busca valores mais baixos.
+  - Ainda comparando localizacao/estrutura das opcoes.
 proximo_passo: >-
-  No atendimento cliente-facing, esclarecer a localizacao com fonte CRM antes de
-  responder e confirmar se elevador e requisito importante para filtrar opcoes.
+  Na proxima resposta cliente-facing, retomar a comparacao entre Place+Arbi sem
+  suite e opcoes de menor valor, confirmar faixa/forma de pagamento e conduzir
+  para visita quando fizer sentido.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Lead em atendimento pelo Reno. Origem Facebook Ads com interesse inicial em Place+Arbi/Shopping Park. Cliente respondeu ao WhatsApp e segue tirando duvidas sobre regiao e caracteristicas do imovel.
+Cliente em atendimento pelo Reno. Respondeu ao primeiro contato e esta comparando opcoes de imovel na planta, com foco em valores mais baixos.
 
 ## Interesse atual
-Comparar opcoes na regiao sul/Shopping Park; perguntou se Jardim Sul fica na Avenida Sul Americana e observou ausencia de elevador.
+Considera o Place+Arbi sem suite uma opcao boa; tambem avaliou alternativas como Jardim Sul. Preferencia recente: imovel na planta, sem pressa, andares 3o/4o quando possivel.
 
 ## Objeções ativas
-- Duvida de localizacao/regiao entre Jardim Sul e Avenida Sul Americana.
-- Observacao sobre ausencia de elevador no empreendimento citado pelo cliente.
+- Busca valores mais baixos.
+- Ainda comparando localizacao/estrutura das opcoes.
 
 ## Próximo passo
-No atendimento cliente-facing, esclarecer a localizacao com fonte CRM antes de responder e confirmar se elevador e requisito importante para filtrar opcoes.
+Na proxima resposta cliente-facing, retomar a comparacao entre Place+Arbi sem suite e opcoes de menor valor, confirmar faixa/forma de pagamento e conduzir para visita quando fizer sentido.
 
 ## Histórico de interações
