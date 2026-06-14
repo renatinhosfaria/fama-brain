@@ -32,11 +32,11 @@ interesse_atual: >-
   ser financiada integralmente ou se ha valor a vista na contratacao.
 objecoes_ativas:
   - >-
+    Duvida sobre viabilidade de financiamento da entrada e eventual valor a
+    vista na contratacao.
+  - >-
     Viabilidade de financiamento/renda formal precisa ser analisada de forma
     conservadora antes de avancar.
-  - >-
-    Filho/participante citado pode nao estar disponivel no horario inicial da
-    visita.
 proximo_passo: >-
   Responder no fluxo cliente-facing normal, sem promessa de credito; explicar
   que depende da analise/condicoes e conduzir diagnostico de entrada, renda e
@@ -45,14 +45,14 @@ proximo_passo: >-
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento via WhatsApp. Primeira resposta ja estava registrada; na interacao mais recente, informou que inicialmente iria ao escritorio sozinha porque o filho estaria em horario de trabalho e perguntou o nome do atendente.
+Cliente em atendimento via WhatsApp. Primeira resposta ao primeiro contato ja estava registrada; nesta interacao, perguntou se a entrada pode ser financiada integralmente ou se exige algum valor a vista no ato da contratacao.
 
 ## Interesse atual
 Cliente retornou no WhatsApp com duvida sobre composicao da entrada: se pode ser financiada integralmente ou se ha valor a vista na contratacao.
 
 ## Objeções ativas
+- Duvida sobre viabilidade de financiamento da entrada e eventual valor a vista na contratacao.
 - Viabilidade de financiamento/renda formal precisa ser analisada de forma conservadora antes de avancar.
-- Filho/participante citado pode nao estar disponivel no horario inicial da visita.
 
 ## Próximo passo
 Responder no fluxo cliente-facing normal, sem promessa de credito; explicar que depende da analise/condicoes e conduzir diagnostico de entrada, renda e momento de compra.
