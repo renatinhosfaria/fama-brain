@@ -5,7 +5,6 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  fonte: Facebook Ads
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -19,40 +18,35 @@ tags:
   - whatsapp-inbound
   - qualificacao
   - viabilidade
-  - prazo-compra
+  - credito
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: Facebook Ads / WhatsApp
 interesse_atual: >-
-  Entender viabilidade financeira e quanto da renda pode ser comprometida antes
-  de avançar.
+  Entender viabilidade real antes de avançar para compra, com foco em crédito,
+  comprometimento de renda e segurança financeira.
 objecoes_ativas:
-  - Compromisso financeiro atual/empréstimo ainda pesa no orçamento.
+  - Pressão de terceiros sobre a decisão de compra.
   - >-
-    Horizonte estimado de cerca de 1 ano e meio para quitar obrigação antes de
-    avançar com segurança.
-  - >-
-    Receio de financiar sem clareza sobre custos adicionais e comprometimento
-    real de renda.
+    Preocupação com comprometimento de renda e custos imprevistos antes de
+    assumir financiamento.
 proximo_passo: >-
-  Manter condução consultiva e conservadora: orientar o período de preparação
-  financeira, reduzir comprometimento, resolver pendências/Serasa e formar
-  reserva/entrada antes de simulação mais firme ou visita.
+  Manter condução educativa e sem pressão; organizar viabilidade financeira e só
+  avançar para visita/proposta quando houver segurança mínima.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento do Reno. Respondeu ao WhatsApp e trouxe preocupação madura com viabilidade financeira; no cenário atual, indica horizonte de cerca de 1 ano e meio para quitar compromisso financeiro antes de avançar com mais segurança.
+Atendimento Reno em andamento. Cliente valoriza a orientação consultiva sobre crédito/viabilidade e relatou que isso ajuda quando sofre pressão de terceiros sobre a compra.
 
 ## Interesse atual
-Entender viabilidade financeira e quanto da renda pode ser comprometida antes de avançar.
+Entender viabilidade real antes de avançar para compra, com foco em crédito, comprometimento de renda e segurança financeira.
 
 ## Objeções ativas
-- Compromisso financeiro atual/empréstimo ainda pesa no orçamento.
-- Horizonte estimado de cerca de 1 ano e meio para quitar obrigação antes de avançar com segurança.
-- Receio de financiar sem clareza sobre custos adicionais e comprometimento real de renda.
+- Pressão de terceiros sobre a decisão de compra.
+- Preocupação com comprometimento de renda e custos imprevistos antes de assumir financiamento.
 
 ## Próximo passo
-Manter condução consultiva e conservadora: orientar o período de preparação financeira, reduzir comprometimento, resolver pendências/Serasa e formar reserva/entrada antes de simulação mais firme ou visita.
+Manter condução educativa e sem pressão; organizar viabilidade financeira e só avançar para visita/proposta quando houver segurança mínima.
 
 ## Histórico de interações
