@@ -5,8 +5,7 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  fonte: WhatsApp
-  regiao: Setor Leste / Roosevelt
+  empreendimento_id: '67'
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -19,30 +18,44 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
+  - viabilidade
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound
+origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Circula entre setor leste e bairro Roosevelt por conta do trabalho, mas não
-  considera essa região como critério porque não é fixa.
+  Busca orientação consultiva para entender viabilidade. Informou aluguel atual
+  em torno de R$ 1.200 como referência inicial de parcela confortável; critérios
+  citados no histórico incluem localização, espaço e valor de parcela.
 objecoes_ativas:
-  - Região de trabalho não fixa não deve ser tratada como preferência de compra.
+  - >-
+    Ainda está em fase de sondagem/planejamento e não quer assumir compra de
+    qualquer forma.
+  - >-
+    Entrada/FGTS e forma de comprovação de renda exigem diagnóstico antes de
+    avanço comercial.
+  - >-
+    Quer evitar que o investimento vire dor de cabeça; abordagem deve ser
+    consultiva e sem pressão.
 proximo_passo: >-
-  Retomar qualificação com cuidado sobre regiões realmente consideradas e
-  necessidade principal, sem envio automático nesta rotina inbound.
+  Continuar qualificação de viabilidade: confirmar renda/comprovação,
+  entrada/FGTS possível, parcela confortável e prioridade real de localização.
+  Só conduzir para visita presencial quando houver mínimo de viabilidade e
+  intenção clara.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao atendimento do Reno no WhatsApp e trouxe contexto de região ligada ao trabalho.
+Cliente em atendimento pelo WhatsApp; primeiro contato já estava registrado como respondido. Perfil atual é de sondagem/planejamento, com cautela sobre viabilidade antes de avançar para imóvel ou visita.
 
 ## Interesse atual
-Circula entre setor leste e bairro Roosevelt por conta do trabalho, mas não considera essa região como critério porque não é fixa.
+Busca orientação consultiva para entender viabilidade. Informou aluguel atual em torno de R$ 1.200 como referência inicial de parcela confortável; critérios citados no histórico incluem localização, espaço e valor de parcela.
 
 ## Objeções ativas
-- Região de trabalho não fixa não deve ser tratada como preferência de compra.
+- Ainda está em fase de sondagem/planejamento e não quer assumir compra de qualquer forma.
+- Entrada/FGTS e forma de comprovação de renda exigem diagnóstico antes de avanço comercial.
+- Quer evitar que o investimento vire dor de cabeça; abordagem deve ser consultiva e sem pressão.
 
 ## Próximo passo
-Retomar qualificação com cuidado sobre regiões realmente consideradas e necessidade principal, sem envio automático nesta rotina inbound.
+Continuar qualificação de viabilidade: confirmar renda/comprovação, entrada/FGTS possível, parcela confortável e prioridade real de localização. Só conduzir para visita presencial quando houver mínimo de viabilidade e intenção clara.
 
 ## Histórico de interações
