@@ -5,9 +5,7 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  empreendimento_id: '67'
-  fonte: Facebook Ads
-  regiao: Shopping Park / Zona Sul
+  fonte: WhatsApp
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -21,47 +19,30 @@ tags:
   - whatsapp-inbound
   - qualificacao
   - viabilidade
-  - place-arbi
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Busca análise de viabilidade antes de escolher imóvel. Contexto confirmado no
-  WhatsApp: possui holerite, informou renda atual aproximada de R$ 3.000 e
-  aluguel atual de R$ 1.200; entrada/FGTS são pequenos ou percebidos como
-  indisponíveis no curto prazo. Interesse inicial vinculado ao Place+Arbi /
-  região Shopping Park, mas com necessidade de afunilar localização e capacidade
-  real de crédito.
+  Continuar diagnóstico de viabilidade e entender estabilidade de renda para
+  orientar próximo passo comercial.
 objecoes_ativas:
-  - Entrada/FGTS percebidos como insuficientes ou indisponíveis no curto prazo.
-  - >-
-    Renda atual aproximada de R$ 3.000 exige condução conservadora de
-    viabilidade e parcela confortável.
-  - >-
-    Cautela com crédito/parcela para evitar transformar investimento em dor de
-    cabeça.
-  - Momento atual mais informativo/planejamento do que decisão imediata.
+  - Renda variável/instável no momento.
 proximo_passo: >-
-  Conduzir diagnóstico de viabilidade de forma consultiva, sem prometer crédito:
-  confirmar renda comprovável em holerite, estabilidade/contratos, entrada real,
-  possibilidade de composição de renda e parcela confortável antes de sugerir
-  imóvel ou visita.
+  Retomar qualificação com cuidado sobre renda/financiamento e conduzir para
+  próximo passo quando houver segurança.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Perfil de planejamento/viabilidade: paga aluguel, valoriza localização/espaço e demonstra cautela para não assumir compra sem segurança financeira.
+Cliente em atendimento pelo Reno após resposta ao primeiro contato. Contexto comercial atual: renda variável como professora, dependente de contratos; relatou expectativa de ganhar mais estabilidade antes de avançar.
 
 ## Interesse atual
-Busca análise de viabilidade antes de escolher imóvel. Contexto confirmado no WhatsApp: possui holerite, informou renda atual aproximada de R$ 3.000 e aluguel atual de R$ 1.200; entrada/FGTS são pequenos ou percebidos como indisponíveis no curto prazo. Interesse inicial vinculado ao Place+Arbi / região Shopping Park, mas com necessidade de afunilar localização e capacidade real de crédito.
+Continuar diagnóstico de viabilidade e entender estabilidade de renda para orientar próximo passo comercial.
 
 ## Objeções ativas
-- Entrada/FGTS percebidos como insuficientes ou indisponíveis no curto prazo.
-- Renda atual aproximada de R$ 3.000 exige condução conservadora de viabilidade e parcela confortável.
-- Cautela com crédito/parcela para evitar transformar investimento em dor de cabeça.
-- Momento atual mais informativo/planejamento do que decisão imediata.
+- Renda variável/instável no momento.
 
 ## Próximo passo
-Conduzir diagnóstico de viabilidade de forma consultiva, sem prometer crédito: confirmar renda comprovável em holerite, estabilidade/contratos, entrada real, possibilidade de composição de renda e parcela confortável antes de sugerir imóvel ou visita.
+Retomar qualificação com cuidado sobre renda/financiamento e conduzir para próximo passo quando houver segurança.
 
 ## Histórico de interações
