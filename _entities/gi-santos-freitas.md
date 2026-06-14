@@ -5,8 +5,6 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  fonte: WhatsApp
-  regiao: Shopping Park
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -18,33 +16,32 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
-  - shopping-park
+  - first-contact-responded
+  - crm-11714
 author_agent: reno
 status_comercial: Em Atendimento
 origem: WhatsApp inbound
 interesse_atual: >-
-  Shopping Park ou região relacionada, com necessidade de recorte melhor de
-  localização.
+  Contexto de imóvel/anúncio específico; ainda precisa ser retomado no
+  atendimento cliente-facing.
 objecoes_ativas:
-  - Shopping Park percebido como uma região muito grande/ampla.
+  - Não consegue mais acessar/ver o anúncio original na timeline.
 proximo_passo: >-
-  Responder em atendimento normal com pergunta curta para entender qual
-  parte/região faz sentido para a busca e manter avanço consultivo; não enviar
-  catálogo cedo.
+  Quando o fluxo cliente-facing assumir, retomar o contexto do imóvel/anúncio e
+  conduzir diagnóstico; esta rotina silenciosa não enviou WhatsApp.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Atendimento Reno em andamento no WhatsApp. Cliente respondeu ao contexto de Shopping Park indicando que considera a região muito grande; o próximo atendimento deve afunilar localização/recorte antes de sugerir imóvel ou visita.
+Cliente sob atendimento do Reno respondeu ao primeiro contato; o registro estruturado já estava marcado como respondido. Na nova mensagem inbound, informou que não consegue mais ver o anúncio porque saiu da timeline.
 
 ## Interesse atual
-Shopping Park ou região relacionada, com necessidade de recorte melhor de localização.
+Contexto de imóvel/anúncio específico; ainda precisa ser retomado no atendimento cliente-facing.
 
 ## Objeções ativas
-- Shopping Park percebido como uma região muito grande/ampla.
+- Não consegue mais acessar/ver o anúncio original na timeline.
 
 ## Próximo passo
-Responder em atendimento normal com pergunta curta para entender qual parte/região faz sentido para a busca e manter avanço consultivo; não enviar catálogo cedo.
+Quando o fluxo cliente-facing assumir, retomar o contexto do imóvel/anúncio e conduzir diagnóstico; esta rotina silenciosa não enviou WhatsApp.
 
 ## Histórico de interações
