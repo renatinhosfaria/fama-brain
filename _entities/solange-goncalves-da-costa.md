@@ -7,9 +7,6 @@ aliases:
 external_ids:
   client_id: '11716'
   broker_id: '35'
-  empreendimento_id: '67'
-  fonte: Facebook Ads
-  regiao: Zona Sul / Shopping Park
 mentions_entity:
   - reno-hub
 related:
@@ -32,28 +29,32 @@ author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Empreendimento Place+Arbi; conversa deve focar em viabilidade real de compra e
-  credito antes de avancar para visita.
+  Empreendimento Place+Arbi; conversa deve focar em viabilidade real de compra,
+  credito e esclarecimento da composicao da parcela de R$ 588,00 antes de
+  avancar para visita.
 objecoes_ativas:
   - Renda propria precisa ficar fora da analise por pendencias/parcelamentos.
   - Assumir novo compromisso financeiro ficaria inviavel no contexto atual.
+  - 'Duvida atual sobre a composicao da parcela de R$ 588,00.'
 proximo_passo: >-
-  Retomar atendimento com diagnostico curto sobre composicao de renda e
-  alternativas viaveis, sem pressionar visita antes de entender a viabilidade.
+  Responder no atendimento cliente-facing explicando de forma simples a que se
+  refere a parcela de R$ 588,00 e, em seguida, retomar diagnostico curto de
+  viabilidade/credito sem pressionar visita antes de esclarecer a duvida.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente esta em atendimento pelo Reno apos primeiro contato validado. Respondeu no WhatsApp sobre viabilidade financeira: a propria renda precisaria ficar fora da analise por pendencias/parcelamentos, pois assumir novo compromisso ficaria inviavel.
+Cliente em atendimento pelo Reno apos primeiro contato validado. Ja trouxe pontos de viabilidade financeira e agora perguntou a que se refere a parcela de R$ 588,00.
 
 ## Interesse atual
-Empreendimento Place+Arbi; conversa deve focar em viabilidade real de compra e credito antes de avancar para visita.
+Empreendimento Place+Arbi; conversa deve focar em viabilidade real de compra, credito e esclarecimento da composicao da parcela de R$ 588,00 antes de avancar para visita.
 
 ## Objeções ativas
 - Renda propria precisa ficar fora da analise por pendencias/parcelamentos.
 - Assumir novo compromisso financeiro ficaria inviavel no contexto atual.
+- Duvida atual sobre a composicao da parcela de R$ 588,00.
 
 ## Próximo passo
-Retomar atendimento com diagnostico curto sobre composicao de renda e alternativas viaveis, sem pressionar visita antes de entender a viabilidade.
+Responder no atendimento cliente-facing explicando de forma simples a que se refere a parcela de R$ 588,00 e, em seguida, retomar diagnostico curto de viabilidade/credito sem pressionar visita antes de esclarecer a duvida.
 
 ## Histórico de interações
