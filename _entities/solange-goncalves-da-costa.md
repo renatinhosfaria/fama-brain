@@ -22,33 +22,36 @@ updated: '2026-06-14'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
+  - whatsapp
+  - inbound
   - qualificacao
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: WhatsApp inbound
 interesse_atual: >-
-  Entender impacto da composicao de renda familiar na entrada e na viabilidade
-  de compra.
+  Contexto comercial ainda em qualificação; mensagem recebida: "Ou piora a
+  situação?"
 objecoes_ativas:
-  - Duvida sobre renda composta e valor de entrada.
+  - >-
+    Dúvida curta sem contexto suficiente sobre possível piora da situação;
+    precisa ser respondida pelo fluxo cliente-facing sem envio nesta rotina
+    silenciosa.
 proximo_passo: >-
-  Responder no fluxo cliente-facing com esclarecimento consultivo sobre analise
-  de renda/entrada, sem prometer aprovacao de credito, e conduzir para
-  diagnostico de viabilidade.
+  Manter atendimento em andamento e responder pelo fluxo de qualificação
+  WhatsApp apropriado, retomando o contexto da última orientação.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente elegivel do Reno, em atendimento apos resposta ao primeiro contato. Inbound atual: perguntou se a renda dela e do Bruno muda algo em relacao a entrada/viabilidade.
+Cliente respondeu ao atendimento Reno no WhatsApp com uma dúvida curta. Atendimento permanece em andamento no CRM.
 
 ## Interesse atual
-Entender impacto da composicao de renda familiar na entrada e na viabilidade de compra.
+Contexto comercial ainda em qualificação; mensagem recebida: "Ou piora a situação?"
 
 ## Objeções ativas
-- Duvida sobre renda composta e valor de entrada.
+- Dúvida curta sem contexto suficiente sobre possível piora da situação; precisa ser respondida pelo fluxo cliente-facing sem envio nesta rotina silenciosa.
 
 ## Próximo passo
-Responder no fluxo cliente-facing com esclarecimento consultivo sobre analise de renda/entrada, sem prometer aprovacao de credito, e conduzir para diagnostico de viabilidade.
+Manter atendimento em andamento e responder pelo fluxo de qualificação WhatsApp apropriado, retomando o contexto da última orientação.
 
 ## Histórico de interações
