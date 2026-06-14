@@ -21,25 +21,32 @@ tags:
 author_agent: reno
 status_comercial: Em Atendimento
 origem: lead_automatico
-interesse_atual: Ainda em diagnóstico; cliente não definiu prazo de compra/mudança.
+interesse_atual: >-
+  Cliente em sondagem/qualificação inicial; informou holerite, renda aproximada
+  de R$ 3.000, renda variável, compra sozinha e prazo ainda indefinido.
 objecoes_ativas:
-  - Prazo indefinido
+  - Prazo de compra/mudança indefinido
+  - Viabilidade deve considerar renda individual e renda variável
+  - Não prometer crédito/aprovação sem análise
 proximo_passo: >-
-  Continuar qualificação consultiva em próximo turno de atendimento, sem envio
-  automático nesta rotina silenciosa.
+  Próximo atendimento deve seguir diagnóstico consultivo de viabilidade:
+  confirmar objetivo, entrada/FGTS, parcela confortável e região/empreendimento
+  adequado antes de conduzir para visita presencial.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente identificado no CRM e em atendimento pelo Reno. Inbound atual no WhatsApp: informou que está sem prazo definido.
+Cliente identificado no CRM e em atendimento pelo Reno. Já respondeu ao primeiro contato; repescagem está encerrada por resposta. Interações recentes indicam compra sozinha, renda aproximada de R$ 3.000, renda variável, holerite e prazo indefinido.
 
 ## Interesse atual
-Ainda em diagnóstico; cliente não definiu prazo de compra/mudança.
+Cliente em sondagem/qualificação inicial; informou holerite, renda aproximada de R$ 3.000, renda variável, compra sozinha e prazo ainda indefinido.
 
 ## Objeções ativas
-- Prazo indefinido
+- Prazo de compra/mudança indefinido
+- Viabilidade deve considerar renda individual e renda variável
+- Não prometer crédito/aprovação sem análise
 
 ## Próximo passo
-Continuar qualificação consultiva em próximo turno de atendimento, sem envio automático nesta rotina silenciosa.
+Próximo atendimento deve seguir diagnóstico consultivo de viabilidade: confirmar objetivo, entrada/FGTS, parcela confortável e região/empreendimento adequado antes de conduzir para visita presencial.
 
 ## Histórico de interações
