@@ -5,9 +5,8 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  empreendimento_id: '67'
-  fonte: Facebook Ads
-  regiao: Shopping Park
+  fonte: WhatsApp
+  regiao: Setor Leste / Roosevelt
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -18,36 +17,32 @@ updated: '2026-06-14'
 source: agent-generated
 tags:
   - reno
-  - lead
   - whatsapp-inbound
   - qualificacao
-  - localizacao
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: WhatsApp inbound
 interesse_atual: >-
-  Sondagem sobre Place+Arbi/Shopping Park; quer entender melhor a região antes
-  de avançar.
+  Circula entre setor leste e bairro Roosevelt por conta do trabalho, mas não
+  considera essa região como critério porque não é fixa.
 objecoes_ativas:
-  - Não conhece bem a região/Shopping Park.
-  - 'Localização, áreas mais baixas e mobilidade pesam na decisão.'
+  - Região de trabalho não fixa não deve ser tratada como preferência de compra.
 proximo_passo: >-
-  Responder de forma consultiva sobre recorte de localização/mobilidade e
-  conduzir diagnóstico antes de sugerir visita presencial.
+  Retomar qualificação com cuidado sobre regiões realmente consideradas e
+  necessidade principal, sem envio automático nesta rotina inbound.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato e está em fase de sondagem. A localização e a mobilidade são critérios centrais antes de avançar para visita ou empreendimento.
+Cliente respondeu ao atendimento do Reno no WhatsApp e trouxe contexto de região ligada ao trabalho.
 
 ## Interesse atual
-Sondagem sobre Place+Arbi/Shopping Park; quer entender melhor a região antes de avançar.
+Circula entre setor leste e bairro Roosevelt por conta do trabalho, mas não considera essa região como critério porque não é fixa.
 
 ## Objeções ativas
-- Não conhece bem a região/Shopping Park.
-- Localização, áreas mais baixas e mobilidade pesam na decisão.
+- Região de trabalho não fixa não deve ser tratada como preferência de compra.
 
 ## Próximo passo
-Responder de forma consultiva sobre recorte de localização/mobilidade e conduzir diagnóstico antes de sugerir visita presencial.
+Retomar qualificação com cuidado sobre regiões realmente consideradas e necessidade principal, sem envio automático nesta rotina inbound.
 
 ## Histórico de interações
