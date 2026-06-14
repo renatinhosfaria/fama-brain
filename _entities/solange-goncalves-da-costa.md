@@ -7,7 +7,7 @@ aliases:
 external_ids:
   client_id: '11716'
   broker_id: '35'
-  fonte: whatsapp inbound
+  empreendimento_id: '67'
 mentions_entity:
   - reno-hub
 related:
@@ -24,31 +24,33 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - renda
+  - viabilidade
 author_agent: reno
 status_comercial: Em Atendimento
 origem: whatsapp inbound
 interesse_atual: >-
-  Atendimento em andamento; aprofundar diagnostico consultivo antes de conduzir
-  proximo passo comercial.
-objecoes_ativas: []
+  Seguir diagnostico consultivo de viabilidade para o imovel/empreendimento de
+  interesse, sem prometer aprovacao de credito.
+objecoes_ativas:
+  - >-
+    Viabilidade de financiamento/renda formal precisa ser analisada de forma
+    conservadora antes de avancar.
 proximo_passo: >-
-  Aguardar os comprovantes de renda citados e, na próxima resposta
-  cliente-facing, confirmar composição de renda/quem será o comprador antes de
-  avançar para visita quando fizer sentido.
+  Na proxima resposta cliente-facing, retomar a composicao de renda/parcelas com
+  cuidado e conduzir para visita presencial se a analise fizer sentido.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao WhatsApp e informou que enviaria comprovantes de renda da pessoa citada para avaliação de viabilidade.
+Cliente em atendimento via WhatsApp. Ja houve primeira resposta registrada; nesta interacao, trouxe contexto de viabilidade/renda da pessoa compradora: usa cartao normal, ganhos fixos e horas extras habituais com baixa variacao.
 
 ## Interesse atual
-Atendimento em andamento; aprofundar diagnostico consultivo antes de conduzir proximo passo comercial.
+Seguir diagnostico consultivo de viabilidade para o imovel/empreendimento de interesse, sem prometer aprovacao de credito.
 
 ## Objeções ativas
-
+- Viabilidade de financiamento/renda formal precisa ser analisada de forma conservadora antes de avancar.
 
 ## Próximo passo
-Aguardar os comprovantes de renda citados e, na próxima resposta cliente-facing, confirmar composição de renda/quem será o comprador antes de avançar para visita quando fizer sentido.
+Na proxima resposta cliente-facing, retomar a composicao de renda/parcelas com cuidado e conduzir para visita presencial se a analise fizer sentido.
 
 ## Histórico de interações
