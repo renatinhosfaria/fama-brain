@@ -7,7 +7,7 @@ external_ids:
   broker_id: '35'
   empreendimento_id: '67'
   fonte: Facebook Ads
-  regiao: Uberlândia / Zona Sul
+  regiao: Uberlândia / Shopping Park
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -20,39 +20,39 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - credito
-  - place-arbi
+  - credito-imobiliario
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Place+Arbi; busca entender localização, planta e viabilidade financeira antes
-  de avançar.
+  Place+Arbi; busca entender localização, planta, preço e viabilidade financeira
+  antes de avançar.
 objecoes_ativas:
-  - >-
-    Dúvida se é possível simular financiamento sem pré-análise/organização da
-    pendência de crédito.
   - >-
     Pendência/restrição financeira ainda precisa ser esclarecida ou regularizada
     antes de simulação confiável.
+  - >-
+    Cliente está reunindo informações para repassar a uma pessoa de apoio que
+    questiona/avalia como poderia ajudar.
 proximo_passo: >-
-  Manter condução consultiva: explicar que estimativa preliminar pode ser feita
-  com premissas, mas simulação confiável depende de renda, entrada/FGTS,
-  comprometimento e situação da pendência de crédito.
+  Manter condução consultiva e objetiva: resumir a lógica de crédito/viabilidade
+  para a cliente repassar à pessoa de apoio, reforçando que estimativa
+  preliminar pode ser feita com premissas, mas simulação confiável depende de
+  renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente do atendimento Reno identificado no CRM (broker_id 35), em Em Atendimento, com interesse no Place+Arbi. Conversa atual gira em torno de viabilidade/simulação de financiamento antes de organizar ou esclarecer pendência de crédito.
+Cliente do atendimento Reno identificado no CRM (broker_id 35), em Em Atendimento, com interesse no Place+Arbi. A conversa atual está centrada em viabilidade de financiamento, organização/esclarecimento de pendência de crédito e em reunir uma resposta objetiva para repassar a uma pessoa de apoio.
 
 ## Interesse atual
-Place+Arbi; busca entender localização, planta e viabilidade financeira antes de avançar.
+Place+Arbi; busca entender localização, planta, preço e viabilidade financeira antes de avançar.
 
 ## Objeções ativas
-- Dúvida se é possível simular financiamento sem pré-análise/organização da pendência de crédito.
 - Pendência/restrição financeira ainda precisa ser esclarecida ou regularizada antes de simulação confiável.
+- Cliente está reunindo informações para repassar a uma pessoa de apoio que questiona/avalia como poderia ajudar.
 
 ## Próximo passo
-Manter condução consultiva: explicar que estimativa preliminar pode ser feita com premissas, mas simulação confiável depende de renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
+Manter condução consultiva e objetiva: resumir a lógica de crédito/viabilidade para a cliente repassar à pessoa de apoio, reforçando que estimativa preliminar pode ser feita com premissas, mas simulação confiável depende de renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
 
 ## Histórico de interações
