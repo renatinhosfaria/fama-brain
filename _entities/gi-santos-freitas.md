@@ -27,7 +27,6 @@ external_ids:
   fonte: Facebook Ads
 mentions_entity:
   - reno-hub
-  - credito-imobiliario
   - fama-overview
 related:
   - '[[reno-hub]]'
@@ -57,7 +56,7 @@ proximo_passo: >-
   condição financeira/organização de crédito ou novo sinal de compra.
 owner: brain
 ---
-[[reno-hub]] [[credito-imobiliario]] [[metodologia-negocio]]
+[[reno-hub]] [[_shared/context/credito-imobiliario/index|crédito imobiliário]] [[_shared/context/modelo-negocio/metodologia-negocio|metodologia de atendimento consultivo]]
 
 ## Resumo curado
 Lead criado a partir de Facebook Ads/WhatsApp e atualmente em atendimento pelo Reno. A sequência recente de inbound não aponta para uma tarefa comercial imediata; ela consolida um contexto consultivo de preparação para compra futura: organização de crédito, redução de comprometimento mensal, cuidado com pendências financeiras e manutenção da Fama como referência quando a cliente estiver mais pronta.
