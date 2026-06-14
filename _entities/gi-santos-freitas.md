@@ -7,7 +7,7 @@ external_ids:
   broker_id: '35'
   empreendimento_id: '67'
   fonte: Facebook Ads
-  regiao: Zona Sul
+  regiao: Uberlândia / Zona Sul
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -20,44 +20,39 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - serasa
-  - financiamento
+  - credito
+  - place-arbi
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Avaliar viabilidade real de compra após entender/regularizar pendência no
-  Serasa, considerando renda própria, entrada possível e eventual apoio externo
-  apenas para fluxo inicial/obra.
+  Place+Arbi; busca entender localização, planta e viabilidade financeira antes
+  de avançar.
 objecoes_ativas:
   - >-
-    Pendência/restrição financeira no Serasa precisa ser detalhada e, se
-    necessário, regularizada antes de análise de crédito.
+    Dúvida se é possível simular financiamento sem pré-análise/organização da
+    pendência de crédito.
   - >-
-    Ajuda de terceira pessoa deve ser tratada como possível apoio de
-    entrada/fluxo inicial, não como composição de renda sem validação formal.
-  - >-
-    Renda/comprometimento mensal exigem simulação conservadora, sem promessa de
-    aprovação.
+    Pendência/restrição financeira ainda precisa ser esclarecida ou regularizada
+    antes de simulação confiável.
 proximo_passo: >-
-  No atendimento normal, levantar credor/CNPJ, valor, data de inclusão e caminho
-  de negociação/contestação no Serasa; depois retomar análise de viabilidade e
-  eventual visita conforme cenário real.
+  Manter condução consultiva: explicar que estimativa preliminar pode ser feita
+  com premissas, mas simulação confiável depende de renda, entrada/FGTS,
+  comprometimento e situação da pendência de crédito.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Primeiro contato já estava respondido; inbound atual reforça contexto de pendência/restrição no Serasa dentro da qualificação financeira. CRM segue como fonte operacional; status mantido em Em Atendimento e Repescagem já encerrada por resposta do cliente.
+Cliente do atendimento Reno identificado no CRM (broker_id 35), em Em Atendimento, com interesse no Place+Arbi. Conversa atual gira em torno de viabilidade/simulação de financiamento antes de organizar ou esclarecer pendência de crédito.
 
 ## Interesse atual
-Avaliar viabilidade real de compra após entender/regularizar pendência no Serasa, considerando renda própria, entrada possível e eventual apoio externo apenas para fluxo inicial/obra.
+Place+Arbi; busca entender localização, planta e viabilidade financeira antes de avançar.
 
 ## Objeções ativas
-- Pendência/restrição financeira no Serasa precisa ser detalhada e, se necessário, regularizada antes de análise de crédito.
-- Ajuda de terceira pessoa deve ser tratada como possível apoio de entrada/fluxo inicial, não como composição de renda sem validação formal.
-- Renda/comprometimento mensal exigem simulação conservadora, sem promessa de aprovação.
+- Dúvida se é possível simular financiamento sem pré-análise/organização da pendência de crédito.
+- Pendência/restrição financeira ainda precisa ser esclarecida ou regularizada antes de simulação confiável.
 
 ## Próximo passo
-No atendimento normal, levantar credor/CNPJ, valor, data de inclusão e caminho de negociação/contestação no Serasa; depois retomar análise de viabilidade e eventual visita conforme cenário real.
+Manter condução consultiva: explicar que estimativa preliminar pode ser feita com premissas, mas simulação confiável depende de renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
 
 ## Histórico de interações
