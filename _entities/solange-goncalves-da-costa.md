@@ -7,8 +7,9 @@ aliases:
 external_ids:
   client_id: '11716'
   broker_id: '35'
-  fonte: whatsapp
-  regiao: Uberlândia
+  empreendimento_id: '67'
+  fonte: Facebook Ads / WhatsApp inbound Reno
+  regiao: 'Zona Sul, Uberlândia'
 mentions_entity:
   - reno-hub
 related:
@@ -24,36 +25,43 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
+  - place-arbi
   - viabilidade
-  - sinal-ato
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound Reno
+origem: Facebook Ads / WhatsApp inbound Reno
 interesse_atual: >-
-  Avaliar viabilidade de compra considerando entrada/sinal no ato e condições de
-  pagamento do empreendimento de interesse.
+  Avaliar Place+Arbi, especialmente opcoes sem suite/2o andar, cruzando
+  disponibilidade de torres/andares/apartamentos/setores com uma condicao de
+  menor desembolso inicial possivel.
 objecoes_ativas:
-  - Sinal/ato pode ser obstáculo imediato.
+  - Sinal/ato pode ser obstaculo imediato.
   - >-
-    Reserva disponível limitada; cliente informou que poderia chegar até cerca
-    de R$ 10 mil somando restituição de IR e adiantamento de 13º.
+    Cliente informou reserva limitada e possibilidade pratica de entrada proxima
+    de R$ 10 mil.
+  - >-
+    Cliente nao possui tabela de valores; possui disponibilidade das torres,
+    andares, aptos e localizacao dos setores.
 proximo_passo: >-
-  Na próxima resposta cliente-facing, acolher a restrição e conduzir diagnóstico
-  de viabilidade/menor desembolso inicial antes de tentar visita.
+  Na proxima resposta cliente-facing, pedir/usar a disponibilidade que a cliente
+  tem e explicar que valores precisam ser validados com tabela/campanha atual
+  antes de cravar; conduzir para menor ato/fluxo possivel, sem prometer credito
+  ou condicao.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno (client_id 11716, broker_id 35). Respondeu pelo WhatsApp trazendo restrição objetiva de viabilidade: o sinal/ato é o principal obstáculo por estar quase sem reservas.
+Cliente em atendimento pelo Reno (client_id 11716, broker_id 35) para Place+Arbi. Ja respondeu ao primeiro contato e segue em diagnostico de viabilidade, com foco em ato/sinal, fluxo durante obra e disponibilidade por torre/andar/unidade.
 
 ## Interesse atual
-Avaliar viabilidade de compra considerando entrada/sinal no ato e condições de pagamento do empreendimento de interesse.
+Avaliar Place+Arbi, especialmente opcoes sem suite/2o andar, cruzando disponibilidade de torres/andares/apartamentos/setores com uma condicao de menor desembolso inicial possivel.
 
 ## Objeções ativas
-- Sinal/ato pode ser obstáculo imediato.
-- Reserva disponível limitada; cliente informou que poderia chegar até cerca de R$ 10 mil somando restituição de IR e adiantamento de 13º.
+- Sinal/ato pode ser obstaculo imediato.
+- Cliente informou reserva limitada e possibilidade pratica de entrada proxima de R$ 10 mil.
+- Cliente nao possui tabela de valores; possui disponibilidade das torres, andares, aptos e localizacao dos setores.
 
 ## Próximo passo
-Na próxima resposta cliente-facing, acolher a restrição e conduzir diagnóstico de viabilidade/menor desembolso inicial antes de tentar visita.
+Na proxima resposta cliente-facing, pedir/usar a disponibilidade que a cliente tem e explicar que valores precisam ser validados com tabela/campanha atual antes de cravar; conduzir para menor ato/fluxo possivel, sem prometer credito ou condicao.
 
 ## Histórico de interações
