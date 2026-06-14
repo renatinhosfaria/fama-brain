@@ -17,40 +17,35 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - viabilidade-financeira
+  - financiamento
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: WhatsApp inbound
 interesse_atual: >-
-  Place+Arbi; busca entender localização, planta, preço e viabilidade financeira
-  antes de avançar.
+  Entender viabilidade financeira e quanto da renda pode ser comprometida antes
+  de avançar.
 objecoes_ativas:
+  - Receio de financiar sem clareza sobre taxas e custos adicionais.
   - >-
-    Pendência/restrição financeira ainda precisa ser esclarecida ou regularizada
-    antes de simulação confiável.
-  - >-
-    Cliente está reunindo informações para repassar a uma pessoa de apoio que
-    questiona/avalia como poderia ajudar.
+    Preocupação com risco de perder o imóvel se a parcela/custos ficarem acima
+    do previsto.
 proximo_passo: >-
-  Manter condução consultiva, clara e sem pressão: consolidar a lógica de
-  crédito/viabilidade para a cliente repassar à pessoa de apoio, reforçando que
-  estimativa preliminar pode ser feita com premissas, mas simulação confiável
-  depende de renda, entrada/FGTS, comprometimento e situação da pendência de
-  crédito.
+  Conduzir diagnóstico consultivo de renda, momento de compra e segurança
+  financeira; orientar sem prometer aprovação de crédito.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente do atendimento Reno identificado no CRM (broker_id 35), em Em Atendimento, com interesse no Place+Arbi. A conversa atual está centrada em viabilidade de financiamento, organização/esclarecimento de pendência de crédito e em reunir uma explicação objetiva para repassar a uma pessoa de apoio. Cliente deu feedback positivo de que foi a primeira vez que explicaram a lógica dessa forma.
+Cliente em atendimento do Reno. Respondeu ao WhatsApp e trouxe preocupação com comprometimento de renda, taxas/custos não previstos e risco financeiro no financiamento.
 
 ## Interesse atual
-Place+Arbi; busca entender localização, planta, preço e viabilidade financeira antes de avançar.
+Entender viabilidade financeira e quanto da renda pode ser comprometida antes de avançar.
 
 ## Objeções ativas
-- Pendência/restrição financeira ainda precisa ser esclarecida ou regularizada antes de simulação confiável.
-- Cliente está reunindo informações para repassar a uma pessoa de apoio que questiona/avalia como poderia ajudar.
+- Receio de financiar sem clareza sobre taxas e custos adicionais.
+- Preocupação com risco de perder o imóvel se a parcela/custos ficarem acima do previsto.
 
 ## Próximo passo
-Manter condução consultiva, clara e sem pressão: consolidar a lógica de crédito/viabilidade para a cliente repassar à pessoa de apoio, reforçando que estimativa preliminar pode ser feita com premissas, mas simulação confiável depende de renda, entrada/FGTS, comprometimento e situação da pendência de crédito.
+Conduzir diagnóstico consultivo de renda, momento de compra e segurança financeira; orientar sem prometer aprovação de crédito.
 
 ## Histórico de interações
