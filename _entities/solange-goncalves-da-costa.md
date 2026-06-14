@@ -1,12 +1,10 @@
 ---
 type: entity
-name: Solange Gonçalves da Costa
+name: Solange Goncalves da Costa
 entity_type: lead
 external_ids:
   client_id: '11716'
   broker_id: '35'
-  fonte: WhatsApp
-  regiao: Shopping Park
 related:
   - '[[solange-goncalves-da-costa]]'
   - '[[reno-hub]]'
@@ -19,27 +17,37 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
+  - jardim-sul
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: whatsapp inbound
 interesse_atual: >-
-  Imovel na planta; comparar alternativas na regiao do Shopping Park; prioriza
-  valores mais baixos e prefere andares 3o/4o.
-objecoes_ativas: []
+  Busca imovel na planta, sem pressa, com valores mais baixos; nesta interacao
+  avaliou que o Jardim Sul parece ser o mais barato entre as opcoes
+  apresentadas.
+objecoes_ativas:
+  - Sensibilidade a preco/valor de entrada.
+  - >-
+    Avaliando caracteristicas do Jardim Sul, incluindo ausencia de elevador
+    mencionada no atendimento recente.
 proximo_passo: >-
-  Continuar qualificacao consultiva no WhatsApp: confirmar faixa de valor,
-  planta/regiao desejada, forma de pagamento/financiamento e conduzir para
-  visita presencial quando houver encaixe.
+  Retomar atendimento consultivo pelo fluxo principal, confirmar prioridade
+  entre preco, regiao e andar, e conduzir para proximo passo comercial quando
+  fizer sentido.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente de Facebook Ads vinculada ao Place+Arbi, no Shopping Park. Primeiro contato do Reno ja tem resposta registrada no CRM e status Em Atendimento. Inbounds recentes indicam busca por alternativas na regiao e agora foco em imovel na planta, sem pressa, com valores mais baixos.
+Cliente em atendimento pelo Reno. Interage pelo WhatsApp sobre opcoes apresentadas e compara valor percebido dos empreendimentos.
 
 ## Interesse atual
-Imovel na planta; comparar alternativas na regiao do Shopping Park; prioriza valores mais baixos e prefere andares 3o/4o.
+Busca imovel na planta, sem pressa, com valores mais baixos; nesta interacao avaliou que o Jardim Sul parece ser o mais barato entre as opcoes apresentadas.
+
+## Objeções ativas
+- Sensibilidade a preco/valor de entrada.
+- Avaliando caracteristicas do Jardim Sul, incluindo ausencia de elevador mencionada no atendimento recente.
 
 ## Próximo passo
-Continuar qualificacao consultiva no WhatsApp: confirmar faixa de valor, planta/regiao desejada, forma de pagamento/financiamento e conduzir para visita presencial quando houver encaixe.
+Retomar atendimento consultivo pelo fluxo principal, confirmar prioridade entre preco, regiao e andar, e conduzir para proximo passo comercial quando fizer sentido.
 
 ## Histórico de interações
