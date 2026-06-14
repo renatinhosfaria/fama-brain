@@ -1,6 +1,16 @@
 ---
-schema_version: 1
 type: entity
+name: Solange Gonçalves da Costa
+entity_type: lead
+external_ids:
+  client_id: '11716'
+  broker_id: '35'
+  fonte: WhatsApp
+  regiao: Shopping Park
+related:
+  - '[[solange-goncalves-da-costa]]'
+  - '[[reno-hub]]'
+schema_version: 1
 status: active
 created: '2026-06-14'
 updated: '2026-06-14'
@@ -8,43 +18,28 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - first-contact-responded
-  - shopping-park
+  - qualificacao
 author_agent: reno
-name: Solange Gonçalves da Costa
-entity_type: lead
-related:
-  - '[[solange-goncalves-da-costa]]'
-  - '[[reno-hub]]'
-external_ids:
-  client_id: '11716'
-  broker_id: '35'
-  empreendimento_id: '67'
-  fonte: Facebook Ads
-  regiao: Shopping Park
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Comparar alternativas no Shopping Park/mesma regiao, partindo do interesse
-  inicial no Place+Arbi.
+  Imovel na planta; comparar alternativas na regiao do Shopping Park; prioriza
+  valores mais baixos e prefere andares 3o/4o.
 objecoes_ativas: []
 proximo_passo: >-
-  Retomar em atendimento consultivo: confirmar se busca continuar no Shopping
-  Park, entender faixa e prazo, e conduzir para alternativa/visita quando fizer
-  sentido.
+  Continuar qualificacao consultiva no WhatsApp: confirmar faixa de valor,
+  planta/regiao desejada, forma de pagamento/financiamento e conduzir para
+  visita presencial quando houver encaixe.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente de Facebook Ads vinculada ao Place+Arbi, no Shopping Park. Primeiro contato do Reno ja tem resposta registrada no CRM. No inbound atual, perguntou por outro empreendimento na mesma regiao e informou morar ao lado do anuncio.
+Cliente de Facebook Ads vinculada ao Place+Arbi, no Shopping Park. Primeiro contato do Reno ja tem resposta registrada no CRM e status Em Atendimento. Inbounds recentes indicam busca por alternativas na regiao e agora foco em imovel na planta, sem pressa, com valores mais baixos.
 
 ## Interesse atual
-Comparar alternativas no Shopping Park/mesma regiao, partindo do interesse inicial no Place+Arbi.
-
-## Objeções ativas
-
+Imovel na planta; comparar alternativas na regiao do Shopping Park; prioriza valores mais baixos e prefere andares 3o/4o.
 
 ## Próximo passo
-Retomar em atendimento consultivo: confirmar se busca continuar no Shopping Park, entender faixa e prazo, e conduzir para alternativa/visita quando fizer sentido.
+Continuar qualificacao consultiva no WhatsApp: confirmar faixa de valor, planta/regiao desejada, forma de pagamento/financiamento e conduzir para visita presencial quando houver encaixe.
 
 ## Histórico de interações
