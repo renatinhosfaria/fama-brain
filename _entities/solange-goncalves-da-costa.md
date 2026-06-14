@@ -1,10 +1,13 @@
 ---
 type: entity
-name: Solange Goncalves da Costa
+name: Solange Gonçalves da Costa
 entity_type: lead
 external_ids:
   client_id: '11716'
   broker_id: '35'
+  empreendimento_id: '67'
+  fonte: Facebook Ads
+  regiao: Zona Sul / Shopping Park
 related:
   - '[[solange-goncalves-da-costa]]'
   - '[[reno-hub]]'
@@ -17,37 +20,33 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - jardim-sul
+  - place-arbi
 author_agent: reno
 status_comercial: Em Atendimento
-origem: whatsapp inbound
+origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Busca imovel na planta, sem pressa, com valores mais baixos; nesta interacao
-  avaliou que o Jardim Sul parece ser o mais barato entre as opcoes
-  apresentadas.
+  Comparar opcoes na regiao sul/Shopping Park; perguntou se Jardim Sul fica na
+  Avenida Sul Americana e observou ausencia de elevador.
 objecoes_ativas:
-  - Sensibilidade a preco/valor de entrada.
-  - >-
-    Avaliando caracteristicas do Jardim Sul, incluindo ausencia de elevador
-    mencionada no atendimento recente.
+  - Duvida de localizacao/regiao entre Jardim Sul e Avenida Sul Americana.
+  - Observacao sobre ausencia de elevador no empreendimento citado pelo cliente.
 proximo_passo: >-
-  Retomar atendimento consultivo pelo fluxo principal, confirmar prioridade
-  entre preco, regiao e andar, e conduzir para proximo passo comercial quando
-  fizer sentido.
+  No atendimento cliente-facing, esclarecer a localizacao com fonte CRM antes de
+  responder e confirmar se elevador e requisito importante para filtrar opcoes.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Interage pelo WhatsApp sobre opcoes apresentadas e compara valor percebido dos empreendimentos.
+Lead em atendimento pelo Reno. Origem Facebook Ads com interesse inicial em Place+Arbi/Shopping Park. Cliente respondeu ao WhatsApp e segue tirando duvidas sobre regiao e caracteristicas do imovel.
 
 ## Interesse atual
-Busca imovel na planta, sem pressa, com valores mais baixos; nesta interacao avaliou que o Jardim Sul parece ser o mais barato entre as opcoes apresentadas.
+Comparar opcoes na regiao sul/Shopping Park; perguntou se Jardim Sul fica na Avenida Sul Americana e observou ausencia de elevador.
 
 ## Objeções ativas
-- Sensibilidade a preco/valor de entrada.
-- Avaliando caracteristicas do Jardim Sul, incluindo ausencia de elevador mencionada no atendimento recente.
+- Duvida de localizacao/regiao entre Jardim Sul e Avenida Sul Americana.
+- Observacao sobre ausencia de elevador no empreendimento citado pelo cliente.
 
 ## Próximo passo
-Retomar atendimento consultivo pelo fluxo principal, confirmar prioridade entre preco, regiao e andar, e conduzir para proximo passo comercial quando fizer sentido.
+No atendimento cliente-facing, esclarecer a localizacao com fonte CRM antes de responder e confirmar se elevador e requisito importante para filtrar opcoes.
 
 ## Histórico de interações
