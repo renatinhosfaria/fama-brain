@@ -5,6 +5,9 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
+  empreendimento_id: '67'
+  fonte: Facebook Ads
+  regiao: Shopping Park
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -15,33 +18,36 @@ updated: '2026-06-14'
 source: agent-generated
 tags:
   - reno
+  - lead
   - whatsapp-inbound
-  - first-contact-responded
-  - crm-11714
+  - qualificacao
+  - localizacao
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound
+origem: Facebook Ads
 interesse_atual: >-
-  Contexto de imóvel/anúncio específico; ainda precisa ser retomado no
-  atendimento cliente-facing.
+  Sondagem sobre Place+Arbi/Shopping Park; quer entender melhor a região antes
+  de avançar.
 objecoes_ativas:
-  - Não consegue mais acessar/ver o anúncio original na timeline.
+  - Não conhece bem a região/Shopping Park.
+  - 'Localização, áreas mais baixas e mobilidade pesam na decisão.'
 proximo_passo: >-
-  Quando o fluxo cliente-facing assumir, retomar o contexto do imóvel/anúncio e
-  conduzir diagnóstico; esta rotina silenciosa não enviou WhatsApp.
+  Responder de forma consultiva sobre recorte de localização/mobilidade e
+  conduzir diagnóstico antes de sugerir visita presencial.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente sob atendimento do Reno respondeu ao primeiro contato; o registro estruturado já estava marcado como respondido. Na nova mensagem inbound, informou que não consegue mais ver o anúncio porque saiu da timeline.
+Cliente respondeu ao primeiro contato e está em fase de sondagem. A localização e a mobilidade são critérios centrais antes de avançar para visita ou empreendimento.
 
 ## Interesse atual
-Contexto de imóvel/anúncio específico; ainda precisa ser retomado no atendimento cliente-facing.
+Sondagem sobre Place+Arbi/Shopping Park; quer entender melhor a região antes de avançar.
 
 ## Objeções ativas
-- Não consegue mais acessar/ver o anúncio original na timeline.
+- Não conhece bem a região/Shopping Park.
+- Localização, áreas mais baixas e mobilidade pesam na decisão.
 
 ## Próximo passo
-Quando o fluxo cliente-facing assumir, retomar o contexto do imóvel/anúncio e conduzir diagnóstico; esta rotina silenciosa não enviou WhatsApp.
+Responder de forma consultiva sobre recorte de localização/mobilidade e conduzir diagnóstico antes de sugerir visita presencial.
 
 ## Histórico de interações
