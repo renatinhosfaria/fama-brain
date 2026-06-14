@@ -7,7 +7,8 @@ aliases:
 external_ids:
   client_id: '11716'
   broker_id: '35'
-  fonte: Facebook Ads
+  fonte: whatsapp
+  regiao: Uberlândia
 mentions_entity:
   - reno-hub
 related:
@@ -23,44 +24,36 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
-  - financiamento
+  - viabilidade
+  - sinal-ato
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: WhatsApp inbound Reno
 interesse_atual: >-
-  Quer entender a composicao da entrada/financiamento do Place+Arbi,
-  especialmente o valor de ato/sinal pago de uma vez na contratacao e o impacto
-  no fluxo mensal durante a obra.
+  Avaliar viabilidade de compra considerando entrada/sinal no ato e condições de
+  pagamento do empreendimento de interesse.
 objecoes_ativas:
+  - Sinal/ato pode ser obstáculo imediato.
   - >-
-    Precisa ter nocao do valor de ato/sinal a desembolsar no momento da
-    contratacao.
-  - >-
-    Viabilidade depende de confirmar renda/compromissos e fluxo de
-    entrada/evolucao de obra sem prometer credito.
-  - >-
-    Cliente sinalizou que as parcelas/simulacoes do financiamento a partir da
-    entrega do apartamento nao parecem altas e nao sao o problema central.
+    Reserva disponível limitada; cliente informou que poderia chegar até cerca
+    de R$ 10 mil somando restituição de IR e adiantamento de 13º.
 proximo_passo: >-
-  No atendimento cliente-facing, reconhecer que a parcela futura nao e o ponto
-  critico, validar ato/sinal minimo e fluxo de entrada/evolucao de obra, e
-  conduzir para visita presencial se a composicao fizer sentido.
+  Na próxima resposta cliente-facing, acolher a restrição e conduzir diagnóstico
+  de viabilidade/menor desembolso inicial antes de tentar visita.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento via WhatsApp para avaliar viabilidade do Place+Arbi. Primeira resposta ao primeiro contato ja estava registrada; a conversa evoluiu para analise do ato/sinal, entrada durante a obra e parcelas futuras do financiamento.
+Cliente em atendimento pelo Reno (client_id 11716, broker_id 35). Respondeu pelo WhatsApp trazendo restrição objetiva de viabilidade: o sinal/ato é o principal obstáculo por estar quase sem reservas.
 
 ## Interesse atual
-Quer entender a composicao da entrada/financiamento do Place+Arbi, especialmente o valor de ato/sinal pago de uma vez na contratacao e o impacto no fluxo mensal durante a obra.
+Avaliar viabilidade de compra considerando entrada/sinal no ato e condições de pagamento do empreendimento de interesse.
 
 ## Objeções ativas
-- Precisa ter nocao do valor de ato/sinal a desembolsar no momento da contratacao.
-- Viabilidade depende de confirmar renda/compromissos e fluxo de entrada/evolucao de obra sem prometer credito.
-- Cliente sinalizou que as parcelas/simulacoes do financiamento a partir da entrega do apartamento nao parecem altas e nao sao o problema central.
+- Sinal/ato pode ser obstáculo imediato.
+- Reserva disponível limitada; cliente informou que poderia chegar até cerca de R$ 10 mil somando restituição de IR e adiantamento de 13º.
 
 ## Próximo passo
-No atendimento cliente-facing, reconhecer que a parcela futura nao e o ponto critico, validar ato/sinal minimo e fluxo de entrada/evolucao de obra, e conduzir para visita presencial se a composicao fizer sentido.
+Na próxima resposta cliente-facing, acolher a restrição e conduzir diagnóstico de viabilidade/menor desembolso inicial antes de tentar visita.
 
 ## Histórico de interações
