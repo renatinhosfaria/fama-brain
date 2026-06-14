@@ -5,6 +5,7 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
+  fonte: whatsapp
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -17,36 +18,34 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - viabilidade
-  - credito
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp
 interesse_atual: >-
-  Entender viabilidade real antes de avançar para compra, com foco em crédito,
-  comprometimento de renda e segurança financeira.
+  Manter a Fama como referência para compra futura, após organizar viabilidade
+  financeira, crédito/pendências e comprometimento mensal.
 objecoes_ativas:
-  - Pressão de terceiros sobre a decisão de compra.
+  - Sem decisão imediata de compra; momento atual é de organização financeira.
   - >-
-    Preocupação com comprometimento de renda e custos imprevistos antes de
-    assumir financiamento.
+    Preocupação com crédito/viabilidade e comprometimento de renda antes de
+    avançar.
 proximo_passo: >-
-  Manter condução educativa e sem pressão; organizar viabilidade financeira e só
-  avançar para visita/proposta quando houver segurança mínima.
+  Manter relacionamento consultivo e sem pressão; retomar quando houver melhor
+  condição financeira/organização de crédito ou novo sinal de compra.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Atendimento Reno em andamento. Cliente valoriza a orientação consultiva sobre crédito/viabilidade e relatou que isso ajuda quando sofre pressão de terceiros sobre a compra.
+Atendimento Reno em andamento. Cliente demonstrou confiança na orientação consultiva sobre crédito/viabilidade e encerrou a conversa de forma positiva, dizendo que vai se lembrar da Fama.
 
 ## Interesse atual
-Entender viabilidade real antes de avançar para compra, com foco em crédito, comprometimento de renda e segurança financeira.
+Manter a Fama como referência para compra futura, após organizar viabilidade financeira, crédito/pendências e comprometimento mensal.
 
 ## Objeções ativas
-- Pressão de terceiros sobre a decisão de compra.
-- Preocupação com comprometimento de renda e custos imprevistos antes de assumir financiamento.
+- Sem decisão imediata de compra; momento atual é de organização financeira.
+- Preocupação com crédito/viabilidade e comprometimento de renda antes de avançar.
 
 ## Próximo passo
-Manter condução educativa e sem pressão; organizar viabilidade financeira e só avançar para visita/proposta quando houver segurança mínima.
+Manter relacionamento consultivo e sem pressão; retomar quando houver melhor condição financeira/organização de crédito ou novo sinal de compra.
 
 ## Histórico de interações
