@@ -5,9 +5,7 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  empreendimento_id: '67'
   fonte: Facebook Ads
-  regiao: Uberlândia
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -21,15 +19,13 @@ tags:
   - whatsapp-inbound
   - qualificacao
   - viabilidade
-  - fgts
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
   Busca informação e análise de viabilidade antes de escolher imóvel. Contexto
-  recente: entrada/FGTS parecem pequenos; cliente trabalha por contrato e
-  acredita que o FGTS não estaria disponível agora porque o Estado não deposita
-  como CLT.
+  recente: possui holerite para comprovação de renda; renda/entrada/FGTS ainda
+  precisam ser avaliados com cuidado antes de sugerir imóvel ou visita.
 objecoes_ativas:
   - Entrada/FGTS percebidos como insuficientes ou indisponíveis no curto prazo.
   - >-
@@ -38,8 +34,8 @@ objecoes_ativas:
   - Momento atual mais informativo/planejamento do que decisão imediata.
 proximo_passo: >-
   Conduzir diagnóstico de viabilidade de forma consultiva, sem prometer crédito:
-  entender renda/contrato, documentação possível, valor de entrada real e
-  parcela confortável antes de sugerir visita ou opções.
+  confirmar renda comprovável em holerite, documentação possível, valor de
+  entrada real e parcela confortável antes de sugerir visita ou opções.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
@@ -47,7 +43,7 @@ proximo_passo: >-
 Cliente em atendimento pelo Reno. Perfil de sondagem/planejamento: paga aluguel, valoriza localização, espaço e parcela viável, e demonstrou cautela para não assumir compra sem segurança.
 
 ## Interesse atual
-Busca informação e análise de viabilidade antes de escolher imóvel. Contexto recente: entrada/FGTS parecem pequenos; cliente trabalha por contrato e acredita que o FGTS não estaria disponível agora porque o Estado não deposita como CLT.
+Busca informação e análise de viabilidade antes de escolher imóvel. Contexto recente: possui holerite para comprovação de renda; renda/entrada/FGTS ainda precisam ser avaliados com cuidado antes de sugerir imóvel ou visita.
 
 ## Objeções ativas
 - Entrada/FGTS percebidos como insuficientes ou indisponíveis no curto prazo.
@@ -55,6 +51,6 @@ Busca informação e análise de viabilidade antes de escolher imóvel. Contexto
 - Momento atual mais informativo/planejamento do que decisão imediata.
 
 ## Próximo passo
-Conduzir diagnóstico de viabilidade de forma consultiva, sem prometer crédito: entender renda/contrato, documentação possível, valor de entrada real e parcela confortável antes de sugerir visita ou opções.
+Conduzir diagnóstico de viabilidade de forma consultiva, sem prometer crédito: confirmar renda comprovável em holerite, documentação possível, valor de entrada real e parcela confortável antes de sugerir visita ou opções.
 
 ## Histórico de interações
