@@ -5,8 +5,7 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  empreendimento_id: '67'
-  fonte: Facebook Ads
+  fonte: WhatsApp
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -19,38 +18,28 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - viabilidade
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
-interesse_atual: >-
-  Continuar diagnóstico de viabilidade individual antes de sugerir imóvel,
-  crédito ou visita presencial.
+origem: lead_automatico
+interesse_atual: Ainda em diagnóstico; cliente não definiu prazo de compra/mudança.
 objecoes_ativas:
-  - Compra sem composição de renda familiar.
-  - Renda variável/instável no momento.
-  - >-
-    Entrada/FGTS pequenos e necessidade de regularização financeira antes de
-    análise.
+  - Prazo indefinido
 proximo_passo: >-
-  Próximo atendimento deve conduzir de forma consultiva: estimar renda
-  comprovável individual, entrada disponível/formável e parcela confortável, sem
-  promessa de aprovação.
+  Continuar qualificação consultiva em próximo turno de atendimento, sem envio
+  automático nesta rotina silenciosa.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno após resposta ao primeiro contato. Informou intenção de comprar sozinha; o diagnóstico de viabilidade deve considerar renda individual e os pontos já registrados no CRM sobre renda variável, entrada/FGTS pequenos e regularização financeira.
+Cliente identificado no CRM e em atendimento pelo Reno. Inbound atual no WhatsApp: informou que está sem prazo definido.
 
 ## Interesse atual
-Continuar diagnóstico de viabilidade individual antes de sugerir imóvel, crédito ou visita presencial.
+Ainda em diagnóstico; cliente não definiu prazo de compra/mudança.
 
 ## Objeções ativas
-- Compra sem composição de renda familiar.
-- Renda variável/instável no momento.
-- Entrada/FGTS pequenos e necessidade de regularização financeira antes de análise.
+- Prazo indefinido
 
 ## Próximo passo
-Próximo atendimento deve conduzir de forma consultiva: estimar renda comprovável individual, entrada disponível/formável e parcela confortável, sem promessa de aprovação.
+Continuar qualificação consultiva em próximo turno de atendimento, sem envio automático nesta rotina silenciosa.
 
 ## Histórico de interações
