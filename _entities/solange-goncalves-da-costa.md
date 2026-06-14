@@ -7,6 +7,8 @@ aliases:
 external_ids:
   client_id: '11716'
   broker_id: '35'
+  empreendimento_id: '67'
+  regiao: Shopping Park / Zona Sul
 mentions_entity:
   - reno-hub
 related:
@@ -23,38 +25,41 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - financiamento
+  - viabilidade
+  - entrada
+  - ato-sinal
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound
+origem: Facebook Ads / WhatsApp inbound
 interesse_atual: >-
-  Cliente retornou no WhatsApp com duvida sobre composicao da entrada: se pode
-  ser financiada integralmente ou se ha valor a vista na contratacao.
+  Quer entender a composicao da entrada/financiamento do Place+Arbi,
+  especialmente o valor de ato/sinal pago de uma vez na contratacao e o impacto
+  no fluxo mensal durante a obra.
 objecoes_ativas:
   - >-
-    Duvida sobre viabilidade de financiamento da entrada e eventual valor a
-    vista na contratacao.
+    Precisa ter nocao do valor de ato/sinal a desembolsar no momento da
+    contratacao.
   - >-
-    Viabilidade de financiamento/renda formal precisa ser analisada de forma
-    conservadora antes de avancar.
+    Viabilidade depende de confirmar renda/compromissos e fluxo de
+    entrada/evolucao de obra sem prometer credito.
 proximo_passo: >-
-  Responder no fluxo cliente-facing normal, sem promessa de credito; explicar
-  que depende da analise/condicoes e conduzir diagnostico de entrada, renda e
-  momento de compra.
+  No atendimento cliente-facing, explicar com cuidado que ato/sinal e entrada
+  dependem da unidade/campanha/analise; validar ato minimo e fluxo antes de
+  propor visita presencial como proximo passo logico.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento via WhatsApp. Primeira resposta ao primeiro contato ja estava registrada; nesta interacao, perguntou se a entrada pode ser financiada integralmente ou se exige algum valor a vista no ato da contratacao.
+Cliente em atendimento via WhatsApp para avaliar viabilidade do Place+Arbi. Primeira resposta ao primeiro contato ja estava registrada; a conversa evoluiu para analise de fluxo de entrada durante a obra.
 
 ## Interesse atual
-Cliente retornou no WhatsApp com duvida sobre composicao da entrada: se pode ser financiada integralmente ou se ha valor a vista na contratacao.
+Quer entender a composicao da entrada/financiamento do Place+Arbi, especialmente o valor de ato/sinal pago de uma vez na contratacao e o impacto no fluxo mensal durante a obra.
 
 ## Objeções ativas
-- Duvida sobre viabilidade de financiamento da entrada e eventual valor a vista na contratacao.
-- Viabilidade de financiamento/renda formal precisa ser analisada de forma conservadora antes de avancar.
+- Precisa ter nocao do valor de ato/sinal a desembolsar no momento da contratacao.
+- Viabilidade depende de confirmar renda/compromissos e fluxo de entrada/evolucao de obra sem prometer credito.
 
 ## Próximo passo
-Responder no fluxo cliente-facing normal, sem promessa de credito; explicar que depende da analise/condicoes e conduzir diagnostico de entrada, renda e momento de compra.
+No atendimento cliente-facing, explicar com cuidado que ato/sinal e entrada dependem da unidade/campanha/analise; validar ato minimo e fluxo antes de propor visita presencial como proximo passo logico.
 
 ## Histórico de interações
