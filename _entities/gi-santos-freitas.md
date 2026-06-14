@@ -5,7 +5,8 @@ entity_type: lead
 external_ids:
   client_id: '11714'
   broker_id: '35'
-  fonte: WhatsApp
+  empreendimento_id: '67'
+  fonte: Facebook Ads
 related:
   - '[[gi-santos-freitas]]'
   - '[[reno-hub]]'
@@ -23,26 +24,33 @@ author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Continuar diagnóstico de viabilidade e entender estabilidade de renda para
-  orientar próximo passo comercial.
+  Continuar diagnóstico de viabilidade individual antes de sugerir imóvel,
+  crédito ou visita presencial.
 objecoes_ativas:
+  - Compra sem composição de renda familiar.
   - Renda variável/instável no momento.
+  - >-
+    Entrada/FGTS pequenos e necessidade de regularização financeira antes de
+    análise.
 proximo_passo: >-
-  Retomar qualificação com cuidado sobre renda/financiamento e conduzir para
-  próximo passo quando houver segurança.
+  Próximo atendimento deve conduzir de forma consultiva: estimar renda
+  comprovável individual, entrada disponível/formável e parcela confortável, sem
+  promessa de aprovação.
 ---
 [[gi-santos-freitas]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno após resposta ao primeiro contato. Contexto comercial atual: renda variável como professora, dependente de contratos; relatou expectativa de ganhar mais estabilidade antes de avançar.
+Cliente em atendimento pelo Reno após resposta ao primeiro contato. Informou intenção de comprar sozinha; o diagnóstico de viabilidade deve considerar renda individual e os pontos já registrados no CRM sobre renda variável, entrada/FGTS pequenos e regularização financeira.
 
 ## Interesse atual
-Continuar diagnóstico de viabilidade e entender estabilidade de renda para orientar próximo passo comercial.
+Continuar diagnóstico de viabilidade individual antes de sugerir imóvel, crédito ou visita presencial.
 
 ## Objeções ativas
+- Compra sem composição de renda familiar.
 - Renda variável/instável no momento.
+- Entrada/FGTS pequenos e necessidade de regularização financeira antes de análise.
 
 ## Próximo passo
-Retomar qualificação com cuidado sobre renda/financiamento e conduzir para próximo passo quando houver segurança.
+Próximo atendimento deve conduzir de forma consultiva: estimar renda comprovável individual, entrada disponível/formável e parcela confortável, sem promessa de aprovação.
 
 ## Histórico de interações
