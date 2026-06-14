@@ -7,6 +7,9 @@ aliases:
 external_ids:
   client_id: '11716'
   broker_id: '35'
+  empreendimento_id: '67'
+  fonte: Facebook Ads
+  regiao: Uberlandia
 mentions_entity:
   - reno-hub
 related:
@@ -23,38 +26,39 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - first-contact-responded
+  - financiamento
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Avalia avancar se as condicoes comerciais e o fluxo financeiro da obra
-  couberem no momento atual.
+  Avalia avancar no Place+Arbi se houver campanha/preco/condicao que encaixe
+  sinal, entrada parcelada e fluxo de obra no limite pratico informado.
 objecoes_ativas:
-  - Dependencia de campanha ou preco diferenciado entre torres.
-  - Viabilidade de sinal + fluxo de obra.
+  - Viabilidade dos 20% nao financiados pela instituicao financeira.
+  - Ato/sinal e fluxo durante obra precisam caber no teto pratico da cliente.
   - >-
-    Duvida se o fluxo de obra engloba entrada e se havera outras despesas
-    imediatas.
+    Necessidade de validar tabela/campanha atual e custos imediatos com
+    corretor/construtora.
 proximo_passo: >-
-  Responder de forma consultiva com informacao validada sobre
-  entrada/fluxo/despesas e, se houver encaixe, conduzir para diagnostico e
-  visita presencial.
+  Responder no fluxo cliente-facing normal com orientacao consultiva sobre
+  financiamento/entrada sem prometer credito; validar valor de ato, entrada
+  parcelada, evolucao de obra e tabela/campanha atual antes de conduzir para
+  visita presencial se houver encaixe.
 ---
 [[solange-goncalves-da-costa]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao atendimento do Reno pelo WhatsApp e trouxe criterios financeiros para avancar: campanha/preco diferenciado entre torres, encaixe de sinal + fluxo de obra e duvida sobre despesas imediatas.
+Cliente em atendimento pelo WhatsApp para viabilidade do Place+Arbi. O gargalo atual e financeiro: ato/sinal, fluxo durante obra e composicao dos 20% nao financiados; cliente entende que o banco pode financiar ate 80% e que a parte restante precisa ser negociada com a construtora.
 
 ## Interesse atual
-Avalia avancar se as condicoes comerciais e o fluxo financeiro da obra couberem no momento atual.
+Avalia avancar no Place+Arbi se houver campanha/preco/condicao que encaixe sinal, entrada parcelada e fluxo de obra no limite pratico informado.
 
 ## Objeções ativas
-- Dependencia de campanha ou preco diferenciado entre torres.
-- Viabilidade de sinal + fluxo de obra.
-- Duvida se o fluxo de obra engloba entrada e se havera outras despesas imediatas.
+- Viabilidade dos 20% nao financiados pela instituicao financeira.
+- Ato/sinal e fluxo durante obra precisam caber no teto pratico da cliente.
+- Necessidade de validar tabela/campanha atual e custos imediatos com corretor/construtora.
 
 ## Próximo passo
-Responder de forma consultiva com informacao validada sobre entrada/fluxo/despesas e, se houver encaixe, conduzir para diagnostico e visita presencial.
+Responder no fluxo cliente-facing normal com orientacao consultiva sobre financiamento/entrada sem prometer credito; validar valor de ato, entrada parcelada, evolucao de obra e tabela/campanha atual antes de conduzir para visita presencial se houver encaixe.
 
 ## Histórico de interações
