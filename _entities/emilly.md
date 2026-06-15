@@ -5,7 +5,10 @@ entity_type: lead
 external_ids:
   client_id: '11725'
   broker_id: '35'
-  fonte: lead_automatico
+  empreendimento_id: '161'
+  empreendimento_slug: union-vereda
+  fonte: Facebook Ads
+  regiao: Palace Planalto/Jaragua
 related:
   - '[[emilly]]'
   - '[[reno-hub]]'
@@ -16,25 +19,26 @@ updated: '2026-06-15'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
+  - whatsapp
   - qualificacao
   - viabilidade
-  - financiamento
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Meta Ads / WhatsApp
+origem: Facebook Ads / WhatsApp
 interesse_atual: >-
-  Busca compra com a maior parte financiada. Informou pouca disponibilidade de
-  FGTS e cerca de R$20k em maos para entrada; precisa analise de viabilidade,
-  renda, subsidio/FGTS e parcela confortavel.
+  Busca compra com a maior parte financiada, preferindo imovel pronto ou com
+  entrega proxima na regiao Palace Planalto/Jaragua. Informou renda livre de
+  cerca de R$6.200 e renda em carteira assinada em torno de R$7.300; entrada em
+  maos perto de R$20k e pouco FGTS.
 objecoes_ativas:
   - Incerteza sobre permanecer em Uberlandia no medio prazo.
   - Deseja preservar liberdade financeira e nao comprometer parcela alta.
-  - 'Teto de parcela citado anteriormente: cerca de R$1.000 a R$1.500.'
+  - 'Teto de parcela citado: cerca de R$1.000 a R$1.500.'
+  - Union Vereda perdeu aderencia por entrega distante (Dez/2028).
 proximo_passo: >-
-  Continuar qualificacao sem pressionar: validar renda, uso de FGTS/subsidio,
-  prazo e conforto de parcela; depois filtrar opcoes compativeis e conduzir para
-  visita somente se fizer sentido.
+  Continuar qualificacao sem pressionar: validar composicao de renda,
+  entrada/FGTS/subsidio e conforto de parcela; depois filtrar opcoes compativeis
+  e conduzir para visita somente se fizer sentido.
 ---
 [[emilly]] [[reno-hub]]
 
@@ -42,14 +46,15 @@ proximo_passo: >-
 Lead em atendimento pelo Reno. Respondeu ao primeiro contato e segue em qualificacao consultiva para avaliar viabilidade antes de indicar imovel.
 
 ## Interesse atual
-Busca compra com a maior parte financiada. Informou pouca disponibilidade de FGTS e cerca de R$20k em maos para entrada; precisa analise de viabilidade, renda, subsidio/FGTS e parcela confortavel.
+Busca compra com a maior parte financiada, preferindo imovel pronto ou com entrega proxima na regiao Palace Planalto/Jaragua. Informou renda livre de cerca de R$6.200 e renda em carteira assinada em torno de R$7.300; entrada em maos perto de R$20k e pouco FGTS.
 
 ## Objeções ativas
 - Incerteza sobre permanecer em Uberlandia no medio prazo.
 - Deseja preservar liberdade financeira e nao comprometer parcela alta.
-- Teto de parcela citado anteriormente: cerca de R$1.000 a R$1.500.
+- Teto de parcela citado: cerca de R$1.000 a R$1.500.
+- Union Vereda perdeu aderencia por entrega distante (Dez/2028).
 
 ## Próximo passo
-Continuar qualificacao sem pressionar: validar renda, uso de FGTS/subsidio, prazo e conforto de parcela; depois filtrar opcoes compativeis e conduzir para visita somente se fizer sentido.
+Continuar qualificacao sem pressionar: validar composicao de renda, entrada/FGTS/subsidio e conforto de parcela; depois filtrar opcoes compativeis e conduzir para visita somente se fizer sentido.
 
 ## Histórico de interações
