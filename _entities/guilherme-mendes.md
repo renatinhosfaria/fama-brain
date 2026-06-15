@@ -8,7 +8,7 @@ aliases:
 external_ids:
   client_id: '10999'
   broker_id: '35'
-  fonte: whatsapp
+  fonte: whatsapp-inbound
 related:
   - '[[guilherme-mendes]]'
   - '[[reno-hub]]'
@@ -22,10 +22,8 @@ updated: '2026-06-15'
 source: imported
 tags:
   - reno
-  - whatsapp
-  - inbound
-  - qualificacao
-  - crm
+  - whatsapp-inbound
+  - qualification
 owner: renato
 entity_name: Guilherme Mendes
 provenance: agent-generated
@@ -39,24 +37,24 @@ broker: '[[reno]]'
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
-interesse_atual: Portfolio/informacoes do empreendimento em atendimento.
+interesse_atual: >-
+  Opcoes de empreendimentos prontos ou proximos da entrega; contexto recente
+  menciona Union Vereda e alternativas.
 objecoes_ativas: []
 proximo_passo: >-
-  No fluxo cliente-facing, retomar o contexto do empreendimento no CRM e
-  responder de forma curta sobre o portfolio, sem prometer dados nao validados.
+  No fluxo cliente-facing, responder com opcoes validadas que estejam prontas ou
+  proximas da entrega, mantendo uma pergunta consultiva antes de conduzir para
+  visita.
 ---
 [[guilherme-mendes]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Em 2026-06-15, retornou via WhatsApp perguntando se o portfolio do empreendimento ja havia sido enviado, pois nao se lembrava. A rotina silenciosa confirmou cliente elegivel no CRM (broker_id=35) e nao encontrou first_contact live enviado em reno_first_contacts para criar metrica de primeira resposta.
+Cliente em atendimento pelo Reno. Em 2026-06-15, retornou via WhatsApp perguntando quais empreendimentos estao prontos ou proximos da entrega. Persistencia operacional confirmou cliente elegivel no CRM (broker_id=35), status ja em Em Atendimento e ausencia de first_contact live enviado em reno_first_contacts para criar metrica de primeira resposta.
 
 ## Interesse atual
-Portfolio/informacoes do empreendimento em atendimento.
-
-## Objeções ativas
-
+Opcoes de empreendimentos prontos ou proximos da entrega; contexto recente menciona Union Vereda e alternativas.
 
 ## Próximo passo
-No fluxo cliente-facing, retomar o contexto do empreendimento no CRM e responder de forma curta sobre o portfolio, sem prometer dados nao validados.
+No fluxo cliente-facing, responder com opcoes validadas que estejam prontas ou proximas da entrega, mantendo uma pergunta consultiva antes de conduzir para visita.
 
 ## Histórico de interações
