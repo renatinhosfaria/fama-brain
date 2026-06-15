@@ -10,7 +10,9 @@ external_ids:
   client_id: '11718'
   broker_id: '35'
   empreendimento_id: '22'
-  regiao: Uberlandia
+  empreendimento_slug: union-vista
+  fonte: Facebook Ads
+  regiao: Uberlandia / Zona Leste
 mentions_entity:
   - reno-hub
   - union-vista
@@ -26,8 +28,7 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
-  - moradia
+  - qualification
 author_agent: reno
 owner: brain
 status_comercial: Em Atendimento
@@ -40,14 +41,14 @@ interesse_atual: >-
 objecoes_ativas:
   - Teto de valor declarado pode limitar opcoes maiores e 3 quartos.
 proximo_passo: >-
-  No atendimento cliente-facing, retomar com opcoes mais espacosas compativeis,
-  qualificar quantidade de quartos/forma de pagamento e conduzir para visita
-  presencial quando fizer sentido.
+  No atendimento cliente-facing, mostrar/comparar as duas opcoes selecionadas,
+  qualificar forma de pagamento/viabilidade e conduzir para visita presencial
+  quando fizer sentido.
 ---
 [[ellen-b-portes]] [[reno-hub]]
 
 ## Resumo
-Lead em atendimento via WhatsApp. Busca moradia e vem refinando preferencia por imovel mais espacoso; rotina inbound atual foi apenas de persistencia, sem envio ao cliente.
+Lead em atendimento via WhatsApp. Busca moradia e prioriza imovel mais espacoso; no inbound de 15/06 pediu para ver as duas opcoes sugeridas. Rotina atual foi apenas persistencia operacional, sem envio ao cliente.
 
 ## Interesse atual
 Moradia em imovel mais espacoso. Aceita qualquer regiao da cidade, priorizando espaco/metragem e ambientes maiores. Quer avaliar 2 quartos bem distribuidos/planta maior e 3 quartos se houver encaixe real. Faixa declarada anteriormente: ate R$ 250 mil.
@@ -56,6 +57,6 @@ Moradia em imovel mais espacoso. Aceita qualquer regiao da cidade, priorizando e
 - Teto de valor declarado pode limitar opcoes maiores e 3 quartos.
 
 ## Próximo passo
-No atendimento cliente-facing, retomar com opcoes mais espacosas compativeis, qualificar quantidade de quartos/forma de pagamento e conduzir para visita presencial quando fizer sentido.
+No atendimento cliente-facing, mostrar/comparar as duas opcoes selecionadas, qualificar forma de pagamento/viabilidade e conduzir para visita presencial quando fizer sentido.
 
 ## Histórico de interações
