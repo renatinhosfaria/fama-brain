@@ -19,36 +19,36 @@ tags:
   - whatsapp-inbound
   - qualificacao
   - viabilidade
-  - crm-client-11725
 author_agent: reno
 status_comercial: Em Atendimento
 origem: WhatsApp inbound / Facebook Ads
 interesse_atual: >-
   Busca compra com a maior parte financiada, preferindo imovel pronto ou com
-  entrega proxima na regiao Palace Planalto/Jaragua. Informou renda livre de
-  cerca de R$6.200 e renda em carteira assinada em torno de R$7.300; entrada em
-  maos perto de R$20k, pouco FGTS e compra individual.
+  entrega proxima na regiao Palace Planalto/Jaragua/Tubalina. Perfil informado:
+  renda livre aprox. R$6.200, renda CLT aprox. R$7.300, entrada perto de R$20k,
+  pouco FGTS e compra individual.
 objecoes_ativas:
   - >-
-    Conforto de parcela e impacto dos custos fixos atuais ainda precisam ser
-    validados com simulacao conservadora.
+    Parcela futura seria custo adicional porque hoje mora com a mae, nao
+    substituicao de aluguel.
+  - Preservar liberdade financeira e evitar comprometimento alto.
 proximo_passo: >-
-  Validar se a futura parcela substitui algum custo de moradia ou entra como
-  custo adicional; depois conduzir para analise presencial/visita se a simulacao
-  fizer sentido.
+  Conduzir com analise conservadora: validar cenarios de parcela abaixo do teto
+  e propor analise presencial/visita somente se fizer sentido financeiro.
 ---
 [[emilly]] [[reno-hub]]
 
 ## Resumo
-Lead em atendimento Reno. Ja respondeu ao primeiro contato e segue em diagnostico de viabilidade. Informou renda livre/CLT anteriormente e agora reforcou que esta sem comprometimento com parcela; custos fixos atuais ficam em valor parecido ao teto de parcela desejado.
+Lead em atendimento Reno. Ja respondeu ao primeiro contato e segue em diagnostico de viabilidade. Informou renda/entrada/teto de parcela e reforcou que mora com a mae; a futura parcela nao substituiria aluguel, entraria como novo custo.
 
 ## Interesse atual
-Busca compra com a maior parte financiada, preferindo imovel pronto ou com entrega proxima na regiao Palace Planalto/Jaragua. Informou renda livre de cerca de R$6.200 e renda em carteira assinada em torno de R$7.300; entrada em maos perto de R$20k, pouco FGTS e compra individual.
+Busca compra com a maior parte financiada, preferindo imovel pronto ou com entrega proxima na regiao Palace Planalto/Jaragua/Tubalina. Perfil informado: renda livre aprox. R$6.200, renda CLT aprox. R$7.300, entrada perto de R$20k, pouco FGTS e compra individual.
 
 ## Objeções ativas
-- Conforto de parcela e impacto dos custos fixos atuais ainda precisam ser validados com simulacao conservadora.
+- Parcela futura seria custo adicional porque hoje mora com a mae, nao substituicao de aluguel.
+- Preservar liberdade financeira e evitar comprometimento alto.
 
 ## Próximo passo
-Validar se a futura parcela substitui algum custo de moradia ou entra como custo adicional; depois conduzir para analise presencial/visita se a simulacao fizer sentido.
+Conduzir com analise conservadora: validar cenarios de parcela abaixo do teto e propor analise presencial/visita somente se fizer sentido financeiro.
 
 ## Histórico de interações
