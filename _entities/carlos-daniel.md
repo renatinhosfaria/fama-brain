@@ -1,21 +1,7 @@
 ---
-schema_version: 1
 type: entity
-status: active
-created: '2026-06-15'
-updated: '2026-06-15'
-source: agent-generated
-tags:
-  - reno
-  - whatsapp-inbound
-  - primeira-resposta
-  - financiamento
-author_agent: reno
 name: Carlos Daniel
 entity_type: lead
-related:
-  - '[[carlos-daniel]]'
-  - '[[reno-hub]]'
 external_ids:
   client_id: '11726'
   broker_id: '35'
@@ -23,32 +9,48 @@ external_ids:
   empreendimento_slug: union-vista
   fonte: Facebook Ads
   regiao: Grand Ville / Zona Leste
+related:
+  - '[[carlos-daniel]]'
+  - '[[reno-hub]]'
+schema_version: 1
+status: active
+created: '2026-06-15'
+updated: '2026-06-15'
+source: agent-generated
+tags:
+  - reno
+  - whatsapp-inbound
+  - qualificacao
+  - financiamento
+  - union-vista
+author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: Facebook Ads / WhatsApp
 interesse_atual: >-
-  Pesquisa por apartamento/Union Vista em fase de planejamento financeiro.
-  Preferencia registrada no CRM: 2 quartos, 1 suite e varanda se possivel.
+  Apartamento, preferencia por 2 quartos, 1 suite e varanda se possivel. Quer
+  entender regioes/lugares, valores, renda e parcela confortavel para
+  financiamento.
 objecoes_ativas:
-  - Organizacao financeira ainda em andamento
-  - Precisa entender renda/parcela/entrada antes de avancar
+  - Ainda esta se organizando financeiramente.
+  - Preocupacao em financiar sem comprometer demais o peso da parcela.
 proximo_passo: >-
-  Continuar qualificacao por viabilidade: entender renda/composicao, entrada
-  disponivel e parcela confortavel; conduzir para visita presencial quando
-  houver fit.
+  Conduzir por viabilidade: parcela confortavel, entrada disponivel, composicao
+  de renda e planejamento. Quando fizer sentido, avançar para visita presencial
+  na Fama.
 ---
 [[carlos-daniel]] [[reno-hub]]
 
 ## Resumo
-Resposta inbound registrada: cliente busca entender financiamento, ainda esta se organizando financeiramente e quer nocao de lugares/valores. CRM confirmou atendimento em andamento com Reno.
+Lead do Union Vista/Grand Ville em qualificacao pelo WhatsApp. Ja respondeu ao primeiro contato e esta em diagnostico de financiamento: horizonte medio/longo prazo, compra como investimento de vida e busca financiar o imovel dos sonhos sem deixar a parcela extremamente pesada.
 
 ## Interesse atual
-Pesquisa por apartamento/Union Vista em fase de planejamento financeiro. Preferencia registrada no CRM: 2 quartos, 1 suite e varanda se possivel.
+Apartamento, preferencia por 2 quartos, 1 suite e varanda se possivel. Quer entender regioes/lugares, valores, renda e parcela confortavel para financiamento.
 
 ## Objeções ativas
-- Organizacao financeira ainda em andamento
-- Precisa entender renda/parcela/entrada antes de avancar
+- Ainda esta se organizando financeiramente.
+- Preocupacao em financiar sem comprometer demais o peso da parcela.
 
 ## Próximo passo
-Continuar qualificacao por viabilidade: entender renda/composicao, entrada disponivel e parcela confortavel; conduzir para visita presencial quando houver fit.
+Conduzir por viabilidade: parcela confortavel, entrada disponivel, composicao de renda e planejamento. Quando fizer sentido, avançar para visita presencial na Fama.
 
 ## Histórico de interações
