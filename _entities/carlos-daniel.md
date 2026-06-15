@@ -5,10 +5,6 @@ entity_type: lead
 external_ids:
   client_id: '11726'
   broker_id: '35'
-  empreendimento_id: '22'
-  empreendimento_slug: union-vista
-  fonte: Facebook Ads
-  regiao: Grand Ville / Zona Leste
 related:
   - '[[carlos-daniel]]'
   - '[[reno-hub]]'
@@ -19,38 +15,36 @@ updated: '2026-06-15'
 source: agent-generated
 tags:
   - reno
-  - whatsapp-inbound
+  - whatsapp
   - qualificacao
   - financiamento
-  - union-vista
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp
+origem: WhatsApp inbound
 interesse_atual: >-
-  Apartamento, preferencia por 2 quartos, 1 suite e varanda se possivel. Quer
-  entender regioes/lugares, valores, renda e parcela confortavel para
-  financiamento.
+  Entender faixa de valor e renda necessaria para financiamento, buscando um
+  imovel que nao pese demais no orcamento.
 objecoes_ativas:
-  - Ainda esta se organizando financeiramente.
-  - Preocupacao em financiar sem comprometer demais o peso da parcela.
+  - Preocupacao com financiamento ficar pesado
+  - Precisa entender faixa de valor/renda antes de avancar
 proximo_passo: >-
-  Conduzir por viabilidade: parcela confortavel, entrada disponivel, composicao
-  de renda e planejamento. Quando fizer sentido, avançar para visita presencial
-  na Fama.
+  Conduzir por parcela confortavel, entrada disponivel e composicao de renda;
+  evitar promessa de credito e preparar convite para visita quando a viabilidade
+  estiver clara.
 ---
 [[carlos-daniel]] [[reno-hub]]
 
 ## Resumo
-Lead do Union Vista/Grand Ville em qualificacao pelo WhatsApp. Ja respondeu ao primeiro contato e esta em diagnostico de financiamento: horizonte medio/longo prazo, compra como investimento de vida e busca financiar o imovel dos sonhos sem deixar a parcela extremamente pesada.
+Cliente em atendimento pelo Reno. Respondeu ao primeiro contato e segue em diagnostico de viabilidade financeira para compra futura.
 
 ## Interesse atual
-Apartamento, preferencia por 2 quartos, 1 suite e varanda se possivel. Quer entender regioes/lugares, valores, renda e parcela confortavel para financiamento.
+Entender faixa de valor e renda necessaria para financiamento, buscando um imovel que nao pese demais no orcamento.
 
 ## Objeções ativas
-- Ainda esta se organizando financeiramente.
-- Preocupacao em financiar sem comprometer demais o peso da parcela.
+- Preocupacao com financiamento ficar pesado
+- Precisa entender faixa de valor/renda antes de avancar
 
 ## Próximo passo
-Conduzir por viabilidade: parcela confortavel, entrada disponivel, composicao de renda e planejamento. Quando fizer sentido, avançar para visita presencial na Fama.
+Conduzir por parcela confortavel, entrada disponivel e composicao de renda; evitar promessa de credito e preparar convite para visita quando a viabilidade estiver clara.
 
 ## Histórico de interações
