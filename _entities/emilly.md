@@ -5,10 +5,8 @@ entity_type: lead
 external_ids:
   client_id: '11725'
   broker_id: '35'
-  empreendimento_id: '161'
-  empreendimento_slug: union-vereda
-  fonte: Facebook Ads
-  regiao: Jaragua / Oeste
+  fonte: WhatsApp
+  regiao: Uberlandia
 related:
   - '[[emilly]]'
   - '[[reno-hub]]'
@@ -20,32 +18,30 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - first-contact
-  - union-vereda
+  - qualificacao
+  - andamento-obra
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
-interesse_atual: >-
-  Interesse no Union Vereda; cliente comentou morar no Palace Planalto,
-  indicando sensibilidade a localizacao/regiao.
-objecoes_ativas: []
+origem: WhatsApp inbound
+interesse_atual: Quer entender o andamento da obra do empreendimento antes de avancar.
+objecoes_ativas:
+  - Precisa de informacao validada sobre inicio da obra e percentual atual.
 proximo_passo: >-
-  Seguir qualificacao pelo WhatsApp principal: esclarecer localizacao do Union
-  Vereda/Jaragua e entender se a cliente busca morar ou investir; conduzir para
-  visita quando fizer sentido.
+  Responder no atendimento cliente-facing com dados de obra validados pela fonte
+  do empreendimento; nao prometer percentual sem confirmacao.
 ---
 [[emilly]] [[reno-hub]]
 
 ## Resumo
-Primeiro contato do Reno ja registrado como respondido. Cliente esta em atendimento e trouxe contexto de moradia atual no Palace Planalto durante conversa sobre o Union Vereda.
+Atendimento Reno em andamento. Cliente respondeu ao WhatsApp e perguntou se a obra ja iniciou e qual e o percentual atual. Primeiro contato ja estava marcado como respondido no CRM; rotina atual foi apenas de persistencia operacional silenciosa, sem envio ao cliente.
 
 ## Interesse atual
-Interesse no Union Vereda; cliente comentou morar no Palace Planalto, indicando sensibilidade a localizacao/regiao.
+Quer entender o andamento da obra do empreendimento antes de avancar.
 
 ## Objeções ativas
-
+- Precisa de informacao validada sobre inicio da obra e percentual atual.
 
 ## Próximo passo
-Seguir qualificacao pelo WhatsApp principal: esclarecer localizacao do Union Vereda/Jaragua e entender se a cliente busca morar ou investir; conduzir para visita quando fizer sentido.
+Responder no atendimento cliente-facing com dados de obra validados pela fonte do empreendimento; nao prometer percentual sem confirmacao.
 
 ## Histórico de interações
