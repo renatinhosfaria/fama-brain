@@ -1,60 +1,49 @@
 ---
 type: entity
-owner: renato
-entity_type: person
-entity_name: Grazziele Rocha Mendes
 subtype: person
-created: '2026-05-11'
-updated: '2026-05-11'
-tags:
-  - cliente
-  - atendimento
-  - whatsapp
-  - em-atendimento
-  - place-arbi
-schema_version: 1
-status: active
-provenance: agent-generated
-verified_by: null
-verified_at: null
-confidence: 0.6
+name: Grazziele rocha mendes
+entity_type: lead
 aliases:
   - Grazziele Rocha Mendes
 external_ids:
-  crm_client_id: 11232
-  broker_id: 35
-broker: '[[reno]]'
+  client_id: '11232'
+  broker_id: '35'
 related:
+  - '[[grazziele-rocha-mendes]]'
   - '[[reno-hub]]'
+confidence: 0.6
+verified_by: null
+verified_at: null
+schema_version: 1
+status: active
+created: '2026-05-11'
+updated: '2026-06-15'
 source: imported
-name: Grazziele Rocha Mendes
+tags:
+  - reno
+  - whatsapp-inbound
+  - qualificacao
+owner: renato
+entity_name: Grazziele Rocha Mendes
+provenance: agent-generated
+broker: '[[reno]]'
+author_agent: reno
+status_comercial: Em Atendimento
+origem: WhatsApp inbound
+interesse_atual: 'Faixa/orcamento informado: 250 mil.'
+proximo_passo: >-
+  Seguir qualificacao normal no atendimento; esta rotina foi apenas de
+  persistencia silenciosa.
 ---
-# Grazziele Rocha Mendes
+[[grazziele-rocha-mendes]] [[reno-hub]]
 
 ## Resumo
+Cliente identificado no CRM como elegivel do Reno respondeu pelo WhatsApp e informou faixa/orcamento de 250 mil.
 
-Grazziele Rocha Mendes representa um lead/cliente atendido por [[reno]], vinculado ao cliente CRM 11232. Status consolidado na origem migrada: Em Atendimento.
+## Interesse atual
+Faixa/orcamento informado: 250 mil.
 
-## Estado atual
+## Próximo passo
+Seguir qualificacao normal no atendimento; esta rotina foi apenas de persistencia silenciosa.
 
-Status CRM registrado na origem migrada: Em Atendimento.
-
-## Contexto comercial consolidado
-
-Cliente esta em Em Atendimento. Entrou pelo Facebook Ads com interesse inicial no Place+Arbi/Shopping Park, mas corrigiu o contexto: pensou que o anuncio/imovel era em Araguari e informou que Uberlandia nao interessa para a compra atual. Mora/tem apartamento em Uberlandia, no Jardim Europa, nao se adaptou a cidade/regiao e quer ir para Araguari.
-
-Lead entrou pelo Facebook Ads com interesse no empreendimento Place+Arbi, no Shopping Park, Uberlandia. A abertura contextualizada perguntou se a cliente esta procurando imovel nessa regiao. Apos a primeira resposta, a conversa evoluiu para uma correcao importante: a cliente acreditava que a oferta era em Araguari e informou que Uberlandia nao interessa.
-
-Ela mora/possui apartamento em Uberlandia, no Jardim Europa, nao se adaptou e quer ir para Araguari. Demonstrou abertura para venda do apartamento atual ou eventual negociacao/permuta, desde que haja interessado em assumir/pegar o imovel. Tambem possui uma casa em Araguari, quitada, no bairro Sao Sebastiao, mas quer apartamento em Araguari por ser mais facil de cuidar.
-
-## Historico resumido
-
-- 2026-05-11: atendimento importado para o modelo duplo de entidade e journal do segundo cerebro do [[reno]].
-
-## Proximo passo
-
-Responder comercialmente na sessao WhatsApp normal, sem envio por esta rotina silenciosa. Prioridade: levantar dados da casa quitada em Araguari/Sao Sebastiao quantidade de quartos, garagem/lote, padrao e valor esperado para avaliar venda/permuta como caminho mais simples.
-
-## Links operacionais
-
-- [[2026-05-11-atendimento-grazziele-rocha-mendes]]
+## Histórico de interações
