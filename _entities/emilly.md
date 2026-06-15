@@ -5,9 +5,7 @@ entity_type: lead
 external_ids:
   client_id: '11725'
   broker_id: '35'
-  empreendimento_id: '161'
-  fonte: Facebook Ads
-  regiao: Palace Planalto / Jaragua
+  fonte: lead_automatico
 related:
   - '[[emilly]]'
   - '[[reno-hub]]'
@@ -20,39 +18,38 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - union-vereda
-  - jaragua
+  - viabilidade
+  - financiamento
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads / WhatsApp inbound
+origem: Meta Ads / WhatsApp
 interesse_atual: >-
-  Regiao Palace Planalto/Jaragua. Olha imoveis nessa regiao quando pesquisa;
-  Union Vereda foi contexto inicial, mas prazo distante pode nao encaixar.
+  Busca compra com a maior parte financiada. Informou pouca disponibilidade de
+  FGTS e cerca de R$20k em maos para entrada; precisa analise de viabilidade,
+  renda, subsidio/FGTS e parcela confortavel.
 objecoes_ativas:
-  - Duvida sobre comprar ou nao agora.
-  - Quer preservar flexibilidade e evitar comprometer renda de forma pesada.
-  - >-
-    Entrega distante do Union Vereda pode nao encaixar; prefere pronto ou
-    entrega proxima.
+  - Incerteza sobre permanecer em Uberlandia no medio prazo.
+  - Deseja preservar liberdade financeira e nao comprometer parcela alta.
+  - 'Teto de parcela citado anteriormente: cerca de R$1.000 a R$1.500.'
 proximo_passo: >-
-  Retomar qualificacao humana no WhatsApp em turno separado: validar momento de
-  compra, motivo da regiao, prazo ideal e abertura para visita na Fama quando
-  fizer sentido. Rotina inbound atual foi apenas persistencia silenciosa.
+  Continuar qualificacao sem pressionar: validar renda, uso de FGTS/subsidio,
+  prazo e conforto de parcela; depois filtrar opcoes compativeis e conduzir para
+  visita somente se fizer sentido.
 ---
 [[emilly]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Demonstrou afinidade forte com a regiao Palace Planalto/Jaragua e ainda esta avaliando se faz sentido comprar agora.
+Lead em atendimento pelo Reno. Respondeu ao primeiro contato e segue em qualificacao consultiva para avaliar viabilidade antes de indicar imovel.
 
 ## Interesse atual
-Regiao Palace Planalto/Jaragua. Olha imoveis nessa regiao quando pesquisa; Union Vereda foi contexto inicial, mas prazo distante pode nao encaixar.
+Busca compra com a maior parte financiada. Informou pouca disponibilidade de FGTS e cerca de R$20k em maos para entrada; precisa analise de viabilidade, renda, subsidio/FGTS e parcela confortavel.
 
 ## Objeções ativas
-- Duvida sobre comprar ou nao agora.
-- Quer preservar flexibilidade e evitar comprometer renda de forma pesada.
-- Entrega distante do Union Vereda pode nao encaixar; prefere pronto ou entrega proxima.
+- Incerteza sobre permanecer em Uberlandia no medio prazo.
+- Deseja preservar liberdade financeira e nao comprometer parcela alta.
+- Teto de parcela citado anteriormente: cerca de R$1.000 a R$1.500.
 
 ## Próximo passo
-Retomar qualificacao humana no WhatsApp em turno separado: validar momento de compra, motivo da regiao, prazo ideal e abertura para visita na Fama quando fizer sentido. Rotina inbound atual foi apenas persistencia silenciosa.
+Continuar qualificacao sem pressionar: validar renda, uso de FGTS/subsidio, prazo e conforto de parcela; depois filtrar opcoes compativeis e conduzir para visita somente se fizer sentido.
 
 ## Histórico de interações
