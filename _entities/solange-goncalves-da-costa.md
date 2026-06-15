@@ -1,5 +1,22 @@
 ---
+schema_version: 1
 type: entity
+status: active
+created: '2026-06-14'
+updated: '2026-06-15'
+source: agent-generated
+author_agent: brain
+owner: brain
+tags:
+  - reno
+  - whatsapp-inbound
+  - qualificacao
+  - credito
+  - viabilidade
+  - place-arbi
+  - crm-verified
+  - curado-brain
+  - homonimo-desambiguado
 name: Solange Gonçalves da Costa
 entity_type: lead
 aliases:
@@ -22,34 +39,32 @@ related:
   - '[[place-arbi]]'
   - '[[_shared/context/credito-imobiliario/index]]'
   - >-
+    [[_journal/reno/2026-06-14-solange-goncalves-da-costa-inbound-busca-na-planta-e-menor-valor]]
+  - >-
     [[_journal/reno/2026-06-14-solange-goncalves-da-costa-inbound-cliente-fixou-teto-de-r-1-500-para-fluxo-pre-chaves]]
+  - >-
+    [[_journal/reno/2026-06-14-solange-goncalves-da-costa-cliente-informou-envio-de-comprovantes-de-renda]]
 confidence: 0.94
 verified_by: null
-schema_version: 1
-status: active
-created: '2026-06-14'
-updated: '2026-06-15'
-source: agent-generated
-tags:
-  - reno
-  - whatsapp-inbound
-  - qualificacao
-  - credito
-  - viabilidade
-  - place-arbi
-  - crm-verified
-  - curado-brain
-author_agent: brain
 status_comercial: Em Atendimento
-origem: WhatsApp inbound
-interesse_atual: Conduzir proposta Place + Arbi considerando apenas Bruno.
+origem: Facebook Ads / WhatsApp inbound
+interesse_atual: >-
+  Compra na planta com menor valor possível e encaixe de fluxo; prioriza
+  validação de proposta real do Place+Arbi antes de visita/reserva.
 objecoes_ativas:
+  - Ato/desembolso inicial limitado a cerca de R$ 10 mil.
+  - 'Fluxo pré-chaves total precisa caber em cerca de R$ 1,5 mil/mês.'
   - >-
-    Nao quer ir ate a Fama neste momento porque considera que as explicacoes
-    digitais foram suficientes.
+    Financiamento preferencialmente apenas no nome de Bruno; composição de renda
+    pode alterar enquadramento/subsídio e precisa de simulação comparativa.
+  - >-
+    Não quer ir ao escritório neste momento; prefere retorno objetivo pelo
+    WhatsApp após validação de proposta.
+  - Renda/comprovantes ainda dependem de validação antes de avançar.
 proximo_passo: >-
-  Retomar atendimento com foco na proposta e viabilidade, sem pressionar visita
-  neste momento.
+  Obter tabela/fluxo real do Place+Arbi e retornar pelo WhatsApp com proposta
+  objetiva, separando custo de assinatura, fluxo mensal até chaves,
+  saldo/financiamento e dependências de análise, sem prometer crédito.
 ---
 # Solange Gonçalves da Costa
 
@@ -98,4 +113,4 @@ Obter tabela/fluxo real do [[place-arbi]] e retornar pelo WhatsApp com uma propo
 
 ## Verificação
 
-Curadoria criada em 2026-06-15T03:18:41Z com base em journals Reno recentes e leitura CRM do cliente 11716. PII bruta omitida da entidade; mantidos apenas IDs operacionais estáveis e critérios comerciais.
+Curadoria criada em 2026-06-15T03:18:41Z e frontmatter semântico reconciliado em 2026-06-15T03:20:00Z, com base em journals Reno recentes e leitura CRM do cliente 11716. PII bruta omitida da entidade; mantidos apenas IDs operacionais estáveis e critérios comerciais.
