@@ -5,9 +5,7 @@ entity_type: lead
 external_ids:
   client_id: '11725'
   broker_id: '35'
-  empreendimento_id: '161'
-  empreendimento_slug: union-vereda
-  regiao: Jaraguá / Uberlândia
+  fonte: WhatsApp
 related:
   - '[[emilly]]'
   - '[[reno-hub]]'
@@ -19,41 +17,31 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - qualificacao
-  - primeiro-contato-respondido
+  - persistencia-operacional
 author_agent: reno
 status_comercial: Em Atendimento
-origem: Facebook Ads
+origem: whatsapp inbound
 interesse_atual: >-
-  Apartamento pronto ou de entrega próxima, preferencialmente nas regiões
-  Planalto, Jaraguá, Tubalina ou redondezas. Parcela alvo em torno de R$ 1.000;
-  até R$ 1.500 apenas se a opção chamar muito atenção. Critério novo: potencial
-  de locação/liquidez.
-objecoes_ativas:
-  - >-
-    Evitar comprometer liberdade financeira; parcela seria custo adicional, pois
-    mora com a mãe.
-  - >-
-    Necessita avaliação conservadora de viabilidade e opções com potencial de
-    aluguel.
+  Contexto de primeiro contato classificado como specific_property_named; manter
+  diagnostico consultivo no proximo turno cliente-facing.
+objecoes_ativas: []
 proximo_passo: >-
-  Preparar levantamento objetivo de opções compatíveis com orçamento, prazo e
-  potencial de aluguel; retornar com filtro conservador, inclusive sinalizando
-  se não houver encaixe bom.
+  Sem envio automatico neste hook. Atendimento segue em Em Atendimento; proximo
+  turno deve responder/qualificar conforme historico da conversa, se acionado
+  pelo fluxo cliente-facing.
 ---
 [[emilly]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato e segue em qualificação consultiva. Busca apartamento com compra leve/conservadora e agora acrescentou que o imóvel precisa ter potencial de aluguel caso mude de cidade.
+Cliente elegivel do Reno (broker_id=35) em atendimento pelo WhatsApp. Primeiro contato ja estava respondido e registrado; novo inbound recebido em 2026-06-15T04:36:17Z com agradecimento/encerramento cordial, sem novo fato comercial.
 
 ## Interesse atual
-Apartamento pronto ou de entrega próxima, preferencialmente nas regiões Planalto, Jaraguá, Tubalina ou redondezas. Parcela alvo em torno de R$ 1.000; até R$ 1.500 apenas se a opção chamar muito atenção. Critério novo: potencial de locação/liquidez.
+Contexto de primeiro contato classificado como specific_property_named; manter diagnostico consultivo no proximo turno cliente-facing.
 
 ## Objeções ativas
-- Evitar comprometer liberdade financeira; parcela seria custo adicional, pois mora com a mãe.
-- Necessita avaliação conservadora de viabilidade e opções com potencial de aluguel.
+
 
 ## Próximo passo
-Preparar levantamento objetivo de opções compatíveis com orçamento, prazo e potencial de aluguel; retornar com filtro conservador, inclusive sinalizando se não houver encaixe bom.
+Sem envio automatico neste hook. Atendimento segue em Em Atendimento; proximo turno deve responder/qualificar conforme historico da conversa, se acionado pelo fluxo cliente-facing.
 
 ## Histórico de interações
