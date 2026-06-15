@@ -8,7 +8,7 @@ external_ids:
   empreendimento_id: '161'
   empreendimento_slug: union-vereda
   fonte: Facebook Ads
-  regiao: Jaragua / Zona Oeste
+  regiao: Jaragua / Oeste
 related:
   - '[[emilly]]'
   - '[[reno-hub]]'
@@ -20,34 +20,32 @@ source: agent-generated
 tags:
   - reno
   - whatsapp-inbound
-  - first-contact-responded
-  - atendimento
+  - first-contact
   - union-vereda
 author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Interesse/curiosidade pelo Union Vereda; cliente mora proxima, gosta da regiao
-  e perguntou sobre ponto de referencia/localizacao na Avenida Aspirante Mega,
-  Jaragua.
+  Interesse no Union Vereda; cliente comentou morar no Palace Planalto,
+  indicando sensibilidade a localizacao/regiao.
 objecoes_ativas: []
 proximo_passo: >-
-  Responder a duvida de localizacao do Union Vereda e conduzir diagnostico
-  comercial; rotina atual foi apenas persistencia operacional, sem envio ao
-  cliente.
+  Seguir qualificacao pelo WhatsApp principal: esclarecer localizacao do Union
+  Vereda/Jaragua e entender se a cliente busca morar ou investir; conduzir para
+  visita quando fizer sentido.
 ---
 [[emilly]] [[reno-hub]]
 
 ## Resumo
-Cliente respondeu ao primeiro contato do Reno via WhatsApp. CRM validado: broker_id=35, status Em Atendimento, empreendimento Union Vereda (id 161) na Avenida Aspirante Mega, 2000, Jaragua. Repescagem encerrada por client_replied.
+Primeiro contato do Reno ja registrado como respondido. Cliente esta em atendimento e trouxe contexto de moradia atual no Palace Planalto durante conversa sobre o Union Vereda.
 
 ## Interesse atual
-Interesse/curiosidade pelo Union Vereda; cliente mora proxima, gosta da regiao e perguntou sobre ponto de referencia/localizacao na Avenida Aspirante Mega, Jaragua.
+Interesse no Union Vereda; cliente comentou morar no Palace Planalto, indicando sensibilidade a localizacao/regiao.
 
 ## Objeções ativas
 
 
 ## Próximo passo
-Responder a duvida de localizacao do Union Vereda e conduzir diagnostico comercial; rotina atual foi apenas persistencia operacional, sem envio ao cliente.
+Seguir qualificacao pelo WhatsApp principal: esclarecer localizacao do Union Vereda/Jaragua e entender se a cliente busca morar ou investir; conduzir para visita quando fizer sentido.
 
 ## Histórico de interações
