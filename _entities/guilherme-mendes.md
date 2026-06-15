@@ -8,7 +8,6 @@ aliases:
 external_ids:
   client_id: '10999'
   broker_id: '35'
-  fonte: Facebook Ads
 related:
   - '[[guilherme-mendes]]'
   - '[[reno-hub]]'
@@ -23,7 +22,9 @@ source: imported
 tags:
   - reno
   - whatsapp-inbound
-  - viabilidade
+  - qualificacao
+  - union-vareda
+  - union-vista
 owner: renato
 entity_name: Guilherme Mendes
 provenance: agent-generated
@@ -38,28 +39,28 @@ author_agent: reno
 status_comercial: Em Atendimento
 origem: Facebook Ads
 interesse_atual: >-
-  Opcoes compativeis com parcela alvo entre R$1,5 mil e R$2 mil; contexto
-  recente menciona Union Vereda, opcoes prontas/proximas da entrega e comparacao
-  de empreendimentos.
+  Planta do Union Vareda/Vista/Vereda; quer entender se os blocos ja foram
+  levantados e a fase atual de construcao.
 objecoes_ativas:
-  - 'Viabilidade de parcela mensal entre R$1,5 mil e R$2 mil.'
+  - Confusao de nomenclatura Union Vareda/Vista/Vereda
+  - Precisa de informacao visual/tecnica sobre planta e fase de obra
 proximo_passo: >-
-  No fluxo cliente-facing, responder com cautela consultiva: explicar que a
-  parcela depende de entrada, renda, prazo e taxa; pedir/confirmar base de
-  entrada ou conduzir para simulacao/visita na Fama antes de prometer encaixe.
+  Responder no atendimento normal com informacao confirmada de planta e fase de
+  construcao antes de conduzir para proximo passo comercial.
 ---
 [[guilherme-mendes]] [[reno-hub]]
 
 ## Resumo
-Cliente em atendimento pelo Reno. Em 2026-06-15, retornou via WhatsApp em sequencia sobre opcoes de empreendimento e viabilidade de parcela. Persistencia operacional confirmou cliente elegivel no CRM (broker_id=35), status em Em Atendimento e ausencia de first_contact live enviado em reno_first_contacts para criar metrica de primeira resposta.
+Cliente em atendimento pelo Reno. Conversa atual envolve interesse/comparacao sobre Union Vareda/Union Vista/Union Vereda e duvidas sobre planta e fase de construcao.
 
 ## Interesse atual
-Opcoes compativeis com parcela alvo entre R$1,5 mil e R$2 mil; contexto recente menciona Union Vereda, opcoes prontas/proximas da entrega e comparacao de empreendimentos.
+Planta do Union Vareda/Vista/Vereda; quer entender se os blocos ja foram levantados e a fase atual de construcao.
 
 ## Objeções ativas
-- Viabilidade de parcela mensal entre R$1,5 mil e R$2 mil.
+- Confusao de nomenclatura Union Vareda/Vista/Vereda
+- Precisa de informacao visual/tecnica sobre planta e fase de obra
 
 ## Próximo passo
-No fluxo cliente-facing, responder com cautela consultiva: explicar que a parcela depende de entrada, renda, prazo e taxa; pedir/confirmar base de entrada ou conduzir para simulacao/visita na Fama antes de prometer encaixe.
+Responder no atendimento normal com informacao confirmada de planta e fase de construcao antes de conduzir para proximo passo comercial.
 
 ## Histórico de interações
