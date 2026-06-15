@@ -1,26 +1,34 @@
 ---
 type: entity
-owner: renato
-entity_type: person
-entity_name: Guilherme Mendes
 subtype: person
-created: '2026-05-02'
-updated: '2026-05-11'
-tags:
-  - cliente
-  - em-atendimento
-  - quente
-schema_version: 1
-status: active
-provenance: agent-generated
-verified_by: null
-verified_at: null
-confidence: 0.85
+name: Guilherme Mendes
+entity_type: lead
 aliases:
   - Guilherme
 external_ids:
-  crm_client_id: 10999
-  broker_id: 35
+  client_id: '10999'
+  broker_id: '35'
+  fonte: whatsapp
+related:
+  - '[[guilherme-mendes]]'
+  - '[[reno-hub]]'
+confidence: 0.85
+verified_by: null
+verified_at: null
+schema_version: 1
+status: active
+created: '2026-05-02'
+updated: '2026-06-15'
+source: imported
+tags:
+  - reno
+  - whatsapp
+  - inbound
+  - qualificacao
+  - crm
+owner: renato
+entity_name: Guilherme Mendes
+provenance: agent-generated
 interactions:
   - '[[2026-05-11-atendimento-guilherme-mendes|10999-guilherme-mendes]]'
 mentions_property:
@@ -28,55 +36,27 @@ mentions_property:
 mentions_neighborhood:
   - '[[jaragua]]'
 broker: '[[reno]]'
-related:
-  - '[[_hubs/index|Hubs]]'
-source: imported
-name: Guilherme Mendes
+author_agent: reno
+status_comercial: Em Atendimento
+origem: Facebook Ads
+interesse_atual: Portfolio/informacoes do empreendimento em atendimento.
+objecoes_ativas: []
+proximo_passo: >-
+  No fluxo cliente-facing, retomar o contexto do empreendimento no CRM e
+  responder de forma curta sobre o portfolio, sem prometer dados nao validados.
 ---
+[[guilherme-mendes]] [[reno-hub]]
+
 ## Resumo
+Cliente em atendimento pelo Reno. Em 2026-06-15, retornou via WhatsApp perguntando se o portfolio do empreendimento ja havia sido enviado, pois nao se lembrava. A rotina silenciosa confirmou cliente elegivel no CRM (broker_id=35) e nao encontrou first_contact live enviado em reno_first_contacts para criar metrica de primeira resposta.
 
-Guilherme Mendes é cliente do Reno em status **Em Atendimento** após reação positiva à planta do Union Vereda em 2026-04-29 ("Sim me agrada"). Convidado para visita presencial na Fama em 30/04 fim de tarde. Recebeu resumo do empreendimento via WhatsApp. Lead **quente** com sinal de compra explícito. Origem: Facebook Ads. Histórico complexo: cliente entrou em outros cadastros com outros corretores antes — Renato decidiu manter atendimento Reno mesmo assim.
+## Interesse atual
+Portfolio/informacoes do empreendimento em atendimento.
 
-## Identificação
+## Objeções ativas
 
-- **Nome:** Guilherme Mendes
-- **CRM client id:** 10999
-- **Broker responsável:** [[reno]] (broker_id: 35)
-- **WhatsApp:** final 0508
-- **Origem:** Facebook Ads
 
-## Interesses imobiliários
+## Próximo passo
+No fluxo cliente-facing, retomar o contexto do empreendimento no CRM e responder de forma curta sobre o portfolio, sem prometer dados nao validados.
 
-- [[union-vereda]] ([[jaragua]] / Zona Oeste)
-- Configuração apresentada: 2 quartos com suíte, varanda, 1 vaga, ~57–58m², ~R$288k+
-- Sinal positivo explícito sobre planta
-
-## Linha do tempo de interações
-
-- 2026-04-24 — primeiro contato (falhou: jidDecode error)
-- 2026-04-27 — envio suprimido (duplicidade com outros corretores)
-- 2026-04-27 — Renato override: enviar primeiro contato mesmo assim
-- 2026-04-29 — cliente pediu planta → Reno enviou imagem (HLTS/Union Vereda)
-- 2026-04-29 — repescagem step 1
-- 2026-04-29 — cliente respondeu "Sim me agrada" → convite visita
-- 2026-04-30 — resgate steps 1 e 2 (visita pendente)
-- 2026-04-30 — cliente respondeu "Sim" → Reno enviou resumo + convite presencial
-
-## Próximas ações sugeridas
-
-- Confirmar horário de visita presencial Fama
-- Validar entrada/financiamento presencialmente
-- Verificar se 1 vaga é suficiente (vs Andreia Carvalho que descartou Union Vereda por isso)
-- Pós-visita: avaliar conversão para Negociação
-
-## Migracao Reno batch 3 - 2026-05-11
-
-Resumo: atendimento CRM 10999 migrado para o modelo duplo de entidade e journal do segundo cérebro do [[reno]]. Cliente do Reno em atendimento pelo WhatsApp, com interesse no Union Vereda, no Jaraguá. Após envio de planta do empreendimento, respondeu que a planta agradou; Reno convidou para visita presencial na Fama.
-
-Status: Em Atendimento. Vínculos semânticos identificados: [[union-vereda]], [[guilherme-mendes]].
-
-Proximo passo: Responder comercialmente ao cliente no WhatsApp com um resumo curto do Union Vereda e do que vale validar presencialmente, mantendo o foco em visita na Fama como próximo passo lógico. Não há próxima step automática ativa de Resgate ou Repescagem neste momento.
-
-Atendimento migrado para o journal [[2026-05-11-atendimento-guilherme-mendes]].
-
-Origem migrada: `_agents/reno/atendimentos/10999-guilherme-mendes.md`.
+## Histórico de interações
