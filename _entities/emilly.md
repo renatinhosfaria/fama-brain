@@ -5,8 +5,9 @@ entity_type: lead
 external_ids:
   client_id: '11725'
   broker_id: '35'
-  fonte: WhatsApp
-  regiao: Uberlandia
+  empreendimento_id: '161'
+  fonte: Facebook Ads
+  regiao: Palace Planalto / Jaragua
 related:
   - '[[emilly]]'
   - '[[reno-hub]]'
@@ -19,29 +20,39 @@ tags:
   - reno
   - whatsapp-inbound
   - qualificacao
-  - andamento-obra
+  - union-vereda
+  - jaragua
 author_agent: reno
 status_comercial: Em Atendimento
-origem: WhatsApp inbound
-interesse_atual: Quer entender o andamento da obra do empreendimento antes de avancar.
+origem: Facebook Ads / WhatsApp inbound
+interesse_atual: >-
+  Regiao Palace Planalto/Jaragua. Olha imoveis nessa regiao quando pesquisa;
+  Union Vereda foi contexto inicial, mas prazo distante pode nao encaixar.
 objecoes_ativas:
-  - Precisa de informacao validada sobre inicio da obra e percentual atual.
+  - Duvida sobre comprar ou nao agora.
+  - Quer preservar flexibilidade e evitar comprometer renda de forma pesada.
+  - >-
+    Entrega distante do Union Vereda pode nao encaixar; prefere pronto ou
+    entrega proxima.
 proximo_passo: >-
-  Responder no atendimento cliente-facing com dados de obra validados pela fonte
-  do empreendimento; nao prometer percentual sem confirmacao.
+  Retomar qualificacao humana no WhatsApp em turno separado: validar momento de
+  compra, motivo da regiao, prazo ideal e abertura para visita na Fama quando
+  fizer sentido. Rotina inbound atual foi apenas persistencia silenciosa.
 ---
 [[emilly]] [[reno-hub]]
 
 ## Resumo
-Atendimento Reno em andamento. Cliente respondeu ao WhatsApp e perguntou se a obra ja iniciou e qual e o percentual atual. Primeiro contato ja estava marcado como respondido no CRM; rotina atual foi apenas de persistencia operacional silenciosa, sem envio ao cliente.
+Cliente em atendimento pelo Reno. Demonstrou afinidade forte com a regiao Palace Planalto/Jaragua e ainda esta avaliando se faz sentido comprar agora.
 
 ## Interesse atual
-Quer entender o andamento da obra do empreendimento antes de avancar.
+Regiao Palace Planalto/Jaragua. Olha imoveis nessa regiao quando pesquisa; Union Vereda foi contexto inicial, mas prazo distante pode nao encaixar.
 
 ## Objeções ativas
-- Precisa de informacao validada sobre inicio da obra e percentual atual.
+- Duvida sobre comprar ou nao agora.
+- Quer preservar flexibilidade e evitar comprometer renda de forma pesada.
+- Entrega distante do Union Vereda pode nao encaixar; prefere pronto ou entrega proxima.
 
 ## Próximo passo
-Responder no atendimento cliente-facing com dados de obra validados pela fonte do empreendimento; nao prometer percentual sem confirmacao.
+Retomar qualificacao humana no WhatsApp em turno separado: validar momento de compra, motivo da regiao, prazo ideal e abertura para visita na Fama quando fizer sentido. Rotina inbound atual foi apenas persistencia silenciosa.
 
 ## Histórico de interações
