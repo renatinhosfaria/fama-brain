@@ -2,9 +2,12 @@
 type: goal
 owner: renato
 created: '2026-06-06'
-updated: '2026-06-07'
+updated: '2026-06-16'
 tags: []
 period: 2026-06
+schema_version: 1
+status: active
+source: human-curated
 ---
 # Meta de Marketing — Junho/2026
 
